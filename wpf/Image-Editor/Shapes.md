@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Shapes of syncfusion SfImageEditor WPF.
-description: This section explains how the image can be annotated by adding default shapes such as Circle, Rectangle, Arrow on it.
+title: Shapes in WPF Image Editor | Syncfusion®
+description: Shapes feature in Syncfusion® WPF Image Editor allows you to add and customize default shapes like circles, rectangles, and arrows to annotate images.
 platform: wpf
 control: SfImageEditor
 documentation: ug
 ---
 
-# Shapes in SfImageEditor
+# Shapes in WPF Image Editor
 
-You can annotate an image by adding regular shapes such as circle, rectangle, and arrow. Also image editor provides support to draw path (i.e. free hand sketching). Shapes can be added in the following two ways:
+You can annotate an image by adding regular shapes such as circle, rectangle, and arrow. Also Image Editor provides support to draw path (i.e. free hand sketching). Shapes can be added in the following two ways:
 
 * Using Toolbar
 * Programmatically
@@ -156,7 +156,7 @@ N> Values of the bounds rect will be in percentage. For example (25,25,25,25) wi
 
 ## Shape resizing
 
-By default, both shapes and text are resizable. You can also control the resizable using the ResizableElements property in image editor. The following code enables the resizing functionality to both shapes and text.
+By default, both shapes and text are resizable. You can also control the resizable using the ResizableElements property in Image Editor. The following code enables the resizing functionality to both shapes and text.
 
 {% tabs %} 
 
@@ -215,4 +215,4 @@ You can make changes on the settings such as stroke etc. This is applied after t
 
 ## See also
 
-[How to load the image annotated with shapes and text on the image editor](https://www.syncfusion.com/kb/11215/how-to-load-the-image-annotated-with-shapes-and-text-on-the-image-editor)
+[How to load the image annotated with shapes and text on the Image Editor](https://www.syncfusion.com/kb/11215/how-to-load-the-image-annotated-with-shapes-and-text-on-the-image-editor)

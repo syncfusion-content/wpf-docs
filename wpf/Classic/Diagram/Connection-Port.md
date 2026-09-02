@@ -1,15 +1,16 @@
 ---
 layout: post
-title: Connection Port in WPF Diagram Control | Syncfusion
-description: Learn here all about Connection Port support in Syncfusion WPF Diagram (classic) control, its elements and more details.
+title: Connection Port in WPF Diagram | Syncfusion®
+
+description: Learn about connection ports in the Syncfusion® WPF Diagram, including port creation, customization, visibility, drag support, and connections.
 platform: wpf
 control: Diagram
 documentation: ug
 ---
 
-# Connection Port in WPF Diagram (classic)
+# Connection Port in WPF Diagram
 
-Essential Diagram WPF provides the ability to define custom ports for making connections. The ConnectionPort class can be used for defining custom ports on the nodes. Any number of ports can be defined on a node. By default every node has a center port.  
+WPF Diagram provides the ability to define custom ports for making connections. The ConnectionPort class can be used for defining custom ports on the nodes. Any number of ports can be defined on a node. By default every node has a center port.  
 
 ConnectionPort has the following properties:
 

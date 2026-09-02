@@ -1,22 +1,23 @@
 ---
 layout: post
-title: Diagram Model in WPF Diagram Control | Syncfusion
-description: Learn here all about Diagram Model support in Syncfusion WPF Diagram (classic) control, its elements and more details.
+title: Diagram Model in WPF Diagram | Syncfusion®
+
+description: Learn about the Diagram Model in the Syncfusion® WPF Diagram, including layouts, data binding, spacing, orientation, and table settings.
 platform: wpf
 control: Diagram
 documentation: ug
 ---
 
-# Diagram Model in WPF Diagram (classic)
+# Diagram Model in WPF Diagram
 
 A model represents data for an application and contains the logic for adding, accessing, and manipulating the data. Nodes and connectors are added to the Diagram control using the Model property. A predefined layout can be applied using the LayoutType property of the DiagramModel. The position of the nodes can be manually specified.
 
 {%seealso%}
 
-* Bind data to Diagram Control Refer Concepts and Features -> Diagram Model -> Bind data to Diagram Control
-* Tree Spacing Refer Concepts and Features -> Diagram Model -> Tree Spacing
-* Tree Orientation Refer Concepts and Features -> Diagram Model -> Tree Orientation
-* Table Expand Mode Refer Concepts and Features -> Diagram Model -> Table Expand Mode
+* Bind data to WPF Diagram Control Refer Concepts and Features -> WPF Diagram Model -> Bind data to WPF Diagram Control
+* Tree Spacing Refer Concepts and Features -> WPF Diagram Model -> Tree Spacing
+* Tree Orientation Refer Concepts and Features -> WPF Diagram Model -> Tree Orientation
+* Table Expand Mode Refer Concepts and Features -> WPF Diagram Model -> Table Expand Mode
 {%endseealso%}
 
 
@@ -377,7 +378,7 @@ RightLeft Orientation
 
 ## Clear Nodes and Connections
 
-Essential Diagram WPF allows you to clear the nodes and connections added to the diagram. It can be done by clearing the collections of nodes and connections from DiagramModel.
+WPF Diagram allows you to clear the nodes and connections added to the diagram. It can be done by clearing the collections of nodes and connections from DiagramModel.
 
 
 
@@ -569,7 +570,7 @@ Me(0).RegionalSales.Add(New RegionSale() With {.Name = "San Fransico", .Revenue 
 
 
 
-Data bound to the Diagram Control
+Data bound to the WPF Diagram Control
 {:.caption}
 
 ## Cyclic path in Hierarchical-Tree Layout
@@ -598,7 +599,7 @@ No</td></tr>
 
 To specify a cyclic path is as giving input to the Hierarchical-Tree layout. EnableCycleDetection property must be set to ‘True’. Enabling this property checks for cycles and makes connections accordingly.
 
-N> The EnableCycleDetection property takes effect only for the Hierarchical-Tree layout type of the Diagram Model.
+N> The EnableCycleDetection property takes effect only for the Hierarchical-Tree layout type of the WPF Diagram Model.
 
 The following code example illustrates how to set the EnableCycleDetection property.
 

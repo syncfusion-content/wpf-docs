@@ -1,22 +1,24 @@
 ---
 layout: post
-title: Appearance in WPF Color Palette control | Syncfusion®
-description: Learn here all about Appearance support in Syncfusion® WPF Color Palette (SfColorPalette) control and more.
+title: Appearance in WPF SfColorPalette | Syncfusion®
+description: Customize the look and feel of the Syncfusion WPF SfColorPalette control using built-in themes, custom templates, and styling options.
 platform: wpf
 control: SfColorPalette
 documentation: ug
 ---
 
-# Appearance in WPF Color Palette (SfColorPalette)
+# Appearance in WPF SfColorPalette
 
 This section explains different UI customization options available in [ColorPalette](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Media.SfColorPalette.html) control.
 
 ## Setting the Foreground
 
-You can change the foreground color for `ColorPalette` by setting the `Foreground` property. The default color value of `Foreground` property is `Gray`.
+You can change the foreground color of the `SfColorPalette` by setting the `Foreground` property. The default value of the `Foreground` property is `Gray`.
+
+> The C# sample below requires the `using System.Windows.Media;` namespace for `Brushes`.
 
 {% tabs %}
-{% highlight xaml %}
+{% highlight XAML %}
 
 <syncfusion:SfColorPalette Foreground="Red"
                            Name="sfColorPalette"/>
@@ -36,10 +38,12 @@ N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-sfcolorpal
 
 ## Setting the Background
 
-You can change the background color for `ColorPalette` by setting the `Background` property. The default color value of `Background` property is `Snow`.
+You can change the background color of the `SfColorPalette` by setting the `Background` property. The default value of the `Background` property is `Snow`.
+
+> The C# sample below requires the `using System.Windows.Media;` namespace for `Brushes`.
 
 {% tabs %}
-{% highlight xaml %}
+{% highlight XAML %}
 
 <syncfusion:SfColorPalette Background="Red"
                            Name="sfColorPalette"/>
@@ -57,12 +61,14 @@ sfColorPalette.Background = Brushes.Red;
 
 N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-sfcolorpalette-examples/tree/master/Samples/Appearance) in GitHub
 
-## Change flow direction
+## Changing the Flow Direction
 
-You can change the flow direction of the `ColorPalette` layout from right to left by setting the `FlowDirection` property value as `RightToLeft`. The Default value of `FlowDirection` property is `LeftToRight`.
+You can change the flow direction of the `SfColorPalette` layout to right-to-left by setting the `FlowDirection` property value to `RightToLeft`. The default value of the `FlowDirection` property is `LeftToRight`.
+
+> The C# sample below requires the `using System.Windows;` namespace for `FlowDirection`.
 
 {% tabs %}
-{% highlight xaml %}
+{% highlight XAML %}
 
 <syncfusion:SfColorPalette FlowDirection="RightToLeft"
                            Name="sfColorPalette"/>
@@ -82,7 +88,7 @@ N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-sfcolorpal
 
 ## Theme
 
-ColorPalette supports various built-in themes. Refer to the below links to apply themes for the ColorPalette,
+ColorPalette supports various built-in themes. Refer to the links below to apply themes for the ColorPalette:
 
   * [Apply theme using SfSkinManager](https://help.syncfusion.com/wpf/themes/skin-manager)
 	

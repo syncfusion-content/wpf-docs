@@ -9,17 +9,17 @@ documentation: ug
 
 # Scroll Limit in WPF SfDiagram
 
-The scroll limit allows you to define the scrollable region of the Diagram while mouse scrolling on the page. The [ScrollLimit](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ScrollSettings.html#Syncfusion_UI_Xaml_Diagram_ScrollSettings_ScrollLimit) property of scroll settings helps to limit the scrolling area. It includes the following options:
+The scroll limit allows you to define the scrollable region of the Diagram while scrolling the page with the mouse. The [ScrollLimit](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ScrollSettings.html#Syncfusion_UI_Xaml_Diagram_ScrollSettings_ScrollLimit) property of the ScrollSettings class helps limit the scrolling area. It includes the following options:
 
 * **Infinity**: Allows you to scroll in all directions without any restriction.
 * **Diagram**: Allows you to scroll within the Diagram content.
 * **Limited**: Allows you to scroll within the specified area.
 
-The default operation is `Diagram`.
+The default value is `Diagram`.
 
 {% tabs %}
 {% highlight xaml %}
-<!--Initialize the Sfdiagram-->
+<!--Initialize the SfDiagram-->
 <syncfusion:SfDiagram x:Name="diagram">
     <!--Initialize the scroll setting class with scroll limit-->
     <syncfusion:SfDiagram.ScrollSettings>
@@ -27,7 +27,7 @@ The default operation is `Diagram`.
     </syncfusion:SfDiagram.ScrollSettings>
 </syncfusion:SfDiagram>
 {% endhighlight %}
-{% highlight C# %}
+{% highlight c# %}
 //Initialize the SfDiagram
 SfDiagram diagram = new SfDiagram();
 //Initialize the scroll settings with scroll limit
@@ -55,11 +55,11 @@ The following table lists key gestures and their actions:
 | Page Up | Moves the diagram page to the topmost position. | 
 | Page Down | Moves the diagram page to the bottommost position. |
 
-N> When the `ScrollLimit` is set to Infinity, the Navigation keys does not result in any navigation on the diagram page.
+N> When the `ScrollLimit` is set to Infinity, the navigation keys do not result in any navigation on the diagram page.
 
 ## Scrollable area
 
-You can restrict scrolling beyond any particular rectangle area by using the `ScrollableArea` property of ScrollSettings. To restrict scrolling beyond any custom region,you have to set the `ScrollLimit` to Limited. The default value is Rect.Empty.
+You can restrict scrolling beyond a specific rectangular area by using the `ScrollableArea` property of ScrollSettings. To restrict scrolling beyond any custom region, you have to set the `ScrollLimit` to Limited. The default value is Rect.Empty.
 
 {% tabs %}
 {% highlight xaml %}
@@ -71,10 +71,10 @@ You can restrict scrolling beyond any particular rectangle area by using the `Sc
     </syncfusion:SfDiagram.ScrollSettings>
 </syncfusion:SfDiagram>
 {% endhighlight %}
-{% highlight C# %}
+{% highlight c# %}
 //Initialize the SfDiagram
 SfDiagram diagram = new SfDiagram();
-//Initialize the scroll settings with scroll limit and scrollabl area value
+//Initialize the scroll settings with scroll limit and scrollable area value
 diagram.ScrollSettings = new ScrollSettings()
 {
     ScrollLimit = ScrollLimit.Limited,

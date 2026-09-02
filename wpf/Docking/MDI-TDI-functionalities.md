@@ -1,21 +1,21 @@
 ---
 layout: post
-title: MDI/TDI functionalities in WPF Docking control | Syncfusion®
-description: Learn here all about MDI/TDI functionalities support in Syncfusion® WPF Docking (DockingManager) control and more.
+title: MDI/TDI functionalities in WPF DockingManager Control | Syncfusion®
+description: The MDI/TDI functionalities in DockingManager let you work with multiple document interface and tabbed document interface child windows.
 platform: wpf
 control: DockingManager
 documentation: ug
 ---
 
-# MDI/TDI functionalities in WPF Docking (DockingManager)
+# MDI/TDI functionalities in WPF Docking Control
 
-The MDI and TDI functionalities are applicable for the Document window in the DockingManager. So Document window can be displayed in both Multiple Document Interface and Tabbed Document Interface.
+The MDI and TDI functionalities are applicable for the Document window in the WPF Docking Control. So Document window can be displayed in both Multiple Document Interface and Tabbed Document Interface.
 
 To change mode for the Document window, set the property [ContainerMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_ContainerMode) with its respective values.
 
 By default, the document state window is in TDI mode, that display child as tabbed document.
 
-N> When the window state is in MDI, child of docking manager will be hosted inside the DocumentContainer. So, user can customize child using DocumentContainer. Refer to this [documentation](https://help.syncfusion.com/wpf/tabbed-mdi-form/getting-started) for customizing DocumentContainer.
+N> When the window state is in MDI, child of WPF Docking Control will be hosted inside the DocumentContainer. So, user can customize child using DocumentContainer. Refer to this [documentation](https://help.syncfusion.com/wpf/tabbed-mdi-form/getting-started) for customizing DocumentContainer.
 
 {% tabs %}
 
@@ -144,7 +144,7 @@ DocumentContainer.GetMDIWindowState(Content1)
 
 ## Detecting the maximized state of the MDI window
 
-Maximized state of the MDI Container can get by [IsInMDIMaximizedState](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_IsInMDIMaximizedState) property of DocumentContainer. The container can be fetched from the DockingManager using the [DocContainer](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_DocContainer) property.
+Maximized state of the MDI Container can get by [IsInMDIMaximizedState](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_IsInMDIMaximizedState) property of DocumentContainer. The container can be fetched from the WPF Docking Control using the [DocContainer](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_DocContainer) property.
 
 {% tabs %}
 
@@ -164,7 +164,7 @@ Dim isMdiMaximized As Boolean = TryCast(DockingManager1.DocContainer, DocumentCo
 
 ## Resizing MDI
 
-MDI document window can be able to resize using the navigation arrows. To restrict resizing the MDI document windows, disable the Property [IsAllowMDIResize](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DocumentContainer.html#Syncfusion_Windows_Tools_Controls_DocumentContainer_IsAllowMDIResize) of the [DocumentContainer](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DocumentContainer.html) that can be get using the [DocContainer](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_DocContainer) property of the DockingManager. By default, its values is `True`.
+MDI document window can be able to resize using the navigation arrows. To restrict resizing the MDI document windows, disable the Property [IsAllowMDIResize](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DocumentContainer.html#Syncfusion_Windows_Tools_Controls_DocumentContainer_IsAllowMDIResize) of the [DocumentContainer](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DocumentContainer.html) that can be get using the [DocContainer](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_DocContainer) property of the WPF Docking Control. By default, its values is `True`.
 
 {% tabs %}
 
@@ -210,7 +210,7 @@ this.DockingManager1.CloseTabOnMiddleClick = true;
 
 ## Different Keyboard Navigation Modes
 
-DockingManager allows to navigate between children (Both  TDI and MDI) windows easily using the keyboard keys with combination of `CTRL` `+` `TAB` in five different modes by [SwitchMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_SwitchMode) property of the DockingManager.
+WPF Docking Control allows to navigate between children (Both  TDI and MDI) windows easily using the keyboard keys with combination of `CTRL` `+` `TAB` in five different modes by [SwitchMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_SwitchMode) property of the WPF Docking Control.
 
 There are five switch modes.
 
@@ -331,7 +331,7 @@ DockingManager1.SwitchMode =SwitchMode.VS2005
 
 ## Setting MDI Layout
 
-DockingManager allows to set the different layout for the MDI windows with the different [MDILayout](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.MDILayout.html) values such as `Horizontal` , `Vertical` and `Cascade` layout through the [SetLayout](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DocumentContainer.html#Syncfusion_Windows_Tools_Controls_DocumentContainer_SetLayout_Syncfusion_Windows_Tools_Controls_MDILayout_) method of DocumentContainer.
+WPF Docking Control allows to set the different layout for the MDI windows with the different [MDILayout](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.MDILayout.html) values such as `Horizontal` , `Vertical` and `Cascade` layout through the [SetLayout](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DocumentContainer.html#Syncfusion_Windows_Tools_Controls_DocumentContainer_SetLayout_Syncfusion_Windows_Tools_Controls_MDILayout_) method of DocumentContainer.
 
 `Horizontal` - Arranges the MDI windows horizontally.
 
@@ -416,7 +416,7 @@ End Sub
 
 ## Closing MDI Windows
 
-To enable or disable closing functionality of the MDI windows, set [CanClose](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockItem.html#Syncfusion_Windows_Tools_Controls_DockItem_CanClose), an attached property of DockingManager, to its respective value. By default, its value is `True`.
+To enable or disable closing functionality of the MDI windows, set [CanClose](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockItem.html#Syncfusion_Windows_Tools_Controls_DockItem_CanClose), an attached property of WPF Docking Control, to its respective value. By default, its value is `True`.
 
 {% tabs %}
 
@@ -483,7 +483,7 @@ TDILayoutPanel.SetTDIIndex(Content1,0)
 
 ## Drag / Drop support in TDI
 
-The TDI document index can be changed by dragging and dropping it like Visual Studio. This functionality can be enabled or disabled through the property [IsTDIDragDropEnabled](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_IsTDIDragDropEnabled) of DockingManager.
+The TDI document index can be changed by dragging and dropping it like Visual Studio. This functionality can be enabled or disabled through the property [IsTDIDragDropEnabled](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_IsTDIDragDropEnabled) of WPF Docking Control.
 
 {% tabs %}
 
@@ -645,7 +645,7 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-
 
 ## Customizing Close Menu
 
-Menu items like `Close`, `CloseAll` and `CloseAllButThis` are available for the document window when two or more documents used in the DockingManager. To collapse the visibility of these menu item, set the property [ShowCloseMenuItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockItem.html#Syncfusion_Windows_Tools_Controls_DockItem_ShowCloseMenuItem), [ShowCloseAllMenuItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockItem.html#Syncfusion_Windows_Tools_Controls_DockItem_ShowCloseAllMenuItem) and [ShowCloseAllButThisMenuItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockItem.html#Syncfusion_Windows_Tools_Controls_DockItem_ShowCloseAllButThisMenuItem) as `False`.
+Menu items like `Close`, `CloseAll` and `CloseAllButThis` are available for the document window when two or more documents used in the WPF Docking Control. To collapse the visibility of these menu item, set the property [ShowCloseMenuItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockItem.html#Syncfusion_Windows_Tools_Controls_DockItem_ShowCloseMenuItem), [ShowCloseAllMenuItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockItem.html#Syncfusion_Windows_Tools_Controls_DockItem_ShowCloseAllMenuItem) and [ShowCloseAllButThisMenuItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockItem.html#Syncfusion_Windows_Tools_Controls_DockItem_ShowCloseAllButThisMenuItem) as `False`.
 
 {% tabs %}
 
@@ -748,7 +748,7 @@ In TDI document, new tab group can be created by dragging the tab item into the 
 
 ### Adding a new Tab using NewButtonClick event
 
-The `NewButtonClick` event is used to notify DockingManager when a new button (+) is clicked. By utilizing this event, a new tab can be added at runtime.
+The `NewButtonClick` event is used to notify WPF Docking Control when a new button (+) is clicked. By utilizing this event, a new tab can be added at runtime.
 
 {% tabs %}
 
@@ -793,7 +793,7 @@ private void dockingManager_NewButtonClick(object sender, EventArgs e)
 
 ## Disable TabGroups
 
-Vertical and Horizontal Tab Grouping feature can be enabled or disabled using the property [TabGroupEnabled](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_TabGroupEnabled) in DockingManager. 
+Vertical and Horizontal Tab Grouping feature can be enabled or disabled using the property [TabGroupEnabled](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_TabGroupEnabled) in WPF Docking Control. 
  
 To disabling Tab Groups, set [TabGroupEnabled](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_TabGroupEnabled) as `False`. So it does not display "New Horizontal Tab Group" and "New Vertical Tab Group" context menu items even when [ShowHorizontalTabGroupMenuItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockItem.html#Syncfusion_Windows_Tools_Controls_DockItem_ShowHorizontalTabGroupMenuItem) is true. Drag and drop support to create new tab group is also restricted.
 
@@ -815,7 +815,7 @@ SyncDockingManager.TabGroupEnabled = false;
 
 ## VS2010 Behavior of TDI
 
-TDI document of DockingManager can be changed to Float while dragging its TDI header. This functionality can be enabled or disabled using the property [IsVs2010DraggingEnabled](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_IsVS2010DraggingEnabled). By default, its value is `True`. 
+TDI document of WPF Docking Control can be changed to Float while dragging its TDI header. This functionality can be enabled or disabled using the property [IsVs2010DraggingEnabled](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_IsVS2010DraggingEnabled). By default, its value is `True`. 
 
 ![WPF Docking Document Window Floated by Dragging](MDI_TDIfunctionalities_images/wpf-docking-document-window-floated-by-dragging.png)
 
@@ -844,7 +844,7 @@ SyncDockingManager.IsVS2010DraggingEnabled = false;
 
 ## TDI Header Renaming Support
 
-To enable the functionality of editing the TDI document header when double click on document header at runtime, set the property [EnableDocumentTabHeaderEdit](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_EnableDocumentTabHeaderEdit) of the DockingManager as `True`. By default, its value is `False`.
+To enable the functionality of editing the TDI document header when double click on document header at runtime, set the property [EnableDocumentTabHeaderEdit](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_EnableDocumentTabHeaderEdit) of the WPF Docking Control as `True`. By default, its value is `False`.
 
 {% tabs %}
 
@@ -864,7 +864,7 @@ SyncDockingManager.EnableDocumentTabHeaderEdit = true;
 
 ## Hiding TDI Header
 
-To hide the TDI document header when a single document child present in a DockingManager set the property [HideTDIHeaderOnSingleChild](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_HideTDIHeaderOnSingleChild) as `True`. By default its value is `False`.
+To hide the TDI document header when a single document child present in a WPF Docking Control set the property [HideTDIHeaderOnSingleChild](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_HideTDIHeaderOnSingleChild) as `True`. By default its value is `False`.
 
 {% tabs %}
 
@@ -890,7 +890,7 @@ SyncDockingManager.HideTDIHeaderOnSingleChild = true;
 
 ## Pin and Unpin tab items
 
-The following section explains the Pin and Unpin tab items in DockingManager.
+The following section explains the Pin and Unpin tab items in WPF Docking Control.
 
 ### Enabling/disabling pinning behavior 
 
@@ -1012,7 +1012,7 @@ If the property [AllowPin](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows
 
 #### Functionality of PinButton
 
-When the pin button of the document tab item is visible, the corresponding document tab item can be pinned or unpinned from the DockingManager. When the corresponding document tab item is pinned, it will be inserted at first position of the document tab items collection(if the pinned tab item collection has zero count. Otherwise, the pinned tab item will be added to the existing collection). When the document tab item is unpinned, it will be removed from the pinned tab item collection and added to the first position of the unpinned tab item collection.
+When the pin button of the document tab item is visible, the corresponding document tab item can be pinned or unpinned from the WPF Docking Control. When the corresponding document tab item is pinned, it will be inserted at first position of the document tab items collection(if the pinned tab item collection has zero count. Otherwise, the pinned tab item will be added to the existing collection). When the document tab item is unpinned, it will be removed from the pinned tab item collection and added to the first position of the unpinned tab item collection.
 
 ### Pin and Unpin the tab items programmatically
 

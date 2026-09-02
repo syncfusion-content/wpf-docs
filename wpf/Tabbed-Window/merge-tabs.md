@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Merge Tabs Between Windows in WPF Tabbed Window | Syncfusion
-description: Learn how to detach tabs into floating windows and validate tab movement between tabbed windows by using tear-off support and the PreviewTabMerge event.
+description: Detach tabs into floating windows and merge tabs between tabbed windows in the Syncfusion WPF Tabbed Window control using tear-off and merge events.
 platform: wpf
 control: SfTabControl
 documentation: ug
@@ -28,13 +28,13 @@ When drag‑and‑drop is enabled:
 - The floating window behaves like a regular tabbed window
 - If all tabs are removed from a floating window, the window closes automatically
 
-The floating window supports resizing, minimizing, and all standard tab features.
+The floating window supports resizing, minimizing, and all standard tab features. It is automatically disposed when all of its tabs are removed.
 
 {% tabs %}
 
 {% highlight XAML %}
 
-<syncfusion:SfChromeslessWindow Title="Main Window" WindowType="Tabbed">
+<syncfusion:SfChromelessWindow Title="Main Window" WindowType="Tabbed">
     <syncfusion:SfTabControl AllowDragDrop="True">
         <syncfusion:SfTabItem Header="Document 1" CloseButtonVisibility="Visible">
             <TextBlock Text="Drag this tab outside to tear it off" />
@@ -43,7 +43,7 @@ The floating window supports resizing, minimizing, and all standard tab features
             <TextBlock Text="Each tab can be independently floated" />
         </syncfusion:SfTabItem>
     </syncfusion:SfTabControl>
-</syncfusion:SfChromeslessWindow>
+</syncfusion:SfChromelessWindow>
 
 {% endhighlight %}
 

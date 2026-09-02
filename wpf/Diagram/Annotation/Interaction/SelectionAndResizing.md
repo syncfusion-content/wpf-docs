@@ -28,7 +28,7 @@ Selection of an annotation can be enabled by using the [`Constraints`](https://h
                                 
 {% endhighlight %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 //Initialize the AnnotationCollection
 Annotations = new ObservableCollection<IAnnotation>()
@@ -64,7 +64,7 @@ Resizing an annotation can be enabled by using the `Constraints` property of `An
 </syncfusion:AnnotationCollection>
                                 
 {% endhighlight %}
-{% highlight C# %}
+{% highlight c# %}
 
 //Initialize the Annotation Collection
 Annotations = new ObservableCollection<IAnnotation>()
@@ -83,4 +83,4 @@ Annotations = new ObservableCollection<IAnnotation>()
 ![WPF Diagram Annotation Resizing](Annotation_images/wpf-diagram-annotation-resizing.gif)
 
 ## See Also
-[How to highlight the node when selecting an annotation of the node and vice versa in the WPF Diagram (SfDiagram)?](https://support.syncfusion.com/kb/article/18245/how-to-highlight-the-node-when-selecting-an-annotation-of-the-node-and-vice-versa-in-the-wpf-diagram-sfdiagram)
+[How to highlight the node when selecting an annotation of the node and vice versa in the WPF SfDiagram ?](https://support.syncfusion.com/kb/article/18245/how-to-highlight-the-node-when-selecting-an-annotation-of-the-node-and-vice-versa-in-the-wpf-diagram-sfdiagram)

@@ -1,17 +1,17 @@
 ---
 layout: post
-title: Getting Started with WPF Tile View control | Syncfusion®
-description: Learn here about getting started with Syncfusion® Essential Studio® WPF Tile View control, its elements and more.
-platform: WPF
+title: Getting Started with WPF TileView | Syncfusion®
+description: Learn how to get started with the Syncfusion WPF TileView control, its elements, and additional details.
+platform: wpf
 control: TileViewControl
 documentation: ug
 ---
 
-# Getting Started with WPF Tile View
+# Getting Started with WPF Tile View Control
 
-This section describes how to create a [TileViewControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.TileViewControl.html) control in a WPF application and overview of its basic functionalities.
+This section describes how to create a [WPF Tile View Control](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.TileViewControl.html) in a WPF application and overview of its basic functionalities.
 
-## Structure of TileViewControl
+## Structure of WPF Tile View Control
 
 ![Structure of WPF TileViewControl](Getting-Started_images/Structure.png)
 
@@ -19,21 +19,21 @@ This section describes how to create a [TileViewControl](https://help.syncfusion
 
 Refer to the [Control Dependencies](https://help.syncfusion.com/wpf/control-dependencies#tileview) section to get the list of assemblies or NuGet package that needs to be added as a reference to use the control in any application.
 
-Refer to this [documentation](https://help.syncfusion.com/wpf/visual-studio-integration/nuget-packages) to find more details about installing nuget packages in a WPF application.
+Refer to this [documentation](https://help.syncfusion.com/wpf/installation/install-nuget-packages) to find more details about installing nuget packages in a WPF application.
 
-## Adding WPF TileViewControl via designer
+## Adding WPF Tile View Control via designer
 
-1. The `TileViewControl` can be added to an application by dragging it from the toolbox to a designer view. The following dependent assemblies will be added automatically:
+1. The `WPF Tile View Control` can be added to an application by dragging it from the toolbox to a designer view. The following dependent assemblies will be added automatically:
 
     * Syncfusion.Shared.WPF
 
 ![wpf TileViewControl added by designer](Getting-Started_images/Getting-Started_img2.png)
 
-2. Set the properties for `TileViewControl` in design mode using the SmartTag feature.
+2. Set the properties for `WPF Tile View Control` in design mode using the SmartTag feature.
 
-## Adding WPF TileViewControl via XAML
+## Adding WPF Tile View Control via XAML
 
-To add the `TileViewControl` manually in XAML, follow these steps:
+To add the `WPF Tile View Control` manually in XAML, follow these steps:
 
 1. Create a new WPF project in Visual Studio.
 
@@ -41,7 +41,7 @@ To add the `TileViewControl` manually in XAML, follow these steps:
 
     * Syncfusion.Shared.WPF
 
-3. Import Syncfusion<sup>®</sup> WPF schema **http://schemas.syncfusion.com/wpf**, and declare the `TileViewControl` in XAML page.
+3. Import Syncfusion<sup>®</sup> WPF schema **http://schemas.syncfusion.com/wpf**, and declare the `WPF Tile View Control` in XAML page.
 
 {% capture codesnippet1 %}
 {% tabs %}
@@ -70,9 +70,9 @@ To add the `TileViewControl` manually in XAML, follow these steps:
 {% endcapture %}
 {{ codesnippet1 | OrderList_Indent_Level_1 }}
 
-## Adding WPF TileViewControl via C#
+## Adding WPF Tile View Control via C#
 
-To add the `TileViewControl` manually in C#, follow these steps:
+To add the `WPF Tile View Control` manually in C#, follow these steps:
 
 1. Create a new WPF application via Visual Studio.
 
@@ -93,7 +93,7 @@ using Syncfusion.Windows.Shared;
 {% endcapture %}
 {{ codesnippet2 | OrderList_Indent_Level_1 }}
 
-4. Create an instance of `TileViewControl`, and add it to the window.
+4. Create an instance of `WPF Tile View Control`, and add it to the window.
 
 {% capture codesnippet3 %}
 {% tabs %}
@@ -115,7 +115,7 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-
 
 ## Populating items using TileViewItem
 
-You can add the tileview items inside the control by adding the [TileViewItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.TileViewItem.html) into the `TileViewControl.Items` collection property.
+You can add the TileViewItem's inside the control by adding the [TileViewItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.TileViewItem.html) into the `TileViewControl.Items` collection property.
 
 {% tabs %}
 {% highlight XAML %}
@@ -149,7 +149,7 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-
 
 ## Populating items using collection binding
 
-You can populate items to the `TileViewControl` by setting the collection value to the `ItemsSource` property.
+You can populate items to the `WPF Tile View Control` by setting the collection value to the `ItemsSource` property.
 
 {% tabs %}
 {% highlight C# %}
@@ -287,7 +287,7 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-
 
 ## Selected item changed notification
 
-The selected item changed in `TileViewControl` can be examined using `SelectionChanged` event. The `SelectionChanged` event contains the old and newly selected item in the `RemovedItems` and `AddedItems` properties.
+The selected item changed in `WPF Tile View Control` can be examined using `SelectionChanged` event. The `SelectionChanged` event contains the old and newly selected item in the `RemovedItems` and `AddedItems` properties.
 
 {% tabs %}
 {% highlight XAML %}
@@ -324,7 +324,7 @@ private void TileViewControl_SelectionChanged(object sender, SelectionChangedEve
 
 ## Arrange TileViewItem in rows and columns
 
-You can change the number of tileview items displayed in view by setting the value to [RowCount](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.TileViewControl.html#Syncfusion_Windows_Shared_TileViewControl_RowCount) and [ColumnCount](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.TileViewControl.html#Syncfusion_Windows_Shared_TileViewControl_ColumnCount) properties. The default value of `RowCount` and `ColumnCount` properties is `0`.
+You can change the number of TileViewItem's displayed in view by setting the value to [RowCount](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.TileViewControl.html#Syncfusion_Windows_Shared_TileViewControl_RowCount) and [ColumnCount](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.TileViewControl.html#Syncfusion_Windows_Shared_TileViewControl_ColumnCount) properties. The default value of `RowCount` and `ColumnCount` properties is `0`.
 
 {% tabs %}
 {% highlight XAML %}
@@ -494,7 +494,7 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-
 
 ## Theme
 
-TileViewControl supports various built-in themes. Refer to the below links to apply themes for the TileViewControl,
+The WPF Tile View Control supports various built-in themes. Refer to the links below to apply themes,
 
   * [Apply theme using SfSkinManager](https://help.syncfusion.com/wpf/themes/skin-manager)
 	

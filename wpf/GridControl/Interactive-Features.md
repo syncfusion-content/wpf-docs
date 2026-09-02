@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Interactive Features in WPF GridControl | Syncfusion®
-description: Learn about Interactive Features support in Syncfusion® Essential Studio® WPF GridControl, its elements and more details.
+title: Interactive Features in WPF Excel-like Grid | Syncfusion®
+description: Enable interactive features in Excel-like Grid, including column drag and drop, Excel-like cell drag and drop, and row and column resizing.
 platform: wpf
-control: GridControl
+control: Excel-like Grid
 documentation: ug
 ---
 
-# Interactive Features in WPF GridControl
+# Interactive Features in WPF Excel-like Grid
 
 This section explains the Resizing the columns, Drag and drop the columns and cells of WPF GridControl.
 

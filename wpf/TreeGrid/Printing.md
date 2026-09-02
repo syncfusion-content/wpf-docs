@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Printing in WPF TreeGrid control | Syncfusion®
-description: Learn here all about Printing support in Syncfusion® WPF TreeGrid (SfTreeGrid) control, its elements and more.
+title: Printing in WPF SfTreeGrid | Syncfusion®
+description: Printing in SfTreeGrid prints grid data with customizable layouts, formatting, and page settings for professional output.
 platform: wpf
 control: SfTreeGrid
 documentation: ug
 ---
 
-# Printing in WPF TreeGrid (SfTreeGrid)
+# Printing in WPF SfTreeGrid
 
 The printing feature can be achieved by exporting the tree grid to PDF and printing the exported PDF using the [PdfViewerControl](https://help.syncfusion.com/wpf/pdf-viewer/printing-pdf-files) .
 

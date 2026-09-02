@@ -1,13 +1,13 @@
 ---
 layout: post
-title: About WPF Notify Icon control | Syncfusion
-description: Learn here all about introduction of Syncfusion WPF Notify Icon control, its elements and more details.
+title: About Syncfusion® WPF NotifyIcon Control | Syncfusion®
+description: Learn about the introduction of Syncfusion® Essential Studio WPF NotifyIcon control and discover its features, notification capabilities, and more details.
 platform: wpf
 control: NotifyIcon
 documentation: ug
 ---
 
-# WPF Notify Icon Overview
+# About Syncfusion® WPF NotifyIcon Control
 
 Notify Icon control is implemented with different animations and shape support. It allows you to add a icon in the notification tray of the system.
 

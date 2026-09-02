@@ -52,13 +52,10 @@ To add the [EditControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.E
 1. Create a new WPF project in Visual Studio.
 2. Add the following required assembly references to the project:
 
-        * Syncfusion.Edit.WPF
-
-        * Syncfusion.GridCommon.WPF
-
-        * Syncfusion.Shared.WPF
-
-        * Syncfusion.Tools.WPF
+    * Syncfusion.Edit.WPF
+    * Syncfusion.GridCommon.WPF
+    * Syncfusion.Shared.WPF
+    * Syncfusion.Tools.WPF
 
 3. Import Syncfusion WPF schema **http://schemas.syncfusion.com/wpf**, and declare the EditControl in XAML page.
 
@@ -106,16 +103,6 @@ To add the [EditControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.E
    * `Syncfusion.Shared.WPF`
    * `Syncfusion.Tools.WPF`
 3. Include the required namespace in your code-behind file.
-
-        * Syncfusion.Edit.WPF
-
-        * Syncfusion.GridCommon.WPF
-
-        * Syncfusion.Shared.WPF
-
-        * Syncfusion.Tools.WPF
-
-3. Include the required namespace.
 
 {% capture codesnippet2 %}
 {% tabs %}

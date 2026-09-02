@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started with WPF Digital Gauge
 
-This section explains the steps required to configure the **SfDigitalGauge** and also explains how to add basic elements of **SfDigitalGauge** through various APIs available within it.
+This section explains the steps required to configure the **WPF Digital Gauge** and describes how to add its basic elements using the available APIs.
 
 ## Adding gauge references
 
@@ -72,7 +72,7 @@ Initialize the digital gauge control.
 
 {% endtabs %}
 
-Run the above code, and the default **SfDigitalGauge** will be displayed as follows. The UI of the digital gauge can be customized by adding segments and passing values, which will be explained in the next section.
+Run the above code, and the default **WPF Digital Gauge** will be displayed as follows. The UI of the digital gauge can be customized by adding segments and passing values, which will be explained in the next section.
 
 ## Displaying Values 
 
@@ -194,14 +194,14 @@ You can find the complete getting started sample from this [`link`](https://git
 
 ## Theme
 
-SfDigitalGauge supports various built-in themes. Refer to the below links to apply themes for the SfDigitalGauge,
+WPF Digital Gauge supports various built-in themes. Refer to the below links to apply themes for the WPF Digital Gauge,
 
   * [Apply theme using SfSkinManager](https://help.syncfusion.com/wpf/themes/skin-manager)
 	
   * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
 
-  ![Setting theme to WPF SfDigitalGauge](Getting-Started_images/Theme.png)
+  ![Setting theme to WPF Digital Gauge](Getting-Started_images/Theme.png)
 
 ## See also
 
-[How to apply themes for SfDigitalGauge](https://support.syncfusion.com/kb/article/2842/how-to-apply-themes-for-sfdigitalgauge)
+[How to apply themes for WPF Digital Gauge](https://support.syncfusion.com/kb/article/2842/how-to-apply-themes-for-sfdigitalgauge)

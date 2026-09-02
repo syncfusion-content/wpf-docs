@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Changing Currency Value in WPF Currency TextBox control | Syncfusion®
-description: Learn about Changing Currency Value support in Syncfusion® WPF Currency TextBox control, its elements and more details.
-platform: WPF
+title: Changing Currency Value in WPF CurrencyTextBox | Syncfusion®
+description: Update the currency value of the Syncfusion WPF CurrencyTextBox control programmatically, by spinner buttons, or via keyboard interactions.
+platform: wpf
 control: CurrencyTextBox 
 documentation: ug
 ---
 
-# Changing Currency Value in WPF Currency TextBox
+# Changing Currency Value in WPF CurrencyTextBox
 
 The [CurrencyTextBox](https://www.syncfusion.com/wpf-ui-controls/currency-textbox) allows the user to change the value using the [Value](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.CurrencyTextBox.html#Syncfusion_Windows_Shared_CurrencyTextBox_Value) property.
 
@@ -48,7 +48,9 @@ ViewModel.cs
 {% tabs %}
 {% highlight C# %}
 
-class ViewModel : NotificationObject
+using Syncfusion.Windows.Shared;
+
+public class ViewModel : NotificationObject
 {
     private double myValue;
     public double MyValue
@@ -70,9 +72,9 @@ class ViewModel : NotificationObject
 
 ![WPF CurrencyTextBox displays Binding Value](Changing-Currency-Value_images/wpf-currency-textbox-binding-value.png)
 
-## Change currency value by pasting the clipboard's text
+## Change Currency Value by Pasting the Clipboard's Text
 
-By default, `CurrencyTextBox` simply replaces the whole value by copied value with the current number format. If you want to replace or insert the copied value on specific place, use the [PasteMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.EditorBase.html#Syncfusion_Windows_Shared_EditorBase_PasteMode) property value as `Advanced`. The default value of `PasteMode` property is `Default`. 
+By default, `CurrencyTextBox` simply replaces the whole value with the copied value using the current number format. If you want to replace or insert the copied value at a specific position, set the [PasteMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.EditorBase.html#Syncfusion_Windows_Shared_EditorBase_PasteMode) property to `Advanced`. The default value of `PasteMode` is `Default` (always replace the entire value, regardless of the cursor position or selection).
 
 The following table explains the pasting behaviour in `Advanced` paste mode,
 
@@ -152,7 +154,7 @@ currencyTextBox.ShowSpinButton = true;
 
 ## Value Changed Event
 
-The `CurrencyTextBox` control can notify changes in value through the [ValueChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.CurrencyTextBox.html) event. In `ValueChanged` event, you can get old value and new value from the `OldValue` and  `NewValue` properties.
+The `CurrencyTextBox` control can notify changes in value through the [ValueChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.CurrencyTextBox.html) event. In the `ValueChanged` event, you can get the old and new value from the `OldValue` and `NewValue` properties.
 
 {%tabs%}
 {% highlight xaml %}
@@ -163,7 +165,7 @@ The `CurrencyTextBox` control can notify changes in value through the [ValueChan
 {% highlight C# %} 
 
 CurrencyTextBox currencyTextBox = new CurrencyTextBox();
-currencyTextBox.ValueChanged += new PropertyChangedCallback(CurrencyTextBox_ValueChanged);
+currencyTextBox.ValueChanged += CurrencyTextBox_ValueChanged;
 
 {% endhighlight %}
 {%endtabs%}
@@ -235,7 +237,7 @@ currencyTextBox.UseNullOption = true;
 
 ## Setting Watermark Text
 
-We can display certain information within the control by using the [WaterMarkText](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.EditorBase.html#Syncfusion_Windows_Shared_EditorBase_WatermarkText) property. `WaterMarkText` is shown when the [WatermarkTextIsVisible](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.EditorBase.html#Syncfusion_Windows_Shared_EditorBase_WatermarkTextIsVisible) property is `true` and the value is `null` or empty, the control is not in focus and the `UseNullOption` property is `true`.
+You can display placeholder text within the control by setting the [WatermarkText](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.EditorBase.html#Syncfusion_Windows_Shared_EditorBase_WatermarkText) property. The `WatermarkText` is shown only when the [WatermarkTextIsVisible](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.EditorBase.html#Syncfusion_Windows_Shared_EditorBase_WatermarkTextIsVisible) property is `true`, the `Value` is `null` or empty (which requires the `UseNullOption` property to be `true` because `Value` is non-nullable by default), the control is not in focus, and the `UseNullOption` property is `true`.
 
 ### Setting the WatermarkText Foreground
 

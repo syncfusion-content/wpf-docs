@@ -1,13 +1,15 @@
 ---
 layout: post
-title: Layout Related Features in WPF Tabbed MDI Form control | Syncfusion®
-description: Learn here all about Layout Related Features support in Syncfusion® WPF Tabbed MDI Form (DocumentContainer) control and more.
-platform: WPF
+title: Layout Related Features in WPF DocumentContainer | Syncfusion®
+description: Configure the layout of the Syncfusion WPF Tabbed MDI Form (DocumentContainer) control with flexible alignment, splitters, and arrangement options.
+platform: wpf
 control: DocumentContainer
 documentation: ug
 ---
 
-# Layout Related Features in WPF Tabbed MDI Form (DocumentContainer)
+# Layout Related Features in WPF DocumentContainer
+
+This section describes the layout-related features of the DocumentContainer, such as the supported visual themes and how to apply them.
 
 ## Theme
 
@@ -17,6 +19,6 @@ DocumentContainer supports various built-in themes. Refer to the below links to 
 	
   * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
 
-   ![Setting theme to wpf document container](Getting-Started_images/wpf-document-container-MDI-Theme.png)
+   ![MDI mode of the DocumentContainer with the default theme](Getting-Started_images/wpf-document-container-MDI-Theme.png)
    
-  ![Setting theme to wpf document container](Getting-Started_images/wpf-document-container-TDI-Theme.png)
+  ![TDI mode of the DocumentContainer with the default theme](Getting-Started_images/wpf-document-container-TDI-Theme.png)

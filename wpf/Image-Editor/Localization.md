@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Localization support in syncfusion SfImageEditor WPF.
-description: This section describes on how to localize the SfImageEditor resources with their corresponding culture.
+title: Localization in WPF Image Editor | Syncfusion®
+description: Localization feature in Syncfusion® WPF Image Editor allows you to translate application resources into different languages for specific cultures.
 platform: wpf
 control: SfImageEditor
 documentation: ug
 ---
 
-# Localization in WPF ImageEditor (SfImageEditor)
+# Localization in WPF Image Editor
 
-Localization is the process of translating the application resources into different language for the specific cultures. You can localize the SfImageEditor by adding resource file. Application culture can be changed by setting `CurrentUICulture` before `InitializeComponent()` method.
+Localization is the process of translating the application resources into different language for the specific cultures. You can localize the Image Editor by adding resource file. Application culture can be changed by setting `CurrentUICulture` before `InitializeComponent()` method.
 
 Use the below code to change the application culture to French.
 
@@ -27,7 +27,7 @@ Use the below code to change the application culture to French.
 
 {% endtabs %} 
 
-To localize SfImageEditor based on `CurrentUICulture` using resource files, follow the below steps.
+To localize Image Editor based on `CurrentUICulture` using resource files, follow the below steps.
 
 1.Create new folder and name it as **Resources** in your application.
 2.Add the default resource file of SfImageEditor into **Resources** folder. You can download the Syncfusion.SfImageEditor.WPF.resx [`here`](https://www.syncfusion.com/downloads/support/directtrac/general/ze/Syncfusion.SfImageEditor.WPF-240771729).

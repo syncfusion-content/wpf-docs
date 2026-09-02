@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Disable Drag and Drop of TDI items | DockingManager | wpf | Syncfusion®
-description: Disable drag and drop of tdi items in Syncfusion® Essential Studio® WPF DockingManager control, its elements and more.
-platform: WPF
+title: Disable TDI drag and drop in WPF DockingManager | Syncfusion®
+description: Learn how to disable drag and drop of TDI items in Syncfusion WPF DockingManager by setting the IsTDIDragDropEnabled property.
+platform: wpf
 control: DockingManager
 documentation: ug
 ---
 
-# Disable Drag and Drop of TDI items  
+# Disable TDI drag and drop in WPF Docking Control  
 
-IsTDIDragDropEnabled property is used to disable the drag and drop of TDI items in DockingManager. The usage is follows: 
+IsTDIDragDropEnabled property is used to disable the drag and drop of TDI items in WPF Docking Control. The usage is follows: 
 
 {% tabs %}
 

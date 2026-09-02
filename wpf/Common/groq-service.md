@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Groq AI Integration with AI-Powered Components | Syncfusion®
-description: Learn how to implement a custom AI service using the Groq API with Syncfusion<sup>&reg;</sup> AI-Powered Components.
+title: Groq AI Service in WPF Smart Components | Syncfusion®
+description: Integrate Groq AI with WPF Smart Components using the IChatInferenceService interface for fast AI responses.
 platform: wpf
 control: SmartComponents
 documentation: ug
 ---
 
-# Groq AI Integration with WPF Smart Components
+# Groq AI Service in WPF Smart Components
 
 The Syncfusion WPF AI-powered components can enhance applications with intelligent capabilities. You can integrate `Groq` by implementing the `IChatInferenceService` interface and leveraging Groq’s OpenAI-compatible Chat Completions API to deliver fast, low-latency results.
 

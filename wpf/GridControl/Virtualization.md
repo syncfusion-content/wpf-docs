@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Virtualization in WPF GridControl | Syncfusion®
-description: Learn about Virtualization support in Syncfusion® Essential Studio® WPF GridControl, its elements and more details.
+title: Virtualization in WPF Excel-like Grid | Syncfusion®
+description: Improve Excel-like Grid performance with virtual mode, virtual cells for on-demand data loading, optimized rendering, and efficient handling of large datasets.
 platform: wpf
-control: Grid Control
+control: Excel-like Grid
 documentation: ug
 ---
 
-# Virtualization in WPF GridControl
+# Virtualization in WPF Excel-like Grid
 
 This section covers the below grid virtualization topics:
 

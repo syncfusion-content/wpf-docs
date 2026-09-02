@@ -319,9 +319,9 @@ In the ShapeSelected event, the BaseMapIndex property has been used to change th
 
 {% endtabs %}
 
-![SfMap shape layer drill down image](Layers_images/drill_down_image1.png)
+![WPF Map shape layer drill down image](Layers_images/drill_down_image1.png)
 
-![SfMap shape layer drill down image](Layers_images/drill_down_image2.png)
+![WPF Map shape layer drill down image](Layers_images/drill_down_image2.png)
 
 ## Events
 
@@ -382,5 +382,5 @@ N> You can also explore our [WPF Map example](https://github.com/syncfusion/wpf-
 
 [How to specify ItemTemplate to shape file layer](https://www.syncfusion.com/kb/10001/how-to-specify-itemtemplate-to-shape-file-layer) 
 
-[How to render custom data source in SfMap](https://www.syncfusion.com/kb/3237/how-to-render-customdatasource-in-sfmap)
+[How to render custom data source in WPF Map](https://www.syncfusion.com/kb/3237/how-to-render-customdatasource-in-sfmap)
 

@@ -1,16 +1,16 @@
 ---
 layout: post
-title: AI-Powered Features in WPF SfSmartDataGrid | Syncfusion®
-description: The AI-powered features in SfSmartDataGrid provide natural language-driven data operations, including sorting, grouping, filtering, and highlighting.
+title: AI-Powered Features in WPF Smart Data Grid | Syncfusion®
+description: The AI-powered features in Smart Data Grid provide natural language-driven data operations, including sorting, grouping, filtering, and highlighting.
 platform: wpf
-control: SfSmartDataGrid
+control: Smart Data Grid
 documentation: ug
-keywords : WPF datagrid, ai assist, natural language commands, sorting, grouping, filtering, highlighting
+keywords : WPF smart data grid,wpf smart grid, wpf datagrid, ai assist, natural language commands, sorting, grouping, filtering, highlighting
 ---
 
-# AI-Powered Features in WPF SfSmartDataGrid
+# AI-Powered Features in WPF Smart Data Grid
 
-The `SfSmartDataGrid` provides AI-powered capabilities that enable grid operations through natural language prompts, removing the need for manual configuration. Actions such as sorting, grouping, filtering, highlighting, and clearing can be applied using simple text commands. Multi-column operations are supported in a single prompt for efficient interaction with the grid.
+The `WPF Smart Data Grid` provides AI-powered capabilities that enable grid operations through natural language prompts, removing the need for manual configuration. Actions such as sorting, grouping, filtering, highlighting, and clearing can be applied using simple text commands. Multi-column operations are supported in a single prompt for efficient interaction with the grid.
 
 ## Sorting
 
@@ -29,7 +29,7 @@ sort by city column in descending and Revenue ascending
 clear sorting
 ```
 
-<img alt="WPF-smart-datagrid-sort" src="ai-powered-features_images\WPF-smart-datagrid-sort.png" width="600"/>
+<img alt="sorting" src="ai-powered-features_images\WPF-smart-datagrid-sort.png" width="600"/>
 
 ## Grouping
 
@@ -48,7 +48,7 @@ group by Country and ShipCity
 clear grouping
 ```
 
-<img alt="WPF-smart-datagrid-group" src="ai-powered-features_images\WPF-smart-datagrid-group.png" width="600"/>
+<img alt="grouping" src="ai-powered-features_images\WPF-smart-datagrid-group.png" width="600"/>
 
 ## Filtering
 
@@ -67,7 +67,7 @@ filter Country equals Germany AND Revenue greaterThan 1000
 clear filters
 ```
 
-<img alt="WPF-smart-datagrid-filter" src="ai-powered-features_images\WPF-smart-datagrid-filter.png" width="600"/>
+<img alt="filtering" src="ai-powered-features_images\WPF-smart-datagrid-filter.png" width="600"/>
 
 ## Highlight
 
@@ -92,4 +92,4 @@ clear row highlight
 clear cell highlight
 ```
 
-<img alt="WPF-smart-datagrid-highlight" src="ai-powered-features_images\WPF-smart-datagrid-highlight.png" width="600" />
+<img alt="row-highlight" src="ai-powered-features_images\WPF-smart-datagrid-highlight.png" width="600" />

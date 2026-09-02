@@ -124,7 +124,7 @@ N> Here we have enabled the [`CheckBoxVisibility`](https://help.syncfusion.com/c
 
 ## Types of Trendlines
 
-SfChart supports the following type of Trendlines.
+WPF Charts supports the following type of Trendlines.
 
 * [`Linear`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.TrendlineType.html)
 * [`Exponential`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.TrendlineType.html)
@@ -474,7 +474,7 @@ chart.Series.Add(fastSeries);
 
 Chart supports forecasting for the trendline, which is used to display trends about the future and the past. 
 
-The following two types of forecasting available in SfChart:
+The following two types of forecasting available in WPF Charts:
 
 * Forward Forecasting
 * Backward Forecasting

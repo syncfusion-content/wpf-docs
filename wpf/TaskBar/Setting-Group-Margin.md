@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Setting Group Margin in WPF TaskBar control | Syncfusion
-description: Learn about Setting Group Margin support in Syncfusion Essential Studio WPF TaskBar control, its elements and more.
+title: Setting Group Margin in WPF TaskBar | Syncfusion®
+description: Setting Group margin in WPF TaskBar defines spacing around groups, helping create clean layouts and improved visual structure.
 platform: wpf
 control: TaskBar
 documentation: ug

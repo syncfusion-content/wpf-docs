@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Pin and Unpin TabItems in WPF TabControl control | Syncfusion®
-description: Learn here all about Pin and Unpin TabItems support in Syncfusion® WPF TabControl (TabControlExt) control and more.
-platform: WPF
+title: Pin and Unpin Tabs in WPF TabControlExt | Syncfusion®
+description: Pin or unpin tab items in the Syncfusion WPF TabControl (TabControlExt) so important tabs stay readily available.
+platform: wpf
 control: TabControlExt
 documentation: ug
 ---
 
-# Pin and Unpin TabItems in WPF TabControl (TabControlExt)
+# Pin and Unpin Tabs in WPF Tab Control
 
-This section explains the pin and unpin tab items in [TabControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.TabControlExt.html). 
+This section explains the pin and unpin tab items in [WPF Tab Control](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.TabControlExt.html). 
 
 ## Enabling pin and unpin behaviors
 

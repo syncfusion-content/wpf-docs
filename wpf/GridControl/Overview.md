@@ -1,13 +1,13 @@
 ---
 layout: post
-title: About WPF GridControl | Syncfusion®
-description: Learn here all about introduction of Syncfusion® Essential Studio® WPF GridControl control, its elements and more details.
+title: About Syncfusion® WPF Excel-like Grid | Syncfusion®
+description: Learn about the overview of Syncfusion® Essential Studio WPF Excel-like Grid, its features and more details.
 platform: wpf
-control: Grid
+control: Excel-like Grid
 documentation: ug
 ---
 
-# WPF GridControl Overview
+# About Syncfusion® WPF Excel-like Grid
 
 The grid at its core functions as a very efficient display engine for tabular data that can be customized down to the cell level. It does not make any assumptions on the structure of the data (many grid controls implemented as straight data-bound controls make such explicit assumptions). This leads to a very flexible design that can be easily adapted to a variety of tasks including the display of completely unstructured data and the display of structured data from a database. 
 

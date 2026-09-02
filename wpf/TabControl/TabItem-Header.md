@@ -1,15 +1,15 @@
 ---
 layout: post
-title: TabItem Header in WPF TabControl control | Syncfusion®
-description: Learn here all about TabItem Header support in Syncfusion® WPF TabControl (TabControlExt) control and more.
-platform: WPF
+title: TabItem Header in WPF TabControlExt | Syncfusion®
+description: Customize the header of a tab item in the Syncfusion WPF TabControl (TabControlExt) using built-in header templates and labels.
+platform: wpf
 control: TabControlExt
 documentation: ug
 ---
 
-# TabItem Header in WPF TabControl (TabControlExt)
+# TabItem Header in WPF Tab Control
 
-This section explains how to set header text and UI customization of the tab header in the [TabControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.TabControlExt.html).
+This section explains how to set header text and UI customization of the tab header in the [WPF Tab Control](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.TabControlExt.html).
 
 ![Tab items with header text](Tab-Item-Header_images/Header_base.png)
 
@@ -260,7 +260,7 @@ tabItemExt2.ItemToolTip = "Second item";
 
 ##  Hide tab header when there is single tab item
 
-You can hide the header of tab item only on when single tab item present in the `TabControl`. You can enable it by using the [HideHeaderOnSingleChild](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.TabControlExt.html#Syncfusion_Windows_Tools_Controls_TabControlExt_HideHeaderOnSingleChild) property value as `true`. The Default value of `HideHeaderOnSingleChild` property is `false`.
+You can hide the header of tab item only on when single tab item present in the `WPF Tab Control`. You can enable it by using the [HideHeaderOnSingleChild](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.TabControlExt.html#Syncfusion_Windows_Tools_Controls_TabControlExt_HideHeaderOnSingleChild) property value as `true`. The Default value of `HideHeaderOnSingleChild` property is `false`.
 
 {% tabs %}
 {% highlight XAML %}

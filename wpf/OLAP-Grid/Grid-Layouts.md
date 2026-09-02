@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Grid Layout in WPF Olap Grid control | Syncfusion®
-description: Learn about Grid Layout support in Syncfusion® Essential Studio® WPF Olap Grid control, its elements and more details.
+title: Grid Layouts in WPF OLAP Grid | Syncfusion®
+description: The grid layouts support in OLAP Grid customizes the position of summary cells, placing them at the top or bottom of each parent member.
 platform: wpf
-control: OlapGrid
+control: OLAP Grid
 documentation: ug
 ---
 
-# Grid Layout in WPF Olap Grid
+# Grid Layouts in WPF OLAP Grid
 
 The position of summary cells in the OLAP grid can be customized with the help of grid layouts. It can be positioned at the top or bottom of each parent member.
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Appearance in WPF GridControl | Syncfusion®
-description: Learn about Appearance support in Syncfusion® Essential Studio® WPF GridControl, its elements and more details.
+title: Appearance in WPF Excel-like Grid | Syncfusion®
+description: Customize the appearance of Excel-like Grid cells using styles, backgrounds, borders, fonts, data formats, and rendering options.
 platform: wpf
-control: GridControl
+control: Excel-like Grid
 documentation: ug
 ---
 
-# Appearance in WPF GridControl
+# Appearance in WPF Excel-like Grid
 
 You can customize the appearance of the grid to the cell-level using our Grid properties.
 

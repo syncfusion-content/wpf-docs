@@ -1,14 +1,14 @@
 ---
 layout: post
-title: About Syncfusion® WPF SfDataGrid Control | Syncfusion®
+title: About Syncfusion® WPF Data Grid Control | Syncfusion®
 canonical_url: "https://www.syncfusion.com/wpf-controls/datagrid"
-description: Learn about the overview of Syncfusion® WPF SfDataGrid control, its features, architecture, data presentation capabilities, and customization options.
+description: Learn about the overview of Syncfusion® Essential Studio WPF Data Grid control, its features and more details.
 platform: wpf
-control: SfDataGrid
+control: Data Grid
 documentation: ug
 ---
 
-# About Syncfusion® WPF SfDataGrid Control
+# About Syncfusion® WPF Data Grid Control
 
 The [WPF DataGrid](https://www.syncfusion.com/wpf-controls/datagrid) (SfDataGrid) control for WPF is used to display collection of data in rows and columns. The SfDataGrid control includes editing, exporting and data shaping features (sorting, grouping, filtering and etc) that allows the end users to easily manage the data. 
 

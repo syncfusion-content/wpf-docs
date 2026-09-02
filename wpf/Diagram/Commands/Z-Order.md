@@ -9,21 +9,28 @@ documentation: ug
 
 # Z-Order Commands in WPF SfDiagram
 
-Z – Order commands are used to visually arrange the selected objects such as Nodes and Connectors on the [WPF Diagram](https://www.syncfusion.com/diagram-sdk/wpf-diagram) page with its Z-order values.
+Z – Order commands are used to visually arrange the selected objects such as Nodes and Connectors on the [WPF SfDiagram](https://www.syncfusion.com/diagram-sdk/wpf-diagram) page with its Z-order values.
+
+Z-order determines the visual stacking order of diagram elements on the page. When two or more elements overlap, the element with a higher Z-order value appears in front of elements with lower Z-order values. Z-Order commands can be used to change this stacking order and control the visibility of overlapping elements.
 
 ## BringToFront
 
-The [`BringToFront`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IDiagramCommands.html#Syncfusion_UI_Xaml_Diagram_IDiagramCommands_BringToFront) command is used to visually brings the selected element to the front over all other overlapped elements. 
+The [`BringToFront`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IDiagramCommands.html#Syncfusion_UI_Xaml_Diagram_IDiagramCommands_BringToFront) command is used to visually bring the selected element to the front over all other overlapped elements. 
+
+N> If the selected element is already at the highest Z-order level, executing the `BringToFront` command will not produce any visible change.
 
 {% tabs %}
 
-{% highlight Xaml%}
+{% highlight xaml%}
 
 <Button Height="50" Content="BringToFront" Name="BringToFront" Command="Syncfusion:DiagramCommands.BringToFront"></Button>
 
 {% endhighlight %}
 
-{% highlight C# %}
+{% highlight c# %}
+
+//Initialize the SfDiagram 
+SfDiagram diagramcontrol = new SfDiagram();
 
 IGraphInfo graphinfo = diagramcontrol.Info as IGraphInfo;
 
@@ -35,17 +42,22 @@ graphinfo.Commands.BringToFront.Execute(null);
 
 ## SendToBack
 
-The [`SendToBack`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IDiagramCommands.html#Syncfusion_UI_Xaml_Diagram_IDiagramCommands_SendToBack) command visually moves the selected elements behind all the other overlapped elements. 
+The [`SendToBack`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IDiagramCommands.html#Syncfusion_UI_Xaml_Diagram_IDiagramCommands_SendToBack) command visually moves the selected elements behind all other overlapped elements. 
+
+N> If the selected element is already at the lowest Z-order level, executing the `SendToBack` command will not produce any visible change.
 
 {% tabs %}
 
-{% highlight Xaml%}
+{% highlight xaml%}
 
 <Button Height="50" Content="SendToBack" Name="SendToBack" Command="Syncfusion:DiagramCommands.SendToBack"></Button>
 
 {% endhighlight %}
 
-{% highlight C# %}
+{% highlight c# %}
+
+//Initialize the SfDiagram 
+SfDiagram diagramcontrol = new SfDiagram();
 
 IGraphInfo graphinfo = diagramcontrol.Info as IGraphInfo;
 
@@ -61,15 +73,20 @@ graphinfo.Commands.SendToBack.Execute(null);
 
 The [`SendBackward`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IDiagramCommands.html#Syncfusion_UI_Xaml_Diagram_IDiagramCommands_SendBackward) command visually moves the selected elements behind the underlying element.
 
+N> The `SendBackward` command moves the selected element one level backward in the Z-order stack. If no element exists behind it, the command will not produce any visible change.
+
 {% tabs %}
 
-{% highlight Xaml%}
+{% highlight xaml%}
 
 <Button Height="50" Content="SendBackward" Name="SendBackward" Command="Syncfusion:DiagramCommands.SendBackward"></Button>
 
 {% endhighlight %}
 
-{% highlight C# %}
+{% highlight c# %}
+
+//Initialize the SfDiagram 
+SfDiagram diagramcontrol = new SfDiagram();
 
 IGraphInfo graphinfo = diagramcontrol.Info as IGraphInfo;
 
@@ -83,15 +100,20 @@ graphinfo.Commands.SendBackward.Execute(null);
 
 The [`BringForward`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IDiagramCommands.html#Syncfusion_UI_Xaml_Diagram_IDiagramCommands_BringForward) command visually moves the selected element over the nearest overlapping element.
 
+N> The `BringForward` command moves the selected element one level forward in the Z-order stack. If no element exists in front of it, the command will not produce any visible change.
+
 {% tabs %}
 
-{% highlight Xaml%}
+{% highlight xaml%}
 
 <Button Height="50" Content="BringForward" Name="BringForward" Command="Syncfusion:DiagramCommands.BringForward"></Button>
 
 {% endhighlight %}
 
-{% highlight C# %}
+{% highlight c# %}
+
+//Initialize the SfDiagram 
+SfDiagram diagramcontrol = new SfDiagram();
 
 IGraphInfo graphinfo = diagramcontrol.Info as IGraphInfo;
 

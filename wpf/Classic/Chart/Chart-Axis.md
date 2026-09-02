@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Chart-Axis in WPF Chart Control | Syncfusion
-description: Learn here all about Chart-Axis support in Syncfusion WPF Chart (Classic) control, its elements and more details.
+title: Axis in WPF Classic Chart | Syncfusion®
+description: Axis in WPF Classic Chart supports value representation, scale customization, labels, ticks, ranges, and axis appearance settings.
 platform: wpf
 control: Chart (Classic)
 documentation: ug
 ---
-# Chart-Axis in WPF Chart (Classic)
+# Axis in WPF Classic Chart
 
 ## Indexed X Values
 
@@ -930,7 +930,7 @@ Chart1.Areas[0].SecondaryAxis.Origin = 2;
 
 ![Chart-Controls_img146](Chart-Controls_images/Chart-Controls_img146.jpeg)
 
-## Chart-Axis in WPF Chart (Classic) Ticks
+## Chart-Axis in WPF Classic Chart Ticks
 
 Chart for WPF allows to customize the length of the Axis Ticks and SmallTicks by using the ChartAxis.TickSize and ChartAxis.SmallTicksize properties.
 
@@ -1074,7 +1074,7 @@ To view samples:
 2. Click the WPF drop-down list and select Run Locally Installed Samples.
 3. Navigate to Chart Axis > Chart Axis Configuration > Demo.
 
-## Chart-Axis in WPF Chart (Classic) Orientation
+## Chart-Axis in WPF Classic Chart Orientation
 
 
 WPF Chart enables to set the orientation of the ChartAxis. The default orientation of the ChartAxis is Horizontal. This property is mostly used in Multiple Axes Scenarios.
@@ -1488,7 +1488,7 @@ NA</td></tr>
 
 
 
-## Chart-Axis in WPF Chart (Classic) Header
+## Chart-Axis in WPF Classic Chart Header
 
 Chart for WPF provides support for Chart Axis Titles with the help of the attached property ChartAxis.Header. Its position can be adjusted by using the HeaderAlignment property of the ChartAxis class.
 
@@ -1775,7 +1775,7 @@ Bool or True/False.</td><td>
 IsRetainAxisPosition="True"</td></tr>
 </table>
 
-## Chart-Axis in WPF Chart (Classic) Improvements
+## Chart-Axis in WPF Classic Chart Improvements
 
 Essential Chart provides support for some improvements in the existing chart axis by implementing the following features.
 

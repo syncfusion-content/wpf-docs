@@ -1,17 +1,17 @@
 ---
 layout: post
-title: Basic Features | DockingManager | WPF | Syncfusion®
-description: Basic features of Syncfusion® Essential Studio® WPF DockingManager Control, its elements, features and more.
+title: Basic Features in WPF DockingManager Control | Syncfusion®
+description: The basic features in DockingManager include docking, floating, tabbed, auto-hide, and state persistence for child windows.
 platform: wpf
 control: DockingManager
 documentation: ug
 ---
 
-# Basic Features in WPF DockingManager Control
+# Basic Features in WPF Docking Control
 
 ## Dealing with States
 
-States of child is nothing but a different appearance of the DockingManager children.  [State](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockItem.html#Syncfusion_Windows_Tools_Controls_DockItem_State) Property in DockingManager is used to set various states to the child element such as Docking, Floating, Auto Hide, and Hidden.
+States of child is nothing but a different appearance of the WPF Docking Control children.  [State](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockItem.html#Syncfusion_Windows_Tools_Controls_DockItem_State) Property in WPF Docking Control is used to set various states to the child element such as Docking, Floating, Auto Hide, and Hidden.
 
 ### Dock State:
 
@@ -71,7 +71,7 @@ DockingManager.SetState(grid1, DockState.Float);
 
 ### Auto Hidden State:
 
-Auto hidden state hides the children in one of the side panels available with the DockingManager.
+Auto hidden state hides the children in one of the side panels available with the WPF Docking Control.
 
 {% tabs %}
 

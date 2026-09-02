@@ -27,7 +27,7 @@ Annotation rotation can be enabled by using the [`Constraints`](https://help.syn
 </syncfusion:AnnotationCollection>
                                 
 {% endhighlight %}
-{% highlight C# %}
+{% highlight c# %}
 
 //Initialize the AnnotationCollection
 Annotations = new ObservableCollection<IAnnotation>()
@@ -59,7 +59,7 @@ Annotations = new ObservableCollection<IAnnotation>()
 </syncfusion:AnnotationCollection>
                                 
 {% endhighlight %}
-{% highlight C# %}
+{% highlight c# %}
 
 //Initialize the Annotation Collection
 Annotations = new ObservableCollection<IAnnotation>()

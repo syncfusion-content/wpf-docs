@@ -1,19 +1,19 @@
 ---
 layout: post
 title: Getting Started with WPF Ribbon control | Syncfusion®
-description: Learn here about getting started with Syncfusion® Essential Studio® WPF Ribbon control, its elements and more.
+description: Learn how to get started with the Syncfusion WPF Ribbon control. Explore setup, features, examples, and customization options.
 platform: wpf
 control: Ribbon
 documentation: ug
 ---
 
-# Getting Started with WPF Ribbon
+# Getting Started with WPF Ribbon Control
 
-This section explains how to implement a similar UI as Microsoft Outlook using Ribbon.
+This section explains how to implement a similar UI as Microsoft Outlook using WPF Ribbon Control.
 
-## Add ribbon
+## Add WPF Ribbon Control
 
-There are several ways to add Syncfusion<sup>®</sup> control in to Visual Studio WPF project, the following steps will help you add a Ribbon control through XAML Code.
+There are several ways to add Syncfusion<sup>®</sup> control in to Visual Studio WPF project, the following steps will help you add a WPF Ribbon Control through XAML Code.
 
 * Create a WPF project in Visual Studio and refer the following assemblies.
 
@@ -81,7 +81,7 @@ Public Class MainWindow : Inherits RibbonWindow
 {% endcapture %}
 {{ codesnippet3 | UnOrderList_Indent_Level_1 }}
 
-* Now, Add the Ribbon control with a required optimal name, using the included namespace in XAML.
+* Now, Add the WPF Ribbon Control with a required optimal name, using the included namespace in XAML.
 
 {% capture codesnippet4 %}
 {% tabs %}
@@ -140,7 +140,7 @@ xmlns:syncfusion="http://schemas.syncfusion.com/wpf"    x:Class="RibbonControl.M
 
 ## Set visual styles
 
-Ribbon supports various visual styles by using the `SfSkinManager`. To apply Visual Studio style on the current layout, refer to the following steps.
+WPF Ribbon Control supports various visual styles by using the `SfSkinManager`. To apply Visual Studio style on the current layout, refer to the following steps.
 
 * Refer the following assemblies with the project
 
@@ -198,7 +198,7 @@ syncfusionskin:SfSkinManager.VisualStyle="Office2013White" >
 
 ## Add RibbonTab
 
-Ribbon control accept `RibbonTab` as children, Here four `RibbonTab` are added and that can hold `RibbonItems` with `RibbonBar`.
+WPF Ribbon Control accept `RibbonTab` as children, Here four `RibbonTab` are added and that can hold `RibbonItems` with `RibbonBar`.
 
 {% tabs %}
 
@@ -442,7 +442,7 @@ syncfusionskin:SfSkinManager.VisualStyle="Office2013White" >
 
 ## Add RibbonGallery
 
-`RibbonGallery` displays items with good look and feel and it also used to classify the items as groups for easy navigation. Here, "QuickSteps" RibbonBar holds a `RibbonGallery` with `InRibbon` visual mode to place gallery items with in Ribbon. Also `ItemHeight`, `ItemWidth` properties are used to set height and width respectively.
+`RibbonGallery` displays items with good look and feel and it also used to classify the items as groups for easy navigation. Here, "QuickSteps" RibbonBar holds a `RibbonGallery` with `InRibbon` visual mode to place gallery items with in WPF Ribbon Control. Also `ItemHeight`, `ItemWidth` properties are used to set height and width respectively.
 
 {% tabs %}
 
@@ -586,7 +586,7 @@ syncfusionskin:SfSkinManager.VisualStyle="Office2013White" >
 
 ## Add QAT
 
-QuickAccessToolbar (QAT) is used to group the frequently used commands and access the commands easily without having to search for the command in the menu bar. Also it can be placed above or below the ribbon.
+QuickAccessToolbar (QAT) is used to group the frequently used commands and access the commands easily without having to search for the command in the menu bar. Also it can be placed above or below the WPF Ribbon Control.
 
 {% tabs %}
 
@@ -755,7 +755,7 @@ syncfusionskin:SfSkinManager.VisualStyle="Office2013White" >
 
 ## Add BackStage
 
-BackStage can be added by using `BackStage` property of Ribbon. To show the BackStage by, click the `FILE` Menu in Ribbon like in Microsoft Outlook. 
+BackStage can be added by using `BackStage` property. To show the BackStage by, click the `FILE` Menu in WPF Ribbon Control like in Microsoft Outlook. 
 
 {% tabs %}
 
@@ -847,9 +847,9 @@ syncfusionskin:SfSkinManager.VisualStyle="Office2013White" >
 
 ## Add application menu
 
-An Application Menu contains standard commands that are performed like in Microsoft Outlook 2003 UI. Using the `ApplicationMenu` property of the Ribbon, this Menu is viewed by added at the top-left corner of the window.
+An Application Menu contains standard commands that are performed like in Microsoft Outlook 2003 UI. Using the `ApplicationMenu` property of the WPF Ribbon Control, this Menu is viewed by added at the top-left corner of the window.
 
-N>  Visual style is set to `Default` for RibbonWindow in SkinStorage. and BackStage is not applicable when `ApplicationMenu` is used in Ribbon.
+N>  Visual style is set to `Default` for RibbonWindow in SkinStorage. and BackStage is not applicable when `ApplicationMenu` is used in WPF Ribbon Control.
 
 {% tabs %}
 
@@ -1316,11 +1316,11 @@ N> [View sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-
 
 ## Set simplified layout
 
-The simplified layout is designed to display the most commonly used Ribbon commands in a single line interface, allowing more screen space for compact content viewing, while other commands are placed inside the overflow menu. To know more about the simplified layout, refer [here](https://help.syncfusion.com/wpf/ribbon/simplifiedlayout).
+The simplified layout is designed to display the most commonly used WPF Ribbon Control commands in a single line interface, allowing more screen space for compact content viewing, while other commands are placed inside the overflow menu. To know more about the simplified layout, refer [here](https://help.syncfusion.com/wpf/ribbon/simplifiedlayout).
 
 ## Theme
 
-Ribbon supports various built-in themes. Refer to the below links to apply themes for the Ribbon,
+The WPF Ribbon Control supports various built-in themes. Refer to the links below to apply themes.
 
   * [Apply theme using SfSkinManager](https://help.syncfusion.com/wpf/themes/skin-manager)
 	

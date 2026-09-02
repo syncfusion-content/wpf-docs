@@ -1,20 +1,20 @@
 ---
 layout: post
-title: Styling and Templates in WPF Docking control | Syncfusion®
-description: Learn here all about Styling and Templates support in Syncfusion® WPF Docking (DockingManager) control and more.
+title: Styling and Templates in WPF DockingManager Control | Syncfusion®
+description: Styling and templates in DockingManager let you customize the look and feel of docked, floating, auto-hide, and tabbed windows.
 platform: wpf
 control: DockingManager
 documentation: ug
 ---
 
 
-# Styling and Templates in WPF Docking (DockingManager)
+# Styling and Templates in WPF Docking Control
 
-The UI for Dock, Float and Document windows of DockingManager can be changed using different Styles and Templates.
+The UI for Dock, Float and Document windows of WPF Docking Control can be changed using different Styles and Templates.
 
 ## Theme
 
-DockingManager supports various built-in themes. Refer to the below links to apply themes for the DockingManager,
+The WPF Docking Control supports various built-in themes. Refer to the following links to apply themes to the control,
 
   * [Apply theme using SfSkinManager](https://help.syncfusion.com/wpf/themes/skin-manager)
 	
@@ -24,11 +24,11 @@ DockingManager supports various built-in themes. Refer to the below links to app
 
 ## Dock Window Style
 
-DockingManager allows to set style for some of the Docking controls such as DockedHeaderPresenter, DockedElementTabbedHost. This is explained in detail under the DockHeaderStyle and DockedElementTabbedHostStyle section.
+WPF Docking Control allows to set style for some of the Docking controls such as DockedHeaderPresenter, DockedElementTabbedHost. This is explained in detail under the DockHeaderStyle and DockedElementTabbedHostStyle section.
 
 ### AwlButtonTemplate
 
-The style of the pin button of the Dock window can customized using the `AwlButtonTemplate` property of DockingManager with the TargetType as `ToggleButton` to have a customized look and feel for the Pin Button. 
+The style of the pin button of the Dock window can customized using the `AwlButtonTemplate` property of WPF Docking Control with the TargetType as `ToggleButton` to have a customized look and feel for the Pin Button. 
 
 {% tabs %}
 
@@ -76,7 +76,7 @@ The style of the pin button of the Dock window can customized using the `AwlButt
 
 ### CloseButtonTemplate
 
-The close button for the Docked window can be customized using the `CloseButtonTemplate` and can be used to get or set the control template for the close button for the windows of DockingManager with TargetType as ToggleButton.
+The close button for the Docked window can be customized using the `CloseButtonTemplate` and can be used to get or set the control template for the close button for the windows of WPF Docking Control with TargetType as ToggleButton.
 
 {% tabs %}
 
@@ -319,7 +319,7 @@ The Restore button for the dock window can be customized using the `RestoreButto
 
 ### TabItemTemplate
 
-DockedElementTabbedHost have internal TabControl for Tabbed Windows in DockingManager and its tab item template can be customized using `TabItemTemplate` with the TargetType as TabItem.
+DockedElementTabbedHost have internal TabControl for Tabbed Windows in WPF Docking Control and its tab item template can be customized using `TabItemTemplate` with the TargetType as TabItem.
 
 {% tabs %}
 
@@ -573,7 +573,7 @@ Refer to this [`sample`](https://github.com/SyncfusionExamples/How-to-set-Header
 
 ### DockWindowContextMenuItemStyle
 
-The context menu of DockingManager can be customized using the `DockWindowContextMenuItemStyle` by setting its Target Type as CustomMenuItem.
+The context menu of WPF Docking Control can be customized using the `DockWindowContextMenuItemStyle` by setting its Target Type as CustomMenuItem.
 
 
 {% tabs %}
@@ -717,7 +717,7 @@ Template of FloatWindow can be customized using the `FloatWindowTemplate` with t
 
 ### FloatWindowStyle
 
-The style for the float window can be applied using the `FloatWindowStyle` property of the DockingManager by setting its TargetType as AutoTemplatedContentControl. It gets or sets the style for the FloatWindow when it is rendered.
+The style for the float window can be applied using the `FloatWindowStyle` property of the WPF Docking Control by setting its TargetType as AutoTemplatedContentControl. It gets or sets the style for the FloatWindow when it is rendered.
 
 {% tabs %}
 
@@ -748,7 +748,7 @@ The style for the float window can be applied using the `FloatWindowStyle` prope
 
 ### NativeWindowStyle
 
-The NativeFloatWindow of DockingManager can be customized using the `NativeWindowStyle` property of the DockingManager with the TargetType as NativeFloatWindow.
+The NativeFloatWindow of WPF Docking Control can be customized using the `NativeWindowStyle` property with the TargetType as NativeFloatWindow.
 
 {% tabs %}
 
@@ -787,7 +787,7 @@ AutoHidden window is constructed by SidePanels and SideTabItems. To customize th
 
 ### SideTabItemTemplate
 
-The template of the SideTabItem of the DockingManager can be customized using the `SideTabItemTemplate` with the TargetType as TabItem.
+The template of the SideTabItem of the WPF Docking Control can be customized using the `SideTabItemTemplate` with the TargetType as TabItem.
 
 {% tabs %}
 
@@ -918,7 +918,7 @@ SidePanel template in AutoHidden window can changed using `SidePanelTemplate` wi
 
 ###  SidePanelStyle
 
-The style for the SidePanel of the DockingManager can be customized using the `SidePanelStyle` property with the TargetType as SidePanel.
+The style for the SidePanel of the WPF Docking Control can be customized using the `SidePanelStyle` property with the TargetType as SidePanel.
 
 {% tabs %}
 
@@ -1127,7 +1127,7 @@ To dock the DockWindow at top, the TopDragProvider is used. It can be customized
 
 ### CenterDragProvider
 
-CenterDragProvider is used to dock the children of the DockingManager at the center Position and its template can be customized using the property `CenterDragProvider`.
+CenterDragProvider is used to dock the children of the WPF Docking Control at the center Position and its template can be customized using the property `CenterDragProvider`.
 
 {% tabs %}
 
@@ -1170,7 +1170,7 @@ CenterDragProvider is used to dock the children of the DockingManager at the cen
 
 ## DocumentTabControlStyle
 
-Document state in DockingManager used the DocumentTabControl and its style can be customized using `DocumentTabControlStyle` with the TargetType as DocumentTabControl.
+Document state in WPF Docking Control used the DocumentTabControl and its style can be customized using `DocumentTabControlStyle` with the TargetType as DocumentTabControl.
 
 {% tabs %}
 
@@ -1205,7 +1205,7 @@ Document state in DockingManager used the DocumentTabControl and its style can b
 
 ## DocumentTabItemStyle
 
-Each Document TabItem in DockingManager constructed by the TabItemExt and its style can be customized using `DocumentTabItemStyle` with the TargetType as TabItemExt.
+Each Document TabItem in WPF Docking Control constructed by the TabItemExt and its style can be customized using `DocumentTabItemStyle` with the TargetType as TabItemExt.
 
 {% tabs %}
 
@@ -1293,7 +1293,7 @@ The header style for the MDI Document can be changed using the `DocumentMDIHeade
 
 ## TabControl style
 
-TabControl inside the Tabbed DockWindow can be customized using `TabControlStyle` with the TargetType TabControl in the DockingManager
+TabControl inside the Tabbed DockWindow can be customized using `TabControlStyle` with the TargetType TabControl in the WPF Docking Control.
 
 {% tabs %}
 
@@ -1333,7 +1333,7 @@ TabControl inside the Tabbed DockWindow can be customized using `TabControlStyle
 
 ### TabItemStyle
 
-The style for the Tabbed children of DockingManager can be customized using the `TabItemStyle` property with the Target Type as TabItem.
+The style for the Tabbed children of WPF Docking Control can be customized using the `TabItemStyle` property with the Target Type as TabItem.
 
 {% tabs %}
 

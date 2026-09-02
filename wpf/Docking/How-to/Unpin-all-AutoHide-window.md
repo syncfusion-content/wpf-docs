@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Unpin all AutoHide window | DockingManager | wpf | Syncfusion®
-description: Unpin all autohide window in Syncfusion® Essential Studio® WPF DockingManager control, its elements and more.
-platform: WPF
+title: How to unpin all AutoHide window in WPF DockingManager | Syncfusion®
+description: Learn here how to unpin all autohide window in Syncfusion® WPF Docking (DockingManager) control, its elements and more.
+platform: wpf
 control: DockingManager
 documentation: ug
 ---
 
-## Unpin all AutoHide window
+# How to unpin all AutoHide window in WPF Docking Control
 
 You can Unpin all AutoHidden windows by using the method UnPinAutoHide().This can be shown below:
 

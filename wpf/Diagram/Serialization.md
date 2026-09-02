@@ -9,15 +9,17 @@ documentation: ug
 
 # Serialization in WPF SfDiagram
 
-Serialization is the process of converting the state of SfDiagram's objects into a stream of bytes to recreate them when needed. Such streams can be stored in a database,as a file or memory. The reverse process is called deserialization.
+Serialization is the process of converting the state of SfDiagram's objects into a stream of bytes to recreate them when needed. Such streams can be stored in a database as a file or memory. The reverse process is called deserialization.
 
 ## Save
 
-In [WPF Diagram](https://www.syncfusion.com/diagram-sdk/wpf-diagram), DataContractSerializer is used for serialization. The functionalities in DataContractSerializer are applicable to the SfDiagram serialization. It supports saving the SfDiagram into stream. The SfDiagram gets saved with all its properties. 
+In [WPF SfDiagram](https://www.syncfusion.com/diagram-sdk/wpf-diagram), DataContractSerializer is used for serialization. The functionalities in DataContractSerializer are applicable to the SfDiagram serialization. It supports saving the SfDiagram to a stream. The SfDiagram gets saved with all its properties. 
 
 {% tabs %}
 
-{% highlight C# %}
+{% highlight c# %}
+
+SfDiagram sfDiagram = new SfDiagram();
 
 //To Save as stream in file
 SaveFileDialog dialog = new SaveFileDialog();
@@ -40,10 +42,12 @@ sfDiagram.Save(str);
 
 ## Load
 
-On deserialization, the saved stream is used to load the SfDiagram's nodes and connectors in current view. With this, you can continue working on the earlier saved SfDiagram by loading the appropriate stream.
+On deserialization, the saved stream is used to load the SfDiagram's nodes and connectors into the current view. With this, you can continue working on the earlier saved SfDiagram by loading the appropriate stream.
 
 {% tabs %}
-{% highlight C# %}
+{% highlight c# %}
+
+SfDiagram sfDiagram = new SfDiagram();
 
 //Load from saved XAML file
 OpenFileDialog dialog = new OpenFileDialog();
@@ -65,7 +69,9 @@ sfDiagram.Load(str);
 
 ### Has the diagram modified?
 
-[HasChanges](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.DiagramViewModel.html#Syncfusion_UI_Xaml_Diagram_DiagramViewModel_HasChanges) property of diagram control is used to notify that the diagram has any unsaved changes. This property track all changes that are made through interaction and through the public APIs.
+[HasChanges](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.DiagramViewModel.html#Syncfusion_UI_Xaml_Diagram_DiagramViewModel_HasChanges) property of diagram control is used to notify that the diagram has any unsaved changes. This property tracks all changes that are made through interaction and through the public APIs.
+
+N> By default, `HasChanges` is set to `false`. It is automatically updated to `true` whenever the diagram is modified through user interactions or public APIs, such as adding, deleting, moving, resizing, or connecting diagram elements. The property is reset to `false` after the diagram is successfully saved or loaded.
 
 {% tabs %}
 {% highlight xaml %}
@@ -76,7 +82,7 @@ sfDiagram.Load(str);
 <Button x:Name="SaveButton" Content="Save" Click="SaveButton_Click">
 </Button>
 {% endhighlight %}
-{% highlight C# %}
+{% highlight c# %}
 //Method to promote the save dialouge box when diagram has any unsaved changes.
 private void SaveButton_Click(object sender, RoutedEventArgs e)
 {
@@ -115,10 +121,10 @@ private void SaveDiagram()
 
 In SfDiagram, you cannot serialize the Content and ContentTemplate of each and every diagramming objects. If you want to preserve the ContentTemplate of diagramming objects, keep them in resources and apply them once the diagramming objects are added to the Diagram page.  
 
-The custom properties in custom class derived from any of our SfDiagram's interface or from any of the view model classes are serialized with the help of DataMember attribute.
+The custom properties in custom class derived from any of our SfDiagram's interface or from any of the view model classes are serialized with the help of the DataMember attribute.
 
 {% tabs %}
-{% highlight C# %}
+{% highlight c# %}
 
 public class NodeContent : INode
 {
@@ -137,10 +143,10 @@ N> SfDiagram's interface and view model classes are created without DataContract
 
 ## How to serialize a custom class 
 
-You can serialize a business class with the help of DataContract attribute and SfDiagram's `KnownTypes` property. You have to add DataContract attribute to serialize the whole class, which is not derived from a base class without DataContract attribute.
+You can serialize a business class with the help of the DataContract attribute and SfDiagram's `KnownTypes` property. You have to add DataContract attribute to serialize the whole class, which is not derived from a base class without DataContract attribute.
 
 {% tabs %}
-{% highlight C# %}
+{% highlight c# %}
 
 [DataContract]
 public class NodeContent
@@ -163,12 +169,12 @@ Diagram.KnownTypes = () => new List<Type>()
 
 [View sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Serialization)
 
-## How to load SfDiagram's old version in new version 
+## How to load an older SfDiagram version in a newer version
 
 You can load any of the old version SfDiagram's stream in new version with the help of upgrade method. Refer to the following code example.
 
 {% tabs %}
-{% highlight C# %}
+{% highlight c# %}
 
 using (Stream myStream = dialog.OpenFile())
 {
@@ -188,7 +194,7 @@ The [SfDiagram](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Sf
 The [SaveDiagramAsMermaid](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.SfDiagram.html#Syncfusion_UI_Xaml_Diagram_SfDiagram_SaveDiagramAsMermaid) method serializes your diagram into a Mermaid-compatible string. This method works for diagrams using Flowchart, Mind Map, or Sequence Diagram layouts. The following example shows how to save a diagram:
 
 {% tabs %}
-{% highlight C# %}
+{% highlight c# %}
 
 // Initialize the SfDiagram
 SfDiagram Diagram = new SfDiagram();
@@ -249,7 +255,7 @@ string mermaidData = Diagram.SaveDiagramAsMermaid();
 You can load a [diagram](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.SfDiagram.html) from the serialized Mermaid syntax data using the [LoadDiagramFromMermaid](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.SfDiagram.html#Syncfusion_UI_Xaml_Diagram_SfDiagram_LoadDiagramFromMermaid_System_String_) method. The following code illustrates how to load a diagram from a Mermaid string data.
 
 {% tabs %}
-{% highlight C# %}
+{% highlight c# %}
 
 // Initialize the SfDiagram
 SfDiagram Diagram = new SfDiagram();
@@ -289,12 +295,12 @@ N> Mermaid syntax data serialization and deserialization are supported only for 
 
 [How to serialize the Content and ContentTemplate properties of a Node?](https://support.syncfusion.com/kb/article/11574/how-to-serialize-content-and-contenttemplate-properties-of-a-node-in-wpf-diagramsfdiagram)
 
-[How to change the color of a node in the stencil and diagram while loading a saved file in WPF Diagram(SfDiagram)?](https://support.syncfusion.com/kb/article/18669/how-to-change-the-color-of-a-node-in-the-stencil-and-diagram-while-loading-a-saved-file-in-wpf-diagramsfdiagram)
+[How to change the color of a node in the stencil and diagram while loading a saved file in WPF SfDiagram?](https://support.syncfusion.com/kb/article/18669/how-to-change-the-color-of-a-node-in-the-stencil-and-diagram-while-loading-a-saved-file-in-wpf-diagramsfdiagram)
 
-[How to serialize the LinearGradientBrush type as a Fill value in the ShapeStyle of a Node in the WPF Diagram (SfDiagram)?](https://support.syncfusion.com/kb/article/18058/how-to-serialize-the-lineargradientbrush-type-as-a-fill-value-in-the-shapestyle-of-a-node-in-the-wpf-diagram-sfdiagram)
+[How to serialize the LinearGradientBrush type as a Fill value in the ShapeStyle of a Node in the WPF SfDiagram ?](https://support.syncfusion.com/kb/article/18058/how-to-serialize-the-lineargradientbrush-type-as-a-fill-value-in-the-shapestyle-of-a-node-in-the-wpf-diagram-sfdiagram)
 
-[How to serialize and deserialize the image nodes in WPF Diagram( SfDiagram) ?](https://support.syncfusion.com/kb/article/17743/how-to-serialize-and-deserialize-the-image-nodes-in-wpf-diagram-sfdiagram-)
+[How to serialize and deserialize the image nodes in WPF SfDiagram ?](https://support.syncfusion.com/kb/article/17743/how-to-serialize-and-deserialize-the-image-nodes-in-wpf-diagram-sfdiagram-)
 
-[How to serialize multiple diagram pages in WPF Diagram?](https://support.syncfusion.com/kb/article/16204/how-to-serialize-multiple-diagram-pages-in-wpf-diagram)
+[How to serialize multiple diagram pages in WPF SfDiagram?](https://support.syncfusion.com/kb/article/16204/how-to-serialize-multiple-diagram-pages-in-wpf-diagram)
 
-[How to preserve the state of the diagram while switching tabs in the WPF Diagram (SfDiagram)?](https://support.syncfusion.com/kb/article/18230/how-to-preserve-the-state-of-the-diagram-while-switching-tabs-in-the-wpf-diagram-sfdiagram)
+[How to preserve the state of the diagram while switching tabs in the WPF SfDiagram ?](https://support.syncfusion.com/kb/article/18230/how-to-preserve-the-state-of-the-diagram-while-switching-tabs-in-the-wpf-diagram-sfdiagram)

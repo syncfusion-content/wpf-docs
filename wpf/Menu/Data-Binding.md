@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Data Binding in WPF Menu (MenuAdv) | Syncfusion®
+title: Data Binding in WPF Menu | Syncfusion®
 description: Data Binding in MenuAdv enables generating hierarchical menu items from object collections and XML data sources.
 platform: wpf
 control: MenuAdv

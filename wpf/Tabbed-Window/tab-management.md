@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Tab Management in WPF Tabbed Window| Syncfusion
-description: Learn to manage tabs in WPF TabbedWindow by using close buttons, adding new tabs, customizing appearance, vertical tabs, pin/unpin tabs, and keyboard shortcuts.
+title: Tab Management in WPF Tabbed Window | Syncfusion
+description: Manage tabs in the Syncfusion WPF Tabbed Window by using close buttons, new tab actions, appearance, pin or unpin, and keyboard shortcuts.
 platform: wpf
 control: SfTabControl
 documentation: ug
@@ -9,7 +9,7 @@ documentation: ug
 
 # Tab Management in WPF Tabbed Window
 
-This section explains how to manage tabs in a WPF Tabbed Window interface. It provides an overview of common tab management operations such as closing tabs, creating new tabs, customizing tab buttons, vertical tabs, pin/unpin tabs, and navigating tabs using keyboard shortcuts, and customizing tear‑off behavior including creating and modifying tear‑off windows using the NewWindowCreating event for enhanced control over window creation and appearance.
+This section explains how to manage tabs in a WPF Tabbed Window interface. It covers common tab management operations such as closing tabs, creating new tabs, customizing tab buttons, vertical tabs, pin/unpin tabs, and customizing tear-off windows using keyboard shortcuts and the `NewWindowCreating` event.
 
 ## Closing Tabs
 
@@ -226,12 +226,12 @@ The tear‑off window created during the tear‑off operation can be customized 
 
 This feature allows replacing the default tear‑off window with a custom window by supplying a user‑defined instance and modifying its properties before it is displayed, enabling full control over window creation and appearance at runtime. Additional customization can be achieved by accessing hostWindow properties and applying the required configurations for tear‑off window to meet specific requirements.
 
-By handling the `NewWindowCreating` event:
+By handling the `NewWindowCreating` event, you can:
 
 - Replace the default [SfChromelessWindow](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.SfChromelessWindow.html) with a custom window
 - Modify window properties such as style, appearance, and behavior
-- Access details about the tab item that initiated the tear‑off
-- Apply custom configurations or styling the window
+- Access details about the tab item that initiated the tear-off
+- Apply custom configurations or styles to the window
 
 {% tabs %}
 

@@ -1,36 +1,36 @@
 ---
 layout: post
-title: Getting Started with WPF Diagram Control | Syncfusion
-description: Learn here about getting started with Syncfusion WPF Diagram (classic) control, its elements and more details.
+title: Getting Started with WPF Diagram | Syncfusion®
+description: Learn how to get started with the Syncfusion® WPF Diagram. Explore setup, diagram architecture, layouts, symbols, views, and customization options.
 platform: wpf
 control: Diagram
 documentation: ug
 ---
 
-# Getting Started with WPF Diagram (classic)
+# Getting Started with WPF Diagram
 
-This section helps you to get started with Essential Diagram and has the following topics:
+This section helps you to get started with WPF Diagram and has the following topics:
 
-## Diagram Architecture
+## WPF Diagram Architecture
 
-The following is a general description about the important classes of Diagram WPF. These classes form the base of the control. 
+The following is a general description about the important classes of WPF Diagram. These classes form the base of the control. 
 
-### Diagram Control
+### WPF Diagram Control
 
-The Diagram control is the base class, which contains the view and the model. It receives user input and translates it into actions and commands on the model and view. It also implements SymbolPalette and scrolling, and enables horizontal and vertical scrollbars when the size of the view exceeds the size of the window. 
-Diagram Model
+The WPF Diagram control is the base class, which contains the view and the model. It receives user input and translates it into actions and commands on the model and view. It also implements SymbolPalette and scrolling, and enables horizontal and vertical scrollbars when the size of the view exceeds the size of the window. 
+WPF Diagram Model
 
 A model represents data for an application and contains the logic for adding, accessing, and manipulating the data. Nodes and connectors are added to the Diagram Control using the Model property. A predefined layout can be applied using the LayoutType property of the DiagramModel, or the position of the nodes can be manually specified.
 
-### Diagram View
+### WPF Diagram View
 
 The view obtains data from the model and presents them to the user. It typically manages the overall layout of the data obtained from the model.
 Apart from presenting the data, view also handles navigation between the items, and some aspects of item selection. The views also implements basic user interface features, such as rulers, and drag-and-drop. It handles the events, which occur on the objects, obtained from the model. Command mechanism is also implemented by the view.
 A view can be constructed without a model, but a model must be provided before it can display useful information. Views can also render additional visual information that do not exist inside the model such as bounding boxes and grids. These additional view-specific objects are referred to as decorators, because they provide additional visual aids and window dressing to the view; but they are not actually a part of the model.
 
-### Diagram Page
+### WPF Diagram Page
 
-The DiagramPage is just a container to hold the objects(nodes and connectors) added through the model. The DiagramView uses the page to display the diagram objects. As mentioned before, the view implements several basic user interface features like rulers, grids, events and commands. So therefore page is just a container to hold the graphical objects added through the model and the DiagramView uses it to display the objects.
+The WPF DiagramPage is just a container to hold the objects(nodes and connectors) added through the model. The WPF DiagramView uses the page to display the WPF Diagram objects. As mentioned before, the view implements several basic user interface features like rulers, grids, events and commands. So therefore page is just a container to hold the graphical objects added through the model and the WPF DiagramView uses it to display the objects.
 
 ### SymbolPalette
 
@@ -60,7 +60,7 @@ Rulers display the coordinates of elements on the diagram page. Negative label v
 
 ## Class Diagram
 
-The class diagram for Essential Diagram WPF is as follows.
+The class diagram for WPF Diagram is as follows.
 
 
 
@@ -93,13 +93,13 @@ This section illustrates the step-by-step procedure to create a WPF application.
 ### Creating a Diagram
 
 
-Essential Diagram WPF can be used to create a rich Visio-like application. This Framework provides many utility controls to help you easily put an application together. End users can get started in minutes using this diagram control. 
+WPF Diagram can be used to create a rich Visio-like application. This Framework provides many utility controls to help you easily put an application together. End users can get started in minutes using this diagram control. 
 
 Following is a basic step to create DiagramControl and initialize the necessary properties. Details about individual parts are explained later in this documentation.
 
-### Create DiagramControl
+### Create WPF DiagramControl
 
-The Diagram Control can be added to the application using the following code.
+The WPF Diagram Control can be added to the application using the following code.
 
 DiagramControl can be created in two ways,
 
@@ -150,7 +150,7 @@ This shows a window with empty diagram control.
 
 Enabling SymbolPalette
 
-* Now you need to add the SymbolPalette to your newly created Diagram control. The SymbolPalette is displayed by setting the IsSymbolPaletteEnabled property to _True_. By default, it is set to _False_. The following code enables the SymbolPalette.
+* Now you need to add the SymbolPalette to your newly created WPF Diagram control. The SymbolPalette is displayed by setting the IsSymbolPaletteEnabled property to _True_. By default, it is set to _False_. The following code enables the SymbolPalette.
 
 
 SymbolPalette can be enabled in two ways,
@@ -199,7 +199,7 @@ diagramcontrol.IsSymbolPaletteEnabled = True
 
 Create DiagramModel
 
-* To add contents into the drawing area, use the Model property of the diagram control. The following code can be used to add the model.
+* To add contents into the drawing area, use the Model property of the WPF Diagram control. The following code can be used to add the model.
 
 
 
@@ -355,7 +355,7 @@ diagramgrid.Children.Add(dc)
 
 {% endhighlight  %}
 
-* This creates a Diagram Control with the SymbolPalette and the drawing area as illustrated in the following image. 
+* This creates a WPF Diagram Control with the SymbolPalette and the drawing area as illustrated in the following image. 
 
 
 
@@ -502,7 +502,7 @@ diagramgrid.Children.Add(dc)
 
 {% endhighlight  %}
 
-This adds a model to the Diagram Control, and defines Bounds Property for DiagramModel
+This adds a model to the WPF Diagram Control, and defines Bounds Property for WPF DiagramModel
 
 ### Add Diagram View to the Diagram Control
 
@@ -584,7 +584,7 @@ diagramgrid.Children.Add(dc)
 
 ### Manual Layout
 
-The Essential Diagram WPF allows you to manually specify the layout of the page. The nodes can be positioned at any point on the diagram page. The OffsetX and OffsetY properties can be used to specify the position. Connections can then be made between the nodes using the various line connectors.
+The WPF Diagram allows you to manually specify the layout of the page. The nodes can be positioned at any point on the diagram page. The OffsetX and OffsetY properties can be used to specify the position. Connections can then be made between the nodes using the various line connectors.
 
 The nodes and the connectors need to be added to the Nodes and Connections collection of DiagramModel respectively. This gives a complete control over the placement of nodes on the page and enables the user to create diagrams as suited for their business needs.
 
@@ -875,7 +875,7 @@ diagramModel.Connections.Add(connection)
 
 ### Automatic Layout
 
-Essential Diagram WPF allows you to specify automatic layouts the nodes. Following layout types are available:
+WPF Diagram allows you to specify automatic layouts the nodes. Following layout types are available:
 
 * Directed-Tree layout
 * Hierarchical-Tree layout

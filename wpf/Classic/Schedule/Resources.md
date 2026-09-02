@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Resources in WPF SfSchedule Control | Syncfusion
-description: Learn here all about Resources support in Syncfusion WPF Schedule (Classic) control, its elements and more details.
+title: Resources in WPF Schedule (Classic) | Syncfusion
+description: Learn how Resources in WPF Schedule (Classic) let you define and assign resources to appointments and group them accordingly.
 platform: wpf
 control: SfSchedule
 documentation: ug
@@ -138,7 +138,7 @@ this.grid.Children.Add(schedule);
 
 This feature enables users to view appointments based on their subcategory only in day and week views. Using this feature, the end user can group appointments under various subcategories (resources). 
 
-#### DayHeaderOrder property
+### DayHeaderOrder property
 
 [DayHeaderOrder](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.SfSchedule.html#Syncfusion_UI_Xaml_Schedule_SfSchedule_DayHeaderOrder) property is used to set the order by which resources have to be displayed
 
@@ -214,7 +214,7 @@ int</td><td>
 Gets or sets a value to specify the number of resources that need to be shown in the view.</td></tr>
 </table>
 
-#### Example:
+### Example:
 
 In the following code example, [DayViewColumnCount](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.SfSchedule.html#Syncfusion_UI_Xaml_Schedule_SfSchedule_DayViewColumnCount) is “two”, so the Scheduler displays two resources in the view. This count is maintained while scrolling to view the other resources.
 

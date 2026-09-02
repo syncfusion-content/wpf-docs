@@ -1,19 +1,19 @@
 ---
 layout: post
-title: Getting Started with WPF SfSmartDataGrid | Syncfusion®
-description: Learn how to get started with the Syncfusion® WPF SfSmartDataGrid control. Explore setup, features, examples, and customization options.
+title: Getting Started with WPF Smart Data Grid | Syncfusion®
+description: Learn how to get started with the Syncfusion® WPF Smart Data Grid control. Explore setup, features, examples, and customization options.
 platform: wpf
-control: SfSmartDataGrid
+control: Smart Data Grid
 documentation: ug
 ---
 
-# Getting Started with WPF SfSmartDataGrid
+# Getting Started with WPF Smart Data Grid
 
-This section provides a quick overview for working with the [WPF SfSmartDataGrid](https://www.syncfusion.com/wpf-controls/smart-datagrid) (SfSmartDataGrid) for WPF. Walk through the entire process of creating a real world of this control.
+This section provides a quick overview for working with the [WPF Smart Data Grid](https://www.syncfusion.com/wpf-controls/smart-datagrid). Walk through the entire process of creating a real world of this control.
 
 ## Assembly deployment
 
-The following list of assemblies needs to be added as reference to use SfSmartDataGrid control in any application,
+The following list of assemblies needs to be added as reference to use WPF Smart Data Grid control in any application,
 
 <table>
 <tr>
@@ -29,7 +29,7 @@ Description
 Syncfusion.Data.WPF
 </td>
 <td>
-Syncfusion.Data.WPF assembly contains fundamental and base classes for {{'[CollectionViewAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Data.CollectionViewAdv.html)'| markdownify }} which is responsible for data processing operations handled in SfSmartDataGrid.
+Syncfusion.Data.WPF assembly contains fundamental and base classes for {{'[CollectionViewAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Data.CollectionViewAdv.html)'| markdownify }} which is responsible for data processing operations handled in WPF Smart Data Grid.
 </td>
 </tr>
 <tr>
@@ -45,7 +45,7 @@ Syncfusion.SfGrid.WPF assembly contains the core grid engine and UI components f
 Syncfusion.SfSmartComponents.WPF
 </td>
 <td>
-Syncfusion.SfSmartComponents.WPF assembly contains the Smart extensions and higher-level controls that enable AI-assisted and smart behaviors for data grids and related components. It exposes the <b>Syncfusion.UI.Xaml.SmartComponents</b> namespace and includes <b>SfSmartDataGrid</b> (smart features on top of the core grid), suggestions and natural-language action hooks, and helper services for integrating AI-driven sorting, filtering, grouping, and highlighting. Include this assembly when you want Smart/AI capabilities (for example, <b>EnableSmartActions</b>, <b>Suggestions</b>, or integration with Syncfusion® AI services).
+Syncfusion.SfSmartComponents.WPF assembly contains the Smart extensions and higher-level controls that enable AI-assisted and smart behaviors for data grids and related components. It exposes the <b>Syncfusion.UI.Xaml.SmartComponents</b> namespace and includes <b>WPF Smart Data Grid</b> (smart features on top of the core grid), suggestions and natural-language action hooks, and helper services for integrating AI-driven sorting, filtering, grouping, and highlighting. Include this assembly when you want Smart/AI capabilities (for example, <b>EnableSmartActions</b>, <b>Suggestions</b>, or integration with Syncfusion® AI services).
 </td>
 </tr>
 <tr>
@@ -61,13 +61,13 @@ Syncfusion.SfChat.WPF assembly contains UI controls and services for building ch
 Syncfusion.Shared.WPF
 </td>
 <td>
-Syncfusion.Shared.WPF contains various editor controls (such as IntegerTextBox, DoubleTextBox and etc) which are used in SfSmartDataGrid. 
+Syncfusion.Shared.WPF contains various editor controls (such as IntegerTextBox, DoubleTextBox and etc) which are used in WPF Smart Data Grid. 
 </td>
 </tr>
 </table>
 
-## Creating simple application with SfSmartDataGrid
-In this walk-through you will create a WPF application that uses the Syncfusion® WPF DataGrid (`SfSmartDataGrid`) control. The steps below correspond to the seven key topics needed to add and bind a SfSmartDataGrid in a WPF project.
+## Creating simple application with WPF Smart Data Grid
+In this walk-through you will create a WPF application that uses the Syncfusion® WPF Smart Data Grid control. The steps below correspond to the seven key topics needed to add and bind a WPF Smart Data Grid in a WPF project.
 
 1. [Create a new WPF project](#create-a-new-wpf-project)
 2. [Install required Syncfusion® NuGet packages](#install-the-syncfusion-wpf-nuget-packages)
@@ -81,7 +81,7 @@ In this walk-through you will create a WPF application that uses the Syncfusion�
 
 ### Create a new WPF project
 
-Create new WPF Project in Visual Studio to display SfSmartDataGrid with data objects.
+Create new WPF Project in Visual Studio to display WPF Smart Data Grid with data objects.
 
 <a id="install-the-syncfusion-wpf-nuget-packages" aria-label="Install the Syncfusion WPF NuGet Packages"></a>
 ### Install the Syncfusion® WPF NuGet packages
@@ -92,8 +92,8 @@ Create new WPF Project in Visual Studio to display SfSmartDataGrid with data obj
 
 ### Adding control via Designer
 
-SfSmartDataGrid control can be added to the application by dragging it from Toolbox and dropping it in Designer view. The required assembly references will be added automatically.
-    ![Dragging WPF SfSmartDataGrid Control from Toolbox to Designer](getting-started_images/wpf-smart-datagrid-toolbox.png)
+WPF Smart Data Grid control can be added to the application by dragging it from Toolbox and dropping it in Designer view. The required assembly references will be added automatically.
+    ![Dragging Control from Toolbox to Designer](getting-started_images/wpf-smart-datagrid-toolbox.png)
 
 ### Adding control manually in XAML
 
@@ -105,8 +105,8 @@ In order to add control manually in XAML, do the below steps,
 	* Syncfusion.Shared.WPF
     * Syncfusion.SfChat.WPF
     * Syncfusion.SfSmartComponents.WPF
-2. Import Syncfusion<sup>®</sup> WPF schema **http://schemas.syncfusion.com/wpf** or SfSmartDataGrid control namespace **Syncfusion.UI.Xaml.SmartComponents** in XAML page.
-3. Declare SfSmartDataGrid control in XAML page.
+2. Import Syncfusion<sup>®</sup> WPF schema **http://schemas.syncfusion.com/wpf** or WPF Smart Data Grid control namespace **Syncfusion.UI.Xaml.SmartComponents** in XAML page.
+3. Declare WPF Smart Data Grid control in XAML page.
 
 {% capture codesnippet1 %}
 {% tabs %}
@@ -135,8 +135,8 @@ In order to add control manually in C#, do the below steps,
 	* Syncfusion.Shared.WPF
     * Syncfusion.SfChat.WPF
     * Syncfusion.SfSmartComponents.WPF
-2. Import SfSmartDataGrid namespace **Syncfusion.UI.Xaml.SmartComponents** .
-3. Create SfSmartDataGrid control instance and add it to the Page.
+2. Import WPF Smart Data Grid namespace **Syncfusion.UI.Xaml.SmartComponents** .
+3. Create WPF Smart Data Grid control instance and add it to the Page.
 
 {% capture codesnippet2 %}
 {% tabs %}
@@ -161,7 +161,7 @@ namespace WpfApplication1
 
 ### Creating Data Model for sample application
 
-SfSmartDataGrid is a data-bound control. So before create binding to the control, you must create data model for Application.
+WPF Smart Data Grid is a data-bound control. So before create binding to the control, you must create data model for Application.
 
 1. Create data object class named **OrderInfo** and declare properties as shown below,
 
@@ -399,7 +399,7 @@ public class ViewModel : INotifyPropertyChanged
 
 ### Binding to Data
 
-To bind the SfSmartDataGrid to data, set the [SfSmartDataGrid.ItemsSource](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_ItemsSource) property to an IEnumerable implementation. Each row in SfSmartDataGrid is bound to an object in data source and each column in SfSmartDataGrid bound to a property in data object. 
+To bind the data, set the [SfSmartDataGrid.ItemsSource](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_ItemsSource) property to an IEnumerable implementation. Each row is bound to an object in data source and each column is bound to a property in data object. 
  
 Bind the collection created in previous step to `SfSmartDataGrid.ItemsSource` property in XAML by setting ViewModel as `DataContext`.
 
@@ -499,7 +499,7 @@ namespace WpfApplication1
 
 ### Running the Application
 
-Press **F5** to build and run the application. Once compiled, the smart datagrid will be displayed with the data provided, and AI features will be available after configuration.
+Press **F5** to build and run the application. Once compiled, the WPF Smart Data Grid will be displayed with the data provided, and AI features will be available after configuration.
 
 Here is the result of the previous codes,
 
@@ -507,7 +507,7 @@ Here is the result of the previous codes,
 
 ## Theme
 
-SfSmartDataGrid supports various built-in themes. Refer to the below links to apply themes for the SfSmartDataGrid,
+WPF Smart Data Grid supports various built-in themes. Refer to the below links to apply themes for the grid,
 
   * [Apply theme using SfSkinManager](https://help.syncfusion.com/wpf/themes/skin-manager)
 	

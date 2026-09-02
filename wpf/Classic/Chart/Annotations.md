@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Annotations in WPF Chart Control | Syncfusion
-description: Learn here all about Annotations support in Syncfusion WPF Chart (Classic) control, its elements and more details.
+title: Annotations in WPF Classic Chart | Syncfusion®
+description: Annotations in the WPF Classic Chart enable custom content to be displayed at specific chart locations for enhanced data visualization.
 platform: wpf
 control: Chart (Classic)
 documentation: ug
 ---
-# Annotations in WPF Chart (Classic)
+# Annotations in WPF Classic Chart
 
-## Annotations in WPF Chart (Classic) at X-Y Coordinates
+## Annotations in WPF Classic Chart at X-Y Coordinates
 
 Annotations at specific X-Y coordinates can be added to the chart programmatically. The ChartSeriesAnnotation type used to define an annotation provides these properties:
 
@@ -124,7 +124,7 @@ The resultant annotations look like this.
 ![Chart-Controls_img229](Chart-Controls_images/Chart-Controls_img229.jpeg)
 
 
-## Annotations in WPF Chart (Classic) At Control Coordinates
+## Annotations in WPF Classic Chart at Control Coordinates
 
 Chart for WPF also lets you add some annotations to the chart at specific control coordinates. By default, these annotations appear as simple text labels. But, their look and feel can be fully customized using custom templates.
 

@@ -1,37 +1,26 @@
 ---
 layout: post
-title: MDI Resize in WPF Tabbed MDI Form control | Syncfusion®
-description: Learn here all about MDI Resize support in Syncfusion® WPF Tabbed MDI Form (DocumentContainer) control and more.
-platform: WPF
+title: MDI Resize in WPF DocumentContainer | Syncfusion®
+description: Enable or disable resizing of MDI child windows in the Syncfusion WPF Tabbed MDI Form (DocumentContainer) control using built-in options.
+platform: wpf
 control: DocumentContainer
 documentation: ug
 ---
 
-# MDI Resize in WPF Tabbed MDI Form (DocumentContainer)
+# MDI Resize in WPF DocumentContainer
 
-Document Container provides options to resize its elements. Setting AllowMDIResize property to _true__,_ will enable the end users to resize the container elements. 
+The DocumentContainer provides options to resize its child elements in MDI mode. Setting the [IsAllowMDIResize](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DocumentContainer.html#Syncfusion_Windows_Tools_Controls_DocumentContainer_IsAllowMDIResize) property to `true` will enable the end user to resize the container elements by dragging the edges of each MDI child window. The default value of `IsAllowMDIResize` is `true`.
 
-To set this property, use the below code.
-
-
-
-{% highlight xaml %}
-
-
-
-<!-- Adding Document Container -->
-
-<syncfusion:DocumentContainer Name="DocContainer" IsAllowMDIResize="True"  Mode="MDI">
-
-<FlowDocumentScrollViewer syncfusion:DocumentContainer.Header="Features">
-
-</FlowDocumentScrollViewer>
-
-…....
-
-…....
-
+{% tabs %}
+{% highlight XAML %}
+<syncfusion:DocumentContainer Name="DocContainer" IsAllowMDIResize="True" Mode="MDI">
+    <FlowDocumentScrollViewer syncfusion:DocumentContainer.Header="Features">
+    </FlowDocumentScrollViewer>
+    <!-- additional child windows -->
 </syncfusion:DocumentContainer>
-
-
 {% endhighlight %}
+
+{% highlight C# %}
+DocContainer.IsAllowMDIResize = true;
+{% endhighlight %}
+{% endtabs %}

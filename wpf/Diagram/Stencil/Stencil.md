@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Stencil in WPF SfDiagram| Syncfusion®
+title: Stencil in WPF SfDiagram | Syncfusion®
 description: Create and manage reusable symbols in Syncfusion® WPF SfDiagram Stencil using diagram elements, SymbolViewModel, and symbol collections.
 platform: wpf
 control: SfDiagram
@@ -9,43 +9,89 @@ documentation: ug
 
 # Stencil in WPF SfDiagram
 
-The [Stencil](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.html) is a gallery of reusable symbols and diagram elements that can be dragged and dropped on the [WPF Diagram](https://www.syncfusion.com/diagram-sdk/wpf-diagram) surface multiple times.
+The [Stencil](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.html) is a gallery of reusable symbols and diagram elements that can be dragged and dropped on the [WPF SfDiagram](https://www.syncfusion.com/diagram-sdk/wpf-diagram) surface multiple times.
 
 {% tabs %}
 {% highlight xaml %}
 
-<!--Namespace for stencil-->
-xmlns:stencil="clr-namespace:Syncfusion.UI.Xaml.Diagram.Stencil;assembly=Syncfusion.SfDiagram.WPF"
+<Window x:Class="StencilSample.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
+        xmlns:stencil="clr-namespace:Syncfusion.UI.Xaml.Diagram.Stencil;assembly=Syncfusion.SfDiagram.WPF"
+        Title="Stencil" Height="600" Width="900">
 
-<!--Define a Stencil-->
-<stencil:Stencil x:Name="stencil" ExpandMode="All" BorderBrush="Black" BorderThickness="0,0,1,0" />
+    <!-- Define a two-column layout: the Stencil on the left, the SfDiagram on the right -->
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="250"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <!-- Define a Stencil -->
+        <stencil:Stencil x:Name="stencil"
+                         Grid.Column="0"
+                         ExpandMode="All"
+                         BorderBrush="Black"
+                         BorderThickness="0,0,1,0"/>
+
+        <!-- Define the SfDiagram that receives dropped symbols -->
+        <syncfusion:SfDiagram x:Name="diagram" Grid.Column="1"/>
+    </Grid>
+</Window>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-//Define a Stencil.
+// Define a Stencil.
 Stencil stencil = new Stencil()
 {
     ExpandMode = ExpandMode.All,
-    BorderThickness = new Thickness(0,0,1,0),
+    BorderThickness = new Thickness(0, 0, 1, 0),
     BorderBrush = new SolidColorBrush(Colors.Black)
 };
 
 {% endhighlight %}
 {% endtabs %}
 
-![StencilDiagram](Stencil_images/Stencil_img1.PNG)
+![Stencil with SfDiagram host](Stencil_images/Stencil_img1.png)
 
-## Add symbols in a Stencil 
+## Properties
 
-The [Symbol](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.Symbol.html) is used to visualize the elements in a stencil that can be created using the following ways:
- 
- * Using the diagram elements. 
- * Using the SymbolViewModel.
- 
- The Stencil's [`SymbolSource`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.Stencil.html#Syncfusion_UI_Xaml_Diagram_Stencil_Stencil_SymbolSource) property is used to define the data source as a collection of objects (symbol, node, connector, and more) that needs to be populated as symbols.
- 
+| Property | Description | Type | Default |
+|---|---|---|---|
+| `SymbolSource` | Collection of symbols (`SymbolCollection` or any `IEnumerable`) that populates the Stencil. | `object` | `null` |
+| `ExpandMode` | Controls which symbol groups are expanded by default. | `ExpandMode` | `ZeroOrMore` |
+| `GroupMappingName` | Property name on each symbol used to group it in the Stencil. | `string` | `null` |
+| `Constraints` | Bitwise combination of `StencilConstraints` flags that enable or disable features. | `StencilConstraints` | `Default` |
+| `BorderBrush` | Border brush of the Stencil. | `Brush` | `null` |
+| `SelectedSymbol` | The currently selected symbol. | `Symbol` | `null` |
+| `ShowSearch` | Toggles the Stencil's search box. | `bool` | `true` |
+| `ShowPreview` | Toggles the live preview that appears while dragging a symbol. | `bool` | `true` |
+| `SymbolFilters` | Collection of filter descriptors for the Stencil. | `SymbolFilters` | `null` |
+| `DisplayName` | Header text shown above the Stencil. | `string` | `string.Empty` |
+| `Title` | Title of the Stencil. | `object` | `null` |
+
+## Add Symbols to a Stencil
+
+The [Symbol](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.Symbol.html) is used to visualize the elements in a Stencil. A Symbol can be created in the following ways:
+
+* Using the diagram elements.
+* Using the `SymbolViewModel`.
+
+The [`SymbolSource`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.Stencil.html#Syncfusion_UI_Xaml_Diagram_Stencil_Stencil_SymbolSource) property defines the data source as a collection of objects (symbol, node, connector, and more) that needs to be populated as symbols.
+
+The [`ExpandMode`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ExpandMode.html) property controls which symbol groups are expanded by default:
+
+| Value | Description |
+|---|---|
+| `ZeroOrOne` | A single group may be expanded. |
+| `One` | Exactly one group is expanded. |
+| `ZeroOrMore` | Any number of groups may be expanded. |
+| `OneOrMore` | At least one group is always expanded. |
+| `All` | All groups are expanded. |
+
 ## Using the Diagram Elements
 
 The diagram elements such as [NodeViewModel](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.NodeViewModel.html), [ConnectorViewModel](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ConnectorViewModel.html), [GroupViewModel](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.GroupViewModel.html), and [ContainerViewModel](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ContainerViewModel.html) can be used to visualize the symbol.
@@ -160,75 +206,40 @@ ConnectorViewModel connector = new ConnectorViewModel()
 GroupViewModel group = new GroupViewModel()
 {
     Key = "Groups",
-    //Adding group nodes
+    //Adding group nodes.
     Nodes = new NodeCollection()
     {
         new NodeViewModel()
         {
-            ID="srcnode",
-            UnitHeight=70,
-            UnitWidth=100,
-            OffsetX=0,
-            OffsetY=300,
-            Shape=this.Resources["Rectangle"]
+            ID = "srcnode",
+            UnitHeight = 70,
+            UnitWidth = 100,
+            OffsetX = 0,
+            OffsetY = 300,
+            Shape = this.Resources["Rectangle"]
         },
         new NodeViewModel()
         {
-            ID="tarnode",
-            UnitHeight=70,
-            UnitWidth=100,
-            OffsetX=100,
-            OffsetY=500,
-            Shape=this.Resources["Rectangle"]
+            ID = "tarnode",
+            UnitHeight = 70,
+            UnitWidth = 100,
+            OffsetX = 100,
+            OffsetY = 500,
+            Shape = this.Resources["Rectangle"]
         }
     },
-    //Adding group connector.
+    //Adding group connectors.
     Connectors = new ConnectorCollection()
     {
         new ConnectorViewModel()
         {
-            SourceNodeID="srcnode",
-            TargetNodeID="tarnode"
-        }
-    }
-};
-GroupViewModel group = new GroupViewModel()
-{
-    Key = "Groups",
-    //Adding group nodes
-    Nodes = new NodeCollection()
-    {
-        new NodeViewModel()
-        {
-            ID="srcnode",
-            UnitHeight=70,
-            UnitWidth=100,
-            OffsetX=0,
-            OffsetY=300,
-            Shape=this.Resources["Rectangle"]
-        },
-        new NodeViewModel()
-        {
-            ID="tarnode",
-            UnitHeight=70,
-            UnitWidth=100,
-            OffsetX=100,
-            OffsetY=500,
-            Shape=this.Resources["Rectangle"]
-        }
-    },
-    //Adding group connector.
-    Connectors = new ConnectorCollection()
-    {
-        new ConnectorViewModel()
-        {
-            SourceNodeID="srcnode",
-            TargetNodeID="tarnode"
+            SourceNodeID = "srcnode",
+            TargetNodeID = "tarnode"
         }
     }
 };
 
-//Creating container element.
+//Initialize the container element.
 ContainerViewModel container = new ContainerViewModel()
 {
     Key = "Container",
@@ -236,7 +247,7 @@ ContainerViewModel container = new ContainerViewModel()
     UnitWidth = 250,
     OffsetX = 300,
     OffsetY = 300,
-    //Creating container nodes
+    //Adding container nodes.
     Nodes = new NodeCollection()
     {
         new NodeViewModel()
@@ -245,7 +256,7 @@ ContainerViewModel container = new ContainerViewModel()
             UnitWidth = 100,
             OffsetX = 250,
             OffsetY = 250,
-            Shape = this.Resources["Rectangle"],
+            Shape = this.Resources["Rectangle"]
         },
         new NodeViewModel()
         {
@@ -253,16 +264,16 @@ ContainerViewModel container = new ContainerViewModel()
             UnitWidth = 100,
             OffsetX = 300,
             OffsetY = 350,
-            Shape = this.Resources["Rectangle"],
-        },
-    },
+            Shape = this.Resources["Rectangle"]
+        }
+    }
 };
 
 //Adding diagram elements to the stencil SymbolSource collection.
 (stencil.SymbolSource as SymbolCollection).Add(node);
 (stencil.SymbolSource as SymbolCollection).Add(connector);
 (stencil.SymbolSource as SymbolCollection).Add(group);
-(stencil.SymbolSource as SymbolCollection).Add(container); 
+(stencil.SymbolSource as SymbolCollection).Add(container);
 {% endhighlight %}
 
 {% endtabs %}
@@ -279,41 +290,58 @@ The [SymbolViewModel](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diag
 
 {% highlight xaml %}
 
-<DataTemplate x:Key="Diamond">
-    <StackPanel>
-        <Path Stretch="Fill"
-              Data="M 397.784,287.875L 369.5,316.159L 341.216,287.875L 369.5,259.591L 397.784,287.875 Z"
-              Fill="White"
-              Stroke="Black"
-              StrokeThickness="1" />
-        <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Text="Diamond" />
-    </StackPanel>
-</DataTemplate>
-<DataTemplate x:Key="symboltemplate">
-    <StackPanel>
-       <Image Source="/Image/user_image.png" Width="100" Height="80" />
-       <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Text="User" />
-    </StackPanel>
-</DataTemplate>
+<Window x:Class="StencilSample.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
+        xmlns:stencil="clr-namespace:Syncfusion.UI.Xaml.Diagram.Stencil;assembly=Syncfusion.SfDiagram.WPF"
+        Title="Stencil Symbols" Height="600" Width="900">
 
-<stencil:Stencil x:Name="stencil"
-                 Grid.Column="0"
-                 Grid.Row="1"
-                 ExpandMode="ZeroOrMore"
-                 BorderBrush="#dfdfdf"
-                 BorderThickness="1"
-                 GroupMappingName="Key">
-    <stencil:Stencil.SymbolSource>
-        <syncfusion:SymbolCollection>
-            <syncfusion:SymbolViewModel Symbol="User" Key="Image"
-                                        SymbolTemplate="{StaticResource symboltemplate}" />
-            <syncfusion:SymbolViewModel Symbol="Diamond" Key="Template"
-                                        SymbolTemplate="{StaticResource Diamond}" />
+    <Window.Resources>
+        <DataTemplate x:Key="Diamond">
+            <StackPanel>
+                <Path Stretch="Fill"
+                      Data="M 397.784,287.875L 369.5,316.159L 341.216,287.875L 369.5,259.591L 397.784,287.875 Z"
+                      Fill="White"
+                      Stroke="Black"
+                      StrokeThickness="1" />
+                <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Text="Diamond" />
+            </StackPanel>
+        </DataTemplate>
+        <DataTemplate x:Key="symboltemplate">
+            <StackPanel>
+                <Image Source="/Image/user_image.png" Width="100" Height="80" />
+                <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Text="User" />
+            </StackPanel>
+        </DataTemplate>
+    </Window.Resources>
 
-        </syncfusion:SymbolCollection>
-    </stencil:Stencil.SymbolSource>
-</stencil:Stencil>
- 
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="250"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <stencil:Stencil x:Name="stencil"
+                         Grid.Column="0"
+                         ExpandMode="ZeroOrMore"
+                         BorderBrush="#dfdfdf"
+                         BorderThickness="1"
+                         GroupMappingName="Key">
+            <stencil:Stencil.SymbolSource>
+                <syncfusion:SymbolCollection>
+                    <syncfusion:SymbolViewModel Symbol="User" Key="Image"
+                                                SymbolTemplate="{StaticResource symboltemplate}" />
+                    <syncfusion:SymbolViewModel Symbol="Diamond" Key="Template"
+                                                SymbolTemplate="{StaticResource Diamond}" />
+                </syncfusion:SymbolCollection>
+            </stencil:Stencil.SymbolSource>
+        </stencil:Stencil>
+
+        <syncfusion:SfDiagram x:Name="diagram" Grid.Column="1"/>
+    </Grid>
+</Window>
+
 {% endhighlight %}
  
 {% highlight c# %}
@@ -347,60 +375,87 @@ SymbolViewModel symbol = new SymbolViewModel()
 
 ## Constraints
 
-The [`Constraints`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.Stencil.html#Syncfusion_UI_Xaml_Diagram_Stencil_Stencil_Constraints) property of stencil allows you to enable or disable certain features. For more information about stencil constraints, refer to the [StencilConstraints](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.StencilConstraints.html).
+The [`Constraints`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.Stencil.html#Syncfusion_UI_Xaml_Diagram_Stencil_Stencil_Constraints) property enables or disables Stencil features such as drag, search, and filtering, controlled by the [StencilConstraints](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.StencilConstraints.html) flags.
 
-## See also
+Common values include:
 
-[How to drag and drop elements from a treeview ?](https://www.syncfusion.com/kb/10574/how-to-drag-and-drop-elements-from-treeview-in-wpf-diagramsfdiagram)
+| Flag | Description |
+|---|---|
+| `None` | Disables all behaviors. |
+| `ShowPreview` | Toggles the preview shown while dragging an item from the Stencil to the diagram. |
+| `Filters` | Enables or disables filtering of symbols. |
+| `GroupExpanded` | Enables or disables the expanded state of symbol groups. |
+| `AllowDragDrop` | Allows symbols to be dragged and dropped within the Stencil. |
+| `ContextMenu` | Enables or disables the context menu. |
+| `Commands` | Enables or disables Commands behavior. |
+| `Default` | Combines `Filters`, `GroupExpanded`, `AllowDragDrop`, `ContextMenu`, and `Commands`. |
 
-[How to refresh the stencil when adding a new symbol in the symbol source ?](https://www.syncfusion.com/kb/9928/how-to-refresh-the-stencil-when-adding-new-symbol-in-symbol-source)
+{% tabs %}
+{% highlight xaml %}
 
-[How to host different UI elements as a node content ?](https://www.syncfusion.com/kb/9456/how-to-host-different-ui-elements-as-node-content)
+<stencil:Stencil x:Name="stencil"
+                 ExpandMode="All"
+                 BorderBrush="Black" BorderThickness="0,0,1,0">
+    <stencil:Stencil.Constraints>
+        <stencil:StencilConstraints>AllowDragDrop, ShowPreview, Filters</stencil:StencilConstraints>
+    </stencil:Stencil.Constraints>
+</stencil:Stencil>
 
-[How to notify stencil has been loaded ?](https://www.syncfusion.com/kb/6256/how-to-notify-stencil-has-been-loaded)
+{% endhighlight %}
 
-[How to get the base node interface while dropping a Symbol from Stencil to SfDiagram ?](https://www.syncfusion.com/kb/5880/how-to-get-the-base-node-interface-while-dropping-a-symbol-from-the-stencil-to-the)
+{% highlight c# %}
 
-[How to use different User Controls into Stencil?](https://www.syncfusion.com/kb/11459/how-to-use-different-user-controls-into-stencil-in-the-wpf-diagramsfdiagram)
+stencil.Constraints = StencilConstraints.AllowDragDrop
+                    | StencilConstraints.ShowPreview
+                    | StencilConstraints.Filters;
 
-[How to refresh the stencil with new collection or new symbol?](https://support.syncfusion.com/kb/article/8714/how-to-refresh-stencil-with-new-collection-or-symbol-in-wpf-diagram)
+{% endhighlight %}
+{% endtabs %}
 
-[How to create the SfDiagram with stencil control?](https://support.syncfusion.com/kb/article/8908/how-to-create-the-wpf-diagram-sfdiagram-with-stencil)
+## See Also
 
-[How to modify stencil's symbol template dynamically at run time?](https://support.syncfusion.com/kb/article/11582/how-to-modify-stencils-symbol-template-dynamically-at-run-time-in-wpf-diagramsfdiagram)
+[How to drag and drop elements from a TreeView in WPF SfDiagram (SfDiagram)?](https://support.syncfusion.com/kb/article/9277/how-to-drag-and-drop-elements-from-treeview-in-wpf-diagram-sfdiagram)
 
-[How to drag and drop elements from treeview?](https://support.syncfusion.com/kb/article/9277/how-to-drag-and-drop-elements-from-treeview-in-wpf-diagram-sfdiagram)
+[How to drag and drop different shapes from SfTreeView to WPF SfDiagram?](https://support.syncfusion.com/kb/article/10960/how-to-drag-and-drop-different-shapes-from-sftreeview-to-wpf-diagram-sfdiagram)
 
-[How to drag and drop different shapes from SfTreeView to WPF Diagram?](https://support.syncfusion.com/kb/article/10960/how-to-drag-and-drop-different-shapes-from-sftreeview-to-wpf-diagram-sfdiagram)
+[How to refresh the stencil when adding a new symbol in the symbol source?](https://www.syncfusion.com/kb/9928/how-to-refresh-the-stencil-when-adding-new-symbol-in-symbol-source)
 
-[How to restrict the symbol dropping from the SymbolPalette?](https://support.syncfusion.com/kb/article/9919/how-to-restrict-the-symbol-dropping-from-the-symbolpalette-in-the-wpf-diagram-sfdiagram)
+[How to refresh the stencil with a new collection or new symbol?](https://support.syncfusion.com/kb/article/8714/how-to-refresh-stencil-with-new-collection-or-symbol-in-wpf-diagram)
 
-[How to create parent and child relationship by drag and drop nodes?](https://support.syncfusion.com/kb/article/10008/how-to-create-parent-and-child-relationship-by-drag-and-drop-nodes-in-wpf-diagram-sfdiagram)
+[How to create the WPF SfDiagram with a Stencil?](https://support.syncfusion.com/kb/article/8908/how-to-create-the-wpf-diagram-sfdiagram-with-stencil)
 
-[How to get the notification when symbol is added to the stencil?](https://support.syncfusion.com/kb/article/5863/how-to-notify-stencil-in-wpf-diagram-sfdiagram)
+[How to host different UI elements as node content?](https://www.syncfusion.com/kb/9456/how-to-host-different-ui-elements-as-node-content)
 
-[How to get base node interface while dropping a symbol from stencil?](https://support.syncfusion.com/kb/article/5494/how-to-get-base-node-interface-while-dropping-a-symbol-from-stencil-to-wpf-diagram)
+[How to notify that the Stencil has been loaded?](https://www.syncfusion.com/kb/6256/how-to-notify-stencil-has-been-loaded)
 
-[How to expand all symbol groups in stencil?](https://support.syncfusion.com/kb/article/5492/how-to-expand-all-symbol-groups-in-wpf-diagram-sfdiagram)
+[How to get the notification when a symbol is added to the Stencil?](https://support.syncfusion.com/kb/article/5863/how-to-notify-stencil-in-wpf-diagram-sfdiagram)
 
-[How to change the color of a node in the stencil and diagram while loading a saved file in WPF Diagram(SfDiagram)?](https://support.syncfusion.com/kb/article/18669/how-to-change-the-color-of-a-node-in-the-stencil-and-diagram-while-loading-a-saved-file-in-wpf-diagramsfdiagram)
+[How to get the base node interface while dropping a symbol from the Stencil to SfDiagram?](https://support.syncfusion.com/kb/article/5494/how-to-get-base-node-interface-while-dropping-a-symbol-from-stencil-to-wpf-diagram)
 
-[How to group all the SymbolViewModels into the same group in the WPF Diagram (SfDiagram)?](https://support.syncfusion.com/kb/article/18672/how-to-group-all-the-symbolviewmodels-into-the-same-group-in-the-wpf-diagram-sfdiagram)
+[How to use different user controls in a Stencil?](https://www.syncfusion.com/kb/11459/how-to-use-different-user-controls-into-stencil-in-the-wpf-diagramsfdiagram)
 
-[How to Create Customized Stencil Using SVG Images in WPF SfDiagram?](https://support.syncfusion.com/kb/article/18251/how-to-create-customized-stencil-using-svg-images-in-wpf-sfdiagram)
+[How to modify a Stencil's symbol template dynamically at run time?](https://support.syncfusion.com/kb/article/11582/how-to-modify-stencils-symbol-template-dynamically-at-run-time-in-wpf-diagramsfdiagram)
 
-[How to Change Cursor to Block Cursor When Hovering in WPF SfDiagram?](https://support.syncfusion.com/kb/article/18242/how-to-change-cursor-to-block-cursor-when-hovering-in-wpf-sfdiagram)
+[How to restrict symbol dropping from the Stencil?](https://support.syncfusion.com/kb/article/9919/how-to-restrict-the-symbol-dropping-from-the-symbolpalette-in-the-wpf-diagram-sfdiagram)
 
-[How to Change the Background Color of a Symbol in WPF SfDiagram?](https://support.syncfusion.com/kb/article/18241/how-to-change-the-background-color-of-a-symbol-in-wpf-sfdiagram)
+[How to create parent and child relationships by drag and drop nodes?](https://support.syncfusion.com/kb/article/10008/how-to-create-parent-and-child-relationship-by-drag-and-drop-nodes-in-wpf-diagram-sfdiagram)
 
-[How to drag and drop both default and custom node from the stencil into the WPF Diagram (SfDiagram)?](https://support.syncfusion.com/kb/article/18459/how-to-drag-and-drop-both-default-and-custom-node-from-the-stencil-into-the-wpf-diagram-sfdiagram)
+[How to expand all symbol groups in a Stencil?](https://support.syncfusion.com/kb/article/5492/how-to-expand-all-symbol-groups-in-wpf-diagram-sfdiagram)
 
-[How to enable/disable the Stencil symbol in WPF SfDiagram?](https://support.syncfusion.com/kb/article/17888/how-to-enabledisable-the-stencil-symbol-in-wpf-diagram-sfdiagram)
+[How to change the color of a node in the Stencil and diagram while loading a saved file in WPF SfDiagram ?](https://support.syncfusion.com/kb/article/18669/how-to-change-the-color-of-a-node-in-the-stencil-and-diagram-while-loading-a-saved-file-in-wpf-diagramsfdiagram)
 
-[How to Achieve the Stencil Preview Effect Without Dragging a Symbol in the WPF Diagram (SfDiagram)](https://support.syncfusion.com/kb/article/15537/how-to-achieve-the-stencil-preview-effect-without-dragging-a-symbol-in-the-wpf-diagram-sfdiagram)
+[How to group all the SymbolViewModels into the same group in WPF SfDiagram?](https://support.syncfusion.com/kb/article/18672/how-to-group-all-the-symbolviewmodels-into-the-same-group-in-the-wpf-diagram-sfdiagram)
 
-[How to refresh stencil with new collection or symbol in WPF Diagram?](https://support.syncfusion.com/kb/article/8714/how-to-refresh-stencil-with-new-collection-or-symbol-in-wpf-diagram)
+[How to create a customized Stencil using SVG images in WPF SfDiagram?](https://support.syncfusion.com/kb/article/18251/how-to-create-customized-stencil-using-svg-images-in-wpf-sfdiagram)
 
-[How to create the WPF Diagram (SfDiagram) with stencil?](https://support.syncfusion.com/kb/article/8908/how-to-create-the-wpf-diagram-sfdiagram-with-stencil)
+[How to change the cursor to a block cursor when hovering in WPF SfDiagram?](https://support.syncfusion.com/kb/article/18242/how-to-change-cursor-to-block-cursor-when-hovering-in-wpf-sfdiagram)
+
+[How to change the background color of a symbol in WPF SfDiagram?](https://support.syncfusion.com/kb/article/18241/how-to-change-the-background-color-of-a-symbol-in-wpf-sfdiagram)
+
+[How to drag and drop both default and custom nodes from the Stencil into the WPF SfDiagram ?](https://support.syncfusion.com/kb/article/18459/how-to-drag-and-drop-both-default-and-custom-node-from-the-stencil-into-the-wpf-diagram-sfdiagram)
+
+[How to enable or disable Stencil symbols in WPF SfDiagram?](https://support.syncfusion.com/kb/article/17888/how-to-enabledisable-the-stencil-symbol-in-wpf-diagram-sfdiagram)
+
+[How to achieve the Stencil preview effect without dragging a symbol in WPF SfDiagram ?](https://support.syncfusion.com/kb/article/15537/how-to-achieve-the-stencil-preview-effect-without-dragging-a-symbol-in-the-wpf-diagram-sfdiagram)
 
 [How to achieve the AutoConnect functionality in WPF SfDiagram?](https://support.syncfusion.com/kb/article/18252/how-to-achieve-the-autoconnect-functionality-in-wpf-diagram-sfdiagram)

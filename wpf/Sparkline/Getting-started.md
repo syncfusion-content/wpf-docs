@@ -39,7 +39,7 @@ N> The Add Reference window differs for Visual Basic projects.
 
 ### Initialize the sparkline
 
-You need to initialize the sparkline represented by the `SfLineSparkline` class (`Syncfusion.UI.Xaml.Charts.SfLineSparkline`).
+You need to initialize the sparkline represented by the WPF Sparkline class (`Syncfusion.UI.Xaml.Charts.SfLineSparkline`).
 
 {% tabs %}
 
@@ -94,7 +94,7 @@ N> Syncfusion Sparkline also supports an ItemsSource as a collection of double v
 
 ### Binding data to the sparkline
 
-We need to add the above `UsersViewModel` to the `DataContext` of the sparkline, bind the data source to the `ItemsSource` property of the `SfLineSparkline`, and then map the data using `YBindingPath` and `XBindingPath`.
+We need to add the above `UsersViewModel` to the `DataContext` of the sparkline, bind the data source to the `ItemsSource` property of the WPF Sparkline, and then map the data using `YBindingPath` and `XBindingPath`.
 
 {% tabs %}
 

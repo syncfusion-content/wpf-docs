@@ -1,13 +1,13 @@
 ---
 layout: post
-title: General in WPF Diagram Control | Syncfusion
-description: Learn here all about General support in Syncfusion WPF Diagram (classic) control, its elements and more details.
+title: General Features in WPF Diagram | Syncfusion®
+description: Explore general features in the Syncfusion® WPF Diagram, including selection, movement, label customization, and context menu support.
 platform: wpf
 control: Diagram
 documentation: ug
 ---
 
-# General in WPF Diagram (classic)
+# General Features in WPF Diagram
 
 This section illustrates the general features pertaining to both Node and LineConnector.
 
@@ -322,7 +322,7 @@ Customized Multiline Label
 
 ### Customize the Context Menu of Nodes and Line Connectors
 
-Essential Diagram for WPF provides support for the display of context menus for nodes and connectors on right-clicking the node or connector. The context menu contains the default commands, Z-order BringToFront, SendToBack, MoveForward, SendBackward, Grouping (Group and Ungroup), and Delete. The context menu can be customized so that you can add some custom options to the context menu. This can be done using the ContextMenu property of the nodes and the line connectors.
+WPF Diagram provides support for the display of context menus for nodes and connectors on right-clicking the node or connector. The context menu contains the default commands, Z-order BringToFront, SendToBack, MoveForward, SendBackward, Grouping (Group and Ungroup), and Delete. The context menu can be customized so that you can add some custom options to the context menu. This can be done using the ContextMenu property of the nodes and the line connectors.
 
 The following code example illustrates addition of custom options to the context menu.
 {% highlight c# %}

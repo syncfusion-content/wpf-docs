@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Virtualization in WPF CheckedListBox control | Syncfusion
-description: Learn here all about Virtualization support in Syncfusion WPF CheckedListBox (CheckListBox) control and more.
+title: Virtualization in WPF CheckListBox | Syncfusion®
+description: Improve performance in the Syncfusion WPF CheckListBox control by virtualizing items so only the visible entries are generated and rendered.
 platform: wpf
 control: CheckListBox
 documentation: ug
 ---
 
-# Virtualization in WPF CheckedListBox (CheckListBox)
+# Virtualization in WPF CheckListBox
 
 UI Virtualization support is enabled by default in [CheckListBox](https://www.syncfusion.com/wpf-ui-controls/CheckedListBox), which allows the users to load large sets of data without affecting loading or scrolling performance. This feature allows users to reduce the loading time of `CheckListBox` items regardless of items count.
 
@@ -92,7 +92,7 @@ Click [here](https://github.com/SyncfusionExamples/wpf-checked-listbox-examples/
 
 ## Disable the Virtualization
 
-We can only load the particular items to visible at a time. If we want to make some items as checked that are not in view, then we need to disable the virtualization, otherwise the items will not be checked until they are in view. We can disable the virtualization by using the `ItemsPanel` template.
+By default, only the items that are currently visible are loaded. If you want to mark items as checked that are not currently in view, you need to disable the virtualization; otherwise, the items will not be checked until they are brought into view. You can disable virtualization by using the `ItemsPanel` template.
 
 {% tabs %}
 {% highlight XAML %}

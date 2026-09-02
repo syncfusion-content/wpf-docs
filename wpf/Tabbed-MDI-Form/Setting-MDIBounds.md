@@ -1,54 +1,44 @@
 ---
 layout: post
-title: Setting MDIBounds in WPF Tabbed MDI Form control | Syncfusion®
-description: Learn here all about Setting MDIBounds support in Syncfusion® WPF Tabbed MDI Form (DocumentContainer) control and more.
+title: Setting MDIBounds in WPF DocumentContainer | Syncfusion®
+description: Configure the bounds such as position and size for MDI child windows in the Syncfusion WPF Tabbed MDI Form (DocumentContainer) control.
 platform: wpf
 control: DocumentContainer
 documentation: ug
 ---
 
-# Setting MDIBounds in WPF Tabbed MDI Form (DocumentContainer)
+# Setting MDIBounds in WPF DocumentContainer
 
-This property helps the Document Container control in properly placing its elements within the container.
+The `MDIBounds` attached property helps the DocumentContainer place its elements within the container in MDI mode. The property is set on each child element, not on the DocumentContainer itself.
 
-The general syntax of the MDI bound property is given below.
+The general syntax of the `MDIBounds` attached property is given below.
 
+```
+Syncfusion:DocumentContainer.MDIBounds="x,y,width,height"
+```
 
+where:
 
-Syncfusion:DocumentContainer.MDIBounds="a,b,c,d"
+* The first two values (`x` and `y`) stand for the X and Y coordinates of the MDI bounds.
+* The next two values (`width` and `height`) stand for the width and height of the element in the DocumentContainer.
 
+To set the MDI bounds, use the following code snippet.
 
-
-where, 
-
-* The first two values (a and b) stands for X and Y co-ordinates for the MDI bounds. 
-* The second two values(c and d) stands for width and height of the element in a Document Container.
-
-To set the MDI Bounds, use the following code snippet.
-
-
-
-{% highlight xaml %}
-
-
-
-<!-- Adding Document Container -->
-
-<syncfusion:DocumentContainer Name="DocContainer"  Mode="MDI">
-
-<FlowDocumentScrollViewer Syncfusion:DocumentContainer.MDIBounds="0,0,200,300">
-
-</FlowDocumentScrollViewer>
-
-…....
-
-…....
-
+{% tabs %}
+{% highlight XAML %}
+<syncfusion:DocumentContainer Name="DocContainer" Mode="MDI">
+    <FlowDocumentScrollViewer syncfusion:DocumentContainer.MDIBounds="0,0,200,300" />
+    <!-- additional child windows -->
 </syncfusion:DocumentContainer>
-
 {% endhighlight %}
+{% highlight C# %}
+FlowDocumentScrollViewer flow = new FlowDocumentScrollViewer();
+DocumentContainer.SetMDIBounds(flow, new Rect(0, 0, 200, 300));
+DocContainer.Items.Add(flow);
+{% endhighlight %}
+{% endtabs %}
 
-![Setting-MDIBounds_img1](Setting-MDIBounds_images/Setting-MDIBounds_img1.jpeg)
+![DocumentContainer with a child window placed using MDIBounds](Setting-MDIBounds_images/Setting-MDIBounds_img1.jpeg)
 
 
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Badge in WPF AvatarView Control | Syncfusion
-description: Learn how to set different states for badges in Syncfusion Essential WPF AvatarView control (SfAvatarView), its elements, and more.
+title: Badges in WPF SfAvatarView | Syncfusion®
+description: Badges in WPF SfAvatarView highlight user status, activity, or notifications, providing additional context alongside avatar content.
 platform: wpf
 control: AvatarView
 documentation: ug
 ---
 
-# How to use badge for WPF AvatarView
+# Badges in WPF SfAvatarView
 
 The [SfAvatarView](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.SfAvatarView.html) control supports various [SfBadge](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Notification.SfBadge.html) states to notify users of new or unread messages, notifications, or status updates.
 

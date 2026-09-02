@@ -9,11 +9,11 @@ documentation: ug
 
 # Tooltip in WPF Bullet Graph
 
-The tooltip in `SfBulletGraph` is used to view the values of FeaturedMeasure, ComparativeMeasure, and QualitativeRange in a required design.
+The tooltip in WPF Bullet Graph is used to view the values of FeaturedMeasure, ComparativeMeasure, and QualitativeRange in a required design.
 
-The tooltip is displayed when the mouse is over the FeaturedMeasure, ComparativeMeasure, or QualitativeRange. On a touch device, it is displayed on holding over the FeaturedMeasure, ComparativeMeasure, or QualitativeRange of SfBulletGraph.
+The tooltip is displayed when the mouse is over the FeaturedMeasure, ComparativeMeasure, or QualitativeRange. On a touch device, it is displayed on holding over the FeaturedMeasure, ComparativeMeasure, or QualitativeRange of WPF Bullet Graph.
 
-The SfBulletGraph tooltip is displayed only when the [`ShowToolTip`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.BulletGraph.SfBulletGraph.html#Syncfusion_UI_Xaml_BulletGraph_SfBulletGraph_ShowToolTip) property is set to true.
+The WPF Bullet Graph tooltip is displayed only when the [`ShowToolTip`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.BulletGraph.SfBulletGraph.html#Syncfusion_UI_Xaml_BulletGraph_SfBulletGraph_ShowToolTip) property is set to true.
 
 {% tabs %}
 {% highlight xaml %}
@@ -245,7 +245,7 @@ You can display the value of [`ComparativeMeasure`](https://help.syncfusion.com/
 
 ## Customizing QualitativeRangeToolTip
 
-You can display the value of QualitativeRange of SfBulletGraph in a tooltip to view the Start and End values of the QualitativeRange. The [`QualitativeRangeToolTipTemplate`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.BulletGraph.SfBulletGraph.html#Syncfusion_UI_Xaml_BulletGraph_SfBulletGraph_QualitativeRangeToolTipTemplate) is a DataTemplate type. By using this property, the default appearance of the QualitativeRange tooltip can be customized.
+You can display the value of QualitativeRange of WPF Bullet Graph in a tooltip to view the Start and End values of the QualitativeRange. The [`QualitativeRangeToolTipTemplate`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.BulletGraph.SfBulletGraph.html#Syncfusion_UI_Xaml_BulletGraph_SfBulletGraph_QualitativeRangeToolTipTemplate) is a DataTemplate type. By using this property, the default appearance of the QualitativeRange tooltip can be customized.
 
 {% tabs %}
 {% highlight xaml %}

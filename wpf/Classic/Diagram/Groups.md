@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Groups in WPF Diagram Control | Syncfusion
-description: Learn here all about Groups support in Syncfusion WPF Diagram (classic) control, its elements and more details.
+title: Groups in WPF Diagram | Syncfusion®
+description: Learn about groups in the Syncfusion® WPF Diagram, including grouping, ungrouping, editing groups, connections, layers, and visibility management.
 platform: wpf
 control: Diagram
 documentation: ug
 ---
 
-# Groups in WPF Diagram (classic)
+# Groups in WPF Diagram
 
-Essential Diagram WPF provides support to group and ungroup nodes. Grouping feature comes in handy when you want to apply the same edits to a number of objects and yet retain their individuality. All the operations performed on the group also affect the individual items in the group. However any item in the group can also be edited individually. On ungrouping, the items in the group again act as individual entities.
+WPF Diagram provides support to group and ungroup nodes. Grouping feature comes in handy when you want to apply the same edits to a number of objects and yet retain their individuality. All the operations performed on the group also affect the individual items in the group. However any item in the group can also be edited individually. On ungrouping, the items in the group again act as individual entities.
 
 A Group is essentially just another node added which acts as a container for other objects. Therefore a group node is referred to as the parent node, and the grouped objects are referred to as the children of the group.
 
@@ -88,7 +88,7 @@ IEnumerable</td><td>
 
 ## Create Group
 
-The following are the three ways to create a group in Essential Diagram WPF. 
+The following are the three ways to create a group in WPF Diagram. 
 
 * By using Code Behind
 * By using the Group Command
@@ -511,7 +511,7 @@ The following steps illustrate how to create connections to individual objects i
 
 Ungrouping a group deletes the group and removes all the child elements from the group. Once a group is ungrouped, the child elements behave as individual entities.
 
-The following are the three ways to ungroup a group in Essential Diagram WPF. 
+The following are the three ways to ungroup a group in WPF Diagram. 
 
 * By using Code Behind
 * By using the Ungroup Command
@@ -754,7 +754,7 @@ The following steps illustrate how to ungroup a group by using the Ungroup comma
    
 ## Layers
 
-Essential Diagram for WPF supports layer display. Numerous nodes and line connectors can be added to a layer and the visible property of its contents can be hidden by changing the visible property of the layer. A node or line connector can be added to any number of layers and the node is visible only if all layers to which this node or line connector belongs to are visible.
+WPF Diagram supports layer display. Numerous nodes and line connectors can be added to a layer and the visible property of its contents can be hidden by changing the visible property of the layer. A node or line connector can be added to any number of layers and the node is visible only if all layers to which this node or line connector belongs to are visible.
 
 This feature will be useful when there are many nodes or connector in the page. If it is required to see only a particular part or particular set of nodes or connector create separate layers and categorize nodes and connectors in different layers. Then set the IsVisible of each layers accordingly.
 
@@ -1026,7 +1026,7 @@ diagramModel.Layers.Add(Lan1)
 
 ## Hidden or Active Layer
 
-#### Active Layer
+### Active Layer
 
 When a new Node or LineConnector is dropped from SymbolPalette into the DiagramPage, it will be added into all the active layers automatically. A layer can be activated or deactivated as shown in following code snippet.
 

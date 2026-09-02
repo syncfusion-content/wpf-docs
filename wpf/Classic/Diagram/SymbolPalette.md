@@ -1,13 +1,13 @@
 ---
 layout: post
-title: SymbolPalette in WPF Diagram Control | Syncfusion
-description: Learn here all about SymbolPalette support in Syncfusion WPF Diagram (classic) control, its elements and more details.
+title: SymbolPalette in WPF Diagram | Syncfusion®
+description: Learn about the SymbolPalette in the Syncfusion® WPF Diagram, including symbol groups, filters, custom symbols, serialization, and customization.
 platform: wpf
 control: Diagram
 documentation: ug
 ---
 
-# SymbolPalette in WPF Diagram (classic)
+# SymbolPalette in WPF Diagram
 
 The SymbolPalette control displays node shapes and allows you to drag and drop symbols onto diagrams. It supports grouping and filtering symbols. It allows you to classify items as groups so they can be navigated easily. Also, custom shapes can be added to the SymbolPalette.
 
@@ -156,7 +156,7 @@ diagramcontrol.IsSymbolPaletteEnabled = True
 
 ### Preview for Symbol Palette Item
 
-Essential Diagram for WPF provides preview support for Symbol Palette. When you drag an item from Symbol Palette to Diagram View, Preview of the dragged item will be displayed. You can enable or disable the preview support. You can also customize the preview.  
+WPF Diagram provides preview support for Symbol Palette. When you drag an item from Symbol Palette to Diagram View, Preview of the dragged item will be displayed. You can enable or disable the preview support. You can also customize the preview.  
 
 
 
@@ -848,7 +848,7 @@ To create SymbolPaletteItem using Symbol Designer, refer to the Symbol Designer 
 
 #### Using Microsoft Expression Blend 4
 
-Essential Diagram provides an add-on for creating SymbolPaletteItem’s content. You can also export the created content as SymbolPaletteItem using this add on.  The exported content can be imported into the diagram control for later.
+WPF Diagram provides an add-on for creating SymbolPaletteItem’s content. You can also export the created content as SymbolPaletteItem using this add on.  The exported content can be imported into the diagram control for later.
 
 To enable this you need to add the Syncfusion.Diagram.SymbolExporter.dll in the Extension folder.
 
@@ -1564,7 +1564,7 @@ Thereby, the performance of dragging the SymbolPaletteItem is improved by 40%. I
 
 ## SymbolPalette in WPF Diagram (classic) Serialization
 
-Serialization is the process of saving and retrieving the SymbolPalette groups and items. Essential DiagramWPF supports saving the SymbolPalette as an XAML file. This load and save feature allows you to save the SymbolPalette for future use. You can continue working on their page by loading the appropriate XAML file.
+Serialization is the process of saving and retrieving the SymbolPalette groups and items. WPF Diagram supports saving the SymbolPalette as an XAML file. This load and save feature allows you to save the SymbolPalette for future use. You can continue working on their page by loading the appropriate XAML file.
 
 SymbolPaletteSerialization feature provides an option to save and load the SymbolPalette, SymbolPalette groups, elements and items in diagram control. So any item can be customized and imported onto the SymbolPalette.
 

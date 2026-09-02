@@ -1,73 +1,87 @@
 ---
 layout: post
-title: Setting Window State in WPF Tabbed MDI Form | Syncfusion®
-description: Learn here all about Setting Window State support in Syncfusion® WPF Tabbed MDI Form (DocumentContainer) control and more.
-platform: WPF
+title: Setting Window State in WPF DocumentContainer | Syncfusion®
+description: Set the window state of documents in the Syncfusion WPF Tabbed MDI Form (DocumentContainer) control such as normal, minimized, or maximized.
+platform: wpf
 control: DocumentContainer
 documentation: ug
 ---
-# Setting Window State in WPF Tabbed MDI Form 
+# Setting Window State in WPF DocumentContainer 
 
-## Setting Window State
+The DocumentContainer supports the following three window states for MDI child windows:
 
-There are three possible window states of MDI windows for the Document Container control. They are as follows.
+* **Maximized**
+* **Minimized**
+* **Normal**
 
-* Maximized
-* Minimized
-* Normal
+The window state is set per child element using the `MDIWindowState` attached property (`Syncfusion.Windows.Tools.Controls.MDIWindowState` enum).
 
-To set the MDI window state to "minimized", use the below code snippet. FlowDocumentScrollViewer is considered as an element of the Document Container in the below mentioned example.
+## Setting the Window State to Minimized
 
-
-
-{% highlight xaml %}
-
-
-<!-- Adding Document Container -->
-
-<syncfusion:DocumentContainer Name="DocContainer" Mode="MDI">
-
-<FlowDocumentScrollViewer syncfusion:DocumentContainer.MDIWindowState="Minimized" >
-
-</FlowDocumentScrollViewer>
-
-…....
-
-…....
-
-</syncfusion:DocumentContainer>
-
-{% endhighlight %}
-
-![Displays maximized MDI window](Setting-Window-State_images/Setting-Window-State_img1.jpeg)
-
-
-## Notify event for MDIWindow State Changes
-
-The [MDIWindowStateChanging](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DocumentContainer.html) event occurs before the state of the MDIWindow is changed. The state changing of MDIWindow can be handled by setting e.Cancel to true.
+A `FlowDocumentScrollViewer` is used as an example child element below.
 
 {% tabs %}
 {% highlight XAML %}
-
-<syncfusion:DocumentContainer Name="DocContainer" Mode="MDI" MDIWindowStateChanging="DocContainer_MDIWindowStateChanging">
-
-<FlowDocumentScrollViewer syncfusion:DocumentContainer.Header="Window1" >
-
-</FlowDocumentScrollViewer>
-<FlowDocumentScrollViewer syncfusion:DocumentContainer.Header="Window2" >
-
-</FlowDocumentScrollViewer>
-
+<syncfusion:DocumentContainer Name="DocContainer" Mode="MDI">
+    <FlowDocumentScrollViewer syncfusion:DocumentContainer.MDIWindowState="Minimized" />
+    <!-- additional child windows -->
 </syncfusion:DocumentContainer>
+{% endhighlight %}
+{% highlight C# %}
+FlowDocumentScrollViewer flow = new FlowDocumentScrollViewer();
+DocumentContainer.SetMDIWindowState(flow, MDIWindowState.Minimized);
+DocContainer.Items.Add(flow);
+{% endhighlight %}
+{% endtabs %}
 
+## Setting the Window State to Maximized
+
+{% tabs %}
+{% highlight XAML %}
+<syncfusion:DocumentContainer Name="DocContainer" Mode="MDI">
+    <FlowDocumentScrollViewer syncfusion:DocumentContainer.MDIWindowState="Maximized" />
+</syncfusion:DocumentContainer>
+{% endhighlight %}
+{% highlight C# %}
+FlowDocumentScrollViewer flow = new FlowDocumentScrollViewer();
+DocumentContainer.SetMDIWindowState(flow, MDIWindowState.Maximized);
+DocContainer.Items.Add(flow);
+{% endhighlight %}
+{% endtabs %}
+
+## Setting the Window State to Normal
+
+{% tabs %}
+{% highlight XAML %}
+<syncfusion:DocumentContainer Name="DocContainer" Mode="MDI">
+    <FlowDocumentScrollViewer syncfusion:DocumentContainer.MDIWindowState="Normal" />
+</syncfusion:DocumentContainer>
+{% endhighlight %}
+{% highlight C# %}
+FlowDocumentScrollViewer flow = new FlowDocumentScrollViewer();
+DocumentContainer.SetMDIWindowState(flow, MDIWindowState.Normal);
+DocContainer.Items.Add(flow);
+{% endhighlight %}
+{% endtabs %}
+
+## Notification of MDI Window State Changes
+
+The [MDIWindowStateChanging](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DocumentContainer.html#Syncfusion_Windows_Tools_Controls_DocumentContainer_MDIWindowStateChanging) event occurs before the state of an MDI window is changed. The state change can be canceled by setting `e.Cancel` to `true`. The corresponding `MDIWindowStateChanged` event is raised after the state has actually changed.
+
+{% tabs %}
+{% highlight XAML %}
+<syncfusion:DocumentContainer Name="DocContainer" Mode="MDI"
+                              MDIWindowStateChanging="DocContainer_MDIWindowStateChanging">
+    <FlowDocumentScrollViewer syncfusion:DocumentContainer.Header="Window1" />
+    <FlowDocumentScrollViewer syncfusion:DocumentContainer.Header="Window2" />
+</syncfusion:DocumentContainer>
 {% endhighlight %}
 
 {% highlight C# %}
- private void DocContainer_MDIWindowStateChanging(object sender, MDIWindowStateChangingEventArgs e)
-        {
-            if (e.NewState == MDIWindowState.Maximized)
-                e.Cancel = true;
-        }
+private void DocContainer_MDIWindowStateChanging(object sender, MDIWindowStateChangingEventArgs e)
+{
+    if (e.NewState == MDIWindowState.Maximized)
+        e.Cancel = true;
+}
 {% endhighlight %}
-
 {% endtabs %}

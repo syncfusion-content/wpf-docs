@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Step Interval in WPF Currency TextBox control | Syncfusion®
-description: Learn about Step Interval support in Syncfusion® WPF Currency TextBox control, its elements and more details.
-platform: WPF
+title: Step Interval in WPF CurrencyTextBox | Syncfusion®
+description: Define the increment or decrement step used by the Syncfusion WPF CurrencyTextBox control when changing the value with spinner or keys.
+platform: wpf
 control: CurrencyTextBox 
 documentation: ug
 ---
 
-# Step Interval in WPF Currency TextBox
+# Step Interval in WPF CurrencyTextBox
 
 The [CurrencyTextBox](https://www.syncfusion.com/wpf-ui-controls/currency-textbox) control allows you to increase or decrease the value by pressing up-arrow and down-arrow keys in keyboard or mouse wheel over the control. The [ScrollInterval](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.CurrencyTextBox.html#Syncfusion_Windows_Shared_CurrencyTextBox_ScrollInterval) property is used to specify the increment or decrement interval. The default value of `ScrollInterval` is 1.
 
@@ -39,7 +39,7 @@ currencyTextBox.ScrollInterval = 3;
 
 ## Change Value on Mouse Wheel
 
-The `CurrencyTextBox` allows you to increase or decrease the `Value` based on the `ScrollInterval` by the Mouse scrolling over the control When the [IsScrollingOnCircle](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.Editorbase.html#Syncfusion_Windows_Shared_EditorBase_IsScrollingOnCircle) property is `true`. The default value of `IsScrollingOnCircle` property is `true`.
+The `CurrencyTextBox` allows you to increase or decrease the `Value` based on the `ScrollInterval` by scrolling the mouse wheel over the control when the [IsScrollingOnCircle](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.EditorBase.html#Syncfusion_Windows_Shared_EditorBase_IsScrollingOnCircle) property is `true`. The default value of `IsScrollingOnCircle` is `true`.
 
 {% tabs %}
 {% highlight XAML %}
@@ -87,9 +87,9 @@ currencyTextBox.EnableExtendedScrolling = true;
 
 ![Changing Value by Clicking and Drag in WPF CurrencyTextBox](Step-Interval_images/wpf-currency-textbox-drag-and-drop.gif)
 
-## Allow or restrict selection on focus
+## Allow or Restrict Selection on Focus
 
-`CurrencyTextBox` allows you to automatically select text by setting [TextSelectionOnFocus](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.EditorBase.html#Syncfusion_Windows_Shared_EditorBase_TextSelectionOnFocus) property to `true` and when the control got focus.  If you want to restrict the selection on when control got focus, use the `TextSelectionOnFocus` property value as `false`. The default value of the `TextSelectionOnFocus` property is `true`.
+`CurrencyTextBox` allows you to automatically select its text when the control receives focus by setting the [TextSelectionOnFocus](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.EditorBase.html#Syncfusion_Windows_Shared_EditorBase_TextSelectionOnFocus) property to `true`. If you want to restrict text selection on focus, set `TextSelectionOnFocus` to `false`. The default value of the `TextSelectionOnFocus` property is `true`.
 
 {% tabs %}
 {% highlight XAML %}
@@ -100,7 +100,12 @@ currencyTextBox.EnableExtendedScrolling = true;
 {% highlight C# %}
 
 CurrencyTextBox currencyTextBox = new CurrencyTextBox();
-currencyTextBox.TextSelectionOnFocus = true;
+currencyTextBox.Width = 150;
+currencyTextBox.Height = 25;
+currencyTextBox.TextSelectionOnFocus = false;
+
+// Add the CurrencyTextBox to an existing container, for example:
+this.Content = currencyTextBox;
 
 {% endhighlight %}
 {% endtabs %}

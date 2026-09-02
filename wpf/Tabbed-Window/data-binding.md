@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Data Binding in WPF Tabbed Window | Syncfusion
-description: Learn how to bind tabs to a collection in Syncfusion® WPF Tabbed Window by using the ItemsSource property and templates for tab headers and content.
+description: Bind tabs to a data collection in the Syncfusion WPF Tabbed Window using the ItemsSource property and templates for tab headers and content.
 platform: wpf
 control: SfTabControl
 documentation: ug
@@ -12,6 +12,8 @@ documentation: ug
 This section explains how to bind tabs to a collection in a WPF Tabbed Window using the `ItemsSource` property of the [SfTabControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.SfTabControl.html).
 
 When data binding is used, the tab header and tab content are generated from the bound data by defining appropriate header and content templates.
+
+N> The example below uses a regular `Window`, but the same bindings work identically inside an `SfChromelessWindow`. Use whichever root element matches your application.
 
 ## Populating Tab Items Using ItemsSource
 
@@ -24,6 +26,10 @@ The following example demonstrates how to bind tab items using the MVVM pattern.
 {% tabs %}
 
 {% highlight C# %}
+
+// Required usings:
+// using System.Collections.ObjectModel;
+// using Syncfusion.Windows.Shared;   // NotificationObject
 
 // TabModel.cs
 public class TabModel

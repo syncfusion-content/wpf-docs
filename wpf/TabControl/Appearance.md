@@ -1,19 +1,19 @@
 ---
 layout: post
-title: Appearance in WPF TabControl control | Syncfusion®
-description: Learn here all about Appearance support in Syncfusion® WPF TabControl (TabControlExt) control and more.
-platform: WPF
+title: Appearance in WPF TabControlExt | Syncfusion®
+description: Customize the look and feel of the Syncfusion WPF TabControl (TabControlExt) using built-in themes, custom templates, and styling options.
+platform: wpf
 control: TabControlExt
 documentation: ug
 ---
 
-# Appearance in WPF TabControl (TabControlExt)
+# Appearance in WPF Tab Control
 
-This section explains different UI customization and theming options available in [TabControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.TabControlExt.html).
+This section explains different UI customization and theming options available in [WPF Tab Control](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.TabControlExt.html).
 
 ## Change flow direction
 
-You can change the flow direction of the `TabControl` layout from right to left by setting the `FlowDirection` property value as `RightToLeft`. The default value of `FlowDirection` property is `LeftToRight`.
+You can change the flow direction of the `WPF Tab Control` layout from right to left by setting the `FlowDirection` property value as `RightToLeft`. The default value of `FlowDirection` property is `LeftToRight`.
 
 {% tabs %}
 {% highlight XAML %}
@@ -39,7 +39,7 @@ N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-tabcontrol
 ## TabItemHeaderStyle
 
 The tab header style can be customized using the `TabItemHeaderStyle` property in ThemeStudio themes. The default value of `TabItemHeaderStyle`  is `Underline`.
-The available header styes are,
+The available header styles are,
 
 * **Underline**
 
@@ -136,7 +136,7 @@ tabControlExt.TabItemHeaderStyle = TabItemHeaderStyle.Fill;
 
 ## Theme
 
-TabControl supports various built-in themes. Refer to the below links to apply themes for the TabControl,
+WPF Tab Control supports various built-in themes. Refer to the below links for applying themes,
 
   * [Apply theme using SfSkinManager](https://help.syncfusion.com/wpf/themes/skin-manager)
 	

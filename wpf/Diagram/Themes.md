@@ -9,17 +9,42 @@ documentation: ug
 
 # Themes in WPF SfDiagram
 
-[WPF Diagram](https://www.syncfusion.com/diagram-sdk/wpf-diagram) themes are predefined sets of diagram item styles that can be applied easily to the diagram elements. In Diagram, nearly 20 Built-In themes are available. DiagramTheme has NodeStyles, ConnectorStyles, and Theme properties that can be used to create custom Diagram theme.
+[WPF SfDiagram](https://www.syncfusion.com/diagram-sdk/wpf-diagram) themes are predefined sets of diagram item styles that can be applied to diagram elements. In Diagram, nearly 20 built-in themes are available. The `DiagramTheme` class exposes `NodeStyles` and `ConnectorStyles` properties that can be used to build a custom theme.
 
-To know more about DiagramTheme properties, refer to the [DiagramTheme](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Theming.DiagramTheme.html).
+To know more about `DiagramTheme` properties, refer to the [DiagramTheme](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Theming.DiagramTheme.html) API reference.
 
-### Built-In Themes
+## Built-In Themes
 
-Built-In themes are predefined themes inherited from DiagramTheme. Each Built-In themes has four variants. Based on the selected theme and variants, the style of the node and connector will be changed. By default, first variant style of the specified Built-In theme will be applied to the Diagram elements.
+Built-in themes are predefined themes inherited from `DiagramTheme`. Each built-in theme has variants. Based on the selected theme and variant, the styles of nodes and connectors are applied. By default, the first variant of the specified built-in theme is applied to the diagram elements.
 
-To Know more about Built-In themes, refer to [Built-In](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.Theming.DiagramTheme.html).
+The 19 built-in themes available in the WPF SfDiagram are listed below. Each entry links to the corresponding `DiagramTheme` subclass in the API reference.
 
-To change the DiagramTheme,
+| # | Theme Class | API Reference |
+|---|-------------|---------------|
+| 1 | `BubbleTheme` | [BubbleTheme](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Theming.BubbleTheme.html) |
+| 2 | `CloudsTheme` | [CloudsTheme](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Theming.CloudsTheme.html) |
+| 3 | `DaybreakTheme` | [DaybreakTheme](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Theming.DaybreakTheme.html) |
+| 4 | `FacetTheme` | [FacetTheme](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Theming.FacetTheme.html) |
+| 5 | `GemstoneTheme` | [GemstoneTheme](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Theming.GemstoneTheme.html) |
+| 6 | `IntegralTheme` | [IntegralTheme](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Theming.IntegralTheme.html) |
+| 7 | `IonTheme` | [IonTheme](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Theming.IonTheme.html) |
+| 8 | `LinearTheme` | [LinearTheme](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Theming.LinearTheme.html) |
+| 9 | `OfficeTheme` | [OfficeTheme](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Theming.OfficeTheme.html) |
+| 10 | `ParallelTheme` | [ParallelTheme](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Theming.ParallelTheme.html) |
+| 11 | `ProminenceTheme` | [ProminenceTheme](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Theming.ProminenceTheme.html) |
+| 12 | `RadianceTheme` | [RadianceTheme](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Theming.RadianceTheme.html) |
+| 13 | `RetrospectTheme` | [RetrospectTheme](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Theming.RetrospectTheme.html) |
+| 14 | `SequenceTheme` | [SequenceTheme](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Theming.SequenceTheme.html) |
+| 15 | `SimpleTheme` | [SimpleTheme](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Theming.SimpleTheme.html) |
+| 16 | `SliceTheme` | [SliceTheme](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Theming.SliceTheme.html) |
+| 17 | `SmokeTheme` | [SmokeTheme](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Theming.SmokeTheme.html) |
+| 18 | `WhispTheme` | [WhispTheme](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Theming.WhispTheme.html) |
+| 19 | `ZephyrTheme` | [ZephyrTheme](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Theming.ZephyrTheme.html) |
+
+
+## Apply a Theme
+
+To change the `DiagramTheme`, use the `SfDiagram.Theme` property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -38,7 +63,7 @@ To change the DiagramTheme,
 
 {% endhighlight %}
 
-{% highlight C# %}
+{% highlight c# %}
 //Instance of SfDiagram
 SfDiagram diagram = new SfDiagram();
 DiagramTheme theme = new OfficeTheme();
@@ -47,12 +72,11 @@ diagram.Theme = theme;
 {% endhighlight %}
 {% endtabs %}
 
+## Variant Styles and ShapeStyles
 
-### Variant Styles and ShapeStyles
+Variant styles are sets of styles applied to diagram elements. Each variant contains a fixed collection of shape styles. You can change the style of each node in the diagram by setting the `ThemeStyleId` property. Based on the selected theme and variant, the node receives the matching style.
 
-Variant styles are set of styles that are applied to Diagram elements. Each variant style contains 46 shape styles. You can change the style of each node in the diagram using the ThemeStyleId property. Based on the values of theme and variant style, the style will be applied to the node.
-
-To change the Variant and Style, 
+To change the variant and style, 
 
 {% tabs %}
 {% highlight xaml %}
@@ -66,14 +90,15 @@ To change the Variant and Style,
         <!--Initialize the NodeCollection-->
         <syncfusion:NodeCollection>
             <!--Initialize the Node-->
-            <syncfusion:NodeViewModel OffsetX="100" OffsetY="100" UnitWidth="75" UnitHeight = "75" Shape="{StaticResource Ellipse}" ThemeStyleId="Variant1">
+            <syncfusion:NodeViewModel OffsetX="100" OffsetY="100" UnitWidth="75" UnitHeight="75" Shape="{StaticResource Ellipse}" ThemeStyleId="Variant1">
             </syncfusion:NodeViewModel>     
         </syncfusion:NodeCollection>
     </syncfusion:SfDiagram.Nodes>
 </syncfusion:SfDiagram>
 
 {% endhighlight %}
-{% highlight C# %}
+
+{% highlight c# %}
 
 diagram.Theme = new OfficeTheme();
 NodeViewModel node = new NodeViewModel()
@@ -83,7 +108,7 @@ NodeViewModel node = new NodeViewModel()
     UnitWidth = 75,
     UnitHeight = 75,
     Shape = App.Current.Resources["Rectangle"],
-    //adding theme style ID as variant1.
+    // Assigns the StyleId.Variant1 theme variant to the node.
     ThemeStyleId = StyleId.Variant1,
 };
 
@@ -101,14 +126,15 @@ node.Annotations = new ObservableCollection<IAnnotation>()
 {% endhighlight %}
 {% endtabs %}
 
-![Diagram themes](Themes_images/DiagramThemes.gif)
+![Built-in OfficeTheme applied to an ellipse node](Themes_images/DiagramThemes.gif)
 
 [View Sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Theme/ThemeStyle).
 
-N> When you apply a theme, it affects all [SfDiagram](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.SfDiagram.html) elements and overrides any individual `ShapeStyle` settings for those elements. And also, you cannot update the `ShapeStyle` property for diagram elements when a theme is applied.
+N> When you apply a theme, it affects all [SfDiagram](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.SfDiagram.html) elements and overrides any individual `ShapeStyle` settings for those elements. Additionally, the `ShapeStyle` property on individual elements is masked by the active theme.
 
 ## See Also
 
-[How to apply built-in theme for node and connector?](https://support.syncfusion.com/kb/article/9995/how-to-apply-built-in-theme-for-node-and-connector-in-wpf-diagram-sfdiagram)
 
-[How to create a custom theme using the SfDiagram Control in the WPF Diagram?](https://support.syncfusion.com/kb/article/18673/how-to-create-a-custom-theme-using-the-sfdiagram-control-in-the-wpf-diagram)
+- [How to apply built-in theme for node and connector](https://support.syncfusion.com/kb/article/9995/how-to-apply-built-in-theme-for-node-and-connector-in-wpf-diagram-sfdiagram)
+
+- [How to create a custom theme using the Diagram control in the WPF SfDiagram](https://support.syncfusion.com/kb/article/18673/how-to-create-a-custom-theme-using-the-sfdiagram-control-in-the-wpf-diagram)

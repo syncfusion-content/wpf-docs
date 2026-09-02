@@ -17,7 +17,7 @@ You can find more details about installing the NuGet package in a WPF applicatio
 [How to install nuget packages](https://help.syncfusion.com/wpf/installation/install-nuget-packages)
 
 
-The following section helps you to build your application with [WPF Diagram](https://www.syncfusion.com/diagram-sdk/wpf-diagram).
+The following section helps you to build your application with [WPF SfDiagram](https://www.syncfusion.com/diagram-sdk/wpf-diagram).
 
 ## Creating the project
 
@@ -25,7 +25,7 @@ Create a new WPF project using Visual Studio. For more [details](https://learn.m
 
 ### Adding control via Designer
 
-[WPF Diagram](https://www.syncfusion.com/diagram-sdk/wpf-diagram) (SfDiagram) control can be added to the application by dragging it from Toolbox and dropping it in Designer view. The required assembly references will be added automatically.
+[WPF SfDiagram](https://www.syncfusion.com/diagram-sdk/wpf-diagram) control can be added to the application by dragging it from Toolbox and dropping it in Designer view. The required assembly references will be added automatically.
 
 ![WPF Diagram from Designer](getting-started_images\wpf-diagram-designer.png)
 
@@ -72,7 +72,7 @@ To add control manually in C#, do the following steps:
 {% capture codesnippet2 %}
 {% tabs %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 using Syncfusion.UI.Xaml.Diagram;
 using System.Windows;
@@ -740,7 +740,7 @@ For more information about stencil, please [refer](https://help.syncfusion.com/w
 
 WPF Diagram (SfDiagram) provides support to auto-arrange the nodes in the diagram area that is referred to as a Layout.
 
-#### Business object (employee information)
+### Business object (employee information)
 
 Define employee information as collection of data. The following code example shows the employee information whose, `EmpId` is used as a unique identifier and `ParentId` is used to identify the person to whom an employee reports to, in the organization.
 
@@ -931,7 +931,7 @@ SfDiagram supports various built-in themes. Refer to the links below to apply th
 
 ## See Also
 
-[How to create treeview and diagram with editing options in the WPF Diagram?](https://support.syncfusion.com/kb/article/9926/how-to-create-treeview-and-diagram-with-editing-options-in-the-wpf-diagram-sfdiagram)
+[How to create treeview and diagram with editing options in the WPF SfDiagram?](https://support.syncfusion.com/kb/article/9926/how-to-create-treeview-and-diagram-with-editing-options-in-the-wpf-diagram-sfdiagram)
 
 [How to create a WPF SfDiagram?](https://support.syncfusion.com/kb/article/8853/how-to-create-a-wpf-diagram-sfdiagram)
 

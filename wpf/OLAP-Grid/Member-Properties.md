@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Member Properties in WPF Olap Grid control | Syncfusion®
-description: Learn about Member Properties support in Syncfusion® WPF Olap Grid control, its elements and more details.
+title: Member Properties in WPF OLAP Grid | Syncfusion®
+description: Member Properties in Syncfusion® WPF OLAP Grid bind members with details like name, parent level, and children for enriched data visualization.
 platform: wpf
-control: OlapGrid
+control: OLAP Grid
 documentation: ug
 ---
 
-# Member Properties in WPF Olap Grid
+# Member Properties in WPF OLAP Grid
 
 The OLAP grid allows binding of members along with their properties. Member properties cover the basic information about each member in each tuple. This basic information includes the member name, parent level, number of children, and so on. Member properties are available for all members at a given level. To display the member properties along with the dimension member, OLAP report requires member properties to be defined in the concerned dimension element. Also, the OLAP grid layout should be set to **"ExcelLikeLayoutWithMemberProperties"**.
 

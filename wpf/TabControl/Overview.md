@@ -1,15 +1,15 @@
 ---
 layout: post
-title: About WPF TabControl control | Syncfusion®
-description: Learn here all about introduction of Syncfusion® WPF TabControl (TabControlExt) control, its elements and more.
-platform: WPF
+title: About Syncfusion® WPF TabControlExt Control | Syncfusion®
+description: Learn about introduction of Syncfusion Essential Studio WPF TabControl control, its features and more details.
+platform: wpf
 control: TabControlExt
 documentation: ug
 ---
 
-# WPF TabControl (TabControlExt) Overview
+# About Syncfusion® WPF Tab Control
 
-The [TabControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.TabControlExt.html) is similar to the dividers in a notebook or the labels in a file cabinet. By using `TabControl`, an application can define multiple pages for the same area of a window. `TabControl` contains the [TabItemExt](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.TabItemExt.html), which is used to define Tab Items for `TabControl`. By clicking a tab item header, the data corresponding to that particular tab item will be displayed.
+The [WPF Tab Control](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.TabControlExt.html) is similar to the dividers in a notebook or the labels in a file cabinet. By using this control, an application can define multiple pages for the same area of a window. It contains the [TabItemExt](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.TabItemExt.html), which is used to define Tab Items for `WPF Tab Control`. By clicking a tab item header, the data corresponding to that particular tab item will be displayed.
 
 ![Overview of TabControlExt control](Overview_images/overview.png)
 
@@ -27,11 +27,11 @@ The [TabControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Con
 
 **Selection** - Provides support to select the tabs quickly through keyboard or mouse interaction.
 
-**Styles** - Provides a rich set of built-in themes and customizes the style of each part of `TabControl`.
+**Styles** - Provides a rich set of built-in themes and customizes the style of each part of `WPF Tab Control`.
 
-**Drag and drop** - Provides support to reorder the tabs by dragging and dropping headers and change the color of drag marker while dragging the tab page in `TabControl`.
+**Drag and drop** - Provides support to reorder the tabs by dragging and dropping headers and change the color of drag marker while dragging the tab page in `WPF Tab Control`.
 
-**Scrolling** - Provides support to scroll the tab items to next, previous, first, and last in `TabControl`.
+**Scrolling** - Provides support to scroll the tab items to next, previous, first, and last in `WPF Tab Control`.
 
 **Images** - Provides support to add images to the tab header and also aligns the header image to any position.
 

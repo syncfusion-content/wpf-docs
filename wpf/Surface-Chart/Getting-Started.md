@@ -13,7 +13,7 @@ This section helps you get started with [`SfSurfaceChart`](https://help.syncfusi
 
 ## Visual Structure
 
-The following image helps you understand various elements in SfSurfaceChart when you use it for the first time.
+The following image helps you understand various elements in WPF Surface Chart when you use it for the first time.
 
 ![Visual Structure](surface_chart_images/surface_chart_img2.jpeg)
 
@@ -240,7 +240,7 @@ The following code example illustrates how to add the XAxis, YAxis, and ZAxis to
 
 {% endtabs %}
 
-N> SfSurfaceChart supports default axes; all the axes are generated automatically, even when they have not been defined explicitly.
+N> WPF Surface Chart supports default axes; all the axes are generated automatically, even when they have not been defined explicitly.
 
 ### Add surface type
 
@@ -526,7 +526,7 @@ You can get the complete getting started sample [`here`](https://www.syncfusion.
 
 ## Theme
 
-WPF SurfaceChart (SfSurfaceChart) supports various built-in themes. Refer to the following links to apply themes for the SfSurfaceChart:
+WPF Surface Chart supports various built-in themes. Refer to the following links to apply themes for the WPF Surface Chart:
 
   * [Apply a theme using SfSkinManager](https://help.syncfusion.com/wpf/themes/skin-manager)
 	

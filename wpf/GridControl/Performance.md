@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Performance in WPF GridControl | Syncfusion®
-description: Learn about Performance support in Syncfusion® Essential Studio® WPF GridControl, its elements and more details.
+title: Performance in WPF Excel-like Grid | Syncfusion®
+description: Optimize Excel-like Grid performance with virtual mode, high-frequency data updates, efficient rendering, real-time editing, and large data handling.
 platform: wpf
-control: GridControl
+control: Excel-like Grid
 documentation: ug
 ---
 
-# Performance in WPF GridControl
+# Performance in WPF Excel-like Grid
 
 Essential<sup>®</sup> Grid is well known for its optimized performance. This section points out a sample that illustrates how to do high frequency updates in Grid control.
 

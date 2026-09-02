@@ -1,18 +1,17 @@
 ---
 layout: post
-title: Customize Built-in Animations | TileView | wpf | Syncfusion®
-description: Customize built-in animations in Syncfusion® Essential Studio® WPF TileView Control, its elements and more.
-platform: WPF
+title: How to Customize Built-in Animations in WPF Tile View | Syncfusion®
+description: Customize the built-in animations of the Syncfusion WPF Tile View (TileViewControl) by overriding the default animation styles and timing.
+platform: wpf
 control: TileView Control
 documentation: ug
 ---
 
-# Customize Built-in Animations
+# How to Customize Built-in Animations in WPF Tile View Control
 
 ## Enable or Disable built-in animation
 
-TileViewControl allows to enable or disable the built-in animation by the help of `EnableAnimation` property. By default, EnableAnimation value as true. To disable TileViewControl animation, set EnableAnimation property of TileViewControl as false.
-
+The WPF Tile View Control allows built-in animations to be enabled or disabled using the `EnableAnimation` property. By default, this property is set to true. To disable animations, set `EnableAnimation` to false.
 
 {% tabs %}
 
@@ -32,7 +31,7 @@ tileview.EnableAnimation = false;
 
 ## Animation Duration
 
-`TileViewControl` allows to customize the animation speed by the help of `AnimationDuration` property. By default, `AnimationDuration` value is 700 milliseconds.
+`WPF Tile View Control` allows to customize the animation speed by the help of `AnimationDuration` property. By default, `AnimationDuration` value is 700 milliseconds.
 
 
 {% tabs %}

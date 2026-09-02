@@ -1,19 +1,19 @@
 ---
 layout: post
-title: RibbonGallery in WPF Ribbon control | Syncfusion®
-description: Learn about RibbonGallery support in Syncfusion® Essential Studio® WPF Ribbon control, its elements and more.
-platform: WPF
+title: RibbonGallery in WPF Ribbon Control | Syncfusion®
+description: The RibbonGallery in Ribbon lets you display a collection of items in a visual grid for selection, similar to Microsoft Office galleries.
+platform: wpf
 control: Ribbon
 documentation: ug
 ---
-# RibbonGallery in WPF Ribbon
+# RibbonGallery in WPF Ribbon Control
 
 RibbonGallery provides `VisualMode` property, that helps to display items in two different ways.
 
 
 ## Ribbon mode
 
-To display items as a normal gallery control in the ribbon, set `VisualMode` property as `InRibbon`
+To display items as a normal gallery control in the WPF Ribbon Control, set `VisualMode` property as `InRibbon`
 
 {% tabs %}
 
@@ -30,7 +30,7 @@ To display items as a normal gallery control in the ribbon, set `VisualMode` pro
 
 ## DropDown mode
 
-To display items as DropDown in the ribbon, set `VisualMode` property as `DropDown`
+To display items as DropDown in the WPF Ribbon Control, set `VisualMode` property as `DropDown`
 
 {% tabs %}
 
@@ -44,9 +44,9 @@ To display items as DropDown in the ribbon, set `VisualMode` property as `DropDo
 
 ![DropDown Visual mode of Ribbon Gallery](RibbonGallery_images/RibbonGallery_img2.jpg)
 
-## Ribbon gallery item
+## WPF Ribbon Control Gallery Item
 
-The Ribbon control provides `RibbonGalleryItem`, which can be added as items in RibbonGallery.
+The WPF Ribbon Control provides `RibbonGalleryItem`, which can be added as items in RibbonGallery.
 
 
 {% tabs %}
@@ -103,9 +103,9 @@ _ribbonGallery.Items.Add(_ribbonGalleryItem2)
 ![Items in the RibbonGallery](RibbonGallery_images/RibbonGallery_img3.jpg)
 
 
-## Ribbon gallery group
+## WPF Ribbon Control Gallery Group
 
-Ribbon Gallery Group is a collection of Ribbon Gallery Items. The items are grouped in the Ribbon Gallery control based on some classifications.
+The WPF Ribbon Control Gallery Group contains Ribbon Gallery Items that are organized in the RibbonGallery based on specific classifications.
 
 ### Gallery filter
 
@@ -158,7 +158,7 @@ Ribbon Gallery Group is a collection of Ribbon Gallery Items. The items are grou
 
 ## Add custom menu items
 
-In the expanded Gallery items (in both the Visual Mode), can add custom menu items to the bottom of the Ribbon Gallery control, using the `MenuItem` property of RibbonGallery.
+In the expanded Gallery items (in both the Visual Mode), can add custom menu items to the bottom of the RibbonGallery control, using the `MenuItem` property of RibbonGallery.
 
 
 {% tabs %}

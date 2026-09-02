@@ -73,7 +73,7 @@ SfChart3D Chart3D = new SfChart3D()
 
 ## Initialize view model
 
-Since the above step will produce only an empty 3D chart, plotting data must be added to the chart. This step illustrates how to create a sample data source. The data source must implement the IEnumerable interface.
+Since the above step will produce only an empty WPF 3D Chart, plotting data must be added to the chart. This step illustrates how to create a sample data source. The data source must implement the IEnumerable interface.
 
 {% highlight C# %}
 
@@ -477,10 +477,10 @@ You can find the complete getting started sample from this [link](https://github
 
 ## Theme
 
-SfChart3D supports various built-in themes. Refer to the below links to apply themes for the SfChart3D,
+WPF 3D Chart supports various built-in themes. Refer to the below links to apply themes for the them,
 
   * [Apply theme using SfSkinManager](https://help.syncfusion.com/wpf/themes/skin-manager)
 	
   * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
    
-   ![Setting theme to WPF SfChart3D](3D-Charts_images/Chart-3D-Theme.png)
+   ![Setting theme to WPF 3D Chart](3D-Charts_images/Chart-3D-Theme.png)

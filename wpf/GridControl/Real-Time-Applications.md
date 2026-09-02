@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Real Time Applications in WPF GridControl | Syncfusion®
-description: Learn about Real Time Applications support in Syncfusion® Essential Studio® WPF GridControl, its elements and more details.
+title: Real Time Applications in WPF Excel-like Grid | Syncfusion®
+description: Build real-time applications with Excel-like Grid using high-frequency data updates, virtual mode, and Excel-like user interface capabilities.
 platform: wpf
-control: Grid
+control: Excel-like Grid
 documentation: ug
 ---
 
-# Real Time Applications in WPF GridControl
+# Real Time Applications in WPF Excel-like Grid
 
 Grids can be adopted in many real time applications where the database is of crucial importance. As such applications are widely spread; the grids are indispensably used world-wide.  This section elaborates on some of the real time applications which can use Essential<sup>®</sup> Grid.
 

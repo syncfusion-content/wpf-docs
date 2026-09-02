@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Appearance in WPF Currency TextBox control | Syncfusion®
-description: Learn about Appearance support in Syncfusion® WPF Currency TextBox control, its elements and more details.
-platform: WPF
+title: Appearance in WPF CurrencyTextBox | Syncfusion®
+description: Customize the look and feel of the Syncfusion WPF CurrencyTextBox control using built-in themes, custom templates, and styling options.
+platform: wpf
 control: CurrencyTextBox
 documentation: ug
 ---
 
-# Appearance in WPF Currency TextBox
+# Appearance in WPF CurrencyTextBox
 
 This section deals with the appearance of `CurrencyTextBox` control and contains the following topics.
 
@@ -110,7 +110,7 @@ currencyTextBox.Background = Brushes.Cyan;
 {% endhighlight %}
 {% endtabs %}
 
-![WPF CurrencyTextBox with Cyan Bbackground](Appearance_images/wpf-currency-textbox-background.png)
+![WPF CurrencyTextBox with Cyan Background](Appearance_images/wpf-currency-textbox-background.png)
 
 ## Setting the Corner Radius
 
@@ -143,7 +143,7 @@ currencyTextBox.CornerRadius = new CornerRadius(5);
 {% tabs %}
 {% highlight XAML %}
 
-<syncfusion:CurrencyTextBox x:Name="currencyTextBox" Width="100" Height="25" SelectionBrush="Red" SelectionOpacity="0.5"/>
+<syncfusion:CurrencyTextBox x:Name="currencyTextBox" Width="100" Height="25" SelectionBrush="Red" SelectionOpacity="0.3"/>
 
 {% endhighlight %}
 {% highlight C# %}
@@ -159,7 +159,7 @@ currencyTextBox.SelectionOpacity = 0.3;
 
 ![WPF CurrencyTextBox with Red Selection Background](Appearance_images/wpf-currency-textbox-selection.png)
 
-## Align Value
+## Aligning the Value
 
 `CurrencyTextBox` allows to display the value from right or center or left side by setting the [TextAlignment](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.textblock.textalignment?view=netframework-4.8) property to `Right` or `Left` or `Center`. The Default value of `TextAlignment` is `Left`.
 

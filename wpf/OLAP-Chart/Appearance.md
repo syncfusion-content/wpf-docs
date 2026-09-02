@@ -9,11 +9,11 @@ documentation: ug
 
 # Appearance in WPF Olap Chart
 
-The OLAP chart supports customizing the appearance of charts. You can customize the chart style, legend style, border and background style, point label style, and label style of the primary and secondary axes.
+The WPF OLAP Chart supports customizing the appearance of charts. You can customize the chart style, legend style, border and background style, point label style, and label style of the primary and secondary axes.
 
 ## Chart style and legends
 
-The OLAP chart provides options to set the chart type, chart color, chart legend position, chart legend, and legend check box visibility:
+The WPF OLAP Chart provides options to set the chart type, chart color, chart legend position, chart legend, and legend check box visibility:
 
 * [ChartType](https://help.syncfusion.com/cr/wpf/Syncfusion.Olap.Reports.ChartAppearanceSettings.html#Syncfusion_Olap_Reports_ChartAppearanceSettings_ChartType): Sets the chart type for the OLAP chart control.
 * **ColorModel.Palette**: Specifies the chart color for the OLAP chart control.
@@ -71,7 +71,7 @@ ChartDockPanel.SetDock(Me.olapChart.Legend, ChartDock.Floating)
 
 ## Chart border and background style
 
-The OLAP chart provides options to set the chart border and background style:
+The WPF OLAP Chart provides options to set the chart border and background style:
 
 * **BorderThickness**: Sets the border thickness for the OLAP chart control.
 * **BorderBrush**: Specifies the border color for the OLAP chart control.
@@ -110,7 +110,7 @@ Me.olapChart.GridBackground = Brushes.LightGray
 
 ## Chart points labels
 
-The OLAP chart supports customizing the labels and symbols of chart points. This is illustrated in the following code sample.
+The WPF OLAP Chart supports customizing the labels and symbols of chart points. This is illustrated in the following code sample.
 
 {% tabs %}
 
@@ -151,7 +151,7 @@ Next series
 
 ## Chart axis labels
 
-The OLAP chart supports customizing the labels of primary and secondary axes.
+The WPF OLAP Chart supports customizing the labels of primary and secondary axes.
 
 ### Customizing the font style of the primary axis
 

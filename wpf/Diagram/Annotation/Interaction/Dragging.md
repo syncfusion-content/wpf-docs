@@ -27,7 +27,7 @@ Dragging an annotation can be enabled by using the [`Constraints`](https://help.
 </syncfusion:AnnotationCollection>
                                 
 {% endhighlight %}
-{% highlight C# %}
+{% highlight c# %}
 
 //Initialize the Annotation Collection
 Annotations = new ObservableCollection<IAnnotation>()
@@ -67,7 +67,7 @@ Diagram allows you to specify the amount of dragging area around the annotation 
 </syncfusion:AnnotationCollection>
                                 
 {% endhighlight %}
-{% highlight C# %}
+{% highlight c# %}
 
 //Initialize the AnnotationCollection
 Annotations = new ObservableCollection<IAnnotation>()

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: SimpleMenuButton in WPF Ribbon control | Syncfusion®
-description: Learn about SimpleMenuButton support in Syncfusion® Essential Studio® WPF Ribbon control, its elements and more.
-platform: WPF
+title: SimpleMenuButton in WPF Ribbon Control | Syncfusion®
+description: The SimpleMenuButton in Ribbon lets you add a lightweight menu button to ribbon tabs for simple dropdown menus.
+platform: wpf
 control: Ribbon
 documentation: ug
 ---
-# SimpleMenuButton in WPF Ribbon
+# SimpleMenuButton in WPF Ribbon Control
 
-`SimpleMenuButton` provides functionality similar to other menu button and it doesn't carries a sub menu. It can be used with `ApplicationMenu` and it can also be placed inside the `RibbonBar` in Ribbon control.
+`SimpleMenuButton` provides functionality similar to other menu button and it doesn't carries a sub menu. It can be used with `ApplicationMenu` and it can also be placed inside the `RibbonBar` in WPF Ribbon Control.
 
 {% tabs %}
 

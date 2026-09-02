@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Nodes in WPF Diagram Control | Syncfusion
-description: Learn here all about Nodes support in Syncfusion WPF Diagram (classic) control, its elements and more details.
+title: Nodes in WPF Diagram | Syncfusion®
+description: Learn about nodes in the Syncfusion® WPF Diagram, including node shapes, content, labels, positioning, resizing, rotation, and customization.
 platform: wpf
 control: Diagram
 documentation: ug
 ---
 
-# Nodes in WPF Diagram (classic)
+# Nodes in WPF Diagram
 
 Nodes are graphical objects that can be placed on the page. It is usually used to represent visual data to be placed on the page.
 
@@ -1393,7 +1393,7 @@ nodeobject.AllowResize = False
 
 When multiple nodes are selected, then by default on resizing any node in the selection list, all the other nodes also get resized. However the user can set this default behavior to false by specifying the EnableResizingCurrentNodeOnMultipleSelection property. Once this property is set to ‘True’, only the current node will get resized.
 
-This property is in DiagramPage and can be set in the following ways.
+This property is in WPF DiagramPage and can be set in the following ways.
 
 
 {% highlight c#  %}
@@ -3185,7 +3185,7 @@ CollectionExt ext = node.OutNeighbors;
 
 ## Node Layout
 
-Essential Diagram for WPF provides layout representation for nodes. Numerous nodes and line connectors can be connected together to form various types of layouts, including hierarchical, tree, and table layouts.
+WPF Diagram provides layout representation for nodes. Numerous nodes and line connectors can be connected together to form various types of layouts, including hierarchical, tree, and table layouts.
 
 
 

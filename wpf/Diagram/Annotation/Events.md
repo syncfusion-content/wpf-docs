@@ -12,7 +12,7 @@ documentation: ug
 The [AnnotationChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IGraphInfo.html#Syncfusion_UI_Xaml_Diagram_IGraphInfo_AnnotationChanged) event will notify the annotation related actions and value changes. The [AnnotationChangedEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.AnnotationChangedEventArgs.html) class is used to get or set the entire annotation related properties and their values.  
 
 {% tabs %}
-{% highlight C# %}
+{% highlight c# %}
 
 //Register the AnnotationChanged event
 (diagram.Info as IGraphInfo).AnnotationChanged += Diagram_AnnotationChanged;
@@ -58,4 +58,4 @@ private void Diagram_AnnotationChanged(object sender, ChangeEventArgs<object, An
 
 [How to restrict annotation editing by double-clicking the node or connector?](https://support.syncfusion.com/kb/article/8539/how-to-restrict-annotation-editing-by-double-clicking-the-node-or-connector-in-wpf-diagram)
 
-[How to get parent of annotation using changed command in WPF Diagram?](https://support.syncfusion.com/kb/article/16202/how-to-get-parent-of-annotation-using-changed-command-in-wpf-diagram)
+[How to get parent of annotation using changed command in WPF SfDiagram?](https://support.syncfusion.com/kb/article/16202/how-to-get-parent-of-annotation-using-changed-command-in-wpf-diagram)

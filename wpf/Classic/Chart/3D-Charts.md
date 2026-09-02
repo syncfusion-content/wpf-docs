@@ -1,12 +1,12 @@
 ---
 layout: post
-title: 3D-Charts in WPF Chart Control | Syncfusion
-description: Learn here all about 3D-Charts support in Syncfusion WPF Chart (Classic) control, its elements and more details.
+title: 3D Charts in WPF Classic Chart | Syncfusion®
+description: 3D charts in the WPF Classic Chart enable visualization of data in three dimensions and support interactive chart presentation.
 platform: wpf
 control: Chart (Classic)
 documentation: ug
 ---
-# 3D-Charts in WPF Chart (Classic)
+# 3D Charts in WPF Classic Chart
 
 ## Enabling 3D Mode
 
@@ -47,7 +47,7 @@ chart.Areas[0].Series.Add(new ChartSeries(ChartTypes.Column));
 
 {% endtabs %}
 
-![Enabling 3D Mode in WPF chart](Chart-Controls_images/Chart-Controls_img222.jpeg)
+![Enabling 3D Mode in WPF Classic Chart](Chart-Controls_images/Chart-Controls_img222.jpeg)
 
 3D Mode is supported in the following chart types.
 
@@ -155,7 +155,7 @@ chart1.Areas[0].Chart3DSettings.BottomWallBackground = Brushes.AliceBlue;
 
 {% endtabs %}
 
-![Customizing Side Walls in WPF chart](Chart-Controls_images/Chart-Controls_img223.jpeg)
+![Customizing Side Walls in WPF Classic Chart](Chart-Controls_images/Chart-Controls_img223.jpeg)
 
 ## Camera Projection Views
 

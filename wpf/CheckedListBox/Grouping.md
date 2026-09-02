@@ -1,17 +1,17 @@
 ---
 layout: post
-title: Grouping Items in WPF CheckedListBox control | Syncfusion
-description: Learn here all about Grouping Items support in Syncfusion WPF CheckedListBox (CheckListBox) control and more.
+title: Grouping in WPF CheckListBox | Syncfusion®
+description: Organize items into logical groups in the Syncfusion WPF CheckListBox control using built-in grouping and grouping descriptions support.
 platform: wpf
 control: CheckListBox
 documentation: ug
 ---
 
-# Grouping Items in WPF CheckedListBox (CheckListBox)
+# Grouping in WPF CheckListBox
 
- By default, the [CheckListBox](https://www.syncfusion.com/wpf-ui-controls/CheckedListBox) items are in the listed view. We can group the `CheckListBox` items by adding the group description to the `CollectionView.GroupDescriptions` collection.
+ By default, the [CheckListBox](https://www.syncfusion.com/wpf-ui-controls/CheckedListBox) items are displayed in a listed view. You can group the `CheckListBox` items by adding a group description to the `CollectionView.GroupDescriptions` collection.
 
- The selection state of group header varies based on the checked or unchecked state of the child items. Group can be expanded or collapsed and the child items present in the group can be checked or unchecked based on the user’s perspective.
+ The selection state of the group header varies based on the checked or unchecked state of the child items. Groups can be expanded or collapsed, and the child items in a group can be checked or unchecked based on the user's perspective.
 
 {% tabs %}
 {% highlight C# %}
@@ -76,7 +76,7 @@ Click [here](https://github.com/SyncfusionExamples/wpf-checked-listbox-examples/
 
 ## Nested Grouping
 
- We can create a multi-level nested groups for the `CheckListBox` items by adding the two or more group descriptions to the `CollectionView.GroupDescriptions` collection. Child level groups are created by order of group descriptions added to the collection.
+ We can create multi-level nested groups for the `CheckListBox` items by adding two or more group descriptions to the `CollectionView.GroupDescriptions` collection. Child level groups are created in the order of the group descriptions added to the collection.
 
 {% tabs %}
 {% highlight C# %}
@@ -102,7 +102,7 @@ class ViewModel {
     public ViewModel() {
         Vegetables = new ObservableCollection<Vegetable>();
         Vegetables.Add(new Vegetable { Price=10, Name="Yarrow", Category="Leafy and Salad"});
-        Vegetables.Add(new Vegetable { Price=20", Name="Pumpkins", Category="Leafy and Salad"});
+        Vegetables.Add(new Vegetable { Price=20, Name="Pumpkins", Category="Leafy and Salad"});
         Vegetables.Add(new Vegetable { Price=30, Name="Cabbage", Category="Leafy and Salad"});
         Vegetables.Add(new Vegetable { Price=10, Name="Spinach", Category="Leafy and Salad"});
         Vegetables.Add(new Vegetable { Price=20, Name="Wheat Grass", Category="Leafy and Salad"});
@@ -147,7 +147,7 @@ Click [here](https://github.com/SyncfusionExamples/wpf-checked-listbox-examples/
 
 ## Custom grouping
 
-`CheckListBox` allows you to group the items based on custom logic when the common grouping functionality doesn’t meet your requirement. We can achieve this by using the `IValueConverter`.
+`CheckListBox` allows you to group the items based on custom logic when the common grouping functionality does not meet your requirement. This can be achieved by using the `IValueConverter`.
 
 {% tabs %}
 {% highlight C# %}

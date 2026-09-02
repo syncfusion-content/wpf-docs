@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Set Header Icon for MDI Window | DockingManager | wpf | Syncfusion®
-description: Set header icon for mdi window in Syncfusion® Essential Studio® WPF DockingManager control, its elements and more.
-platform: WPF
+title: How to set Header Icon for MDI Window in WPF Docking | Syncfusion®
+description: Learn here how to set header icon for mdi window in Syncfusion® WPF Docking (DockingManager) control, its elements and more.
+platform: wpf
 control: DockingManager
 documentation: ug
 ---
 
-# Set Header Icon for MDI Window
+# How to set Header Icon for MDI Window in WPF Docking
 
 The Icon property is used to specify the icon for Document children. Consider the following code:
 
@@ -55,6 +55,6 @@ The Icon property is used to specify the icon for Document children. Consider th
 
 {% endhighlight  %}
 
-In the above code a DrawingImage object is created as a static resource and assigned to the Icon property of DockingManager. The MDIWindow with the icon on left top corner will be displayed. 
+In the above code a DrawingImage object is created as a static resource and assigned to the Icon property of WPF Docking Control. The MDIWindow with the icon on left top corner will be displayed. 
 
 ![Set-Header-Icon-for-MDI-Window_images1](Set-Header-Icon-for-MDI-Window_images/Set-Header-Icon-for-MDI-Window_img1.png)

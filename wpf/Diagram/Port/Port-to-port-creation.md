@@ -73,7 +73,7 @@ You can create a connection between the ports interactively by performing click 
 
 {% endhighlight %}
 
-{% highlight C# %}
+{% highlight c# %}
 NodeViewModel node1 = AddNode(100, 50, 65, 100,0.5,1,1,0.5);                       
 //Adding Node to Collection
 (Diagram.Nodes as NodeCollection).Add(node1);
@@ -146,7 +146,7 @@ Unlike [`NodePort`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagra
 
 {% tabs %}
 
-{% highlight C# %}
+{% highlight c# %}
 //Initialize HitPadding to sfdiagram
 diagram.HitPadding = 20;
 

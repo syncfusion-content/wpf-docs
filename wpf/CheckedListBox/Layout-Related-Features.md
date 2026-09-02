@@ -1,24 +1,24 @@
 ---
 layout: post
-title: Layout Related Features | CheckListBox | wpf | Syncfusion
-description: Layout related features in Syncfusion Essential Studio WPF CheckListBox control, its elements and more.
+title: Layout Related Features in WPF CheckListBox | Syncfusion®
+description: Configure the layout of the Syncfusion WPF CheckListBox control by adjusting item height, width, padding, alignment, and visual arrangement.
 platform: wpf
 control: CheckListBox
 documentation: ug
 ---
 
-# Layout Related Features
+# Layout Related Features in WPF CheckListBox
 
-This section illustrates the Layout-related features of CheckListBox control. The following features are discussed:
+This section illustrates the layout-related features of the `CheckListBox` control. The following features are discussed:
 
 ## Alignment for CheckListBox
 
-The check box in the CheckListBox Item can be aligned to the left or right side of the control using the CheckBoxAlignment property. This dependency property sets the alignment of the check box of the items. Following are the alignment options.
+The check box in the `CheckListBox` item can be aligned to the left or right side of the control by using the `CheckBoxAlignment` property. This dependency property sets the alignment of the check box for the items. The following are the alignment options:
 
-* Left: Check box in the CheckListBox Item is aligned to the left
-* Right: Check box in the CheckListBox Item is aligned to the right
+* `Left`: The check box in the `CheckListBox` item is aligned to the left.
+* `Right`: The check box in the `CheckListBox` item is aligned to the right.
 
-To set the CheckBoxAlignment to Right, use the following code.
+The default value of `CheckBoxAlignment` is `Left`. To set the `CheckBoxAlignment` to `Right`, use the following code.
 
 {% tabs %}
 {%highlight xaml%}
@@ -31,7 +31,7 @@ To set the CheckBoxAlignment to Right, use the following code.
 <syncfusion:CheckListBoxItem Content="Bermuda" />
 <syncfusion:CheckListBoxItem Content="Belize" /> 
 <syncfusion:CheckListBoxItem Content="Panama" />
-</syncfusion:CheckListBox></td></tr>
+</syncfusion:CheckListBox>
    
 {%endhighlight%}
 
@@ -84,7 +84,7 @@ FlowDirection = "RightToLeft"
 
 ## Set VisualStyle for CheckListBox
 
-The appearance of the CheckListBox control is customized by applying a suitable style using the VisualStyle property.
+The appearance of the `CheckListBox` control is customized by applying a suitable style using the `VisualStyle` property.
 
 Property table
 
@@ -98,7 +98,7 @@ Description</th></tr>
 VisualStyle</td><td>
 Sets the visual style for the CheckListBox control. The options provided are as follows.
 <ul>
-<li>BlendOffice2003</li>
+<li>Blend</li>
 <li>Office2007Blue</li>
 <li>Office2007Black</li>
 <li>Office2007Silver</li>
@@ -109,6 +109,8 @@ Sets the visual style for the CheckListBox control. The options provided are as 
 <li>Metro</li>
 <li>Transparent</li>
 </ul>
+
+N> The legacy `BlendOffice2003` style has been deprecated. Use `Blend` instead.
 </td></tr>
 </table>
 

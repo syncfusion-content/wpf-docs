@@ -1,28 +1,28 @@
 ---
 layout: post
-title: Common in WPF Diagram (classic) Control | Syncfusion
-description: Learn here all about Common support in Syncfusion WPF Diagram (classic) control, its elements and more details.
+title: Common Support in WPF Diagram | Syncfusion®
+description: Learn common WPF Diagram tasks in Syncfusion®, including layout refresh, custom node content, shape customization, port restrictions, and interactions.
 platform: wpf
 control: Diagram
 documentation: ug
 ---
 
 
-# Common in WPF Diagram (classic)
+# Common Support in WPF Diagram
 
 This section comprises an assembled list of questions and answers to provide expert solutions on product and its usage. It contains the following:
 
-Common—Answers common questions that arises in minds of fresh users of Essential Diagram WPF.
+Common—Answers common questions that arises in minds of fresh users of WPF Diagram.
 
 Advanced—Answers questions that are in an advanced level, meant for experts.
 
 ## Common in WPF Diagram (classic)
 
-This section answers the following common question that arises in the minds of fresh users of Essential Diagram WPF. 
+This section answers the following common question that arises in the minds of fresh users of WPF Diagram. 
 
 ## Refresh the Tree Layout while Binding Dynamic Data to the Diagram
 
-Essential Diagram for WPF provides support to bind dynamic data to the diagram.. But once the new data is assigned, the tree needs to be refreshed. This can be done using the RefreshLayout method. 
+WPF Diagram provides support to bind dynamic data to the diagram.. But once the new data is assigned, the tree needs to be refreshed. This can be done using the RefreshLayout method. 
 
 The following code can be used to refresh the layout:
 {% highlight c# %}
@@ -825,7 +825,7 @@ Where, diagramView is an instance of DiagramView
 
 ## How can the nudge operation be stopped?
 
-The nudge operation can be stopped by handling the DiagramControl’s PreviewKeyDown event, as shown in the code example displayed below.
+The nudge operation can be stopped by handling the WPF DiagramControl’s PreviewKeyDown event, as shown in the code example displayed below.
 {% highlight c# %}
 
 

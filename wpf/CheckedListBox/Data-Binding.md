@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Data Binding in WPF CheckListBox Control | Syncfusion
-description: Learn here about Data binding in Syncfusion Essential Studio WPF CheckListBox control, its elements and more.
+title: Data Binding in WPF CheckListBox | Syncfusion®
+description: Bind the Syncfusion WPF CheckListBox control to data sources such as collections and IEnumerable objects with full MVVM support.
 platform: wpf
 control: CheckListBox
 documentation: ug
 ---
 
-# Data Binding in WPF CheckListBox control
+# Data Binding in WPF CheckListBox
 
-The control can be populated using [ItemsSource](https://learn.microsoft.com/en-us/dotnet/api/system.windows.controls.itemscontrol.itemssource?view=netframework-4.7.2) property and [DisplayMemberPath](https://learn.microsoft.com/en-us/dotnet/api/system.windows.controls.itemscontrol.displaymemberpath?view=netframework-4.7.2#System_Windows_Controls_ItemsControl_DisplayMemberPath) property used to display the items and IsSelected property used to handle the selection in the CheckListBox. The below code snippet will be used to bind the ItemsSource to the CheckListBox.
+The control can be populated using the [ItemsSource](https://learn.microsoft.com/en-us/dotnet/api/system.windows.controls.itemscontrol.itemssource?view=netframework-4.7.2) property, and the [DisplayMemberPath](https://learn.microsoft.com/en-us/dotnet/api/system.windows.controls.itemscontrol.displaymemberpath?view=netframework-4.7.2#System_Windows_Controls_ItemsControl_DisplayMemberPath) property is used to specify which property to display for each data item. The `IsSelected` property is used to handle the selection in the CheckListBox. The following code snippet demonstrates how to bind the `ItemsSource` to the CheckListBox.
 
 {% tabs %}
 {%highlight xaml%}
@@ -17,7 +17,7 @@ The control can be populated using [ItemsSource](https://learn.microsoft.com/en-
 <syncfusion:CheckListBox x:Name="checkListBox" IsCheckOnFirstClick="True" DisplayMemberPath="Name" ItemsSource="{Binding CheckListItems}">
     <syncfusion:CheckListBox.ItemContainerStyle>
       <Style TargetType="syncfusion:CheckListBoxItem">
-        <Setter Property="IsSelected" Value="{Binding IsChecked,Mode=TwoWay"/>
+        <Setter Property="IsSelected" Value="{Binding IsChecked, Mode=TwoWay}"/>
       </Style>
     </syncfusion:CheckListBox.ItemContainerStyle>
 </syncfusion:CheckListBox>
@@ -25,6 +25,9 @@ The control can be populated using [ItemsSource](https://learn.microsoft.com/en-
 {%endhighlight%}
 
 {%highlight c#%}
+
+using System.Collections.ObjectModel;
+using System.ComponentModel;
 
 public class ViewModel : INotifyPropertyChanged
 {

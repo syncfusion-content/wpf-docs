@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Use Custom Adorners In Chart Or Chart Area | wpf | Syncfusion
-description: Learn here all about Use Custom Adorners In Chart Or Chart Area support in Syncfusion WPF Chart (Classic) control and more.
+title: How to use custom adorners in WPF Classic Chart | Syncfusion®
+description: Use custom adorners in Syncfusion® WPF Classic Chart to add visual elements, highlight data points, and customize chart presentation.
 platform: wpf
 control: Chart (Classic)
 documentation: ug
 ---
 
-## Use Custom Adorners In Chart Or Chart Area
+# How to use custom adorners in WPF Classic Chart
 
 Custom Adorners can be added to the Chart or ChartArea to add any custom UI elements over the Chart or ChartArea. The following code example illustrates adding and removing adorners to a ChartArea.
 
@@ -121,7 +121,7 @@ internal class CustomAdorner : Adorner
 
         drawingContext.DrawRectangle(b, new Pen(Brushes.Red, 1), new Rect(new Point(0, 0), DesiredSize));
 
-        FormattedText text = new FormattedText("This is a custom Syncfusion WPF Chart adorner", Thread.CurrentThread.CurrentUICulture,
+        FormattedText text = new FormattedText("This is a custom Syncfusion WPF Classic Chart adorner", Thread.CurrentThread.CurrentUICulture,
 
         FlowDirection.LeftToRight, new Typeface("Arial"), 14, Brushes.White);
 

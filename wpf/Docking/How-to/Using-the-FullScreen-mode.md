@@ -1,25 +1,25 @@
 ---
 layout: post
-title: Using the FullScreen mode | DockingManager | wpf | Syncfusion®
-description: Using the fullscreen mode in Syncfusion® Essential Studio® WPF DockingManager control, its elements and more.
-platform: WPF
+title: How to use the FullScreen mode in WPF DockingManager | Syncfusion®
+description: Learn here how to use the fullscreen mode in Syncfusion® WPF Docking (DockingManager) control, its elements and more.
+platform: wpf
 control: DockingManager
 documentation: ug
 ---
 
-# Using the FullScreen mode
+# How to use the FullScreen mode in WPF Docking Control
 
 The FullScreen Mode is used to display the control in full screen. This will be effective while you use TDI Modes. The TabPanel will be hidden and visible on mouse roll-over. For this, you have TDIFullScreenMode property. This property is of type FullScreen mode which has following values.
 
-### None:
+## None:
 
 This is the default value and does nothing.
 
-### WindowMode:
+## WindowMode:
 
 This Mode window will be in full screen and the TabPanel will be hidden, and it will be visible only when the mouse roll-over is on top.
 
-### ControlMode:
+## ControlMode:
 
 In this mode, full screen will be disabled and only the Tab panel will be hidden and visible only on mouse roll-over.
 

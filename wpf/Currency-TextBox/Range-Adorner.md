@@ -1,20 +1,22 @@
 ---
 layout: post
-title: Range Adorner in WPF Currency TextBox control | Syncfusion®
-description: Learn about Range Adorner support in Syncfusion® WPF Currency TextBox control, its elements and more details.
-platform: WPF
+title: Range Adorner in WPF CurrencyTextBox | Syncfusion®
+description: Visualize the current value within a range using the built-in range adorner of the Syncfusion WPF CurrencyTextBox control.
+platform: wpf
 control: CurrencyTextBox 
 documentation: ug
 ---
 
-# Range Adorner in WPF Currency TextBox
+# Range Adorner in WPF CurrencyTextBox
+
+## Assembly Deployment
 
 [Value](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.CurrencyTextBox.html#Syncfusion_Windows_Shared_CurrencyTextBox_Value) of [CurrencyTextBox](https://www.syncfusion.com/wpf-ui-controls/currency-textbox) can be visually indicated like a progress bar using range-adorner feature, this feature is disabled by default. You can show the adorner over `CurrencyTextBox` control by setting [EnableRangeAdorner](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.EditorBase.html#Syncfusion_Windows_Shared_EditorBase_EnableRangeAdorner) property to `true`. Default value of `EnableRangeAdorner` is `false`. The adorner layer can be filled in the control area on the basis of the minimum and maximum values with considering the given value. Range Adorner is not displayed when a `MinValue` or `MaxValue` property is not set.
 
 {% tabs %}
 {% highlight XAML %}
 
-<syncfusion:CurrencyTextBox x:Name="currencyTextBox" MinValue="0" MaxValue="100" Value="630"  EnableRangeAdorner="True" />
+<syncfusion:CurrencyTextBox x:Name="currencyTextBox" MinValue="0" MaxValue="100" Value="63"  EnableRangeAdorner="True" />
 
 {% endhighlight %}
 {% highlight C# %}
@@ -30,7 +32,7 @@ currencyTextBox.EnableRangeAdorner =true;
 
 ![WPF CurrencyTextBox displays RangeAdorner](Range-Adorner_images/wpf-currency-textbox-range-adorner.png)
 
-## Changing background of range-adorner
+## Changing the Background of the Range Adorner
 
 You can change the background color of the range adorner using [RangeAdornerBackground](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.EditorBase.html#Syncfusion_Windows_Shared_EditorBase_RangeAdornerBackground) property.
 

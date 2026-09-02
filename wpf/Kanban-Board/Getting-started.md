@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Getting Started with WPF SfKanban | Syncfusion
-description: Learn how to get started with the Syncfusion WPF SfKanban Control. Explore setup, features, examples, and customization options.
+title: Getting Started with WPF Kanban Board | Syncfusion
+description: Learn how to get started with the Syncfusion WPF Kanban Board Control. Explore setup, features, examples, and customization options.
 platform: wpf
 control: SfKanban
 documentation: ug
 ---
-# Getting Started with WPF SfKanban
+# Getting Started with WPF Kanban Board
 
 The following section provides assistance to create a simple Kanban application and configure it.
 
@@ -14,9 +14,9 @@ The following section provides assistance to create a simple Kanban application 
 
 1. Create a WPF desktop app for C# and .NET 6 or later.
 
-## Adding the SfKanban Reference
+## Adding the WPF Kanban Board Reference
 
-You can add the SfKanban reference to your project in one of the following ways.
+You can add the WPF Kanban Board reference to your project in one of the following ways.
 
 ### Adding the Reference via NuGet
 
@@ -34,7 +34,7 @@ N> This is the recommended approach for modern WPF projects.
 
 N> This window differs for the Visual Basic project.
 
-## Create a Simple Kanban Board
+## Create a Simple WPF Kanban Board
 
 In this section, we'll demonstrate how to build a new WPF application that integrates the `SfKanban` control.
 
@@ -54,7 +54,7 @@ using Syncfusion.UI.Xaml.Kanban;
 {% endhighlight %}
 {% endtabs %}
 
-3. Create an instance of the SfKanban control.
+3. Create an instance of the WPF Kanban Board control.
 
 {% tabs %}
 
@@ -74,7 +74,7 @@ SfKanban kanban = new SfKanban();
 
 ### Adding SfKanban from the Toolbox
 
-Drag and drop the Kanban control from the toolbox to your application.
+Drag and drop the WPF Kanban Board control from the toolbox to your application.
 
 ![Adding SfKanban from toolbox](sfkanban_images/wpf-kanban-board-toolbox.png)
 
@@ -84,17 +84,17 @@ Now the `Syncfusion.SfKanban.WPF` reference is added to the application referenc
 
 ![Adding SfKanban from toolbox Xaml Reference](sfkanban_images/wpf-kanban-board-xaml-reference.png)
 
-## Populating the WPF Kanban Items Source
+## Populating the WPF Kanban Board Items Source
 
-This section explains how to populate the WPF Kanban control's `ItemsSource` by creating and binding both default and custom task data models.
+This section explains how to populate the WPF Kanban Board control's `ItemsSource` by creating and binding both default and custom task data models.
 
 ### Creating the Default Model Tasks
 
 * **Define the ViewModel:** Create a ViewModel class to set values for the properties listed in the [`KanbanModel`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.KanbanModel.html) class as shown in the following example code. Each [`KanbanModel`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.KanbanModel.html) instance represents a card in the Kanban control.
 
-* **Bind the Item Source for Kanban:** To populate the Kanban card items, use the [`ItemsSource`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_ItemsSource) property of [`SfKanban`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.SfKanban.html).
+* **Bind the Item Source for WPF Kanban Board:** To populate the card items, use the [`ItemsSource`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_ItemsSource) property of [`SfKanban`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.SfKanban.html).
 
-* **Define Columns in the Kanban Board:** The columns are generated automatically based on the different values of the [`Category`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.KanbanModel.html#Syncfusion_UI_Xaml_Kanban_KanbanModel_Category) in the [`KanbanModel`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.KanbanModel.html) class from the [`ItemsSource`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_ItemsSource). Alternatively, you can manually define the columns by setting the [`AutoGenerateColumns`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_AutoGenerateColumns) property to `false` and adding [`KanbanColumn`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.KanbanColumn.html) instances to the [`Columns`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_Columns) property of [`SfKanban`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.SfKanban.html). You can define the column categories using the [`Categories`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.KanbanColumn.html#Syncfusion_UI_Xaml_Kanban_KanbanColumn_Categories) property of [`KanbanColumn`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.KanbanColumn.html), and the cards will be added to their respective columns.
+* **Define Columns in the WPF Kanban Board:** The columns are generated automatically based on the different values of the [`Category`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.KanbanModel.html#Syncfusion_UI_Xaml_Kanban_KanbanModel_Category) in the [`KanbanModel`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.KanbanModel.html) class from the [`ItemsSource`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_ItemsSource). Alternatively, you can manually define the columns by setting the [`AutoGenerateColumns`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_AutoGenerateColumns) property to `false` and adding [`KanbanColumn`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.KanbanColumn.html) instances to the [`Columns`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_Columns) property of [`SfKanban`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.SfKanban.html). You can define the column categories using the [`Categories`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.KanbanColumn.html#Syncfusion_UI_Xaml_Kanban_KanbanColumn_Categories) property of [`KanbanColumn`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.KanbanColumn.html), and the cards will be added to their respective columns.
 
 The following sample code demonstrates this process in action. Ensure the `xmlns:local` mapping (`xmlns:local="clr-namespace:GettingStarted"`) and `xmlns:syncfusion` mapping are declared on the root element where the `SfKanban` is defined.
 
@@ -223,17 +223,17 @@ N> View the sample in [`GitHub`](https://github.com/SyncfusionExamples/Getting-s
 
 ### Creating the Custom Model Tasks with Data Mapping
 
-You can also map a custom data model to the Kanban control. The following steps demonstrate how to render tasks using the [WPF Kanban](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.SfKanban.html) control with respective custom data properties.
+You can also map a custom data model to the WPF Kanban Board control. The following steps demonstrate how to render tasks using the [WPF Kanban](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.SfKanban.html) control with respective custom data properties.
 
-* **Create a data model for Kanban:** Create a simple data model in a new class file as shown in the following example code.
+* **Create a data model for WPF Kanban Board:** Create a simple data model in a new class file as shown in the following example code.
 
 * **Create a ViewModel:** Create a ViewModel class to set values for the properties listed in the model class as shown in the following example code.
 
-* **Bind the Item Source for Kanban:** To populate the Kanban card items, use the [`ItemsSource`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_ItemsSource) property of [`SfKanban`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.SfKanban.html) control.
+* **Bind the Item Source for WPF Kanban Board:** To populate the card items, use the [`ItemsSource`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_ItemsSource) property of [`SfKanban`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.SfKanban.html) control.
 
 * **Map Column Property:** The [`ColumnMappingPath`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_ColumnMappingPath) specifies the name of the property within the data object that is used to generate columns in the Kanban control when [`AutoGenerateColumns`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_AutoGenerateColumns) is set to `true`.
 
-* **Define Columns in the Kanban Board:** The [`Columns`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_Columns) in the Kanban board are mapped based on the values of a specified property (e.g., "Status") from your custom data model. You can manually define columns by setting [`AutoGenerateColumns`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_AutoGenerateColumns) to `false` and adding instances of [`KanbanColumn`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.KanbanColumn.html) to the [`Columns`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_Columns) collection of the [`SfKanban`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.SfKanban.html) control.
+* **Define Columns in the WPF Kanban Board:** The [`Columns`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_Columns) mapped based on the values of a specified property (e.g., "Status") from your custom data model. You can manually define columns by setting [`AutoGenerateColumns`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_AutoGenerateColumns) to `false` and adding instances of [`KanbanColumn`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.KanbanColumn.html) to the [`Columns`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_Columns) collection of the [`SfKanban`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.SfKanban.html) control.
 
 Let’s look at the practical code example:
 
@@ -358,7 +358,7 @@ N>
 
 ## Theme
 
-The Kanban control supports various built-in themes. Refer to the below links to apply themes for the Kanban control:
+The WPF Kanban Board Board control supports various built-in themes. Refer to the below links to apply themes:
 
 * [Apply theme using SfSkinManager](https://help.syncfusion.com/wpf/themes/skin-manager)
 * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)

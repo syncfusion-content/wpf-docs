@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Licensing FAQ – Get the license key | Syncfusion
-description: Learn here some information about recommended places to register the Syncfusion license key in your application.
-platform: WPF
+title: How to get a license key in WPF | Syncfusion®
+description: Learn how to get a Syncfusion® WPF license key from the License & Downloads or Trial & Downloads section of the Syncfusion® website.
+platform: wpf
 control: Essential Studio
 documentation: ug
 ---
 
-# Where can I get a license key?
+# How to get a license key in WPF
 
 License keys can be generated from the [License & Downloads](https://syncfusion.com/account/downloads) or [Trail & Downloads](https://www.syncfusion.com/account/manage-trials/downloads) section of the Syncfusion website. 
 

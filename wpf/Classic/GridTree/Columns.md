@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Columns in WPF GridTree Control | Syncfusion
-description: Learn here all about Columns support in Syncfusion WPF GridTreeControl (Classic) control, its elements and more details.
+title: Columns in WPF GridTreeControl | Syncfusion
+description: Explore the column support in Syncfusion WPF GridTreeControl. Learn how to create, customize, and display data using different column types.
 platform: wpf
-control: GridTree 
+control: GridTreeControl 
 documentation: ug
 ---
 
-# Columns in WPF GridTreeControl (Classic)
+# Columns in WPF GridTreeControl
 
 The GridTree control’s columns are divided into two types. They are:
 
@@ -1935,7 +1935,7 @@ TimeSpanEdit Cell Type
 
 The ImageCell type is used to load images inside the graphic cells. To load the graphic image cell in the GridTree control, you have to set the CellType as ImageCell and the CellValue as BitmapImage.
 
-#### Image CellType properties
+### Image CellType properties
 
 
 

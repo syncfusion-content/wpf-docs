@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Context menu in WPF TabControl control | Syncfusion®
-description: Learn here all about Context menu support in Syncfusion® WPF TabControl (TabControlExt) control and more.
-platform: WPF
+title: Context Menu in WPF TabControlExt | Syncfusion®
+description: Attach a context menu to tab items in the Syncfusion WPF TabControl (TabControlExt) for quick access to common actions.
+platform: wpf
 control: TabControlExt
 documentation: ug
 ---
 
-# Context menu in WPF TabControl (TabControlExt)
+# Context Menu in WPF Tab Control
 
-This section explains how to show the tab list and tab item context menu and add custom context menu in [TabControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.TabControlExt.html).
+This section explains how to show the tab list and tab item context menu and add custom context menu in [WPF Tab Control](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.TabControlExt.html).
 
 ## Default tab item context menu
 

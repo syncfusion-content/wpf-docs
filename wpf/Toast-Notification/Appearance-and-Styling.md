@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Appearance and Styling in WPF Toast Notification control | Syncfusion®
-description: Learn how to customize Syncfusion® WPF Toast Notification (SfToastNotification) using severity, variants, accent brush, placement, and animations.
+title: Appearance and Styling in WPF Toast Notification | Syncfusion®
+description: Customize the look and feel of the Syncfusion WPF Toast Notification (SfToastNotification) using severity, variants, accent brush, placement, and animations.
 platform: wpf
 control: SfToastNotification
 documentation: ug
@@ -9,11 +9,11 @@ documentation: ug
 
 # Appearance and Styling in WPF Toast Notification
 
-This section explains how to customize the appearance and visual behavior of toast notifications by using severity, variants, accent brush, placement, and animations.
+This section explains how to customize the appearance and visual behavior of toast notifications by using severity, variants, accent brush, placement, animations, sound, and duration.
 
 ## Severity and Variant
 
-Toast notifications support multiple severity levels with built-in visual styling and provide three visual variants to suit different design preferences.
+Toast notifications support multiple severity levels with built-in visual styling and provide three visual variants to suit different design preferences. The accepted severity levels are `Info`, `Success`, `Warning`, and `Error`. The accepted variants are `Text`, `Filled`, and `Outlined`.
 
 {% tabs %}
 {% highlight C# %}
@@ -34,16 +34,18 @@ SfToastNotification.Show(this, new ToastOptions
 
 ### Variant Behavior with Severity
 
-| **Severity ↓ / Variant →** | **Text** | **Fill** | **Outlined** |
-|----------------------------|----------|----------|--------------|
-| **Info** | ![SfToastNotification Text Info image](Images/text-info-image.png) | ![SfToastNotification Text Fill image](Images/fill-info-image.png) | ![SfToastNotification Outlined Info image](Images/outline-info-image.png) |
-| **Success** | ![SfToastNotification Text Success image](Images/text-success-image.png) | ![SfToastNotification Filled Success image](Images/filled-success-image.png) | ![SfToastNotification Outline Success image](Images/outline-success-image.png) |
-| **Warning** | ![SfToastNotification Text Warning image](Images/text-warning-image.png) | ![SfToastNotification Fill Warning image](Images/fill-warning-image.png) | ![SfToastNotification Outline Warning image](Images/outline-warning-image.png) |
-| **Error** | ![SfToastNotification Text Error image](Images/text-error-image.png) | ![SfToastNotification Fill Error image](Images/fill-error-image.png) | ![SfToastNotification Outline Error image](Images/outline-error-image.png) |
+The following table shows how each variant renders with each severity. The default severity is `Info`, and the default variant is `Text`.
+
+| Severity | Text | Filled | Outlined |
+| --- | --- | --- | --- |
+| **Info** | ![Text, Info severity](Images/text-info-image.png) | ![Filled, Info severity](Images/fill-info-image.png) | ![Outlined, Info severity](Images/outline-info-image.png) |
+| **Success** | ![Text, Success severity](Images/text-success-image.png) | ![Filled, Success severity](Images/filled-success-image.png) | ![Outlined, Success severity](Images/outline-success-image.png) |
+| **Warning** | ![Text, Warning severity](Images/text-warning-image.png) | ![Filled, Warning severity](Images/fill-warning-image.png) | ![Outlined, Warning severity](Images/outline-warning-image.png) |
+| **Error** | ![Text, Error severity](Images/text-error-image.png) | ![Filled, Error severity](Images/fill-error-image.png) | ![Outlined, Error severity](Images/outline-error-image.png) |
 
 ## Accent Brush
 
-You can use the [AccentBrush](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.SfToastNotification.ToastOptions.html#Syncfusion_UI_Xaml_SfToastNotification_ToastOptions_AccentBrush) property to further customize the appearance of a toast notification after severity and variant are applied. This property allows you to adjust the color accents and overall visual styling of the toast.
+You can use the [AccentBrush](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.SfToastNotification.ToastOptions.html#Syncfusion_UI_Xaml_SfToastNotification_ToastOptions_AccentBrush) property to further customize the appearance of a toast after severity and variant are applied. The accent brush overrides the accent color derived from the selected severity. It is ignored when `Severity` is set to `None`.
 
 {% tabs %}
 {% highlight C# %}
@@ -64,9 +66,7 @@ SfToastNotification.Show(this, new ToastOptions
 
 ## Placement
 
-Toast notifications support multiple placement options, allowing notifications to appear at different positions within the application window or screen.
-
-The supported placement options are: `TopLeft`, `TopCenter`, `TopRight`, `LeftCenter`, `RightCenter`, `BottomLeft`, `BottomCenter`, and `BottomRight`.
+Toast notifications support multiple placement options, allowing notifications to appear at different positions within the application window or screen. The accepted `ToastPlacement` values are: `TopLeft`, `TopCenter`, `TopRight`, `LeftCenter`, `RightCenter`, `BottomLeft`, `BottomCenter`, and `BottomRight`. The default placement is `BottomRight`.
 
 {% tabs %}
 {% highlight C# %}
@@ -85,7 +85,7 @@ SfToastNotification.Show(this, new ToastOptions
 
 ## Animations
 
-Toast notifications support built-in animation types that control how notifications appear and disappear on the screen. You can configure the show and hide animations independently to customize the visual behavior of the toast.
+Toast notifications support built-in animation types that control how notifications appear and disappear. You can configure the show and hide animations independently. The accepted `ToastAnimation` values are listed in the table below. The default values are `SlideBottomIn` and `SlideBottomOut`.
 
 {% tabs %}
 {% highlight C# %}
@@ -115,13 +115,31 @@ SfToastNotification.Show(this, new ToastOptions
 | **Flip Right Down** | `FlipRightDownIn` | `FlipRightDownOut` |
 | **None** | `None` | `None` |
 
+## Duration
+
+Use the [Duration](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.SfToastNotification.ToastOptions.html#Syncfusion_UI_Xaml_SfToastNotification_ToastOptions_Duration) property to specify how long the toast remains visible in seconds before auto-closing. The default duration is `3` seconds.
+
+{% tabs %}
+{% highlight C# %}
+
+SfToastNotification.Show(this, new ToastOptions
+{
+    Title = "Reminder",
+    Message = "This toast stays visible for 5 seconds.",
+    Mode = ToastMode.Screen,
+    Duration = new TimeSpan(0, 0, 5)
+});
+
+{% endhighlight %}
+{% endtabs %}
+
 ## Toast Sound Configuration
 
 ### Predefined Sound Options
 
 Toast notification supports multiple sound options when displaying notifications, helping to improve user awareness and ensuring important messages are not easily missed.
 
-Custom toasts support three predefined sound values (Silent, Beep, and Hand) from the ToastSound enum, allowing developers to enhance notifications with simple audio cues.
+Custom toasts (Window and Screen modes) support only three predefined sound values from the `ToastSound` enum: `Silent`, `Beep`, and `Hand`. The default value is `Beep`.
 
 {% tabs %}
 {% highlight C# %}
@@ -138,7 +156,7 @@ SfToastNotification.Show(this, new ToastOptions
 {% endhighlight %}
 {% endtabs %}
 
-System toast notifications support the remaining 26 predefined sounds from the ToastSound enum (excluding Beep and Hand), enabling developers to choose from a wide range of standard notification tones that align with the operating system’s native look and feel.
+System toast notifications (Default mode) support the remaining predefined sounds from the `ToastSound` enum, enabling developers to choose from a wide range of standard notification tones that align with the operating system's native look and feel (including `LoopingAlarm`, `IM`, `Mail`, `SMS`, and others).
 
 {% tabs %}
 {% highlight C# %}
@@ -166,9 +184,9 @@ SfToastNotification.Show(this, new ToastOptions
 {  
     Title = "Notification",
     Header = "Custom Toast",
-    Message = "Notification with Beep sound",
+    Message = "Notification with custom sound",
     Mode = ToastMode.Screen,
-    ToastSoundPath = new Uri(@"C:\Windows\Media\chimes.wav")
+    ToastSoundPath = new Uri("pack://application:,,,/Resources/sounds/chimes.wav")
 });
 
 {% endhighlight %}
@@ -176,9 +194,7 @@ SfToastNotification.Show(this, new ToastOptions
 
 ## Control Maximum Toast Display Count
 
-Toast notification supports the MaxToastVisibleCount property to control how many toast notifications are displayed at the same time. This helps manage multiple notifications efficiently and prevents clutter in the user interface.
-
-By default, the number of notifications displayed depends on the available space within the host.
+The [MaxToastVisibleCount](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.SfToastNotification.ToastOptions.html#Syncfusion_UI_Xaml_SfToastNotification_ToastOptions_MaxToastVisibleCount) property controls how many toast notifications are displayed simultaneously. This helps manage multiple notifications efficiently and prevents UI clutter. By default, the property is `null`, and the number of notifications shown is limited only by the available space within the host.
 
 {% tabs %}
 {% highlight C# %}
@@ -195,4 +211,4 @@ SfToastNotification.Show(this, new ToastOptions
 {% endhighlight %}
 {% endtabs %}
 
-N> Appearance customization features such as Severity, Variant, and AccentBrush, as well as behavior-related options like Placement, ShowAnimationType, CloseAnimationType, MaxToastVisibleCount and Duration, are supported only for custom toast notifications displayed in Window or Screen mode. These are not supported in Default mode, as OS-level toast appearance, placement, animation, and timing are controlled by the operating system. Additionally, Variant and AccentBrush are applicable only when Severity is set to Info, Success, Warning, or Error, and not when it is set to None.
+N> The following properties are supported only for in-app toast notifications (Window or Screen mode) and have no effect in Default (native) mode, where OS behavior controls appearance, placement, animation, and timing: `Severity`, `Variant`, `AccentBrush`, `Placement`, `ShowAnimationType`, `CloseAnimationType`, `Duration`, `MaxToastVisibleCount`, and `ToastSoundPath`. In addition, `Variant` and `AccentBrush` apply only when `Severity` is set to `Info`, `Success`, `Warning`, or `Error` (not `None`).

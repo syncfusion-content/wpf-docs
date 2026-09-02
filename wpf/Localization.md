@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Localization in Syncfusion WPF UI Controls | Syncfusion
-description: Learn about Localization support in Syncfusion WPF UI Controls using .RESX files and also explains editing default strings of WPF controls.
+title: Localization in WPF UI Controls | Syncfusion®
+description: Learn about localization support in Syncfusion® WPF UI Controls using .RESX files and editing default strings of WPF controls.
 platform: wpf
 control: Localization
 documentation: ug
 ---
 
-# Localization of Syncfusion<sup>&reg;</sup> WPF Controls
+# Localization in WPF UI Controls
 
 Localization is the process of translating the application resources into different languages for specific cultures. You can localize the Syncfusion<sup>&reg;</sup> WPF controls by adding a resource file for each language.
 

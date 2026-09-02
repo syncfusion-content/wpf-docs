@@ -21,7 +21,7 @@ When establishing a new connection or modifying the start/end points of existing
 <syncfusion:SfDiagram x:Name="diagram" PortHoverEffect="Ripple">
 </syncfusion:SfDiagram>
 {% endhighlight %}
-{% highlight C# %}
+{% highlight c# %}
 //Initialize the SfDiagram
 SfDiagram diagram = new SfDiagram();
 //defines the port hover connection effect as ripple.
@@ -37,4 +37,4 @@ diagram.PortHoverEffect = PortHoverEffect.Ripple;
 | None | Connection animation effect does not appear. |
 
 ## See Also
-[How to change the PortHover effect color in the WPF Diagram?](https://support.syncfusion.com/kb/article/17720/how-to-change-the-porthover-effect-color-in-the-wpf-diagram)
+[How to change the PortHover effect color in the WPF SfDiagram?](https://support.syncfusion.com/kb/article/17720/how-to-change-the-porthover-effect-color-in-the-wpf-diagram)

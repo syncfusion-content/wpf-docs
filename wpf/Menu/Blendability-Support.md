@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Blendability Support in WPF Menu (MenuAdv) | Syncfusion®
+title: Blendability Support in WPF Menu | Syncfusion®
 description: Blendability Support in Menu (MenuAdv) enables design-time customization of styles and templates using Expression Blend.
 platform: wpf
 control: MenuAdv

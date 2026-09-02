@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Dealing with Windows in WPF Docking control | Syncfusion®
-description: Learn here all about Dealing with Windows support in Syncfusion® WPF Docking (DockingManager) control and more.
+title: Dealing with Windows in WPF DockingManager Control | Syncfusion®
+description: Dealing with windows in DockingManager lets you activate, pin, close, and customize the behavior of docked and floating child windows.
 platform: wpf
 control: DockingManager
 documentation: ug
 ---
-# Dealing with Windows in WPF Docking (DockingManager)
+# Dealing with Windows in WPF Docking Control
 
 ## Activating a window
 
-A particular child window can be activated in DockingManager using its name or reference through the property [ActiveWindow](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_ActiveWindow) and [ActivateWindow](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_ActivateWindow_System_String_) method that passes the element as argument to activate.
+A particular child window can be activated in WPF Docking Control using its name or reference through the property [ActiveWindow](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_ActiveWindow) and [ActivateWindow](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_ActivateWindow_System_String_) method that passes the element as argument to activate.
 
 {% tabs %}
 
@@ -37,9 +37,9 @@ DockingManager1.ActivateWindow("Content1")
 
 ## Adding Window Programmatically
 
-Any UI element can be added inside the DockingManager as its child windows. The windows is added as Dock windows, since the default value of the state is `Dock`.  The UI element is added in the DockingManager using the `Add` method of the Children property of the DockingManager.
+Any UI element can be added inside the WPF Docking Control as its child windows. The windows is added as Dock windows, since the default value of the state is `Dock`.  The UI element is added in the WPF Docking Control using the `Add` method of the Children property of the WPF Docking Control.
 
-For example, ContentControl is added as a window for DockingManager
+For example, ContentControl is added as a window for WPF Docking Control
 
 {% tabs %}
 
@@ -150,7 +150,7 @@ DockingManager.SetState(content1, DockState.Float)
 
 
 
-* Setting state as Document – To create document window in the DockingManager, set [UseDocumentContainer](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_UseDocumentContainer) as True for DockingManager and set its state as Document.
+* Setting state as Document – To create document window in the WPF Docking Control, set [UseDocumentContainer](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_UseDocumentContainer) as True for WPF Docking Control and set its state as Document.
 
 {% capture codesnippet1 %}
 {% tabs %}
@@ -255,7 +255,7 @@ DockingManager.SetState(Content1, DockState.Document)
 
 ## Hiding Window Programmatically
 
-To hide the window, set [State](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockItem.html#Syncfusion_Windows_Tools_Controls_DockItem_State) property of the DockingManager as `Hidden`.
+To hide the window, set [State](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockItem.html#Syncfusion_Windows_Tools_Controls_DockItem_State) property of the WPF Docking Control as `Hidden`.
 
 {% tabs %}
 
@@ -295,7 +295,7 @@ DockingManager1.ExecuteClose(Content1)
 
 ## Restore Window Programmatically
 
-To restore the closed window in the DockingManager, call [ExecuteRestore](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_ExecuteRestore_System_Windows_FrameworkElement_) method.
+To restore the closed window in the WPF Docking Control, call [ExecuteRestore](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_System_Windows_FrameworkElement_) method.
 
 {% tabs %}
 
@@ -319,7 +319,7 @@ DockingManager1.ExecuteRestore(Content1, DockState.Float)
 
 {% endtabs %}
 
-## Detect the closing of a DockingManager child
+## Detect the closing of a WPF Docking Control child
 
 [WindowClosing](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html) and `CloseButtonClick` are the two events, which can be used to get notification when the child windows are being closed. 
 
@@ -329,7 +329,7 @@ DockingManager1.ExecuteRestore(Content1, DockState.Float)
 
 ### Document Window Closing
  
-[CloseButtonClick](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html) event raised only when close button of the `Document` child clicked. The following code describes how to handle the closing of all the children in `DockingManager`.
+[CloseButtonClick](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html) event raised only when close button of the `Document` child clicked. The following code describes how to handle the closing of all the children in `WPF Docking Control`.
 
 {% tabs %}
 
@@ -372,7 +372,7 @@ private void dockingManager_WindowClosing(object sender, WindowClosingEventArgs 
 
 ## Removing Window Programmatically
 
-The windows for the DockingManager can be added using the Children collection. To remove the windows from the children collection, pass the window element that need to be remove using `Remove()` method of children property in DockingManager.
+The windows for the WPF Docking Control can be added using the Children collection. To remove the windows from the children collection, pass the window element that need to be remove using `Remove()` method of children property in WPF Docking Control.
 
 {% tabs %}
 
@@ -428,7 +428,7 @@ Grid1.Children.Add(dockingmanager)
 
 ## Event to notify when a child is added or removed
 
-If you want to know while docking child added or removed from the `DockingManager`, it can be notified by using the [ChildrenCollectionChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html) event. It receives an argument of type `NotifyCollectionChangedEventArgs` containing the following information about the event.
+If you want to know while docking child added or removed from the `WPF Docking Control`, it can be notified by using the [ChildrenCollectionChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html) event. It receives an argument of type `NotifyCollectionChangedEventArgs` containing the following information about the event.
 
 <table>
 <tr>
@@ -506,10 +506,10 @@ private void DockingManager_ChildrenCollectionChanged(object sender, NotifyColle
 
 ## Hide or delete when closing a child item
 
-The CloseMode property in `DockingManager` determines whether a child item is hidden from view or permanently removed from the items collection when closed.
+The CloseMode property in `WPF Docking Control` determines whether a child item is hidden from view or permanently removed from the items collection when closed.
 
-* Hide (default): The child element remains in the `DockingManager` but is hidden from view. Its DockState is updated, and focus shifts to the previously active docked item. Since the item is not removed from the collection, it can be restored later.
-* Delete: The child element is completely removed from the `DockingManager` items collection. The selection remains at the same index after removal, ensuring UI consistency.
+* Hide (default): The child element remains in the `WPF Docking Control` but is hidden from view. Its DockState is updated, and focus shifts to the previously active docked item. Since the item is not removed from the collection, it can be restored later.
+* Delete: The child element is completely removed from the `WPF Docking Control` items collection. The selection remains at the same index after removal, ensuring UI consistency.
 By default, CloseMode is set to Hide, allowing closed items to be restored when needed.
 
 The default value of the CloseMode property is Hide.
@@ -667,7 +667,7 @@ DockingManager.SetCanDrag(Item1, false);
 
 ## Drag Shadow of a Window
 
-To drag child window in Shadow mode, set the [DraggingType](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_DraggingType) property of DockingManager as `ShadowDragging`.
+To drag child window in Shadow mode, set the [DraggingType](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_DraggingType) property of WPF Docking Control as `ShadowDragging`.
 
 {% tabs %}
 
@@ -694,7 +694,7 @@ DockingManager1.DraggingType = DraggingType.ShadowDragging;
 
 ## Drag Border of a Window
 
-To drag child window in Border mode, set the [DraggingType](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_DraggingType) property of DockingManager as `BorderDragging`.
+To drag child window in Border mode, set the [DraggingType](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_DraggingType) property of WPF Docking Control as `BorderDragging`.
 
 
 {% tabs %}
@@ -722,7 +722,7 @@ DockingManager1.DraggingType = DraggingType.BorderDragging;
 
 ## Customizing a resizing behaviors
 
-DockingManager allows to resize the dock and float windows by default. To restrict resizing the dock and float windows respectively, set the [CanResizeInDockedState](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockItem.html#Syncfusion_Windows_Tools_Controls_DockItem_CanResizeInDockedState) and [CanResizeInFloatState](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockItem.html#Syncfusion_Windows_Tools_Controls_DockItem_CanResizeInFloatState) properties with it value as False.
+WPF Docking Control allows to resize the dock and float windows by default. To restrict resizing the dock and float windows respectively, set the [CanResizeInDockedState](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockItem.html#Syncfusion_Windows_Tools_Controls_DockItem_CanResizeInDockedState) and [CanResizeInFloatState](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockItem.html#Syncfusion_Windows_Tools_Controls_DockItem_CanResizeInFloatState) properties with it value as False.
 
 
 {% tabs %}
@@ -864,7 +864,7 @@ DockingManager.SetDesiredMaxHeightInFloatingMode(floatWindow1,200);
 
 ## Configuring window sizing
 
-DockingManager allows to set the desired width and height for the dock windows. The window `Width` and `Height` value set to "90" based on the container by default.
+WPF Docking Control allows to set the desired width and height for the dock windows. The window `Width` and `Height` value set to "90" based on the container by default.
 
 ### Desire height and width
 
@@ -1000,7 +1000,7 @@ SyncDockingManager.SplitterSize = 10;
 
 ## Occupy whole window
 
-To arrange the dock windows to a whole available space in the DockingManager, set [DockFill](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_DockFill) property of DockingManager as True. 
+To arrange the dock windows to a whole available space in the WPF Docking Control, set [DockFill](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_DockFill) property of WPF Docking Control as True. 
 
 {% tabs %}
 
@@ -1025,7 +1025,7 @@ SyncDockingManager.DockFill = true;
 ![WPF Dock Windows Occupy Whole Window](Dealing-with-Windows_images/wpf-dock-windows-occupy-whole-window.jpeg)
 
 
-And when DockFill functionality is enabled, DockingManager changes the DockWindow to AutoHidden state, if any Document state window is present .
+And when DockFill functionality is enabled, WPF Docking Control changes the DockWindow to AutoHidden state, if any Document state window is present .
 
 {% tabs %}
 
@@ -1430,7 +1430,7 @@ DockingManager1.DockBehavior = DockBehavior.VS2010;
 
 ## Hosting a client control between windows
 
-To add a client control in the DockingManager, set an attached property [ClientControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_ClientControl).
+To add a client control in the WPF Docking Control, set an attached property [ClientControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_ClientControl).
 
 {% tabs %}
 
@@ -1467,9 +1467,9 @@ DockingManager1.ClientControl = new TextBlock() { Text = "ClientControl", Width 
 ![WPF Docking Hosting a Client Control Between Windows](Dealing-with-Windows_images/wpf-docking-hosting-a-client-control-between-windows.jpeg)
 
 
-## DockingManager as FlatLayoutControl
+## WPF Docking Control as FlatLayoutControl
  
-The [EnableFlatLayout](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_EnableFlatLayout) property of DockingManager is used to disable all the docking functionalities such as drag-and-drop functionality in document windows, resizing the child elements, hiding the dock panel options, closing the child elements from view, and floating the dock windows. If the [EnableFlatLayout](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_EnableFlatLayout) property is true, the DockingManager control will act as LayoutControl. The default value of this property is false. 
+The [EnableFlatLayout](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_EnableFlatLayout) property of WPF Docking Control is used to disable all the docking functionalities such as drag-and-drop functionality in document windows, resizing the child elements, hiding the dock panel options, closing the child elements from view, and floating the dock windows. If the [EnableFlatLayout](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_EnableFlatLayout) property is true, the WPF Docking control will act as LayoutControl. The default value of this property is false. 
 {% tabs %}
 
 {% highlight XAML %}

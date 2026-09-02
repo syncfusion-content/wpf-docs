@@ -1,14 +1,14 @@
 ---
 layout: post
-title: RibbonTabPanelItem in WPF Ribbon control | Syncfusion®
-description: Learn about RibbonTabPanelItem support in Syncfusion® Essential Studio® WPF Ribbon control, its elements and more.
-platform: WPF
+title: RibbonTabPanelItem in WPF Ribbon Control | Syncfusion®
+description: The RibbonTabPanelItem in Ribbon lets you host any custom content within a ribbon tab panel with full layout flexibility.
+platform: wpf
 control: Ribbon
 documentation: ug
 ---
-# RibbonTabPanelItem in WPF Ribbon
+# RibbonTabPanelItem in WPF Ribbon Control
 
-`RibbonTabPanelItem` is used to display items below application Close button and above the `RibbonBar` content area. It is usually aligned in the right side of the Ribbon and we can place desired items like emojis, help button etc., in this Tab panel. 
+`RibbonTabPanelItem` is used to display items below application Close button and above the `RibbonBar` content area. It is usually aligned in the right side of the WPF Ribbon Control and we can place desired items like emojis, help button etc., in this Tab panel. 
 
 {% tabs %}
 
@@ -29,7 +29,7 @@ documentation: ug
 
 {% endtabs %}
 
-Create instance of RibbonButton and assign it to TabPanelItem property of Ribbon through code behind.
+Create instance of RibbonButton and assign it to TabPanelItem property of WPF Ribbon Control through code behind.
 
 {% tabs %}
 
@@ -52,6 +52,6 @@ _ribbon.TabPanelItem = _ribbonButton
 ![WPF Ribbon TabPanelItem](RibbonTabPanelItem_images/wpf-ribbon-tabpanelitem.jpg)
 
 N> 
-Ribbon control supports TabPanelItem for both normal and simplified layout, where the simplified layout is designed to display the most commonly used Ribbon commands in a single line interface, allowing more screen space for compact viewing of the content. To know more about the simplified layout, refer [here](https://help.syncfusion.com/wpf/ribbon/simplifiedlayout).
+WPF Ribbon Control supports TabPanelItem for both normal and simplified layout, where the simplified layout is designed to display the most commonly used WPF Ribbon Control commands in a single line interface, allowing more screen space for compact viewing of the content. To know more about the simplified layout, refer [here](https://help.syncfusion.com/wpf/ribbon/simplifiedlayout).
 
 

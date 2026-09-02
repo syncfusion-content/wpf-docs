@@ -9,21 +9,24 @@ documentation: ug
 
 # Flip Command in WPF SfDiagram
 
-The [`Flip`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IDiagramCommands.html#Syncfusion_UI_Xaml_Diagram_IDiagramCommands_Flip) command is used to mirror the selected object's content and port in the [WPF Diagram](https://www.syncfusion.com/diagram-sdk/wpf-diagram) page in both horizontal and vertical direction. 
+The [`Flip`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IDiagramCommands.html#Syncfusion_UI_Xaml_Diagram_IDiagramCommands_Flip) command is used to mirror the selected object's content and port in the [WPF SfDiagram](https://www.syncfusion.com/diagram-sdk/wpf-diagram) page in both horizontal and vertical directions. 
 
 {% tabs %}
 
-{% highlight Xaml%}
+{% highlight xaml%}
 
 <Button Height="50" Content="Flip" Name="Flip" Command="Syncfusion:DiagramCommands.Flip"></Button>
 
 {% endhighlight %}
 
-{% highlight C# %}
+{% highlight c# %}
 
-            IGraphInfo graphinfo = Diagram.Info as IGraphInfo;
-            // Apply flip to selected objects.
-            graphinfo.Commands.Flip.Execute(null);
+//Initialize the SfDiagram 
+SfDiagram Diagram = new SfDiagram();
+
+IGraphInfo graphinfo = Diagram.Info as IGraphInfo;
+// Apply flip to selected objects.
+graphinfo.Commands.Flip.Execute(null);
 
 {% endhighlight %}
 {% endtabs %}
@@ -34,25 +37,45 @@ The [Flip parameter](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagr
 
 ### Flip mode 
 
-The [FlipMode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.FlipMode.html) is used to control the behaviour of the flip object.
+The [FlipMode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.FlipMode.html) is used to control the behaviour of the flip object. The default value of `FlipMode` is `None`.
 
 | FlipMode | Description |
 | --- | --- |
 | Content | It is used to enable or disables the flip for object's content. |
 | Port | It is used to enable or disables the flip for object's port. |
 | FlipMode | It is used to enable or disables the flip for both object's content and port. |
-| None | It is used to disables all the flipmode behaviour. |
+| None | It is used to disables all flip mode behavior. |
 
 ### Flip
 
-The [Flip](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Flip.html) is used to specify the flip direction in flip command.
+The [Flip](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Flip.html) is used to specify the flip direction in flip command. The default value of the `Flip` is ``None`.
 
 | Flip | Description |
 | --- | --- |
-| Flip | It is used to flip the node or port is mirrored across the both horizontal and vertical axis.|
+| Flip | It is used to flip the node or port is mirrored across both the horizontal and vertical axes.|
 | HorizontalFlip | It is used to flip the node or port is mirrored across the horizontal axis.|
 | VerticalFlip | It is used to flip the node or port is mirrored across the vertical axis. |
-| None | It is used to disables all the flip behaviour. |
+| None | It is used to disables all the flip behavior. |
+
+{% tabs %}
+{% highlight c# %}
+
+//Initialize the SfDiagram 
+SfDiagram Diagram = new SfDiagram();
+
+IGraphInfo graphinfo = Diagram.Info as IGraphInfo;
+
+FlipParameter parameter = new FlipParameter()
+{
+    Flip = Syncfusion.UI.Xaml.Diagram.Flip.HorizontalFlip,
+
+    FlipMode = FlipMode.Content
+};
+
+graphinfo.Commands.Flip.Execute(parameter);
+
+{% endhighlight %}
+{% endtabs %}
 
 ![Represents the Node flip](Commands_images/Commands_img7.gif)
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Input Message Tip in WPF GridControl | Syncfusion®
-description: Learn about Input Message Tip support in Syncfusion® Essential Studio® WPF GridControl, its elements and more details.
-platform: WPF
-control: GridControl
+title: Input Message Tip in WPF Excel-like Grid | Syncfusion®
+description: Display and customize input message tips in Excel-like Grid for cells, rows, and columns using tooltips, templates, and runtime events.
+platform: wpf
+control: Excel-like Grid
 documentation: ug
 ---
 
-# Input Message Tip in WPF GridControl
+# Input Message Tip in WPF Excel-like Grid
 
 The input message tip can be added to individual cells, rows and columns to show external message of a specific cell when the cell is activated. The input message tip service can be enabled by setting the [GridTooltipService.SetShowTooltips](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Grid.GridTooltipService.html#Syncfusion_Windows_Controls_Grid_GridTooltipService_SetShowTooltips_System_Windows_DependencyObject_System_Boolean_) attached property to `true`. Tooltip for particular cell or row or column can be enabled by setting the [GridStyleInfo.ShowDataValidationTooltip](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Grid.GridStyleInfo.html#Syncfusion_Windows_Controls_Grid_GridStyleInfo_ShowDataValidationTooltip) property.
 

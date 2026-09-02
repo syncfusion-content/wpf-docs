@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Events in WPF GridControl | Syncfusion®
-description: Learn about Events support in Syncfusion® Essential Studio® WPF GridControl, its elements and more details.
+title: Events in WPF Excel-like Grid | Syncfusion®
+description: Handle Excel-like Grid events for cell customization, editing, clipboard operations, mouse interaction, resizing, validation, and current cell management.
 platform: wpf
-control: GridControl
+control: Excel-like Grid
 documentation: ug
 ---
 
-# Events in WPF GridControl
+# Events in WPF Excel-like Grid
 
 Grid control declares a number of events that it can raise in response to an activity either by the user or by the system. An Event is a message that is triggered to notify an object or a class of the occurrence of an action. When an event is triggered, all the event handlers are notified. Following are the Grid control events:
 

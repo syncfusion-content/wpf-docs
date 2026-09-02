@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Customization in WPF Badge control | Syncfusion®
-description: Learn here all about Customization support in Syncfusion® WPF Badge (SfBadge) control, its elements and more details.
+title: Customization in WPF SfBadge | Syncfusion®
+description: Customize the appearance of the Syncfusion WPF SfBadge control with custom shapes, predefined colors, and template options.
 platform: wpf
 control: SfBadge
 documentation: ug
 ---
 
-# Customization in WPF Badge (SfBadge)
+# Customization in WPF SfBadge
 
 This section explains the customization features available in the WPF [Badge](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Notification.SfBadge.html) control.
 
@@ -32,7 +32,7 @@ Here, `Badge` control added for the `Button` control.
 {% endhighlight %}
 {% highlight C# %}
 
-/Creating Badge control
+//Creating Badge control
 SfBadge sfBadge = new SfBadge();
 sfBadge.Name = "badge";
 sfBadge.Content = 10;
@@ -57,44 +57,36 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 
 You can directly add the `Badge` to any objects without using the `SfBadge.Badge` container.
 
+The C# sample below defines a `MailItem` class and a `ViewModel` that exposes a list of `MailItem` instances. Place both classes in your project (for example, in a `Models` folder) and add an `xmlns:local` namespace mapping in the XAML that points to the namespace where these classes live.
+
 {% tabs %}
 {% highlight C# %}
 
-public class MailItem
-{
-   public string ItemName { get; set; }
-   public int? UnreadMessageount { get; set; }
-}
+using System.Collections.Generic;
 
-public class ViewModel {
-    public List<MailItem> MailItems { get; set; }
-    public ViewModel(){
-        MailItems = new List<MailItem>();
-        MailItems.Add(new MailItem()
+namespace GettingStarted.Models
+{
+    public class MailItem
+    {
+        public string ItemName { get; set; }
+        public int? UnreadMessageCount { get; set; }
+    }
+
+    public class ViewModel
+    {
+        public List<MailItem> MailItems { get; set; }
+
+        public ViewModel()
         {
-            ItemName = "Inbox",
-            UnreadMessageount = 20
-        });
-        MailItems.Add(new MailItem()
-        {
-            ItemName = "Drafts",
-            UnreadMessageount = null
-        });
-        MailItems.Add(new MailItem()
-        {
-            ItemName = "Sent Items",
-            UnreadMessageount = 5
-        });
-        MailItems.Add(new MailItem()
-        {
-            ItemName = "Deleted Items",
-            UnreadMessageount = null
-        });
-        MailItems.Add(new MailItem()
-        {
-            ItemName = "Junk Email",
-            UnreadMessageount = null
-        });
+            MailItems = new List<MailItem>
+            {
+                new MailItem { ItemName = "Inbox",         UnreadMessageCount = 20  },
+                new MailItem { ItemName = "Drafts",        UnreadMessageCount = null },
+                new MailItem { ItemName = "Sent Items",    UnreadMessageCount = 5   },
+                new MailItem { ItemName = "Deleted Items", UnreadMessageCount = null },
+                new MailItem { ItemName = "Junk Email",    UnreadMessageCount = null }
+            };
+        }
     }
 }
 
@@ -129,7 +121,7 @@ public class ViewModel {
                                           Height="20" 
                                           Width="40" 
                                           Background="Orange"
-                                          Content="{Binding UnreadMessageount}"
+                                          Content="{Binding UnreadMessageCount}"
                                           Shape="Oval"/>
                 </Grid>
             </DataTemplate>
@@ -254,7 +246,7 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 
 ## Custom colors for displaying the badges
 
-If you want to change the background color of the `Badge` other than the default `Fill` colors, use the `Background` property. You can also change foreground of the `Badge` by using the `Foreground` property. The default value of `Background` and `Foreground` properties is `null`. 
+If you want to change the background color of the `Badge` other than the default `Fill` colors, use the `Background` property. You can also change the foreground of the `Badge` by using the `Foreground` property. The default value of the `Background` and `Foreground` properties is `null`.
 
 {% tabs %}
 {% highlight XAML %}
@@ -286,7 +278,7 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 
 ## Predefined shapes for displaying the Badge
 
-You can change the default shape to either `Rectangle`, `Oval` or `Ellipse` by using [Shape](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Notification.SfBadge.html#Syncfusion_Windows_Controls_Notification_SfBadge_Shape) property. If you want to display the `Badge` content without any default shapes , use the `Shape` property value as `None`. The default value of `Shape` property is `Ellipse`.
+You can change the default shape to either `Rectangle`, `Oval`, or `Ellipse` by using the [Shape](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Notification.SfBadge.html#Syncfusion_Windows_Controls_Notification_SfBadge_Shape) property. If you want to display the `Badge` content without any default shape, use the `Shape` property value as `None`. The default value of the `Shape` property is `Ellipse`.
 
 ![WPF Badge Default Shapes](Getting-Started_images/wpf-badge-predefined-shapes.png)
 
@@ -343,7 +335,7 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 
 ## Animate when content changes
 
-You can enable the `Scale` or `Opacity` based animation for displaying the `Badge` text by using [AnimationType](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Notification.SfBadge.html#Syncfusion_Windows_Controls_Notification_SfBadge_AnimationType) property. You can only see the animation when you change the text of the `Badge`. The default value of `AnimationType` property is `None`.
+You can enable the `Scale` or `Opacity` based animation for displaying the `Badge` text by using the [AnimationType](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Notification.SfBadge.html#Syncfusion_Windows_Controls_Notification_SfBadge_AnimationType) property. You can only see the animation when you change the text of the `Badge`. The default value of the `AnimationType` property is `None`.
 
 {% tabs %}
 {% highlight XAML %}
@@ -367,6 +359,7 @@ You can enable the `Scale` or `Opacity` based animation for displaying the `Badg
                          Value="1"
                          x:Name="badgeContent"
                          ValueChanged="BadgeContent_ValueChanged"/>
+</StackPanel>
 
 {% endhighlight %}
 {% highlight C# %}
@@ -432,7 +425,7 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 
 ## Display number formatting
 
-You can format the numbers which are displayed in the `Badge` content by using the converters. For example, you can display the number as `99+` which is greater than or equal to `100`.
+You can format the numbers which are displayed in the `Badge` content by using conditional logic in an event handler or value converter. For example, you can display the number as `99+` for any value greater than or equal to `100`.
 
 {% tabs %}
 {% highlight XAML %}
@@ -456,11 +449,11 @@ You can format the numbers which are displayed in the `Badge` content by using t
                          NumberDecimalDigits="0"
                          Value="1"
                          x:Name="badgeContent"
-                         ValueChanged="BadgeContent_ValueChanged"/> 
+                         ValueChanged="BadgeContent_ValueChanged"/>
+</StackPanel>
 
 {% endhighlight %}
 {% highlight C# %}
-
 
 badge.AnimationType = BadgeAnimationType.None;
 badge.Shape = BadgeShape.Ellipse;
@@ -474,7 +467,7 @@ badgeContent.ValueChanged += BadgeContent_ValueChanged;
 
 private void BadgeContent_ValueChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
 {
-    int content_Value =Convert.ToInt32(e.NewValue);
+    int content_Value = Convert.ToInt32(e.NewValue);
     if (content_Value <= 99)
     {
         this.badge.Content = content_Value.ToString();
@@ -542,7 +535,7 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 
 ## Text formatting
 
-You can change the style, size and font family of the `Badge` display content by using the `FontFamily`, `FontStyle` and `FontSize` properties. The default value of `FontFamily` property is `Segoe UI`, `FontStyle` property is `Normal` and  `FontSize` property is `14`.
+You can change the style, size, and font family of the `Badge` display content by using the `FontFamily`, `FontStyle`, and `FontSize` properties. The default value of the `FontFamily` property is `Segoe UI`, the `FontStyle` property is `Normal`, and the `FontSize` property is `14`. Valid `FontStyle` values are `Normal`, `Italic`, and `Oblique`.
 
 {% tabs %}
 {% highlight XAML %}
@@ -577,7 +570,7 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 
 ## Change opacity of Badge
 
-You can change opacity of the `Badge` by using the `Opacity` property. Value range of `Opacity` property is `0` to `1`. The default value of `Opacity` property is `1`.
+You can change the opacity of the `Badge` by using the `Opacity` property. The valid value range of the `Opacity` property is `0` to `1`. The default value of the `Opacity` property is `1`.
 
 {% tabs %}
 {% highlight XAML %}
@@ -607,7 +600,7 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 
 ## Hide the Badge
 
-You can hide the `Badge` by setting the `Visibility` property value as `Collapsed`. Badge will be hidden when its content is `null`. The default value of `Visibility` property is `Visible`.
+You can hide the `Badge` by setting the `Visibility` property value to `Collapsed`. The `Badge` will also be hidden automatically when its content is `null`. The default value of the `Visibility` property is `Visible`.
 
 {% tabs %}
 {% highlight XAML %}

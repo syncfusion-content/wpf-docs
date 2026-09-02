@@ -1,17 +1,15 @@
 ---
 layout: post
-title: Enable the ClickHeaderToMaximize | TileView | wpf | Syncfusion®
-description: Enable the clickheadertomaximize in Syncfusion® Essential Studio® WPF TileView Control, its elements and more.
-platform: WPF
+title: How to Enable ClickHeaderToMaximize in WPF Tile View | Syncfusion®
+description: Enable the ClickHeaderToMaximize behavior in the Syncfusion WPF Tile View (TileViewControl) to maximize a tile on header click.
+platform: wpf
 control: TileView Control
 documentation: ug
 ---
 
-# Enable the ClickHeaderToMaximize
+# How to Enable ClickHeaderToMaximize in WPF Tile View Control
 
 You can enable the ClickHeaderToMaximize feature by using the ClickHeaderToMaximize property through C# as below. Refer to the detailed sample
-
-
 
 {% highlight c# %}
 

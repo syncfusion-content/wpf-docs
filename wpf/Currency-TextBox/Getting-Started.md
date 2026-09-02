@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started with WPF Currency TextBox control | Syncfusion®
-description: Learn here about getting started with Syncfusion® WPF Currency TextBox control, its elements and more.
-platform: WPF
+title: Getting Started with WPF CurrencyTextBox | Syncfusion®
+description: Learn how to get started with the Syncfusion WPF CurrencyTextBox control. Explore setup, features, examples, and customization options.
+platform: wpf
 control: CurrencyTextBox
 documentation: ug
 ---
 
-# Getting Started with WPF Currency TextBox
+# Getting Started with WPF CurrencyTextBox
 
 This section explains how to create a WPF `CurrencyTextBox` control and its features.
 
@@ -17,7 +17,7 @@ Refer to the [control dependencies](https://help.syncfusion.com/wpf/control-depe
 
 You can find more details about installing the NuGet package in a WPF application in the following link: 
 
-[How to install nuget packages](https://help.syncfusion.com/wpf/visual-studio-integration/nuget-packages)
+[How to install nuget packages](https://help.syncfusion.com/wpf/installation/install-nuget-packages)
 
 ## Adding WPF CurrencyTextBox via designer
 
@@ -41,7 +41,7 @@ To add the CurrencyTextBox control manually in XAML, follow these steps:
 {% highlight XAML %}
 <Window xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:syncfusion="http://schemas.syncfusion.com/wpf" 
+        xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
         x:Class="CurrencyTextBoxSample.MainWindow"
         Title="CurrencyTextBox Sample" Height="350" Width="525">
     <Grid>
@@ -121,7 +121,7 @@ currencyTextBox.Value = 100;
 {% endhighlight %}
 {% endtabs %}
 
-![WPF Currency TextBox diplays Value](getting-started_images/wpf-currency-textbox-value.png)
+![WPF Currency TextBox displays Value](getting-started_images/wpf-currency-textbox-value.png)
 
 N> Do not use the [Text](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.textbox.text?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Controls_TextBox_Text) property to set the value for the CurrencyTextBox. Use only the `Value` property.
 
@@ -133,10 +133,8 @@ The following code snippets illustrate the value binding from one `CurrencyTextB
 
 {% tabs %}
 {% highlight XAML %}
-<StackPanel>
 <syncfusion:CurrencyTextBox x:Name="currencyTextBox1" Height="25" Width="100" Value="{Binding MyValue,UpdateSourceTrigger=PropertyChanged}"/>
 <syncfusion:CurrencyTextBox x:Name="currencyTextBox2" Width="100" Height="25" Value="{Binding MyValue,UpdateSourceTrigger=PropertyChanged}" />
-</StackPanel>
 {% endhighlight %}
 {% endtabs %}
 
@@ -145,7 +143,9 @@ ViewModel.cs
 {% tabs %}
 {% highlight C# %}
 
-class ViewModel : NotificationObject
+using Syncfusion.Windows.Shared;
+
+public class ViewModel : NotificationObject
 {
     private double myValue;
     public double MyValue
@@ -169,7 +169,7 @@ class ViewModel : NotificationObject
 
 ## Value Changed Notification
 
-The `CurrencyTextBox` control can notifies the value changes through the [ValueChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.CurrencyTextBox.html) event. You can get old value and new Value from `OldValue` and `NewValue` properties in `ValueChanged` event.
+The `CurrencyTextBox` control can notify value changes through the [ValueChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.CurrencyTextBox.html) event. You can get the old and new value from the `OldValue` and `NewValue` properties in the `ValueChanged` event.
 
 {%tabs%}
 {% highlight xaml %} 
@@ -180,7 +180,7 @@ The `CurrencyTextBox` control can notifies the value changes through the [ValueC
 {% highlight C# %} 
 
 CurrencyTextBox currencyTextBox = new CurrencyTextBox();
-currencyTextBox.ValueChanged += new PropertyChangedCallback(CurrencyTextBox_ValueChanged);
+currencyTextBox.ValueChanged += CurrencyTextBox_ValueChanged;
 
 {% endhighlight %}
 {%endtabs%}

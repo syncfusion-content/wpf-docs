@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started with WPF Chart Control | Syncfusion
-description: Learn here about getting started with Syncfusion WPF Chart (Classic) control, its elements and more details.
+title: Getting Started with WPF Classic Chart | Syncfusion®
+description: Learn how to get started with the Syncfusion® WPF Classic Chart control. Explore setup, features, examples, and customization options.
 platform: wpf
 control: Chart (Classic)
 documentation: ug
 ---
 
-# Getting Started with WPF Chart (Classic)
+# Getting Started with WPF Classic Chart
 
 ## Feature Summary
 
@@ -19,7 +19,7 @@ The complete summary of the features of the Chart control for WPF are listed as 
 * Chart Animation—Essential Chart supports various animation effects for good visualization.
 * Chart Templates—Chart control uses the benefits of WPF template concept, and enables to customize all parts of Chart with the templates customization option.
 * Chart Area—Multiple Chart Areas can be added to perform comparison of data at single view. Chart Area also comes with high layout customization.
-* Chart Area Context Menu—WPF Chart has a built-in context menu which lets you change the chart type and color palette of a series and enable zooming.
+* Chart Area Context Menu—WPF Classic Chart has a built-in context menu which lets you change the chart type and color palette of a series and enable zooming.
 * Chart Series—Highly customizable and interactive chart series can be added to Chart control.
 * Chart Types—Essential Chart supports more than 33 chart types.
 * 2-D and 3-D Appearance—Essential Chart supports 2-D and 3-D appearance of the Chart.
@@ -45,7 +45,7 @@ The complete summary of the features of the Chart control for WPF are listed as 
 
 A chart is composed of various sub elements such as legends, areas, toolbars, headers, and footers. The following screenshot illustrates the elements of the Chart control.
 
-![WPF Chart Getting-Started Image1](Getting-Started_images/Getting-Started_img1.png)
+![WPF Classic Chart Getting-Started Image1](Getting-Started_images/Getting-Started_img1.png)
 
 ## Creating a Simple Chart using Designer 
 
@@ -53,11 +53,11 @@ Users can create a simple chart application with Syncfusion WPF Chart control wi
 
 1. Create a new WPF application in VS2010. You can see the Chart control in the Toolbox of Visual Studio. 
 
-   ![WPF Chart Getting-Started Image2](Getting-Started_images/Getting-Started_img2.png)
+   ![WPF Classic Chart Getting-Started Image2](Getting-Started_images/Getting-Started_img2.png)
 
 2. Drag the Chart control from the Toolbox and drop it to the designer. It generates a chart with two default series in the designer.
 
-   ![WPF Chart Getting-Started Image3](Getting-Started_images/Getting-Started_img3.png)
+   ![WPF Classic Chart Getting-Started Image3](Getting-Started_images/Getting-Started_img3.png)
 
    The following code is auto generated in the XAML window.
 
@@ -86,43 +86,43 @@ Users can create a simple chart application with Syncfusion WPF Chart control wi
    
 3. Click the Expand button at the right corner of the chart area in the designer. It generates the Smart Tag for the chart area.
 
-   ![WPF Chart Getting-Started Image4](Getting-Started_images/Getting-Started_img4.png)
+   ![WPF Classic Chart Getting-Started Image4](Getting-Started_images/Getting-Started_img4.png)
 
 4. You can reuse this default series or else you can delete them and add a new series using the Smart Tag. Use DataSource property of ChartSeries to have the data collection bound to chart series, and to visualize the data in various forms such as bar chart, column chart, pie, pyramid, or other chart types. Refer to the section Chart Series to know more about data-binding to a chart series.
 
 5. To add a title to the chart area, select the Properties tab in the chart area and enter a title for the chart area in the Header field.
 
-   ![WPF Chart Getting-Started Image5](Getting-Started_images/Getting-Started_img5.png)
+   ![WPF Classic Chart Getting-Started Image5](Getting-Started_images/Getting-Started_img5.png)
 
-   ![WPF Chart Getting-Started Image6](Getting-Started_images/Getting-Started_img6.png)
+   ![WPF Classic Chart Getting-Started Image6](Getting-Started_images/Getting-Started_img6.png)
 
 6. To set the axis header, expand the PrimaryAxis and enter the axis header in the Header field. Similarly, you can do this for the SecondaryAxis.
 
-   ![WPF Chart Getting-Started Image7](Getting-Started_images/Getting-Started_img7.png)
+   ![WPF Classic Chart Getting-Started Image7](Getting-Started_images/Getting-Started_img7.png)
 
-   ![WPF Chart Getting-Started Image8](Getting-Started_images/Getting-Started_img8.png)
+   ![WPF Classic Chart Getting-Started Image8](Getting-Started_images/Getting-Started_img8.png)
 
 7. To add a legend to the chart area, click Add Chart Area Legend in the Smart Tag.
 
-   ![WPF Chart Getting-Started Image9](Getting-Started_images/Getting-Started_img9.png)
+   ![WPF Classic Chart Getting-Started Image9](Getting-Started_images/Getting-Started_img9.png)
 
-   ![WPF Chart Getting-Started Image10](Getting-Started_images/Getting-Started_img10.png)
+   ![WPF Classic Chart Getting-Started Image10](Getting-Started_images/Getting-Started_img10.png)
 
    N> The chart area legend can also be added in the chart area by setting the ShowLegend property of ChartArea as True.
 
-   ![WPF Chart Getting-Started Image11](Getting-Started_images/Getting-Started_img11.png)
+   ![WPF Classic Chart Getting-Started Image11](Getting-Started_images/Getting-Started_img11.png)
 
 8. To display the data labels, set the ShowDataLabels property of ChartSeries as True.
 
-   ![WPF Chart Getting-Started Image12](Getting-Started_images/Getting-Started_img12.png)
+   ![WPF Classic Chart Getting-Started Image12](Getting-Started_images/Getting-Started_img12.png)
 
-   ![WPF Chart Getting-Started Image13](Getting-Started_images/Getting-Started_img13.png)
+   ![WPF Classic Chart Getting-Started Image13](Getting-Started_images/Getting-Started_img13.png)
 
 9. To set icon text of the chart legend, set the Label property of ChartSeries.
 
-   ![WPF Chart Getting-Started Image14](Getting-Started_images/Getting-Started_img14.png)
+   ![WPF Classic Chart Getting-Started Image14](Getting-Started_images/Getting-Started_img14.png)
 
-   ![WPF Chart Getting-Started Image15](Getting-Started_images/Getting-Started_img15.png)
+   ![WPF Classic Chart Getting-Started Image15](Getting-Started_images/Getting-Started_img15.png)
 
    ~~~ xaml
 
@@ -174,15 +174,15 @@ Smart Tag appears for the chart, chart area and chart legend. By using the Smart
 
 The following screenshot illustrates the Smart Tag for chart.
 
-![WPF Chart Getting-Started Image16](Getting-Started_images/Getting-Started_img16.png)
+![WPF Classic Chart Getting-Started Image16](Getting-Started_images/Getting-Started_img16.png)
 
 The following screenshot illustrates the Smart Tag for chart area.
 
-![WPF Chart Getting-Started Image17](Getting-Started_images/Getting-Started_img17.png)
+![WPF Classic Chart Getting-Started Image17](Getting-Started_images/Getting-Started_img17.png)
 
 The following screenshot illustrates the Smart Tag for chart legend.
 
-![WPF Chart Getting-Started Image18](Getting-Started_images/Getting-Started_img18.png)
+![WPF Classic Chart Getting-Started Image18](Getting-Started_images/Getting-Started_img18.png)
 
 
 
@@ -246,7 +246,7 @@ To create a data-binding application for Chart control:
 
    ~~~
 
-   ![WPF Chart Getting-Started Image19](Getting-Started_images/Getting-Started_img19.png)
+   ![WPF Classic Chart Getting-Started Image19](Getting-Started_images/Getting-Started_img19.png)
 
 4. To set a header to the chart area, use the Header property of ChartArea.
 
@@ -286,7 +286,7 @@ To create a data-binding application for Chart control:
 
    ~~~
 
-   ![WPF Chart Getting-Started Image20](Getting-Started_images/Getting-Started_img20.png)
+   ![WPF Classic Chart Getting-Started Image20](Getting-Started_images/Getting-Started_img20.png)
 
 5. To set headers to the primary and secondary axes, use the Header property of ChartAxis.
 
@@ -348,7 +348,7 @@ To create a data-binding application for Chart control:
 
    ~~~
 
-   ![WPF Chart Getting-Started Image21](Getting-Started_images/Getting-Started_img21.png)
+   ![WPF Classic Chart Getting-Started Image21](Getting-Started_images/Getting-Started_img21.png)
 
 6. Use the DataSource property of ChartSeries to bind collection objects with the chart series and to visualize data from collection.
 
@@ -578,7 +578,7 @@ To create a data-binding application for Chart control:
 
    ~~~
 
-   ![WPF Chart Getting-Started Image22](Getting-Started_images/Getting-Started_img22.png)
+   ![WPF Classic Chart Getting-Started Image22](Getting-Started_images/Getting-Started_img22.png)
 
 
 
@@ -693,7 +693,7 @@ To create a data-binding application for Chart control:
 
     ~~~
 
-    ![WPF Chart Getting-Started Image23](Getting-Started_images/Getting-Started_img23.png)
+    ![WPF Classic Chart Getting-Started Image23](Getting-Started_images/Getting-Started_img23.png)
 
 11. Specify the BindingPathX and BindingPathsY with mapping names. The mapping names are simply the names of the properties whose value has to be taken for x-axis value and y-axis values, respectively. Running your project can have a chart with a column type loaded with the data points specified by you.
 
@@ -770,7 +770,7 @@ To create a data-binding application for Chart control:
 
     ~~~
 	
-    ![WPF Chart Getting-Started Image24](Getting-Started_images/Getting-Started_img24.png)
+    ![WPF Classic Chart Getting-Started Image24](Getting-Started_images/Getting-Started_img24.png)
 
 12. To add data labels to chart points, set ShowDataLabels property of ChartSeries as true. You can modify the default values and appearance of the labels using the AdornmentsInfo property of ChartSeries (instance of the ChartAdornmentsInfo). The ChartAdornmentsInfo class is used to configure the settings of data label positions, label contents, symbols, and etc.
 
@@ -853,7 +853,7 @@ To create a data-binding application for Chart control:
 
     ~~~
 
-    ![WPF Chart Getting-Started Image25](Getting-Started_images/Getting-Started_img25.png)
+    ![WPF Classic Chart Getting-Started Image25](Getting-Started_images/Getting-Started_img25.png)
 
 
 
@@ -943,7 +943,7 @@ To create a data-binding application for Chart control:
 
     ~~~
 
-    ![WPF Chart Getting-Started Image26](Getting-Started_images/Getting-Started_img26.png)
+    ![WPF Classic Chart Getting-Started Image26](Getting-Started_images/Getting-Started_img26.png)
 
 14. To have an icon label in the legend, set the Label property of ChartSeries with a required string. To modify the default icon of the legend, use the LegendIcon property of ChartSeries. 
 
@@ -1040,7 +1040,7 @@ To create a data-binding application for Chart control:
 
     ~~~
  
-    ![WPF Chart Getting-Started Image27](Getting-Started_images/Getting-Started_img27.png)
+    ![WPF Classic Chart Getting-Started Image27](Getting-Started_images/Getting-Started_img27.png)
 
 
 15. To change the default legend icon, set the LegendIcon property of ChartSeries with an icon type.
@@ -1143,13 +1143,13 @@ To create a data-binding application for Chart control:
 
     ~~~
 
-    ![WPF Chart Getting-Started Image28](Getting-Started_images/Getting-Started_img28.png)
+    ![WPF Classic Chart Getting-Started Image28](Getting-Started_images/Getting-Started_img28.png)
 
 ## Class Diagram
 
 The class diagram for Essential Chart for WPF is as follows.
 
-![WPF Chart Getting-Started Image29](Getting-Started_images/Getting-Started_img29.jpeg)
+![WPF Classic Chart Getting-Started Image29](Getting-Started_images/Getting-Started_img29.jpeg)
 
 ### Chart
 

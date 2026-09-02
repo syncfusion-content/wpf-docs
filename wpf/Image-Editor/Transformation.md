@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Image transformation in syncfusion SfImageEditor WPF.
-description: Image transformation in Syncfusion Essential Studio WPF ImageEditor (SfImageEditor) control, its elements and more.
+title: Transformation in WPF Image Editor | Syncfusion®
+description: Transformation feature in Syncfusion® WPF Image Editor allows you to flip and rotate images for various editing and alignment operations.
 platform: wpf
 control: SfImageEditor
 documentation: ug
 ---
 
-# Transformation in WPF ImageEditor (SfImageEditor) control
+# Transformation in WPF Image Editor
 
-The image editor control provides the following two transformations:
+The Image Editor control provides the following two transformations:
 
 * Flip
 * Rotate

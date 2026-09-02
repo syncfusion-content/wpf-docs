@@ -1,15 +1,15 @@
 ---
 layout: post
-title: About WPF Double TextBox control | Syncfusion®
-description: Learn here all about introduction of Syncfusion® WPF Double TextBox control, its elements and more details.
-platform: WPF
+title: About Syncfusion® WPF DoubleTextBox Control | Syncfusion®
+description: Learn about introduction of Syncfusion Essential Studio WPF DoubleTextBox control, its features and more details.
+platform: wpf
 control: DoubleTextBox
 documentation: ug
 ---
 
-# WPF Double TextBox Overview
+# About Syncfusion® WPF DoubleTextBox Control
 
-The [DoubleTextBox](https://www.syncfusion.com/wpf-controls/double-textbox) control restricts input to double values with support for data binding, watermark, null value and support for culture. It provides various customization options to improve its appearance and suit an applications.
+The [DoubleTextBox](https://www.syncfusion.com/wpf-controls/double-textbox) control restricts input to double values with support for data binding, watermark, null value, and culture. It provides various customization options to improve its appearance and suit an application.
 
 ## Control structure
 
@@ -21,7 +21,7 @@ The [DoubleTextBox](https://www.syncfusion.com/wpf-controls/double-textbox) cont
 
 The core features of the `DoubleTextBox` are as follows:
 
-* Provides the ability to control the range of input values by using the `MinValue` and `MaxValue` properties.
+* Provides the ability to control the range of input values by using the [MinValue](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.DoubleTextBox.html#Syncfusion_Windows_Shared_DoubleTextBox_MinValue) and [MaxValue](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.DoubleTextBox.html#Syncfusion_Windows_Shared_DoubleTextBox_MaxValue) properties.
 * Provides different foreground brushes for positive, negative, and zero values.
 * Provides data binding support.
 * Provides built-in Visual Styles and themes.
@@ -29,3 +29,5 @@ The core features of the `DoubleTextBox` are as follows:
 * Provides Number Format support.
 * Provides Null Value support.
 * Provides culture support.
+* Provides Range Adorner support.
+* Provides Step Interval support.

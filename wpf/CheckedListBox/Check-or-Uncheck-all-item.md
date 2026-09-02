@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Check or uncheck all items in WPF CheckedListBox control | Syncfusion
-description: Learn here all about Check or uncheck all items support in Syncfusion WPF CheckedListBox (CheckListBox) control and more.
+title: Check or Uncheck All Items in WPF CheckListBox | Syncfusion®
+description: Select or clear every item at once in the Syncfusion WPF CheckListBox control using the built-in Select All and Uncheck All support.
 platform: wpf
 control: CheckListBox
 documentation: ug
 ---
 
-# Check or uncheck all items in WPF CheckedListBox (CheckListBox)
+# Check or Uncheck All Items in WPF CheckListBox
 
-The [CheckListBox](https://www.syncfusion.com/wpf-ui-controls/CheckedListBox) allows the users to check or uncheck all the items by a single click on the `SelectAll` option. The `SelectAll` option can be enabled or disabled using the [IsSelectAllEnabled](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.CheckListBox.html#Syncfusion_Windows_Tools_Controls_CheckListBox_IsSelectAllEnabled) property. Selection mode of the `SelectAll` item varies based on the checked state of the `CheckListBox` items. Initially, the `SelectAll` is unchecked because of no item is checked. It is checked only on when all items are checked, otherwise it is in intermediate state.
+The [CheckListBox](https://www.syncfusion.com/wpf-ui-controls/CheckedListBox) allows users to check or uncheck all the items with a single click on the `SelectAll` option. The `SelectAll` option can be enabled or disabled using the [IsSelectAllEnabled](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.CheckListBox.html#Syncfusion_Windows_Tools_Controls_CheckListBox_IsSelectAllEnabled) property. The selection state of the `SelectAll` item varies based on the checked state of the `CheckListBox` items. Initially, `SelectAll` is unchecked because no items are checked. It is checked only when all items are checked; otherwise, it is in an intermediate state.
 
 {% tabs %}
 {%highlight C#%}

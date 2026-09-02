@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Maximize TileViewItem in WPF Tile View control | Syncfusion®
-description: Learn about Maximize TileViewItem support in Syncfusion® Essential Studio® WPF Tile View control, its elements and more.
-platform: WPF
+title: Maximize TileViewItem in WPF TileView | Syncfusion®
+description: Maximize a TileViewItem in the Syncfusion WPF TileView (TileViewControl) to fill the available area and focus on its content.
+platform: wpf
 control: TileViewControl
 documentation: ug
 ---
 
-# Maximize TileViewItem in WPF Tile View
+# Maximize TileViewItem in WPF Tile View Control
 
-You can maximize the [TileViewItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.TileViewItem.html) and change its appearance in the [TileViewControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.TileViewControl.html).
+You can maximize the [TileViewItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.TileViewItem.html) and change its appearance in the [WPF Tile View Control](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.TileViewControl.html).
 
 ## Maximize the TileViewItem
 
@@ -250,7 +250,7 @@ N> Please refer [Maximized TileViewItem header](https://help.syncfusion.com/wpf/
 
 ## Maximized state changed notification
 
-The `TileViewControl` notifies that the maximized state changed in the `TileViewItem` by using [Maximized](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.TileViewControl.html) event. You can get the maximized item by using the [Source](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.TileViewEventArgs.html#Syncfusion_Windows_Shared_TileViewEventArgs_Source) property. You can also use the [OldState](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.TileViewEventArgs.html#Syncfusion_Windows_Shared_TileViewEventArgs_OldState) and [NewState](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.TileViewEventArgs.html#Syncfusion_Windows_Shared_TileViewEventArgs_NewState) properties to get the old and new state of `TileViewItem`.
+The `WPF Tile View Control` notifies that the maximized state changed in the `TileViewItem` by using [Maximized](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.TileViewControl.html) event. You can get the maximized item by using the [Source](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.TileViewEventArgs.html#Syncfusion_Windows_Shared_TileViewEventArgs_Source) property. You can also use the [OldState](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.TileViewEventArgs.html#Syncfusion_Windows_Shared_TileViewEventArgs_OldState) and [NewState](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.TileViewEventArgs.html#Syncfusion_Windows_Shared_TileViewEventArgs_NewState) properties to get the old and new state of `TileViewItem`.
 
 {% tabs %}
 {% highlight XAML %}

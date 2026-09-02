@@ -9,9 +9,9 @@ documentation: ug
 
 # Organization Layout in WPF SfDiagram
 
-An organizational chart is a diagram that displays the structure of an organization and relationships. To create an organizational chart, type should be set to LayoutType.Organization in `DirectedTreeLayout`.
+An organizational chart is a diagram that displays the structure of an organization and the relationships between its members. To create an organizational chart, set `Type` to `LayoutType.Organization` in `DirectedTreeLayout`.
 
-To arrange the nodes in organization structure , specify the [LayoutType](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Layout.DirectedTreeLayout.html#Syncfusion_UI_Xaml_Diagram_Layout_DirectedTreeLayout_Type) as Organization.
+To arrange the nodes in the organization structure, specify the [LayoutType](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Layout.DirectedTreeLayout.html#Syncfusion_UI_Xaml_Diagram_Layout_DirectedTreeLayout_Type) as `Organization`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -71,15 +71,27 @@ To arrange the nodes in organization structure , specify the [LayoutType](https:
                                DataSource="{StaticResource employee}"/> 
 
 <!--Initialize the Layout-->
-<syncfusion:DirectedTreeLayout x:Key="treeLayout" 
-                               Type="Organization" 
-                               Orientation="TopToBottom" 
-                               HorizontalSpacing="50" 
+<syncfusion:DirectedTreeLayout x:Key="treeLayout"
+                               Type="Organization"
+                               Orientation="TopToBottom"
+                               HorizontalSpacing="50"
                                VerticalSpacing="40"  />
 
 <!--Initialize the Layout Manager-->
-<syncfusion:LayoutManager x:Key="layoutManager" 
+<syncfusion:LayoutManager x:Key="layoutManager"
                           Layout="{StaticResource treeLayout}" />
+
+<!--Bind the diagram to the DataSourceSettings and LayoutManager defined above-->
+<syncfusion:SfDiagram x:Name="diagram"
+                      DataSourceSettings="{StaticResource DataSourceSettings}"
+                      LayoutManager="{StaticResource layoutManager}">
+    <syncfusion:SfDiagram.Nodes>
+        <syncfusion:NodeCollection/>
+    </syncfusion:SfDiagram.Nodes>
+    <syncfusion:SfDiagram.Connectors>
+        <syncfusion:ConnectorCollection/>
+    </syncfusion:SfDiagram.Connectors>
+</syncfusion:SfDiagram>
 
 {% endhighlight %}
 {% highlight c# %}
@@ -206,6 +218,9 @@ employee.Add(new Employee()
     ReportingPerson = "Philip Cramer" 
 });
 
+//Initialize the SfDiagram instance
+SfDiagram diagram = new SfDiagram();
+
 //Initialize DataSourceSettings for SfDiagram
 diagram.DataSourceSettings = new DataSourceSettings()
 {
@@ -214,7 +229,7 @@ diagram.DataSourceSettings = new DataSourceSettings()
     DataSource = employee,
 };
 
-//Initialize LayoutSettings for SfDiagram 
+//Initialize LayoutManager for SfDiagram
 diagram.LayoutManager = new LayoutManager()
 {
     Layout = new DirectedTreeLayout()
@@ -225,40 +240,55 @@ diagram.LayoutManager = new LayoutManager()
     },
 };
 
+//Add the SfDiagram to the visual tree
+WindowGrid.Children.Add(diagram);
+
 {% endhighlight %}
 {% endtabs %}
 
 ![OrganizationLayout in WPF Diagram](Automatic-Layouts_images/wpf-diagram-automatic-layouts.jpeg)
 
-## How to change the chart type and orientation in organization layout 
+## How to change the chart type and orientation in organization layout
 
-You can change the chart type and orientation of organization layout by using the GetLayoutInfo event of the SfDiagram. This event will fire for each time when an organization layout gets updated. Default chart type is Alternate and default orientation is Vertical.
+You can change the chart type and orientation of the organization layout by using the `GetLayoutInfo` event of the SfDiagram. This event fires each time the organization layout is updated. The default chart type is `Alternate` and the default orientation is `Vertical`. The example below overrides these defaults.
 
-For GetLayoutInfo, refer to, [GetLayoutInfo](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IGraphInfo.html).
+For `GetLayoutInfo`, refer to [GetLayoutInfo](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IGraphInfo.html).
 
-**Event Arguments:**
+**Event Arguments (`LayoutInfoArgs`):**
 
-| Event args | Property | Description |
-|---|---|---|
-| LayoutInfoArgs | Item | Added item when layout is getting updated. |
-| | Type | Gets or sets the organizational chart type. |
-| | Orientation | Gets or sets the organizational chart orientation. |
+| Property | Description |
+|---|---|
+| `Item` | The item for which the layout is being updated. |
+| `Type` | Gets or sets the organizational chart type. |
+| `Orientation` | Gets or sets the organizational chart orientation. |
+| `HasSubTree` | Indicates whether the current node has a sub-tree (child branches). |
+| `Parent` | The parent node in the layout. |
+| `Children` | The collection of child nodes for the current node. |
+| `SubTree` | The collection of nodes that belong to the sub-tree of the current node. |
+| `Assistants` | The collection of nodes that should be rendered as assistants to the current node. |
 
-The following table explains the different chart orientations and chart types: 
+The following table explains the different chart orientations and chart types. The supported `ChartType` values are `Left`, `Right`, `Alternate`, and `Center`; the supported `Orientation` values are `Horizontal` and `Vertical`:
 
 | Orientation | Type | Description | Example |
 |---|---|---|---|
-| Horizontal | Left | Arranges the child nodes Horizontally at the Left the of Parent. | ![WPF Diagram displays Horizontal Orientation at Left Side](Automatic-Layouts_images/wpf-diagram-horizontal-orientation-at-left.jpg) |
-| | Right | Arranges the child nodes Horizontally at the Right of the Parent. | ![WPF Diagram displays Horizontally Orientation at Right Side](Automatic-Layouts_images/wpf-diagram-horizontal-orientation-at-right.jpg) |
-| | Center | Arranges the child nodes horizontally at the Center of the parent. | ![WPF Diagram displays Horizontal Orientation at Center Side](Automatic-Layouts_images/wpf-diagram-horizontal-orientation-at-center.jpg) |
-| Vertical | Left | Vertically arranges the children at the Left of the Parent. | ![WPF Diagram displays Vertical Orientation at Left Side](Automatic-Layouts_images/wpf-diagram-vertical-orientation-at-left.jpg) |
-| | Right | Vertically arranges the children at the Right of the Parent. | ![WPF Diagram displays Vertical Orientation at Right Side](Automatic-Layouts_images/wpf-diagram-vertical-orientation-at-right.jpg) |
-| | Alternate | Vertically arranges the children at both Left and Right of the Parent. | ![WPF Diagram displays Vertical Orientation at Both Side](Automatic-Layouts_images/wpf-diagram-vertical-orientation-at-both-side.jpg) |
+| Horizontal | Left | Arranges the child nodes horizontally at the left of the parent. | ![WPF Diagram displays Horizontal Orientation at Left Side](Automatic-Layouts_images/wpf-diagram-horizontal-orientation-at-left.jpg) |
+| Horizontal | Right | Arranges the child nodes horizontally at the right of the parent. | ![WPF Diagram displays Horizontally Orientation at Right Side](Automatic-Layouts_images/wpf-diagram-horizontal-orientation-at-right.jpg) |
+| Horizontal | Center | Arranges the child nodes horizontally at the center of the parent. | ![WPF Diagram displays Horizontal Orientation at Center Side](Automatic-Layouts_images/wpf-diagram-horizontal-orientation-at-center.jpg) |
+| Vertical | Left | Vertically arranges the children at the left of the parent. | ![WPF Diagram displays Vertical Orientation at Left Side](Automatic-Layouts_images/wpf-diagram-vertical-orientation-at-left.jpg) |
+| Vertical | Right | Vertically arranges the children at the right of the parent. | ![WPF Diagram displays Vertical Orientation at Right Side](Automatic-Layouts_images/wpf-diagram-vertical-orientation-at-right.jpg) |
+| Vertical | Alternate | Vertically arranges the children at both the left and right of the parent. | ![WPF Diagram displays Vertical Orientation at Both Side](Automatic-Layouts_images/wpf-diagram-vertical-orientation-at-both-side.jpg) |
 
 {% tabs %}
 {% highlight c# %}
-//Register GetLayoutInfo event 
-(diagram.Info as IGraphInfo).GetLayoutInfo += MainWindow_GetLayoutInfo;
+//Subscribe to the GetLayoutInfo event after the diagram is loaded.
+//For example, in the MainWindow constructor or the Loaded event handler:
+this.Loaded += MainWindow_Loaded;
+
+private void MainWindow_Loaded(object sender, RoutedEventArgs e)
+{
+    //Register GetLayoutInfo event
+    (diagram.Info as IGraphInfo).GetLayoutInfo += MainWindow_GetLayoutInfo;
+}
 
 //GetLayoutInfo Method to change the orientation and chart type
 private void MainWindow_GetLayoutInfo(object sender, LayoutInfoArgs args)
@@ -273,11 +303,13 @@ private void MainWindow_GetLayoutInfo(object sender, LayoutInfoArgs args)
 {% endhighlight %}
 {% endtabs %}
 
-## How to add assistant in organization layout
+N> The `GetLayoutInfo` event is only available in code-behind. To subscribe in XAML, attach to the equivalent event in the code-behind file (for example, in the `MainWindow` constructor or `Loaded` event handler).
 
-You can add assistant for in an organization layout by using the GetLayoutInfo event of the SfDiagram. This event will fire for each time when the layout gets updated. 
+## How to add an assistant in the organization layout
 
-Find the code example to add assistant in an organization layout.
+You can add an assistant in an organization layout by using the `GetLayoutInfo` event of the SfDiagram. This event fires each time the layout is updated.
+
+Find the code example to add an assistant in an organization layout.
 
 {% tabs %}
 {% highlight c# %}
@@ -296,8 +328,15 @@ private void MainWindow_GetLayoutInfo(object sender, LayoutInfoArgs args)
             {
                 if (((args.Item as INode).Content as Employee).Designation.ToString() == "Managing Director")
                 {
-                    args.Assistants.Add(args.Children[0]);
-                    args.Children.Remove(args.Children[0]);
+                    // Only promote a child if one exists. args.Children[0] may be null
+                    // if the Managing Director has no child nodes yet.
+                    if (args.Children != null && args.Children.Count > 0)
+                    {
+                        // Capture the first child before removing it from the collection,
+                        // because args.Children is read-only and direct removal would throw.
+                        var firstChild = args.Children[0];
+                        args.Assistants.Add(firstChild);
+                    }
                 }
             }
         }
@@ -311,30 +350,32 @@ private void MainWindow_GetLayoutInfo(object sender, LayoutInfoArgs args)
 
 [View sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Automatic%20Layout/Organization%20Chart)
 
-## How to create a parent - child relation with dropped nodes from stencil
+## How to create a parent–child relation with nodes dropped from the stencil
 
-You can create a layout with dropped nodes from stencil using the `ItemDropped` event. In `ItemDropped` event, you have to create a connection between the source and target item. 
+You can create a layout with nodes dropped from the stencil using the `ItemDropped` event. In the `ItemDropped` event, create a connection between the source and target items.
 
-Find the code example to create parent - child relation between source and target nodes in item dropped event.
+Find the code example to create a parent–child relation between source and target nodes in the `ItemDropped` event.
 
 {% tabs %}
 {% highlight c# %}
 //Initialize Events
 (diagram.Info as IGraphInfo).ItemAdded += MainWindow_ItemAdded;
-(diagram.Info as IGraphInfo).ItemDropEvent += MainWindow_ItemDropEvent;
+(diagram.Info as IGraphInfo).ItemDropped += MainWindow_ItemDropped;
 
-//Method used to add the Allowdrop constraints to the dropped node
-//Allowdrop constraints is used to allow the itemdropped event to get the element as target element.
+//Method used to add the AllowDrop constraint to the dropped node.
+//The AllowDrop constraint is required for the ItemDropped event to get the element as a target.
 private void MainWindow_ItemAdded(object sender, ItemAddedEventArgs args)
 {
     if (args.Item is CustomNode)
     {
-        (args.Item as CustomNode).Constraints = (args.Item as CustomNode).Constraints.Add(NodeConstraints.AllowDrop);         
+        (args.Item as CustomNode).Constraints = (args.Item as CustomNode).Constraints.Add(NodeConstraints.AllowDrop);
     }
 }
 
-//Mehtod to create relation between drag and dropped nodes
-private void MainWindow_ItemDropEvent(object sender, ItemDropEventArgs args)
+//Method to create a parent–child relation between the dragged and dropped nodes.
+//Note: When a node has no parent, it is treated as a root node; it has no parent id
+//and only contains its own children.
+private void MainWindow_ItemDropped(object sender, ItemDropEventArgs args)
 {
     if (!(args.Target is SfDiagram))
     {

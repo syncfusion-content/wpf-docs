@@ -1,24 +1,26 @@
 ---
 layout: post
-title: Changing Integer Value in WPF IntegerTextBox control | Syncfusion®
-description: Learn here about Changing Integer Value with Syncfusion® WPF IntegerTextBox control and more details about the control features.
-platform: WPF
+title: Changing Integer Value in WPF IntegerTextBox | Syncfusion®
+description: Update the integer value of the Syncfusion WPF IntegerTextBox control programmatically, by spinner buttons, or via keyboard interactions.
+platform: wpf
 control: IntegerTextBox 
 documentation: ug
 ---
 
-# Changing Integer Value in WPF IntegerTextBox
+# Changing Integer Value in WPF Integer TextBox
 
-The [IntegerTextBox](https://www.syncfusion.com/wpf-ui-controls/integer-textbox) allows the user to change the value using the [Value](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.IntegerTextBox.html#Syncfusion_Windows_Shared_IntegerTextBox_Value) property.
+The [WPF Integer TextBox](https://www.syncfusion.com/wpf-ui-controls/integer-textbox) allows the user to change the value using the [Value](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.IntegerTextBox.html#Syncfusion_Windows_Shared_IntegerTextBox_Value) property.
 
-{%tabs%}
-{% highlight xaml %}
+{% tabs %}
+{% highlight XAML %}
 
 <syncfusion:IntegerTextBox x:Name="integerTextBox" Height="25"
                           Width="150" Value="10"/>
 
-{% endhighlight %}                       
+{% endhighlight %}
 {% highlight C# %}
+
+using Syncfusion.Windows.Shared;
 
 IntegerTextBox integerTextBox = new IntegerTextBox();
 integerTextBox.Width = 150;
@@ -26,27 +28,29 @@ integerTextBox.Height = 25;
 integerTextBox.Value = 10;
 
 {% endhighlight %}
-{%endtabs%}
+{% endtabs %}
 
 ![WPF IntegerTextBox displays Value](Changing-Integer-Value_images/wpf-integer-textbox-value.png)
 
-Data binding is the process of establishing a connection between the application UI and business logic. Data binding can be unidirectional (source -> target or target <- source) or bidirectional (source <-> target). By assigning a value to the `Value` property by binding, you can change the `IntegerTextBox` value.
+Data binding is the process of establishing a connection between the application UI and business logic. Data binding can be unidirectional (source -> target or target <- source) or bidirectional (source <-> target). By assigning a value to the `Value` property by binding, you can change the `WPF Integer TextBox` value.
 
-The following code snippets illustrate the value binding from one `IntegerTextBox` to another.
+The following code snippets illustrate the value binding from one `WPF Integer TextBox` to another.
 
-{%tabs%}
-{% highlight xaml %}
+{% tabs %}
+{% highlight XAML %}
 
 <syncfusion:IntegerTextBox x:Name="integerTextBox1" Value="{Binding MyValue,UpdateSourceTrigger=PropertyChanged}" Height="25" Width="100"/>
 <syncfusion:IntegerTextBox x:Name="integerTextBox2" Value="{Binding MyValue,UpdateSourceTrigger=PropertyChanged}" Width="100" Height="25"  />
 
 {% endhighlight %}
-{%endtabs%}
+{% endtabs %}
 
 ViewModel.cs
 
 {% tabs %}
 {% highlight C# %}
+
+using Syncfusion.Windows.Shared;
 
 class ViewModel : NotificationObject
 {
@@ -72,9 +76,9 @@ class ViewModel : NotificationObject
 
 ## Change integer value by pasting the clipboard's text
 
-By default, `IntegerTextBox` simply replaces the whole value by copied value with the current number format. If you want to replace or insert the copied value on specific place, use the [PasteMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.EditorBase.html#Syncfusion_Windows_Shared_EditorBase_PasteMode) property value as `Advanced`. The default value of `PasteMode` property is `Default`. 
+By default, `WPF Integer TextBox` simply replaces the whole value with the copied value using the current number format. If you want to replace or insert the copied value at a specific place, set the [PasteMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.EditorBase.html#Syncfusion_Windows_Shared_EditorBase_PasteMode) property to `Advanced`. The default value of `PasteMode` is `Default`. In `Advanced` mode, the pasted value is treated as an integer and any decimal portion is rejected.
 
-The following table explains the pasting behaviour in `Advanced` paste mode,
+The following table explains the pasting behavior in `Advanced` paste mode for integer values:
 
 <table>
 <tr>
@@ -85,91 +89,104 @@ The following table explains the pasting behaviour in `Advanced` paste mode,
 <tr>
 <td>1</td>
 <td>When the whole value is selected</td>
-<td>It simply replaces the whole value by copied value with the current number format.</td>
+<td>The copied integer value replaces the whole value with the current number format.</td>
 </tr>
 <tr>
 <td>2</td>
-<td>When the cursor is at some position and the copied value does not contain a number decimal separator</td>
-<td>It inserts the copied value into the current cursor position.</td>
+<td>When the cursor is at some position and the copied value is a valid integer</td>
+<td>The copied integer is inserted at the current cursor position.</td>
 </tr>
 <tr>
 <td>3</td>
-<td>When the cursor is at some position and the copied value contains a number decimal separator</td>
-<td>It won’t perform pasting operation.</td>
+<td>When the cursor is at some position and the copied value is not a valid integer (for example, contains a decimal separator, letters, or exceeds the <code>Int64</code> range)</td>
+<td>The paste operation is not performed.</td>
 </tr>
 <tr>
 <td>4</td>
 <td>When the cursor is at some position and the control value is 0 or null</td>
-<td>It simply replaces the whole value by copied value with the current number format.</td>
+<td>The copied value replaces the whole value with the current number format.</td>
 </tr>
 <tr>
 <td>5</td>
-<td>When a part of the number is selected and copied value contains number decimal separator</td>
-<td> it won’t perform pasting operation.</td>
+<td>When a part of the number is selected and the copied value is not a valid integer</td>
+<td>The paste operation is not performed.</td>
+</tr>
+<tr>
+<td>6</td>
+<td>When the copied value falls outside the configured <code>MinValue</code> or <code>MaxValue</code> range</td>
+<td>The paste operation is not performed.</td>
 </tr>
 </table>
 
-{%tabs%}
-{% highlight xaml %}
+{% tabs %}
+{% highlight XAML %}
 
-<syncfusion:IntegerTextBox PasteMode="Advanced" 
+<syncfusion:IntegerTextBox PasteMode="Advanced"
                            Value="12345"
                            Name="integerTextBox"/>
 
-{% endhighlight %}                       
+{% endhighlight %}
 {% highlight C# %}
+
+using Syncfusion.Windows.Shared;
 
 IntegerTextBox integerTextBox = new IntegerTextBox();
 integerTextBox.PasteMode = PasteMode.Advanced;
 integerTextBox.Value = 12345;
 
 {% endhighlight %}
-{%endtabs%}
+{% endtabs %}
 
 ![WPF IntegerTextBox displays Pasting Copied Value in Specific Place](Changing-Integer-Value_images/wpf-integer-textbox-paste-value.png)
 
 ## Show UpDown Button
 
-You can increment or decrement the integer value of `IntegerTextBox` by setting the `ShowSpinButton` property value as `true`. Click UpButton to increment or DownButton to decrement the integer value. The default value of `ShowSpinButton` property is `false`.
+You can increment or decrement the integer value of `WPF Integer TextBox` by setting the `ShowSpinButton` property to `true`. Click the Up button to increment or the Down button to decrement the integer value. The default value of `ShowSpinButton` is `false`.
 
-{%tabs%}
-{% highlight xaml %}
+{% tabs %}
+{% highlight XAML %}
 
 <syncfusion:IntegerTextBox Height="30" Width="150" ShowSpinButton="True" />
 
 {% endhighlight %}
 {% highlight C# %}
 
+using Syncfusion.Windows.Shared;
+
 IntegerTextBox integerTextBox = new IntegerTextBox();
 integerTextBox.ShowSpinButton = true;
 
 {% endhighlight %}
-{%endtabs%}
+{% endtabs %}
 
 ![WPF IntegerTextBox displays SpinButton](Changing-Integer-Value_images/wpf-integer-textbox-spinbutton.gif)
 
 ## Value Changed Event
 
-The `IntegerTextBox` control can notify changes in value through the [ValueChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.IntegerTextBox.html) event. In `ValueChanged` event, you can get old value and new value from the `OldValue` and  `NewValue` properties.
+The `WPF Integer TextBox` control can notify changes in value through the [ValueChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.IntegerTextBox.html) event. In `ValueChanged` event, you can get old value and new value from the `OldValue` and `NewValue` properties.
 
-{%tabs%}
-{% highlight xaml %}
+{% tabs %}
+{% highlight XAML %}
 
 <syncfusion:IntegerTextBox ValueChanged="IntegerTextBox_ValueChanged"/>
 
 {% endhighlight %}
-{% highlight C# %} 
+{% highlight C# %}
+
+using Syncfusion.Windows.Shared;
 
 IntegerTextBox integerTextBox = new IntegerTextBox();
-integerTextBox.ValueChanged += new PropertyChangedCallback(IntegerTextBox_ValueChanged);
+integerTextBox.ValueChanged += new PropertyChangedCallbackHandler(IntegerTextBox_ValueChanged);
 
 {% endhighlight %}
-{%endtabs%}
+{% endtabs %}
 
 You can handle the event as follows:
 
 {% tabs %}
 {% highlight C# %}
+
+using System.Windows;
 
 private void IntegerTextBox_ValueChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
 {
@@ -183,7 +200,7 @@ private void IntegerTextBox_ValueChanged(DependencyObject d, DependencyPropertyC
 
 ## Setting the Null value
 
- By default, the `IntegerTextBox` control will display zero value when the `Value` is set to `null`. You can use the [NullValue](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.IntegerTextBox.html#Syncfusion_Windows_Shared_IntegerTextBox_NullValue) and [UseNullOption](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.EditorBase.html#Syncfusion_Windows_Shared_EditorBase_UseNullOption) properties to show the null or any other value instead of zero.
+ By default, the `WPF Integer TextBox` control will display zero value when the `Value` is set to `null`. You can use the [NullValue](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.IntegerTextBox.html#Syncfusion_Windows_Shared_IntegerTextBox_NullValue) and [UseNullOption](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.EditorBase.html#Syncfusion_Windows_Shared_EditorBase_UseNullOption) properties to show the null or any other value instead of zero.
  
  The default value of the `NullValue` property is `null`, you can reset this to any other integer value. It will display only on setting the `UseNullOption` property is set to `true`.
  
@@ -233,11 +250,11 @@ integerTextBox.UseNullOption = true;
 
 ## Setting Watermark Text
 
-We can display certain information within the control by using the [WaterMarkText](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.EditorBase.html#Syncfusion_Windows_Shared_EditorBase_WatermarkText) property. `WaterMarkText` is shown when the [WatermarkTextIsVisible](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.EditorBase.html#Syncfusion_Windows_Shared_EditorBase_WatermarkTextIsVisible) property is `true` and the value is `null` or empty, the control is not in focus and the `UseNullOption` property is `true`.
+You can display certain information within the control by using the [WaterMarkText](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.EditorBase.html#Syncfusion_Windows_Shared_EditorBase_WatermarkText) property. `WaterMarkText` is shown when the [WatermarkTextIsVisible](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.EditorBase.html#Syncfusion_Windows_Shared_EditorBase_WatermarkTextIsVisible) property is `true`, the value is `null` or empty, the control is not in focus, and the `UseNullOption` property is `true`.
 
 ### Setting the WatermarkText Foreground
 
-The `IntegerTextBox` allows you to set the desired brush as a foreground for `WaterMarkText` using [WaterMarkTextForeground](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.EditorBase.html#Syncfusion_Windows_Shared_EditorBase_WatermarkTextForeground) property. The default color of `WaterMarkTextForeground` is `Black`.
+The `WPF Integer TextBox` allows you to set the desired brush as a foreground for `WaterMarkText` using the [WaterMarkTextForeground](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.EditorBase.html#Syncfusion_Windows_Shared_EditorBase_WatermarkTextForeground) property. The default color of `WaterMarkTextForeground` is `Black`. The default value of `WatermarkTextIsVisible` is `true`.
 
 {% tabs %}
 {% highlight XAML %}
@@ -248,6 +265,9 @@ The `IntegerTextBox` allows you to set the desired brush as a foreground for `Wa
 
 {% endhighlight %}
 {% highlight C# %}
+
+using Syncfusion.Windows.Shared;
+using System.Windows.Media;
 
 IntegerTextBox integerTextBox = new IntegerTextBox();
 integerTextBox.Width = 100;
@@ -264,13 +284,13 @@ integerTextBox.WatermarkTextForeground = Brushes.Red;
 
 ### Setting Watermark Template
 
-You can customize the Visual appearance of the `WatermarkText` by using the [WatermarkTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.EditorBase.html#Syncfusion_Windows_Shared_EditorBase_WatermarkTemplate) property.
+You can customize the visual appearance of the `WatermarkText` by using the [WatermarkTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.EditorBase.html#Syncfusion_Windows_Shared_EditorBase_WatermarkTemplate) property. Use the [WatermarkOpacity](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.EditorBase.html#Syncfusion_Windows_Shared_EditorBase_WatermarkOpacity) property to adjust the opacity of the watermark. The default value of `WatermarkOpacity` is `1`.
 
-{% highlight xaml %}
+{% highlight XAML %}
 
 <syncfusion:IntegerTextBox x:Name="integerTextBox" Width="100" Height="25"
-                          WatermarkText="Type Here" CornerRadius="3" 
-                          WatermarkTextIsVisible="True" WatermarkOpacity="0.5" 
+                          WatermarkText="Type Here" CornerRadius="3"
+                          WatermarkTextIsVisible="True" WatermarkOpacity="0.5"
                           UseNullOption="True">
     <syncfusion:IntegerTextBox.WatermarkTemplate >
         <DataTemplate>
@@ -285,6 +305,6 @@ You can customize the Visual appearance of the `WatermarkText` by using the [Wat
 
 ![Customizing Watermark Text in WPF IntegerTextBox](Changing-Integer-Value_images/wpf-integer-textbox-watermark-customization.png)
 
-N> The `UseNullOption` property must be enabled if you want to see `NullValue` or `WaterMarkText` in `IntegerTextBox` control.
+N> The `UseNullOption` property must be enabled if you want to see `NullValue` or `WaterMarkText` in `WPF Integer TextBox`.
 
 N> If both `NullValue` and `WaterMarkText` are specified, you will only see `NullValue` but not `WaterMarkText`.

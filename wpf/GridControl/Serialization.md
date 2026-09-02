@@ -1,17 +1,17 @@
 ---
 layout: post
-title: Serialization in WPF GridControl | Syncfusion®
-description: Learn about Serialization support in Syncfusion® Essential Studio® WPF GridControl, its elements and more details.
+title: Serialization in WPF Excel-like Grid | Syncfusion®
+description: Serialize and deserialize Excel-like Grid data, layout, and settings using XML files, streams, and strings to persist grid state at runtime.
 platform: wpf
-control: GridControl
+control: Excel-like Grid
 documentation: ug
 ---
 
-# Serialization in WPF GridControl
+# Serialization in WPF Excel-like Grid
 
 Essential<sup>®</sup> GridControl supports Serialization. The whole grid can be serialized and deserialized at run-time. 
 
-### Use Case Scenarios
+## Use Case Scenarios
 
 Serialization can be implemented for the applications which need to save its data and structure after the application is closed. Serialization supports to save the structure and data of the GridControl to an XML file and it can be loaded at any time.
 

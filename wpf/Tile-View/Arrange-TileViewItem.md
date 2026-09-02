@@ -1,19 +1,19 @@
 ---
 layout: post
-title: Arrange TileViewItem in WPF Tile View control | Syncfusion®
-description: Learn about Arrange TileViewItem support in Syncfusion® WPF Tile View control, its elements and more.
-platform: WPF
+title: Arrange TileViewItem in WPF TileView | Syncfusion®
+description: Arrange TileViewItem elements in the Syncfusion WPF TileView (TileViewControl) by configuring their row, column, and matrix positions.
+platform: wpf
 control: TileViewControl
 documentation: ug
 ---
 
-# Arrange TileViewItem in WPF Tile View
+# Arrange TileViewItem in WPF Tile View Control
 
-This section explains how to arrange and navigate to the TileView item and its alignment functionalities in the [TileViewControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.TileViewControl.html).
+This section explains how to arrange and navigate to the TileView item and its alignment functionalities in the [WPF Tile View Control](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.TileViewControl.html).
 
 ## Rearrange position of TileViewItem
 
-If you want to rearrange the [TileViewItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.TileViewItem.html) position, drag that item and drop to anywhere you want to place it in the `TileViewControl`.
+If you want to rearrange the [TileViewItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.TileViewItem.html) position, drag that item and drop to anywhere you want to place it in the `WPF Tile View Control`.
 
 ![TileViewItems are rearranged by drag and drop](Arrange_images/Arrange.gif)
 
@@ -48,7 +48,7 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-
 
 ## Arrange TileViewItem in rows and columns
 
-You can change the number of tileview items displayed in view by setting the value to [RowCount](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.TileViewControl.html#Syncfusion_Windows_Shared_TileViewControl_RowCount) and [ColumnCount](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.TileViewControl.html#Syncfusion_Windows_Shared_TileViewControl_ColumnCount) properties. The default value of `RowCount` and `ColumnCount` properties is `0`.
+You can change the number of TileViewItem's displayed in view by setting the value to [RowCount](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.TileViewControl.html#Syncfusion_Windows_Shared_TileViewControl_RowCount) and [ColumnCount](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.TileViewControl.html#Syncfusion_Windows_Shared_TileViewControl_ColumnCount) properties. The default value of `RowCount` and `ColumnCount` properties is `0`.
 
 {% tabs %}
 {% highlight XAML %}
@@ -78,11 +78,11 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-
 
 ## Arrange TileViewItem in custom order
 
-You can change the order in which the items are displayed in `TileView` control using the [`CurrentItemsOrder`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.TileViewControl.html#Syncfusion_Windows_Shared_TileViewControl_CurrentItemsOrder) list property. By default, the value of `CurrentItemsOrder` property is **null**.
+You can change the order in which the items are displayed in `WPF Tile View Control` using the [`CurrentItemsOrder`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.TileViewControl.html#Syncfusion_Windows_Shared_TileViewControl_CurrentItemsOrder) list property. By default, the value of `CurrentItemsOrder` property is **null**.
 
 N> `CurrentItemsOrder` property works only when Virtualization is disabled i.e., `IsVirtualizing` property value is **false**.
 
-N> `CurrentItemsOrder` list property should contain position of all the items in the `TileView` control i.e., the count of `CurrentItemsOrder` list should be same as the count of TileView items.
+N> `CurrentItemsOrder` list property should contain position of all the items in the `WPF Tile View Control` i.e., the count of `CurrentItemsOrder` list should be same as the count of TileViewItem's.
 
 N> The `CurrentItemsOrder` list property should not contain same position for more than one item.
 

@@ -9,11 +9,11 @@ documentation: ug
 
 # Scroll Settings in WPF SfDiagram
 
-The diagram can be scrolled by using the vertical and horizontal scrollbars. In addition to the scrollbars, mouse wheel can be used to scroll the diagram. Diagram’s scroll settings allows you to read the current scroll status, view port size, current zoom, and zoom factor values.
+The diagram can be scrolled by using the vertical and horizontal scrollbars. In addition to the scrollbars, the mouse wheel can be used to scroll the diagram. Diagram’s scroll settings allow you to read the current scroll status, view port size, current zoom, and zoom factor values.
 
 ## Get current scroll status
 
-Diagram allows to get the scroll settings related values using the [`ScrollInfo`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ScrollSettings.html#Syncfusion_UI_Xaml_Diagram_ScrollSettings_ScrollInfo) property of `ScrollSettings` class.
+Diagram allows you to get the scroll settings related values using the [`ScrollInfo`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ScrollSettings.html#Syncfusion_UI_Xaml_Diagram_ScrollSettings_ScrollInfo) property of `ScrollSettings` class.
 
 * `CurrentZoom`: Specifies the zooming level of the diagram page.
 * `Viewport`: Specifies the position and dimensions of diagram's visible area.
@@ -23,7 +23,7 @@ Diagram allows to get the scroll settings related values using the [`ScrollInfo`
 * `VerticalOffset`: Specifies the vertical origin or top side of the view port of the diagram page.
 
 {% tabs %}
-{% highlight C# %}
+{% highlight c# %}
 //Initialize the SfDiagram
 SfDiagram diagram = new SfDiagram();
 //Get type values of ScrollInfo property in scroll settings class
@@ -42,10 +42,10 @@ double viewportWidth = diagram.ScrollSettings.ScrollInfo.ViewportWidth;
 
 You can programmatically change scrolling amount at runtime by using the ZoomPan() method.
 
-The [`ScrollDelta`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ZoomPositionParamenter.html#Syncfusion_UI_Xaml_Diagram_ZoomPositionParamenter_ScrollDelta) property of [ZoomPositionParameter](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ZoomPositionParamenter.html) class allows you to specify how much the page should be scrolling. The [`ZoomCommand`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ZoomCommand.html) property is used to specify whether it is vertical scroll bar or horizontal scroll bar.
+The [`ScrollDelta`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ZoomPositionParamenter.html#Syncfusion_UI_Xaml_Diagram_ZoomPositionParamenter_ScrollDelta) property of [ZoomPositionParameter](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ZoomPositionParamenter.html) class allows you to specify how much the page should scroll. The [`ZoomCommand`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ZoomCommand.html) property is used to specify whether scrolling is vertical or horizontal.
 
 {% tabs %}
-{% highlight C# %}
+{% highlight c# %}
 //Initialize the SfDiagram
 SfDiagram diagram = new SfDiagram();
 //Initialize the scroll settings with zoom to value and zoom command
@@ -60,7 +60,7 @@ diagram.ScrollSettings.ScrollInfo.ZoomPan(new ZoomPositionParameter
 | ScrollDelta value| ZoomCommand | Output |
 |---|---|---|
 | 50 | `ZoomCommand.VerticalScroll` |![Vertical Scroll](Scroll-Settings_images/VerticalScroll.gif) |
-| 50 | `ZoomCommand.HorizondalScroll` |![Horizontal Scroll](Scroll-Settings_images/HorizontalScroll.gif) 
+| 50 | `ZoomCommand.HorizontalScroll` |![Horizontal Scroll](Scroll-Settings_images/HorizontalScroll.gif) 
 
 ## AutoScroll
 
@@ -73,7 +73,7 @@ Autoscroll feature automatically scrolls the Diagram whenever the Node or Connec
 
 ## Autoscroll border
 
-The Autoscroll border is used to specify the maximum distance between the object and Diagram edge to trigger Autoscroll. The default value is set as 20 for all sides (left, right, top, and bottom) and it can be changed by using the [`AutoScrollBorder`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ScrollSettings.html#Syncfusion_UI_Xaml_Diagram_ScrollSettings_AutoScrollBorder) property of ScrollSettings.
+The Autoscroll border is used to specify the maximum distance between the object and Diagram edge to trigger Autoscroll. The default value is 20 for all sides (left, right, top, and bottom) and it can be changed by using the [`AutoScrollBorder`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ScrollSettings.html#Syncfusion_UI_Xaml_Diagram_ScrollSettings_AutoScrollBorder) property of ScrollSettings.
 
 {% tabs %}
 {% highlight xaml %}
@@ -85,7 +85,7 @@ The Autoscroll border is used to specify the maximum distance between the object
     </syncfusion:SfDiagram.ScrollSettings>
 </syncfusion:SfDiagram>
 {% endhighlight %}
-{% highlight C# %}
+{% highlight c# %}
 //Initialize the SfDiagram
 SfDiagram diagram = new SfDiagram();
 //Initialize the scroll settings with auto scroll border
@@ -98,7 +98,7 @@ diagram.ScrollSettings = new ScrollSettings()
 
 ![AutoScroll border](Scroll-Settings_images/AutoScrollBorder.gif)
 
-Find the [Scroll Settings sample](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/ScrollSettings) to depict the Scroll Settings.
+Find the [Scroll Settings sample](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/ScrollSettings) to demonstrate scroll settings.
 
 ## See Also
 

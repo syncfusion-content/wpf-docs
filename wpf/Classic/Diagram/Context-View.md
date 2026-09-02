@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Context View in WPF Diagram Control | Syncfusion
-description: Learn here all about Context View support in Syncfusion WPF Diagram (classic) control, its elements and more details.
+title: Context View in WPF Diagram | Syncfusion®
+description: Learn about context views in the Syncfusion® WPF Diagram, including predecessor, successor, and neighborhood views for visualizing node relationships.
 platform: wpf
 control: Diagram
 documentation: ug
 ---
 
-# Context View in WPF Diagram (classic)
+# Context View in WPF Diagram
 
 A context view is a small view of an entire diagram with a new arrangement, where the small view and the arrangement are based on a particular view of the selected node. It provides three views:
 
@@ -43,13 +43,13 @@ ILayout</td></tr>
 <tr>
 <td>
 SourceControl</td><td>
-This property is used to get a Diagram control to be a source of the context view manager.</td><td>
+This property is used to get a WPF Diagram control to be a source of the context view manager.</td><td>
 CLR property</td><td>
 DiagramControl</td></tr>
 <tr>
 <td>
 TargetControl</td><td>
-This property is used to get a Diagram control to be a target of the context view manager.</td><td>
+This property is used to get a WPF Diagram control to be a target of the context view manager.</td><td>
 CLR property</td><td>
 DiagramControl</td></tr>
 </table>
@@ -84,12 +84,12 @@ In WPF</td></tr>
 
 ContextViewManager is a class that helps to communicate between a source diagram and a target diagram.
 
-* Source—it is a Diagram control in which selection changes will be monitored.
-* Target—it is a Diagram control to which a new diagram will be created based on the selected node and the context view chosen.  
+* Source—it is a WPF Diagram control in which selection changes will be monitored.
+* Target—it is a WPF Diagram control to which a new diagram will be created based on the selected node and the context view chosen.  
 
 ### Steps to create ContextViewManager
 
-1. Create a Diagram control to be used as a target to show the context view of another Diagram control.
+1. Create a WPF Diagram control to be used as a target to show the context view of another WPF Diagram control.
 
    {%highlight html%}
 
@@ -116,7 +116,7 @@ ContextViewManager is a class that helps to communicate between a source diagram
 
 
 
-2. Create another Diagram control to be used as a source.
+2. Create another WPF Diagram control to be used as a source.
 
 3. Create a ContextViewManager instance to synchronize the source and target diagrams.
 

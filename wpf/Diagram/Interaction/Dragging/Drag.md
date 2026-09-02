@@ -9,10 +9,10 @@ documentation: ug
 
 # Dragging in WPF SfDiagram
 
-[WPF Diagram](https://www.syncfusion.com/diagram-sdk/wpf-diagram) provides support to drag the elements within the given limitations using [EditableArea](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ScrollSettings.html#Syncfusion_UI_Xaml_Diagram_ScrollSettings_EditableArea), [ScrollLimit.Limited](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ScrollLimit.html#Syncfusion_UI_Xaml_Diagram_ScrollLimit_Limited) property and based on [SelectorChangedEvent](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.SelectorChangedEventArgs.html) enabling/disabling of dragging within the limits occur.
+[WPF SfDiagram](https://www.syncfusion.com/diagram-sdk/wpf-diagram) provides support to drag the elements within the given limitations using [EditableArea](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ScrollSettings.html#Syncfusion_UI_Xaml_Diagram_ScrollSettings_EditableArea), [ScrollLimit.Limited](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ScrollLimit.html#Syncfusion_UI_Xaml_Diagram_ScrollLimit_Limited) property and based on [SelectorChangedEvent](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.SelectorChangedEventArgs.html) enabling or disabling of dragging within the limits occur.
 
 In `SelectorChangedEvent` based on the arguments the process occurs,
-* [Block](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.SelectorChangedEventArgs.html#Syncfusion_UI_Xaml_Diagram_SelectorChangedEventArgs_Block): If this boolean expression is set to true, then the dragging occurs within the given rectangular area. If dragging exceeds than the limit, then it hit back to previous position. Based on the `BlockPosition` the dragging of Block occurs.
+* [Block](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.SelectorChangedEventArgs.html#Syncfusion_UI_Xaml_Diagram_SelectorChangedEventArgs_Block): If this boolean expression is set to true, then the dragging occurs within the given rectangular area. If dragging exceeds the limit, then it returns to the previous position. Based on the `BlockPosition` the dragging of Block occurs.
 
 * [BlockPosition](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.SelectorChangedEventArgs.html#Syncfusion_UI_Xaml_Diagram_SelectorChangedEventArgs_BlockPosition):  It is an enum that encapsulates two properties:
 
@@ -22,6 +22,41 @@ In `SelectorChangedEvent` based on the arguments the process occurs,
 
 * [Abort](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.SelectorChangedEventArgs.html#Syncfusion_UI_Xaml_Diagram_SelectorChangedEventArgs_Abort): If this boolean is set to true, dragging is restricted within the defined limits.
 * [Cancel](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.SelectorChangedEventArgs.html#Syncfusion_UI_Xaml_Diagram_SelectorChangedEventArgs_Cancel): If this boolean is set to true, dragging of the element does not occur at all.   
+
+{% tabs %}
+
+{% highlight c# %}
+
+SfDiargam Diagram = new SfDiagram();
+
+// Configure the scroll limit and editable area.
+Diagram.ScrollSettings.ScrollLimit = ScrollLimit.Limited;
+
+Diagram.ScrollSettings.EditableArea = new Rect(0, 0, 1000, 1000);
+
+// Subscribe to the SelectorChangedEvent.
+(Diagram.Info as IGraphInfo).SelectorChangedEvent += Diagram_SelectorChangedEvent;
+
+/// <summary>
+/// Occurs when the selector state changes during an interaction such as
+/// dragging, resizing, rotating, or moving diagram elements.
+/// </summary>
+/// <param name="sender">The source of the event.</param>
+/// <param name="args">
+/// Contains information about the selector change and allows customization
+/// of the interaction behavior.
+/// </param>
+private void MainWindow_SelectorChangedEvent(object sender, SelectorChangedEventArgs args)
+{
+    
+    // Restricts dragging within the editable area.
+    args.Block = true;
+
+    args.BlockPosition = BlockPosition.CurrentPosition;
+}
+
+{% endhighlight %}
+{% endtabs %}
 
 [Refer](https://help.syncfusion.com/wpf/diagram/scroll-settings/scrolllimit) for Scroll-Limit.
 
@@ -33,10 +68,10 @@ Diagram provides support to drag its elements in either vertical or horizontal d
 
 ## Drag and Drop Nodes over other elements
 
-Diagram provides support to drop a [node](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.NodeViewModel.html) over another node or [connector](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ConnectorViewModel.html). Drop event is raised to notify that an element is dropped over another one and it is disabled by default. It can enabled with the [AllowDrop](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.NodeConstraints.html) constraints property for both node and connector.
+Diagram provides support to drop a [node](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.NodeViewModel.html) over another node or [connector](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ConnectorViewModel.html). Drop event is raised to notify that an element is dropped over another one and it is disabled by default. It can be enabled with the [AllowDrop](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.NodeConstraints.html) constraints property for both nodes and connectors.
 
 {% tabs %}
-{% highlight Xaml %}
+{% highlight xaml %}
 
 <syncfusion:SfDiagram.Nodes>
     <syncfusion:NodeCollection>
@@ -47,7 +82,7 @@ Diagram provides support to drop a [node](https://help.syncfusion.com/cr/wpf/Syn
 </syncfusion:SfDiagram.Nodes>
 
 {% endhighlight %}
-{% highlight C# %}
+{% highlight c# %}
 
 //Enable AllowDrop Constraints for Node
 
@@ -62,7 +97,7 @@ Similarly, you can enable [AllowDrop](https://help.syncfusion.com/cr/wpf/Syncfus
 
 ## Customize the appearance of Drop Indicator
 
-Drag and drop a node over another node or connector will show the preview for the target node or connector. We have provided customization option for the appearance of the Preview.
+Drag and drop a node over another node or connector will show a preview for the target node or connector. We have provided a customization option for the appearance of the Preview.
 
 | Style | Behavior |
 | --|--|
@@ -70,7 +105,7 @@ Drag and drop a node over another node or connector will show the preview for th
 | [ConnectorDropIndicatorStyle](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.SfDiagram.html#Syncfusion_UI_Xaml_Diagram_SfDiagram_ConnectorDropIndicatorStyle) | Defines the customization option for preview for the Connector.|
 
 {% tabs %}
-{% highlight Xaml %}
+{% highlight xaml %}
 
 <Style TargetType="Shape" x:Key="Nodedropindicator">
     <Setter Property="StrokeThickness" Value="4"/>
@@ -88,7 +123,7 @@ Drag and drop a node over another node or connector will show the preview for th
                       ConnectorDropIndicatorStyle="{StaticResource connectordropindicator}">
 {% endhighlight %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 SfDiagram Diagram = new SfDiagram();
 
@@ -105,7 +140,7 @@ Diagram.ConnectorDropIndicatorStyle = this.Resources["connectordropindicator"] a
 
 ## Events 
 
-* [ItemDropEvent](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IGraphInfo.html#Syncfusion_UI_Xaml_Diagram_IGraphInfo_ItemDropEvent), [DragEnter](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IGraphInfo.html#Syncfusion_UI_Xaml_Diagram_IGraphInfo_DragEnter), [DragOver](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IGraphInfo.html#Syncfusion_UI_Xaml_Diagram_IGraphInfo_DragOver) and [DragLeave](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IGraphInfo.html#Syncfusion_UI_Xaml_Diagram_IGraphInfo_DragLeave) events will notify you the Source and elements that are interacted with the dropped element(target).To explore about arguments, please refer to [ItemDropEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ItemDropEventArgs.html).
+* [ItemDropEvent](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IGraphInfo.html#Syncfusion_UI_Xaml_Diagram_IGraphInfo_ItemDropEvent), [DragEnter](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IGraphInfo.html#Syncfusion_UI_Xaml_Diagram_IGraphInfo_DragEnter), [DragOver](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IGraphInfo.html#Syncfusion_UI_Xaml_Diagram_IGraphInfo_DragOver) and [DragLeave](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IGraphInfo.html#Syncfusion_UI_Xaml_Diagram_IGraphInfo_DragLeave) events will notify you the Source and elements that are interacted with the dropped element (target). To learn about arguments, please refer to [ItemDropEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ItemDropEventArgs.html).
 
 ## See Also
 
@@ -115,7 +150,7 @@ Diagram.ConnectorDropIndicatorStyle = this.Resources["connectordropindicator"] a
 
 [How to drag and drop elements from treeview?](https://support.syncfusion.com/kb/article/9277/how-to-drag-and-drop-elements-from-treeview-in-wpf-diagram-sfdiagram)
 
-[How to drag and drop different shapes from SfTreeView to WPF Diagram?](https://support.syncfusion.com/kb/article/10960/how-to-drag-and-drop-different-shapes-from-sftreeview-to-wpf-diagram-sfdiagram)
+[How to drag and drop different shapes from SfTreeView to WPF SfDiagram?](https://support.syncfusion.com/kb/article/10960/how-to-drag-and-drop-different-shapes-from-sftreeview-to-wpf-diagram-sfdiagram)
 
 [How to create parent and child relationship by drag and drop nodes?](https://support.syncfusion.com/kb/article/10008/how-to-create-parent-and-child-relationship-by-drag-and-drop-nodes-in-wpf-diagram-sfdiagram)
 
@@ -137,7 +172,7 @@ Diagram.ConnectorDropIndicatorStyle = this.Resources["connectordropindicator"] a
 
 [How to update the Z-Index of the dragged node in WPF SfDiagram?](https://support.syncfusion.com/kb/article/10388/how-to-update-the-zindex-of-the-dragged-node-in-wpf-diagram-sfdiagram)
 
-[How to identify the dragging state of connectors in the WPF Diagram (SfDiagram)?](https://support.syncfusion.com/kb/article/18846/how-to-identify-the-dragging-state-of-connectors-in-the-wpf-diagram-sfdiagram)
+[How to identify the dragging state of connectors in the WPF SfDiagram (SfDiagram)?](https://support.syncfusion.com/kb/article/18846/how-to-identify-the-dragging-state-of-connectors-in-the-wpf-diagram-sfdiagram)
 
 [How to prevent the node from moving outside the group in WPF SfDiagram?](https://support.syncfusion.com/kb/article/18852/how-to-prevent-the-node-from-moving-outside-the-group-in-wpf-diagram-sfdiagram)
 

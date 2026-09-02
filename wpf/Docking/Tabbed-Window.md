@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Tabbed Window in WPF Docking control | Syncfusion®
-description: Learn here all about Tabbed Window support in Syncfusion® WPF Docking (DockingManager) control and more.
+title: Tabbed Window in WPF DockingManager Control | Syncfusion®
+description: The tabbed window in DockingManager groups multiple child windows in tabs to organize and switch between docked windows easily.
 platform: wpf
 control: DockingManager
 documentation: ug
 ---
-# Tabbed Window in WPF Docking (DockingManager)
+# Tabbed Window in WPF Docking Control
 
 Child window can be arranged as Tabbed windows by setting TargetName and side value as `Tabbed` using the property [SideInDockedMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockItem.html#Syncfusion_Windows_Tools_Controls_DockItem_SideInDockedMode).
 

@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Localization Support in WPF Chart Control | Syncfusion
-description: Learn here all about Localization Support in Syncfusion WPF Chart (Classic) control, its elements and more.
+title: Localization Support in WPF Classic Chart | Syncfusion®
+description: Localization support in WPF Classic Chart enables display of chart content, labels, and user interface elements in different languages and cultures.
 platform: wpf
 control: Chart (Classic)
 documentation: ug
 ---
-# Localization Support in WPF Chart (Classic)
+# Localization Support in WPF Classic Chart
 
 Localization is the process of making your application multi-lingual, by formatting content according to cultures. This involves configuring the application for a specific language. Culture is the combination of language and location (e.g. En-US is the culture for English spoken in United States; En-GB is the culture for English spoken in Great Britain). Syncfusion Chart allows you to set custom resource through the Resx file. You can simply give the string values in the resource file for a specific culture and set the culture in the application. The given string values are set to the Chart that does not affect the Code Block of the chart.  
 
@@ -429,7 +429,7 @@ string</td></tr>
 
 ### Sample Link
 
-To run the UI WPF Chart samples:
+To run the UI WPF Classic Chart samples:
 
 1. Open Essential Studio Dashboard by selecting Start -> Program -> Syncfusion-> Essential Studio <<Version Number>> -> Dashboard.
 2. Click Run locally installed samples from the WPF drop-down list on the User Interface pane.

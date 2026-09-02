@@ -9,7 +9,7 @@ documentation: ug
 
 # Localization in WPF OLAP Gauge
 
-Localization is a key feature for providing software solutions that are targeted at global users. The OLAP gauge allows users to localize the control to a specific locale and supports “resx” based localization.
+Localization is a key feature for providing software solutions that are targeted at global users. The WPF OLAP Gauge allows users to localize the control to a specific locale and supports “resx” based localization.
 
 You should perform the following steps to localize the control:
 
@@ -31,9 +31,9 @@ After translating the strings, perform the following steps in the application:
 
 2. Then, right-click the **Resources** folder to create a new resource file by selecting Add > New Item.
 
-![Shows add new item for WPF OLAPGauge](Localization_images/Localization-step1.png)
+![Shows add new item for WPF OLAP Gauge](Localization_images/Localization-step1.png)
 
-![Shows add new resource file for WPF OLAPGauge](Localization_images/Localization-step2.png)
+![Shows add new resource file for WPF OLAP Gauge](Localization_images/Localization-step2.png)
 
 N> The resource file name should be in the format “Syncfusion.OlapGauge.wpf.&lt;Culture Code&gt;.resx”.
 
@@ -70,7 +70,7 @@ End Sub
 
 ## RTL
 
-The OLAP gauge provides RTL support to display the content in a right-to-left direction by setting the `FlowDirection` property to **RightToLeft**.
+The WPF OLAP Gauge provides RTL support to display the content in a right-to-left direction by setting the `FlowDirection` property to **RightToLeft**.
 
 {% tabs %}
 
@@ -94,7 +94,7 @@ OlapGauge1.FlowDirection = FlowDirection.RightToLeft
 
 {% endtabs %}
 
-![Shows the content move from right to left direction in WPF OLAPGauge](Localization_images/Localization-RTL.png)
+![Shows the content move from right to left direction in WPF OLAP Gauge](Localization_images/Localization-RTL.png)
 
 A demo sample is available at the following location.
 

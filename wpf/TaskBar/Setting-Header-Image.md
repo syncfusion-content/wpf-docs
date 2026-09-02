@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Setting Header Image in WPF TaskBar control | Syncfusion
-description: Learn about Setting Header Image support in Syncfusion Essential Studio WPF TaskBar control, its elements and more.
+title: Setting Header Image in WPF TaskBar | Syncfusion®
+description: Setting Header images in WPF TaskBar enhance group identification by displaying visual icons alongside header content.
 platform: wpf
 control: TaskBar
 documentation: ug

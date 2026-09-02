@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Arrange tabs in WPF TabControl control | Syncfusion®
-description: Learn here all about Arrange tabs support in Syncfusion® WPF TabControl (TabControlExt) control and more.
-platform: WPf
+title: Arrange Tabs in WPF TabControlExt | Syncfusion®
+description: Arrange tab items in the Syncfusion WPF TabControl (TabControlExt) using built-in tab strip alignment and orientation options.
+platform: wpf
 control: TabControlExt
 documentation: ug
 ---
 
-# Arrange tabs in WPF TabControl (TabControlExt)
+# Arrange Tabs in WPF Tab Control
 
-This section explains how to arrange the tab item and its alignment functionalities in the [TabControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.TabControlExt.html).
+This section explains how to arrange the tab item and its alignment functionalities in the [WPF Tab Control](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.TabControlExt.html).
 
 ## Rearrange position of tab items
 
@@ -186,14 +186,14 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-
 
 ## Align tab items
 
-Tab items can be aligned to any side of the `TabControl` by using the [TabStripPlacement](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.TabControlSettings.html#Syncfusion_Windows_Tools_Controls_TabControlSettings_TabStripPlacement) property. The default value of `TabStripPlacement` property is `Top`.
+Tab items can be aligned to any side of the `WPF Tab Control` by using the [TabStripPlacement](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.TabControlSettings.html#Syncfusion_Windows_Tools_Controls_TabControlSettings_TabStripPlacement) property. The default value of `TabStripPlacement` property is `Top`.
 
-The following TabStrip placement options are supported by the `TabControl`.
+The following TabStrip placement options are supported by the `WPF Tab Control`.
 
-* Top - Tab items are placed at top of the `TabControl`.
-* Bottom - Tab items are placed at bottom of the `TabControl`.
-* Left - Tab items are placed at left side of the `TabControl`.
-* Right - Tab items are placed at right side of the `TabControl`.
+* Top - Tab items are placed at top of the `WPF Tab Control`.
+* Bottom - Tab items are placed at bottom of the `WPF Tab Control`.
+* Left - Tab items are placed at left side of the `WPF Tab Control`.
+* Right - Tab items are placed at right side of the `WPF Tab Control`.
 
 {% tabs %}
 {% highlight XAML %}
@@ -254,14 +254,14 @@ You can arrange the tab item in single-line or multi-line by using the [TabItemL
 <th>Image</th></tr>
 <tr>
 <td>SingleLine</td>
-<td>Tabs are displayed in single line with default width. If you add more tabs and they exceed the TabControl size, then they are in hidden state and you can navigate to that hidden tabs only by using the scroll button or mouse scrolling. In this mode, each tab size not changed based on the TabControl size.</td>
+<td>Tabs are displayed in single line with default width. If you add more tabs and they exceed the WPF Tab Control size, then they are in hidden state and you can navigate to that hidden tabs only by using the scroll button or mouse scrolling. In this mode, each tab size not changed based on the WPF Tab Control size.</td>
 <td> 
 <Img src="Tab-Item-Header_images/SingleLine.png" alt="Tabs arranged in SingleLine mode"/>
 </td>
 </tr>
 <tr>
 <td>SingleLineStar</td>
-<td>All the tabs are visible and arranged in single line. TabControl width is equally divided by the tabs. In this mode, each tab size changed based on the TabControl size.</td>
+<td>All the tabs are visible and arranged in single line. WPF Tab Control width is equally divided by the tabs. In this mode, each tab size changed based on the WPF Tab Control size.</td>
 <td> 
 <Img src="Tab-Item-Header_images/SingleLineStar.png" alt="Tabs arranged in SingleLineStar mode"/>
 </td>
@@ -289,7 +289,7 @@ You can arrange the tab item in single-line or multi-line by using the [TabItemL
 </tr>
 </table>
 
-N> `MultiLineStar` mode is preferable for the `TabControl` which contains larger width.
+N> `MultiLineStar` mode is preferable for the `WPF Tab Control` which contains larger width.
 
 ![Tab items with various tab layouts](Tab-Item-Header_images/TabItemLayout.png)
 

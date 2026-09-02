@@ -31,7 +31,7 @@ Multiple segments can be added in a single connector one after another. You can 
     </syncfusion:ConnectorViewModel.Segments>
 </syncfusion:ConnectorViewModel>
 {% endhighlight %}
-{% highlight C# %}
+{% highlight c# %}
 
 //create the connector with multiple segments
 ConnectorViewModel multipleSegments = new ConnectorViewModel()

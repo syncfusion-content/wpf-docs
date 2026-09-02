@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Diagram View in WPF Diagram Control | Syncfusion
-description: Learn here all about Diagram View support in Syncfusion WPF Diagram (classic) control, its elements and more details.
+title: Diagram View in WPF Diagram | Syncfusion®
+description: Learn about the Diagram View in the Syncfusion® WPF Diagram, including zooming, panning, rulers, grid lines, snapping, virtualization, and page settings.
 platform: wpf
 control: Diagram
 documentation: ug
 ---
 
-# Diagram View in WPF Diagram (classic)
+# Diagram View in WPF Diagram
 
-The Diagram View is responsible for bringing the objects and data which are added into the view through the model. In other words, it deals with the visual representation of data. Zooming and panning are done with respect to the view. 
+The WPF Diagram View is responsible for bringing the objects and data which are added into the view through the model. In other words, it deals with the visual representation of data. Zooming and panning are done with respect to the view. 
 
 
 
@@ -616,7 +616,7 @@ diagramgrid.Children.Add(dc)
 
 ## Panning
 
-Essential Diagram WPF provides the ability to pan a page. Panning is used to move the contents of page both horizontally and vertically by holding down a mouse button and then moving the mouse.
+WPF Diagram provides the ability to pan a page. Panning is used to move the contents of page both horizontally and vertically by holding down a mouse button and then moving the mouse.
 
 
 
@@ -1081,7 +1081,7 @@ DiagramCommandManager.FitToPage.Execute.(diagramView.Page, diagramView);
 
 ## Table Layout for Selected Nodes
 
-From version 10.1.0.44, Essential Diagram for WPF enables you to apply the table layout on selected nodes instead of applying it to the entire diagram. This arranges selected nodes or a given node collection in a tabular structure based on specified intervals between them. The number of nodes in each row and column can be specified and the layout will be applied accordingly. 
+From version 10.1.0.44, WPF Diagram enables you to apply the table layout on selected nodes instead of applying it to the entire diagram. This arranges selected nodes or a given node collection in a tabular structure based on specified intervals between them. The number of nodes in each row and column can be specified and the layout will be applied accordingly. 
 
 Use Case Scenarios
 
@@ -1120,7 +1120,7 @@ To view a sample of this feature:
 1. Open Dashboard.
 2. Click User Interface > WPF. 
 3. Click Run Samples. 
-4. Navigate to Diagram > Automatic Layout > Table Layout.
+4. Navigate to WPF Diagram > Automatic Layout > Table Layout.
 
 Adding Table Layout for selected Nodes 
 
@@ -1509,7 +1509,7 @@ LineConnectorObject.AllowVirtualization = True
 
 ### Limitations:
 
-Due to virtualization behavior there are some limitations  in the diagram control. They are:
+Due to virtualization behavior there are some limitations  in the WPF Diagram control. They are:
 
 1. As Gridlines and Rulers are not visualized, when node or line connector is placed at a distance for example 2,000,000 pixels away, rendering will take place from zero to end. This leads to performance issues in rendering Gridlines or Rulers.
 2. Save and load is not supported for Nodes and LineConnectors that are in unloaded state.
@@ -2837,7 +2837,7 @@ Zooming the Diagram Control
 
 ### Zoom Factor
 
-Essential Diagram WPF allows you to set the factor by which you can zoom in or out. This factor can be specified using the ZoomFactor property. The default value is 0.2.
+WPF Diagram allows you to set the factor by which you can zoom in or out. This factor can be specified using the ZoomFactor property. The default value is 0.2.
 
 The following code can be used to set the ZoomFactor property.
 {% highlight html %}
@@ -3253,7 +3253,7 @@ Send Backward
 
 ## ZOrder Mode
 
-Essential Diagram for WPF provides support for the ZOrder mode for diagram view elements. This allows the user to decide whether the ZOrdering of diagram view elements should be done by index or be visually based.
+WPF Diagram provides support for the ZOrder mode for diagram view elements. This allows the user to decide whether the ZOrdering of diagram view elements should be done by index or be visually based.
 
 ### Properties
 
@@ -4009,11 +4009,11 @@ diagramView.Print(p);
 
 ### Support to Print the Diagram Shapes with Effects
 
-Essential Diagram for WPF provides support to print the diagram shapeswiththeapplied effects. When effects are applied to the nodes, they cannot be printed properly, due to the framework limitation. This feature enables you to overcome this limitation. 
+WPF Diagram provides support to print the diagram shapeswiththeapplied effects. When effects are applied to the nodes, they cannot be printed properly, due to the framework limitation. This feature enables you to overcome this limitation. 
 
 #### Use Case Scenarios
 
-When you want to print a diagram page, in which you have applied effects for the nodes, you can use this feature to achieve this.
+When you want to print a WPF Diagram page, in which you have applied effects for the nodes, you can use this feature to achieve this.
 
 #### Properties
 
@@ -4037,9 +4037,9 @@ NA</td></tr>
 </table>
 
 
-#### Printing the Diagram Shapes with Effects
+#### Printing the WPF Diagram Shapes with Effects
 
-You can print the diagram shapes with the applied effects using the _CustomEffect_ property. The following code illustrates this:
+You can print the WPF Diagram shapes with the applied effects using the _CustomEffect_ property. The following code illustrates this:
 {% highlight c# %}
 
 
@@ -4209,7 +4209,7 @@ diagramView.EnableDrawingTools = True
 
 N> When the EnableDrawingToolsis set to True, it has to be disabled manually, i.e. it cannot be disabled automatically. This will facilitate drawing shapes or lines continually until EnableDrawingTools is set to false manually. ObjectDrawn Event
 
-The ObjectDrawn event will be raised when the node or line connector is drawn using the EnableConnection/Drawing Tools property of the diagram view. This event is used to identify the source of the drawing object. 
+The ObjectDrawn event will be raised when the node or line connector is drawn using the EnableConnection/Drawing Tools property of the WPF Diagram view. This event is used to identify the source of the drawing object. 
 
 #### Events
 
@@ -4269,7 +4269,7 @@ void diagramView_ObjectDrawn(object sender, Syncfusion.Windows.Diagram.DrawingTo
 
 ### Drawing Mode
 
-Essential Diagram for WPF provides support for Drawing mode in the diagram view drawing tool. It can be used to draw elements in diagram view by continuously or only once.
+WPF Diagram provides support for Drawing mode in the diagram view drawing tool. It can be used to draw elements in diagram view by continuously or only once.
 
 #### Properties
 
@@ -4677,9 +4677,9 @@ The CustomPathStyle property of DiagramView applies the style that is assigned t
 Preview of Dashed Orthogonal Line Connector
 {:.caption}
 
-## Export Diagram 
+## Export WPF Diagram 
 
-Essential Diagram for WPF can be exported to the following File formats:
+WPF Diagram can be exported to the following File formats:
 
 * Exporting into Image File Format
 * Bitmap(.bmp)
@@ -4691,7 +4691,7 @@ Essential Diagram for WPF can be exported to the following File formats:
 * Exporting into XPS Format
 * Export to Clipboard
 
-The Diagram can be exported using following overloaded methods:
+The WPF Diagram can be exported using following overloaded methods:
 
 * Stream
 * Stream
@@ -4837,7 +4837,7 @@ Rect rect = new Rect(new Point(100, 100), new Point(500, 500));
 
 ### Shrink and Expand Options
 
-While exporting a diagram as an image, the exported image size can be shrunk or expanded to a specific size. An aspect ratio of 1:1 will always be maintained while exporting. If the diagram size and the proposed size are in different ratios, the size of the image will be decided internally based on the ImageStretch property.
+While exporting a WPF Diagram as an image, the exported image size can be shrunk or expanded to a specific size. An aspect ratio of 1:1 will always be maintained while exporting. If the diagram size and the proposed size are in different ratios, the size of the image will be decided internally based on the ImageStretch property.
 
 ### Parameters
 
@@ -5083,7 +5083,7 @@ diagramView.BoundaryConstraintsArea = New Rect(100, 100, 850, 1195)
 
 
 
-### Restricting the Diagram Element
+### Restricting the WPF Diagram Element
 
 You can restrict the diagram element moving out of a specified area. Use the BoundaryConstraintsEnabled property of DiagramView for this purpose.   
 
@@ -5416,13 +5416,13 @@ This control helps you view huge content hosted within a scroll viewer.
 
 ### Sample Link
 
-WPF > Diagram > Performance Samples > Overview Demo
+WPF > WPF Diagram > Performance Samples > Overview Demo
 
-Using Overview Control in Diagram Control
+Using Overview Control in WPF Diagram Control
 
 Follow the steps below to use the Overview control for DiagramControl:
 
-4. Create an instance of DiagramControl.
+4. Create an instance of WPF DiagramControl.
 {% highlight html %}
 
 
@@ -5448,7 +5448,7 @@ Follow the steps below to use the Overview control for DiagramControl:
 
 {% endhighlight %}
 
-5. Create an instance of Overview and set the OverviewSourceAncestor property to DiagramControl.
+5. Create an instance of Overview and set the OverviewSourceAncestor property to WPF DiagramControl.
 {% highlight html %}
 
 
@@ -5575,7 +5575,7 @@ diagramview.BringIntoViewPort(node)
 
 ## Item Selection Mode
 
-Essential Diagram for WPF provides support for the Item selection mode for diagram view elements. This determines whether the user can select single or multiple elements at a time.
+WPF Diagram provides support for the Item selection mode for diagram view elements. This determines whether the user can select single or multiple elements at a time.
 
 ### Properties
 

@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Feature to resize the FloatWindow in WPF DockingManager | Syncfusion®
-description: Feature to resize the floatwindow dynamically depend on child size in Syncfusion® Essential Studio® WPF DockingManager control, its elements and more.
-platform: WPF
+title: How to resize FloatWindow dynamically in WPF Docking | Syncfusion®
+description: Learn how to resize the floatwindow dynamically based on child size in Syncfusion® WPF Docking (DockingManager) control and more.
+platform: wpf
 control: DockingManager
 documentation: ug
 ---
 
-# Feature to resize the FloatWindow dynamically depend on child size
+# How to resize FloatWindow dynamically in WPF Docking
 
-Normally SizetoContentInFloat property can be used to resize the FloatWindow to its child size while initializing the FloatWindow. But when Float child of DockingManager is resized,dynamically it doesn’t have any options to resize the FloatWindow to that content size. FloatWindowHeight and FloatWindowWidth are introduced for this purpose.. The usage has been shown below.
+Normally SizetoContentInFloat property can be used to resize the FloatWindow to its child size while initializing the FloatWindow. But when Float child of WPF Docking Control is resized,dynamically it doesn’t have any options to resize the FloatWindow to that content size. FloatWindowHeight and FloatWindowWidth are introduced for this purpose.. The usage has been shown below.
 
 {% tabs %}
 
