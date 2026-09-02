@@ -13,7 +13,7 @@ This section explains how to bind tabs to a collection in a WPF Tabbed Window us
 
 When data binding is used, the tab header and tab content are generated from the bound data by defining appropriate header and content templates.
 
-N> The example below uses a regular `Window`, but the same bindings work identically inside an `WOF SfChromeless Window`. Use whichever root element matches your application.
+N> The example below uses a regular `Window`, but the same bindings work identically inside an `WPF SfChromeless Window`. Use whichever root element matches your application.
 
 ## Populating Tab Items Using ItemsSource
 
