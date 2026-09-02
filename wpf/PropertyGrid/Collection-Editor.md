@@ -9,21 +9,21 @@ documentation: ug
 
 # Collection Editor in WPF PropertyGrid
 
-You can edit (add, remove) a collection type of property such as List, ObservableCollection using the `Collection Editor` in the [PropertyGrid](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.PropertyGrid.html).
+You can edit (add, remove) a collection type of property such as List and ObservableCollection using the `Collection Editor` in the [WPF PropertyGrid](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.PropertyGrid.html).
 
 ## How to add or remove items in collection using collection editor
 
-You can add or remove the new items into the collection type properties by clicking the `Add` or `Remove` button. If you want to add the items into `SelectedObject` collection, you must click the `Ok` button to update the added items into the collection, otherwise it is not updated. 
+You can add or remove new items in the collection type properties by clicking the `Add` or `Remove` button. If you want to add the items into the `SelectedObject` collection, you must click the `Ok` button to update the added items into the collection, otherwise it is not updated. 
 
 ![PropertyGrid collection Editor with collection as selected object](CollectionEditor_Images/CollectionEditor_Structure.png)
 
-N> Collection type property must be derived from the `IList` type to edit the collection properties in the `SelectedObject`. The `IList` collection property must contain a parameterless constructor to edit the items in the collection, otherwise only the items in the collection property can be removed.
+N> The collection type property must be derived from the `IList` type to edit the collection properties in the `SelectedObject`. The `IList` collection property must contain a parameterless constructor to edit the items in the collection, otherwise only the items in the collection property can be removed.
 
 N> You will not be able to edit a collection of primitive type, such as `List<int>` and `List<string>`. 
 
 ## Edit a selected object, which is of type collection
 
-If you directly assign the collection instance as [SelectedObject](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.PropertyGrid.html#Syncfusion_Windows_PropertyGrid_PropertyGrid_SelectedObject), it generates value editor for the each collection property items.
+If you directly assign the collection instance as the [SelectedObject](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.PropertyGrid.html#Syncfusion_Windows_PropertyGrid_PropertyGrid_SelectedObject), it generates a value editor for each collection property item.
 
 {% tabs %}
 {% highlight C# %}
@@ -261,9 +261,9 @@ N> View [Sample](https://github.com/SyncfusionExamples/wpf-property-grid-example
 
 ## Readonly mode for collection type properties
 
-If you want to restrict the user to add or remove the items in the collection type properties, handle the [CollectionEditorOpening](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.PropertyGrid.html#Syncfusion_Windows_PropertyGrid_PropertyGrid_CollectionEditorOpening) event and set the [CollectionEditorOpeningEventArgs.IsReadonly](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.CollectionEditorOpeningEventArgs.html#Syncfusion_Windows_PropertyGrid_CollectionEditorOpeningEventArgs_IsReadonly) property value as `true`. The default value of `CollectionEditorOpeningEventArgs.IsReadonly` property is `false`.
+If you want to restrict the user from adding or removing the items in the collection type properties, handle the [CollectionEditorOpening](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.PropertyGrid.html#Syncfusion_Windows_PropertyGrid_PropertyGrid_CollectionEditorOpening) event and set the [CollectionEditorOpeningEventArgs.IsReadonly](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.CollectionEditorOpeningEventArgs.html#Syncfusion_Windows_PropertyGrid_CollectionEditorOpeningEventArgs_IsReadonly) property value to `true`. The default value of the `CollectionEditorOpeningEventArgs.IsReadonly` property is `false`.
 
-N> You will not be able to add or remove the items into the collection type properties. But, you can edit and save the existing items that are available in the collection type properties.
+N> You will not be able to add or remove items in the collection type properties. But, you can edit and save the existing items that are available in the collection type properties.
 
 {% tabs %}
 {% highlight C# %}
@@ -365,15 +365,15 @@ private void propertyGrid_CollectionEditorOpening(object sender, CollectionEdito
 
 ![Collection editor loaded in readonly mode](CollectionEditor_Images/CollectionEditorredonly.png)
 
-Here, `Add` and `Remove` buttons are disabled. `Ok` and `Cancel` button are enabled to edit the existing item values.
+Here, the `Add` and `Remove` buttons are disabled. The `Ok` and `Cancel` buttons are enabled to edit the existing item values.
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/wpf-property-grid-examples/tree/master/Samples/CollectionEditorOpening)
 
 ## Readonly mode for specific property of collection type
 
-If you want to restrict the user to add or remove the items in the specific property of collection type, create that collection property as the type of `ReadOnlyCollection`.
+If you want to restrict the user from adding or removing the items in a specific property of collection type, create that collection property as the type of `ReadOnlyCollection`.
 
-N> You will not be able to add or remove the items into the readonly collection type properties. But, you can edit and save the existing items that are available in the readonly collection type properties.
+N> You will not be able to add or remove items in the readonly collection type properties. But, you can edit and save the existing items that are available in the readonly collection type properties.
 
 {% tabs %}
 {% highlight C# %}
@@ -457,13 +457,13 @@ propertyGrid.SetBinding(PropertyGrid.SelectedObjectProperty, new Binding("DemoPr
 
 ![Specific collection type property is loaded in readonly mode](CollectionEditor_Images/SpecificCollectionEditorredonly.png)
 
-Here, `Customers` property is a readonly collection type property. So, you will not be able to add or remove the items into the `Customers` property.
+Here, the `Customers` property is a readonly collection type property. So, you will not be able to add or remove items in the `Customers` property.
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/wpf-property-grid-examples/tree/master/Samples/CollectionEditorOpening)
 
 ## Restrict the collection editor from opening
 
-You can restrict the opening of collection editor window which used to edit the collection type properties in `PropertyGrid` by handling the [CollectionEditorOpening](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.PropertyGrid.html#Syncfusion_Windows_PropertyGrid_PropertyGrid_CollectionEditorOpening) event and set the [CollectionEditorOpeningEventArgs.Cancel](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.CollectionEditorOpeningEventArgs.html) property value as `true`. The default value of `CollectionEditorOpeningEventArgs.Cancel` property is `false`.
+You can restrict the opening of the collection editor window, which is used to edit the collection type properties in the `PropertyGrid`, by handling the [CollectionEditorOpening](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.PropertyGrid.html#Syncfusion_Windows_PropertyGrid_PropertyGrid_CollectionEditorOpening) event and setting the [CollectionEditorOpeningEventArgs.Cancel](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.CollectionEditorOpeningEventArgs.html) property value to `true`. The default value of the `CollectionEditorOpeningEventArgs.Cancel` property is `false`.
 
 {% tabs %}
 {% highlight C# %}
