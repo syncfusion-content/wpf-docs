@@ -7,9 +7,9 @@ control: SfTreeView
 documentation: ug
 ---
 
-# Getting Started with WPF TreeView (SfTreeView)
+# Getting Started with WPF TreeView
 
-This section provides a quick overview for getting started with the `SfTreeView` for WPF. Walk through the entire process of creating a real-world example of this control.
+This section explains how to get started with the [WPF TreeView](https://www.syncfusion.com/wpf-controls/treeview) control. The WPF TreeView is implemented through the [SfTreeView](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.html) class.
 
 ## Assembly Deployment
 
@@ -17,25 +17,25 @@ Refer to the [Control Dependencies](https://help.syncfusion.com/wpf/control-depe
 
 Refer to this documentation to find more details about installing nuget packages in a WPF application.
 
-## Creating simple application with SfTreeView
+## Creating simple application with WPF TreeView
 
-Follow the steps below to create a new WPF application and add the SfTreeView control:
+Follow the steps below to create a new WPF application and add the WPF TreeView control:
 
 * Creating the project
-* Add SfTreeView to Project
+* Add WPF TreeView to Project
 * Populating Nodes without data source – Unbound Mode
 * Bind to a hierarchical data source – Bound Mode
 * Bind to a Hierarchy Property Descriptors data source – Bound Mode
 
 ### Creating the project
 
-Create a new WPF Project in Visual Studio to display [SfTreeView](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.html) with data objects.
+Create a new WPF project in Visual Studio to display the [WPF TreeView](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.html) control with data objects.
 
-### Add SfTreeView to Project
+### Add WPF TreeView to Project
 
-The WPF TreeView (SfTreeView) control can be added to a project in the following ways.
+The WPF TreeView control can be added to a project in the following ways.
 
-#### Adding SfTreeView by designer
+#### Adding WPF TreeView by designer
 
 To add the SfTreeView control by designer:
 
@@ -46,7 +46,7 @@ To add the SfTreeView control by designer:
 
 ![WPF TreeView Designer](GettingStarted_images/wpf-treeview-designer.png)
 
-#### Adding SfTreeView by XAML
+#### Adding WPF TreeView by XAML
 
 To add the control manually in XAML, do the following steps:
 
@@ -82,7 +82,7 @@ To add the control manually in XAML, do the following steps:
 {% endcapture %}
 {{ codesnippet1 | OrderList_Indent_Level_1 }}
 
-#### Adding SfTreeView by C#
+#### Adding WPF TreeView by C#
 
 To add the control manually in C#, do the following steps:
 
@@ -123,7 +123,7 @@ namespace GettingStarted
 
 ### Populating Nodes without data source - Unbound Mode
 
-You can create and manage the [TreeViewNode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.Engine.TreeViewNode.html) objects by yourself to display the data in a hierarchical view. To create a tree view, you use a `SfTreeView` control and a hierarchy of `TreeViewNode` objects. You create the node hierarchy by adding one or more root nodes to the [SfTreeView.Nodes](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_Nodes) collection. Each `TreeViewNode` can have more nodes added to its Children collection. You can nest tree view nodes to whatever depth you require.
+You can create and manage the [TreeViewNode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.Engine.TreeViewNode.html) objects by yourself to display the data in a hierarchical view. To create a WPF TreeView, you use a `SfTreeView` control and a hierarchy of `TreeViewNode` objects. You create the node hierarchy by adding one or more root nodes to the [SfTreeView.Nodes](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_Nodes) collection. Each `TreeViewNode` can contain child nodes through its Children collection, allowing you to create hierarchical structures with any level of nesting.
 
 {% tabs %}
 {% highlight xaml %}
@@ -187,7 +187,7 @@ You can create and manage the [TreeViewNode](https://help.syncfusion.com/cr/wpf/
 
 ### Bind to a hierarchical data source - Bound Mode
 
-You can create a tree view by binding the ItemsSource to a hierarchical data source. To create a tree view using data binding, set a hierarchical collection to the [ItemsSource](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_ItemsSource) property. Then in the [ItemTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_ItemTemplate) and [ExpanderTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_ExpanderTemplate), set the child items collection to the `ItemsSource` property.
+You can create a WPF TreeView by binding a hierarchical data source to the `ItemsSource` property. To display child items, specify the child item collection through the [ItemsSource](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_ItemsSource) property in the [ItemTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_ItemTemplate) and [ExpanderTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_ExpanderTemplate).
 
 {% tabs %}
 {% highlight xaml %}
@@ -398,7 +398,7 @@ public class FileManagerViewModel
 
 ### Bind to a Hierarchy Property Descriptors data source - Bound Mode
 
- You can create a tree view by binding the `ItemsSource` to a hierarchy property descriptors data source. To create a tree view using hierarchical data binding, set a hierarchical collection to the [ItemsSource](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_ItemsSource) property, and then set the TargetType and [ChildPropertyName](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_ChildPropertyName) property values in [HierarchyPropertyDescriptors](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_HierarchyPropertyDescriptors).
+ You can create a WPF TreeView by binding the `ItemsSource` property to a hierarchical data source. To establish the hierarchy, set the TargetType and [ChildPropertyName](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_ChildPropertyName) values in [HierarchyPropertyDescriptors](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_HierarchyPropertyDescriptors).
  
  {% tabs %}
 {% highlight xaml %}

@@ -9,11 +9,11 @@ documentation: ug
 
 # Appearance in WPF PropertyGrid
 
-This section explains different UI customization, styling, theming options available in [PropertyGrid](https://www.syncfusion.com/wpf-controls/propertygrid) control.
+This section explains the different UI customization, styling, and theming options available in the [WPF PropertyGrid](https://www.syncfusion.com/wpf-controls/propertygrid) control. The WPF PropertyGrid is implemented through the [PropertyGrid](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.PropertyGrid.html) class.
 
 ## Setting the Foreground
 
-We can change the foreground color for properties of [SelectedObject](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.PropertyGrid.html#Syncfusion_Windows_PropertyGrid_PropertyGrid_SelectedObject) by setting the `Foreground` property. The default color value of `Foreground` property is `Blue`.
+We can change the foreground color for the properties of the [SelectedObject](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.PropertyGrid.html#Syncfusion_Windows_PropertyGrid_PropertyGrid_SelectedObject) by setting the `Foreground` property. The default color value of the `Foreground` property is `Blue`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -64,7 +64,7 @@ propertyGrid1.FontWeight = FontWeights.Bold;
 
 ### Background and FontWeight for the Editable and Readonly Properties
 
-If we want to differentiate between editable and readonly properties, we can do this by using [EditableBackground](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.PropertyGrid.html#Syncfusion_Windows_PropertyGrid_PropertyGrid_EditableBackground) and [EditableFontWeight](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.PropertyGrid.html#Syncfusion_Windows_PropertyGrid_PropertyGrid_EditableFontWeight) properties to highlights the editable properties and use the [ReadOnlyBackground](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.PropertyGrid.html#Syncfusion_Windows_PropertyGrid_PropertyGrid_ReadOnlyBackground) and [ReadOnlyFontWeight](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.PropertyGrid.html#Syncfusion_Windows_PropertyGrid_PropertyGrid_ReadOnlyFontWeight) properties to highlights the readonly properties.
+If we want to differentiate between editable and readonly properties, we can use the [EditableBackground](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.PropertyGrid.html#Syncfusion_Windows_PropertyGrid_PropertyGrid_EditableBackground) and [EditableFontWeight](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.PropertyGrid.html#Syncfusion_Windows_PropertyGrid_PropertyGrid_EditableFontWeight) properties to highlight the editable properties, and the [ReadOnlyBackground](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.PropertyGrid.html#Syncfusion_Windows_PropertyGrid_PropertyGrid_ReadOnlyBackground) and [ReadOnlyFontWeight](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.PropertyGrid.html#Syncfusion_Windows_PropertyGrid_PropertyGrid_ReadOnlyFontWeight) properties to highlight the readonly properties.
 
 {% tabs %}
 {% highlight C# %}
@@ -119,15 +119,15 @@ propertyGrid1.ReadOnlyFontWeight = FontWeights.UltraLight;
 {% endhighlight %}
 {% endtabs %}
 
-![Different Background and FontWeight applyed to the Editable and Readonly Properties](Appearance_images/Appearance_CustomBackground.png)
+![Different Background and FontWeight applied to the Editable and Readonly Properties](Appearance_images/Appearance_CustomBackground.png)
 
-N> If you use `EditableBackground` or `ReadOnlyBackground` properties with `ViewBackgroundColor` property, `EditableBackground` and `ReadOnlyBackground` properties have higher priority.
+N> If you use the `EditableBackground` or `ReadOnlyBackground` properties with the `ViewBackgroundColor` property, `EditableBackground` and `ReadOnlyBackground` have higher priority.
 
-N> If you use `EditableFontWeight` or `ReadOnlyFontWeight` properties with `FontWeight` property, `EditableFontWeight` and `ReadOnlyFontWeight` properties have higher priority.
+N> If you use the `EditableFontWeight` or `ReadOnlyFontWeight` properties with the `FontWeight` property, `EditableFontWeight` and `ReadOnlyFontWeight` have higher priority.
 
 ## Category Header's foreground and background
 
-We can change the background and foreground of the category header by setting the [LineColor](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.PropertyGrid.html#Syncfusion_Windows_PropertyGrid_PropertyGrid_LineColor) property and [CategoryForeground](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.PropertyGrid.html#Syncfusion_Windows_PropertyGrid_PropertyGrid_CategoryForeground) property. The `LineColor` property value applied to the background and `CategoryForeground` property value applied to the foreground of the category header only on category view. To enable category view, use the [EnableGrouping](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.PropertyGrid.html#Syncfusion_Windows_PropertyGrid_PropertyGrid_EnableGrouping) property as `true`.
+We can change the background and foreground of the category header by setting the [LineColor](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.PropertyGrid.html#Syncfusion_Windows_PropertyGrid_PropertyGrid_LineColor) and [CategoryForeground](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.PropertyGrid.html#Syncfusion_Windows_PropertyGrid_PropertyGrid_CategoryForeground) properties. The `LineColor` property value is applied to the background and the `CategoryForeground` property value is applied to the foreground of the category header, but only in category view. To enable category view, set the [EnableGrouping](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.PropertyGrid.html#Syncfusion_Windows_PropertyGrid_PropertyGrid_EnableGrouping) property to `true`.
 
 
 {% tabs %}
@@ -155,7 +155,7 @@ propertyGrid1.CategoryForeground = Brushes.Red;
 
 ## Customize the height of PropertyViewItem and PropertyCatagoryViewItem 
 
-We can customize the height of [PropertyViewItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.PropertyViewItem.html) and [PropertyCatagoryViewItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.PropertyCatagoryViewItem.html) using its `Padding` property by overriding style in PropertyGrid. 
+We can customize the height of the [PropertyViewItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.PropertyViewItem.html) and [PropertyCatagoryViewItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.PropertyCatagoryViewItem.html) using their `Padding` property by overriding the style in the WPF PropertyGrid. 
 
 {% tabs %}
 
@@ -202,7 +202,7 @@ propertyGrid1.SelectedObject = new Button();
 
 ## Tooltip support
 
-You can get the value and description about the property item through tooltip when hover the mouse on the respective property item and its value field. If the property item not contains any description, tooltip shows the property display name. You can restrict the tooltip support by setting the [EnableToolTip](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.PropertyGrid.html#Syncfusion_Windows_PropertyGrid_PropertyGrid_EnableToolTip) property as `false`. The default value of `EnableToolTip` property is `true`.
+You can view the value and description of a property item through a tooltip by hovering the mouse over the respective property item or its value field. If the property item does not contain a description, the tooltip shows the property display name. You can restrict the tooltip support by setting the [EnableToolTip](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.PropertyGrid.html#Syncfusion_Windows_PropertyGrid_PropertyGrid_EnableToolTip) property to `false`. The default value of the `EnableToolTip` property is `true`.
 
 {% tabs %}
 {% highlight C# %}
@@ -263,10 +263,10 @@ N> View [Sample](https://github.com/SyncfusionExamples/wpf-property-grid-example
 
 ## Theme
 
-PropertyGrid supports various built-in themes. Refer to the below links to apply themes for the PropertyGrid,
+The WPF PropertyGrid supports various built-in themes. Refer to the links below to apply themes to the control,
 
   * [Apply theme using SfSkinManager](https://help.syncfusion.com/wpf/themes/skin-manager)
 	
   * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
 
-![Setting theme to WPF PropertyGrid](Getting-Started_images/wpf-propertygrid-theme.png)
+![Setting theme to PropertyGrid](Getting-Started_images/wpf-propertygrid-theme.png)
