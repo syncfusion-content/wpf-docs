@@ -28,7 +28,7 @@ TreeGrid supports to bind any collection that implements the [IEnumerable](https
 TreeGrid supports to bind [dynamic data object](https://learn.microsoft.com/en-us/dotnet/api/system.dynamic?redirectedfrom=MSDN&view=net-5.0). Below are the limitations when you are binding dynamic data object,
 
 1. In UWP, UI won’t get refreshed when you are changing the property value. This is limitation in UWP platform.
-2. TreeGrid doesn’t support [LiveNodeUpdateMode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_TreeGrid_LiveNodeUpdateMode) - `AllowDataShaping`.
+2. TreeGrid doesn’t support [LiveNodeUpdateMode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_LiveNodeUpdateMode) - `AllowDataShaping`.
 
 ## Binding Complex properties
 
@@ -442,7 +442,7 @@ private void TreeGrid_NodeCollapsed(object sender, NodeCollapsedEventArgs e)
 
 ## Expand/Collapse a node based on mapping property
 
-TreeGrid supports to expand/collapse the nodes based on the value of a boolean mapping property in the underlying data object by using [SfTreeGrid.ExpandStateMappingName](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_TreeGrid_ExpandStateMappingName) property. TreeGrid expand/collapse the node when the specified property value in underlying data object gets changed.
+TreeGrid supports to expand/collapse the nodes based on the value of a boolean mapping property in the underlying data object by using [SfTreeGrid.ExpandStateMappingName](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_ExpandStateMappingName) property. TreeGrid expand/collapse the node when the specified property value in underlying data object gets changed.
 
 {% tabs %}
 {% highlight xaml %}
@@ -459,7 +459,7 @@ treeGrid.ExpandStateMappingName = "IsExpanded";
 
 ## LiveNodeUpdateMode
 
-TreeGrid listens and responds to the manipulation such as add, delete and data update (property change) at runtime. TreeGrid refreshes the sorting based on [SfTreeGrid.LiveNodeUpdateMode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_TreeGrid_LiveNodeUpdateMode) property. If you set `LiveNodeUpdateMode` as `AllowDataShaping`, sorting will be refreshed on data manipulation and property change.
+TreeGrid listens and responds to the manipulation such as add, delete and data update (property change) at runtime. TreeGrid refreshes the sorting based on [SfTreeGrid.LiveNodeUpdateMode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_LiveNodeUpdateMode) property. If you set `LiveNodeUpdateMode` as `AllowDataShaping`, sorting will be refreshed on data manipulation and property change.
 
 {% tabs %}
 {% highlight xaml %}
@@ -481,7 +481,7 @@ treeGrid.LiveNodeUpdateMode = LiveNodeUpdateMode.AllowDataShaping;
 
 ### ItemsSourceChanged
 
-[SfTreeGrid.ItemsSourceChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_ItemsSourceChanged) event occurs when the data source is changed by using [ItemsSource](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_TreeGrid_ItemsSource) property.
+[SfTreeGrid.ItemsSourceChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_ItemsSourceChanged) event occurs when the data source is changed by using [ItemsSource](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_ItemsSource) property.
 
 This event receives two arguments namely sender that handles TreeGrid and `GridItemsSourceChangedEventArgs` as objects.
 The `GridItemsSourceChangedEventArgs` object contains the following properties:

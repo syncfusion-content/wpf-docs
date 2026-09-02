@@ -9,7 +9,7 @@ documentation: ug
 
 # Clipboard Operations in WPF TreeGrid 
 
-WPF TreeGrid provides support to the clipboard operations such as cut, copy, and paste the data within control and between other applications such as Notepad and Excel. The clipboard operations of copy and paste are enabled by default. You can copy selected nodes/cells from TreeGrid by clicking `Ctrl+C` and paste the content from the [Clipboard](https://learn.microsoft.com/en-us/dotnet/api/system.windows.clipboard?view=windowsdesktop-7.0&viewFallbackFrom=net-5.0&redirectedfrom=MSDN) to TreeGrid by clicking `Ctrl+V`.
+WPF TreeGrid provides support to the clipboard operations such as cut, copy, and paste the data within control and between other applications such as Notepad and Excel. The clipboard operations of copy and paste are enabled by default. You can copy selected nodes/cells by clicking `Ctrl+C` and paste the content from the [Clipboard](https://learn.microsoft.com/en-us/dotnet/api/system.windows.clipboard?view=windowsdesktop-7.0&viewFallbackFrom=net-5.0&redirectedfrom=MSDN) to TreeGrid by clicking `Ctrl+V`.
 
 ## Copy
 
