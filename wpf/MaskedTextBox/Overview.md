@@ -9,7 +9,7 @@ documentation: ug
 
 # About Syncfusion® WPF MaskedTextBox (SfMaskedEdit) Control
 
-The [SfMaskedEdit](https://www.syncfusion.com/wpf-controls/maskedtextbox) (SfMaskedEdit) is an advanced version of the input control that restricts your input of certain types such as characters, text, and numbers by using a mask pattern. This control is used to create a template for providing information such as telephone numbers, IP addresses, product IDs, and so on.
+The [WPF MaskedTextBox](https://www.syncfusion.com/wpf-controls/maskedtextbox) (SfMaskedEdit) is an advanced version of the input control that restricts your input of certain types such as characters, text, and numbers by using a mask pattern. This control is used to create a template for providing information such as telephone numbers, IP addresses, product IDs, and so on.
 
 ![Overview of SfMaskedEdit](Overview_images/wpf-maskededit.jpg)
 

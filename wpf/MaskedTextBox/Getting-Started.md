@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started with WPF MaskedTextBox (SfMaskedEdit)
 
-This section explains how to create a [SfMaskedEdit](https://www.syncfusion.com/wpf-controls/maskedtextbox) and describes its structure and features.
+This section explains how to create a [WPF MaskedTextBox](https://www.syncfusion.com/wpf-controls/maskedtextbox) and describes its structure and features.
 
 ## Control Structure
 
@@ -132,7 +132,7 @@ sfMaskedEdit.Mask = @"-?\d+\.?\d*";
 
 ![SfMaskedEdit displays Value in RegularExpression](MaskOptions_images/wpf-maskededit-negative-value.png)
 
-Here, the SfMaskedEdit accept the positive and negative whole or float type numbers.
+Here, the `SfMaskedEdit` accept the positive and negative whole or float type numbers.
 
 N> Please refer the [Restrict the user to enter valid data](https://help.syncfusion.com/wpf/maskedtextbox/input-restriction#restrict-the-user-to-enter-valid-data) page to know more about the various mask pattern with examples.
 
