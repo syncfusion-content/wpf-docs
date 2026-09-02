@@ -6,9 +6,9 @@ platform: wpf
 control: DocumentContainer
 documentation: ug
 ---
-# Setting Window State in WPF DocumentContainer 
+# Setting Window State in WPF Document Container 
 
-The DocumentContainer supports the following three window states for MDI child windows:
+The WPF Document Container supports the following three window states for MDI child windows:
 
 * **Maximized**
 * **Minimized**

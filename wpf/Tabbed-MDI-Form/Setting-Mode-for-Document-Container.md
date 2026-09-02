@@ -7,14 +7,14 @@ control: DocumentContainer
 documentation: ug
 ---
 
-# Setting Mode in WPF DocumentContainer
+# Setting Mode in WPF Document Container
 
-The DocumentContainer supports the following two modes:
+The WPF Document Container supports the following two modes:
 
 * **TDI** - Tabbed Document Interface (default)
 * **MDI** - Multiple Document Interface
 
-You can change the mode using the [Mode](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DocumentContainer.html#Syncfusion_Windows_Tools_Controls_DocumentContainer_Mode) property of the DocumentContainer, which uses the `Syncfusion.Windows.Tools.Controls.DocumentContainerMode` enum.
+You can change the mode using the [Mode](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DocumentContainer.html#Syncfusion_Windows_Tools_Controls_DocumentContainer_Mode) property of the WPF Document Container, which uses the `Syncfusion.Windows.Tools.Controls.DocumentContainerMode` enum.
 
 ## Setting the Mode to TDI
 

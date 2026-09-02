@@ -7,7 +7,7 @@ control: DocumentContainer
 documentation: ug
 ---
 
-# Minimizing MDI Window in WPF DocumentContainer
+# Minimizing MDI Window in WPF Document Container
 
 You can minimize the `MDI` window by setting the [CanMDIMinimize](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DocumentContainer.html#Syncfusion_Windows_Tools_Controls_DocumentContainer_CanMDIMinimize) property to `true`. The default value of `CanMDIMinimize` is `false`. The minimized MDI windows are arranged one by one in the bottom-left corner of the window.
 

@@ -7,13 +7,13 @@ control: DocumentContainer
 documentation: ug
 ---
 
-# Creating Tab Groups in WPF DocumentContainer
+# Creating Tab Groups in WPF Document Container
 
-You can create tab groups for the tab items of a TDI mode [DocumentContainer](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DocumentContainer.html) by dragging a tab item, by using the context menu items, or programmatically. Tab groups are only supported in `TDI` mode.
+You can create tab groups for the tab items of a TDI mode [WPF Document Container](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DocumentContainer.html) by dragging a tab item, by using the context menu items, or programmatically. Tab groups are only supported in `TDI` mode.
 
 ## Creating Tab Groups Using the Context Menu
 
-You can create new horizontal or vertical tab groups for the TDI `DocumentContainer` by clicking the `New Horizontal Tab Group` or `New Vertical Tab Group` options available in the tab item context menu.
+You can create new horizontal or vertical tab groups for the TDI `WPF Document Container` by clicking the `New Horizontal Tab Group` or `New Vertical Tab Group` options available in the tab item context menu.
 
 {% tabs %}
 {% highlight xaml %}
@@ -31,11 +31,11 @@ You can create new horizontal or vertical tab groups for the TDI `DocumentContai
 
 ![Tab Groups created by ContextMenuItem](Creating-Tab-Groups_images/Tabgroup_Contextmenu.gif)
 
-N> Tab groups can only be created in TDI mode of the `DocumentContainer`. You can enable it by setting the [Mode](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DocumentContainer.html#Syncfusion_Windows_Tools_Controls_DocumentContainer_Mode) property to `TDI`.
+N> Tab groups can only be created in TDI mode of the `WPF Document Container`. You can enable it by setting the [Mode](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DocumentContainer.html#Syncfusion_Windows_Tools_Controls_DocumentContainer_Mode) property to `TDI`.
 
 ## Creating Tab Groups by Dragging a Tab Item
 
-You can create a new horizontal tab group for the TDI `DocumentContainer` tab item by dragging the tab item into the document area and then clicking the `New Tab Group` menu item from the context menu. You can cancel the tab group creation by clicking the `Cancel` menu item from the context menu.
+You can create a new horizontal tab group for the TDI `WPF Document Container` tab item by dragging the tab item into the document area and then clicking the `New Tab Group` menu item from the context menu. You can cancel the tab group creation by clicking the `Cancel` menu item from the context menu.
 
 {% tabs %}
 {% highlight xaml %}

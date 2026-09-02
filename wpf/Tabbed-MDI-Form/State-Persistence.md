@@ -7,13 +7,13 @@ control: DocumentContainer
 documentation: ug
 ---
 
-# State Persistence in WPF DocumentContainer
+# State Persistence in WPF Document Container
 
 This topic illustrates how to load and save the dock state in various places. It also gives information about resetting and deleting the states.
 
 ## Load and Save in Isolated Storage
 
-The simplest way to load and save the DocumentContainer state is by using its built-in Isolated Storage methods. To load, save, and reset the state, use the following code.
+The simplest way to load and save the WPF Document Container state is by using its built-in Isolated Storage methods. To load, save, and reset the state, use the following code.
 
 {% tabs %}
 {% highlight C# %}
@@ -30,7 +30,7 @@ DocContainer.DeleteInternalIsolatedStorage();
 
 ## Load and Save in a Stream
 
-You can also save the DocumentContainer state to any `Stream` using a `BinaryFormatter` (or any other `IFormatter`). The `SaveDockState(IFormatter)` and `LoadDockState(IFormatter)` overloads accept a formatter that the DocumentContainer uses to write/read its state.
+You can also save the WPF Document Container state to any `Stream` using a `BinaryFormatter` (or any other `IFormatter`). The `SaveDockState(IFormatter)` and `LoadDockState(IFormatter)` overloads accept a formatter that the WPF Document Container uses to write/read its state.
 
 {% tabs %}
 {% highlight C# %}
@@ -53,7 +53,7 @@ using (FileStream stream = new FileStream("dockstate.bin", FileMode.Open))
 
 ## Load and Save in XML
 
-You can save and load the DocumentContainer state in XML format using either the `BinaryFormatter` or the `SoapFormatter`. The `StorageFormat` parameter selects between XML and binary storage.
+You can save and load the WPF Document Container state in XML format using either the `BinaryFormatter` or the `SoapFormatter`. The `StorageFormat` parameter selects between XML and binary storage.
 
 {% tabs %}
 {% highlight C# %}
@@ -81,7 +81,7 @@ DocContainer.LoadDockState(soapFormatter, StorageFormat.Xml, xmlPath);
 
 ## Load and Save in Binary
 
-You can also save and load the DocumentContainer state in a binary file using either `BinaryFormatter` or `SoapFormatter`.
+You can also save and load the WPF Document Container state in a binary file using either `BinaryFormatter` or `SoapFormatter`.
 
 {% tabs %}
 {% highlight C# %}
@@ -109,7 +109,7 @@ DocContainer.LoadDockState(soapFormatter, StorageFormat.Binary, binPath);
 
 ## Reset the State
 
-You can reset the DocumentContainer state using the `ResetState` method.
+You can reset the WPF Document Container state using the `ResetState` method.
 
 {% tabs %}
 {% highlight C# %}

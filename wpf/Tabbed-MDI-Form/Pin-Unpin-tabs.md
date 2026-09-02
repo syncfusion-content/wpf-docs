@@ -6,13 +6,13 @@ platform: wpf
 control: DocumentContainer
 documentation: ug
 ---
-# Pin and Unpin TabItems in WPF DocumentContainer
+# Pin and Unpin TabItems in WPF Document Container
 
-This section explains how to pin and unpin tab items in a DocumentContainer.
+This section explains how to pin and unpin tab items in a WPF Document Container.
 
 ## Enabling or Disabling Pinning Behavior
 
-The [AllowPin](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DocumentContainer.html#Syncfusion_Windows_Tools_Controls_DocumentContainer_AllowPinProperty) attached property of DocumentContainer determines whether a tab item can be pinned. The corresponding tab item is pinnable only when the [AllowPin](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DocumentContainer.html#Syncfusion_Windows_Tools_Controls_DocumentContainer_AllowPinProperty) property is `true`. When the property is `false`, the pin and unpin behavior of the tab item is disabled. The default value of the [AllowPin](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DocumentContainer.html#Syncfusion_Windows_Tools_Controls_DocumentContainer_AllowPinProperty) property is `false`. This property is set on each child element (it is an attached property), not on the DocumentContainer itself.
+The [AllowPin](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DocumentContainer.html#Syncfusion_Windows_Tools_Controls_DocumentContainer_AllowPinProperty) attached property of WPF Document Container determines whether a tab item can be pinned. The corresponding tab item is pinnable only when the [AllowPin](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DocumentContainer.html#Syncfusion_Windows_Tools_Controls_DocumentContainer_AllowPinProperty) property is `true`. When the property is `false`, the pin and unpin behavior of the tab item is disabled. The default value of the [AllowPin](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DocumentContainer.html#Syncfusion_Windows_Tools_Controls_DocumentContainer_AllowPinProperty) property is `false`. This property is set on each child element (it is an attached property), not on the WPF Document Container itself.
 
 {% tabs %}
 
@@ -210,7 +210,7 @@ When the pin button of the tab item is visible, the corresponding tab item can b
 
 ## Pin and Unpin Tab Items Programmatically
 
-Tab items can be pinned or unpinned from the DocumentContainer using the [IsPinned](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DocumentContainer.html#Syncfusion_Windows_Tools_Controls_DocumentContainer_IsPinnedProperty) attached property of DocumentContainer. When [IsPinned](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DocumentContainer.html#Syncfusion_Windows_Tools_Controls_DocumentContainer_IsPinnedProperty) is set to `true`, the corresponding item is added to the pinned tab items collection. When [IsPinned](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DocumentContainer.html#Syncfusion_Windows_Tools_Controls_DocumentContainer_IsPinnedProperty) is set to `false`, the tab item is removed from the pinned collection and added to the unpinned tab items collection. The default value of the property is `false`.
+Tab items can be pinned or unpinned from the WPF Document Container using the [IsPinned](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DocumentContainer.html#Syncfusion_Windows_Tools_Controls_DocumentContainer_IsPinnedProperty) attached property of WPF Document Container. When [IsPinned](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DocumentContainer.html#Syncfusion_Windows_Tools_Controls_DocumentContainer_IsPinnedProperty) is set to `true`, the corresponding item is added to the pinned tab items collection. When [IsPinned](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DocumentContainer.html#Syncfusion_Windows_Tools_Controls_DocumentContainer_IsPinnedProperty) is set to `false`, the tab item is removed from the pinned collection and added to the unpinned tab items collection. The default value of the property is `false`.
 
 {% tabs %}
 {% highlight XAML %}

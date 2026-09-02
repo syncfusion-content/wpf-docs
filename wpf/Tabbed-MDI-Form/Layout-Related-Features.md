@@ -7,13 +7,13 @@ control: DocumentContainer
 documentation: ug
 ---
 
-# Layout Related Features in WPF DocumentContainer
+# Layout Related Features in WPF Document Container
 
-This section describes the layout-related features of the DocumentContainer, such as the supported visual themes and how to apply them.
+This section describes the layout-related features of the WPF Document Container, such as the supported visual themes and how to apply them.
 
 ## Theme
 
-DocumentContainer supports various built-in themes. Refer to the below links to apply themes for the DocumentContainer,
+The WPF Document Container supports various built-in themes. Refer to the links below to apply themes,
 
   * [Apply theme using SfSkinManager](https://help.syncfusion.com/wpf/themes/skin-manager)
 	
