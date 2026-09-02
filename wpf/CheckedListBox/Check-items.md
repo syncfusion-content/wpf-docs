@@ -7,9 +7,9 @@ control: CheckListBox
 documentation: ug
 ---
 
-# Check Items in WPF CheckListBox
+# Check Items in WPF CheckedListBox
 
-In [CheckListBox](https://www.syncfusion.com/wpf-controls/checkedlistbox), items present in the control can be checked or unchecked in any of the following ways:
+In [WPF CheckedListBox](https://www.syncfusion.com/wpf-controls/checkedlistbox), items present in the control can be checked or unchecked in any of the following ways:
 
 1. Programmatically, using the `SelectedItems` collection
 2. Programmatically, by binding the `IsChecked` property
@@ -218,7 +218,7 @@ Click [here](https://github.com/SyncfusionExamples/wpf-checked-listbox-examples/
 
 ## Check items using Mouse
 
-The `CheckListBox` items can be checked or unchecked with a single click, either by clicking the `CheckBox` or by clicking the content of the item. You can check or uncheck a `GroupHeader` or `SelectAll` item to check or uncheck a group of items or all items. By default, the items are checked or unchecked with a single mouse click. If you want to check or uncheck the items only on a mouse double-click, set the [IsCheckOnFirstClick](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.CheckListBox.html#Syncfusion_Windows_Tools_Controls_CheckListBox_IsCheckOnFirstClick) property to `false`.
+The `WPF CheckedListBox` items can be checked or unchecked with a single click, either by clicking the `CheckBox` or by clicking the content of the item. You can check or uncheck a `GroupHeader` or `SelectAll` item to check or uncheck a group of items or all items. By default, the items are checked or unchecked with a single mouse click. If you want to check or uncheck the items only on a mouse double-click, set the [IsCheckOnFirstClick](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.CheckListBox.html#Syncfusion_Windows_Tools_Controls_CheckListBox_IsCheckOnFirstClick) property to `false`.
 
 {% tabs %}
 {% highlight C#%}
