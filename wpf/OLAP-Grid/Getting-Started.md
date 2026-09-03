@@ -22,7 +22,7 @@ After creating the WPF application, go to View menu and select Toolbox option. N
 
 ![Getting-Started Image0](Getting-Started_images/Getting-Started_img0.png)
 
-Add a **Name** to the control component for accessing it through code-behind as shown in the following code sample.
+Add a **Name** to the OLAP Grid component for accessing it through code-behind as shown in the following code sample.
 
 {% highlight xaml %}
 
@@ -171,7 +171,7 @@ On adding the above assemblies, the control will be added under the **Assets** t
 
 ![Adding the control under the Assets tab](Getting-Started_images/Getting-Started_img2.png)
 
-Add a **Name** to the control component for accessing it through code-behind as shown in the following code sample.
+Add a **Name** to the OLAP Grid component for accessing it through code-behind as shown in the following code sample.
 
 {% highlight xaml %}
 
@@ -321,7 +321,7 @@ To add the dependency assemblies within the application, right-click the **Refer
  
 N> You can also get the assemblies by browsing to the default assembly location: {System Drive}:\Program Files (x86)\Syncfusion\Essential Studio\&lt;version number&gt;\precompiledassemblies\&lt;version number&gt;\&lt;framework version&gt;\
 
-Include the following namespaces in code-behind for the control, OlapDataManager, and OlapReport.
+Include the following namespaces in code-behind for the OLAP Grid, OlapDataManager, and OlapReport.
 
    * Syncfusion.Windows.Grid.Olap
    * Syncfusion.Olap.Manager
@@ -451,7 +451,7 @@ Run the application. The following output will be generated.
 
 Design-time binding support for OLAP Grid allows you to reduce the time spent on creating and customizing the report. Normally, it takes 5 to 10 minutes for creating a report and in the case of unfamiliar cubes it may extend further, but by using design-time support you can create a report in a couple of minutes. The following section explains how to create a report during design-time.
 
-First drag the control from the toolbox to the Visual Studio designer surface.
+First drag the OLAP Grid from the toolbox to the Visual Studio designer surface.
 
 ![Getting-Started Image3](Getting-Started_images/Getting-Started_img3.png)
 

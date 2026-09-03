@@ -11,7 +11,7 @@ documentation: ug
 
 Paging in the OLAP Grid supports loading and rendering large amounts of data without any performance constraints.
 
-The OLAP pager (user control) is included and bound with the OlapDataManager object of the respective grid. To enable paging, set the `EnablePaging` property to true.
+The OLAP pager (user control) is included and bound with the OlapDataManager object of the respective OLAP Grid. To enable paging, set the `EnablePaging` property to true.
 
 When you process a large cell set, it is split into several segments and each segment is assigned and rendered in a separate page. You can navigate back and forth in all possible ways by using the UI options in the OLAP pager. You can also change the page size and other pager settings at runtime by using the **PageSetting** window.
 

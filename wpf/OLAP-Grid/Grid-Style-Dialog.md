@@ -16,7 +16,7 @@ The OLAP Grid can be formatted in the following ways:
 
 ## Style dialog
 
-The grid style dialog is used to format the cells of the control. Styling can be applied to column headers, row headers, summary cells, and value cells. The following properties of headers and summary cells can be formatted:
+The OLAP Grid style dialog is used to format the cells of the control. Styling can be applied to column headers, row headers, summary cells, and value cells. The following properties of headers and summary cells can be formatted:
 
 * Background color
 * Foreground color
