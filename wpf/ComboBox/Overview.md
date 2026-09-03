@@ -3,7 +3,7 @@ layout: post
 title: About Syncfusion® WPF ComboBox Control | Syncfusion®
 description: Learn about the introduction and overview of Syncfusion® Essential Studio WPF ComboBox control, its elements, features, and capabilities.
 platform: wpf
-control: ComboBoxAdv
+control: ComboBox
 documentation: ug
 ---
 

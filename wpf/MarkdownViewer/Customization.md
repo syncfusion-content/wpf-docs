@@ -3,7 +3,7 @@ layout: post
 title: Customization in WPF Markdown Viewer | Syncfusion®
 description: Customization support in WPF Markdown Viewer enables styling Markdown elements, modifying themes, and adjusting the viewer appearance.
 platform: wpf
-control: SfMarkdownViewer
+control: Markdown Viewer
 documentation: ug
 ---
 

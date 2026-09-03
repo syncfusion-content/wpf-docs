@@ -3,7 +3,7 @@ layout: post
 title: Sorting Mode in WPF Card View | Syncfusion®
 description: Sorting mode support in WPF Card View enables users to organize cards efficiently by field values, improving data analysis, navigation, and presentation.
 platform: wpf
-control: CardView
+control: Card View
 documentation: ug
 ---
 

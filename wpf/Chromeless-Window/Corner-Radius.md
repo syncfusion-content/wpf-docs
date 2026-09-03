@@ -3,7 +3,7 @@ layout: post
 title: CornerRadius in WPF Chromeless Window | Syncfusion®
 description: CornerRadius support in the Chromeless Window enables rounded window corners, helping create modern, polished, and visually appealing interfaces.
 platform: wpf
-control: ChromelessWindow
+control: Chromeless Window
 documentation: ug
 ---
 # CornerRadius in WPF Chromeless Window

@@ -3,7 +3,7 @@ layout: post
 title: About Syncfusion® WPF Card View Control | Syncfusion®
 description: Learn about the introduction of Syncfusion® Essential Studio WPF Card View control and discover its features, capabilities, and more details.
 platform: wpf
-control: CardView
+control: Card View
 documentation: ug
 ---
 

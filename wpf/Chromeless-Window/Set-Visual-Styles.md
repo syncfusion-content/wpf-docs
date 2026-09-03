@@ -3,7 +3,7 @@ layout: post
 title: Set Visual Styles in WPF Chromeless Window | Syncfusion®
 description: Set Visual Styles support in the Chromeless Window allows predefined visual themes to be applied for a consistent window appearance.
 platform: wpf
-control: ChromelessWindow
+control: Chromeless Window
 documentation: ug
 ---
 # Set Visual Styles in WPF Chromeless Window

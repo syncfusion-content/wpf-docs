@@ -3,7 +3,7 @@ layout: post
 title: Stop Responding in WPF AI AssistView | Syncfusion®
 description: The Stop Responding feature in WPF AI AssistView allows users to cancel AI response generation, providing greater control over ongoing interactions.
 platform: wpf
-control: SfAIAssistView
+control: AI AssistView
 documentation: ug
 ---
 

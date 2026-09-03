@@ -3,7 +3,7 @@ layout: post
 title: Grouping Mode in WPF Card View | Syncfusion®
 description: Grouping mode support in WPF Card View helps organize cards into logical categories based on field values, improving data readability and navigation.
 platform: wpf
-control: CardView
+control: Card View
 documentation: ug
 ---
 
