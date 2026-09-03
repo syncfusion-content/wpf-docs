@@ -9,12 +9,12 @@ documentation: ug
 
 # Textbox customization in WPF AutoComplete (SfTextBoxExt)
 
-The WPF AutoComplete provides the user-friendly customizing options for text box. This section explains how to customize the entire WPF AutoComplete control.
+The [WPF AutoComplete](https://www.syncfusion.com/wpf-controls/autocomplete) control provides user-friendly text box customization options. This section explains how to customize the entire control. The WPF AutoComplete control is implemented through the [SfTextBoxExt](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html) class.
 
 
 ## Water mark 
 
-[Watermark](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_Watermark) property, allows to specify some information when the text is empty. For illustration, let us create a simple textbox and indicate enter names separated by a comma.
+The [Watermark](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_Watermark) property allows you to specify information when the text is empty. For illustration, create a simple text box and indicate names separated by commas.
 
 {% tabs %}
 {% highlight xaml %}

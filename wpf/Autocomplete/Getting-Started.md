@@ -9,6 +9,8 @@ documentation: ug
 
 # Getting Started with WPF AutoComplete (SfTextBoxExt)
 
+This section explains how to create the [WPF AutoComplete](https://www.syncfusion.com/wpf-controls/autocomplete) control in a WPF application. The WPF AutoComplete control is implemented through the [SfTextBoxExt](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html) class.
+
 ## Assembly deployment
 
 Refer to this [Control Dependencies](https://help.syncfusion.com/wpf/control-dependencies#sftextboxext) section to get the list of assemblies or NuGet package that needs to be added as a reference to use the control in any application.
@@ -17,15 +19,15 @@ Refer to this [How to install nuget packages](https://help.syncfusion.com/wpf/we
 
 ## Creating a simple application
 
-Create a WPF application with [WPF AutoComplete](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html) control using the following steps:
+Create a WPF application with the [SfTextBoxExt](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html) control using the following steps:
 
 ### Create a project
 
-Create a new WPF project in Visual Studio to display the [WPF AutoComplete](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html) control with their functionalities.
+Create a new WPF project in Visual Studio to display the [SfTextBoxExt](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html) control with their functionalities.
 
 ### Add a control using the designer
 
-The [WPF AutoComplete](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html) control can be added to an application by dragging it from the toolbox to a designer view. The following required assembly references will be added automatically:
+The [SfTextBoxExt](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html) control can be added to an application by dragging it from the toolbox to a designer view. The following required assembly references will be added automatically:
 
 * Syncfusion.SfInput.WPF
 * Syncfusion.SfShared.WPF
@@ -40,7 +42,7 @@ To add the control manually in XAML, follow the given steps:
     * Syncfusion.SfInput.WPF
     * Syncfusion.SfShared.WPF
 2. Import Syncfusion<sup>®</sup> WPF schema **http://schemas.syncfusion.com/wpf** in the XAML page.
-3. Declare the [WPF AutoComplete](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html) control in the XAML page.
+3. Declare the [SfTextBoxExt](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html) control in the XAML page.
 
 {% capture codesnippet1 %}
 {% tabs %}
@@ -75,8 +77,8 @@ To add the control manually in C#, follow the given steps:
 1. Add the following required assembly references to the project:
     * Syncfusion.SfInput.WPF
     * Syncfusion.SfShared.WPF
-2. Import the [WPF AutoComplete](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html) namespace using **Syncfusion.Windows.Controls.Input;**.
-3. Create an [WPF AutoComplete](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html) instance, and add it to the window.
+2. Import the [SfTextBoxExt](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html) namespace using **Syncfusion.Windows.Controls.Input;**.
+3. Create an [SfTextBoxExt](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html) instance, and add it to the window.
 
 {% capture codesnippet2 %}
 {% tabs %}
@@ -237,7 +239,7 @@ For further details, refer to [WPF AutoComplete source](https://help.syncfusion.
 
 ## WPF AutoComplete modes 
 
-Suggestions can be shown in number of ways. [WPF AutoComplete](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html) supports the following.
+Suggestions can be shown in number of ways. [SfTextBoxExt](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html) supports the following.
 
 <table>
 <tr>
@@ -314,7 +316,7 @@ N> View [sample](https://github.com/SyncfusionExamples/wpf-textboxext-examples/t
 
 ## Theme
 
-The WPF AutoComplete supports various built-in themes. Refer to the below links to apply themes for the WPF AutoComplete,
+The WPF AutoComplete control supports various built-in themes. Refer to the following links to apply themes to the control:
 
   * [Apply theme using SfSkinManager](https://help.syncfusion.com/wpf/themes/skin-manager)
 	

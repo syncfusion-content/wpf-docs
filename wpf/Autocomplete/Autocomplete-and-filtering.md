@@ -1,19 +1,19 @@
 ---
 layout: post
-title: AutoComplete and Filtering in WPF AutoComplete | Syncfusion®
-description: AutoComplete and Filtering in SfTextBoxExt provide relevant suggestions, dynamic filtering, and search assistance as users enter text.
+title: Autocomplete and Filtering in WPF AutoComplete | Syncfusion®
+description: Autocomplete and Filtering in WPF AutoComplete provide relevant suggestions, dynamic filtering, and search assistance as users enter text.
 platform: wpf
 control: SfTextBoxExt
 documentation: ug
 ---
 
-# AutoComplete and filtering in WPF AutoComplete (SfTextBoxExt)
+# Autocomplete and filtering in WPF AutoComplete (SfTextBoxExt)
 
-The WPF AutoComplete functionality provides several modes of suggestions while typing. The suggested text can be appended to the original text, or can be displayed in a drop-down list so that searched item can be chosen based on the filtering option set.
+The [WPF AutoComplete](https://www.syncfusion.com/wpf-controls/autocomplete) control provides several modes of suggestions while typing. The suggested text can be appended to the original text or displayed in a drop-down list so that a searched item can be chosen based on the filtering option set. The WPF AutoComplete control is implemented through the [SfTextBoxExt](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html) class.
 
 ## WPF AutoComplete source
 
-The [WPF AutoComplete](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html) control can be populated with a predefined list of items bind to the [AutoCompleteSource](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_AutoCompleteSource) property. The data can be either a list of strings or a custom data.
+The [SfTextBoxExt](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html) control can be populated with a predefined list of items bound to the [AutoCompleteSource](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_AutoCompleteSource) property. The data can be either a list of strings or custom data.
 
 
 {% tabs %}
@@ -204,7 +204,7 @@ The control returns all possible matches that equals the typed text based on the
 Custom
 </td>
 <td>
-The control returns all possible matches based on the Filter property. Filter property is of type SuggestionPredicate. In the MyFilter method, filtration is done by checking whether the collection contains the typed text.
+The control returns all possible matches based on the `Filter` property. The `Filter` property is of type `SuggestionPredicate`. In the `MyFilter` method, filtering is performed by checking whether the collection contains the typed text.
 </td>
 </tr>
 <tr>

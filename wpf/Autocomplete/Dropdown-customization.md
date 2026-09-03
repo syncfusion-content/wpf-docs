@@ -9,7 +9,7 @@ documentation: ug
 
 # Dropdown customization in WPF AutoComplete (SfTextBoxExt)
 
-Suggestion box is the drop-down list box, which displays the filtered suggestions inside a pop-up. This section explains the properties and customizations that deals with drop-down list in the `WPF AutoComplete` control.
+The suggestion box is a drop-down list that displays filtered suggestions in a pop-up. This section explains the properties and customizations for the drop-down list in the `AutoComplete` control. The [WPF AutoComplete](https://www.syncfusion.com/wpf-controls/autocomplete) control is implemented through the [SfTextBoxExt](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html) class.
 
 ## Customize the background 
 
@@ -240,7 +240,7 @@ textBoxExt.SelectionBackgroundColor = new SolidColorBrush(Colors.Red);
 
 ## Highlighting matched text in DropDown
 
-The `WPF AutoComplete` supports highlighting the first matched item when a dropdown is opened by setting the `AutoHighlightMatchedItem` API to true. The default value is false.
+The WPF AutoComplete supports highlighting the first matched item when a dropdown is opened by setting the `AutoHighlightMatchedItem` API to true. The default value is false.
 
 {% tabs %}
 

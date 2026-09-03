@@ -9,7 +9,7 @@ documentation: ug
 
 # Diacritic Sensitivity in WPF AutoComplete (SfTextBoxExt)
 
-The control does not stick with one type of keyboard, so it can be populated with the items from a language with letters containing diacritics, and search for them with English characters from an en-US keyboard. Enable or disable the diacritic sensitivity using the [IgnoreDiacritic](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_IgnoreDiacritic) property. The following code example demonstrates how to enable the diacritic sensitivity.
+The [WPF AutoComplete](https://www.syncfusion.com/wpf-controls/autocomplete) control supports searching items containing diacritics with English characters from an en-US keyboard. The WPF AutoComplete control is implemented through the [SfTextBoxExt](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html) class. Enable or disable diacritic sensitivity by using the [IgnoreDiacritic](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_IgnoreDiacritic) property. The following code example demonstrates how to enable diacritic sensitivity.
 
 {% tabs %}
 
