@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started with WPF Syntax Editor
 
-This section explains how to add and configure the [EditControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Edit.EditControl.html) in a WPF application and get started with its basic features.
+This section explains how to add and configure the Syntax Editor ([EditControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Edit.EditControl.html)) in a WPF application and get started with its basic features.
 
 ## Assembly deployment
 
@@ -17,7 +17,7 @@ Refer to the [Control Dependencies](https://help.syncfusion.com/wpf/control-depe
 
 Refer to this [documentation](https://help.syncfusion.com/wpf/installation/install-nuget-packages) to find more details about installing NuGet packages in a WPF application.
 
-## Creating a simple application with EditControl
+## Creating a simple application with Syntax Editor
 
 You can create a WPF application with [EditControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Edit.EditControl.html) as follows:
 
@@ -34,7 +34,7 @@ You can create a WPF application with [EditControl](https://help.syncfusion.com/
 2. Select **WPF App (.NET Framework)** or (**WPF Application** for .NET/.NET Core) and click **Next**.
 3. Type a project name, choose a location, and click **Create**.
 
-### Adding EditControl via designer
+### Adding Syntax Editor via designer
 
 The [EditControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Edit.EditControl.html) can be added to the application by dragging it from the toolbox and dropping it in the designer view. The following required assembly references will be added automatically:
 
@@ -45,7 +45,7 @@ The [EditControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Edit.Edi
 
 ![Getting started by designer](Getting-Started_images/Getting-Started_img1.jpg)
 
-### Adding EditControl via XAML
+### Adding Syntax Editor via XAML
 
 To add the [EditControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Edit.EditControl.html) manually in XAML, follow these steps:
 
@@ -57,7 +57,7 @@ To add the [EditControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.E
     * Syncfusion.Shared.WPF
     * Syncfusion.Tools.WPF
 
-3. Import Syncfusion WPF schema **http://schemas.syncfusion.com/wpf**, and declare the EditControl in XAML page.
+3. Import Syncfusion WPF schema **http://schemas.syncfusion.com/wpf**, and declare the [EditControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Edit.EditControl.html) in XAML page.
 
 {% capture codesnippet1 %}
 {% tabs %}
@@ -92,7 +92,7 @@ VerticalAlignment="Top" Width="300"/>
 {% endcapture %}
 {{ codesnippet1 | OrderList_Indent_Level_1 }}
 
-## Adding EditControl via C#
+## Adding Syntax Editor via C#
 
 To add the [EditControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Edit.EditControl.html) manually in C#, follow these steps:
 
@@ -127,7 +127,7 @@ using Syncfusion.Windows.Edit;
 public MainWindow()
 {
         InitializeComponent();
-        //Initializing EditControl and setting necessary property values.
+        //Initializing Syntax Editor and setting necessary property values.
         EditControl editControl = new EditControl() {Height = 200, Width = 200, Background = Brushes.White, Foreground = Brushes.Black };
         this.Content = editControl;
 }
@@ -138,17 +138,17 @@ public MainWindow()
 {% endcapture %}
 {{ codesnippet3 | OrderList_Indent_Level_1 }}
 
-![Adding EditControl to Project](Getting-Started_images/Getting-Started_img3.jpeg)
+![Adding Syntax Editor to Project](Getting-Started_images/Getting-Started_img3.jpeg)
 
 ## Loading a file into the document
 
-This option helps to load a file into the [EditControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Edit.EditControl.html). Essential Edit WPF facilitates users to create, open, modify, and save text files and programming language files. EditControl provides built-in support for a variety of text-based file formats such as `txt`, `cs`, `vb`, `sql`, `xaml`, and `xml`. It also allows you to specify custom file types in custom language configurations.
+This option helps to load a file into the [EditControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Edit.EditControl.html). Essential Edit WPF facilitates users to create, open, modify, and save text files and programming language files. Syntax Editor provides built-in support for a variety of text-based file formats such as `txt`, `cs`, `vb`, `sql`, `xaml`, and `xml`. It also allows you to specify custom file types in custom language configurations.
 
-Essential Edit WPF facilitates users to create, open, modify and save text files and programming language files. EditControl provides built-in support for a variety of text based file formats such as txt, cs, VB, SQL, XAML, and XML. It also enables to specify custom file types in the custom language configurations.
+Essential Edit WPF facilitates users to create, open, modify and save text files and programming language files. Syntax Editor provides built-in support for a variety of text based file formats such as txt, cs, VB, SQL, XAML, and XML. It also enables to specify custom file types in the custom language configurations.
 
 ### Opening a file
 
-The [DocumentSource](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Edit.EditControl.html#Syncfusion_Windows_Edit_EditControl_DocumentSource) property of EditControl is used to specify the file to be opened with [EditControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Edit.EditControl.html). The following code can be used to set the [DocumentSource](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Edit.EditControl.html#Syncfusion_Windows_Edit_EditControl_DocumentSource) property of EditControl is used to specify the file to be opened with EditControl property.
+The [DocumentSource](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Edit.EditControl.html#Syncfusion_Windows_Edit_EditControl_DocumentSource) property of `EditControl` is used to load a file into the editor. The following code example shows how to set the [DocumentSource](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Edit.EditControl.html#Syncfusion_Windows_Edit_EditControl_DocumentSource) property to open a file.
 
 {% tabs %}
 
@@ -196,7 +196,7 @@ editControl.LoadFile()
 
 ### Saving the text to a file
 
-The [SaveFile](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Edit.EditControl.html#Syncfusion_Windows_Edit_EditControl_SaveFile) method in the [EditControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Edit.EditControl.html) class is used to save the text in EditControl to a file. EditControl supports saving all built-in languages, file types, and custom language file types.
+The [SaveFile](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Edit.EditControl.html#Syncfusion_Windows_Edit_EditControl_SaveFile) method of [EditControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Edit.EditControl.html) saves the content of the Syntax Editor to a file. It supports saving files for all built-in languages, supported file formats, and custom language file types.
 
 {% tabs %}
 
@@ -237,7 +237,7 @@ The [EditControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Edit.Edi
 * XAML
 * SQL
 
-With the language support, [EditControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Edit.EditControl.html) enables users to create, open, modify, and save programming code from different file types. EditControl provides built-in syntax highlighting and outlining support for all supported languages, with SQL being an exception in outlining support. It also provides built-in IntelliSense support for all procedural languages such as C# and Visual Basic.
+With the language support, [EditControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Edit.EditControl.html) enables users to create, open, modify, and save programming code from different file types. Syntax Editor provides built-in syntax highlighting and outlining support for all supported languages, with SQL being an exception in outlining support. It also provides built-in IntelliSense support for all procedural languages such as C# and Visual Basic.
 
 The [DocumentLanguage](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Edit.EditControl.html#Syncfusion_Windows_Edit_EditControl_DocumentLanguage) property enables the user to select the language. `DocumentLanguage` is a [`Languages`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Edit.Languages.html) enum property with a default value of `Text`.
 

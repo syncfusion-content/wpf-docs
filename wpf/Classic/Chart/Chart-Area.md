@@ -99,7 +99,7 @@ Chart1.Areas.Add(area1);
 
 
 
-## Chart-Area in WPF Chart (Classic) Header
+## Chart-Area in WPF Classic Chart Header
 
 Chart enables you to add headers to the Chart Area object. Any element can be added as a Chart Area header by using the Header property of the ChartArea class.
 
@@ -219,9 +219,9 @@ Customize the chart header by using the following code.
 
 
 
-## Chart-Area in WPF Chart (Classic) Context Menu
+## Chart-Area in WPF Classic Chart Context Menu
 
-WPF Chart has a built-in context menu which can be enabled by setting the ChartArea.IsContextMenuEnabled property to _true_. This context menu lets you change the Chart Type of a series and Color Palettes, and enable Zooming.
+WPF Classic Chart has a built-in context menu which can be enabled by setting the ChartArea.IsContextMenuEnabled property to _true_. This context menu lets you change the Chart Type of a series and Color Palettes, and enable Zooming.
 
 ### Default Context Menu
 
@@ -491,7 +491,7 @@ To access the chart watermark demo:
 
 
 
-## Chart-Area in WPF Chart (Classic) Layout Customization
+## Chart-Area in WPF Classic Chart Layout Customization
 
 Upon adding multiple Chart Areas to Chart, you may want to customize the layout in which these multiple Chart Areas are rendered. You can do so by specifying a custom container for these Chart Areas through the AreasPanel property of the Chart control. Any container such as Grid, Stack Panel, Dock Panel, Canvas or Wrap Panel can be used.
 

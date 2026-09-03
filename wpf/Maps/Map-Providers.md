@@ -350,9 +350,9 @@ N>
 
 ## See also
 
-[How to show google map in WPF SfMap](https://support.syncfusion.com/kb/article/10441/how-to-show-google-map-in-wpf-map-sfmap)
+[How to show google map in WPF Map](https://support.syncfusion.com/kb/article/10441/how-to-show-google-map-in-wpf-map-sfmap)
 
-[How to view bing map using WPF SfMap](https://support.syncfusion.com/kb/article/9564/how-to-view-bing-map-using-wpf-map-control-sfmap)
+[How to view bing map using WPF Map](https://support.syncfusion.com/kb/article/9564/how-to-view-bing-map-using-wpf-map-control-sfmap)
 
 [How to customize the markers in maps](https://support.syncfusion.com/kb/article/6824/how-to-customize-the-markers-in-maps)
 

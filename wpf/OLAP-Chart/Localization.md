@@ -9,7 +9,7 @@ documentation: ug
 
 # Localization in WPF Olap Chart
 
-Localization is the key feature for providing software solutions targeted at global users. The OLAP chart allows users to localize the control to a specific locale and supports "resx" based localization.
+Localization is the key feature for providing software solutions targeted at global users. The WPF OLAP Chart allows users to localize the control to a specific locale and supports "resx" based localization.
 
 The following steps should be performed to localize the control.
 
@@ -18,13 +18,13 @@ The following steps should be performed to localize the control.
 * Tag inclusion into the project file.
 * Specifying the CurrentUICulture.
 
-### Translation
+## Translation
 
 The first step in localization is translating the strings that can be localized to the destination locale.
 
 N> Localization key field should be same for all locales. Do not translate it.
 
-### Resource file and file name conventions
+## Resource file and file name conventions
 
 After translating the strings that can be localized, perform the following in the application:
 
@@ -44,7 +44,7 @@ N> The resource file name should strictly be in the format "Syncfusion.OlapChart
    
 Copy and paste the translated locale to the resource file created in the earlier step.
 
-### Specifying the CurrentUICulture
+## Specifying the CurrentUICulture
 
 Now, you need to specify the CurrentUICulture of the application. You can specify the CurrentUICulture either from Application_Startup in App.xaml.cs or from the constructor in the main page. (If you are specifying the current culture on the main page, then make sure that it is assigned before the InitializeComponent method).
 
@@ -63,7 +63,7 @@ public MainWindow()
 
 ## RTL support
 
-RTL support for OLAP chart is used to display the content from right to left by setting the `FlowDirection` property to **RightToLeft**. The following code sample explains how to set this property.
+RTL support for WPF OLAP Chart is used to display the content from right to left by setting the `FlowDirection` property to **RightToLeft**. The following code sample explains how to set this property.
 
 {% tabs %}
 
@@ -91,7 +91,7 @@ Me.olapChart.FlowDirection = System.Windows.FlowDirection.RightToLeft
 
 {% endtabs %}
   
-![OlapChart displays the data from right to left](Localization_images/Localization_img3.png)
+![WPF OLAP Chart displays the data from right to left](Localization_images/Localization_img3.png)
   
 A sample demo is available at the following location.
 

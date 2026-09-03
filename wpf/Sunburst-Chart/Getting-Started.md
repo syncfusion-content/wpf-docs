@@ -20,7 +20,7 @@ This section explains the steps required to populate the Sunburst Chart with dat
 
 N> This window differs for the Visual Basic project.
 
-## Adding SfSunburstChart from Toolbox
+## Adding WPF Sunburst Chart from Toolbox
 
 Drag and drop the SfSunburstChart control from the Toolbox to your application,
 
@@ -28,7 +28,7 @@ Drag and drop the SfSunburstChart control from the Toolbox to your application,
 
 Now the Syncfusion.SfSunburstChart.WPF reference is added to the application references and the namespace code is generated in MainWindow.xaml as below.
 
-![Project Solution Window contains SfSunburstChart reference](Getting-Started_images/gettingstarted3.png)
+![Project Solution Window contains WPF Sunburst Chart reference](Getting-Started_images/gettingstarted3.png)
 
 ![Added namespace for SfSunburstChart control in MainWindow](Getting-Started_images/gettingstarted4.png)
 
@@ -646,7 +646,7 @@ this.Content = sunburst;
 
 The following is a final output screenshot.
 
-![SfSunburstChart with data label and legend](Getting-Started_images/gettingstarted5.png)
+![WPF Sunburst Chart with data label and legend](Getting-Started_images/gettingstarted5.png)
 
 You can find the complete getting started sample from this [link](https://github.com/SyncfusionExamples/GettingStarted-WPF-SunburstChart).
 
@@ -658,4 +658,4 @@ The Sunburst Chart supports various built-in themes. Refer to the below links to
 	
   * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
 
-  ![Setting theme to WPF SfSunburstChart](Getting-Started_images/Theme.jpg)
+  ![Setting theme to WPF Sunburst Chart](Getting-Started_images/Theme.jpg)

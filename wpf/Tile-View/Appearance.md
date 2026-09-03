@@ -7,9 +7,9 @@ control: TileViewControl
 documentation: ug
 ---
 
-# Appearance in WPF TileView
+# Appearance in WPF Tile View Control
 
-This section explains different styling, theming options available in [TileViewControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.TileViewControl.html) control.
+This section explains different styling, theming options available in [WPF Tile View Control](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.TileViewControl.html).
 
 ## Setting the foreground
 
@@ -119,7 +119,7 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-
 
 ## Change flow direction
 
-You can change the flow direction of the `TileViewControl` layout from right to left by setting the `TileViewControl.FlowDirection` property value as `RightToLeft`. The default value of `TileViewControl.FlowDirection` property is `LeftToRight`.
+You can change the flow direction of the `WPF Tile View Control` layout from right to left by setting the `TileViewControl.FlowDirection` property value as `RightToLeft`. The default value of `TileViewControl.FlowDirection` property is `LeftToRight`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -182,7 +182,7 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-
 
 ## Theme
 
-TileViewControl supports various built-in themes. Refer to the below links to apply themes for the TileViewControl,
+The WPF Tile View Control supports various built-in themes. Refer to the links below to apply themes,
 
   * [Apply theme using SfSkinManager](https://help.syncfusion.com/wpf/themes/skin-manager)
 	

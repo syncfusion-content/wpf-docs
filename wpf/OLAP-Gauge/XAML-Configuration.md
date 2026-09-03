@@ -9,7 +9,7 @@ documentation: ug
 
 # XAML Configuration in WPF OLAP Gauge
 
-XAML configuration is an important feature of the OLAP gauge because it allows users to configure the control entirely in XAML, eliminating the need for code-behind.
+XAML configuration is an important feature of the WPF OLAP Gauge because it allows users to configure the control entirely in XAML, eliminating the need for code-behind.
 
 ## Properties
 
@@ -24,7 +24,7 @@ XAML configuration is an important feature of the OLAP gauge because it allows u
 * **SlicerAxis**: Specifies the slicer axis of the OLAP report.
 * **CalculatedMembers**: Specifies the calculated members of the OLAP report.
 
-The following code snippet illustrates how to add an OLAP report to the OLAP gauge at design time.
+The following code snippet illustrates how to add an OLAP report to the WPF OLAP Gauge at design time.
 
 {% tabs %}
 

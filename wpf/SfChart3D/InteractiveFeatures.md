@@ -9,11 +9,11 @@ documentation: ug
 
 # Interactive Features in WPF 3D Chart
 
-3D charts provide interactive features such as dynamic rotation, segment selection, and dynamic segment explode for circular series.
+WPF 3D Charts provide interactive features such as dynamic rotation, segment selection, and dynamic segment explode for circular series.
 
 ## Dynamic rotation
 
-3D charts allow you to view the best possible view of data dynamically using a mouse or touch device. To enable dynamic rotation, set the [`EnableRotation`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SfChart3D.html#Syncfusion_UI_Xaml_Charts_SfChart3D_EnableRotation) property to true.
+WPF 3D Charts allow you to view the best possible view of data dynamically using a mouse or touch device. To enable dynamic rotation, set the [`EnableRotation`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SfChart3D.html#Syncfusion_UI_Xaml_Charts_SfChart3D_EnableRotation) property to true.
 
 The following code example illustrates how to enable the dynamic rotation:
 
@@ -94,7 +94,7 @@ The following screenshot illustrates the result of the above code example.
 
 Series selection support is used to highlight the series programmatically or by user interaction. You can also get the series SelectedIndex and PreviousSelectedIndex values in the SelectionChanged event arguments. 
 
-The following code example can be used to set series selection in SfChart3D.
+The following code example can be used to set series selection in WPF 3D Chart.
 
 {% tabs %}
 
@@ -170,7 +170,7 @@ chart3D.Series.Add(series1);
 
 {% endtabs %}
 
-The following screenshot is an example of a SfChart3D with series selection.
+The following screenshot is an example of a WPF 3D Chart with series selection.
 
 ![Series selection support in WPF 3D Chart](3D-Charts_images/Interaction/SeriesSelection.png)
 

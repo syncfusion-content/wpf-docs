@@ -9,7 +9,7 @@ documentation: ug
 
 # Chart Types in WPF Olap Chart
 
-The OLAP chart supports the following 16 types of charts:
+The WPF OLAP Chart supports the following 16 types of charts:
 
 * Column
 * Stacking column

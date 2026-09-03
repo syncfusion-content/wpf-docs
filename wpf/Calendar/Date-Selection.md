@@ -60,7 +60,7 @@ this.calendarEdit.Date = new DateTime(2020, 08, 25);
 {% endhighlight %}
 {% endtabs %}
 
-![Date selected programmatically from the CalendarEdit](Getting-Started_images/Date_programmatically.png)
+![Date selected programmatically from the WPF Calendar](Getting-Started_images/Date_programmatically.png)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusin-wpf-calendar-examples/tree/master/Samples/Select-Date)
 
@@ -87,7 +87,7 @@ this.calendarEdit.AllowMultiplySelection = true;
 {% endhighlight %}
 {% endtabs %}
 
-![CalendarEdit control displaying multiple selected dates](Getting-Started_images/wpf-calendar-control-multiple-date-selection.png)
+![WPF Calendar control displaying multiple selected dates](Getting-Started_images/wpf-calendar-control-multiple-date-selection.png)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusin-wpf-calendar-examples/tree/master/Samples/Select-Date)
 
@@ -149,7 +149,7 @@ this.calendarEdit.SelectedDatesList.Add(new Date(2020, 08, 29));
 {% endhighlight %}
 {% endtabs %}
 
-![Multiple dates selected programmatically from the CalendarEdit](Getting-Started_images/MultipleDate_programmatically.png)
+![Multiple dates selected programmatically from the WPF Calendar](Getting-Started_images/MultipleDate_programmatically.png)
 
 ## Select multiple dates using key navigation
 
@@ -176,7 +176,7 @@ this.calendarEdit.AllowMultiplySelection = true;
 {% endhighlight %}
 {% endtabs %}
 
-![Multiple dates selected by key navigation in CalendarEdit](Working-with-Calendar_images/Multipledates_keynavigation.png)
+![Multiple dates selected by key navigation in WPF Calendar](Working-with-Calendar_images/Multipledates_keynavigation.png)
 
 ### Select specific multiple dates using key navigation
 
@@ -205,7 +205,7 @@ this.calendarEdit.AllowMultiplySelection = true;
 {% endhighlight %}
 {% endtabs %}
 
-![CalendarEdit control displaying specifically selected multiple dates](Getting-Started_images/multiple-date-selection_keys.png)
+![WPF Calendar control displaying specifically selected multiple dates](Getting-Started_images/multiple-date-selection_keys.png)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusin-wpf-calendar-examples/tree/master/Samples/Select-Date)
 
@@ -241,7 +241,7 @@ this.calendarEdit.SelectionBorderBrush = Brushes.Red;
 {% endhighlight %}
 {% endtabs %}
 
-![Selected date background and foreground changed in CalendarEdit](Working-with-Calendar_images/SelectionCustomUI.png)
+![Selected date background and foreground changed in WPF Calendar](Working-with-Calendar_images/SelectionCustomUI.png)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusin-wpf-calendar-examples/tree/master/Samples/Select-Date)
 
@@ -439,7 +439,7 @@ this.calendarEdit.VisualMode = CalendarVisualMode.WeekNumbers;
 {% endhighlight %}
 {% endtabs %}
 
-![Week number cells background and foreground changed in CalendarEdit](Working-with-Calendar_images/WeekNumberCustomUI.png)
+![Week number cells background and foreground changed in WPF Calendar](Working-with-Calendar_images/WeekNumberCustomUI.png)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusin-wpf-calendar-examples/tree/master/Samples/Select-Date)
 
@@ -563,7 +563,7 @@ this.calendarEdit.ShowAbbreviatedMonthNames = false;
 {% endhighlight %}
 {% endtabs %}
 
-![CalendarEdit shows full month and week name](Getting-Started_images/FullDayNames.png)
+![WPF Calendar shows full month and week name](Getting-Started_images/FullDayNames.png)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusin-wpf-calendar-examples/tree/master/Samples/Select-Date)
 

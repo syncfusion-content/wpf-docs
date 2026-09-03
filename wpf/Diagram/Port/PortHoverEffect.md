@@ -37,4 +37,4 @@ diagram.PortHoverEffect = PortHoverEffect.Ripple;
 | None | Connection animation effect does not appear. |
 
 ## See Also
-[How to change the PortHover effect color in the WPF Diagram?](https://support.syncfusion.com/kb/article/17720/how-to-change-the-porthover-effect-color-in-the-wpf-diagram)
+[How to change the PortHover effect color in the WPF SfDiagram?](https://support.syncfusion.com/kb/article/17720/how-to-change-the-porthover-effect-color-in-the-wpf-diagram)

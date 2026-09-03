@@ -1,17 +1,17 @@
 ---
 layout: post
-title: Populating Items in WPF SfTreeNavigator | Syncfusion®
-description: Populating Items in WPF SfTreeNavigator enables adding, binding, and displaying hierarchical data for structured navigation scenarios.
+title: Populating Items in WPF Tree Navigator | Syncfusion®
+description: Populating Items in WPF Tree Navigator enables adding, binding, and displaying hierarchical data for structured navigation scenarios.
 platform: wpf
 control: SfTreeNavigator 
 documentation: ug
 ---
 
-# Populating Items in WPF SfTreeNavigator
+# Populating Items in WPF Tree Navigator
 
 ## Items source 
 
-[Tree Navigator items](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Navigation.SfTreeNavigatorItem.html) can be populated with the business object collection. Let us create a [Tree Navigator](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Navigation.SfTreeNavigator.html) which will show the list of Syncfusion Enterprise Toolkit products.  
+[Tree Navigator items](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Navigation.SfTreeNavigatorItem.html) can be populated with the business object collection. Let us create a [SfTreeNavigator](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Navigation.SfTreeNavigator.html) control which will show the list of Syncfusion Enterprise Toolkit products.  
 
 Create a Model class with the necessary properties. 
 
@@ -78,7 +78,7 @@ public class TreeViewModel
 {% endhighlight %}
 {% endtabs %}
 
- Bind the Models collection to the ItemsSource property of the [Tree Navigator](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Navigation.SfTreeNavigator.html) control as follows. 
+ Bind the Models collection to the ItemsSource property of the [SfTreeNavigator](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Navigation.SfTreeNavigator.html) control as follows. 
 
 {% tabs %}
 {% highlight xaml %}
@@ -92,13 +92,13 @@ public class TreeViewModel
 {% endhighlight %}
 {% endtabs %}
 
- This will populate the [Tree Navigator](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Navigation.SfTreeNavigator.html) as shown below. 
+ This will populate the [SfTreeNavigator](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Navigation.SfTreeNavigator.html) control as shown below. 
 
 ![WPF Tree Navigator Items source](Populating-Items_images/Populating-Items_img1.png)
 
 ## Item template 
 
-ItemTemplate property of the [Tree Navigator](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Navigation.SfTreeNavigator.html) can be used to customize the display of business objects. 
+ItemTemplate property of the [SfTreeNavigator](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Navigation.SfTreeNavigator.html) can be used to customize the display of business objects. 
 
 {% tabs %}
 {% highlight xaml %}
@@ -122,11 +122,11 @@ ItemTemplate property of the [Tree Navigator](https://help.syncfusion.com/cr/wpf
 {% endhighlight %}
 {% endtabs %}
 
-This will populate the [Tree Navigator](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Navigation.SfTreeNavigator.html) as follows.
+This will populate the [SfTreeNavigator](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Navigation.SfTreeNavigator.html) control as follows.
 
 ![WPF Tree Navigator Item template](Populating-Items_images/Populating-Items_img2.png)
 
 ## See Also
 
-[How to enable/disable menu items in WPF SfTreeNavigator using MVVM?](https://www.syncfusion.com/forums/153051/enable-disable-items-in-sftreenavigator)
+[How to enable/disable menu items in WPF Tree Navigator using MVVM?](https://www.syncfusion.com/forums/153051/enable-disable-items-in-sftreenavigator)
 

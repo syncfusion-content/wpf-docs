@@ -34,7 +34,7 @@ We can change the foreground of the `SfTimePicker` by using the `Foreground` pro
 
 {% endhighlight  %}
 
-![SfTimePicker with various foreground](Features_images/Foreground.png)
+![WPF TimePicker with various foreground](Features_images/Foreground.png)
 
 ## Setting the Background
 
@@ -59,7 +59,7 @@ We can change the background of the `SfTimePicker` by using the `Background` pro
 
 {% endhighlight  %}
 
-![SfTimePicker with various background](Features_images/Background.png)
+![WPF TimePicker with various background](Features_images/Background.png)
 
 ## Change flow direction
 
@@ -85,7 +85,7 @@ sfTimePicker.FlowDirection = FlowDirection.RightToLeft;
 {% endhighlight %}
 {% endtabs %}
 
-![SfTimePicker with RightToLeft flow direction](Features_images/Appearance-flowdirection.png)
+![WPF TimePicker with RightToLeft flow direction](Features_images/Appearance-flowdirection.png)
 
 Click [here](https://github.com/SyncfusionExamples/wpf-time-picker-examples/tree/master/Samples/Apperance) to download the sample that showcases the different UI customization and styling supports.
 
