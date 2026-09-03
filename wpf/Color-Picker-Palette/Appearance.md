@@ -7,13 +7,13 @@ control: ColorPickerPalette
 documentation: ug
 ---
 
-# Appearance in WPF ColorPickerPalette
+# Appearance in WPF Color Picker Palette
 
-This section explains different UI customization, styling, theming options available in [ColorPickerPalette](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ColorPickerPalette.html) control.
+This section explains different UI customization, styling, theming options available in [WPF Color Picker Palette](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ColorPickerPalette.html) control.
 
 ## Change flow direction
 
-You can change the flow direction of the `ColorPickerPalette` layout to right-to-left by setting the `FlowDirection` property to `RightToLeft`. The default value of `FlowDirection` is `LeftToRight`.
+You can change the flow direction of the `WPF Color Picker Palette` layout to right-to-left by setting the `FlowDirection` property to `RightToLeft`. The default value of `FlowDirection` is `LeftToRight`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -39,7 +39,7 @@ colorPickerPalette.Height = 40;
 
 ## Theme
 
-ColorPickerPalette supports various built-in themes. Refer to the below links to apply themes for the ColorPickerPalette,
+The WPF Color Picker Palette supports various built-in themes. Refer to the links below to apply themes,
 
   * [Apply theme using SfSkinManager](https://help.syncfusion.com/wpf/themes/skin-manager)
 	
