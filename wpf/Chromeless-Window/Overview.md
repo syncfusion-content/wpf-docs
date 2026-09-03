@@ -3,7 +3,7 @@ layout: post
 title: About Syncfusion® WPF Chromeless Window Control | Syncfusion®
 description: Learn about the introduction of Syncfusion® Essential Studio WPF Chromeless Window control and more details.
 platform: wpf
-control: ChromelessWindow
+control: Chromeless Window
 documentation: ug
 ---
 # About Syncfusion® WPF Chromeless Window Control

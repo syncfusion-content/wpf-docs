@@ -3,7 +3,7 @@ layout: post
 title: Getting Started with WPF ToolBar | Syncfusion®
 description: Learn how to get started with the Syncfusion® WPF ToolBar control. Explore setup, elements, features, examples, and customization options.
 platform: wpf
-control: ToolBarAdv
+control: ToolBar
 documentation: ug
 ---
 

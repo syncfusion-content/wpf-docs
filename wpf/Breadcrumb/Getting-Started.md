@@ -11,7 +11,7 @@ documentation: ug
 
 ## Assembly deployment
 
-Refer to the [Control Dependencies](https://help.syncfusion.com/wpf/control-dependencies#hierarchynavigator) section for the list of assemblies and NuGet packages required to use the BreadCrumb (Hierarchynavigator) control in a WPF application.
+Refer to the [Control Dependencies](https://help.syncfusion.com/wpf/control-dependencies#hierarchynavigator) section for the list of assemblies and NuGet packages required to use the BreadCrumb (HierarchyNavigator) control in a WPF application.
 
 For more information about installing NuGet packages in a WPF application, refer to the following article:
 
@@ -19,11 +19,11 @@ For more information about installing NuGet packages in a WPF application, refer
 
 ## Create a simple application
 
-Follow these steps to create a WPF application that uses the `Hierarchynavigator` control.
+Follow these steps to create a WPF application that uses the `HierarchyNavigator` control.
 
 ## Create a project
 
-Create a new WPF project in Visual Studio to use the `Hierarchynavigator` control and explore its features.
+Create a new WPF project in Visual Studio to use the `HierarchyNavigator` control and explore its features.
 
 1. Open Visual Studio and click **File → New → Project**.
 2. Select **WPF App (.NET)** (or **WPF App (.NET Framework)**) and click **Next**.
