@@ -1,7 +1,7 @@
-﻿---
+---
 layout: post
 title: Appearance in WPF GridSplitter | Syncfusion®
-description: Customize the appearance of GridSplitter (SfGridSplitter) with background styling, preview customization, themes, and visual enhancements.
+description: Customize the appearance of WPF GridSplitter (SfGridSplitter) with background styling, preview customization, themes, and visual enhancements.
 platform: wpf
 control: SfGridSplitter
 documentation: ug
@@ -9,11 +9,11 @@ documentation: ug
 
 # Appearance in WPF GridSplitter (SfGridSplitter)
 
-This section explains different UI customization and styling support available in [SfGridSplitter](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfGridSplitter.html) control.
+This section explains the UI customization and styling options available in the [WPF GridSplitter](https://www.syncfusion.com/wpf-controls/gridsplitter) control. The WPF GridSplitter is implemented through the [SfGridSplitter](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfGridSplitter.html) class.
 
 ## Setting the Background
 
-We can change the background color of `SfGridSplitter` by setting the `Background` property. The default color value of `Background` property is `Light Gray`.
+You can change the background color of the `SfGridSplitter` by setting the `Background` property. The default value of the `Background` property is `Light Gray`.
 
 {% tabs %}
 {% highlight XAML %}
@@ -53,13 +53,13 @@ We can change the background color of `SfGridSplitter` by setting the `Backgroun
 {% endhighlight %}
 {% endtabs %}
 
-![SfGridSplitter with green background](Positioning-GridSplitter-images/Background.png)
+![WPF GridSplitter with green background](Positioning-GridSplitter-images/Background.png)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-gridsplitter-control-examples/tree/master/Samples/Appearance) 
 
 ### Custom drag preview
 
-We can change the custom UI of the preview grid splitter by using the [SfGridSplitter.PreviewStyle](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfGridSplitter.html) property. We can see the effect of `PreviewStyle` only on when `ShowsPreview` property value is `true`.
+You can customize the preview UI of the WPF GridSplitter by using the [SfGridSplitter.PreviewStyle](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfGridSplitter.html) property. The `PreviewStyle` property takes effect only when the `ShowsPreview` property is set to `true`.
 
 {% tabs %}
 {% highlight XAML %}
@@ -113,16 +113,16 @@ We can change the custom UI of the preview grid splitter by using the [SfGridSpl
 {% endhighlight %}
 {% endtabs %}
 
-![SfGridSplitter with ellipse shape preview grid splitter](Positioning-GridSplitter-images/PreviewStyle.gif)
+![WPF GridSplitter with ellipse shape preview GridSplitter](Positioning-GridSplitter-images/PreviewStyle.gif)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-gridsplitter-control-examples/tree/master/Samples/Appearance) 
 
 ## Theme
 
-SfGridSplitter supports various built-in themes. Refer to the below links to apply themes for the SfGridSplitter,
+The WPF GridSplitter supports various built-in themes. Refer to the following links to apply themes to the control:
 
   * [Apply theme using SfSkinManager](https://help.syncfusion.com/wpf/themes/skin-manager)
 	
   * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
 
-  ![Setting theme to WPF SfGridSplitter](Getting-Started-images/WPF-Grid-Splitter-theme-support.png)
+  ![Setting theme to WPF GridSplitter](Getting-Started-images/WPF-Grid-Splitter-theme-support.png)

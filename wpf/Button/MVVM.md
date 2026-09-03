@@ -1,7 +1,7 @@
 ---
 layout: post
 title: MVVM in WPF Button | Syncfusion®
-description: MVVM support in Button (ButtonAdv) enables seamless integration with commands, bindings, and view models.
+description: MVVM support in WPF Button (ButtonAdv) enables seamless integration with commands, bindings, and view models.
 platform: wpf
 control: ButtonAdv
 documentation: ug
@@ -9,10 +9,10 @@ documentation: ug
 
 # MVVM in WPF Button (ButtonAdv)
 
-The command and command parameter properties allow to execute any action on clicking the button control.
+The [WPF Button](https://www.syncfusion.com/wpf-controls/button) control supports command and command parameter properties that allow you to execute an action when it is clicked. The WPF Button is implemented through the [ButtonAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ButtonAdv.html) class.
 
-* **Command** - The [Command](https://learn.microsoft.com/en-us/dotnet/api/system.windows.input.icommandsource.command?view=netframework-4.8) property accept all commands derived from interface [ICommand](https://learn.microsoft.com/en-us/dotnet/api/system.windows.input.icommand?view=netframework-4.8). 
-* **CommandParameter** - The [CommandParameter](https://learn.microsoft.com/en-us/dotnet/api/system.windows.input.icommandsource.commandparameter?view=netframework-4.8) property allows the user to provide additional data required in the command handler in-order to perform any operation. 
+* **Command** - The [Command](https://learn.microsoft.com/en-us/dotnet/api/system.windows.input.icommandsource.command?view=netframework-4.8) property accepts all commands derived from the [ICommand](https://learn.microsoft.com/en-us/dotnet/api/system.windows.input.icommand?view=netframework-4.8) interface.
+* **CommandParameter** - The [CommandParameter](https://learn.microsoft.com/en-us/dotnet/api/system.windows.input.icommandsource.commandparameter?view=netframework-4.8) property allows the user to provide additional data required by the command handler to perform an operation.
 
 {% tabs %}
 {% highlight xaml %}
@@ -168,4 +168,4 @@ public class ButtonViewModel : NotificationObject
 {% endhighlight %}
 {% endtabs %}
 
-N> View [sample](https://github.com/SyncfusionExamples/wpf-button-examples/blob/master/Samples/MVVM) in GitHub. This sample showcases how to bind commands to the `ButtonAdv` control.
+N> View [sample](https://github.com/SyncfusionExamples/wpf-button-examples/blob/master/Samples/MVVM) in GitHub. This sample showcases how to bind commands to the WPF Button control.
