@@ -19,7 +19,7 @@ SfDataPager supports the following UIAutomation,
 
 SfDataPager supports CodedUITest automation that helps you to create an automation test with SfDataPager elements and record the sequence of actions.
 
-There are three levels of support in CodedUITest for SfDataPager
+There are three levels of support in CodedUITest for the control.
 
 ![Features_images25](Features_images/Features_img25.png)
 
@@ -49,7 +49,7 @@ CodedUITest Builder generates code from the recorded session and you need to imp
 
 To know more about CodedUITest, refer to the [link](http://help.syncfusion.com/wpf/sfdatagrid/ui-automation#coded-ui-test).
 
-The following screenshot displays the SfDataPager properties when you drag the crosshair to the SfDataPager
+The following screenshot displays the SfDataPager properties when you drag the crosshair to the control
 
 ![Features_images26](Features_images/Features_img26.png)
 
@@ -75,7 +75,7 @@ SfDataPager</td><td>
 SfDataPager supports QTP test. You can record the actions performed in the control by the corresponding method name 
 with Syncfusion<sup>®</sup> namespace. To know more about QTP test, refer to the [link](http://help.syncfusion.com/wpf/sfdatagrid/ui-automation#quick-test-professional-qtp)
 
-The following screenshot displays the QTP Test for SfDataPager
+The following screenshot displays the QTP Test for the control.
 
 ![Features_images27](Features_images/Features_img27.png)
 
