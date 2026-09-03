@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started with WPF Button (ButtonAdv)
 
-This section provides an overview of how to work with [WPF Button](https://www.syncfusion.com/wpf-controls/button) control. It describes the control structure, the control initialization  and the image setting to the control.
+This section provides an overview of how to work with the [WPF Button](https://www.syncfusion.com/wpf-controls/button) control. It describes the control structure, initialization, and image settings. The WPF Button is implemented through the `ButtonAdv` class.
 
 ## Control structure
 
@@ -17,11 +17,11 @@ This section provides an overview of how to work with [WPF Button](https://www.s
 
 ## Assembly deployment
 
-Refer [WPF Button](https://help.syncfusion.com/wpf/control-dependencies#buttonadv) control dependencies section to get the list of assemblies or [NuGet package](https://help.syncfusion.com/wpf/installation/install-nuget-packages) needs to be added as reference to use the ButtonAdv control in any application.
+Refer to the [WPF Button](https://help.syncfusion.com/wpf/control-dependencies#buttonadv) control dependencies section for the list of assemblies or the [NuGet package](https://help.syncfusion.com/wpf/installation/install-nuget-packages) that needs to be added as a reference to use the ButtonAdv control in an application.
 
 ## Creating simple application with WPF Button
 
-In this walk through, will create WPF application that contains WPF Button control. By the following ways, one can add the controls:
+In this walkthrough, you will create a WPF application that contains the WPF Button control. You can add the control in the following ways:
 
 1. [Adding control via designer](#adding-control-via-designer)
 
@@ -31,7 +31,7 @@ In this walk through, will create WPF application that contains WPF Button contr
 
 ### Adding control via designer
 
-WPF Button control can be added to the application by dragging **ButtonAdv** from toolbox and dropping it in designer view. After dropping the control in designer view, the assembly **Syncfusion.Shared.WPF** gets added into the project automatically. The following code snippets will also be added into the XAML.
+You can add the WPF Button control to the application by dragging **ButtonAdv** from the toolbox and dropping it in the designer view. After you drop the control in the designer view, the **Syncfusion.Shared.WPF** assembly is added to the project automatically. The following code snippets are also added to the XAML.
 
 {% tabs %}
 {% highlight xaml %}
@@ -47,9 +47,9 @@ N> **syncfusion** in XAML is an auto generated namespace.
 
 ### Adding control manually in XAML
 
-In order to add the control manually in XAML, follow the below steps.
+To add the control manually in XAML, follow these steps.
 
-1. Add the below required assembly reference to the project.
+1. Add the following required assembly reference to the project.
 
     * Syncfusion.Shared.WPF
 
@@ -80,9 +80,9 @@ In order to add the control manually in XAML, follow the below steps.
 
 ### Adding control manually in C#
 
-In order to the add control manually in C#, do the below steps.
+To add the control manually in C#, follow these steps.
 
-1. Add the below required assembly reference to the project.
+1. Add the following required assembly reference to the project.
 
     * Syncfusion.Shared.WPF
 
@@ -133,7 +133,7 @@ using Syncfusion.Windows.Tools.Controls;
 
 ## Setting label
 
-The label on the WPF Button is a text that explains its action to the end-user. Apply the text by using the [Label](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ButtonAdv.html#Syncfusion_Windows_Tools_Controls_ButtonAdv_Label) property.
+The label on the WPF Button is text that explains its action to the end user. Set the text by using the [Label](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ButtonAdv.html#Syncfusion_Windows_Tools_Controls_ButtonAdv_Label) property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -155,7 +155,7 @@ button.SmallIcon = new BitmapImage(new Uri("image/usersmall.png" , UriKind.Relat
 
 ## Setting size mode
 
-Size mode is used to render WPF Button control in different pre-defined sizes based on application demand. Apply the size mode by setting the [SizeMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ButtonAdv.html#Syncfusion_Windows_Tools_Controls_ButtonAdv_SizeMode) property.
+Size mode renders the WPF Button control in different predefined sizes based on application requirements. Set the size mode by using the [SizeMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ButtonAdv.html#Syncfusion_Windows_Tools_Controls_ButtonAdv_SizeMode) property.
 
  The **SizeMode** is an enumeration which contains the following values:
 
@@ -187,7 +187,7 @@ button.SmallIcon = new BitmapImage(new Uri("image/usersmall.png", UriKind.Relati
 
 ### Normal mode
 
-In a normal size WPF Button, a small image with the text on the side will be displayed.
+In a normal-size WPF Button, a small image is displayed beside the text.
 
 {% tabs %}
 {% highlight xaml %}
@@ -209,7 +209,7 @@ button.SmallIcon = new BitmapImage(new Uri("image/usersmall.png", UriKind.Relati
 
 ### Large mode
 
-In a large size WPF Button, a large image along with the text at the bottom will be displayed.
+In a large-size WPF Button, a large image is displayed above the text.
 
 {% tabs %}
 {% highlight xaml %}
@@ -231,7 +231,7 @@ button.LargeIcon = new BitmapImage(new Uri("image/userlarge.png", UriKind.Relati
 
 ## Setting icon template
 
-The [IconTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ButtonAdv.html#Syncfusion_Windows_Tools_Controls_ButtonAdv_IconTemplate) property provides support for setting up any type of image such as path data, font icons, etc. to the ButtonAdv. The icon will automatically resize the template content according to its size provided in the data template.
+The [IconTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ButtonAdv.html#Syncfusion_Windows_Tools_Controls_ButtonAdv_IconTemplate) property supports image content such as path data and font icons in the ButtonAdv control. The icon automatically resizes the template content according to the size provided in the data template.
 
 {% tabs %}
 
@@ -299,7 +299,7 @@ The [IconTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.C
 
 ## Setting icon template selector
 
- The [IconTemplateSelector](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ButtonAdv.html#Syncfusion_Windows_Tools_Controls_ButtonAdv_IconTemplateSelector) property that allows you to specify a different data template based on the value given in the data templates.
+The [IconTemplateSelector](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ButtonAdv.html#Syncfusion_Windows_Tools_Controls_ButtonAdv_IconTemplateSelector) property allows you to specify a different data template based on the value given in the data templates.
 
  {% tabs %}
 
@@ -412,12 +412,12 @@ The [IconTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.C
 
 ## Setting image
 
-The image option helps to provide pictorial representation of the WPF Button. Image can be added either using the [SmallIcon](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ButtonAdv.html#Syncfusion_Windows_Tools_Controls_ButtonAdv_SmallIcon) property or [LargeIcon](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ButtonAdv.html#Syncfusion_Windows_Tools_Controls_ButtonAdv_LargeIcon) property.
+The image option provides a pictorial representation of the WPF Button. You can add an image by using either the [SmallIcon](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ButtonAdv.html#Syncfusion_Windows_Tools_Controls_ButtonAdv_SmallIcon) property or the [LargeIcon](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ButtonAdv.html#Syncfusion_Windows_Tools_Controls_ButtonAdv_LargeIcon) property.
 
 **SmallIcon** — This property will be used to set the image when size mode is **Normal** or **Small**.
 **LargeIcon** — This property will be used to set the image when size mode is **Large**.
 
-The **SmallIcon** property can be set as follows:
+You can set the **SmallIcon** property as follows:
 
 {% tabs %}
 {% highlight xaml %}
@@ -456,7 +456,7 @@ button.SmallIcon = new BitmapImage(new Uri("image/syncfusion.png", UriKind.Relat
 
 ![Normal-Image](Getting-Started_images/Getting-Started_img7.png)
 
-The **LargeIcon** property can be set as follows:
+You can set the **LargeIcon** property as follows:
 
 {% tabs %}
 {% highlight xaml %}
@@ -522,7 +522,7 @@ N> View [sample](https://github.com/SyncfusionExamples/wpf-button-examples/blob/
 
 ## Setting corner radius
 
-The `CornerRadius` property allows users to easily customize the appearance of buttons to have rounded corners. The default value of corner radius is 3.
+The `CornerRadius` property allows users to customize the appearance of buttons with rounded corners. The default value of the `CornerRadius` property is `3`.
 
 {% tabs %}
 
@@ -549,7 +549,7 @@ button.SmallIcon = new BitmapImage(new Uri("image/syncfusion.png", UriKind.Relat
 
 ## IsDefault mode
 
-The [IsDefault](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ButtonAdv.html#Syncfusion_Windows_Tools_Controls_ButtonAdv_IsDefault) property indicates whether the WPF Button is a Default Button and is used to activate the Button by pressing using Enter key. When setting the IsDefault property to true, the user can invoke the Button by pressing the `Enter` key. 
+The [IsDefault](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ButtonAdv.html#Syncfusion_Windows_Tools_Controls_ButtonAdv_IsDefault) property indicates whether the WPF Button is a default button that can be activated by pressing the Enter key. When you set the `IsDefault` property to `true`, the user can invoke the Button by pressing the `Enter` key.
 
 {% tabs %}
 
@@ -563,7 +563,7 @@ The [IsDefault](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Cont
 
 ## IsCancel mode
 
-The [IsCancel](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ButtonAdv.html#Syncfusion_Windows_Tools_Controls_ButtonAdv_IsCancel) property indicates whether the WPF Button is a Cancel Button and is used to activate the Button by using Escape key. When setting the IsCancel property to true, the user can invoke the Button by pressing the `Escape` key. 
+The [IsCancel](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ButtonAdv.html#Syncfusion_Windows_Tools_Controls_ButtonAdv_IsCancel) property indicates whether the WPF Button is a cancel button that can be activated by pressing the Escape key. When you set the `IsCancel` property to `true`, the user can invoke the Button by pressing the `Escape` key.
 
 {% tabs %}
 
@@ -577,7 +577,7 @@ The [IsCancel](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Contr
 
 ## Theme
 
-WPF Button supports various built-in themes. Refer to the below links to apply themes for the Button,
+The WPF Button supports various built-in themes. Refer to the following links to apply themes to the Button:
 
   * [Apply theme using SfSkinManager](https://help.syncfusion.com/wpf/themes/skin-manager)
 	

@@ -9,7 +9,7 @@ documentation: ug
 
 # Themes in WPF Button (ButtonAdv)
 
-The WPF Button supports various built-in themes. Refer to the below links to apply themes for the WPF Button,
+The [WPF Button](https://www.syncfusion.com/wpf-controls/button) control supports various built-in themes. The WPF Button is implemented through the `ButtonAdv` class. Refer to the following links to apply themes to the WPF Button:
 
   * [Apply theme using SfSkinManager](https://help.syncfusion.com/wpf/themes/skin-manager)
 	

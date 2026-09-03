@@ -9,11 +9,11 @@ documentation: ug
 
 # Appearance in WPF GridSplitter (SfGridSplitter)
 
-This section explains different UI customization and styling support available in [WPF GridSplitter](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfGridSplitter.html) control.
+This section explains the UI customization and styling options available in the [WPF GridSplitter](https://www.syncfusion.com/wpf-controls/gridsplitter) control. The WPF GridSplitter is implemented through the `SfGridSplitter` class. For API reference, see the [WPF GridSplitter](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfGridSplitter.html) class.
 
 ## Setting the Background
 
-We can change the background color of `WPF GridSplitter` by setting the `Background` property. The default color value of `Background` property is `Light Gray`.
+You can change the background color of the `SfGridSplitter` by setting the `Background` property. The default value of the `Background` property is `Light Gray`.
 
 {% tabs %}
 {% highlight XAML %}
@@ -59,7 +59,7 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-grid
 
 ### Custom drag preview
 
-We can change the custom UI of the preview WPF GridSplitter by using the [SfGridSplitter.PreviewStyle](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfGridSplitter.html) property. We can see the effect of `PreviewStyle` only on when `ShowsPreview` property value is `true`.
+You can customize the preview UI of the WPF GridSplitter by using the [SfGridSplitter.PreviewStyle](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfGridSplitter.html) property. The `PreviewStyle` property takes effect only when the `ShowsPreview` property is set to `true`.
 
 {% tabs %}
 {% highlight XAML %}
@@ -119,7 +119,7 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-grid
 
 ## Theme
 
-The WPF GridSplitter supports various built-in themes. Refer to the below links to apply themes for the WPF GridSplitter,
+The WPF GridSplitter supports various built-in themes. Refer to the following links to apply themes to the WPF GridSplitter:
 
   * [Apply theme using SfSkinManager](https://help.syncfusion.com/wpf/themes/skin-manager)
 	

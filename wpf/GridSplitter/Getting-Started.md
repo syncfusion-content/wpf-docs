@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started with WPF GridSplitter (SfGridSplitter)
 
-This section explains how to create a [WPF GridSplitter](https://www.syncfusion.com/wpf-controls/gridsplitter) (WPF GridSplitter) and explains about its structure.
+This section explains how to create a [WPF GridSplitter](https://www.syncfusion.com/wpf-controls/gridsplitter) and describes its structure. The WPF GridSplitter is implemented through the `SfGridSplitter` class.
 
 ## Structure of WPF GridSplitter
 
@@ -21,9 +21,9 @@ This section explains how to create a [WPF GridSplitter](https://www.syncfusion.
 
 ## Assembly deployment
 
-Refer to the [control dependencies](https://help.syncfusion.com/wpf/control-dependencies#sfgridsplitter) section to get the list of assemblies or NuGet package that needs to be added as a reference to use the control in any application.
+Refer to the [control dependencies](https://help.syncfusion.com/wpf/control-dependencies#sfgridsplitter) section for the list of assemblies or NuGet package that needs to be added as a reference to use the control in an application.
 
-You can find more details about installing the NuGet package in a WPF application in the following link: 
+You can find more details about installing the NuGet package in a WPF application in the following link:
 
 [How to install nuget packages](https://help.syncfusion.com/wpf/installation/install-nuget-packages)
 
@@ -35,7 +35,7 @@ To add the control manually in XAML, follow the given steps:
     * Syncfusion.SfInput.WPF
     * Syncfusion.SfShared.WPF
 2. Import Syncfusion<sup>®</sup> WPF schema **http://schemas.syncfusion.com/wpf** in the XAML page.
-3. Declare the `WPF GridSplitter` control in the XAML page.
+3. Declare the `SfGridSplitter` control in the XAML page.
 
 {% capture codesnippet1 %}
 {% tabs %}
@@ -65,8 +65,8 @@ To add the control manually in C#, follow the given steps:
 1. Add the following required assembly references to the project:
     * Syncfusion.SfInput.WPF
     * Syncfusion.SfShared.WPF
-2. Import the `WPF GridSplitter` namespace **using Syncfusion.Windows.Controls.Input;**.
-3. Create an `WPF GridSplitter` instance, and add it to the window.
+2. Import the namespace **using Syncfusion.Windows.Controls.Input;**.
+3. Create an `SfGridSplitter` instance and add it to the window.
 
 {% capture codesnippet2 %}
 {% tabs %}
@@ -99,7 +99,7 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-grid
 
 ## Resize the grid rows
 
-If we want to resize the specific grid rows, place the `WPF GridSplitter` on next or previous row and set the `HorizontalAlignment` property as `Stretch` and `ResizeBehavior` property value as `PreviousAndNext`.
+To resize specific grid rows, place the `SfGridSplitter` on the next or previous row and set the `HorizontalAlignment` property to `Stretch` and the `ResizeBehavior` property to `PreviousAndNext`.
 
 {% tabs %}
 {% highlight XAML %}
@@ -146,7 +146,7 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-grid
 
 ## Resize the grid columns
 
-If we want to resize the specific grid columns, place the `WPF GridSplitter` on next or previous column and set the `VerticalAlignment` property as `Stretch` and `ResizeBehavior` property value as `PreviousAndNext`.
+To resize specific grid columns, place the `SfGridSplitter` on the next or previous column and set the `VerticalAlignment` property to `Stretch` and the `ResizeBehavior` property to `PreviousAndNext`.
 
 {% tabs %}
 {% highlight XAML %}
@@ -191,11 +191,11 @@ If we want to resize the specific grid columns, place the `WPF GridSplitter` on 
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-gridsplitter-control-examples/tree/master/Samples/GridSplitter) 
 
-N> We can restrict the moving location of the WPF GridSplitter (Left or Right or Bottom or Top) by setting the value for `ResizeBehavior` property. The `ResizeBehavior` value must be assigned based on the row or column where the grid splitter placed.
+N> You can restrict the movement of the WPF GridSplitter (left, right, bottom, or top) by setting the `ResizeBehavior` property. The `ResizeBehavior` value must be assigned based on the row or column where the grid splitter is placed.
 
 ## Resizing the grid rows and columns with specific pixel
 
-If we want to resize the rows or columns of grid with particular pixel interval, Set the pixel value for `DragIncrement` and `KeyboardIncrement` properties. If we move the splitter using the mouse, `DragIncrement` property values is used as resize pixel interval. If we move the splitter using the Up-Down buttons, `KeyboardIncrement` property values is used as resize pixel interval. The default value of `DragIncrement` property is `1` and `KeyboardIncrement` property is `20`.
+To resize grid rows or columns at a specific pixel interval, set the pixel values for the `DragIncrement` and `KeyboardIncrement` properties. When you move the splitter with the mouse, the `DragIncrement` property value is used as the resize interval. When you move the splitter using the up and down buttons, the `KeyboardIncrement` property value is used as the resize interval. The default value of the `DragIncrement` property is `1`, and the default value of the `KeyboardIncrement` property is `20`.
 
 
 {% tabs %}
@@ -244,7 +244,7 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-grid
 
 ### Resize the grid rows or columns programmatically
 
-We can move the splitter and resize the affected columns or rows programmatically with certain pixels by passing the pixel value in [MoveSplitter(Double)](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfGridSplitter.html#Syncfusion_Windows_Controls_Input_SfGridSplitter_MoveSplitter_System_Double_) method.
+You can move the splitter and resize the affected columns or rows programmatically by passing the pixel value to the [MoveSplitter(Double)](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfGridSplitter.html#Syncfusion_Windows_Controls_Input_SfGridSplitter_MoveSplitter_System_Double_) method.
 
 {% tabs %}
 {% highlight XAML %}
@@ -296,7 +296,7 @@ gridSplitter.MoveSplitter(50);
 
 ## Show or hide the grid row and columns
 
-We can collapse or expands the element in either side of the splitter by clicking the collapse buttons. We can show or hide the collapse button by using the [EnableCollapseButton](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfGridSplitter.html#Syncfusion_Windows_Controls_Input_SfGridSplitter_EnableCollapseButton) property value as `true`. The default value of `EnableCollapseButton` is `false`.
+You can expand or collapse the element on either side of the splitter by clicking the collapse buttons. You can show or hide the collapse button by setting the [EnableCollapseButton](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfGridSplitter.html#Syncfusion_Windows_Controls_Input_SfGridSplitter_EnableCollapseButton) property to `true`. The default value of the `EnableCollapseButton` property is `false`.
 
 {% tabs %}
 {% highlight XAML %}
@@ -342,9 +342,9 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-grid
 
 ## Custom UI for Collapse buttons 
 
-If you you want to change the UI of horizontal splitter up and down collapse button separately, use the [UpButtonTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfGridSplitter.html#Syncfusion_Windows_Controls_Input_SfGridSplitter_UpButtonTemplate) and [DownButtonTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfGridSplitter.html#Syncfusion_Windows_Controls_Input_SfGridSplitter_DownButtonTemplate) properties. If you want to change the UI of vertical splitter left and right collapse button, use the [LeftButtonTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfGridSplitter.html#Syncfusion_Windows_Controls_Input_SfGridSplitter_LeftButtonTemplate) and [RightButtonTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfGridSplitter.html#Syncfusion_Windows_Controls_Input_SfGridSplitter_RightButtonTemplate) properties 
+If you want to change the UI of the horizontal splitter's up and down collapse buttons separately, use the [UpButtonTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfGridSplitter.html#Syncfusion_Windows_Controls_Input_SfGridSplitter_UpButtonTemplate) and [DownButtonTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfGridSplitter.html#Syncfusion_Windows_Controls_Input_SfGridSplitter_DownButtonTemplate) properties. If you want to change the UI of the vertical splitter's left and right collapse buttons, use the [LeftButtonTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfGridSplitter.html#Syncfusion_Windows_Controls_Input_SfGridSplitter_LeftButtonTemplate) and [RightButtonTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfGridSplitter.html#Syncfusion_Windows_Controls_Input_SfGridSplitter_RightButtonTemplate) properties.
 
-N> You can see the effect of collapse button templates only on when `EnableCollapseButton` property value is `true`.
+N> You can see the effect of collapse button templates only when the `EnableCollapseButton` property is set to `true`.
 
 {% tabs %}
 {% highlight XAML %}
@@ -440,7 +440,7 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-grid
 
 ## Custom UI for expander gripper
 
-If you you want to change the UI of vertical and horizontal splitter gripper separately, use the [VerticalGripperTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfGridSplitter.html#Syncfusion_Windows_Controls_Input_SfGridSplitter_VerticalGripperTemplate) and [HorizontalGripperTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfGridSplitter.html#Syncfusion_Windows_Controls_Input_SfGridSplitter_HorizontalGripperTemplate) properties.
+If you want to change the UI of the vertical and horizontal splitter grippers separately, use the [VerticalGripperTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfGridSplitter.html#Syncfusion_Windows_Controls_Input_SfGridSplitter_VerticalGripperTemplate) and [HorizontalGripperTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfGridSplitter.html#Syncfusion_Windows_Controls_Input_SfGridSplitter_HorizontalGripperTemplate) properties.
 
 {% tabs %}
 {% highlight XAML %}
@@ -541,7 +541,7 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-grid
 
 ## Deferred resizing
 
-We can directly redistribute the row or columns by using `WPF GridSplitter`. If we want to preview the location of redistributing row or columns before it changed, we can use the [ShowsPreview](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfGridSplitter.html) property as `true`.
+You can directly redistribute rows or columns by using `SfGridSplitter`. To preview the redistribution location before it changes, set the [ShowsPreview](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfGridSplitter.html) property to `true`.
 
 {% tabs %}
 {% highlight XAML %}
@@ -587,7 +587,7 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-grid
 
 ## WPF GridSplitter for the merged columns or rows
 
-If we want resize the merged columns or rows, place the WPF GridSplitter on next or previous row or column of the grid.
+To resize merged columns or rows, place the WPF GridSplitter on the next or previous row or column of the grid.
 
 {% tabs %}
 {% highlight XAML %}
@@ -649,7 +649,7 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-grid
 
 ## Theme
 
-The WPF GridSplitter supports various built-in themes. Refer to the below links to apply themes for the WPF GridSplitter,
+The WPF GridSplitter supports various built-in themes. Refer to the following links to apply themes to the WPF GridSplitter:
 
   * [Apply theme using SfSkinManager](https://help.syncfusion.com/wpf/themes/skin-manager)
 	
