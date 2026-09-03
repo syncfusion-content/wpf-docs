@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Nudge Commands in WPF SfDiagram | Syncfusion®
-description: Move selected diagram elements in Syncfusion® WPF SfDiagram using nudge commands with customizable movement distances and directions.
+title: Nudge Commands in WPF Diagram | Syncfusion®
+description: Move selected diagram elements in Syncfusion® WPF Diagram using nudge commands with customizable movement distances and directions.
 platform: wpf
 control: SfDiagram
 documentation: ug
 ---
 
-# Nudge Commands in WPF SfDiagram
+# Nudge Commands in WPF Diagram
 
 Nudge commands are used to move the selected elements towards up, down, left, or right by 1 pixel. The [MoveParameter](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.MoveParameter.html) class, which implements the [IMoveParameter](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IMoveParameter.html) interface, is provided to customize the movement of the selected objects.
 
@@ -36,7 +36,7 @@ N> Nudge commands are applicable only when one or more diagram elements are sele
 
 {% highlight c# %}
 
-//Initialize the SfDiagram 
+//Initialize the Diagram 
 SfDiagram diagramcontrol = new SfDiagram();
 
 IGraphInfo graphinfo = diagramcontrol.Info as IGraphInfo;

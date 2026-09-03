@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Force-Directed Tree layout in WPF SfDiagram | Syncfusion®
-description: Arrange connected nodes in Syncfusion® WPF SfDiagram using Force-Directed Tree Layout with configurable attraction and repulsion forces.
+title: Force-Directed Tree layout in WPF Diagram | Syncfusion®
+description: Arrange connected nodes in Syncfusion® WPF Diagram using Force-Directed Tree Layout with configurable attraction and repulsion forces.
 platform: wpf
 control: SfDiagram
 documentation: ug
 ---
 
 
-# Force-Directed Tree Layout in WPF SfDiagram
+# Force-Directed Tree Layout in WPF Diagram
 
 The **Force-Directed Tree Layout** arranges nodes using a physics simulation: nodes repel each other to avoid overlap, while connectors behave like springs that pull related nodes together. This produces organic, visually balanced diagrams that work well for scenarios such as social graphs, dependency maps, and knowledge networks.
 

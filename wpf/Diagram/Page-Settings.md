@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Page Settings in WPF SfDiagram | Syncfusion®
-description: Customize page settings in Syncfusion® WPF SfDiagram, including page size, orientation, margins, scaling, appearance, and multiple-page support.
+title: Page Settings in WPF Diagram | Syncfusion®
+description: Customize page settings in Syncfusion® WPF Diagram, including page size, orientation, margins, scaling, appearance, and multiple-page support.
 platform: wpf
 control: SfDiagram
 documentation: ug
 ---
 
-# Page Settings in WPF SfDiagram
+# Page Settings in WPF Diagram
 
-By default, [WPF SfDiagram](https://www.syncfusion.com/diagram-sdk/wpf-diagram) page size is determined by the position of diagram elements. The size and appearance of the diagram pages can be customized using the [PageSettings](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.PageSettings.html ) property of `SfDiagram`. 
+By default, [WPF Diagram](https://www.syncfusion.com/diagram-sdk/wpf-diagram) page size is determined by the position of diagram elements. The size and appearance of the diagram pages can be customized using the [PageSettings](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.PageSettings.html ) property of `SfDiagram`. 
 
 * The [PageWidth](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.PageSettings.html#Syncfusion_UI_Xaml_Diagram_PageSettings_PageWidth) and [PageHeight](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.PageSettings.html#Syncfusion_UI_Xaml_Diagram_PageSettings_PageHeight) properties of `PageSettings` define the size of the page. 
 * The [PageOrientation](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.PageSettings.html#Syncfusion_UI_Xaml_Diagram_PageSettings_PageOrientation) property of `PageSettings` is used to change the page orientation to portrait or landscape.
@@ -30,7 +30,7 @@ By default, [WPF SfDiagram](https://www.syncfusion.com/diagram-sdk/wpf-diagram) 
 
 {% endhighlight %}
 {% highlight c# %}
-//Initialize SfDiagram
+//Initialize Diagram
 SfDiagram diagram = new SfDiagram();
 
 //Initialize the page settings and page orientation property
@@ -70,7 +70,7 @@ Based on the position of diagram elements, the size of the page dynamically incr
 {% endhighlight %}
 {% highlight c# %}
 
-//Initialize SfDiagram
+//Initialize Diagram
 SfDiagram diagram = new SfDiagram();
 //Initialize the page settings and its properties
 diagram.PageSettings = new PageSettings()
@@ -110,7 +110,7 @@ The appearance of the pages can be customized by using the following properties 
 </syncfusion:SfDiagram>
 {% endhighlight %}
 {% highlight c# %}
-//Initialize SfDiagram
+//Initialize Diagram
 SfDiagram diagram = new SfDiagram();
 //Initialize the page settings and its properties
 diagram.PageSettings = new PageSettings()
@@ -146,7 +146,7 @@ The area between the main content of a page and the page edges can be changed us
 </syncfusion:SfDiagram>
 {% endhighlight %}
 {% highlight c# %}
-//Initialize SfDiagram
+//Initialize Diagram
 SfDiagram diagram = new SfDiagram();
 //Initialize the page settings and print margin property
 diagram.PageSettings = new PageSettings()
@@ -181,7 +181,7 @@ The measurement units of the page can be changed by using the [Unit](https://hel
 </syncfusion:SfDiagram>
 {% endhighlight %}
 {% highlight c# %}
-//Initialize SfDiagram
+//Initialize Diagram
 SfDiagram diagram = new SfDiagram();
 //Initialize the page settings and unit property.
 diagram.PageSettings = new PageSettings()
@@ -216,7 +216,7 @@ The [PrintScale](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.P
 </syncfusion:SfDiagram>
 {% endhighlight %}
 {% highlight c# %}
-//Initialize SfDiagram
+//Initialize Diagram
 SfDiagram diagram = new SfDiagram();
 //Initialize the page settings and print scale value.
 diagram.PageSettings = new PageSettings()
@@ -251,7 +251,7 @@ You can restrict the diagram page scaling to minimum and maximum values by using
 </syncfusion:SfDiagram>
 {% endhighlight %}
 {% highlight c# %}
-//Initialize SfDiagram
+//Initialize Diagram
 SfDiagram diagram = new SfDiagram();
 //Initialize the page settings and print scale value.
 diagram.PageSettings = new PageSettings()
@@ -286,7 +286,7 @@ The `AdjustPageOrigin` method contains the [Info](https://help.syncfusion.com/cr
 {% tabs %}
 {% highlight c# %}
 
-//Initialize SfDiagram
+//Initialize Diagram
 SfDiagram diagram = new SfDiagram();
 //Create instance for PageCustomClass using PageSettings
 diagram.PageSettings = new CustomPageSettings();
@@ -338,4 +338,4 @@ Find the [Page Settings sample](https://github.com/SyncfusionExamples/WPF-Diagra
 
 [How to disable the page editing behaviour?](https://support.syncfusion.com/kb/article/5860/how-to-disable-page-editing-in-wpf-diagram-sfdiagram)
 
-[How to set the image background for the Diagram page in WPF SfDiagram?](https://support.syncfusion.com/kb/article/14932/how-to-set-the-image-background-for-the-diagram-page-in-wpf-diagramsfdiagram)
+[How to set the image background for the Diagram page in WPF Diagram?](https://support.syncfusion.com/kb/article/14932/how-to-set-the-image-background-for-the-diagram-page-in-wpf-diagramsfdiagram)

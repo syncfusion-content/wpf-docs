@@ -1,13 +1,13 @@
 ---
 layout: post
-title: BPMN Group in WPF SfDiagram | Syncfusion®
-description: Learn about BPMN groups in Syncfusion® WPF SfDiagram control, including group creation, adding BPMN nodes, runtime grouping, and stencil support.
+title: BPMN Group in WPF Diagram | Syncfusion®
+description: Learn about BPMN groups in Syncfusion® WPF Diagram control, including group creation, adding BPMN nodes, runtime grouping, and stencil support.
 platform: wpf
 control: SfDiagram
 documentation: ug
 ---
 
-# BPMN Group in WPF SfDiagram
+# BPMN Group in WPF Diagram
 
 Groups organize tasks or processes that have significance in the overall process.
 A group may control the flow of a process and describe shared goals. A group is denoted by dashes and dots.

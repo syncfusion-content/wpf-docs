@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Dragging in WPF SfDiagram | Syncfusion®
-description: Drag diagram elements in Syncfusion® WPF SfDiagram with drag limits, drop support, indicator customization, and interaction events.
+title: Dragging in WPF Diagram | Syncfusion®
+description: Drag diagram elements in Syncfusion® WPF Diagram with drag limits, drop support, indicator customization, and interaction events.
 platform: wpf
 control: SfDiagram
 documentation: ug
 ---
 
-# Dragging in WPF SfDiagram
+# Dragging in WPF Diagram
 
-[WPF SfDiagram](https://www.syncfusion.com/diagram-sdk/wpf-diagram) provides support to drag the elements within the given limitations using [EditableArea](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ScrollSettings.html#Syncfusion_UI_Xaml_Diagram_ScrollSettings_EditableArea), [ScrollLimit.Limited](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ScrollLimit.html#Syncfusion_UI_Xaml_Diagram_ScrollLimit_Limited) property and based on [SelectorChangedEvent](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.SelectorChangedEventArgs.html) enabling or disabling of dragging within the limits occur.
+[WPF Diagram](https://www.syncfusion.com/diagram-sdk/wpf-diagram) provides support to drag the elements within the given limitations using [EditableArea](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ScrollSettings.html#Syncfusion_UI_Xaml_Diagram_ScrollSettings_EditableArea), [ScrollLimit.Limited](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ScrollLimit.html#Syncfusion_UI_Xaml_Diagram_ScrollLimit_Limited) property and based on [SelectorChangedEvent](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.SelectorChangedEventArgs.html) enabling or disabling of dragging within the limits occur.
 
 In `SelectorChangedEvent` based on the arguments the process occurs,
 * [Block](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.SelectorChangedEventArgs.html#Syncfusion_UI_Xaml_Diagram_SelectorChangedEventArgs_Block): If this boolean expression is set to true, then the dragging occurs within the given rectangular area. If dragging exceeds the limit, then it returns to the previous position. Based on the `BlockPosition` the dragging of Block occurs.
@@ -150,7 +150,7 @@ Diagram.ConnectorDropIndicatorStyle = this.Resources["connectordropindicator"] a
 
 [How to drag and drop elements from treeview?](https://support.syncfusion.com/kb/article/9277/how-to-drag-and-drop-elements-from-treeview-in-wpf-diagram-sfdiagram)
 
-[How to drag and drop different shapes from SfTreeView to WPF SfDiagram?](https://support.syncfusion.com/kb/article/10960/how-to-drag-and-drop-different-shapes-from-sftreeview-to-wpf-diagram-sfdiagram)
+[How to drag and drop different shapes from SfTreeView to WPF Diagram?](https://support.syncfusion.com/kb/article/10960/how-to-drag-and-drop-different-shapes-from-sftreeview-to-wpf-diagram-sfdiagram)
 
 [How to create parent and child relationship by drag and drop nodes?](https://support.syncfusion.com/kb/article/10008/how-to-create-parent-and-child-relationship-by-drag-and-drop-nodes-in-wpf-diagram-sfdiagram)
 
@@ -166,14 +166,14 @@ Diagram.ConnectorDropIndicatorStyle = this.Resources["connectordropindicator"] a
 
 [How to enable the behaviour of drag the node from one diagram to another diagram?](https://support.syncfusion.com/kb/article/6270/how-to-enable-drag-the-node-from-one-diagram-to-another-wpf-diagram-sfdiagram)
 
-[How to Restrict Node is being removed from its Parent Container when Dragging in WPF SfDiagram](https://support.syncfusion.com/kb/article/15644/how-to-restrict-node-is-being-removed-from-its-parent-container-when-dragging-in-wpf-diagram-sfdiagram)
+[How to Restrict Node is being removed from its Parent Container when Dragging in WPF Diagram](https://support.syncfusion.com/kb/article/15644/how-to-restrict-node-is-being-removed-from-its-parent-container-when-dragging-in-wpf-diagram-sfdiagram)
 
-[How to prevent the connector segment from collapsing while dragging a node in WPF SfDiagram ?](https://support.syncfusion.com/kb/article/17746/how-to-prevent-the-connector-segment-from-collapsing-while-dragging-a-node-in-wpf-diagram-sfdiagram-)
+[How to prevent the connector segment from collapsing while dragging a node in WPF Diagram ?](https://support.syncfusion.com/kb/article/17746/how-to-prevent-the-connector-segment-from-collapsing-while-dragging-a-node-in-wpf-diagram-sfdiagram-)
 
-[How to update the Z-Index of the dragged node in WPF SfDiagram?](https://support.syncfusion.com/kb/article/10388/how-to-update-the-zindex-of-the-dragged-node-in-wpf-diagram-sfdiagram)
+[How to update the Z-Index of the dragged node in WPF Diagram?](https://support.syncfusion.com/kb/article/10388/how-to-update-the-zindex-of-the-dragged-node-in-wpf-diagram-sfdiagram)
 
 [How to identify the dragging state of connectors in the WPF SfDiagram (SfDiagram)?](https://support.syncfusion.com/kb/article/18846/how-to-identify-the-dragging-state-of-connectors-in-the-wpf-diagram-sfdiagram)
 
-[How to prevent the node from moving outside the group in WPF SfDiagram?](https://support.syncfusion.com/kb/article/18852/how-to-prevent-the-node-from-moving-outside-the-group-in-wpf-diagram-sfdiagram)
+[How to prevent the node from moving outside the group in WPF Diagram?](https://support.syncfusion.com/kb/article/18852/how-to-prevent-the-node-from-moving-outside-the-group-in-wpf-diagram-sfdiagram)
 
-[How to achieve the AutoConnect functionality in WPF SfDiagram?](https://support.syncfusion.com/kb/article/18252/how-to-achieve-the-autoconnect-functionality-in-wpf-diagram-sfdiagram)
+[How to achieve the AutoConnect functionality in WPF Diagram?](https://support.syncfusion.com/kb/article/18252/how-to-achieve-the-autoconnect-functionality-in-wpf-diagram-sfdiagram)

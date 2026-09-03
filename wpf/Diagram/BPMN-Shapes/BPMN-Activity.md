@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Activity in WPF SfDiagram | Syncfusion®
-description: Learn about BPMN activities in Syncfusion® WPF SfDiagram control, including tasks, subprocesses, loops, compensation, call activities, and task types.
+title: Activity in WPF Diagram | Syncfusion®
+description: Learn about BPMN activities in Syncfusion® WPF Diagram control, including tasks, subprocesses, loops, compensation, call activities, and task types.
 platform: wpf
 control: SfDiagram
 documentation: ug
 ---
 
-# Activity in WPF SfDiagram
+# Activity in WPF Diagram
 
 The [`Activity`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Controls.BpmnShapeType.html#fields#Activity) is a task that is performed in a business process. It is represented by a rounded rectangle.
 

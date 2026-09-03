@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Interactions in WPF SfDiagram | Syncfusion®
-description: Learn about connector interactions in Syncfusion® WPF SfDiagram control, including selection, dragging, routing, routing options, and editing.
+title: Interactions in WPF Diagram | Syncfusion®
+description: Learn about connector interactions in Syncfusion® WPF Diagram control, including selection, dragging, routing, routing options, and editing.
 platform: wpf
 control: SfDiagram
 documentation: ug
 ---
 
-# Interactions in WPF SfDiagram
+# Interactions in WPF Diagram
 
-Connectors can be selected, dragged and routed over the [WPF SfDiagram](https://www.syncfusion.com/diagram-sdk/wpf-diagram) page. 
+Connectors can be selected, dragged and routed over the [WPF Diagram](https://www.syncfusion.com/diagram-sdk/wpf-diagram) page. 
 
 ## How to select and edit the connector
 
@@ -40,10 +40,10 @@ Also, the entire connector can be dragged over the page by using the [`Constrain
 {% endhighlight %}
 {% highlight c# %}
 
-//Initialize the SfDiagram
+//Initialize the Diagram
 SfDiagram diagram = new SfDiagram();
 
-//Initialize ConnectorCollection to SfDiagram
+//Initialize ConnectorCollection to Diagram
 diagram.Connectors = new ConnectorCollection();
 
 //Define the Connector Type
@@ -81,7 +81,7 @@ The routing is the process of updating the connector's geometry to avoid overlap
 {% endhighlight %}
 {% highlight c# %}
 
-//Initialize the SfDiagram
+//Initialize the Diagram
 SfDiagram diagram = new SfDiagram();
 //Enable the routing constraint
 diagram.Constraints.Add(GraphConstraints.Routing);
@@ -184,6 +184,6 @@ Find the [Connector interactions sample](https://github.com/SyncfusionExamples/W
 
 [How to decide whether to drag or draw a connection on port at runtime?](https://support.syncfusion.com/kb/article/8538/how-to-decide-whether-to-drag-or-draw-a-connection-on-port-at-runtime-in-the-wpf-diagram)
 
-[How to select a connector when the mouse hovers over a node port that is connected by the connector in the WPF SfDiagram?](https://support.syncfusion.com/kb/article/18695/how-to-select-a-connector-when-the-mouse-hovers-over-a-node-port-that-is-connected-by-the-connector-in-the-wpf-diagram-sfdiagram)
+[How to select a connector when the mouse hovers over a node port that is connected by the connector in the WPF Diagram?](https://support.syncfusion.com/kb/article/18695/how-to-select-a-connector-when-the-mouse-hovers-over-a-node-port-that-is-connected-by-the-connector-in-the-wpf-diagram-sfdiagram)
 
-[How to identify the dragging state of connectors in the WPF SfDiagram ?](https://support.syncfusion.com/kb/article/18846/how-to-identify-the-dragging-state-of-connectors-in-the-wpf-diagram-sfdiagram)
+[How to identify the dragging state of connectors in the WPF Diagram ?](https://support.syncfusion.com/kb/article/18846/how-to-identify-the-dragging-state-of-connectors-in-the-wpf-diagram-sfdiagram)
