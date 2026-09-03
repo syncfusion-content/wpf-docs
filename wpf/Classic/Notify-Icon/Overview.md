@@ -1,9 +1,9 @@
 ---
 layout: post
-title: About Syncfusion® WPF NotifyIcon Control | Syncfusion®
-description: Learn about the introduction of Syncfusion® Essential Studio WPF NotifyIcon control and discover its features, notification capabilities, and more details.
+title: About Syncfusion® WPF Notify Icon Control | Syncfusion®
+description: Learn about the introduction of Syncfusion® Essential Studio WPF Notify Icon control and discover its features, notification capabilities, and more details.
 platform: wpf
-control: NotifyIcon
+control: Notify Icon
 documentation: ug
 ---
 

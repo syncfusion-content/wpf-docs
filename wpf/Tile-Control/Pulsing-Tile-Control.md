@@ -1,9 +1,9 @@
 ---
 layout: post
-title: SfPulsingTile in WPF Tile Control | Syncfusion®
-description: SfPulsingTile in WPF Tile Control highlights content with pulsing visual effects, drawing user attention to important information and updates.
+title: Pulsing Tile in WPF Tile Control | Syncfusion®
+description: Pulsing Tile in WPF Tile Control highlights content with pulsing visual effects, drawing user attention to important information and updates.
 platform: wpf
-control: SfPulsingTile
+control: Pulsing Tile
 documentation: ug
 ---
 
@@ -424,7 +424,8 @@ wrapPanel.Children.Add(pulsingTileThree);
 
 ## Freezing/Unfreezing
 
-Freezing provides support to stop animating the tile contents. Unfreezing provides support to keep the tile content animated. By the following two ways freezing/unfreezing can be set to the Pulsing Tile:                                                            
+Freezing provides support to stop animating the tile contents. Unfreezing provides support to keep the tile content animated. By the following two ways freezing/unfreezing can be set to the Pulsing Tile:
+
 ### Freezing/unfreezing via property
 
 The tile can be frozen by setting [IsFrozen](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Notification.HubTileBase.html#Syncfusion_Windows_Controls_Notification_HubTileBase_IsFrozen) property to be **true**.

@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Restrict User Selection in WPF SfRating | Syncfusion®
-description: Restrict user selection in WPF SfRating limits rating input based on application requirements, ensuring controlled interactions.
+title: Restrict User Selection in WPF Rating | Syncfusion®
+description: Restrict user selection in WPF Rating limits rating input based on application requirements, ensuring controlled interactions.
 platform: wpf
-control: SfRating
+control: Rating
 documentation: ug
 ---
 
@@ -21,11 +21,10 @@ The Rating control provides support to changeable or unchangeable values. This i
 
 {% highlight C# %}
 
-SfRating rating;
 public MainWindow()
 {
     InitializeComponent();
-    rating = new SfRating();
+    SfRating rating = new SfRating();
     rating.IsReadOnly = true;
     Content = rating;
 }
@@ -34,4 +33,4 @@ public MainWindow()
 
 {% endtabs %}
 
-![Rating read only](images/readOnly.png)
+![Read only support in WPF Rating control](images/readOnly.png)

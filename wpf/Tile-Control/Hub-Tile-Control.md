@@ -1,9 +1,9 @@
 ---
 layout: post
-title: SfHubTile in WPF Tile Control | Syncfusion®
-description: SfHubTile in WPF Tile Control displays dynamic content with smooth transitions and interactive layouts, enhancing dashboard-style user experiences.
+title: Hub Tile in WPF Tile Control | Syncfusion®
+description: Hub Tile in WPF Tile Control displays dynamic content with smooth transitions and interactive layouts, enhancing dashboard-style user experiences.
 platform: wpf
-control: SfHubTile
+control: Hub Tile
 documentation: ug
 ---
 

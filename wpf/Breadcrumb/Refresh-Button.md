@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Refresh Button in WPF HierarchyNavigator | Syncfusion®
-description: Refresh Button in WPF HierarchyNavigator allows users to reload hierarchy data quickly and maintain up-to-date views.
+title: Refresh Button in WPF BreadCrumb | Syncfusion®
+description: Refresh Button in WPF BreadCrumb allows users to reload hierarchy data quickly and maintain up-to-date views.
 platform: wpf
-control: Hierarchical Navigator
+control: BreadCrumb
 documentation: ug
 ---
 
@@ -11,7 +11,7 @@ documentation: ug
 
 The Refresh button enables the HierarchyNavigatorRefreshButtonClick event to initiate in the BreadCrumb control.
 
-![Refresh-Button_img1](Refresh-Button_images/Refresh-Button_img1.png)
+![Refresh Button in WPF BreadCrumb control](Refresh-Button_images/Refresh-Button_img1.png)
 
 
 {% tabs %}
@@ -20,14 +20,16 @@ The Refresh button enables the HierarchyNavigatorRefreshButtonClick event to ini
 {% endhighlight %}
 
 {% highlight C# %}
+
 HierarchyNavigator hierarchyNavigator = new HierarchyNavigator();
-<br>
 hierarchyNavigator.HierarchyNavigatorRefreshButtonClick += new EventHandler(HierarchyNavigatorRefreshButtonClick);
 
+//Occurs when Refresh Button Click
 private void HierarchyNavigatorRefreshButtonClick(object sender, EventArgs e)
-<br>
-{<br>     //Occurs when Refresh Button Click<br>}
-{% endhighlight %}
+{
 
+}
+    
+{% endhighlight %}
 {% endtabs %}
 

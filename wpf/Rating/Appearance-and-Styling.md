@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Appearance and Styling in WPF SfRating | Syncfusion®
-description: Appearance and styling in WPF SfRating allow customization of rating item visuals, colors, shapes, and layouts to match application themes.
+title: Appearance and Styling in WPF Rating | Syncfusion®
+description: Appearance and styling in WPF Rating allow customization of rating item visuals, colors, shapes, and layouts to match application themes.
 platform: wpf
-control: SfRating
+control: Rating
 documentation: ug
 ---
 
@@ -11,11 +11,11 @@ documentation: ug
 
 When the default view is not needed, you can customize the view of WPF Rating  control. The Rating control provides support to customize the size, item count, and space between rating items.
 
-N> These properties are available in SfRatingItem. To set this property, use the ItemContainerStyle property of the Rating  control.
+N> These properties are available in SfRatingItem. To set this property, use the ItemContainerStyle property of the Rating control.
 
 ## Set fill color
 
-The Rating  control supports to set the fill color to the selected and unselected items.
+The Rating control supports to set the fill color to the selected and unselected items.
 
 ### Selected items
 
@@ -56,11 +56,11 @@ The `UnRatedFill` property fills the unrated area with the specified solid color
 
 ## Set stroke color
 
-The Rating  control supports to set the stroke color to the selected and unselected items.
+The Rating control supports to set the stroke color to the selected and unselected items.
 
 ### Selected items
 
-The `RatedStroke` property sets the stroke color to the rated area with the specified solid color to the selected items in the Rating  control.
+The `RatedStroke` property sets the stroke color to the rated area with the specified solid color to the selected items in the Rating control.
 
 {% highlight xaml %}
 
@@ -213,11 +213,10 @@ You can set the height of each SfRatingItem using the `Height` property.
 
 {% highlight C# %}
 
-SfRating rating;
 public MainWindow()
 {
     InitializeComponent();
-    rating = new SfRating();
+    SfRating rating = new SfRating();
     rating.Value = 3;
     rating.Items.Add(new SfRatingItem() { Height = 20 });
     rating.Items.Add(new SfRatingItem() { Height = 18 });

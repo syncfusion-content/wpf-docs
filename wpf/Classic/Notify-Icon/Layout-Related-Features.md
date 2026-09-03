@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Layout Related Features in WPF NotifyIcon | Syncfusion®
-description: Layout related features in WPF NotifyIcon provide flexible arrangement of tray icon elements, ensuring seamless integration with applications.
+title: Layout Related Features in WPF Notify Icon | Syncfusion®
+description: Layout related features in WPF Notify Icon provide flexible arrangement of tray icon elements, ensuring seamless integration with applications.
 platform: wpf
-control: NotifyIcon
+control: Notify Icon
 documentation: ug
 ---
 
@@ -56,7 +56,7 @@ private void Button_Click(object sender, RoutedEventArgs e)
 
 ## Events
 
-The [Notify Icon](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.NotifyIcon.html) includes several pre-defined events to perform any required action as follows:
+The [NotifyIcon](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.NotifyIcon.html) control includes several pre-defined events to perform any required action as follows:
 
 * BalloonTipOpening
 * BalloonTipOpened

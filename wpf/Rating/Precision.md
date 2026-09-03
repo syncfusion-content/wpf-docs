@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Precision in WPF SfRating | Syncfusion®
-description: Precision in WPF SfRating enables whole, half, or custom rating values, allowing accurate and flexible user feedback collection.
+title: Precision in WPF Rating | Syncfusion®
+description: Precision in WPF Rating enables whole, half, or custom rating values, allowing accurate and flexible user feedback collection.
 platform: wpf
-control: SfRating
+control: Rating
 documentation: ug
 ---
 
@@ -20,16 +20,15 @@ When the precision mode of the Rating control is set to `Standard`, the rating i
 {% highlight xaml %}
 
 	<rating:SfRating ItemsCount="5" Precision="Standard"></rating:SfRating>
-	
+
 {% endhighlight %}
 
 {% highlight C# %}
 
-SfRating rating;
 public MainWindow()
 {
     InitializeComponent();
-    rating = new SfRating();
+    SfRating rating = new SfRating();
     rating.ItemsCount = 5;
     rating.Precision = Precision.Standard;
     Content = rating;
@@ -39,7 +38,7 @@ public MainWindow()
 
 {% endtabs %}
 
-![Rating standard precision mode](images/Precision_Standard.png)
+![Standard precision mode in WPF Rating control](images/Precision_Standard.png)
 
 ## Half
 
@@ -55,11 +54,10 @@ When the precision mode of the Rating control is set to `Half`, the rating item 
 
 {% highlight C# %}
 
-SfRating rating;
 public MainWindow()
 {
     InitializeComponent();
-    rating = new SfRating();
+    SfRating rating = new SfRating();
     ItemsCount = 5;
     rating.Precision = Precision.Half;
     Content = rating;
@@ -69,7 +67,7 @@ public MainWindow()
 
 {% endtabs %}
 
-![Rating half precision mode](images/Precision_Half.png)
+![Half precision mode in WPF Rating control](images/Precision_Half.png)
 
 ## Exact
 
@@ -85,11 +83,10 @@ If the precision mode of Rating is set to `Exact`, the rating item will be fille
 
 {% highlight c# %}
 
-SfRating rating;
 public MainWindow()
 {
     InitializeComponent();
-    rating = new SfRating();
+    SfRating rating = new SfRating();
     rating.ItemsCount = 5;
     rating.Precision = Precision.Exact;
     Content = rating;
@@ -99,4 +96,4 @@ public MainWindow()
 
 {% endtabs %}
 
-![Rating exact precision mode](images/Precision_Exact.png) 
+![Exact precision mode in WPF Rating control](images/Precision_Exact.png) 

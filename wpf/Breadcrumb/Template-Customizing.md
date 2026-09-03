@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Template Customizing in WPF HierarchyNavigator | Syncfusion®
-description: Template customizing in WPF HierarchyNavigator allows flexible control over layouts and visual presentation to meet design needs.
+title: Template Customizing in WPF BreadCrumb | Syncfusion®
+description: Template customizing in WPF BreadCrumb allows flexible control over layouts and visual presentation to meet design needs.
 platform: wpf
-control: Hierarchical Navigator
+control: BreadCrumb
 documentation: ug
 ---
 
@@ -90,7 +90,7 @@ public class HierarchicalItemsSource : ObservableCollection<HierarchyItem>
 {% endcapture %}
 {{ codesnippet2 | OrderList_Indent_Level_1 }}
 
-4. Add hierarchicalItemsSource with the BreadCrumb control ItemsSource property.
+4. Add hierarchicalItemsSource with the `HierarchyNavigator` control ItemsSource property.
 
 {% capture codesnippet3 %}
 {% tabs %}

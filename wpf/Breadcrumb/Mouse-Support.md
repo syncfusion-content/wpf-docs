@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Mouse Support in WPF HierarchyNavigator | Syncfusion®
-description: Mouse Support in WPF HierarchyNavigator allows intuitive navigation, selection, and manipulation of hierarchy items.
+title: Mouse Support in WPF BreadCrumb | Syncfusion®
+description: Mouse Support in WPF BreadCrumb allows intuitive navigation, selection, and manipulation of hierarchy items.
 platform: wpf
-control: Hierarchical Navigator
+control: BreadCrumb
 documentation: ug
 ---
 
@@ -21,5 +21,5 @@ The mouse wheel can be used to scroll a vertical scroll bar that is enabled in t
 
 
 
-The mouse can be rolled over a BreadCrumb item to view a pop-up (without clicking the item) even when there is a pop-up displayed for another item.
+The mouse can be rolled over a `HierarchyNavigator` item to view a pop-up (without clicking the item) even when there is a pop-up displayed for another item.
 

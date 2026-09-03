@@ -1,9 +1,9 @@
 ---
 layout: post
-title: ToolTip in WPF SfRating | Syncfusion®
-description: ToolTip in WPF SfRating displays contextual information for rating items, improving usability and user guidance during selection.
+title: ToolTip in WPF Rating | Syncfusion®
+description: ToolTip in WPF Rating displays contextual information for rating items, improving usability and user guidance during selection.
 platform: wpf
-control: SfRating
+control: Rating
 documentation: ug
 ---
 
@@ -22,11 +22,10 @@ Tooltip provides additional information about objects that are unfamiliar to use
 
 {% highlight C# %}
 
-SfRating rating;
 public MainWindow()
 {
     InitializeComponent();
-    rating = new SfRating();
+    SfRating rating = new SfRating();
     rating.ItemsCount = 5;
     rating.ShowToolTip = true;
     Content = rating;
@@ -36,7 +35,7 @@ public MainWindow()
 
 {% endtabs %}
 
-![Rating tooltip](images/ToolTip.png)
+![Tooltip support in WPF Rating control](images/ToolTip.png)
 
 ## Set tooltip precision
 
@@ -55,11 +54,10 @@ N> The default value of this property is 1.
 
 {% highlight C# %}
 
-SfRating rating;
 public MainWindow()
 {
     InitializeComponent();
-    rating = new SfRating();
+    SfRating rating = new SfRating();
     rating.ItemsCount = 5;
     rating.Precision = Precision.Exact;
     rating.AutoToolTipPrecision = 6;
@@ -70,4 +68,4 @@ public MainWindow()
 
 {% endtabs %}
 
-![Rating tooltip precision](images/toolTipPrecision.png)
+![Tooltip precision in WPF Rating control](images/toolTipPrecision.png)

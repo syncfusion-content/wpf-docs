@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Getting Started with WPF HierarchyNavigator | Syncfusion®
-description: Learn how to get started with the Syncfusion® WPF HierarchyNavigator control. Explore setup, features, examples, and customization options.
+title: Getting Started with WPF BreadCrumb | Syncfusion®
+description: Learn how to get started with the Syncfusion® WPF BreadCrumb control. Explore setup, features, examples, and customization options.
 platform: wpf
-control: Hierarchical Navigator
+control: BreadCrumb
 documentation: ug
 ---
 
@@ -11,7 +11,7 @@ documentation: ug
 
 ## Assembly deployment
 
-Refer to the [Control Dependencies](https://help.syncfusion.com/wpf/control-dependencies#hierarchynavigator) section for the list of assemblies and NuGet packages required to use the BreadCrumb control in a WPF application.
+Refer to the [Control Dependencies](https://help.syncfusion.com/wpf/control-dependencies#hierarchynavigator) section for the list of assemblies and NuGet packages required to use the BreadCrumb (Hierarchynavigator) control in a WPF application.
 
 For more information about installing NuGet packages in a WPF application, refer to the following article:
 
@@ -19,11 +19,11 @@ For more information about installing NuGet packages in a WPF application, refer
 
 ## Create a simple application
 
-Follow these steps to create a WPF application that uses the BreadCrumb control.
+Follow these steps to create a WPF application that uses the `Hierarchynavigator` control.
 
 ## Create a project
 
-Create a new WPF project in Visual Studio to use the BreadCrumb control and explore its features.
+Create a new WPF project in Visual Studio to use the `Hierarchynavigator` control and explore its features.
 
 1. Open Visual Studio and click **File → New → Project**.
 2. Select **WPF App (.NET)** (or **WPF App (.NET Framework)**) and click **Next**.
@@ -31,12 +31,12 @@ Create a new WPF project in Visual Studio to use the BreadCrumb control and expl
 
 ## Add control through designer
 
-You can add the _HierarchyNavigator_ control to an application by dragging it from the **Toolbox** and dropping it onto the designer surface. The following required assembly references are added automatically.
+You can add the `HierarchyNavigator` control to an application by dragging it from the **Toolbox** and dropping it onto the designer surface. The following required assembly references are added automatically.
 
 * Syncfusion.Tools.WPF
 * Syncfusion.Shared.WPF 
 
-![wpf breadcrumb control added by designer](Getting-Started_images/wpf-hierarchy-navigator-control-added-by-designer.png)
+![WPF BreadCrumb control added by designer](Getting-Started_images/wpf-hierarchy-navigator-control-added-by-designer.png)
 
 ## Add control manually in XAML
 
@@ -45,7 +45,7 @@ To add the control manually in XAML, follow these steps:
 	* Syncfusion.Tools.WPF
 	* Syncfusion.Shared.WPF 
 2. Import the Syncfusion WPF schema **http://schemas.syncfusion.com/wpf** in the XAML page.
-3. Add the _HierarchyNavigator_ control to the XAML page.
+3. Add the `HierarchyNavigator` control to the XAML page.
 
 {% capture codesnippet1 %}
 {% tabs %}
@@ -65,7 +65,7 @@ To add the control manually in XAML, follow these steps:
 {% endcapture %}
 {{ codesnippet1 | OrderList_Indent_Level_1 }}
 
-## Add control manually in C\#
+## Add control manually in C#
 
 To add the control manually in C#, follow the given steps:
 
@@ -73,7 +73,7 @@ To add the control manually in C#, follow the given steps:
 	* Syncfusion.Tools.WPF
 	* Syncfusion.Shared.WPF
 2. Import the **Syncfusion.Windows.Tools.Controls** namespace.
-3. Create an instance of _HierarchyNavigator_ and add it to the window.
+3. Create an instance of `HierarchyNavigator` and add it to the window.
 
 {% capture codesnippet2 %}
 {% tabs %}
@@ -107,7 +107,7 @@ namespace HierarchyNavigatorSample
 
 ## Add items using HierarchyNavigatorItem
 
-You can populate the BreadCrumb control by adding [HierarchyNavigatorItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.HierarchyNavigatorItem.html) objects to its _Items_ collection.
+You can populate the `HierarchyNavigator` control by adding [HierarchyNavigatorItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.HierarchyNavigatorItem.html) objects to its _Items_ collection.
 
 {% tabs %}
 {% highlight XAML %}
@@ -154,7 +154,7 @@ BreadCrumb supports data binding through its [ItemsSource](https://learn.microso
 
 Place the `HierarchyItem` and `HierarchicalItemsSource` classes in a new folder (for example, `Data/HierarchyItem.cs`) of the same project.
 
-Follow these steps to bind a collection of business objects to the BreadCrumb control:
+Follow these steps to bind a collection of business objects to the `HierarchyNavigator` control:
 
 1. Create a class named `HierarchyItem`. Add the following using directive at the top of the file: `using System.Collections.ObjectModel;`.
 
@@ -226,7 +226,7 @@ public class HierarchicalItemsSource : ObservableCollection<HierarchyItem>
 {% endcapture %}
 {{ codesnippet4 | OrderList_Indent_Level_1 }}
 
-3. In XAML, bind the collection to the _ItemsSource_ property of the BreadCrumb control. 
+3. In XAML, bind the collection to the _ItemsSource_ property of the `HierarchyNavigator` control. 
 
 {% capture codesnippet5 %}
 {% tabs %}

@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Interactive Features in WPF NotifyIcon | Syncfusion®
-description: Interactive features in WPF NotifyIcon enable user engagement through tray icon actions, context menus, notifications, and event handling.
+title: Interactive Features in WPF Notify Icon | Syncfusion®
+description: Interactive features in WPF Notify Icon enable user engagement through tray icon actions, context menus, notifications, and event handling.
 platform: wpf
-control: NotifyIcon
+control: Notify Icon
 documentation: ug
 ---
 
@@ -58,7 +58,7 @@ notifyIcon.BalloonTipHeaderVisibility = Visibility.Collapsed;
 
 ### Text and Title of BalloonTip
 
-BalloonTipText property is used to set the text that should be displayed in the Notify icon. BalloonTipTitle is used to set the title for Notify Icon. The following code snippet is used to set these properties.
+BalloonTipText property is used to set the text that should be displayed in the Notify Icon. BalloonTipTitle is used to set the title for Notify Icon. The following code snippet is used to set these properties.
 
 {% tabs %}
 {% highlight xaml %}
@@ -157,7 +157,7 @@ ShowBalloonTipTime="1000" HideBalloonTipTime="1000"/>
 {% highlight c# %}
 
 NotifyIcon notifyIcon = new NotifyIcon();
-notifyIcon.BalloonTipText = "Custom Notify Icon is Available";
+notifyIcon.BalloonTipText = "Custom NotifyIcon is Available";
 notifyIcon.BalloonTipTitle = "Default NotifyIcon";
 
 //For Fade

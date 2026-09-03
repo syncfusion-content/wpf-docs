@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Getting Started with WPF TabNavigation | Syncfusion®
-description: Learn how to get started with the Syncfusion® WPF TabNavigation control. Explore setup, features, examples, and customization options.
+title: Getting Started with WPF Tab Navigation | Syncfusion®
+description: Learn how to get started with the Syncfusion® WPF Tab Navigation control. Explore setup, features, examples, and customization options.
 platform: wpf
-control: TabNavigation
+control: Tab Navigation
 documentation: ug
 ---
 
@@ -39,11 +39,11 @@ Create a new WPF project in Visual Studio to use the Tab Navigation Control and 
 
 ### Adding control via Designer
 
-You can add the Tab Navigation Control to your application by dragging it from the **Toolbox** and dropping it onto the designer surface. The required assembly references will be added automatically.
+You can add the `TabNavigationControl` to your application by dragging it from the **Toolbox** and dropping it onto the designer surface. The required assembly references will be added automatically.
 
 1. Make sure the Syncfusion WPF Toolbox is installed (this happens when you install Essential Studio or the WPF add-on).
-2. Open **View → Toolbox** and search for **Tab Navigation Control** under the **Syncfusion Controls** tab.
-3. Drag **Tab Navigation Control** onto the designer surface of `MainWindow.xaml`.
+2. Open **View → Toolbox** and search for `TabNavigationControl` under the **Syncfusion Controls** tab.
+3. Drag `TabNavigationControl` onto the designer surface of `MainWindow.xaml`.
 4. Build and run the project to verify that the control renders.
 
 ![Tab Navigation Control added via the WPF designer](Getting-Started_images/wpf-tabnavigation-control-added-by-designer.png)
@@ -56,7 +56,7 @@ To add the control manually in XAML, follow these steps:
 	* Syncfusion.Tools.WPF 
 	* Syncfusion.Shared.WPF 
 2. Import the Syncfusion WPF schema **http://schemas.syncfusion.com/wpf** in the XAML page.
-3. Add the Tab Navigation Control to the XAML page.
+3. Add the `TabNavigationControl` to the XAML page.
 
 {% capture codesnippet1 %}
 {% tabs %}
@@ -116,7 +116,7 @@ namespace TabNavigationSample
 
 ### Adding Items using TabNavigationItem
 
-You can populate the Tab Navigation Control by adding items directly to its [Items](https://learn.microsoft.com/en-us/dotnet/api/system.windows.controls.itemscontrol.items?view=netframework-4.7.2) collection. Items added to the Tab Navigation Control are automatically wrapped in [TabNavigationItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.TabNavigationItem.html) containers.
+You can populate the `TabNavigationControl` by adding items directly to its [Items](https://learn.microsoft.com/en-us/dotnet/api/system.windows.controls.itemscontrol.items?view=netframework-4.7.2) collection. Items added to the tab navigation control are automatically wrapped in [TabNavigationItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.TabNavigationItem.html) containers.
 
 {% tabs %}
 {% highlight XAML %}

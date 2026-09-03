@@ -1,15 +1,15 @@
 ---
 layout: post
-title: About Syncfusion® WPF TabNavigation Control | Syncfusion®
-description: Learn about the introduction of Syncfusion® Essential Studio WPF TabNavigation control and discover its features, navigation capabilities, and more details.
+title: About Syncfusion® WPF Tab Navigation Control | Syncfusion®
+description: Learn about the introduction of Syncfusion® Essential Studio WPF Tab Navigation control and discover its features, navigation capabilities, and more details.
 platform: wpf
-control: TabNavigation
+control: Tab Navigation
 documentation: ug
 ---
 
 # About Syncfusion® WPF Tab Navigation Control
 
-Tab Navigation is a new control for displaying the contents of the control with transition effects. Tab navigation control facilitates the display of pages/items (with transition effects) like an Ad rotator in web applications, thereby enhancing the UI’s look and feel. It supports only .NET Framework version 4.0. 
+Tab Navigation is a control for displaying the contents of the control with transition effects. Tab navigation control facilitates the display of pages/items (with transition effects) like an Ad rotator in web applications, thereby enhancing the UI’s look and feel. It supports only .NET Framework version 4.0. 
 
 ## Appearance and structure of the control
 

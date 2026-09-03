@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Progress Bar in WPF HierarchyNavigator | Syncfusion®
-description: Progress Bar in WPF HierarchyNavigator provides visual status updates during data loading and processing operations.
+title: Progress Bar in WPF BreadCrumb | Syncfusion®
+description: Progress Bar in WPF BreadCrumb provides visual status updates during data loading and processing operations.
 platform: wpf
-control: Hierarchical Navigator
+control: BreadCrumb
 documentation: ug
 ---
 

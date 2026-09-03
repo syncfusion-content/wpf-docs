@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Command Binding in WPF HierarchyNavigator | Syncfusion®
-description: Command binding in WPF HierarchyNavigator links user actions to commands, enabling clean event handling and improved application interaction.
+title: Command Binding in WPF BreadCrumb | Syncfusion®
+description: Command binding in WPF BreadCrumb links user actions to commands, enabling clean event handling and improved application interaction.
 platform: wpf
-control: Hierarchical Navigator
+control: BreadCrumb
 documentation: ug
 ---
 
@@ -97,7 +97,7 @@ public class ViewModel : INotifyPropertyChanged
 {% endcapture %}
 {{ codesnippet2 | OrderList_Indent_Level_1 }}
 
-1. Bind the command in the BreadCrumb control.
+1. Bind the command in the `HierarchyNavigator` control.
 2. To do this, create a new instance of the ViewModel sample class and set DataContext for the parent StackPanel. This will reflect changes in the children. Whenever the selected item changes, the TextBox Text value will change.
 
 {% capture codesnippet3 %}

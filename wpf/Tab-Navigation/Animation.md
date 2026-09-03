@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Animation in WPF TabNavigation | Syncfusion®
-description: Animation in WPF TabNavigation enhances user experience with smooth transitions between tabs, creating intuitive and visually engaging navigation.
+title: Animation in WPF Tab Navigation | Syncfusion®
+description: Animation in WPF Tab Navigation enhances user experience with smooth transitions between tabs, creating intuitive and visually engaging navigation.
 platform: wpf
-control: TabNavigation
+control: Tab Navigation
 documentation: ug
 ---
 

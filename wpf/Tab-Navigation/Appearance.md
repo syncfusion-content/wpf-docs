@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Appearance in WPF TabNavigation | Syncfusion®
-description: Appearance in WPF TabNavigation allows customization of tab styles, colors, and layouts to create visually appealing interfaces.
+title: Appearance in WPF Tab Navigation | Syncfusion®
+description: Appearance in WPF Tab Navigation allows customization of tab styles, colors, and layouts to create visually appealing interfaces.
 platform: wpf
-control: TabNavigation
+control: Tab Navigation
 documentation: ug
 ---
 
@@ -11,7 +11,7 @@ documentation: ug
 
 ## Show/hide the Header
 
-You can enable/disable the visibility of header by setting [HeaderVisibility](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.TabNavigationControl.html#Syncfusion_Windows_Tools_Controls_TabNavigationControl_HeaderVisibility) property of Tab Navigation Control.
+You can enable/disable the visibility of header by setting [HeaderVisibility](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.TabNavigationControl.html#Syncfusion_Windows_Tools_Controls_TabNavigationControl_HeaderVisibility) property of Tab Navigation control.
 
 {% tabs %}
 {% highlight XAML %}
@@ -33,7 +33,7 @@ tabNavigation.HeaderVisibility = Visibility.Collapsed;
 
 ## Show/hide the NavigationButton
 
-You can enable/disable the visibility of navigation button by setting [NavigationButtonVisibility](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.TabNavigationControl.html#Syncfusion_Windows_Tools_Controls_TabNavigationControl_NavigationButtonVisibility) property of Tab Navigation Control.
+You can enable/disable the visibility of navigation button by setting [NavigationButtonVisibility](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.TabNavigationControl.html#Syncfusion_Windows_Tools_Controls_TabNavigationControl_NavigationButtonVisibility) property of Tab Navigation control.
 
 {% tabs %}
 {% highlight XAML %}
