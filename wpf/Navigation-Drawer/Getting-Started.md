@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Getting Started with WPF Navigation Drawer | Syncfusion®
-description: Learn how to get started with the Syncfusion® WPF Navigation Drawer control. Explore setup, features, examples, and customization options.
+title: Getting Started with WPF NavigationDrawer | Syncfusion®
+description: Learn how to get started with the Syncfusion® WPF NavigationDrawer control. Explore setup, features, examples, and customization options.
 platform: wpf
 control: NavigationDrawer
 documentation: ug
 ---
 
-# Getting Started with WPF Navigation Drawer (SfNavigationDrawer)
+# Getting Started with WPF NavigationDrawer (SfNavigationDrawer)
 
-This section helps you to build your application with the [WPF Navigation Drawer](https://www.syncfusion.com/wpf-controls/navigation-drawer).
+This section helps you to build your application with SfNavigationDrawer.
 
 ## Assembly Deployment
 
@@ -28,28 +28,28 @@ Refer to this documentation to find more details about installing nuget packages
 
 ### Creating the project
 
-Create a new WPF project in Visual Studio to display SfNavigationDrawer with data objects.
+Create new WPF Project in Visual Studio to display SfNavigationDrawer with data objects.
 
 ### Adding SfNavigationDrawer from Toolbox
 
 Drag and drop the SfNavigationDrawer control from the Toolbox to your application.
 
-![WPF Navigation Drawer shows in Toolbox](getting-started_images/wpf-navigation-drawer-toolbox.png)
+![WPF NavigationDrawer shows in Toolbox](getting-started_images/wpf-navigation-drawer-toolbox.png)
 
-Now, the Syncfusion<sup>®</sup> Controls for WPF XAML reference is added to the application references and the xmlns namespace code is generated in MainWindow.xaml as below.
+Now, the Syncfusion<sup>®</sup> Controls for UWP XAML reference is added to the application references and the xmlns namespace code is generated in MainWindow.xaml as below.
 
-![Displaying Reference of WPF Navigation Drawer](getting-started_images/wpf-navigation-drawer-reference.png)
+![Displaying Reference of WPF NavigationDrawer](getting-started_images/wpf-navigation-drawer-reference.png)
 
-![WPF Navigation Drawer with Namespace](getting-started_images/wpf-navigation-drawer-namespace.png)
+![WPF NavigationDrawer with Namespace](getting-started_images/wpf-navigation-drawer-namespace.png)
 
 ### Adding control manually in XAML
 
-In order to add the control manually in XAML, do the below steps:
+In order to add control manually in XAML, do the below steps,
 
-1. Add the following required assembly references to the project:
+1. Add the below required assembly references to the project,
 	* Syncfusion.SfNavigationDrawer.WPF 
-2. Import Syncfusion<sup>®</sup> WPF schema **http://schemas.syncfusion.com/wpf** in the XAML page.
-3. Declare SfNavigationDrawer control in the XAML page.
+2. Import Syncfusion<sup>®</sup> WPF schema **http://schemas.syncfusion.com/wpf** in XAML page.
+3. Declare SfNavigationDrawer control in XAML page.
 
 {% capture codesnippet1 %}
 {% tabs %}
@@ -72,12 +72,12 @@ In order to add the control manually in XAML, do the below steps:
 
 ### Adding control manually in C#
 
-In order to add the control manually in C#, do the below steps:
+In order to add control manually in C#, do the below steps,
 
-1. Add the following required assembly references to the project:
+1. Add the below required assembly references to the project,
 	* Syncfusion.SfNavigationDrawer.WPF 
-2. Import the SfNavigationDrawer namespace **Syncfusion.UI.Xaml.NavigationDrawer** .
-3. Create the SfNavigationDrawer control instance and add it to the Page.
+2. Import SfTreeView namespace **Syncfusion.UI.Xaml.NavigationDrawer** .
+3. Create SfNavigationDrawer control instance and add it to the Page.
 
 {% capture codesnippet2 %}
 {% tabs %}
@@ -144,7 +144,7 @@ namespace NavigationDrawerWPF
 
 The sidebar menu can be populated using the built-in items. The items will be of type [NavigationItem](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.NavigationDrawer.NavigationItem.html) having many properties for customization. 
 
-See also [Different display modes](https://help.syncfusion.com/wpf/navigation-drawer/different-display-modes) topic in the WPF Navigation Drawer.
+See also [Different display modes](https://help.syncfusion.com/wpf/navigation-drawer/different-display-modes) topic in SfNavigationDrawer.
 
 {% tabs %}
 {% highlight xaml %}
@@ -347,6 +347,6 @@ See also [Different display modes](https://help.syncfusion.com/wpf/navigation-dr
 
 {% endtabs %}
 
-![WPF Navigation Drawer](getting-started_images/wpf-navigation-drawer.png)
+![WPF NavigationDrawer](getting-started_images/wpf-navigation-drawer.png)
                    
 N> View [sample](https://github.com/SyncfusionExamples/wpf-sfnavigationdrawer-samples/tree/main/Getting_Started) in GitHub

@@ -9,7 +9,7 @@ documentation: ug
 
 # Color Palette in WPF Radial Menu (SfRadialMenu)
 
-Color Palette can be formed in WPF Radial Menu with the Radial Color Items. 
+A color palette can be formed in the WPF Radial Menu with the radial color items. 
 
 {%highlight xaml%}
 

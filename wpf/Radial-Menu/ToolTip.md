@@ -9,11 +9,11 @@ documentation: ug
 
 # ToolTips in WPF Radial Menu (SfRadialMenu)
 
-Tooltip support available for the WPF Radial Menu items. This will show when mouse over the corresponding item. 
+Tooltip support is available for the WPF Radial Menu items. This will show when the mouse hovers over the corresponding item. 
 
 ToolTip Placement
 
-Position of the tooltip displayed relative to the WPF Radial Menu can be customized using ToolTipPlacement property. The following tooltip positions are supported:
+The position of the tooltip displayed relative to the WPF Radial Menu can be customized using the `ToolTipPlacement` property. The following tooltip positions are supported:
 
 * None: Hides the tooltip.
 * Left: Displays the tooltip to the left of the WPF Radial Menu.
