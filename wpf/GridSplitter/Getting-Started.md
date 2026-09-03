@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started with WPF GridSplitter (SfGridSplitter)
 
-This section explains how to create a [WPF GridSplitter](https://www.syncfusion.com/wpf-controls/gridsplitter) and describes its structure. The WPF GridSplitter is implemented through the `SfGridSplitter` class.
+This section explains how to create a [WPF GridSplitter](https://www.syncfusion.com/wpf-controls/gridsplitter) and describes its structure. The WPF GridSplitter is implemented through the [SfGridSplitter](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfGridSplitter.html) class.
 
 ## Structure of WPF GridSplitter
 

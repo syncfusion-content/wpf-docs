@@ -9,7 +9,7 @@ documentation: ug
 
 # Appearance in WPF GridSplitter (SfGridSplitter)
 
-This section explains the UI customization and styling options available in the [WPF GridSplitter](https://www.syncfusion.com/wpf-controls/gridsplitter) control. The WPF GridSplitter is implemented through the `SfGridSplitter` class. For API reference, see the [WPF GridSplitter](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfGridSplitter.html) class.
+This section explains the UI customization and styling options available in the [WPF GridSplitter](https://www.syncfusion.com/wpf-controls/gridsplitter) control. The WPF GridSplitter is implemented through the [SfGridSplitter](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfGridSplitter.html) class.
 
 ## Setting the Background
 

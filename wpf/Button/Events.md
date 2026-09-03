@@ -9,7 +9,7 @@ documentation: ug
 
 # Events in WPF Button (ButtonAdv)
 
-The [WPF Button](https://www.syncfusion.com/wpf-controls/button) control includes the predefined events described below. The WPF Button is implemented through the `ButtonAdv` class.
+The [WPF Button](https://www.syncfusion.com/wpf-controls/button) control includes the predefined events described below. The WPF Button is implemented through the [ButtonAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ButtonAdv.html) class.
 
 ## Click
 

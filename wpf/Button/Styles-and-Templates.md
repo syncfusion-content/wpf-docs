@@ -9,7 +9,7 @@ documentation: ug
 
 # Styles and Templates in WPF Button (ButtonAdv)
 
-The [WPF Button](https://www.syncfusion.com/wpf-controls/button) control supports styles and templates that allow developers and designers to create visually compelling effects and a consistent product appearance. The WPF Button is implemented through the `ButtonAdv` class.
+The [WPF Button](https://www.syncfusion.com/wpf-controls/button) control supports styles and templates that allow developers and designers to create visually compelling effects and a consistent product appearance. The WPF Button is implemented through the [ButtonAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ButtonAdv.html) class.
 
 This document provides information about changing the visual appearance of the Button control. You can also edit the structure of the Button control by using Blend and Visual Studio to customize its appearance.
 

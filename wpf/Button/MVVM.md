@@ -9,7 +9,7 @@ documentation: ug
 
 # MVVM in WPF Button (ButtonAdv)
 
-The [WPF Button](https://www.syncfusion.com/wpf-controls/button) control supports command and command parameter properties that allow you to execute an action when it is clicked. The WPF Button is implemented through the `ButtonAdv` class.
+The [WPF Button](https://www.syncfusion.com/wpf-controls/button) control supports command and command parameter properties that allow you to execute an action when it is clicked. The WPF Button is implemented through the [ButtonAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ButtonAdv.html) class.
 
 * **Command** - The [Command](https://learn.microsoft.com/en-us/dotnet/api/system.windows.input.icommandsource.command?view=netframework-4.8) property accepts all commands derived from the [ICommand](https://learn.microsoft.com/en-us/dotnet/api/system.windows.input.icommand?view=netframework-4.8) interface.
 * **CommandParameter** - The [CommandParameter](https://learn.microsoft.com/en-us/dotnet/api/system.windows.input.icommandsource.commandparameter?view=netframework-4.8) property allows the user to provide additional data required by the command handler to perform an operation.
