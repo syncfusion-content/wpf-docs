@@ -8,7 +8,7 @@ documentation: ug
 ---
 # Collision State in WPF SfDiagram
 
-[WPF Diagram](https://www.syncfusion.com/diagram-sdk/wpf-diagram) provides support to arrange the nodes and connectors neatly by adjusting the node's position. For example, on a diagram with full of nodes and connectors, you want to place a node without intersecting any other elements.
+[WPF SfDiagram](https://www.syncfusion.com/diagram-sdk/wpf-diagram) provides support to arrange the nodes and connectors neatly by adjusting the node's position. For example, on a diagram with full of nodes and connectors, you want to place a node without intersecting any other elements.
 
 Using [CollisionState](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.CollisionState.html) and [GetCollisionFreeLocation](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IGraphInfo.html#Syncfusion_UI_Xaml_Diagram_IGraphInfo_GetCollisionFreeLocation_Syncfusion_UI_Xaml_Diagram_CollisionState_) method, you can find a possible position without intersecting others for any given node.
 

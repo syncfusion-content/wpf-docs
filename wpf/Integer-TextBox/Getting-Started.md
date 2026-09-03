@@ -7,9 +7,9 @@ control: IntegerTextBox
 documentation: ug
 ---
 
-# Getting Started with WPF IntegerTextBox
+# Getting Started with WPF Integer TextBox
 
-This section explains how to create a WPF `IntegerTextBox` control and its features.
+This section explains how to create a `WPF Integer TextBox` control and its features.
 
 ## Assembly deployment
 
@@ -19,17 +19,17 @@ You can find more details about installing the NuGet packages in a WPF applicati
 
 [How to install nuget packages](https://help.syncfusion.com/wpf/installation/install-nuget-packages)
 
-## Adding WPF IntegerTextBox via designer
+## Adding WPF Integer TextBox via designer
 
-You can add the [IntegerTextBox](https://www.syncfusion.com/wpf-controls/integer-textbox) control to an application by dragging it from the toolbox to a view of the designer. The following dependent assembly will be added automatically:
+You can add the [WPF Integer TextBox](https://www.syncfusion.com/wpf-controls/integer-textbox) control to an application by dragging it from the toolbox to a view of the designer. The following dependent assembly will be added automatically:
 
 * Syncfusion.Shared.WPF
 
 ![Dragging WPF IntegerTextBox Control from Toolbox to Designer](getting-started_images/wpf-integer-textbox-toolbox.png)
 
-## Adding WPF IntegerTextBox via XAML
+## Adding WPF Integer TextBox via XAML
 
-To add the IntegerTextBox control manually in XAML, follow these steps:
+To add the WPF Integer TextBox control manually in XAML, follow these steps:
 
 1. Create a new WPF project in Visual Studio.
 
@@ -37,7 +37,7 @@ To add the IntegerTextBox control manually in XAML, follow these steps:
 
 3. Import the Syncfusion<sup>®</sup> WPF schema with the `xmlns:syncfusion="http://schemas.syncfusion.com/wpf"` namespace mapping.
 
-4. Declare the `IntegerTextBox` control in the XAML page.
+4. Declare the `WPF Integer TextBox` control in the XAML page.
 
 {% capture codesnippet1 %}
 {% tabs %}
@@ -57,9 +57,9 @@ To add the IntegerTextBox control manually in XAML, follow these steps:
 {% endcapture %}
 {{ codesnippet1 | OrderList_Indent_Level_1 }}
 
-## Adding WPF IntegerTextBox via C\#
+## Adding WPF Integer TextBox via C\#
 
-To add the IntegerTextBox control manually in C#, follow these steps:
+To add the WPF Integer TextBox control manually in C#, follow these steps:
 
 1. Create a new WPF application via Visual Studio.
 
@@ -78,7 +78,7 @@ using Syncfusion.Windows.Shared;
 {% endcapture %}
 {{ codesnippet2 | OrderList_Indent_Level_1 }}
 
-4. Create an instance of IntegerTextBox and add it to the window.
+4. Create an instance of WPF Integer TextBox and add it to the window.
 
 {% capture codesnippet3 %}
 {% tabs %}
@@ -106,7 +106,7 @@ this.Content = integerTextBox;
 
 ## Setting Value
 
-The value of the `IntegerTextBox` can be set by using the [Value](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.IntegerTextBox.html#Syncfusion_Windows_Shared_IntegerTextBox_Value) property.
+The value of the `WPF Integer TextBox` can be set by using the [Value](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.IntegerTextBox.html#Syncfusion_Windows_Shared_IntegerTextBox_Value) property.
 
 {% tabs %}
 {% highlight XAML %}
@@ -130,9 +130,9 @@ N> Do not use the [Text](https://learn.microsoft.com/en-us/dotnet/api/system.win
 
 ### Binding Value
 
-Data binding establishes a connection between the application UI and business logic. Data binding can be unidirectional (source -> target or target <- source) or bidirectional (source <-> target). You can bind data to the `IntegerTextBox` using the `Value` property.
+Data binding establishes a connection between the application UI and business logic. Data binding can be unidirectional (source -> target or target <- source) or bidirectional (source <-> target). You can bind data to the `WPF Integer TextBox` using the `Value` property.
 
-The following code snippets illustrate the value binding from one `IntegerTextBox` to another.
+The following code snippets illustrate the value binding from one `WPF Integer TextBox` to another.
 
 {% tabs %}
 {% highlight XAML %}
@@ -173,7 +173,7 @@ class ViewModel : NotificationObject
 
 ## Value Changed Notification
 
-The `IntegerTextBox` control can notify value changes through the [ValueChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.IntegerTextBox.html#Syncfusion_Windows_Shared_IntegerTextBox_ValueChanged) event. You can get the old value and new value from the `OldValue` and `NewValue` properties of the `ValueChanged` event.
+The `WPF Integer TextBox` control can notify value changes through the [ValueChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.IntegerTextBox.html#Syncfusion_Windows_Shared_IntegerTextBox_ValueChanged) event. You can get the old value and new value from the `OldValue` and `NewValue` properties of the `ValueChanged` event.
 
 {% tabs %}
 {% highlight XAML %}
@@ -210,7 +210,7 @@ private void IntegerTextBox_ValueChanged(DependencyObject d, DependencyPropertyC
 
 ## Min Max Value Restriction
 
-The `Value` of `IntegerTextBox` can be restricted within a maximum and minimum limit. You can define the minimum and maximum values by setting the [MinValue](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.IntegerTextBox.html#Syncfusion_Windows_Shared_IntegerTextBox_MinValue) and [MaxValue](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.IntegerTextBox.html#Syncfusion_Windows_Shared_IntegerTextBox_MaxValue) properties. It allows the user to enter a value between `MinValue` and `MaxValue`.
+The `Value` of `WPF Integer TextBox` can be restricted within a maximum and minimum limit. You can define the minimum and maximum values by setting the [MinValue](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.IntegerTextBox.html#Syncfusion_Windows_Shared_IntegerTextBox_MinValue) and [MaxValue](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.IntegerTextBox.html#Syncfusion_Windows_Shared_IntegerTextBox_MaxValue) properties. It allows the user to enter a value between `MinValue` and `MaxValue`.
 
 {% tabs %}
 {% highlight XAML %}
@@ -238,7 +238,7 @@ integerTextBox.Value = 100;
 
 ## Step Interval for incrementing or decrementing the value
 
-The `IntegerTextBox` control allows you to increase or decrease the value by pressing the up and down arrow keys on the keyboard or by scrolling the mouse wheel over the control. The [ScrollInterval](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.IntegerTextBox.html#Syncfusion_Windows_Shared_IntegerTextBox_ScrollInterval) property specifies the increment or decrement intervals. The default value of `ScrollInterval` is 1. The default value of `IsScrollingOnCircle` is `true`.
+The `WPF Integer TextBox` control allows you to increase or decrease the value by pressing the up and down arrow keys on the keyboard or by scrolling the mouse wheel over the control. The [ScrollInterval](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.IntegerTextBox.html#Syncfusion_Windows_Shared_IntegerTextBox_ScrollInterval) property specifies the increment or decrement intervals. The default value of `ScrollInterval` is 1. The default value of `IsScrollingOnCircle` is `true`.
 
 {% tabs %}
 {% highlight XAML %}
@@ -267,7 +267,7 @@ integerTextBox.ScrollInterval = 4;
 
 ## Formatting the Value
 
-You can customize the number format by either setting the [NumberFormat](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.EditorBase.html#Syncfusion_Windows_Shared_EditorBase_NumberFormat) property or the [NumberGroupSeparator](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.IntegerTextBox.html#Syncfusion_Windows_Shared_IntegerTextBox_NumberGroupSeparator) and the [NumberGroupSizes](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.IntegerTextBox.html#Syncfusion_Windows_Shared_IntegerTextBox_NumberGroupSizes) properties of `IntegerTextBox`. Decimal properties (`NumberDecimalDigits` and `NumberDecimalSeparator`) are not applicable to integer values.
+You can customize the number format by either setting the [NumberFormat](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.EditorBase.html#Syncfusion_Windows_Shared_EditorBase_NumberFormat) property or the [NumberGroupSeparator](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.IntegerTextBox.html#Syncfusion_Windows_Shared_IntegerTextBox_NumberGroupSeparator) and the [NumberGroupSizes](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.IntegerTextBox.html#Syncfusion_Windows_Shared_IntegerTextBox_NumberGroupSizes) properties of `WPF Integer TextBox`. Decimal properties (`NumberDecimalDigits` and `NumberDecimalSeparator`) are not applicable to integer values.
 
 {% tabs %}
 {% highlight XAML %}
@@ -296,7 +296,7 @@ integerTextBox.NumberFormat = new NumberFormatInfo()
 
 ## Setting the Culture
 
-The `IntegerTextBox` provides support for globalization by using the [Culture](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.EditorBase.html#Syncfusion_Windows_Shared_EditorBase_Culture) property. The `Culture` is used to format the group separator of the `IntegerTextBox` value based on the respective culture.
+The `WPF Integer TextBox` provides support for globalization by using the [Culture](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.EditorBase.html#Syncfusion_Windows_Shared_EditorBase_Culture) property. The `Culture` is used to format the group separator of the `WPF Integer TextBox` value based on the respective culture.
 
 {% tabs %}
 {% highlight XAML %}
@@ -324,7 +324,7 @@ N> When you use both `NumberFormat` and `Culture`, the `NumberFormat` will have 
 
 ## Theme
 
-IntegerTextBox supports various built-in themes. Refer to the below links to apply themes for the IntegerTextBox,
+The WPF Integer TextBox supports various built-in themes. Refer to the links below to apply themes,
 
   * [Apply theme using SfSkinManager](https://help.syncfusion.com/wpf/themes/skin-manager)
 	

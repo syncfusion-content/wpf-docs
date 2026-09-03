@@ -114,7 +114,7 @@ dateTimeEdit.CustomPattern = "MM-yyyy";
 {% endhighlight  %}
 {% endtabs %}
 
-![DateTimeEdit restrict date selection](Maximum-and-Minimum-Value_images/Restrict_date_selection.png)
+![WPF DateTimePicker restrict date selection](Maximum-and-Minimum-Value_images/Restrict_date_selection.png)
 
 N> View [Sample](https://github.com/SyncfusionExamples/wpf-datetimepicker-examples/tree/master/Samples/Dropdown-Options) in GitHub
 
@@ -192,6 +192,6 @@ dateTimeEdit.DateTime = new DateTime(2020, 06, 20);
 {% endhighlight  %}
 {% endtabs %}
 
-![DateTimeEdit in read only mode](Maximum-and-Minimum-Value_images/wpf-datetimeedit-read-only-mode.png)
+![WPF DateTimePicker in read only mode](Maximum-and-Minimum-Value_images/wpf-datetimeedit-read-only-mode.png)
 
 N> View [Sample](https://github.com/SyncfusionExamples/wpf-datetimepicker-examples/tree/master/Samples/Dropdown-Options) in GitHub

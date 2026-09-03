@@ -9,7 +9,7 @@ documentation: ug
 
 # Localization in WPF SfDiagram
 
-Localization is the process of adapting an application to a specific language or culture. [WPF Diagram](https://www.syncfusion.com/diagram-sdk/wpf-diagram) lets you localize all static text used for annotations and context menu contents.
+Localization is the process of adapting an application to a specific language or culture. [WPF SfDiagram](https://www.syncfusion.com/diagram-sdk/wpf-diagram) lets you localize all static text used for annotations and context menu contents.
 
 The following items can be localized:
 

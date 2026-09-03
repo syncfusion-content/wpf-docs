@@ -9,7 +9,7 @@ documentation: ug
 
 # Annotation Positioning and Appearance in WPF SfDiagram
 
-[WPF Diagram](https://www.syncfusion.com/diagram-sdk/wpf-diagram) allows you to customize the position and appearance of the annotation efficiently.
+[WPF SfDiagram](https://www.syncfusion.com/diagram-sdk/wpf-diagram) allows you to customize the position and appearance of the annotation efficiently.
 
 ## How to position node's annotation 
 

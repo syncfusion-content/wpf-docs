@@ -140,7 +140,7 @@ CalendarEdit calendarEdit = new CalendarEdit();
 {% endhighlight %}
 {% endtabs %}
 
-![Date selected from the CalendarEdit](Getting-Started_images/wpf-calendar-control-date-selection.png)
+![Date selected from the WPF Calendar](Getting-Started_images/wpf-calendar-control-date-selection.png)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusin-wpf-calendar-examples/tree/master/Samples/Select-Date)
 
@@ -235,7 +235,7 @@ this.calendarEdit.SelectedDatesList.Add(new Date(2020, 08, 29));
 {% endhighlight %}
 {% endtabs %}
 
-![Multiple dates selected programmatically from the CalendarEdit](Getting-Started_images/MultipleDate_programmatically.png)
+![Multiple dates selected programmatically from the WPF Calendar](Getting-Started_images/MultipleDate_programmatically.png)
 
 ## Restrict date selection
 
@@ -264,7 +264,7 @@ calendarEdit.MaxDate = new DateTime(2020, 05, 10);
 {% endhighlight  %}
 {% endtabs %}
 
-![CalendarEdit showing dates that are disabled](Getting-Started_images/wpf-calendar-control-min-max-dates.png)
+![WPF Calendar showing dates that are disabled](Getting-Started_images/wpf-calendar-control-min-max-dates.png)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusin-wpf-calendar-examples/tree/master/Samples/Restrict-Date)
 
@@ -411,7 +411,7 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusin-wpf-c
 By default, the days are displayed in the `CalendarEdit`.
 You can change the default calendar view as week numbers, month, years or years range mode by setting the respective value to the [VisualMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.CalendarEdit.html#Syncfusion_Windows_Shared_CalendarEdit_VisualMode) property. The default value of `VisualMode` property is `Days`.
 
-![Various initial display mode for CalendarEdit](Working-with-Calendar_images/VisualMode.png)
+![Various initial display mode for WPF Calendar](Working-with-Calendar_images/VisualMode.png)
 
 {% tabs %}
 {% highlight XAML %}
@@ -491,7 +491,7 @@ calendarEdit.ShowAbbreviatedMonthNames = false;
 {% endhighlight %}
 {% endtabs %}
 
-![CalendarEdit shows full month and week name](Getting-Started_images/FullDayNames.png)
+![WPF Calendar shows full month and week name](Getting-Started_images/FullDayNames.png)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusin-wpf-calendar-examples/tree/master/Samples/Select-Date)
 

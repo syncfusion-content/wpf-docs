@@ -23,7 +23,7 @@ You can easily navigate to the day, month or year or decade modes by pressing th
 
 For example, if you will start navigation from month mode, it will be move to next or previous mode as follows,
 
-![Multiple dates selected by key navigation in CalendarEdit](Working-with-Calendar_images/Mode_keynavigation.png)
+![Multiple dates selected by key navigation in WPF Calendar](Working-with-Calendar_images/Mode_keynavigation.png)
 
 ### Change animation time for calendar mode navigation 
 

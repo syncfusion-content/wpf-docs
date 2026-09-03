@@ -7,19 +7,19 @@ control: IntegerTextBox
 documentation: ug
 ---
 
-# Restriction or Validation in WPF IntegerTextBox
+# Restriction or Validation in WPF Integer TextBox
 
-This section explains how to validate or restrict the [IntegerTextBox](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.IntegerTextBox.html) control value.
+This section explains how to validate or restrict the [WPF Integer TextBox](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.IntegerTextBox.html) control value.
 
 ## Restrict the value within minimum and maximum value
 
-The [Value](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.IntegerTextBox.html#Syncfusion_Windows_Shared_IntegerTextBox_Value) of the [IntegerTextBox](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.IntegerTextBox.html) can be restricted within the maximum and minimum limits. Once the value has reached the maximum or minimum value, the value does not exceed the limit. You can change the minimum and maximum limits by using the [MinValue](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.IntegerTextBox.html#Syncfusion_Windows_Shared_IntegerTextBox_MinValue) and [MaxValue](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.IntegerTextBox.html#Syncfusion_Windows_Shared_IntegerTextBox_MaxValue) properties.
+The [Value](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.IntegerTextBox.html#Syncfusion_Windows_Shared_IntegerTextBox_Value) of the [WPF Integer TextBox](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.IntegerTextBox.html) can be restricted within the maximum and minimum limits. Once the value has reached the maximum or minimum value, the value does not exceed the limit. You can change the minimum and maximum limits by using the [MinValue](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.IntegerTextBox.html#Syncfusion_Windows_Shared_IntegerTextBox_MinValue) and [MaxValue](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.IntegerTextBox.html#Syncfusion_Windows_Shared_IntegerTextBox_MaxValue) properties.
 
 You can choose when to validate the maximum and minimum limits while changing the values by using the [MinValidation](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.EditorBase.html#Syncfusion_Windows_Shared_EditorBase_MinValidation) and [MaxValidation](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.EditorBase.html#Syncfusion_Windows_Shared_EditorBase_MaxValidation) properties.
 
-* `OnKeyPress` — When [MaxValidation](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.EditorBase.html#Syncfusion_Windows_Shared_EditorBase_MaxValidation) or [MinValidation](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.EditorBase.html#Syncfusion_Windows_Shared_EditorBase_MinValidation) is set to `OnKeyPress`, the value in the `IntegerTextBox` is validated shortly after pressing a key. As a result, invalid input is not allowed, and the value does not exceed the maximum and minimum limits.
+* `OnKeyPress` — When [MaxValidation](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.EditorBase.html#Syncfusion_Windows_Shared_EditorBase_MaxValidation) or [MinValidation](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.EditorBase.html#Syncfusion_Windows_Shared_EditorBase_MinValidation) is set to `OnKeyPress`, the value in the `WPF Integer TextBox` is validated shortly after pressing a key. As a result, invalid input is not allowed, and the value does not exceed the maximum and minimum limits.
 
-* `OnLostFocus` - When [MaxValidation](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.EditorBase.html#Syncfusion_Windows_Shared_EditorBase_MaxValidation) or [MinValidation](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.EditorBase.html#Syncfusion_Windows_Shared_EditorBase_MinValidation) is set to `OnLostFocus`, the value in the `IntegerTextBox` is validated when the control loses keyboard focus. After validation, when the value of the `IntegerTextBox` is greater than the `MaxValue` or less than the `MinValue`, the value will be automatically set to `MaxValue` or `MinValue`.
+* `OnLostFocus` - When [MaxValidation](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.EditorBase.html#Syncfusion_Windows_Shared_EditorBase_MaxValidation) or [MinValidation](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.EditorBase.html#Syncfusion_Windows_Shared_EditorBase_MinValidation) is set to `OnLostFocus`, the value in the `WPF Integer TextBox` is validated when the control loses keyboard focus. After validation, when the value is greater than the `MaxValue` or less than the `MinValue`, the value will be automatically set to `MaxValue` or `MinValue`.
 
 * [MaxValueOnExceedMaxDigit](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.EditorBase.html#Syncfusion_Windows_Shared_EditorBase_MaxValueOnExceedMaxDigit) - When you give input greater than the specified maximum limit, `MaxValueOnExceedMaxDigit` decides whether to retain the old value or reset to the specified maximum limit. For example, if `MaxValue` is set to 100 and you are trying to input 200, the `Value` will change to 100 when `MaxValueOnExceedMaxDigit` is `true`, or 20 will be retained if `MaxValueOnExceedMaxDigit` is `false`.
 
@@ -62,7 +62,7 @@ When `MinValidation` is set to `OnKeyPress`, you cannot enter a value less than 
 
 ## Read-only mode
 
-The [IntegerTextBox](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.IntegerTextBox.html) does not allow user input or edits at runtime when the [IsReadOnly](https://learn.microsoft.com/en-us/dotnet/api/system.windows.controls.primitives.textboxbase.isreadonly?view=netframework-4.8#System_Windows_Controls_Primitives_TextBoxBase_IsReadOnly) property is set to `true`. The user can still select text and display the cursor in the `IntegerTextBox` by setting the [IsReadOnlyCaretVisible](https://learn.microsoft.com/en-us/dotnet/api/system.windows.controls.primitives.textboxbase.isreadonlycaretvisible?view=netframework-4.8) property to `true`. The default value of `IsReadOnly` is `false` and the default value of `IsReadOnlyCaretVisible` is `false`. The `Value` can still be changed programmatically in read-only mode.
+The [WPF Integer TextBox](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.IntegerTextBox.html) does not allow user input or edits at runtime when the [IsReadOnly](https://learn.microsoft.com/en-us/dotnet/api/system.windows.controls.primitives.textboxbase.isreadonly?view=netframework-4.8#System_Windows_Controls_Primitives_TextBoxBase_IsReadOnly) property is set to `true`. The user can still select text and display the cursor in the `WPF Integer TextBox` by setting the [IsReadOnlyCaretVisible](https://learn.microsoft.com/en-us/dotnet/api/system.windows.controls.primitives.textboxbase.isreadonlycaretvisible?view=netframework-4.8) property to `true`. The default value of `IsReadOnly` is `false` and the default value of `IsReadOnlyCaretVisible` is `false`. The `Value` can still be changed programmatically in read-only mode.
 
 {% tabs %}
 {% highlight XAML %}
@@ -86,9 +86,9 @@ integerTextBox.IsReadOnlyCaretVisible = true;
 
 ## Customizing the Behavior for an Invalid Value
 
-You can customize how the [IntegerTextBox](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.IntegerTextBox.html) behaves when the entered value is not equal to the [ValidationValue](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.IntegerTextBox.html#Syncfusion_Windows_Shared_IntegerTextBox_ValidationValue) property, by using the [InvalidValueBehavior](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.IntegerTextBox.html#Syncfusion_Windows_Shared_IntegerTextBox_InvalidValueBehavior) property. It can be customized by the following values:
+You can customize how the [WPF Integer TextBox](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.IntegerTextBox.html) behaves when the entered value is not equal to the [ValidationValue](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.IntegerTextBox.html#Syncfusion_Windows_Shared_IntegerTextBox_ValidationValue) property, by using the [InvalidValueBehavior](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.IntegerTextBox.html#Syncfusion_Windows_Shared_IntegerTextBox_InvalidValueBehavior) property. It can be customized by the following values:
 
-* `DisplayErrorMessage` - Shows a MessageBox with the message "String validation failed" after focus is lost from the `IntegerTextBox`.
+* `DisplayErrorMessage` - Shows a MessageBox with the message "String validation failed" after focus is lost from the `WPF Integer TextBox`.
 * `None` - Validation will not occur.
 * `ResetValue` - Resets the entered value to `0` after focus is lost.
 

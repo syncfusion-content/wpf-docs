@@ -430,7 +430,7 @@ ChartAdornmentInfo3D adornmentInfo = new ChartAdornmentInfo3D()
 
 ## Smart Labels
 
-When you have more data points in Pie or Doughnut series, the adornment labels might overlap with each other. SfChart3D provides built-in support to avoid this overlapping by using the [`EnableSmartLabels`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.CircularSeriesBase.html#Syncfusion_UI_Xaml_Charts_CircularSeriesBase_EnableSmartLabels) property.
+When you have more data points in Pie or Doughnut series, the adornment labels might overlap with each other. WPF 3D Chart provides built-in support to avoid this overlapping by using the [`EnableSmartLabels`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.CircularSeriesBase.html#Syncfusion_UI_Xaml_Charts_CircularSeriesBase_EnableSmartLabels) property.
 
 The following code example demonstrates the `EnableSmartLabels` property:
 

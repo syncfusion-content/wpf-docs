@@ -9,11 +9,11 @@ documentation: ug
 
 # Ordering in WPF PropertyGrid
 
-We can order the properties according to our needs. We can change the order of the properties by attributes and event.
+We can order the properties according to our needs. We can change the order of the properties by using attributes and events.
 
 ## Ordering using Attribute
 
-The properties in [PropertyGrid](https://www.syncfusion.com/wpf-ui-controls/propertygrid) will be ordered based on the value specified in the [Order](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.dataannotations.displayattribute.order?view=netframework-4.8) field of [Display](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.dataannotations.displayattribute?view=netframework-4.8) attribute. If we need to change the order of the properties, we should set the `SortDirection` property to `null`.
+The properties in the [WPF PropertyGrid](https://www.syncfusion.com/wpf-ui-controls/propertygrid) will be ordered based on the value specified in the [Order](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.dataannotations.displayattribute.order?view=netframework-4.8) field of the [Display](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.dataannotations.displayattribute?view=netframework-4.8) attribute. If we need to change the order of the properties, we should set the `SortDirection` property to `null`.
 
 {% tabs %}
 {% highlight C# %}
@@ -98,23 +98,23 @@ propertyGrid1.SortDirection = null;
 
 ### Ordering in Group view
 
-Based on the value specified in the `Order` field of `Display` attribute, the property items will be ordered and grouped. Groups are ordered according to group which contains the lower ordered property.
+Based on the value specified in the `Order` field of the `Display` attribute, the property items will be ordered and grouped. Groups are ordered according to the group which contains the lower ordered property.
 
 ![Properties are in ordered based on the value specified in the Order field of the Display attribute](Sorting-Images\Categories-Ordering.png)
 
-Here, the `FirstName` property contains the lower order as `0` and categorized under the `Identity` category. Then the `Identity` category ordered as first. After that, `Age` property contains the lower order as `2` from another category, So `Misc` category ordered as `second`  and vice versa.
+Here, the `FirstName` property contains the lower order as `0` and is categorized under the `Identity` category, so the `Identity` category is ordered first. After that, the `Age` property contains the lower order as `2` from another category, so the `Misc` category is ordered `second`, and vice versa.
 
 ### Ordering with Sort view
 
-If more than one property has same `Order` value, then the properties with distinct numbers will be added first, then the duplicate order properties will be added. Also, if any of the properties doesn’t have order, that properties will be arranged at last based on the order in which they were added in the class.
+If more than one property has the same `Order` value, then the properties with distinct numbers will be added first, then the duplicate order properties will be added. Also, if any of the properties don’t have an order, those properties will be arranged last based on the order in which they were added in the class.
 
 ![Properties are in ordered based on the value specified in the Order field of the Display attribute](Sorting-Images\Properties-Ordering.png)
 
-Here, the property `DOB` and `Gender` has same order but the `Gender` property is added prior than `DOB`. So the `Gender` property will be arranged in `4th` place, and the `DOB` is arranged after Country property. And the other non-specified order properties are arranged based on the order in which they were added to the Class.
+Here, the properties `DOB` and `Gender` have the same order, but the `Gender` property is added prior to `DOB`. So the `Gender` property will be arranged in the `4th` place, and the `DOB` is arranged after the Country property. The other non-specified order properties are arranged based on the order in which they were added to the class.
 
 ## Ordering based on properties defined in class
 
-The Ordering can be performed without using any Attributes. If the `SortDirection` property is `null` and the properties have no custom order, then the properties will be ordered according to the order in which they were added to the class.
+Ordering can be performed without using any attributes. If the `SortDirection` property is `null` and the properties have no custom order, then the properties will be ordered according to the order in which they were added to the class.
 
 {% tabs %}
 {% highlight C# %}
@@ -195,20 +195,20 @@ propertyGrid1.SortDirection = null;
 
 ![Properties are in ordered based on they added into the Class](Sorting-Images\Property-Default-Ordering.png)
 
-Here, the properties are arranged from the `Gender` property and end with `Age` property by the order in which they were added to the class. 
+Here, the properties are arranged starting with the `Gender` property and ending with the `Age` property, according to the order in which they were added to the class. 
 
 
 ![Categories are in ordered based on they added into the Class](Sorting-Images\Category-Default-Ordering.png)
 
-Here, the `Gender` property added in the class at `first` and categorized under the `Identity` category. Then the `Identity` category ordered as `first`. After that, `Country` property added in the class from another category, So `Address` category ordered as `second` and vice versa.
+Here, the `Gender` property is added first in the class and is categorized under the `Identity` category, so the `Identity` category is ordered `first`. After that, the `Country` property is added in the class from another category, so the `Address` category is ordered `second`, and vice versa.
 
-N> If you use both `Ordering` and `Sorting`, `Sorting` have higher priority. So the properties are arranged either `Ascending` or `Descending` order according to the sorting value.
+N> If you use both `Ordering` and `Sorting`, `Sorting` has higher priority. So the properties are arranged in either `Ascending` or `Descending` order according to the sorting value.
 
 Click [here](https://github.com/SyncfusionExamples/wpf-property-grid-examples/tree/master/Samples/Grouping-Sorting-Ordering) to download the sample that showcases the property ordering support using the attributes.
 
 ## Change Property order at runtime
 
-We can set the property order without using the attributes and can change the property order at runtime by handling the [AutoGeneratingPropertyGridItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.PropertyGrid.html)  event with [AutoGeneratingPropertyGridItemEventArgs.Order](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.AutoGeneratingPropertyGridItemEventArgs.html#Syncfusion_Windows_PropertyGrid_AutoGeneratingPropertyGridItemEventArgs_Order) property.
+We can set the property order without using attributes and change the property order at runtime by handling the [AutoGeneratingPropertyGridItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.PropertyGrid.html) event with the [AutoGeneratingPropertyGridItemEventArgs.Order](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.AutoGeneratingPropertyGridItemEventArgs.html#Syncfusion_Windows_PropertyGrid_AutoGeneratingPropertyGridItemEventArgs_Order) property.
 
 {% tabs %}
 {% highlight C# %}

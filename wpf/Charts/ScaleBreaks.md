@@ -12,7 +12,7 @@ Scale break is a stripe drawn in the chart area to denote the break in the conti
 
 ## Positioning the Breaks
 
-SfChart provides [`Start`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAxisScaleBreak.html#Syncfusion_UI_Xaml_Charts_ChartAxisScaleBreak_Start) and [`End`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAxisScaleBreak.html#Syncfusion_UI_Xaml_Charts_ChartAxisScaleBreak_End) properties for defining the scale break range (ranges that need to be skipped). These values are based on axis values.
+WPF Charts provides [`Start`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAxisScaleBreak.html#Syncfusion_UI_Xaml_Charts_ChartAxisScaleBreak_Start) and [`End`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAxisScaleBreak.html#Syncfusion_UI_Xaml_Charts_ChartAxisScaleBreak_End) properties for defining the scale break range (ranges that need to be skipped). These values are based on axis values.
 
 The following image has data points with both greater and smaller magnitude, but the segments with smaller values is not visualized properly.
 

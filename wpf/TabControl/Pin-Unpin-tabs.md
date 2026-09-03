@@ -7,9 +7,9 @@ control: TabControlExt
 documentation: ug
 ---
 
-# Pin and Unpin Tabs in WPF TabControlExt
+# Pin and Unpin Tabs in WPF Tab Control
 
-This section explains the pin and unpin tab items in [TabControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.TabControlExt.html). 
+This section explains the pin and unpin tab items in [WPF Tab Control](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.TabControlExt.html). 
 
 ## Enabling pin and unpin behaviors
 

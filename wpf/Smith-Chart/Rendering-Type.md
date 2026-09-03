@@ -9,7 +9,7 @@ documentation: ug
 
 # Rendering Type in WPF Smith Chart
 
-SfSmithChart plots the transmission line in two different ways by using the `RenderingType` property. The two ways are given below.
+WPF Smith Chart plots the transmission line in two different ways by using the `RenderingType` property. The two ways are given below.
 
 
 ## Impedance

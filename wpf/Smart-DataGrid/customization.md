@@ -5,18 +5,18 @@ description: The customization options in Smart Data Grid enable configuration o
 platform: wpf
 control: Smart Data Grid
 documentation: ug
-keywords : WPF datagrid, customization, assistview, prompts, smart actions
+keywords : WPF smart data grid,wpf smart grid, wpf datagrid, customization, assistview, prompts, smart actions
 ---
 
 # Customization in WPF Smart Data Grid
 
-The `SfSmartDataGrid` provides options to customize its behavior and appearance, including predefined suggestions, initial prompts, enabling or disabling smart actions.
+The `WPF Smart Data Grid` provides options to customize its behavior and appearance, including predefined suggestions, initial prompts, enabling or disabling smart actions.
 
 ## CurrentUser
 
 N>Bind the **CurrentUser** property to differentiate outgoing requests (from the user) and incoming responses (from AI) in the AssistView layout. If **CurrentUser** is not set, the control cannot distinguish between outgoing and incoming messages, and all messages will appear with the same alignment and style.
 
-The `CurrentUser` property of `SfSmartDataGrid` provides the current author or user context. This can be used by the AssistView and smart actions for personalization, audit information, or to tailor suggestions based on the active user.
+The `CurrentUser` property provides the current author or user context. This can be used by the AssistView and smart actions for personalization, audit information, or to tailor suggestions based on the active user.
 
 {% tabs %}
 {% highlight c# %}
@@ -27,7 +27,7 @@ SmartGrid.CurrentUser = new Author { Name = "John Doe" };
 
 ## Suggestions
 
-The `Suggestions` property in `SfSmartDataGrid` is used to provide a predefined list of suggestions that appear in the AssistView. These suggestions help users quickly select common actions without typing commands manually.
+The `Suggestions` property is used to provide a predefined list of suggestions that appear in the AssistView. These suggestions help users quickly select common actions without typing commands manually.
 
 {% tabs %}
 {% highlight xaml %}
@@ -49,7 +49,7 @@ public class ViewModel
 {% endhighlight %}
 {% endtabs %}
 
-<img alt="WPF-smart-datagrid-suggested-prompts" src="getting-started_images\wpf-smart-datagrid-overview.png" width="600"/>
+<img alt="suggested-prompts" src="getting-started_images\wpf-smart-datagrid-overview.png" width="600"/>
 
 ## Prompt
 
@@ -68,7 +68,7 @@ SmartGrid.Prompt = "Sort the Quantity column";;
 
 ## EnableSmartActions
 
-The `EnableSmartActions` property in `SfSmartDataGrid` determines whether AI actions can be applied to the DataGrid. By default, this property is set to false, meaning actions such as sorting, grouping, filtering, and highlighting are not applied automatically.
+The `EnableSmartActions` property determines whether AI actions can be applied to the Smart Data Grid. By default, this property is set to false, meaning actions such as sorting, grouping, filtering, and highlighting are not applied automatically.
 When the property is set to true, these actions are enabled and can be applied to the grid.
 
 
@@ -86,7 +86,7 @@ SmartGrid.EnableSmartActions = true;
 
 ## HighlightBrush
 
-The `HighlightBrush` property is of type `SolidColorBrush` and controls the brush used when smart actions apply visual highlights to rows or cells (for example, when the AI highlights matching records). You can set this in XAML or code-behind.
+The `HighlightBrush` property is type of `SolidColorBrush` and controls the brush used when smart actions apply visual highlights to rows or cells (for example, when the AI highlights matching records). You can set this in XAML or code-behind.
 
 {% tabs %}
 {% highlight xaml %}
@@ -102,7 +102,7 @@ SmartGrid.HighlightBrush = new SolidColorBrush(Colors.Orange);
 
 ## Apply Smart Actions Programmatically
 
-The `ExecutePrompt` method in `SfSmartDataGrid` is used to fetch a response programmatically without opening the AssistView. By passing a prompt to this method, the required action is applied directly to the DataGrid. 
+The `ExecutePrompt` method in `SfSmartDataGrid` is used to fetch a response programmatically without opening the AssistView. By passing a prompt to this method, the required action is applied directly to the grid. 
 
 {% tabs %}
 {% highlight c# %}

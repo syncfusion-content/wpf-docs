@@ -9,7 +9,7 @@ documentation: ug
 
 # Data Binding in WPF OLAP Gauge
 
-## Binding an OLAP gauge to an offline cube
+## Binding a WPF OLAP Gauge to an offline cube
 
 To connect to an OLAP cube available on the local machine, the physical path of the cube should be specified in the connection string. The following code snippet illustrates the same.
 
@@ -20,7 +20,7 @@ OlapDataManager DataManager = new OlapDataManager(connectionString);
 
 {% endhighlight %}
 
-## Binding an OLAP gauge to a cube in local SQL Server
+## Binding a WPF OLAP Gauge to a cube in local SQL Server
 
 To connect to the OLAP cube available in SQL Server Analysis Services on the local machine, the server name and database name should be specified in the connection string. The following code example illustrates the same.
 
@@ -44,7 +44,7 @@ Dim DataManager As New OlapDataManager(connectionString)
 
 {% endtabs %}
 
-## Binding OLAP gauge to cube in online SQL Server
+## Binding WPF OLAP Gauge to cube in online SQL Server
 
 To connect to the OLAP cube available in SQL server Analysis Services on a the online server through **XML/A**, the host server link and database name should be specified in the connection string. The following code example illustrates the same.
 
@@ -68,7 +68,7 @@ Dim DataManager As New OlapDataManager(connectionString)
 
 {% endtabs %}
 
-## Binding OLAP gauge to cube in online Mondrian server
+## Binding WPF OLAP Gauge to cube in online Mondrian server
 
 To connect to the OLAP cube available on a Mondrian server through **XML/A**, the host server link and database name should be specified in the connection string. The following code example illustrates the same.
 
@@ -94,7 +94,7 @@ DataManager.DataProvider.ProviderName = Syncfusion.Olap.DataProvider.Providers.M
 
 {% endtabs %}
 
-## Binding OLAP gauge to cube in online ActivePivot Server
+## Binding WPF OLAP Gauge to cube in online ActivePivot Server
 
 To connect to the OLAP cube available in ActivePivot Server through **XML/A**, the host server link and database name should be specified in the connection string. The following code example illustrates the same.
 

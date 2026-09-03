@@ -7,9 +7,9 @@ control: TabControlExt
 documentation: ug
 ---
 
-# Context Menu in WPF TabControlExt
+# Context Menu in WPF Tab Control
 
-This section explains how to show the tab list and tab item context menu and add custom context menu in [TabControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.TabControlExt.html).
+This section explains how to show the tab list and tab item context menu and add custom context menu in [WPF Tab Control](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.TabControlExt.html).
 
 ## Default tab item context menu
 
