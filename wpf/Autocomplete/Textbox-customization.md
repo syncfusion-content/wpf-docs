@@ -1,20 +1,20 @@
 ---
 layout: post
 title: TextBox Customization in WPF AutoComplete | Syncfusion®
-description: TextBox Customization in SfTextBoxExt enables modifying text input appearance, editing behavior, and visual presentation.
+description: TextBox Customization in WPF AutoComplete enables modifying text input appearance, editing behavior, and visual presentation.
 platform: wpf
 control: SfTextBoxExt
 documentation: ug
 ---
 
-# Textbox customization in WPF Autocomplete (SfTextBoxExt)
+# Textbox customization in WPF AutoComplete (SfTextBoxExt)
 
-AutoComplete provides the user-friendly customizing options for text box. This section explains how to customize the entire AutoComplete control.
+The [WPF AutoComplete](https://www.syncfusion.com/wpf-controls/autocomplete) control provides user-friendly text box customization options. This section explains how to customize the entire control. The WPF AutoComplete control is implemented through the [SfTextBoxExt](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html) class.
 
 
 ## Water mark 
 
-[Watermark](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_Watermark) property, allows to specify some information when the text is empty. For illustration, let us create a simple textbox and indicate enter names separated by a comma.
+The [Watermark](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_Watermark) property allows you to specify information when the text is empty. For illustration, create a simple text box and indicate names separated by commas.
 
 {% tabs %}
 {% highlight xaml %}
@@ -95,7 +95,7 @@ Any business object can be bound to the Watermark property and that object can b
 
 ## Customizing the TextBox
 
-The [Text](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_IgnoreCase), [FontSize](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_IgnoreCase), [FontWeight](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_IgnoreCase), and [FontFamily](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_IgnoreCase) properties are used to customize the text in the AutoComplete control.
+The [Text](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_IgnoreCase), [FontSize](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_IgnoreCase), [FontWeight](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_IgnoreCase), and [FontFamily](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_IgnoreCase) properties are used to customize the text in the WPF AutoComplete control.
 
 {% tabs %}
 
@@ -123,7 +123,7 @@ textBoxExt.FontFamily = new FontFamily("Times New Roman");
 
 {% endtabs %}
 
-![AutoComplete Customization](Textbox_customization_images/Customization.png)
+![WPF AutoComplete Customization](Textbox_customization_images/Customization.png)
 
 
 

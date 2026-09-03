@@ -1,19 +1,19 @@
 ---
 layout: post
 title: Autocomplete and Filtering in WPF AutoComplete | Syncfusion®
-description: Autocomplete and Filtering in SfTextBoxExt provide relevant suggestions, dynamic filtering, and search assistance as users enter text.
+description: Autocomplete and Filtering in WPF AutoComplete provide relevant suggestions, dynamic filtering, and search assistance as users enter text.
 platform: wpf
 control: SfTextBoxExt
 documentation: ug
 ---
 
-# Autocomplete and filtering in WPF Autocomplete (SfTextBoxExt)
+# Autocomplete and filtering in WPF AutoComplete (SfTextBoxExt)
 
-The AutoComplete functionality provides several modes of suggestions while typing. The suggested text can be appended to the original text, or can be displayed in a drop-down list so that searched item can be chosen based on the filtering option set.
+The [WPF AutoComplete](https://www.syncfusion.com/wpf-controls/autocomplete) control provides several modes of suggestions while typing. The suggested text can be appended to the original text or displayed in a drop-down list so that a searched item can be chosen based on the filtering option set. The WPF AutoComplete control is implemented through the [SfTextBoxExt](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html) class.
 
-## AutoComplete source
+## WPF AutoComplete source
 
-The [SfTextBoxExt](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html) control can be populated with a predefined list of items bind to the [AutoCompleteSource](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_AutoCompleteSource) property. The data can be either a list of strings or a custom data.
+The [SfTextBoxExt](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html) control can be populated with a predefined list of items bound to the [AutoCompleteSource](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_AutoCompleteSource) property. The data can be either a list of strings or custom data.
 
 
 {% tabs %}
@@ -30,7 +30,7 @@ The [SfTextBoxExt](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Control
 {% endhighlight %}
 {% endtabs %}
 
-For further details, refer to [Populating Autocomplete with Data](https://help.syncfusion.com/wpf/autocomplete/getting-started#populating-autocomplete-with-data).
+For further details, refer to [Populating WPF AutoComplete with Data](https://help.syncfusion.com/wpf/autocomplete/getting-started#populating-autocomplete-with-data).
 
 ![AutoCompleteSource](AutoComplete_and_filtering_images/AutoCompleteSource.png)
 
@@ -204,7 +204,7 @@ The control returns all possible matches that equals the typed text based on the
 Custom
 </td>
 <td>
-The control returns all possible matches based on the Filter property. Filter property is of type SuggestionPredicate. In the MyFilter method, filtration is done by checking whether the collection contains the typed text.
+The control returns all possible matches based on the `Filter` property. The `Filter` property is of type `SuggestionPredicate`. In the `MyFilter` method, filtering is performed by checking whether the collection contains the typed text.
 </td>
 </tr>
 <tr>
@@ -465,7 +465,7 @@ N> View [sample](https://github.com/SyncfusionExamples/wpf-textboxext-examples/t
 
 ## Display a message when suggestions are empty 
 
-When the entered item is not in the suggestion list, AutoComplete displays a text indicating that there is no search results found. Th text to be displayed for this can be customized using the [NoResultsFoundTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_NoResultsFoundTemplate) property.
+When the entered item is not in the suggestion list, the WPF AutoComplete displays a text indicating that there is no search results found. Th text to be displayed for this can be customized using the [NoResultsFoundTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_NoResultsFoundTemplate) property.
 
 {% tabs %}
 {% highlight xaml %}

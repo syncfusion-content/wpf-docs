@@ -1,19 +1,19 @@
 ---
 layout: post
 title: Selection Support in WPF AutoComplete | Syncfusion®
-description: Selection support in AutoComplete (SfTextBoxExt) enables choosing single or multiple items from suggestions with configurable selection behavior.
+description: Selection support in WPF AutoComplete (SfTextBoxExt) enables choosing single or multiple items from suggestions with configurable selection behavior.
 platform: wpf
 control: SfTextBoxExt
 documentation: ug
 ---
 
-# Selection in WPF Autocomplete (SfTextBoxExt)
+# Selection in WPF AutoComplete (SfTextBoxExt)
 
-In AutoComplete selection can be performed using single selection or multi-selection. This can be handled by [MultiSelectMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_MultiSelectMode) property. The default value of `MultiSelectMode` is `None` which performs single selection.
+The [WPF AutoComplete](https://www.syncfusion.com/wpf-controls/autocomplete) control supports single and multiple selection. The WPF AutoComplete control is implemented through the [SfTextBoxExt](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html) class. You can configure selection by using the [MultiSelectMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_MultiSelectMode) property. The default value of the `MultiSelectMode` property is `None`, which enables single selection.
 
 ## Single selection
 
-The single selection can be performed by setting the [MultiSelectMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_MultiSelectMode) property to None. In this mode we can set and retrieve the selected item using the [SelectedItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_SelectedItem) property.
+You can enable single selection by setting the [MultiSelectMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_MultiSelectMode) property to `None`. In this mode, you can set and retrieve the selected item by using the [SelectedItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_SelectedItem) property.
 
 ## Multi selection
 
@@ -29,7 +29,7 @@ Each selected items can be displayed as a token representation having a close bu
 
 In token representation the control behavior of arranging the items can be done in two ways which is handled by the property [TokensWrapMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_TokensWrapMode).
 
-* `Wrap` - The selected items will be wrapped to the next line of the AutoComplete.
+* `Wrap` - The selected items will be wrapped to the next line of the WPF AutoComplete.
 
 * `None` - The selected items will be arranged in horizontal layout in single line.
 
@@ -152,7 +152,7 @@ textBoxExt.EnableAutoSize = true;
 
 ### ShowClearButton:
 
-This feature allows to show or hide the clear button in Token mode for the AutoComplete control using the [ShowClearButton]( https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_ShowClearButton) property.
+This feature allows to show or hide the clear button in Token mode for the WPF AutoComplete control using the [ShowClearButton]( https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_ShowClearButton) property.
 
 {% tabs %}
 
@@ -183,7 +183,7 @@ textBoxExt.ShowClearButton = true;
 
 N> The default `ShowClearButton` property value is false. It will be only applicable for `MultiSelectMode` is `Token`.  
 
-See also [Multiple selection using tokens ](https://help.syncfusion.com/wpf/autocomplete/single-and-multiple-selection#multiple-selection-using-tokens) topic in AutoComplete.
+See also [Multiple selection using tokens ](https://help.syncfusion.com/wpf/autocomplete/single-and-multiple-selection#multiple-selection-using-tokens) topic in WPF AutoComplete.
 
 
 ## Multiple selection using delimiter 

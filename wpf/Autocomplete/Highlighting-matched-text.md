@@ -1,21 +1,21 @@
 ---
 layout: post
 title: Highlighting Matched Text in WPF AutoComplete | Syncfusion®
-description: Highlighting Matched Text in SfTextBoxExt visually emphasizes matching characters within filtered suggestion results.
+description: Highlighting Matched Text in WPF AutoComplete visually emphasizes matching characters within filtered suggestion results.
 platform: wpf
 control: SfTextBoxExt
 documentation: ug
 ---
 
-# Highlighting Matched Text in WPF Autocomplete (SfTextBoxExt)
+# Highlighting Matched Text in WPF AutoComplete (SfTextBoxExt)
 
-By using the [TextHighlightMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_TextHighlightMode) property, highlight matching and unmatched characters in a suggestion list to pick an item with more clarity. The default value is None. The matching text can be highlighted in the following two ways:
+The [WPF AutoComplete](https://www.syncfusion.com/wpf-controls/autocomplete) control can highlight matching and unmatched characters in a suggestion list by using the [TextHighlightMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_TextHighlightMode) property. The WPF AutoComplete control is implemented through the [SfTextBoxExt](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html) class. The default value is `None`. The matching text can be highlighted in the following ways:
 
 * First occurrence
 * Multiple occurrence
 * Unmatched
 
-The text highlight can be indicated by customizing the color of the characters using [HighlightedTextColor](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_HighlightedTextColor) property and style of the characters using [HighlightedTextStyle](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_HighlightedTextStyle) property.
+You can customize the highlighted character color by using the [HighlightedTextColor](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_HighlightedTextColor) property and the character style by using the [HighlightedTextStyle](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_HighlightedTextStyle) property.
 
 N> The [HighlightedTextStyle](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_HighlightedTextStyle) property style target type is [Run](https://docs.microsoft.com/en-us/dotnet/api/system.windows.documents.run?view=net-5.0).
 
