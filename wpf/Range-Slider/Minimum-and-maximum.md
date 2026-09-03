@@ -9,7 +9,7 @@ documentation: ug
 
 # Minimum and Maximum in WPF Range Slider (SfRangeSlider)
 
-Gets or sets the minimum and maximum possible value of the range.
+The [WPF Range Slider](https://www.syncfusion.com/wpf-controls/range-slider) supports setting the minimum and maximum possible values of the range. The WPF Range Slider is implemented through the [SfRangeSlider](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfRangeSlider.html) class.
 
 {% tabs %}
 

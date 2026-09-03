@@ -1,7 +1,7 @@
-﻿---
+---
 layout: post
-title: Styling and Appearance in WPF RangeSlider | Syncfusion®
-description: Customize RangeSlider tracks, thumbs, ticks, value labels, and visual styles to create tailored slider experiences.
+title: Styling and Appearance in WPF Range Slider | Syncfusion®
+description: Customize WPF Range Slider tracks, thumbs, ticks, value labels, and visual styles to create tailored slider experiences.
 platform: wpf
 control: SfRangeSlider 
 documentation: ug
@@ -9,7 +9,7 @@ documentation: ug
 
 # Styling and Appearance in WPF Range Slider (SfRangeSlider)
 
-[SfRangeSlider](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfRangeSlider.html) makes it possible to change the appearance by providing certain properties.
+The [WPF Range Slider](https://www.syncfusion.com/wpf-controls/range-slider) makes it possible to change the appearance by providing certain properties. The WPF Range Slider is implemented through the [SfRangeSlider](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfRangeSlider.html) class.
 
 ## InactiveTrackStyle
 

@@ -9,7 +9,7 @@ documentation: ug
 
 # Range in WPF Range Slider (SfRangeSlider)
 
-The [SfRangeSlider](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfRangeSlider.html) control provides support to select the range of value using two thumbs.  
+The [WPF Range Slider](https://www.syncfusion.com/wpf-controls/range-slider) control supports selecting a range of values using two thumbs. The WPF Range Slider is implemented through the [SfRangeSlider](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfRangeSlider.html) class.
 
 ## ShowRange  
 

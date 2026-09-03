@@ -9,7 +9,7 @@ documentation: ug
 
 # Label Support in WPF Range Slider (SfRangeSlider)
 
-This feature allows the display of labels for custom values given in the collection of CustomLabels when the ShowCustomLabels property is set to true. When ShowValueLabels is set to true, it also displays labels for all the tick values.
+The [WPF Range Slider](https://www.syncfusion.com/wpf-controls/range-slider) supports displaying labels for custom values in the `CustomLabels` collection when the `ShowCustomLabels` property is set to `true`. When the `ShowValueLabels` property is set to `true`, it also displays labels for all tick values. The WPF Range Slider is implemented through the [SfRangeSlider](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfRangeSlider.html) class.
 
 Property Table
 
@@ -75,7 +75,7 @@ Create a ViewModel class with CustomCollection property.
 
 {% endtabs %}
 
-In the following code example, the CustomCollection property is bound to [CustomLabels](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfRangeSlider~CustomLabels.html) property in the SfRangeSlider control that populates the custom labels collection.
+In the following code example, the CustomCollection property is bound to [CustomLabels](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfRangeSlider~CustomLabels.html) property in the WPF Range Slider control that populates the custom labels collection.
 
 {% tabs %}
 
@@ -120,7 +120,7 @@ In the following code example, the CustomCollection property is bound to [Custom
 
 ![Label-Support_img1](Label-Support_images/Label-Support_img1.png)
 
-RangeSlider with CustomLabels
+WPF Range Slider with CustomLabels
 
 ## ShowCustomLabels
 
@@ -169,7 +169,7 @@ The default value for [ShowCustomLabels](https://help.syncfusion.com/cr/wpf/Sync
 
 ![Label-Support_img2](Label-Support_images/Label-Support_img2.png)
 
-RangeSlider with ShowCustomLabels
+WPF Range Slider with ShowCustomLabels
 
 ## LabelPlacement
 
