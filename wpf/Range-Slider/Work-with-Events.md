@@ -9,7 +9,7 @@ documentation: ug
 
 # How to Trigger Events in WPF Range Slider (SfRangeSlider)
 
-This section explains how to trigger and handle events in the Syncfusion® WPF Range Slider (SfRangeSlider) control. Learn about the available events, their event arguments, and how to respond to value and range changes programmatically.
+This section explains how to trigger and handle events in the [WPF Range Slider](https://www.syncfusion.com/wpf-controls/range-slider) control. Learn about the available events, their event arguments, and how to respond to value and range changes programmatically. The WPF Range Slider is implemented through the [SfRangeSlider](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfRangeSlider.html) class.
 
 ## How to trigger LabelLoaded event? 
 

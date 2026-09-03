@@ -9,7 +9,7 @@ documentation: ug
 
 # Styling and Appearance in WPF Range Slider (SfRangeSlider)
 
-[WPF Range Slider](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfRangeSlider.html) makes it possible to change the appearance by providing certain properties.
+The [WPF Range Slider](https://www.syncfusion.com/wpf-controls/range-slider) makes it possible to change the appearance by providing certain properties. The WPF Range Slider is implemented through the [SfRangeSlider](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfRangeSlider.html) class.
 
 ## InactiveTrackStyle
 

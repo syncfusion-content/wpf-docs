@@ -9,7 +9,7 @@ documentation: ug
 
 # Ticks in WPF Range Slider (SfRangeSlider)
 
-The WPF Range Slider makes it possible to place tick marks along the track in a uniform manner and also to customize the position of the tick marks.
+The [WPF Range Slider](https://www.syncfusion.com/wpf-controls/range-slider) makes it possible to place tick marks along the track uniformly and customize their position. The WPF Range Slider is implemented through the [SfRangeSlider](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfRangeSlider.html) class.
 
 ## Tick Frequency 
 

@@ -9,7 +9,7 @@ documentation: ug
 
 # Thumb ToolTip in WPF Range Slider (SfRangeSlider)
 
-The Thumb tooltip displays the current value where the Thumb stands. 
+The [WPF Range Slider](https://www.syncfusion.com/wpf-controls/range-slider) displays the current value at the Thumb position in a tooltip. The WPF Range Slider is implemented through the [SfRangeSlider](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfRangeSlider.html) class.
 
 ![ToolTip](Thumb-ToolTip_images/Thumb-ToolTip_img1.png)
 

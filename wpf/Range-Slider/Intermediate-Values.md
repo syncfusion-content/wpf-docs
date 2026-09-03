@@ -9,7 +9,7 @@ documentation: ug
 
 # Intermediate Values in WPF Range Slider (SfRangeSlider)
 
-It is possible to get an intermediate value before either the tick value or the step value is snapped when interacting with WPF Range Slider. 
+The [WPF Range Slider](https://www.syncfusion.com/wpf-controls/range-slider) provides an intermediate value before either the tick value or the step value is snapped during interaction. The WPF Range Slider is implemented through the [SfRangeSlider](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfRangeSlider.html) class.
 
 ### IntermediateValue 
 

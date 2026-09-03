@@ -9,7 +9,7 @@ documentation: ug
 
 # Gestures in WPF Range Slider (SfRangeSlider)
 
-The WPF Range Slider control supports keyboard navigation and mouse interactions, allowing users to select and modify values efficiently. You can move the slider thumbs using navigation keys, drag the thumbs with the mouse, or click the track to update the selected value or range.
+The [WPF Range Slider](https://www.syncfusion.com/wpf-controls/range-slider) control supports keyboard navigation and mouse interactions, allowing users to select and modify values efficiently. You can move the slider thumbs using navigation keys, drag the thumbs with the mouse, or click the track to update the selected value or range. The WPF Range Slider is implemented through the [SfRangeSlider](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfRangeSlider.html) class.
 
 ## Keyboard 
 
@@ -35,7 +35,7 @@ N> When the SnapsTo property is set to Ticks then the Thumb snaps to next tick b
 
 ## Mouse  
 
-The WPF Range Slider allows the mouse gesture to update the value of the WPF Range Slider either by dragging the thumb to a certain distance or by pressing the specified region in the track.  
+The WPF Range Slider allows the mouse gesture to update the value of the WPF Range Slider either by dragging the thumb to a certain distance or by pressing the specified region in the track.
 
 N> When the thumb is released between two steps or when the pointer is pressed between two steps, then the value and thumb automatically snaps to nearest value.
 

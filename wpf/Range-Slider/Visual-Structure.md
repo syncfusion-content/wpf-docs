@@ -9,7 +9,7 @@ documentation: ug
 
 # Visual Structure in WPF Range Slider (SfRangeSlider)
 
-This section describes the visual elements of the WPF Range Slider control and defines terms and concepts used in the WPF Range Slider.
+This section describes the visual elements of the [WPF Range Slider](https://www.syncfusion.com/wpf-controls/range-slider) control and defines terms and concepts used in it. The WPF Range Slider is implemented through the [SfRangeSlider](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfRangeSlider.html) class.
 
 ![VisualStructure](Overview_images/VisualStructure.png)
 
