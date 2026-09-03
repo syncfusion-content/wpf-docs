@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Styling and Appearance in WPF Range Slider | Syncfusion®
 description: Customize WPF Range Slider tracks, thumbs, ticks, value labels, and visual styles to create tailored slider experiences.

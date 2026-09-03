@@ -17,9 +17,9 @@ Key Features:
 
 * **Orientation** —  Set the orientation of the WPF Range Slider either horizontally or vertically.
 * **SelectionRange** — Select the range of values using two thumbs.  
-* **Move the Thumb to the Tapped Position** — Allow the thumb of WPF Range Slider to tapped position of the track.
+* **Move the Thumb to the Tapped Position** — Allow the thumb to move to the tapped position on the track.
 * **Styling and Appearance** — The control is completely customizable in terms of the UI. Change the appearance of the control as required.
-* **ToolTip Support** — Shows the value of the WPF Range Slider. It is fully customizable.
+* **ToolTip Support** — Shows the control value. It is fully customizable.
 * **Gestures** — Provides both KeyGesture and MouseGesture.
 
 

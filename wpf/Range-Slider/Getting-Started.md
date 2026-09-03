@@ -89,7 +89,7 @@ SfRangeSlider rangeSlider = new SfRangeSlider()
 
 ## Theme
 
-The WPF Range Slider supports various built-in themes. Refer to the following links to apply themes to the WPF Range Slider:
+The WPF Range Slider supports various built-in themes. Refer to the following links to apply themes to the control:
 
   * [Apply theme using SfSkinManager](https://help.syncfusion.com/wpf/themes/skin-manager)
 	

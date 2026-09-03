@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Gestures in WPF Range Slider | Syncfusion®
 description: Interact with the WPF Range Slider using keyboard navigation and mouse gestures for precise value and range selection.
@@ -35,7 +35,7 @@ N> When the SnapsTo property is set to Ticks then the Thumb snaps to next tick b
 
 ## Mouse  
 
-The WPF Range Slider allows the mouse gesture to update the value of the WPF Range Slider either by dragging the thumb to a certain distance or by pressing the specified region in the track.
+The WPF Range Slider allows the mouse gesture to update the value either by dragging the thumb to a certain distance or by pressing the specified region in the track.
 
 N> When the thumb is released between two steps or when the pointer is pressed between two steps, then the value and thumb automatically snaps to nearest value.
 

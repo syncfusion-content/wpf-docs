@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Direction Reversed in WPF Range Slider | Syncfusion®
 description: Reverse the value progression direction in horizontal or vertical WPF Range Slider orientations using the IsDirectionReversed property.

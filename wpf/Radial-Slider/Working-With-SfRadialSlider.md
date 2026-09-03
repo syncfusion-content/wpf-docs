@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Customize the UI of WPF Radial Slider | Syncfusion®
 description: Customize the appearance and behavior of the WPF Radial Slider, including ticks, labels, pointers, rims, and value selection.

@@ -417,7 +417,7 @@ private void RadialSlider_ValueChanged(object sender, RoutedPropertyChangedEvent
 
 ## Theme
 
-The WPF Radial Slider supports various built-in themes. Refer to the following links to apply themes to the WPF Radial Slider:
+The WPF Radial Slider supports various built-in themes. Refer to the following links to apply themes to the control:
 
   * [Apply theme using SfSkinManager](https://help.syncfusion.com/wpf/themes/skin-manager)
 	

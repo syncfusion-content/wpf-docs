@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Appearance in WPF Radial Slider | Syncfusion®
 description: Customize the appearance of the WPF Radial Slider using foreground, background, flow direction, and theme settings.
@@ -79,7 +79,7 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-
 
 ## Theme
 
-The WPF Radial Slider supports various built-in themes. Refer to the following links to apply themes to the WPF Radial Slider:
+The WPF Radial Slider supports various built-in themes. Refer to the following links to apply themes to the control:
 
   * [Apply theme using SfSkinManager](https://help.syncfusion.com/wpf/themes/skin-manager)
 	
