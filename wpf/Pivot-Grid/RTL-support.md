@@ -9,7 +9,7 @@ documentation: ug
 
 # RTL Support in WPF Pivot Grid
 
-The pivot grid displays the contents of the grid from right-to-left. It can be achieved by setting the `FlowDirection` property of the pivot grid control to "RightToLeft".
+Pivot Grid displays the contents of the grid from right-to-left. This can be achieved by setting the `FlowDirection` property of the control to "RightToLeft".
 
 For XAML, refer to the following code sample.
 
@@ -79,6 +79,6 @@ public partial class MainWindow: Window {
 
 {% endhighlight %}
 
-![PivotGrid displays the data from right to left](Localization-Images/PivotGrid Shows RTL support.png)
+![Displays the data from right to left](Localization-Images/PivotGrid Shows RTL support.png)
 
 N> You can refer to our [WPF Pivot Grid](https://www.syncfusion.com/wpf-controls/pivot-grid) feature tour page for its groundbreaking feature representations. You can also explore our [WPF Pivot Grid example](https://github.com/syncfusion/wpf-demos) to knows how to organizes and summarizes business data and displays the result in a cross-table format.

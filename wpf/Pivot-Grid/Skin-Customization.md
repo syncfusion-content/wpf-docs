@@ -9,7 +9,7 @@ documentation: ug
 
 # Skin Customization in WPF Pivot Grid
 
-Skin customization applies particular style settings to the visual elements of a component. The pivot grid provides the following skin options:
+Skin customization applies particular style settings to the visual elements of a component. The Pivot Grid provides the following skin options:
 
 * Office 2010 Blue
 * Office 2010 Black
@@ -93,6 +93,6 @@ public partial class MainWindow: Window {
 
 {% endhighlight %}
 
-![PivotGrid shows customized visual style](Skin-Customization-Images/PivotGrid shows customized visual style.png)
+![Customized visual style](Skin-Customization-Images/PivotGrid shows customized visual style.png)
 
 N> You can refer to our [WPF Pivot Grid](https://www.syncfusion.com/wpf-controls/pivot-grid) feature tour page for its groundbreaking feature representations. You can also explore our [WPF Pivot Grid example](https://github.com/syncfusion/wpf-demos) to knows how to organizes and summarizes business data and displays the result in a cross-table format.

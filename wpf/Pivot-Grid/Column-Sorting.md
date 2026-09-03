@@ -19,9 +19,9 @@ Method
 
 * **ApplySavedValueSorts**: When RowPivotsOnly is true, this method sorts the pivot based on the information furnished through the arguments.
 
-## Defining the property in pivot grid
+## Defining the property in the Pivot Grid
 
-After defining the pivot grid control with pivot rows and pivot calculations, set the `SortOption` property to "All" for sorting all the value columns. Then, set the `AllowSort` property to "true" for the appropriate calculation items.
+After defining the control with pivot rows and pivot calculations, set the `SortOption` property to "All" for sorting all the value columns. Then, set the `AllowSort` property to "true" for the appropriate calculation items.
 
 The `AllowSort` property can be mentioned in XAML or code-behind.
 
@@ -74,7 +74,7 @@ public partial class MainWindow: Window {
 
 {% endhighlight %}
 
-## Defining the method in pivot grid
+## Defining the method in the Pivot Grid
 
 After defining the pivot grid control with pivot rows and pivot calculations, set the `SortOption` property to "All" for sorting all the value columns. Then, set the `AllowSort` property to "true" for appropriate calculation items.
 

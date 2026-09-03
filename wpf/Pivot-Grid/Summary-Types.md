@@ -9,7 +9,7 @@ documentation: ug
 
 # Summary Types in WPF Pivot Grid
 
-The pivot grid summarizes the data for various data types by using the `SummaryType` enumerator. SummaryType should be defined while defining the pivot calculation using `PivotComputationInfo` class to specify the type of summary. It holds the following summary types.
+Pivot Grid summarizes the data for various data types by using the `SummaryType` enumerator. SummaryType should be defined while defining the pivot calculation using `PivotComputationInfo` class to specify the type of summary. It holds the following summary types.
 
 * **DoubleTotalSum**: Computes the sum of double or integer in pivot values for corresponding pivot item.
 * **DoubleAverage**: Computes average of double or integer in pivot values for corresponding pivot item.
@@ -92,9 +92,9 @@ public partial class MainWindow: Window {
 
 ![PivotGrid shows the values as double total sum and count format](Summary-Images/PivotGrid shows summary type Double variance.png)
 
-## DisplayIfDiscreteValuesEqual summary type in pivot grid
+## DisplayIfDiscreteValuesEqual summary type in Pivot Grid
 
-**DisplayIfDiscreteValuesEqual** is a new summary type added to the `SummaryType` enumerator of the pivot grid control. This summary type displays the aggregated value in the pivot calculation column if all the values are common, else the default value will be displayed as **'*'**.
+**DisplayIfDiscreteValuesEqual** is a new summary type added to the `SummaryType` enumerator of Pivot Grid. This summary type displays the aggregated value in the pivot calculation column if all the values are common, else the default value will be displayed as **'*'**.
 You can change the default value to any custom string of your choice by using the `PadString` property.
 
 Set the SummaryType as **DisplayIfDiscreteValuesEqual** along with value for the `PadString` while defining pivot calculations in the pivot grid control.

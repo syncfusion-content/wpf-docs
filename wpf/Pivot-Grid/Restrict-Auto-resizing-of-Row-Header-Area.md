@@ -9,7 +9,7 @@ documentation: ug
 
 # Restrict Resizing of Row Header in WPF Pivot Grid
 
-The pivot grid supports restricting the row header items from being stretched when there are too many PivotCalculation items in the data header area. When you click the **ShowFields** button in the data header area of the grouping bar, the pivot computation list window appears with the PivotCalculation fields.
+Pivot Grid supports restricting the row header items from being stretched when there are too many PivotCalculation items in the data header area. When you click the **ShowFields** button in the data header area of the grouping bar, the pivot computation list window appears with the PivotCalculation fields.
 
 The `AllowRowHeaderAreaAutoSizing` property is set to "false" to display the computation button (ShowFields button) and restrict the row header items from being stretched when more items are added to the computation area. By default, this property is set to "true", and it can be defined both in XAML and code-behind.
 
@@ -81,6 +81,6 @@ public partial class MainWindow: Window
 
 {% endhighlight %}
 
-![Pivot grid restrict the row header items](Grouping-Bar-Images/Grouping bar while disabling the auto resiszing feature.png)
+![Restrict the row header items](Grouping-Bar-Images/Grouping bar while disabling the auto resiszing feature.png)
 
 N> You can refer to our [WPF Pivot Grid](https://www.syncfusion.com/wpf-controls/pivot-grid) feature tour page for its groundbreaking feature representations. You can also explore our [WPF Pivot Grid example](https://github.com/syncfusion/wpf-demos) to knows how to organizes and summarizes business data and displays the result in a cross-table format.

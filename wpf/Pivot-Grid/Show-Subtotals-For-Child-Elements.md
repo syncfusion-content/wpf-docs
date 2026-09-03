@@ -9,7 +9,7 @@ documentation: ug
 
 # Sub-Totals for Child Elements in WPF Pivot Grid
 
-By default, the pivot grid calculates summaries based on the parent nodes available in rows and columns. You can also display the subtotals based on the child elements available in rows and columns using the `ShowSubTotalsForChildren` property. This property can be set through XAML or code-behind.
+By default, the Pivot Grid calculates summaries based on the parent nodes available in rows and columns. You can also display the subtotals based on the child elements available in rows and columns using the `ShowSubTotalsForChildren` property. This property can be set through XAML or code-behind.
 
 For XAML, refer to the following code sample.
 

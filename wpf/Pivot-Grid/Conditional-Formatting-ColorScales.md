@@ -11,7 +11,7 @@ documentation: ug
 
 Conditional formatting is a process of applying customized styles to any object based on specified conditions. In this scenario, styles are applied in the form of gradient color scales through-out the control. 
 
-It can be defined by using the `PivotGridControl.ColorScaleConditionalFormats`, which is an observable collection of *PivotGridColorScaleConditionalFormat* type. Meanwhile, it can be done in the following ways.
+It can be defined by using the `PivotGridControl.ColorScaleConditionalFormats`, which is an observable collection of *PivotGridColorScaleConditionalFormat* type. It can be done in the following ways.
 
 * Apply format using predefined color scales
 * Apply format using custom colors
@@ -110,7 +110,7 @@ public partial class MainWindow: Window {
 
 ## Apply format using custom colors
 
-It can be applied by providing custom colors to the following properties - `StartColor`, `EndColor`, `MiddleColor` in the  application. Also, we can apply conditional formatting based on two level of gradient color scales by defining `StartColor` and `EndColor` properties alone. These properties can be defined either in XAML or code-behind.
+It can be applied by providing custom colors to the following properties - `StartColor`, `EndColor`, `MiddleColor` - in the application. Also, conditional formatting based on two levels of gradient color scales can be applied by defining the `StartColor` and `EndColor` properties alone. These properties can be defined either in XAML or code-behind.
 
 For **XAML**, refer to the following code snippet.
 
@@ -202,7 +202,7 @@ public partial class MainWindow: Window {
 
 ## Apply formatting to specific level
 
-`ApplyToSpecificLevel` property specifies whether to apply conditional formatting to data cells placed at the intersection of specific row and column fields. It can be achieved by defining `RowName` and `ColumnName` properties with appropriate pivot field name.
+The `ApplyToSpecificLevel` property specifies whether to apply conditional formatting to data cells placed at the intersection of specific row and column fields. It can be achieved by defining the `RowName` and `ColumnName` properties with the appropriate pivot field name.
 
 N> To apply conditional formatting to specific level, make sure that `ApplyToAllLevels` property is set to **false**.
 
@@ -294,4 +294,4 @@ public partial class MainWindow: Window {
 
 ![Apply conditional formatting to specific levels.](Conditional-format-images/ColorScale3.png)
 
-N> You can refer to our [WPF Pivot Grid](https://www.syncfusion.com/wpf-controls/pivot-grid) feature tour page for its groundbreaking feature representations. You can also explore our [WPF Pivot Grid example](https://github.com/syncfusion/wpf-demos) to knows how to organizes and summarizes business data and displays the result in a cross-table format.
+N> You can refer to our [WPF Pivot Grid](https://www.syncfusion.com/wpf-controls/pivot-grid) feature tour page for its groundbreaking feature representations. You can also explore our [WPF Pivot Grid example](https://github.com/syncfusion/wpf-demos) to know how to organize and summarize business data and display the result in a cross-table format.

@@ -9,7 +9,7 @@ documentation: ug
 
 # Display Innermost Computations in WPF Pivot Grid
 
-The pivot grid supports displaying the grid with inner most computations alone without displaying the total values by using the `InnerMostComputationsOnly` property. It can be mentioned in XAML or code-behind.
+The Pivot Grid supports displaying the grid with innermost computations alone without displaying the total values by using the `InnerMostComputationsOnly` property. It can be mentioned in XAML or code-behind.
 
 For XAML, refer to the following code sample.
 
@@ -57,6 +57,6 @@ public partial class MainWindow: Window {
 
 {% endhighlight %}
 
-![Displaying the pivot grid without total values](Features-in-RowPivotsOnly-images/Innermost Computation only in PivotGrid.png)
+![Displaying the grid without total values](Features-in-RowPivotsOnly-images/Innermost Computation only in PivotGrid.png)
 
 N> You can refer to our [WPF Pivot Grid](https://www.syncfusion.com/wpf-controls/pivot-grid) feature tour page for its groundbreaking feature representations. You can also explore our [WPF Pivot Grid example](https://github.com/syncfusion/wpf-demos) to knows how to organizes and summarizes business data and displays the result in a cross-table format.

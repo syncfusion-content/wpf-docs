@@ -17,7 +17,7 @@ The header cell context menu will be shown while right-clicking the expander cel
 
 **EnableContextMenu** property allows you to enable or disable the context menu for row or column headers individually.
 
-To do so, define the pivot grid control and raise the loaded event for the pivot grid. Inside the `PivotGrid_Loaded()` event, set the visibility of `EnableContextMenu` of each row and column header areas.
+To do so, define the Pivot Grid control and raise its loaded event. Inside the `PivotGrid_Loaded()` event, set the visibility of `EnableContextMenu` on each row and column header area.
 
 Refer to the following code sample.
 
@@ -141,7 +141,7 @@ You can expand/collapse any number of rows or columns, programmatically. This ca
 
 To expand/collapse operations in code behind programmatically, use the previously mentioned methods as needed. By passing the unique text as a parameter, you can expand/collapse one or more columns/rows as desired.
 
-To do so, define the pivot grid control and raise the loaded event for pivot grid. Inside the `PivotGrid_Loaded()` event, use the appropriate methods for expand/collapse operations.
+To do so, define the Pivot Grid control and raise its loaded event. Inside the `PivotGrid_Loaded()` event, use the appropriate methods for expand/collapse operations.
 
 Refer to the following code sample.
 

@@ -9,7 +9,7 @@ documentation: ug
 
 # Sorting in WPF Pivot Grid
 
-Sorting enables you to quickly visualize, understand, organize, and find data that you want. By default, the pivot grid holds built-in comparers for all data types so that it will populate data in ascending/descending order according to its data type. You can also define your own custom comparer to view the data.
+Sorting enables you to quickly visualize, understand, organize, and find data that you want. By default, Pivot Grid holds built-in comparers for all data types so that it will populate data in ascending/descending order according to its data type. You can also define your own custom comparer to view the data.
 
 **Sorting using custom comparer**
 
@@ -82,13 +82,13 @@ void MainWindow_Loaded(object sender, RoutedEventArgs e)
 
 {% endhighlight %}
 
-![PivotGrid without sorting](Sorting-Images/Not Sorted PivotGrid.png)
+![Without sorting](Sorting-Images/Not Sorted PivotGrid.png)
 
-_PivotGrid without ReverseOrderComparer_
+_Pivot Grid without ReverseOrderComparer_
 
 ![Sorted PivotGrid](Sorting-Images/Sorted PivotGrid.png)
 
-_PivotGrid with ReverseOrderComparer_
+_Pivot Grid with ReverseOrderComparer_
 
 
 N> You can refer to our [WPF Pivot Grid](https://www.syncfusion.com/wpf-controls/pivot-grid) feature tour page for its groundbreaking feature representations. You can also explore our [WPF Pivot Grid example](https://github.com/syncfusion/wpf-demos) to knows how to organizes and summarizes business data and displays the result in a cross-table format.
