@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Container Type in WPF TextInputLayout | Syncfusion®
-description: Container Type in SfTextInputLayout enables configuring outlined, filled, or borderless containers to customize input appearance.
+title: Container Type in WPF Text Input Layout | Syncfusion®
+description: Container Type in WPF Text Input Layout enables configuring outlined, filled, or borderless containers to customize input appearance.
 platform: wpf
 control: SfTextInputLayout
 documentation: ug
 ---
 
-# Container Type in WPF TextInputLayout (SfTextInputLayout)
+# Container Type in WPF Text Input Layout (SfTextInputLayout)
 
 Containers enhance the discoverability of the input view by creating a contrast between the input view and the assistive elements.
 

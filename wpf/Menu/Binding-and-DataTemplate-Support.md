@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Data Binding and Template Support in MenuAdv | Syncfusion®
-description: Binding and DataTemplate support in Menu (MenuAdv) enable flexible data-driven menu item presentation.
+title: Data Binding and Template Support in WPF Menu | Syncfusion®
+description: Binding and DataTemplate support in WPF Menu (MenuAdv) enable flexible data-driven menu item presentation.
 platform: wpf
 control: MenuAdv
 documentation: ug
@@ -151,9 +151,9 @@ public class CustomItemSource : ObservableCollection<ObjectModel>
 {% endhighlight %}
 {% endtabs %}
 
-![Adding menu items using data binding in WPF MenuAdv control](Binding-and-DataTemplate-Support_images/Binding-and-DataTemplate-Support_img1.png)
+![Adding menu items using data binding in WPF Menu control](Binding-and-DataTemplate-Support_images/Binding-and-DataTemplate-Support_img1.png)
 
-![Adding hierarchical menu items using data template in WPF MenuAdv control ](Binding-and-DataTemplate-Support_images/Binding-and-DataTemplate-Support_img2.png)
+![Adding hierarchical menu items using data template in WPF Menu control ](Binding-and-DataTemplate-Support_images/Binding-and-DataTemplate-Support_img2.png)
 
 ### Sample Link
 

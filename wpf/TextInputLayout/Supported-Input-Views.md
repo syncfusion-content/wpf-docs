@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Supported Input Views in WPF TextInputLayout | Syncfusion®
-description: Supported Input Views in SfTextInputLayout enable hosting controls such as TextBox, PasswordBox, ComboBox, and autocomplete inputs.
+title: Supported Input Views in WPF Text Input Layout | Syncfusion®
+description: Supported Input Views in WPF Text Input Layout enable hosting controls such as TextBox, PasswordBox, ComboBox, and autocomplete inputs.
 platform: wpf
 control: SfTextInputLayout
 documentation: ug
 ---
 
-# Supported Input Views in WPF TextInputLayout (SfTextInputLayout)
+# Supported Input Views in WPF Text Input Layout (SfTextInputLayout)
 
-Input views can be added to the text input layout control by setting the [InputView](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TextInputLayout.SfTextInputLayout.html#Syncfusion_UI_Xaml_TextInputLayout_SfTextInputLayout_InputView) property. To reduce the XAML syntax, the [InputView](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TextInputLayout.SfTextInputLayout.html#Syncfusion_UI_Xaml_TextInputLayout_SfTextInputLayout_InputView) property is applied with the ContentPropertyAttribute. The [SfTextInputLayout](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TextInputLayout.html) has the following controls as the supported input views.
+Input views can be added to the text input layout control by setting the [InputView](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TextInputLayout.SfTextInputLayout.html#Syncfusion_UI_Xaml_TextInputLayout_SfTextInputLayout_InputView) property. To reduce the XAML syntax, the [InputView](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TextInputLayout.SfTextInputLayout.html#Syncfusion_UI_Xaml_TextInputLayout_SfTextInputLayout_InputView) property is applied with the ContentPropertyAttribute. The [WPF Text Input Layout](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TextInputLayout.html) has the following controls as the supported input views.
 
 * TextBox 
 
@@ -23,7 +23,7 @@ Input views can be added to the text input layout control by setting the [InputV
 
 ## TextBox
 
-You can enter the text as an input by adding the [TextBox](https://docs.microsoft.com/en-us/dotnet/desktop/wpf/controls/textbox-overview?view=netframeworkdesktop-4.8) in the [SfTextInputLayout](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TextInputLayout.html).
+You can enter the text as an input by adding the [TextBox](https://docs.microsoft.com/en-us/dotnet/desktop/wpf/controls/textbox-overview?view=netframeworkdesktop-4.8) in the [WPF Text Input Layout](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TextInputLayout.html).
 
 {% tabs %} 
 
@@ -51,7 +51,7 @@ You can enter the text as an input by adding the [TextBox](https://docs.microsof
 
 ## PasswordBox
 
-You can enter the password characters as an input by adding the [PasswordBox](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.passwordbox?view=netcore-3.1) in the [SfTextInputLayout](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TextInputLayout.html).
+You can enter the password characters as an input by adding the [PasswordBox](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.passwordbox?view=netcore-3.1) in the [WPF Text Input Layout](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TextInputLayout.html).
 
 {% tabs %} 
 
@@ -79,7 +79,7 @@ You can enter the password characters as an input by adding the [PasswordBox](ht
 
 ## ComboBox
 
-You can use the [`ComboBox`](https://docs.microsoft.com/en-us/dotnet/desktop/wpf/controls/combobox?view=netframeworkdesktop-4.8) control as an input in the [`SfTextInputLayout`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TextInputLayout.html).
+You can use the [`ComboBox`](https://docs.microsoft.com/en-us/dotnet/desktop/wpf/controls/combobox?view=netframeworkdesktop-4.8) control as an input in the [`WPF Text Input Layout`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TextInputLayout.html).
 
 {% tabs %} 
 
@@ -111,7 +111,7 @@ You can use the [`ComboBox`](https://docs.microsoft.com/en-us/dotnet/desktop/wpf
 
 ## ComboBoxAdv
 
-You can use the [`ComboBoxAdv`](https://help.syncfusion.com/wpf/combobox/overview) control as an input in the [`SfTextInputLayout`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TextInputLayout.html).
+You can use the [`ComboBoxAdv`](https://help.syncfusion.com/wpf/combobox/overview) control as an input in the [`WPF Text Input Layout`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TextInputLayout.html).
 
 {% tabs %} 
 
@@ -143,7 +143,7 @@ You can use the [`ComboBoxAdv`](https://help.syncfusion.com/wpf/combobox/overvie
 
 ## Autocomplete (SfTextBoxExt)
 
-You can use the [`SfTextBoxExt`](https://help.syncfusion.com/wpf/autocomplete/overview) control to enter the text as an input in the [`SfTextInputLayout`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TextInputLayout.html).
+You can use the [`SfTextBoxExt`](https://help.syncfusion.com/wpf/autocomplete/overview) control to enter the text as an input in the [`WPF Text Input Layout`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TextInputLayout.html).
 
 {% tabs %} 
 
