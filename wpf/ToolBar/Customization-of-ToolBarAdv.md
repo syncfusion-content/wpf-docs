@@ -3,7 +3,7 @@ layout: post
 title: Customization in WPF ToolBar | Syncfusion®
 description: Customization support in WPF ToolBar enables personalized toolbar layouts, item customization, and appearance modifications to suit application requirements.
 platform: wpf
-control: ToolBarAdv
+control: ToolBar
 documentation: ug
 ---
 

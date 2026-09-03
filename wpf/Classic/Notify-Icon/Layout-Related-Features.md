@@ -1,28 +1,28 @@
 ---
 layout: post
-title: Layout Related Features in WPF NotifyIcon | Syncfusion®
-description: Layout related features in WPF NotifyIcon provide flexible arrangement of tray icon elements, ensuring seamless integration with applications.
+title: Layout Related Features in WPF Notify Icon | Syncfusion®
+description: Layout related features in WPF Notify Icon provide flexible arrangement of tray icon elements, ensuring seamless integration with applications.
 platform: wpf
-control: NotifyIcon
+control: Notify Icon
 documentation: ug
 ---
 
-# Layout Related Features in WPF NotifyIcon
+# Layout Related Features in WPF Notify Icon
 
-This section illustrates the following Layout-related feature of NotifyIcon control.
+This section illustrates the following Layout-related feature of Notify Icon control.
 
 ## Theme
 
-NotifyIcon supports various built-in themes. Refer to the below links to apply themes for the NotifyIcon,
+Notify Icon supports various built-in themes. Refer to the below links to apply themes for the Notify Icon,
 
   * [Apply theme using SfSkinManager](https://help.syncfusion.com/wpf/themes/skin-manager)
 	
   * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
   
-  ![Setting theme to WPF NotifyIcon](Getting-Started_images/wpf-notifyicon-theme.png)
+  ![Setting theme to WPF Notify Icon](Getting-Started_images/wpf-notifyicon-theme.png)
 
 
-## Customizing the Header of the NotifyIcon
+## Customizing the Header of the Notify Icon
 
 You can customize the background and foreground for the BalloonTipHeader by using the [HeaderBackground](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.NotifyIcon.html#Syncfusion_Windows_Tools_Controls_NotifyIcon_HeaderBackground) and [HeaderForeground](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.NotifyIcon.html#Syncfusion_Windows_Tools_Controls_NotifyIcon_HeaderForeground) properties.
 
@@ -52,11 +52,11 @@ private void Button_Click(object sender, RoutedEventArgs e)
 {% endtabs %}
 
 
-![Customize the header style in WPF NotifyIcon](Layout-Related-Features_images/wpf-notifyicon-customization.png)
+![Customize the header style in WPF Notify Icon](Layout-Related-Features_images/wpf-notifyicon-customization.png)
 
 ## Events
 
-The [NotifyIcon](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.NotifyIcon.html) includes several pre-defined events to perform any required action as follows:
+The [NotifyIcon](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.NotifyIcon.html) control includes several pre-defined events to perform any required action as follows:
 
 * BalloonTipOpening
 * BalloonTipOpened
