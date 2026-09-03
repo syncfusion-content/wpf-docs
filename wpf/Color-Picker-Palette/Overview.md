@@ -7,9 +7,9 @@ control: ColorPickerPalette
 documentation: ug
 ---
 
-# About Syncfusion® WPF ColorPickerPalette Control
+# About Syncfusion® WPF Color Picker Palette Control
 
-The [ColorPickerPalette](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ColorPickerPalette.html) control provides a rich visual interface for color selection. The structure of the control represents a palette that is displayed as a drop-down with the selected color highlighted at the top. It provides standard colors and various theme colors to choose from. The control also has tooltip support that displays the name of each color. More color options are embedded in the control, providing a wide range of color options.
+The [WPF Color Picker Palette](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ColorPickerPalette.html) control provides a rich visual interface for color selection. The structure of the control represents a palette that is displayed as a drop-down with the selected color highlighted at the top. It provides standard colors and various theme colors to choose from. The control also has tooltip support that displays the name of each color. More color options are embedded in the control, providing a wide range of color options.
 
 ![WPF Color Picker Palette control structure](getting-started_images/wpf-color-picker-palette-structure.png)
 
