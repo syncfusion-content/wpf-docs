@@ -1,26 +1,26 @@
 ---
 layout: post
-title: Interactive Features in WPF WizardControl | Syncfusion®
-description: The Interactive features in WPF WizardControl enable seamless step-by-step navigation, user guidance, validation, and dynamic workflow customization.
+title: Interactive Features in WPF Wizard Control | Syncfusion®
+description: The Interactive features in WPF Wizard Control enable seamless step-by-step navigation, user guidance, validation, and dynamic workflow customization.
 platform: wpf
-control: Wizard
+control: Wizard Control
 documentation: ug
 ---
 
 # Interactive Features in WPF Wizard Control
 
-This section illustrates the following interactive feature of [Wizard Control](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.WizardControl.html). 
+This section illustrates the following interactive feature of [WizardControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.WizardControl.html). 
 
 ## Populating pages in Wizard Control
 
-The pages can be added to [Wizard Control](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.WizardControl.html) by following ways,
+The pages can be added to Wizard Controlby following ways,
 
 * Populating by Wizard Pages
 * Populating by Data Binding
 
 ## Populating by Wizard Pages
 
-You can add any number of [wizard pages](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.WizardPage.html) to the [Wizard Control](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.WizardControl.html) and there are plenty of properties in the Wizard control that are used to customize the appearance and function of the wizard pages.
+You can add any number of [wizard pages](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.WizardPage.html) to the Wizard Control and there are plenty of properties in the Wizard control that are used to customize the appearance and function of the wizard pages.
 
 {%tabs%}
 
@@ -53,7 +53,7 @@ wizardControl.Items.Add(wizardPage2);
 
 ## Populating by Data Binding
 
-Below steps will explain on how to add the Items through [ItemsSource](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.WizardControl.html#) property of [Wizard Control](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.WizardControl.html).
+Below steps will explain on how to add the Items through [ItemsSource](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.WizardControl.html#) property of [WizardControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.WizardControl.html).
 
 1. Create a Model class with the necessary properties.
 
@@ -159,7 +159,7 @@ private void PopulatePageItems()
 {% endcapture %}
 {{ codesnippet4 | OrderList_Indent_Level_1 }}
 
-5. Bind the PageItems collection to the [ItemsSource](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.WizardControl.html#) property of the Wizard Control. Content of the WizardPage can be displayed using the [ItemTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.WizardControl.html#) property.
+5. Bind the PageItems collection to the _ItemsSource_ property of the Wizard Control. Content of the WizardPage can be displayed using the _ItemTemplate_ property.
 
 {% capture codesnippet5 %}
 {% highlight XAML %}
@@ -376,7 +376,7 @@ wizardControl.CancelEnabled = true;
 
 #### Showing or Hiding the Navigation Buttons
 
-You can show or hide the Back, Cancel, Next, Help and Finish navigation buttons in the [Wizard Control](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.WizardControl.html) and wizard page by using the [BackVisible](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.WizardPage.html#Syncfusion_Windows_Tools_Controls_WizardPage_BackVisible), [CancelVisible](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.WizardPage.html#Syncfusion_Windows_Tools_Controls_WizardPage_CancelVisible), [NextVisible](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.WizardPage.html#Syncfusion_Windows_Tools_Controls_WizardPage_NextVisible), [HelpVisible](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.WizardPage.html#Syncfusion_Windows_Tools_Controls_WizardPage_HelpVisible) and [FinishVisible](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.WizardPage.html#Syncfusion_Windows_Tools_Controls_WizardPage_FinishVisible) properties. 
+You can show or hide the Back, Cancel, Next, Help and Finish navigation buttons in the [WizardControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.WizardControl.html) and wizard page by using the [BackVisible](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.WizardPage.html#Syncfusion_Windows_Tools_Controls_WizardPage_BackVisible), [CancelVisible](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.WizardPage.html#Syncfusion_Windows_Tools_Controls_WizardPage_CancelVisible), [NextVisible](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.WizardPage.html#Syncfusion_Windows_Tools_Controls_WizardPage_NextVisible), [HelpVisible](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.WizardPage.html#Syncfusion_Windows_Tools_Controls_WizardPage_HelpVisible) and [FinishVisible](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.WizardPage.html#Syncfusion_Windows_Tools_Controls_WizardPage_FinishVisible) properties. 
 
 {%tabs%}
 
@@ -415,7 +415,7 @@ wizardControl.HelpVisible = true;
 
 #### Text for the Navigation Buttons
 
-You can set custom text for the Back, Next, Finish, Help and Cancel navigation buttons in the [Wizard control](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.WizardControl.html) by using the [BackText](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.WizardControl.html#Syncfusion_Windows_Tools_Controls_WizardControl_BackText), [NextText](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.WizardControl.html#Syncfusion_Windows_Tools_Controls_WizardControl_NextText), [FinishText](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.WizardControl.html#Syncfusion_Windows_Tools_Controls_WizardControl_FinishText), [HelpText](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.WizardControl.html#Syncfusion_Windows_Tools_Controls_WizardControl_HelpText) and [CancelText](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.WizardControl.html#Syncfusion_Windows_Tools_Controls_WizardControl_CancelText) properties.
+You can set custom text for the Back, Next, Finish, Help and Cancel navigation buttons in the [WizardControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.WizardControl.html) by using the [BackText](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.WizardControl.html#Syncfusion_Windows_Tools_Controls_WizardControl_BackText), [NextText](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.WizardControl.html#Syncfusion_Windows_Tools_Controls_WizardControl_NextText), [FinishText](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.WizardControl.html#Syncfusion_Windows_Tools_Controls_WizardControl_FinishText), [HelpText](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.WizardControl.html#Syncfusion_Windows_Tools_Controls_WizardControl_HelpText) and [CancelText](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.WizardControl.html#Syncfusion_Windows_Tools_Controls_WizardControl_CancelText) properties.
 
 {%tabs%}
 
@@ -506,7 +506,7 @@ wizardPage3.PreviousPage = wizardPage1;
 
 ## Closing the Wizard Window
 
-You can close the [Wizard control](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.WizardControl.html) window by clicking the Finish or Cancel button by enabling the [FinishButtonClosesWindow](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.WizardControl.html#Syncfusion_Windows_Tools_Controls_WizardControl_FinishButtonClosesWindow) or [CancelButtonCancelsWindow](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.WizardControl.html#Syncfusion_Windows_Tools_Controls_WizardControl_CancelButtonCancelsWindow) properties respectively.
+You can close the [WizardControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.WizardControl.html) window by clicking the Finish or Cancel button by enabling the [FinishButtonClosesWindow](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.WizardControl.html#Syncfusion_Windows_Tools_Controls_WizardControl_FinishButtonClosesWindow) or [CancelButtonCancelsWindow](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.WizardControl.html#Syncfusion_Windows_Tools_Controls_WizardControl_CancelButtonCancelsWindow) properties respectively.
 
 {%tabs%}
 
@@ -536,7 +536,7 @@ wizardControl.FinishButtonClosesWindow = true;
 
 ## Event for Next Button in Wizard Control  
 
-You can use the [Next](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.WizardControl.html) event in [Wizard Control](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.WizardControl.html) to perform any required operation when Next button is clicked.
+You can use the [Next](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.WizardControl.html) event in [WizardControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.WizardControl.html) to perform any required operation when Next button is clicked.
 
 {% tabs %}
 

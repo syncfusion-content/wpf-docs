@@ -1,40 +1,34 @@
 ---
 layout: post
-title: Populating Items in WPF SfAccordion | Syncfusion®
-description: Populating Items in WPF SfAccordion enables adding, binding, and displaying accordion items to present content in a structured layout.
+title: Populating Items in WPF Accordion | Syncfusion®
+description: Populating Items in WPF Accordion enables adding, binding, and displaying accordion items to present content in a structured layout.
 platform: wpf
-control: SfAccordion
+control: Accordion
 documentation: ug
 ---
 
 # Populating Items in WPF Accordion
 
-`SfAccordionItem` are added as items of `Accordion`. Items can be added using `Items` or `ItemSource` property.
+SfAccordionItem objects can be added as items of the Accordion control. Items can be added using the _Items_ collection or the _ItemsSource_ property.
 
 ## Using Items
 
-Accordion accepts `SfAccordionItem` as its children when added directly.
+The Accordion control accepts SfAccordionItem objects as child items when they are added directly.
 
-### Adding items to the control 
+### Adding items to the control
 
-Here five SfAccordionItems are added as the children of the `Accordion`.
+The following example adds five SfAccordionItem objects as child items of the Accordion control.
 
 {% tabs %}
 
 {% highlight XAML %}
 
     <layout:SfAccordion>
-
-    <layout:SfAccordionItem/>
-
-    <layout:SfAccordionItem/>
-
-    <layout:SfAccordionItem/>
-
-    <layout:SfAccordionItem/>
-
-    <layout:SfAccordionItem/>
-
+        <layout:SfAccordionItem/>
+        <layout:SfAccordionItem/>
+        <layout:SfAccordionItem/>
+        <layout:SfAccordionItem/>
+        <layout:SfAccordionItem/>
     </layout:SfAccordion>
 
 {% endhighlight %}
@@ -46,15 +40,10 @@ Here five SfAccordionItems are added as the children of the `Accordion`.
 {% highlight C# %}
 
     SfAccordion accordion = new SfAccordion();
-
     accordion.Items.Add(new SfAccordionItem());
-
     accordion.Items.Add(new SfAccordionItem());
-
     accordion.Items.Add(new SfAccordionItem());
-
     accordion.Items.Add(new SfAccordionItem());
-
     accordion.Items.Add(new SfAccordionItem());
 
 {% endhighlight %}
@@ -62,20 +51,13 @@ Here five SfAccordionItems are added as the children of the `Accordion`.
 {% highlight VB %}
 
     Dim accordion As New SfAccordion()
-
     accordion.Items.Add(New SfAccordionItem())
-
     accordion.Items.Add(New SfAccordionItem())
-
     accordion.Items.Add(New SfAccordionItem())
-
     accordion.Items.Add(New SfAccordionItem())
-
     accordion.Items.Add(New SfAccordionItem())
-
 
 {% endhighlight %}
-
 
 {% endtabs %}
 
@@ -83,24 +65,18 @@ Here five SfAccordionItems are added as the children of the `Accordion`.
 
 ### Setting Header for items
 
-`SfAccordionItem` provides a property [Header](https://learn.microsoft.com/en-us/dotnet/api/system.windows.controls.headeredcontentcontrol.header?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Controls_HeaderedContentControl_Header) that helps to set the header for the item. [Header](https://learn.microsoft.com/en-us/dotnet/api/system.windows.controls.headeredcontentcontrol.header?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Controls_HeaderedContentControl_Header) is visible in both expanded and collapsed state. Set the value as “WPF” for the first child and repeat the same procedure for the remaining children with values as “Silverlight”, “WinRT”, ”Windows Phone” and “Universal”.
+SfAccordionItem provides a property [Header](https://learn.microsoft.com/en-us/dotnet/api/system.windows.controls.headeredcontentcontrol.header?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Controls_HeaderedContentControl_Header) that helps to set the header for the item. [Header](https://learn.microsoft.com/en-us/dotnet/api/system.windows.controls.headeredcontentcontrol.header?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Controls_HeaderedContentControl_Header) is visible in both expanded and collapsed state. Set the value as “WPF” for the first child and repeat the same procedure for the remaining children with values as “Silverlight”, “WinRT”, ”Windows Phone” and “Universal”.
 
 {% tabs %}
 
 {% highlight XAML %}
 
     <layout:SfAccordion>
-
-    <layout:SfAccordionItem Header="WPF"/>
-
-    <layout:SfAccordionItem Header="Silverlight"/>
-
-    <layout:SfAccordionItem Header="WinRT"/>
-
-    <layout:SfAccordionItem Header="Windows Phone"/>
-
-    <layout:SfAccordionItem Header="Universal"/>
-
+        <layout:SfAccordionItem Header="WPF"/>
+        <layout:SfAccordionItem Header="Silverlight"/>
+        <layout:SfAccordionItem Header="WinRT"/>
+        <layout:SfAccordionItem Header="Windows Phone"/>
+        <layout:SfAccordionItem Header="Universal"/>
     </layout:SfAccordion>
 
 {% endhighlight %}
@@ -112,15 +88,10 @@ Here five SfAccordionItems are added as the children of the `Accordion`.
 {% highlight C# %}
 
     SfAccordion accordion = new SfAccordion();
-
     accordion.Items.Add(new SfAccordionItem() { Header = "WPF" });
-
     accordion.Items.Add(new SfAccordionItem() { Header = "Silverlight" });
-
     accordion.Items.Add(new SfAccordionItem() { Header = "WinRT" });
-
     accordion.Items.Add(new SfAccordionItem() { Header = "Windows Phone" });
-
     accordion.Items.Add(new SfAccordionItem() { Header = "Universal" });
 
 {% endhighlight %}
@@ -128,67 +99,49 @@ Here five SfAccordionItems are added as the children of the `Accordion`.
 {% highlight VB %}
 
     Dim accordion As New SfAccordion()
-
     accordion.Items.Add(New SfAccordionItem() With {.Header = "WPF"})
-
     accordion.Items.Add(New SfAccordionItem() With {.Header = "Silverlight"})
-
     accordion.Items.Add(New SfAccordionItem() With {.Header = "WinRT"})
-
     accordion.Items.Add(New SfAccordionItem() With {.Header = "Windows Phone"})
-
     accordion.Items.Add(New SfAccordionItem() With {.Header = "Universal"})
 
 {% endhighlight %}
 
 {% endtabs %}
 
-`Accordion` control is populated as follows:
+The Accordion control is populated as follows:
 
-![WPF Accordion Setting Header for Items](Populating-Items-images/wpf-accordion-setting-header-for-items.jpeg)
+![Setting Header for Accordion items in WPF Accordion control](Populating-Items-images/wpf-accordion-setting-header-for-items.jpeg)
 
 ### Setting Content for items
 
-[Content](https://learn.microsoft.com/en-us/dotnet/api/system.windows.controls.contentcontrol.content?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Controls_ContentControl_Content) property helps to set the content for `SfAccordionItem`. `SfAccordionItem` is a ContentControl so that any object can be added as its content. Content is visible only in expanded state.
+[Content](https://learn.microsoft.com/en-us/dotnet/api/system.windows.controls.contentcontrol.content?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Controls_ContentControl_Content) property helps to set the content for `SfAccordionItem`. SfAccordionItem is a ContentControl so that any object can be added as its content. Content is visible only in expanded state.
 
 {% tabs %}
 
 {% highlight XAML %}
 
     <layout:SfAccordion>
-
-    <layout:SfAccordionItem Header="WPF" Content="Essential Studio for WPF"/>
-
-    <layout:SfAccordionItem Header="Silverlight" Content="Essential Studio for Silverlight"/>
-
-    <layout:SfAccordionItem Header="WinRT" Content="Essential Studio for WinRT"/>
-
-    <layout:SfAccordionItem Header="Windows Phone" Content="Essential Studio for Windows Phone"/>
-
-    <layout:SfAccordionItem Header="Universal" Content="Essential Studio for Universal"/>
-
+        <layout:SfAccordionItem Header="WPF" Content="Essential Studio for WPF"/>
+        <layout:SfAccordionItem Header="Silverlight" Content="Essential Studio for Silverlight"/>
+        <layout:SfAccordionItem Header="WinRT" Content="Essential Studio for WinRT"/>
+        <layout:SfAccordionItem Header="Windows Phone" Content="Essential Studio for Windows Phone"/>
+        <layout:SfAccordionItem Header="Universal" Content="Essential Studio for Universal"/>
     </layout:SfAccordion>
 
 {% endhighlight %}
 
 {% endtabs %}
 
-
 {% tabs %}
-
 
 {% highlight C# %}
 
     SfAccordion accordion = new SfAccordion();
-
     accordion.Items.Add(new SfAccordionItem() { Header = "WPF", Content = "Essential Studio for WPF" });
-
     accordion.Items.Add(new SfAccordionItem() { Header = "Silverlight" , Content = "Essential Studio for Silverlight"});
-
     accordion.Items.Add(new SfAccordionItem() { Header = "WinRT", Content = "Essential Studio for WinRT" });
-
     accordion.Items.Add(new SfAccordionItem() { Header = "Windows Phone" , Content = "Essential Studio for Windows Phone"});
-
     accordion.Items.Add(new SfAccordionItem() { Header = "Universal" , Content = "Essential Studio for Universal"});
 
 {% endhighlight %}
@@ -357,7 +310,7 @@ Follow the below steps to add the Items through [ItemsSource](https://learn.micr
 {% endcapture %}
 {{ codesnippet3 | OrderList_Indent_Level_1 }}
 
-4. Bind the Employees collection to [ItemsSource](https://learn.microsoft.com/en-us/dotnet/api/system.windows.controls.itemscontrol.itemssource?view=netframework-4.7.2) property of `Accordion` Control
+4. Bind the Employees collection to [ItemsSource](https://learn.microsoft.com/en-us/dotnet/api/system.windows.controls.itemscontrol.itemssource?view=netframework-4.7.2) property of `SfAccordion` Control
 
 {% capture codesnippet4 %}
 {% tabs %}
@@ -372,7 +325,7 @@ Follow the below steps to add the Items through [ItemsSource](https://learn.micr
 {% endcapture %}
 {{ codesnippet4 | OrderList_Indent_Level_1 }}
 
-`Accordion` control is populated as follows:
+Accordion control is populated as follows:
 
 ![Adding Items to WPF Accordion](Populating-Items-images/wpf-accordion-adding-items.jpeg)
 
@@ -399,17 +352,11 @@ Header can be displayed using the property [DisplayMemberPath](https://learn.mic
 {% highlight XAML %}
 
     <layout:SfAccordion ItemsSource="{Binding Employees}">
-
-    <layout:SfAccordion.HeaderTemplate>
-
-    <DataTemplate>
-
-    <TextBlock Text="{Binding Name}"/>
-
-    </DataTemplate>
-
-    </layout:SfAccordion.HeaderTemplate>
-
+        <layout:SfAccordion.HeaderTemplate>
+            <DataTemplate>
+                <TextBlock Text="{Binding Name}"/>
+            </DataTemplate>
+        </layout:SfAccordion.HeaderTemplate>
     </layout:SfAccordion>
 
 {% endhighlight %}
@@ -427,17 +374,11 @@ Content can be displayed using the [ContentTemplate](https://help.syncfusion.com
 {% highlight XAML %}
 
     <layout:SfAccordion ItemsSource="{Binding Employees}" DisplayMemberPath="Name">
-
-    <layout:SfAccordion.ContentTemplate>
-
-    <DataTemplate>
-
-    <TextBlock Text="{Binding Description}"/>
-
-    </DataTemplate>
-
-    </layout:SfAccordion.ContentTemplate>
-
+        <layout:SfAccordion.ContentTemplate>
+            <DataTemplate>
+                <TextBlock Text="{Binding Description}"/>
+            </DataTemplate>
+        </layout:SfAccordion.ContentTemplate>
     </layout:SfAccordion>
 
 {% endhighlight %}

@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Selection Mode in WPF SfAccordion | Syncfusion®
-description: The Selection Mode support in SfAccordion allows you to configure single or multiple item expansion for flexible content navigation.
+title: Selection Mode in WPF Accordion | Syncfusion®
+description: The Selection Mode support in Accordion allows you to configure single or multiple item expansion for flexible content navigation.
 platform: wpf
-control: SfAccordion
+control: Accordion
 documentation: ug
 ---
 
 # Selection Mode in WPF Accordion
 
-`Accordion` provides a property [SelectionMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Layout.SfAccordion.html#Syncfusion_Windows_Controls_Layout_SfAccordion_SelectionMode) that helps to decide the number of items that can be expanded or selected at a time. The values of [SelectionMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Layout.SfAccordion.html#Syncfusion_Windows_Controls_Layout_SfAccordion_SelectionMode) are
+Accordion provides a property [SelectionMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Layout.SfAccordion.html#Syncfusion_Windows_Controls_Layout_SfAccordion_SelectionMode) that helps to decide the number of items that can be expanded or selected at a time. The values of [SelectionMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Layout.SfAccordion.html#Syncfusion_Windows_Controls_Layout_SfAccordion_SelectionMode) are
 
 1. One
 2. OneOrMore
@@ -47,17 +47,11 @@ Here is an example showing OneOrMore [SelectionMode](https://help.syncfusion.com
 {% highlight XAML %}
 
     <layout:SfAccordion SelectionMode="OneOrMore">
-
-    <layout:SfAccordionItem Header="WPF" Content="Essential Studio for WPF"/>
-
-    <layout:SfAccordionItem Header="Silverlight" Content="Essential Studio for Silverlight"/>
-
-    <layout:SfAccordionItem Header="WinRT" Content="Essential Studio for WinRT"/>
-
-    <layout:SfAccordionItem Header="Windows Phone" Content="Essential Studio for Windows Phone"/>
-
-    <layout:SfAccordionItem Header="Universal" Content="Essential Studio for Universal"/>
-
+        <layout:SfAccordionItem Header="WPF" Content="Essential Studio for WPF"/>
+        <layout:SfAccordionItem Header="Silverlight" Content="Essential Studio for Silverlight"/>
+        <layout:SfAccordionItem Header="WinRT" Content="Essential Studio for WinRT"/>
+        <layout:SfAccordionItem Header="Windows Phone" Content="Essential Studio for Windows Phone"/>
+        <layout:SfAccordionItem Header="Universal" Content="Essential Studio for Universal"/>
     </layout:SfAccordion>
 
 {% endhighlight %}
@@ -68,13 +62,13 @@ Here is an example showing OneOrMore [SelectionMode](https://help.syncfusion.com
 
 {% highlight C# %}
 
-    accordion.SelectionMode = AccordionSelectionMode.OneOrMore;
+accordion.SelectionMode = AccordionSelectionMode.OneOrMore;
 
 {% endhighlight %}
 
 {% highlight VB %}
 
-    accordion.SelectionMode = AccordionSelectionMode.OneOrMore
+accordion.SelectionMode = AccordionSelectionMode.OneOrMore
 
 {% endhighlight %}
 

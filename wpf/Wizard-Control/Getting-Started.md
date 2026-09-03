@@ -1,19 +1,19 @@
 ---
 layout: post
-title: Getting Started with WPF WizardControl | Syncfusion®
-description: Learn how to get started with the Syncfusion® WPF WizardControl. Explore setup, features, examples, and customization options.
+title: Getting Started with WPF Wizard Control | Syncfusion®
+description: Learn how to get started with the Syncfusion® WPF Wizard Control. Explore setup, features, examples, and customization options.
 platform: wpf
-control: Wizard
+control: Wizard Control
 documentation: ug
 ---
 
 # Getting Started with WPF Wizard Control
 
-This section explains how to get started with the [Wizard Control](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.WizardControl.html).
+This section explains how to get started with the [WizardControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.WizardControl.html).
 
 ## Highlighting features
 
-The following are some of the key features of [Wizard Control](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.WizardControl.html):
+The following are some of the key features of Wizard Control:
 
 * Wizard Control uses [WizardPage](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.WizardPage.html) objects to organize content into multiple pages.
 * Built-in navigation buttons such as **Back**, **Next**, **Finish**, **Cancel**, and **Help** enable navigation between wizard pages.
@@ -21,7 +21,7 @@ The following are some of the key features of [Wizard Control](https://help.sync
 
 ## Assembly deployment
 
-Refer to the [Control Dependencies](https://help.syncfusion.com/wpf/control-dependencies#wizard) section for the list of assemblies and NuGet packages required to use the [Wizard Control](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.WizardControl.html) in a WPF application.
+Refer to the [Control Dependencies](https://help.syncfusion.com/wpf/control-dependencies#wizard) section for the list of assemblies and NuGet packages required to use the Wizard Control in a WPF application.
 
 **NuGet package:** `Syncfusion.Tools.Wpf`
 
@@ -30,7 +30,7 @@ For more information about installing NuGet packages in a WPF application, refer
 
 ## Creating Application with Wizard Control
 
-In this walkthrough, you will create a WPF application that uses the [Wizard Control](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.WizardControl.html).
+In this walkthrough, you will create a WPF application that uses the Wizard Control.
 
 1. [Creating project](https://help.syncfusion.com/wpf/wizard-control/getting-started#creating-project)
 2. [Adding control via designer](https://help.syncfusion.com/wpf/wizard-control/getting-started#adding-control-via-designer)
@@ -40,15 +40,15 @@ In this walkthrough, you will create a WPF application that uses the [Wizard Con
 
 ## Creating project
 
-Follow these steps to create a WPF project in Visual Studio and add the [Wizard Control](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.WizardControl.html) to it.
+Follow these steps to create a WPF project in Visual Studio and add the Wizard Control to it.
 
 ## Adding control via designer
-The [Wizard Control](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.WizardControl.html) control can be added to the application by dragging it from the **Toolbox** and dropping it onto the designer surface. The required assembly references are added automatically.
+The [WizardControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.WizardControl.html) can be added to the application by dragging it from the **Toolbox** and dropping it onto the designer surface. The required assembly references are added automatically.
 
 ![Adding WPF Wizard Control via designer](getting-started_images/wpf-wizard-adding-control-via-designer.png)
 
 ## Adding control manually in XAML
-To add the [Wizard Control](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.WizardControl.html) control manually in XAML, follow these steps:
+To add the [WizardControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.WizardControl.html) manually in XAML, follow these steps:
 
 1. Add the required assembly references to the project:
 
@@ -57,7 +57,7 @@ To add the [Wizard Control](https://help.syncfusion.com/cr/wpf/Syncfusion.Window
 
 2. Import the Syncfusion WPF schema **http://schemas.syncfusion.com/wpf** in the XAML page.
 
-3. Add the [Wizard Control](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.WizardControl.html) to the XAML page.
+3. Add the [WizardControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.WizardControl.html) to the XAML page.
 
 {% capture codesnippet1 %}
 {% tabs %}
@@ -85,7 +85,7 @@ To add the [Wizard Control](https://help.syncfusion.com/cr/wpf/Syncfusion.Window
 {{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 ## Adding control manually in C#
-To add the [Wizard Control](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.WizardControl.html) control manually in C#, follow these steps:
+To add the [WizardControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.WizardControl.html) manually in C#, follow these steps:
 
 1. Add the required assembly references to the project:
 
@@ -94,7 +94,7 @@ To add the [Wizard Control](https://help.syncfusion.com/cr/wpf/Syncfusion.Window
 
 2. Import the **Syncfusion.Windows.Tools.Controls** namespace.
 
-3. Create an instance of Wizard Control and add it to the window.
+3. Create an instance of `WizardControl` and add it to the window.
 
 {% capture codesnippet2 %}
 {% tabs %}
@@ -129,7 +129,7 @@ namespace WizardControl
 
 ## Adding multiple pages
 
-You can add multiple pages to the [Wizard Control](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.WizardControl.html) by using [WizardPage](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.WizardPage.html) objects. The **Back**, **Next**, **Finish**, and **Cancel** buttons are enabled or disabled automatically based on the currently displayed page.
+You can add multiple pages to the [WizardControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.WizardControl.html) by using [WizardPage](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.WizardPage.html) objects. The **Back**, **Next**, **Finish**, and **Cancel** buttons are enabled or disabled automatically based on the currently displayed page.
 
 {% tabs %}
 

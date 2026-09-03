@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Badges in WPF SfAvatarView | Syncfusion®
-description: Badges in WPF SfAvatarView highlight user status, activity, or notifications, providing additional context alongside avatar content.
+title: Badges in WPF AvatarView | Syncfusion®
+description: Badges in WPF AvatarView highlight user status, activity, or notifications, providing additional context alongside avatar content.
 platform: wpf
 control: AvatarView
 documentation: ug
@@ -9,9 +9,9 @@ documentation: ug
 
 # Badges in WPF AvatarView 
 
-The [AvatarView ](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.SfAvatarView.html) control supports various [SfBadge](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Notification.SfBadge.html) states to notify users of new or unread messages, notifications, or status updates.
+The [SfAvatarView](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.SfAvatarView.html) control supports various [SfBadge](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Notification.SfBadge.html) states to notify users of new or unread messages, notifications, or status updates.
 
-The following code explains how to set [SfBadge](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Notification.SfBadge.html) for [AvatarView ](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.SfAvatarView.html).
+The following code explains how to set [SfBadge](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Notification.SfBadge.html) for [SfAvatarView ](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.SfAvatarView.html) control.
 
 {% tabs %}
 {% highlight xaml %}

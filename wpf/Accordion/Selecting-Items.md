@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Selecting Items in WPF SfAccordion | Syncfusion®
-description: The Selecting Items support in SfAccordion enables users to choose and manage expanded accordion items for an intuitive navigation experience.
+title: Selecting Items in WPF Accordion | Syncfusion®
+description: The Selecting Items support in Accordion enables users to choose and manage expanded accordion items for an intuitive navigation experience.
 platform: wpf
-control: SfAccordion
+control: Accordion
 documentation: ug
 ---
 
@@ -18,22 +18,21 @@ Items can be selected programmatically using the properties [SelectedIndex](http
 {% tabs %}
 
 {% highlight XAML %}
-    <layout:SfAccordion SelectedIndex="2" Width="500" Height="200">
-       <layout:SfAccordionItem Header="WPF" 
-       Content="WPF is a framework for building rich Windows desktop applications"/>
-       <layout:SfAccordionItem Header="UWP" 
-       Content="UWP is a framework for building cross-platform Windows applications."/>
-       <layout:SfAccordionItem Header="WinUI" 
-       Content="WinUI is a modern framework for building Windows desktop applications."/>
-       <layout:SfAccordionItem Header="Windows Forms" 
-       Content="Windows Forms is a UI framework for building classic Windows desktop applications."/>
-       <layout:SfAccordionItem Header="Metro Studio" 
-       Content="Metro Studio is an icon library with customizable flat and wireframe icon templates."/>
-    </layout:SfAccordion>
+<layout:SfAccordion SelectedIndex="2" Width="500" Height="200">
+    <layout:SfAccordionItem Header="WPF"
+                            Content="WPF is a framework for building rich Windows desktop applications."/>
+    <layout:SfAccordionItem Header="UWP"
+                            Content="UWP is a framework for building cross-platform Windows applications."/>
+    <layout:SfAccordionItem Header="WinUI"
+                            Content="WinUI is a modern framework for building Windows desktop applications."/>
+    <layout:SfAccordionItem Header="Windows Forms"
+                            Content="Windows Forms is a UI framework for building classic Windows desktop applications."/>
+    <layout:SfAccordionItem Header="Metro Studio"
+                            Content="Metro Studio is an icon library with customizable flat and wireframe icon templates."/>
+</layout:SfAccordion>
 {% endhighlight %}
 
 {% highlight C# %}
-
 // Create Accordion control
 SfAccordion accordion = new SfAccordion();
 accordion.Width = 500;
@@ -76,7 +75,6 @@ accordion.Items.Add(winUIItem);
 accordion.Items.Add(windowsFormsItem);
 accordion.Items.Add(metroStudioItem);
 accordion.SelectedIndex = 2;
-
 {% endhighlight %}
 
 {% endtabs %}
@@ -90,76 +88,72 @@ accordion.SelectedIndex = 2;
 {% tabs %}
 
 {% highlight XAML %}
-
- <Grid>
-     <Grid.DataContext>
-         <local:AccordionViewModel/>
-     </Grid.DataContext>
-     <StackPanel>
-     <layout:SfAccordion ItemsSource="{Binding Items}" SelectedItem="{Binding SelectedAccordionItem, Mode=TwoWay}" Width="500" Height="200" Margin="50">
-         <layout:SfAccordion.HeaderTemplate>
-             <DataTemplate>
-                 <TextBlock Text="{Binding Name}"/>
-             </DataTemplate>
-         </layout:SfAccordion.HeaderTemplate>
-         <layout:SfAccordion.ContentTemplate>
-             <DataTemplate>
-                 <TextBlock Text="{Binding Description}"/>
-             </DataTemplate>
-         </layout:SfAccordion.ContentTemplate>
-     </layout:SfAccordion>
-     </StackPanel>
- </Grid>
-
+<Grid>
+    <Grid.DataContext>
+        <local:AccordionViewModel/>
+    </Grid.DataContext>
+    <StackPanel>
+        <layout:SfAccordion ItemsSource="{Binding Items}" SelectedItem="{Binding SelectedAccordionItem, Mode=TwoWay}" Width="500" Height="200" Margin="50">
+            <layout:SfAccordion.HeaderTemplate>
+                <DataTemplate>
+                    <TextBlock Text="{Binding Name}"/>
+                </DataTemplate>
+            </layout:SfAccordion.HeaderTemplate>
+            <layout:SfAccordion.ContentTemplate>
+                <DataTemplate>
+                    <TextBlock Text="{Binding Description}"/>
+                </DataTemplate>
+            </layout:SfAccordion.ContentTemplate>
+        </layout:SfAccordion>
+    </StackPanel>
+</Grid>
 {% endhighlight %}
 
 {% highlight C# %}
-
-  public class AccordionViewModel 
-  {
-      private object _selectedItem;
-      public object SelectedItem
-      {
-          get { return _selectedItem; }
-          set
-          {
-              _selectedItem = value;
-              OnPropertyChanged(nameof(SelectedItem));
-          }
-      }
-
-      private ObservableCollection<AccordionItem> _items;
-      public ObservableCollection<AccordionItem> Items
-      {
-          get { return _items; }
-          set
-          {
-              _items = value;
-              OnPropertyChanged(nameof(Items));
-          }
-      }
-
-      public AccordionViewModel()
-      {
-          Items = new ObservableCollection<AccordionItem>
+public class AccordionViewModel
+{
+    private object _selectedItem;
+    public object SelectedItem
+    {
+        get { return _selectedItem; }
+        set
         {
-           new AccordionItem { Name = "WPF", Description = "WPF is a framework for building rich Windows desktop applications."},
-           new AccordionItem { Name = "UWP", Description = "UWP is a framework for building cross-platform Windows applications." },
-           new AccordionItem { Name = "WinUI", Description = "WinUI is a modern framework for building Windows desktop applications." },
-           new AccordionItem { Name = "Windows Form", Description = "Windows Forms is a UI framework for building classic Windows desktop applications." },
-           new AccordionItem { Name = "Metro Studio", Description = "Metro Studio is an icon library with customizable flat and wireframe icon templates." }
+            _selectedItem = value;
+            OnPropertyChanged(nameof(SelectedItem));
+        }
+    }
+
+    private ObservableCollection<AccordionItem> _items;
+    public ObservableCollection<AccordionItem> Items
+    {
+        get { return _items; }
+        set
+        {
+            _items = value;
+            OnPropertyChanged(nameof(Items));
+        }
+    }
+
+    public AccordionViewModel()
+    {
+        Items = new ObservableCollection<AccordionItem>
+        {
+            new AccordionItem { Name = "WPF", Description = "WPF is a framework for building rich Windows desktop applications."},
+            new AccordionItem { Name = "UWP", Description = "UWP is a framework for building cross-platform Windows applications." },
+            new AccordionItem { Name = "WinUI", Description = "WinUI is a modern framework for building Windows desktop applications." },
+            new AccordionItem { Name = "Windows Form", Description = "Windows Forms is a UI framework for building classic Windows desktop applications." },
+            new AccordionItem { Name = "Metro Studio", Description = "Metro Studio is an icon library with customizable flat and wireframe icon templates." }
         };
 
-        SelectedItem = Items[4];   
-      }
-  }
+        SelectedItem = Items[4];
+    }
+}
 
-  public class AccordionItem
-  {
-      public string Name { get; set; }
-      public string Description { get; set; }
-  }
-
+public class AccordionItem
+{
+    public string Name { get; set; }
+    public string Description { get; set; }
+}
 {% endhighlight %}
 
 {% endtabs %}
@@ -174,43 +168,27 @@ accordion.SelectedIndex = 2;
 
 [SelectedIndices](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Layout.SfAccordion.html#Syncfusion_Windows_Controls_Layout_SfAccordion_SelectedIndices) property contains a collection of selected items indices for all the SelectionModes. It is a read only property and it cannot be set.
 
-Here is an example showing the functioning of these properties in which items are selected in run time by touch: 
+Here is an example showing the functioning of these properties in which items are selected in run time by touch:
 
 {% tabs %}
 
 {% highlight XAML %}
-
-    <Grid>
-
+<Grid>
     <StackPanel>
-
-    <TextBlock x:Name="selectedItem"/>
-
-    <TextBlock x:Name="selectedIndex"/>
-
-    <TextBlock x:Name="selectedItems"/>
-
-    <TextBlock x:Name="selectedIndices"/>
-
-    <layout:SfAccordion SelectionMode="ZeroOrMore" x:Name="accordion"
-                        SelectedItemsChanged="accordion_SelectedItemsChanged">
-
-    <layout:SfAccordionItem Header="WPF" Content="Essential Studio for WPF"/>
-
-    <layout:SfAccordionItem Header="Silverlight" Content="Essential Studio for Silverlight"/>
-
-    <layout:SfAccordionItem Header="WinRT" Content="Essential Studio for WinRT"/>
-
-    <layout:SfAccordionItem Header="Windows Phone" Content="Essential Studio for Windows Phone"/>
-
-    <layout:SfAccordionItem Header="Universal" Content="Essential Studio for Universal"/>
-
-    </layout:SfAccordion>
-
+        <TextBlock x:Name="selectedItem"/>
+        <TextBlock x:Name="selectedIndex"/>
+        <TextBlock x:Name="selectedItems"/>
+        <TextBlock x:Name="selectedIndices"/>
+        <layout:SfAccordion SelectionMode="ZeroOrMore" x:Name="accordion"
+                            SelectedItemsChanged="accordion_SelectedItemsChanged">
+            <layout:SfAccordionItem Header="WPF" Content="Essential Studio for WPF"/>
+            <layout:SfAccordionItem Header="Silverlight" Content="Essential Studio for Silverlight"/>
+            <layout:SfAccordionItem Header="WinRT" Content="Essential Studio for WinRT"/>
+            <layout:SfAccordionItem Header="Windows Phone" Content="Essential Studio for Windows Phone"/>
+            <layout:SfAccordionItem Header="Universal" Content="Essential Studio for Universal"/>
+        </layout:SfAccordion>
     </StackPanel>
-
-    </Grid>
-
+</Grid>
 {% endhighlight %}
 
 {% endtabs %}
@@ -218,67 +196,44 @@ Here is an example showing the functioning of these properties in which items ar
 {% tabs %}
 
 {% highlight C# %}
-
-    private void accordion_SelectedItemsChanged(object sender, System.Collections.Specialized.NotifyCollectionChangedEventArgs e)
-
-    {
-
+private void accordion_SelectedItemsChanged(object sender, System.Collections.Specialized.NotifyCollectionChangedEventArgs e)
+{
     string items = string.Empty;
-
     string indices = string.Empty;
 
     foreach (var item in accordion.SelectedItems)
-
-    items += (item as SfAccordionItem).Header + " , ";            
+        items += (item as SfAccordionItem).Header + " , ";
 
     foreach (var item in accordion.SelectedIndices)
-
-    indices += item + " , ";
+        indices += item + " , ";
 
     selectedItem.Text = "SelectedItem is : " + (accordion.SelectedItem as SfAccordionItem).Header;
-
     selectedIndex.Text = "SelectedIndex is : " + accordion.SelectedIndex;
-
     selectedItems.Text = "SelectedItems are : " + items;
-
     selectedIndices.Text = "SelectedIndices are : " + indices;
-
-    }
-
+}
 {% endhighlight %}
 
 {% highlight VB %}
+Option Infer On
 
-    Option Infer On
-
-    Private Sub accordion_SelectedItemsChanged(ByVal sender As Object, ByVal e As System.Collections.Specialized.NotifyCollectionChangedEventArgs)
-
-
+Private Sub accordion_SelectedItemsChanged(ByVal sender As Object, ByVal e As System.Collections.Specialized.NotifyCollectionChangedEventArgs)
     Dim items As String = String.Empty
-
     Dim indices As String = String.Empty
 
     For Each item In accordion.SelectedItems
-
-    items &= (TryCast(item, SfAccordionItem)).Header & " , "
+        items &= (TryCast(item, SfAccordionItem)).Header & " , "
     Next item
 
     For Each item In accordion.SelectedIndices
-
-    indices &= item & " , "
+        indices &= item & " , "
     Next item
 
     selectedItem.Text = "SelectedItem is : " & (TryCast(accordion.SelectedItem, SfAccordionItem)).Header
-
     selectedIndex.Text = "SelectedIndex is : " & accordion.SelectedIndex
-
     selectedItems.Text = "SelectedItems are : " & items
-
     selectedIndices.Text = "SelectedIndices are : " & indices
-
-    End Sub
-
-
+End Sub
 {% endhighlight %}
 
 {% endtabs %}
@@ -295,13 +250,9 @@ Here is an example showing the functioning of these properties in which items ar
 {% tabs %}
 
 {% highlight XAML %}
-
-    <layout:SfAccordion>
-
-    <layout:SfAccordionItem Header="Linda" IsSelected="True" Content="Description about Linda">
-
-    </layout:SfAccordion>           
-
+<layout:SfAccordion>
+    <layout:SfAccordionItem Header="Linda" IsSelected="True" Content="Description about Linda"/>
+</layout:SfAccordion>
 {% endhighlight %}
 
 {% endtabs %}
@@ -309,25 +260,17 @@ Here is an example showing the functioning of these properties in which items ar
 {% tabs %}
 
 {% highlight C# %}
-
-    SfAccordion accordion = new SfAccordion();
-
-    accordion.Items.Add(new SfAccordionItem() { Header = "Linda",
-    Content = "Description about Linda" , IsSelected = true });
-
+SfAccordion accordion = new SfAccordion();
+accordion.Items.Add(new SfAccordionItem() { Header = "Linda", Content = "Description about Linda", IsSelected = true });
 {% endhighlight %}
 
 {% highlight VB %}
-
-    Dim accordion As New SfAccordion()
-
-    accordion.Items.Add(New SfAccordionItem() With {
-        .Header = "Linda",
-        .Content = "Description about Linda",
-        .IsSelected = True
-    })
-
-
+Dim accordion As New SfAccordion()
+accordion.Items.Add(New SfAccordionItem() With {
+    .Header = "Linda",
+    .Content = "Description about Linda",
+    .IsSelected = True
+})
 {% endhighlight %}
 
 {% endtabs %}
@@ -337,45 +280,25 @@ Here is an example showing the behavior of this property by binding [SfAccordion
 {% tabs %}
 
 {% highlight XAML %}
-
-    <Grid>
-
-    <StackPanel>            
-
-    <CheckBox Content="WPF" IsChecked="{Binding ElementName=wpf,Path=IsSelected,Mode=TwoWay}"/>
-
-    <CheckBox Content="Silverlight" IsChecked="{Binding ElementName=silverlight,Path=IsSelected,Mode=TwoWay}"/>
-
-    <CheckBox Content="WinRT" IsChecked="{Binding ElementName=winrt,Path=IsSelected,Mode=TwoWay}"/>
-
-    <CheckBox Content="Windows Phone" IsChecked="{Binding ElementName=phone,Path=IsSelected,Mode=TwoWay}"/>
-
-    <CheckBox Content="Universal" IsChecked="{Binding ElementName=universal,Path=IsSelected,Mode=TwoWay}"/>
-
-    <layout:SfAccordion SelectionMode="ZeroOrMore">
-
-    <layout:SfAccordionItem x:Name="wpf"  Header="WPF" Content="Essential Studio for WPF"/>
-
-    <layout:SfAccordionItem x:Name="silverlight" Header="Silverlight" 
-
-    Content="Essential Studio for Silverlight"/>
-
-    <layout:SfAccordionItem x:Name="winrt" Header="WinRT" Content="Essential Studio for WinRT"/>
-
-    <layout:SfAccordionItem x:Name="phone" IsSelected="True" Header="Windows Phone" 
-
-    Content="Essential Studio for Windows Phone"/>
-
-    <layout:SfAccordionItem x:Name="universal" Header="Universal" 
-
-    Content="Essential Studio for Universal"/>
-
-    </layout:SfAccordion>           
-
+<Grid>
+    <StackPanel>
+        <CheckBox Content="WPF" IsChecked="{Binding ElementName=wpf,Path=IsSelected,Mode=TwoWay}"/>
+        <CheckBox Content="Silverlight" IsChecked="{Binding ElementName=silverlight,Path=IsSelected,Mode=TwoWay}"/>
+        <CheckBox Content="WinRT" IsChecked="{Binding ElementName=winrt,Path=IsSelected,Mode=TwoWay}"/>
+        <CheckBox Content="Windows Phone" IsChecked="{Binding ElementName=phone,Path=IsSelected,Mode=TwoWay}"/>
+        <CheckBox Content="Universal" IsChecked="{Binding ElementName=universal,Path=IsSelected,Mode=TwoWay}"/>
+        <layout:SfAccordion SelectionMode="ZeroOrMore">
+            <layout:SfAccordionItem x:Name="wpf" Header="WPF" Content="Essential Studio for WPF"/>
+            <layout:SfAccordionItem x:Name="silverlight" Header="Silverlight"
+                                    Content="Essential Studio for Silverlight"/>
+            <layout:SfAccordionItem x:Name="winrt" Header="WinRT" Content="Essential Studio for WinRT"/>
+            <layout:SfAccordionItem x:Name="phone" IsSelected="True" Header="Windows Phone"
+                                    Content="Essential Studio for Windows Phone"/>
+            <layout:SfAccordionItem x:Name="universal" Header="Universal"
+                                    Content="Essential Studio for Universal"/>
+        </layout:SfAccordion>
     </StackPanel>
-
-    </Grid>
-
+</Grid>
 {% endhighlight %}
 
 {% endtabs %}
@@ -394,19 +317,15 @@ For example: In One SelectionMode, the selected item cannot be collapsed directl
 {% tabs %}
 
 {% highlight C# %}
-
-    accordion.SelectAll();
-
+accordion.SelectAll();
 {% endhighlight %}
 
 {% highlight VB %}
-
-    accordion.SelectAll()
-
+accordion.SelectAll()
 {% endhighlight %}
 
 {% endtabs %}
- 
+
 ## Unselect All Items
 
 `Accordion` provides a method [UnselectAll](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Layout.SfAccordion.html#Syncfusion_Windows_Controls_Layout_SfAccordion_UnselectAll) to unselect all the items. In One [SelectionMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Layout.SfAccordion.html#Syncfusion_Windows_Controls_Layout_SfAccordion_SelectionMode), there is no change in calling this method. In OneOrMore SelectionMode, the element which has higher index remains selected whereas others are unselected.
@@ -414,15 +333,11 @@ For example: In One SelectionMode, the selected item cannot be collapsed directl
 {% tabs %}
 
 {% highlight C# %}
-
-    accordion.UnselectAll();
-
+accordion.UnselectAll();
 {% endhighlight %}
 
 {% highlight VB %}
-
-    accordion.SelectAll()
-
+accordion.UnselectAll()
 {% endhighlight %}
 
 {% endtabs %}
@@ -469,44 +384,25 @@ Here is an example to demonstrate the values of event arguments:
 {% tabs %}
 
 {% highlight XAML %}
-
-    <Grid>
-
+<Grid>
     <StackPanel>
-
-    <TextBlock x:Name="oldStartingIndex"/>
-
-    <TextBlock x:Name="oldItems"/>
-
-    <TextBlock x:Name="newStartingIndex"/>
-
-    <TextBlock x:Name="newItems"/>
-
-    <TextBlock x:Name="selectedIndex"/>
-
-    <TextBlock x:Name="selectedItem"/>   
-    
-    <layout:SfAccordion SelectionMode="ZeroOrMore" x:Name="accordion"
-                        SelectedItemsChanged="accordion_SelectedItemsChanged">
-
-    <layout:SfAccordionItem Header="WPF" Content="Essential Studio for WPF"/>
-
-    <layout:SfAccordionItem Header="Silverlight" 
-
-    Content="Essential Studio for Silverlight"/>
-
-    <layout:SfAccordionItem Header="WinRT" Content="Essential Studio for WinRT"/>
-
-    <layout:SfAccordionItem Header="Windows Phone" Content="Essential Studio for Windows Phone"/>
-
-    <layout:SfAccordionItem Header="Universal" Content="Essential Studio for Universal"/>
-
-    </layout:SfAccordion>
-
+        <TextBlock x:Name="oldStartingIndex"/>
+        <TextBlock x:Name="oldItems"/>
+        <TextBlock x:Name="newStartingIndex"/>
+        <TextBlock x:Name="newItems"/>
+        <TextBlock x:Name="selectedIndex"/>
+        <TextBlock x:Name="selectedItem"/>
+        <layout:SfAccordion SelectionMode="ZeroOrMore" x:Name="accordion"
+                            SelectedItemsChanged="accordion_SelectedItemsChanged">
+            <layout:SfAccordionItem Header="WPF" Content="Essential Studio for WPF"/>
+            <layout:SfAccordionItem Header="Silverlight"
+                                    Content="Essential Studio for Silverlight"/>
+            <layout:SfAccordionItem Header="WinRT" Content="Essential Studio for WinRT"/>
+            <layout:SfAccordionItem Header="Windows Phone" Content="Essential Studio for Windows Phone"/>
+            <layout:SfAccordionItem Header="Universal" Content="Essential Studio for Universal"/>
+        </layout:SfAccordion>
     </StackPanel>
-
-    </Grid>
-
+</Grid>
 {% endhighlight %}
 
 {% endtabs %}
@@ -514,113 +410,66 @@ Here is an example to demonstrate the values of event arguments:
 {% tabs %}
 
 {% highlight C# %}
-
-    private void accordion_SelectedItemsChanged(object sender, System.Collections.Specialized.NotifyCollectionChangedEventArgs e)
-
-    {
-        
+private void accordion_SelectedItemsChanged(object sender, System.Collections.Specialized.NotifyCollectionChangedEventArgs e)
+{
     string olditems = string.Empty;
-
     string newitems = string.Empty;
 
     if (e.OldItems != null)
-
     {
-        
-    foreach (var item in e.OldItems)
-
-    olditems += (item as SfAccordionItem).Header + " , ";
-
+        foreach (var item in e.OldItems)
+            olditems += (item as SfAccordionItem).Header + " , ";
     }
-
     else
-
-    olditems = "null";
+        olditems = "null";
 
     if (e.NewItems != null)
-
     {
-        
-    foreach (var item in e.NewItems)
-
-    newitems += (item as SfAccordionItem).Header + " , ";
-
+        foreach (var item in e.NewItems)
+            newitems += (item as SfAccordionItem).Header + " , ";
     }
-    
     else
-
-    newitems = "null";
+        newitems = "null";
 
     oldStartingIndex.Text = "OldStartingIndex is : " + e.OldStartingIndex;
-
     newStartingIndex.Text = "NewStartingIndex is : " + e.NewStartingIndex;
-
     selectedIndex.Text = "SelectedIndex is : " + accordion.SelectedIndex;
-
-    selectedItem.Text = "SelectedItem is : " + ((accordion.SelectedItem == null)? "null":(accordion.SelectedItem as SfAccordionItem).Header);
-
+    selectedItem.Text = "SelectedItem is : " + ((accordion.SelectedItem == null) ? "null" : (accordion.SelectedItem as SfAccordionItem).Header);
     oldItems.Text = "OldItems are : " + olditems;
-
     newItems.Text = "NewItems are : " + newitems;
-    
-    }
-
+}
 {% endhighlight %}
 
 {% highlight VB %}
+Option Infer On
 
-    Option Infer On
-
-    Private Sub accordion_SelectedItemsChanged(ByVal sender As Object, ByVal e As System.Collections.Specialized.NotifyCollectionChangedEventArgs)
-
-
+Private Sub accordion_SelectedItemsChanged(ByVal sender As Object, ByVal e As System.Collections.Specialized.NotifyCollectionChangedEventArgs)
     Dim olditems As String = String.Empty
-
     Dim newitems As String = String.Empty
 
     If e.OldItems IsNot Nothing Then
-
-
-    For Each item In e.OldItems
-
-    olditems &= (TryCast(item, SfAccordionItem)).Header & " , "
-    Next item
-
-
+        For Each item In e.OldItems
+            olditems &= (TryCast(item, SfAccordionItem)).Header & " , "
+        Next item
     Else
-
-    olditems = "null"
+        olditems = "null"
     End If
 
     If e.NewItems IsNot Nothing Then
-
-
-    For Each item In e.NewItems
-
-    newitems &= (TryCast(item, SfAccordionItem)).Header & " , "
-    Next item
-
-
+        For Each item In e.NewItems
+            newitems &= (TryCast(item, SfAccordionItem)).Header & " , "
+        Next item
     Else
-
-    newitems = "null"
+        newitems = "null"
     End If
 
     oldStartingIndex.Text = "OldStartingIndex is : " & e.OldStartingIndex
-
     newStartingIndex.Text = "NewStartingIndex is : " & e.NewStartingIndex
-
     selectedIndex.Text = "SelectedIndex is : " & accordion.SelectedIndex
-
     selectedItem.Text = "SelectedItem is : " & (If(accordion.SelectedItem Is Nothing, "null", (TryCast(accordion.SelectedItem, SfAccordionItem)).Header))
-
     oldItems.Text = "OldItems are : " & olditems
-
     newItems.Text = "NewItems are : " & newitems
-
-    End Sub
-
-
+End Sub
 {% endhighlight %}
 
 {% endtabs %}
@@ -640,10 +489,8 @@ Collapse the item with header Windows Phone
 {% tabs %}
 
 {% highlight XAML %}
-
-    <layout:SfAccordionItem x:Name="wpf" Selected="Selected"
-                        Header="WPF" Content="Essential Studio for WPF"/>
-
+<layout:SfAccordionItem x:Name="wpf" Selected="Selected"
+                       Header="WPF" Content="Essential Studio for WPF"/>
 {% endhighlight %}
 
 {% endtabs %}
@@ -651,20 +498,16 @@ Collapse the item with header Windows Phone
 {% tabs %}
 
 {% highlight C# %}
+private void Selected(object sender, RoutedEventArgs e)
+{
 
-    private void Selected(object sender, RoutedEventArgs e)
-    {
-        
-    }
-
+}
 {% endhighlight %}
 
 {% highlight VB %}
+Private Sub Selected(ByVal sender As Object, ByVal e As RoutedEventArgs)
 
-    Private Sub Selected(ByVal sender As Object, ByVal e As RoutedEventArgs)
-
-    End Sub
-
+End Sub
 {% endhighlight %}
 
 {% endtabs %}
@@ -676,10 +519,8 @@ Collapse the item with header Windows Phone
 {% tabs %}
 
 {% highlight XAML %}
-
-    <layout:SfAccordionItem x:Name="wpf" Unselected="Unselected"
-                        Header="WPF" Content="Essential Studio for WPF"/>
-
+<layout:SfAccordionItem x:Name="wpf" Unselected="Unselected"
+                       Header="WPF" Content="Essential Studio for WPF"/>
 {% endhighlight %}
 
 {% endtabs %}
@@ -687,22 +528,16 @@ Collapse the item with header Windows Phone
 {% tabs %}
 
 {% highlight C# %}
+private void Unselected(object sender, RoutedEventArgs e)
+{
 
-    private void Unselected(object sender, RoutedEventArgs e)
-
-    {
-        
-    }
-
+}
 {% endhighlight %}
 
 {% highlight VB %}
+Private Sub Unselected(ByVal sender As Object, ByVal e As RoutedEventArgs)
 
-    Private Sub Unselected(ByVal sender As Object, ByVal e As RoutedEventArgs)
-
-
-    End Sub
-
+End Sub
 {% endhighlight %}
 
 {% endtabs %}
@@ -711,8 +546,4 @@ Collapse the item with header Windows Phone
 
 [SelectionChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Layout.SfAccordion.html#Syncfusion_Windows_Controls_Layout_SfAccordion_SelectionChanged) event fires when an item is selected and unselected. It behaves same as that of [SelectedItemChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Layout.SfAccordion.html#Syncfusion_Windows_Controls_Layout_SfAccordion_SelectedItemsChanged) event. 
 The difference between these two events are the event argument parameters. The parameters of [SelectionChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Layout.SfAccordion.html#Syncfusion_Windows_Controls_Layout_SfAccordion_SelectionChanged) event are AddedItems and RemovedItems.Added items have the list of recently selected items whereas RemovedItems have the list of recently unselected items.
-
-
-
-
 

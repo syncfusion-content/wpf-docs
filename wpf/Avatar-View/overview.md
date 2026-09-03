@@ -1,7 +1,7 @@
 ---
 layout: post
-title: About Syncfusion® WPF SfAvatarView Control | Syncfusion®
-description: Learn about the introduction of Syncfusion® Essential Studio WPF SfAvatarView control and discover its features, avatar customization options, and more details.
+title: About Syncfusion® WPF AvatarView Control | Syncfusion®
+description: Learn about the introduction of Syncfusion® Essential Studio WPF AvatarView control and discover its features, avatar customization options, and more details.
 platform: wpf
 control: AvatarView
 documentation: ug

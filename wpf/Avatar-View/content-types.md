@@ -1,7 +1,7 @@
 ---
 layout: post 
-title: Content Types in WPF SfAvatarView | Syncfusion®
-description: Content types in WPF SfAvatarView allow displaying images, initials, or custom content, providing flexible avatar representation options.
+title: Content Types in WPF AvatarView | Syncfusion®
+description: Content types in WPF AvatarView allow displaying images, initials, or custom content, providing flexible avatar representation options.
 platform: wpf
 control: AvatarView
 documentation: ug

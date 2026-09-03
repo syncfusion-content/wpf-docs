@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Customization in WPF SfAvatarView | Syncfusion®
-description: Customization in WPF SfAvatarView enables tailoring avatar appearance, size, shape, colors, and content to match application needs.
+title: Customization in WPF AvatarView | Syncfusion®
+description: Customization in WPF AvatarView enables tailoring avatar appearance, size, shape, colors, and content to match application needs.
 platform: wpf
 control: AvatarView
 documentation: ug
@@ -9,7 +9,7 @@ documentation: ug
 
 # Customization in WPF AvatarView  
 
-The [AvatarView ](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.SfAvatarView.html) control offers a range of customization options, including modifying its border, background, and more.
+The [SfAvatarView ](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.SfAvatarView.html) control offers a range of customization options, including modifying its border, background, and more.
 
 ## Border
 

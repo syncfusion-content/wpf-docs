@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Header in WPF SfBusyIndicator | Syncfusion®
-description: Header support in WPF SfBusyIndicator allows developers to display informative text alongside busy indicators, improving user communication during operations.
+title: Header in WPF Busy Indicator | Syncfusion®
+description: Header support in WPF Busy Indicator allows developers to display informative text alongside busy indicators, improving user communication during operations.
 platform: wpf
 control: Busy Indicator
 documentation: ug

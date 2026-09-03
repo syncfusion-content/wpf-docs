@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Getting Started with WPF SfAccordion | Syncfusion®
-description: Learn how to get started with the Syncfusion® WPF SfAccordion control. Explore setup, features, examples, and customization options.
+title: Getting Started with WPF Accordion | Syncfusion®
+description: Learn how to get started with the Syncfusion® WPF Accordion control. Explore setup, features, examples, and customization options.
 platform: wpf
-control: SfAccordion
+control: Accordion
 documentation: ug
 ---
 
@@ -29,7 +29,7 @@ Follow these steps to create a WPF application that uses the Accordion control.
 
 ## Add control through designer
 
-You can add the Accordion control to an application by dragging it from the Toolbox and dropping it onto the designer surface. The required assembly references are added automatically. Before using the Toolbox, ensure that the Syncfusion WPF extensions are installed in Visual Studio.
+You can add the `SfAccordion` control to an application by dragging it from the Toolbox and dropping it onto the designer surface. The required assembly references are added automatically. Before using the Toolbox, ensure that the Syncfusion WPF extensions are installed in Visual Studio.
 
 ![WPF Accordion Control](Getting-Started_images/wpf-accordion-control.png)
 
@@ -39,7 +39,7 @@ To add the control manually in XAML, follow the given steps:
 
 1. Add the **Syncfusion.SfAccordion.WPF** assembly reference to the project.
 2. Import the Syncfusion WPF schema **http://schemas.syncfusion.com/wpf** in the XAML page.
-3. Add the Accordion control to the XAML page.
+3. Add the `SfAccordion` control to the XAML page.
 
 {% capture codesnippet1 %}
 {% tabs %}
@@ -59,13 +59,13 @@ To add the control manually in XAML, follow the given steps:
 {% endcapture %}
 {{ codesnippet1 | OrderList_Indent_Level_1 }}
 
-## Add control manually in C\#
+## Add control manually in C#
 
 To add the control manually in C#, follow the given steps:
 
 1. Add the **Syncfusion.SfAccordion.WPF** assembly reference to the project. 
 2. Import the **Syncfusion.Windows.Controls.Layout** namespace.
-3. Create an instance of Accordion and add it to the window.
+3. Create an instance of `SfAccordion` and add it to the window.
 
 {% capture codesnippet2 %}
 {% tabs %}
@@ -138,7 +138,7 @@ this.Content = accordion;
 {% endhighlight %}
 {% endtabs %}
 
-![WPF Accordion Items](Getting-Started_images/wpf-accordion-items.png)
+![WPF Accordion control with Accordion Items](Getting-Started_images/wpf-accordion-items.png)
 
 ## Bind data
 
@@ -220,7 +220,7 @@ public class ViewModel
 
 * **MainWindow.Xaml**
 
-To bind data to the `Accordion`, set the `DataContext` and provide a `HeaderTemplate` and `ContentTemplate` as shown below:
+To bind data to the `SfAccordion` control, set the `DataContext` and provide a `HeaderTemplate` and `ContentTemplate` as shown below:
 
 {% capture codesnippet5 %}
 {% tabs %}
