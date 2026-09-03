@@ -649,7 +649,7 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-grid
 
 ## Theme
 
-The WPF GridSplitter supports various built-in themes. Refer to the following links to apply themes to the WPF GridSplitter:
+The WPF GridSplitter supports various built-in themes. Refer to the following links to apply themes to the control:
 
   * [Apply theme using SfSkinManager](https://help.syncfusion.com/wpf/themes/skin-manager)
 	
