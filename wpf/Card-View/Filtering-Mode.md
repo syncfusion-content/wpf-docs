@@ -3,7 +3,7 @@ layout: post
 title: Filtering Mode in WPF Card View | Syncfusion®
 description: Filtering mode support in WPF Card View allows users to display only relevant cards based on specified criteria, improving data exploration.
 platform: wpf
-control: CardView
+control: Card View
 documentation: ug
 ---
 

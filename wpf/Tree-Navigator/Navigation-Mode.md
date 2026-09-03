@@ -3,7 +3,7 @@ layout: post
 title: Navigation Mode in WPF Tree Navigator | Syncfusion®
 description: Navigation Mode support in Tree Navigator enables configurable navigation behavior, allowing users to browse and interact with hierarchical items efficiently.
 platform: wpf
-control: SfTreeNavigator 
+control: Tree Navigator 
 documentation: ug
 ---
 

@@ -3,7 +3,7 @@ layout: post
 title: Getting Started with WPF Markdown Viewer | Syncfusion®
 description: Learn how to get started with the Syncfusion® WPF Markdown Viewer   control. Explore setup, rendering features, examples, and customization options.
 platform: wpf
-control: SfMarkdownViewer
+control: Markdown Viewer
 documentation: ug
 keywords: wpf markdownviewer, syncfusion markdownviewer wpf, markdown viewer wpf, wpf markdown rendering, sfmarkdownviewer wpf, wpf markdown control, markdown rendering wpf, wpf markdown getting started
 ---
@@ -21,7 +21,7 @@ This section provides a step-by-step guide to integrate and use the [SfMarkdownV
 ## Install the Syncfusion<sup>&reg;</sup> WPF MarkdownViewer NuGet Package
 
 1. In **Solution Explorer**, right-click the project and choose **Manage NuGet Packages**.
-2. Search for [Syncfusion.SfMarkdownViewer.WPF](https://help.syncfusion.com/cr/wpf/Syncfusion.SfMarkdownViewer.Wpf.html) and install the latest version. The NuGet ID is case-insensitive, but the canonical name is `Syncfusion.SfMarkdownViewer.WPF`.
+2. Search for `Syncfusion.SfMarkdownViewer.WPF` NuGet and install the latest version. The NuGet ID is case-insensitive, but the canonical name is `Syncfusion.SfMarkdownViewer.WPF`.
 3. Ensure the required dependencies are installed correctly and that the project has been restored successfully.
 
 > The NuGet package installs `Syncfusion.SfMarkdownViewer.WPF` together with its required dependencies, including `Syncfusion.Markdown` and `Syncfusion.Shared.WPF`. You do not need to add them separately.

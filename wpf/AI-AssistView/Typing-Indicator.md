@@ -3,7 +3,7 @@ layout: post
 title: Typing Indicator in WPF AI AssistView | Syncfusion®
 description: The typing indicator in WPF AI AssistView provides visual feedback while AI processes prompts or generates responses, enhancing user engagement.
 platform: wpf
-control: SfAIAssistView
+control: AI AssistView
 documentation: ug
 ---
 

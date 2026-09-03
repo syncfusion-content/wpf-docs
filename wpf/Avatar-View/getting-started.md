@@ -1,23 +1,23 @@
 ---
 layout: post
-title: Getting Started with WPF SfAvatarView | Syncfusion®
-description: Learn how to get started with the Syncfusion® WPF SfAvatarView control. Explore setup, features, examples, and customization options.
+title: Getting Started with WPF AvatarView | Syncfusion®
+description: Learn how to get started with the Syncfusion® WPF AvatarView control. Explore setup, features, examples, and customization options.
 platform: wpf
 control: AvatarView
 documentation: ug
 ---
 
-# Getting Started with WPF SfAvatarView
+# Getting Started with WPF AvatarView 
 
 This section explains the steps required to add the WPF [SfAvatarView](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.SfAvatarView.html) control with its basic features.
 
 ## Creating an application with WPF AvatarView
 
-Follow these steps to integrate the SfAvatarView control into your WPF application:
+Follow these steps to integrate the AvatarView control into your WPF application:
 1. Create a new WPF application.
 2. Add the [Syncfusion.Shared.WPF](https://www.nuget.org/packages/Syncfusion.Shared.WPF) NuGet package to your project.
 3. Import the Syncfusion WPF schema in your XAML file: `xmlns:syncfusion="http://schemas.syncfusion.com/wpf"`.
-4. Initialize the SfAvatarView control in your XAML file.
+4. Initialize the `SfAvatarView` control in your XAML file.
 
 ## Initialize AvatarView 
 
