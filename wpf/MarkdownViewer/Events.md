@@ -3,7 +3,7 @@ layout: post
 title: Events in WPF Markdown Viewer | Syncfusion®
 description: Events in WPF Markdown Viewer provide notifications for user interactions and content rendering, enabling customized behavior and event-driven functionality.
 platform: wpf
-control: SfMarkdownViewer
+control: Markdown Viewer
 documentation: ug
 ---
 

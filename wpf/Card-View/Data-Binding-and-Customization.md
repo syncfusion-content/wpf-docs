@@ -3,7 +3,7 @@ layout: post
 title: Data Binding and Customization in WPF Card View | Syncfusion®
 description: Data-binding and customization in WPF Card View enables seamless data integration, flexible layouts, custom templates, and personalized card appearances.
 platform: wpf
-control: CardView
+control: Card View
 documentation: ug
 ---
 

@@ -13,7 +13,7 @@ This section illustrates the following interactive feature of [WizardControl](ht
 
 ## Populating pages in Wizard Control
 
-The pages can be added to Wizard Controlby following ways,
+The pages can be added to Wizard Control by following ways,
 
 * Populating by Wizard Pages
 * Populating by Data Binding

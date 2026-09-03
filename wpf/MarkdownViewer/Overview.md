@@ -3,7 +3,7 @@ layout: post
 title: About Syncfusion® WPF Markdown Viewer Control | Syncfusion®
 description: Learn about the introduction of Syncfusion® Essential Studio WPF Markdown Viewer control, its rendering capabilities, and key features.
 platform: wpf
-control: SfMarkdownViewer
+control: Markdown Viewer
 documentation: ug
 ---
 
