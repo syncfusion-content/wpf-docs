@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started with WPF SfDiagram | Syncfusion®
-description: Learn how to get started with the Syncfusion® WPF SfDiagram control. Explore setup, diagram elements, flowchart creation, layouts, themes, and more.
+title: Getting Started with WPF Diagram | Syncfusion®
+description: Learn how to get started with the Syncfusion® WPF Diagram control. Explore setup, diagram elements, flowchart creation, layouts, themes, and more.
 platform: wpf
 control: SfDiagram
 documentation: ug
 ---
 
-# Getting Started with WPF SfDiagram
+# Getting Started with WPF Diagram
 
 ## Assembly deployment
 
@@ -17,7 +17,7 @@ You can find more details about installing the NuGet package in a WPF applicatio
 [How to install nuget packages](https://help.syncfusion.com/wpf/installation/install-nuget-packages)
 
 
-The following section helps you to build your application with [WPF SfDiagram](https://www.syncfusion.com/diagram-sdk/wpf-diagram).
+The following section helps you to build your application with [WPF Diagram](https://www.syncfusion.com/diagram-sdk/wpf-diagram).
 
 ## Creating the project
 
@@ -25,7 +25,7 @@ Create a new WPF project using Visual Studio. For more [details](https://learn.m
 
 ### Adding control via Designer
 
-[WPF SfDiagram](https://www.syncfusion.com/diagram-sdk/wpf-diagram) control can be added to the application by dragging it from Toolbox and dropping it in Designer view. The required assembly references will be added automatically.
+[WPF Diagram](https://www.syncfusion.com/diagram-sdk/wpf-diagram) control can be added to the application by dragging it from Toolbox and dropping it in Designer view. The required assembly references will be added automatically.
 
 ![WPF Diagram from Designer](getting-started_images\wpf-diagram-designer.png)
 
@@ -565,9 +565,9 @@ xmlns:stencil="clr-namespace:Syncfusion.UI.Xaml.Diagram.Stencil;assembly=Syncfus
 
 //Initialize SfDiagram
 SfDiagram diagram = new SfDiagram();
-//Initialize NodeCollection to SfDiagram
+//Initialize NodeCollection to Diagram
 diagram.Nodes = new NodeCollection();
-//Initialize ConnectorCollection to SfDiagram
+//Initialize ConnectorCollection to Diagram
 diagram.Connectors = new ConnectorCollection();
 
 //Initialize Stencil and its properties
@@ -738,7 +738,7 @@ For more information about stencil, please [refer](https://help.syncfusion.com/w
 
 ## Organization layout
 
-WPF Diagram (SfDiagram) provides support to auto-arrange the nodes in the diagram area that is referred to as a Layout.
+WPF Diagram provides support to auto-arrange the nodes in the diagram area that is referred to as a Layout.
 
 ### Business object (employee information)
 
@@ -804,13 +804,13 @@ You can configure the above “Employee Information” with diagram, so that the
 
 {% highlight c# %}
 
-//Initialize SfDiagram
+//Initialize Diagram
 SfDiagram diagram = new SfDiagram();
-//Initialize NodeCollection to SfDiagram
+//Initialize NodeCollection to Diagram
 diagram.Nodes = new NodeCollection();
-//Initialize ConnectorCollection to SfDiagram
+//Initialize ConnectorCollection to Diagram
 diagram.Connectors = new ConnectorCollection();
-//Initialize DataSourceSettings to SfDiagram
+//Initialize DataSourceSettings to Diagram
 diagram.DataSourceSettings = new DataSourceSettings()
 {
     DataSource =GetData(),
@@ -931,10 +931,10 @@ SfDiagram supports various built-in themes. Refer to the links below to apply th
 
 ## See Also
 
-[How to create treeview and diagram with editing options in the WPF SfDiagram?](https://support.syncfusion.com/kb/article/9926/how-to-create-treeview-and-diagram-with-editing-options-in-the-wpf-diagram-sfdiagram)
+[How to create treeview and diagram with editing options in the WPF Diagram?](https://support.syncfusion.com/kb/article/9926/how-to-create-treeview-and-diagram-with-editing-options-in-the-wpf-diagram-sfdiagram)
 
-[How to create a WPF SfDiagram?](https://support.syncfusion.com/kb/article/8853/how-to-create-a-wpf-diagram-sfdiagram)
+[How to create a WPF Diagram?](https://support.syncfusion.com/kb/article/8853/how-to-create-a-wpf-diagram-sfdiagram)
 
 [How to Automate Diagram using WinAppDriver](https://support.syncfusion.com/kb/article/15642/how-to-automate-diagram-using-winappdriver)
 
-[How to get the coordinates of the current viewport in WPF SfDiagram?](https://support.syncfusion.com/kb/article/18032/how-to-get-the-coordinates-of-the-current-viewport-in-wpf-diagram-sfdiagram)
+[How to get the coordinates of the current viewport in WPF Diagram?](https://support.syncfusion.com/kb/article/18032/how-to-get-the-coordinates-of-the-current-viewport-in-wpf-diagram-sfdiagram)

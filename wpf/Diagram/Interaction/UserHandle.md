@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Quick Command in WPF SfDiagram | Syncfusion®
-description: Use quick commands in Syncfusion® WPF SfDiagram to perform common actions, create custom commands, and customize their appearance.
+title: Quick Command in WPF Diagram | Syncfusion®
+description: Use quick commands in Syncfusion® WPF Diagram to perform common actions, create custom commands, and customize their appearance.
 platform: wpf
 control: SfDiagram
 documentation: ug
 ---
 
-# Quick Command in WPF SfDiagram
+# Quick Command in WPF Diagram
 
 ## Define QuickCommand
 
@@ -17,7 +17,7 @@ Quick Commands are used to execute commonly used commands for the [Nodes](https:
 
 ## Define Custom QuickCommand
 
-[WPF SfDiagram](https://www.syncfusion.com/diagram-sdk/wpf-diagram) provides support to define custom QuickCommands for the Nodes, Connectors and Groups.
+[WPF Diagram](https://www.syncfusion.com/diagram-sdk/wpf-diagram) provides support to define custom QuickCommands for the Nodes, Connectors and Groups.
 
 {% tabs %}
 

@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Expanded SubProcess in WPF SfDiagram | Syncfusion®
-description: Learn about BPMN expanded subprocesses in Syncfusion® WPF SfDiagram control, including grouping, child elements, loops, compensation, and subprocess types.
+title: Expanded SubProcess in WPF Diagram | Syncfusion®
+description: Learn about BPMN expanded subprocesses in Syncfusion® WPF Diagram control, including grouping, child elements, loops, compensation, and subprocess types.
 platform: wpf
 control: SfDiagram
 documentation: ug
 ---
 
-# Expanded SubProcess in WPF SfDiagram
+# Expanded SubProcess in WPF Diagram
 
-A ExpandedSubProcess is used to frame a part of the [WPF SfDiagram](https://www.syncfusion.com/diagram-sdk/wpf-diagram), shows that elements included in it are logically belong together and does not have any other semantics other than organizing elements. It is represented by a rounded rectangle.
+A ExpandedSubProcess is used to frame a part of the [WPF Diagram](https://www.syncfusion.com/diagram-sdk/wpf-diagram), shows that elements included in it are logically belong together and does not have any other semantics other than organizing elements. It is represented by a rounded rectangle.
 
 ExpandedSubProcess is the extended version of Group.
 

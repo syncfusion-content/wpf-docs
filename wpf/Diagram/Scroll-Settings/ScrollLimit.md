@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Scroll Limit in WPF SfDiagram | Syncfusion®
-description: Define scrolling boundaries in Syncfusion® WPF SfDiagram with scroll limits, custom scrollable areas, and keyboard navigation support.
+title: Scroll Limit in WPF Diagram | Syncfusion®
+description: Define scrolling boundaries in Syncfusion® WPF Diagram with scroll limits, custom scrollable areas, and keyboard navigation support.
 platform: wpf
 control: SfDiagram
 documentation: ug
 ---
 
-# Scroll Limit in WPF SfDiagram
+# Scroll Limit in WPF Diagram
 
 The scroll limit allows you to define the scrollable region of the Diagram while scrolling the page with the mouse. The [ScrollLimit](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ScrollSettings.html#Syncfusion_UI_Xaml_Diagram_ScrollSettings_ScrollLimit) property of the ScrollSettings class helps limit the scrolling area. It includes the following options:
 
@@ -28,7 +28,7 @@ The default value is `Diagram`.
 </syncfusion:SfDiagram>
 {% endhighlight %}
 {% highlight c# %}
-//Initialize the SfDiagram
+//Initialize the Diagram
 SfDiagram diagram = new SfDiagram();
 //Initialize the scroll settings with scroll limit
 diagram.ScrollSettings = new ScrollSettings()
@@ -72,7 +72,7 @@ You can restrict scrolling beyond a specific rectangular area by using the `Scro
 </syncfusion:SfDiagram>
 {% endhighlight %}
 {% highlight c# %}
-//Initialize the SfDiagram
+//Initialize the Diagram
 SfDiagram diagram = new SfDiagram();
 //Initialize the scroll settings with scroll limit and scrollable area value
 diagram.ScrollSettings = new ScrollSettings()
@@ -93,4 +93,4 @@ diagram.ScrollSettings = new ScrollSettings()
 
 ## See Also
 
-[How to stop infinite scrolling in WPF SfDiagram?](https://support.syncfusion.com/kb/article/9869/how-to-stop-infinite-scrolling-in-wpf-diagram-sfdiagram)
+[How to stop infinite scrolling in WPF Diagram?](https://support.syncfusion.com/kb/article/9869/how-to-stop-infinite-scrolling-in-wpf-diagram-sfdiagram)
