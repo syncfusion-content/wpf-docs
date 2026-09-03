@@ -9,11 +9,11 @@ documentation: ug
 
 # Getting Started with WPF MaskedTextBox (SfMaskedEdit)
 
-This section explains how to create a [WPF MaskedTextBox](https://www.syncfusion.com/wpf-controls/maskedtextbox) and describes its structure and features.
+This section explains how to create a [WPF MaskedTextBox](https://www.syncfusion.com/wpf-controls/maskedtextbox) and describes its structure and features. The WPF MaskedTextBox control is implemented through the [SfMaskedEdit](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfMaskedEdit.html) class.
 
 ## Control Structure
 
-![SfMaskedEdit](Getting-Started_images/wpf-maskededit-structure.png)
+![WPF MaskedTextBox](Getting-Started_images/wpf-maskededit-structure.png)
 
 ## Assembly deployment
 
@@ -23,14 +23,14 @@ You can find more details about installing the NuGet package in a WPF applicatio
 
 [How to install nuget packages](https://help.syncfusion.com/wpf/installation/install-nuget-packages)
 
-## Adding WPF MaskedTextBox via designer
+## Adding WPF WPF MaskedTextBox via designer
 
 You can add the `SfMaskedEdit` control to an application by dragging it from the toolbox to a view of the designer. The following dependent assembly will be added automatically.
 
 * Syncfusion.SfInput.WPF
 * Syncfusion.SfShared.WPF
 
-![Dragging SfMaskedEdit Control from Toolbox to Designer](Getting-Started_images/wpf-maskededit-toolbox.png)
+![Dragging WPF MaskedTextBox Control from Toolbox to Designer](Getting-Started_images/wpf-maskededit-toolbox.png)
  
 ## Adding WPF MaskedTextBox via XAML
 
@@ -105,13 +105,13 @@ public partial class MainWindow : Window {
 {% endcapture %}
 {{ codesnippet2 | OrderList_Indent_Level_1 }}
 
-![SfMaskedEdit Control](Getting-Started_images/wpf-maskededit-control.png)
+![WPF MaskedTextBox Control](Getting-Started_images/wpf-maskededit-control.png)
 
 N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-maskedtextbox-examples/blob/master/Samples/Getting-Started) in GitHub
 
 ## Restrict the user to enter valid data
 
-You can restrict the user to enter the valid input without any custom validation by creating the mask pattern as your requirement. You can enable the mask by setting the mask pattern to the [Mask](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfMaskedEdit.html#Syncfusion_Windows_Controls_Input_SfMaskedEdit_Mask) property and set the [MaskType](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfMaskedEdit.html#Syncfusion_Windows_Controls_Input_SfMaskedEdit_MaskType) property value as `Regex`. The default value of `Mask` property is `null` and `MaskType` property is `Simple`.
+You can restrict valid input without custom validation by creating a mask pattern. Enable the mask by setting the mask pattern to the [Mask](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfMaskedEdit.html#Syncfusion_Windows_Controls_Input_SfMaskedEdit_Mask) property and set the [MaskType](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfMaskedEdit.html#Syncfusion_Windows_Controls_Input_SfMaskedEdit_MaskType) property to `Regex`. The default value of the `Mask` property is `null`, and the default value of the `MaskType` property is `Simple`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -130,7 +130,7 @@ sfMaskedEdit.Mask = @"-?\d+\.?\d*";
 {% endhighlight %}
 {% endtabs %}
 
-![SfMaskedEdit displays Value in RegularExpression](MaskOptions_images/wpf-maskededit-negative-value.png)
+![WPF MaskedTextBox displays Value in RegularExpression](MaskOptions_images/wpf-maskededit-negative-value.png)
 
 Here, the `SfMaskedEdit` accept the positive and negative whole or float type numbers.
 
@@ -140,7 +140,7 @@ N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-maskedtext
 
 ## Setting the value
 
-You can set the value for the `SfMaskedEdit` by using the [Value](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfMaskedEdit.html#Syncfusion_Windows_Controls_Input_SfMaskedEdit_Value) property. Based on the mask, the value of `Value` property is formatted. The default value of `Value` property is `null`.
+You can set the value for the `SfMaskedEdit` by using the [Value](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfMaskedEdit.html#Syncfusion_Windows_Controls_Input_SfMaskedEdit_Value) property. Based on the mask, the value of the `Value` property is formatted. The default value of the `Value` property is `null`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -161,7 +161,7 @@ sfMaskedEdit.Mask = @"\([0-9]\d{2}\) [0-9]\d{2}-[0-9]\d{3}";
 {% endhighlight %}
 {% endtabs %}
 
-![SfMaskedEdit displays Value without Prompt and Literals](Working_with_SfMaskedEdit_images/wpf-maskededit-value.png)
+![WPF MaskedTextBox displays Value without Prompt and Literals](Working_with_SfMaskedEdit_images/wpf-maskededit-value.png)
 
 N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-maskedtextbox-examples/tree/master/Samples/InputOptions) in GitHub
 
@@ -193,13 +193,13 @@ sfMaskedEdit.Mask = @"\([0-9]\d{2}\) [0-9]\d{2}-[0-9]\d{3}";
 {% endhighlight %}
 {% endtabs %}
 
-![SfMaskedEdit displays Value in Various Formats](Working_with_SfMaskedEdit_images/wpf-maskededit-value-format.png)
+![WPF MaskedTextBox displays Value in Various Formats](Working_with_SfMaskedEdit_images/wpf-maskededit-value-format.png)
 
 N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-maskedtextbox-examples/tree/master/Samples/InputOptions) in GitHub
 
 ## Indicates error on invalid input
 
-After input validation failed, you can indicate to the user about the invalid input by the showing error border. The error border automatically disappeared when the input validation is succeed. You can change the error border color by using the [ErrorBorderBrush](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfMaskedEdit.html#Syncfusion_Windows_Controls_Input_SfMaskedEdit_ErrorBorderBrush) property. The default value of `ErrorBorderBrush` property is `Red`.
+After input validation fails, you can indicate invalid input to the user by showing an error border. The error border automatically disappears when input validation succeeds. You can change the error border color by using the [ErrorBorderBrush](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfMaskedEdit.html#Syncfusion_Windows_Controls_Input_SfMaskedEdit_ErrorBorderBrush) property. The default value of the `ErrorBorderBrush` property is `Red`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -216,7 +216,7 @@ sfMaskedEdit.ErrorBorderBrush = Brushes.Yellow;
 {% endhighlight %}
 {% endtabs %}
 
-![SfMaskedEdit displays Error Validation](Working_with_SfMaskedEdit_images/wpf-maskededit-error-validation.gif)
+![WPF MaskedTextBox displays Error Validation](Working_with_SfMaskedEdit_images/wpf-maskededit-error-validation.gif)
 
 N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-maskedtextbox-examples/tree/master/Samples/InputOptions) in GitHub
 
@@ -243,13 +243,13 @@ sfMaskedEdit.Mask = @"\+1 [0-9]\d{2}-[0-9]\d{2}-[0-9]\d{3}";
 {% endhighlight %}
 {% endtabs %}
 
-![SfMaskedEdit displays Prompt Character](Working_with_SfMaskedEdit_images/wpf-maskededit-prompt-char.png)
+![WPF MaskedTextBox displays Prompt Character](Working_with_SfMaskedEdit_images/wpf-maskededit-prompt-char.png)
 
 N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-maskedtextbox-examples/tree/master/Samples/InputOptions) in GitHub
 
 ## Value changed notification
 
-you can notified when changing the value of `SfMaskedEdit.Value` property by using the [ValueChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfMaskedEdit.html) event.
+You can receive a notification when the value of the `SfMaskedEdit.Value` property changes by using the [ValueChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfMaskedEdit.html) event.
 
 N> Your valid input character is updated to the `Value` property based on the `ValidationMode` property.
 Refer  [Input Validation](https://help.syncfusion.com/wpf/maskedtextbox/input-restriction#input-validation) to know more about the `ValidationMode`.
@@ -289,6 +289,6 @@ The WPF MaskedTextBox supports various built-in themes. Refer to the following l
 	
   * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
 
-  ![Applying Theme to SfMaskedEdit](Getting-Started_images/wpf-maskededit-theme.png)
+  ![Applying Theme to WPF MaskedTextBox](Getting-Started_images/wpf-maskededit-theme.png)
   
 N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-maskedtextbox-examples/tree/master/Samples/Themes) in GitHub
