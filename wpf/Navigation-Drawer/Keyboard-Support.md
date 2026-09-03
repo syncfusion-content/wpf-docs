@@ -7,14 +7,14 @@ control: NavigationDrawer
 documentation: ug
 ---
 
-#  Keyboard Support in WPF Navigation Drawer (SfNavigationDrawer)
+# Keyboard Support in WPF Navigation Drawer (SfNavigationDrawer)
 
-This section describes the keyboard support in SfNavigationDrawer.
+This section describes the keyboard support in the WPF Navigation Drawer.
 
-* **Tab** - This key can be used to navigate between the toggle button, navigation items and footer items and the main content view.   
-* **Up** - This key is used to Navigate to the previous NavigationItem.
-* **Down** - This key is used to Navigate to the next NavigationItem. 
-* **Enter and Space** - This key is used to select the currently focused item.
+* **Tab** - This key can be used to navigate between the toggle button, navigation items, footer items, and the main content view.   
+* **Up** - This key is used to navigate to the previous `NavigationItem`.
+* **Down** - This key is used to navigate to the next `NavigationItem`. 
+* **Enter and Space** - These keys are used to select the currently focused item.
 
 ![Keyboard Support in WPF Navigation Drawer](Keyboard_Support_image/Keyboard_Support.gif)
 

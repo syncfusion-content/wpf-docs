@@ -9,11 +9,11 @@ documentation: ug
 
 # Selection in WPF Navigation Drawer (SfNavigationDrawer)
 
-This section explains the handling of selection in SfNavigationDrawer. 
+This section explains the handling of selection in the WPF Navigation Drawer. 
 
-The [SelectedItem](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.NavigationDrawer.SfNavigationDrawer.html#Syncfusion_UI_Xaml_NavigationDrawer_SfNavigationDrawer_SelectedItem) property is used for getting or setting the currently selected item of the WPF Navigation Drawer. There are two cases in accessing the SelectedItem property.
+The [SelectedItem](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.NavigationDrawer.SfNavigationDrawer.html#Syncfusion_UI_Xaml_NavigationDrawer_SfNavigationDrawer_SelectedItem) property is used for getting or setting the currently selected item of the WPF Navigation Drawer. There are two cases in accessing the `SelectedItem` property.
 
-The first is when the WPF Navigation Drawer is populated with NavigationItems, then the  SelectedItem property is of type NavigationItem.
+The first is when the WPF Navigation Drawer is populated with `NavigationItem`, then the `SelectedItem` property is of type `NavigationItem`.
 
 {% tabs %}
 
@@ -25,7 +25,7 @@ var selectedItem = this.navigationDrawer.SelectedItem as NavigationItem;
 
 {% endtabs %}
 
-The other one is when the WPF Navigation Drawer is bound to a collection of custom objects, the SelectedItem is of the type of the custom object.
+The other one is when the WPF Navigation Drawer is bound to a collection of custom objects, the `SelectedItem` is of the type of the custom object.
 
 {% tabs %}
 

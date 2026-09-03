@@ -9,17 +9,17 @@ documentation: ug
 
 # Custom Views in WPF Navigation Drawer (SfNavigationDrawer)
 
-## Populating the with custom views
+## Populating with custom views
 
-The WPF Navigation Drawer sidebar can be populated with custom views by setting the [DisplayMode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.NavigationDrawer.SfNavigationDrawer.html#Syncfusion_UI_Xaml_NavigationDrawer_SfNavigationDrawer_DisplayMode) as [Default](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.NavigationDrawer.DisplayMode.html). In this mode the sidebar can be customized as three parts.
+The WPF Navigation Drawer sidebar can be populated with custom views by setting the [DisplayMode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.NavigationDrawer.SfNavigationDrawer.html#Syncfusion_UI_Xaml_NavigationDrawer_SfNavigationDrawer_DisplayMode) as [Default](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.NavigationDrawer.DisplayMode.html). In this mode, the sidebar can be customized as three parts.
 
-Basically the sidebar will be in hidden state and can be displayed by swipe gestures.
+Basically, the sidebar will be in a hidden state and can be displayed by swipe gestures.
 
-   * DrawerHeaderView - A custom view can be provided to be displayed as a header part of the navigation menu. This can be set to the [DrawerHeaderView]() property.
+   * DrawerHeaderView - A custom view can be provided to be displayed as a header part of the navigation menu. This can be set to the `DrawerHeaderView` property.
    
-   * DrawerContentView - A custom view can be provided to be displayed in the body of the navigation menu. This can be set to the [DrawerContentView]() property.
+   * DrawerContentView - A custom view can be provided to be displayed in the body of the navigation menu. This can be set to the `DrawerContentView` property.
    
-   * DrawerFooterView - A custom view can be provided to be displayed as a footer part of the navigation menu. This can be set to the [DrawerFooterView]() property. 
+   * DrawerFooterView - A custom view can be provided to be displayed as a footer part of the navigation menu. This can be set to the `DrawerFooterView` property. 
 
 {% tabs %}
 {% highlight xml %}
@@ -156,19 +156,19 @@ namespace NavigationDrawerWPF
 
 {% endtabs %}
 
-![WPF NavigationdDrawer displays Custom Views](getting-started_images/wpf-navigation-drawer-custom-views.png)                                      
+![WPF Navigation Drawer displays Custom Views](getting-started_images/wpf-navigation-drawer-custom-views.png)                                      
 
 ## Customizing the drawer
 
 ## Customize Panel size
 
-The size of sidebar can be adjusted using the `DrawerHeight` and `DrawerWidth` properties.
+The size of the sidebar can be adjusted using the `DrawerHeight` and `DrawerWidth` properties.
 
 ### DrawerHeight
 
-The `DrawerHeight` property is used to change the height of side pane when the Position is Top or Bottom.
+The `DrawerHeight` property is used to change the height of the side pane when the `Position` is `Top` or `Bottom`.
 
-N> The DrawerHeight property is applicable only when the DisplayMode is Default.
+N> The `DrawerHeight` property is applicable only when the `DisplayMode` is `Default`.
 
 {% tabs %}
 {% highlight xml %}
@@ -243,9 +243,9 @@ namespace NavigationDrawerWPF
 
 ### DrawerWidth
 
-The `DrawerWidth` property is used to change the width of side pane when the Position is Left or Right.
+The `DrawerWidth` property is used to change the width of the side pane when the `Position` is `Left` or `Right`.
 
-N> The DrawerWidth property is applicable only when the DisplayMode is Default.
+N> The `DrawerWidth` property is applicable only when the `DisplayMode` is `Default`.
 
 {% tabs %}
 {% highlight xml %}
@@ -323,16 +323,16 @@ namespace NavigationDrawerWPF
  
 ## Navigation Pane Sides
 
-The supplemental pane can be drawn in and out from all the four sides. The `Position` property is used to change the side of pane and the values are:
+The supplemental pane can be drawn in and out from all the four sides. The `Position` property is used to change the side of the pane and the values are:
 
 * Left
 * Right
 * Top
 * Bottom
 
-N> The Position property is applicable only when the DisplayMode is Default.
+N> The `Position` property is applicable only when the `DisplayMode` is `Default`.
 
-The default position is Left.  
+The default position is `Left`.  
 
 {% tabs %}
 
@@ -474,7 +474,7 @@ namespace NavigationDrawerWPF
 
 {% endtabs %}
 
-![WPF NavigationDrawer shows in Left Side](concepts-and-features_images/wpf-navigation-drawer-left-position.png)                                            
+![WPF Navigation Drawer shows in Left Side](concepts-and-features_images/wpf-navigation-drawer-left-position.png)                                            
 
 
 The following code example shows how to set the SfNavigationDrawer to the right.  
@@ -618,7 +618,7 @@ namespace NavigationDrawerWPF
 
 {% endtabs %}
 
-![WPF NavigationDrawer shows in Right Side](concepts-and-features_images/wpf-navigation-drawer-right-position.png)
+![WPF Navigation Drawer shows in Right Side](concepts-and-features_images/wpf-navigation-drawer-right-position.png)
 
 The following code example shows how to set the SfNavigationDrawer at the top.  
 
@@ -761,7 +761,7 @@ namespace NavigationDrawerWPF
 
 {% endtabs %}
 
-![WPF NavigationDrawer shows in Top Position](concepts-and-features_images/wpf-navigation-drawer-top-position.png)   
+![WPF Navigation Drawer shows in Top Position](concepts-and-features_images/wpf-navigation-drawer-top-position.png)   
 
 The following code example shows how to set the SfNavigationDrawer at the bottom.  
 
@@ -914,7 +914,7 @@ The WPF Navigation Drawer supports swipe gesture for opening and closing the dra
 
 It can be enabled or disabled using the `EnableSwipeGesture` property.
 
-N> This property is applicable only when the DisplayMode is Default.
+N> This property is applicable only when the `DisplayMode` is `Default`.
 
 {% tabs %}
 
@@ -991,9 +991,9 @@ namespace NavigationDrawerWPF
 
 ### Swipe sensitivity
 
-In smaller screens, may find it difficult to swipe the drawer from the edge, in such cases it can increase the swipe region using the `TouchThreshold` property. It can be set as below:
+In smaller screens, it may be difficult to swipe the drawer from the edge. In such cases, the swipe region can be increased using the `TouchThreshold` property. It can be set as below:
 
-N> The TouchThreshold property is applicable only when the DisplayMode is Default.
+N> The `TouchThreshold` property is applicable only when the `DisplayMode` is `Default`.
 
 {% tabs %}
 
@@ -1072,7 +1072,7 @@ namespace NavigationDrawerWPF
                    
 ## Customize animations
 
-The Transition property specifies the animations for the DrawerView panel. The [Transition](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.NavigationDrawer.SfNavigationDrawer.html#Syncfusion_UI_Xaml_NavigationDrawer_SfNavigationDrawer_Transition) property has the following options:
+The `Transition` property specifies the animations for the DrawerView panel. The [Transition](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.NavigationDrawer.SfNavigationDrawer.html#Syncfusion_UI_Xaml_NavigationDrawer_SfNavigationDrawer_Transition) property has the following options:
 
 * SlideOnTop
 * Push
@@ -1080,7 +1080,7 @@ The Transition property specifies the animations for the DrawerView panel. The [
 
 The default transition is [SlideOnTop](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.NavigationDrawer.Transition.html) that draws the DrawerContent on top of the main content.
 
-N> The Transition property is applicable only when the DisplayMode is Default.
+N> The `Transition` property is applicable only when the `DisplayMode` is `Default`.
 
 {% tabs %}
 {% highlight xml %}
@@ -1221,7 +1221,7 @@ namespace NavigationDrawerWPF
 ![WPF Navigation Drawer with Slidebar at Top Position](concepts-and-features_images/wpf-navigation-drawer-slide-bar.png)
 
 
-The following code example shows how to set [Transition](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.NavigationDrawer.SfNavigationDrawer.html#Syncfusion_UI_Xaml_NavigationDrawer_SfNavigationDrawer_Transition) as [Push](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.NavigationDrawer.Transition.html) to SfNavigationDrawer. This transition moves the Drawer and main content simultaneously.
+The following code example shows how to set [Transition](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.NavigationDrawer.SfNavigationDrawer.html#Syncfusion_UI_Xaml_NavigationDrawer_SfNavigationDrawer_Transition) as [Push](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.NavigationDrawer.Transition.html) to `SfNavigationDrawer`. This transition moves the Drawer and main content simultaneously.
 
 {% tabs %}
 {% highlight xml %}
@@ -1362,7 +1362,7 @@ namespace NavigationDrawerWPF
 ![WPF Navigation Drawer with Slidebar](concepts-and-features_images/wpf-navigation-drawer-slidebar-push.png)                                              
 
 
-The following code example shows how to set [Transition](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.NavigationDrawer.SfNavigationDrawer.html#Syncfusion_UI_Xaml_NavigationDrawer_SfNavigationDrawer_Transition) as [Reveal](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.NavigationDrawer.Transition.html) to SfNavigationDrawer. In this transition, the Drawer content is stable and the main content is moved to reveal the drawer content.
+The following code example shows how to set [Transition](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.NavigationDrawer.SfNavigationDrawer.html#Syncfusion_UI_Xaml_NavigationDrawer_SfNavigationDrawer_Transition) as [Reveal](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.NavigationDrawer.Transition.html) to `SfNavigationDrawer`. In this transition, the Drawer content is stable and the main content is moved to reveal the drawer content.
 
 
 {% tabs %}
@@ -1507,7 +1507,7 @@ namespace NavigationDrawerWPF
 
 The [AnimationDuration](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.NavigationDrawer.SfNavigationDrawer.html#Syncfusion_UI_Xaml_NavigationDrawer_SfNavigationDrawer_AnimationDuration) property sets the time span value, by which the DrawerContent can be brought to view.
 
-N> The AnimationDuration property is applicable only when the DisplayMode is Default.
+N> The `AnimationDuration` property is applicable only when the `DisplayMode` is `Default`.
 
 {% tabs %}
 {% highlight xml %}
@@ -1582,7 +1582,7 @@ namespace NavigationDrawerWPF
 
 ## DrawerBackground
 
-The [DrawerBackground](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.NavigationDrawer.SfNavigationDrawer.html?tabs=tabid-1#Syncfusion_UI_Xaml_NavigationDrawer_SfNavigationDrawer_DrawerBackground) property is used to change the background color of the SfNavigationDrawer's side pane.
+The [DrawerBackground](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.NavigationDrawer.SfNavigationDrawer.html?tabs=tabid-1#Syncfusion_UI_Xaml_NavigationDrawer_SfNavigationDrawer_DrawerBackground) property is used to change the background color of the `SfNavigationDrawer`'s side pane.
 
 {% tabs %}
 {% highlight xml %}
