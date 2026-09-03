@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Serialization in WPF Diagram | Syncfusion®
+title: Serialization in the WPF Diagram | Syncfusion®
 description: Save, load, and serialize diagrams in Syncfusion® WPF Diagram, including custom properties, custom classes, and Mermaid syntax support.
 platform: wpf
 control: SfDiagram
