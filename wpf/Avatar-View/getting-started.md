@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started with WPF AvatarView 
 
-This section explains the steps required to add the WPF [SfAvatarView ](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.SfAvatarView.html) control with its basic features.
+This section explains the steps required to add the WPF [SfAvatarView](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.SfAvatarView.html) control with its basic features.
 
 ## Creating an application with WPF AvatarView
 

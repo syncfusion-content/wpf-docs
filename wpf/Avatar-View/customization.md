@@ -9,7 +9,7 @@ documentation: ug
 
 # Customization in WPF AvatarView  
 
-The [SfAvatarView ](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.SfAvatarView.html) control offers a range of customization options, including modifying its border, background, and more.
+The [SfAvatarView](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.SfAvatarView.html) control offers a range of customization options, including modifying its border, background, and more.
 
 ## Border
 

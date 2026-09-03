@@ -9,7 +9,7 @@ documentation: ug
 
 # Visual Styles in WPF AvatarView 
 
-The [SfAvatarView ](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.SfAvatarView.html) control provides support for various built-in visual styles. Configure the visual style of your AvatarView by using the [AvatarShape](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.SfAvatarView.html#Syncfusion_Windows_Shared_SfAvatarView_AvatarShape) property and selecting from the available options, such as:
+The [SfAvatarView](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.SfAvatarView.html) control provides support for various built-in visual styles. Configure the visual style of your AvatarView by using the [AvatarShape](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.SfAvatarView.html#Syncfusion_Windows_Shared_SfAvatarView_AvatarShape) property and selecting from the available options, such as:
 
 * Custom
 * Circle
