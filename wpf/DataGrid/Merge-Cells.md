@@ -9,11 +9,11 @@ documentation: ug
 
 # Merge Cells in WPF Data Grid
 	
-[WPF DataGrid](https://www.syncfusion.com/wpf-controls/datagrid) allows you to merge the range of adjacent cells using [QueryCoveredRange](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_QueryCoveredRange) event. Merged cells can be exported and printed.
+[WPF Data Grid](https://www.syncfusion.com/wpf-controls/datagrid) allows you to merge the range of adjacent cells using [QueryCoveredRange](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_QueryCoveredRange) event. Merged cells can be exported and printed.
 
 `QueryCoveredRange` event occurs when each cell gets arranged and the custom range will be stored for visible rows and columns in [SfDataGrid.CoveredCells](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_CoveredCells). This event is not fired for the cells that are not visible and also for the cells that are already in `SfDataGrid.CoveredCells`. When scrolling the merged range will be added for newly added rows & columns through this event and also removed for the rows & columns which are out of view. 
 
-[GridQueryCoveredRangeEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridQueryCoveredRangeEventArgs.html) of the `QueryCoveredRange` event provides information about the cell triggered this event. [GridQueryCoveredRangeEventArgs.OriginalSender](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridEventArgs.html#Syncfusion_UI_Xaml_Grid_GridEventArgs_OriginalSender) returns the DataGrid fired this event for DetailsView. By [GridQueryCoveredRangeEventArgs.Range](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridQueryCoveredRangeEventArgs.html#Syncfusion_UI_Xaml_Grid_GridQueryCoveredRangeEventArgs_Range) property, the adjacent cells can be merged.
+[GridQueryCoveredRangeEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridQueryCoveredRangeEventArgs.html) of the `QueryCoveredRange` event provides information about the cell triggered this event. [GridQueryCoveredRangeEventArgs.OriginalSender](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridEventArgs.html#Syncfusion_UI_Xaml_Grid_GridEventArgs_OriginalSender) returns the Data Grid that fired this event for DetailsView. By [GridQueryCoveredRangeEventArgs.Range](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridQueryCoveredRangeEventArgs.html#Syncfusion_UI_Xaml_Grid_GridQueryCoveredRangeEventArgs_Range) property, the adjacent cells can be merged.
 
 {% tabs %}
 {% highlight xaml %}
@@ -61,7 +61,7 @@ void dataGrid_QueryCoveredRange(object sender, GridQueryCoveredRangeEventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-![Horizontally Merged Cells in WPF DataGrid](Merge-Cells_images/wpf-datagrid-horizontally-merged-cells.png)
+![Horizontally Merged Cells](Merge-Cells_images/wpf-datagrid-horizontally-merged-cells.png)
 
 ### Merging cells vertically by fixed range
 
@@ -85,7 +85,7 @@ void dataGrid_QueryCoveredRange(object sender, GridQueryCoveredRangeEventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-![Vertically Merged Cells in WPF DataGrid](Merge-Cells_images/wpf-datagrid-vertically-merged-cells.png)
+![Vertically Merged Cells](Merge-Cells_images/wpf-datagrid-vertically-merged-cells.png)
 
 ### Merging range of cells
 
@@ -107,7 +107,7 @@ private void dataGrid_QueryCoveredRange(object sender, GridQueryCoveredRangeEven
 {% endhighlight %}
 {% endtabs %}
 
-![Merged Range of Cells in WPF DataGrid](Merge-Cells_images/wpf-datagrid-merge-range-of-cells.png)
+![Merged Range of Cells](Merge-Cells_images/wpf-datagrid-merge-range-of-cells.png)
 
 ## Merging cells based on the content
 
@@ -337,7 +337,7 @@ private void FirstLevelNestedGrid_QueryCoveredRange(object sender, GridQueryCove
 {% endhighlight %}
 {% endtabs %}
 
-![WPF DataGrid displays Merged Range of Cells in Master Details View](Merge-Cells_images/wpf-datagrid-merge-range-of-cells-in-details-view.png)
+![Merged Range of Cells in Master Details View](Merge-Cells_images/wpf-datagrid-merge-range-of-cells-in-details-view.png)
 
 ### Merging range of parent cells
 
@@ -424,7 +424,7 @@ pdfExportingOption.ExportMergedCells = true;
 
 ### Limitations
 
-Below are the limitation when using Cell Merging in SfDataGrid.
+Below are the limitation when using Cell Merging in Data Grid.
 
 1. Row selection is not supported.
 2. Heterogeneous rows can’t be merged.
@@ -436,7 +436,7 @@ Below are the limitation when using Cell Merging in SfDataGrid.
 
 ### Allow cell merging with Row Selection or NavigationMode as Row or AllowFrozenGroupHeaders is true
 
-[SfDataGrid](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html) does not allow cell merging when [SelectionUnit](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_SelectionUnit) is `Row` or [NavigationMode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_NavigationMode) is `Row` or [AllowFrozenGroupHeaders](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_AllowFrozenGroupHeaders) is `true`. You can overcome this behavior by setting [ExternalExceptionThrownEventArgs.Handled](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.ExternalExceptionThrownEventArgs.html#Syncfusion_UI_Xaml_Grid_ExternalExceptionThrownEventArgs_Handled) to `true` using [ExternalExceptionThrown](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html) event.
+[Data Grid](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html) does not allow cell merging when [SelectionUnit](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_SelectionUnit) is `Row` or [NavigationMode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_NavigationMode) is `Row` or [AllowFrozenGroupHeaders](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_AllowFrozenGroupHeaders) is `true`. You can overcome this behavior by setting [ExternalExceptionThrownEventArgs.Handled](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.ExternalExceptionThrownEventArgs.html#Syncfusion_UI_Xaml_Grid_ExternalExceptionThrownEventArgs_Handled) to `true` using [ExternalExceptionThrown](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html) event.
 
 {% tabs %}
 {% highlight c# %}

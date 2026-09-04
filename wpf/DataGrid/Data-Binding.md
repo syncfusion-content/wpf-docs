@@ -9,7 +9,7 @@ documentation: ug
 
 # Data Binding in WPF Data Grid
 
-[WPF DataGrid](https://www.syncfusion.com/wpf-controls/datagrid) (SfDataGrid) control is designed to display the bounded data in a tabular format. The data binding can be achieved by assigning the data sources to [SfDataGrid.ItemsSource](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_ItemsSource) property.
+[WPF Data Grid](https://www.syncfusion.com/wpf-controls/datagrid) control is designed to display the bounded data in a tabular format. The data binding can be achieved by assigning the data sources to [SfDataGrid.ItemsSource](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_ItemsSource) property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -19,20 +19,20 @@ documentation: ug
 {% endhighlight %}
 {% endtabs %}
 
-If the data source implements [INotifyCollectionChanged](https://learn.microsoft.com/en-us/dotnet/api/system.collections.specialized.inotifycollectionchanged?view=net-7.0) interface, then SfDataGrid control will automatically refresh the UI when item is added, removed or while list cleared. 
+If the data source implements [INotifyCollectionChanged](https://learn.microsoft.com/en-us/dotnet/api/system.collections.specialized.inotifycollectionchanged?view=net-7.0) interface, then the Data Grid control will automatically refresh the UI when item is added, removed or while list cleared. 
 
-When you add, remove item in [ObservableCollection](https://learn.microsoft.com/en-us/dotnet/api/system.collections.objectmodel.observablecollection-1?view=net-7.0), SfDataGrid automatically refresh the UI as `ObservableCollection` implements `INotifyCollectionChanged`. But when you do the same in [List](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.list-1?view=net-7.0), SfDataGrid will not refresh the UI automatically.
+When you add, remove item in [ObservableCollection](https://learn.microsoft.com/en-us/dotnet/api/system.collections.objectmodel.observablecollection-1?view=net-7.0), the Data Grid automatically refreshes the UI as `ObservableCollection` implements `INotifyCollectionChanged`. But when you do the same in [List](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.list-1?view=net-7.0), the control will not refresh the UI automatically.
 
 ## Binding with IEnumerable
 
-WPF DataGrid (SfDataGrid) control supports to bind any collection that implements the [IEnumerable](https://learn.microsoft.com/en-us/dotnet/api/system.collections.ienumerable?view=net-7.0) interface. All the data operations such as sorting, grouping, filtering, summaries are supported when you are binding collection derived from IEnumerable.
+The WPF Data Grid control supports to bind any collection that implements the [IEnumerable](https://learn.microsoft.com/en-us/dotnet/api/system.collections.ienumerable?view=net-7.0) interface. All the data operations such as sorting, grouping, filtering, summaries are supported when you are binding collection derived from IEnumerable.
 
 
 ## Binding with DataTable
 
-WPF DataGrid (SfDataGrid) control supports to bind the [DataTable](https://learn.microsoft.com/en-us/dotnet/api/system.data.datatable?view=net-7.0). SfDataGrid control automatically refresh the UI when you are binding DataTable as ItemsSource when rows are added, removed or cleared.
+The WPF Data Grid control supports to bind the [DataTable](https://learn.microsoft.com/en-us/dotnet/api/system.data.datatable?view=net-7.0). The control automatically refreshes the UI when you are binding DataTable as ItemsSource and rows are added, removed, or cleared.
 
-Below are the limitations when binding DataTable as ItemsSource to SfDataGrid.
+Below are the limitations when binding DataTable as ItemsSource to the Data Grid.
 
 * [GridUnboundColumn.Expression](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridUnBoundColumn.html#Syncfusion_UI_Xaml_Grid_GridUnBoundColumn_Expression) is not supported. You can achieve the expression support when binding DataTable using [DataColumn](https://learn.microsoft.com/en-us/dotnet/api/system.data.datacolumn?view=net-7.0) of DataTable by setting [DataColumn.Expression](https://learn.microsoft.com/en-us/dotnet/api/system.data.datacolumn.expression?view=net-7.0) property.
 * `AddNewRow` is not support when filtering is enabled.
@@ -49,16 +49,16 @@ When DataTable is bounded as `SfDataGrid.ItemsSource`, the [DataView.RowFilter](
 
 ## Binding with dynamic data object
 
-WPF DataGrid (SfDataGrid) control supports to bind [dynamic data object](https://learn.microsoft.com/en-us/dotnet/api/system.dynamic?view=net-7.0). Below are the limitations when you are binding dynamic data object,
+The WPF Data Grid control supports to bind [dynamic data object](https://learn.microsoft.com/en-us/dotnet/api/system.dynamic?view=net-7.0). Below are the limitations when you are binding dynamic data object,
 
-1. SfDataGrid doesn’t support [LiveDataUpdateMode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_LiveDataUpdateMode) - `AllowDataShaping` and `AllowSummaryUpdate`.
+1. The Data Grid doesn’t support [LiveDataUpdateMode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_LiveDataUpdateMode) - `AllowDataShaping` and `AllowSummaryUpdate`.
 2. In WinRT, UI won’t get refreshed when you are changing the property value. This is limitation in WinRT platform.
 All the data operations (sorting, grouping, filtering and etc.) are supported when you are binding dynamic data object. If the data operations are not working as expected, set [SfDataGrid.IsDynamicItemsSource](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_IsDynamicItemsSource) property as `true` .
  
  
 ## Binding Complex properties
 
-SfDataGrid control provides support to bind complex property to its columns. To bind the complex property to [GridColumn](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridColumn.html), set the complex property path to [MappingName](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridColumnBase.html#Syncfusion_UI_Xaml_Grid_GridColumnBase_MappingName).
+The Data Grid control provides support to bind complex property to its columns. To bind the complex property to [GridColumn](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridColumn.html), set the complex property path to [MappingName](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridColumnBase.html#Syncfusion_UI_Xaml_Grid_GridColumnBase_MappingName).
 
 {% tabs %}
 {% highlight xaml %}
@@ -76,11 +76,11 @@ All the data operations (sorting, grouping, filtering and etc.) are supported wh
 
 ### Limitations when binding complex property 
 
-* SfDataGrid doesn’t support [LiveDataUpdateMode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_LiveDataUpdateMode) - `AllowDataShaping` and `AllowSummaryUpdate`.
+* The control doesn’t support [LiveDataUpdateMode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_LiveDataUpdateMode) - `AllowDataShaping` and `AllowSummaryUpdate`.
 
 ## Binding Indexer properties
 
-SfDataGrid control provides support to bind an indexer property to its columns. To bind an indexer property to [GridColumn](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridColumn.html), set the indexer property path to [MappingName](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridColumnBase.html#Syncfusion_UI_Xaml_Grid_GridColumnBase_MappingName). 
+The control provides support to bind an indexer property to its columns. To bind an indexer property to [GridColumn](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridColumn.html), set the indexer property path to [MappingName](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridColumnBase.html#Syncfusion_UI_Xaml_Grid_GridColumnBase_MappingName). 
 
 {% tabs %}
 {% highlight xaml %}
@@ -101,13 +101,13 @@ All the data operations (sorting, grouping, filtering and etc.) are supported wh
  
 ### Limitations when binding indexer property 
 
-* SfDataGrid doesn’t support [LiveDataUpdateMode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_LiveDataUpdateMode) - `AllowDataShaping` and `AllowSummaryUpdate`.
-* SfDataGrid doesn’t support [AutoGenerateColumns](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_AutoGenerateColumns).
+* The control doesn’t support [LiveDataUpdateMode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_LiveDataUpdateMode) - `AllowDataShaping` and `AllowSummaryUpdate`.
+* The control doesn’t support [AutoGenerateColumns](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_AutoGenerateColumns).
 
 
 ## Defining source data type
 
-Based on type of data item bound to SfDataGrid, the data operations and column auto generation are carried out. You can specify the type of underlying data item explicitly for doing data operation by setting [SfDataGrid.SourceType](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_SourceType) property.
+Based on type of data item bound to Data Grid, the data operations and column auto generation are carried out. You can specify the type of underlying data item explicitly for doing data operation by setting [SfDataGrid.SourceType](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_SourceType) property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -135,13 +135,13 @@ The [GridItemsSourceChangedEventArgs ](https://help.syncfusion.com/cr/wpf/Sync
 
 ## View
 
-WPF DataGrid has the View property of type [ICollectionViewAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Data.ICollectionViewAdv.html) interface that implements ICollectionView interface. View is responsible for maintain and manipulation data and other advanced operations like Sorting, Grouping, Filtering and etc. 
+The Data Grid has a View property of type [ICollectionViewAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Data.ICollectionViewAdv.html) interface that implements ICollectionView interface. View is responsible for maintain and manipulation data and other advanced operations like Sorting, Grouping, Filtering and etc. 
 
-When you bind Collection to `ItemsSource` property of SfDataGrid, then View will be created and maintains the operations on Data such as Grouping, Filtering, Sorting, Insert, Delete, and Modification. 
+When you bind Collection to `ItemsSource` property of the Data Grid, then View will be created and maintains the operations on Data such as Grouping, Filtering, Sorting, Insert, Delete, and Modification. 
 
 Following are some important properties that can be used for various purposes.
 
-N> DataGrid creates different types of views derived from `ICollectionViewAdv` interface based on ItemsSource.
+N> The control creates different types of views derived from `ICollectionViewAdv` interface based on ItemsSource.
 
 <table>
 <tr>
@@ -277,7 +277,7 @@ N> View has properties that already defined in SfDataGrid. It recommended settin
 
 ## Binding data from WCF service
 
-In this walkthrough, you will learn about how to create a WCF service and load it to SfDataGrid control. 
+In this walkthrough, you will learn about how to create a WCF service and load it to Data Grid control. 
 Below are the topics,
 
 1. Creating the WCF data service 
@@ -381,9 +381,9 @@ To add service reference to client application,
 
 ### Loading data from WCF service
 
-To load the data from WCF service to SfDataGrid,
+To load the data from WCF service to the Data Grid,
  
-1. Add SfDataGrid control and the required assemblies in your WPF application.
+1. Add the Data Grid control and the required assemblies in your WPF application.
 2. Wire the **SfDataGrid.Loaded** event and set the northwindEntities.Order_Details table to `SfDataGrid.ItemsSource`.  
 3. Replace local host address as URI of your service. You can get the local host address from the shortcut menu of the “WcfDataService1.svc” file in Solution Explorer and select **View** in Browser. Internet Explorer opens and the XML schema for the service is displayed.
 4. Copy the localhost address and replace it in your service URI.
@@ -404,12 +404,12 @@ void dataGrid_Loaded(object sender, RoutedEventArgs e)
 {% endcapture %}
 {{ codesnippet2 | OrderList_Indent_Level_1 }}
 
-Now, run the application and you can see the SfDataGrid control loaded with data from WCF service.
+Now, run the application and you can see the Data Grid control loaded with data from WCF service.
  
  
 ## Binding data from ADO.NET Entity Framework
 
-SfDataGrid control supports to bind data from ADO.NET Entity Framework. In this walk-through, you will learn about binding data from ADO.NET Entity Framework and save back the changes to the database. You can download the entire source code of this demo from [here](https://www.syncfusion.com/downloads/support/directtrac/general/ze/ADO.Net_EntityFrmeworkDemo-1459994268.zip).
+The Data Grid control supports to bind data from ADO.NET Entity Framework. In this walk-through, you will learn about binding data from ADO.NET Entity Framework and save back the changes to the database. You can download the entire source code of this demo from [here](https://www.syncfusion.com/downloads/support/directtrac/general/ze/ADO.Net_EntityFrmeworkDemo-1459994268.zip).
 
 To load the data from ADO.NET Entity Framework, you can refer the steps mentioned in below follow the below steps,
 
@@ -427,7 +427,7 @@ References :
 
 ### Creating WPF client Application
 
-To load data from Entity Framework, create a new WPF Application and add the SfDataGrid control to your application.
+To load data from Entity Framework, create a new WPF Application and add the Data Grid control to your application.
 
 ### Defining Data Model using Entity Framework 4.0
 
@@ -482,7 +482,7 @@ public class ViewModel
 {% endhighlight %}
 {% endtabs %}
 
-To populate the SfDataGrid using Entity Framework, bind the collection created in previous step to [SfDataGrid.ItemsSource](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_ItemsSource) property and set the `DataContext` as ViewModel.
+To populate the data grid using Entity Framework, bind the collection created in previous step to [SfDataGrid.ItemsSource](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_ItemsSource) property and set the `DataContext` as ViewModel.
 
 {% tabs %}
 {% highlight xaml %}
@@ -493,10 +493,10 @@ To populate the SfDataGrid using Entity Framework, bind the collection created i
 {% endhighlight %}
 {% endtabs %}
 
-Now, run the application and you can see the following screenshot shows the SfDataGrid control populated with data from Entity Framework data service.
+Now, run the application and you can see the following screenshot shows the control populated with data from Entity Framework data service.
 
 <br/>
-    ![WPF DataGrid binds data from Entity Framework](Data-Binding_images/Data-Binding_img11.png)
+    ![Binds data from Entity Framework](Data-Binding_images/Data-Binding_img11.png)
 
 ### Save back to Database
 
@@ -533,12 +533,12 @@ void dataGrid_RowValidated(object sender, Syncfusion.UI.Xaml.Grid.RowValidatedEv
 
 ## Binding data from LINQ to SQL
 
-SfDataGrid control supports to bind data from LINQ to SQL .In this walkthrough, you will learn about binding data from LINQ to SQL and save back the changes to the Database.
+The Data Grid control supports to bind data from LINQ to SQL .In this walkthrough, you will learn about binding data from LINQ to SQL and save back the changes to the Database.
 
 1. Creating WPF Application
 2. Adding data model using LINQ to SQL classes 
 3. Loading data from LINQ to SQL classes 
-4. Binding data to SfDataGrid
+4. Binding data to the Data Grid
 
 References :
 
@@ -548,7 +548,7 @@ References :
 
 ### Creating WPF Client Application
 
-To add LINQ to SQL, create a new WPF application and add the SfDataGrid control in your application.
+To add LINQ to SQL, create a new WPF application and add the Data Grid control in your application.
  
 ### Adding data model using LINQ to SQL
 
@@ -584,7 +584,7 @@ To create data model using LINQ to SQL in WPF project follow the below steps.
  
 ### Loading data from LINQ to SQL classes 
 
-To load the database created in previous step in to SfDataGrid, create a ViewModel class with Shippers property and it is initialized with Shippers table in Northwind database.
+To load the database created in previous step in to the Data Grid, create a ViewModel class with Shippers property and it is initialized with Shippers table in Northwind database.
 
 {% tabs %}
 {% highlight c# %}
@@ -611,7 +611,7 @@ public class ViewModel
 
 N> NorthwindDataContext is from `Northwind.Designer.cs` file (it is from the file that is added with LINQ to SQL). Shippers are selected table from Database.
 
-### Binding data to SfDataGrid
+### Binding data to the Data Grid
 
 To bind data from LINQ to SQL classes, assign the Shippers collection created in the previous step, to [SfDataGrid.ItemsSource](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_ItemsSource) property and set the `DataContext` as ViewModel.
 
@@ -621,7 +621,7 @@ this.dataGrid.ItemsSource = (this.dataGrid.DataContext as ViewModel).Shippers;
 {% endhighlight %}
 {% endtabs %}
 
-Now, run the application and you can see the following screenshot shows the SfDataGrid control loaded with Shippers data.
+Now, run the application and you can see the following screenshot shows the control loaded with Shippers data.
 
 <br/>
     ![Show the output image of LINQ to SQL project](Data-Binding_images/Data-Binding_img17.png)
@@ -654,7 +654,7 @@ void dataGrid_RowValidated(object sender, Syncfusion.UI.Xaml.Grid.RowValidatedEv
 
 ## Binding data from ADO.NET
 
-SfDataGrid control supports to load the data using [ADO.NET](https://learn.microsoft.com/en-us/dotnet/framework/data/adonet/sql/linq/insert-update-and-delete-operations). In this walk-through, you will learn about binding data from ADO.NET service and save back the changes to the database.
+The Data Grid control supports to load the data using [ADO.NET](https://learn.microsoft.com/en-us/dotnet/framework/data/adonet/sql/linq/insert-update-and-delete-operations). In this walk-through, you will learn about binding data from ADO.NET service and save back the changes to the database.
 
 1. Creating WPF application 
 2. Connecting  database to WPF application
@@ -692,7 +692,7 @@ To connect SQL database to your WPF application, refer the below MSDN link or fo
 
 To access the data from data source using ADO.NET, follow the below steps.
 
-1. Create a user interface with SfDataGrid control and add the required assemblies to your WPF application.
+1. Create a user interface with the Data Grid control and add the required assemblies to your WPF application.
 2. Create a connection through any of the [.NET Framework data provider](https://learn.microsoft.com/en-us/dotnet/framework/data/adonet/data-providers) based on the type of data source that you have owned.
 3. Set the [ItemsSource](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_ItemsSource) as Shippers table from data set. For more information refer [here](https://learn.microsoft.com/en-us/previous-versions/visualstudio/visual-studio-2008/s4yys16a(v=vs.90)).
 
@@ -725,10 +725,10 @@ public partial class MainWindow : Window
 {% endcapture %}
 {{ codesnippet3 | OrderList_Indent_Level_1 }}
 
-Now, run the application and you can see the following screenshot displays the SfDataGrid loaded the data using ADO.NET.
+Now, run the application and you can see the following screenshot displays the control loaded the data using ADO.NET.
 
 <br/>
-    ![Image shows the output of SfDataGrid loaded with ADO.Net](Data-Binding_images/Data-Binding_img21.png)
+    ![Image shows the output of loading data with ADO.Net](Data-Binding_images/Data-Binding_img21.png)
 
 ### Save back to Database
 
@@ -766,7 +766,7 @@ void dataGrid_RowValidated(object sender, Syncfusion.UI.Xaml.Grid.RowValidatedEv
 
 ## Binding data from Microsoft Access
 
-SfDataGrid control supports to bind data from Microsoft Access database .In this section, you will learn about how to bind the data from Microsoft Access database to SfDataGrid. 
+The Data Grid control supports to bind data from Microsoft Access database .In this section, you will learn about how to bind the data from Microsoft Access database to the control. 
 
 To load the data from Microsoft Access database,
 
@@ -775,7 +775,7 @@ To load the data from Microsoft Access database,
 3. You can connect the Microsoft Access Database through the `OleDbConnection`.
 4. Create and open the connection.
 5. Use `OleDbDataAdapter` to load the data in to `DataSet`.
-6. Access the Employee table from the DataSet and set the Employee collection as `ItemsSource` of SfDataGrid.
+6. Access the Employee table from the DataSet and set the Employee collection as `ItemsSource` of the Data Grid.
 
 {% capture codesnippet4 %}
 {% tabs %}
@@ -798,15 +798,15 @@ void dataGrid_Loaded(object sender, RoutedEventArgs e)
 {% endcapture %}
 {{ codesnippet4 | OrderList_Indent_Level_1 }}
 
-7.Now, run the application and you can see following screenshot shows the SfDataGrid control populated data from Microsoft Access database.
+Now, run the application and you can see the following screenshot shows the Data Grid control populated with data from Microsoft Access database.
 <br/>    
-    ![DataGrid loaded with data from Microsoft Access](Data-Binding_images/Data-Binding_img22.png)
+    ![Loaded with data from Microsoft Access](Data-Binding_images/Data-Binding_img22.png)
 
 ## How To
 
-### Maintain scroll position when changing the ItemsSource for SfDataGrid
+### Maintain scroll position when changing the ItemsSource for Data Grid
 
-By default, the scrollbar position is not maintained and gets reset when changing the ItemsSource of the SfDataGrid. But, you can maintain the scrollbar position of the SfDataGrid by setting the [SfDataGrid.CanMaintainScrollPosition](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_CanMaintainScrollPosition) value to `true`.
+By default, the scrollbar position is not maintained and gets reset when changing the ItemsSource of the Data Grid. But, you can maintain the scrollbar position of the control by setting the [SfDataGrid.CanMaintainScrollPosition](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_CanMaintainScrollPosition) value to `true`.
 
 {% tabs %}
 {% highlight xaml %}

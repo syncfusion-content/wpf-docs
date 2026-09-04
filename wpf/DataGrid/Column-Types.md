@@ -195,7 +195,7 @@ Selects or deselects rows based on the check box value, which is not bound with 
 
 ## GridColumn
 
-[GridColumn](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridColumn.html) is an abstract class provides base functionalities for all the column types in SfDataGrid. 
+[GridColumn](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridColumn.html) is an abstract class provides base functionalities for all the column types in Data Grid. 
 
 ### Column mapping
 
@@ -224,7 +224,7 @@ You can use `DisplayBinding` property to format the column in display, by settin
 
 In the below screenshot, `Unit Price` column display value is formatted to currency by setting `DisplayBinding` property.
 
-![wpf DataGrid with Column Formatting](Column-Types_images/wpf-datagrid-column-formatting.png)
+![Column with formatting](Column-Types_images/wpf-datagrid-column-formatting.png)
 
 By default, Columns handling the data operations (sorting and grouping) based on `MappingName` property. You can perform data operations based on `ValueBinding` by setting [GridColumn.UseBindingValue](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridColumn.html#Syncfusion_UI_Xaml_Grid_GridColumn_UseBindingValue) to `true`, when the standard reflection not works or binding column with complex or indexer properties.
 
@@ -268,7 +268,7 @@ In the below code snippet, `GridNumericColumn` is loaded with `ProgressBar and T
 {% endhighlight %}
 {% endtabs %}
 
-![WPF DataGrid Column with ProgressBar](Column-Types_images/wpf-datagrid-column-progressbar.png)
+![Column with ProgressBar](Column-Types_images/wpf-datagrid-column-progressbar.png)
 
 `CellTemplate` is not support by `GridHyperlinkColumn`, `GridCheckboxColumn` and `GridImageColumn` columns.
 
@@ -309,7 +309,7 @@ You can use the same [DataTemplate](https://learn.microsoft.com/en-us/dotnet/api
 {% endhighlight %}
 {% endtabs %}
 
-![WPF DataGrid Column with Cell Templates](Column-Types_images/wpf-datagrid-column-cell-template.png)
+![Column with cell templates](Column-Types_images/wpf-datagrid-column-cell-template.png)
 
 ### Setting CellTemplate based on custom logic using template selector
 
@@ -382,7 +382,7 @@ In the below code, the custom template selector set to `GridColumn.CellTemplateS
 
 N> Non-Editable columns does not support `CellTemplate`.
 
-![WPF DataGrid Column Template Selector](Column-Types_images/wpf-datagrid-column-template-selector.png)
+![Column template selector](Column-Types_images/wpf-datagrid-column-template-selector.png)
 
 ### Binding ViewModel properties with CellTemplate
 
@@ -611,7 +611,7 @@ void dataGrid_AutoGeneratingColumn(object sender, AutoGeneratingColumnArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-![WPF DataGrid Column Formatting](Column-Types_images/wpf-datagrid-formatting.png)
+![Column formatting](Column-Types_images/wpf-datagrid-formatting.png)
 
 ## Column styling
 
@@ -658,7 +658,7 @@ void dataGrid_AutoGeneratingColumn(object sender, AutoGeneratingColumnArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-![Customizing Font Style in WPF DataGrid Column](Column-Types_images/wpf-datagrid-font-style-customization.png)
+![Customizing font style in column](Column-Types_images/wpf-datagrid-font-style-customization.png)
 
 ### Styles based on custom logic
 
@@ -740,7 +740,7 @@ void dataGrid_AutoGeneratingColumn(object sender, AutoGeneratingColumnArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-![WPF DataGrid Column with Conditional Formatting](Column-Types_images/wpf-datagrid-conditional-formatting.png)
+![Column with conditional formatting](Column-Types_images/wpf-datagrid-conditional-formatting.png)
 
 ## End-user interaction
 
@@ -803,7 +803,7 @@ GridColumn allows  you to change the alignment of `GridCell` and `GridHeaderCell
 {% endhighlight %}
 {% endtabs %}
 
-![WPF DataGrid Column with Text Trimming and Text Wrapping Settings](Column-Types_images/wpf-datagrid-text-trim-and-wrap.png)
+![Column with text trimming and text wrapping settings](Column-Types_images/wpf-datagrid-text-trim-and-wrap.png)
 
 ## GridEditorColumn
 
@@ -906,7 +906,7 @@ this.dataGrid.Columns.Add(new GridNumericColumn() { MappingName = "Quantity", He
 {% endhighlight %}
 {% endtabs %}
 
-![WPF DataGrid with Numeric Column Formatting](Column-Types_images/wpf-datagrid-numeric-column-formatting.png)
+![Numeric column formatting](Column-Types_images/wpf-datagrid-numeric-column-formatting.png)
 
 ### ParsingMode support 
 
@@ -976,7 +976,7 @@ this.dataGrid.Columns.Add(new GridCurrencyColumn() { MappingName = "UnitPrice", 
 {% endhighlight %}
 {% endtabs %}
 
-![WPF DataGrid Currency Column](Column-Types_images/wpf-datagrid-currency-column.png)
+![Currency column](Column-Types_images/wpf-datagrid-currency-column.png)
 
 ## GridPercentColumn
 
@@ -1034,7 +1034,7 @@ this.dataGrid.Columns.Add(new GridPercentColumn() { HeaderText = "Discount", Map
 {% endhighlight %}
 {% endtabs %}
 
-![WPF DataGrid Percent Column](Column-Types_images/wpf-datagrid-percent-column.png)
+![Percent column](Column-Types_images/wpf-datagrid-percent-column.png)
 
 ## GridDateTimeColumn
 
@@ -1232,13 +1232,13 @@ You can delete using <kbd>backspace</kbd> and <kbd>delete</kbd> keys by setting 
 
 By default, the Calendar displayed in dropdown popup. You can enable both Calendar and Clock control in dropdown popup by setting the [EnableClassicStyle](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridDateTimeColumn.html#Syncfusion_UI_Xaml_Grid_GridDateTimeColumn_EnableClassicStyle) to `true`. 
 
-![WPF DataGrid Column with Calendar and Clock](Column-Types_images/wpf-datagrid-with-calendar-and-column.png)
+![Column with calendar and clock](Column-Types_images/wpf-datagrid-with-calendar-and-column.png)
 
 ### Show repeat button 
 
 You can increment or decrement the selected part of date time value by enabling the repeat button through [GridDateTimeColumn.ShowRepeatButton](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridDateTimeColumn.html#Syncfusion_UI_Xaml_Grid_GridDateTimeColumn_ShowRepeatButton) property.
 
-![WPF DataGrid displays Spin Button](Column-Types_images/wpf-datagrid-spin-button.png)
+![Spin button](Column-Types_images/wpf-datagrid-spin-button.png)
 
 ### Format using Converter
 
@@ -1413,7 +1413,7 @@ You can allow `UIElement` loaded inside `CellTemplate` or `EditTemplate` to hand
 
 You can allow `UIElement` loaded inside `CellTemplate` to handle keyboard interaction by setting [FocusManagerHelper.WantsKeyInput](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.FocusManagerHelper.html#Syncfusion_UI_Xaml_Grid_FocusManagerHelper_WantsKeyInputProperty) attached property to `GridColumn`. You can use this when loading edit element in CellTemplate. 
 
-In this case SfDataGrid handles the below key operations and other keys are handled by UIElement loaded inside `CellTemplate`. 
+In this case the control handles the below key operations and other keys are handled by UIElement loaded inside `CellTemplate`. 
 
 * <kbd>Tab</kbd>
 * <kbd>Enter</kbd>
@@ -1548,7 +1548,7 @@ In the below code, custom template selector set to `GridTemplateColumn.EditTempl
 {% endhighlight %}
 {% endtabs %}
 
-![Cell and Edit Template in WPF DataGrid](Column-Types_images/wpf-datagrid-cell-and-edit-template.png)
+![Cell and edit template](Column-Types_images/wpf-datagrid-cell-and-edit-template.png)
 
 ## GridComboBoxColumn
 
@@ -1578,13 +1578,13 @@ this.dataGrid.Columns.Add(new GridComboBoxColumn() { HeaderText = "Product Name"
 {% endhighlight %}
 {% endtabs %}
 
-SfDataGrid triggers, [CurrentCellDropDownSelectionChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_CurrentCellDropDownSelectionChanged) event, when the SelectedValue is changed.[CurrentCellDropDownSelectionChangedEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.CurrentCellDropDownSelectionChangedEventArgs.html) of `CurrentCellDropDownSelectionChanged` event provides the information about the changed cell value.
+WPF DataGrid triggers, [CurrentCellDropDownSelectionChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_CurrentCellDropDownSelectionChanged) event, when the SelectedValue is changed.[CurrentCellDropDownSelectionChangedEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.CurrentCellDropDownSelectionChangedEventArgs.html) of `CurrentCellDropDownSelectionChanged` event provides the information about the changed cell value.
 
 `SelectedIndex` property returns the index of selected item.
 
 `SelectedItem` property returns the selected item from drop down list.
 
-![WPF DataGrid Column with ComboBox](Column-Types_images/wpf-datagrid-combobox.png)
+![Column with ComboBox](Column-Types_images/wpf-datagrid-combobox.png)
 
 ### Keep the dropdown to be opened
 
@@ -1635,7 +1635,7 @@ public class GridCellComboBoxRendererExt:GridCellComboBoxRenderer
 {% endtabs %}
 
 
-N> This is applicable when the [SfDataGrid.EditTrigger](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_EditTrigger) is set as `OnTap`.
+N> This is applicable when the [EditTrigger](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_EditTrigger) is set as `OnTap`.
 
 ### Customizing GroupCaptionText based on DisplayMemberPath
 
@@ -1778,15 +1778,15 @@ public class ItemsSourceSelector : IItemsSourceSelector
 
 The following screenshot illustrates the different ShipCity ItemsSource bound to each row of the ComboBox based on the Country Name.
 
-![WPF DataGrid Column with Template](Column-Types_images/wpf-datagrid-template.png)
+![Column with template](Column-Types_images/wpf-datagrid-template.png)
 
-![WPF DataGrid Column with ComboBox using Template](Column-Types_images/wpf-datagrid-combobox-template.png)
+![Column with ComboBox using template](Column-Types_images/wpf-datagrid-combobox-template.png)
 
 You can download the sample from [here](https://www.syncfusion.com/downloads/support/directtrac/general/ze/ComboBoxColumnsDemo-1585046085.zip).
 
 ## GridMultiColumnDropDownList
 
-`GridMultiColumnDropDownList` derived from `GridTextColumnBase` and it displays enumeration as cell contents. It hosts [SfMultiDropDownControl](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfMultiColumnDropDownControl.html) in editing mode. `GridMultiColumnDropDownList` allows you to define the predefined columns in its drop-down like SfDataGrid.  
+`GridMultiColumnDropDownList` derived from `GridTextColumnBase` and it displays enumeration as cell contents. It hosts [SfMultiDropDownControl](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfMultiColumnDropDownControl.html) in editing mode. `GridMultiColumnDropDownList` allows you to define the predefined columns in its drop-down similar to Data Grid.  
 
 You can change the value by selecting the item from drop down or you can edit the `SfMultiColumnDropDownControl.Editor`. You can disable the editing by setting [IsTextReadOnly](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridMultiColumnDropDownList.html#Syncfusion_UI_Xaml_Grid_GridMultiColumnDropDownList_IsTextReadOnly).
 
@@ -1820,12 +1820,12 @@ this.dataGrid.Columns.Add(new GridMultiColumnDropDownList() { ItemsSource = view
 {% endhighlight %}
 {% endtabs %}
 
-SfDataGrid triggers, [CurrentCellDropDownSelectionChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_CurrentCellDropDownSelectionChanged) event, when the SelectedValue is changed.[CurrentCellDropDownSelectionChangedEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.CurrentCellDropDownSelectionChangedEventArgs.html) of `CurrentCellDropDownSelectionChanged` event provides the information about the changed cell value.
+Data Grid triggers, [CurrentCellDropDownSelectionChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_CurrentCellDropDownSelectionChanged) event, when the SelectedValue is changed.[CurrentCellDropDownSelectionChangedEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.CurrentCellDropDownSelectionChangedEventArgs.html) of `CurrentCellDropDownSelectionChanged` event provides the information about the changed cell value.
 
 `SelectedIndex` property returns the index of selected item.
 `SelectedItem` property returns the selected item from drop down list.
 
-![WPF DataGrid with MultiColumn Dropdown Control](Column-Types_images/wpf-datagrid-multicolumn-dropdown.png)
+![MultiColumn Dropdown control](Column-Types_images/wpf-datagrid-multicolumn-dropdown.png)
 
 ### Auto-complete support
 
@@ -1835,7 +1835,7 @@ You can allow SfMultiDropDownControl to complete the entered input value automat
 
 You can allow SfMultiDropDownControl to filter the drop-down list items dynamically based on the text typed on editor by setting [AllowIncrementalFiltering](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridMultiColumnDropDownList.html#Syncfusion_UI_Xaml_Grid_GridMultiColumnDropDownList_AllowIncrementalFiltering) property to `true`. `GridMultiColumnDropDownList` allows you to filter the items based on case by setting [AllowCasingforFilter](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridMultiColumnDropDownList.html#Syncfusion_UI_Xaml_Grid_GridMultiColumnDropDownList_AllowCasingforFilter) to `true`. This will help users to select from large number of items.
 
-![WPF DataGrid with Filtering](Column-Types_images/wpf-datagrid-filtering.png)
+![Filtering](Column-Types_images/wpf-datagrid-filtering.png)
 
 ### Auto increment
 
@@ -1855,13 +1855,13 @@ You can allow change the size of drop-down popup by setting [PopUpWidth](https:/
 
 Similarly, the `PopUpHeight` based on [PopUpMinHeight](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridMultiColumnDropDownList.html#Syncfusion_UI_Xaml_Grid_GridMultiColumnDropDownList_PopUpMinHeight) and [PopUpMaxHeight](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridMultiColumnDropDownList.html#Syncfusion_UI_Xaml_Grid_GridMultiColumnDropDownList_PopUpMaxHeight) when the value is not between them. The default value of `PopUpMinHeight` is 300.0. 
 
-SfMultiDropDownControl can automatically adjust the popup width based on the actual size of SfDataGrid when setting [IsAutoPopupSize](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridMultiColumnDropDownList.html#Syncfusion_UI_Xaml_Grid_GridMultiColumnDropDownList_IsAutoPopupSize) to `true`.
+SfMultiDropDownControl can automatically adjust the popup width based on the actual size of the control when setting [IsAutoPopupSize](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridMultiColumnDropDownList.html#Syncfusion_UI_Xaml_Grid_GridMultiColumnDropDownList_IsAutoPopupSize) to `true`.
 
 #### Resizing drop-down popup
 
 You can allow end-user to resize the drop-down popup by showing resizing thumb by setting [ShowResizeThumb](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridMultiColumnDropDownList.html#Syncfusion_UI_Xaml_Grid_GridMultiColumnDropDownList_ShowResizeThumb) property to `Visible`.
 
-![Customizing Dropdown Popup in WPF DataGrid](Column-Types_images/wpf-datagrid-popup-customization.png)
+![Customizing dropdown popup](Column-Types_images/wpf-datagrid-popup-customization.png)
 
 #### Keep popup open on editing
 
@@ -1955,9 +1955,9 @@ public class ItemsSourceSelector : IItemsSourceSelector
 
 The following screenshot illustrates different `ShipCity` ItemsSource bound to each row of the `MultiColumnDropDownList` based on country name.
 
-![WPF DataGrid with MultiColumn Dropdown in Each Row](Column-Types_images/wpf-datagrid-dropdown-in-rows.png)
+![MultiColumn Dropdown in each row](Column-Types_images/wpf-datagrid-dropdown-in-rows.png)
 
-![WPF DataGrid with MultiColumn Dropdown in Each Row](Column-Types_images/wpf-datagrid-dropdown-each-row.png)
+![MultiColumn Dropdown in each row](Column-Types_images/wpf-datagrid-dropdown-each-row.png)
 
 You can download the sample from the following link: [Sample](https://github.com/SyncfusionExamples/how-to-load-different-items-for-each-row-in-multicolumn-dropdown-column-in-wpf-and-uwp-datagrid).
 
@@ -2169,7 +2169,7 @@ this.dataGrid.Columns.Add(new GridMaskColumn() { HeaderText = "Contact Number", 
 {% endhighlight %}
 {% endtabs %}
 
-![WPF DataGrid with Masked TextBox](Column-Types_images/wpf-datagrid-masked-textbox.png)
+![Masked TextBox](Column-Types_images/wpf-datagrid-masked-textbox.png)
 
 Mask for numeric value not exceeds two digits to the left of the decimal point. 
 
@@ -2187,7 +2187,7 @@ In the below code snippet, `Mask` applied to format and validate the user input 
 {% endhighlight %}
 {% endtabs %}
 
-![WPF DataGrid with Masked TextBox](Column-Types_images/wpf-datagrid-mask-textbox.png)
+![Masked TextBox](Column-Types_images/wpf-datagrid-mask-textbox.png)
 
 ### Specifying prompt character
 
@@ -2270,11 +2270,11 @@ You can format the time span values by setting [Format](https://help.syncfusion.
 {% endhighlight %}
 {% endtabs %}
 
-![WPF DataGrid with TimeSpan](Column-Types_images/wpf-datagrid-timespan.png)
+![TimeSpan](Column-Types_images/wpf-datagrid-timespan.png)
 
 ## GridCheckBoxSelectorColumn
 
-`SfDataGrid` allows you to select or deselect individual rows through `CheckBox` using [GridCheckBoxSelectorColumn](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridCheckBoxSelectorColumn.html), which is not bound with data object from underlying data source, and it can be added like normal columns. The selector column supports row selection alone, and selection in selector column works based on the [SelectionMode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_SelectionMode).
+WPF DataGrid allows you to select or deselect individual rows through `CheckBox` using [GridCheckBoxSelectorColumn](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridCheckBoxSelectorColumn.html), which is not bound with data object from underlying data source, and it can be added like normal columns. The selector column supports row selection alone, and selection in selector column works based on the [SelectionMode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_SelectionMode).
 
 {% tabs %}
 {% highlight xaml %}
@@ -2296,9 +2296,9 @@ this.dataGrid.Columns.Add(new GridCheckBoxSelectorColumn()
 {% endhighlight %}
 {% endtabs %}
 
-By default, check box is displayed in the header of selector column, which is used to select or deselect all the rows in the datagrid.
+By default, check box is displayed in the header of selector column, which is used to select or deselect all the rows.
 
-![WPF DataGrid Column with CheckBox Selector](Column-Types_images/wpf-datagrid-checkbox-selector.png)
+![Column with CheckBox selector](Column-Types_images/wpf-datagrid-checkbox-selector.png)
 
 ### Text on column header
 
@@ -2328,7 +2328,7 @@ this.dataGrid.Columns.Add(new GridCheckBoxSelectorColumn()
 {% endhighlight %}
 {% endtabs %}
 
-![Displaying Text in Column Header of WPF DataGrid](Column-Types_images/wpf-datagrid-column-header-text.png)
+![Displaying text in column header](Column-Types_images/wpf-datagrid-column-header-text.png)
 
 ### Styling selector column
 
@@ -2357,7 +2357,7 @@ The style of checkbox in record cells can be customized using the `CellStyle` pr
 {% endhighlight %}
 {% endtabs %}
 
-![WPF DataGrid Column with CheckBox Style](Column-Types_images/wpf-datagrid-checkbox-style.png)
+![Column with CheckBox style](Column-Types_images/wpf-datagrid-checkbox-style.png)
 
 As above, style of the header check box can be customized using the `HeaderCellStyle` property.
 
@@ -2385,7 +2385,7 @@ As above, style of the header check box can be customized using the `HeaderCellS
 {% endhighlight %}
 {% endtabs %}
 
-![WPF DataGrid Column with CheckBox Style in header](Column-Types_images/wpf-datagrid-checkbox-style-in-header.png)
+![Column with CheckBox style in header](Column-Types_images/wpf-datagrid-checkbox-style-in-header.png)
 
 ### Canceling the check box state change
 The checkbox state change in the `GridCheckBoxSelectorColumn` can be canceled by setting [CellCheckBoxClickEventArgs.Cancel](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.canceleventargs?view=net-10.0#properties) to true in the [SfDataGrid.CellCheckBoxClick](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_CellCheckBoxClick) event. Additionally, the checkbox value can be modified by setting [CellCheckBoxClickEventArgs.NewValue](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.CellCheckBoxClickEventArgs.html#Syncfusion_UI_Xaml_Grid_CellCheckBoxClickEventArgs_NewValue) within the same event.
@@ -2429,11 +2429,11 @@ The following are the limitations of `GridCheckBoxSelectorColumn`:
 
 ## Custom column support
 
-SfDataGrid allows you to create your own column by overriding predefined column type or creating a new custom column.
+WPF DataGrid allows you to create your own column by overriding predefined column type or creating a new custom column.
 
 ### Creating column from existing column
 
-You can create your own column by overriding the [predefined](#_Overriding_existing_cell) column types in SfDataGrid.
+You can create your own column by overriding the [predefined](#_Overriding_existing_cell) column types in Data Grid.
 
 For example, the `GridDateTimeColumn` loads the `DateTime` value by default. If you want to display [DateTimeOffset](https://learn.microsoft.com/en-us/dotnet/api/system.datetimeoffset?view=net-5.0) value, you can create a new column by overriding the `GridDateTimeColumn` class.
 
@@ -2602,7 +2602,7 @@ You can get the sample from [here](https://github.com/SyncfusionExamples/how-to-
 
 ### Customize column renderer
 
-SfDataGrid allows you to customize the column related operations like key navigation and UI related interactions by overriding the corresponding renderer associated with the column. Each column has its own renderer with set of virtual methods for handling the column level operations. 
+Data Grid allows you to customize the column related operations like key navigation and UI related interactions by overriding the corresponding renderer associated with the column. Each column has its own renderer with set of virtual methods for handling the column level operations. 
 
 Below table lists the available cell types for columns and its renderers.
 
@@ -2816,7 +2816,7 @@ public class GridCellTextBoxRendererExt:GridCellTextBoxRenderer
 {% endhighlight %}
 {% endtabs %}
 
-![WPF DataGrid column with Custom Renderer](Column-Types_images/wpf-datagrid-custom-renderer.png)
+![Column with custom renderer](Column-Types_images/wpf-datagrid-custom-renderer.png)
 
 ### Create the renderer of existing column
 
@@ -3073,17 +3073,17 @@ public class DisplayConverter : IValueConverter
 {% endhighlight %}
 {% endtabs %}
 
-![WPF DataGrid with MultiSelect ComboBox](Column-Types_images/wpf-datagrid-multiselect-combobox.png)
+![MultiSelect ComboBox](Column-Types_images/wpf-datagrid-multiselect-combobox.png)
 
 ### Creating new column and renderer
 
 You can create a new column by deriving [GridColumn](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridColumn.html), rendered in UI using customized [CellType](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridColumn.html#Syncfusion_UI_Xaml_Grid_GridColumn_CellType) using [GridVirtualizingCellRenderer](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.Cells.GridVirtualizingCellRenderer-2.html).
 
-Below steps to create custom column in SfDataGrid.
+Below steps to create custom column in the control.
 
 * [Creating custom column.](#creating-custom-column)
 * [Creating renderer.](#creating-renderer)
-* [Adding the custom renderer to SfDataGrid.CellRenderers collection.](#adding-the-custom-renderer-to-sfdatagridcellrenderers-collection)
+* [Adding the custom renderer to the CellRenderers collection.](#adding-the-custom-renderer-to-sfdatagridcellrenderers-collection)
 * [Defining custom column.](#loading-custom-column)
 
 #### Creating custom column
@@ -3433,7 +3433,7 @@ dataGrid.CellRenderers.Add("DatePickerRenderer", new DatePickerRenderer());
 
 #### Loading custom column
 
-By below code, you can define the custom column in SfDataGrid.
+By below code, you can define the custom column in the control.
 
 {% tabs %}
 {% highlight xaml %}
@@ -3450,7 +3450,7 @@ this.dataGrid.Columns.Add(new DatePickerColumn() {AllowEditing=true, MappingName
 {% endhighlight %}
 {% endtabs %}
 
-![WPF DataGrid with DatePicker Control](Column-Types_images/wpf-datagrid-with-datepicker.png)
+![DatePicker control](Column-Types_images/wpf-datagrid-with-datepicker.png)
 
 ## How To
 

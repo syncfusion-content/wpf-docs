@@ -9,7 +9,7 @@ documentation: ug
 
 # Rows in WPF Data Grid
 
-This section explains about various row types in [WPF DataGrid](https://www.syncfusion.com/wpf-controls/datagrid) (SfDataGrid).
+This section explains about various row types in [WPF Data Grid](https://www.syncfusion.com/wpf-controls/datagrid) (Data Grid).
 
 [StackedHeaderRow](https://help.syncfusion.com/wpf/datagrid/columns#stacked-headers)
 
@@ -197,7 +197,7 @@ You can change the CurrentRowIndicator in the row header by customizing the cont
 {% endhighlight %}
 {% endtabs %}
 
-![Customizing Current Row Indicator in WPF DataGrid](Interactive-Features_images/wpf-datagrid-row-indicator.png)
+![Customizing Current Row Indicator](Interactive-Features_images/wpf-datagrid-row-indicator.png)
 
 You can get the sample from [here](https://www.syncfusion.com/downloads/support/directtrac/general/ze/ChangingCurrentRowIndicator257326168.zip).
 
@@ -248,15 +248,15 @@ public class CustomConverter:IValueConverter
 {% endhighlight %}
 {% endtabs %}
 
-![Changing Row Header Background of WPF DataGrid](Interactive-Features_images/wpf-datagrid-row-header-background.png)
+![Changing Row Header Background](Interactive-Features_images/wpf-datagrid-row-header-background.png)
 
 You can get the sample from [here](https://www.syncfusion.com/downloads/support/directtrac/general/ze/BackgroundColorForRowHeader_WPF18250214901515913833.zip).
 
 ## Header Row
 
-Header row is present in top of the WPF DataGrid which has column headers in it. Column header describes the caption to identify the column content.
+Header row is present in top of the WPF Data Grid which has column headers in it. Column header describes the caption to identify the column content.
 
-![WPF DataGrid displays Column Header in Header Row](Rows_images/wpf-datagrid-column-header.png)
+![Displays Column Header in Header Row](Rows_images/wpf-datagrid-column-header.png)
 
 You can change the header row height by setting [SfDataGrid.HeaderRowHeight](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_HeaderRowHeight) property.
 
@@ -294,7 +294,7 @@ You can also hide the header row of DetailsViewDataGrid by setting `HeaderRowHei
 
 ## Freeze panes
 
-WPF DataGrid provides support to freeze the rows and columns at top and bottom similar to excel. You can freeze the rows and columns by setting following properties,
+Data Grid provides support to freeze the rows and columns at top and bottom similar to excel. You can freeze the rows and columns by setting following properties,
 
 <table>
 <tr>
@@ -310,7 +310,7 @@ Description
 {{'[FrozenRowsCount](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_FrozenRowsCount)'| markdownify }}
 </td>
 <td>
-Set the frozen rows count at <kbd>top</kbd> of the SfDataGrid.
+Set the frozen rows count at <kbd>top</kbd> of the Data Grid.
 </td>
 </tr>
 <tr>
@@ -318,7 +318,7 @@ Set the frozen rows count at <kbd>top</kbd> of the SfDataGrid.
 {{'[FooterRowsCount](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_FooterRowsCount)'| markdownify }}
 </td>
 <td>
-Set the footer rows count at </kbd>bottom</kbd> of the SfDataGrid.
+Set the footer rows count at </kbd>bottom</kbd> of the Data Grid.
 </td>
 </tr>
 <tr>
@@ -326,7 +326,7 @@ Set the footer rows count at </kbd>bottom</kbd> of the SfDataGrid.
 {{'[FrozenColumnCount](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_FrozenColumnCount)'| markdownify }}
 </td>
 <td>
-Set the frozen columns count in <kbd>left side</kbd> of the SfDataGrid. 
+Set the frozen columns count in <kbd>left side</kbd> of the Data Grid. 
 </td>
 </tr>
 <tr>
@@ -334,7 +334,7 @@ Set the frozen columns count in <kbd>left side</kbd> of the SfDataGrid.
 {{'[FooterColumnCount](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_FooterColumnCount)'| markdownify }}
 </td>
 <td>
-Set the frozen columns in <kbd>right side</kbd> of the SfDataGrid.
+Set the frozen columns in <kbd>right side</kbd> of the Data Grid.
 </td>
 </tr>
 </table>
@@ -357,7 +357,7 @@ dataGrid.FrozenRowsCount = 3;
 {% endhighlight %}
 {% endtabs %}
 
-![WPF DataGrid displays Frozen Rows and columns](Rows_images/wpf-datagrid-freeze-rows-and-columns.png)
+![Displays Frozen Rows and columns](Rows_images/wpf-datagrid-freeze-rows-and-columns.png)
 
 ### Differentiate frozen rows from normal rows
 
@@ -439,7 +439,7 @@ You can differentiate the frozen rows and footer rows from normal rows by writin
 {% endhighlight %}
 {% endtabs %}
 
-![WPF DataGrid displays Differentiating Frozen Rows and Footer Rows from Normal Rows](Rows_images/wpf-datagrid-differentiate-frozen-rows-and-columns.png)
+![Displays Differentiating Frozen Rows and Footer Rows from Normal Rows](Rows_images/wpf-datagrid-differentiate-frozen-rows-and-columns.png)
 
 ### Disable drag and drop between frozen and non-frozen columns
 
@@ -485,7 +485,7 @@ void dataGrid_QueryColumnDragging(object sender, QueryColumnDraggingEventArgs e)
 
 2. When `AllowFrozenGroupHeaders` is true, frozen rows will not be considered.
 
-3. SfDataGrid has support to freeze the number of rows from top or bottom. There is no support to freeze a specific row.
+3. Data Grid has support to freeze the number of rows from top or bottom. There is no support to freeze a specific row.
 
 N> 1. Header rows, table summary rows and row header are frozen regardless of `FrozenRowsCount` and `FooterRowsCount`.
    2. `FrozenRowsCount` and `FooterRowsCount` values should be less than the number of rows and column visible.
