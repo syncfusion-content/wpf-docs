@@ -9,7 +9,7 @@ documentation: ug
 
 # Selection in WPF MultiColumn Dropdown
 
-[SfMultiColumnDropDownControl](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfMultiColumnDropDownControl.html) allows you to select one or more rows based on the SelectionMode. You can get the selected item in the SfDataGrid by using [SelectedItem](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfMultiColumnDropDownControl.html#Syncfusion_UI_Xaml_Grid_SfMultiColumnDropDownControl_SelectedItem) property and the selected index by using [SelectedIndex](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfMultiColumnDropDownControl.html#Syncfusion_UI_Xaml_Grid_SfMultiColumnDropDownControl_SelectedIndex) property. 
+[WPF MultiColumn Dropdown](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfMultiColumnDropDownControl.html) allows you to select one or more rows based on the SelectionMode. You can get the selected item in the Data Grid by using [SelectedItem](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfMultiColumnDropDownControl.html#Syncfusion_UI_Xaml_Grid_SfMultiColumnDropDownControl_SelectedItem) property and the selected index by using [SelectedIndex](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfMultiColumnDropDownControl.html#Syncfusion_UI_Xaml_Grid_SfMultiColumnDropDownControl_SelectedIndex) property. 
 
 By using [SelectedValue](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfMultiColumnDropDownControl.html#Syncfusion_UI_Xaml_Grid_SfMultiColumnDropDownControl_SelectedValue) property, you can get the selected value from the selected item based on the `ValueMember` property.
 
@@ -33,7 +33,7 @@ this.sfMultiColumn.SelectionMode = DropDownSelectionMode.Single;
 {% endhighlight %}
 {% endtabs %}
 
-![Single item selected in WPF SfMultiColumnDropDownControl](Selection_images/Selection_img1.png)
+![Single item selected](Selection_images/Selection_img1.png)
 
 ## Multi-Selection
 
@@ -63,7 +63,7 @@ this.sfMultiColumn.SelectionMode = DropDownSelectionMode.Multiple;
 {% endcapture %}
 {{ codesnippet1 | OrderList_Indent_Level_1 }}
 
-![Multiple items selected in WPF SfMultiColumnDropDownControl](Selection_images/Selection_img2.png)
+![Multiple items selected](Selection_images/Selection_img2.png)
 
 N> SelectedItem will be added, only after clicking on `Ok` button in the dropdown or by pressing `Enter` key. `SelectedItem`, `SelectedIndex` and `SelectedValue` denotes the first selected row.
 
@@ -88,7 +88,7 @@ this.sfMultiColumn.SeparatorString = "-";
 {% endhighlight %}
 {% endtabs %}
 
-![Customization of SeparatorString in WPF SfMultiColumnDropDownControl](Selection_images/Selection_img3.png)
+![Customization of SeparatorString](Selection_images/Selection_img3.png)
 
 ### Accessing the selected items
 
@@ -203,7 +203,7 @@ internal class MultiConverter : IMultiValueConverter
 {% endhighlight %}
 {% endtabs %}
 
-![Loading custom control in dropdown of WPF SfMultiColumnDropDownControl](Selection_images/Selection_img4.png)
+![Loading custom control in dropdown](Selection_images/Selection_img4.png)
 
 You can refer `Search with TextBox in DropDown` section in this [sample](https://github.com/syncfusion/wpf-demos/tree/master/dropdown/Multi%20Column%20Dropdown).
 
@@ -211,7 +211,7 @@ N> You can load custom control in drop-down only when SelectionMode is Multiple.
 
 ## Events
 
-You can handle the selection operations in SfMultiColumnDropDownControl by using [SelectionChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfMultiColumnDropDownControl.html#Syncfusion_UI_Xaml_Grid_SfMultiColumnDropDownControl_SelectionChanged) event.
+You can handle the selection operations in MultiColumn Dropdown by using [SelectionChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfMultiColumnDropDownControl.html#Syncfusion_UI_Xaml_Grid_SfMultiColumnDropDownControl_SelectionChanged) event.
 
 ### SelectionChanged
 

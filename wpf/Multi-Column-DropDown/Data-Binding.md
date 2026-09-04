@@ -9,7 +9,7 @@ documentation: ug
 
 # Data Binding in WPF MultiColumn Dropdown
 
-You can populate the drop down list for SfMultiColumnDropDownControl by setting [ItemsSource](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfMultiColumnDropDownControl.html#Syncfusion_UI_Xaml_Grid_SfMultiColumnDropDownControl_ItemsSource) property.
+You can populate the drop down list for WPF MultiColumn Dropdown by setting [ItemsSource](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfMultiColumnDropDownControl.html#Syncfusion_UI_Xaml_Grid_SfMultiColumnDropDownControl_ItemsSource) property.
 [DisplayMember](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfMultiColumnDropDownControl.html#Syncfusion_UI_Xaml_Grid_SfMultiColumnDropDownControl_DisplayMember) denotes the path to a value on the data object for visual presentation of the Textbox and [ValueMember](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfMultiColumnDropDownControl.html#Syncfusion_UI_Xaml_Grid_SfMultiColumnDropDownControl_ValueMember) denotes the path to a value on the data object to get the [SelectedValue](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfMultiColumnDropDownControl.html#Syncfusion_UI_Xaml_Grid_SfMultiColumnDropDownControl_SelectedValue). 
 
 {% tabs %}
@@ -48,11 +48,11 @@ You can populate the drop down list for SfMultiColumnDropDownControl by setting 
 
 Here, `DisplayMember` is `Title` hence the Title property in underlying data object is displayed in the textbox and the `ValueMember` is `OrderID` hence the OrderID property in underlying data object is considered as the `SelectedValue`.
 
-![Binding the data with SfMultiColumnDropDownControl Wpf](Data-Binding_images/Data-Binding_img1.png)
+![Binding the data](Data-Binding_images/Data-Binding_img1.png)
 
 ## Binding with complex and indexer properties
 
-SfMultiColumnDropDownControl provides support to display complex and indexer properties in its columns and also you can set complex and indexer properties as path to `DisplayMember` and `ValueMember` properties.
+MultiColumn Dropdown provides support to display complex and indexer properties in its columns and also you can set complex and indexer properties as path to `DisplayMember` and `ValueMember` properties.
 
 Binding with complex properties
 
@@ -76,7 +76,7 @@ Binding with complex properties
 {% endhighlight %}
 {% endtabs %}
 
-![Binding the complex properties with SfMultiColumnDropDownControl wpf](Data-Binding_images/Data-Binding_img2.png)
+![Binding the complex properties](Data-Binding_images/Data-Binding_img2.png)
 
 Binding with indexer properties
 
@@ -100,4 +100,4 @@ Binding with indexer properties
 {% endhighlight %}
 {% endtabs %}
 
-![Binding the indexer properties with SfMultiColumnDropDownControl wpf](Data-Binding_images/Data-Binding_img3.png)
+![Binding the indexer properties](Data-Binding_images/Data-Binding_img3.png)
