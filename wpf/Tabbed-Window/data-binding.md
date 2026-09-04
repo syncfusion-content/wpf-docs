@@ -9,15 +9,15 @@ documentation: ug
 
 # Data Binding in WPF Tabbed Window
 
-This section explains how to bind tabs to a collection in a WPF Tabbed Window using the `ItemsSource` property of the [SfTabControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.SfTabControl.html).
+This section explains how to bind tabs to a collection in a WPF Tabbed Window using the `ItemsSource` property of the [WPF Tabbed Window](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.SfTabControl.html).
 
 When data binding is used, the tab header and tab content are generated from the bound data by defining appropriate header and content templates.
 
-N> The example below uses a regular `Window`, but the same bindings work identically inside an `SfChromelessWindow`. Use whichever root element matches your application.
+N> The example below uses a regular `Window`, but the same bindings work identically inside an `WPF SfChromeless Window`. Use whichever root element matches your application.
 
 ## Populating Tab Items Using ItemsSource
 
-The SfTabControl supports data binding through the `ItemsSource` property, which allows tabs to be created automatically based on a collection in the ViewModel. Each item in the collection represents a tab, and its properties can be used to define both the tab header and the tab content.
+The WPF Tabbed Window supports data binding through the `ItemsSource` property, which allows tabs to be created automatically based on a collection in the ViewModel. Each item in the collection represents a tab, and its properties can be used to define both the tab header and the tab content.
 
 The following example demonstrates how to bind tab items using the MVVM pattern.
 
@@ -65,7 +65,7 @@ public class MainViewModel : NotificationObject
 
 **Binding ItemsSource, Header and Content**
 
-In the following example, the SfTabControl is bound to the TabItems collection. The tab header and tab content are generated from the bound data by defining header and content templates.
+In the following example, the WPF Tabbed Window is bound to the TabItems collection. The tab header and tab content are generated from the bound data by defining header and content templates.
 
 {% tabs %}
 

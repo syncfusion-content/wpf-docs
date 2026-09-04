@@ -7,15 +7,15 @@ control: SfToastNotification
 documentation: ug
 ---
 
-# Customization in WPF Toast Notification
+# Customization in WPF Toast Control
 
-This section explains how to customize toast interaction elements such as action buttons, callbacks, templates, and close button behavior.
+This section explains how to customize WPF Toast Control interaction elements such as action buttons, callbacks, templates, and close button behavior.
 
 ## Action Buttons
 
-You can add interactive action buttons to a toast notification by using the `Actions` collection. You can also use the [ShowActionButtons](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.SfToastNotification.ToastItem.html#Syncfusion_UI_Xaml_SfToastNotification_ToastItem_ShowActionButtons) property to control whether the action button row is displayed for in-app toast modes. The default value of `ShowActionButtons` is `true`.
+You can add interactive action buttons to a WPF Toast Control by using the `Actions` collection. You can also use the [ShowActionButtons](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.SfToastNotification.ToastItem.html#Syncfusion_UI_Xaml_SfToastNotification_ToastItem_ShowActionButtons) property to control whether the action button row is displayed for in-app modes. The default value of `ShowActionButtons` is `true`.
 
-### 1. Hide Action Buttons on a Toast
+### 1. Hide Action Buttons on a WPF Toast Control
 
 {% tabs %}
 {% highlight C# %}
@@ -32,7 +32,7 @@ SfToastNotification.Show(this, new ToastOptions
 {% endhighlight %}
 {% endtabs %}
 
-### 2. Add Action Buttons to a Toast
+### 2. Add Action Buttons to a WPF Toast Control
 
 {% tabs %}
 {% highlight C# %}
@@ -101,7 +101,7 @@ private void OpenReplyWindow()
 
 ## Action Template
 
-You can customize the appearance of individual action buttons by using the [ActionTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.SfToastNotification.ToastAction.html#Syncfusion_UI_Xaml_SfToastNotification_ToastAction_ActionTemplate) property available in the [ToastAction](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.SfToastNotification.ToastAction.html) class. When a template is assigned, the toast uses the specified template instead of the default action button style. Define the template and style in `App.xaml` (or `Window.Resources`) so it is accessible from the calling code.
+You can customize the appearance of individual action buttons by using the [ActionTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.SfToastNotification.ToastAction.html#Syncfusion_UI_Xaml_SfToastNotification_ToastAction_ActionTemplate) property available in the [ToastAction](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.SfToastNotification.ToastAction.html) class. When a template is assigned, the WPF Toast Control uses the specified template instead of the default action button style. Define the template and style in `App.xaml` (or `Window.Resources`) so it is accessible from the calling code.
 
 {% tabs %}
 
@@ -152,7 +152,7 @@ SfToastNotification.Show(this, new ToastOptions
 
 ## Close Button
 
-You can use the [ShowCloseButton](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.SfToastNotification.ToastItem.html#Syncfusion_UI_Xaml_SfToastNotification_ToastItem_ShowCloseButton) property to specify whether the close button is visible for the toast. The default value of `ShowCloseButton` is `true`. The close button is available only in in-app toast modes (`Window` and `Screen`).
+You can use the [ShowCloseButton](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.SfToastNotification.ToastItem.html#Syncfusion_UI_Xaml_SfToastNotification_ToastItem_ShowCloseButton) property to specify whether the close button is visible for the WPF Toast Control. The default value of `ShowCloseButton` is `true`. The close button is available only in in-app modes (`Window` and `Screen`).
 
 {% tabs %}
 {% highlight C# %}
