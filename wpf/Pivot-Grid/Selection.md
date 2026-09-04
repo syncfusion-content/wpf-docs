@@ -9,11 +9,11 @@ documentation: ug
 
 # Cell Selection in WPF Pivot Grid
 
-The pivot grid supports selecting entire row or column and group of cells with or without header cells. It is similar to cell selection in the Microsoft Excel.
+The Pivot Grid supports selecting entire row or column and group of cells with or without header cells. It is similar to cell selection in the Microsoft Excel.
 
 ## Cell selection
 
-The `AllowSelection` property is used to achieve selection behavior in the pivot grid. It can be done through XAML or code-behind.
+The `AllowSelection` property is used to achieve selection behavior in the control. It can be done through XAML or code-behind.
 
 For XAML, refer to the following code sample.
 
@@ -83,19 +83,19 @@ public partial class MainWindow: Window {
 
 {% endhighlight %}
 
-![PivotGrid shows selected cells](Selection-Images/PivotGrid shows selected cells.png)
+![Selected cells](Selection-Images/PivotGrid shows selected cells.png)
 
 ### To select a row
 
-You can select a whole row in the pivot grid by clicking the specific row header and you can select multiple rows by clicking a row header and dragging it through the other row headers as per requirement.
+You can select a whole row in the Pivot Grid by clicking the specific row header and you can select multiple rows by clicking a row header and dragging it through the other row headers as per requirement.
 
-![PivotGrid shows selection of multiple rows](Selection-Images/PivotGrid shows selection of multiple rows.png)
+![Selection of multiple rows](Selection-Images/PivotGrid shows selection of multiple rows.png)
 
 ### To select a column
 
-You can select a whole column in the pivot grid by clicking the specific column header and you can select multiple columns by clicking a column header and dragging it through the other column headers as per requirement.
+You can select a whole column in the Pivot Grid by clicking the specific column header and you can select multiple columns by clicking a column header and dragging it through the other column headers as per requirement.
 
-![PivotGrid shows selection of multiple columns](Selection-Images/PivotGrid shows selection of multiple columns.png)
+![Selection of multiple columns](Selection-Images/PivotGrid shows selection of multiple columns.png)
 
 ## Cell selection with headers
 
@@ -169,12 +169,12 @@ public partial class MainWindow: Window {
 
 {% endhighlight %}
 
-![PivotGrid selection along with Row Headers](Selection-Images/PivotGrid shows selection along with row headers.png)
+![Selection along with Row Headers](Selection-Images/PivotGrid shows selection along with row headers.png)
 
-_PivotGrid selection along with Row Headers_
+_Selection along with row headers_
 
-![PivotGrid selection along with Column Headers](Selection-Images/PivotGrid shows selection along with column headers.png)
+![Selection along with column headers](Selection-Images/PivotGrid shows selection along with column headers.png)
 
-_PivotGrid selection along with Column Headers_
+_Selection along with column headers_
 
 N> You can refer to our [WPF Pivot Grid](https://www.syncfusion.com/wpf-controls/pivot-grid) feature tour page for its groundbreaking feature representations. You can also explore our [WPF Pivot Grid example](https://github.com/syncfusion/wpf-demos) to knows how to organizes and summarizes business data and displays the result in a cross-table format.

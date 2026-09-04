@@ -9,7 +9,7 @@ documentation: ug
 
 # Grid Layout in WPF Pivot Grid
 
-The pivot grid supports for two different types of layout options with respect to summaries. That is, whether to display the summary data of each pivot item at the top or at the bottom of value cells.
+The Pivot Grid supports two different types of layout options with respect to summaries. That is, whether to display the summary data of each pivot item at the top or at the bottom of value cells.
 
 The `GridLayout` property is used to set the layout options, and this can be defined in both XAML and code-behind.
 
@@ -85,18 +85,18 @@ public partial class MainWindow: Window {
 
 Displays the summary data of rows or columns at the end of value cells.
 
-![Displaying the PivotGrid in Normal layout](Grid-Layout-Images/PivotGrid with normal layout.png)
+![Displaying the normal layout](Grid-Layout-Images/PivotGrid with normal layout.png)
 
 **Top summary**
 
 Displays the summary data of rows or columns at the beginning of value cells.
 
-![Displaying the PivotGrid in Top summary layout](Grid-Layout-Images/PivotGrid with top summary layout.png)
+![Displaying the top summary layout](Grid-Layout-Images/PivotGrid with top summary layout.png)
 
 **Excel-like layout**
 
 Displays the summary cells at the bottom alone and child members that appear below the parent member with some indent space.
 
-![Displaying the PivotGrid in Excel-like layout](Grid-Layout-Images/PivotGrid with excel like layout.png)
+![Displaying the Excel-like layout](Grid-Layout-Images/PivotGrid with excel like layout.png)
 
 N> You can refer to our [WPF Pivot Grid](https://www.syncfusion.com/wpf-controls/pivot-grid) feature tour page for its groundbreaking feature representations. You can also explore our [WPF Pivot Grid example](https://github.com/syncfusion/wpf-demos) to knows how to organizes and summarizes business data and displays the result in a cross-table format.

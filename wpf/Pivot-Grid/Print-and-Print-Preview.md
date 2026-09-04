@@ -9,13 +9,13 @@ documentation: ug
 
 # Printing in WPF Pivot Grid
 
-The printing support for pivot grid control is provided along with grouping bar. You can use the `ShowPrintPreview` method to preview the pivot grid control before printing. The `PrintHeader` and `PrintFooter` properties are used to add or remove the header and footer information while printing.
+The printing support for Pivot Grid control is provided along with grouping bar. You can use the `ShowPrintPreview` method to preview the control before printing. The `PrintHeader` and `PrintFooter` properties are used to add or remove the header and footer information while printing.
 
 **Defining header and footer in XAML**
 
-After defining the pivot grid control, define the DataTemplate for header and footer and set the `PrintHeader` and `PrintFooter` properties of the pivot grid control.
+After defining the control, define the DataTemplate for header and footer and set the `PrintHeader` and `PrintFooter` properties of the control.
 
-Refer to the following code sample to learn about the header template, footer template, and setting its properties in the pivot grid control.
+Refer to the following code sample to learn about the header template, footer template, and setting its properties in the Pivot Grid control.
 
 {% highlight xaml %}
 
@@ -56,9 +56,9 @@ Refer to the following code sample to learn about the header template, footer te
 
 {% endhighlight %}
 
-**Invoking print preview window in pivot grid**
+**Invoking print preview window in Pivot Grid**
 
-After defining the pivot grid control, raise the loaded event of pivot grid. Inside the `pivotGrid_Loaded` event, invoke the `ShowPrintPreview` method to enable the printing behavior.
+After defining the control, raise the loaded event of Pivot Grid. Inside the `pivotGrid_Loaded` event, invoke the `ShowPrintPreview` method to enable the printing behavior.
 
 {% highlight C# %}
 
@@ -82,7 +82,7 @@ public partial class MainWindow: Window {
 
 {% endhighlight %}
 
-![Printing pivot grid](Print-Images/Print preview.png)
+![Printing](Print-Images/Print preview.png)
 
 ## Print preview options
 
@@ -102,7 +102,7 @@ Click the **PageSettings** in the print preview window to change the pages while
 
 **Print**
 
-Click the **Print** in the print preview window to print the pivot grid content.
+Click the **Print** in the print preview window to print the content.
 
 ![Print preview window](Print-Images/Print and Zooming options.png)
 

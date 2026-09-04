@@ -9,7 +9,7 @@ documentation: ug
 
 # Visibility of Grouping Bar in WPF Pivot Grid
 
-The pivot grid supports defining the visibility of grouping bar to some specific areas as mentioned below.
+The Pivot Grid supports defining the visibility of the grouping bar to some specific areas as mentioned below.
 
 * Row header area.
 * Column header area along with row header area.
@@ -160,4 +160,4 @@ public partial class MainWindow: Window {
 
 ![To display row and column headers in the grouping bar](Grouping-Bar-Images/Grouping bar in both the row and column header area.png)
 
-N> You can refer to our [WPF Pivot Grid](https://www.syncfusion.com/wpf-controls/pivot-grid) feature tour page for its groundbreaking feature representations. You can also explore our [WPF Pivot Grid example](https://github.com/syncfusion/wpf-demos) to knows how to organizes and summarizes business data and displays the result in a cross-table format.
+N> You can refer to our [WPF Pivot Grid](https://www.syncfusion.com/wpf-controls/pivot-grid) feature tour page for its groundbreaking feature representations. You can also explore our [WPF Pivot Grid example](https://github.com/syncfusion/wpf-demos) to learn how the control organizes and summarizes business data and displays the result in a cross-table format.

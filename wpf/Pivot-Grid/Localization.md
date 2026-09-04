@@ -9,7 +9,7 @@ documentation: ug
 
 # Localization in WPF Pivot Grid
 
-Localization deals with customizing data and resources for specific culture or language. The built-in localization and globalization mechanism in WPF allows you to localize any string resource used by pivot grid controls. Localization can be done in the following ways.
+Localization deals with customizing data and resources for a specific culture or language. The built-in localization and globalization mechanism in WPF allows you to localize any string resource used by the Pivot Grid control. Localization can be done in the following ways.
 
 * Localization using resource file.
 * Localization using satellite assembly.
@@ -18,7 +18,7 @@ Localization deals with customizing data and resources for specific culture or l
 
 Create and place the resource files in a separate location inside the user application. Then, access the culture specific resources from the current application assembly.
 
-For this, first create a resource file for the pivot grid control and translate the strings to your culture. After the strings are translated, you might use the resources in your projects by setting the corresponding culture in your application.
+For this, first create a resource file for the control and translate the strings to your culture. After the strings are translated, you might use the resources in your projects by setting the corresponding culture in your application.
 
 Refer to the following code sample.
 
@@ -62,6 +62,6 @@ After executing the above command, the satellite assembly will be generated in t
 
 N> Make sure that the name of satellite assembly should be in the format *MyAppName.resources.dll* and the name of the **.resx* file should be like Syncfusion.PivotAnalysis.Wpf.ar-AE.resx (Arabic). If the name of dll’s differs from your application name, then localization will not work.
 
-![Localized pivot grid and display the data from right to left](Localization-Images/PivotGrid Shows localization behaviour.png)
+![Localized view displaying the data from right to left](Localization-Images/PivotGrid Shows localization behaviour.png)
 
 N> You can refer to our [WPF Pivot Grid](https://www.syncfusion.com/wpf-controls/pivot-grid) feature tour page for its groundbreaking feature representations. You can also explore our [WPF Pivot Grid example](https://github.com/syncfusion/wpf-demos) to knows how to organizes and summarizes business data and displays the result in a cross-table format.

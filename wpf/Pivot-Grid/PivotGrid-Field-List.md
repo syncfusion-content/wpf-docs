@@ -9,9 +9,9 @@ documentation: ug
 
 # PivotGrid Field List in WPF Pivot Grid
 
-With the current implementation of grouping bar, you cannot add the deleted items to the pivot grid. The delete operation can be easily performed in the grouping bar by using its "AllowRemoving" feature, but there is no possibility to add again the deleted items. To achieve this, maintain a separate window called **PivotTable Field List**, which holds the fields that are not present in the pivot grid but available in the ItemSource. You can bind a collection of PivotItems as **PivotFields** which gets included in the field list window but not present in the pivot grid.
+With the current implementation of grouping bar, you cannot add the deleted items to the Pivot Grid. The delete operation can be easily performed in the grouping bar by using its "AllowRemoving" feature, but there is no possibility to add the deleted items again. To achieve this, maintain a separate window called **PivotTable Field List**, which holds the fields that are not present in the control but available in the ItemSource. You can bind a collection of PivotItems as **PivotFields**, which gets included in the field list window but not present in the control.
 
-The pivot table field list (or dynamic field list) can be launched by setting the `ShowFieldList` property to "true" or clicking the **ShowFieldList** menu item of grouping bar context menu. The field list is bound to `PivotFields` property of pivot grid control, which is a collection of PivotItems. This property can be set through XAML or code-behind.
+The pivot table field list (or dynamic field list) can be launched by setting the `ShowFieldList` property to "true" or clicking the **ShowFieldList** menu item of the grouping bar context menu. The field list is bound to the `PivotFields` property of Pivot Grid, which is a collection of PivotItems. This property can be set through XAML or code-behind.
 
 For XAML, refer to the following code sample.
 
@@ -81,6 +81,6 @@ public partial class MainWindow: Window {
 
 {% endhighlight %}
 
-![Pivot grid Shows Field List](PivotGridFieldlist-images/PivotGrid Shows Field List.png)
+![Field list displayed](PivotGridFieldlist-images/PivotGrid Shows Field List.png)
 
 N> You can refer to our [WPF Pivot Grid](https://www.syncfusion.com/wpf-controls/pivot-grid) feature tour page for its groundbreaking feature representations. You can also explore our [WPF Pivot Grid example](https://github.com/syncfusion/wpf-demos) to knows how to organizes and summarizes business data and displays the result in a cross-table format.

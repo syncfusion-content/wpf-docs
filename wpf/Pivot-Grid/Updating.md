@@ -9,7 +9,7 @@ documentation: ug
 
 # Updating in WPF Pivot Grid
 
-The pivot grid supports updating the values in the pivot grid in real time and it can be achieved through the `EnableUpdating` property. While handling the updating operations, the values will be calculated automatically and its total values will be reflected.
+The Pivot Grid supports updating the values in the control in real time and it can be achieved through the `EnableUpdating` property. While handling the updating operations, the values will be calculated automatically and its total values will be reflected.
 
 * **EnableUpdating**: Gets/sets the Boolean value to enable updating.
 * **ThrottleUpdateRate**: Gets/sets a millisecond value for the time taken  between UI refreshes. Zero indicates immediate refresh of the UI without delays. Throttling the refresh rate can minimize CPU usage. Depending upon your updating rate, values from 300 to 500 milliseconds may give lower CPU usage.
@@ -85,9 +85,9 @@ public partial class MainWindow: Window {
 
 {% endhighlight %}
 
-While updating the pivot grid control, user can throttle its updating speed by setting the `ThrottleUpdateRate` property. It gets the value in milliseconds as the time interval for UI refreshes to take place. Zero indicates immediate refresh of the UI without any delays. By throttling the refresh rate, you can minimize CPU usage. The default value is zero, but depending upon the user updating rate, values can be given from 300 to 500 milliseconds and it may achieve lower CPU usage.
+While updating the control, user can throttle its updating speed by setting the `ThrottleUpdateRate` property. It gets the value in milliseconds as the time interval for UI refreshes to take place. Zero indicates immediate refresh of the UI without any delays. By throttling the refresh rate, you can minimize CPU usage. The default value is zero, but depending upon the user updating rate, values can be given from 300 to 500 milliseconds and it may achieve lower CPU usage.
 
-To achieve this, define the pivot grid control and raise its loaded event. Inside the `PivotGrid_Loaded()` event, set the `ThrottleUpdateRate` property of the pivot grid control.
+To achieve this, define the control and raise its loaded event. Inside the `PivotGrid_Loaded()` event, set the `ThrottleUpdateRate` property of the control.
 
 Refer to the following code sample.
 
@@ -137,6 +137,6 @@ public partial class MainWindow: Window {
 
 {% endhighlight %}
 
-![PivotGrid with updated values](Updating-Images/PivotGrid with updated values.png)
+![With updated values](Updating-Images/PivotGrid with updated values.png)
 
 N> You can refer to our [WPF Pivot Grid](https://www.syncfusion.com/wpf-controls/pivot-grid) feature tour page for its groundbreaking feature representations. You can also explore our [WPF Pivot Grid example](https://github.com/syncfusion/wpf-demos) to knows how to organizes and summarizes business data and displays the result in a cross-table format.

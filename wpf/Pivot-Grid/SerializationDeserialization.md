@@ -11,7 +11,7 @@ documentation: ug
 
 Serialization can be implemented for applications that need to save their data and structure after closed. Serialization supports saving the structure and data of pivot grid control to an XML file and it can be loaded at any time.
 
-The following are the properties of pivot grid that can be serialized.
+The following are the properties of the Pivot Grid that can be serialized.
 
 
     <table>
@@ -168,11 +168,11 @@ The following are the properties of pivot grid that can be serialized.
         </tr>
     </table>
 
-## Using the serialization/deserialization in pivot grid
+## Using the serialization/deserialization in Pivot Grid
 
-On serialization, the expand and collapse states of pivot grid cells are maintained. So when deserializing, the item source specified for the grid should be same as the item source used in serialization. This can be ignored by setting the `IgnoreExpandCollapseOnSerialization` property of pivot grid control to "False".
+On serialization, the expand and collapse states of the Pivot Grid cells are maintained. So when deserializing, the item source specified for the grid should be same as the item source used in serialization. This can be ignored by setting the `IgnoreExpandCollapseOnSerialization` property of the control to "False".
 
-The following are the methods used in pivot grid for serialization/deserialization.
+The following are the methods used in the Pivot Grid for serialization/deserialization.
 
 Methods table
 
@@ -186,44 +186,44 @@ Methods table
     <tr>
     <td>
     Serialize()</td><td>
-    Serializes the pivot grid into an XML file format using the save file dialog.</td><td>
+    Serializes the Pivot Grid into an XML file format using the save file dialog.</td><td>
     -</td><td>
     void</td></tr>
     <tr>
     <td>
     Deserialize()</td><td>
-    Deserialize the pivot grid from the saved XML file using the open file dialog.</td><td>
+    Deserialize the Pivot Grid from the saved XML file using the open file dialog.</td><td>
     -</td><td>
     void</td></tr>
     <tr>
     <td>
     Serialize(string fileName)</td><td>
-    Serializes the pivot grid into an XML file format and saves it in the specified location.</td><td>
+    Serializes the Pivot Grid into an XML file format and saves it in the specified location.</td><td>
     string fileName</td><td>
     void</td></tr>
     <tr>
     <td>
     Deserialize(string filename)</td><td>
-    Deserialize the pivot grid from the specified XML file.</td><td>
+    Deserialize the Pivot Grid from the specified XML file.</td><td>
     string fileName</td><td>
     void</td></tr>
     <tr>
     <td>
     SerializedXmlString()</td><td>
-    Serializes some specific properties of pivot grid control in string format.</td><td>
+    Serializes some specific properties of the Pivot Grid control in string format.</td><td>
     -</td><td>
     string</td></tr>
     <tr>
     <td>
     Deserialize(string XmlString)</td><td>
-    Deserialize the XML string format in the pivot grid control.</td><td>
+    Deserialize the XML string format in the Pivot Grid control.</td><td>
     string XmlString</td><td>
     void</td></tr>
     </table>
 
 ### Serialization
 
-After defining a pivot grid control, call the Serialize() method in the separate event handler. Refer to the following code snippet.
+After defining the control, call the Serialize() method in the separate event handler. Refer to the following code snippet.
 
 {% highlight C# %}
 
@@ -248,7 +248,7 @@ public partial class MainWindow: Window {
 
 ### Deserialization
 
-After defining a pivot grid control, call the De-Serialize() method in the separate event handler. Refer to the following code snippet.
+After defining the control, call the De-Serialize() method in the separate event handler. Refer to the following code snippet.
 
 {% highlight C# %}
 
@@ -271,6 +271,6 @@ public partial class MainWindow: Window {
 
 {% endhighlight %}
 
-![Pivot grid serialized as xml string](Serialization-images/Serialized PivotGrid.png)
+![Serialized as XML string](Serialization-images/Serialized PivotGrid.png)
 
 N> You can refer to our [WPF Pivot Grid](https://www.syncfusion.com/wpf-controls/pivot-grid) feature tour page for its groundbreaking feature representations. You can also explore our [WPF Pivot Grid example](https://github.com/syncfusion/wpf-demos) to knows how to organizes and summarizes business data and displays the result in a cross-table format.

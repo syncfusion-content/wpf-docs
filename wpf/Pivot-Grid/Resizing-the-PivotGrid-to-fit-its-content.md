@@ -9,7 +9,7 @@ documentation: ug
 
 # Resize to Fit in WPF Pivot Grid
 
-The pivot grid supports resizing the grid to fit its content while expanding and collapsing the groups. The grid will be resized after refreshing the page.
+Pivot Grid supports resizing the grid to fit its content while expanding and collapsing the groups. The grid will be resized after refreshing the page.
 
 The `ResizePivotGridToFit` property is used to resize the grid, and it can be defined in both XAML and code-behind.
 
@@ -81,6 +81,6 @@ public partial class MainWindow: Window {
 
 {% endhighlight %}
 
-![Resized PivotGrid](Resizing-image/Resized PivotGrid during collapsed state.png)
+![Resized during collapsed state](Resizing-image/Resized PivotGrid during collapsed state.png)
 
 N> You can refer to our [WPF Pivot Grid](https://www.syncfusion.com/wpf-controls/pivot-grid) feature tour page for its groundbreaking feature representations. You can also explore our [WPF Pivot Grid example](https://github.com/syncfusion/wpf-demos) to knows how to organizes and summarizes business data and displays the result in a cross-table format.
