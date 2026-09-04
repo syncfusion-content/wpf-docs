@@ -36,7 +36,7 @@ The options in the sorting tab are as follows:
 * **Ascending or descending**: Specifies the sorting order.
 * **Preserve hierarchy**: Sorts the records without changing the hierarchy order.
 
-To toggle the visibility of the filter and sort buttons in the OLAP client toolbar, use the `ShowFilterSortButtons` property.
+To toggle the visibility of the filter and sort buttons in the OLAP Client toolbar, use the `ShowFilterSortButtons` property.
 
 {% tabs %} 
 
