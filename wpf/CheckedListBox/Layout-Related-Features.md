@@ -7,16 +7,16 @@ control: CheckListBox
 documentation: ug
 ---
 
-# Layout Related Features in WPF CheckListBox
+# Layout Related Features in WPF CheckedListBoxWPF CheckListBox
 
-This section illustrates the layout-related features of the `CheckListBox` control. The following features are discussed:
+This section illustrates the layout-related features of the `WPF CheckedListBox` control. The following features are discussed:
 
-## Alignment for CheckListBox
+## Alignment for WPF CheckedListBox
 
-The check box in the `CheckListBox` item can be aligned to the left or right side of the control by using the `CheckBoxAlignment` property. This dependency property sets the alignment of the check box for the items. The following are the alignment options:
+The check box in the `WPF CheckedListBox` item can be aligned to the left or right side of the control by using the `CheckBoxAlignment` property. This dependency property sets the alignment of the check box for the items. The following are the alignment options:
 
-* `Left`: The check box in the `CheckListBox` item is aligned to the left.
-* `Right`: The check box in the `CheckListBox` item is aligned to the right.
+* `Left`: The check box in the `WPF CheckedListBox` item is aligned to the left.
+* `Right`: The check box in the `WPF CheckedListBox` item is aligned to the right.
 
 The default value of `CheckBoxAlignment` is `Left`. To set the `CheckBoxAlignment` to `Right`, use the following code.
 
@@ -50,7 +50,7 @@ CheckBoxAlignment = "Right"
 
 ## Flow direction
 
-The flow direction for the CheckListBox control is set through the [FlowDirection](https://learn.microsoft.com/en-us/dotnet/api/system.windows.frameworkelement.flowdirection?view=netframework-4.7.2) property.
+The flow direction for the WPF CheckedListBox control is set through the [FlowDirection](https://learn.microsoft.com/en-us/dotnet/api/system.windows.frameworkelement.flowdirection?view=netframework-4.7.2) property.
 
 To set the FlowDirection to RightToLeft, use the below code:
 
@@ -82,9 +82,9 @@ checkListBox.FlowDirection = FlowDirection.RightToLeft;
 FlowDirection = "RightToLeft"
 {:.caption}
 
-## Set VisualStyle for CheckListBox
+## Set VisualStyle for WPF CheckedListBox
 
-The appearance of the `CheckListBox` control is customized by applying a suitable style using the `VisualStyle` property.
+The appearance of the `WPF CheckedListBox` control is customized by applying a suitable style using the `VisualStyle` property.
 
 Property table
 
@@ -96,7 +96,7 @@ Description</th></tr>
 <tr>
 <td>
 VisualStyle</td><td>
-Sets the visual style for the CheckListBox control. The options provided are as follows.
+Sets the visual style for the WPF CheckedListBox control. The options provided are as follows.
 <ul>
 <li>Blend</li>
 <li>Office2007Blue</li>
@@ -141,29 +141,29 @@ SkinStorage.SetVisualStyle(checkListBox, "Blend");
 
 ![Blend visual style](Layout-Related-Features_images/Layout-Related-Features_img3.jpeg)
 
-CheckListBox with "Blend" Visual Style
+WPF CheckedListBox with "Blend" Visual Style
 
 ![Default visual style](Layout-Related-Features_images/Layout-Related-Features_img4.jpeg)
 
-CheckListBox with "Default" Visual Style
+WPF CheckedListBox with "Default" Visual Style
 {:.caption}
 
 ![Office2007Black visual style](Layout-Related-Features_images/Layout-Related-Features_img5.jpeg)
 
-CheckListBox with "Office2007Black" Visual Style
+WPF CheckedListBox with "Office2007Black" Visual Style
 {:.caption}
 
 ![Office2003 visual style](Layout-Related-Features_images/Layout-Related-Features_img6.jpeg)
 
-CheckListBox with "Office2003" Visual Style
+WPF CheckedListBox with "Office2003" Visual Style
 {:.caption}
 
 ![Metro visual style](Layout-Related-Features_images/Layout-Related-Features_img7.png)
 
-CheckListBox with "Metro" Visual Style
+WPF CheckedListBox with "Metro" Visual Style
 {:.caption}
 
 ![Transparent visual style](Layout-Related-Features_images/Layout-Related-Features_img8.png)
 
-CheckListBox with "Transparent" Visual Style
+WPF CheckedListBox with "Transparent" Visual Style
 {:.caption}

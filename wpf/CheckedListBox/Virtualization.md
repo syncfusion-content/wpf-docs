@@ -7,9 +7,9 @@ control: CheckListBox
 documentation: ug
 ---
 
-# Virtualization in WPF CheckListBox
+# Virtualization in WPF CheckedListBox
 
-UI Virtualization support is enabled by default in [CheckListBox](https://www.syncfusion.com/wpf-ui-controls/CheckedListBox), which allows the users to load large sets of data without affecting loading or scrolling performance. This feature allows users to reduce the loading time of `CheckListBox` items regardless of items count.
+UI Virtualization support is enabled by default in [WPF CheckedListBox](https://www.syncfusion.com/wpf-ui-controls/CheckedListBox), which allows the users to load large sets of data without affecting loading or scrolling performance. This feature allows users to reduce the loading time of `WPF CheckedListBox` items regardless of items count.
 
 {% tabs %}
 {% highlight C# %}
@@ -88,7 +88,7 @@ public class ViewModel : NotificationObject    {
 
 ![CheckListBox in the Virtualization mode](Virtualization_images/Virtualization.png)
 
-Click [here](https://github.com/SyncfusionExamples/wpf-checked-listbox-examples/tree/master/Samples/Virtualization) to download the sample that showcases the virtualization support in the `CheckListBox`.
+Click [here](https://github.com/SyncfusionExamples/wpf-checked-listbox-examples/tree/master/Samples/Virtualization) to download the sample that showcases the virtualization support in the `WPF CheckedListBox`.
 
 ## Disable the Virtualization
 

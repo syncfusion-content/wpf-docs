@@ -7,9 +7,9 @@ control: CheckListBox
 documentation: ug
 ---
 
-# Check or Uncheck All Items in WPF CheckListBox
+# Check or Uncheck All Items in WPF CheckedListBox
 
-The [CheckListBox](https://www.syncfusion.com/wpf-ui-controls/CheckedListBox) allows users to check or uncheck all the items with a single click on the `SelectAll` option. The `SelectAll` option can be enabled or disabled using the [IsSelectAllEnabled](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.CheckListBox.html#Syncfusion_Windows_Tools_Controls_CheckListBox_IsSelectAllEnabled) property. The selection state of the `SelectAll` item varies based on the checked state of the `CheckListBox` items. Initially, `SelectAll` is unchecked because no items are checked. It is checked only when all items are checked; otherwise, it is in an intermediate state.
+The [WPF CheckedListBox](https://www.syncfusion.com/wpf-ui-controls/CheckedListBox) allows users to check or uncheck all the items with a single click on the `SelectAll` option. The `SelectAll` option can be enabled or disabled using the [IsSelectAllEnabled](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.CheckListBox.html#Syncfusion_Windows_Tools_Controls_CheckListBox_IsSelectAllEnabled) property. The selection state of the `SelectAll` item varies based on the checked state of the `WPF CheckedListBox` items. Initially, `SelectAll` is unchecked because no items are checked. It is checked only when all items are checked; otherwise, it is in an intermediate state.
 
 {% tabs %}
 {%highlight C#%}
@@ -58,4 +58,4 @@ checkListBox.ItemsSource = (checkListBox.DataContext as ViewModel).DaysCollectio
 
 ![CheckListBox items are selected using the SelectAll option](Select-All_images/select_all.png)
 
-Click [here](https://github.com/SyncfusionExamples/wpf-checked-listbox-examples/tree/master/Samples/SelectAll) to download the sample that showcases the SelectAll option in the `CheckListBox`.
+Click [here](https://github.com/SyncfusionExamples/wpf-checked-listbox-examples/tree/master/Samples/SelectAll) to download the sample that showcases the SelectAll option in the `WPF CheckedListBox`.
