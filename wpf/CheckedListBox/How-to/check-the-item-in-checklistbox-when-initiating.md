@@ -7,9 +7,9 @@ control: CheckListBox
 documentation: ug
 ---
 
-# How to Check an Item on Init in WPF CheckListBox
+# How to Check an Item on Init in WPF CheckedListBox
 
-To check the items when initiating the CheckListBox control, items need to be added to the `SelectedItems` collection. The following code illustrates this:
+To check the items when initiating the WPF CheckedListBox control, items need to be added to the `SelectedItems` collection. The following code illustrates this:
 
 {% tabs %}
 {% highlight c#%}
