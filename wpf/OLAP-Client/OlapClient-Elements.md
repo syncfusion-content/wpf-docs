@@ -123,7 +123,7 @@ True</td></tr>
  
 ## Axis element builder
 
-The axis element builder allows you to build elements in the axes of OLAP client. This supports three axes: categorical, series, and slicer. Based on the construction of the axes, the OLAP grid and OLAP chart will display the resultant data.
+The axis element builder allows you to build elements in the axes of OLAP Client. This supports three axes: categorical, series, and slicer. Based on the construction of the axes, the OLAP grid and OLAP chart will display the resultant data.
 
 ### Categorical (column)
 
@@ -183,7 +183,7 @@ The Check All and Uncheck All options in the dialog allows you to select and des
 
 The options available in the toolbar are:
 
-* **Connect to server**: Connects the data source with OLAP client through the offline cube, online server, or connection string.
+* **Connect to server**: Connects the data source with OLAP Client through the offline cube, online server, or connection string.
 * **New report**: Creates a new report list and clears the existing report collection to provide a new platform for new deployment based on the existing cube elements.
 * **Load report**: Picks a saved report collection from the database and loads it by clearing the existing collection of reports.
 * **Save report**: Stores the report collection at that instant in the local system.
@@ -195,7 +195,7 @@ The options available in the toolbar are:
 * **Show expander**: Displays an expander option for the grid and chart to perform drill-down operations.
 * **Filter/sort column**: Filters or sorts the data in the OLAP report with respect to the column.
 * **Filter/sort row**: Filters or sorts the data in the OLAP report with respect to the row.
-* **Report list**: Holds all reports of the current session of the OLAP client control and displays them in a drop-down list. You can select a report from the drop-down list.
+* **Report list**: Holds all reports of the current session of the OLAP Client control and displays them in a drop-down list. You can select a report from the drop-down list.
 * **MDX query**: Displays the executed MDX query to retrieve the data at that instant.
 
 ## Report manipulation
@@ -248,7 +248,7 @@ After providing an appropriate name, click **Save**. The report will be saved in
 
 ### Load report
 
-This option loads a report from the local system. Click the load report icon on the toolbar to load a report into the OLAP client.
+This option loads a report from the local system. Click the load report icon on the toolbar to load a report into the OLAP Client.
 
 ![Load report option is selected in OlapClient toolbar](OlapClient-Elements_images/OlapClient-Elements_img29.png)
 

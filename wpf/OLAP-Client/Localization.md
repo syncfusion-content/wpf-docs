@@ -9,11 +9,11 @@ documentation: ug
 
 # Localization in WPF OLAP Client
 
-Localization deals with customizing data and resources for specific culture or language. The built-in localization and globalization mechanism in WPF allows you to localize any string resource used by the OLAP client control.
+Localization deals with customizing data and resources for specific culture or language. The built-in localization and globalization mechanism in WPF allows you to localize any string resource used by the OLAP Client control.
 
 You can create and place the resource files in a separate location in the user application. Then, you can access the culture specific resources from the current application assembly.
 
-For this, first create a resource file for our OLAP client control and translate the strings to your culture. Basically, the OLAP client contains control assemblies such as OlapChart.WPF and OlapGrid.WPF and Tools assemblies such as OlapShared.WPF and OlapTools.WPF within it. So, it is mandatory to localize the necessary strings available in those assemblies. Once it is translated, you might use the resources in your projects by setting the corresponding culture in your application.
+For this, first create a resource file for our OLAP Client control and translate the strings to your culture. Basically, the OLAP Client contains control assemblies such as OlapChart.WPF and OlapGrid.WPF and Tools assemblies such as OlapShared.WPF and OlapTools.WPF within it. So, it is mandatory to localize the necessary strings available in those assemblies. Once it is translated, you might use the resources in your projects by setting the corresponding culture in your application.
 
 ![Adding the localized string in resource file](Localization_images/Localization_img1.png)
 
@@ -44,7 +44,7 @@ End Sub
  
 ## RTL support
 
-RTL support for OLAP client is used to display the content from right to left by setting the `FlowDirection` property to "RightToLeft". The following code sample explains how to set this property.
+RTL support for OLAP Client is used to display the content from right to left by setting the `FlowDirection` property to "RightToLeft". The following code sample explains how to set this property.
 
 {% tabs %}
 

@@ -23,7 +23,7 @@ Theming is the process of applying particular settings to visual elements of a p
  * Office 2003
  * Default
 
-The `VisualStyle` property allows users to set the Visual Style of the OLAP client control. The following code sample demonstrates how theming is added to the OLAP client control.
+The `VisualStyle` property allows users to set the Visual Style of the OLAP Client control. The following code sample demonstrates how theming is added to the OLAP Client control.
 
 {% tabs %}
 
