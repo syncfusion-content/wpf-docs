@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Lane Interactions in WPF SfDiagram | Syncfusion®
-description: Learn about lane interactions in Syncfusion® WPF SfDiagram control, including lane selection, resizing, swapping, child node interactions, and events.
+title: Lane Interactions in WPF Diagram | Syncfusion®
+description: Learn about lane interactions in Syncfusion® WPF Diagram control, including lane selection, resizing, swapping, child node interactions, and events.
 platform: wpf
 control: SfDiagram
 documentation: ug
 ---
 
-# Lane Interactions in WPF SfDiagram
+# Lane Interactions in WPF Diagram
 
-The [WPF SfDiagram](https://www.syncfusion.com/diagram-sdk/wpf-diagram) control provides support to select, resize, or swap the lane interactively. 
+The [WPF Diagram](https://www.syncfusion.com/diagram-sdk/wpf-diagram) control provides support to select, resize, or swap the lane interactively. 
 
 ## Select
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Flowchart Layout in WPF SfDiagram | Syncfusion®
-description: Create and customize flowchart layouts in Syncfusion® WPF SfDiagram with flow directions, decision branches, and spacing options.
+title: Flowchart Layout in WPF Diagram | Syncfusion®
+description: Create and customize flowchart layouts in Syncfusion® WPF Diagram with flow directions, decision branches, and spacing options.
 platform: wpf
 control: SfDiagram
 documentation: ug
 ---
 
 
-# Flowchart Layout in WPF SfDiagram
+# Flowchart Layout in WPF Diagram
 
 The flowchart layout is a diagrammatic representation of a process, workflow, system, or computer algorithm. Flowcharts use various kinds of symbols to illustrate the different types of actions, and the symbols are connected together with arrows showing the flow direction of a process.
 
@@ -167,7 +167,7 @@ private void MainWindow_ItemAdded(object sender, ItemAddedEventArgs args)
     //Perform any per-item initialization here.
 }
 
-//Initialize DataSourceSettings for SfDiagram
+//Initialize DataSourceSettings for Diagram
 diagram.DataSourceSettings = new FlowchartDataSourceSettings()
 {
     ParentId = "ParentId",
@@ -183,7 +183,7 @@ diagram.DataSourceSettings = new FlowchartDataSourceSettings()
 //Initialize LayoutManager
 LayoutManager layoutManager = new LayoutManager();
 
-//Initialize Layout for SfDiagram
+//Initialize Layout for Diagram
 layoutManager.Layout = new FlowchartLayout()
 {
     Orientation = FlowchartOrientation.TopToBottom,
@@ -193,13 +193,13 @@ layoutManager.Layout = new FlowchartLayout()
     VerticalSpacing = 30
 };
 
-//Initialize theming style for SfDiagram
+//Initialize theming style for Diagram
 diagram.Theme = new OfficeTheme();
 
 //Assign the LayoutManager to the diagram (do not re-initialize the manager here).
 diagram.LayoutManager = layoutManager;
 
-//Add the SfDiagram as a child of the main window grid.
+//Add the Diagram as a child of the main window grid.
 WindowGrid.Children.Add(diagram);
 
 //Initializes the DataSource collection
@@ -331,7 +331,7 @@ Arranges the element in the layout vertically from top to bottom.
 {% highlight c# %}
 //Initialize LayoutManager
 LayoutManager layoutManager = new LayoutManager();
-//Initialize Layout for SfDiagram
+//Initialize Layout for Diagram
 layoutManager.Layout = new FlowchartLayout()
 {
     Orientation = FlowchartOrientation.TopToBottom,            
@@ -353,7 +353,7 @@ Arranges the element in the layout horizontally from left to right.
 {% highlight c# %}
 //Initialize LayoutManager
 LayoutManager layoutManager = new LayoutManager();
-//Initialize Layout for SfDiagram
+//Initialize Layout for Diagram
 layoutManager.Layout = new FlowchartLayout()
 {
     Orientation = FlowchartOrientation.LeftToRight,
@@ -419,7 +419,7 @@ By default, `YesBranchValues` contains `Yes` and `True`; `NoBranchValues` contai
 //Initialize LayoutManager
 LayoutManager layoutManager = new LayoutManager();
 
-//Initialize Layout for SfDiagram
+//Initialize Layout for Diagram
 layoutManager.Layout = new FlowchartLayout()
 {
     Orientation = FlowchartOrientation.TopToBottom,
@@ -451,7 +451,7 @@ Control the spacing between the nodes, both horizontally and vertically, using t
 //Initialize LayoutManager
 LayoutManager layoutManager = new LayoutManager();
 
-//Initialize Layout for SfDiagram
+//Initialize Layout for Diagram
 layoutManager.Layout = new FlowchartLayout()
 {
     HorizontalSpacing = 50,

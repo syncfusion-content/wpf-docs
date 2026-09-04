@@ -1,13 +1,13 @@
 ---
 layout: post
-title: BPMN Shapes in WPF SfDiagram | Syncfusion®
-description: Learn about BPMN shapes in Syncfusion® WPF SfDiagram control, including activities, events, gateways, data objects, message flows, and associations.
+title: BPMN Shapes in WPF Diagram | Syncfusion®
+description: Learn about BPMN shapes in Syncfusion® WPF Diagram control, including activities, events, gateways, data objects, message flows, and associations.
 platform: wpf
 control: SfDiagram
 documentation: ug
 ---
 
-# BPMN Shapes in WPF SfDiagram
+# BPMN Shapes in WPF Diagram
 
 BPMN(Business Process Model and Notation) shapes are used to represent internal business processes in a graphical notation and enable you to communicate the procedures in a standard manner. To create BPMN shapes, you have to initialize [`BpmnNodeViewModel`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.BpmnNodeViewModel.html) with the [`Type`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.BpmnNodeViewModel.html#Syncfusion_UI_Xaml_Diagram_BpmnNodeViewModel_Type) property. The `Type` property can be set to any one of the built-in BPMN shapes using the [`BpmnShapeType`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Controls.BpmnShapeType.html) enumeration. The default value for the `Type` property of `BpmnNodeViewModel` is `Activity`.
 
@@ -34,7 +34,7 @@ The following code example explains how to create a simple business process.
 //Initialize the diagram.
 SfDiagram diagram = new SfDiagram();
 
-//Initialize NodeCollection to SfDiagram
+//Initialize NodeCollection to Diagram
 diagram.Nodes = new NodeCollection();
 
 //Initialize the BpmnNodeViewModel.

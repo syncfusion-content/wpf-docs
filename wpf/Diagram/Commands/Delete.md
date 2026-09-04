@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Delete Command in WPF SfDiagram | Syncfusion®
-description: Delete selected or specified diagram elements in Syncfusion® WPF SfDiagram using the Delete command and DeleteParameter settings.
+title: Delete Command in WPF Diagram | Syncfusion®
+description: Delete selected or specified diagram elements in Syncfusion® WPF Diagram using the Delete command and DeleteParameter settings.
 platform: wpf
 control: SfDiagram
 documentation: ug
 ---
 
-# Delete Command in WPF SfDiagram
+# Delete Command in WPF Diagram
 
 The [`Delete`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IDiagramCommands.html#Syncfusion_UI_Xaml_Diagram_IDiagramCommands_Delete) command is used to perform delete operations on the Diagram view for the currently selected item. This command is also used to delete any unselected diagram objects with its parameter. 
 

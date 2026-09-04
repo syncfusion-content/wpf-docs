@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Grouping Commands in WPF SfDiagram | Syncfusion®
-description: Group and ungroup diagram elements in Syncfusion® WPF SfDiagram using built-in commands and keyboard shortcuts.
+title: Grouping Commands in WPF Diagram | Syncfusion®
+description: Group and ungroup diagram elements in Syncfusion® WPF Diagram using built-in commands and keyboard shortcuts.
 platform: wpf
 control: SfDiagram
 documentation: ug
 ---
 
-# Grouping Commands in WPF SfDiagram
+# Grouping Commands in WPF Diagram
 
-Grouping commands are used to group or ungroup the selected diagramming objects such as nodes and connectors in the [WPF SfDiagram](https://www.syncfusion.com/diagram-sdk/wpf-diagram).
+Grouping commands are used to group or ungroup the selected diagramming objects such as nodes and connectors in the [WPF Diagram](https://www.syncfusion.com/diagram-sdk/wpf-diagram).
 
 ## Group command
 
@@ -27,7 +27,7 @@ N> The Group command requires at least two diagram objects to be selected. If fe
 
 {% highlight c# %}
 
-//Initialize the SfDiagram 
+//Initialize the Diagram 
 SfDiagram diagramcontrol = new SfDiagram();
 
 IGraphInfo graphinfo = diagramcontrol.Info as IGraphInfo;
@@ -54,7 +54,7 @@ N> The UnGroup command can be executed only when a grouped object is selected. I
 
 {% highlight c# %}
 
-//Initialize the SfDiagram 
+//Initialize the Diagram 
 SfDiagram diagramcontrol = new SfDiagram();
 
 IGraphInfo graphinfo = diagramcontrol.Info as IGraphInfo;

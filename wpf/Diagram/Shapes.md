@@ -1,17 +1,17 @@
 ---
 layout: post
-title: Shapes in WPF SfDiagram | Syncfusion®
-description: Learn about shapes in Syncfusion® WPF SfDiagram control, including built-in shape libraries, flowchart shapes, arrow shapes, and custom node shapes.
+title: Shapes in WPF Diagram | Syncfusion®
+description: Learn about shapes in Syncfusion® WPF Diagram control, including built-in shape libraries, flowchart shapes, arrow shapes, and custom node shapes.
 platform: wpf
 control: SfDiagram
 documentation: ug
 ---
 
-# Shapes in WPF SfDiagram
+# Shapes in WPF Diagram
 
 We have provided some basic built-in shapes as ResourceDictionary.
 
-The following code example illustrates how to add shape resources to [WPF SfDiagram](https://www.syncfusion.com/diagram-sdk/wpf-diagram).
+The following code example illustrates how to add shape resources to [WPF Diagram](https://www.syncfusion.com/diagram-sdk/wpf-diagram).
 
 {% tabs %}
 {% highlight xaml %}

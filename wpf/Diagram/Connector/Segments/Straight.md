@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Straight Segments in WPF SfDiagram | Syncfusion®
-description: Learn about straight connector segments in Syncfusion® WPF SfDiagram control, including segment creation, editing, splitting, and runtime customization.
+title: Straight Segments in WPF Diagram | Syncfusion®
+description: Learn about straight connector segments in Syncfusion® WPF Diagram control, including segment creation, editing, splitting, and runtime customization.
 platform: wpf
 control: SfDiagram
 documentation: ug
 ---
 
-# Straight Segments in WPF SfDiagram
+# Straight Segments in WPF Diagram
 
 The path of the Connector is defined with a collection of [`Segments`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ConnectorViewModel.html#Syncfusion_UI_Xaml_Diagram_ConnectorViewModel_Segments) and each segment represents a line between two points. By default, connector type will be identified using the value of `DefaultConnectorType` property of Diagram. It changes the all connectors type in the diagram but when you define the segment then the particular connector will be displayed based on the segment created. There are four types of segments,
 
@@ -43,10 +43,10 @@ Straight segment allows you to create a straight-line connector between two end 
 </syncfusion:SfDiagram>
 {% endhighlight %}
 {% highlight c# %}
-//Initialize the SfDiagram
+//Initialize the Diagram
 SfDiagram diagram = new SfDiagram();
 
-//Initialize ConnectorCollection to SfDiagram
+//Initialize ConnectorCollection to Diagram
 diagram.Connectors = new ConnectorCollection();
 
 //Define the Connector
@@ -124,7 +124,7 @@ Following code example illustrates how to add or remove straight segements when 
 {% tabs %}
 {% highlight c# %}
 
-//Initialize the SfDiagram
+//Initialize the Diagram
 SfDiagram diagram = new SfDiagram();
 //Register the item tap event of diagram
 (diagram.Info as IGraphInfo).ItemTappedEvent += Diagram_ItemTappedEvent;

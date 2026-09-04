@@ -1,13 +1,13 @@
 ---
 layout: post
-title: SelectByType Command in WPF SfDiagram | Syncfusion®
-description: Select specific diagram element types in Syncfusion® WPF SfDiagram using the SelectByType command for targeted operations.
+title: SelectByType Command in WPF Diagram | Syncfusion®
+description: Select specific diagram element types in Syncfusion® WPF Diagram using the SelectByType command for targeted operations.
 platform: wpf
 control: SfDiagram
 documentation: ug
 ---
 
-# SelectByType Command in WPF SfDiagram
+# SelectByType Command in WPF Diagram
 
 The [SelectByType](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IDiagramCommands.html#Syncfusion_UI_Xaml_Diagram_IDiagramCommands_SelectByType) command is used to select the specified type (such as NodeViewModel, BpmnNodeViewModel, etc.) of elements in the diagram.
 
@@ -25,7 +25,7 @@ N> If the diagram does not contain any elements of the specified type, the `Sele
 
 {% highlight c# %}
 
-//Initialize the SfDiagram 
+//Initialize the Diagram 
 SfDiagram diagramcontrol = new SfDiagram();
 
 IGraphInfo graphinfo = diagramcontrol.Info as IGraphInfo;

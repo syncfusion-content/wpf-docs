@@ -1,17 +1,17 @@
 ---
 layout: post
-title: Lane in WPF SfDiagram | Syncfusion®
-description: Learn about lane in Syncfusion® WPF SfDiagram control, including lane creation, headers, customization, child nodes, and runtime management.
+title: Lane in WPF Diagram | Syncfusion®
+description: Learn about lane in Syncfusion® WPF Diagram control, including lane creation, headers, customization, child nodes, and runtime management.
 platform: wpf
 control: SfDiagram
 documentation: ug
 ---
 
-# Lane in WPF SfDiagram
+# Lane in the WPF Diagram
 
 A [Lane](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.LaneViewModel.html) is a functional unit or a responsible department of a business process that helps to map a process within the functional unit or in between other functional units.
 
-The number of lanes can be added to swimlane and rendered in the [WPF SfDiagram](https://www.syncfusion.com/diagram-sdk/wpf-diagram). The lanes are automatically stacked inside swimlane based on the order they are added.
+The number of lanes can be added to swimlane and rendered in the [WPF Diagram](https://www.syncfusion.com/diagram-sdk/wpf-diagram). The lanes are automatically stacked inside swimlane based on the order they are added.
 
 ## Create an empty lane
 
@@ -52,9 +52,9 @@ The following code example explains how to define a swimlane with lane.
             </syncfusion:SfDiagram>
 {% endhighlight %}
 {% highlight c# %}
-  //Initialize the SfDiagram
+  //Initialize the Diagram
   SfDiagram diagram = new SfDiagram();
- //Initialize the SwimlaneCollection to SfDiagram
+ //Initialize the SwimlaneCollection to Diagram
   diagram.Swimlanes = new SwimlaneCollection();
 
  //Creating the SwimlaneViewModel
@@ -250,7 +250,7 @@ public class DiagramVM : DiagramViewModel
 
  private void InitializeDiagram()
  {
-  //Initialize the SwimlaneCollection to SfDiagram
+  //Initialize the SwimlaneCollection to Diagram
   this.Swimlanes = new SwimlaneCollection();
   //Creating the SwimlaneViewModel
   SwimlaneViewModel swimlane = new SwimlaneViewModel()
@@ -384,7 +384,7 @@ InitializeDiagram();
 private void InitializeDiagram()
 {
 
- //Initialize the SwimlaneCollection to SfDiagram
+ //Initialize the SwimlaneCollection to Diagram
   this.Swimlanes = new SwimlaneCollection();
 
  //Creating the SwimlaneViewModel

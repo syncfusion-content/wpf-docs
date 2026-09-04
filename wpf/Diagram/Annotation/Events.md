@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Annotation Events in WPF SfDiagram | Syncfusion®
-description: Learn about annotation events in Syncfusion® WPF SfDiagram control, including annotation change notifications and selection-related events.
+title: Annotation Events in WPF Diagram | Syncfusion®
+description: Learn about annotation events in Syncfusion® WPF Diagram control, including annotation change notifications and selection-related events.
 platform: wpf
 control: SfDiagram
 documentation: ug
 ---
 
-# Annotation Events in WPF SfDiagram
+# Annotation Events in WPF Diagram
 ## Annotation Changed Event
 The [AnnotationChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IGraphInfo.html#Syncfusion_UI_Xaml_Diagram_IGraphInfo_AnnotationChanged) event will notify the annotation related actions and value changes. The [AnnotationChangedEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.AnnotationChangedEventArgs.html) class is used to get or set the entire annotation related properties and their values.  
 
@@ -58,4 +58,4 @@ private void Diagram_AnnotationChanged(object sender, ChangeEventArgs<object, An
 
 [How to restrict annotation editing by double-clicking the node or connector?](https://support.syncfusion.com/kb/article/8539/how-to-restrict-annotation-editing-by-double-clicking-the-node-or-connector-in-wpf-diagram)
 
-[How to get parent of annotation using changed command in WPF SfDiagram?](https://support.syncfusion.com/kb/article/16202/how-to-get-parent-of-annotation-using-changed-command-in-wpf-diagram)
+[How to get parent of annotation using changed command in WPF Diagram?](https://support.syncfusion.com/kb/article/16202/how-to-get-parent-of-annotation-using-changed-command-in-wpf-diagram)
