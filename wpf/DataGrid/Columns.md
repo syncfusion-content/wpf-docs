@@ -9,9 +9,9 @@ documentation: ug
 
 # Columns in WPF Data Grid
 
-[WPF DataGrid](https://www.syncfusion.com/wpf-controls/datagrid) (SfDataGrid) allows you to add or remove columns using [SfDataGrid.Columns](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_Columns) property. You can choose the columns to be added from built-in column types or you can create your own column and add to the `SfDataGrid.Columns`.
+[WPF Data Grid](https://www.syncfusion.com/wpf-controls/datagrid) (SfDataGrid) allows you to add or remove columns using [SfDataGrid.Columns](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_Columns) property. You can choose the columns to be added from built-in column types, or you can create your own column and add it to the `SfDataGrid.Columns`.
 
-Below are the built-in column types supported in SfDataGrid. Each column has its own properties to handle different types of data.
+Below are the built-in column types supported in Data Grid. Each column has its own properties to handle different types of data.
 
 <table>
 <tr>
@@ -138,7 +138,7 @@ Use to display the IEnumerable data using SfMultiColumnDropdownControl.
 
 ## Defining columns
 
-You can let the SfDataGrid to create columns or you can manually define columns to be displayed. Below sections explains both ways, 
+You can let Data Grid create the columns, or you can manually define the columns to be displayed. The sections below explain both approaches.
 
 1. Automatically generating columns
 2. Manually define columns
@@ -209,7 +209,7 @@ GridTimeSpanColumn
 </table>
 
 
-N> The order of columns in the collection will determine the order of that they will appear in SfDataGrid.
+N> The order of columns in the collection determines the order in which they will appear in Data Grid.
 
 #### AutoGenerateColumns with different modes
 
@@ -271,7 +271,7 @@ Clear all the columns including the columns defined manually and creates new col
 Columns will not be generated.
 </td>
 <td>
-Keeps old columns in DataGrid.Columns collection.
+Keeps old columns in the Data Grid Columns collection.
 </td>
 </tr>
 </table>
@@ -338,7 +338,7 @@ Specifies that the column for only the custom type will be auto generated.
 
 You can download the sample demo [here](https://github.com/SyncfusionExamples/how-to-auto-generate-columns-for-custom-type-properties-in-uwp-and-wpf-datagrid) .
 
-#### Customize auto-generated columns in DataGrid
+#### Customize auto-generated columns in Data Grid
 
 You can customize or cancel the generated column by handling [AutoGeneratingColumn](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_AutoGeneratingColumn) event. `AutoGeneratingColumn` event occurs when the individual column is auto-generated for public and non-static property of underlying data object.
 
@@ -356,7 +356,7 @@ void dataGrid_AutoGeneratingColumn(object sender, AutoGeneratingColumnArgs e)
 
 ##### Cancel column generation for particular property
 
-You can cancel the specific column adding to the DataGrid by handling `AutoGeneratingColumn` event.
+You can cancel a specific column being added to Data Grid by handling the `AutoGeneratingColumn` event.
 
 In the below code, column generation for `OrderID` property is canceled by setting `Cancel` property to `true`. 
 
@@ -375,7 +375,7 @@ void dataGrid_AutoGeneratingColumn(object sender, AutoGeneratingColumnArgs e)
 
 ##### Changing column type
 
-You can change the type of column adding to SfDataGrid by setting the instance of column you want to add in `AutoGeneratingColumn` event. 
+You can change the type of column added to Data Grid by setting the instance of the column you want to add in the `AutoGeneratingColumn` event.
 
 In the below code, column type for `UnitPrice` property is changed to `GridTextColumn` by setting instance of GridTextColumn to `Column` property. 
 
@@ -452,11 +452,11 @@ void dataGrid_AutoGeneratingColumn(object sender, AutoGeneratingColumnArgs e)
 
 Below screenshot shows the customized header template loaded on the header of OrderID column.
 
-![WPF DataGrid Loaded with Customized Header Template](columns_images/wpf-datagrid-header-template.png)
+![Loaded with Customized Header Template](columns_images/wpf-datagrid-header-template.png)
 
 #### Data Annotations with AutoGenerateColumns
 
-WPF DataGrid (SfDataGrid) support to generate the columns based on built-in [Data Annotation Attributes](https://learn.microsoft.com/en-us/previous-versions/windows/silverlight/dotnet-windows-silverlight/cc490428(v=vs.95)). Data Annotations ignored, when the `AutoGenerateColumns` is set to False.
+WPF Data Grid (SfDataGrid) supports generating the columns based on built-in [Data Annotation Attributes](https://learn.microsoft.com/en-us/previous-versions/windows/silverlight/dotnet-windows-silverlight/cc490428(v=vs.95)). Data Annotations are ignored when `AutoGenerateColumns` is set to `False`.
 
 ##### Exclude column
 
@@ -547,9 +547,9 @@ public string CustomerID
 
 The OrderID and CustomerID column rearranged based on specified order.
 
-![Changing Columns Order in WPF DataGrid](columns_images/wpf-datagrid-columns-order.png)
+![Changing Columns Order](columns_images/wpf-datagrid-columns-order.png)
 
-##### DataGrid column formatting
+##### Data Grid column formatting
 
 You can customize the data format using `DataTypeAttribute.DataType` property.
 
@@ -565,7 +565,7 @@ public double  UnitPrice
 {% endhighlight %}
 {% endtabs %}
 
-##### DataGrid read-only column 
+##### Data Grid read-only column 
 
 You can disable the editing for a column using `ReadOnly` attribute.
 
@@ -581,9 +581,9 @@ public string Country
 {% endhighlight %}
 {% endtabs %}
 
-##### Format datagrid columns using DisplayFormat attribute
+##### Format Data Grid columns using DisplayFormat attribute
 
-The auto-generated columns will be formatted using the [DataFormatString](https://learn.microsoft.com/en-us/previous-versions/windows/silverlight/dotnet-windows-silverlight/cc679306%28v%3dvs.95%29) property in the [DisplayFormat](https://learn.microsoft.com/en-us/previous-versions/windows/silverlight/dotnet-windows-silverlight/cc679253%28v%3dvs.95%29) attribute when the `DisplayFormat` attribute is defined for the properties defined in the view model. If the `DisplayFormat` attribute is defined with the `DataFormatString` property, the DataGrid formats the column only based on `DataFormatString`, without considering other formatting property settings of columns.
+The auto-generated columns will be formatted using the [DataFormatString](https://learn.microsoft.com/en-us/previous-versions/windows/silverlight/dotnet-windows-silverlight/cc679306%28v%3dvs.95%29) property in the [DisplayFormat](https://learn.microsoft.com/en-us/previous-versions/windows/silverlight/dotnet-windows-silverlight/cc679253%28v%3dvs.95%29) attribute when the `DisplayFormat` attribute is defined for the properties defined in the view model. If the `DisplayFormat` attribute is defined with the `DataFormatString` property, Data Grid formats the column only based on `DataFormatString`, without considering other formatting property settings of columns.
 
 {% tabs %}
 {% highlight c# %}
@@ -605,11 +605,11 @@ public DateTime OrderDate
 
 N> The `DataFormatString` attribute will be considered only when the column is auto-generated.
 
-![WPF DataGrid with Columns Formatting](columns_images/wpf-datagrid-columns-formatting.png)
+![Columns Formatting](columns_images/wpf-datagrid-columns-formatting.png)
 
 ### Manually defining columns
 
-WPF DataGrid (SfDataGrid) control allows you to define the columns manually by adding desired column to the [SfDataGrid.Columns](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_Columns) collection.
+WPF Data Grid (SfDataGrid) control allows you to define the columns manually by adding the desired column to the [SfDataGrid.Columns](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_Columns) collection.
 
 {% tabs %}
 {% highlight xaml %}
@@ -640,7 +640,7 @@ You can refer more information about handling the column level operations for ma
 
 You can get the columns (added or auto-generated) from [SfDataGrid.Columns](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_Columns) property.
 
-### Adding column to DataGrid
+### Adding column to Data Grid
 
 You can add column at runtime by adding instance of column to `SfDataGrid.Columns` property.
 
@@ -662,7 +662,7 @@ GridColumn column = this.dataGrid.Columns["OrderID"];
 {% endhighlight %}
 {% endtabs %}
 
-### Clearing or removing column in DataGrid
+### Clearing or removing column in Data Grid
 
 You can remove all the columns by clearing the `SfDataGrid.Columns` property.
 
@@ -699,9 +699,9 @@ foreach (var name in childColumns)
 {% endhighlight %}
 {% endtabs %}
 
-## DataGrid column resizing 
+## Data Grid column resizing 
 
-SfDataGrid allows to resize the columns like in excel by resizing column header. This can be enabled or disabled by setting [SfDataGrid.AllowResizingColumns](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_AllowResizingColumns) or [GridColumn.AllowResizing](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridColumn.html#Syncfusion_UI_Xaml_Grid_GridColumn_AllowResizing) property.
+Data Grid allows you to resize the columns like in Excel by resizing the column header. This can be enabled or disabled by setting the [SfDataGrid.AllowResizingColumns](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_AllowResizingColumns) or [GridColumn.AllowResizing](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridColumn.html#Syncfusion_UI_Xaml_Grid_GridColumn_AllowResizing) property.
 
 N> Resizing considers MinWidth and MaxWidth of column.
 
@@ -716,13 +716,13 @@ N> Resizing considers MinWidth and MaxWidth of column.
 
 You can change the column width by clicking and dragging the resizing cursor at the edge of column header. The resizing cursor appears when you hover the grid line exists between two columns. 
 
-![Column Resizing in WPF DataGrid](columns_images/wpf-datagrid-resize-column.png)
+![Column Resizing](columns_images/wpf-datagrid-resize-column.png)
 
 ### Hidden column resizing
 
-SfDataGrid shows indication for hidden columns in column header and also allows end-users to resize the hidden columns when setting [SfDataGrid.AllowResizingHiddenColumns](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_AllowResizingHiddenColumns) property to `true`.
+Data Grid shows an indication for hidden columns in the column header and also allows end-users to resize the hidden columns when the [SfDataGrid.AllowResizingHiddenColumns](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_AllowResizingHiddenColumns) property is set to `true`.
 
-![Resizing Hidden Column in WPF DataGrid](columns_images/wpf-datagrid-resize-hidden-column.png)
+![Resizing Hidden Column](columns_images/wpf-datagrid-resize-hidden-column.png)
 
 ### Disable resizing
 
@@ -744,7 +744,7 @@ void dataGrid_ResizingColumns(object sender, ResizingColumnsEventArgs e)
 
 ### Identify resizing of the column gets completed
 
-SfDataGrid allows you to identify the progress of the resizing of columns through [ResizingColumnsEventArgs.Reason](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.ResizingColumnsEventArgs.html#Syncfusion_UI_Xaml_Grid_ResizingColumnsEventArgs_Reason) property. You can get the width of the column after resizing completed by getting [ResizingColumnsEventArgs.Width](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.ResizingColumnsEventArgs.html#Syncfusion_UI_Xaml_Grid_ResizingColumnsEventArgs_Width) when `ResizingColumnsEventArgs.Reason` is [ColumnResizingReason.Resized](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.ColumnResizingReason.html) in [ResizingColumns](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html) event.
+Data Grid allows you to identify the progress of the resizing of columns through the [ResizingColumnsEventArgs.Reason](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.ResizingColumnsEventArgs.html#Syncfusion_UI_Xaml_Grid_ResizingColumnsEventArgs_Reason) property. You can get the width of the column after resizing is completed by getting the [ResizingColumnsEventArgs.Width](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.ResizingColumnsEventArgs.html#Syncfusion_UI_Xaml_Grid_ResizingColumnsEventArgs_Width) when `ResizingColumnsEventArgs.Reason` is [ColumnResizingReason.Resized](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.ColumnResizingReason.html) in the [ResizingColumns](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html) event.
 
 {% tabs %}
 {% highlight c# %}
@@ -760,7 +760,7 @@ void OnResizingColumns(object sender, ResizingColumnsEventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-## DataGrid column drag and drop
+## Data Grid column drag and drop
 
 You can allow end-users to rearrange the columns by drag and drop the column headers by setting [SfDataGrid.AllowDraggingColumns](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_AllowDraggingColumns) to `true`.
 
@@ -915,7 +915,7 @@ void dataGrid_QueryColumnDragging(object sender, QueryColumnDraggingEventArgs e)
 
 N> `FrozenColumnCount` and `FooterColumnCount` should be lesser than the number of Columns that can be displayed in View.
 
-## DataGrid freeze columns 
+## Data Grid freeze columns 
 
 You can freeze the columns in view at the left and right side like in excel by setting [SfDataGrid.FrozenColumnCount](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_FrozenColumnCount) and [SfDataGrid.FooterColumnCount](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_FooterColumnCount) properties.
 
@@ -928,15 +928,15 @@ You can freeze the columns in view at the left and right side like in excel by s
 {% endhighlight %}
 {% endtabs %}
 
-![Freezing Columns in WPF DataGrid](columns_images/wpf-datagrid-freezing.png)
+![Freezing Columns](columns_images/wpf-datagrid-freezing.png)
 
 ### Limitations
 
-1. SfDataGrid has support to freeze the number of columns from the left or right. There is no support to freeze a specific column.
+1. Data Grid has support to freeze the number of columns from the left or right. There is no support to freeze a specific column.
 
 ## Binding column properties with ViewModel
 
-SfDataGrid provides MVVM support for binding `GridColumn` properties with ViewModel properties
+Data Grid provides MVVM support for binding `GridColumn` properties with ViewModel properties
 . 
 {% tabs %}
 {% highlight c# %}
@@ -971,5 +971,5 @@ Below code, binds the `ViewModel.AllowFiltering` property to `GridColumn.AllowFi
 {% endhighlight %}
 {% endtabs %}
 
-![WPF DataGrid Column with Data Binding](columns_images/wpf-datagrid-data-binding-columns.png)
+![Column with Data Binding](columns_images/wpf-datagrid-data-binding-columns.png)
 

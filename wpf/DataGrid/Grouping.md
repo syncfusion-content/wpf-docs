@@ -9,9 +9,9 @@ documentation: ug
 
 # Grouping in WPF Data Grid
 
-[WPF DataGrid](https://www.syncfusion.com/wpf-controls/datagrid) allows you to group the data against one or more columns. When grouping is applied, the data is organized into a hierarchical structure based on matching column values and it is sorted by ascending order.
+[WPF Data Grid](https://www.syncfusion.com/wpf-controls/datagrid) allows you to group the data against one or more columns. When grouping is applied, the data is organized into a hierarchical structure based on matching column values and it is sorted by ascending order.
  
-SfDataGrid allows you to group the data in below ways,
+The Data Grid allows you to group the data in below way,
 
 * UI Grouping
 * Programmatic Grouping
@@ -60,11 +60,11 @@ this.dataGrid.Columns["CustomerID"].AllowGrouping = true;
 
 N> [GridColumn.AllowGrouping](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridColumn.html#Syncfusion_UI_Xaml_Grid_GridColumn_AllowGroupingProperty) takes higher priority than [SfDataGrid.AllowGrouping](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_AllowGrouping).
 
-![WPF DataGrid Grouping](Grouping_images/wpf-datagrid-grouping.png)
+![Grouping](Grouping_images/wpf-datagrid-grouping.png)
 
 The data can be grouped by an unlimited number of columns. To group more than one columns, drag-and-drop the desired columns in to `GroupDropArea`.
 
-![Multiple Grouping in WPF DataGrid](Grouping_images/wpf-datagrid-multiple-grouping.png)
+![Multiple Grouping](Grouping_images/wpf-datagrid-multiple-grouping.png)
 
 Each group is identified by its `CaptionSummaryRows` and it is used to organize the data into a hierarchical tree structure based on identical values of that column. The underlying records in each caption summary row can be expanded or collapsed by clicking its group caption.
 
@@ -73,7 +73,7 @@ Each `CaptionSummaryRow` carries information about a particular group like group
 
 ## Programmatic grouping
 
-The WPF DataGrid (SfDataGrid) allows you to group the data programmatically by adding or removing [GroupColumnDescription](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GroupColumnDescription.html) to [SfDataGrid.GroupColumnDescriptions](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_GroupColumnDescriptions) collection.
+The WPF Data Grid allows you to group the data programmatically by adding or removing [GroupColumnDescription](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GroupColumnDescription.html) to [SfDataGrid.GroupColumnDescriptions](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_GroupColumnDescriptions) collection.
 
 For example, if you want to group the OrderID column programmatically, define its [MappingName](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridColumnBase.html#Syncfusion_UI_Xaml_Grid_GridColumnBase_MappingName) to [ColumnName](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GroupColumnDescription.html#Syncfusion_UI_Xaml_Grid_GroupColumnDescription_ColumnName) property of `GroupColumnDescription`. Then add the `GroupColumnDescription` to the `SfDataGrid.GroupColumnDescriptions` collection.
 
@@ -120,7 +120,7 @@ this.dataGrid.View.EndInit();
 
 ## Group based on display text
 
-You can group the column in DataGrid based on the value being displayed in cell by setting [GridColumn.GroupMode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridColumn.html#Syncfusion_UI_Xaml_Grid_GridColumn_GroupMode) as `Display`.
+You can group the column in the Data Grid based on the value being displayed in cell by setting [GridColumn.GroupMode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridColumn.html#Syncfusion_UI_Xaml_Grid_GridColumn_GroupMode) as `Display`.
 In the below example, OrderID column displays value with one decimal digit in cell. But when you group, groups will be created based on actual value considering all decimal digits of value (Refer right side screen shot). You can group based value displayed in the cell by setting [GridColumn.GroupMode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridColumn.html#Syncfusion_UI_Xaml_Grid_GridColumn_GroupMode) as `Display` (Refer left side screen shot for the same data).
 
 {% tabs %}
@@ -132,11 +132,11 @@ this.datagrid.Columns["OrderID"].GroupMode = DataReflectionMode.Display;
 {% endhighlight %}
 {% endtabs %}
 
-![Grouped Column in WPF DataGrid based on Display Text](Grouping_images/wpf-datagrid-grouped-column.png)
+![Grouped Column based on Display Text](Grouping_images/wpf-datagrid-grouped-column.png)
 
 ### Group caption based on DisplayMember when grouping GridComboBoxColumn and GridMultiColumnDropDownList
 
-In WPF DataGrid (SfDataGrid), you can group the column based on display value and also the same can be displayed  in caption summary by setting [GridColumn.GroupMode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridColumn.html#Syncfusion_UI_Xaml_Grid_GridColumn_GroupMode) as `Display`.
+In the WPF Data Grid (SfDataGrid), you can group the column based on display value and also the same can be displayed  in caption summary by setting [GridColumn.GroupMode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridColumn.html#Syncfusion_UI_Xaml_Grid_GridColumn_GroupMode) as `Display`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -154,7 +154,7 @@ this.datagrid.Columns.Add(new GridComboBoxColumn()
 {% endhighlight %}
 {% endtabs %}
 
-![Grouped Column in WPF DataGrid based on Display Member](Grouping_images/wpf-datagrid-member-group-column.png)
+![Grouped Column based on Display Member](Grouping_images/wpf-datagrid-member-group-column.png)
 
 ## Clearing or removing group
 
@@ -182,7 +182,7 @@ this.dataGrid.View.EndInit();
 
 To ungroup the column in UI, click the close button on column header or drag the column header from the `GroupDropArea` and drop it on the header row.
 
-![WPF DataGrid Column without Grouping](Grouping_images/wpf-datagrid-without-grouping.png)
+![Column without Grouping](Grouping_images/wpf-datagrid-without-grouping.png)
 
 
 ## Hiding the column when grouped
@@ -204,7 +204,7 @@ this.dataGrid.ShowColumnWhenGrouped = false;
 {% endtabs %}
 
 
-![Hide Grouping Column in WPF DataGrid](Grouping_images/wpf-datagrid-hide-grouping.png)
+![Hide Grouping Column](Grouping_images/wpf-datagrid-hide-grouping.png)
 
 ## Freezing caption rows when scrolling 
 
@@ -225,7 +225,7 @@ this.dataGrid.AllowFrozenGroupHeaders = true;
 {% endtabs %}
 
 
-![WPF DataGrid with Frozen Caption Summary Rows](Grouping_images/wpf-datagrid-freeze-caption-rows.png)
+![With Frozen Caption Summary Rows](Grouping_images/wpf-datagrid-freeze-caption-rows.png)
 
 ## Expanding or collapsing the groups
 
@@ -293,7 +293,7 @@ this.dataGrid.CollapseGroup(group);
 
 ## Customize indent column width 
 
-You can customize the width of IndentColumn in SfDataGrid by using [IndentColumnWidth](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_IndentColumnWidth) property as like below.
+You can customize the width of IndentColumn in the Data Grid by using [IndentColumnWidth](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_IndentColumnWidth) property as like below.
 
 {% tabs %}
 {% highlight xaml %}
@@ -324,12 +324,12 @@ You can change the `GroupDropArea’ s` text can by setting [SfDataGrid.GroupDro
 {% endtabs %}
 
 
-![WPF DataGrid with Custom Group Drop Area Text](Grouping_images/wpf-datagrid-custom-group-text.png)
+![With Custom Group Drop Area Text](Grouping_images/wpf-datagrid-custom-group-text.png)
 
 ### GroupDropArea height and appearance
 
 
-SfDataGrid allows you to customize the appearance and height of `GroupDropArea` by writing the style of TargetType `GroupDropArea`.
+The Data Grid allows you to customize the appearance and height of `GroupDropArea` by writing the style of TargetType `GroupDropArea`.
 
 
 {% tabs %}
@@ -346,7 +346,7 @@ SfDataGrid allows you to customize the appearance and height of `GroupDropArea` 
 {% endtabs %}
 
 
-![Customizing GroupDropDrea Height in WPF DataGrid](Grouping_images/wpf-datagrid-group-drop-area-height.png)
+![Customizing GroupDropArea Height](Grouping_images/wpf-datagrid-group-drop-area-height.png)
 
 ### Expanding GroupDropArea while loading
 
@@ -369,7 +369,7 @@ this.dataGrid.IsGroupDropAreaExpanded = true;
 
 ## Custom grouping
 
-DataGrid allows you to group the data based on custom logic when the built-in grouping functionality doesn’t meet your requirement. 
+The Data Grid allows you to group the data based on custom logic when the built-in grouping functionality doesn’t meet your requirement. 
 
 To perform custom grouping on a particular column , specify the custom logic through [GroupColumnDescription.Converter](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_GroupColumnDescriptions) property and the column name to [GroupColumnDescription.ColumnName](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GroupColumnDescription.html#Syncfusion_UI_Xaml_Grid_GroupColumnDescription_ColumnNameProperty) property.
 
@@ -447,7 +447,7 @@ Now , assign the `GroupDateTimeConverter` into [GroupColumnDescription.Converter
 {% endtabs %}
 
 
-![WPF DataGrid with Custom Grouping](Grouping_images/wpf-datagrid-custom-grouping.png)
+![With Custom Grouping](Grouping_images/wpf-datagrid-custom-grouping.png)
 
 You can download samples from below location,
 Refer [sample](https://www.syncfusion.com/downloads/support/directtrac/general/ze/CustomGroupingDemo541349132.zip) for Custom grouping when ItemsSource is ObservableCollection.
@@ -483,11 +483,11 @@ dataGrid.GroupColumnDescriptions.Add(groupColumnDesc);
 In the below screenshot custom grouping is applied based on `SickLeaveHours` column and the inner records in each group are sorted based on `SickLeaveHours` value.
 
 
-![Sorting Inner Records Group in WPF DataGrid](Grouping_images/wpf-datagrid-sort-inner-records.png)
+![Sorting Inner Records Group](Grouping_images/wpf-datagrid-sort-inner-records.png)
 
 ## Sorting groups based on summary values
 
-DataGrid allows you to sort the groups based its summary values. You can sort the groups based on summary aggregate value  by using [SfDataGrid. SummaryGroupComparer](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_SummaryGroupComparer) property.
+The Data Grid allows you to sort the groups based its summary values. You can sort the groups based on summary aggregate value  by using [SfDataGrid. SummaryGroupComparer](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_SummaryGroupComparer) property.
 
 
 Follow the below steps to sort the groups based on caption aggregate value.
@@ -518,9 +518,9 @@ public class SortGroupComparers : IComparer<Group>, ISortDirection
 {% endhighlight %}
 {% endtabs %}
 
-### Defining custom group comparer to DataGrid
+### Defining custom group comparer to the Data Grid
 
-Custom group comparer can be defined in SfDataGrid using [SfDataGrid.SummaryGroupComparer](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_SummaryGroupComparer) property. `SummaryGroupComparer` maintains the custom comparers and the custom comparer gets called when corresponding column is grouped.
+Custom group comparer can be defined in the Data Grid using [SfDataGrid.SummaryGroupComparer](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_SummaryGroupComparer) property. `SummaryGroupComparer` maintains the custom comparers and the custom comparer gets called when corresponding column is grouped.
 
 
 {% tabs %}
@@ -551,7 +551,7 @@ Custom group comparer can be defined in SfDataGrid using [SfDataGrid.SummaryGrou
 {% endtabs %}
 
 
-![Displaying Grouping in WPF DataGrid using Custom Group Comparer](Grouping_images/wpf-datagrid-custom-group-comparer.png)
+![Displaying Grouping using Custom Group Comparer](Grouping_images/wpf-datagrid-custom-group-comparer.png)
 
 You can download the sample demo [here](https://www.syncfusion.com/downloads/support/directtrac/general/ze/SortBySummaryDemo-355692747.zip).
 
@@ -628,13 +628,13 @@ The [SfDataGrid.GroupCollapsed](https://help.syncfusion.com/cr/wpf/Syncfusion.UI
 [Group](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GroupChangedEventArgs.html#Syncfusion_UI_Xaml_Grid_GroupChangedEventArgs_Group) - Gets the collapsed group.
 
 ## See Also
-[How to remove the gridline of WPF DataGrid (SfDataGrid) with grouping?](https://support.syncfusion.com/kb/article/9540/how-to-remove-the-gridline-of-wpf-datagrid-sfdatagrid-with-grouping)
+[How to remove the gridline of the Data Grid with grouping?](https://support.syncfusion.com/kb/article/9540/how-to-remove-the-gridline-of-wpf-datagrid-sfdatagrid-with-grouping)
 
 [How to maintain expanded state of groups in printing?](https://support.syncfusion.com/kb/article/8842/how-to-maintain-expanded-state-of-groups-in-printing-in-wpf-datagrid-sfdatagrid)
 
 [How to show vertical border to the column wise summary rows?](https://support.syncfusion.com/kb/article/8850/how-to-show-vertical-border-to-the-column-wise-summary-rows-in-wpf-datagrid-sfdatagrid)
 
-[How to define summary rows using AttachedProperty in datagrid](https://support.syncfusion.com/kb/article/8658/how-to-define-summary-rows-using-attached-property-in-wpf-datagrid-)
+[How to define summary rows using AttachedProperty in the Data Grid](https://support.syncfusion.com/kb/article/8658/how-to-define-summary-rows-using-attached-property-in-wpf-datagrid-)
 
 [How to displaying Group header name based on other column](https://support.syncfusion.com/kb/article/7208/how-to-display-the-group-header-based-on-the-column-name-in-wpf-datagrid-sfdatagrid)
 
@@ -648,10 +648,10 @@ The [SfDataGrid.GroupCollapsed](https://help.syncfusion.com/cr/wpf/Syncfusion.UI
 
 [How to add controls like TextBox in GroupDropArea?](https://support.syncfusion.com/kb/article/3759/how-to-add-controls-like-textbox-in-groupdroparea-in-wpf-datagrid)
 
-[How to customize the CaptionSummaryCell text in the SfDataGrid?](https://support.syncfusion.com/kb/article/3433/how-to-customize-the-captionsummarycell-text-in-wpf-datagrid)
+[How to customize the CaptionSummaryCell text in the Data Grid?](https://support.syncfusion.com/kb/article/3433/how-to-customize-the-captionsummarycell-text-in-wpf-datagrid)
 
 [How to apply the Custom Grouping while grouping the column using GroupDropArea?](https://support.syncfusion.com/kb/article/2940/how-to-apply-the-custom-grouping-while-grouping-the-column-using-groupdroparea)
 
-[How to avoid selection while grouping and ungrouping in SfDataGrid?](https://support.syncfusion.com/kb/article/2809/how-to-avoid-selection-while-grouping-and-ungrouping-in-sfdatagrid)
+[How to avoid selection while grouping and ungrouping in the Data Grid?](https://support.syncfusion.com/kb/article/2809/how-to-avoid-selection-while-grouping-and-ungrouping-in-sfdatagrid)
 
 [How to customize the GroupDropArea?](https://support.syncfusion.com/kb/article/2878/how-to-customize-the-groupdroparea-in-wpf-datagrid-control)

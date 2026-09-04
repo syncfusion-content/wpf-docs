@@ -23,7 +23,7 @@ Built-in validations through `IDataErrorInfo`, `INotifyDataErrorInfo` and Data a
 
 ## Built-in validation using IDataErrorInfo / INotifyDataErrorInfo
 
-WPF DataGrid (SfDataGrid) provides support to validate the data based on [IDataErrorInfo](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.idataerrorinfo?view=net-5.0) / [INotifyDataErrorInfo](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.inotifydataerrorinfo?view=net-5.0).
+The WPF Data Grid (SfDataGrid) provides support to validate the data based on [IDataErrorInfo](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.idataerrorinfo?view=net-5.0) / [INotifyDataErrorInfo](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.inotifydataerrorinfo?view=net-5.0).
  
 ### Using IDataErrorInfo
  
@@ -83,7 +83,7 @@ this.dataGrid.GridValidationMode = GridValidationMode.InView;
 {% endhighlight %}
 {% endtabs %}
 
-![Data validation in WPF DataGrid using IDataErrorInfo](Data-Validation_images/wpf-datagrid-data-validation.png)
+![Data validation using IDataErrorInfo](Data-Validation_images/wpf-datagrid-data-validation.png)
 
 ### INotifyDataErrorInfo
 
@@ -140,7 +140,7 @@ Enable built-in validation support by setting [SfDataGrid.GridValidationMode](ht
 {% endhighlight %}
 {% endtabs %}
 
-![Data validation in WPF DataGrid using INotifyDataErrorInfo](Data-Validation_images/wpf-datagrid-with-data-validation.png)
+![Data validation using INotifyDataErrorInfo](Data-Validation_images/wpf-datagrid-with-data-validation.png)
 
 ## Built-in validation using Data Annotation
 
@@ -212,9 +212,9 @@ public string CustomerID
 
 ## Cell validation
 
-You can validate the cells using [CurrentCellValidating](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_CurrentCellValidating) event when the cell is edited. `CurrentCellValidating` event occurs when the edited cells tries to commit the data or lose the focus. DataGrid will not allow user to edit other cells if validation failed.
+You can validate the cells using the [CurrentCellValidating](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_CurrentCellValidating) event when the cell is edited. The `CurrentCellValidating` event occurs when the edited cell tries to commit the data or lose the focus. The grid will not allow the user to edit other cells if validation failed.
 
-[CurrentCellValidatingEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.CurrentCellValidatingEventArgs.html) provides information to `CurrentCellValidating` event for validating the cell. `CurrentCellValidatingEventArgs.OriginalSender` returns the DataGrid fired this event for DetailsView. 
+[CurrentCellValidatingEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.CurrentCellValidatingEventArgs.html) provides information to the `CurrentCellValidating` event for validating the cell. `CurrentCellValidatingEventArgs.OriginalSender` returns the grid that fired this event for DetailsView. 
 
 `CurrentCellValidatingEventArgs.NewValue` returns the edited value and you can set the validation status using `CurrentCellValidatingEventArgs.IsValid` property.
 
@@ -248,9 +248,9 @@ void dataGrid_CurrentCellValidated(object sender, CurrentCellValidatedEventArgs 
 
 ## Row validation
 
-You can validate the row using [RowValidating](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_RowValidating) event when the cell is edited. The `RowValidating` event occurs when the edited cells tries to commit the row data or lose the focus. DataGrid will not allow user to edit other rows if validation failed.
+You can validate the row using [RowValidating](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_RowValidating) event when the cell is edited. The `RowValidating` event occurs when the edited cells tries to commit the row data or lose the focus. Data Grid will not allow user to edit other rows if validation failed.
  
-[RowValidatingEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.RowValidatingEventArgs.html) provides information to `RowValidating` event for validating row. `RowValidatingEventArgs.OriginalSender` returns the DataGrid fired this event for DetailsView. 
+[RowValidatingEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.RowValidatingEventArgs.html) provides information to the `RowValidating` event for validating the row. `RowValidatingEventArgs.OriginalSender` returns the grid that fired this event for DetailsView. 
 
 `RowValidatingEventArgs.RowData` returns the edited value and you can set the validation status using `RowValidatingEventArgs.IsValid` property.
 
@@ -435,7 +435,7 @@ You can change the validation error template shape of the GridCell by changing
 {% endhighlight %}
 {% endtabs %}
 
-![WPF DataGrid displays Data Validation Errors with Error Icon](Data-Validation_images/wpf-datagrid-error-icon.png)
+![Data Validation Errors with Error Icon](Data-Validation_images/wpf-datagrid-error-icon.png)
 
 ### Change the color of error icon
 
@@ -583,7 +583,7 @@ You can change the validation error template color of the `GridCell` by changi
 {% endhighlight %}
 {% endtabs %}
 
-![Data Validation Error Icon with Custom Color in WPF DataGrid](Data-Validation_images/wpf-datagrid-error-icon-with-custom-color.png)
+![Data Validation Error Icon with Custom Color](Data-Validation_images/wpf-datagrid-error-icon-with-custom-color.png)
 
 ### Change the cursor over error icon
 
@@ -737,7 +737,7 @@ You can change the validation error template cursor of the `GridCell` by chang
 {% endhighlight %}
 {% endtabs %}
 
-![Changing Cursor Style on Error Icon in WPF DataGrid](Data-Validation_images/wpf-datagrid-change-cursor-style.png)
+![Changing Cursor Style on Error Icon](Data-Validation_images/wpf-datagrid-change-cursor-style.png)
 
 ## Data validation error tip (help tip) customization
 
@@ -836,11 +836,11 @@ You can change the error tip background color by setting `Background` property o
 {% endhighlight %}
 {% endtabs %}
 
-![WPF DataGrid - Error Tip Foreground and Background Customization](Data-Validation_images/wpf-datagrid-error-tip-color-customization.png)
+![Error Tip Foreground and Background Customization](Data-Validation_images/wpf-datagrid-error-tip-color-customization.png)
 
 ## Showing error details in RowHeader
 
-WPF DataGrid (SfDataGrid) support to show the error icon in [GridRowHeaderCell](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridRowHeaderCell.html) based on [IDataErrorInfo.Error](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.idataerrorinfo.error?view=net-5.0) or [INotifyDataErrorInfo.HasErrors](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.inotifydataerrorinfo.haserrors?view=net-5.0) property.
+The WPF Data Grid (SfDataGrid) supports showing the error icon in [GridRowHeaderCell](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridRowHeaderCell.html) based on the [IDataErrorInfo.Error](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.idataerrorinfo.error?view=net-5.0) or [INotifyDataErrorInfo.HasErrors](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.inotifydataerrorinfo.haserrors?view=net-5.0) property.
 
 ### Using IDataErrorInfo
 
@@ -864,7 +864,7 @@ public string Error
 {% endhighlight %}
 {% endtabs %}
 
-![WPF DataGrid displays Error Information of Data Validation using IDataErrorInfo](Data-Validation_images/wpf-datagrid-error-info-in-row-header.png)
+![Error Information of Data Validation using IDataErrorInfo](Data-Validation_images/wpf-datagrid-error-info-in-row-header.png)
 
 ### Using INotifyDataErrorInfo
 
@@ -887,7 +887,7 @@ public bool HasErrors
 {% endhighlight %}
 {% endtabs %}
 
-![WPF DataGrid displays Error Information of Data Validation using INotifyDataErrorInfo](Data-Validation_images/wpf-datagrid-error-tip.png)
+![Error Information of Data Validation using INotifyDataErrorInfo](Data-Validation_images/wpf-datagrid-error-tip.png)
 
 ## Data validation with Master-details view
 
@@ -933,7 +933,7 @@ void dataGrid_AutoGeneratingRelations(object sender, Syncfusion.UI.Xaml.Grid.Aut
 {% endhighlight %}
 {% endtabs %}
 
-![Data Validation with Master-DetailsView in WPF SfDataGrid](Data-Validation_images/wpf-datagrid-validation-in-master-details-view.png)
+![Data Validation with Master-DetailsView](Data-Validation_images/wpf-datagrid-validation-in-master-details-view.png)
 
 ### Custom validation through events
 
@@ -1124,7 +1124,7 @@ void dataGrid_AutoGeneratingRelations(object sender, Syncfusion.UI.Xaml.Grid.Aut
 
 ## Data validation with checkbox column
 
-SfDataGrid doesn’t support to validate the [GridCheckBoxColumn](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridCheckBoxColumn.html) through validating events. 
+The Data Grid doesn’t support validating the [GridCheckBoxColumn](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridCheckBoxColumn.html) through validating events. 
 
 You can validate the check box column value by setting `ValidationHelper.IsCurrentCellValidated` and `ValidationHelper.IsCurrentRowValidated` static properties by calling [SetCurrentRowValidated](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.ValidationHelper.html#Syncfusion_UI_Xaml_Grid_ValidationHelper_SetCurrentRowValidated_System_Boolean_) and [SetCurrentCellValidated](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.ValidationHelper.html#Syncfusion_UI_Xaml_Grid_ValidationHelper_SetCurrentCellValidated_System_Boolean_) methods from [ValidationHelper](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.ValidationHelper.html).
 
@@ -1149,11 +1149,11 @@ void dataGrid_CurrentCellValueChanged(object sender, CurrentCellValueChangedEven
 {% endhighlight %}
 {% endtabs %}
 
-![WPF DataGrid displays Data Validation with CheckBox Column](Data-Validation_images/wpf-datagrid-checkbox-validation.png)
+![Data Validation with CheckBox Column](Data-Validation_images/wpf-datagrid-checkbox-validation.png)
 
 ## Show validation errors when using UseDrawing
 
-By default, validation is not supported while enabling the `UseDrawing` property since the cell content were drawn instead of loading the UIElement. However, SfDataGrid provides an option to achieve the validation by adding the validation template. 
+By default, validation is not supported while enabling the `UseDrawing` property since the cell content is drawn instead of loading the UIElement. However, the control provides an option to achieve the validation by adding the validation template. 
 
 Please refer the below code example for further details about achieving Validation when using `UseDrawing` property.
 {% tabs %}

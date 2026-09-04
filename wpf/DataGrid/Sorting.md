@@ -9,7 +9,7 @@ documentation: ug
 
 # Sorting in WPF Data Grid
 
-[WPF DataGrid](https://www.syncfusion.com/wpf-controls/datagrid) (SfDataGrid) allows you to sort the data against one or more columns either in ascending or descending order. When sorting is applied, the rows are rearranged based on sort criteria. You can allow users to sort the data by touching or clicking the column header using [SfDataGrid.AllowSorting](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_AllowSorting) property to `true`.
+[WPF DataGrid](https://www.syncfusion.com/wpf-controls/datagrid) allows you to sort the data against one or more columns either in ascending or descending order. When sorting is applied, the rows are rearranged based on sort criteria. You can allow users to sort the data by touching or clicking the column header using [SfDataGrid.AllowSorting](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_AllowSorting) property to `true`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -85,7 +85,7 @@ Following are the sequence of sorting orders when clicking column header,
 
 ## Multi column sorting
 
-WPF DataGrid (SfDataGrid) control allows you sort more than one column, where sorting is applied one column against other columns. To apply sorting on multiple columns, user have to click the column header by pressing the <kbd>Ctrl</kbd> key.
+WPF Data Grid control allows you sort more than one column, where sorting is applied one column against other columns. To apply sorting on multiple columns, user have to click the column header by pressing the <kbd>Ctrl</kbd> key.
 
 In the below screen shot, the OrderID column sorted. Then the CustomerName column is sorted against the OrderID data by clicking column header by pressing <kbd>Ctrl</kbd> key. The sorting state of OrderID column is preserved and CustomerName column sorted against OrderID column.
 
@@ -172,7 +172,7 @@ this.dataGrid.SortColumnDescriptions.Clear();
 
 ## Custom sorting
 
-SfDataGrid allows you to sort the columns based on the custom logic. The custom sorting can be applied by adding the [SortComparer](https://help.syncfusion.com/cr/wpf/Syncfusion.Data.SortComparer.html) instance to [SfDataGrid.SortComparers](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_SortComparers). 
+Data Grid allows you to sort the columns based on the custom logic. The custom sorting can be applied by adding the [SortComparer](https://help.syncfusion.com/cr/wpf/Syncfusion.Data.SortComparer.html) instance to [SfDataGrid.SortComparers](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_SortComparers). 
 
 The [SortComparer](https://help.syncfusion.com/cr/wpf/Syncfusion.Data.SortComparer.html) have the following properties,
 
@@ -253,7 +253,7 @@ public class CustomComparer : IComparer<object>, ISortDirection
 {% endtabs %}
 
 
-### Adding custom comparer to SfDataGrid
+### Adding custom comparer to Data Grid
 
 Custom comparer can be added to [SfDataGrid.SortComparers](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_SortComparers) property. `SortComparers` maintains custom comparers and the custom comparer gets called when corresponding column gets sorted by clicking column header or programmatically.
 
@@ -282,7 +282,7 @@ Sorting CustomerName column sorts the data using custom comparer available in `S
 
 ## Sorting the underlying collection
 
-SfDataGrid sorts the records in UI and maintains in its internal CollectionView and it will not change the order of data in underlying collection. 
+Data Grid sorts the records in UI and maintains in its internal CollectionView and it will not change the order of data in underlying collection. 
 
 You can get sorted data from `SfDataGrid.View.Records` when groups is not in place and `SfDataGrid.View.TopLevelGroup.DisplayElements` when grouping in place. 
 
@@ -367,10 +367,10 @@ void dataGrid_SortColumnsChanging(object sender, Syncfusion.UI.Xaml.Grid.GridSor
 ## See Also
 [How to sort a column in WPF DataGrid?](https://support.syncfusion.com/kb/article/9555/how-to-sort-a-column-in-wpf-datagrid-sfdatagrid)
 
-[How to customize the Filtering and Sorting icons in the SfDataGrid ?](https://support.syncfusion.com/kb/article/7261/how-to-customize-the-filtering-and-sorting-icons-in-wpf-datagrid-sfdatagrid)
+[How to customize the Filtering and Sorting icons?](https://support.syncfusion.com/kb/article/7261/how-to-customize-the-filtering-and-sorting-icons-in-wpf-datagrid-sfdatagrid)
 
-[How to sort multiple column without pressing Ctrl key in SfDataGrid?](https://support.syncfusion.com/kb/article/6625/how-to-sort-multiple-column-without-pressing-ctrl-key-in-wpf-datagrid-sfdatagrid)
+[How to sort multiple column without pressing Ctrl key?](https://support.syncfusion.com/kb/article/6625/how-to-sort-multiple-column-without-pressing-ctrl-key-in-wpf-datagrid-sfdatagrid)
 
-[How to change the position of FilterToggleButton and SortIcon in header cell of SfDataGrid?](https://support.syncfusion.com/kb/article/4194/how-to-change-the-position-of-header-cell-in-wpf-datagrid)
+[How to change the position of FilterToggleButton and SortIcon in header cell?](https://support.syncfusion.com/kb/article/4194/how-to-change-the-position-of-header-cell-in-wpf-datagrid)
 
 [How to sort your binded collection of ViewModel?](https://support.syncfusion.com/kb/article/2850/how-to-sort-your-binded-collection-of-viewmodel-in-wpf-datagrid)

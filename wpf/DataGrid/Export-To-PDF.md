@@ -9,7 +9,7 @@ documentation: ug
 
 # Export To PDF in WPF Data Grid
 
-[WPF DataGrid](https://www.syncfusion.com/wpf-controls/datagrid) provides support to export data to PDF file. It also provides support for grouping, filtering, sorting, paging, unbound rows, merged cells, stacked headers and details View while exporting.
+[WPF Data Grid](https://www.syncfusion.com/wpf-controls/datagrid) provides support to export data to PDF file. It also provides support for grouping, filtering, sorting, paging, unbound rows, merged cells, stacked headers and details View while exporting.
 
 The following assemblies needs to be added for exporting to PDF file. 
 
@@ -18,7 +18,7 @@ The following assemblies needs to be added for exporting to PDF file.
 
 For NuGet package, have to install [Syncfusion.DataGridExcelExport.WPF](https://www.nuget.org/packages/Syncfusion.DataGridExcelExport.WPF) package. For more details refer this [UG link](https://help.syncfusion.com/wpf/control-dependencies#exporting-datagrid-to-excel-pdf-and-csv).
 
-You can export SfDataGrid to PDF by using the following extension methods present in the [Syncfusion.UI.Xaml.Grid.Converter](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.Converter.html) namespace.
+You can export Data Grid to PDF by using the following extension methods present in the [Syncfusion.UI.Xaml.Grid.Converter](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.Converter.html) namespace.
 
 * [ExportToPdf](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.Converter.GridPdfExportExtension.html#Syncfusion_UI_Xaml_Grid_Converter_GridPdfExportExtension_ExportToPdf_Syncfusion_UI_Xaml_Grid_SfDataGrid_)
 * [ExportToPdfGrid](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.Converter.GridPdfExportExtension.html#Syncfusion_UI_Xaml_Grid_Converter_GridPdfExportExtension_ExportToPdfGrid_Syncfusion_UI_Xaml_Grid_SfDataGrid_Syncfusion_Data_ICollectionViewAdv_Syncfusion_UI_Xaml_Grid_Converter_PdfExportingOptions_)
@@ -31,7 +31,7 @@ document.Save("Sample.pdf");
 {% endhighlight %}
 {% endtabs %}
 
-N> SfDataGrid exports data to PDF file by using [Essential PDF](https://help.syncfusion.com/file-formats/pdf/overview). You can refer [PDF documentation](https://help.syncfusion.com/file-formats/pdf/working-with-document) for manipulating.
+N> Data Grid exports data to PDF file by using [Essential PDF](https://help.syncfusion.com/file-formats/pdf/overview). You can refer [PDF documentation](https://help.syncfusion.com/file-formats/pdf/working-with-document) for manipulating.
 
 ## PDF exporting options
 
@@ -39,7 +39,7 @@ Exporting operation can be customized by passing [PdfExportingOptions](https://h
 
 ### Auto size column widths in PDF
 
-You can export SfDataGrid to PDF by fitting column widths based on its content by setting [AutoColumnWidth](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.Converter.PdfExportingOptions.html#Syncfusion_UI_Xaml_Grid_Converter_PdfExportingOptions_AutoColumnWidth) property as `true`. 
+You can export Data Grid to PDF by fitting column widths based on its content by setting [AutoColumnWidth](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.Converter.PdfExportingOptions.html#Syncfusion_UI_Xaml_Grid_Converter_PdfExportingOptions_AutoColumnWidth) property as `true`. 
 
 {% tabs %}
 {% highlight c# %}
@@ -52,7 +52,7 @@ document.Save("Sample.pdf");
 
 ### Auto size row heights in PDF
 
-You can export SfDataGrid to PDF by fitting row heights based on its content by setting [AutoRowHeight](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.Converter.PdfExportingOptions.html#Syncfusion_UI_Xaml_Grid_Converter_PdfExportingOptions_AutoRowHeight) property as `true`. 
+You can export Data Grid to PDF by fitting row heights based on its content by setting [AutoRowHeight](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.Converter.PdfExportingOptions.html#Syncfusion_UI_Xaml_Grid_Converter_PdfExportingOptions_AutoRowHeight) property as `true`. 
 
 {% tabs %}
 {% highlight c# %}
@@ -65,7 +65,7 @@ document.Save("Sample.pdf");
 
 ### Exclude columns while exporting
 
-By default, all the columns (including hidden columns) in SfDataGrid will be exported to PDF. If you want to exclude some columns while exporting to PDF, you can use [ExcludeColumns](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.Converter.PdfExportingOptions.html#Syncfusion_UI_Xaml_Grid_Converter_PdfExportingOptions_ExcludeColumns) property in [PdfExportingOptions](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.Converter.PdfExportingOptions.html).
+By default, all the columns (including hidden columns) in Data Grid will be exported to PDF. If you want to exclude some columns while exporting to PDF, you can use [ExcludeColumns](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.Converter.PdfExportingOptions.html#Syncfusion_UI_Xaml_Grid_Converter_PdfExportingOptions_ExcludeColumns) property in [PdfExportingOptions](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.Converter.PdfExportingOptions.html).
 
 {% tabs %}
 {% highlight c# %}
@@ -133,7 +133,7 @@ document.Save("Sample.pdf");
 
 ### Exclude groups while exporting
 
-By default, all the groups in dataGrid will be exported to PDF. If you want to export without Groups, you need to set [ExportGroups](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.Converter.PdfExportingOptions.html#Syncfusion_UI_Xaml_Grid_Converter_PdfExportingOptions_ExportGroups) property as `false`.
+By default, all the groups in the Data Grid will be exported to PDF. If you want to export without Groups, you need to set [ExportGroups](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.Converter.PdfExportingOptions.html#Syncfusion_UI_Xaml_Grid_Converter_PdfExportingOptions_ExportGroups) property as `false`.
 
 {% tabs %}
 {% highlight c# %}
@@ -146,7 +146,7 @@ document.Save("Sample.pdf");
 
 ### Exclude group Summaries while exporting
 
-By default, group summaries in dataGrid will be exported to PDF. If you want to export without group summaries, you need to set [ExportGroupSummary](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.Converter.PdfExportingOptions.html#Syncfusion_UI_Xaml_Grid_Converter_PdfExportingOptions_ExportGroupSummary) property as `false`.
+By default, group summaries in the Data Grid will be exported to PDF. If you want to export without group summaries, you need to set [ExportGroupSummary](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.Converter.PdfExportingOptions.html#Syncfusion_UI_Xaml_Grid_Converter_PdfExportingOptions_ExportGroupSummary) property as `false`.
 
 {% tabs %}
 {% highlight c# %}
@@ -159,7 +159,7 @@ document.Save("Sample.pdf");
 
 ### Exclude table Summaries while exporting
 
-By default, table summaries in dataGrid will be exported to PDF. If you want to export without table summaries, you need to set [ExportTableSummary](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.Converter.PdfExportingOptions.html#Syncfusion_UI_Xaml_Grid_Converter_PdfExportingOptions_ExportTableSummary) property as `false`.
+By default, table summaries in the Data Grid will be exported to PDF. If you want to export without table summaries, you need to set [ExportTableSummary](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.Converter.PdfExportingOptions.html#Syncfusion_UI_Xaml_Grid_Converter_PdfExportingOptions_ExportTableSummary) property as `false`.
 
 {% tabs %}
 {% highlight c# %}
@@ -211,7 +211,7 @@ document.Save("Sample.pdf");
 
 ## Setting Header and Footer
 
-SfDataGrid provides a way to display additional content at the top (Header) or bottom (Footer) of the page while exporting to PDF. This can be achieved by setting [PageHeaderFooterEventHandler](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.Converter.PdfExportingOptions.html#Syncfusion_UI_Xaml_Grid_Converter_PdfExportingOptions_PageHeaderFooterEventHandler) in [PdfExportingOptions](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.Converter.PdfExportingOptions.html).
+Data Grid provides a way to display additional content at the top (Header) or bottom (Footer) of the page while exporting to PDF. This can be achieved by setting [PageHeaderFooterEventHandler](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.Converter.PdfExportingOptions.html#Syncfusion_UI_Xaml_Grid_Converter_PdfExportingOptions_PageHeaderFooterEventHandler) in [PdfExportingOptions](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.Converter.PdfExportingOptions.html).
 
 You can insert string, image or any drawing in header and footer in `PdfHeaderFooterEventHandler`. Setting [PdfPageTemplateElement](https://help.syncfusion.com/cr/wpf/Syncfusion.Pdf.PdfPageTemplateElement.html) to [PdfHeaderFooterEventArgs.PdfDocumentTemplate.Top](https://help.syncfusion.com/cr/wpf/Syncfusion.Pdf.PdfDocumentTemplate.html#Syncfusion_Pdf_PdfDocumentTemplate_Top) loads the content at top of the page and setting the `PdfPageTemplateElement` to [PdfHeaderFooterEventArgs.PdfDocumentTemplate.Bottom](https://help.syncfusion.com/cr/wpf/Syncfusion.Pdf.PdfDocumentTemplate.html#Syncfusion_Pdf_PdfDocumentTemplate_Bottom) loads the content at bottom of the page.
 
@@ -233,7 +233,7 @@ static void PdfHeaderFooterEventHandler(object sender, PdfHeaderFooterEventArgs 
 {% endhighlight %}
 {% endtabs %}
 
-![WPF DataGrid displays Export to PDF with Header and Footer](export-to-pdf_images/wpf-datagrid-header-footer.png)
+![Export to PDF with Header and Footer](export-to-pdf_images/wpf-datagrid-header-footer.png)
 
 Here, `string` is inserted in the header of exported PDF file using [DrawString](https://help.syncfusion.com/cr/wpf/Syncfusion.Pdf.Graphics.PdfGraphics.html#Syncfusion_Pdf_Graphics_PdfGraphics_DrawString_System_String_Syncfusion_Pdf_Graphics_PdfFont_Syncfusion_Pdf_Graphics_PdfBrush_System_Drawing_PointF_) method. Similarly, you can insert image, line,etc. using [DrawImage](https://help.syncfusion.com/cr/wpf/Syncfusion.Pdf.Graphics.PdfGraphics.html#Syncfusion_Pdf_Graphics_PdfGraphics_DrawImage_Syncfusion_Pdf_Graphics_PdfImage_System_Drawing_PointF_), [DrawLine](https://help.syncfusion.com/cr/wpf/Syncfusion.Pdf.Graphics.PdfGraphics.html#Syncfusion_Pdf_Graphics_PdfGraphics_DrawLine_Syncfusion_Pdf_Graphics_PdfPen_System_Drawing_PointF_System_Drawing_PointF_) methods respectively. 
 
@@ -261,7 +261,7 @@ document.Save("Sample.pdf");
 {% endhighlight %}
 {% endtabs %}
 
-## Export DataGrid SelectedItems to PDF
+## Export Data Grid SelectedItems to PDF
 
 By default, entire grid will be exported to PDF. You can export selected items only by passing `SelectedItems` to [ExportToPdf](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.Converter.GridPdfExportExtension.html#Syncfusion_UI_Xaml_Grid_Converter_GridPdfExportExtension_ExportToPdf_Syncfusion_UI_Xaml_Grid_SfDataGrid_) and [ExportToPdfGrid](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.Converter.GridPdfExportExtension.html#Syncfusion_UI_Xaml_Grid_Converter_GridPdfExportExtension_ExportToPdfGrid_Syncfusion_UI_Xaml_Grid_SfDataGrid_Syncfusion_Data_ICollectionViewAdv_Syncfusion_UI_Xaml_Grid_Converter_PdfExportingOptions_) methods.
 
@@ -274,7 +274,7 @@ document.Save("Sample.pdf");
 {% endhighlight %}
 {% endtabs %}
 
-![WPF DataGrid SelectedItems Exported to PDF](export-to-pdf_images/wpf-datagrid-export-selected-items.png)
+![SelectedItems Exported to PDF](export-to-pdf_images/wpf-datagrid-export-selected-items.png)
 
 ## Saving options
 
@@ -355,7 +355,7 @@ window.Show();
 {% endhighlight %}
 {% endtabs %}
 
-![WPF DataGrid Exported to PDF Viewer](export-to-pdf_images/wpf-datagrid-export-pdf-viewer.png)
+![Exported to PDF Viewer](export-to-pdf_images/wpf-datagrid-export-pdf-viewer.png)
 
 ## Exporting Customization
 
@@ -385,7 +385,7 @@ void GridPdfExportingEventHandler(object sender, GridPdfExportingEventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-![WPF DataGrid displays Exported PDF File](export-to-pdf_images/wpf-datagrid-export-pdf-file.png)
+![Exported PDF File](export-to-pdf_images/wpf-datagrid-export-pdf-file.png)
 
 ### Embedding fonts in PDF file
 
@@ -448,7 +448,7 @@ private void CellsExportingEventHandler(object sender, GridCellPdfExportingEvent
 {% endhighlight %}
 {% endtabs %}
 
-![Customizing Cell Values while Exporting PDF File in WPF DataGrid](export-to-pdf_images/wpf-datagrid-cell-values-customization.png)
+![Customizing Cell Values while Exporting PDF File](export-to-pdf_images/wpf-datagrid-cell-values-customization.png)
 
 Here, cell values are changed for `IsClosed` column based on custom condition.
 
@@ -480,11 +480,11 @@ private void CellsExportingEventHandler(object sender, GridCellPdfExportingEvent
 {% endhighlight %}
 {% endtabs %}
 
-![Changing PDF Grid Row Style while Exporting from WPF DataGrid](export-to-pdf_images/wpf-datagrid-row-style.png)
+![Changing PDF Grid Row Style while Exporting](export-to-pdf_images/wpf-datagrid-row-style.png)
 
-### Exporting Middle Eastern Languages (Arabic, Hebrew) from SfDataGrid to PDF
+### Exporting Middle Eastern Languages (Arabic, Hebrew) from Data Grid to PDF
 
-By default, [Middle Eastern languages ](https://en.wikipedia.org/wiki/Middle_East)(Arabic, Hebrew) in SfDataGrid are exported as left to right in PDF. You can export them as displayed in SfDataGrid (export from Right to Left) by enabling [RightToLeft](https://help.syncfusion.com/cr/wpf/Syncfusion.Pdf.Graphics.PdfStringFormat.html#Syncfusion_Pdf_Graphics_PdfStringFormat_RightToLeft) property in [PdfStringFormat](https://help.syncfusion.com/cr/wpf/Syncfusion.Pdf.Graphics.PdfStringFormat.html) class and apply the format to the [PdfGridCell](https://help.syncfusion.com/cr/wpf/Syncfusion.Pdf.Grid.PdfGridCell.html) by using [CellsExportingEventHandler](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.Converter.PdfExportingOptions.html#Syncfusion_UI_Xaml_Grid_Converter_PdfExportingOptions_CellsExportingEventHandler).
+By default, [Middle Eastern languages ](https://en.wikipedia.org/wiki/Middle_East)(Arabic, Hebrew) in Data Grid are exported as left to right in PDF. You can export them as displayed in the control (export from Right to Left) by enabling [RightToLeft](https://help.syncfusion.com/cr/wpf/Syncfusion.Pdf.Graphics.PdfStringFormat.html#Syncfusion_Pdf_Graphics_PdfStringFormat_RightToLeft) property in [PdfStringFormat](https://help.syncfusion.com/cr/wpf/Syncfusion.Pdf.Graphics.PdfStringFormat.html) class and apply the format to the [PdfGridCell](https://help.syncfusion.com/cr/wpf/Syncfusion.Pdf.Grid.PdfGridCell.html) by using [CellsExportingEventHandler](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.Converter.PdfExportingOptions.html#Syncfusion_UI_Xaml_Grid_Converter_PdfExportingOptions_CellsExportingEventHandler).
 
 {% tabs %}
 {% highlight c# %}
@@ -508,7 +508,7 @@ private void CellsExportingEventHandler(object sender, GridCellPdfExportingEvent
 {% endhighlight %}
 {% endtabs %}
 
-![Exporting Middle Eastern Languages from WPF DataGrid to PDF File](export-to-pdf_images/wpf-datagrid-export-with-eastern-language.png)
+![Exporting Middle Eastern Languages to PDF File](export-to-pdf_images/wpf-datagrid-export-with-eastern-language.png)
 
 ### Exporting images to PDF document
 
@@ -555,7 +555,7 @@ private void CellsExportingEventHandler(object sender, GridCellPdfExportingEvent
 {% endhighlight %}
 {% endtabs %}
 
-![WPF DataGrid displays Export to PDF File with Image](export-to-pdf_images/wpf-datagrid-export-with-image.png)
+![Export to PDF File with Image](export-to-pdf_images/wpf-datagrid-export-with-image.png)
 
 ## Exporting DetailsView
 
@@ -570,7 +570,7 @@ document.Save("Sample.pdf");
 {% endhighlight %}
 {% endtabs %}
 
-![WPF DataGrid displays Nested Grid Exported to PDF File](export-to-pdf_images/wpf-datagrid-export-nested-grid.png)
+![Nested Grid Exported to PDF File](export-to-pdf_images/wpf-datagrid-export-nested-grid.png)
 
 By default, only expanded DetailsViewDataGrids only will be exported to PDF document. If you want to export all the DetailsViewDataGrids, you need to set [ExportAllDetails](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.Converter.PdfExportingOptions.html#Syncfusion_UI_Xaml_Grid_Converter_PdfExportingOptions_ExportAllDetails) as `true`.
 
@@ -584,9 +584,9 @@ document.Save("Sample.pdf");
 {% endhighlight %}
 {% endtabs %}
 
-![WPF Nested DataGrid Exported to PDF File](export-to-pdf_images/wpf-datagrid-export-with-multiple-grid.png)
+![Nested Grids Exported to PDF File](export-to-pdf_images/wpf-datagrid-export-with-multiple-grid.png)
 
-Here, first record only expanded in SfDataGrid. But all the DetailsViewDataGrid’s are shown in exported PDF document.
+Here, first record only expanded in the Data Grid. But all the DetailsViewDataGrid’s are shown in exported PDF document.
 
 You can customize its exporting operation by using [ChildGridExportingEventHandler](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.Converter.PdfExportingOptions.html#Syncfusion_UI_Xaml_Grid_Converter_PdfExportingOptions_ChildGridExportingEventHandler).
 
@@ -614,7 +614,7 @@ void ChildGridExportingEventHandler(object sender, ChildGridPdfExportingEventArg
 {% endhighlight %}
 {% endtabs %}
 
-![Exporting PDF File from WPF MasterDetailsView DataGrid](export-to-pdf_images/wpf-datagrid-export-with-details-view.png)
+![Exporting PDF File from MasterDetailsView](export-to-pdf_images/wpf-datagrid-export-with-details-view.png)
 
 Here, `DetailsViewDataGrid` is not exported for the parent record having `OrderID` as 1002.
 
@@ -637,13 +637,13 @@ void ChildGridExportingEventHandler(object sender, ChildGridPdfExportingEventArg
 {% endhighlight %}
 {% endtabs %}
 
-![Exporting PDF File from WPF DataGrid without DetailsView](export-to-pdf_images/wpf-datagrid-export-without-details-view.png)
+![Exporting PDF File without DetailsView](export-to-pdf_images/wpf-datagrid-export-without-details-view.png)
 
 Here, `OrderID` column is displayed in `DetailsViewDataGrid` and it is excluded while exporting to PDF.
 
 ### Customizing DetailsViewDataGrid cells
 
-Like parent DataGrid, You can customize the `DetailsViewDataGrid` cells also by using [CellsExportingEventHandler](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.Converter.PdfExportingOptions.html#Syncfusion_UI_Xaml_Grid_Converter_PdfExportingOptions_CellsExportingEventHandler). Based on [GridCellPdfExportingEventArgs.GridViewDefinition](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.Converter.GridCellPdfExportingEventArgs.html#Syncfusion_UI_Xaml_Grid_Converter_GridCellPdfExportingEventArgs_GridViewDefinition) property, you can identify the particular `DetailsViewDataGrid` and customize it.
+Like the parent grid, You can customize the `DetailsViewDataGrid` cells also by using [CellsExportingEventHandler](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.Converter.PdfExportingOptions.html#Syncfusion_UI_Xaml_Grid_Converter_PdfExportingOptions_CellsExportingEventHandler). Based on [GridCellPdfExportingEventArgs.GridViewDefinition](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.Converter.GridCellPdfExportingEventArgs.html#Syncfusion_UI_Xaml_Grid_Converter_GridCellPdfExportingEventArgs_GridViewDefinition) property, you can identify the particular `DetailsViewDataGrid` and customize it.
 
 {% tabs %}
 {% highlight c# %}
@@ -670,6 +670,6 @@ private void CellsExportingEventHandler(object sender, GridCellPdfExportingEvent
 {% endhighlight %}
 {% endtabs %}
 
-![Customizing WPF DetailsView DataGrid Cells Exported to PDF File](export-to-pdf_images/wpf-datagrid-details-view-cells-customization.png)
+![Customizing DetailsView Cells Exported to PDF File](export-to-pdf_images/wpf-datagrid-details-view-cells-customization.png)
 
 
