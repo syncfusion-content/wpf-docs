@@ -7,9 +7,9 @@ control: CurrencyTextBox
 documentation: ug
 ---
 
-# Changing Currency Value in WPF CurrencyTextBox
+# Changing Currency Value in WPF Currency TextBox
 
-The [CurrencyTextBox](https://www.syncfusion.com/wpf-ui-controls/currency-textbox) allows the user to change the value using the [Value](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.CurrencyTextBox.html#Syncfusion_Windows_Shared_CurrencyTextBox_Value) property.
+The [WPF Currency TextBox](https://www.syncfusion.com/wpf-ui-controls/currency-textbox) allows the user to change the value using the [Value](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.CurrencyTextBox.html#Syncfusion_Windows_Shared_CurrencyTextBox_Value) property.
 
 {%tabs%}
 {% highlight xaml %}
@@ -30,9 +30,9 @@ currencyTextBox.Value = 10;
 
 ![WPF CurrencyTextBox displays Value](Changing-Currency-Value_images/wpf-currency-textbox-value.jpeg)
 
-Data binding is the process of establishing a connection between the application UI and business logic. Data binding can be unidirectional (source -> target or target <- source) or bidirectional (source <-> target). By assigning a value to the `Value` property by binding, you can change the `CurrencyTextBox` value.
+Data binding is the process of establishing a connection between the application UI and business logic. Data binding can be unidirectional (source -> target or target <- source) or bidirectional (source <-> target). By assigning a value to the `Value` property by binding, you can change the `WPF Currency TextBox` value.
 
-The following code snippets illustrate the value binding from one `CurrencyTextBox` to another.
+The following code snippets illustrate the value binding from one `WPF Currency TextBox` to another.
 
 {%tabs%}
 {% highlight xaml %}
@@ -74,7 +74,7 @@ public class ViewModel : NotificationObject
 
 ## Change Currency Value by Pasting the Clipboard's Text
 
-By default, `CurrencyTextBox` simply replaces the whole value with the copied value using the current number format. If you want to replace or insert the copied value at a specific position, set the [PasteMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.EditorBase.html#Syncfusion_Windows_Shared_EditorBase_PasteMode) property to `Advanced`. The default value of `PasteMode` is `Default` (always replace the entire value, regardless of the cursor position or selection).
+By default, `WPF Currency TextBox` simply replaces the whole value with the copied value using the current number format. If you want to replace or insert the copied value at a specific position, set the [PasteMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.EditorBase.html#Syncfusion_Windows_Shared_EditorBase_PasteMode) property to `Advanced`. The default value of `PasteMode` is `Default` (always replace the entire value, regardless of the cursor position or selection).
 
 The following table explains the pasting behaviour in `Advanced` paste mode,
 
@@ -134,7 +134,7 @@ currencyTextBox.Value = 12345.67;
 
 ## Show UpDown Button
 
-You can increment or decrement the currency value of `CurrencyTextBox` by setting the `ShowSpinButton` property value as `true`. Click UpButton to increment or DownButton to decrement the currency value. The default value of `ShowSpinButton` property is `false`.
+You can increment or decrement the currency value of `WPF Currency TextBox` by setting the `ShowSpinButton` property value as `true`. Click UpButton to increment or DownButton to decrement the currency value. The default value of `ShowSpinButton` property is `false`.
 
 {%tabs%}
 {% highlight xaml %}
@@ -154,7 +154,7 @@ currencyTextBox.ShowSpinButton = true;
 
 ## Value Changed Event
 
-The `CurrencyTextBox` control can notify changes in value through the [ValueChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.CurrencyTextBox.html) event. In the `ValueChanged` event, you can get the old and new value from the `OldValue` and `NewValue` properties.
+The `WPF Currency TextBox` control can notify changes in value through the [ValueChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.CurrencyTextBox.html) event. In the `ValueChanged` event, you can get the old and new value from the `OldValue` and `NewValue` properties.
 
 {%tabs%}
 {% highlight xaml %}
@@ -187,7 +187,7 @@ private void CurrencyTextBox_ValueChanged(DependencyObject d, DependencyProperty
 
 ## Setting the Null value
 
- By default, the `CurrencyTextBox` control will display zero value when the `Value` is set to `null`. You can use the [NullValue](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.CurrencyTextBox.html#Syncfusion_Windows_Shared_CurrencyTextBox_NullValue) and [UseNullOption](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.EditorBase.html#Syncfusion_Windows_Shared_EditorBase_UseNullOption) properties to show the null or any other value instead of zero.
+ By default, the `WPF Currency TextBox` control will display zero value when the `Value` is set to `null`. You can use the [NullValue](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.CurrencyTextBox.html#Syncfusion_Windows_Shared_CurrencyTextBox_NullValue) and [UseNullOption](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.EditorBase.html#Syncfusion_Windows_Shared_EditorBase_UseNullOption) properties to show the null or any other value instead of zero.
  
  The default value of the `NullValue` property is `null`, you can reset this to any other currency value. It will display only on setting the `UseNullOption` property is set to `true`.
  
@@ -241,7 +241,7 @@ You can display placeholder text within the control by setting the [WatermarkTex
 
 ### Setting the WatermarkText Foreground
 
-The `CurrencyTextBox` allows you to set the desired brush as a foreground for `WaterMarkText` using [WaterMarkTextForeground](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.EditorBase.html#Syncfusion_Windows_Shared_EditorBase_WatermarkTextForeground) property. The default color of `WaterMarkTextForeground` is `Black`.
+The `WPF Currency TextBox` allows you to set the desired brush as a foreground for `WaterMarkText` using [WaterMarkTextForeground](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.EditorBase.html#Syncfusion_Windows_Shared_EditorBase_WatermarkTextForeground) property. The default color of `WaterMarkTextForeground` is `Black`.
 
 {% tabs %}
 {% highlight XAML %}
@@ -289,6 +289,6 @@ You can customize the Visual appearance of the `WatermarkText` by using the [Wat
 
 ![Customizing Watermark Text in WPF CurrencyTextBox](Changing-Currency-Value_images/wpf-currency-textbox-watermark-customization.png)
 
-N> The `UseNullOption` property must be enabled if you want to see `NullValue` or `WaterMarkText` in `CurrencyTextBox` control.
+N> The `UseNullOption` property must be enabled if you want to see `NullValue` or `WaterMarkText` in `WPF Currency TextBox` control.
 
 N> If both `NullValue` and `WaterMarkText` are specified, you will only see `NullValue` but not `WaterMarkText`.
