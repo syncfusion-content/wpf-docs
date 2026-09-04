@@ -1,14 +1,14 @@
-﻿---
+---
 layout: post
-title: Merge Cells in WPF SfTreeGrid | Syncfusion®
-description: Merge Cells in SfTreeGrid combines adjacent cells with matching values to improve data organization and readability.
-control: SfTreeGrid
+title: Merge Cells in WPF TreeGrid | Syncfusion®
+description: Merge Cells in TreeGrid combines adjacent cells with matching values to improve data organization and readability.
+control: TreeGrid
 documentation: ug
 ---
 
-# Merge Cells in WPF SfTreeGrid
+# Merge Cells in WPF TreeGrid
 
-SfTreeGrid allows you to merge a range of adjacent cells in a row across columns using the [QueryCoveredRange](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html) event.
+WPF TreeGrid allows you to merge a range of adjacent cells in a row across columns using the [QueryCoveredRange](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html) event.
 
 The `QueryCoveredRange` event occurs when each cell is arranged. While scrolling, the merged range will be added for newly added columns through this event and will also be removed for the columns that are out of view.
 
@@ -61,7 +61,7 @@ void treeGrid_QueryCoveredRange(object sender, Syncfusion.UI.Xaml.TreeGrid.TreeG
 {% endhighlight %}
 {% endtabs %}
 
-![WPF TreeGrid with Merged Cells](MergeCells_images/wpf-treegrid-merge-cells.png)
+![Merged Cells](MergeCells_images/wpf-treegrid-merge-cells.png)
 
 ## Merge all cells in a parent node
 
@@ -167,9 +167,9 @@ class RequestTreeItemsBehavior : Behavior<SfTreeGrid>
 {% endhighlight %}
 {% endtabs %}
 
-![WPF TreeGrid with Merged Parent Nodes](MergeCells_images/wpf-treegrid-merge-parent-nodes.png)
+![Merged Parent Nodes](MergeCells_images/wpf-treegrid-merge-parent-nodes.png)
 
 Refer to [Sample](https://github.com/SyncfusionExamples/how-to-merge-cells-in-a-row-in-wpf-treegrid).
 
 
-N> You can refer to our [WPF TreeGrid](https://www.syncfusion.com/wpf-controls/treegrid) feature tour page for its groundbreaking feature representations. You can also explore our [WPF TreeGrid example](https://github.com/syncfusion/wpf-demos) to know how to render and configure the TreeGrid.
+N> You can refer to our [WPF TreeGrid](https://www.syncfusion.com/wpf-controls/treegrid) feature tour page for its groundbreaking feature representations. You can also explore our [WPF TreeGrid example](https://github.com/syncfusion/wpf-demos) to know how to render and configure the control.

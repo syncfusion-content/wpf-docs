@@ -1,19 +1,19 @@
 ---
 layout: post
-title: Load On Demand in WPF SfTreeGrid | Syncfusion®
-description: Load SfTreeGrid child nodes on demand to improve performance when working with large hierarchical data sources.
+title: Load On Demand in WPF TreeGrid | Syncfusion®
+description: Load TreeGrid child nodes on demand to improve performance when working with large hierarchical data sources.
 platform: wpf
-control: SfTreeGrid
+control: TreeGrid
 documentation: ug
 ---
 
-# Load On Demand in WPF SfTreeGrid
+# Load On Demand in WPF TreeGrid
 
-SfTreeGrid supports to load the data in on-demand. It helps to load the child items from services when end-user expands the node. This can be achieved by using the [SfTreeGrid.LoadOnDemandCommand](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_LoadOnDemandCommand) command or [SfTreeGrid.RequestTreeItems](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html) event as follows.                                                                                          
+WPF TreeGrid supports to load the data in on-demand. It helps to load the child items from services when end-user expands the node. This can be achieved by using the [SfTreeGrid.LoadOnDemandCommand](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_LoadOnDemandCommand) command or [SfTreeGrid.RequestTreeItems](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html) event as follows.                                                                                          
 
 ## Load on demand using command
 
-SfTreeGrid allows you to load child items only when they are requested to load on-demand. Initially populate the root Nodes by assigning `SfTreeGrid.ItemsSource` and then when any node is expanded, child items can be loaded using [SfTreeGrid.LoadOnDemandCommand](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_LoadOnDemandCommand).
+TreeGrid allows you to load child items only when they are requested to load on-demand. Initially populate the root Nodes by assigning `SfTreeGrid.ItemsSource` and then when any node is expanded, child items can be loaded using [SfTreeGrid.LoadOnDemandCommand](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_LoadOnDemandCommand).
 
 
 {% tabs %}
@@ -219,7 +219,7 @@ class LoadCommand : ICommand
 
 ### Handling expander visibility
 
-SfTreeGrid shows the expander for a particular node based on return value of [CanExecute](https://docs.microsoft.com/en-us/dotnet/api/system.windows.input.icommand.canexecute?view=netframework-4.8) method of `LoadOnDemandCommand`. If `CanExecute` returns `true`, then expander icon is displayed for that node. If `CanExecute` returns `false`, then expander icon will not displayed for that node. `CanExecute` method gets called to decide the visibility of expander icon and before executing `LoadOnDemandCommand`.
+TreeGrid shows the expander for a particular node based on return value of [CanExecute](https://docs.microsoft.com/en-us/dotnet/api/system.windows.input.icommand.canexecute?view=netframework-4.8) method of `LoadOnDemandCommand`. If `CanExecute` returns `true`, then expander icon is displayed for that node. If `CanExecute` returns `false`, then expander icon will not displayed for that node. `CanExecute` method gets called to decide the visibility of expander icon and before executing `LoadOnDemandCommand`.
 
 {% tabs %}
 {% highlight c# %}
@@ -258,10 +258,10 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/How-to-load-dat
 
 ## Load on demand using event
 
-SfTreeGrid supports to load the data in on-demand through [SfTreeGrid.RequestTreeItems](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html) event. `RequestTreeItems` event is triggered at the time of loading and when user expand any node at runtime. SfTreeGrid gets the root and leaf nodes through this event handler.
-`TreeGridRequestTreeItemsEventArgs.ParentItem` denotes the data object looking for its child nodes. If it is null, it denotes SfTreeGrid requesting root nodes.
+TreeGrid supports to load the data in on-demand through [SfTreeGrid.RequestTreeItems](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html) event. `RequestTreeItems` event is triggered at the time of loading and when user expand any node at runtime. Control gets the root and leaf nodes through this event handler.
+`TreeGridRequestTreeItemsEventArgs.ParentItem` denotes the data object looking for its child nodes. If it is null, it denotes TreeGrid requesting root nodes.
 
-In the below example SfTreeGrid is populated through `SfTreeGrid.RequestTreeItems` instead of setting [SfTreeGrid.ItemsSource](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_ItemsSource).
+In the below example TreeGrid is populated through `SfTreeGrid.RequestTreeItems` instead of setting [SfTreeGrid.ItemsSource](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_ItemsSource).
 
 
 {% tabs %}
@@ -404,16 +404,16 @@ public class ViewModel
 {% endhighlight %}
 {% endtabs %}
 
-You can let SfTreeGrid to populate the data at runtime by calling [SfTreeGrid.RepopulateTree](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_RepopulateTree) method.
-![WPF TreeGrid Load Items in on-demand - TreeGrid Lazy Loading](Getting-Started_images/wpf-treegrid-on-demand-load.gif)
+You can let TreeGrid to populate the data at runtime by calling [SfTreeGrid.RepopulateTree](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_RepopulateTree) method.
+[Load Items in on-demand - TreeGrid Lazy Loading](Getting-Started_images/wpf-treegrid-on-demand-load.gif)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/How-to-load-data-on-demand-using-events-in-wpf-treegrid).
 
 ## Asynchronous load on demand using event
 
-The SfTreeGrid supports loading data asynchronously on-demand by using the [SfTreeGrid.RequestTreeItems](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_RequestTreeItems) event. This event enables you to fetch both parent and child items asynchronously. 
+The TreeGrid supports loading data asynchronously on-demand by using the [SfTreeGrid.RequestTreeItems](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_RequestTreeItems) event. This event enables you to fetch both parent and child items asynchronously. 
 
-In the following example, the SfTreeGrid retrieves parent and child nodes asynchronously by using the `RequestTreeItems` event. 
+In the following example, the TreeGrid retrieves parent and child nodes asynchronously by using the `RequestTreeItems` event. 
 
 {% tabs %}
 {% highlight c# %}
@@ -565,6 +565,6 @@ public class ViewModel
 {% endhighlight %}
 {% endtabs %}
 
-![WPF TreeGrid Asynchronous Load on demand support](Getting-Started_images/wpf-treegrid-async-on-demand-load.gif)
+![Asynchronous Load on demand support](Getting-Started_images/wpf-treegrid-async-on-demand-load.gif)
 
-N> Refer to our [WPF TreeGrid](https://www.syncfusion.com/wpf-controls/treegrid) feature tour page for its groundbreaking feature representations. You can also explore our [WPF TreeGrid example](https://github.com/syncfusion/wpf-demos) to learn how to render and configure the treegrid.
+N> Refer to our [WPF TreeGrid](https://www.syncfusion.com/wpf-controls/treegrid) feature tour page for its groundbreaking feature representations. You can also explore our [example](https://github.com/syncfusion/wpf-demos) to learn how to render and configure the control.

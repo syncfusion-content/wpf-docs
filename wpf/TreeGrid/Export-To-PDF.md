@@ -1,24 +1,24 @@
 ---
 layout: post
-title: Export To PDF in WPF SfTreeGrid | Syncfusion®
-description: Export SfTreeGrid data to PDF with options to include headers, stacked headers, and maintain applied sorting or filtering.
+title: Export To PDF in WPF TreeGrid | Syncfusion®
+description: Export TreeGrid data to PDF with options to include headers, stacked headers, and maintain applied sorting or filtering.
 platform: wpf
-control: SfTreeGrid
+control: TreeGrid
 documentation: ug
 ---
 
-# Export To PDF in WPF SfTreeGrid
+# Export To PDF in WPF TreeGrid
 
-SfTreeGrid provides support to export the data to PDF file. This also provides support to export the headers and stacked headers. This maintains the sorting and filtering processes when exporting.
+WPF TreeGrid provides support to export the data to PDF file. This also provides support to export the headers and stacked headers. This maintains the sorting and filtering processes when exporting.
 
-The following assemblies should be added for exporting a tree grid to PDF file:-
+The following assemblies should be added for exporting a TreeGrid to PDF file:-
 
 * Syncfusion.SfGridConverter.WPF
 * Syncfusion.Pdf.Base
 
 For NuGet package, have to install [Syncfusion.DataGridExcelExport.WPF](https://www.nuget.org/packages/Syncfusion.DataGridExcelExport.WPF) package. For more details refer this [UG link](https://help.syncfusion.com/wpf/control-dependencies#exporting-treegrid-to-excel-pdf-and-csv).
 
-You can export the tree grid to PDF by using the following extension methods present in the [Syncfusion.UI.Xaml.TreeGrid.Converter](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.Converter.html) namespace:-
+You can export the TreeGrid to PDF by using the following extension methods present in the [Syncfusion.UI.Xaml.TreeGrid.Converter](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.Converter.html) namespace:-
 
 * [ExportToPdf](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.Converter.TreeGridPdfExportExtension.html#Syncfusion_UI_Xaml_TreeGrid_Converter_TreeGridPdfExportExtension_ExportToPdf_Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_Syncfusion_UI_Xaml_TreeGrid_Converter_TreeGridPdfExportingOptions_)
 
@@ -32,7 +32,7 @@ document.Save("Sample.pdf");
 {% endhighlight %}
 {% endtabs %}
 
-N> SfTreeGrid exports the data to PDF file using [Essential<sup>®</sup> PDF](http://help.syncfusion.com/file-formats/pdf/overview). You can refer to the [PDF documentation](http://help.syncfusion.com/file-formats/pdf/working-with-document) for manipulation.
+N> TreeGrid exports the data to PDF file using [Essential<sup>®</sup> PDF](http://help.syncfusion.com/file-formats/pdf/overview). You can refer to the [PDF documentation](http://help.syncfusion.com/file-formats/pdf/working-with-document) for manipulation.
 
 ## Export options
 
@@ -40,7 +40,7 @@ The exporting operation can be customized by passing [TreeGridPdfExportingOptio
 
 ### Auto size column width in PDF
 
-You can export a tree grid to PDF by fitting the column width based on its content by setting the [AutoColumnWidth ](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.Converter.TreeGridPdfExportingOptions.html#Syncfusion_UI_Xaml_TreeGrid_Converter_TreeGridPdfExportingOptions_AutoColumnWidth)property to true.
+You can export a TreeGrid to PDF by fitting the column width based on its content by setting the [AutoColumnWidth ](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.Converter.TreeGridPdfExportingOptions.html#Syncfusion_UI_Xaml_TreeGrid_Converter_TreeGridPdfExportingOptions_AutoColumnWidth)property to true.
 
 {% tabs %}
 {% highlight c# %}
@@ -53,7 +53,7 @@ document.Save("Sample.pdf");
 
 ### Auto size row height in PDF
 
-You can export a tree grid to PDF by fitting the row height based on its content by setting the [AutoRowHeight ](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.Converter.TreeGridPdfExportingOptions.html#Syncfusion_UI_Xaml_TreeGrid_Converter_TreeGridPdfExportingOptions_AutoRowHeight)property to `true`.
+You can export a TreeGrid to PDF by fitting the row height based on its content by setting the [AutoRowHeight ](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.Converter.TreeGridPdfExportingOptions.html#Syncfusion_UI_Xaml_TreeGrid_Converter_TreeGridPdfExportingOptions_AutoRowHeight)property to `true`.
 
 {% tabs %}
 {% highlight c# %}
@@ -66,7 +66,7 @@ document.Save("Sample.pdf");
 
 ### Exclude columns when exporting
 
-By default, all the columns (including hidden columns) in the tree grid will be exported to PDF. To exclude some columns when exporting to PDF, use the [ExcludeColumns](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.Converter.TreeGridPdfExportingOptions.html#Syncfusion_UI_Xaml_TreeGrid_Converter_TreeGridPdfExportingOptions_ExcludeColumns) property in [TreeGridPdfExportingOptions](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.Converter.TreeGridPdfExportingOptions.html) class.
+By default, all the columns (including hidden columns) in the TreeGrid will be exported to PDF. To exclude some columns when exporting to PDF, use the [ExcludeColumns](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.Converter.TreeGridPdfExportingOptions.html#Syncfusion_UI_Xaml_TreeGrid_Converter_TreeGridPdfExportingOptions_ExcludeColumns) property in [TreeGridPdfExportingOptions](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.Converter.TreeGridPdfExportingOptions.html) class.
 
 {% tabs %}
 {% highlight c# %}
@@ -147,7 +147,7 @@ e.PdfDocumentTemplate.Top = header;
 {% endhighlight %}
 {% endtabs %}
 
-![WPF TreeGrid Data Exporting to PDF Page](Export-To-PDF_images/wpf-treegrid-export-to-pdf.png)
+![Data Exporting to PDF Page](Export-To-PDF_images/wpf-treegrid-export-to-pdf.png)
 
 Here, `string` is inserted in the header of the exported PDF file using the [DrawString](https://help.syncfusion.com/cr/wpf/Syncfusion.Pdf.Graphics.PdfGraphics.html#Syncfusion_Pdf_Graphics_PdfGraphics_DrawString_System_String_Syncfusion_Pdf_Graphics_PdfFont_Syncfusion_Pdf_Graphics_PdfBrush_System_Drawing_PointF_) method. Similarly, you can insert any image, line, etc., using [DrawImage](https://help.syncfusion.com/cr/wpf/Syncfusion.Pdf.Graphics.PdfGraphics.html#Syncfusion_Pdf_Graphics_PdfGraphics_DrawImage_Syncfusion_Pdf_Graphics_PdfImage_System_Drawing_PointF_), [DrawLine](https://help.syncfusion.com/cr/wpf/Syncfusion.Pdf.Graphics.PdfGraphics.html#Syncfusion_Pdf_Graphics_PdfGraphics_DrawLine_Syncfusion_Pdf_Graphics_PdfPen_System_Drawing_PointF_System_Drawing_PointF_), etc., methods respectively.
 
@@ -257,7 +257,7 @@ window.Show();
 {% endhighlight %}
 {% endtabs %}
 
-![WPF TreeGrid Data Exporting to PDF without Saving](Export-To-PDF_images/wpf-treegrid-export-data-without-saving.png)
+![Data Exporting to PDF without Saving](Export-To-PDF_images/wpf-treegrid-export-data-without-saving.png)
 
 ## Cell appearance customization when exporting
 
@@ -285,7 +285,7 @@ void GridPdfExportingEventHandler(object sender, TreeGridCellPdfExportingEventAr
 {% endhighlight %}
 {% endtabs %}
 
-![Customizing Cell Style based on CellType in Exported WPF TreeGrid Data](Export-To-PDF_images/wpf-treegrid-cell-style.png)
+![Customizing Cell Style based on CellType in Exported Data](Export-To-PDF_images/wpf-treegrid-cell-style.png)
 
 ### Cell styling based on the TreeGridPdfExportingOptions in PDF
 
@@ -352,7 +352,7 @@ void GridPdfExportingEventHandler(object sender, TreeGridCellPdfExportingEventAr
 {% endhighlight %}
 {% endtabs %}
 
-![Customizing Exported WPF TreeGrid Content](Export-To-PDF_images/wpf-treegrid-customize-exported-content.png)
+![Customizing Exported Content](Export-To-PDF_images/wpf-treegrid-customize-exported-content.png)
 
 ### Export images to PDF 
 
@@ -400,7 +400,7 @@ void GridPdfExportingEventHandler(object sender, TreeGridCellPdfExportingEventAr
 {% endhighlight %}
 {% endtabs %}
 
-![Exporting Image to PDF page from WPF TreeGrid Content](Export-To-PDF_images/wpf-treegrid-export-with-image.png)
+![Exporting Image to PDF page Content](Export-To-PDF_images/wpf-treegrid-export-with-image.png)
 
 You can download the sample [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/PdfExportingDemo386427743.zip).
 
@@ -432,7 +432,7 @@ You can download the sample [here](http://www.syncfusion.com/downloads/support/d
 
 ## Export parent and expanded child nodes
 
-By default, all the tree grid nodes will be exported when exporting. You can export the parent and expanded child nodes alone by overriding the [ExportNodesToPdf](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.Converter.TreeGridToPdfConverter.html#Syncfusion_UI_Xaml_TreeGrid_Converter_TreeGridToPdfConverter_ExportNodesToPdf_Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_Syncfusion_UI_Xaml_TreeGrid_TreeNodes_Syncfusion_Pdf_Grid_PdfGrid_Syncfusion_UI_Xaml_TreeGrid_Converter_TreeGridPdfExportingOptions_) method of [TreeGridToPdfConverter](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.Converter.TreeGridToPdfConverter.html) class,
+By default, all the TreeGrid nodes will be exported when exporting. You can export the parent and expanded child nodes alone by overriding the [ExportNodesToPdf](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.Converter.TreeGridToPdfConverter.html#Syncfusion_UI_Xaml_TreeGrid_Converter_TreeGridToPdfConverter_ExportNodesToPdf_Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_Syncfusion_UI_Xaml_TreeGrid_TreeNodes_Syncfusion_Pdf_Grid_PdfGrid_Syncfusion_UI_Xaml_TreeGrid_Converter_TreeGridPdfExportingOptions_) method of [TreeGridToPdfConverter](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.Converter.TreeGridToPdfConverter.html) class,
 
 {% tabs %}
 {% highlight c# %}
@@ -477,7 +477,7 @@ You can download the sample [here](http://www.syncfusion.com/downloads/support/d
 
 ## Export Middle Eastern languages (Arabic and Hebrew) content to PDF
 
-By default, [Middle Eastern languages ](http://en.wikipedia.org/wiki/Middle_East)(Arabic and Hebrew) in the tree grid will be exported from left to right in PDF. You can export them as displayed in the tree grid (export from right to left) by enabling the[RightToLeft](https://help.syncfusion.com/cr/wpf/Syncfusion.Pdf.Graphics.PdfStringFormat.html#Syncfusion_Pdf_Graphics_PdfStringFormat_RightToLeft) property in [PdfStringFormat](http://help.syncfusion.com/cr/wpf/Syncfusion.Pdf.Graphics.PdfStringFormat.html) class and apply the format to [PdfGridCell](http://help.syncfusion.com/cr/wpf/Syncfusion.Pdf.Grid.PdfGridCell.html) class using the [CellsExportingEventHandler](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.Converter.TreeGridPdfExportingOptions.html#Syncfusion_UI_Xaml_TreeGrid_Converter_TreeGridPdfExportingOptions_CellsExportingEventHandler) property.
+By default, [Middle Eastern languages ](http://en.wikipedia.org/wiki/Middle_East)(Arabic and Hebrew) in the TreeGrid will be exported from left to right in PDF. You can export them as displayed (export from right to left) by enabling the[RightToLeft](https://help.syncfusion.com/cr/wpf/Syncfusion.Pdf.Graphics.PdfStringFormat.html#Syncfusion_Pdf_Graphics_PdfStringFormat_RightToLeft) property in [PdfStringFormat](http://help.syncfusion.com/cr/wpf/Syncfusion.Pdf.Graphics.PdfStringFormat.html) class and apply the format to [PdfGridCell](http://help.syncfusion.com/cr/wpf/Syncfusion.Pdf.Grid.PdfGridCell.html) class using the [CellsExportingEventHandler](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.Converter.TreeGridPdfExportingOptions.html#Syncfusion_UI_Xaml_TreeGrid_Converter_TreeGridPdfExportingOptions_CellsExportingEventHandler) property.
 
 {% tabs %}
 {% highlight c# %}
@@ -500,9 +500,9 @@ void GridPdfExportingEventHandler(object sender, TreeGridCellPdfExportingEventAr
 {% endhighlight %}
 {% endtabs %}
 
-![Exporting with Arabic Language Text from WPF TreeGrid to PDF Page](Export-To-PDF_images/wpf-treegrid-export-arabic-text.png)
+![Exporting with Arabic Language Text to PDF Page](Export-To-PDF_images/wpf-treegrid-export-arabic-text.png)
 
 You can download the sample [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ExportMiddleEstern_to_PDF32087667.zip).
 
 
-N> You can refer to our [WPF TreeGrid](https://www.syncfusion.com/wpf-controls/treegrid) feature tour page for its groundbreaking feature representations. You can also explore our [WPF TreeGrid example](https://github.com/syncfusion/wpf-demos) to know how to render and configure the treegrid.
+N> You can refer to our [WPF TreeGrid](https://www.syncfusion.com/wpf-controls/treegrid) feature tour page for its groundbreaking feature representations. You can also explore our [WPF TreeGrid example](https://github.com/syncfusion/wpf-demos) to know how to render and configure control.

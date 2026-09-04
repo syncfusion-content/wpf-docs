@@ -1,15 +1,15 @@
-﻿---
+---
 layout: post
-title: Editing in WPF SfTreeGrid | Syncfusion®
-description: Enable cell editing in SfTreeGrid with support for custom editors, edit modes, and validation during data updates.
+title: Editing in WPF TreeGrid | Syncfusion®
+description: Enable cell editing in TreeGrid with support for custom editors, edit modes, and validation during data updates.
 platform: wpf
-control: SfTreeGrid
+control: TreeGrid
 documentation: ug
 ---
 
-# Editing in WPF SfTreeGrid
+# Editing in WPF TreeGrid
 
-SfTreeGrid provides support for editing and it can be enabled or disabled by setting [SfTreeGrid.AllowEditing](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_AllowEditing) property.
+WPF TreeGrid provides support for editing and it can be enabled or disabled by setting [SfTreeGrid.AllowEditing](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_AllowEditing) property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -46,7 +46,7 @@ this.treeGrid.Columns["FirstName"].AllowEditing = true;
 
 N> `TreeGridColumn.AllowEditing` takes higher priority than `SfTreeGrid.AllowEditing`
 
-![Editing in WPF TreeGrid](Editing_images/wpf-treegrid-editing.png)
+![Editing](Editing_images/wpf-treegrid-editing.png)
 
 N> It is mandatory to set the `NavigationMode` to `Cell` to enable `CurrentCell` navigation and editing.
 
@@ -103,7 +103,7 @@ this.treeGrid.EditorSelectionBehavior = EditorSelectionBehavior.SelectAll;
 
 ## Support for IEditableObject
 
-`SfTreeGrid` supports committing and rolling back the changes in row level when underlying data object implements the [IEditableObject](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.ieditableobject?redirectedfrom=MSDN&view=net-5.0) interface.
+`TreeGrid` supports committing and rolling back the changes in row level when underlying data object implements the [IEditableObject](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.ieditableobject?redirectedfrom=MSDN&view=net-5.0) interface.
 
 The editing changes in a row will be committed only when user move to next row or pressing enter key in [EndEdit](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.ieditableobject.endedit?redirectedfrom=MSDN&view=net-5.0#System_ComponentModel_IEditableObject_EndEdit). Also when user press <kbd>Esc</kbd> key, then the changes made in a row will be reverted in [CancelEdit](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.ieditableobject.canceledit?redirectedfrom=MSDN&view=net-5.0#System_ComponentModel_IEditableObject_CancelEdit). 
 
@@ -282,7 +282,7 @@ public class EmployeeInfo : IEditableObject, INotifyPropertyChanged
 
 ## Events
 
-SfTreeGrid triggers the following events during editing. 
+TreeGrid triggers the following events during editing. 
 
 ### CurrentCellBeginEdit Event
 
@@ -292,7 +292,7 @@ SfTreeGrid triggers the following events during editing.
 
 * [RowColumnIndex](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridCurrentCellBeginEditEventArgs.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridCurrentCellBeginEditEventArgs_RowColumnIndex) : Gets the current row column index of the TreeGrid.
 
-* [Column](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridCurrentCellBeginEditEventArgs.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridCurrentCellBeginEditEventArgs_Column) : Gets the Tree Grid Column of the SfTreeGrid.
+* [Column](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridCurrentCellBeginEditEventArgs.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridCurrentCellBeginEditEventArgs_Column) : Gets the Tree Grid Column of the TreeGrid.
 
 {% tabs %}
 {% highlight c# %}
@@ -330,7 +330,7 @@ void TreeGrid_CurrentCellEndEdit(object sender, CurrentCellEndEditEventArgs args
 [CurrentCellValueChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_CurrentCellValueChanged) event occurs whenever a value changes in TreeGridColumn that supports editing. 
 [TreeGridCurrentCellValueChangedEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridCurrentCellValueChangedEventArgs.html) has following members which provides information for `CurrentCellValueChanged` event.
 
-* [Column](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridCurrentCellValueChangedEventArgs.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridCurrentCellValueChangedEventArgs_Column) : Gets the Grid Column of the SfTreeGrid.
+* [Column](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridCurrentCellValueChangedEventArgs.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridCurrentCellValueChangedEventArgs_Column) : Gets the Grid Column of the TreeGrid.
 * [RowColumnIndex](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridCurrentCellValueChangedEventArgs.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridCurrentCellValueChangedEventArgs_RowColumnIndex) : Gets the value of the current RowColumnIndex.
 
 {% tabs %}
@@ -372,7 +372,7 @@ void TreeGrid_CurrentCellDropDownSelectionChanged(object sender, CurrentCellDrop
 
 ### BeginEdit
 
-SfTreeGrid allows you to edit the cell programmatically by calling the [BeginEdit](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridCurrentCellManager.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridCurrentCellManager_BeginEdit) method. Initially the [CurrentCell](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridCurrentCellManager.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridCurrentCellManager_CurrentCell) need to set before calling the `BeginEdit` method when the CurrentCell value is null.
+TreeGrid allows you to edit the cell programmatically by calling the [BeginEdit](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridCurrentCellManager.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridCurrentCellManager_BeginEdit) method. Initially the [CurrentCell](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridCurrentCellManager.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridCurrentCellManager_CurrentCell) need to set before calling the `BeginEdit` method when the CurrentCell value is null.
 
 {% tabs %}
 {% highlight c# %}
@@ -503,7 +503,7 @@ You can focus to the particular `UIElement` loaded inside template when cell get
 {% endhighlight %}
 {% endtabs %}
 
-![WPF TreeGrid Column with Cell Template](Editing_images/wpf-treegrid-cell-template.png)
+![Column with Cell Template](Editing_images/wpf-treegrid-cell-template.png)
 
 ## Providing keyboard control to UIElement inside CellTemplate
 
@@ -535,9 +535,9 @@ You can allow UIElement loaded inside CellTemplate to handle keyboard interactio
 {% endhighlight %}
 {% endtabs %}
 
-![Keyboard Operations in WPF TreeGrid](Editing_images/wpf-treegrid-keyboard-operation.png)
+![Keyboard Operations](Editing_images/wpf-treegrid-keyboard-operation.png)
 
-N> Enter and Tab keys are always handled by SfTreeGrid only.
+N> Enter and Tab keys are always handled by TreeGrid only.
 
 
 ## Providing mouse control to UIElement inside template
@@ -569,4 +569,4 @@ You can allow `UIElement` loaded inside template to handle mouse interaction in 
 {% endtabs %}
 
 
-N> You can refer to our [WPF TreeGrid](https://www.syncfusion.com/wpf-controls/treegrid) feature tour page for its groundbreaking feature representations. You can also explore our [WPF TreeGrid example](https://github.com/syncfusion/wpf-demos) to know how to render and configure the TreeGrid.
+N> You can refer to our [WPF TreeGrid](https://www.syncfusion.com/wpf-controls/treegrid) feature tour page for its groundbreaking feature representations. You can also explore our [WPF TreeGrid example](https://github.com/syncfusion/wpf-demos) to know how to render and configure the control.

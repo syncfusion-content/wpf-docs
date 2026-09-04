@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Printing in WPF SfTreeGrid | Syncfusion®
-description: Printing in SfTreeGrid prints grid data with customizable layouts, formatting, and page settings for professional output.
+title: Printing in WPF TreeGrid | Syncfusion®
+description: Printing in TreeGrid prints grid data with customizable layouts, formatting, and page settings for professional output.
 platform: wpf
-control: SfTreeGrid
+control: TreeGrid
 documentation: ug
 ---
 
-# Printing in WPF SfTreeGrid
+# Printing in WPF TreeGrid
 
-The printing feature can be achieved by exporting the tree grid to PDF and printing the exported PDF using the [PdfViewerControl](https://help.syncfusion.com/wpf/pdf-viewer/printing-pdf-files) .
+The printing feature can be achieved by exporting the TreeGrid to PDF and printing the exported PDF using the [PdfViewerControl](https://help.syncfusion.com/wpf/pdf-viewer/printing-pdf-files) .
 
 {% tabs %}
 {% highlight c# %}
@@ -42,7 +42,7 @@ private void Window_Loaded(object sender, RoutedEventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-![Printing in WPF TreeGrid](Printing_images/wpf-treegrid-printing.png)
+![Printing](Printing_images/wpf-treegrid-printing.png)
 
 You can download the [sample](https://github.com/SyncfusionExamples/how-to-print-wpf-treegrid-with-pdfviewercontrol).
 
@@ -115,4 +115,4 @@ You can download the [sample](https://github.com/SyncfusionExamples/how-to-print
 The print page can be customized when exporting by passing the [TreeGridPdfExportingOptions](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.Converter.TreeGridPdfExportingOptions.html) instance as an argument to the [ExportToPdf](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.Converter.TreeGridPdfExportExtension.html#Syncfusion_UI_Xaml_TreeGrid_Converter_TreeGridPdfExportExtension_ExportToPdf_Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_Syncfusion_UI_Xaml_TreeGrid_Converter_TreeGridPdfExportingOptions_) and [ExportToPdfGrid](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.Converter.TreeGridPdfExportExtension.html#Syncfusion_UI_Xaml_TreeGrid_Converter_TreeGridPdfExportExtension_ExportToPdfGrid_Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_Syncfusion_UI_Xaml_TreeGrid_Converter_TreeGridPdfExportingOptions_) methods. Refer to this [documentation](https://help.syncfusion.com/wpf/treegrid/export-to-pdf#export-options) to customize the export options.
 
 
-N> You can refer to our [WPF TreeGrid](https://www.syncfusion.com/wpf-controls/treegrid) feature tour page for its groundbreaking feature representations. You can also explore our [WPF TreeGrid example](https://github.com/syncfusion/wpf-demos) to know how to render and configure the treegrid.
+N> You can refer to our [WPF TreeGrid](https://www.syncfusion.com/wpf-controls/treegrid) feature tour page for its groundbreaking feature representations. You can also explore our [WPF TreeGrid example](https://github.com/syncfusion/wpf-demos) to know how to render and configure the control.

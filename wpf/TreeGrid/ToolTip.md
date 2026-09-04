@@ -1,15 +1,15 @@
 ---
 layout: post
-title: ToolTip in WPF SfTreeGrid | Syncfusion®
-description: ToolTip in SfTreeGrid displays additional information for cells, rows, and headers with customizable tooltip support.
+title: ToolTip in WPF TreeGrid | Syncfusion®
+description: ToolTip in TreeGrid displays additional information for cells, rows, and headers with customizable tooltip support.
 platform: wpf
-control: SfTreeGrid
+control: TreeGrid
 documentation: ug
 ---
 
-# ToolTip in WPF SfTreeGrid
+# ToolTip in WPF TreeGrid
 
-Tooltip supports showing the pop-up window that displays the information when the mouse hovers over a cell of the SfTreeGrid.
+Tooltip supports showing the pop-up window that displays the information when the mouse hovers over a cell of the TreeGrid.
 
 ## Record cell tooltip
 
@@ -51,7 +51,7 @@ this.treeGrid.Columns["LastName"].ShowToolTip = true;
 
 N> It has higher priority than [SfTreeGrid.ShowToolTip](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_ShowToolTip).
 
-![WPF TreeGrid displays ToolTip for Record Cell](Interactive-Features_images/wpf-treegrid-record-cell-tooltip.png)
+![displays ToolTip for Record Cell](Interactive-Features_images/wpf-treegrid-record-cell-tooltip.png)
 
 ## Header tooltip
 
@@ -72,7 +72,7 @@ this.treeGrid.Columns["FirstName"].ShowHeaderToolTip = true;
 {% endhighlight %}
 {% endtabs %}
 
-![WPF TreeGrid displays ToolTip for Header](Interactive-Features_images/wpf-treegrid-header-tooltip.png)
+![displays ToolTip for Header](Interactive-Features_images/wpf-treegrid-header-tooltip.png)
 
 ## Tooltip customization
 
@@ -96,7 +96,7 @@ You can change appearance of the tooltip by customizing the style with TargetTyp
 {% endhighlight %}
 {% endtabs %}
 
-![Customizing ToolTip in WPF TreeGrid](Interactive-Features_images/wpf-treegrid-tooltip-customization.png)
+![Customizing ToolTip](Interactive-Features_images/wpf-treegrid-tooltip-customization.png)
 
 You can customize the template of the tooltip by using the [TreeGridColumn.ToolTipTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridColumnBase.html#Syncfusion_UI_Xaml_Grid_GridColumnBase_ToolTipTemplate) and [TreeGridColumn.ToolTipTemplateSelector](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridColumnBase.html#Syncfusion_UI_Xaml_Grid_GridColumnBase_ToolTipTemplateSelector) properties. 
 
@@ -152,7 +152,7 @@ public class StringToImageConverter : IValueConverter
 {% endhighlight %}
 {% endtabs %}
 
-![Customize the ToolTip using ToolTipTemplate in WPF TreeGrid](Interactive-Features_images/wpf-treegrid-tooltip-template.png)
+![Customize the ToolTip using ToolTipTemplate](Interactive-Features_images/wpf-treegrid-tooltip-template.png)
 
 You can get the sample [here](https://www.syncfusion.com/downloads/support/directtrac/general/ze/ToolTipTemplateDemo-1415306479.zip).
 
@@ -231,11 +231,11 @@ public class ToolTipTemplateSelector : DataTemplateSelector
 
 The following image shows the DefaultTemplate applied through ToolTipTemplateSelector.
 
-![Customize the ToolTip using ToolTipTemplateSelector in WPF TreeGrid](Interactive-Features_images/wpf-treegrid-tooltip-template-selector.png)
+![Customize the ToolTip using ToolTipTemplateSelector](Interactive-Features_images/wpf-treegrid-tooltip-template-selector.png)
 
 The following image shows the AlternateTemplate applied through ToolTipTemplateSelector.
 
-![Customize the ToolTip using ToolTipTemplateSelector in WPF TreeGrid](Interactive-Features_images/wpf-treegrid-tooltip-using-template-selector.png)
+![Customize the ToolTip using ToolTipTemplateSelector](Interactive-Features_images/wpf-treegrid-tooltip-using-template-selector.png)
 
 You can get the sample [here](https://www.syncfusion.com/downloads/support/directtrac/general/ze/ToolTipTemplateSelectorDemo1909534526.zip).
 
@@ -246,7 +246,7 @@ You can get the sample [here](https://www.syncfusion.com/downloads/support/direc
 The [CellToolTipOpening](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html) event occurs when any tooltip of the cell is opened. The `CellToolTipOpening` event receives the [TreeGridCellToolTipOpeningEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridCellToolTipOpeningEventArgs.html) as argument which has the following properties:
 
 <ul>
-<li> <a href="https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.CellToolTipOpeningEventArgs.html#Syncfusion_UI_Xaml_Grid_CellToolTipOpeningEventArgs_Column" aria-label="Column details">Column:</a> Gets the hovered cell column in the SfTreeGrid.</li>
+<li> <a href="https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.CellToolTipOpeningEventArgs.html#Syncfusion_UI_Xaml_Grid_CellToolTipOpeningEventArgs_Column" aria-label="Column details">Column:</a> Gets the hovered cell column in the TreeGrid.</li>
 <li> <a href="https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridCellToolTipOpeningEventArgs.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridCellToolTipOpeningEventArgs_Node" aria-label="Node details">Node:</a> Gets the hovered cell node.</li>
 <li> <a href="https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.CellToolTipOpeningEventArgs.html#Syncfusion_UI_Xaml_Grid_CellToolTipOpeningEventArgs_Record" aria-label="Record details">Record:</a> Gets the data context of hovered cell.</li>
 <li> <a href="https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.CellToolTipOpeningEventArgs.html#Syncfusion_UI_Xaml_Grid_CellToolTipOpeningEventArgs_RowColumnIndex" aria-label="Row Column details">RowColumnIndex:</a> Gets the row and column index of the hovered cell.</li>
@@ -275,4 +275,4 @@ private void TreeGrid_CellToolTipOpening(object sender, Syncfusion.UI.Xaml.TreeG
 {% endtabs %}
 
 
-N> You can refer to our [WPF TreeGrid](https://www.syncfusion.com/wpf-controls/treegrid) feature tour page for its groundbreaking feature representations. You can also explore our [WPF TreeGrid example](https://github.com/syncfusion/wpf-demos) to know how to render and configure the treegrid.
+N> You can refer to our [WPF TreeGrid](https://www.syncfusion.com/wpf-controls/treegrid) feature tour page for its groundbreaking feature representations. You can also explore our [WPF TreeGrid example](https://github.com/syncfusion/wpf-demos) to know how to render and configure the control.

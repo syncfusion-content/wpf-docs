@@ -1,22 +1,22 @@
 ---
 layout: post
-title: UI Automation in WPF SfTreeGrid | Syncfusion®
-description: UI Automation in SfTreeGrid enables accessibility and automated testing support through built‑in UI Automation providers for grid elements.
+title: UI Automation in WPF TreeGrid | Syncfusion®
+description: UI Automation in TreeGrid enables accessibility and automated testing support through built‑in UI Automation providers for grid elements.
 platform: wpf
-control: SfTreeGrid
+control: TreeGrid
 documentation: ug
 ---
 
-# UI Automation in WPF SfTreeGrid
+# UI Automation in WPF TreeGrid
 
 ## Requirements and configuration
 
-To test SfTreeGrid control with CUITs, build the extension project and place it in the mentioned location. You can get the extension project from the following location.
+To test TreeGrid control with CUITs, build the extension project and place it in the mentioned location. You can get the extension project from the following location.
 
 <table>
 <tr>
 <td>
-{{'**SfTreeGrid**'| markdownify }}
+{{'**TreeGrid**'| markdownify }}
 </td>
 <td>
 https://github.com/SyncfusionExamples/coded-ui-extension-project-for-wpf-treegrid
@@ -49,9 +49,9 @@ N> Syncfusion.VisualStudio.TestTools.UITest.SfGridExtension.dll needs to be inst
 
 ### Steps to work with Coded UI
 
-This section explains how to create a CodedUITest project and test the tree grid application.
+This section explains how to create a CodedUITest project and test the TreeGrid application.
 
-1. Create a new WPF application or open an existing WPF application with tree grid and enable the Coded UI test in tree grid. To enable CUITs, set AutomationPeerHelper.EnableCodedUI to true and access the AutomationPeerHelper class from Syncfusion.UI.Xaml.Grid namespace as demonstrated in the following code sample.
+1. Create a new WPF application or open an existing WPF application with TreeGrid and enable the Coded UI testing. To enable CUITs, set AutomationPeerHelper.EnableCodedUI to true and access the AutomationPeerHelper class from Syncfusion.UI.Xaml.Grid namespace as demonstrated in the following code sample.
 
 {% capture codesnippet1 %}
 {% tabs %}
@@ -108,8 +108,8 @@ public MainWindow()
 
    CodedUITestMethod
    {:.caption}
-7. Now, drag the Crosshairs to the UI elements of your WPF SfTreeGrid application, and it shows the available properties of the inner UI elements in SfTreeGrid.
-8. Record the actions made on UI elements by clicking the Record button on the CodedUITest builder. For example you can record the action of changing the cell value in SfTreeGrid. Click the Pause button to finish the record.
+7. Now, drag the Crosshairs to the UI elements of your WPF TreeGrid application, and it shows the available properties of the inner UI elements.
+8. Record the actions made on UI elements by clicking the Record button on the CodedUITest builder. For example you can record the action of changing the cell value in TreeGrid. Click the Pause button to finish the record.
 
 
 
@@ -160,7 +160,7 @@ public void RecordedMethod1()
 
 11. After all the tests and assertion have been created, right-click the Test method, and click Run Tests to run the test as follows.
 
-    ![Test method and click Run Tests ](UIAutomation_images/UIAutomation_img7.png)
+    ![Test method and click Run Tests](UIAutomation_images/UIAutomation_img7.png)
 
 
 
@@ -328,4 +328,4 @@ SfTreeGridExpanderCellPropertyProvider
 </table>
 
 
-N> You can refer to our [WPF TreeGrid](https://www.syncfusion.com/wpf-controls/treegrid) feature tour page for its groundbreaking feature representations. You can also explore our [WPF TreeGrid example](https://github.com/syncfusion/wpf-demos) to know how to render and configure the treegrid.
+N> You can refer to our [WPF TreeGrid](https://www.syncfusion.com/wpf-controls/treegrid) feature tour page for its groundbreaking feature representations. You can also explore our [WPF TreeGrid example](https://github.com/syncfusion/wpf-demos) to know how to render and configure the control.

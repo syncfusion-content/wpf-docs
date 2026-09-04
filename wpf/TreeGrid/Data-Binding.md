@@ -1,18 +1,18 @@
-﻿---
+---
 layout: post
-title: Data Binding in WPF SfTreeGrid | Syncfusion®
-description: Bind hierarchical and self-relational data to SfTreeGrid using ItemsSource, nested collections, and on-demand loading.
+title: Data Binding in WPF TreeGrid | Syncfusion®
+description: Bind hierarchical and self-relational data to TreeGrid using ItemsSource, nested collections, and on-demand loading.
 platform: wpf
-control: SfTreeGrid
+control: TreeGrid
 documentation: ug
 ---
 
-# Data Binding in WPF SfTreeGrid
+# Data Binding in WPF TreeGrid
 
-SfTreeGrid is designed to display the self-relational and hierarchical data in tree structure with columns. The data binding can be achieved by assigning the data source to [SfTreeGrid.ItemsSource](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_ItemsSource) property directly through self-relational binding or nested collection or retrieving the parent and child nodes items dynamically using [RequestTreeItems](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_RequestTreeItems) or [LoadOnDemandCommand](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_LoadOnDemandCommand).
-If the data source implements [INotifyCollectionChanged](https://learn.microsoft.com/en-us/dotnet/api/system.collections.specialized.inotifycollectionchanged?redirectedfrom=MSDN&view=net-5.0) interface, then SfTreeGrid control will automatically refresh the UI when item is added, removed or while list cleared. When you add, remove item in [ObservableCollection](https://learn.microsoft.com/en-us/dotnet/api/system.collections.objectmodel.observablecollection-1?redirectedfrom=MSDN&view=net-5.0)`, SfTreeGrid automatically refresh the UI as `ObservableCollection implements `INotifyCollectionChanged`. But when you do the same in [List](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.list-1?redirectedfrom=MSDN&view=net-5.0), SfTreeGrid will not refresh the UI automatically.
+WPF TreeGrid is designed to display the self-relational and hierarchical data in tree structure with columns. The data binding can be achieved by assigning the data source to [SfTreeGrid.ItemsSource](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_ItemsSource) property directly through self-relational binding or nested collection or retrieving the parent and child nodes items dynamically using [RequestTreeItems](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_RequestTreeItems) or [LoadOnDemandCommand](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_LoadOnDemandCommand).
+If the data source implements [INotifyCollectionChanged](https://learn.microsoft.com/en-us/dotnet/api/system.collections.specialized.inotifycollectionchanged?redirectedfrom=MSDN&view=net-5.0) interface, then control will automatically refresh the UI when item is added, removed or while list cleared. When you add, remove item in [ObservableCollection](https://learn.microsoft.com/en-us/dotnet/api/system.collections.objectmodel.observablecollection-1?redirectedfrom=MSDN&view=net-5.0)`, control automatically refresh the UI as `ObservableCollection implements `INotifyCollectionChanged`. But when you do the same in [List](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.list-1?redirectedfrom=MSDN&view=net-5.0), Control will not refresh the UI automatically.
 
-Below are the ways to bind the data source to SfTreeGrid.
+Below are the ways to bind the data source to TreeGrid.
 
 * [Populate data using self-relational binding](https://help.syncfusion.com/wpf/treegrid/getting-started#binding-self-relational-data-in-sftreegrid)
 * [Populate data using nested collection](https://help.syncfusion.com/wpf/treegrid/getting-started#binding-nested-collection-with-sftreegrid)
@@ -21,18 +21,18 @@ Below are the ways to bind the data source to SfTreeGrid.
 
 ## Binding with IEnumerable
 
-SfTreeGrid control supports to bind any collection that implements the [IEnumerable](https://learn.microsoft.com/en-us/dotnet/api/system.collections.ienumerable?redirectedfrom=MSDN&view=net-5.0) interface. Data operations such as sorting is supported when you are binding collection derived from `IEnumerable`.
+TreeGrid supports to bind any collection that implements the [IEnumerable](https://learn.microsoft.com/en-us/dotnet/api/system.collections.ienumerable?redirectedfrom=MSDN&view=net-5.0) interface. Data operations such as sorting is supported when you are binding collection derived from `IEnumerable`.
 
 ## Binding with dynamic data object
 
-SfTreeGrid control supports to bind [dynamic data object](https://learn.microsoft.com/en-us/dotnet/api/system.dynamic?redirectedfrom=MSDN&view=net-5.0). Below are the limitations when you are binding dynamic data object,
+TreeGrid supports to bind [dynamic data object](https://learn.microsoft.com/en-us/dotnet/api/system.dynamic?redirectedfrom=MSDN&view=net-5.0). Below are the limitations when you are binding dynamic data object,
 
 1. In UWP, UI won’t get refreshed when you are changing the property value. This is limitation in UWP platform.
-2. SfTreeGrid doesn’t support [LiveNodeUpdateMode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_LiveNodeUpdateMode) - `AllowDataShaping`.
+2. TreeGrid doesn’t support [LiveNodeUpdateMode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_LiveNodeUpdateMode) - `AllowDataShaping`.
 
 ## Binding Complex properties
 
-SfTreeGrid control provides support to bind complex property to its columns. To bind the complex property to `TreeGridColumn`, set the complex property path to `MappingName`.
+TreeGrid provides support to bind complex property to its columns. To bind the complex property to `TreeGridColumn`, set the complex property path to `MappingName`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -53,11 +53,11 @@ SfTreeGrid control provides support to bind complex property to its columns. 
 
 **Limitations when binding complex property:**
 
-SfTreeGrid doesn’t support [LiveNodeUpdateMode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_LiveNodeUpdateMode)  - `AllowDataShaping`.
+TreeGrid doesn’t support [LiveNodeUpdateMode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_LiveNodeUpdateMode)  - `AllowDataShaping`.
 
 ## Binding Indexer properties
 
-SfTreeGrid control provides support to bind an indexer property to its columns. To bind an indexer property to `TreeGridColumn`, set the indexer property path to `MappingName`.
+TreeGrid control provides support to bind an indexer property to its columns. To bind an indexer property to `TreeGridColumn`, set the indexer property path to `MappingName`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -78,11 +78,11 @@ this.treeGrid.Columns.Add(new TreeGridTextColumn() {MappingName="Marks[0]"});
 
 **Limitations when binding indexer property:**
 
-SfTreeGrid doesn’t support  [LiveNodeUpdateMode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_LiveNodeUpdateMode) - `AllowDataShaping`.
+TreeGrid doesn’t support [LiveNodeUpdateMode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_LiveNodeUpdateMode) - `AllowDataShaping`.
 
 ## AutoExpandMode
 
-By setting [SfTreeGrid.AutoExpandMode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_AutoExpandMode) property, you can let the SfTreeGrid to expand the nodes while loading.
+By setting [SfTreeGrid.AutoExpandMode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_AutoExpandMode) property, you can let the TreeGrid to expand the nodes while loading.
 
 <table>
 <tr>
@@ -313,7 +313,7 @@ You can collapse all the tree nodes or specific node and its child nodes. Here i
 {{'[CollapseAllNodes()](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_CollapseAllNodes)'| markdownify }}
 </td>
 <td>
-Collapse all the nodes in SfTreeGrid
+Collapse all the nodes in TreeGrid
 </td>
 </tr>
 <tr>
@@ -337,7 +337,7 @@ Collapse the node at specific row index
 {{'[CollapseNode(TreeNode treeNode)](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_CollapseNode_Syncfusion_UI_Xaml_TreeGrid_TreeNode_)'| markdownify }}
 </td>
 <td>
-Collapse the specific node in SfTreeGrid
+Collapse the specific node in TreeGrid
 </td>
 </tr>
 </table>
@@ -442,7 +442,7 @@ private void TreeGrid_NodeCollapsed(object sender, NodeCollapsedEventArgs e)
 
 ## Expand/Collapse a node based on mapping property
 
-SfTreeGrid supports to expand/collapse the nodes based on the value of a boolean mapping property in the underlying data object by using [SfTreeGrid.ExpandStateMappingName](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_ExpandStateMappingName) property. TreeGrid expand/collapse the node when the specified property value in underlying data object gets changed.
+TreeGrid supports to expand/collapse the nodes based on the value of a boolean mapping property in the underlying data object by using [SfTreeGrid.ExpandStateMappingName](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_ExpandStateMappingName) property. TreeGrid expand/collapse the node when the specified property value in underlying data object gets changed.
 
 {% tabs %}
 {% highlight xaml %}
@@ -459,7 +459,7 @@ treeGrid.ExpandStateMappingName = "IsExpanded";
 
 ## LiveNodeUpdateMode
 
-SfTreeGrid listens and responds to the manipulation such as add, delete and data update (property change) at runtime. SfTreeGrid refreshes the sorting based on [SfTreeGrid.LiveNodeUpdateMode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_LiveNodeUpdateMode) property. If you set `LiveNodeUpdateMode` as `AllowDataShaping`, sorting will be refreshed on data manipulation and property change.
+TreeGrid listens and responds to the manipulation such as add, delete and data update (property change) at runtime. TreeGrid refreshes the sorting based on [SfTreeGrid.LiveNodeUpdateMode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_LiveNodeUpdateMode) property. If you set `LiveNodeUpdateMode` as `AllowDataShaping`, sorting will be refreshed on data manipulation and property change.
 
 {% tabs %}
 {% highlight xaml %}
@@ -483,7 +483,7 @@ treeGrid.LiveNodeUpdateMode = LiveNodeUpdateMode.AllowDataShaping;
 
 [SfTreeGrid.ItemsSourceChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_ItemsSourceChanged) event occurs when the data source is changed by using [ItemsSource](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_ItemsSource) property.
 
-This event receives two arguments namely sender that handles SfTreeGrid and `GridItemsSourceChangedEventArgs` as objects.
+This event receives two arguments namely sender that handles TreeGrid and `GridItemsSourceChangedEventArgs` as objects.
 The `GridItemsSourceChangedEventArgs` object contains the following properties:
 
 * `OldItemsSource` - Gets the value of old data source
@@ -491,9 +491,9 @@ The `GridItemsSourceChangedEventArgs` object contains the following properties
 
 ## View
 
-SfTreeGrid has the [View](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_View) property of type [TreeGridView](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridView.html). `View` is responsible for maintaining and manipulating the nodes and other advanced operations like Sorting. When you bind Collection to `ItemsSource` property of SfTreeGrid or wire `RequestTreeItems` event, then `View` will be created and maintains the operations on nodes.
+TreeGrid has the [View](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_View) property of type [TreeGridView](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridView.html). `View` is responsible for maintaining and manipulating the nodes and other advanced operations like Sorting. When you bind Collection to `ItemsSource` property or wire `RequestTreeItems` event, then `View` will be created and maintains the operations on nodes.
 
-SfTreeGrid creates different types of views derived from TreeGridView based on data population methods.
+TreeGrid creates different types of views derived from TreeGridView based on data population methods.
 
 [TreeGridSelfRelationalView](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridSelfRelationalView.html) -  While populating data using self-relational binding
 
@@ -566,7 +566,7 @@ treeGrid.View.EndInit();
 {% endhighlight %}
 {% endtabs %}
 
-N> View has properties (`EnableRecursiveChecking`, `LiveNodeUpdateMode` , `RecursiveCheckingMode`,..)that already defined in SfTreeGrid. It is recommended to set those properties via SfTreeGrid.
+N> View has properties (`EnableRecursiveChecking`, `LiveNodeUpdateMode` , `RecursiveCheckingMode`,..)that already defined in TreeGrid. It is recommended to set those properties via TreeGrid.
 
 
-N> You can refer to our [WPF TreeGrid](https://www.syncfusion.com/wpf-controls/treegrid) feature tour page for its groundbreaking feature representations. You can also explore our [WPF TreeGrid example](https://github.com/syncfusion/wpf-demos) to know how to render and configure the TreeGrid.
+N> You can refer to our [WPF TreeGrid](https://www.syncfusion.com/wpf-controls/treegrid) feature tour page for its groundbreaking feature representations. You can also explore our [WPF TreeGrid example](https://github.com/syncfusion/wpf-demos) to know how to render and configure the control.

@@ -1,18 +1,18 @@
-﻿---
+---
 layout: post
-title: Rows in WPF SfTreeGrid | Syncfusion®
-description: Rows in SfTreeGrid include headers, unbound, and data rows with customizable styles, indicators, and flexible layouts.
+title: Rows in WPF TreeGrid | Syncfusion®
+description: Rows in TreeGrid include headers, unbound, and data rows with customizable styles, indicators, and flexible layouts.
 
 platform: wpf
-control: SfTreeGrid
+control: TreeGrid
 documentation: ug
 ---
 
-# Rows in WPF SfTreeGrid
+# Rows in WPF TreeGrid
 
-This section explains about various row types in treegrid and its customization.
+This section explains about various row types in TreeGrid and its customization.
 
-## Rows in WPF TreeGrid (SfTreeGrid)
+## Rows in WPF TreeGrid
 
 RowHeader is a special column used to indicate the status of row (current row, editing status, errors in row, etc.) which is placed as first cell of each row. You can show or hide the row header by setting [SfTreeGrid.ShowRowHeader](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_ShowRowHeader) property.
 
@@ -41,7 +41,7 @@ Description
 </tr>
 <tr>
 <td>
-<img src="Rows_images/Rows_img1.jpeg" alt="WPF TreeGrid Rows Indicator"/>
+<img src="Rows_images/Rows_img1.jpeg" alt="Rows Indicator"/>
 </td>
 <td>
 Denotes the row which has current cell or selected item.
@@ -49,7 +49,7 @@ Denotes the row which has current cell or selected item.
 </tr>
 <tr>
 <td>
-<img src="Rows_images/Rows_img2.jpeg" alt="WPF TreeGrid row which has current cell or selected item"/>
+<img src="Rows_images/Rows_img2.jpeg" alt="Row which has current cell or selected item"/>
 </td>
 <td>
 Denotes row is being edited. 
@@ -57,7 +57,7 @@ Denotes row is being edited.
 </tr>
 <tr>
 <td>
-<img src="Rows_images/Rows_img3.jpeg" alt="WPF TreeGrid row is being edited"/>
+<img src="Rows_images/Rows_img3.jpeg" alt="Row is being edited"/>
 </td>
 <td>
 Denotes the row has errors. 
@@ -65,7 +65,7 @@ Denotes the row has errors.
 </tr>
 <tr>
 <td>
-<img src="Rows_images/Rows_img4.jpeg" alt="WPF TreeGrid row has errors"/>
+<img src="Rows_images/Rows_img4.jpeg" alt="Row has errors"/>
 </td>
 <td>
 Denotes that the current row has errors.
@@ -110,11 +110,11 @@ You can display the row index value in row header by customizing the `Tr
 {% endhighlight %}
 {% endtabs %}
 
-## Rows in WPF TreeGrid (SfTreeGrid)
+## Rows in WPF TreeGrid
 
 Header row is present in top of the treegrid which has column headers in it. Column header describes the caption to identify the column content.
 
-![WPF TreeGrid with Header Row](Rows_images/wpf-treegrid-header-row.jpeg)
+![Header Row](Rows_images/wpf-treegrid-header-row.jpeg)
 
 ## Hiding header row
 
@@ -244,7 +244,7 @@ Orientation of the treegrid column header text can be changed by editing the 
 {% endhighlight %}
 {% endtabs %}
 
-![Changing Column Header Orientation of WPF TreeGrid](Rows_images/wpf-treegrid-column-header.jpeg)
+![Changing Column Header Orientation](Rows_images/wpf-treegrid-column-header.jpeg)
 
 You can download the sample [here](https://github.com/SyncfusionExamples/how-to-change-the-orientation-of-column-header-text-in-wpf-treegrid).
 
@@ -359,7 +359,7 @@ By default, the `sort icon` appears at the right of the header text. You ca
 {% endhighlight %}
 {% endtabs %}
 
-![Changing Sort Icon Poistion in WPF TreeGrid](Rows_images/wpf-treegrid-sort-icon.jpeg)
+![Changing Sort Icon Poistion](Rows_images/wpf-treegrid-sort-icon.jpeg)
 
 ## Customize style of header row
 
@@ -384,7 +384,7 @@ You can change the header cell background and foreground for specific column or
 {% endhighlight %}
 {% endtabs %}
 
-![Customizing Row Header Style in WPF TreeGrid](Rows_images/wpf-treegrid-row-header-customization.jpeg)
+![Customizing Row Header Style](Rows_images/wpf-treegrid-row-header-customization.jpeg)
 
 You can change the style of the particular column header by using the [HeaderStyle](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridColumnBase.html#Syncfusion_UI_Xaml_Grid_GridColumnBase_HeaderStyle) property in column,
 
@@ -394,8 +394,8 @@ You can change the style of the particular column header by using the [HeaderSty
 {% endhighlight %}
 {% endtabs %}
 
-![Customizing Column Header Style in WPF TreeGrid](Rows_images/wpf-treegrid-column-header-customization.jpeg)
+![Customizing Column Header Style](Rows_images/wpf-treegrid-column-header-customization.jpeg)
 
 
 
-N> You can refer to our [WPF TreeGrid](https://www.syncfusion.com/wpf-controls/treegrid) feature tour page for its groundbreaking feature representations. You can also explore our [WPF TreeGrid example](https://github.com/syncfusion/wpf-demos) to know how to render and configure the TreeGrid.
+N> You can refer to our [WPF TreeGrid](https://www.syncfusion.com/wpf-controls/treegrid) feature tour page for its groundbreaking feature representations. You can also explore our [WPF TreeGrid example](https://github.com/syncfusion/wpf-demos) to know how to render and configure the control.

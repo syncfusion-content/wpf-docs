@@ -1,17 +1,17 @@
 ---
 layout: post
-title: Styles and Templates in WPF SfTreeGrid | Syncfusion®
-description: Styles and Templates in SfTreeGrid provide flexible customization of headers, cells, and rows using styles, control templates, and triggers.
+title: Styles and Templates in WPF TreeGrid | Syncfusion®
+description: Styles and Templates in TreeGrid provide flexible customization of headers, cells, and rows using styles, control templates, and triggers.
 platform: wpf
-control: SfTreeGrid
+control: TreeGrid
 documentation: ug
 ---
 
-# Styles and Templates in WPF SfTreeGrid
+# Styles and Templates in WPF TreeGrid
 
 ## Styling Column Header
 
-The header cell can be customized by writing style of TargetType [TreeGridHeaderCellControl](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridHeaderCell.html). You can set to particular SfTreeGrid by setting [SfTreeGrid.HeaderStyle](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_HeaderStyle) property and the particular column can be styled by setting [TreeGridColumn.HeaderStyle](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_HeaderStyleProperty) property.
+The header cell can be customized by writing style of TargetType [TreeGridHeaderCellControl](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridHeaderCell.html). You can set to particular TreeGrid by setting [SfTreeGrid.HeaderStyle](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_HeaderStyle) property and the particular column can be styled by setting [TreeGridColumn.HeaderStyle](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_HeaderStyleProperty) property.
 
 N> `TreeGridColumn.HeaderStyle` takes higher priority than `SfTreeGrid.HeaderStyle` property.
 
@@ -36,7 +36,7 @@ N> `TreeGridColumn.HeaderStyle` takes higher priority than `SfTreeGrid.HeaderSty
 {% endhighlight %}
 {% endtabs %}
 
-![Customizing Header Cell in WPF TreeGrid Column](Styles-and-Templates_images/wpf-treegrid-header-cell-customization.png)
+![Customizing Header Cell](Styles-and-Templates_images/wpf-treegrid-header-cell-customization.png)
 
 ### Styling Stacked Headers
 
@@ -54,7 +54,7 @@ The appearance of stacked header can be customized by writing style of TargetTyp
 {% endhighlight %}
 {% endtabs %}
 
-![Customizing Stacked Header in WPF TreeGrid Column](Styles-and-Templates_images/wpf-treegrid-stacked-headers.png)
+![Customizing Stacked Header](Styles-and-Templates_images/wpf-treegrid-stacked-headers.png)
 
 ### Setting Different Style for Each Stacked Header
 
@@ -108,7 +108,7 @@ public class TreeGridCustomStackedRenderer : TreeGridStackedHeaderCellRenderer
 {% endhighlight %}
 {% endtabs %}
 
-![Changing Stacked Header Text Style in WPF TreeGrid Column](Styles-and-Templates_images/wpf-treegrid-stacked-header-text-style.png)
+![Changing Stacked Header Text Style](Styles-and-Templates_images/wpf-treegrid-stacked-header-text-style.png)
 
 
-N> You can refer to our [WPF TreeGrid](https://www.syncfusion.com/wpf-controls/treegrid) feature tour page for its groundbreaking feature representations. You can also explore our [WPF TreeGrid example](https://github.com/syncfusion/wpf-demos) to know how to render and configure the treegrid.
+N> You can refer to our [WPF TreeGrid](https://www.syncfusion.com/wpf-controls/treegrid) feature tour page for its groundbreaking feature representations. You can also explore our [WPF TreeGrid example](https://github.com/syncfusion/wpf-demos) to know how to render and configure the control.

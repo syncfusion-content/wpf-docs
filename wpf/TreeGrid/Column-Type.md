@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Column Types in WPF SfTreeGrid | Syncfusion®
-description: Column Types in SfTreeGrid provides built-in and custom column types to display, edit, format, and customize data effectively.
+title: Column Types in WPF TreeGrid | Syncfusion®
+description: Column Types in TreeGrid provides built-in and custom column types to display, edit, format, and customize data effectively.
 platform: wpf
-control: SfTreeGrid
+control: TreeGrid
 documentation: ug
 ---
 
 
-# Column Types in WPF SfTreeGrid 
+# Column Types in WPF TreeGrid 
 
-SfTreeGrid provides support for various built-in column types. Each column has its own properties and renderer to handle different types of data. 
+WPF TreeGrid provides support for various built-in column types. Each column has its own properties and renderer to handle different types of data. 
 You can also add or override existing columns and renderers as you need.
 
 <table>
@@ -139,7 +139,7 @@ Use to display the custom template-specified content.
 
 ## TreeGridColumn
 
-TreeGridColumn is an abstract class provides base functionalities for all the column types in SfTreeGrid. 
+TreeGridColumn is an abstract class provides base functionalities for all the column types in TreeGrid. 
 
 ### Mapping column to particular property
 
@@ -168,7 +168,7 @@ You can use `DisplayBinding` property to format the column in display, by settin
 
 In the below screenshot, `Salary` column display value is formatted to currency by setting `DisplayBinding` property.
 
-![WPF TreeGrid Column with Currency Values](ColumnTypes_images/wpf-treegrid-with-currency-value.png)
+![Column with Currency Values](ColumnTypes_images/wpf-treegrid-with-currency-value.png)
 
 ### CellTemplate in TreeGridColumn
 
@@ -215,7 +215,7 @@ In the below code snippet, `TreeGridCurrencyColumn` is loaded with `ProgressBar`
 {% endhighlight %}
 {% endtabs %}
 
-![WPF TreeGrid Column with ProgressBar](ColumnTypes_images/wpf-treegrid-with-progressbar.png)
+![Column with ProgressBar](ColumnTypes_images/wpf-treegrid-with-progressbar.png)
 
 
 `CellTemplate` is not support by [TreeGridHyperlinkColumn](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridHyperlinkColumn.html) and [TreeGridCheckBoxColumn](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridCheckBoxColumn.html) columns.
@@ -260,7 +260,7 @@ You can use the same [DataTemplate](https://docs.microsoft.com/en-us/uwp/api/Win
 {% endhighlight %}
 {% endtabs %}
 
-![WPF TreeGrid Column with CellTemplate](ColumnTypes_images/wpf-treegrid-cell-template.png)
+![Column with CellTemplate](ColumnTypes_images/wpf-treegrid-cell-template.png)
 
 #### Setting CellTemplate based on custom logic using TemplateSelector
 
@@ -338,7 +338,7 @@ In the below code, the custom template selector set to `TreeGridColumn.CellTempl
 
 N> Non-Editable columns does not support `CellTemplate`.
 
-![WPF TreeGrid Column with Cell Template Selector](ColumnTypes_images/wpf-treegrid-cell-template-selector.png)
+![Column with Cell Template Selector](ColumnTypes_images/wpf-treegrid-cell-template-selector.png)
 
 #### Binding ViewModel properties with CellTemplate
 
@@ -585,7 +585,7 @@ private void TreeGrid_AutoGeneratingColumn(object sender, TreeGridAutoGenerating
 {% endhighlight %}
 {% endtabs %}
 
-![WPF TreeGrid Column with Formatting](ColumnTypes_images/wpf-treegrid-format.png)
+![Column with Formatting](ColumnTypes_images/wpf-treegrid-format.png)
 
 
 ### Styling TreeGridColumn
@@ -642,7 +642,7 @@ private void TreeGrid_AutoGeneratingColumn(object sender, TreeGridAutoGenerating
 {% endhighlight %}
 {% endtabs %}
 
-![Customizing Column Style in WPF TreeGrid](ColumnTypes_images/wpf-treegrid-style-customization.png)
+![Customizing Column Style](ColumnTypes_images/wpf-treegrid-style-customization.png)
 
 #### Styles based on custom logic
 
@@ -738,7 +738,7 @@ private void TreeGrid_AutoGeneratingColumn(object sender, TreeGridAutoGenerating
 {% endhighlight %}
 {% endtabs %}
 
-![WPF TreeGrid Column with Conditional Formatting](ColumnTypes_images/wpf-treegrid-with-conditional-format.png)
+![Column with Conditional Formatting](ColumnTypes_images/wpf-treegrid-with-conditional-format.png)
 
 ### UI Interaction
 
@@ -807,7 +807,7 @@ TreeGridColumn allows you to change the alignment of `TreeGridCell` and `TreeGri
 {% endhighlight %}
 {% endtabs %}
 
-![WPF TreeGrid Column with Text Trimming and Text Wrapping Settings](ColumnTypes_images/wpf-treegrid-text-trim-and-wrap.png)
+![Column with Text Trimming and Text Wrapping Settings](ColumnTypes_images/wpf-treegrid-text-trim-and-wrap.png)
 
 ## TreeGridTextColumn
 
@@ -862,7 +862,7 @@ this.treeGrid.Columns.Add(new TreeGridNumericColumn() { MappingName = "Salary" }
 {% endhighlight %}
 {% endtabs %}
 
-![WPF TreeGrid with Numeric column](ColumnTypes_images/wpf-treegrid-numeric-column.png)
+![Numeric column](ColumnTypes_images/wpf-treegrid-numeric-column.png)
 
 
 ### Data formatting
@@ -899,7 +899,7 @@ this.treeGrid.Columns.Add(new TreeGridNumericColumn() { MappingName = "Salary" }
 {% endhighlight %}
 {% endtabs %}
 
-![WPF TreeGrid with Formatting](ColumnTypes_images/wpf-datagrid-column-formatting.png)
+![Column Formatting](ColumnTypes_images/wpf-datagrid-column-formatting.png)
 
 ## TreeGridCurrencyColumn
 
@@ -963,7 +963,7 @@ this.treeGrid.Columns.Add(new TreeGridCurrencyColumn() { MappingName = "Salary",
 {% endhighlight %}
 {% endtabs %}
 
-![WPF TreeGrid displays Currency Column](ColumnTypes_images/wpf-treegrid-currency-column.png)
+![displays Currency Column](ColumnTypes_images/wpf-treegrid-currency-column.png)
 
 ## TreeGridPercentColumn
 
@@ -1031,7 +1031,7 @@ this.treeGrid.Columns.Add(new TreeGridPercentColumn() { MappingName = "Hike", He
 {% endhighlight %}
 {% endtabs %}
 
-![WPF TreeGrid displays Percent Column](ColumnTypes_images/wpf-treegrid-percent-column.png)
+![displays Percent Column](ColumnTypes_images/wpf-treegrid-percent-column.png)
 
 ## TreeGridDateTimeColumn
 
@@ -1253,7 +1253,7 @@ treeGrid.Columns.Add(new TreeGridCheckBoxColumn() { MappingName = "AvailabilityS
 
 {% endtabs %}
 
-![WPF TreeGrid Column with CheckBox](ColumnTypes_images/wpf-treegrid-checkbox.png)
+![Column with CheckBox](ColumnTypes_images/wpf-treegrid-checkbox.png)
 
 `TreeGridCheckBoxColumn` allows you to customize check box state and its alignment.
 
@@ -1341,7 +1341,7 @@ You can allow `UIElement` loaded inside `CellTemplate` or `EditTemplate` to hand
 
 You can allow `UIElement` loaded inside `CellTemplate` to handle keyboard interaction by setting [FocusManagerHelper.WantsKeyInput](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.FocusManagerHelper.html#Syncfusion_UI_Xaml_Grid_FocusManagerHelper_WantsKeyInputProperty) attached property to `TreeGridColumn`. You can use this when loading edit element in CellTemplate. 
 
-In this case SfTreeGrid handles the below key operations and other keys are handled by UIElement loaded inside `CellTemplate`. 
+In this case TreeGrid handles the below key operations and other keys are handled by UIElement loaded inside `CellTemplate`. 
 
 * <kbd>Tab</kbd>
 * <kbd>Enter</kbd>
@@ -1556,7 +1556,7 @@ In the below code, custom template selector set to `TreeGridTemplateColumn.EditT
 {% endhighlight %}
 {% endtabs %}
 
-![Cell and Edit Template in WPF TreeGrid Column](ColumnTypes_images/wpf-treegrid-cell-edit-template.png)
+![Cell and Edit Template](ColumnTypes_images/wpf-treegrid-cell-edit-template.png)
 
 
 ## TreeGridComboBoxColumn
@@ -1586,13 +1586,13 @@ treeGrid.Columns.Add(new TreeGridComboBoxColumn() {	MappingName = "City", ItemsS
 {% endhighlight %}
 {% endtabs %}
 
-SfTreeGrid triggers, [CurrentCellDropDownSelectionChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html) event, when the SelectedValue is changed. [CurrentCellDropDownSelectionChangedEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.CurrentCellDropDownSelectionChangedEventArgs.html) of [CurrentCellDropDownSelectionChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html) event provides the information about the changed cell value. 
+TreeGrid triggers, [CurrentCellDropDownSelectionChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html) event, when the SelectedValue is changed. [CurrentCellDropDownSelectionChangedEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.CurrentCellDropDownSelectionChangedEventArgs.html) of [CurrentCellDropDownSelectionChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html) event provides the information about the changed cell value. 
 
 `SelectedIndex` property returns the index of selected item.
 
 `SelectedItem**`** property returns the selected item from drop down list.
 
-![WPF TreeGrid Column with ComboBox](ColumnTypes_images/wpf-treegrid-combobox.png)
+![Column with ComboBox](ColumnTypes_images/wpf-treegrid-combobox.png)
 
 ### Keep the dropdown to be opened
 
@@ -1716,9 +1716,9 @@ public class ItemsSourceSelector : IItemsSourceSelector
 
 The following screenshot illustrates the different ShipCity ItemsSource bound to each row of the ComboBox based on the Country Name.
 
-![WPF TreeGrid Column with ComboBox](ColumnTypes_images/wpf-treegrid-combobox-column.png)
+![Column with ComboBox](ColumnTypes_images/wpf-treegrid-combobox-column.png)
 
-![WPF TreeGrid Column with ComboBox](ColumnTypes_images/wpf-treegrid-combobox-specific-column.png)
+![Column with ComboBox](ColumnTypes_images/wpf-treegrid-combobox-specific-column.png)
 
 You can download the sample from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ComboBoxColumnsDemo834486903.zip).
 
@@ -1748,7 +1748,7 @@ this.treeGrid.Columns.Add(new TreeGridHyperlinkColumn() { MappingName = "CityDes
 {% endhighlight %}
 {% endtabs %}
 
-![WPF TreeGrid Column with Hyperlink](ColumnTypes_images/wpf-treegrid-hyperlink.png)
+![Column with Hyperlink](ColumnTypes_images/wpf-treegrid-hyperlink.png)
 
 You can allow end-user to navigate the `Uri` when the cell value contains valid `Uri` address or using [CurrentCellRequestNavigate](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html) event. The `CurrentCellRequestNavigate` occurs when the current cell in `TreeGridHyperLinkColumn` is clicked for navigation.  
 
@@ -1821,7 +1821,7 @@ You can change the foreground color of `TreeGridHyperlinkColumn` by writing the 
 {% endhighlight %}
 {% endtabs %}
 
-![Customizing Hyperlink Column in WPF TreeGrid](ColumnTypes_images/wpf-treeegrid-hyperlink-customization.png)
+![Customizing Hyperlink Column](ColumnTypes_images/wpf-treeegrid-hyperlink-customization.png)
 
 ## TreeGridMaskColumn
 
@@ -1857,7 +1857,7 @@ this.treeGrid.Columns.Add(new TreeGridMaskColumn() { HeaderText = "Contact Numbe
 {% endhighlight %}
 {% endtabs %}
 
-![WPF TreeGrid Column with Mask Type](ColumnTypes_images/wpf-treegrid-mask.png)
+![Column with Mask Type](ColumnTypes_images/wpf-treegrid-mask.png)
 
 Mask for numeric value not exceeds two digits to the left of the decimal point. 
 
@@ -1881,7 +1881,7 @@ In the below code snippet, `Mask` applied to format and validate the user input 
 {% endhighlight %}
 {% endtabs %}
 
-![WPF TreeGrid with Formatting in Mask Column](ColumnTypes_images/wpf-treegrid-mask-formatting.png)
+![Formatting in Mask Column](ColumnTypes_images/wpf-treegrid-mask-formatting.png)
 
 ### Specifying prompt character
 
@@ -1919,11 +1919,11 @@ The `TreeGridMaskColumn.MaskFormat` property has the following format.
 
 ## Custom column support
 
-SfTreeGrid allows you to create your own column by overriding predefined column type or creating a new custom column.
+TreeGrid allows you to create your own column by overriding predefined column type or creating a new custom column.
 
 ### Creating column from existing column
 
-You can create your own column by overriding the [predefined](https://help.syncfusion.com/wpf/treegrid/column-type) column types in SfTreeGrid.
+You can create your own column by overriding the [predefined](https://help.syncfusion.com/wpf/treegrid/column-type) column types in TreeGrid.
 
 For example, the `TreeGridDateTimeColumn` loads the `DateTime` value by default. If you want to display [DateTimeOffset](https://docs.microsoft.com/en-us/dotnet/api/system.datetimeoffset?redirectedfrom=MSDN&view=net-5.0) value, you can create a new column by overriding the `TreeGridDateTimeColumn` class.
 
@@ -2086,7 +2086,7 @@ this.treeGrid.Columns.Add(new TreeGridDateTimeOffsetColumn() { MappingName = "DO
 
 ### Customize column renderer
 
-SfTreeGrid allows you to customize the column related operations like key navigation and UI related interactions by overriding the corresponding renderer associated with the column. Each column has its own renderer with set of virtual methods for handling the column level operations. 
+TreeGrid allows you to customize the column related operations like key navigation and UI related interactions by overriding the corresponding renderer associated with the column. Each column has its own renderer with set of virtual methods for handling the column level operations. 
 Below table lists the available cell types for unbound row and its renderers.
 <table>
 <tr>
@@ -2243,7 +2243,7 @@ public class TreeGridCellTextBoxRendererExt : TreeGridCellTextBoxRenderer
 {% endhighlight %}
 {% endtabs %}
 
-![WPF TreeGrid Column with Custom Renderer](ColumnTypes_images/wpf-treegrid-custom-renderer.png)
+![Column with Custom Renderer](ColumnTypes_images/wpf-treegrid-custom-renderer.png)
 
 
 ### Create the renderer of existing column
@@ -2451,7 +2451,7 @@ public class TreeGridComboBoxRendererExt : TreeGridVirtualizingCellRenderer<Cont
 {% endhighlight %}
 {% endtabs %}
 
-![Customizing ComboBox Column using Existing Renderer in WPF TreeGrid](ColumnTypes_images/wpf-treegrid-combobox-customization.png)
+![Customizing ComboBox Column using Existing Renderer](ColumnTypes_images/wpf-treegrid-combobox-customization.png)
 
 ### Creating new column and renderer
 
@@ -2834,7 +2834,7 @@ this.treeGrid.CellRenderers.Add("DatePickerRenderer", new DatePickerRenderer());
 
 ### Loading custom column
 
-By below code, you can define the custom column in SfTreeGrid.
+By below code, you can define the custom column in TreeGrid.
 
 {% tabs %}
 {% highlight xaml %}
@@ -2858,7 +2858,7 @@ this.treeGrid.Columns.Add(new DatePickerColumn() { AllowEditing = true, MappingN
 
 {% endtabs %}
 
-![WPF TreeGrid displays Custom DatePicker](ColumnTypes_images/wpf-treegrid-custom-datepicker.png)
+![displays Custom DatePicker](ColumnTypes_images/wpf-treegrid-custom-datepicker.png)
 
 ## How To
 
@@ -2991,4 +2991,4 @@ public class TreeGridCellTextBoxRendererExt : TreeGridCellTextBoxRenderer
 {% endtabs %}
 
 
-N> You can refer to our [WPF TreeGrid](https://www.syncfusion.com/wpf-controls/treegrid) feature tour page for its groundbreaking feature representations. You can also explore our [WPF TreeGrid example](https://github.com/syncfusion/wpf-demos) to know how to render and configure the treegrid.
+N> You can refer to our [WPF TreeGrid](https://www.syncfusion.com/wpf-controls/treegrid) feature tour page for its groundbreaking feature representations. You can also explore our [WPF TreeGrid example](https://github.com/syncfusion/wpf-demos) to know how to render and configure the control.
