@@ -1,21 +1,21 @@
 ---
 layout: post
-title: Command Manager in WPF SfDiagram | Syncfusion®
-description: Map keyboard and mouse gestures to commands in Syncfusion® WPF SfDiagram and create custom commands with Command Manager.
+title: Command Manager in WPF Diagram | Syncfusion®
+description: Map keyboard and mouse gestures to commands in Syncfusion® WPF Diagram and create custom commands with Command Manager.
 platform: wpf
 control: SfDiagram
 documentation: ug
 ---
 
-# Command Manager in WPF SfDiagram
+# Command Manager in WPF Diagram
 
-The [CommandManager](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.CommandManager.html) is used to map user gestures (keyboard and mouse) to SfDiagram commands and helps to include new gesture commands in [WPF SfDiagram](https://www.syncfusion.com/diagram-sdk/wpf-diagram). 
+The [CommandManager](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.CommandManager.html) is used to map user gestures (keyboard and mouse) to Diagram commands and helps to include new gesture commands in [WPF Diagram](https://www.syncfusion.com/diagram-sdk/wpf-diagram). 
 
-The `CommandManager` can be accessed through the `SfDiagram` instance and is used to manage built-in and custom gesture commands.
+The `CommandManager` can be accessed through the `Diagram` instance and is used to manage built-in and custom gesture commands.
 
 {% highlight c# %}
 
-// Initialize the SfDiagram
+// Initialize the Diagram
 SfDiagram diagram = new SfDiagram();
 
 // Access the CommandManager
@@ -114,4 +114,4 @@ diagram.CommandManager.Commands.Add(saveGesture);
 
 [How to map the custom commands to existing gestures (keyboard shortcuts and mouse)?](https://support.syncfusion.com/kb/article/8709/how-to-map-the-custom-commands-to-existing-gestures-keyboard-shortcuts-and-mouse-in-wpf)
 
-[How to add a custom gesture command in the WPF SfDiagram ?](https://support.syncfusion.com/kb/article/18237/how-to-add-a-custom-gesture-command-in-the-wpf-diagram-sfdiagram-)
+[How to add a custom gesture command in the WPF Diagram ?](https://support.syncfusion.com/kb/article/18237/how-to-add-a-custom-gesture-command-in-the-wpf-diagram-sfdiagram-)

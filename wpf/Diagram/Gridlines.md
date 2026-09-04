@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Gridlines in WPF SfDiagram | Syncfusion®
-description: Learn about gridlines in Syncfusion® WPF SfDiagram control, including grid visibility, styling, spacing customization, and static gridline behavior.
+title: Gridlines in WPF Diagram | Syncfusion®
+description: Learn about gridlines in Syncfusion® WPF Diagram control, including grid visibility, styling, spacing customization, and static gridline behavior.
 platform: wpf
 control: SfDiagram
 documentation: ug
 ---
 
-# Gridlines in WPF SfDiagram
+# Gridlines in WPF Diagram
 
 [Gridlines](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Gridlines.html) are crisscross lines drawn on the diagram page like the lines on traditional graph paper. They help position diagram elements on the diagram page.
 
@@ -24,7 +24,7 @@ The [`SnapConstraints`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Di
 </syncfusion:SfDiagram>
 {% endhighlight %}
 {% highlight c# %}
-//Initialize SfDiagram
+//Initialize Diagram
 SfDiagram diagram = new SfDiagram();
 //Initialize SnapSettings constraints to show Gridlines
 diagram.SnapSettings = new SnapSettings()
@@ -76,7 +76,7 @@ The [`HorizontalGridLines`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xam
 {% endhighlight %}
 {% highlight c# %}
 
-//Initialize SfDiagram
+//Initialize Diagram
 SfDiagram diagram = new SfDiagram();
 //Style for Gridlines
 Style pathStyle = new Style(typeof(Path));
@@ -148,7 +148,7 @@ The thickness and space between the gridlines can be customized by using [`Lines
 {% endhighlight %}
 {% highlight c# %}
 
-//Initialize SfDiagram
+//Initialize Diagram
 SfDiagram diagram = new SfDiagram();
 
 //Initialize the double collection
@@ -207,7 +207,7 @@ Find the [Gridlines Custom Spacing Sample](https://github.com/SyncfusionExamples
 {% endhighlight %}
 {% highlight c# %}
 
-//Initialize SfDiagram
+//Initialize Diagram
 SfDiagram Diagram = new SfDiagram();
 
  Diagram.SnapSettings = new SnapSettings()

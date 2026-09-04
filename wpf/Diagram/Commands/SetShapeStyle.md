@@ -1,13 +1,13 @@
 ---
 layout: post
-title: SetShapeStyle Commands in WPF SfDiagram | Syncfusion®
-description: Apply custom styles to selected diagram elements in Syncfusion® WPF SfDiagram using the SetShapeStyle command.
+title: SetShapeStyle Commands in WPF Diagram | Syncfusion®
+description: Apply custom styles to selected diagram elements in Syncfusion® WPF Diagram using the SetShapeStyle command.
 platform: wpf
 control: SfDiagram
 documentation: ug
 ---
 
-# SetShapeStyle Commands in WPF SfDiagram
+# SetShapeStyle Commands in WPF Diagram
 
 The [SetShapeStyle](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IDiagramCommands.html#Syncfusion_UI_Xaml_Diagram_IDiagramCommands_SetShapeStyle) command is used to set a specific style for the selected elements in the [WPF SfDiagram](https://www.syncfusion.com/diagram-sdk/wpf-diagram).
 
@@ -30,7 +30,7 @@ N> The `SetShapeStyle` command requires a valid `Style` object as its command pa
 
 {% highlight c# %}
 
-//Initialize the SfDiagram 
+//Initialize the Diagram 
 SfDiagram diagramcontrol = new SfDiagram();
 
 Style style = new Style();

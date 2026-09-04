@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Constraints in WPF SfDiagram | Syncfusion®
-description: Control diagram behaviors in Syncfusion® WPF SfDiagram using graph, node, connector, port, annotation, selector, and snap constraints.
+title: Constraints in WPF Diagram | Syncfusion®
+description: Control diagram behaviors in Syncfusion® WPF Diagram using graph, node, connector, port, annotation, selector, and snap constraints.
 platform: wpf
 control: SfDiagram
 documentation: ug
 ---
 
-# Constraints in WPF SfDiagram
+# Constraints in WPF Diagram
 
 `Constraints` are used to enable/disable certain behaviors of the [diagram](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.SfDiagram.html), [node](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.NodeViewModel.html), [connector](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ConnectorViewModel.html), [port](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.NodePortViewModel.html) and [annotation](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.AnnotationEditorViewModel.html). Constraints are provided as flagged enumerations, so that multiple behaviors can be enabled/disabled with bitwise operators (&, |, ~, <<, etc.). 
 To know more about bitwise operators, refer to [Bitwise Operations](#bitwise-operations).
@@ -448,6 +448,6 @@ In the above example, you can check whether the rotate constraints are enabled i
 
 [How to disable the events of Diagram?](https://support.syncfusion.com/kb/article/5475/how-to-disable-the-events-of-wpf-diagram-sfdiagram)
 
-[How to prevent nodes from moving to a negative index when nudging in WPF SfDiagram?](https://support.syncfusion.com/kb/article/17732/how-to-prevent-nodes-from-moving-to-a-negative-index-when-nudging-in-wpf-diagram-sfdiagram)
+[How to prevent nodes from moving to a negative index when nudging in WPF Diagram?](https://support.syncfusion.com/kb/article/17732/how-to-prevent-nodes-from-moving-to-a-negative-index-when-nudging-in-wpf-diagram-sfdiagram)
 
-[How to enable undo or redo in WPF SfDiagram?](https://support.syncfusion.com/kb/article/5471/how-to-enable-undo-or-redo-in-wpf-diagram-sfdiagram)
+[How to enable undo or redo in WPF Diagram?](https://support.syncfusion.com/kb/article/5471/how-to-enable-undo-or-redo-in-wpf-diagram-sfdiagram)

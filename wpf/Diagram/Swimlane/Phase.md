@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Phase in WPF SfDiagram | Syncfusion®
-description: Learn about phase in Syncfusion® WPF SfDiagram control, including phase creation, headers, customization, runtime management, and interactions.
+title: Phase in WPF Diagram | Syncfusion®
+description: Learn about phase in Syncfusion® WPF Diagram control, including phase creation, headers, customization, runtime management, and interactions.
 platform: wpf
 control: SfDiagram
 documentation: ug
 ---
 
-# Phase in WPF SfDiagram
+# Phase in WPF Diagram
 
 The [Phase](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.PhaseViewModel.html) is the subprocess which will split each lanes as horizontally or vertically based on the swimlane orientation. Multiple phases can be added to a swimlane.
 
@@ -58,7 +58,7 @@ The following code example explains how to add phase to a swimlane.
             </syncfusion:SfDiagram>
 {% endhighlight %}
 {% highlight c# %}
-  //Initialize the SfDiagram
+  //Initialize the Diagram
   SfDiagram diagram = new SfDiagram();
  //Initialize SwimlaneCollection to SfDiagram
   diagram.Swimlanes = new SwimlaneCollection();
@@ -290,9 +290,9 @@ The following code example explains how to define a Phase header and its customi
             </syncfusion:SfDiagram>
 {% endhighlight %}
 {% highlight c# %}
-  //Initialize the SfDiagram
+  //Initialize the Diagram
   SfDiagram diagram = new SfDiagram();
- //Initialize the SwimlaneCollection to SfDiagram
+ //Initialize the SwimlaneCollection to Diagram
   diagram.Swimlanes = new SwimlaneCollection();
 
  //Creating the SwimlaneViewModel
