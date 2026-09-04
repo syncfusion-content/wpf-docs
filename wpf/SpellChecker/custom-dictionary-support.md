@@ -7,23 +7,23 @@ control: SfSpellChecker
 documentation: ug
 ---
 
-# Custom Dictionary in WPF SfSpellChecker
+# Custom Dictionary in WPF SpellChecker
 
 You can use a default and custom dictionaries to spell check the document based on your need. You can also spell check for any culture and languages using various dictionaries.
 
 ## Default SpellCheck Dictionary
 
-[SfSpellChecker](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.SfSpellChecker.html) provides a built-in dictionary for the `English` language and returns suitable suggestions for misspelled words.
+[WPF SpellChecker](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.SfSpellChecker.html) provides a built-in dictionary for the `English` language and returns suitable suggestions for misspelled words.
 
 ## Load your own dictionaries for any language
 
-You can add your own dictionary to the [SfSpellChecker.Dictionaries](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.SfSpellChecker.html#Syncfusion_Windows_Controls_SfSpellChecker_Dictionaries) collection. `SfSpellChecker` supports three standard dictionary file formats:
+You can add your own dictionary to the [SfSpellChecker.Dictionaries](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.SfSpellChecker.html#Syncfusion_Windows_Controls_SfSpellChecker_Dictionaries) collection. `WPF SpellChecker` supports three standard dictionary file formats:
 
 1. Hunspell
 2. Ispell
 3. OpenOffice
 
-N> The built-in dictionary is disabled when a custom dictionary is added to `SfSpellChecker`.
+N> The built-in dictionary is disabled when a custom dictionary is added to `WPF SpellChecker`.
 
 ## SpellCheck using Hunspell dictionary
 
@@ -44,7 +44,7 @@ You can check spelling mistakes using the `Hunspell` dictionary format. This for
 
 4. Setting the required culture to the [SfSpellChecker.Culture](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.SfSpellChecker.html#Syncfusion_Windows_Controls_SfSpellChecker_Culture) property.
 
-N> The following code snippets show how to add a Hunspell dictionary to the SpellChecker. Please refer to [Adding WPF SfSpellChecker to an application](Getting-Started.md#adding-wpf-sfspellchecker-to-an-application) to learn how to configure `SfSpellChecker`.
+N> The following code snippets show how to add a Hunspell dictionary to the SpellChecker. Please refer to [Adding WPF SfSpellChecker to an application](Getting-Started.md#adding-wpf-sfspellchecker-to-an-application) to learn how to configure `WPF SpellChecker`.
 
 {% capture codesnippet1 %}
 {% tabs %}
@@ -340,7 +340,7 @@ N> You can add multiple `OpenOfficeDictionary` with various culture files into t
 
 If you want to add words that is not available in existing  dictionary, you can add it using [CustomDictionary](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.CustomDictionary.html). This dictionary does not has a grammar file, it accepts only dictionary file that contains a list of words. Users can also add words to this custom dictionary by clicking `Add to Dictionary` button available in dialog or context menu. 
 
-You can add multiple `CustomDictionary` for each culture using `SfSpellChecker.Dictionaries` collection. If you load the `SfSpellChecker` with `en-US` culture, then you can add your custom words only on `en-US` cultured `CustomDictionary`.  
+You can add multiple `CustomDictionary` for each culture using `SfSpellChecker.Dictionaries` collection. If you load the `WPF SpellChecker` with `en-US` culture, then you can add your custom words only on `en-US` cultured `CustomDictionary`.  
 
 ### Adding Custom Dictionary
 

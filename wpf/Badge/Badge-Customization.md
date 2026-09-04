@@ -7,15 +7,15 @@ control: SfBadge
 documentation: ug
 ---
 
-# Customization in WPF SfBadge
+# Customization in WPF Badge
 
-This section explains the customization features available in the WPF [Badge](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Notification.SfBadge.html) control.
+This section explains the customization features available in the [WPF Badge](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Notification.SfBadge.html) control.
 
-## Adding badge for a Button
+## Adding WPF Badge for a Button
 
-If you want to assign `Badge` for any objects, create the `Badge` and assign the badge to the [SfBadge.Badge](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Notification.SfBadge.html#Syncfusion_Windows_Controls_Notification_SfBadge_BadgeProperty) property. Before that you need to create a `SfBadge.Badge` object and add that object to the parent control.
+If you want to assign `WPF Badge` for any objects, create the `WPF Badge` and set it to the [SfBadge.Badge](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Notification.SfBadge.html#Syncfusion_Windows_Controls_Notification_SfBadge_BadgeProperty) property. Before that you need to create a `SfBadge.Badge` object and add that object to the parent control.
 
-Here, `Badge` control added for the `Button` control.
+Here, `WPF Badge` control added for the `Button` control.
 
 {% tabs %}
 {% highlight XAML %}
@@ -53,9 +53,9 @@ SfBadge.SetBadge(button, sfBadge);
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-badge-control-examples/blob/main/Samples/Getting_Started)
 
-## Adding badge without BadgeContainer
+## Adding WPF Badge without BadgeContainer
 
-You can directly add the `Badge` to any objects without using the `SfBadge.Badge` container.
+You can directly add the `WPF Badge` to any objects without using the `SfBadge.Badge` container.
 
 The C# sample below defines a `MailItem` class and a `ViewModel` that exposes a list of `MailItem` instances. Place both classes in your project (for example, in a `Models` folder) and add an `xmlns:local` namespace mapping in the XAML that points to the namespace where these classes live.
 
@@ -136,9 +136,9 @@ namespace GettingStarted.Models
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-badge-control-examples/blob/main/Samples/Badge_without_BadgeContainer)
 
-## Setting Badge display content
+## Setting WPF Badge display content
 
-If you want to set or change the display content of the `Badge`, use the `Content` property. The default value of `Content` property is `null`.
+If you want to set or change the display content of the `WPF Badge`, use the `Content` property. The default value of `Content` property is `null`.
 
 {% tabs %}
 {% highlight XAML %}
@@ -164,9 +164,9 @@ badge.Content = "99+";
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-badge-control-examples/blob/main/Samples/Getting_Started)
 
-## Custom UI for Badge content
+## Custom UI for WPF Badge content
 
-You can change the appearance of `Badge` content by using `ContentTemplate` property. The `DataContext` of `ContentTemplate` property is `Content`.
+You can change the appearance of `WPF Badge` content by using `ContentTemplate` property. The `DataContext` of `ContentTemplate` property is `Content`.
 
 {% tabs %}
 {% highlight XAML %}
@@ -196,11 +196,11 @@ You can change the appearance of `Badge` content by using `ContentTemplate` prop
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-badge-control-examples/blob/main/Samples/Content_CustomUI)
 
-## Predefined colors for displaying the badges
+## Predefined colors for displaying the WPF Badge
 
-You can change background color of the `Badge` by using the [Fill](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Notification.SfBadge.html#Syncfusion_Windows_Controls_Notification_SfBadge_Fill) property. Based on the value of `Fill` property, respective background color will be applied to the `Badge`. The default value of `Fill` property is `Accent`.
+You can change background color of the `WPF Badge` by using the [Fill](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Notification.SfBadge.html#Syncfusion_Windows_Controls_Notification_SfBadge_Fill) property. Based on the value of `Fill` property, respective background color will be applied. The default value of `Fill` property is `Accent`.
 
-The `Badge` supports the following different essential states :
+The `WPF Badge` supports the following different essential states :
 
 * Accent - DarkSlateBlue background will be applied
 
@@ -244,9 +244,9 @@ badge.Content = "99+";
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-badge-control-examples/blob/main/Samples/Badge_Features)
 
-## Custom colors for displaying the badges
+## Custom colors for displaying the WPF Badge
 
-If you want to change the background color of the `Badge` other than the default `Fill` colors, use the `Background` property. You can also change the foreground of the `Badge` by using the `Foreground` property. The default value of the `Background` and `Foreground` properties is `null`.
+If you want to change the background color of the `WPF Badge` other than the default `Fill` colors, use the `Background` property. You can also change the foreground by using the `Foreground` property. The default value of the `Background` and `Foreground` properties is `null`.
 
 {% tabs %}
 {% highlight XAML %}
@@ -276,9 +276,9 @@ badge.Content = "99+";
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-badge-control-examples/blob/main/Samples/Badge_Control)
 
-## Predefined shapes for displaying the Badge
+## Predefined shapes for displaying the WPF Badge
 
-You can change the default shape to either `Rectangle`, `Oval`, or `Ellipse` by using the [Shape](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Notification.SfBadge.html#Syncfusion_Windows_Controls_Notification_SfBadge_Shape) property. If you want to display the `Badge` content without any default shape, use the `Shape` property value as `None`. The default value of the `Shape` property is `Ellipse`.
+You can change the default shape to either `Rectangle`, `Oval`, or `Ellipse` by using the [Shape](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Notification.SfBadge.html#Syncfusion_Windows_Controls_Notification_SfBadge_Shape) property. If you want to display the `WPF Badge` content without any default shape, use the `Shape` property value as `None`. The default value of the `Shape` property is `Ellipse`.
 
 ![WPF Badge Default Shapes](Getting-Started_images/wpf-badge-predefined-shapes.png)
 
@@ -308,9 +308,9 @@ badge.Content = "99+";
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-badge-control-examples/blob/main/Samples/Badge_Features)
 
-## Custom shape for displaying the Badge
+## Custom shape for displaying the WPF Badge
 
-If you want to change the shape of the `Badge` other than the default shapes, use the [CustomShape](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Notification.SfBadge.html#Syncfusion_Windows_Controls_Notification_SfBadge_CustomShape) property. You can enable the custom shapes by setting the `Shape` property value as `Custom`.
+If you want to change the shape of the `WPF Badge` other than the default shapes, use the [CustomShape](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Notification.SfBadge.html#Syncfusion_Windows_Controls_Notification_SfBadge_CustomShape) property. You can enable the custom shapes by setting the `Shape` property value as `Custom`.
 
 {% tabs %}
 {% highlight XAML %}
@@ -335,7 +335,7 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 
 ## Animate when content changes
 
-You can enable the `Scale` or `Opacity` based animation for displaying the `Badge` text by using the [AnimationType](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Notification.SfBadge.html#Syncfusion_Windows_Controls_Notification_SfBadge_AnimationType) property. You can only see the animation when you change the text of the `Badge`. The default value of the `AnimationType` property is `None`.
+You can enable the `Scale` or `Opacity` based animation for displaying the `WPF Badge` text by using the [AnimationType](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Notification.SfBadge.html#Syncfusion_Windows_Controls_Notification_SfBadge_AnimationType) property. You can only see the animation when you change the text of the `WPF Badge`. The default value of the `AnimationType` property is `None`.
 
 {% tabs %}
 {% highlight XAML %}
@@ -425,7 +425,7 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 
 ## Display number formatting
 
-You can format the numbers which are displayed in the `Badge` content by using conditional logic in an event handler or value converter. For example, you can display the number as `99+` for any value greater than or equal to `100`.
+You can format the numbers which are displayed in the `WPF Badge` content by using conditional logic in an event handler or value converter. For example, you can display the number as `99+` for any value greater than or equal to `100`.
 
 {% tabs %}
 {% highlight XAML %}
@@ -501,9 +501,9 @@ private void BadgeContent_ValueChanged(DependencyObject d, DependencyPropertyCha
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-badge-control-examples/blob/main/Samples/Content_CustomUI)
 
-## Change Badge size
+## Change WPF Badge size
 
-You can change the size of `Badge` by using the `Width` and `Height` properties. The default value of `Width` property is `40` and `Height` property is `30`.
+You can change the size of `WPF Badge` by using the `Width` and `Height` properties. The default value of `Width` property is `40` and `Height` property is `30`.
 
 {% tabs %}
 {% highlight XAML %}
@@ -535,7 +535,7 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 
 ## Text formatting
 
-You can change the style, size, and font family of the `Badge` display content by using the `FontFamily`, `FontStyle`, and `FontSize` properties. The default value of the `FontFamily` property is `Segoe UI`, the `FontStyle` property is `Normal`, and the `FontSize` property is `14`. Valid `FontStyle` values are `Normal`, `Italic`, and `Oblique`.
+You can change the style, size, and font family of the `WPF Badge` display content by using the `FontFamily`, `FontStyle`, and `FontSize` properties. The default value of the `FontFamily` property is `Segoe UI`, the `FontStyle` property is `Normal`, and the `FontSize` property is `14`. Valid `FontStyle` values are `Normal`, `Italic`, and `Oblique`.
 
 {% tabs %}
 {% highlight XAML %}
@@ -568,9 +568,9 @@ badge.Content = "99+";
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-badge-control-examples/blob/main/Samples/Badge_Control)
 
-## Change opacity of Badge
+## Change opacity of WPF Badge
 
-You can change the opacity of the `Badge` by using the `Opacity` property. The valid value range of the `Opacity` property is `0` to `1`. The default value of the `Opacity` property is `1`.
+You can change the opacity of the `WPF Badge` by using the `Opacity` property. The valid value range of the `Opacity` property is `0` to `1`. The default value of the `Opacity` property is `1`.
 
 {% tabs %}
 {% highlight XAML %}
@@ -598,9 +598,9 @@ badge.Content = "99+";
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-badge-control-examples/blob/main/Samples/Badge_Control)
 
-## Hide the Badge
+## Hide the WPF Badge
 
-You can hide the `Badge` by setting the `Visibility` property value to `Collapsed`. The `Badge` will also be hidden automatically when its content is `null`. The default value of the `Visibility` property is `Visible`.
+You can hide the `WPF Badge` by setting the `Visibility` property value to `Collapsed`. It will also be hidden automatically when its content is `null`. The default value of the `Visibility` property is `Visible`.
 
 {% tabs %}
 {% highlight XAML %}
