@@ -15,7 +15,7 @@ To change mode for the Document window, set the property [ContainerMode](https:/
 
 By default, the document state window is in TDI mode, that display child as tabbed document.
 
-N> When the window state is in MDI, child of WPF Docking Control will be hosted inside the DocumentContainer. So, user can customize child using DocumentContainer. Refer to this [documentation](https://help.syncfusion.com/wpf/tabbed-mdi-form/getting-started) for customizing DocumentContainer.
+N> When the window state is in MDI, child of WPF Docking Control will be hosted inside the WPF Document Container. So, user can customize child using WPF Document Container. For customization, refer to this [documentation](https://help.syncfusion.com/wpf/tabbed-mdi-form/getting-started).
 
 {% tabs %}
 
@@ -78,7 +78,7 @@ SyncDockingManager.ContainerMode = DocumentContainerMode.MDI;
 
 ## Setting MDI Window state
 
-The state of the MDI Window can be set using the [SetMDIWindowState](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DocumentContainer.html#Syncfusion_Windows_Tools_Controls_DocumentContainer_SetMDIWindowState_System_Windows_DependencyObject_Syncfusion_Windows_Tools_Controls_MDIWindowState_) method of DocumentContainer. 
+The state of the MDI Window can be set using the [SetMDIWindowState](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DocumentContainer.html#Syncfusion_Windows_Tools_Controls_DocumentContainer_SetMDIWindowState_System_Windows_DependencyObject_Syncfusion_Windows_Tools_Controls_MDIWindowState_) method of WPF Document Container. 
 
 ### Setting MDI WindowState as Minimized
 
@@ -144,7 +144,7 @@ DocumentContainer.GetMDIWindowState(Content1)
 
 ## Detecting the maximized state of the MDI window
 
-Maximized state of the MDI Container can get by [IsInMDIMaximizedState](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_IsInMDIMaximizedState) property of DocumentContainer. The container can be fetched from the WPF Docking Control using the [DocContainer](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_DocContainer) property.
+Maximized state of the MDI Container can get by [IsInMDIMaximizedState](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_IsInMDIMaximizedState) property of WPF Document Container. The container can be fetched from the WPF Docking Control using the [DocContainer](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_DocContainer) property.
 
 {% tabs %}
 
@@ -164,7 +164,7 @@ Dim isMdiMaximized As Boolean = TryCast(DockingManager1.DocContainer, DocumentCo
 
 ## Resizing MDI
 
-MDI document window can be able to resize using the navigation arrows. To restrict resizing the MDI document windows, disable the Property [IsAllowMDIResize](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DocumentContainer.html#Syncfusion_Windows_Tools_Controls_DocumentContainer_IsAllowMDIResize) of the [DocumentContainer](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DocumentContainer.html) that can be get using the [DocContainer](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_DocContainer) property of the WPF Docking Control. By default, its values is `True`.
+MDI document window can be able to resize using the navigation arrows. To restrict resizing the MDI document windows, disable the Property [IsAllowMDIResize](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DocumentContainer.html#Syncfusion_Windows_Tools_Controls_DocumentContainer_IsAllowMDIResize) of the [WPF Document Container](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DocumentContainer.html) that can be get using the [DocContainer](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_DocContainer) property of the WPF Docking Control. By default, its values is `True`.
 
 {% tabs %}
 
@@ -331,7 +331,7 @@ DockingManager1.SwitchMode =SwitchMode.VS2005
 
 ## Setting MDI Layout
 
-WPF Docking Control allows to set the different layout for the MDI windows with the different [MDILayout](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.MDILayout.html) values such as `Horizontal` , `Vertical` and `Cascade` layout through the [SetLayout](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DocumentContainer.html#Syncfusion_Windows_Tools_Controls_DocumentContainer_SetLayout_Syncfusion_Windows_Tools_Controls_MDILayout_) method of DocumentContainer.
+WPF Docking Control allows to set the different layout for the MDI windows with the different [MDILayout](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.MDILayout.html) values such as `Horizontal` , `Vertical` and `Cascade` layout through the [SetLayout](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DocumentContainer.html#Syncfusion_Windows_Tools_Controls_DocumentContainer_SetLayout_Syncfusion_Windows_Tools_Controls_MDILayout_) method of WPF Document Container.
 
 `Horizontal` - Arranges the MDI windows horizontally.
 
@@ -699,7 +699,7 @@ In DockingManager, new tab group can be created at horizontal or vertical side i
 
 #### Creating Vertical Tab Group 
 
-To create a vertical tab group in the Tabbed document, select the "New Vertical Tab Group" context menu item and also it can be created programmatically by calling the method [CreateVerticalTabGroup](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DocumentContainer.html#Syncfusion_Windows_Tools_Controls_DocumentContainer_CreateVerticalTabGroup_System_Windows_UIElement_) of the DocumentContainer.
+To create a vertical tab group in the Tabbed document, select the "New Vertical Tab Group" context menu item and also it can be created programmatically by calling the method [CreateVerticalTabGroup](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DocumentContainer.html#Syncfusion_Windows_Tools_Controls_DocumentContainer_CreateVerticalTabGroup_System_Windows_UIElement_) of the WPF Document Container.
 
 {% tabs %}
 
@@ -719,7 +719,7 @@ TryCast(DockingManager1.DocContainer, DocumentContainer).CreateVerticalTabGroup(
 
 #### Creating Horizontal Tab Group 
 
-To create a horizontal tab group in the Tabbed document, select the "New Horizontal Tab Group context menu item and also it can be created programmatically by calling the method [CreateHorizontalTabGroup](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DocumentContainer.html#Syncfusion_Windows_Tools_Controls_DocumentContainer_CreateHorizontalTabGroup_System_Windows_UIElement_) of the DocumentContainer.
+To create a horizontal tab group in the Tabbed document, select the "New Horizontal Tab Group context menu item and also it can be created programmatically by calling the method [CreateHorizontalTabGroup](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DocumentContainer.html#Syncfusion_Windows_Tools_Controls_DocumentContainer_CreateHorizontalTabGroup_System_Windows_UIElement_) of the WPF Document Container.
 
 {% tabs %}
 
@@ -1016,7 +1016,7 @@ When the pin button of the document tab item is visible, the corresponding docum
 
 ### Pin and Unpin the tab items programmatically
 
-document tab items can be pinned or unpinned from the DocumentContainer using [IsPinned](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DocumentContainer.html#Syncfusion_Windows_Tools_Controls_DocumentContainer_IsPinnedProperty) attached property of DocumentContainer. If the property [IsPinned](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DocumentContainer.html#Syncfusion_Windows_Tools_Controls_DocumentContainer_IsPinnedProperty) is set to true, the corresponding item will be added to respective index. Also,if the property [IsPinned](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DocumentContainer.html#Syncfusion_Windows_Tools_Controls_DocumentContainer_IsPinnedProperty) is set as false, the tab item will be removed from pinned collection and added to unpinned tab item collection. The default value of the property is False.
+Document tab items can be pinned or unpinned from the WPF Document Container using [IsPinned](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DocumentContainer.html#Syncfusion_Windows_Tools_Controls_DocumentContainer_IsPinnedProperty) attached property. If the property [IsPinned](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DocumentContainer.html#Syncfusion_Windows_Tools_Controls_DocumentContainer_IsPinnedProperty) is set to true, the corresponding item will be added to respective index. Also,if the property [IsPinned](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DocumentContainer.html#Syncfusion_Windows_Tools_Controls_DocumentContainer_IsPinnedProperty) is set as false, the tab item will be removed from pinned collection and added to unpinned tab item collection. The default value of the property is False.
 
 ### Pin and Unpin tab items through ContextMenu
 

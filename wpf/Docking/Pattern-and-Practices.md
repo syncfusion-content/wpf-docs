@@ -427,7 +427,7 @@ Essential WPF controls are flexible with all the `Prism` versions. This section 
 {% endcapture %}
 {{ codesnippet8 | OrderList_Indent_Level_1 }}
 
-5. Create an instance of the control in Shell.xaml file and set the attached property RegionManager.RegionName for it. Here we have used `WPF Docking Control` control.
+5. Create an instance of the control in Shell.xaml file and set the attached property RegionManager.RegionName for it. Here we have used `WPF Docking Control`.
 
 {% capture codesnippet9 %}
 {% tabs %}
@@ -716,7 +716,7 @@ This section explains about creating a simple application using `WPF Docking Con
 
 {% endtabs %}
 
-**Step 5:** Create an instance of the control in Shell.xaml file and set the attached property `RegionManager.RegionName` for it. Here we have used `WPF Docking Control` control.
+**Step 5:** Create an instance of the control in Shell.xaml file and set the attached property `RegionManager.RegionName` for it. Here we have used `WPF Docking Control`.
 
 {% tabs %}
 
@@ -938,7 +938,7 @@ public class DockingManagerRegionAdapter : RegionAdapterBase<DockingManager>
 
 {% endtabs %}
 
-**Step 2:** Also, we can activate and deactivate views by creating a behavior class and the class should inherit from `RegionBehavior`, `IHostAwareRegionBehavior` classes. In below code example, shown how to activate and deactivate the document views using `ActiveDocumentChanged` event of `DocumentContainer`.
+**Step 2:** Also, we can activate and deactivate views by creating a behavior class and the class should inherit from `RegionBehavior`, `IHostAwareRegionBehavior` classes. In below code example, shown how to activate and deactivate the document views using `ActiveDocumentChanged` event of `WPF Document Container`.
 
 {% tabs %}
 

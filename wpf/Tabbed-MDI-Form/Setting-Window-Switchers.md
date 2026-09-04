@@ -7,9 +7,9 @@ control: DocumentContainer
 documentation: ug
 ---
 
-# Setting Window Switchers in WPF DocumentContainer
+# Setting Window Switchers in WPF Document Container
 
-The DocumentContainer enables the user to switch between the open windows using the keyboard. The `CTRL + TAB` keyboard shortcut opens the window switcher, which the user can then navigate through to switch to another window. The window switcher style is controlled by the [SwitchMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DocumentContainer.html#Syncfusion_Windows_Tools_Controls_DocumentContainer_SwitchMode) property, which uses the `Syncfusion.Windows.Tools.Controls.SwitchMode` enum.
+The WPF Document Container enables the user to switch between the open windows using the keyboard. The `CTRL + TAB` keyboard shortcut opens the window switcher, which the user can then navigate through to switch to another window. The window switcher style is controlled by the [SwitchMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DocumentContainer.html#Syncfusion_Windows_Tools_Controls_DocumentContainer_SwitchMode) property, which uses the `Syncfusion.Windows.Tools.Controls.SwitchMode` enum.
 
 ## Supported Switcher Modes
 

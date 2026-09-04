@@ -7,9 +7,9 @@ control: Tabbed MDI Form
 documentation: ug
 ---
 
-# Setting Header in WPF DocumentContainer
+# Setting Header in WPF Document Container
 
-Using the `Header` attached property, the user can set the header for each DocumentContainer child element. The `Header` accepts any `object`, so the header text can be customized using a `HeaderTemplate`. Use the following code snippet to set the header for a DocumentContainer element.
+Using the `Header` attached property, the user can set the header for each child element. The `Header` accepts any `object`, so the header text can be customized using a `HeaderTemplate`. Use the following code snippet to set the header for a WPF Document Container element.
 
 {% tabs %}
 {% highlight XAML %}
@@ -22,7 +22,7 @@ Using the `Header` attached property, the user can set the header for each Docum
 
 ## Setting the Header Programmatically
 
-The header of a DocumentContainer element can be set by the `SetHeader` static method.
+The header of a WPF Document Container element can be set by the `SetHeader` static method.
 
 {% tabs %}
 {% highlight C# %}

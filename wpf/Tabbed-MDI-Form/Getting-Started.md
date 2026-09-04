@@ -7,9 +7,9 @@ control: DocumentContainer
 documentation: ug
 ---
 
-# Getting Started with WPF DocumentContainer
+# Getting Started with WPF Document Container
 
-This section describes how to add [WPF Tabbed MDI Form](https://www.syncfusion.com/wpf-controls/tabbed-mdi-form) (DocumentContainer) control into wpf application and its basic functionalities.
+This section describes how to add [WPF Document Container](https://www.syncfusion.com/wpf-controls/tabbed-mdi-form) control into wpf application and its basic functionalities.
 
 ## Assembly deployment
 
@@ -19,15 +19,15 @@ You can find more details about installing the NuGet package in a WPF applicatio
 
 [How to install nuget packages](https://help.syncfusion.com/wpf/installation/install-nuget-packages)
 
-## Create a simple application with DocumentContainer
+## Create a simple application with WPF Document Container
 
 ## Create a project
 
-Create a new WPF project in Visual Studio to display the DocumentContainer with functionalities.
+Create a new WPF project in Visual Studio to display the WPF Document Container with functionalities.
 
 ## Add control through designer
 
-The DocumentContainer control can be added to an application by dragging it from the toolbox to a designer view. The following required assembly references will be added automatically:
+The WPF Document Container control can be added to an application by dragging it from the toolbox to a designer view. The following required assembly references will be added automatically:
 
 * Syncfusion.Tools.WPF
 * Syncfusion.Shared.WPF 
@@ -42,7 +42,7 @@ To add the control manually in XAML, follow the given steps:
     * Syncfusion.Tools.WPF
     * Syncfusion.Shared.WPF 
 2. Import Syncfusion<sup>®</sup> WPF schema **http://schemas.syncfusion.com/wpf** in the XAML page.
-3. Declare the DocumentContainer control in the XAML page.
+3. Declare the WPF Document Container control in the XAML page.
 
 {% capture codesnippet1 %}
 {% tabs %}
@@ -68,8 +68,8 @@ To add the control manually in C#, follow the given steps:
 1. Add the following required assembly references to the project:
     * Syncfusion.Tools.WPF
     * Syncfusion.Shared.WPF
-2. Import the DocumentContainer namespace **using Syncfusion.Windows.Tools.Controls;**.
-3. Create a DocumentContainer instance, and add it to the window.
+2. Import the WPF Document Container namespace **using Syncfusion.Windows.Tools.Controls;**.
+3. Create a WPF Document Container instance, and add it to the window.
 
 {% capture codesnippet2 %}
 {% tabs %}
@@ -99,7 +99,7 @@ namespace DocumentContainerSample
 
 ## Add Documents
 
-The document container allows you to add new framework elements such as a Button or TextBlock to its container using the [Items](https://learn.microsoft.com/en-us/dotnet/api/system.windows.controls.itemscontrol.items?view=netframework-4.8) property. Set the [Mode](Setting-Mode-for-Document-Container.md) property to `TDI` or `MDI` to choose how the children are arranged.
+The WPF Document Container allows you to add new framework elements such as a Button or TextBlock to its container using the [Items](https://learn.microsoft.com/en-us/dotnet/api/system.windows.controls.itemscontrol.items?view=netframework-4.8) property. Set the [Mode](Setting-Mode-for-Document-Container.md) property to `TDI` or `MDI` to choose how the children are arranged.
 
 {% tabs %}
 {% highlight XAML %}
@@ -122,7 +122,7 @@ documentContainer.Items.Add(button3);
 
 ## Set Header for a Document
 
-You can set the header of any DocumentContainer element by setting the [Header](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DocumentHeader.html#Syncfusion_Windows_Tools_Controls_DocumentHeader_Header) attached property. The `Header` accepts any `object`, so you can also use a `HeaderTemplate` to customize its appearance.
+You can set the header of any WPF Document Container element by setting the [Header](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DocumentHeader.html#Syncfusion_Windows_Tools_Controls_DocumentHeader_Header) attached property. The `Header` accepts any `object`, so you can also use a `HeaderTemplate` to customize its appearance.
 
 {% tabs %}
 {% highlight XAML %}
@@ -154,12 +154,12 @@ documentContainer.Items.Add(flowScrollViewer);
 
 ## Set TDI/MDI Document Mode
 
-The DocumentContainer supports the following document modes:
+The WPF Document Container supports the following document modes:
 
 * **TDI** - Tabbed Document Interface (default)
 * **MDI** - Multiple Document Interface
 
-You can change the mode using the [Mode](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DocumentContainer.html#Syncfusion_Windows_Tools_Controls_DocumentContainer_Mode) property of DocumentContainer. The default value is `TDI`.
+You can change the mode using the [Mode](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DocumentContainer.html#Syncfusion_Windows_Tools_Controls_DocumentContainer_Mode) property of WPF Document Container. The default value is `TDI`.
 
 {% tabs %}
 {% highlight XAML %}
@@ -203,7 +203,7 @@ DocContainer.CanMDIMinimize = true;
 
 ## Theme
 
-DocumentContainer supports various built-in themes. Refer to the below links to apply themes for the DocumentContainer,
+The WPF Document Container supports various built-in themes. Refer to the links below to apply themes,
 
   * [Apply theme using SfSkinManager](https://help.syncfusion.com/wpf/themes/skin-manager)
 	

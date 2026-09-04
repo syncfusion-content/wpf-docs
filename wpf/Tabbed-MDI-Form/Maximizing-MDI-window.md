@@ -7,7 +7,7 @@ control: DocumentContainer
 documentation: ug
 ---
 
-# Maximizing MDI Window in WPF DocumentContainer
+# Maximizing MDI Window in WPF Document Container
 
 You can maximize the `MDI` window by setting the [CanMDIMaximize](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DocumentContainer.html#Syncfusion_Windows_Tools_Controls_DocumentContainer_CanMDIMaximize) property to `true`. The default value of `CanMDIMaximize` is `false`. When enabled, the maximize, restore, and resize chrome is shown on the MDI window and the user can double-click the title bar to maximize the window.
 

@@ -7,18 +7,18 @@ control: DocumentContainer
 documentation: ug
 ---
 
-# About Syncfusion® WPF DocumentContainer Control
+# About Syncfusion® WPF Document Container Control
 
-A DocumentContainer is a control that is used to hold documents, controls, and panels inside it. By using a DocumentContainer you can create interfaces like MDI (Multiple Document Interface) and TDI (Tabbed Document Interface), which can be used to build easily navigable applications. This help section demonstrates the important properties of the DocumentContainer and explains how they can be used to build those features.
+The WPF Document Container is used to host documents, controls, and panels. It supports interfaces such as MDI (Multiple Document Interface) and TDI (Tabbed Document Interface), enabling the development of easily navigable applications. This section describes the key properties of the WPF Document Container and explains how they can be used to implement these interfaces.
 
 ## Features
 
 * Provides options for both MDI and TDI container modes.
 * Various window switching styles. CTRL+TAB keyboard shortcut is used to easily navigate through the windows. See [Setting Window Switchers](Setting-Window-Switchers.md).
 * Skins support.
-* State persistence; the document container can be used to load and save data in Isolated Storage (IS), Binary (BIN), and XML.
+* State persistence; the WPF Document Container can be used to load and save data in Isolated Storage (IS), Binary (BIN), and XML.
 * A large set of properties, methods, and events for easy customization.
-* Resizing and moving the DocumentContainer using the keyboard.
+* Resizing and moving the WPF Document Container using the keyboard.
 
 
 

@@ -7,7 +7,7 @@ control: Tabbed MDI Form
 documentation: ug
 ---
 
-# Full Screen in WPF DocumentContainer
+# Full Screen in WPF Document Container
 
 ## TDIFullScreenMode
 
@@ -43,7 +43,7 @@ tabcontrol1.FullScreenMode = FullScreenMode.WindowMode;
 
 ## Adding a Toolbar to the Header Panel of TDI Items
 
-A toolbar can be placed in the header panel of TDI items in the DocumentContainer; for this, the `TDIToolBarTray` attached property is used.
+A toolbar can be placed in the header panel of TDI items in the WPF Document Container; for this, the `TDIToolBarTray` attached property is used.
 
 ![Full-Screen-in-DocumentContainer_img1](Full-Screen-in-DocumentContainer_images/Full-Screen-in-DocumentContainer_img1.jpeg)
 
@@ -107,7 +107,7 @@ tabcontrol.ToolBarTray = tooltray;
 
 ## SizeToContent for an MDI Window
 
-`SizeToContentInMDI` is used to resize an MDI window to its child size. This is an attached property and can be applied to individual children inside the DocumentContainer. The `Mode` of the `DocumentContainer` must be `MDI` for this attached property to have an effect.
+`SizeToContentInMDI` is used to resize an MDI window to its child size. This is an attached property and can be applied to individual children inside the WPF Document Container. To enable this behavior, set the `Mode` property to `MDI`.
 
 {% tabs %}
 {% highlight XAML %}
