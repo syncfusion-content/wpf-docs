@@ -28,7 +28,7 @@ N> Blinking Behavior-You cud see random values get updated frequently and those 
 * When the current cell is active, you can continue editing and modify the contents of the currently active cell even while rows are re-arranged. This is often a requirement in applications that wish to maintain editing compatibility even while processing a large number of updates.
 
 
-![Trader Grid Test Demo in WPF GridControl](Performance_images/Performance_img1.jpeg)
+![Trader Grid Test Demo](Performance_images/Performance_img1.jpeg)
 
 
 N> Download demo application from [GitHub](https://github.com/syncfusion/wpf-demos/tree/master/gridcontrol/Performance/TraderGridTest)
