@@ -7,13 +7,13 @@ control: DocumentContainer
 documentation: ug
 ---
 
-# Layout Related Features in WPF Document Container
+# Layout Related Features in WPF Tabbed MDI Form
 
-This section describes the layout-related features of the WPF Document Container, such as the supported visual themes and how to apply them.
+This section describes the layout-related features of the WPF Tabbed MDI Form, such as the supported visual themes and how to apply them.
 
 ## Theme
 
-The WPF Document Container supports various built-in themes. Refer to the links below to apply themes,
+The WPF Tabbed MDI Form supports various built-in themes. Refer to the links below to apply themes,
 
   * [Apply theme using SfSkinManager](https://help.syncfusion.com/wpf/themes/skin-manager)
 	

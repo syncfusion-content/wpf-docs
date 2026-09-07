@@ -6,9 +6,9 @@ platform: wpf
 control: DocumentContainer
 documentation: ug
 ---
-# Setting Window State in WPF Document Container 
+# Setting Window State in WPF Tabbed MDI Form 
 
-The WPF Document Container supports the following three window states for MDI child windows:
+The WPF Tabbed MDI Form supports the following three window states for MDI child windows:
 
 * **Maximized**
 * **Minimized**

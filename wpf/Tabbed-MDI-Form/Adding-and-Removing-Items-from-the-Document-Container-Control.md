@@ -7,13 +7,13 @@ control: Tabbed MDI Form
 documentation: ug
 ---
 
-# Adding and Removing Items in WPF Document Container
+# Adding and Removing Items in WPF Tabbed MDI Form
 
-This topic illustrates how to add and remove items from the WPF Document Container control.
+This topic illustrates how to add and remove items from the WPF Tabbed MDI Form control.
 
 ## Adding Items
 
-The WPF Document Container allows you to add new elements (such as a `Button` or `TextBlock`) to its container by using the `Items.Add` method. Use the following code snippet to add an item.
+The WPF Tabbed MDI Form allows you to add new elements (such as a `Button` or `TextBlock`) to its container by using the `Items.Add` method. Use the following code snippet to add an item.
 
 {% tabs %}
 {% highlight XAML %}
@@ -30,7 +30,7 @@ DocContainer.Items.Add(a);
 
 ## Removing Items
 
-You can remove a specific item from the WPF Document Container by using the `Items.Remove` method, or remove all items at once with the `Items.Clear` method.
+You can remove a specific item from the WPF Tabbed MDI Form by using the `Items.Remove` method, or remove all items at once with the `Items.Clear` method.
 
 {% tabs %}
 {% highlight C# %}
