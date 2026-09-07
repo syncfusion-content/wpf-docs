@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Edit and Format Text Commands in WPF SfDiagram | Syncfusion®
-description: Edit annotations and format text in Syncfusion® WPF SfDiagram using commands for bold, italic, underline, strikethrough, and editing.
+title: Edit and Format Text Commands in WPF Diagram | Syncfusion®
+description: Edit annotations and format text in Syncfusion® WPF Diagram using commands for bold, italic, underline, strikethrough, and editing.
 platform: wpf
 control: SfDiagram
 documentation: ug
 ---
 
-# Edit and Format Text Commands in WPF SfDiagram
+# Edit and Format Text Commands in WPF Diagram
 
 N> The `EditAnnotation`, `ToggleBold`, `ToggleItalic`, `ToggleUnderline`, and `ToggleStrikeThrough` commands are applicable only when a diagram element with an annotation is selected. If no annotated element is selected, the command will not perform any operation.
 
@@ -25,7 +25,7 @@ The [EditAnnotation](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagr
 
 {% highlight c# %}
 
-//Initialize the SfDiagram 
+//Initialize the Diagram 
 SfDiagram diagramcontrol = new SfDiagram();
 
 IGraphInfo graphinfo = diagramcontrol.Info as IGraphInfo;
@@ -48,7 +48,7 @@ The [ToggleBold](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.I
 
 {% highlight c# %}
 
-//Initialize the SfDiagram 
+//Initialize the Diagram 
 SfDiagram diagramcontrol = new SfDiagram();
 
 IGraphInfo graphinfo = diagramcontrol.Info as IGraphInfo;
@@ -71,7 +71,7 @@ The [ToggleItalic](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram
 
 {% highlight c# %}
 
-//Initialize the SfDiagram 
+//Initialize the Diagram 
 SfDiagram diagramcontrol = new SfDiagram();
 
 IGraphInfo graphinfo = diagramcontrol.Info as IGraphInfo;
@@ -94,7 +94,7 @@ The [ToggleUnderline](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diag
 
 {% highlight c# %}
 
-//Initialize the SfDiagram 
+//Initialize the Diagram 
 SfDiagram diagramcontrol = new SfDiagram();
 
 IGraphInfo graphinfo = diagramcontrol.Info as IGraphInfo;
@@ -117,7 +117,7 @@ The [ToggleStrikeThrough](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.
 
 {% highlight c# %}
 
-//Initialize the SfDiagram 
+//Initialize the Diagram 
 SfDiagram diagramcontrol = new SfDiagram();
 
 IGraphInfo graphinfo = diagramcontrol.Info as IGraphInfo;
@@ -142,7 +142,7 @@ The [Cancel](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IDiag
 
 {% highlight c# %}
 
-//Initialize the SfDiagram 
+//Initialize the Diagram 
 SfDiagram diagramcontrol = new SfDiagram();
 
 IGraphInfo graphinfo = diagramcontrol.Info as IGraphInfo;

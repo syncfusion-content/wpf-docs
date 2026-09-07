@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Scroll Settings in WPF SfDiagram | Syncfusion®
-description: Manage scrolling in Syncfusion® WPF SfDiagram with scroll status tracking, viewport updates, autoscroll behavior, and border customization.
+title: Scroll Settings in WPF Diagram | Syncfusion®
+description: Manage scrolling in Syncfusion® WPF Diagram with scroll status tracking, viewport updates, autoscroll behavior, and border customization.
 platform: wpf
 control: SfDiagram
 documentation: ug
 ---
 
-# Scroll Settings in WPF SfDiagram
+# Scroll Settings in WPF Diagram
 
 The diagram can be scrolled by using the vertical and horizontal scrollbars. In addition to the scrollbars, the mouse wheel can be used to scroll the diagram. Diagram’s scroll settings allow you to read the current scroll status, view port size, current zoom, and zoom factor values.
 
@@ -24,7 +24,7 @@ Diagram allows you to get the scroll settings related values using the [`ScrollI
 
 {% tabs %}
 {% highlight c# %}
-//Initialize the SfDiagram
+//Initialize the Diagram
 SfDiagram diagram = new SfDiagram();
 //Get type values of ScrollInfo property in scroll settings class
 double currentZoom = diagram.ScrollSettings.ScrollInfo.CurrentZoom;
@@ -46,7 +46,7 @@ The [`ScrollDelta`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagra
 
 {% tabs %}
 {% highlight c# %}
-//Initialize the SfDiagram
+//Initialize the Diagram
 SfDiagram diagram = new SfDiagram();
 //Initialize the scroll settings with zoom to value and zoom command
 diagram.ScrollSettings.ScrollInfo.ZoomPan(new ZoomPositionParameter
@@ -86,7 +86,7 @@ The Autoscroll border is used to specify the maximum distance between the object
 </syncfusion:SfDiagram>
 {% endhighlight %}
 {% highlight c# %}
-//Initialize the SfDiagram
+//Initialize the Diagram
 SfDiagram diagram = new SfDiagram();
 //Initialize the scroll settings with auto scroll border
 diagram.ScrollSettings = new ScrollSettings()
@@ -106,4 +106,4 @@ Find the [Scroll Settings sample](https://github.com/SyncfusionExamples/WPF-Diag
 
 [How to restrict diagram objects dragging in the positive side?](https://support.syncfusion.com/kb/article/9917/how-to-restrict-diagram-objects-dragging-in-the-positive-side-in-wpf-diagram)
 
-[How to bring the specific node to the center or viewport in WPF SfDiagram?](https://support.syncfusion.com/kb/article/9918/how-to-bring-the-specific-node-to-the-center-or-viewport-in-wpf-diagram-sfdiagram)
+[How to bring the specific node to the center or viewport in WPF Diagram?](https://support.syncfusion.com/kb/article/9918/how-to-bring-the-specific-node-to-the-center-or-viewport-in-wpf-diagram-sfdiagram)
