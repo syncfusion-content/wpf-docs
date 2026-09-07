@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Custom Snapping in WPF SfDiagram | Syncfusion®
-description: Customize snapping behavior in Syncfusion® WPF SfDiagram by defining snap intervals and rotation angles for precise element alignment.
+title: Custom Snapping in WPF Diagram | Syncfusion®
+description: Customize snapping behavior in Syncfusion® WPF Diagram by defining snap intervals and rotation angles for precise element alignment.
 platform: wpf
 control: SfDiagram
 documentation: ug
 ---
-# Custom Snapping in WPF SfDiagram
+# Custom Snapping in WPF Diagram
 
 The snapping process can be customized by changing its snapping interval and snapping angle.
 
@@ -49,7 +49,7 @@ Snapping helps you to drag or resize the elements completely and sharp from one 
 {% endhighlight %}
 
 {% highlight c# %}
-//Initialize SfDiagram
+//Initialize Diagram
 SfDiagram diagram = new SfDiagram();
 //Initialize the Snap Settings
 diagram.SnapSettings = new SnapSettings()
@@ -99,7 +99,7 @@ Snapping on rotation can be enabled or disabled using the [`SnapConstraints`](ht
 
 {% highlight c# %}
 
-//Initialize SfDiagram
+//Initialize Diagram
 SfDiagram diagram = new SfDiagram();
 diagram.SnapSettings = new SnapSettings()
 {

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Orthogonal Segments in WPF SfDiagram | Syncfusion®
-description: Learn about orthogonal connector segments in Syncfusion® WPF SfDiagram control, including creation, editing, customization, and routing.
+title: Orthogonal Segments in WPF Diagram | Syncfusion®
+description: Learn about orthogonal connector segments in Syncfusion® WPF Diagram control, including creation, editing, customization, and routing.
 platform: wpf
 control: SfDiagram
 documentation: ug
 ---
 
-# Orthogonal Segments in WPF SfDiagram
+# Orthogonal Segments in WPF Diagram
 
 Orthogonal segments are used to create line segments that are perpendicular at their point of intersection.
 
@@ -36,7 +36,7 @@ To create an orthogonal segment, specify the segment as [`OrthogonalSegment`](ht
 </syncfusion:SfDiagram>
 {% endhighlight %}
 {% highlight c# %}
-//Initialize the SfDiagram
+//Initialize the Diagram
 SfDiagram diagram = new SfDiagram();
 //create the connector with orthogonal segments
 ConnectorViewModel orthogonalConnector = new ConnectorViewModel()
@@ -169,8 +169,8 @@ N> Overlapping with Source and Target nodes are only avoided. Other nodes are no
 
 [How to detect or get notification when editing the thumbs of connector?](https://support.syncfusion.com/kb/article/9030/how-to-detect-or-get-notification-when-editing-the-thumbs-of-connector-in-wpf-diagram)
 
-[How to avoid overlapping connector segments for the Orthogonal Connector in WPF SfDiagram?](https://support.syncfusion.com/kb/article/17740/how-to-avoid-overlapping-connector-segments-for-the-orthogonal-connector-in-wpf-diagram-sfdiagram)
+[How to avoid overlapping connector segments for the Orthogonal Connector in WPF Diagram?](https://support.syncfusion.com/kb/article/17740/how-to-avoid-overlapping-connector-segments-for-the-orthogonal-connector-in-wpf-diagram-sfdiagram)
 
-[How to update the same length for connector segments in the WPF SfDiagram ?](https://support.syncfusion.com/kb/article/15538/how-to-update-the-same-length-for-connector-segments-in-the-wpf-diagram-sfdiagram)
+[How to update the same length for connector segments in the WPF Diagram ?](https://support.syncfusion.com/kb/article/15538/how-to-update-the-same-length-for-connector-segments-in-the-wpf-diagram-sfdiagram)
 
-[How to prevent the connector segment from collapsing while dragging a node in WPF SfDiagram ?](https://support.syncfusion.com/kb/article/17746/how-to-prevent-the-connector-segment-from-collapsing-while-dragging-a-node-in-wpf-diagram-sfdiagram-)
+[How to prevent the connector segment from collapsing while dragging a node in WPF Diagram ?](https://support.syncfusion.com/kb/article/17746/how-to-prevent-the-connector-segment-from-collapsing-while-dragging-a-node-in-wpf-diagram-sfdiagram-)

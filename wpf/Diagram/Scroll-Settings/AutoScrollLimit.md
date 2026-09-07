@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Auto-Scroll Limit in WPF SfDiagram | Syncfusion®
-description: Control the auto-scrolling region in Syncfusion® WPF SfDiagram by configuring auto-scroll limits and defining custom scrollable areas.
+title: Auto-Scroll Limit in WPF Diagram | Syncfusion®
+description: Control the auto-scrolling region in Syncfusion® WPF Diagram by configuring auto-scroll limits and defining custom scrollable areas.
 platform: wpf
 control: SfDiagram
 documentation: ug
 ---
 
-# Auto-Scroll Limit in WPF SfDiagram
+# Auto-Scroll Limit in WPF Diagram
 
 The auto-scroll limit allows you to define the scrollable region of the Diagram while the page is being auto-scrolled. The [AutoScrollLimit](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ScrollSettings.html#Syncfusion_UI_Xaml_Diagram_ScrollSettings_AutoScrollLimit) property of ScrollSettings class helps to limit the auto scrolling area. It includes the following options:
 
@@ -28,7 +28,7 @@ The default value is `Infinity`.
 </syncfusion:SfDiagram>
 {% endhighlight %}
 {% highlight c# %}
-//Initialize the SfDiagram
+//Initialize the Diagram
 SfDiagram diagram = new SfDiagram();
 //Initialize the ScrollSetting with auto scroll limit and scrolling area
 diagram.ScrollSettings = new ScrollSettings()

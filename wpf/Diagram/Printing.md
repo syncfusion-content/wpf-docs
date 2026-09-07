@@ -1,18 +1,18 @@
 ---
 layout: post
-title: Printing in WPF SfDiagram | Syncfusion®
-description: Print diagrams in Syncfusion® WPF SfDiagram with print preview, page settings, scaling, headers, footers, and custom paper sizes.
+title: Printing in WPF Diagram | Syncfusion®
+description: Print diagrams in Syncfusion® WPF Diagram with print preview, page settings, scaling, headers, footers, and custom paper sizes.
 platform: wpf
 control: SfDiagram
 documentation: ug
 ---
-# Printing in WPF SfDiagram
+# Printing in WPF Diagram
 
-[WPF SfDiagram](https://www.syncfusion.com/diagram-sdk/wpf-diagram) provides support to print the content displayed in the diagram page using the [PrintingService.Print](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.PrintingService.html#Syncfusion_UI_Xaml_Diagram_PrintingService_Print().html "PrintingService.Print") method.
+[WPF Diagram](https://www.syncfusion.com/diagram-sdk/wpf-diagram) provides support to print the content displayed in the diagram page using the [PrintingService.Print](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.PrintingService.html#Syncfusion_UI_Xaml_Diagram_PrintingService_Print().html "PrintingService.Print") method.
 
 ## Direct print
 
-SfDiagram provides support to directly print the diagram pages using system default printer without opening the print preview window. Call the [`SfDiagram.PrintingService.Print`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.PrintingService.html#Syncfusion_UI_Xaml_Diagram_PrintingService_Print().html "SfDiagram.PrintingService.Print") method to print the diagram:
+Diagram provides support to directly print the diagram pages using system default printer without opening the print preview window. Call the [`SfDiagram.PrintingService.Print`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.PrintingService.html#Syncfusion_UI_Xaml_Diagram_PrintingService_Print().html "SfDiagram.PrintingService.Print") method to print the diagram:
 
 {% tabs %}
 {% highlight c# %}
@@ -24,7 +24,7 @@ diagram.PrintingService.Print();
 
 ## Print preview
 
-SfDiagram provides option to display print preview to review and customize the diagram in desired format before printing. Print preview window lets users navigate through pages, zoom in and out, and identify errors before printing.
+Diagram provides option to display print preview to review and customize the diagram in desired format before printing. Print preview window lets users navigate through pages, zoom in and out, and identify errors before printing.
 
 Print preview window can be opened by setting [SfDiagram.PrintingService.ShowDialog](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.PrintingService.html#Syncfusion_UI_Xaml_Diagram_PrintingService_ShowDialog) to true and calling the [SfDiagram.PrintingService.Print](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.PrintingService.html#Syncfusion_UI_Xaml_Diagram_PrintingService_Print().html "SfDiagram.PrintingService.Print") method.
 
@@ -88,7 +88,7 @@ To access these settings, click the **Printer Properties** button in the Print P
 
 ### Scaling
 
-SfDiagram provides support to scale the diagram whether to print as single page or split into multiple pages. The available scale options are `Single Page` (index `0`), `Multiple Page` (index `1`), and `FitToPage` (index `2`). Scaling options can be changed by setting the `PrintingService.PrintManager.SelectedScaleIndex` property.
+Diagram provides support to scale the diagram whether to print as single page or split into multiple pages. The available scale options are `Single Page` (index `0`), `Multiple Page` (index `1`), and `FitToPage` (index `2`). Scaling options can be changed by setting the `PrintingService.PrintManager.SelectedScaleIndex` property.
 
 {% tabs %}
 {% highlight c# %}
@@ -132,7 +132,7 @@ N> Collation applicable when more than one copy of a multi-page diagram is print
 
 ### Orientation
 
-SfDiagram provides support to switch between Portrait and Landscape orientation while printing. Orientation can be changed by setting the [`PageSettings.PageOrientation`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.PageSettings.html#Syncfusion_UI_Xaml_Diagram_PageSettings_PageOrientation) property.
+Diagram provides support to switch between Portrait and Landscape orientation while printing. Orientation can be changed by setting the [`PageSettings.PageOrientation`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.PageSettings.html#Syncfusion_UI_Xaml_Diagram_PageSettings_PageOrientation) property.
 
 {% tabs %}
 {% highlight c# %}
@@ -152,7 +152,7 @@ The orientation can be changed in the print preview window at runtime using the 
 
 ### Paper Size
 
-SfDiagram provides support to change the page size. Page size can be changed by setting the [`PageSettings.PageWidth`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.PageSettings.html#Syncfusion_UI_Xaml_Diagram_PageSettings_PageWidth) and [`PageSettings.PageHeight`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.PageSettings.html#Syncfusion_UI_Xaml_Diagram_PageSettings_PageHeight) properties.
+Diagram provides support to change the page size. Page size can be changed by setting the [`PageSettings.PageWidth`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.PageSettings.html#Syncfusion_UI_Xaml_Diagram_PageSettings_PageWidth) and [`PageSettings.PageHeight`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.PageSettings.html#Syncfusion_UI_Xaml_Diagram_PageSettings_PageHeight) properties.
 
 {% tabs %}
 {% highlight c# %}
@@ -170,7 +170,7 @@ Page size can be changed in print preview window also by selecting any value fro
 
 ### Page Margin
 
-SfDiagram provides support to change the page margins to adjust content in printed page. Page margin can be changed by setting the `PrintingService.PrintSettings.PageMargin` property.
+Diagram provides support to change the page margins to adjust content in printed page. Page margin can be changed by setting the `PrintingService.PrintSettings.PageMargin` property.
 
 {% tabs %}
 {% highlight c# %}
@@ -186,7 +186,7 @@ You can also change the page margin in the Print Preview window by selecting a p
 
 ## Header and Footer
 
-SfDiagram provides a way to display additional content at the top (header) or bottom (footer) of the page while printing. This can be achieved by setting the [PageHeaderHeight](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.Printing.PrintSettingsBase.html#Syncfusion_Windows_Shared_Printing_PrintSettingsBase_PageHeaderHeight), [PageHeaderTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.Printing.PrintSettingsBase.html#Syncfusion_Windows_Shared_Printing_PrintSettingsBase_PageHeaderTemplate), [PageFooterHeight](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.Printing.PrintSettingsBase.html#Syncfusion_Windows_Shared_Printing_PrintSettingsBase_PageFooterHeight), and [PageFooterTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.Printing.PrintSettingsBase.html#Syncfusion_Windows_Shared_Printing_PrintSettingsBase_PageFooterTemplate) properties in PrintSettings.
+Diagram provides a way to display additional content at the top (header) or bottom (footer) of the page while printing. This can be achieved by setting the [PageHeaderHeight](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.Printing.PrintSettingsBase.html#Syncfusion_Windows_Shared_Printing_PrintSettingsBase_PageHeaderHeight), [PageHeaderTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.Printing.PrintSettingsBase.html#Syncfusion_Windows_Shared_Printing_PrintSettingsBase_PageHeaderTemplate), [PageFooterHeight](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.Printing.PrintSettingsBase.html#Syncfusion_Windows_Shared_Printing_PrintSettingsBase_PageFooterHeight), and [PageFooterTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.Printing.PrintSettingsBase.html#Syncfusion_Windows_Shared_Printing_PrintSettingsBase_PageFooterTemplate) properties in PrintSettings.
 
 Steps to set a header and footer for printing:
 
@@ -235,7 +235,7 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Exa
 
 ## Skip Empty Pages
 
-SfDiagram provides support to skip empty pages while navigating through the preview and in the printed document, thus reducing paper wastage.
+Diagram provides support to skip empty pages while navigating through the preview and in the printed document, thus reducing paper wastage.
 
 The `GetPrintInfo` virtual method of `PrintingService` is used to cancel the empty pages. This method will execute for page navigation, printing each diagram page, and changes made in the print preview area.
 
@@ -392,7 +392,7 @@ N> Custom page size print is not applicable for a real printer. When you choose 
 
 ## Classic Print Preview
 
-SfDiagram provides backward compatibility to show the older or classic print preview by calling the `ShowClassicPrintPreview` method instead of the `Print()` method.
+Diagram provides backward compatibility to show the older or classic print preview by calling the `ShowClassicPrintPreview` method instead of the `Print()` method.
 
 {% tabs %}
 {% highlight c# %}
@@ -409,10 +409,10 @@ diagram.PrintingService.ShowClassicPrintPreview();
 
 [How to customize the header or footer of the print preview](https://support.syncfusion.com/kb/article/11481/how-to-customize-the-header-or-footer-of-the-print-preview-in-the-wpf-diagramsfdiagram)
 
-[How to ignore empty pages while printing the WPF SfDiagram](https://support.syncfusion.com/kb/article/8537/how-to-ignore-empty-pages-while-printing-the-wpf-diagram-sfdiagram)
+[How to ignore empty pages while printing the WPF Diagram](https://support.syncfusion.com/kb/article/8537/how-to-ignore-empty-pages-while-printing-the-wpf-diagram-sfdiagram)
 
 [How to get progress notification while printing the diagram pages](https://support.syncfusion.com/kb/article/8465/how-to-get-progress-notification-while-printing-in-wpf-diagram-sfdiagram)
 
 [How to show classic print preview](https://support.syncfusion.com/kb/article/8186/how-to-show-classic-print-preview-in-wpf-diagram-sfdiagram)
 
-[How to enable the Print Properties option in the Print dialog in WPF SfDiagram](https://support.syncfusion.com/kb/article/18697/how-to-enable-the-print-properties-option-in-the-print-dialog-in-wpf-diagram-sfdiagram)
+[How to enable the Print Properties option in the Print dialog in WPF Diagram](https://support.syncfusion.com/kb/article/18697/how-to-enable-the-print-properties-option-in-the-print-dialog-in-wpf-diagram-sfdiagram)

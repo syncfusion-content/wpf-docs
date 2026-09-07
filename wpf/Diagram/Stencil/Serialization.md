@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Stencil Serialization in WPF Diagram | Syncfusion®
-description: Serialize and deserialize stencil symbols in Syncfusion® WPF SfDiagram while preserving custom symbol data and configurations.
+description: Serialize and deserialize stencil symbols in Syncfusion® WPF Diagram while preserving custom symbol data and configurations.
 platform: wpf
 control: SfDiagram
 documentation: ug
 ---
 
-# Stencil Serialization in WPF SfDiagram
+# Stencil Serialization in WPF Diagram
 
 [Stencil](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.html) serialization is the process of converting the state of `Stencil` into a stream of bytes to recreate them when needed. Such streams can be stored in a database, as a file, or in memory. The reverse process is called deserialization.
 
@@ -134,8 +134,8 @@ if (dialog.ShowDialog() == true)
 [View Sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Stencil/SymbolGroupSerialize)
 
 ## See Also
-[How to change the color of a node in the stencil and diagram while loading a saved file in WPF SfDiagram ](https://support.syncfusion.com/kb/article/18669/how-to-change-the-color-of-a-node-in-the-stencil-and-diagram-while-loading-a-saved-file-in-wpf-diagramsfdiagram)
+[How to change the color of a node in the stencil and diagram while loading a saved file in WPF Diagram ](https://support.syncfusion.com/kb/article/18669/how-to-change-the-color-of-a-node-in-the-stencil-and-diagram-while-loading-a-saved-file-in-wpf-diagramsfdiagram)
 
-[How to serialize the LinearGradientBrush type as a Fill value in the ShapeStyle of a Node in the WPF SfDiagram ](https://support.syncfusion.com/kb/article/18058/how-to-serialize-the-lineargradientbrush-type-as-a-fill-value-in-the-shapestyle-of-a-node-in-the-wpf-diagram-sfdiagram)
+[How to serialize the LinearGradientBrush type as a Fill value in the ShapeStyle of a Node in the WPF Diagram ](https://support.syncfusion.com/kb/article/18058/how-to-serialize-the-lineargradientbrush-type-as-a-fill-value-in-the-shapestyle-of-a-node-in-the-wpf-diagram-sfdiagram)
 
-[How to serialize and deserialize the image nodes in WPF SfDiagram](https://support.syncfusion.com/kb/article/17743/how-to-serialize-and-deserialize-the-image-nodes-in-wpf-diagram-sfdiagram)
+[How to serialize and deserialize the image nodes in WPF Diagram](https://support.syncfusion.com/kb/article/17743/how-to-serialize-and-deserialize-the-image-nodes-in-wpf-diagram-sfdiagram)
