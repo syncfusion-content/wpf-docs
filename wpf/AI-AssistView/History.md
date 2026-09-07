@@ -17,7 +17,7 @@ The `Conversations` property stores the archived conversations displayed in the 
 
 ### Define the view model
 
-Create a view model with an `ObservableCollection&lt;AssistConversationItem&gt;` and populate each conversation with its associated messages.
+Create a view model with an `ObservableCollection<AssistConversationItem>` and populate each conversation with its associated messages.
 
 {% tabs %}
 {% highlight c# tabtitle="AIAssistViewModel.cs" %}
@@ -30,18 +30,18 @@ namespace AIAssistViewHistoryWPF
 {
     public class AIAssistViewModel
     {
-        public ObservableCollection&lt;object&gt; Chats { get; set; }
+        public ObservableCollection<object> Chats { get; set; }
 
         public Author CurrentUser { get; set; }
 
-        public ObservableCollection&lt;AssistConversationItem&gt; Conversations { get; set; }
+        public ObservableCollection<AssistConversationItem> Conversations { get; set; }
 
         public AIAssistViewModel()
         {
             CurrentUser = new Author() { Name = "User" };
-            Chats = new ObservableCollection&lt;object&gt;();
+            Chats = new ObservableCollection<object>();
 
-            Conversations = new ObservableCollection&lt;AssistConversationItem&gt;()
+            Conversations = new ObservableCollection<AssistConversationItem>()
             {
                 CreateConversation(
                     "Scotland",
@@ -73,7 +73,7 @@ namespace AIAssistViewHistoryWPF
             {
                 Title = title,
                 DateTime = dateTime,
-                AssistItems = new ObservableCollection&lt;object&gt;()
+                AssistItems = new ObservableCollection<object>()
                 {
                     new TextMessage()
                     {
@@ -103,7 +103,7 @@ Set the window's data context and bind the `Conversations` property to display t
 {% tabs %}
 {% highlight xaml tabtitle="MainWindow.xaml" hl_lines="18 19 20 21" %}
 
-&lt;Window
+<Window
     x:Class="AIAssistViewHistoryWPF.MainWindow"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
@@ -111,22 +111,22 @@ Set the window's data context and bind the `Conversations` property to display t
     xmlns:syncfusion="clr-namespace:Syncfusion.UI.Xaml.Chat;assembly=Syncfusion.SfChat.Wpf"
     Title="AI AssistView Conversation History"
     Width="1000"
-    Height="700"&gt;
+    Height="700">
 
-    &lt;Window.DataContext&gt;
-        &lt;local:AIAssistViewModel /&gt;
-    &lt;/Window.DataContext&gt;
+    <Window.DataContext>
+        <local:AIAssistViewModel >
+    </Window.DataContext>
 
-    &lt;Grid Margin="20"&gt;
-        &lt;syncfusion:SfAIAssistView
+    <Grid Margin="20">
+        <syncfusion:SfAIAssistView
             x:Name="aiAssistView"
             Messages="{Binding Chats}"
             CurrentUser="{Binding CurrentUser}"
             Conversations="{Binding Conversations}"
             ShowNavigationView="True"
-            NavigationHeader="Chat History" /&gt;
-    &lt;/Grid&gt;
-&lt;/Window&gt;
+            NavigationHeader="Chat History" >
+    </Grid>
+</Window>
 
 {% endhighlight %}
 {% endtabs %}
@@ -142,8 +142,8 @@ The `ShowNavigationView` property controls the visibility of the conversation hi
 {% tabs %}
 {% highlight xaml tabtitle="MainWindow.xaml" hl_lines="2" %}
 
-&lt;syncfusion:SfAIAssistView x:Name="aiAssistView"
-                           ShowNavigationView="True" /&gt;
+<syncfusion:SfAIAssistView x:Name="aiAssistView"
+                           ShowNavigationView="True" >
 
 {% endhighlight %}
 {% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="8" %}
@@ -174,8 +174,8 @@ The `NavigationHeader` property sets the text displayed at the top of the naviga
 {% tabs %}
 {% highlight xaml tabtitle="MainWindow.xaml" hl_lines="2" %}
 
-&lt;syncfusion:SfAIAssistView x:Name="aiAssistView"
-                           NavigationHeader="Chat History" /&gt;
+<syncfusion:SfAIAssistView x:Name="aiAssistView"
+                           NavigationHeader="Chat History" >
 
 {% endhighlight %}
 {% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="8" %}
