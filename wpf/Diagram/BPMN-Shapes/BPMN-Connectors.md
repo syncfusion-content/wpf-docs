@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Connectors in WPF SfDiagram | Syncfusion®
-description: Learn about BPMN connectors in Syncfusion® WPF SfDiagram control, including association, sequence flow, message flow, and connector types.
+title: Connectors in WPF Diagram | Syncfusion®
+description: Learn about BPMN connectors in Syncfusion® WPF Diagram control, including association, sequence flow, message flow, and connector types.
 platform: wpf
 control: SfDiagram
 documentation: ug
 ---
 
-# Connectors in WPF SfDiagram
+# Connectors in WPF Diagram
 
 The [BpmnFlowViewModel](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.BpmnFlowViewModel.html) are lines that used to connection between the BPMN flow objects.
 

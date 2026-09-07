@@ -7,7 +7,7 @@ control: Diagram
 documentation: ug
 ---
 
-# Getting Started with WPF Diagram
+# Getting Started with WPF Diagram(Classic)
 
 This section helps you to get started with WPF Diagram and has the following topics:
 

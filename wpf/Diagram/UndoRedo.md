@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Undo and Redo in WPF SfDiagram | Syncfusion®
-description: Reverse or restore diagram changes in Syncfusion® WPF SfDiagram using undo and redo for editing operations.
+title: Undo and Redo in WPF Diagram | Syncfusion®
+description: Reverse or restore diagram changes in Syncfusion® WPF Diagram using undo and redo for editing operations.
 platform: wpf
 control: SfDiagram
 documentation: ug
 ---
 
-# Undo and Redo in WPF SfDiagram
+# Undo and Redo in WPF Diagram
 
-[WPF SfDiagram](https://www.syncfusion.com/diagram-sdk/wpf-diagram) provides built-in support to track the changes that are made through interaction and through public APIs. The changes can be reverted or restored either through shortcut keys or through commands.
+[WPF Diagram](https://www.syncfusion.com/diagram-sdk/wpf-diagram) provides built-in support to track the changes that are made through interaction and through public APIs. The changes can be reverted or restored either through shortcut keys or through commands.
 
 ## Undo and Redo actions
 
@@ -33,7 +33,7 @@ Undo/Redo for diagram can be enabled/disabled with the [`Constraints`](https://h
 {% endhighlight %}
 
 {% highlight c# %}
-//Initialize SfDiagram
+//Initialize Diagram
 SfDiagram diagram = new SfDiagram();
 
 //Enable the undo and redo actions
@@ -55,7 +55,7 @@ Undo/redo actions can be executed using commands of diagram control instead of u
 {% endhighlight %}
 {% highlight c# %}
 
-//Initialize SfDiagram
+//Initialize Diagram
 SfDiagram diagram = new SfDiagram();
 
 //Enable the undo and redo actions
@@ -111,7 +111,7 @@ The [`StackLimit`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram
 {% endhighlight %}
 {% highlight c# %}
 
-//Initialize SfDiagram
+//Initialize Diagram
 SfDiagram diagram = new SfDiagram();
 
 //Enable the undo and redo actions
@@ -155,7 +155,7 @@ The `EndComposite()` method of the `HistoryManager` class allows you to end the 
 {% tabs %}
 {% highlight c# %}
 
-//Initialize SfDiagram
+//Initialize Diagram
 SfDiagram diagram = new SfDiagram();
 
 //Enable the undo and redo actions
@@ -178,7 +178,7 @@ History manager class of SfDiagram control allows you to view the undo and redo 
 {% tabs %}
 {% highlight c# %}
 
-//Initialize SfDiagram
+//Initialize Diagram
 SfDiagram diagram = new SfDiagram();
 
 //Hook the history changed event.
@@ -552,4 +552,4 @@ private void Diagram_NodeChangedEvent(object sender, ChangeEventArgs<object, Nod
 
 [How to enable Undo/Redo feature for Diagram?](https://support.syncfusion.com/kb/article/11090/how-to-enable-undo-redo-feature-in-wpf-diagram-sfdiagram)
 
-[How to enable undo or redo in WPF SfDiagram?](https://support.syncfusion.com/kb/article/5471/how-to-enable-undo-or-redo-in-wpf-diagram-sfdiagram)
+[How to enable undo or redo in WPF Diagram?](https://support.syncfusion.com/kb/article/5471/how-to-enable-undo-or-redo-in-wpf-diagram-sfdiagram)

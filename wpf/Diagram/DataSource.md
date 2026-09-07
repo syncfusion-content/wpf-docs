@@ -1,15 +1,15 @@
 ---
 layout: post
-title: DataSource in WPF SfDiagram | Syncfusion®
-description: Populate Syncfusion® WPF SfDiagram from data sources, define layouts, manage hierarchical relationships, and support flowchart mapping.
+title: DataSource in WPF Diagram | Syncfusion®
+description: Populate Syncfusion® WPF Diagram from data sources, define layouts, manage hierarchical relationships, and support flowchart mapping.
 platform: wpf
 control: SfDiagram
 documentation: ug
 ---
 
-# DataSource in WPF SfDiagram
+# DataSource in WPF Diagram
 
-[WPF SfDiagram](https://www.syncfusion.com/diagram-sdk/wpf-diagram) control can be populated with the nodes and connectors based on the information provided from an external data source.
+[WPF Diagram](https://www.syncfusion.com/diagram-sdk/wpf-diagram) control can be populated with the nodes and connectors based on the information provided from an external data source.
 
 * The DataSourceSettings [`DataSource`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.DataSourceSettings.html#Syncfusion_UI_Xaml_Diagram_DataSourceSettings_DataSource) property is used to define the data source as a collection of objects, which needs to be populated as diagram.
 
@@ -69,7 +69,7 @@ public class Employees : ObservableCollection<Employee>
 {
 }
 
-// Initialize DataSourceSettings for SfDiagram
+// Initialize DataSourceSettings for Diagram
 Diagram.DataSourceSettings = new DataSourceSettings()
 {
     Id = "EmpId",
@@ -145,7 +145,7 @@ By default, populated nodes are positioned at (0,0). You can use built-in automa
 {% endhighlight %}
 {% highlight c# %}
 
-//Initialize LayoutManager and Layout for SfDiagram
+//Initialize LayoutManager and Layout for Diagram
 Diagram.LayoutManager = new LayoutManager()
 {
     Layout = new DirectedTreeLayout()
@@ -405,7 +405,7 @@ diagram.Nodes = new ObservableCollection<NodeViewModel>();
 //Initialize Connector Collection
 diagram.Connectors = new ObservableCollection<ConnectorViewModel>();
 
-//Initialize DataSourceSettings for SfDiagram
+//Initialize DataSourceSettings for Diagram
 diagram.DataSourceSettings = new FlowchartDataSourceSettings()
 {
     ParentId = "ParentId",
@@ -421,7 +421,7 @@ diagram.DataSourceSettings = new FlowchartDataSourceSettings()
 //Initialize LayoutManager
 LayoutManager layoutManager = new LayoutManager();
 
-//Initialize Layout for SfDiagram
+//Initialize Layout for Diagram
 layoutManager.Layout = new FlowchartLayout()
 {
     Orientation = FlowchartOrientation.TopToBottom,
@@ -431,7 +431,7 @@ layoutManager.Layout = new FlowchartLayout()
     VerticalSpacing = 30
 };
 
-//initialize theming style for SfDiagram
+//initialize theming style for Diagram
 diagram.Theme = new OfficeTheme();
 
 //Initialize LayoutManager
