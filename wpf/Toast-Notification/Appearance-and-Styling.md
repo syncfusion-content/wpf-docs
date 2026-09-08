@@ -7,13 +7,13 @@ control: SfToastNotification
 documentation: ug
 ---
 
-# Appearance and Styling in WPF Toast Notification
+# Appearance and Styling in WPF Toast Control
 
-This section explains how to customize the appearance and visual behavior of toast notifications by using severity, variants, accent brush, placement, animations, sound, and duration.
+This section explains how to customize the appearance and visual behavior of WPF Toast Control by using severity, variants, accent brush, placement, animations, sound, and duration.
 
 ## Severity and Variant
 
-Toast notifications support multiple severity levels with built-in visual styling and provide three visual variants to suit different design preferences. The accepted severity levels are `Info`, `Success`, `Warning`, and `Error`. The accepted variants are `Text`, `Filled`, and `Outlined`.
+WPF Toast Control support multiple severity levels with built-in visual styling and provide three visual variants to suit different design preferences. The accepted severity levels are `Info`, `Success`, `Warning`, and `Error`. The accepted variants are `Text`, `Filled`, and `Outlined`.
 
 {% tabs %}
 {% highlight C# %}
@@ -45,7 +45,7 @@ The following table shows how each variant renders with each severity. The defau
 
 ## Accent Brush
 
-You can use the [AccentBrush](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.SfToastNotification.ToastOptions.html#Syncfusion_UI_Xaml_SfToastNotification_ToastOptions_AccentBrush) property to further customize the appearance of a toast after severity and variant are applied. The accent brush overrides the accent color derived from the selected severity. It is ignored when `Severity` is set to `None`.
+You can use the [AccentBrush](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.SfToastNotification.ToastOptions.html#Syncfusion_UI_Xaml_SfToastNotification_ToastOptions_AccentBrush) property to further customize the appearance of a WPF Toast Control after severity and variant are applied. The accent brush overrides the accent color derived from the selected severity. It is ignored when `Severity` is set to `None`.
 
 {% tabs %}
 {% highlight C# %}
@@ -66,7 +66,7 @@ SfToastNotification.Show(this, new ToastOptions
 
 ## Placement
 
-Toast notifications support multiple placement options, allowing notifications to appear at different positions within the application window or screen. The accepted `ToastPlacement` values are: `TopLeft`, `TopCenter`, `TopRight`, `LeftCenter`, `RightCenter`, `BottomLeft`, `BottomCenter`, and `BottomRight`. The default placement is `BottomRight`.
+WPF Toast Control support multiple placement options, allowing notifications to appear at different positions within the application window or screen. The accepted `ToastPlacement` values are: `TopLeft`, `TopCenter`, `TopRight`, `LeftCenter`, `RightCenter`, `BottomLeft`, `BottomCenter`, and `BottomRight`. The default placement is `BottomRight`.
 
 {% tabs %}
 {% highlight C# %}
@@ -85,7 +85,7 @@ SfToastNotification.Show(this, new ToastOptions
 
 ## Animations
 
-Toast notifications support built-in animation types that control how notifications appear and disappear. You can configure the show and hide animations independently. The accepted `ToastAnimation` values are listed in the table below. The default values are `SlideBottomIn` and `SlideBottomOut`.
+WPF Toast Control support built-in animation types that control how notifications appear and disappear. You can configure the show and hide animations independently. The accepted `ToastAnimation` values are listed in the table below. The default values are `SlideBottomIn` and `SlideBottomOut`.
 
 {% tabs %}
 {% highlight C# %}
@@ -133,13 +133,13 @@ SfToastNotification.Show(this, new ToastOptions
 {% endhighlight %}
 {% endtabs %}
 
-## Toast Sound Configuration
+## WPF Toast Control Sound Configuration
 
 ### Predefined Sound Options
 
-Toast notification supports multiple sound options when displaying notifications, helping to improve user awareness and ensuring important messages are not easily missed.
+WPF Toast Control supports multiple sound options when displaying notifications, helping to improve user awareness and ensuring important messages are not easily missed.
 
-Custom toasts (Window and Screen modes) support only three predefined sound values from the `ToastSound` enum: `Silent`, `Beep`, and `Hand`. The default value is `Beep`.
+Custom notification (Window and Screen modes) support only three predefined sound values from the `ToastSound` enum: `Silent`, `Beep`, and `Hand`. The default value is `Beep`.
 
 {% tabs %}
 {% highlight C# %}
@@ -156,7 +156,7 @@ SfToastNotification.Show(this, new ToastOptions
 {% endhighlight %}
 {% endtabs %}
 
-System toast notifications (Default mode) support the remaining predefined sounds from the `ToastSound` enum, enabling developers to choose from a wide range of standard notification tones that align with the operating system's native look and feel (including `LoopingAlarm`, `IM`, `Mail`, `SMS`, and others).
+System notification (Default mode) support the remaining predefined sounds from the `ToastSound` enum, enabling developers to choose from a wide range of standard notification tones that align with the operating system's native look and feel (including `LoopingAlarm`, `IM`, `Mail`, `SMS`, and others).
 
 {% tabs %}
 {% highlight C# %}
@@ -175,7 +175,7 @@ SfToastNotification.Show(this, new ToastOptions
 
 ### Custom Audio File Path
 
-Toast notification allows you to play a custom audio file for custom toasts using the ToastSoundPath property. This enables developers to provide a more personalized notification experience by using their own sound files.
+WPF Toast Control allows you to play a custom audio file for custom notification using the ToastSoundPath property. This enables developers to provide a more personalized notification experience by using their own sound files.
 
 {% tabs %}
 {% highlight C# %}
@@ -192,9 +192,9 @@ SfToastNotification.Show(this, new ToastOptions
 {% endhighlight %}
 {% endtabs %}
 
-## Control Maximum Toast Display Count
+## Control Maximum WPF Toast Control Display Count
 
-The [MaxToastVisibleCount](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.SfToastNotification.ToastOptions.html#Syncfusion_UI_Xaml_SfToastNotification_ToastOptions_MaxToastVisibleCount) property controls how many toast notifications are displayed simultaneously. This helps manage multiple notifications efficiently and prevents UI clutter. By default, the property is `null`, and the number of notifications shown is limited only by the available space within the host.
+The [MaxToastVisibleCount](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.SfToastNotification.ToastOptions.html#Syncfusion_UI_Xaml_SfToastNotification_ToastOptions_MaxToastVisibleCount) property controls how many WPF Toast Control are displayed simultaneously. This helps manage multiple notifications efficiently and prevents UI clutter. By default, the property is `null`, and the number of notifications shown is limited only by the available space within the host.
 
 {% tabs %}
 {% highlight C# %}
@@ -211,4 +211,4 @@ SfToastNotification.Show(this, new ToastOptions
 {% endhighlight %}
 {% endtabs %}
 
-N> The following properties are supported only for in-app toast notifications (Window or Screen mode) and have no effect in Default (native) mode, where OS behavior controls appearance, placement, animation, and timing: `Severity`, `Variant`, `AccentBrush`, `Placement`, `ShowAnimationType`, `CloseAnimationType`, `Duration`, `MaxToastVisibleCount`, and `ToastSoundPath`. In addition, `Variant` and `AccentBrush` apply only when `Severity` is set to `Info`, `Success`, `Warning`, or `Error` (not `None`).
+N> The following properties are supported only for in-app WPF Toast Control (Window or Screen mode) and have no effect in Default (native) mode, where OS behavior controls appearance, placement, animation, and timing: `Severity`, `Variant`, `AccentBrush`, `Placement`, `ShowAnimationType`, `CloseAnimationType`, `Duration`, `MaxToastVisibleCount`, and `ToastSoundPath`. In addition, `Variant` and `AccentBrush` apply only when `Severity` is set to `Info`, `Success`, `Warning`, or `Error` (not `None`).
