@@ -35,7 +35,27 @@ To add control manually in XAML, do the following steps:
 
 1. Add the following required assembly reference to the project, Syncfusion.SfDiagram.WPF .
 2. Import Syncfusion® WPF schema  http://schemas.syncfusion.com/wpf or SfDiagram control namespace  Syncfusion.UI.Xaml.Diagram in XAML page.
-3. Declare SfDiagram control in XAML page.
+3. Register your trial license key
+
+Include your license key in `App.xaml.cs` before initializing any Syncfusion components.
+
+{% tabs %}
+
+{% highlight C# %}
+
+// Register the Syncfusion license
+Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense("YOUR_LICENSE_KEY");
+
+{% endhighlight %}
+
+{% endtabs %}
+
+{% endcolumn %}
+
+{: .installation-step-3}
+{% column %}
+
+4. Declare SfDiagram control in XAML page.
 
 N> Starting with v16.2.0.x, if you reference Syncfusion® assemblies from trial setup or from the NuGet feed, you also have to include a license key in your projects. Refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/overview) to learn about registering Syncfusion® license key in your WPF application to use Syncfusion® components.
 
@@ -67,7 +87,27 @@ To add control manually in C#, do the following steps:
 
 1. Add the following required assembly references to the project, Syncfusion.SfDiagram.WPF.
 2. Import SfDiagram namespace Syncfusion.UI.Xaml.Diagram.
-3. Create SfDiagram control instance and add it to the Grid.
+3. Register your trial license key
+
+Include your license key in `App.xaml.cs` before initializing any Syncfusion components.
+
+{% tabs %}
+
+{% highlight C# %}
+
+// Register the Syncfusion license
+Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense("YOUR_LICENSE_KEY");
+
+{% endhighlight %}
+
+{% endtabs %}
+
+{% endcolumn %}
+
+{: .installation-step-3}
+{% column %}
+
+4. Create SfDiagram control instance and add it to the Grid.
 
 {% capture codesnippet2 %}
 {% tabs %}

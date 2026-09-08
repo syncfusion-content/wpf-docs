@@ -54,8 +54,27 @@ The following steps describe how to add the Diagram ribbon control manually, wit
 1. Add the following required assembly reference to the project: `Syncfusion.SfDiagramRibbon.WPF`.
 
 2. Import the Syncfusion® WPF schema `http://schemas.syncfusion.com/wpf` or the SfDiagramRibbon control namespace `Syncfusion.UI.Xaml.DiagramRibbon` in your application. 
+3. Register your trial license key
+ 
+Include your license key in `App.xaml.cs` before initializing any Syncfusion components.
+ 
+{% tabs %}
+ 
+{% highlight C# %}
+ 
+// Register the Syncfusion license
+Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense("YOUR_LICENSE_KEY");
+ 
+{% endhighlight %}
+ 
+{% endtabs %}
 
-3. Declare the SfDiagramRibbon control in your application, and set the `SfDiagram` as its `DataContext` so the ribbon commands act on the diagram.
+{% endcolumn %}
+
+{: .installation-step-3}
+{% column %}
+
+4. Declare the SfDiagramRibbon control in your application, and set the `SfDiagram` as its `DataContext` so the ribbon commands act on the diagram.
 
 {% capture codesnippet1 %}
 {% tabs %}
