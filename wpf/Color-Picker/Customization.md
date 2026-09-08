@@ -11,7 +11,7 @@ documentation: ug
 
 # Customization in WPF ColorPicker
 
-[ColorPicker](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.ColorPicker.html) has a built-in color palette to select a solid color easily. This can be enabled using the [IsColorPaletteVisible](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.ColorPicker.html#Syncfusion_Windows_Shared_ColorPicker_IsColorPaletteVisible) property.
+[WPF ColorPicker](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.ColorPicker.html) has a built-in color palette to select a solid color easily. This can be enabled using the [IsColorPaletteVisible](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.ColorPicker.html#Syncfusion_Windows_Shared_ColorPicker_IsColorPaletteVisible) property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -31,7 +31,7 @@ colorEdit.IsColorPaletteVisible = true;
 
 ## Gradient brush display mode
 
-The brush representation of `ColorPicker` can be customized using the [GradientBrushDisplayMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.ColorPicker.html#Syncfusion_Windows_Shared_ColorPicker_GradientBrushDisplayMode) property. The default value of `GradientBrushDisplayMode` is `Default`.
+The brush representation of `WPF ColorPicker` can be customized using the [GradientBrushDisplayMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.ColorPicker.html#Syncfusion_Windows_Shared_ColorPicker_GradientBrushDisplayMode) property. The default value of `GradientBrushDisplayMode` is `Default`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -113,4 +113,4 @@ colorEdit.IsScRGBColor = true;
 
 ![WPF ColorPicker with ScRGB color editing](ScRGB-Color_images/ColorPicker_IsScRGBColor.png)
 
-N> `IsScRGBColor` is a `ColorEdit`-only property and is not available on `ColorPicker`.
+N> `IsScRGBColor` is a `ColorEdit`-only property and is not available in the `WPF ColorPicker`.
