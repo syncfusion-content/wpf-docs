@@ -7,11 +7,11 @@ control: SfBadge
 documentation: ug
 ---
 
-# Getting Started with WPF SfBadge
+# Getting Started with WPF Badge
 
-This section explains the steps required to add the [Badge](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Notification.SfBadge.html) control and its elements such as shapes, alignment and predefined colors. This section covers only basic features needed to get started with Syncfusion `Badge` control.
+This section explains the steps required to add the [WPF Badge](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Notification.SfBadge.html) control and its elements such as shapes, alignment and predefined colors. This section covers only basic features needed to get started with Syncfusion `WPF Badge` control.
 
-## Structure of SfBadge control
+## Structure of WPF Badge control
 
 ![WPF Badge Structure](Getting-Started_images/wpf-badge-structure.png)
 
@@ -21,9 +21,9 @@ Refer to the [Control Dependencies](https://help.syncfusion.com/wpf/control-depe
 
 Refer to this [documentation](https://help.syncfusion.com/wpf/installation/install-nuget-packages) to find more details about installing nuget packages in a WPF application.
 
-## Adding WPF SfBadge via XAML
+## Adding WPF Badge via XAML
 
-To add the `SfBadge` manually in XAML, follow these steps:
+To add the `WPF Badge` manually in XAML, follow these steps:
 
 1. Create a new WPF project in Visual Studio.
 
@@ -32,7 +32,7 @@ To add the `SfBadge` manually in XAML, follow these steps:
     * Syncfusion.Shared.WPF
     * Syncfusion.Tools.WPF
 
-3. Import Syncfusion<sup>®</sup> WPF schema **http://schemas.syncfusion.com/wpf** as the `notification:` namespace, and declare the `SfBadge` in the XAML page.
+3. Import Syncfusion<sup>®</sup> WPF schema **http://schemas.syncfusion.com/wpf** as the `notification:` namespace, and declare the `WPF Badge` in the XAML page.
 
 {% capture codesnippet1 %}
 {% tabs %}
@@ -56,9 +56,9 @@ To add the `SfBadge` manually in XAML, follow these steps:
 {% endcapture %}
 {{ codesnippet1 | OrderList_Indent_Level_1 }}
 
-## Adding WPF SfBadge via C#
+## Adding WPF Badge via C#
 
-To add the `SfBadge` control manually in C#, follow these steps:
+To add the `WPF Badge` control manually in C#, follow these steps:
 
 1. Create a new WPF application via Visual Studio.
 
@@ -67,9 +67,9 @@ To add the `SfBadge` control manually in C#, follow these steps:
     * Syncfusion.Shared.WPF
     * Syncfusion.Tools.WPF
 
-3. Include the required namespaces, create an instance of `SfBadge`, and add it to the window.
+3. Include the required namespaces, create an instance of `WPF Badge`, and add it to the window.
 
-4. Declare the `SfBadge` control using C#.
+4. Declare the `WPF Badge` control using C#.
 
 {% capture codesnippet2 %}
 {% tabs %}
@@ -99,9 +99,9 @@ namespace GettingStarted
 {% endcapture %}
 {{ codesnippet2 | OrderList_Indent_Level_1 }}
 
-## Adding badge for a Button
+## Adding WPF Badge for a Button
 
-If you want to assign `Badge` for any objects, create the `Badge` and assign the badge to the [SfBadge.Badge](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Notification.SfBadge.html#Syncfusion_Windows_Controls_Notification_SfBadge_BadgeProperty) property. Before that you need to create a `SfBadge.Badge` object and add that object to the parent control.
+If you want to assign `WPF Badge` for any objects, create the `WPF Badge` and assign it to the [SfBadge.Badge](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Notification.SfBadge.html#Syncfusion_Windows_Controls_Notification_SfBadge_BadgeProperty) property. Before that you need to create a `SfBadge.Badge` object and add that object to the parent control.
 
 Here, `Badge` control added for the `Button` control.
 
@@ -141,9 +141,9 @@ SfBadge.SetBadge(button, sfBadge);
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-badge-control-examples/blob/main/Samples/Getting_Started)
 
-## Setting Badge display content
+## Setting WPF Badge display content
 
-If you want to set or change the display content of the `Badge`, use the `Content` property. The default value of `Content` property is `null`.
+If you want to set or change the display content of the `WPF Badge`, use the `Content` property. The default value of `Content` property is `null`.
 
 {% tabs %}
 {% highlight XAML %}
@@ -169,9 +169,9 @@ badge.Content = "99+";
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-badge-control-examples/blob/main/Samples/Content_CustomUI)
 
-## Alignment of Badge
+## Alignment of WPF Badge
 
-You can align the `Badge` either horizontally or vertically by using the `HorizontalAlignment` or `VerticalAlignment` properties. The default value of the `HorizontalAlignment` property is `Right` and the `VerticalAlignment` property is `Top`.
+You can align the `WPF Badge` either horizontally or vertically by using the `HorizontalAlignment` or `VerticalAlignment` properties. The default value of the `HorizontalAlignment` property is `Right` and the `VerticalAlignment` property is `Top`.
 
 {% tabs %}
 {% highlight XAML %}
@@ -201,9 +201,9 @@ badge.Content = "99+";
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-badge-control-examples/blob/main/Samples/Badge_Features)
 
-## Positioning of Badge
+## Positioning of WPF Badge
 
-You can change the horizontal or vertical position of the `Badge` either inside, outside or in the middle by using the [HorizontalAnchor](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Notification.SfBadge.html#Syncfusion_Windows_Controls_Notification_SfBadge_HorizontalAnchor) and [VerticalAnchor](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Notification.SfBadge.html#Syncfusion_Windows_Controls_Notification_SfBadge_VerticalAnchor) properties. The default value of `HorizontalAnchor` and `VerticalAnchor` properties is `Center`.
+You can change the horizontal or vertical position of the `WPF Badge` either inside, outside or in the middle by using the [HorizontalAnchor](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Notification.SfBadge.html#Syncfusion_Windows_Controls_Notification_SfBadge_HorizontalAnchor) and [VerticalAnchor](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Notification.SfBadge.html#Syncfusion_Windows_Controls_Notification_SfBadge_VerticalAnchor) properties. The default value of `HorizontalAnchor` and `VerticalAnchor` properties is `Center`.
 
 {% tabs %}
 {% highlight XAML %}
@@ -233,11 +233,11 @@ badge.Content = "10";
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-badge-control-examples/blob/main/Samples/Badge_Features)
 
-## Place the Badge any where on the container
+## Place the WPF Badge any where on the container
 
-If you want to place the `Badge` anywhere on any shaped container, use the [HorizontalPosition](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Notification.SfBadge.html#Syncfusion_Windows_Controls_Notification_SfBadge_HorizontalPosition) or [VerticalPosition](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Notification.SfBadge.html#Syncfusion_Windows_Controls_Notification_SfBadge_VerticalPosition) properties. The value range for `HorizontalPosition` and `VerticalPosition` properties is `0` to`1`. The default value of `HorizontalPosition` property is `1` and `VerticalPosition` property is `0`.
+If you want to place the `WPF Badge` anywhere on any shaped container, use the [HorizontalPosition](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Notification.SfBadge.html#Syncfusion_Windows_Controls_Notification_SfBadge_HorizontalPosition) or [VerticalPosition](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Notification.SfBadge.html#Syncfusion_Windows_Controls_Notification_SfBadge_VerticalPosition) properties. The value range for `HorizontalPosition` and `VerticalPosition` properties is `0` to`1`. The default value of `HorizontalPosition` property is `1` and `VerticalPosition` property is `0`.
 
-For example, if you use any circular containers, you can easily place the `Badge` anywhere by using the `HorizontalPosition` and `VerticalPosition` properties.
+For example, if you use any circular containers, you can easily place the `WPF Badge` anywhere by using the `HorizontalPosition` and `VerticalPosition` properties.
 
 {% tabs %}
 {% highlight XAML %}
@@ -272,9 +272,9 @@ badge.VerticalPosition = 0.8;
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-badge-control-examples/blob/main/Samples/Custom_Alignment)
 
-## Adding badge without BadgeContainer
+## Adding WPF Badge without BadgeContainer
 
-You can directly add the `Badge` to any objects without using the `SfBadge.Badge` container.
+You can directly add the `WPF Badge` to any objects without using the `SfBadge.Badge` container.
 
 The C# sample below defines a `MailItem` class and a `ViewModel` that exposes a list of `MailItem` instances. Place both classes in your project (for example, in a `Models` folder) and add an `xmlns:local` namespace mapping in the XAML that points to the namespace where these classes live.
 
@@ -355,9 +355,9 @@ namespace GettingStarted.Models
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-badge-control-examples/blob/main/Samples/Badge_without_BadgeContainer)
 
-## Predefined colors for displaying the badges
+## Predefined colors for displaying the WPF Badge
 
-You can change the background color of the `Badge` by using the [Fill](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Notification.SfBadge.html#Syncfusion_Windows_Controls_Notification_SfBadge_Fill) property. Based on the value of the `Fill` property, the respective background color will be applied to the `Badge`. The default value of the `Fill` property is `Accent`.
+You can change the background color of the `WPF Badge` by using the [Fill](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Notification.SfBadge.html#Syncfusion_Windows_Controls_Notification_SfBadge_Fill) property. Based on the value of the `Fill` property, the respective background color will be applied. The default value of the `Fill` property is `Accent`.
 
 The `Badge` supports the following essential states:
 
@@ -399,9 +399,9 @@ badge.Content = "99+";
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-badge-control-examples/blob/main/Samples/Badge_Features)
 
-## Predefined shapes for displaying the Badge
+## Predefined shapes for displaying the WPF Badge
 
-You can change the default shape to either `Rectangle`, `Oval`, or `Ellipse` by using the [Shape](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Notification.SfBadge.html#Syncfusion_Windows_Controls_Notification_SfBadge_Shape) property. If you want to display the `Badge` content without any default shape, use the `Shape` property value as `None`. The default value of the `Shape` property is `Ellipse`.
+You can change the default shape to either `Rectangle`, `Oval`, or `Ellipse` by using the [Shape](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Notification.SfBadge.html#Syncfusion_Windows_Controls_Notification_SfBadge_Shape) property. If you want to display the `WPF Badge` content without any default shape, use the `Shape` property value as `None`. The default value of the `Shape` property is `Ellipse`.
 
 | Shape value   | Description                              |
 |---------------|------------------------------------------|
@@ -440,7 +440,7 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 
 ## Animate when content changes
 
-You can enable the `Scale` or `Opacity` based animation for displaying the `Badge` text by using the [AnimationType](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Notification.SfBadge.html#Syncfusion_Windows_Controls_Notification_SfBadge_AnimationType) property. You can only see the animation when you change the text of the `Badge`. The default value of the `AnimationType` property is `None`.
+You can enable the `Scale` or `Opacity` based animation for displaying the `WPF Badge` text by using the [AnimationType](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Notification.SfBadge.html#Syncfusion_Windows_Controls_Notification_SfBadge_AnimationType) property. You can only see the animation when you change the text of the `WPF Badge`. The default value of the `AnimationType` property is `None`.
 
 | AnimationType value | Description                  |
 |---------------------|------------------------------|
@@ -506,7 +506,7 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 
 ## Custom Content Formats
 
-You can format the numbers which are displayed in the `Badge` content by using conditional logic in an event handler or value converter. For example, you can display the number as `99+` for any value greater than or equal to `100`.
+You can format the numbers which are displayed in the `WPF Badge` content by using conditional logic in an event handler or value converter. For example, you can display the number as `99+` for any value greater than or equal to `100`.
 
 {% tabs %}
 {% highlight XAML %}
@@ -584,7 +584,7 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 
 ## Theme
 
-Badge supports various built-in themes. Refer to the below links to apply themes for the Badge,
+The WPF Badge supports various built-in themes. Refer to the links below to apply themes,
 
   * [Apply theme using SfSkinManager](https://help.syncfusion.com/wpf/themes/skin-manager)
 	
