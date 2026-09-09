@@ -81,7 +81,7 @@ Next rec
 {% endcapture %}
 {{ codesnippet1 | OrderList_Indent_Level_1 }}
 
-2. After running the code from step 1, a screen similar to the one below will be displayed. Note that the bottom list displayed is now sorted by column C. This is a one side effect of grouping by column C.
+2. After running the code from step 1, a screen similar to the one below will be displayed. Note that the bottom list displayed is now sorted by column C. This is a one side effect of Grouping by column C.
 
 
 
@@ -261,7 +261,7 @@ End Sub
 {% endcapture %}
 {{ codesnippet2 | OrderList_Indent_Level_1 }}
 
-5. Once you have your ShowRecordsUnderGroup method, you only have to retrieve a particular group from the Groups collection and then call the method. So, after grouping on property C, you can view all the records whose Category is "c1" using the code like the one given below the Main method.
+5. Once you have your ShowRecordsUnderGroup method, you only have to retrieve a particular group from the Groups collection and then call the method. So, after Grouping on property C, you can view all the records whose Category is "c1" using the code like the one given below the Main method.
 
 {% capture codesnippet3 %}
 {% tabs %}
