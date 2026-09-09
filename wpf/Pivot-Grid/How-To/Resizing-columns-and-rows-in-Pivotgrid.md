@@ -9,7 +9,7 @@ documentation: ug
 
 # How to Resize columns and Rows in WPF Pivot Grid
 
-PivotGridControl supports resizing of rows and columns dynamically. In this topic, on-demand resizing of rows and columns is discussed.
+The Pivot Grid Control supports resizing of rows and columns dynamically. In this topic, on-demand resizing of rows and columns is discussed.
 
 ## Resizing the columns
 

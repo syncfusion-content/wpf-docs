@@ -9,7 +9,7 @@ documentation: ug
 
 # How to Change GridLine Color and Thickness in WPF Pivot Grid
 
-The color and thickness of the grid lines can be modified using the `GridLineStroke` property of the PivotGridControl and the `BorderThickness` property of PivotGridCellStyle.
+The color and thickness of the grid lines can be modified using the `GridLineStroke` property of the Pivot GridControl and the `BorderThickness` property of Pivot GridCellStyle.
 
 If through *XAML*, please refer the below code sample.
 

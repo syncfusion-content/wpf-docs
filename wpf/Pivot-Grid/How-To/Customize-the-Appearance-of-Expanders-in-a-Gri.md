@@ -9,9 +9,9 @@ documentation: ug
 
 # How to Customize Expanders Appearance in WPF Pivot Grid
 
-Define your own style for the expander and assign that style to the `ExpanderStyle` property of the PivotGrid control.
+Define your own style for the expander and assign that style to the `ExpanderStyle` property of the Pivot Grid control.
 
-Please refer the below code sample. Here we have defined our own style for expander and assigned it to the `ExpanderStyle` property of the PivotGrid control.
+Please refer the below code sample. Here we have defined our own style for expander and assigned it to the `ExpanderStyle` property of the Pivot Grid control.
 
 {}
 

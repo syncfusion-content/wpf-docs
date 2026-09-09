@@ -9,7 +9,7 @@ documentation: ug
 
 # How to Load an Existing PivotEngine into WPF Pivot Grid
 
-After defining the PivotGrid control, set the property `IsExternalEngine` as true. Now create a new PivotEngine using `PivotEngine` class and assign it to your PivotGrid control's PivotEngine.
+After defining the Pivot Grid control, set the property `IsExternalEngine` as true. Now create a new PivotEngine using `PivotEngine` class and assign it to your Pivot Grid control's PivotEngine.
 
 Please refer the below code sample.
 

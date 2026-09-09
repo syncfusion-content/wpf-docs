@@ -9,7 +9,7 @@ documentation: ug
 
 # How to Hide Grand Totals in WPF Pivot Grid
 
-It can be achieved by setting the property `ShowGrandTotals` to false. By default, PivotGrid displays Grand Total for both column and row headers. 
+It can be achieved by setting the property `ShowGrandTotals` to false. By default, Pivot Grid displays Grand Total for both column and row headers. 
 It can be mentioned either in *XAML* or in *Code-Behind*.
 
 If through *XAML*, please refer the below code sample.
