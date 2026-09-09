@@ -125,21 +125,23 @@ The `TokenItemTemplate` property can also be used to maintain a consistent appea
 
 {% highlight xaml %}
 
-<DataTemplate x:Key="EmployeeTemplate">
-    <StackPanel Orientation="Horizontal">
-        <Image Width="20"
-               Height="20"
-               Source="{Binding Image}" />
-        <StackPanel Orientation="Vertical">
-            <TextBlock
-                Margin="4,2,4,0"
-                Text="{Binding Name}" />
-            <TextBlock
-                Margin="4,1,2,2"
-                Text="{Binding Email}" />
+<Window.Resources>
+    <DataTemplate x:Key="EmployeeTemplate">
+        <StackPanel Orientation="Horizontal">
+            <Image Width="20"
+                Height="20"
+                Source="{Binding Image}" />
+            <StackPanel Orientation="Vertical">
+                <TextBlock
+                    Margin="4,2,4,0"
+                    Text="{Binding Name}" />
+                <TextBlock
+                    Margin="4,1,2,2"
+                    Text="{Binding Email}" />
+            </StackPanel>
         </StackPanel>
-    </StackPanel>
-</DataTemplate>
+    </DataTemplate>
+</Window.Resources>
 
 <editors:SfTextBoxExt x:Name="textBoxExt"
                       Width="250" 
