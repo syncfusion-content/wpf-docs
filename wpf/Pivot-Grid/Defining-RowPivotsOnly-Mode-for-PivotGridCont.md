@@ -9,9 +9,9 @@ documentation: ug
 
 # RowPivotsOnly Mode in WPF Pivot Grid
 
-RowPivotsOnly mode allows the pivot grid to display only the column values.
+RowPivotsOnly mode allows Pivot Grid to display only the column values.
 
-When displaying the pivot grid in RowPivotsOnly mode, it shows the row header cells and column header cells as value cells. Also, it supports column filtering, column sorting, and so on.
+When the control is displayed in RowPivotsOnly mode, it shows the row header cells and column header cells as value cells. Also, it supports column filtering, column sorting, and so on.
 
 The `RowPivotsOnly` property is used to achieve this and it can be mentioned in XAML or code-behind.
 
@@ -55,6 +55,6 @@ public partial class MainWindow: Window {
 
 {% endhighlight %}
 
-![RowPivotsOnly mode enabled in the pivotGrid](Features-in-RowPivotsOnly-images/PivotGrid when RowPivotsOnly mode is enabled.png)
+![RowPivotsOnly mode enabled](Features-in-RowPivotsOnly-images/PivotGrid when RowPivotsOnly mode is enabled.png)
 
-N> You can refer to our [WPF Pivot Grid](https://www.syncfusion.com/wpf-controls/pivot-grid) feature tour page for its groundbreaking feature representations. You can also explore our [WPF Pivot Grid example](https://github.com/syncfusion/wpf-demos) to knows how to organizes and summarizes business data and displays the result in a cross-table format.
+N> You can refer to our [WPF Pivot Grid](https://www.syncfusion.com/wpf-controls/pivot-grid) feature tour page for its groundbreaking feature representations. You can also explore our [WPF Pivot Grid example](https://github.com/syncfusion/wpf-demos) to learn how the control organizes and summarizes business data and displays the result in a cross-table format.

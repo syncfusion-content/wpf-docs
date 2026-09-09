@@ -9,20 +9,20 @@ documentation: ug
 
 # PivotComputationInfo in WPF Pivot Grid
 
-Pivot computation holds the information needed for calculations that appear in the pivot grid control. For each calculation, there is an associated `PivotComputationInfo` object added to the PivotCalculations collection.
+Pivot computation holds the information needed for calculations that appear in the Pivot Grid control. For each calculation, there is an associated `PivotComputationInfo` object added to the PivotCalculations collection.
 
 Properties
 
-* **CalculationName**: Gets or sets what needs to be displayed in the pivot table if more than one calculation is included in the pivot grid.
+* **CalculationName**: Gets or sets what needs to be displayed in the pivot table if more than one calculation is included in the Pivot Grid.
 * **Description**: Gets or sets the description of the calculation.
 * **FieldName**: Gets or sets the name of the property to be used in this calculation.
 * **FieldHeader**: Gets or sets the title you want to view in the header.
-* **Format**: Gets of sets the format string to be used, to format the calculation results in the pivot grid.
+* **Format**: Gets or sets the format string to be used to format the calculation results in the Pivot Grid.
 * **Summary**: Gets or sets the SummaryBase object used to define the calculation. When you specify SummaryType.Custom, set summary as an instance of your custom SummaryBase-derived object.
 * **SummaryType**: Gets or sets the SummaryType enumeration for the calculation. You can set some enumeration values to the summary type; otherwise, by default it is set as count.
 * **AllowRunTimeGroupByField**: Gets or sets the value to enable/disable grouping for the pivot item.
-* **DisplayOption**: Gets or sets the calculation values to be displayed in pivot grid.
-* **CalculationType**: Gets or sets the CalculationType enumeration for this computation object and defines how to make the computational objects in pivot grid visible.
+* **DisplayOption**: Gets or sets the calculation values to be displayed in the control.
+* **CalculationType**: Gets or sets the CalculationType enumeration for this computation object and defines how to make the computational objects in the Pivot Grid visible.
 * **AllowFilter**: Gets or sets whether the calculation column can be filtered when RowPivotsOnly is true in the PivotEngine.
 * **AllowSort**: Gets or sets whether the calculation column can be sorted when RowPivotsOnly is true in the PivotEngine.
 * **BaseItem**: Gets or sets the value of the BaseItem for calculations.
@@ -51,7 +51,7 @@ Refer to the following code sample.
 
 ## Defining PivotComputationInfo in code-behind
 
-Include the *Syncfusion.PivotAnalysis.Base* in the MainWindow.xaml.cs file, and then define the PivotComputationInfo's for each calculation items. Add the defined PivotComputationInfo's to PivotCalculations collection of the pivot grid control.
+Include the *Syncfusion.PivotAnalysis.Base* namespace in the MainWindow.xaml.cs file, and then define the PivotComputationInfo for each calculation item. Add the defined PivotComputationInfo to the PivotCalculations collection of the Pivot Grid control.
 
 Refer to the following code sample.
 

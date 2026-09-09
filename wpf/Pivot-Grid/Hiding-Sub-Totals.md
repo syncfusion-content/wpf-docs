@@ -9,7 +9,7 @@ documentation: ug
 
 # Show/Hide Sub-Totals in WPF Pivot Grid
 
-The subtotal hiding feature is used to show or hide subtotals in the pivot grid. It provides an abstract view of data as desired and provides the following levels of hiding.
+The subtotal hiding feature is used to show or hide subtotals in the Pivot Grid. It provides an abstract view of data as desired and provides the following levels of hiding.
 
 * Hiding all the subtotals.
 * Hiding only the row subtotals.
@@ -87,7 +87,7 @@ public partial class MainWindow: Window {
 
 {% endhighlight %}
 
-![To hides both row and column subtotals](Hiding-SubTotals-images/PivotGrid when sub totals hidden.png)
+![To hide both row and column subtotals](Hiding-SubTotals-images/PivotGrid when sub totals hidden.png)
 
 ## Hiding only the row subtotals
 
@@ -160,7 +160,7 @@ public partial class MainWindow: Window {
 
 {% endhighlight %}
 
-![To hides only row subtotals](Hiding-SubTotals-images/PivotGrid when row sub totals hidden.png)
+![To hide only row subtotals](Hiding-SubTotals-images/PivotGrid when row sub totals hidden.png)
 
 ## Hiding only the column subtotals
 
@@ -233,7 +233,7 @@ public partial class MainWindow: Window {
 
 {% endhighlight %}
 
-![To hides only column subtotals](Hiding-SubTotals-images/PivotGrid when column sub totals hidden.png)
+![To hide only column subtotals](Hiding-SubTotals-images/PivotGrid when column sub totals hidden.png)
 
 ## Hiding the subtotals for the specific pivot item
 
@@ -304,6 +304,6 @@ public partial class MainWindow: Window {
 
 {% endhighlight %}
 
-![To hides the subtotals for specific pivot item](Hiding-SubTotals-images/PivotGrid shows the subtotal hidden for specific pivot item.png)
+![To hide the subtotals for specific pivot item](Hiding-SubTotals-images/PivotGrid shows the subtotal hidden for specific pivot item.png)
 
 N> You can refer to our [WPF Pivot Grid](https://www.syncfusion.com/wpf-controls/pivot-grid) feature tour page for its groundbreaking feature representations. You can also explore our [WPF Pivot Grid example](https://github.com/syncfusion/wpf-demos) to knows how to organizes and summarizes business data and displays the result in a cross-table format.

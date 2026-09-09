@@ -9,7 +9,7 @@ documentation: ug
 
 # Custom Summary in WPF Pivot Grid
 
-The pivot grid enables you to set the custom summaries for the PivotItem values at both load time and runtime (using pivot computation info dialog).
+Pivot Grid enables you to set the custom summaries for the PivotItem values at both load time and runtime (using the pivot computation info dialog).
 
 To create a custom SummaryBase class, add a new class and inherit the abstract class `SummaryBase`. Implement your summary logics by overriding Combine(), CombineSummary(), GetResult(), GetInstance(), and Reset() methods.
 
@@ -78,7 +78,7 @@ public class MyCustomSummaryBase2: SummaryBase {
 
 ## Defining custom summary in load time
 
-You can define your own custom SummaryBase to PivotCalculations in pivot grid by setting the instance of the custom summary in the `Summary` property. This custom summary can be used only if you set the `SummaryType` of that PivotCalculation as "Custom". It can be done through XAML or code-behind.
+You can define your own custom SummaryBase to PivotCalculations in Pivot Grid by setting the instance of the custom summary in the `Summary` property. This custom summary can be used only if you set the `SummaryType` of that PivotCalculation as "Custom". It can be done through XAML or code-behind.
 
 For XAML, refer to the following code sample.
 
@@ -182,6 +182,6 @@ public partial class MainWindow: Window {
 
 To set custom summary at runtime, double-click the items from the pivot schema designer that will pop-up the pivot computation information dialog box. In the summarize value by combo box, you can select the predefined custom summaries as required.
 
-![PivotGrid with custom summaries](RunTime-custom-summary-images/PivotGrid with custom summaries.png)
+![With custom summaries](RunTime-custom-summary-images/PivotGrid with custom summaries.png)
 
 N> You can refer to our [WPF Pivot Grid](https://www.syncfusion.com/wpf-controls/pivot-grid) feature tour page for its groundbreaking feature representations. You can also explore our [WPF Pivot Grid example](https://github.com/syncfusion/wpf-demos) to knows how to organizes and summarizes business data and displays the result in a cross-table format.

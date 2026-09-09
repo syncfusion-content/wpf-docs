@@ -9,13 +9,13 @@ documentation: ug
 
 # Multi-Column Sorting in WPF Pivot Grid
 
-Multicolumn sorting allows you to sort the fields one after the other. For example, if a user has three different fields rendered in the pivot grid, then it is possible to sort like: **OrderBy(field1).ThenBy(field2).ThenBy(field3).**.
+Multicolumn sorting allows you to sort the fields one after the other. For example, if a user has three different fields rendered in the Pivot Grid, then it is possible to sort like: **OrderBy(field1).ThenBy(field2).ThenBy(field3).**.
 
 A separate index number is used at the top of each column to maintain the order of the sorted columns while doing the multicolumn sorting. Also, multicolumn sorting can be applied for both **Normal** and **Row Pivots Only** modes of the pivot grid control.
 
 ## Multicolumn sorting in normal mode
 
-You can enable the sorting through XAML or code-behind using the `SortOption` property of the pivot grid control.
+You can enable sorting through XAML or code-behind using the `SortOption` property of the Pivot Grid control.
 For XAML, refer to the following code sample.
 
 
@@ -84,25 +84,25 @@ public partial class MainWindow: Window {
 
 {% endhighlight %}
 
-* The following screenshot shows the normal pivot grid.
+* The following screenshot shows the normal Pivot Grid.
 
-   ![Pivot grid without sorting](Sorting-Images/Normal PivotGrid.png)
+   ![Without sorting](Sorting-Images/Normal PivotGrid.png)
 
-* The **Quantity** column has been sorted in the pivot grid.
+* The **Quantity** column has been sorted in the Pivot Grid.
 
-   ![Sorting the quantity column in pivot grid](Sorting-Images/PivotGrid sorted by single column.png)
+   ![Sorting the quantity column](Sorting-Images/PivotGrid sorted by single column.png)
 
-* By pressing the Ctrl key, the **Amount** column is sorted. Now, the pivot grid is sorted by multiple columns.
+* By pressing the Ctrl key, the **Amount** column is sorted. Now, the Pivot Grid is sorted by multiple columns.
 
-   ![Sorting the amount column in pivot grid](Sorting-Images/PivotGrid sorted by multiple columns.png)
+   ![Sorting the amount column](Sorting-Images/PivotGrid sorted by multiple columns.png)
 
 * Then, by pressing the Ctrl key again, you can the sort the pivot grid for 'n' number of columns.
 
-   ![Sorting the n number of columns in pivot grid](Sorting-Images/PivotGrid sorted by N columns.png)
+   ![Sorting the n number of columns](Sorting-Images/PivotGrid sorted by N columns.png)
 
 ## Multicolumn sorting in row pivots only mode
 
-You can enable the sorting through XAML or code-behind using the `SortOption` property of the pivot grid control in RowPivotsOnly mode.
+You can enable sorting through XAML or code-behind using the `SortOption` property of the control in RowPivotsOnly mode.
 For XAML, refer to the following code sample.
 
 {% highlight xaml %}

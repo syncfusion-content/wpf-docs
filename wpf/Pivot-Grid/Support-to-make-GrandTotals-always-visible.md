@@ -9,9 +9,9 @@ documentation: ug
 
 # Show/Hide Grand Total in WPF Pivot Grid
 
-The pivot grid provides support to make the grand total row always visible in RowPivotsOnly mode.
+Pivot Grid provides support to make the grand total row always visible in RowPivotsOnly mode.
 
-This can be achieved by using the `GrandTotalRowAlwaysVisible` property of the pivot grid control. This property can be defined either in XAML or code-behind.
+This can be achieved by using the `GrandTotalRowAlwaysVisible` property of the control. This property can be defined either in XAML or code-behind.
 
 For XAML, refer to the following code sample.
 

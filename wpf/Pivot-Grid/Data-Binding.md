@@ -9,11 +9,11 @@ documentation: ug
 
 # Data Binding in WPF Pivot Grid
 
-## Binding pivot grid to list
+## Binding the Pivot Grid to a list
 
-The [WPF Pivot Grid](https://www.syncfusion.com/wpf-controls/pivot-grid) allows binding a list based collection as its item source. Refer to this topic [Binding a data source to pivot grid control](https://help.syncfusion.com/wpf/pivot-grid/pivotgrid-getting-started#binding-a-datasource-to-pivotgridcontrol) to learn more.
+The [WPF Pivot Grid](https://www.syncfusion.com/wpf-controls/pivot-grid) allows binding a list based collection as its item source. Refer to this topic [Binding a data source to the control](https://help.syncfusion.com/wpf/pivot-grid/pivotgrid-getting-started#binding-a-datasource-to-pivotgridcontrol) to learn more.
 
-## Binding pivot grid to data table
+## Binding the Pivot Grid to a data table
 
 The pivot grid allows binding a DataSet from the data table as its item source.
 
@@ -38,7 +38,7 @@ public static DataView GetOrderDetails() {
 
 {% endhighlight %}
 
-Then, bind the DataSet as ItemSource to the pivot grid by invoking the appropriate method. It can be done through XAML or code-behind.
+Then, bind the DataSet as ItemSource to the Pivot Grid by invoking the appropriate method. It can be done through XAML or code-behind.
 
 For XAML, refer to the following code sample.
 
@@ -94,4 +94,4 @@ public partial class MainWindow: Window {
 
 {% endhighlight %}
 
-N> You can also explore our [WPF Pivot Grid example](https://github.com/syncfusion/wpf-demos) to knows how to organizes and summarizes business data and displays the result in a cross-table format.
+N> You can also explore our [WPF Pivot Grid example](https://github.com/syncfusion/wpf-demos) to know how to organize and summarize business data and display the result in a cross-table format.

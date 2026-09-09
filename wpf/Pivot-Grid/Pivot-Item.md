@@ -9,7 +9,7 @@ documentation: ug
 
 # PivotItem in WPF Pivot Grid
 
-A pivot item is a container for items in the pivot grid control. An item in a pivot table field provides the information needed to define an item. The items are individual data entries in a field category. The pivot item object is a member of the pivot items collection and consists of the following fields.
+A pivot item is a container for items in the Pivot Grid control. An item in a pivot table field provides the information needed to define an item. The items are individual data entries in a field category. The pivot item object is a member of the pivot items collection and consists of the following fields.
 
 * **FieldHeader**: Gets or sets the title you want to view in the header for the pivot item.
 * **FieldMappingName**: Gets or sets the pivot item property's mapping name.

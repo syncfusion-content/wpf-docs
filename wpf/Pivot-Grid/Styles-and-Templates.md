@@ -53,9 +53,9 @@ The following properties of the cell can be customized.
     Brush</td></tr>
     </table>
 
-### Defining the cell styles in pivot grid
+### Defining the cell styles in Pivot Grid
 
-After defining the pivot grid control, raise the loaded event of pivot grid control. Inside the `PivotGrid_Loaded()` event, set the properties of cell styles of the pivot grid control.
+After defining Pivot Grid, raise the loaded event of the control. Inside the `PivotGrid_Loaded()` event, set the properties of cell styles of the control.
 
 Refer to the following code snippet.
 
@@ -85,11 +85,11 @@ public partial class MainWindow: Window {
 
 {% endhighlight %}
 
-![PivotGrid shows customized styles](Styles-and-Templates-images/PivotGrid shows customized styles.png)
+![Shows customized styles](Styles-and-Templates-images/PivotGrid shows customized styles.png)
 
 ## Cell templates
 
-Cell templates feature of pivot grid allows you to define the templates to change the appearance of elements, such as column, row, summary, and value cells that are present in the grid. The style for each element in the grid should be defined of `PivotGridTemplateCell` type. The customized template can be defined for the following properties of pivot grid:
+The cell templates feature of Pivot Grid allows you to define templates to change the appearance of elements, such as column, row, summary, and value cells that are present in the grid. The style for each element in the grid should be defined of `PivotGridTemplateCell` type. The customized template can be defined for the following properties of Pivot Grid:
 
 * ColumnHeaderCellStyle
 * RowHeaderCellStyle
@@ -97,13 +97,13 @@ Cell templates feature of pivot grid allows you to define the templates to chang
 * SummaryCellStyle
 * ValueCellStyle
 
-The expander’s in the grid can also be customized with any UIElement and it should be named as “PART_Expander” to perform drill-up and drill-down operations.
+The expander's in the grid can also be customized with any UIElement and it should be named as "PART_Expander" to perform drill-up and drill-down operations.
 
-### Defining cell templates in pivot grid
+### Defining cell templates in Pivot Grid
 
-After defining the pivot grid control, define your own style for row, column, value, and summary cells and assign that style to the corresponding property in the pivot grid control.
+After defining Pivot Grid, define your own style for row, column, value, and summary cells and assign that style to the corresponding property in the control.
 
-Here, the row header cells are defined with our own style by overriding an expander icon and cell's TextBlock. After defining the style, it is applied to `RowHeaderCellStyle` of the pivot grid control.
+Here, the row header cells are defined with our own style by overriding an expander icon and cell's TextBlock. After defining the style, it is applied to `RowHeaderCellStyle` of the control.
 
 Refer to the following code snippet.
 

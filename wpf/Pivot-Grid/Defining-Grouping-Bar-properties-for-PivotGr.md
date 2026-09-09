@@ -27,13 +27,13 @@ The following are the properties available in the grouping bar.
 * **AllowRemove**: Gets or sets whether deleting the items is enabled in the grouping bar.
 * **AllowMultiFunctionalSortFilter**: Gets or sets whether Microsoft Excel like filtering on the grouping bar is enabled.
 
-**Using the properties in pivot grid:**
+**Using the properties in Pivot Grid:**
 
 **Background**
 
 You can customize the background color of the grouping bar by defining the color in its `Background` property after the grouping bar is loaded.
 
-Include the *System.Windows.Media* namespace in the MainWindow.xaml.cs file. After defining the pivot grid control, raise the loaded event of pivot grid. Inside the `PivotGrid_Loaded()` event, raise the loaded event for grouping bar. Inside the `GroupingBar_Loaded()` event, set the value for `Background` property of the grouping bar.
+Include the *System.Windows.Media* namespace in the MainWindow.xaml.cs file. After defining the Pivot Grid control, raise the loaded event of the control. Inside the `PivotGrid_Loaded()` event, raise the loaded event for grouping bar. Inside the `GroupingBar_Loaded()` event, set the value for `Background` property of the grouping bar.
 
 {% highlight C# %}
 
@@ -89,7 +89,7 @@ public partial class MainWindow: Window {
 
 You can customize the background color of the grouping bar items by defining the color for `ItemsBackground` property after the grouping bar is loaded.
 
-Include the *System.Windows.Media* namespace in the MainWindow.xaml.cs file. After defining the pivot grid control, raise the loaded event of the pivot grid. Inside the `PivotGrid_Loaded()` event, raise the loaded event for grouping bar. Inside the `GroupingBar_Loaded()` event, set the value for the `ItemsBackground` property.
+Include the *System.Windows.Media* namespace in the MainWindow.xaml.cs file. After defining the Pivot Grid control, raise the loaded event of the control. Inside the `PivotGrid_Loaded()` event, raise the loaded event for grouping bar. Inside the `GroupingBar_Loaded()` event, set the value for the `ItemsBackground` property.
 
 {% highlight C# %}
 
@@ -143,9 +143,9 @@ public partial class MainWindow: Window {
 
 **AllowFiltering**
 
-You can show or hide the filtering option in the pivot grid by setting the `AllowFiltering` property.
+You can show or hide the filtering option in Pivot Grid by setting the `AllowFiltering` property.
 
-To do so, define the pivot grid control and raise the loaded event of pivot grid. Inside the `PivotGrid_Loaded()` event, raise the loaded event for grouping bar. Inside the `GroupingBar_Loaded()` event, set a value for the `AllowFiltering` property of the grouping bar.
+To do so, define the control and raise its loaded event. Inside the `PivotGrid_Loaded()` event, raise the loaded event for grouping bar. Inside the `GroupingBar_Loaded()` event, set a value for the `AllowFiltering` property of the grouping bar.
 
 {% highlight C# %}
 
@@ -195,15 +195,15 @@ public partial class MainWindow: Window {
 
 {% endhighlight %}
 
-The following screenshot shows the pivot grid without the filtering icons.
+The following screenshot shows the Pivot Grid without the filtering icons.
 
 ![Display the PivotGrid without filter icon](Grouping-Bar-Images/PivotGrid without filter icons in grouping bar.png)
 
 **AllowSorting**
 
-You can show or hide the sorting indicator in pivot grid by setting the `AllowSorting` property.
+You can show or hide the sorting indicator in Pivot Grid by setting the `AllowSorting` property.
 
-To do so, define the pivot grid control and raise the loaded event of pivot grid. Inside the `PivotGrid_Loaded()` event, raise the loaded event for grouping bar. Inside the `GroupingBar_Loaded()` event, set the value for `AllowSorting` property of the grouping bar.
+To do so, define the control and raise its loaded event. Inside the `PivotGrid_Loaded()` event, raise the loaded event for grouping bar. Inside the `GroupingBar_Loaded()` event, set the value for `AllowSorting` property of the grouping bar.
 
 {% highlight C# %}
 
@@ -253,15 +253,15 @@ public partial class MainWindow: Window {
 
 {% endhighlight %}
 
-The following screenshots shows the pivot grid without the sorting icons.
+The following screenshots shows the Pivot Grid without the sorting icons.
 
 ![Display the PivotGrid without sorting icon](Grouping-Bar-Images/PivotGrid without sorting icons.png)
 
 **AllowRemove**
 
-You can show or hide the remove icon in pivot grid by setting the `AllowRemove` property.
+You can show or hide the remove icon in Pivot Grid by setting the `AllowRemove` property.
 
-To do so, define the pivot grid control and raise the loaded event of pivot grid. Inside the `PivotGrid_Loaded()` event, raise the loaded event for grouping bar. Inside the `GroupingBar_Loaded()` event, set a value for the `AllowRemove` property of the grouping bar.
+To do so, define the control and raise its loaded event. Inside the `PivotGrid_Loaded()` event, raise the loaded event for grouping bar. Inside the `GroupingBar_Loaded()` event, set a value for the `AllowRemove` property of the grouping bar.
 
 {% highlight C# %}
 
@@ -311,8 +311,8 @@ public partial class MainWindow: Window {
 
 {% endhighlight %}
 
-The following screenshot shows the pivot grid with remove, filter, and sort icons.
+The following screenshot shows the Pivot Grid with remove, filter, and sort icons.
 
 ![Display the PivotGrid with remove icon](Grouping-Bar-Images/PivotGrid shows grouping bar with remove icons.png)
 
-N> You can refer to our [WPF Pivot Grid](https://www.syncfusion.com/wpf-controls/pivot-grid) feature tour page for its groundbreaking feature representations. You can also explore our [WPF Pivot Grid example](https://github.com/syncfusion/wpf-demos) to knows how to organizes and summarizes business data and displays the result in a cross-table format.
+N> You can refer to our [WPF Pivot Grid](https://www.syncfusion.com/wpf-controls/pivot-grid) feature tour page for its groundbreaking feature representations. You can also explore our [WPF Pivot Grid example](https://github.com/syncfusion/wpf-demos) to learn how the control organizes and summarizes business data and displays the result in a cross-table format.

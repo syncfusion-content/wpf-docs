@@ -9,9 +9,9 @@ documentation: ug
 
 # GetRawItem in WPF Pivot Grid
 
-GetRawItemFor method is used to obtain the list of raw items for value cell, total cell, or grand total cell in the pivot grid.
+GetRawItemFor method is used to obtain the list of raw items for value cell, total cell, or grand total cell in the Pivot Grid.
 
-To achieve this, define the pivot grid control and enable the hyperlink option of the value and summary cells using the `IsHyperlinkCell` property. Then, invoke the hyperlink cell click event and call the `GetRawItemFor` method as illustrated in the following code snippet.
+To achieve this, define the control and enable the hyperlink option of the value and summary cells using the `IsHyperlinkCell` property. Then, invoke the hyperlink cell click event and call the `GetRawItemFor` method as illustrated in the following code snippet.
 
 {% highlight C# %}
 

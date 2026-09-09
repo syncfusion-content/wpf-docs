@@ -11,7 +11,7 @@ documentation: ug
 
 The [WPF Pivot Grid](https://www.syncfusion.com/wpf-controls/pivot-grid) control provides Excel-like sorting and filtering features applied to a pivot item. You can enable or disable the Excel-like sorting and filtering pop-up in the pivot grid by setting the `AllowMultiFunctionalSortFilter` property of grouping bar in the pivot grid control.
 
-To do so, define the pivot grid control and raise the loaded event for pivot grid. Inside the `PivotGrid_Loaded()` event, raise the loaded event for the grouping bar. Inside the `GroupingBar_Loaded()` event, set the value of the `AllowMultiFunctionalSortFilter` property to "true".
+To do so, define the Pivot Grid control and raise its loaded event. Inside the `PivotGrid_Loaded()` event, raise the loaded event for the grouping bar. Inside the `GroupingBar_Loaded()` event, set the value of the `AllowMultiFunctionalSortFilter` property to "true".
 
 Refer to the following code sample.
 
@@ -77,11 +77,11 @@ It can be used to sort the corresponding pivot item in the descending order.
 
 **Clear filters**
 
-The clear filters are used to clear all filter changes applied to the corresponding pivot item and bring back the pivot grid to the normal state.
+The clear filters are used to clear all filter changes applied to the corresponding pivot item and bring the Pivot Grid back to its normal state.
 
 **Label filters**
 
-The label filters are used to filter the pivot item filter labels of the pivot grid by using the following various options.
+The label filters are used to filter the labels of the corresponding pivot item in the Pivot Grid by using the following options.
 
 * Equals
 * Does not equals
@@ -120,8 +120,8 @@ The value filters are used to filter the pivot item field values of the pivot gr
 
 _Value Filter window for filtering "Alberta" using its Quantity value "677" in State_
 
-![PivotGrid with Label Filter or Value Filter applied](Excel-Like-Filtering-images/Filtered PivotGrid by using label value.png)
+![Label Filter or Value Filter applied](Excel-Like-Filtering-images/Filtered PivotGrid by using label value.png)
 
-_PivotGrid with Label Filter or Value Filter applied_
+_Pivot Grid with Label Filter or Value Filter applied_
 
 N> You can also explore our [WPF Pivot Grid example](https://github.com/syncfusion/wpf-demos) to knows how to organizes and summarizes business data and displays the result in a cross-table format.

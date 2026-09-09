@@ -11,7 +11,7 @@ documentation: ug
 
 The [WPF Pivot Grid](https://www.syncfusion.com/wpf-controls/pivot-grid) provides built-in support for freezing column and row headers for better viewing of value cells.
 
-The `FreezeHeaders` property in the pivot grid control is used to achieve the same. This can be mentioned either in XAML or code-behind.
+The `FreezeHeaders` property in the Pivot Grid control is used to achieve the same. This can be mentioned either in XAML or code-behind.
 
 For XAML, refer to the following code sample.
 
@@ -80,11 +80,11 @@ public partial class MainWindow: Window {
 
 {% endhighlight %}
 
-![Freeze headers enabled in PivotGrid](Freeze-headers-images/PivotGrid with freezed headers.png)
+![Freeze headers enabled](Freeze-headers-images/PivotGrid with freezed headers.png)
 
 _PivotGrid when freeze headers enabled_
 
-![Freeze headers disabled in PivotGrid](Freeze-headers-images/PivotGrid when freeze headers disabled.png)
+![Freeze headers disabled](Freeze-headers-images/PivotGrid when freeze headers disabled.png)
 
 _PivotGrid when freeze headers disabled_
 

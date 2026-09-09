@@ -12,7 +12,7 @@ documentation: ug
 The grouping bar context menu consists of the following menu items:
 
 * **Reload Data**: Refreshes the grid with the current item source.
-* **Show Field List**: Launches the pivot grid field list.
+* **Show Field List**: Launches the Pivot Grid field list.
 * **Order**: Changes the position of the item present in the grouping bar. It contains the following submenu items:
 
 * Move to Beginning: Moves the current item to the first position.
@@ -26,7 +26,7 @@ The grouping bar context menu consists of the following menu items:
 
 By default, the context menu is enabled in all areas of the grouping bar. The `DisableContextMenu` property should be set individually for row, column, and data header area in the grouping bar to alter their visibility.
 
-After defining the pivot grid control, raise the loaded event for the pivot grid. Inside the `PivotGrid_Loaded()` event, raise the loaded event for the grouping bar. Inside the `GroupingBar_Loaded()` event, set the value for the `DisableContextMenu` property.
+After defining the Pivot Grid control, raise the loaded event for the control. Inside the `PivotGrid_Loaded()` event, raise the loaded event for the grouping bar. Inside the `GroupingBar_Loaded()` event, set the value for the `DisableContextMenu` property.
 
 Refer to the following code sample.
 

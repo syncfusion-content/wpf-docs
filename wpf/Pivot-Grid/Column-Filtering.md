@@ -21,7 +21,7 @@ Method
 
 It is possible to do filtering operations for pivot calculation during runtime as well as during initial load.
 
-To do so, define the pivot grid control in RowPivotsOnly mode. Add the respective pivot calculations and set the `AllowFilter` property to "true".
+To do so, define the Pivot Grid in RowPivotsOnly mode. Add the respective pivot calculations and set the `AllowFilter` property to "true".
 
 Create the dictionary using the `Dictionary` class and add the pivot items that are to be filtered. Invoke the `ApplySavedValueFilter()` method for applying the filters.
 
@@ -50,4 +50,4 @@ Refer to the following code sample.
 
 ![To filter the records using column filter popup](Features-in-RowPivotsOnly-images/Filtering Enable in RowPivotsOnly.png)
 
-N> You can also explore our [WPF Pivot Grid example](https://github.com/syncfusion/wpf-demos) to knows how to organizes and summarizes business data and displays the result in a cross-table format.
+N> You can also explore our [WPF Pivot Grid example](https://github.com/syncfusion/wpf-demos) to know how to organize and summarize business data and display the result in a cross-table format.

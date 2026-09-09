@@ -9,7 +9,7 @@ documentation: ug
 
 # How to Improve Loading and Scrolling Performance in WPF Pivot Grid
 
-The performance of the PivotGrid control can be improved by enabling the on-demand calculation on the value cells and by disabling the auto-sizing option. This refreshes the calculation only while loading or scrolling the PivotGrid control. This can be achieved by using `EnableOnDemandCalculations` and `AutoSizeOption` properties of PivotGrid control.
+The performance of the Pivot Grid control can be improved by enabling the on-demand calculation on the value cells and by disabling the auto-sizing option. This refreshes the calculation only while loading or scrolling the Pivot Grid control. This can be achieved by using `EnableOnDemandCalculations` and `AutoSizeOption` properties of Pivot Grid control.
 
 Please refer the below code snippet.
 

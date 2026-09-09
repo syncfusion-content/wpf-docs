@@ -13,7 +13,7 @@ The [WPF Pivot Grid](https://www.syncfusion.com/wpf-controls/pivot-grid) support
 
 ## Enable editing for value cells
 
-The `EnableValueEditing` property of the pivot grid control is used to edit the value cells and it can be mentioned in XAML or code-behind.
+The `EnableValueEditing` property of the Pivot Grid control is used to edit the value cells and it can be mentioned in XAML or code-behind.
 
 For XAML, refer to the following code sample.
 
@@ -83,7 +83,7 @@ public partial class MainWindow: Window {
 
 {% endhighlight %}
 
-![To edit the value cells in PivotGrid](Editing-Images/PivotGrid shows edited value cell.png)
+![To edit the value cells](Editing-Images/PivotGrid shows edited value cell.png)
 
 ## Enable editing for total cells
 
@@ -136,13 +136,13 @@ public partial class MainWindow: Window {
 
 {% endhighlight %}
 
-![To edit the total cell values in PivotGrid](Editing-Images/PivotGrid shows edited total cell.png)
+![To edit the total cell values](Editing-Images/PivotGrid shows edited total cell.png)
 
 ## Custom editing manager
 
-After editing the value, you can further customize the value using the custom editing manager, which is used to format the PivotCellInfo in the pivot grid.
+After editing the value, you can further customize the value using the custom editing manager, which is used to format the PivotCellInfo in the Pivot Grid.
 
-To do so, create a class named `CustomEditManager` as illustrated in the following code snippet. Dispose the existing edit manager and set the created custom edit manager to the pivot grid by using the edit manager.
+To do so, create a class named `CustomEditManager` as illustrated in the following code snippet. Dispose the existing edit manager and set the created custom edit manager to the control by using the edit manager.
 
 {% highlight C# %}
 
@@ -200,6 +200,6 @@ public partial class MainWindow: Window {
 
 {% endhighlight %}
 
-![To customize the edited cell values in PivotGrid](Editing-Images/PivotGrid shows edited Custom Editing.png)
+![To customize the edited cell values](Editing-Images/PivotGrid shows edited Custom Editing.png)
 
 N> You can also explore our [WPF Pivot Grid example](https://github.com/syncfusion/wpf-demos) to knows how to organizes and summarizes business data and displays the result in a cross-table format.

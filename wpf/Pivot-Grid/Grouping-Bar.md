@@ -9,14 +9,14 @@ documentation: ug
 
 # Grouping Bar in WPF Pivot Grid
 
-Grouping bar allows you to slice and dice the fields between column, row, value, and filter. This allows you to add, rearrange, or remove the fields to show data in the pivot grid as desired. It consists of the following areas:
+Grouping bar allows you to slice and dice the fields between column, row, value, and filter. This allows you to add, rearrange, or remove the fields to show data in the Pivot Grid as desired. It consists of the following areas:
 
-* Filter header area: Holds the filter items of the pivot grid control.
-* Data header area: Holds the pivot calculation items of the pivot grid control.
-* Column header area: Holds the pivot column items of the pivot grid control.
-* Row header area: Holds the pivot row items of the pivot grid control.
+* Filter header area: Holds the filter items of the control.
+* Data header area: Holds the pivot calculation items of the control.
+* Column header area: Holds the pivot column items of the control.
+* Row header area: Holds the pivot row items of the control.
 
-By default, the grouping bar is enabled in the pivot grid control. You can show or hide it by using the `ShowGroupingBar` property. It can be done both in XAML and code-behind.
+By default, the grouping bar is enabled in the control. You can show or hide it by using the `ShowGroupingBar` property. It can be done both in XAML and code-behind.
 
 For XAML, refer to the following code sample.
 
@@ -56,11 +56,11 @@ public partial class MainWindow: Window {
 
 {% endhighlight %}
 
-![PivotGrid with Grouping Bar](Grouping-Bar-Images/PivotGrid Shows Grouping Bar.png)
+![Grouping bar enabled](Grouping-Bar-Images/PivotGrid Shows Grouping Bar.png)
 
 _PivotGrid with Grouping Bar_
 
-![PivotGrid without Grouping Bar](Grouping-Bar-Images/PivotGrid without grouping bar.png)
+![Grouping bar disabled](Grouping-Bar-Images/PivotGrid without grouping bar.png)
 
 _PivotGrid without Grouping Bar_
 

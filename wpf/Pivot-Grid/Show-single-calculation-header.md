@@ -10,7 +10,7 @@ documentation: ug
 
 # Single Calculation Header in WPF Pivot Grid
 
-By default, the pivot grid does not show the calculation headers when there is only one PivotCalculation. To show the calculation headers even when there is only one PivotCalculation, use the `ShowSingleCalculationHeader` property of pivot grid control.
+By default, the Pivot Grid does not show the calculation headers when there is only one PivotCalculation. To show the calculation headers even when there is only one PivotCalculation, use the `ShowSingleCalculationHeader` property of the control.
 
 Refer to the following code sample.
 
@@ -55,6 +55,6 @@ public partial class MainWindow: Window {
 
 {% endhighlight %}
 
-![Pivot grid shows the field header for single calculation fields](Show-Single-calculation-header-images/PivotGrid shows single calculation header.png)
+![Field header displayed for a single calculation](Show-Single-calculation-header-images/PivotGrid shows single calculation header.png)
 
 N> You can refer to our [WPF Pivot Grid](https://www.syncfusion.com/wpf-controls/pivot-grid) feature tour page for its groundbreaking feature representations. You can also explore our [WPF Pivot Grid example](https://github.com/syncfusion/wpf-demos) to knows how to organizes and summarizes business data and displays the result in a cross-table format.

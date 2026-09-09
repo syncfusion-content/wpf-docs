@@ -9,12 +9,12 @@ documentation: ug
 
 # Virtualized Binding in WPF Pivot Grid
 
-It provides high loading performance for a large set of records. This feature helps to load data in the pivot grid on-demand using the **Index Engine**.
+It provides high loading performance for a large set of records. This feature helps to load data in the Pivot Grid on-demand using the **Index Engine**.
 
 * **UseIndexedEngine**: Gets or sets whether an optimized algorithm that relies on indexing the raw data should be used to compute the pivot information.
 * **EnableOnDemandCalculations**: Gets or sets whether the calculations are postponed until the value is requested through the indexer in the PivotEngine.
 
-To achieve this, after defining the pivot grid control, set the `EnableOnDemandCalculations` and `UseIndexedEngine` properties of PivotEngine to true. The values for IndexEngine can be obtained by using the `ItemObjectLookup()` method and the time span should be calculated by using the `Dispatcher.BeginInvoke()` method. Refer to the following code sample.
+To achieve this, after defining the Pivot Grid control, set the `EnableOnDemandCalculations` and `UseIndexedEngine` properties of PivotEngine to true. The values for IndexEngine can be obtained by using the `ItemObjectLookup()` method and the time span should be calculated by using the `Dispatcher.BeginInvoke()` method. Refer to the following code sample.
 
 {% highlight C# %}
 
@@ -127,6 +127,6 @@ To achieve this, after defining the pivot grid control, set the `EnableOnDemandC
 
 {% endhighlight %}
 
-![Loads the pivot grid using Index Engine](Virtualized-Binding-images/PivotGrid loaded with OnDemand index engine.png)
+![Loads data using Index Engine](Virtualized-Binding-images/PivotGrid loaded with OnDemand index engine.png)
 
 N> You can refer to our [WPF Pivot Grid](https://www.syncfusion.com/wpf-controls/pivot-grid) feature tour page for its groundbreaking feature representations. You can also explore our [WPF Pivot Grid example](https://github.com/syncfusion/wpf-demos) to knows how to organizes and summarizes business data and displays the result in a cross-table format.

@@ -9,7 +9,7 @@ documentation: ug
 
 # Display Options in WPF Pivot Grid
 
-The [WPF Pivot Grid](https://www.syncfusion.com/wpf-controls/pivot-grid) control provides support for the PivotComputationInfo to display calculation values in preferred areas of the pivot grid using the `DisplayOption` property.
+The [WPF Pivot Grid](https://www.syncfusion.com/wpf-controls/pivot-grid) control provides support for the PivotComputationInfo to display calculation values in preferred areas of the control using the `DisplayOption` property.
 
 For XAML, refer to the following code sample.
 
@@ -79,19 +79,19 @@ public partial class MainWindow: Window {
 
 **All**
 
-Displays the calculation values in all columns of the pivot grid.
+Displays the calculation values in all columns of the Pivot Grid.
 
 ![To display the calculation values in all columns](Display-options-Images/PivotComputationinfo using All option.png)
 
 **Summary**
 
-Data actually presents in the PivotEngine, but displays the calculation values only in the summary columns of the pivot grid.
+Data actually presents in the PivotEngine, but displays the calculation values only in the summary columns of the Pivot Grid.
 
 ![To display the calculation values only in summary columns](Display-options-Images/PivotComputationinfo using summary option.png)
 
 **Calculations**
 
-Data actually presents in the PivotEngine, but displays the calculation values only in the calculation columns and does not display in the summary and grand total columns of the pivot grid.
+Data actually presents in the PivotEngine, but displays the calculation values only in the calculation columns and does not display in the summary and grand total columns of the control.
 
 ![To display the calculation values only in calculation columns](Display-options-Images/PivotComputationinfo using Calculations option.png)
 
@@ -103,7 +103,7 @@ Data actually presents in the PivotEngine, but displays the calculation values o
 
 **None**
 
-Data actually presents in the PivotEngine, but hides all the calculation values in all columns of the pivot grid.
+Data actually presents in the PivotEngine, but hides all the calculation values in all columns of the Pivot Grid.
 
 ![To hide the calculation values in all columns](Display-options-Images/PivotComputationinfo using none option.png)
 

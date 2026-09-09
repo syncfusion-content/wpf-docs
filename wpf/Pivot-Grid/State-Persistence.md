@@ -9,7 +9,7 @@ documentation: ug
 
 # State Persistence in WPF Pivot Grid
 
-The pivot grid allows you to maintain the collapsed or expanded state when the corresponding schema items are changed. This can be achieved using the `StatePersistence` property of the pivot grid control.
+Pivot Grid allows you to maintain the collapsed or expanded state when the corresponding schema items are changed. This can be achieved using the `StatePersistence` property of the control.
 
 For XAML, refer to the following code sample.
 
@@ -79,11 +79,11 @@ public partial class MainWindow: Window {
 
 {% endhighlight %}
 
-![PivotGrid with collapsed Bike](State-Persistence-images/PivotGrid with state persistence enabled.png)
+![With collapsed Bike](State-Persistence-images/PivotGrid with state persistence enabled.png)
 
 _PivotGrid with collapsed "Bike"_
 
-![PivotGrid maintaining collapsed state of Bike after Schema change](State-Persistence-images/PivotGrid with state persistence enabled 1.png)
+![Maintaining collapsed state of Bike after Schema change](State-Persistence-images/PivotGrid with state persistence enabled 1.png)
 
 _PivotGrid maintaining collapsed state of "Bike" after Schema change_
 
