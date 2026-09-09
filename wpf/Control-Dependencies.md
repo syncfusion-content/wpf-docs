@@ -1518,6 +1518,7 @@ Syncfusion.SfInput.WPF
 </table>
 
 ## SfMultiColumnDropDown
+
 <table>
 <tr>
 <th>Assembly references </th>
