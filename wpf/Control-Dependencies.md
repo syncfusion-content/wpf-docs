@@ -395,6 +395,7 @@ Syncfusion.Gantt.WPF
 </tr>
 <tr>
 <td> 
+Syncfusion.Grid.WPF <br/>
 Syncfusion.GridCommon.WPF <br/>
 Syncfusion.Linq.Base <br/>
 Syncfusion.Shared.WPF <br/>
@@ -1685,6 +1686,7 @@ Syncfusion.SfScheduler.WPF
 </tr>
 <tr>
 <td> 
+Syncfusion.SfSmartComponents.WPF <br/>
 Syncfusion.SfGrid.WPF <br/>
 Syncfusion.Data.WPF <br/>
 Syncfusion.Shared.WPF <br/>
