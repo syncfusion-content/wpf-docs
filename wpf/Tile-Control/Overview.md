@@ -3,7 +3,7 @@ layout: post
 title: About Syncfusion® WPF Tile Control | Syncfusion®
 description: Learn about the introduction of Syncfusion® Essential Studio WPF Tile Control and discover its features, layout customization capabilities, and more details.
 platform: wpf
-control: SfHubTile
+control: Tile Control
 documentation: ug
 ---
 

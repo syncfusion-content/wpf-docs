@@ -7,17 +7,17 @@ control: DoubleTextBox
 documentation: ug
 ---
 
-# Appearance in WPF DoubleTextBox
+# Appearance in WPF Double TextBox
 
-This section deals with the appearance of `DoubleTextBox` control and contains the following topics.
+This section deals with the appearance of `WPF Double TextBox` control and contains the following topics.
 
 ## Setting the Foreground
 
-The foreground of the [DoubleTextBox](https://www.syncfusion.com/wpf-controls/double-textbox) control can be modified based on the value of the control by using the [Foreground](https://learn.microsoft.com/en-us/dotnet/api/system.windows.controls.control.foreground?view=netframework-4.8) and the value-specific brushes described below.
+The foreground of the [WPF Double TextBox](https://www.syncfusion.com/wpf-controls/double-textbox) control can be modified based on the value of the control by using the [Foreground](https://learn.microsoft.com/en-us/dotnet/api/system.windows.controls.control.foreground?view=netframework-4.8) and the value-specific brushes described below.
 
 ### Foreground for Positive Value
 
-You can change the foreground color applied to positive values of `DoubleTextBox` by setting the [PositiveForeground](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.EditorBase.html#Syncfusion_Windows_Shared_EditorBase_PositiveForeground) property. It is applied when the [Value](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.DoubleTextBox.html#Syncfusion_Windows_Shared_DoubleTextBox_Value) is positive. The default color of `PositiveForeground` is `Black`.
+You can change the foreground color applied to positive values of `WPF Double TextBox` by setting the [PositiveForeground](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.EditorBase.html#Syncfusion_Windows_Shared_EditorBase_PositiveForeground) property. It is applied when the [Value](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.DoubleTextBox.html#Syncfusion_Windows_Shared_DoubleTextBox_Value) is positive. The default color of `PositiveForeground` is `Black`.
 
 {% tabs %}
 {% highlight XAML %}
@@ -39,7 +39,7 @@ doubleTextBox.PositiveForeground = Brushes.Blue;
 
 ### Foreground for Negative Value
 
-You can change the foreground color applied to negative values of `DoubleTextBox` by setting the [NegativeForeground](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.EditorBase.html#Syncfusion_Windows_Shared_EditorBase_NegativeForeground) property. It is applied when the [ApplyNegativeForeground](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.EditorBase.html#Syncfusion_Windows_Shared_EditorBase_ApplyNegativeForeground) property is `true` and the `Value` is negative. The default color of `NegativeForeground` is `Red`. The default value of `ApplyNegativeForeground` is `true`.
+You can change the foreground color applied to negative values of `WPF Double TextBox` by setting the [NegativeForeground](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.EditorBase.html#Syncfusion_Windows_Shared_EditorBase_NegativeForeground) property. It is applied when the [ApplyNegativeForeground](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.EditorBase.html#Syncfusion_Windows_Shared_EditorBase_ApplyNegativeForeground) property is `true` and the `Value` is negative. The default color of `NegativeForeground` is `Red`. The default value of `ApplyNegativeForeground` is `true`.
 
 {% tabs %}
 {% highlight XAML %}
@@ -63,7 +63,7 @@ doubleTextBox.NegativeForeground = Brushes.SpringGreen;
 
 ### Foreground for Zero Value
 
-You can change the foreground color applied when the `Value` of `DoubleTextBox` is zero by setting the [ZeroColor](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.EditorBase.html#Syncfusion_Windows_Shared_EditorBase_ZeroColor) property. It is applied when the [ApplyZeroColor](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.EditorBase.html#Syncfusion_Windows_Shared_EditorBase_ApplyZeroColor) property is `true` and the `Value` is zero. The default value of `ApplyZeroColor` is `true`. The default color of `ZeroColor` is `Green`.
+You can change the foreground color applied when the `Value` of `WPF Double TextBox` is zero by setting the [ZeroColor](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.EditorBase.html#Syncfusion_Windows_Shared_EditorBase_ZeroColor) property. It is applied when the [ApplyZeroColor](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.EditorBase.html#Syncfusion_Windows_Shared_EditorBase_ApplyZeroColor) property is `true` and the `Value` is zero. The default value of `ApplyZeroColor` is `true`. The default color of `ZeroColor` is `Green`.
 
 {% tabs %}
 {% highlight XAML %}
@@ -88,7 +88,7 @@ doubleTextBox.ZeroColor = Brushes.DarkGoldenrod;
 
 ## Setting the Background
 
-`DoubleTextBox` allows different brushes to fill the control. The [Background](https://learn.microsoft.com/en-us/dotnet/api/system.windows.controls.control.background?view=netframework-4.8) property can be used to modify the control background color. The default color of `Background` is `White`.
+`WPF Double TextBox` allows different brushes to fill the control. The [Background](https://learn.microsoft.com/en-us/dotnet/api/system.windows.controls.control.background?view=netframework-4.8) property can be used to modify the control background color. The default color of `Background` is `White`.
 
 {% tabs %}
 {% highlight XAML %}
@@ -111,7 +111,7 @@ doubleTextBox.Background = Brushes.Cyan;
 
 ## Setting the Corner Radius
 
-Corner Radius indicates the degree to which the corners of the border can be rounded. To create curved borders for the `DoubleTextBox`, use the [CornerRadius](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.EditorBase.html#Syncfusion_Windows_Shared_EditorBase_CornerRadius) property. The default value of `CornerRadius` is 1.
+Corner Radius indicates the degree to which the corners of the border can be rounded. To create curved borders for the `WPF Double TextBox`, use the [CornerRadius](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.EditorBase.html#Syncfusion_Windows_Shared_EditorBase_CornerRadius) property. The default value of `CornerRadius` is 1.
 
 {% tabs %}
 {% highlight XAML %}
@@ -136,7 +136,7 @@ doubleTextBox.CornerRadius = new CornerRadius(5);
 
 ## Apply Background for Selection
 
-`DoubleTextBox` allows different brushes to highlight the selected text by setting the [SelectionBrush](https://learn.microsoft.com/en-us/dotnet/api/system.windows.controls.primitives.textboxbase.selectionbrush?view=netframework-4.8) and [SelectionOpacity](https://learn.microsoft.com/en-us/dotnet/api/system.windows.controls.primitives.textboxbase.selectionopacity?view=netframework-4.8) properties. The `SelectionOpacity` property specifies the opacity of the `SelectionBrush`. The default value of `SelectionOpacity` is `0.4`.
+`WPF Double TextBox` allows different brushes to highlight the selected text by setting the [SelectionBrush](https://learn.microsoft.com/en-us/dotnet/api/system.windows.controls.primitives.textboxbase.selectionbrush?view=netframework-4.8) and [SelectionOpacity](https://learn.microsoft.com/en-us/dotnet/api/system.windows.controls.primitives.textboxbase.selectionopacity?view=netframework-4.8) properties. The `SelectionOpacity` property specifies the opacity of the `SelectionBrush`. The default value of `SelectionOpacity` is `0.4`.
 
 {% tabs %}
 {% highlight XAML %}
@@ -162,7 +162,7 @@ doubleTextBox.SelectionOpacity = 0.5;
 
 ## Align Value
 
-`DoubleTextBox` allows you to display the value from the right, center, or left side by setting the [TextAlignment](https://learn.microsoft.com/en-us/dotnet/api/system.windows.controls.textblock.textalignment?view=netframework-4.8) property to `Right`, `Left`, or `Center`. The default value of `TextAlignment` is `Left`.
+`WPF Double TextBox` allows you to display the value from the right, center, or left side by setting the [TextAlignment](https://learn.microsoft.com/en-us/dotnet/api/system.windows.controls.textblock.textalignment?view=netframework-4.8) property to `Right`, `Left`, or `Center`. The default value of `TextAlignment` is `Left`.
 
 {% tabs %}
 {% highlight XAML %}
@@ -184,7 +184,7 @@ doubleTextBox.TextAlignment = TextAlignment.Center;
 
 ## Setting ToolTip
 
-`DoubleTextBox` provides support for a ToolTip to display certain information when the mouse hovers over the `DoubleTextBox`. You can customize the tooltip information by setting the [ToolTip](https://learn.microsoft.com/en-us/dotnet/api/system.windows.controls.tooltip?view=netframework-4.8) property.
+`WPF Double TextBox` provides support for a ToolTip to display certain information when the mouse hovers over the control. You can customize the tooltip information by setting the [ToolTip](https://learn.microsoft.com/en-us/dotnet/api/system.windows.controls.tooltip?view=netframework-4.8) property.
 
 {% tabs %}
 {% highlight XAML %}
@@ -206,7 +206,7 @@ doubleTextBox.ToolTip = "Enter Double value";
 
 ## Theme
 
-DoubleTextBox supports various built-in themes. Refer to the below links to apply themes for the DoubleTextBox,
+The WPF Double TextBox supports various built-in themes. Refer to the links below to apply themes,
 
   * [Apply theme using SfSkinManager](https://help.syncfusion.com/wpf/themes/skin-manager)
 	

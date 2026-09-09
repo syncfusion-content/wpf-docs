@@ -3,7 +3,7 @@ layout: post
 title: Getting Started with WPF Tile Control | Syncfusion®
 description: Learn how to get started with the Syncfusion® WPF Tile Control. Explore setup, features, examples, and customization options.
 platform: wpf
-control: SfHubTile
+control: Tile Control
 documentation: ug
 ---
 
@@ -50,7 +50,7 @@ To add the controls manually in XAML, follow these steps:
 	* Syncfusion.SfHubTile.WPF
 	* Syncfusion.SfShared.WPF
 2. Import the Syncfusion WPF schema `http://schemas.syncfusion.com/wpf` or the control namespace `Syncfusion.Windows.Controls.Notification` in the XAML page.
-3. Add the SfHubTile and SfPulsingTile controls to the XAML page.
+3. Add the `SfHubTile` and `SfPulsingTile` controls to the XAML page.
 
 {% capture codesnippet1 %}
 {% tabs %}
@@ -82,12 +82,13 @@ To add the control manually in C#, follow these steps:
 	* Syncfusion.SfHubTile.WPF
 	* Syncfusion.SfShared.WPF
 2. Import the `Syncfusion.Windows.Controls.Notification` namespace.
-3. Create instances of SfHubTile and SfPulsingTile, and then add them to the layout container.
+3. Create instances of `SfHubTile` and `SfPulsingTile`, and then add them to the layout container.
 
 {% capture codesnippet2 %}
 {% highlight C# %}
 
 using Syncfusion.Windows.Controls.Notification;
+
 namespace WpfApplication1
 {	
 	public partial class MainWindow : Window

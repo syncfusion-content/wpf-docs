@@ -11,7 +11,7 @@ documentation: ug
 
 **EditCommands members**
 
-The EditControl ships with a variety of built-in RoutedUICommands to perform various editing operations in it using commands. The EditCommands class in the Edit WPF library contains lot of necessary commands. The following are the list of RoutedUICommands available in the EditControl.
+The Syntax Editor ships with a variety of built-in RoutedUICommands to perform various editing operations in it using commands. The EditCommands class in the Edit WPF library contains lot of necessary commands. The following are the list of RoutedUICommands available in the Syntax Editor.
 
 <table>
 <tr>
@@ -36,7 +36,7 @@ CollapseAll<br/><br/></td>
 <td>
 N/A<br/><br/></td>
 <td>
-Collapses all the blocks in the EditControl text.<br/><br/></td>
+Collapses all the blocks in the Syntax Editor text.<br/><br/></td>
 </tr>
 <tr>
 <td>
@@ -76,7 +76,7 @@ ExpandAll<br/><br/></td>
 <td>
 N/A<br/><br/></td>
 <td>
-Expands all the blocks in the EditControl text.<br/><br/></td>
+Expands all the blocks in the Syntax Editor text.<br/><br/></td>
 </tr>
 <tr>
 <td>
@@ -124,7 +124,7 @@ New<br/><br/></td>
 <td>
 CTRL+N<br/><br/></td>
 <td>
-Resets all the text in the EditControl.<br/><br/></td>
+Resets all the text in the Syntax Editor.<br/><br/></td>
 </tr>
 <tr>
 <td>
@@ -148,7 +148,7 @@ Print<br/><br/></td>
 <td>
 CTRL+P<br/><br/></td>
 <td>
-Sends the EditControl content to a printer.<br/><br/></td>
+Sends the Syntax Editor content to a printer.<br/><br/></td>
 </tr>
 <tr>
 <td>
@@ -180,7 +180,7 @@ Save<br/><br/></td>
 <td>
 CTRL+S<br/><br/></td>
 <td>
-Saves the text in the EditControl to a file. It displays the SaveFileDialog to enter the name and location to save the file.<br/><br/></td>
+Saves the text in the Syntax Editor to a file. It displays the SaveFileDialog to enter the name and location to save the file.<br/><br/></td>
 </tr>
 <tr>
 <td>
@@ -212,7 +212,7 @@ SelectAll<br/><br/></td>
 <td>
 CTRL+A<br/><br/></td>
 <td>
-Selects all the text in EditControl.<br/><br/></td>
+Selects all the text in Syntax Editor.<br/><br/></td>
 </tr>
 <tr>
 <td>

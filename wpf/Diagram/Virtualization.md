@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Virtualization in WPF SfDiagram | Syncfusion®
-description: Improve performance in Syncfusion® WPF SfDiagram by loading only visible elements and enabling deferred scrolling with virtualization.
+title: Virtualization in WPF Diagram | Syncfusion®
+description: Improve performance in Syncfusion® WPF Diagram by loading only visible elements and enabling deferred scrolling with virtualization.
 platform: wpf
 control: SfDiagram
 documentation: ug
 ---
 
-# Virtualization in WPF SfDiagram
+# Virtualization in WPF Diagram
 
-Virtualization is the process of loading the diagramming objects available in the visible area of the [WPF SfDiagram](https://www.syncfusion.com/diagram-sdk/wpf-diagram) control, that is, only the diagramming objects that lie within the ViewPort of the ScrollViewer are loaded and the remaining objects are loaded only when they come into view. 
+Virtualization is the process of loading the diagramming objects available in the visible area of the [WPF Diagram](https://www.syncfusion.com/diagram-sdk/wpf-diagram) control, that is, only the diagramming objects that lie within the ViewPort of the ScrollViewer are loaded and the remaining objects are loaded only when they come into view. 
 
 This feature gives optimized performance and low memory consumption while loading and dragging items to the `SfDiagram` that contains a large number of diagram objects.
 
@@ -22,7 +22,7 @@ N> By default, virtualization is disabled. To enable virtualization and improve 
 {% endhighlight %}
 {% highlight c# %}
 
-//Initialize the SfDiagram
+//Initialize the Diagram
 SfDiagram diagram = new SfDiagram();
 //Enable the Virtualize constraint
 diagram.Constraints = diagram.Constraints | GraphConstraints.Virtualize;
@@ -45,7 +45,7 @@ N> Deferred scrolling (`Outline`) depends on virtualization and works only when 
 {% endhighlight %}
 {% highlight c# %}
 
-//Initialize the SfDiagram
+//Initialize the Diagram
 SfDiagram diagram = new SfDiagram();
 //Enable the Virtualize and outline constraints
 diagram.Constraints |= GraphConstraints.Virtualize | GraphConstraints.Outline;
@@ -87,7 +87,7 @@ Options are provided to customize the appearance, style, and render interval of 
 {% endhighlight %}	
 {% highlight c# %}
 
-//Initialize the SfDiagram
+//Initialize the Diagram
 SfDiagram diagram = new SfDiagram();
 
 //Enable the outline and virtualize constraints

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Expand Collapse Command in WPF SfDiagram | Syncfusion®
-description: Expand or collapse hierarchical nodes in Syncfusion® WPF SfDiagram and control layout updates with ExpandCollapse parameters.
+title: Expand Collapse Command in WPF Diagram | Syncfusion®
+description: Expand or collapse hierarchical nodes in Syncfusion® WPF Diagram and control layout updates with ExpandCollapse parameters.
 platform: wpf
 control: SfDiagram
 documentation: ug
 ---
 
-# Expand Collapse Command in WPF SfDiagram
+# Expand Collapse Command in WPF Diagram
 
 The [ExpandCollapse](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IDiagramCommands.html#Syncfusion_UI_Xaml_Diagram_IDiagramCommands_ExpandCollapse) command is used to show or hide children and view only the relevant nodes in the diagram. The `ExpandCollapse` command will be executed with the [ExpandCollapseParameter](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ExpandCollapseParameter.html), where the parameter contains information about the node that needs to be expanded or collapsed. The `IsExpanded` property of the node is used to expand or collapse the children nodes. 
 
@@ -32,7 +32,7 @@ N> In the following example, `args.Item` represents the node associated with the
 {% tabs %}
 {% highlight c# %}
 
-//Initialize the SfDiagram 
+//Initialize the Diagram 
 SfDiagram diagramcontrol = new SfDiagram();
 
 if (args.Item is NodeViewModel && (args.Item as NodeViewModel).IsExpanded)

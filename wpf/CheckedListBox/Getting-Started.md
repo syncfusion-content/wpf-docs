@@ -7,9 +7,9 @@ control: CheckListBox
 documentation: ug
 ---
 
-# Getting Started with WPF CheckListBox
+# Getting Started with WPF CheckedListBox
 
-This section explains how to display and select the required items using the [WPF CheckListBox](https://www.syncfusion.com/wpf-controls/checkedlistbox) control.
+This section explains how to display and select the required items using the [WPF CheckedListBox](https://www.syncfusion.com/wpf-controls/checkedlistbox) control.
 
 ## Control Structure
 
@@ -20,25 +20,25 @@ Refer to the [control dependencies](https://help.syncfusion.com/wpf/control-depe
 
 Further information on installing the NuGet package can be found in the following link: [How to install nuget packages](https://help.syncfusion.com/wpf/installation/install-nuget-packages).
 
-You can also use the [Syncfusion Reference Manager](https://help.syncfusion.com/wpf/visual-studio-integration/visual-studio-extensions/add-references) to refer to the CheckListBox's dependent assemblies.
+You can also use the [Syncfusion Reference Manager](https://help.syncfusion.com/wpf/visual-studio-integration/visual-studio-extensions/add-references) to refer to the WPF CheckedListBox's dependent assemblies.
 
-## Creating simple application with CheckListBox control
+## Creating simple application with WPF CheckedListBox control
 
-In this walkthrough, you will create a WPF application that contains the [CheckListBox](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.CheckListBox.html) control.
+In this walkthrough, you will create a WPF application that contains the [WPF CheckedListBox](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.CheckListBox.html) control.
 
 ## Creating project
 
-In Visual Studio, create a new WPF project to show the features of the [CheckListBox](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.CheckListBox.html) control, and then add the following namespace to the referenced assemblies.
+In Visual Studio, create a new WPF project to show the features of the [WPF CheckedListBox](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.CheckListBox.html) control, and then add the following namespace to the referenced assemblies.
 
 ## Adding control via designer
 
-The WPF [CheckListBox](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.CheckListBox.html) control can be added to the application by dragging it from Toolbox and dropping it in the designer. The required [assemblies](https://help.syncfusion.com/wpf/control-dependencies#checklistbox) will be added automatically.
+The [WPF CheckedListBox](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.CheckListBox.html) control can be added to the application by dragging it from Toolbox and dropping it in the designer. The required [assemblies](https://help.syncfusion.com/wpf/control-dependencies#checklistbox) will be added automatically.
 
 ![Adding control via designer](Getting-Started_images/wpf-checklistbox-control-added-by-designer.png)
 
 ## Adding control manually in XAML
 
-To add the WPF [CheckListBox](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.CheckListBox.html) control manually in XAML, follow these steps,
+To add the [WPF CheckedListBox](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.CheckListBox.html) control manually in XAML, follow these steps,
 
 1. Add the following assembly references to the project.
 
@@ -47,7 +47,7 @@ To add the WPF [CheckListBox](https://help.syncfusion.com/cr/wpf/Syncfusion.Wind
 
 2. Import Syncfusion WPF schema **http://schemas.syncfusion.com/wpf** in the XAML page.
 
-3. Declare the `CheckListBox` control in XAML page.
+3. Declare the `WPF CheckedListBox` control in XAML page.
 
 {% capture codesnippet1 %}
 {% tabs %}
@@ -77,16 +77,16 @@ To add the WPF [CheckListBox](https://help.syncfusion.com/cr/wpf/Syncfusion.Wind
 
 ## Adding control manually in C#
 
-To add the `CheckListBox` control manually in C#, follow these steps,
+To add the `WPF CheckedListBox` control manually in C#, follow these steps,
 
 1. Add the following assembly references to the project.
 
     * Syncfusion.Shared.WPF
     * Syncfusion.Tools.WPF
 
-2. Import CheckListBox namespace **Syncfusion.Windows.Tools.Controls**.
+2. Import WPF CheckedListBox namespace **Syncfusion.Windows.Tools.Controls**.
 
-3. Create the `CheckListBox` control instance and add it to the window.
+3. Create the `WPF CheckedListBox` control instance and add it to the window.
 
 {% capture codesnippet2 %}
 {% tabs %}
@@ -124,7 +124,7 @@ namespace GettingStarted
  
 ## Populating items using CheckListBoxItem
 
-You can add the items inside the WPF [CheckListBox](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.CheckListBox.html) control using the [CheckListBoxItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.CheckListBoxItem.html).
+You can add the items inside the [WPF CheckedListBox](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.CheckListBox.html) control using the [CheckListBoxItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.CheckListBoxItem.html).
 
 {% tabs %}
 {% highlight XAML %}
@@ -165,7 +165,7 @@ this.Content = checkListBox;
 
 ## Populating items by DataBinding
 
-You can populate the items to the WPF [CheckListBox](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.CheckListBox.html) control by using the `ItemsSource` property. The `DisplayMemberPath` property is used to the name or path of the property displayed for each data item in the control.
+You can populate the items to the [WPF CheckedListBox](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.CheckListBox.html) control by using the `ItemsSource` property. The `DisplayMemberPath` property is used to the name or path of the property displayed for each data item in the control.
 
 1. Create Model and populate it with required properties. Create the ViewModel class and populate ObservableCollection object with the Model objects.
 
@@ -217,7 +217,7 @@ public class ViewModel
 {% endcapture %}
 {{ codesnippet3 | OrderList_Indent_Level_1 }}
 
-2. Now create an instance of ViewModel in **DataContext** property of the CheckListBox control in **MainWindow.xaml** and bind the collection property from ViewModel to the `ItemSource` property of CheckListBox. Set the property from Model class to be displayed in the `DisplayMemberPath` property.
+2. Now create an instance of ViewModel in **DataContext** property of the WPF CheckedListBox control in **MainWindow.xaml** and bind the collection property from ViewModel to the `ItemSource` property. Set the property from Model class to be displayed in the `DisplayMemberPath` property.
 
 {% capture codesnippet4 %}
 {% tabs %}
@@ -249,7 +249,7 @@ checkListBox.DisplayMemberPath = "Name";
 
 ## Check or Uncheck items
 
-You can check or uncheck the items in the [CheckListBox](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.CheckListBox.html) by clicking on the CheckBox or the content of the item. You can use the `Space` key to uncheck or check the previously selected item.
+You can check or uncheck the items in the [WPF CheckedListBox](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.CheckListBox.html) by clicking on the CheckBox or the content of the item. You can use the `Space` key to uncheck or check the previously selected item.
 
 You can programmatically check the items in CheckListBox by adding the items in the [SelectedItems](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.CheckListBox.html#Syncfusion_Windows_Tools_Controls_CheckListBox_SelectedItems) property.
 
@@ -291,7 +291,7 @@ private void CheckListBox_ItemChecked(object sender, ItemCheckedEventArgs e)
 
 ## Get list of checked items
 
-The [CheckListBox](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.CheckListBox.html) control gets all the checked items using the [SelectedItems](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.CheckListBox.html#Syncfusion_Windows_Tools_Controls_CheckListBox_SelectedItems) property. You can also get the currently selected item which is in either checked or unchecked state by using the [SelectedItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.CheckListBox.html#Syncfusion_Windows_Tools_Controls_CheckListBox_SelectedItem) property.
+The [WPF CheckedListBox](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.CheckListBox.html) control gets all the checked items using the [SelectedItems](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.CheckListBox.html#Syncfusion_Windows_Tools_Controls_CheckListBox_SelectedItems) property. You can also get the currently selected item which is in either checked or unchecked state by using the [SelectedItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.CheckListBox.html#Syncfusion_Windows_Tools_Controls_CheckListBox_SelectedItem) property.
 
 ![CheckListBox with checked items count](Getting-Started_images/CheckItems_Count.gif)
 
@@ -299,9 +299,9 @@ The [CheckListBox](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.C
 
 ## Localization support
 
-Localization is the process of translating the application resources into different language for the specific cultures. You can localize the `Select All` CheckListBoxItem in `CheckListBox` control by adding resource file for each language.
+Localization is the process of translating the application resources into different language for the specific cultures. You can localize the `Select All` CheckListBoxItem in `WPF CheckedListBox` control by adding resource file for each language.
 
-To localize the `CheckListBox` based on culture using resource files, follow the below steps.
+To localize the `WPF CheckedListBox` based on culture using resource files, follow the below steps.
 
 1. Change application culture and create `.resx` files.
 
@@ -311,7 +311,7 @@ N> Refer [Localization of Syncfusion WPF Controls](https://help.syncfusion.com/w
 
 ![Added string property of CheckListBox which need to localized in resource file](Getting-Started_images/addlanguage.png)
 
-The following screenshot shows the localized `CheckListBox` control.
+The following screenshot shows the localized `WPF CheckedListBox` control.
 
 ![WPF CheckListBox contains localized SelectAll item](Getting-Started_images/localized.png)
 
@@ -319,7 +319,7 @@ The following screenshot shows the localized `CheckListBox` control.
 
 ## Theme
 
-CheckListBox supports various built-in themes. Refer to the below links to apply themes for the CheckListBox,
+The WPF CheckedListBox supports various built-in themes. Refer to the links below to apply themes,
 
   * [Apply theme using SfSkinManager](https://help.syncfusion.com/wpf/themes/skin-manager)
 	

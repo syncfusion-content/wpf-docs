@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started with WPF Tab Control
 
-This section explains how to create a WPF [WPF Tab Control](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.TabControlExt.html) and explains about its structure.
+This section explains how to create a [WPF Tab Control](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.TabControlExt.html) and explains about its structure.
 
 ## Structure of WPF Tab Control
 
@@ -72,7 +72,7 @@ To add the `WPF Tab Control` manually in XAML, follow these steps:
 
 ## Adding WPF Tab Control via C#
 
-To add the [TabControl](https://www.syncfusion.com/wpf-controls/tabcontrol) control manually in C#, follow these steps:
+To add the [WPF Tab Control](https://www.syncfusion.com/wpf-controls/tabcontrol) manually in C#, follow these steps:
 
 1. Create a new WPF application via Visual Studio.
 

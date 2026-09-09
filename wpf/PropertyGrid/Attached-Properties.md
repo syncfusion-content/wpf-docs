@@ -9,11 +9,11 @@ documentation: ug
 
 # Attached Properties in WPF PropertyGrid
 
-The [PropertyGrid](https://www.syncfusion.com/wpf-ui-controls/propertygrid) control has support to display the attached properties of SelectedObject.
+The [WPF PropertyGrid](https://www.syncfusion.com/wpf-ui-controls/propertygrid) control provides support to display the attached properties of the `SelectedObject`.
 
 ## Show or hide attached properties of SelectedObject
 
-We can show or hide the attached properties of SelectedObject by handling the [AutoGeneratingPropertyGridItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.PropertyGrid.html) event with [AutoGeneratingPropertyGridItemEventArgs.Cancel](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.AutoGeneratingPropertyGridItemEventArgs.html) property. Below example shows, how to hide the attached properties using `AutoGeneratingPropertyGridItem` event.
+We can show or hide the attached properties of the `SelectedObject` by handling the [AutoGeneratingPropertyGridItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.PropertyGrid.html) event with the [AutoGeneratingPropertyGridItemEventArgs.Cancel](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.AutoGeneratingPropertyGridItemEventArgs.html) property. The below example shows how to hide the attached properties using the `AutoGeneratingPropertyGridItem` event.
 
 {% tabs %}
 
@@ -54,8 +54,8 @@ private void PropertyGrid_AutoGeneratingPropertyGridItem(object sender, AutoGene
 
 {% endtabs %}
 
-Here, `Grid.Column` and `SkinStorage.VisualStyle` are the attached properties of SelectedObject.
+Here, `Grid.Column` and `SkinStorage.VisualStyle` are the attached properties of the `SelectedObject`.
 
-![Show / hide attached properties in WPF PropertyGrid](Attached-properties-images/wpf-propertygrid-attached-properties.png)
+![Show / hide attached properties in PropertyGrid](Attached-properties-images/wpf-propertygrid-attached-properties.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/wpf-property-grid-examples/tree/master/Samples/Attached-properties).

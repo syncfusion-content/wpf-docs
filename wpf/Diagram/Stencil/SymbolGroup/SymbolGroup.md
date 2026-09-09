@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Symbol Groups in WPF SfDiagram | Syncfusion®
-description: Organize stencil symbols in Syncfusion® WPF SfDiagram using symbol groups, custom headers, display modes, and category-based grouping.
+title: Symbol Groups in WPF Diagram | Syncfusion®
+description: Organize stencil symbols in Syncfusion® WPF Diagram using symbol groups, custom headers, display modes, and category-based grouping.
 platform: wpf
 control: SfDiagram
 documentation: ug
 ---
 
-# Symbol Groups in WPF SfDiagram
+# Symbol Groups in WPF Diagram
 
 A set of stencil symbols can be combined together to create a group and many numbers of group can be created. This helps you to look overall stencil symbols into split view and it is easy to find specific or particular shape category into stencil. 
 
@@ -422,6 +422,6 @@ public class StencilViewModel : Stencil
 
 [How to expand all SymbolGroups?](https://support.syncfusion.com/kb/article/5492/how-to-expand-all-symbol-groups-in-wpf-diagram-sfdiagram)
 
-[How to group all the SymbolViewModels into the same group in the WPF SfDiagram ?](https://support.syncfusion.com/kb/article/18672/how-to-group-all-the-symbolviewmodels-into-the-same-group-in-the-wpf-diagram-sfdiagram)
+[How to group all the SymbolViewModels into the same group in the WPF Diagram ?](https://support.syncfusion.com/kb/article/18672/how-to-group-all-the-symbolviewmodels-into-the-same-group-in-the-wpf-diagram-sfdiagram)
 
-[How to Change the Background Color of a Symbol in WPF SfDiagram?](https://support.syncfusion.com/kb/article/18241/how-to-change-the-background-color-of-a-symbol-in-wpf-sfdiagram)
+[How to Change the Background Color of a Symbol in WPF Diagram?](https://support.syncfusion.com/kb/article/18241/how-to-change-the-background-color-of-a-symbol-in-wpf-sfdiagram)

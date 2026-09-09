@@ -7,9 +7,9 @@ control: SfColorPalette
 documentation: ug
 ---
 
-# About Syncfusion® WPF SfColorPalette Control
+# About Syncfusion® WPF Color Palette Control
 
-The various elements of the [SfColorPalette](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Media.SfColorPalette.html) are illustrated in the following screenshot.
+The various elements of the [WPF Color Palette](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Media.SfColorPalette.html) are illustrated in the following screenshot.
 
 ![Visual Structure of WPF Color Palette](overview_images/wpf-color-palette-visual-structure.png)
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Stencil Interactions in WPF SfDiagram | Syncfusion®
-description: Manage stencil interactions in Syncfusion® WPF SfDiagram with symbol selection, drag-and-drop, reordering, duplication, and keyboard support.
+title: Stencil Interactions in WPF Diagram | Syncfusion®
+description: Manage stencil interactions in Syncfusion® WPF Diagram with symbol selection, drag-and-drop, reordering, duplication, and keyboard support.
 platform: wpf
 control: SfDiagram
 documentation: ug
 ---
 
-# Stencil interactions in WPF SfDiagram
+# Stencil interactions in WPF Diagram
 
 Stencil symbols can be selected, dragged, and reordered in the Stencil.
 
@@ -235,7 +235,7 @@ Symbols in the `Basic Shapes` group are not added to the diagram when dropped.
 
 ## Symbol dragging outside diagram bounds
 
-By default, the cursor appears as a block cursor when dragging a symbol from the Stencil outside the diagram bounds. The SfDiagram can restrict dragging to a defined area using [DragLimit](https://help.syncfusion.com/wpf/diagram/scroll-settings/draglimit).
+By default, the cursor appears as a block cursor when dragging a symbol from the Stencil outside the diagram bounds. The Diagram can restrict dragging to a defined area using [DragLimit](https://help.syncfusion.com/wpf/diagram/scroll-settings/draglimit).
 
 ![Block cursor when dragging outside the diagram](Stencil_images/BlockCursor.gif)
 
@@ -277,7 +277,7 @@ public partial class MainWindow
 
 [View Sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Stencil/Stencil%20Drag%20Drop%20Template)
 
-## Keyboard Support for Stencil in WPF SfDiagram
+## Keyboard Support for Stencil in WPF Diagram
 
 The Stencil supports keyboard shortcuts for common actions.
 
@@ -313,6 +313,6 @@ The following table illustrates the list of commands along with their associated
 
 [How to expand all symbol groups in stencil?](https://support.syncfusion.com/kb/article/5492/how-to-expand-all-symbol-groups-in-wpf-diagram-sfdiagram)
 
-[How to Change Cursor to Block Cursor When Hovering in WPF SfDiagram?](https://support.syncfusion.com/kb/article/18242/how-to-change-cursor-to-block-cursor-when-hovering-in-wpf-sfdiagram)
+[How to Change Cursor to Block Cursor When Hovering in WPF Diagram?](https://support.syncfusion.com/kb/article/18242/how-to-change-cursor-to-block-cursor-when-hovering-in-wpf-sfdiagram)
 
-[How to Change the Background Color of a Symbol in WPF SfDiagram?](https://support.syncfusion.com/kb/article/18241/how-to-change-the-background-color-of-a-symbol-in-wpf-sfdiagram)
+[How to Change the Background Color of a Symbol in WPF Diagram?](https://support.syncfusion.com/kb/article/18241/how-to-change-the-background-color-of-a-symbol-in-wpf-sfdiagram)

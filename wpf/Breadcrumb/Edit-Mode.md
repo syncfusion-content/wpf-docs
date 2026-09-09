@@ -1,17 +1,17 @@
 ---
 layout: post
-title: Edit Mode in WPF HierarchyNavigator | Syncfusion®
-description: Edit mode in WPF HierarchyNavigator allows users to modify hierarchy items directly, improving data management and navigation workflows.
+title: Edit Mode in WPF BreadCrumb | Syncfusion®
+description: Edit mode in WPF BreadCrumb allows users to modify hierarchy items directly, improving data management and navigation workflows.
 platform: wpf
-control: Hierarchical Navigator
+control: BreadCrumb
 documentation: ug
 ---
 
-# Edit Mode in WPF HierarchyNavigator
+# Edit Mode in WPF BreadCrumb
 
 This feature allows you to easily edit a navigation path by setting the [IsEnableEditMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.HierarchyNavigator.html#Syncfusion_Windows_Tools_Controls_HierarchyNavigator_IsEnableEditMode) property to `true`. The filter support is available in edit mode, which suggests matching nodes based on the path entered in the editor like the Windows Explorer.
 
-To start the edit mode, click `HierarchyNavigatorItemsControl` and enter a navigation path that will display a drop-down list of filtered navigation paths, and then select the expected navigation path.
+To start the edit mode, click `HierarchyNavigator` and enter a navigation path that will display a drop-down list of filtered navigation paths, and then select the expected navigation path.
 
 N> If you enter an incorrect path or text in the editor, the dropdown suggestion list will be closed.
 
@@ -24,8 +24,8 @@ N> If you enter an incorrect path or text in the editor, the dropdown suggestion
 		x:Class="HierarchicalNavigatorSample.MainWindow"
 		Title="HierarchicalNavigator Sample" Height="350" Width="525">
 	<Grid>
-		<!--Adding HierarchicalNavigator control -->
-		<syncfusion:HierarchicalNavigator x:Name="hierarchicalNavigator" Width="100" Height="100" IsEnableEditMode="true" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+		<!--Adding BreadCrumb control -->
+		<syncfusion:HierarchyNavigator x:Name="hierarchyNavigator" Width="100" Height="100" IsEnableEditMode="true" VerticalAlignment="Center" HorizontalAlignment="Center"/>
 	</Grid>
 </Window>
 
@@ -43,12 +43,12 @@ namespace HierarchicalNavigatorSample
 		public MainWindow()
 		{
 			InitializeComponent();
-			//Creating an instance of HierarchicalNavigator control
-			HierarchicalNavigator hierarchicalNavigator = new HierarchicalNavigator();
+			//Creating an instance of HierarchyNavigator control
+			HierarchyNavigator hierarchyNavigator = new HierarchyNavigator();
 			hierarchyNavigator.IsEnableEditMode = true;
 			
-			//Adding HierarchicalNavigator as window content
-			this.Content = hierarchicalNavigator;
+			//Adding HierarchyNavigator as window content
+			this.Content = hierarchyNavigator;
 		}
 	}
 }
@@ -56,7 +56,7 @@ namespace HierarchicalNavigatorSample
 {% endhighlight %}
 {% endtabs %}
 
-![Hierarchy Naviagtor with AutoComplete](Edit-Mode_images/AutoComplete_image.png)
+![BreadCrumb control with AutoComplete](Edit-Mode_images/AutoComplete_image.png)
 
 
 

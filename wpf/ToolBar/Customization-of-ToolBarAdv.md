@@ -1,19 +1,19 @@
 ---
 layout: post
-title: Customization in WPF ToolBarAdv | Syncfusion®
-description: Customization support in WPF ToolBarAdv enables personalized toolbar layouts, item customization, and appearance modifications to suit application requirements.
+title: Customization in WPF ToolBar | Syncfusion®
+description: Customization support in WPF ToolBar enables personalized toolbar layouts, item customization, and appearance modifications to suit application requirements.
 platform: wpf
-control: ToolBarAdv
+control: ToolBar
 documentation: ug
 ---
 
-# Customization in WPF ToolBarAdv
+# Customization in WPF ToolBar
 
-This section describes how to customize the appearance of a ToolBarAdv.
+This section describes how to customize the appearance of a ToolBar.
 
-## Customizing the floating ToolBarAdv
+## Customizing the floating ToolBar
 
-This section demonstrates how to customize a floating ToolBarAdv by applying a FloatingToolBarStyle to the ToolBarManager and defining toolbar items.
+This section demonstrates how to customize a floating ToolBar by applying a FloatingToolBarStyle to the ToolBarManager and defining toolbar items.
 
 {% tabs %}
 
@@ -67,7 +67,7 @@ This section demonstrates how to customize a floating ToolBarAdv by applying a F
 
 ## Customizing Foreground
 
-The [Foreground](https://learn.microsoft.com/en-us/dotnet/api/system.windows.controls.control.foreground?view=windowsdesktop-7.0) property of [ToolBarAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ToolBarAdv.html) can be used to customize the floating ToolBar text foreground.
+The [Foreground](https://learn.microsoft.com/en-us/dotnet/api/system.windows.controls.control.foreground?view=windowsdesktop-7.0) property of [ToolBarAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ToolBarAdv.html) control can be used to customize the floating ToolBar text foreground.
 
 The following code illustrates how to set the value of the foreground property:
 
@@ -106,11 +106,11 @@ The following code illustrates how to set the value of the foreground property:
 
 ![Setting the toolbar text foreground](Getting-Started-images/Floating-ToolBar-Forecolor.png)
 
-> To preview the foreground on a *floating* toolbar, you must first detach the toolbar by clicking its gripper. See [ToolBarAdv state](ToolBarAdv-state.md) for instructions.
+> To preview the foreground on a *floating* toolbar, you must first detach the toolbar by clicking its gripper. See [ToolBar state](ToolBarAdv-state.md) for instructions.
 
 ## Customizing a FrameworkElement's style
 
-This section demonstrates how to customize a ToolBarAdv by loading an external ResourceDictionary that contains style definitions. 
+This section demonstrates how to customize a ToolBar by loading an external ResourceDictionary that contains style definitions. 
 
 {% tabs %}
 
@@ -132,9 +132,9 @@ Source = new Uri("ControlsResouce.xaml", UriKind.RelativeOrAbsolute)
 
 ## Theme
 
-ToolBarAdv supports various built-in themes. Apply a theme to the ToolBarAdv using the links below.
+ToolBar supports various built-in themes. Apply a theme to the ToolBar using the links below.
 
 * [Apply theme using SfSkinManager](https://help.syncfusion.com/wpf/themes/skin-manager)
 * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
 
-![Setting theme to WPF ToolBarAdv](Getting-Started-images/Theme.png)
+![Setting theme to WPF ToolBar](Getting-Started-images/Theme.png)

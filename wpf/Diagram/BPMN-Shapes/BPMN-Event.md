@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Event in WPF SfDiagram | Syncfusion®
-description: Learn about BPMN events in Syncfusion® WPF SfDiagram control, including event types, event triggers, start events, intermediate events, and end events.
+title: Event in WPF Diagram | Syncfusion®
+description: Learn about BPMN events in Syncfusion® WPF Diagram control, including event types, event triggers, start events, intermediate events, and end events.
 platform: wpf
 control: SfDiagram
 documentation: ug
 ---
-# Event in WPF SfDiagram
+# Event in WPF Diagram
 
 An [`Event`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Controls.BpmnShapeType.html#fields#Event) is a common BPMN process model element that represents something happens during a business process and it is notated with a circle.
 The [`EventType`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.BpmnNodeViewModel.html#Syncfusion_UI_Xaml_Diagram_BpmnNodeViewModel_EventType) property of the [`BpmnNodeViewModel`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.BpmnNodeViewModel.html) allows you to set the type of event that occurred during the process. The default event type is [`Start`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Controls.EventType.html).
@@ -83,7 +83,7 @@ The event triggers are notated as icons inside the circle and they represents so
 //Initialize the diagram.
 SfDiagram diagram = new SfDiagram();
 
-//Initialize NodeCollection to SfDiagram
+//Initialize NodeCollection to Diagram
 diagram.Nodes = new NodeCollection();
 
 //Initialize the BpmnNodeViewModel.

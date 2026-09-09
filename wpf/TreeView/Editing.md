@@ -1,15 +1,15 @@
 ---
 layout: post
 title: Editing in WPF TreeView | Syncfusion®
-description: Editing in SfTreeView enables modifying node content with customizable edit triggers, templates, programmatic editing, and events.
+description: Editing in WPF TreeView enables modifying node content with customizable edit triggers, templates, programmatic editing, and events.
 platform: wpf
 control: SfTreeView
 documentation: ug
 ---
 
-# Editing in WPF TreeView (SfTreeView)
+# Editing in WPF TreeView
 
-The TreeView provides support for editing. Editing can be enabled or disabled by using the [SfTreeView.AllowEditing](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_AllowEditing) property. You can enter edit mode on a node by pressing the <kbd>F2</kbd> key, and also by single-click or double-click, by setting the [EditTrigger](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_EditTrigger) property. The edit changes for a node are committed only when the user moves to another node or presses the <kbd>Enter</kbd> key.
+The [WPF TreeView](https://www.syncfusion.com/wpf-controls/treeview) control supports editing. Editing can be enabled or disabled by using the [SfTreeView.AllowEditing](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_AllowEditing) property. You can enter edit mode on a node by pressing the <kbd>F2</kbd> key, or by setting the [EditTrigger](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_EditTrigger) property to enable single-click or double-click editing. The edit changes for a node are committed only when the user moves to another node or presses the <kbd>Enter</kbd> key.
 
 The `EditTrigger` property accepts the following values:
 
@@ -51,7 +51,7 @@ sfTreeView.AllowEditing = true;
 
 ## Edit mode
 
-By default, you can enter edit mode by pressing the <kbd>F2</kbd> key. The TreeView also allows entering edit mode with a single click (Tap) or a double click (DoubleTap) by setting the [EditTrigger](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_EditTrigger) property.
+By default, you can enter edit mode by pressing the <kbd>F2</kbd> key. The WPF TreeView also allows entering edit mode with a single click (Tap) or a double click (DoubleTap) by setting the [EditTrigger](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_EditTrigger) property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -74,7 +74,7 @@ this.sfTreeView.EditTrigger = Syncfusion.UI.Xaml.TreeView.TreeViewEditTrigger.Do
 
 ### Begin the editing
 
-The TreeView allows you to start editing a node programmatically by calling the [BeginEdit](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_BeginEdit_Syncfusion_UI_Xaml_TreeView_Engine_TreeViewNode_) method.
+The WPF TreeView allows you to start editing a node programmatically by calling the [BeginEdit](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_BeginEdit_Syncfusion_UI_Xaml_TreeView_Engine_TreeViewNode_) method.
 
 {% tabs %}
 {% highlight c# %}
@@ -106,7 +106,7 @@ private void TreeView_Loaded(object sender, RoutedEventArgs e)
 
 ## Revert the edited changes while pressing the Escape key
 
-By default, the TreeView does not support rolling back changes when the <kbd>ESC</kbd> key is pressed while editing a node. It does support rolling back changes when the underlying data object implements the [IEditableObject](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.ieditableobject?redirectedfrom=MSDN&view=net-5.0) interface.
+By default, the WPF TreeView does not support rolling back changes when the <kbd>ESC</kbd> key is pressed while editing a node. It does support rolling back changes when the underlying data object implements the [IEditableObject](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.ieditableobject?redirectedfrom=MSDN&view=net-5.0) interface.
 
 The user can take a backup of the existing data of a node in the [BeginEdit](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.ieditableobject.beginedit?redirectedfrom=MSDN&view=net-5.0#System_ComponentModel_IEditableObject_BeginEdit) method and revert to the previous values in the [CancelEdit](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.ieditableobject.canceledit?redirectedfrom=MSDN&view=net-5.0#System_ComponentModel_IEditableObject_CancelEdit) method to roll back the changes.
 

@@ -7,15 +7,15 @@ control: DoubleTextBox
 documentation: ug
 ---
 
-# Step Interval in WPF DoubleTextBox
+# Step Interval in WPF Double TextBox
 
-The [DoubleTextBox](https://www.syncfusion.com/wpf-controls/double-textbox) control allows you to increase or decrease the value by pressing the up and down arrow keys on the keyboard or by scrolling the mouse wheel over the control. The [ScrollInterval](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.DoubleTextBox.html#Syncfusion_Windows_Shared_DoubleTextBox_ScrollInterval) property specifies the increment or decrement interval. The default value of `ScrollInterval` is 1.
+The [WPF Double TextBox](https://www.syncfusion.com/wpf-controls/double-textbox) control allows you to increase or decrease the value by pressing the up and down arrow keys on the keyboard or by scrolling the mouse wheel over the control. The [ScrollInterval](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.DoubleTextBox.html#Syncfusion_Windows_Shared_DoubleTextBox_ScrollInterval) property specifies the increment or decrement interval. The default value of `ScrollInterval` is 1.
 
- For example, the `ScrollInterval` value is set to 4. So, that the `DoubleTextBox` control [Value](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.DoubleTextBox.html#Syncfusion_Windows_Shared_DoubleTextBox_Value) increases or decreases by 4 while pressing Up arrow or Down arrow keys and Mouse wheel scrolling up or down.
+ For example, the `ScrollInterval` value is set to 4. So, that the `WPF Double TextBox` control [Value](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.DoubleTextBox.html#Syncfusion_Windows_Shared_DoubleTextBox_Value) increases or decreases by 4 while pressing Up arrow or Down arrow keys and Mouse wheel scrolling up or down.
 
 ## Change Value on Up, Down Arrow Key
 
-The `DoubleTextBox` control allows you to increase or decrease the `Value` based on the `ScrollInterval` by pressing the up arrow and down arrow keys on the keyboard.
+The `WPF Double TextBox` control allows you to increase or decrease the `Value` based on the `ScrollInterval` by pressing the up arrow and down arrow keys on the keyboard.
 
 {% tabs %}
 {% highlight XAML %}
@@ -41,7 +41,7 @@ doubleTextBox.ScrollInterval = 2;
 
 ## Change Value on Mouse Wheel
 
-The `DoubleTextBox` allows you to increase or decrease the `Value` based on the `ScrollInterval` when scrolling the mouse wheel over the control. This is enabled when the [IsScrollingOnCircle](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.EditorBase.html#Syncfusion_Windows_Shared_EditorBase_IsScrollingOnCircle) property is `true`. The default value of `IsScrollingOnCircle` is `true`.
+The `WPF Double TextBox` allows you to increase or decrease the `Value` based on the `ScrollInterval` when scrolling the mouse wheel over the control. This is enabled when the [IsScrollingOnCircle](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.EditorBase.html#Syncfusion_Windows_Shared_EditorBase_IsScrollingOnCircle) property is `true`. The default value of `IsScrollingOnCircle` is `true`.
 
 {% tabs %}
 {% highlight XAML %}
@@ -68,7 +68,7 @@ doubleTextBox.ScrollInterval = 3;
 
 ## Change Value on Click and Drag
 
-The `DoubleTextBox` allows you to increase or decrease the value based on the `ScrollInterval` by clicking and dragging the mouse when the [EnableExtendedScrolling](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.EditorBase.html#Syncfusion_Windows_Shared_EditorBase_EnableExtendedScrolling) property is `true`. The `DoubleTextBox` increases when you click and drag the mouse to the right or top of the screen, and decreases when the mouse moves to the left or bottom of the screen. Before that, the control should be in an unfocused state. The default value of `EnableExtendedScrolling` is `false`.
+The `WPF Double TextBox` allows you to increase or decrease the value based on the `ScrollInterval` by clicking and dragging the mouse when the [EnableExtendedScrolling](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.EditorBase.html#Syncfusion_Windows_Shared_EditorBase_EnableExtendedScrolling) property is `true`. The `WPF Double TextBox` increases when you click and drag the mouse to the right or top of the screen, and decreases when the mouse moves to the left or bottom of the screen. Before that, the control should be in an unfocused state. The default value of `EnableExtendedScrolling` is `false`.
 
 {% tabs %}
 {% highlight XAML %}
@@ -95,7 +95,7 @@ doubleTextBox.EnableExtendedScrolling = true;
 
 ## Allow or restrict selection on focus
 
-`DoubleTextBox` allows you to automatically select the text when the control receives focus, by setting the [TextSelectionOnFocus](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.EditorBase.html#Syncfusion_Windows_Shared_EditorBase_TextSelectionOnFocus) property to `true`. If you want to restrict selection when the control receives focus, set `TextSelectionOnFocus` to `false`. The default value of `TextSelectionOnFocus` is `true`.
+`WPF Double TextBox` allows you to automatically select the text when the control receives focus, by setting the [TextSelectionOnFocus](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.EditorBase.html#Syncfusion_Windows_Shared_EditorBase_TextSelectionOnFocus) property to `true`. If you want to restrict selection when the control receives focus, set `TextSelectionOnFocus` to `false`. The default value of `TextSelectionOnFocus` is `true`.
 
 {% tabs %}
 {% highlight XAML %}

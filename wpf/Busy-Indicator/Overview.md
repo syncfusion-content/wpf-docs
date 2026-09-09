@@ -1,17 +1,17 @@
 ---
 layout: post
-title: About Syncfusion® WPF SfBusyIndicator Control | Syncfusion®
-description: Learn about the introduction of Syncfusion® Essential Studio WPF SfBusyIndicator control and discover its features, customization options, and more details.
+title: About Syncfusion® WPF Busy Indicator Control | Syncfusion®
+description: Learn about the introduction of Syncfusion® Essential Studio WPF Busy Indicator control and discover its features, customization options, and more details.
 platform: wpf
 control: Busy Indicator
 documentation: ug
 ---
 
-# About Syncfusion® WPF SfBusyIndicator Control
+# About Syncfusion® WPF Busy Indicator Control
 
 The Busy Indicator control includes over 37 built-in animations that can be displayed within your applications.
 
-![Busy Indicator - Overview](Overview_images/Overview_img1.png)
+![WPF Busy Indicator control overview](Overview_images/Overview_img1.png)
 
 Busy Indicator
 {:.caption}

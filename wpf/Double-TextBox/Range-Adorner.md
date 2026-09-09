@@ -7,9 +7,9 @@ control: DoubleTextBox
 documentation: ug
 ---
 
-# Range Adorner in WPF DoubleTextBox
+# Range Adorner in WPF Double TextBox
 
-The value of `DoubleTextBox` can be visually indicated like a progress bar using the range adorner feature. This feature is disabled by default. You can show the adorner over the [DoubleTextBox](https://www.syncfusion.com/wpf-controls/double-textbox) control by setting the [EnableRangeAdorner](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.EditorBase.html#Syncfusion_Windows_Shared_EditorBase_EnableRangeAdorner) property to `true`. The default value of `EnableRangeAdorner` is `false`. The adorner layer fills the control area on the basis of the minimum and maximum values, taking the current `Value` into account. The Range Adorner is not displayed when the `MinValue` or `MaxValue` property is not set. When the `Value` is outside the `[MinValue, MaxValue]` range, the adorner is clamped to the nearest bound.
+The value of `WPF Double TextBox` can be visually indicated like a progress bar using the range adorner feature. This feature is disabled by default. You can show the adorner over the [WPF Double TextBox](https://www.syncfusion.com/wpf-controls/double-textbox) control by setting the [EnableRangeAdorner](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.EditorBase.html#Syncfusion_Windows_Shared_EditorBase_EnableRangeAdorner) property to `true`. The default value of `EnableRangeAdorner` is `false`. The adorner layer fills the control area on the basis of the minimum and maximum values, taking the current `Value` into account. The Range Adorner is not displayed when the `MinValue` or `MaxValue` property is not set. When the `Value` is outside the `[MinValue, MaxValue]` range, the adorner is clamped to the nearest bound.
 
 {% tabs %}
 {% highlight XAML %}

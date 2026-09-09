@@ -353,7 +353,7 @@ You can navigate from one tab to any other tab by using the mouse click on the t
 
 If you add more tab items, then some tab headers are collapsed. If you navigate to the collapsed tab items, click the scroll button which is placed in the top-right corner of the tab header panel. You can auto visible or hide the scroll button by using the [TabScrollButtonVisibility](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.TabControlExt.html#Syncfusion_Windows_Tools_Controls_TabControlExt_TabScrollButtonVisibility) property value as `Auto` or `Hidden`.
 
-The following `TabScrollStyle` supported by the `TabControl` control.
+The following `TabScrollStyle` supported by the `WPF Tab Control`.
 
 * Extended Mode - Provides the Next, Previous, Last and First navigation options
 * Normal Mode – Provides the Next and Previous navigation options only

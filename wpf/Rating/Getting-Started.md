@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started with WPF SfRating | Syncfusion®
-description: Learn how to get started with the Syncfusion® WPF SfRating control. Explore setup, features, examples, and customization options.
+title: Getting Started with WPF Rating | Syncfusion®
+description: Learn how to get started with the Syncfusion® WPF Rating control. Explore setup, features, examples, and customization options.
 platform: wpf
-control: SfRating
+control: Rating
 documentation: ug
 ---
 
-# Getting Started with WPF SfRating
+# Getting Started with WPF Rating
 
 This section explains how to get started with the [SfRating](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfRating.html) control and demonstrates some of its basic customization features.
 
@@ -18,7 +18,7 @@ Refer to the [Control Dependencies](https://help.syncfusion.com/wpf/control-depe
 For more information about installing NuGet packages in a WPF application, refer to the following article:
 [How to install nuget packages](https://help.syncfusion.com/wpf/installation/install-nuget-packages)
 
-## Creating Application with SfRating control
+## Creating Application with Rating control
 In this walkthrough, you will create a WPF application that hosts the [SfRating](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfRating.html) control.
 
 1. [Creating the project](#creating-the-project)
@@ -41,7 +41,7 @@ You can add the [SfRating](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows
 2. In the Toolbox search box, type **SfRating** and locate the control under the **Syncfusion WPF** tab.
 3. Drag **SfRating** onto the designer surface of `MainWindow.xaml`.
 
-![Adding WPF SfRating Control via Designer](getting-started-images/wpf-rating-add-control-designer.png)
+![Adding WPF Rating Control via Designer](getting-started-images/wpf-rating-add-control-designer.png)
 
 ## Adding the control manually in XAML
 
@@ -88,9 +88,9 @@ To add the [SfRating](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Cont
     * Syncfusion.SfShared.WPF
     * Syncfusion.SfInput.WPF
 
-2. Import the SfRating namespace `Syncfusion.Windows.Controls.Input`.
+2. Import the namespace `Syncfusion.Windows.Controls.Input`.
 
-3. Create an instance of the SfRating control and add it to the window.
+3. Create an instance of the `SfRating` control and add it to the window.
 
 {% capture codesnippet2 %}
 {% tabs %}
@@ -207,13 +207,13 @@ SfRating rating = new SfRating()
 
 {% endtabs %}
 
-![WPF SfRating Control](images/gettingstarted.png)
+![WPF Rating Control](images/gettingstarted.png)
 
 [View Sample in GitHub](https://github.com/SyncfusionExamples/SfRating-getting-started)
 
 ## Theme
 
-SfRating supports a variety of built-in themes. Refer to the following articles to learn how to apply themes:
+Rating control supports a variety of built-in themes. Refer to the following articles to learn how to apply themes:
 
   * [Apply theme using SfSkinManager](https://help.syncfusion.com/wpf/themes/skin-manager)
 	

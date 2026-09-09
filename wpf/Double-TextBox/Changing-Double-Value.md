@@ -7,9 +7,9 @@ control: DoubleTextBox
 documentation: ug
 ---
 
-# Changing Double Value in WPF DoubleTextBox
+# Changing Double Value in WPF Double TextBox
 
-The [DoubleTextBox](https://www.syncfusion.com/wpf-ui-controls/double-textbox) allows the user to change the value using the [Value](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.DoubleTextBox.html#Syncfusion_Windows_Shared_DoubleTextBox_Value) property.
+The [WPF Double TextBox](https://www.syncfusion.com/wpf-ui-controls/double-textbox) allows the user to change the value using the [Value](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.DoubleTextBox.html#Syncfusion_Windows_Shared_DoubleTextBox_Value) property.
 
 {% tabs %}
 {% highlight XAML %}
@@ -32,9 +32,9 @@ doubleTextBox.Value = 10;
 
 ![WPF DoubleTextBox displays Value](Changing-Double-Value_images/wpf-double-textbox-value.jpeg)
 
-Data binding is the process of establishing a connection between the application UI and business logic. Data binding can be unidirectional (source -> target or target <- source) or bidirectional (source <-> target). By assigning a value to the `Value` property by binding, you can change the `DoubleTextBox` value.
+Data binding is the process of establishing a connection between the application UI and business logic. Data binding can be unidirectional (source -> target or target <- source) or bidirectional (source <-> target). By assigning a value to the `Value` property by binding, you can change the `WPF Double TextBox` value.
 
-The following code snippets illustrate the value binding from one `DoubleTextBox` to another.
+The following code snippets illustrate the value binding from one `WPF Double TextBox` to another.
 
 {% tabs %}
 {% highlight XAML %}
@@ -76,7 +76,7 @@ class ViewModel : NotificationObject
 
 ## Change double value by pasting the clipboard's text
 
-By default, `DoubleTextBox` simply replaces the whole value with the copied value using the current number format. If you want to replace or insert the copied value at a specific place, set the [PasteMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.EditorBase.html#Syncfusion_Windows_Shared_EditorBase_PasteMode) property to `Advanced`. The default value of `PasteMode` is `Default`.
+By default, `WPF Double TextBox` simply replaces the whole value with the copied value using the current number format. If you want to replace or insert the copied value at a specific place, set the [PasteMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.EditorBase.html#Syncfusion_Windows_Shared_EditorBase_PasteMode) property to `Advanced`. The default value of `PasteMode` is `Default`.
 
 The following table explains the pasting behavior in `Advanced` paste mode:
 
@@ -138,7 +138,7 @@ doubleTextBox.Value = 12345.67;
 
 ## Show UpDown Button
 
-You can increment or decrement the double value of `DoubleTextBox` by setting the `ShowSpinButton` property to `true`. Click the Up button to increment or the Down button to decrement the double value. The default value of `ShowSpinButton` is `false`.
+You can increment or decrement the double value of `WPF Double TextBox` by setting the `ShowSpinButton` property to `true`. Click the Up button to increment or the Down button to decrement the double value. The default value of `ShowSpinButton` is `false`.
 
 {% tabs %}
 {% highlight XAML %}
@@ -160,7 +160,7 @@ doubleTextBox.ShowSpinButton = true;
 
 ## Value Changed Event
 
-The `DoubleTextBox` control notifies value changes through the [ValueChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.DoubleTextBox.html) event. In the `ValueChanged` event, you can get the old value and new value from the `OldValue` and `NewValue` properties.
+The `WPF Double TextBox` control notifies value changes through the [ValueChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.DoubleTextBox.html) event. In the `ValueChanged` event, you can get the old value and new value from the `OldValue` and `NewValue` properties.
 
 {% tabs %}
 {% highlight XAML %}
@@ -197,7 +197,7 @@ private void DoubleTextBox_ValueChanged(DependencyObject d, DependencyPropertyCh
 
 ## Setting the Null value
 
- By default, the `DoubleTextBox` control will display a zero value when the `Value` is set to `null`. You can use the [NullValue](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.DoubleTextBox.html#Syncfusion_Windows_Shared_DoubleTextBox_NullValue) and [UseNullOption](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.EditorBase.html#Syncfusion_Windows_Shared_EditorBase_UseNullOption) properties to show a null or any other value instead of zero.
+ By default, the `WPF Double TextBox` control will display a zero value when the `Value` is set to `null`. You can use the [NullValue](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.DoubleTextBox.html#Syncfusion_Windows_Shared_DoubleTextBox_NullValue) and [UseNullOption](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.EditorBase.html#Syncfusion_Windows_Shared_EditorBase_UseNullOption) properties to show a null or any other value instead of zero.
 
  The default value of the `NullValue` property is `null`; you can reset it to any other double value. The `NullValue` is displayed only when the `UseNullOption` property is set to `true`. The default value of `UseNullOption` is `false`.
  
@@ -251,7 +251,7 @@ You can display certain information within the control by using the [WaterMarkTe
 
 ### Setting the WatermarkText Foreground
 
-The `DoubleTextBox` allows you to set the desired brush as a foreground for `WaterMarkText` using the [WaterMarkTextForeground](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.EditorBase.html#Syncfusion_Windows_Shared_EditorBase_WatermarkTextForeground) property. The default color of `WaterMarkTextForeground` is `Black`. The default value of `WatermarkTextIsVisible` is `true`.
+The `WPF Double TextBox` allows you to set the desired brush as a foreground for `WaterMarkText` using the [WaterMarkTextForeground](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.EditorBase.html#Syncfusion_Windows_Shared_EditorBase_WatermarkTextForeground) property. The default color of `WaterMarkTextForeground` is `Black`. The default value of `WatermarkTextIsVisible` is `true`.
 
 {% tabs %}
 {% highlight XAML %}
@@ -299,6 +299,6 @@ You can customize the visual appearance of the `WatermarkText` by using the [Wat
 
 ![Customizing Watermark Text in WPF DoubleTextBox](Changing-Double-Value_images/wpf-double-textbox-watermark-customization.png)
 
-N> The `UseNullOption` property must be enabled if you want to see `NullValue` or `WaterMarkText` in `DoubleTextBox` control. 
+N> The `UseNullOption` property must be enabled if you want to see `NullValue` or `WaterMarkText` in `WPF Double TextBox` control. 
 
 N> If both `NullValue` and `WaterMarkText` are specified, you will only see `NullValue` but not `WaterMarkText`.

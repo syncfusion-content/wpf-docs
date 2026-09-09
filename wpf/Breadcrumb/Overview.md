@@ -1,19 +1,19 @@
 ---
 layout: post
-title: About Syncfusion® WPF HierarchyNavigator Control | Syncfusion®
-description: Learn about the introduction of Syncfusion® Essential Studio WPF HierarchyNavigator control, including its features, navigation capabilities, and more details.
+title: About Syncfusion® WPF BreadCrumb Control | Syncfusion®
+description: Learn about the introduction of Syncfusion® Essential Studio WPF BreadCrumb control, including its features, navigation capabilities, and more details.
 platform: wpf
-control: Hierarchical Navigator
+control: BreadCrumb
 documentation: ug
 ---
 
-# About Syncfusion® WPF HierarchyNavigator Control
+# About Syncfusion® WPF BreadCrumb Control
 
-The HierarchyNavigator control in WPF provides a bread-crumb interface, similar to the Windows Explorer address bar in Windows 7, which enables hierarchical navigation. 
+The BreadCrumb (HierarchyNavigator) control in WPF provides a bread-crumb interface, similar to the Windows Explorer address bar in Windows 7, which enables hierarchical navigation. 
 
 ## Features
 
-The features of the HierarchyNavigator control are the following:
+The features of the BreadCrumb control are the following:
 
 * Enables data binding with Business Objects, XML data, and WCF services.
 * Enables command binding with MVVM support.

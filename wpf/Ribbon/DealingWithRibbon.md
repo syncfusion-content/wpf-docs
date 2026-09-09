@@ -12,7 +12,7 @@ The WPF Ribbon Control can be changed into three different states: `Normal`, `Hi
 
 ## Three types of RibbonState
 
-**Normal** - WPF Ribbon Control control displays the RibbonTab content and the window content is arranged below the WPF Ribbon Control. This is the default state
+**Normal** - WPF Ribbon Control displays the RibbonTab content and the window content is arranged below the WPF Ribbon Control. This is the default state
 
 {% tabs %}
 
@@ -2869,7 +2869,7 @@ End Class
 
 ## Detecting selection changes in RibbonTab
 
-The [`SelectionChanging`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.Ribbon.html) event notifies when the user attempts to switch tab in the WPF Ribbon Control control. The [`SelectionChanging`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.Ribbon.html) event  receives an argument of the type **CancelEventArgs** that allows us to cancel the switching operation. 
+The [`SelectionChanging`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.Ribbon.html) event notifies when the user attempts to switch tab in the WPF Ribbon Control. The [`SelectionChanging`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.Ribbon.html) event  receives an argument of the type **CancelEventArgs** that allows us to cancel the switching operation. 
 
 {% tabs %}
 

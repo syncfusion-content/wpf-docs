@@ -9,7 +9,7 @@ documentation: ug
 
 # Appearance in WPF Tile View Control
 
-This section explains different styling, theming options available in [WPF Tile View Control](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.TileViewControl.html) control.
+This section explains different styling, theming options available in [WPF Tile View Control](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.TileViewControl.html).
 
 ## Setting the foreground
 

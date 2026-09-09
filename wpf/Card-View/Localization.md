@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Localization in WPF CardView | Syncfusion®
-description: Localization support in WPF CardView allows the interface to adapt to different languages and regional settings, enhancing user experience.
+title: Localization in WPF Card View | Syncfusion®
+description: Localization support in WPF Card View allows the interface to adapt to different languages and regional settings, enhancing user experience.
 platform: wpf
-control: CardView
+control: Card View
 documentation: ug
 ---
 
-# Localization in WPF CardView
+# Localization in WPF Card View
 
-Localization is the process of translating the application resources into different language for the specific cultures. You can localize the CardView by [adding resource file](https://learn.microsoft.com/en-us/previous-versions/visualstudio/visual-studio-2010/aa992030(v=vs.100)). Application culture can be changed by setting [CurrentUICulture](https://learn.microsoft.com/en-us/dotnet/api/system.globalization.cultureinfo.currentuiculture?view=netframework-4.7.2) after `InitializeComponent` method. 
+Localization is the process of translating the application resources into different language for the specific cultures. You can localize the Card View by [adding resource file](https://learn.microsoft.com/en-us/previous-versions/visualstudio/visual-studio-2010/aa992030(v=vs.100)). Application culture can be changed by setting [CurrentUICulture](https://learn.microsoft.com/en-us/dotnet/api/system.globalization.cultureinfo.currentuiculture?view=netframework-4.7.2) after `InitializeComponent` method. 
 
 Below application culture changed to French.
 
@@ -28,7 +28,7 @@ public MainWindow()
 {% endtabs %}
 
 
-To localize the CardView based on [CurrentUICulture](https://learn.microsoft.com/en-us/dotnet/api/system.globalization.cultureinfo.currentuiculture?view=netframework-4.7.2) using resource files, follow the below steps. 
+To localize the Card View based on [CurrentUICulture](https://learn.microsoft.com/en-us/dotnet/api/system.globalization.cultureinfo.currentuiculture?view=netframework-4.7.2) using resource files, follow the below steps. 
 
 **Step 1:** Create new folder and named as **Resources** in your application. 
 
@@ -46,6 +46,6 @@ To localize the CardView based on [CurrentUICulture](https://learn.microsoft.com
 
 ![Card view localization](Localization_images/Localization_image3.png)
 
-The following screenshot shows the localized CardView control.
+The following screenshot shows the localized Card View control.
 
 ![Card view localization](Localization_images/Localization_image4.png)

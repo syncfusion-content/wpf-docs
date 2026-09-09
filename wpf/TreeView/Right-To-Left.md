@@ -1,15 +1,15 @@
 ---
 layout: post
 title: Right-to-Left Support in WPF TreeView | Syncfusion®
-description: Right-to-Left in SfTreeView enables displaying hierarchical content with proper layout flow for RTL languages.
+description: Right-to-Left in WPF TreeView enables displaying hierarchical content with proper layout flow for RTL languages.
 platform: wpf
 control: SfTreeView
 documentation: ug
 ---
 
-# Right to left(RTL) in WPF TreeView (SfTreeView)
+# Right-to-left (RTL) in WPF TreeView
 
-TreeView supports changing the flow of text to the right-to-left direction by setting the [FlowDirection](https://docs.microsoft.com/en-us/dotnet/api/system.windows.frameworkelement.flowdirection?view=netframework-4.0) property to `RightToLeft`.
+The [WPF TreeView](https://www.syncfusion.com/wpf-controls/treeview) control supports changing the text flow to the right-to-left direction by setting the [FlowDirection](https://docs.microsoft.com/en-us/dotnet/api/system.windows.frameworkelement.flowdirection?view=netframework-4.0) property to `RightToLeft`.
 
 {% tabs %}
 {% highlight xaml %}

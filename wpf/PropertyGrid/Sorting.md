@@ -9,13 +9,13 @@ documentation: ug
 
 # Sorting in WPF PropertyGrid
 
-You can sort the properties according to your needs. You can change the sorting order of the properties by [SortDirection](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.PropertyGrid.html#Syncfusion_Windows_PropertyGrid_PropertyGrid_SortDirection) property. Values of `SortDirection` property is `Ascending`, `Descending` and `Null`. Based on the `SortDirection` property,  the property item's nested properties also sorted. The Default value of the `SortDirection` property is `Ascending` order.
+You can sort the properties according to your needs. You can change the sorting order of the properties by using the [SortDirection](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.PropertyGrid.html#Syncfusion_Windows_PropertyGrid_PropertyGrid_SortDirection) property. The values of the `SortDirection` property are `Ascending`, `Descending`, and `Null`. Based on the `SortDirection` property, the property item's nested properties are also sorted. The default value of the `SortDirection` property is `Ascending` order.
 
 ![Properties of PropertyGrid is sorted in ascending order](Sorting-Images/Sorting.png)
 
 ## Sorting the Properties
 
-Properties in the [PropertyGrid](https://www.syncfusion.com/wpf-ui-controls/propertygrid) are sorted by using the `SortDirection` property. They are sorted based only on the name of the property, not by the display name of the property. If the properties are in the grouped view, then the groups are sorted based on the group name either `Ascending` or `Descending` order. 
+Properties in the [WPF PropertyGrid](https://www.syncfusion.com/wpf-ui-controls/propertygrid) are sorted by using the `SortDirection` property. They are sorted based only on the name of the property, not by the display name of the property. If the properties are in the grouped view, then the groups are sorted based on the group name in either `Ascending` or `Descending` order. 
 
 {% tabs %}
 {% highlight C# %}
@@ -82,8 +82,8 @@ propertyGrid1.SortDirection = ListSortDirection.Ascending;
 
 ## Disable the Sorting
 
-We can disable the sorting by setting the `SortDirection` property as `null`. When sorting is disabled, the properties are arranged based on the value of the `Order` attributes or on
- the order they added into the [SelectedObject](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.PropertyItem.html#Syncfusion_Windows_PropertyGrid_PropertyItem_SelectedObject).
+We can disable the sorting by setting the `SortDirection` property to `null`. When sorting is disabled, the properties are arranged based on the value of the `Order` attributes or on
+ the order they were added into the [SelectedObject](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.PropertyItem.html#Syncfusion_Windows_PropertyGrid_PropertyItem_SelectedObject).
  
 {% tabs %}
 {% highlight C# %}
@@ -153,13 +153,13 @@ propertyGrid1.SortDirection = null;
 {% endhighlight %} 
 {% endtabs %} 
 
-![Properties are in sorted based on they added into the Class](Sorting-Images\Property-Default-Ordering.png)
+![Properties are sorted based on the order they were added into the class](Sorting-Images\Property-Default-Ordering.png)
 
-Here, the properties are arranged from the `Gender` property and end with `Age` property by the order in which they were added to the class. 
+Here, the properties are arranged starting with the `Gender` property and ending with the `Age` property, by the order in which they were added to the class. 
 
 ## Show or Hide the Sort Button
 
-We can change the view of the properties from grouped view to sort view by the `SortButton`. We can show or hide the sort button by using the [ButtonPanelVisibility](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.PropertyGrid.html#Syncfusion_Windows_PropertyGrid_PropertyGrid_ButtonPanelVisibility) property. If we want to hide the `SortButton`, set the `ButtonPanelVisibility` property as `Collapsed`. The Default value of the `ButtonPanelVisibility` property is `Visible`.
+We can change the view of the properties from the grouped view to the sort view by using the `SortButton`. We can show or hide the sort button by using the [ButtonPanelVisibility](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.PropertyGrid.html#Syncfusion_Windows_PropertyGrid_PropertyGrid_ButtonPanelVisibility) property. If we want to hide the `SortButton`, set the `ButtonPanelVisibility` property to `Collapsed`. The default value of the `ButtonPanelVisibility` property is `Visible`.
 
 {% tabs %}
 {% highlight xaml %}
