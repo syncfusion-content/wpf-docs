@@ -7,22 +7,22 @@ control: OLAP Grid
 documentation: ug
 ---
 
-#  Getting Started with WPF OLAP Grid
+# Getting Started with WPF OLAP Grid
 
 >**Important**
 Starting with v16.2.0.x, if you refer to Syncfusion<sup>®</sup> assemblies from trial setup or from the NuGet feed, include a license key in your projects. Refer to this [License Guidelines](https://help.syncfusion.com/wpf/licensing/overview) to learn about registering Syncfusion<sup>®</sup> license key in your WPF application to use the components.
 
-This section covers the information required to create a simple OLAP grid bound to the OLAP data source.
+This section covers the information required to create a simple OLAP Grid bound to the OLAP data source.
 
 ## Through Visual Studio
 
 Open Visual Studio IDE and go to File > New > Project > WPF Application (inside Visual C# Templates) to create a new WPF application.
   
-After creating the WPF application, go to View menu and select Toolbox option. Now, the Toolbox will appear inside Visual Studio IDE. From the Visual Studio Toolbox, drag and drop the OLAP grid under the **Syncfusion<sup>®</sup> BI WPF** tag. It will automatically add the required assemblies into the application.
+After creating the WPF application, go to View menu and select Toolbox option. Now, the Toolbox will appear inside Visual Studio IDE. From the Visual Studio Toolbox, drag and drop the OLAP Grid under the **Syncfusion<sup>®</sup> BI WPF** tag. It will automatically add the required assemblies into the application.
 
-![WPF OLAPGrid Getting-Started Image0](Getting-Started_images/Getting-Started_img0.png)
+![Getting-Started Image0](Getting-Started_images/Getting-Started_img0.png)
 
-Add a **Name** to the OLAP grid component for accessing it through code-behind as shown in the following code sample.
+Add a **Name** to the OLAP Grid component for accessing it through code-behind as shown in the following code sample.
 
 {% highlight xaml %}
 
@@ -151,7 +151,7 @@ End Class
 
 Run the application. The following output will be generated.
 
-![WPF OLAPGrid Getting-Started Image1](Getting-Started_images/Getting-Started_img1.png)
+![Getting started output](Getting-Started_images/Getting-Started_img1.png)
    
 ## Through Expression Blend
 
@@ -167,11 +167,11 @@ Select the **Project** tab available in the left corner of the Blend IDE. Right-
 
 N> You can also get the assemblies by browsing to the default assembly location: {System Drive}:\Program Files (x86)\Syncfusion\Essential Studio\&lt;version number&gt;\precompiledassemblies\&lt;version number&gt;\&lt;framework version&gt;\
   
-On adding the above assemblies, the OLAP grid control will be added under the **Assets** tab automatically. Now, choose the **Assets** tab and drag the OLAP grid to the designer.
+On adding the above assemblies, the control will be added under the **Assets** tab automatically. Now, choose the **Assets** tab and drag the OLAP Grid to the designer.
 
-![WPF OLAPGrid Getting-Started Image2](Getting-Started_images/Getting-Started_img2.png)
+![Adding the control under the Assets tab](Getting-Started_images/Getting-Started_img2.png)
 
-Add a **Name** to the OLAP grid component for accessing it through code-behind as shown in the following code sample.
+Add a **Name** to the OLAP Grid component for accessing it through code-behind as shown in the following code sample.
 
 {% highlight xaml %}
 
@@ -304,7 +304,7 @@ End Class
     
 Run the application. The following output will be generated.
 
-![WPF OLAPGrid Getting-Started Image1](Getting-Started_images/Getting-Started_img1.png)
+![Getting-Started Image1](Getting-Started_images/Getting-Started_img1.png)
    
 ## Through code-behind
 
@@ -321,7 +321,7 @@ To add the dependency assemblies within the application, right-click the **Refer
  
 N> You can also get the assemblies by browsing to the default assembly location: {System Drive}:\Program Files (x86)\Syncfusion\Essential Studio\&lt;version number&gt;\precompiledassemblies\&lt;version number&gt;\&lt;framework version&gt;\
 
-Include the following namespace in code-behind for OlapGrid, OlapDataManager, and OlapReport.
+Include the following namespaces in code-behind for the OLAP Grid, OlapDataManager, and OlapReport.
 
    * Syncfusion.Windows.Grid.Olap
    * Syncfusion.Olap.Manager
@@ -445,23 +445,23 @@ End Class
 
 Run the application. The following output will be generated.
 
-![WPF OLAPGrid Getting-Started Image1](Getting-Started_images/Getting-Started_img1.png)
+![Getting-Started Image1](Getting-Started_images/Getting-Started_img1.png)
    
 ## Design-time binding
 
-Design-time binding support for OLAP grid allows you to reduce the time spent on creating and customizing the report. Normally, it takes 5 to 10 minutes for creating a report and in the case of unfamiliar cubes it may extend further, but by using design-time support you can create a report in a couple of minutes. The following section explain how to create a report during design-time.
+Design-time binding support for OLAP Grid allows you to reduce the time spent on creating and customizing the report. Normally, it takes 5 to 10 minutes for creating a report and in the case of unfamiliar cubes it may extend further, but by using design-time support you can create a report in a couple of minutes. The following section explains how to create a report during design-time.
 
-First drag the OLAP grid control from the toolbox to the Visual Studio designer surface.
+First drag the OLAP Grid from the toolbox to the Visual Studio designer surface.
 
-![WPF OLAPGrid Getting-Started Image3](Getting-Started_images/Getting-Started_img3.png)
+![Getting-Started Image3](Getting-Started_images/Getting-Started_img3.png)
 
-Right-click the OLAP grid available in the designer and go to **Configure data source > Create/Edit data source…** option in the context menu. Now, the **Data Source Properties** wizard opens.
+Right-click the control available in the designer and go to **Configure data source > Create/Edit data source…** option in the context menu. Now, the **Data Source Properties** wizard opens.
 
-![WPF OLAPGrid Getting-Started Image4](Getting-Started_images/Getting-Started_img4.png)
+![Getting-Started Image4](Getting-Started_images/Getting-Started_img4.png)
 
 From the **Data Source Properties** wizard, select the connection type. If you want to connect to SSAS, select **Use server name and database to connect to a server** and specify the necessary information to connect to the server. If you want to connect to an offline cube, select **Use a connection string to connect to a server** and enter your connection string path.
 
-![WPF OLAPGrid Getting-Started Image5](Getting-Started_images/Getting-Started_img5.png)
+![Getting-Started Image5](Getting-Started_images/Getting-Started_img5.png)
 
 If you want to test the connection, click the **Test Connection** button that is displayed on the bottom-left corner of the window. Click the **Next** button, to proceed.
 
@@ -469,11 +469,11 @@ N> The next button is enabled only when any one of the connection options is fil
 
 When the connection is valid, it displays the summary page of the **Data Source Properties** wizard. When you create a query for the first time, the MDX query textbox in the summary page is empty. When you edit an existing query, it displays the current query in the text box.
 
-![WPF OLAPGrid Getting-Started Image6](Getting-Started_images/Getting-Started_img6.png)
+![Getting-Started Image6](Getting-Started_images/Getting-Started_img6.png)
  
 For creating or editing a query, click the **Create/Edit** link that is displayed on the top-right side of the MDX query textbox. This opens a **Query Designer** dialog.
 
-![WPF OLAPGrid Getting-Started Image7](Getting-Started_images/Getting-Started_img7.png)
+![Getting-Started Image7](Getting-Started_images/Getting-Started_img7.png)
 
 When you edit an existing query, it displays the required dimensions in the specific axis of the query designer and the preview of that query is displayed in a grid control.
    
@@ -483,7 +483,7 @@ Drag and drop dimensions to frame a new query. Then, click OK, to save the query
  
 The summary page of the **Data Source Properties** wizard displays the resultant MDX query.
 
-![WPF OLAPGrid Getting-Started Image8](Getting-Started_images/Getting-Started_img8.png)
+![Getting-Started Image8](Getting-Started_images/Getting-Started_img8.png)
 
 Click **Finish** and run the application.
 

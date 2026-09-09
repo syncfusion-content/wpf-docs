@@ -9,7 +9,7 @@ documentation: ug
 
 # XAML Configuration in WPF OLAP Grid
 
-XAML configuration is one of the most important features of the OLAP grid, as it helps users to configure the control entirely through XAML by eliminating the required code in code behind.
+XAML configuration is one of the most important features of the OLAP Grid, as it helps users to configure the control entirely through XAML by eliminating the required code in code behind.
 
 ## Properties
 
@@ -24,7 +24,7 @@ XAML configuration is one of the most important features of the OLAP grid, as it
 * **SlicerAxis**: Specifies the slicer axis of the OLAP report.
 * **CalculatedMembers**: Specifies the calculated members of the OLAP report.
 
-Adding an OLAP report to the OLAP grid in design time is described in the following code sample.
+Adding an OLAP report to the OLAP Grid in design time is described in the following code sample.
 
 {% highlight xaml %}
 
