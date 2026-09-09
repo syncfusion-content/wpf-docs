@@ -9,7 +9,7 @@ documentation: ug
 
 # Member Properties in WPF OLAP Grid
 
-The OLAP grid allows binding of members along with their properties. Member properties cover the basic information about each member in each tuple. This basic information includes the member name, parent level, number of children, and so on. Member properties are available for all members at a given level. To display the member properties along with the dimension member, OLAP report requires member properties to be defined in the concerned dimension element. Also, the OLAP grid layout should be set to **"ExcelLikeLayoutWithMemberProperties"**.
+The OLAP Grid allows binding of members along with their properties. Member properties cover the basic information about each member in each tuple. This basic information includes the member name, parent level, number of children, and so on. Member properties are available for all members at a given level. To display the member properties along with the dimension member, OLAP report requires member properties to be defined in the concerned dimension element. Also, the grid layout should be set to **"ExcelLikeLayoutWithMemberProperties"**.
 
 {% tabs %}
  
@@ -79,7 +79,7 @@ End Function
 
 ![Member-Properties_img1](Member-Properties_images/Member-Properties_img1.png)
 
-To display member properties through the header tooltip, the following property of OLAP grid should be set to true.
+To display member properties through the header tooltip, the following property of the control should be set to true.
 
 {% tabs %}
   

@@ -9,7 +9,7 @@ documentation: ug
 
 # How to style and format grid cells using MDX query in WPF OLAP Grid
 
-In OlapGrid, grid cells can be formatted and styled by using **Cell Properties** in MDX (Multidimensional Expressions). Cell Properties contains information about the content and format of cells in a multidimensional data source, such as OLAP cube. Following cell properties are supported for styling and formatting the grid cell values.
+In the OLAP Grid, grid cells can be formatted and styled by using **Cell Properties** in MDX (Multidimensional Expressions). Cell Properties contains information about the content and format of cells in a multidimensional data source, such as OLAP cube. The following cell properties are supported for styling and formatting the grid cell values.
 
     * BACK_COLOR - Indicates the background color of the cell value.
     * FORE_COLOR - Indicates the foreground color of the cell value.
@@ -37,7 +37,7 @@ Dim formattedMDXQuery As String = "WITH MEMBER [Measures].[Customers] As [Measur
 
 {% endtabs %}
 
-![To format the OlapGrid using MDX query](Styling-and-Formatting-using-MDX-query-images/Formatted_Grid.png)
+![Formatting the grid using MDX query](Styling-and-Formatting-using-MDX-query-images/Formatted_Grid.png)
 
 A sample demo is available at the following location:
 
