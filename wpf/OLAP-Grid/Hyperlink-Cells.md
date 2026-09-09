@@ -9,7 +9,7 @@ documentation: ug
 
 # Hyperlink Cells in WPF OLAP Grid
 
-The OLAP grid allows hyperlinking of cells to retrieve a detailed information about a particular cell. The OLAP grid generates a separate event called **"LinkClick"** for the clicked hyperlink cell and the **"LinkLabelClickEventHander"** will return the clicked OlapGridCellInfo.
+The OLAP Grid allows hyperlinking of cells to retrieve detailed information about a particular cell. The control generates a separate event called **"LinkClick"** for the clicked hyperlink cell and the **"LinkLabelClickEventHander"** will return the clicked OlapGridCellInfo.
 
 The hyperlink cell’s property can be applied to the following regions:
 
@@ -98,9 +98,9 @@ End Sub
 
 {% endtabs %}
 
-![Hyperlink is enabled for value cells in OlapGrid](Hyperlink-Cells_images/Hyperlink-Cells_img1.png)
+![Hyperlink is enabled for value cells](Hyperlink-Cells_images/Hyperlink-Cells_img1.png)
 
-![Hyperlink is enabled for column header cells in OlapGrid](Hyperlink-Cells_images/Hyperlink-Cells_img2.png)
+![Hyperlink is enabled for column header cells](Hyperlink-Cells_images/Hyperlink-Cells_img2.png)
 
 ![Hyperlink is enabled for row header cells in OlapGrid](Hyperlink-Cells_images/Hyperlink-Cells_img3.png)
 
