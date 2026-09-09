@@ -399,7 +399,7 @@ Syncfusion.Grid.WPF <br/>
 Syncfusion.GridCommon.WPF <br/>
 Syncfusion.Linq.Base <br/>
 Syncfusion.Shared.WPF <br/>
-Syncfusion.Telemetry 
+Syncfusion.Telemetry
 </td>
 <td> 
 Syncfusion.Grid.WPF
@@ -408,7 +408,7 @@ Syncfusion.Grid.WPF
 </table>
 
 ### Exporting Grid Control to Excel, PDF and CSV
-The following reference needs to be added in your application for exporting Grid Control to Excel,PDF and CSV.
+The following reference needs to be added in your application for exporting Grid Control to Excel, PDF and CSV.
 
 <table>
 <tr>
@@ -684,7 +684,7 @@ Syncfusion.OlapGridCommon.WPF <br/>
 Syncfusion.OlapShared.WPF <br/>
 Syncfusion.Shared.WPF <br/>
 Syncfusion.Tools.WPF <br/>
-Syncfusion.Telemetry 
+Syncfusion.Telemetry
 </td>
 <td> 
 Syncfusion.OlapGrid.WPF
@@ -787,7 +787,7 @@ Syncfusion.Linq.Base <br/>
 Syncfusion.PivotAnalysis.WPF <br/>
 Syncfusion.PivotAnalysis.Base <br/>
 Syncfusion.Shared.WPF <br/>
-Syncfusion.Telemetry 
+Syncfusion.Telemetry
 </td>
 <td> 
 Syncfusion.PivotTable.Wpf
@@ -1170,7 +1170,7 @@ Syncfusion.SfChart.WPF
 Syncfusion.SfGrid.WPF <br/>
 Syncfusion.Data.WPF <br/>
 Syncfusion.Shared.WPF <br/>
-Syncfusion.Telemetry 
+Syncfusion.Telemetry
 </td>
 <td> 
 Syncfusion.SfGrid.WPF
@@ -1217,7 +1217,7 @@ Syncfusion.Data.WPF
 <br/>
 Syncfusion.Shared.WPF
 <br/>
-Syncfusion.Telemetry 
+Syncfusion.Telemetry
 </td>
 <td> 
 Syncfusion.SfGrid.WPF
@@ -1528,7 +1528,7 @@ Syncfusion.SfInput.WPF
 Syncfusion.SfGrid.WPF <br/>
 Syncfusion.Data.WPF <br/>
 Syncfusion.Shared.WPF <br/>
-Syncfusion.Telemetry 
+Syncfusion.Telemetry
 </td>
 <td> 
 Syncfusion.SfGrid.WPF
@@ -1731,7 +1731,7 @@ Syncfusion.SfGrid.WPF <br/>
 Syncfusion.Data.WPF <br/>
 Syncfusion.Shared.WPF <br/>
 Syncfusion.SfChat.WPF <br/>
-Syncfusion.Telemetry 
+Syncfusion.Telemetry
 </td>
 <td> 
 Syncfusion.SfSmartComponents.WPF
@@ -1740,7 +1740,7 @@ Syncfusion.SfSmartComponents.WPF
 </table>
 
 ### Exporting SmartDataGrid to Excel and PDF
-The following reference needs to be added in your application for exporting SmartDataGrid to Excel, and PDF.
+The following reference needs to be added in your application for exporting SmartDataGrid to Excel and PDF.
 
 <table>
 <tr>
