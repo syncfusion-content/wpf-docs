@@ -1636,6 +1636,32 @@ Syncfusion.SfScheduler.WPF
 </tr>
 </table>
 
+## SfSmartDataGrid
+
+<table>
+<tr>
+<th>Assembly references </th>
+<th>NuGet package </th>
+</tr>
+<tr>
+<td> 
+Syncfusion.SfGrid.WPF <br/>
+Syncfusion.Data.WPF <br/>
+Syncfusion.Shared.WPF <br/>
+Syncfusion.SfChat.WPF <br/>
+Syncfusion.SfGridConverter.WPF <br/>
+Syncfusion.XlsIO.Base <br/>
+Syncfusion.Pdf.Base <br/>
+Syncfusion.Compression.Base <br/>
+Syncfusion.Markdown <br/>
+Syncfusion.Telemetry <br/>
+</td>
+<td> 
+Syncfusion.SfSmartComponents.WPF
+</td>
+</tr>
+</table>
+
 ## SfSmithChart
 
 <table>
@@ -1706,7 +1732,10 @@ The following references need to be added in your application for importing char
 <td> 
 Syncfusion.SfSpreadsheetHelper.WPF <br/>
 Syncfusion.ExcelChartToImageConverter.WPF <br/>
-Syncfusion.SfChart.WPF
+Syncfusion.SfGridConverter.WPF <br/>
+Syncfusion.XlsIO.Base <br/>
+Syncfusion.Pdf.Base <br/>
+Syncfusion.Compression.Base <br/>
 </td>
 <td> 
 Syncfusion.SfSpreadsheetHelper.WPF
