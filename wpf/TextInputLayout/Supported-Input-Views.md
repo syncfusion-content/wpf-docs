@@ -497,7 +497,7 @@ You can use the [CurrencyTextBox](https://help.syncfusion.com/wpf/currency-textb
 
 ![Image for CurrencyTextBox](Images/CurrencyTextBox_Img.PNG)
 
-## Input Views Limitations
+## Limitations
 
 The following are the limitations when using [DatePicker](https://learn.microsoft.com/en-us/dotnet/desktop/wpf/controls/datepicker), [SfDatePicker](https://help.syncfusion.com/wpf/datepicker/overview) and [SfTimePicker](https://help.syncfusion.com/wpf/timepicker/overview) as the InputView of SfTextInputLayout.
 
