@@ -1732,10 +1732,7 @@ The following references need to be added in your application for importing char
 <td> 
 Syncfusion.SfSpreadsheetHelper.WPF <br/>
 Syncfusion.ExcelChartToImageConverter.WPF <br/>
-Syncfusion.SfGridConverter.WPF <br/>
-Syncfusion.XlsIO.Base <br/>
-Syncfusion.Pdf.Base <br/>
-Syncfusion.Compression.Base <br/>
+Syncfusion.SfChart.WPF
 </td>
 <td> 
 Syncfusion.SfSpreadsheetHelper.WPF
