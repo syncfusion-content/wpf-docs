@@ -61,7 +61,7 @@ textBoxExt.MultiSelectMode = MultiSelectMode.Token;
 ![Token Representation](Single_and_multiple_selection_images/Token.png)
 
 
-### Customization of Tokens
+### Customization of tokens using TokenItem style
 
 The token can be customized by overriding the default style targeting the `TokenItem` class.
 
@@ -115,15 +115,31 @@ The token can be customized by overriding the default style targeting the `Token
 
 ![Token_Customization](Single_and_multiple_selection_images/Token_Customization.png)
 
-### Customizing Token Content Using TokenItemTemplate
+### Customization of tokens using TokenItemTemplate
 
 The `TokenItemTemplate` property allows you to customize the content displayed within a token when the `MultiSelectMode` is set to Token. This property accepts a DataTemplate and enables rendering custom content such as images, icons, and formatted text instead of the default token text representation.
 
-The following example shows how to display the employee name and email address in a token.
+The `TokenItemTemplate` property can also be used to maintain a consistent appearance between suggestion items and generated tokens by using the same DataTemplate for both [AutoCompleteItemTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_AutoCompleteItemTemplate) and `TokenItemTemplate`.
 
 {% tabs %}
 
 {% highlight xaml %}
+
+<DataTemplate x:Key="EmployeeTemplate">
+    <StackPanel Orientation="Horizontal">
+        <Image Width="20"
+               Height="20"
+               Source="{Binding Image}" />
+        <StackPanel Orientation="Vertical">
+            <TextBlock
+                Margin="4,2,4,0"
+                Text="{Binding Name}" />
+            <TextBlock
+                Margin="4,1,2,2"
+                Text="{Binding Email}" />
+        </StackPanel>
+    </StackPanel>
+</DataTemplate>
 
 <editors:SfTextBoxExt x:Name="textBoxExt"
                       Width="250" 
@@ -132,23 +148,9 @@ The following example shows how to display the employee name and email address i
                       AutoCompleteMode="Suggest"
                       TokensWrapMode="Wrap"
                       EnableAutoSize="True"
-                      AutoCompleteSource="{Binding Employees}">
-    <editors:SfTextBoxExt.TokenItemTemplate>
-        <DataTemplate>
-            <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
-                <Image Width="20"
-                       Height="20"
-                       Source="{Binding Image}" />
-                <StackPanel Orientation="Vertical" Margin="5,0,0,0">
-                    <TextBlock VerticalAlignment="Center"
-                               Text="{Binding Name}" />
-                    <TextBlock VerticalAlignment="Center"
-                               Text="{Binding Email}" />
-                </StackPanel>
-            </StackPanel>
-        </DataTemplate>
-    </editors:SfTextBoxExt.TokenItemTemplate>
-</editors:SfTextBoxExt>                    
+                      AutoCompleteSource="{Binding Employees}"
+                      TokenItemTemplate="{StaticResource EmployeeTemplate}"
+                      AutoCompleteItemTemplate="{StaticResource EmployeeTemplate}"/>                   
 
 {% endhighlight %}
 
@@ -156,9 +158,9 @@ The following example shows how to display the employee name and email address i
 
 ![Customize Token Content Using TokenItemTemplate](Single_and_multiple_selection_images/TokenItemTemplate_Customization.png)
 
-### Customizing Token Appearance Using TokenItemContainerStyle
+### Customization of tokens using TokenItemContainerStyle
 
-The `TokenItemContainerStyle` property allows you to customize the appearance of generated token items without overriding the default TokenItem control template.
+The `TokenItemContainerStyle` property allows you to customize the appearance and behavior of the generated token items without overriding the default `TokenItem` control template. Since `TokenItem` derives from `ContentControl`, you can customize various properties such as `Background`, `Foreground`, `BorderThickness`, `BorderBrush`, `ContentTemplate`, and `ContentTemplateSelector` to control the visual representation of tokens while retaining the default token structure and functionality.
 
 {% tabs %}
 
@@ -185,44 +187,6 @@ The `TokenItemContainerStyle` property allows you to customize the appearance of
 {% endtabs %}
 
 ![Customize Token Content Using TokenItemContainerStyle](Single_and_multiple_selection_images/TokenItemContainerStyle_Customization.png)
-
-
-### Achieve a consistent appearance between suggestion items and tokens
-
-The `TokenItemTemplate` property can be used to customize token content so that it matches the appearance of the items displayed in the suggestion drop-down. This helps maintain a consistent visual representation between the selected tokens and the corresponding suggestion items.
-
-{% tabs %}
-
-{% highlight xaml %}
-
-<DataTemplate x:Key="EmployeeTemplate">
-    <TextBlock Width="100" 
-               Background="Beige"
-               Text="{Binding Name}"
-               VerticalAlignment="Center"
-               FontStyle="Italic"
-               FontWeight="Bold"
-               Foreground="Black"/>
-</DataTemplate>
-
-<Grid>
-    <editors:SfTextBoxExt x:Name="textBoxExt"
-                      Width="250" 
-                      Height="30"
-                      SearchItemPath="Name"
-                      AutoCompleteMode="Suggest"
-                      TokensWrapMode="Wrap"
-                      EnableAutoSize="True"
-                      AutoCompleteSource="{Binding Employees}"
-                      AutoCompleteItemTemplate="{StaticResource EmployeeTemplate}"
-                      TokenItemTemplate="{StaticResource EmployeeTemplate}" />
-</Grid>
-
-{% endhighlight %}
-
-{% endtabs %}
-
-![Match Suggestion Item and Token Appearance](Single_and_multiple_selection_images\TokenItem-SuggestionItem_Appearance.png.png)
 
 N> The `TokenItemTemplate` property is applicable only when `MultiSelectMode` is set to `Token`.
 
