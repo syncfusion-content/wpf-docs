@@ -407,8 +407,8 @@ Syncfusion.Grid.WPF
 </tr>
 </table>
 
-### Exporting Grid Control to Excel and CSV
-The following reference needs to be added in your application for exporting Grid Control to Excel and CSV.
+### Exporting Grid Control to Excel, PDF and CSV
+The following reference needs to be added in your application for exporting Grid Control to Excel,PDF and CSV.
 
 <table>
 <tr>
@@ -443,6 +443,24 @@ Syncfusion.Shared.WPF
 </td>
 <td> 
 Syncfusion.Tools.WPF
+</td>
+</tr>
+</table>
+
+## Grouping
+
+<table>
+<tr>
+<th>Assembly references </th>
+<th>NuGet package </th>
+</tr>
+<tr>
+<td> 
+Syncfusion.Shared.Base <br/>
+Syncfusion.Grouping.Base
+</td>
+<td> 
+Syncfusion.Grouping.Base
 </td>
 </tr>
 </table>
@@ -604,6 +622,7 @@ Syncfusion.ExportOlapChart.Wpf
 </tr>
 <tr>
 <td> 
+Syncfusion.OlapClient.WPF <br/>
 Syncfusion.Chart.WPF <br/>
 Syncfusion.Grid.WPF <br/>
 Syncfusion.GridCommon.WPF <br/>
@@ -656,6 +675,7 @@ Syncfusion.OlapGauge.WPF
 </tr>
 <tr>
 <td> 
+Syncfusion.OlapGrid.WPF <br/>
 Syncfusion.Grid.WPF <br/>
 Syncfusion.GridCommon.WPF <br/>
 Syncfusion.Linq.Base <br/>
@@ -684,11 +704,11 @@ In addition to the above assemblies, the following reference needs to be added t
 <tr>
 <td> 
 Syncfusion.OlapGridConverter.WPF <br/>
-Syncfusion.Compression.Base </br>
-Syncfusion.DocIO.Base </br>
-Syncfusion.OfficeChart.Base </br>
-Syncfusion.Pdf.Base </br>
-Syncfusion.XlsIO.Base </br>
+Syncfusion.Compression.Base <br/>
+Syncfusion.DocIO.Base <br/>
+Syncfusion.OfficeChart.Base <br/>
+Syncfusion.Pdf.Base <br/>
+Syncfusion.XlsIO.Base <br/>
 Syncfusion.Markdown
 </td>
 <td> 
@@ -764,6 +784,7 @@ Syncfusion.Shared.WPF
 Syncfusion.Grid.WPF <br/>
 Syncfusion.GridCommon.WPF <br/>
 Syncfusion.Linq.Base <br/>
+Syncfusion.PivotAnalysis.WPF <br/>
 Syncfusion.PivotAnalysis.Base <br/>
 Syncfusion.Shared.WPF <br/>
 Syncfusion.Telemetry 
@@ -1492,6 +1513,25 @@ Syncfusion.SfShared.WPF <br/>
 </td>
 <td> 
 Syncfusion.SfInput.WPF
+</td>
+</tr>
+</table>
+
+## SfMultiColumnDropDown
+<table>
+<tr>
+<th>Assembly references </th>
+<th>NuGet package </th>
+</tr>
+<tr>
+<td> 
+Syncfusion.SfGrid.WPF <br/>
+Syncfusion.Data.WPF <br/>
+Syncfusion.Shared.WPF <br/>
+Syncfusion.Telemetry 
+</td>
+<td> 
+Syncfusion.SfGrid.WPF
 </td>
 </tr>
 </table>
