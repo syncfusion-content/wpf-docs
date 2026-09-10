@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Range Adorner in WPF DoubleTextBox | Syncfusion®
-description: Visualize the current value within a range using the built-in range adorner of the Syncfusion WPF DoubleTextBox control.
+title: Range Adorner in WPF Double TextBox | Syncfusion®
+description: Visualize the current value within a range using the built-in range adorner of the Syncfusion WPF Double TextBox control.
 platform: wpf
 control: DoubleTextBox 
 documentation: ug

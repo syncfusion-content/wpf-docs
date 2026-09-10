@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started with WPF TileView | Syncfusion®
-description: Learn how to get started with the Syncfusion WPF TileView control, its elements, and additional details.
+title: Getting Started with WPF Tile View | Syncfusion®
+description: Learn how to get started with the Syncfusion WPF Tile View control, its elements, and additional details.
 platform: wpf
 control: TileViewControl
 documentation: ug
 ---
 
-# Getting Started with WPF Tile View Control
+# Getting Started with WPF Tile View
 
 This section describes how to create a [WPF Tile View Control](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.TileViewControl.html) in a WPF application and overview of its basic functionalities.
 

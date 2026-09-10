@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Appearance in WPF SfColorPalette | Syncfusion®
-description: Customize the look and feel of the Syncfusion WPF SfColorPalette control using built-in themes, custom templates, and styling options.
+title: Appearance in WPF Color Palette | Syncfusion®
+description: Customize the look and feel of the Syncfusion WPF Color Palette control using built-in themes, custom templates, and styling options.
 platform: wpf
 control: SfColorPalette
 documentation: ug

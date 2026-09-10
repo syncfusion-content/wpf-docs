@@ -3,11 +3,11 @@ layout: post
 title: How to Customize Built-in Animations in WPF Tile View | Syncfusion®
 description: Customize the built-in animations of the Syncfusion WPF Tile View (TileViewControl) by overriding the default animation styles and timing.
 platform: wpf
-control: TileView Control
+control: TileViewControl
 documentation: ug
 ---
 
-# How to Customize Built-in Animations in WPF Tile View Control
+# How to Customize Built-in Animations in WPF Tile View
 
 ## Enable or Disable built-in animation
 

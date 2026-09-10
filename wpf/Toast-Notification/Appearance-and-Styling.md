@@ -7,7 +7,7 @@ control: SfToastNotification
 documentation: ug
 ---
 
-# Appearance and Styling in WPF Toast Control
+# Appearance and Styling in WPF Toast Notification
 
 This section explains how to customize the appearance and visual behavior of WPF Toast Control by using severity, variants, accent brush, placement, animations, sound, and duration.
 

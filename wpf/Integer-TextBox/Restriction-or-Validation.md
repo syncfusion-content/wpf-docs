@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Restriction or Validation in WPF IntegerTextBox | Syncfusion®
-description: Restrict or validate user input in the Syncfusion WPF IntegerTextBox control using min, max, and custom validation rules.
+title: Restriction or Validation in WPF Integer TextBox | Syncfusion®
+description: Restrict or validate user input in the Syncfusion WPF Integer TextBox control using min, max, and custom validation rules.
 platform: wpf
-control: IntegerTextBox 
+control: IntegerTextBox
 documentation: ug
 ---
 

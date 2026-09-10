@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Step Interval in WPF CurrencyTextBox | Syncfusion®
-description: Define the increment or decrement step used by the Syncfusion WPF CurrencyTextBox control when changing the value with spinner or keys.
+title: Step Interval in WPF Currency TextBox | Syncfusion®
+description: Define the increment or decrement step used by the Syncfusion WPF Currency TextBox control when changing the value with spinner or keys.
 platform: wpf
 control: CurrencyTextBox 
 documentation: ug

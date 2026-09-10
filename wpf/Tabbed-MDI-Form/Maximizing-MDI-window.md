@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Maximizing MDI Window in WPF DocumentContainer | Syncfusion®
+title: Maximizing MDI Window in WPF Tabbed MDI Form | Syncfusion®
 description: Maximize an MDI child window inside the Syncfusion WPF Tabbed MDI Form (DocumentContainer) control so it fills the available client area.
 platform: wpf
-control: DocumentContainer
+control: Tabbed MDI Form
 documentation: ug
 ---
 

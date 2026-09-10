@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Sorting in WPF CheckListBox | Syncfusion®
-description: Sort items in the Syncfusion WPF CheckListBox control using built-in sort descriptions and custom sort comparers for flexible ordering.
+title: Sorting in WPF CheckedListBox | Syncfusion®
+description: Sort items in the Syncfusion WPF CheckedListBox control using built-in sort descriptions and custom sort comparers for flexible ordering.
 platform: wpf
-control: CheckListBox
+control: CheckedListBox
 documentation: ug
 ---
 
