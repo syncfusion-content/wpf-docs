@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Localization in WPF DocumentContainer | Syncfusion®
+title: Localization in WPF Tabbed MDI Form | Syncfusion®
 description: Localize the Syncfusion WPF Tabbed MDI Form (DocumentContainer) control to display text and labels in different languages and cultures.
 platform: wpf
-control: DocumentContainer
+control: Tabbed MDI Form
 documentation: ug
 ---
 

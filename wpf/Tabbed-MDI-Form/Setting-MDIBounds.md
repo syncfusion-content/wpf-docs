@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Setting MDIBounds in WPF DocumentContainer | Syncfusion®
+title: Setting MDIBounds in WPF Tabbed MDI Form | Syncfusion®
 description: Configure the bounds such as position and size for MDI child windows in the Syncfusion WPF Tabbed MDI Form (DocumentContainer) control.
 platform: wpf
-control: DocumentContainer
+control: Tabbed MDI Form
 documentation: ug
 ---
 

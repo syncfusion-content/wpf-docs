@@ -1,9 +1,9 @@
 ---
 layout: post
-title: MDI Resize in WPF DocumentContainer | Syncfusion®
+title: MDI Resize in WPF Tabbed MDI Form | Syncfusion®
 description: Enable or disable resizing of MDI child windows in the Syncfusion WPF Tabbed MDI Form (DocumentContainer) control using built-in options.
 platform: wpf
-control: DocumentContainer
+control: Tabbed MDI Form
 documentation: ug
 ---
 

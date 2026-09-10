@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Changing Integer Value in WPF IntegerTextBox | Syncfusion®
-description: Update the integer value of the Syncfusion WPF IntegerTextBox control programmatically, by spinner buttons, or via keyboard interactions.
+title: Changing Integer Value in WPF Integer TextBox | Syncfusion®
+description: Update the integer value of the Syncfusion WPF Integer TextBox control programmatically, by spinner buttons, or via keyboard interactions.
 platform: wpf
-control: IntegerTextBox 
+control: IntegerTextBox
 documentation: ug
 ---
 

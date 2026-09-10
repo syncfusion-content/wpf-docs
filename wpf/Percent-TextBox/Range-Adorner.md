@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Range Adorner in WPF PercentTextBox | Syncfusion®
-description: Visualize the current value within a range using the built-in range adorner of the Syncfusion WPF PercentTextBox control.
+title: Range Adorner in WPF Percent TextBox | Syncfusion®
+description: Visualize the current value within a range using the built-in range adorner of the Syncfusion WPF Percent TextBox control.
 platform: wpf
-control: PercentTextBox 
+control: Percent TextBox 
 documentation: ug
 ---
 

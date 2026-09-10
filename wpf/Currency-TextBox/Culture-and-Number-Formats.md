@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Culture and Formatting in WPF CurrencyTextBox | Syncfusion®
-description: Format the currency value in the Syncfusion WPF CurrencyTextBox control using culture settings, number formats, and grouping separators.
+title: Culture and Formatting in WPF Currency TextBox | Syncfusion®
+description: Format the currency value in the Syncfusion WPF Currency TextBox control using culture settings, number formats, and grouping separators.
 platform: wpf
 control: CurrencyTextBox
 documentation: ug

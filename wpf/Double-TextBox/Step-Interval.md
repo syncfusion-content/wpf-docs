@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Step Interval in WPF DoubleTextBox | Syncfusion®
-description: Define the increment or decrement step used by the Syncfusion WPF DoubleTextBox control when changing the value with spinner or keys.
+title: Step Interval in WPF Double TextBox | Syncfusion®
+description: Define the increment or decrement step used by the Syncfusion WPF Double TextBox control when changing the value with spinner or keys.
 platform: wpf
 control: DoubleTextBox 
 documentation: ug
