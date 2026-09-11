@@ -855,6 +855,42 @@ this.dataGrid.Columns.Add(new GridTextColumn()
 {% endhighlight %}
 {% endtabs %}
 
+### Character casing
+
+`GridTextColumn` provides support for controlling the casing of text manually entered by users during editing through the **CharacterCasing** property.
+
+You can automatically convert user-entered text to uppercase or lowercase by setting the property to `Upper` or `Lower`, respectively. The default value of **CharacterCasing** property is `Normal`.
+
+{% tabs %}
+{% highlight xaml %}
+<syncfusion:SfDataGrid x:Name="dataGrid"                                                                       
+                       AutoGenerateColumns="False"
+                       AllowEditing="True"                       
+                       ItemsSource="{Binding Orders}">
+    <syncfusion:SfDataGrid.Columns>
+        <syncfusion:GridNumericColumn MappingName="OrderID" HeaderText="Order ID" />
+        <syncfusion:GridTextColumn MappingName="CustomerID" HeaderText="Customer ID" />
+        <syncfusion:GridTextColumn MappingName="CustomerName" HeaderText="Customer Name" CharacterCasing="Upper" />
+        <syncfusion:GridTextColumn MappingName="Country" HeaderText="Country" CharacterCasing="Lower"/>
+        <syncfusion:GridTextColumn MappingName="ShipCity" HeaderText="Ship City" />
+    </syncfusion:SfDataGrid.Columns>
+</syncfusion:SfDataGrid>
+
+{% endhighlight %}
+{% highlight c# %}
+this.dataGrid.Columns.Add(new GridTextColumn()
+{
+    HeaderText = "Customer Name",
+    MappingName = "CustomerName",
+    CharacterCasing = CharacterCasing.Upper                                 
+});
+{% endhighlight %}
+{% endtabs %}
+
+![WPF DataGrid TextColumn CharacterCasing](Column-Types_images/wpf-datagrid-textcolumn-charactercasing.gif)
+
+N> The property only affects manually entered keystrokes. Existing values, pasted text, and programmatically assigned values are not modified.
+
 ## GridNumericColumn
 
 `GridNumericColumn ` derived from `GridEditorColumn` which displays columns data as numeric. It hosts `DoubleTextBox` in editing mode.
