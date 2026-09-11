@@ -67,7 +67,7 @@ The Filter Editor provides the following actions:
 
 * **Apply** - Applies the current filter criteria to the DataGrid and keeps the Filter Editor open.
 * **OK** - Applies the current filter criteria to the DataGrid and closes the Filter Editor.
-* **Cancel** - Discards the unapplied changes and closes the Filter Editor.
+* **Cancel** - Discards the pending changes and closes the Filter Editor.
 
 After applying the filter criteria, the DataGrid displays the records that satisfy the filter expression. The applied filter expression is also displayed in the Filter Editor Panel when the panel position is set to `Top` or `Bottom`.
 
