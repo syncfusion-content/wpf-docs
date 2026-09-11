@@ -10,7 +10,7 @@ documentation: ug
 
 # Unbound Rows in WPF Data Grid
 
-[WPF DataGrid](https://www.syncfusion.com/wpf-controls/datagrid) allows you to add **additional rows** at top and also bottom of the SfDataGrid which are **not bound with data object** from underlying data source. You can add unbound rows using [SfDataGrid.UnBoundRows](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_UnBoundRows) collection property. You can add any no of unbound rows to SfDataGrid. Unbound rows can be exported and printed.
+[WPF DataGrid](https://www.syncfusion.com/wpf-controls/datagrid) allows you to add **additional rows** at top and also bottom of the Data Grid which are **not bound with data object** from underlying data source. You can add unbound rows using [SfDataGrid.UnBoundRows](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_UnBoundRows) collection property. You can add any no of unbound rows to the control. Unbound rows can be exported and printed.
 
 {% tabs %}
 {% highlight xaml %}
@@ -32,7 +32,7 @@ N> [AllowFrozenGroupHeaders](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xa
 
 ## Positioning unbound rows
 
-Unbound row can be placed in top or bottom of the SfDataGrid. Unbound row positioned based on [GridUnBoundRow.Position](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridUnBoundRow.html#Syncfusion_UI_Xaml_Grid_GridUnBoundRow_Position) and [GridUnBoundRow.ShowBelowSummary](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridUnBoundRow.html#Syncfusion_UI_Xaml_Grid_GridUnBoundRow_ShowBelowSummary) properties.
+Unbound row can be placed in top or bottom of the Data Grid. Unbound row positioned based on [GridUnBoundRow.Position](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridUnBoundRow.html#Syncfusion_UI_Xaml_Grid_GridUnBoundRow_Position) and [GridUnBoundRow.ShowBelowSummary](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridUnBoundRow.html#Syncfusion_UI_Xaml_Grid_GridUnBoundRow_ShowBelowSummary) properties.
 
 Below table shows the unbound row positioning based on property settings of `Position` and `ShowBelowSummary`.
 
@@ -78,7 +78,7 @@ Bottom
 True
 </td>
 <td>
-Unbound row placed at bottom of SfDataGrid. In this position, unbound row is not selectable, <b>not editable</b> and <b>frozen</b> when scrolling.
+Unbound row placed at bottom of Data Grid. In this position, unbound row is not selectable, <b>not editable</b> and <b>frozen</b> when scrolling.
 </td>
 </tr>
 <tr>
@@ -100,7 +100,7 @@ Below screen shot shows different unbound rows placed in all possible positions.
 
 ## Populating data for unbound rows
 
-You can populate data for the unbound row by handling [QueryUnBoundRow](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_QueryUnBoundRow) event of SfDataGrid. This event occurs for each cell in unbound row whenever the row gets refreshed. 
+You can populate data for the unbound row by handling [QueryUnBoundRow](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_QueryUnBoundRow) event of Data Grid. This event occurs for each cell in unbound row whenever the row gets refreshed. 
 [GridUnBoundRowEventsArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridUnBoundRowEventsArgs.html) of the `QueryUnBoundRow` event provides information about the cell triggered this event. [GridUnBoundRowEventsArgs.OriginalSender](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridEventArgs.html#Syncfusion_UI_Xaml_Grid_GridEventArgs_OriginalSender) returns the DataGrid fired this event for DetailsView. 
 
 You can get or set the [GridUnBoundRowEventsArgs.Value](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridUnBoundRowEventsArgs.html#Syncfusion_UI_Xaml_Grid_GridUnBoundRowEventsArgs_Value) property based on the [UnBoundAction](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridUnBoundRowEventsArgs.html#Syncfusion_UI_Xaml_Grid_GridUnBoundRowEventsArgs_UnBoundAction). If `UnBoundAction` is `QueryData` then you can set the value for display. If the `UnBoundAction` is `CommitData` then you can get the edited value.
@@ -117,7 +117,7 @@ You can get or set the [GridUnBoundRowEventsArgs.Value](https://help.syncfusion.
 {% endhighlight %}
 {% endtabs %}
 
-For example, now unbound row populated based on selected items in SfDataGrid.
+For example, now unbound row populated based on selected items in Data Grid.
 
 
 {% tabs %}
@@ -286,7 +286,7 @@ public class UnboundCellStyleConverter : IValueConverter
 
 ## Customize the Unbound Row’s behavior
 
-SfDataGrid allows you to customize the operations like key navigation and UI related interactions by overriding the corresponding renderer associated with the unbound row cell.  Each renderer have set of virtual methods for handling the behaviors. Creating new renderers also supported.
+Data Grid allows you to customize the operations like key navigation and UI related interactions by overriding the corresponding renderer associated with the unbound row cell.  Each renderer have set of virtual methods for handling the behaviors. Creating new renderers also supported.
 
 Below table lists the available cell types for unbound row and its renderers.
 

@@ -9,7 +9,7 @@ documentation: ug
 
 # Conditional Styling in WPF Data Grid
 
-You can style the [WPF DataGrid](https://www.syncfusion.com/wpf-controls/datagrid) and its inner elements (cells, rows and columns) conditionally based on data in three ways,
+You can style the [WPF Data Grid](https://www.syncfusion.com/wpf-controls/datagrid) and its inner elements (cells, rows and columns) conditionally based on data in three ways,
 
 1. Using Converter
 2. Using Data Triggers
@@ -100,7 +100,7 @@ public class ColorConverter : IValueConverter
 {% endhighlight %}
 {% endtabs %}
 
-![Conditional Cell Styling of WPF DataGrid based on Data using Converter](Conditional-Styling_images/wpf-datagrid-conditional-cell-style.png)
+![Conditional Cell Styling based on Data using Converter](Conditional-Styling_images/wpf-datagrid-conditional-cell-style.png)
 
 ### Condition styling of cells based on record using converter
 
@@ -147,7 +147,7 @@ public class ColorConverter : IValueConverter
 {% endhighlight %}
 {% endtabs %}
 
-![Conditional Cell Styling of WPF DataGrid based on Record using Converter](Conditional-Styling_images/wpf-datagrid-conditional-style-for-record.png)
+![Conditional Cell Styling based on Record using Converter](Conditional-Styling_images/wpf-datagrid-conditional-style-for-record.png)
 
 ### Conditional styling of cells using triggers
 
@@ -180,7 +180,7 @@ The record cells ([GridCell](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xa
 
 Here, GridCell’s are conditionally customized based on `OrderID` value.
 
-![Conditional Style of WPF DataGrid Cells using Triggers](Conditional-Styling_images/wpf-datagrid-conditional-style-for-cell.png)
+![Conditional Style of Cells using Triggers](Conditional-Styling_images/wpf-datagrid-conditional-style-for-cell.png)
 
 ### Conditional styling of cells using style selector
 
@@ -228,7 +228,7 @@ public class SelectorClass : StyleSelector
 
 Here, GridCell’s are customized based on `TotalPrice` property of underlying record.
 
-![Conditional Style of WPF DataGrid Cell based on Data using Style Selector](Conditional-Styling_images/wpf-datagrid-cell-style-using-style-selector.png)
+![Conditional Style of Cell based on Data using Style Selector](Conditional-Styling_images/wpf-datagrid-cell-style-using-style-selector.png)
 
 ## Row style
 
@@ -278,7 +278,7 @@ public class ColorConverter : IValueConverter
 
 Here, rows are customized based on `TotalPrice` property of underlying record.
 
-![Conditional Style of WPF DataGrid Rows based on Data using Converter](Conditional-Styling_images/wpf-datagrid-row-style.png)
+![Conditional Style of Rows based on Data using Converter](Conditional-Styling_images/wpf-datagrid-row-style.png)
 
 ### Conditional styling of rows using style selector
 
@@ -322,7 +322,7 @@ public class CustomRowStyleSelector : StyleSelector
 
 Here, rows are customized based on `TotalPrice` property of underlying record.
 
-![Conditional Style of WPF DataGrid Rows based on Data using Style Selector](Conditional-Styling_images/wpf-datagrid-row-style-selector.png)
+![Conditional Style of Rows based on Data using Style Selector](Conditional-Styling_images/wpf-datagrid-row-style-selector.png)
 
 ## Alternate row style
 
@@ -368,7 +368,7 @@ public class CustomRowStyleSelector : StyleSelector
 
 Here, alternating rows are customized based on `OrderID` property of underlying record.
 
-![Customizing Alternate Row Style in WPF DataGrid](Conditional-Styling_images/wpf-datagrid-alternate-row-style.png)
+![Customizing Alternate Row Style](Conditional-Styling_images/wpf-datagrid-alternate-row-style.png)
 
 ## Caption summary cell style
 
@@ -431,7 +431,7 @@ public class ColorConverter : IValueConverter
 
 Here, caption summary cells are customized based on `TotalPrice` summary value.
 
-![Customizing Caption Summary Cells using Converter in WPF DataGrid](Conditional-Styling_images/wpf-datagrid-caption-summary-cell-style.png)
+![Customizing Caption Summary Cells using Converter](Conditional-Styling_images/wpf-datagrid-caption-summary-cell-style.png)
 
 ### Conditional styling of caption summary cells using style selector
 
@@ -492,7 +492,7 @@ public class SelectorClass : StyleSelector
 
 Here, caption summary cells are customized based on `TotalPrice` summary value.
 
-![Customizing Caption Summary Cells using Style Selector in WPF DataGrid](Conditional-Styling_images/wpf-datagrid-caption-summary-cells-style.png)
+![Customizing Caption Summary Cells using Style Selector](Conditional-Styling_images/wpf-datagrid-caption-summary-cells-style.png)
 
 ### Conditional styling of caption summary cell based on column
 
@@ -556,7 +556,7 @@ public class SelectorClass : StyleSelector
 {% endhighlight %}
 {% endtabs %}
 
-![Customizing Caption Summary Cell based on Column in WPF DataGrid](Conditional-Styling_images/wpf-datagrid-cell-style-based-on-column.png)
+![Customizing Caption Summary Cell based on Column](Conditional-Styling_images/wpf-datagrid-cell-style-based-on-column.png)
 
 ## Caption summary row style
 
@@ -619,7 +619,7 @@ public class ColorConverter : IValueConverter
 
 Here, caption summary rows are customized based on `TotalPrice` summary value.
 
-![Customizing Caption Summary Rows using Converter in WPF DataGrid](Conditional-Styling_images/wpf-datagrid-caption-summary-rows.png)
+![Customizing Caption Summary Rows using Converter](Conditional-Styling_images/wpf-datagrid-caption-summary-rows.png)
 
 ### Conditional styling of caption summary row using style selector
 
@@ -677,7 +677,7 @@ public class SelectorClass : StyleSelector
 
 Here, caption summary rows are customized based on `TotalPrice` summary value.
 
-![Customizing Caption Summary Rows using Style Selector in WPF DataGrid](Conditional-Styling_images/wpf-datagrid-summary-rows-style.png)
+![Customizing Caption Summary Rows using Style Selector](Conditional-Styling_images/wpf-datagrid-summary-rows-style.png)
 
 ### Conditional styling of caption summary row based on group level
 
@@ -737,7 +737,7 @@ public class CustomCaptionSummaryRowStyleSelector : StyleSelector
 
 Here, caption summary rows are customized based on `grouping level` (example: level1, level2, level3, etc.).
 
-![Conditional Style of WPF DataGrid Caption Summary Row based on GroupLevel](Conditional-Styling_images/wpf-datagrid-group-level-cell-style.png)
+![Conditional Style of Caption Summary Row based on GroupLevel](Conditional-Styling_images/wpf-datagrid-group-level-cell-style.png)
 
 ## Group summary cell style
 
@@ -810,7 +810,7 @@ public class ColorConverter : IValueConverter
 
 Here, group summary cells are customized based on `TotalPrice` summary value.
 
-![Conditional Style of WPF DataGrid Group Summary Cell using Converter](Conditional-Styling_images/wpf-datagrid-group-summary-cell-style.png)
+![Conditional Style of Group Summary Cell using Converter](Conditional-Styling_images/wpf-datagrid-group-summary-cell-style.png)
 
 ### Conditional styling of group summary cell using style selector
 
@@ -884,7 +884,7 @@ public class SelectorClass : StyleSelector
 
 Here, group summary cells are customized based on `TotalPrice` summary value.
 
-![Conditional Style of WPF DataGrid Group Summary Cell using Style Selector](Conditional-Styling_images/wpf-datagrid-group-summary-cell-styles.png)
+![Conditional Style of Group Summary Cell using Style Selector](Conditional-Styling_images/wpf-datagrid-group-summary-cell-styles.png)
 
 ### Conditional styling of group summary cell based on column
 
@@ -960,7 +960,7 @@ public class SelectorClass : StyleSelector
 {% endhighlight %}
 {% endtabs %}
 
-![Conditional Style of WPF DataGrid Group Summary Cell based on Column](Conditional-Styling_images/wpf-datagrid-summary-cell-style-based-on-column.png)
+![Conditional Style of Group Summary Cell based on Column](Conditional-Styling_images/wpf-datagrid-summary-cell-style-based-on-column.png)
 
 ## Group summary row style
 
@@ -1033,7 +1033,7 @@ public class ColorConverter : IValueConverter
 
 Here, group summary rows are customized based on `TotalPrice` summary value.
 
-![Conditional Style of WPF DataGrid Group Summary Row using Converter](Conditional-Styling_images/wpf-datagrid-group-summary-row-style.png)
+![Conditional Style of Group Summary Row using Converter](Conditional-Styling_images/wpf-datagrid-group-summary-row-style.png)
 
 ### Conditional styling of group summary row using style selector
 
@@ -1106,7 +1106,7 @@ public class SelectorClass : StyleSelector
 
 Here, group summary rows are customized based on `TotalPrice` summary value whether it’s positive or negative.
 
-![Conditional Style of WPF DataGrid Group Summary Row using Style Selector](Conditional-Styling_images/wpf-datagrid-group-summary-rows.png)
+![Conditional Style of Group Summary Row using Style Selector](Conditional-Styling_images/wpf-datagrid-group-summary-rows.png)
 
 ## Table summary cell
 
@@ -1187,7 +1187,7 @@ public class ColorConverter : IValueConverter
 
 Here, table summary cells are customized based on `TotalPrice` summary value.
 
-![Conditional Style of WPF DataGrid Table Summary Cells using Converter](Conditional-Styling_images/wpf-datagrid-table-summary-cell-style.png)
+![Conditional Style of Table Summary Cells using Converter](Conditional-Styling_images/wpf-datagrid-table-summary-cell-style.png)
 
 ### Conditional styling of table summary cell using style selector
 
@@ -1264,7 +1264,7 @@ public class SelectorClass : StyleSelector
 
 Here, table summary cells are customized based on `TotalPrice` summary value.
 
-![Conditional Style of WPF DataGrid Table Summary Cells using Style Selector](Conditional-Styling_images/wpf-datagrid-table-summary-cell-styles.png)
+![Conditional Style of Table Summary Cells using Style Selector](Conditional-Styling_images/wpf-datagrid-table-summary-cell-styles.png)
 
 ### Conditional styling of table summary cell based on column
 
@@ -1338,7 +1338,7 @@ public class SelectorClass : StyleSelector
 {% endhighlight %}
 {% endtabs %}
 
-![Conditional Style of WPF DataGrid Table Summary Cell based on Column](Conditional-Styling_images/wpf-datagrid-table-summary-cell-based-on-column.png)
+![Conditional Style of Table Summary Cell based on Column](Conditional-Styling_images/wpf-datagrid-table-summary-cell-based-on-column.png)
 
 ## Table summary row style
 
@@ -1389,7 +1389,7 @@ public class ColorConverter : IValueConverter
 
 Here, table summary rows are customized based on `TotalPrice` summary value.
 
-![Conditional Style of WPF DataGrid Table Summary Row using Converter](Conditional-Styling_images/wpf-datagrid-table-summary-row-syle.png)
+![Conditional Style of Table Summary Row using Converter](Conditional-Styling_images/wpf-datagrid-table-summary-row-syle.png)
 
 ### Conditional styling of table summary row using style selector
 
@@ -1470,7 +1470,7 @@ public class SelectorClass : StyleSelector
 
 Here, table summary rows are customized based on `TotalPrice` summary value.
 
-![Conditional Style of WPF DataGrid Table Summary Row using Style Selector](Conditional-Styling_images/wpf-datagrid-table-summary-row-styles.png)
+![Conditional Style of Table Summary Row using Style Selector](Conditional-Styling_images/wpf-datagrid-table-summary-row-styles.png)
 
 ## Table summary cell alignment based on column
 
@@ -1548,7 +1548,7 @@ public class TableSummaryStyleSelector : StyleSelector
 
 Here, horizontal alignment of `TotalPrice` column alone left, other column horizontal alignment are changed into right.
 
-![Customizing Summary Column Alignment of WPF DataGrid](Conditional-Styling_images/wpf-datagrid-summary-column-alignment.png)
+![Customizing Summary Column Alignment](Conditional-Styling_images/wpf-datagrid-summary-column-alignment.png)
 
 ## Row header style
 
@@ -1598,5 +1598,5 @@ public class ColorConverter : IValueConverter
 {% endhighlight %}
 {% endtabs %}
 
-![Customizing Row Header Cell Style in WPF DataGrid](Conditional-Styling_images/wpf-datagrid-row-header-cell-style.png)
+![Customizing Row Header Cell Style](Conditional-Styling_images/wpf-datagrid-row-header-cell-style.png)
 

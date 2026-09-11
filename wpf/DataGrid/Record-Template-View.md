@@ -9,9 +9,9 @@ documentation: ug
 
 # Record Template View in WPF Data Grid
 
-The SfDataGrid provides support to represent additional information of a row using [TemplateViewDefinition](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.TemplateViewDefinition.html) that can be defined in datagrid. It allows you to load any WPF controls to [TemplateViewDefinition.RowTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.TemplateViewDefinition.html#Syncfusion_UI_Xaml_Grid_TemplateViewDefinition_RowTemplate) in order to display the additional information of a row. You can expand or collapse the row template view by using an expander in a row or programmatically.
+The Data Grid provides support to represent additional information of a row using [TemplateViewDefinition](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.TemplateViewDefinition.html) that can be defined in the control. It allows you to load any WPF controls to [TemplateViewDefinition.RowTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.TemplateViewDefinition.html#Syncfusion_UI_Xaml_Grid_TemplateViewDefinition_RowTemplate) in order to display the additional information of a row. You can expand or collapse the row template view by using an expander in a row or programmatically.
 
-![WPF DataGrid displays Record Template View](Record_Template_View_images/wpf-datagrid-record-template-view.png)
+![Record Template View](Record_Template_View_images/wpf-datagrid-record-template-view.png)
 
 ## Defining row template
 
@@ -249,7 +249,7 @@ public class detailsViewTemplateSelector : DataTemplateSelector
 {% endhighlight %}
 {% endtabs %}
 
-![WPF DataGrid displays Record Template View for Each Row](Record_Template_View_images/wpf-datagrid-record-template-for-rows.png)
+![Record Template View for each row](Record_Template_View_images/wpf-datagrid-record-template-for-rows.png)
 
 ## Height customization
 
@@ -293,11 +293,11 @@ Arranges template for the <code>ViewPortHeight</code> when the {{'[RowTemplate](
 </table>
 
 ## Handling Row Virtualization in RowTemplate
-By default, rows in the `DataGrid` are virtualized and reused to enhance performance. However, when using a RowTemplate that includes interactive controls (such as SfDataGrid, DataGrid, or similar components), this reuse can lead to unexpected behavior during data operations like sorting or filtering. Specifically, the visual state and data bindings of these controls may not persist correctly.
+By default, rows in the Data Grid are virtualized and reused to enhance performance. However, when using a RowTemplate that includes interactive controls (such as a nested grid or similar components), this reuse can lead to unexpected behavior during data operations like sorting or filtering. Specifically, the visual state and data bindings of these controls may not persist correctly.
 
 This occurs because the same row visual elements are recycled and displayed for different data items during virtualization. 
 
-To provide greater flexibility, the [TemplateRenderMode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.TemplateViewDefinition.html#Syncfusion_UI_Xaml_Grid_TemplateViewDefinition_TemplateRenderMode) property is available for row templates. This property allows you to configure how the row templates are instantiated and managed within the DataGrid.
+To provide greater flexibility, the [TemplateRenderMode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.TemplateViewDefinition.html#Syncfusion_UI_Xaml_Grid_TemplateViewDefinition_TemplateRenderMode) property is available for row templates. This property allows you to configure how the row templates are instantiated and managed within the control.
 
 ## TemplateRenderMode
 
@@ -317,7 +317,7 @@ Use `Individual` when your row template is contains interactive controls that ne
 
 ## Keyboard navigation support for DetailsViewTemplate
 
-In the SfDataGrid, you can navigate from parent row to DetailsViewTemplate and vice-versa using <kbd>Tab</kbd> key by default. You can also restrict tab key navigation from parent to DetailsViewTemplate by setting the [TemplateViewDefinition.TemplateNavigationMode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.TemplateViewDefinition.html#Syncfusion_UI_Xaml_Grid_TemplateViewDefinition_NavigationMode) property value to `ExcludeTemplateRow`.
+In the Data Grid, you can navigate from parent row to DetailsViewTemplate and vice-versa using <kbd>Tab</kbd> key by default. You can also restrict tab key navigation from parent to DetailsViewTemplate by setting the [TemplateNavigationMode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.TemplateViewDefinition.html#Syncfusion_UI_Xaml_Grid_TemplateViewDefinition_NavigationMode) property value to `ExcludeTemplateRow`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -367,7 +367,7 @@ private void dataGrid_DetailsViewExpanding(object sender, Syncfusion.UI.Xaml.Gri
 
 ## Expanding and collapsing row template programmatically
 
-The SfDataGrid allows you to expand or collapse the [RowTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.TemplateViewDefinition.html#Syncfusion_UI_Xaml_Grid_TemplateViewDefinition_RowTemplate) programmatically in different ways.
+The Data Grid allows you to expand or collapse the [RowTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.TemplateViewDefinition.html#Syncfusion_UI_Xaml_Grid_TemplateViewDefinition_RowTemplate) programmatically in different ways.
 
 ### Expand or collapse all the row template
 

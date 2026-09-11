@@ -9,7 +9,7 @@ documentation: ug
 
 # Search in WPF Data Grid
 
-[WPF DataGrid](https://www.syncfusion.com/wpf-controls/datagrid) control allows you to search the data displayed in the SfDataGrid. You can search the data by using [SearchHelper.Search](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SearchHelper.html#Syncfusion_UI_Xaml_Grid_SearchHelper_Search_System_String_) method.
+[WPF DataGrid](https://www.syncfusion.com/wpf-controls/datagrid) control allows you to search the data displayed in the Data Grid. You can search the data by using [SearchHelper.Search](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SearchHelper.html#Syncfusion_UI_Xaml_Grid_SearchHelper_Search_System_String_) method.
 
 {% tabs %}
 {% highlight c# %}
@@ -19,7 +19,7 @@ this.dataGrid.SearchHelper.Search(TextBox.Text);
 {% endhighlight %}
 {% endtabs %}
 
-![WPF DataGrid with Search Panel](Search_images/wpf-datagrid-search-panel.png)
+![Search Panel](Search_images/wpf-Data Grid-search-panel.png)
 
 
 ## Filtering
@@ -35,7 +35,7 @@ this.dataGrid.SearchHelper.Search(TextBox.Text);
 {% endhighlight %}
 {% endtabs %}
 
-![Enabling Filter based on Search in WPF DataGrid](Search_images/wpf-datagrid-filter-based-on-search.png)
+![Enabling Filter based on Search in WPF Data Grid](Search_images/wpf-datagrid-filter-based-on-search.png)
 
 
 You can search the data with the case-sensitivity by setting [SearchHelper.AllowCaseSensitiveSearch](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SearchHelper.html#Syncfusion_UI_Xaml_Grid_SearchHelper_AllowCaseSensitiveSearch) property.
@@ -50,7 +50,7 @@ this.dataGrid.SearchHelper.AllowCaseSensitiveSearch = true;
 
 ### Changing Search Highlight Background
 
-In WPF DataGrid (SfDatagrid), you can change the search text highlighting color by setting [SearchHelper.SearchBrush](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SearchHelper.html#Syncfusion_UI_Xaml_Grid_SearchHelper_SearchBrush) property. 
+In WPF DataGrid you can change the search text highlighting color by setting [SearchHelper.SearchBrush](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SearchHelper.html#Syncfusion_UI_Xaml_Grid_SearchHelper_SearchBrush) property. 
 
 {% tabs %}
 {% highlight c# %}
@@ -61,11 +61,11 @@ this.dataGrid.SearchHelper.Search(TextBox.Text);
 {% endhighlight %}
 {% endtabs %}
 
-![Changing Search Text Highlighting Color in WPF DataGrid](Search_images/wpf-datagrid-highlight-search-color.png)
+![Changing Search Text Highlighting Color](Search_images/wpf-Data Grid-highlight-search-color.png)
 
 ### Changing foreground for search highlight
 
-In WPF DataGrid (SfDatagrid), you can change the foreground color for search text by setting the [SearchHelper.SearchForegroundBrush](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SearchHelper.html#Syncfusion_UI_Xaml_Grid_SearchHelper_SearchForegroundBrush) property. 
+In WPF DataGrid you can change the foreground color for search text by setting the [SearchHelper.SearchForegroundBrush](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SearchHelper.html#Syncfusion_UI_Xaml_Grid_SearchHelper_SearchForegroundBrush) property. 
 
 {% tabs %}
 {% highlight c# %}
@@ -75,7 +75,7 @@ this.dataGrid.SearchHelper.SearchForegroundBrush = Brushes.Red;
 {% endhighlight %}
 {% endtabs %}
 
-![Changing Fore Color of Search Text  in WPF DataGrid](Search_images/wpf-datagrid-search-text-fore-color.png)
+![Changing Fore Color of Search Text](Search_images/wpf-datagrid-search-text-fore-color.png)
 
 ## Navigating cells based on search text
 
@@ -101,7 +101,7 @@ this.dataGrid.SearchHelper.FindNext("TextBox.Text ");
 {% endhighlight %}
 {% endtabs %}
 
-![Highlighting Navigated Search Text in WPF DataGrid](Search_images/wpf-datagrid-highlight-navigate-search-text.png)
+![Highlighting Navigated Search Text](Search_images/wpf-datagrid-highlight-navigate-search-text.png)
 
 You can highlight the foreground color of current navigated search text by using the [SearchHelper.SearchForegroundHighlightBrush](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SearchHelper.html#Syncfusion_UI_Xaml_Grid_SearchHelper_SearchForegroundHighlightBrush) property.
 
@@ -113,7 +113,7 @@ this.dataGrid.SearchHelper.SearchForegroundHighlightBrush = Brushes.Red;
 {% endhighlight %}
 {% endtabs %}
 
-![Highlighting Current Navigated Search Text Color in WPF DataGrid](Search_images/wpf-datagrid-navigated-search-text-color.png)
+![Highlighting Current Navigated Search Text Color](Search_images/wpf-datagrid-navigated-search-text-color.png)
 
 
 ## Move CurrentCell when FindNext and FindPrevious
@@ -154,7 +154,7 @@ Master-details view allows you to search the data by using [SearchHelper.Search]
 {% endhighlight %}
 {% endtabs %}
 
-![WPF DataGrid displays Searched Data](Search_images/wpf-datagrid-search-data.png)
+![Displays Searched Data](Search_images/wpf-Data Grid-search-data.png)
 
 
 ### Navigating cells based on search text in DetailsViewDataGrid
@@ -171,11 +171,11 @@ You can navigate to the cells contains the SearchText using [SearchHelper.FindNe
 {% endtabs %}
 You can get the sample from [here](https://www.syncfusion.com/downloads/support/directtrac/general/ze/MasterDetailsViewSearch-140489943.zip).
 
-N> It is not possible to Navigate with the two DataGrid at a time.
+N> It is not possible to Navigate with the two Data Grid at a time.
 
 ## Search customization
 
-WPF DataGrid (SfDataGrid) process the search operations in [SearchHelper](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SearchHelper.html) class. You can change the default search behaviors by overriding `SearchHelper` class and set to `SfDataGrid.SearchHelper`.
+WPF DataGrid process the search operations in [SearchHelper](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SearchHelper.html) class. You can change the default search behaviors by overriding `SearchHelper` class and set to `Data Grid.SearchHelper`.
 
 {% tabs %}
 {% highlight c# %}
@@ -225,7 +225,7 @@ public class SearchHelperExt : SearchHelper
 {% endhighlight %}
 {% endtabs %}
 
-![WPF DataGrid displays Search Text only in Selected Column](Search_images/wpf-datagrid-search-text-in-column.png)
+![Displays Search Text only in Selected Column](Search_images/wpf-datagrid-search-text-in-column.png)
 
 
 ### Select the record based on the SearchText
@@ -244,12 +244,12 @@ this.dataGrid.SelectedIndex = recordIndex;
 {% endhighlight %}
 {% endtabs %}
 
-![Select Record based on SearchText in WPF DataGrid](Search_images/wpf-datagrid-select-record-based-on-search.png)
+![Select Record based on SearchText](Search_images/wpf-datagrid-select-record-based-on-search.png)
 
 
 ### Search with the GridComboBoxColumn
 
-You can search the data in SfDataGrid with all the GridColumns which loads TextBlock as display element. To perform the search operation in the [GridComboBoxColumn](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridComboBoxColumn.html) you need to customize the `GridComboBoxColumn`.  As it loads the ContentControl in display mode. 
+You can search the data in Data Grid with all the GridColumns which loads TextBlock as display element. To perform the search operation in the [GridComboBoxColumn](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridComboBoxColumn.html) you need to customize the `GridComboBoxColumn`.  As it loads the ContentControl in display mode. 
 
 {% tabs %}
 {% highlight c# %}
@@ -377,8 +377,8 @@ public class ComboBoxRendererExt : GridVirtualizingCellRenderer<TextBlock, Combo
 
 ## See Also
 
-[How to apply search and filter for one column in SfDataGrid?](https://support.syncfusion.com/kb/article/7984/how-to-apply-search-and-filter-for-one-column-in-wpf-datagrid-sfdatagrid)
+[How to apply search and filter for one column in Data Grid?](https://support.syncfusion.com/kb/article/7984/how-to-apply-search-and-filter-for-one-column-in-wpf-datagrid-Data Grid)
 
-[How to filter the records with searching when underlying items source is DataTable in SfDataGrid?](https://support.syncfusion.com/kb/article/7966/how-to-filter-the-records-with-searching-when-underlying-items-source-is-datatable-in-wpf)
+[How to filter the records with searching when underlying items source is DataTable in Data Grid?](https://support.syncfusion.com/kb/article/7966/how-to-filter-the-records-with-searching-when-underlying-items-source-is-datatable-in-wpf)
 
 [How to perform incremental search ?](https://support.syncfusion.com/kb/article/7649/how-to-perform-the-incremental-search-in-wpf-datagrid-sfdatagrid)

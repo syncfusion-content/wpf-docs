@@ -9,7 +9,7 @@ documentation: ug
 
 # AutoSize Columns in WPF Data Grid
 
-[WPF DataGrid](https://www.syncfusion.com/wpf-controls/datagrid) allows you to set the column widths based on certain logic using [SfDataGrid.ColumnSizer](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_ColumnSizer) or [GridColumn.ColumnSizer](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridColumn.html#Syncfusion_UI_Xaml_Grid_GridColumn_ColumnSizer) property. Below is the list of predefined column sizing options available.
+[WPF Data Grid](https://www.syncfusion.com/wpf-controls/datagrid) allows you to set the column widths based on certain logic using [SfDataGrid.ColumnSizer](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_ColumnSizer) or [GridColumn.ColumnSizer](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridColumn.html#Syncfusion_UI_Xaml_Grid_GridColumn_ColumnSizer) property. Below is the list of predefined column sizing options available.
 
 <table>
 <tr>
@@ -91,7 +91,7 @@ Below code, applies `GridLengthUnitType.Star` to equally set width for `SfDataGr
 {% endhighlight %}
 {% endtabs %}
 
-![Autosize Columns in WPF DataGrid](Columns_images/wpf-datagrid-autosize-columns.png)
+![Autosize Columns](Columns_images/wpf-datagrid-autosize-columns.png)
 
 N> The `GridColumn.ColumnSizer` takes higher priority than the `SfDataGrid.ColumnSizer`.
 
@@ -119,12 +119,12 @@ this.datagrid.Columns["OrderID"].ColumnSizer = GridLengthUnitType.AutoWithLastCo
 {% endhighlight %}
 {% endtabs %}
 
-![Specific Column in WPF DataGrid Fills Remaining Width](Columns_images/wpf-datagrid-specific-column.png)
+![Specific Column Fills Remaining Width](Columns_images/wpf-datagrid-specific-column.png)
 
 ## Refreshing autosize calculation at runtime
 
 You can refresh the autosize calculation at runtime by calling [SfDataGrid.GridColumnSizer.Refresh](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridColumnSizer.html#Syncfusion_UI_Xaml_Grid_GridColumnSizer_Refresh().html) method.
-DataGrid support to recalculates the column auto width by calling reset methods of `GridColumnSizer`. [GridColumnSizer.ResetAutoCalculationforAllColumns](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.ColumnSizerBase-1.html#Syncfusion_UI_Xaml_Grid_ColumnSizerBase_1_ResetAutoCalculationforAllColumns) method reset widths to all columns. [GridColumnSizer.ResetAutoCalculation](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.ColumnSizerBase-1.html#Syncfusion_UI_Xaml_Grid_ColumnSizerBase_1_ResetAutoCalculation_Syncfusion_UI_Xaml_Grid_GridColumnBase_) method reset the width to particular column.
+Data Grid supports recalculating the column auto width by calling the reset methods of `GridColumnSizer`. The [GridColumnSizer.ResetAutoCalculationforAllColumns](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.ColumnSizerBase-1.html#Syncfusion_UI_Xaml_Grid_ColumnSizerBase_1_ResetAutoCalculationforAllColumns) method resets widths for all columns. The [GridColumnSizer.ResetAutoCalculation](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.ColumnSizerBase-1.html#Syncfusion_UI_Xaml_Grid_ColumnSizerBase_1_ResetAutoCalculation_Syncfusion_UI_Xaml_Grid_GridColumnBase_) method resets the width for a particular column.
 
 N> The `GridColumnSizer.ResetAutoCalculationforAllColumns` or `GridColumnSizer.ResetAutoCalculation` methods applicable for Auto, AutoWithLastColumnFill, AutoLastColumnFill, SizeToCells types.
 
@@ -158,7 +158,7 @@ this.dataGrid.GridColumnSizer.Refresh();
 
 ## Customizing built-in column auto-sizing logic
 
-SfDataGrid process column sizing operations in [GridColumnSizer](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridColumnSizer.html) class. You can customize the column sizing operations by overriding `GridColumnSizer` and set it to `SfDataGrid.GridColumnSizer`.
+Data Grid processes column sizing operations in the [GridColumnSizer](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridColumnSizer.html) class. You can customize the column sizing operations by overriding `GridColumnSizer` and setting it to `SfDataGrid.GridColumnSizer`.
 
 {% tabs %}
 {% highlight c# %}
@@ -205,7 +205,7 @@ dataGrid.GridColumnSizer.FilterIconWidth = 20;
 {% endhighlight %}
 {% endtabs %}
 
-### Changing Font settings for DataGrid
+### Changing Font settings for Data Grid
 
 You can change the `font settings` for column width calculation by setting [GridColumnSizer.FontSize](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.ColumnSizerBase-1.html#Syncfusion_UI_Xaml_Grid_ColumnSizerBase_1_FontSize), [GridColumnSizer.FontFamily](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.ColumnSizerBase-1.html#Syncfusion_UI_Xaml_Grid_ColumnSizerBase_1_FontFamily) and [GridColumnSizer.Margin](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.ColumnSizerBase-1.html#Syncfusion_UI_Xaml_Grid_ColumnSizerBase_1_Margin) properties.  This settings will be considered for all columns.
 
@@ -379,7 +379,7 @@ Below code uses the `ColumnRatio` to apply the defined star width for each colum
 {% endhighlight %}
 {% endtabs %}
 
-![WPF DataGrid displays ColumnRatio Column Width](Columns_images/wpf-datagrid-column-ratio.png)
+![ColumnRatio Column Width](Columns_images/wpf-datagrid-column-ratio.png)
 
 ## Change the width of DataGrid ComboBoxColumn based on it’s ItemsSource
 

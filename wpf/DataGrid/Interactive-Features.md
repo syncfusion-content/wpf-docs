@@ -11,7 +11,7 @@ documentation: ug
 
 ## Column Chooser
 
-[WPF DataGrid](https://www.syncfusion.com/wpf-controls/datagrid) allows you to show and hide the Columns from the view at runtime via drag and drop using `ColumnChooser`. You can enable a column chooser in an application by creating an instance for `GridColumnChooserController` and assign to `SfDataGrid.GridColumnDragDropController`.
+[WPF Data Grid](https://www.syncfusion.com/wpf-controls/datagrid) allows you to show and hide the Columns from the view at runtime via drag and drop using `ColumnChooser`. You can enable a column chooser in an application by creating an instance for `GridColumnChooserController` and assign to `SfDataGrid.GridColumnDragDropController`.
 
 While dropping columns in `ColumnChooser` window, the particular column will be hidden by setting `GridColumn.IsHidden` as `true`.
 
@@ -38,7 +38,7 @@ void MainWindow_Loaded(object sender, RoutedEventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-![WPF DataGrid displays Column Chooser](Interactive-Features_images/wpf-datagrid-column-chooser.png)
+![Column Chooser](Interactive-Features_images/wpf-datagrid-column-chooser.png)
 
 ### Custom Column Chooser
 
@@ -220,7 +220,7 @@ viewModel.ShowColumnChooser = false;
 {% endhighlight %}
 {% endtabs %}
 
-![Customizing Column Chooser in WPF DataGrid](Interactive-Features_images/wpf-datagrid-column-chooser-customization.png)
+![Customizing Column Chooser](Interactive-Features_images/wpf-datagrid-column-chooser-customization.png)
 
 
 ### Appearance Customization
@@ -248,6 +248,6 @@ void MainWindow_Loaded(object sender, RoutedEventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-![Customizing Column Chooser Appearance in wpf datagrid](Interactive-Features_images/wpf-datagrid-column-chooser-customization.png)
+![Customizing Column Chooser Appearance](Interactive-Features_images/wpf-datagrid-column-chooser-customization.png)
 
 

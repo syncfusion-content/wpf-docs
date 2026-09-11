@@ -9,9 +9,9 @@ documentation: ug
 
 # Master-Details View in WPF Data Grid
 
-[WPF DataGrid](https://www.syncfusion.com/wpf-controls/datagrid) provides support to represent the hierarchical data in the form of nested tables using Master-Details View. You can expand or collapse the nested tables ([DetailsViewDataGrid](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.DetailsViewDataGrid.html)) by using an expander in a row or programmatically.  The number of tables nested with relations is unlimited.
+[WPF Data Grid](https://www.syncfusion.com/wpf-controls/datagrid) provides support to represent the hierarchical data in the form of nested tables using Master-Details View. You can expand or collapse the nested tables ([DetailsViewDataGrid](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.DetailsViewDataGrid.html)) by using an expander in a row or programmatically.  The number of tables nested with relations is unlimited.
 
-![WPF DataGrid with Master Details View](Master-Details-View_images/wpf-datagrid-master-details-view.png)
+![With Master Details View](Master-Details-View_images/wpf-datagrid-master-details-view.png)
 
 ## Generating Master-Details view from IEnumerable
 
@@ -272,11 +272,11 @@ public class ViewModel
 {% endhighlight %}
 {% endtabs %}
 
-### Defining relations in DataGrid 
+### Defining relations in the Data Grid 
 
 #### Auto-generating relations
 
-SfDataGrid will automatically generate relations and inner relations for the `IEnumerable` property types in the data object. This can be enabled by setting [SfDataGrid.AutoGenerateRelations](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_AutoGenerateRelations) to `true`.
+The Data Grid will automatically generate relations and inner relations for the `IEnumerable` property types in the data object. This can be enabled by setting [SfDataGrid.AutoGenerateRelations](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_AutoGenerateRelations) to `true`.
 
 Bind the collection created in the previous step to [SfDataGrid.ItemsSource](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_ItemsSource) and set the [SfDataGrid.AutoGenerateRelations](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_AutoGenerateRelations) to `true`. 
 
@@ -296,7 +296,7 @@ When relations are auto-generated, you can handle the [SfDataGrid.AutoGenerating
 
 Here, two relations are created from `Sales` and `Orders` collection property.
 
-![WPF DataGrid displays Master Details View based on Auto Generated Relations](Master-Details-View_images/wpf-datagrid-auto-generated-columns.png)
+![Master Details View based on Auto Generated Relations](Master-Details-View_images/wpf-datagrid-auto-generated-columns.png)
 
 #### Manually defining Relations
 
@@ -344,7 +344,7 @@ dataGrid.DetailsViewDefinition.Add(gridViewDefinition2);
 {% endhighlight %}
 {% endtabs %}
 
-![WPF DataGrid displays Master Details View based on Manual Relations](Master-Details-View_images/wpf-datagrid-manual-relations.png)
+![Master Details View based on Manual Relations](Master-Details-View_images/wpf-datagrid-manual-relations.png)
 
 In the same way, you can define relations for first level nested grids by defining relations to the [ViewDefinition.DataGrid](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridViewDefinition.html#Syncfusion_UI_Xaml_Grid_GridViewDefinition_DataGrid) of first level nested grid.
 
@@ -396,7 +396,7 @@ dataGrid.DetailsViewDefinition.Add(gridViewDefinition1);
 {% endhighlight %}
 {% endtabs %}
 
-![WPF DataGrid displays Nested Relations](Master-Details-View_images/wpf-datagrid-nested-relations.png)
+![Nested Relations](Master-Details-View_images/wpf-datagrid-nested-relations.png)
 
 ## Generating Master-Details view from DataTable
 
@@ -460,11 +460,11 @@ public class ViewModel
 {% endhighlight %}
 {% endtabs %}
 
-### Defining relations in DataGrid 
+### Defining relations in the Data Grid 
 
 #### Auto-generating relations
 
-SfDataGrid will automatically generate relations and inner relations based on relations defined in [DataSet](https://learn.microsoft.com/en-us/dotnet/api/system.data.dataset?view=net-7.0). This can be enabled by setting [SfDataGrid.AutoGenerateRelations](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_AutoGenerateRelations) to `true`.
+The Data Grid will automatically generate relations and inner relations based on relations defined in [DataSet](https://learn.microsoft.com/en-us/dotnet/api/system.data.dataset?view=net-7.0). This can be enabled by setting [SfDataGrid.AutoGenerateRelations](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_AutoGenerateRelations) to `true`.
 
 Bind the `Suppliers` table created in the previous step to [SfDataGrid.ItemsSource](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_ItemsSource) and set the [SfDataGrid.AutoGenerateRelations](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_AutoGenerateRelations) to `true`. 
 
@@ -484,13 +484,13 @@ When relations are auto-generated, you can handle the [SfDataGrid.AutoGenerating
 
 Here, Master-Details View relation is auto generated based on the `Supplier_Product` relation.
 
-![WPF DataGrid displays Nested DataGrid](Master-Details-View_images/wpf-datagrid-nested-collection.png)
+![Nested Grid](Master-Details-View_images/wpf-datagrid-nested-collection.png)
 
 #### Manually defining Relations
 
 You can define the Master-Details View’s relation manually using [SfDataGrid.DetailsViewDefinition](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_DetailsViewDefinition), when the [SfDataGrid.AutoGenerateRelations](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_AutoGenerateRelations) is `false`. 
 
-To define Master-Details View relations, create [GridViewDefinition](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridViewDefinition.html) and set the relation name `Supplier_Product` to [ViewDefinition.RelationalColumn](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.ViewDefinition.html#Syncfusion_UI_Xaml_Grid_ViewDefinition_RelationalColumn). Then, the `GridViewDefinition` is added to the [SfDataGrid.DetailsViewDefinition](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_DetailsViewDefinition) collection of parent DataGrid.
+To define Master-Details View relations, create [GridViewDefinition](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridViewDefinition.html) and set the relation name `Supplier_Product` to [ViewDefinition.RelationalColumn](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.ViewDefinition.html#Syncfusion_UI_Xaml_Grid_ViewDefinition_RelationalColumn). Then, the `GridViewDefinition` is added to the [SfDataGrid.DetailsViewDefinition](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_DetailsViewDefinition) collection of the parent grid.
 
 {% tabs %}
 {% highlight xaml %}
@@ -518,7 +518,7 @@ this.dataGrid.DetailsViewDefinition.Add(gridViewDefinition);
 {% endhighlight %}
 {% endtabs %}
 
-![WPF DataGrid displays Master Details View based on Manual Relations](Master-Details-View_images/wpf-datagrid-hierarchical-view.png)
+![Master Details View based on Manual Relations](Master-Details-View_images/wpf-datagrid-hierarchical-view.png)
 
 ## Populating Master-Details view through events
 
@@ -552,7 +552,7 @@ private ObservableCollection<ProductInfo> GetItemSource()
 {% endhighlight %}
 {% endtabs %}
 
-N> This event will be trigged only when underlying data object contains relations. Otherwise, you have to define dummy relation to notify DataGrid to fire this event.
+N> This event will be trigged only when underlying data object contains relations. Otherwise, you have to define dummy relation to notify the Data Grid to fire this event.
 
 In the below code snippet, `AutoGenerateRelations` set to false and also relation is defined with some name to `RelationalColumn`. For example, `ProductDetails` is the dummy relational column and underlying data object does not contain the `IEnumerable` type property with name `ProductDetails`.
 
@@ -753,7 +753,7 @@ Void FirstLevelNestedGrid_AutoGeneratingRelations(object sender,
 
 N> When you make any change in one [DetailsViewDataGrid](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.DetailsViewDataGrid.html), that change will be applied to all [DetailsViewDataGrid’s](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.DetailsViewDataGrid.html) in the same level. For example, when you resize the first column in one [DetailsViewDataGrid](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.DetailsViewDataGrid.html), the same column width is applied to all [DetailsViewDataGrid’s](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.DetailsViewDataGrid.html) at that level. This is applicable for features like filtering, sorting, grouping and re-ordering columns also. 
 
-![WPF DataGrid in Master Details View](Master-Details-View_images/wpf-datagrid-details-view.png)
+![Master Details View](Master-Details-View_images/wpf-datagrid-details-view.png)
 
 Here, `SalesID` column is sorted in all DetailsViewDataGrid at the same level.
 
@@ -761,7 +761,7 @@ N> [AllowFrozenGroupHeaders](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xa
 
 ## Defining columns for DetailsViewDataGrid
 
-The [ViewDefinition.DataGrid](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridViewDefinition.html#Syncfusion_UI_Xaml_Grid_GridViewDefinition_DataGrid)’s columns can be generated either automatically or manually like parent DataGrid. You can refer [here](https://help.syncfusion.com/wpf/datagrid/columns) to know more about columns. 
+The [ViewDefinition.DataGrid](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridViewDefinition.html#Syncfusion_UI_Xaml_Grid_GridViewDefinition_DataGrid)’s columns can be generated either automatically or manually like parent grid. You can refer [here](https://help.syncfusion.com/wpf/datagrid/columns) to know more about columns. 
 
 ### Auto-generating columns
 
@@ -846,7 +846,7 @@ void dataGrid_AutoGeneratingRelations(object sender, Syncfusion.UI.Xaml.Grid.Aut
 
 ### Creating Custom Column
 
-You can also define your own column type to [ViewDefinition.DataGrid](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridViewDefinition.html#Syncfusion_UI_Xaml_Grid_GridViewDefinition_DataGrid) like parent DataGrid. For more information about creating custom column, refer the [Custom Column support](https://help.syncfusion.com/wpf/datagrid/columns). 
+You can also define your own column type to [ViewDefinition.DataGrid](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridViewDefinition.html#Syncfusion_UI_Xaml_Grid_GridViewDefinition_DataGrid) like the parent grid. For more information about creating custom column, refer the [Custom Column support](https://help.syncfusion.com/wpf/datagrid/columns). 
 
 After creating the custom column, add the customized renderer to [CellRenderers](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_CellRenderers) collection of [DetailsViewDataGrid](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.DetailsViewDataGrid.html).
 
@@ -892,7 +892,7 @@ Now, you can add the custom column to `Columns` collection of [ViewDefinition.Da
 {% endhighlight %}
 {% endtabs %}
 
-![WPF DataGrid with Editing in Master Details View](Master-Details-View_images/wpf-datagrid-editing.png)
+![Editing in Master Details View](Master-Details-View_images/wpf-datagrid-editing.png)
 
 ## Handling events for DetailsViewDataGrid
 
@@ -1155,9 +1155,9 @@ public class CommandHandler : ICommand
 {% endhighlight %}
 {% endtabs %}
 
-### Getting the parent DataGrid while editing DetailsViewDataGrid
+### Getting the parent Data Grid while editing DetailsViewDataGrid
 
-You can get the corresponding parent DataGrid while editing [DetailsViewDataGrid](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.DetailsViewDataGrid.html) through its [CurrentCellBeginEdit](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html) event handler. 
+You can get the corresponding parent grid while editing [DetailsViewDataGrid](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.DetailsViewDataGrid.html) through its [CurrentCellBeginEdit](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html) event handler. 
 
 {% tabs %}
 {% highlight c# %}
@@ -1175,13 +1175,13 @@ Here, sender is [ViewDefinition.DataGrid](https://help.syncfusion.com/cr/wpf/Syn
 
 ## Column sizing 
 
-SfDataGrid allows you to apply column sizer to `DetailsViewDataGrid` by setting the [GridViewDefinition.DataGrid.ColumnSizer](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_ColumnSizer) like parent DataGrid. For more information, refer the [Column Sizing](https://help.syncfusion.com/wpf/datagrid/autosize-columns) section.
+The Data Grid allows you to apply column sizer to `DetailsViewDataGrid` by setting the [GridViewDefinition.DataGrid.ColumnSizer](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_ColumnSizer) like parent grid. For more information, refer the [Column Sizing](https://help.syncfusion.com/wpf/datagrid/autosize-columns) section.
 
-### Disable resizing of last column in parent DataGrid 
+### Disable resizing of last column in parent Data Grid 
 
-By default, the [DetailsViewDataGrid](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.DetailsViewDataGrid.html) is clipped while resizing the last column of parent DataGrid if the parent DataGrid width is less than the `DetailsViewDataGrid` width. 
+By default, the [DetailsViewDataGrid](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.DetailsViewDataGrid.html) is clipped while resizing the last column of the parent grid if the parent grid width is less than the `DetailsViewDataGrid` width. 
 
-You can disable the resizing of last column of parent DataGrid by setting [DetailsViewManager.DisableLastColumnResizing](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.DetailsViewManager.html#Syncfusion_UI_Xaml_Grid_DetailsViewManager_DisableLastColumnResizingProperty) attached property to `true`. 
+You can disable the resizing of last column of the parent grid by setting [DetailsViewManager.DisableLastColumnResizing](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.DetailsViewManager.html#Syncfusion_UI_Xaml_Grid_DetailsViewManager_DisableLastColumnResizingProperty) attached property to `true`. 
 
 {% tabs %}
 {% highlight xaml %}
@@ -1197,13 +1197,13 @@ DetailsViewManager.SetDisableLastColumnResizing(this.dataGrid, true);
 {% endhighlight %}
 {% endtabs %}
 
-### Resizing parent DataGrid and DetailsViewDataGrid simultaneously
+### Resizing parent Data Grid and DetailsViewDataGrid simultaneously
 
-By default, [DetailsViewDataGrid](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.DetailsViewDataGrid.html) column width will not be adjusted while resizing the parent DataGrid’s columns. You can adjust DetailsViewDataGrid’s column width simultaneously while resizing parent DataGrid. This can be achieved by handling [DetailsViewLoading](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html) and [ResizingColumns](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html) events.
+By default, [DetailsViewDataGrid](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.DetailsViewDataGrid.html) column width will not be adjusted while resizing the parent grid’s columns. You can adjust DetailsViewDataGrid’s column width simultaneously while resizing the parent grid. This can be achieved by handling [DetailsViewLoading](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html) and [ResizingColumns](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html) events.
 
 N> It is applicable only when the parent and [DetailsViewDataGrid](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.DetailsViewDataGrid.html) having same number of columns.
 
-The column width of `DetailsViewDataGrid` is set based on the parent DataGrid’s column in [DetailsViewLoading](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html) event.
+The column width of `DetailsViewDataGrid` is set based on the parent grid’s column in [DetailsViewLoading](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html) event.
 
 {% tabs %}
 {% highlight c# %}
@@ -1232,7 +1232,7 @@ void dataGrid_DetailsViewLoading(object sender, DetailsViewLoadingAndUnloadingEv
 {% endhighlight %}
 {% endtabs %}
 
-When the column is resized in parent DataGrid column, then the new [Width](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridColumnBase.html#Syncfusion_UI_Xaml_Grid_GridColumnBase_Width) is set to corresponding column of [DetailsViewDataGrid](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.DetailsViewDataGrid.html) based on the [ColumnIndex](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.ResizingColumnsEventArgs.html#Syncfusion_UI_Xaml_Grid_ResizingColumnsEventArgs_ColumnIndex) argument in [ResizingColumns](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html) event.
+When the column is resized in parent grid column, then the new [Width](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridColumnBase.html#Syncfusion_UI_Xaml_Grid_GridColumnBase_Width) is set to corresponding column of [DetailsViewDataGrid](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.DetailsViewDataGrid.html) based on the [ColumnIndex](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.ResizingColumnsEventArgs.html#Syncfusion_UI_Xaml_Grid_ResizingColumnsEventArgs_ColumnIndex) argument in [ResizingColumns](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html) event.
 
 {% tabs %}
 {% highlight c# %}
@@ -1381,11 +1381,11 @@ N> To display parent and [DetailsViewDataGrid](https://help.syncfusion.com/cr/wp
 
 ## Selection
 
-[DetailsViewDataGrid](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.DetailsViewDataGrid.html) allows you to select rows or cells based on the [SelectionUnit](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_SelectionUnit) property in its parent DataGrid. 
+[DetailsViewDataGrid](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.DetailsViewDataGrid.html) allows you to select rows or cells based on the [SelectionUnit](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_SelectionUnit) property in its parent grid. 
 
 ### Getting the selected DetailsViewDataGrid
 
-You can get the currently selected [DetailsViewDataGrid](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.DetailsViewDataGrid.html) by using the [SelectedDetailsViewGrid](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_SelectedDetailsViewGrid) property of parent DataGrid.
+You can get the currently selected [DetailsViewDataGrid](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.DetailsViewDataGrid.html) by using the [SelectedDetailsViewGrid](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_SelectedDetailsViewGrid) property of the parent grid.
 
 {% tabs %}
 {% highlight c# %}
@@ -1401,7 +1401,7 @@ var detailsViewDataGrid = this.dataGrid.SelectedDetailsViewGrid.SelectedDetailsV
 {% endhighlight %}
 {% endtabs %}
 
-You can also get the selected [DetailsViewDataGrid](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.DetailsViewDataGrid.html) using [GetDataGrid](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.Helpers.SelectionHelper.html#Syncfusion_UI_Xaml_Grid_Helpers_SelectionHelper_GetDataGrid_Syncfusion_UI_Xaml_Grid_SfDataGrid_) helper method which returns the DataGrid that contains the current cell.
+You can also get the selected [DetailsViewDataGrid](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.DetailsViewDataGrid.html) using [GetDataGrid](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.Helpers.SelectionHelper.html#Syncfusion_UI_Xaml_Grid_Helpers_SelectionHelper_GetDataGrid_Syncfusion_UI_Xaml_Grid_SfDataGrid_) helper method which returns the Data Grid that contains the current cell.
 
 {% tabs %}
 {% highlight c# %}
@@ -1434,7 +1434,7 @@ var selectedItems = this.dataGrid.SelectedDetailsViewGrid.SelectedItems;
 
 ### Getting the CurrentCell of DetailsViewDataGrid
 
-You can get the [CurrentCell](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridCurrentCellManager.html#Syncfusion_UI_Xaml_Grid_GridCurrentCellManager_CurrentCell) of [DetailsViewDataGrid](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.DetailsViewDataGrid.html) by using the [SelectedDetailsViewGrid](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_SelectedDetailsViewGrid) property of parent DataGrid or [CurrentCellBeginEdit](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html) event of `DetailsViewDataGrid`.
+You can get the [CurrentCell](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridCurrentCellManager.html#Syncfusion_UI_Xaml_Grid_GridCurrentCellManager_CurrentCell) of [DetailsViewDataGrid](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.DetailsViewDataGrid.html) by using the [SelectedDetailsViewGrid](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_SelectedDetailsViewGrid) property of the parent grid or [CurrentCellBeginEdit](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html) event of `DetailsViewDataGrid`.
 
 {% tabs %}
 {% highlight c# %}
@@ -1451,9 +1451,9 @@ void FirstLevelNestedGrid_CurrentCellBeginEdit(object sender, CurrentCellBeginEd
 
 You can refer [here](#handling-events-for-detailsviewdatagrid) to know about handling events for `DetailsViewDataGrid`.
 
-### Getting the parent DataGrid
+### Getting the parent Data Grid
 
-You can get the immediate parent DataGrid of corresponding [DetailsViewDataGrid](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.DetailsViewDataGrid.html) through [GetParentDataGrid](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.Helpers.SelectionHelper.html#Syncfusion_UI_Xaml_Grid_Helpers_SelectionHelper_GetParentDataGrid_Syncfusion_UI_Xaml_Grid_SfDataGrid_) helper method.
+You can get the immediate parent grid of corresponding [DetailsViewDataGrid](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.DetailsViewDataGrid.html) through [GetParentDataGrid](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.Helpers.SelectionHelper.html#Syncfusion_UI_Xaml_Grid_Helpers_SelectionHelper_GetParentDataGrid_Syncfusion_UI_Xaml_Grid_SfDataGrid_) helper method.
 
 {% tabs %}
 {% highlight c# %}
@@ -1481,7 +1481,7 @@ var detailsViewDataGrid = this.dataGrid.GetDetailsViewGrid(0, "ProductDetails");
 
 ### Programmatic Selection in DetailsViewDataGrid
 
-In [DetailsViewDataGrid](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.DetailsViewDataGrid.html), you can add or remove the selection programmatically like parent DataGrid. You can get particular `DetailsViewDataGrid` by using [DetailsViewLoading](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html) event or [GetDetailsViewGrid](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.Helpers.SelectionHelper.html#Syncfusion_UI_Xaml_Grid_Helpers_SelectionHelper_GetDetailsViewGrid_Syncfusion_UI_Xaml_Grid_SfDataGrid_System_Int32_) method to process the selection operations.
+In [DetailsViewDataGrid](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.DetailsViewDataGrid.html), you can add or remove the selection programmatically like parent grid. You can get particular `DetailsViewDataGrid` by using [DetailsViewLoading](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html) event or [GetDetailsViewGrid](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.Helpers.SelectionHelper.html#Syncfusion_UI_Xaml_Grid_Helpers_SelectionHelper_GetDetailsViewGrid_Syncfusion_UI_Xaml_Grid_SfDataGrid_System_Int32_) method to process the selection operations.
 
 #### Selecting records
 
@@ -1531,7 +1531,7 @@ detailsViewDataGrid.SelectionController.SelectRows(1, 2);
 {% endhighlight %}
 {% endtabs %}
 
-Here, first and second rows are selected in the `DetailsViewDataGrid` which is present in second row of the parent DataGrid.
+Here, first and second rows are selected in the `DetailsViewDataGrid` which is present in second row of the parent Data Grid.
 
 #### Cell selection
 
@@ -1539,7 +1539,7 @@ You can select cells also by using [SelectCell](https://help.syncfusion.com/cr/w
 
 ### Programmatically expand and bring DetailsViewDataGrid into view
 
-SfDataGrid allows you to bring the specified [DetailsViewDataGrid](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.DetailsViewDataGrid.html) in to view by using [DetailsViewManager.BringInToView](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.DetailsViewManager.html#Syncfusion_UI_Xaml_Grid_DetailsViewManager_BringIntoView_System_Int32_) method.
+The Data Grid allows you to bring the specified [DetailsViewDataGrid](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.DetailsViewDataGrid.html) in to view by using [DetailsViewManager.BringInToView](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.DetailsViewManager.html#Syncfusion_UI_Xaml_Grid_DetailsViewManager_BringIntoView_System_Int32_) method.
 
 Before bringing the `DetailsViewDataGrid` into view, you have to expand the corresponding parent record if it is not already expanded.
 
@@ -1597,7 +1597,7 @@ You can get the sample from [here](https://www.syncfusion.com/downloads/support/
 
 ### Customizing Selection for DetailsViewDataGrid
 
-You can also customize the selection behavior of `DetailsViewDataGrid` like the parent DataGrid. For more information about customizing selection behavior, you can refer [here](https://help.syncfusion.com/wpf/datagrid/selection).
+You can also customize the selection behavior of `DetailsViewDataGrid` like the parent grid. For more information about customizing selection behavior, you can refer [here](https://help.syncfusion.com/wpf/datagrid/selection).
 Follow the steps mentioned in selection customization section to customize selection behavior of [DetailsViewDataGrid](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.DetailsViewDataGrid.html) and set the customized selection controller to [DetailsViewDataGrid.SelectionController](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_SelectionController) in [DetailsViewLoading](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html) event.
 
 {% tabs %}
@@ -1626,7 +1626,7 @@ N> For customizing selection in second level nested grid, you can refer [here](#
 
 ## Appearance customization
 
-The visual appearance of [DetailsViewDataGrid](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.DetailsViewDataGrid.html) can be customized like parent DataGrid through [Styling and Templates support](https://help.syncfusion.com/wpf/datagrid/styles-and-templates) in SfDataGrid. 
+The visual appearance of [DetailsViewDataGrid](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.DetailsViewDataGrid.html) can be customized like parent grid through [Styling and Templates support](https://help.syncfusion.com/wpf/datagrid/styles-and-templates) in the Data Grid. 
 
 ### Changing Header appearance of DetailsViewDataGrid
 
@@ -1674,7 +1674,7 @@ void dataGrid_AutoGeneratingRelations(object sender, Syncfusion.UI.Xaml.Grid.Aut
 {% endhighlight %}
 {% endtabs %}
 
-![Changing Header Appearance of WPF Master Details View DataGrid](Master-Details-View_images/wpf-datagrid-header-customization.png)
+![Changing Header Appearance of Master Details View](Master-Details-View_images/wpf-datagrid-header-customization.png)
 
 ### Hiding header row of Master-Details View
 
@@ -1702,11 +1702,11 @@ FirstLevelNestedGrid.HeaderRowHeight = 0;
 {% endhighlight %}
 {% endtabs %}
 
-![WPF Nested DataGrid without Header](Master-Details-View_images/wpf-nested-datagrid-without-header.png)
+![Nested Grid without Header](Master-Details-View_images/wpf-nested-datagrid-without-header.png)
 
 ### Customizing padding of the DetailsViewDataGrid
 
-The padding of [DetailsViewDataGrid](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.DetailsViewDataGrid.html) can be customized through the [DetailsViewPadding](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_DetailsViewPadding) property and it will be set to its corresponding parent DataGrid.
+The padding of [DetailsViewDataGrid](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.DetailsViewDataGrid.html) can be customized through the [DetailsViewPadding](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_DetailsViewPadding) property and it will be set to its corresponding parent grid.
 
 {% tabs %}
 {% highlight xaml %}
@@ -1730,13 +1730,13 @@ this.dataGrid.DetailsViewPadding = new Thickness(15);
 {% endhighlight %}
 {% endtabs %}
 
-![Customized Padding of WPF Nested DataGrid](Master-Details-View_images/wpf-datagrid-padding-customization.png)
+![Customized Padding of Nested Grid](Master-Details-View_images/wpf-datagrid-padding-customization.png)
 
 N> For customizing appearance for second level nested grid, you can refer [here](#defining-properties-for-detailsviewdatagrid).
 
 ### Customize ExpanderColumn width 
 
-You can customize the width of ExpanderColumn in SfDataGrid by using [ExpanderColumnWidth](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_ExpanderColumnWidth) property as like below.
+You can customize the width of ExpanderColumn in the Data Grid by using [ExpanderColumnWidth](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_ExpanderColumnWidth) property as like below.
 
 {% tabs %}
 {% highlight xaml %}
@@ -1752,7 +1752,7 @@ this.dataGrid.ExpanderColumnWidth = 50;
 
 ## Expanding and collapsing the DetailsViewDataGrid programmatically
 
-SfDataGrid allows you to expand or collapse the [DetailsViewDataGrid](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.DetailsViewDataGrid.html) programmatically in different ways. 
+The Data Grid allows you to expand or collapse the [DetailsViewDataGrid](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.DetailsViewDataGrid.html) programmatically in different ways. 
 
 ### Expand or collapse all the DetailsViewDataGrid
  
@@ -1790,7 +1790,7 @@ this.dataGrid.CollapseDetailsViewAt(0);
 
 ## Hiding expander when parent record’s relation property has an empty collection or null
 
-By default, the expander will be visible for all the data rows in parent DataGrid even if its [RelationalColumn](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.ViewDefinition.html#Syncfusion_UI_Xaml_Grid_ViewDefinition_RelationalColumn) property has an empty collection or null. 
+By default, the expander will be visible for all the data rows in parent grid even if its [RelationalColumn](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.ViewDefinition.html#Syncfusion_UI_Xaml_Grid_ViewDefinition_RelationalColumn) property has an empty collection or null. 
 
 You can hide the expander from the view when corresponding `RelationalColumn` property has an empty collection or null, by setting [HideEmptyGridViewDefinition](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_HideEmptyGridViewDefinition) property as `true`.
 
@@ -1804,13 +1804,13 @@ You can hide the expander from the view when corresponding `RelationalColumn` pr
 {% endhighlight %}
 {% endtabs %}
 
-![WPF Master Details View DataGrid displays Expander View](Master-Details-View_images/wpf-datagrid-expander-view.png)
+![Expander View](Master-Details-View_images/wpf-datagrid-expander-view.png)
 
-## Hiding GridDetailsViewIndentCell in SfDataGrid
+## Hiding GridDetailsViewIndentCell in the Data Grid
 
 [GridDetailsViewIndentCell](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridDetailsViewIndentCell.html) is used to indicate the space between the expander and first column of the [DetailsViewDataGrid](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.DetailsViewDataGrid.html). You can hide the [GridDetailsViewIndentCell](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridDetailsViewIndentCell.html) by setting [SfDataGrid.ShowDetailsViewIndentCell](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_ShowDetailsViewIndentCell) property to `False` for the respective parent grid.
 
-![WPF DataGrid displays Master Details View with Indent Cells](Master-Details-View_images/wpf-datagrid-indent-cell.png)
+![Master Details View with Indent Cells](Master-Details-View_images/wpf-datagrid-indent-cell.png)
 
 {% tabs %}
 {% highlight xaml %}
@@ -1834,11 +1834,11 @@ dataGrid.ShowDetailsViewIndentCell= False;
 {% endhighlight %}
 {% endtabs %}
 
-![WPF DataGrid displays Master Details View without Indentation](Master-Details-View_images/wpf-datgrid-without-indent-cell.png)
+![Master Details View without Indentation](Master-Details-View_images/wpf-datgrid-without-indent-cell.png)
 
 ## Hiding the details view expander icon based on child items count
 
-By default, the state of expander icon is visible for all the data rows in parent DataGrid even if its `RelationalColumn` property has an empty collection or null.
+By default, the state of expander icon is visible for all the data rows in parent grid even if its `RelationalColumn` property has an empty collection or null.
 
 You can customize hiding the details view expander icon by handling the `SfDataGrid.QueryDetailsViewExpanderState` event. This event occurs when expander icon is changed on expanding or collapsing the details view. You can hide the expander icon by setting the `ExpanderVisibility` property to `false` in the `SfDataGrid.QueryDetailsViewExpanderState` event based on condition.
 
@@ -1861,7 +1861,7 @@ private void DataGrid_QueryDetailsViewExpanderState(object sender, Syncfusion.UI
 {% endtabs %} 
 
 The following screenshot illustrates how to hide the state of expander icon based on child items count.
-![Hidw Expander Icon in WPF Master Details View DataGird](Master-Details-View_images/wpf-datagrid-hide-expander-icon.png)
+![Hide Expander Icon based on child items count](Master-Details-View_images/wpf-datagrid-hide-expander-icon.png)
 You can download the sample from the following link: [Sample](https://github.com/SyncfusionExamples/how-to-hide-the-detailsview-expander-icon-based-on-child-records-count-wpf-datagrid).
 
 ## Change DetailsViewDataGrid ItemsSource at runtime using LiveDataUpdateMode property
@@ -2035,7 +2035,7 @@ N>  To cancel expanding or collapsing operation in second level nested grid, you
 
 ## Master-Details View limitations 
 
-Following are the limitations of Master-Details View in SfDataGrid.
+Following are the limitations of Master-Details View in the Data Grid.
 
 1. `DetailsViewDataGrid` does not have `GroupDropArea`.
 2. `DetailsViewDataGrid` does not support `AutoGenerateColumnsMode.ResetAll`. Instead it works based on `Reset`.
@@ -2043,11 +2043,11 @@ Following are the limitations of Master-Details View in SfDataGrid.
 4. Master-Details View doesn’t support [AllowFrozenGroupHeader](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_AllowFrozenGroupHeaders).
 5. Master-Details View doesn’t support Freeze Pane.
 6. Master-Details View doesn’t support `AutoRowHeight`.
-7. For `DetailsViewDataGrid`, `SelectionMode`, `SelectionUnit`, `NavigationMode`, `DetailsViewPadding` properties are assigned from its parent grid only. So both parent DataGrid and `DetailsViewDataGrid` cannot have different values for these properties.
+7. For `DetailsViewDataGrid`, `SelectionMode`, `SelectionUnit`, `NavigationMode`, `DetailsViewPadding` properties are assigned from its parent grid only. So both the parent grid and `DetailsViewDataGrid` cannot have different values for these properties.
 
 ## See Also
 
-[How to maintain the DetailsView expanded state when Sorting and Grouping the DataGrid (SfDataGrid)?](https://support.syncfusion.com/kb/article/9579/how-to-maintain-the-detailsview-expanded-state-when-sorting-and-grouping-the-datagrid)
+[How to maintain the DetailsView expanded state when Sorting and Grouping the Data Grid?](https://support.syncfusion.com/kb/article/9579/how-to-maintain-the-detailsview-expanded-state-when-sorting-and-grouping-the-datagrid)
 
 [How to set the background for selected DetailsViewGrid?](https://support.syncfusion.com/kb/article/8282/how-to-set-the-background-for-selected-detailsviewgrid-in-wpf-datagrid-sfdatagrid)
 
@@ -2055,7 +2055,7 @@ Following are the limitations of Master-Details View in SfDataGrid.
 
 [How to export the DetailsView records in expanded state to Excel?](https://support.syncfusion.com/kb/article/6537/how-to-export-detailsview-records-in-expanded-state-from-wpf-datagrid)
 
-[How to print the SfDataGrid with DetailsView?](https://support.syncfusion.com/kb/article/6380/how-to-print-wpf-datagrid-sfdatagrid-with-detailsview)
+[How to print the Data Grid with DetailsView?](https://support.syncfusion.com/kb/article/6380/how-to-print-wpf-datagrid-sfdatagrid-with-detailsview)
 
 [How to get the SelectedItem of the DetailsView?](https://support.syncfusion.com/kb/article/6337/how-to-get-the-selecteditem-of-the-detailsview-in-wpf-datagrid-sfdatagrid)
 
