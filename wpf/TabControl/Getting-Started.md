@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started with WPF TabControl | Syncfusion®
-description: Learn how to get started with the Syncfusion WPF TabControl, its elements, and more details.
+description: Learn how to get started with the Syncfusion WPF TabControl, create tabs, configure layouts, and explore its key features and customization options.
 platform: wpf
 control: TabControlExt
 documentation: ug
