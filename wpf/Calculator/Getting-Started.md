@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Getting Started with WPF SfCalculator | Syncfusion®
-description: Learn how to get started with the Syncfusion WPF SfCalculator control, its elements, and more details.
+title: Getting Started with WPF Calculator | Syncfusion®
+description: Learn how to get started with the Syncfusion WPF Calculator control, its elements, and more details.
 platform: wpf
-control: SfCalculator
+control: Calculator
 documentation: ug
 ---
 

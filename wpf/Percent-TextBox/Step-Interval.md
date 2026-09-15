@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Step Interval in WPF PercentTextBox | Syncfusion®
-description: Define the increment or decrement step used by the Syncfusion WPF PercentTextBox control when changing the value with spinner or keys.
+title: Step Interval in WPF Percent TextBox | Syncfusion®
+description: Define the increment or decrement step used by the Syncfusion WPF Percent TextBox control when changing the value with spinner or keys.
 platform: wpf
-control: PercentTextBox 
+control: Percent TextBox 
 documentation: ug
 ---
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Full Screen in WPF DocumentContainer | Syncfusion®
+title: Full Screen in WPF Tabbed MDI Form | Syncfusion®
 description: Display the active document of the Syncfusion WPF Tabbed MDI Form (DocumentContainer) control in full-screen mode for focused viewing.
 platform: wpf
 control: Tabbed MDI Form

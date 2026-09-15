@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Getting Started with WPF IntegerTextBox | Syncfusion®
-description: Learn how to get started with the Syncfusion WPF IntegerTextBox control. Explore setup, features, examples, and customization options.
+title: Getting Started with WPF Integer TextBox | Syncfusion®
+description: Learn how to get started with the Syncfusion WPF Integer TextBox control. Explore setup, features, examples, and customization options.
 platform: wpf
-control: IntegerTextBox 
+control: IntegerTextBox
 documentation: ug
 ---
 

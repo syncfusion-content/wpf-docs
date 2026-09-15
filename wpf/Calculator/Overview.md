@@ -1,9 +1,9 @@
 ---
 layout: post
-title: About Syncfusion® WPF SfCalculator Control | Syncfusion®
-description: Learn about introduction of Syncfusion Essential Studio WPF SfCalculator control, its features and more details.
+title: About Syncfusion® WPF Calculator Control | Syncfusion®
+description: Learn about introduction of Syncfusion Essential Studio WPF Calculator control, its features and more details.
 platform: wpf
-control: SfCalculator
+control: Calculator
 documentation: ug
 ---
 
