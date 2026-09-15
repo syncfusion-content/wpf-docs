@@ -9,7 +9,7 @@ documentation: ug
 
 # Data Population in WPF GridTreeControl 
 
-The primary requirement of the data displayed in the GridTree control is that the parent node and the child node share the same schema (i.e. have the same columns to display). To populate the GridTree control, you need to handle the RequestTreeItems event (This event gets fired for every tree node that is being populated in order to retrieve its child nodes). In the event arguments, the ParentItem property indicates the item whose children are being requested. The list of children can be set using this property. If this property is empty, it implies that the event is requesting the root nodes. The following code example illustrates a minimal RequestTreeItems handler.
+The primary requirement of the data displayed in the GridTreeControl is that the parent node and the child node share the same schema (i.e. have the same columns to display). To populate the Control, you need to handle the RequestTreeItems event (This event gets fired for every tree node that is being populated in order to retrieve its child nodes). In the event arguments, the ParentItem property indicates the item whose children are being requested. The list of children can be set using this property. If this property is empty, it implies that the event is requesting the root nodes. The following code example illustrates a minimal RequestTreeItems handler.
 
 {% highlight c# %}
 
@@ -61,9 +61,9 @@ private void treeGrid_RequestTreeItems(object sender, GridTreeRequestTreeItemsEv
 
 The only requirement on ChildList returned by the RequestTreeItems is that it should be an IEnumerable list of typed objects that share a single type.
 
-## Order and Visibility of Columns in the GridTree Control
+## Order and Visibility of Columns in the GridTreeControl
 
-The default behavior of the GridTree control is to display all simple, public properties exposed in the items provided through the RequestTreeItems event (Here, properties indicate Data Source properties, which are represented as columns in the Grid control. For eg, in Customers table, CustomerID, CompanyName, etc. are termed as properties). To control the visibility and the order of the columns that appear in the Grid Tree, you can use the GridTreeControl.Columns collection of GridTreeColumn object. The order of the GridTreeColumn objects in the Columns collection determines the display order of the columns in the Grid Tree.  
+The default behavior of the GridTreeControl is to display all simple, public properties exposed in the items provided through the RequestTreeItems event (Here, properties indicate Data Source properties, which are represented as columns in the Grid control. For eg, in Customers table, CustomerID, CompanyName, etc. are termed as properties). To control the visibility and the order of the columns that appear in the Grid Tree, you can use the GridTreeControl.Columns collection of GridTreeColumn object. The order of the GridTreeColumn objects in the Columns collection determines the display order of the columns in the Grid Tree.  
 
 * Each GridTreeColumn contains the following five properties: MappingName-The name of the property from the tree item that is bound with this column
 * HeaderText-The HeaderText property sets the text for header cell of this column. If HeaderText is empty, then the MappingName will be used as the column header text.

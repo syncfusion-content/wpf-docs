@@ -20,14 +20,14 @@ EssentialGrid for WPF is a package of powerful grid controls that provides cell-
 The EssentialGrid package is comprised of following three types of grid controls:
 
 * Grid Control
-* GridData Control
-* GridTree Control
+* GridDataControl
+* GridTreeControl
 
 Now, take closer look at the characteristics of each of these controls. 
 
 ### Grid Control
 
-This is a general-purpose grid that can be used in any form, either holding its own data or virtually bound to an external data source. It acts as a base grid for the other two types of grids (the GridData and GridTree controls). Most features are shared among the three grid types. 
+This is a general-purpose grid that can be used in any form, either holding its own data or virtually bound to an external data source. It acts as a base grid for the other two types of grids (the GridData and GridTreeControls). Most features are shared among the three grid types. 
 
 In the Grid control, each cell acts as a single entity, which is suitable for applications such as Excel simulator, where the data in the grid cells are not interrelated and need to be maintained in the specific cells themselves. You can also operate this control in virtual mode, where data is not stored in the grid’s internal data structure but comes from an external source like a data table, for example. In virtual mode, data will be dynamically loaded into the grid on demand or when users need to view the data.
 
@@ -49,9 +49,9 @@ For more detailed information about data source connections, refer to the Data B
 
 
 
-### GridTree Control
+### GridTreeControl
 
-The GridTree control serves as a multicolumn tree control that is optimized to display thousands of items. This control uses a load-on-demand architecture to quickly generate a tree view. You can toggle the view of the underlying nodes by clicking the plus-minus glyphs of a root node. This control provides complete customization options such as custom level styles, glyphs, node images, and more.
+The GridTreeControl serves as a multicolumn tree control that is optimized to display thousands of items. This control uses a load-on-demand architecture to quickly generate a tree view. You can toggle the view of the underlying nodes by clicking the plus-minus glyphs of a root node. This control provides complete customization options such as custom level styles, glyphs, node images, and more.
 
 
 
@@ -79,11 +79,11 @@ The following illustration depicts the Class Diagram for Essential Grid for WPF.
 
 This section serves as a guide on how to deploy EssentialGrid in an application.
 
-## Adding the GridTree Control to a WPF Application
+## Adding the GridTreeControl to a WPF Application
 
-This section demonstrates how to add a GridTree control to a WPF application and how to load the grid with a data source. The GridTree control can be added to an application through programmatically.
+This section demonstrates how to add a GridTreeControl to a WPF application and how to load the grid with a data source. The control can be added to an application through programmatically.
 
-### Programmatically Adding GridTree Control
+### Programmatically Adding GridTreeControl
 
 1. Create a new WPF application.
 2. Add the following Syncfusion assemblies to the project.
@@ -123,9 +123,9 @@ This section demonstrates how to add a GridTree control to a WPF application and
 
    ~~~
 
-### Data Population in the GridTree Control
+### Data Population in the GridTreeControl
 
-The previous section explained how to add the GridTree control to an application. This section explains how to populate data in the GridTree control. There are three approaches to populating data:
+The previous section explained how to add the GridTreeControl to an application. This section explains how to populate data in the GridTreeControl. There are three approaches to populating data:
 
 * With the RequestTreeItems event.
 * By self-relational collection binding.
@@ -133,11 +133,11 @@ The previous section explained how to add the GridTree control to an application
 
 ### The RequestTreeItems Event
 
-The GridTree control can populate data on demand by handling the RequestTreeItems event. GridTreeControl will receive the source of root and child nodes through this event handler. This event is triggered when initially loading and expanding nodes.
+The GridTreeControl can populate data on demand by handling the RequestTreeItems event. GridTreeControl will receive the source of root and child nodes through this event handler. This event is triggered when initially loading and expanding nodes.
 
 To populate data using this event, follow these steps:
 
-1. Create a collection of objects to bind with the GridTree control. In this example, a collection of objects containing employee information has been created.
+1. Create a collection of objects to bind with the GridTreeControl. In this example, a collection of objects containing employee information has been created.
 
    ~~~csharp
 
@@ -400,11 +400,11 @@ To populate data using this event, follow these steps:
 4. Expand the Data Population Features item in the Sample Browser.
 5. Select On-Demand Loading Demo to launch the sample.
 
-Binding a Self-Relational Collection to the GridTree Control
+Binding a Self-Relational Collection to the GridTreeControl
 
 A self-relational collection is a collection of objects in which each object has a hierarchy within. Each object will act as a parent and hold its children in an attribute. Each child acts as the next-level parent and holds children in an attribute, and so on. In this example, both child and parent will be of the same type (data type/object type). Specifying the child attribute name in ChildPropertyName of GridTreeControl will automatically fetch the hierarchy and populate it.
 
-1. Create a self-relational collection of objects to bind with the GridTree control. In this example, we have created a collection of objects containing employee information.
+1. Create a self-relational collection of objects to bind with the GridTreeControl. In this example, we have created a collection of objects containing employee information.
 
    ~~~csharp
 
@@ -725,9 +725,9 @@ A self-relational collection is a collection of objects in which each object has
 4. Expand the Data Population Features item in the Sample Browser.
 5. Select Self-Relational Data Binding Demo to launch the sample.
 
-### Binding a Data View to the GridTree Control
+### Binding a Data View to the GridTreeControl
 
-The following steps explain how to bind a data view from a database to the GridTree control.
+The following steps explain how to bind a data view from a database to the GridTreeControl.
 
 1. Connect a database to the current application. The database can be connected several ways, such as ADO.NET, LINQ to SQL, classes, and so on. In this example, a connection has been directly established to a simple northwind.sdf database.
 2. Once the connection is established, fetch the required data table from the database. In this example, the data table has been fetched from the northwind.sdf by using SQL DataAdapter.
