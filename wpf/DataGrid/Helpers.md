@@ -11,7 +11,7 @@ documentation: ug
 
 ## IndexResolver
 
-[WPF DataGrid](https://www.syncfusion.com/wpf-controls/datagrid) has [GridIndexResolver](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridIndexResolver.html) static class present in [Syncfusion.UI.Xaml.Grid](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.html) namespace that has some extension methods used to Resolve from row or column index to record or visible column index and `vice versa`. 
+[WPF Data Grid](https://www.syncfusion.com/wpf-controls/datagrid) has [GridIndexResolver](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridIndexResolver.html) static class present in [Syncfusion.UI.Xaml.Grid](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.html) namespace that has some extension methods used to Resolve from row or column index to record or visible column index and `vice versa`. 
 
 ## Example: You can find the record index from row index using ResolveToRecordIndex method.
 
@@ -37,7 +37,7 @@ Resolves row index from the record associated with <code>SfDataGrid.View.Records
 <tr>
 <td>
 ResolveStartIndexOfGroup(Group group)</td><td>
-Resolves the start index of group in DataGrid associated with <code>SfDataGrid.View.Groups</code>. When there is no group in DataGrid it returns -1.</td></tr>
+Resolves the start index of group in the Data Grid associated with <code>SfDataGrid.View.Groups</code>. When there is no group in the Data Grid it returns -1.</td></tr>
 <tr>
 <td>
 ResolveToTableSummaryIndex(int rowIndex)</td><td>
@@ -95,7 +95,7 @@ Decides whether the given row index is <code>HeaderTableSummaryRow</code> or not
 
 ## Dispose
 
-The method is associated with relinquishes memory and clears all references associated with SfDataGrid. When you call this method, it releases all the reference for SfDataGrid. So the memory it is occupying using the DataGrid is reclaimed. You have to call `SfDataGrid.Dispose` method to release the memory.
+The method is associated with relinquishes memory and clears all references associated with the Data Grid. When you call this method, it releases all the reference for the Data Grid. So the memory it is occupying using the Data Grid is reclaimed. You have to call `SfDataGrid.Dispose` method to release the memory.
 
 
 

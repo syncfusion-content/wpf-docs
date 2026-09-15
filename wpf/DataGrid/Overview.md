@@ -10,23 +10,23 @@ documentation: ug
 
 # About Syncfusion® WPF Data Grid Control
 
-The [WPF DataGrid](https://www.syncfusion.com/wpf-controls/datagrid) (SfDataGrid) control for WPF is used to display collection of data in rows and columns. The SfDataGrid control includes editing, exporting and data shaping features (sorting, grouping, filtering and etc) that allows the end users to easily manage the data. 
+The [WPF Data Grid](https://www.syncfusion.com/wpf-controls/datagrid) (SfDataGrid) control for WPF is used to display collection of data in rows and columns. Data Grid includes editing, exporting and data shaping features (sorting, grouping, filtering and etc) that allows the end users to easily manage the data. 
 
-Following are the key features of SfDataGrid control
+Following are the key features of Data Grid
 
 * **Data binding** – Supports to bind different types of data sources.
 * **Selection** – Support for row and also cell selection.
 * **Editing** – Interactive support to edit with different column types.
 * **Columns** – Support for various column types including unbound columns.
-* **Sorting** – Interactive support to sort the data in SfDataGrid.
-* **Grouping** – Interactive support to group the data in SfDataGrid.
+* **Sorting** – Interactive support to sort the data in Data Grid.
+* **Grouping** – Interactive support to group the data in Data Grid.
 * **Summaries** – Extensive support to show concise information about the individual data columns or groups of rows.
 * **Filtering** – Interactive support for filtering data as like in Excel.
 * **Data validation** – Support to validate the data on errors.
 * **Data virtualization** – Support for different modes of data virtualization such as paging, incremental loading.
 * **Master-Detail View** – Support to display relational data using hierarchies. 
 * **Printing and Exporting** – Support to print and also export the data to Excel, PDF.
-* **Styling** – Extensive support for customizing styles of cells and rows in SfDataGrid.
+* **Styling** – Extensive support for customizing styles of cells and rows in Data Grid.
 * **Stacked Headers** – Extensive support to show multiple headers called stacked headers.
 * **Unbound rows** – Support to display unbound rows.
 * **Touch support** – Complete support for resizing, drag-drop column, sorting, filtering, grouping and etc in touch devices.
@@ -51,12 +51,12 @@ The [GridTreeControl](https://help.syncfusion.com/wpf/classic/gridtree/overview)
 
 The [GridDataControl](https://help.syncfusion.com/wpf/classic/griddata/overview) and [SfDataGrid](https://www.syncfusion.com/wpf-controls/datagrid) controls are used to display collection of data in rows and columns. These controls support the data binding directly. 
 
-1. **SfDataGrid** - SfDataGrid is designed based on the WPF template-based architecture that provides support to customize the Grid easily and fully supports binding. 
+1. **SfDataGrid** - Data Grid is designed based on the WPF template-based architecture that provides support to customize the Grid easily and fully supports binding. 
 2. **GridDataControl** - GridDataControl is designed based on the cell-oriented architecture of the Windows Forms Grid control that provides more control over cells and supports for Excel-like features. 
 
-Both SfDataGrid and GridDataControl almost have the same set of features. But SfDataGrid control offers rich set of features over GridDataControl. When you want cell level customization and excel-like features you can use GridDataControl. When you want performance, customization features like styles & template features specific to WPF, you can use SfDataGrid control. Comparatively, the performance of SfDataGrid control is better than the GridDataControl.
+Both SfDataGrid and GridDataControl almost have the same set of features. But SfDataGrid control offers rich set of features over GridDataControl. When you want cell level customization and excel-like features you can use GridDataControl. When you want performance, customization features like styles & template features specific to WPF, you can use SfDataGrid control. Comparatively, the performance of Data Grid is better than the GridDataControl.
 
-N> `GridDataControl` is marked as classic control. In future, new features & enhancements will be added only in `SfDataGrid`. It recommended to use `SfDataGrid`.
+N> `GridDataControl` is marked as classic control. In future, new features & enhancements will be added only in `SfDataGrid`. It recommended to use Data Grid.
 
 You can see the list of some of the specific API difference between `GridDataControl` and `SfDataGrid` as follows:
 
@@ -186,9 +186,9 @@ You can see the list of some of the specific API difference between `GridDataCon
 <td>The number of columns is freeze from right.</td>
 </tr>
 </table>
-You can see the list of rich set of features in `SfDataGrid` over `GridDataControl` as follows:
+You can see the list of rich set of features in Data Grid over `GridDataControl` as follows:
 
-Rich set of features in `SfDataGrid` over `GridDataControl`.
+Rich set of features in Data Grid over `GridDataControl`.
 
 <table>
 <tr>
@@ -224,8 +224,8 @@ For more information about IEditableObject refer {{ '[IEditableObject](https://h
 Incremental Loading
 </td>
 <td>
-{{ '[IncrementalLoading](https://help.syncfusion.com/wpf/datagrid/data-virtualization#incremental-loading)' | markdownify }} allows you to load a subset of data to 
-SfDataGrid sequentially. It provides support for fast and fluid scrolling and loading a huge set of data.
+{{ '[IncrementalLoading](https://help.syncfusion.com/wpf/datagrid/data-virtualization#incremental-loading)' | markdownify }} allows you to load a subset of data to
+Data Grid sequentially. It provides support for fast and fluid scrolling and loading a huge set of data.
 </td>
 </tr>
 <tr>
@@ -233,8 +233,8 @@ SfDataGrid sequentially. It provides support for fast and fluid scrolling and l
 Printing
 </td>
 <td>
-The Printing feature in SfDataGrid is more flexible and customizable. It also provides a good performance when 
-compared to GridDataControl.For more information about CustomPrinting, click {{ '[here](https://help.syncfusion.com/wpf/datagrid/printing)' | markdownify }}.The PrintManager of SfDataGrid is designed to support different orientations, sizes, margins etc.
+The Printing feature in Data Grid is more flexible and customizable. It also provides a good performance when
+compared to GridDataControl.For more information about CustomPrinting, click {{ '[here](https://help.syncfusion.com/wpf/datagrid/printing)' | markdownify }}.The PrintManager of Data Grid is designed to support different orientations, sizes, margins etc.
 </td>
 </tr>
 <tr>
@@ -242,9 +242,9 @@ compared to GridDataControl.For more information about CustomPrinting, click {{ 
 Exporting To Excel
 </td>
 <td>
-SfDataGrid control provides support to Export data to Excel and returns an ExcelEngine that contains the exported 
-workbook. SfDataGrid Exporting is faster than GridDataControl. It exports the content only to the excel sheet. It 
-takes very less time to export the huge amounts of data. To know more about exporting in SfDataGrid, 
+Data Grid control provides support to Export data to Excel and returns an ExcelEngine that contains the exported
+workbook. Data Grid Exporting is faster than GridDataControl. It exports the content only to the excel sheet. It
+takes very less time to export the huge amounts of data. To know more about exporting in Data Grid, 
 click {{ '[here](https://help.syncfusion.com/wpf/datagrid/export-to-excel)' | markdownify }}.
 </td>
 </tr>
@@ -253,8 +253,8 @@ click {{ '[here](https://help.syncfusion.com/wpf/datagrid/export-to-excel)' | ma
 Exporting To PDF
 </td>
 <td>
-SfDataGrid control provides support for exporting the data into a PDF file. You can decide what are the contents 
-is need to export in PDF file. You can export Grouping, Filtering, Summaries and DetailsView, StackedHeaders in to 
+Data Grid control provides support for exporting the data into a PDF file. You can decide what are the contents
+is need to export in PDF file. You can export Grouping, Filtering, Summaries and DetailsView, StackedHeaders in to
 PDF file.To get more information about {{ '[ExportToPdf](https://help.syncfusion.com/wpf/datagrid/export-to-pdf)' | markdownify }}.
 </td>
 </tr>
@@ -273,8 +273,8 @@ about FilterPopupPerformance, click {{ '[here](https://help.syncfusion.com/wpf/d
 DataVirtualization
 </td>
 <td>
-{{ '[DataVirtualization](https://help.syncfusion.com/wpf/datagrid/data-virtualization)' | markdownify }} is a term that achieves Virtualization 
-for the actual data objects that are bound to the DataGrid. For small collection of basic data objects, the memory consumption is not significant. However for large collections, the memory consumption becomes very significant.
+{{ '[DataVirtualization](https://help.syncfusion.com/wpf/datagrid/data-virtualization)' | markdownify }} is a term that achieves Virtualization
+for the actual data objects that are bound to Data Grid. For small collection of basic data objects, the memory consumption is not significant. However for large collections, the memory consumption becomes very significant.
 </td>
 </tr>
 </table>

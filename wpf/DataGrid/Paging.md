@@ -9,11 +9,11 @@ documentation: ug
 
 # Paging in WPF Data Grid
 
-[WPF DataGrid](https://www.syncfusion.com/wpf-controls/datagrid) provides support to manipulate the data using SfDataPager control. You can refer [SfDataPager](https://help.syncfusion.com/wpf/datapager/overview) control user guide for more information.
+[WPF Data Grid](https://www.syncfusion.com/wpf-controls/datagrid) provides support to manipulate the data using SfDataPager control. You can refer [SfDataPager](https://help.syncfusion.com/wpf/datapager/overview) control user guide for more information.
 
 ## Getting started
 
-Follow the below steps to bind SfDataGrid with SfDataPager.
+Follow the below steps to bind Data Grid with SfDataPager.
  
 1. Create `IEnumerable` collection that you want to bind and set it to [SfDataPager.Source](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Controls.DataPager.SfDataPager.html#Syncfusion_UI_Xaml_Controls_DataPager_SfDataPager_Source) property.
 
@@ -123,7 +123,7 @@ public class OrderInfo
 {% endcapture %}
 {{ codesnippet1 | OrderList_Indent_Level_1 }}
 
-![WPF DataGrid displays Multiple Pages using SfDataPager](paging_images/wpf-datagrid-multiple-page.png)
+![Multiple Pages using SfDataPager](paging_images/wpf-datagrid-multiple-page.png)
 
 ### Limitations
 
@@ -402,7 +402,7 @@ private void FilterBtn_Click(object sender, RoutedEventArgs e)
 
 
 Here, records are filtered based on the textbox text in clicking event of Filter button. Initially `PageCount` is 5 and it is changed as 3 once the records are filtered.
-![WPF DataGrid displays Altering Page Count for DataPager while Filtering](paging_images/wpf-datagrid-datapager.png)
+![Altering Page Count for DataPager while Filtering](paging_images/wpf-datagrid-datapager.png)
 
 ### Sorting complete collection
 
@@ -483,7 +483,7 @@ private void dataPager_OnDemandLoading(object sender, Syncfusion.UI.Xaml.Control
 {% endtabs %}
 
 
-![WPF DataGrid displays Sorting with loaded DataPager](paging_images/wpf-datagrid-sorting.png)
+![Sorting with loaded DataPager](paging_images/wpf-datagrid-sorting.png)
 
 ### Loading ItemsSource for page using async and await
 

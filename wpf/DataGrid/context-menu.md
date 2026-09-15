@@ -9,7 +9,7 @@ documentation: ug
 
 # Context Menu in WPF Data Grid
 
-[WPF DataGrid](https://www.syncfusion.com/wpf-controls/datagrid) (SfDataGrid) provides an entirely customizable context menu to expose the functionality on user interface. You can create context menu for different rows in an efficient manner. 
+[WPF Data Grid](https://www.syncfusion.com/wpf-controls/datagrid) provides an entirely customizable context menu to expose the functionality on user interface. You can create context menu for different rows in an efficient manner. 
 
 The below code example shows the context menu with command bindings.
 
@@ -148,7 +148,7 @@ this.dataGrid.RecordContextMenu.Items.Add(new MenuItem() { Header = "Delete" });
 {% endhighlight %}
 {% endtabs %}
 
-![Context Menu for Data Rows in WPF DataGrid](Interactive-Features_images/wpf-datagrid-row-context-menu.png)
+![Context Menu for Data Rows](Interactive-Features_images/wpf-datagrid-row-context-menu.png)
 
 
 While binding the menu item using CommandBinding you can get the command parameter as `GridRecordContextMenuInfo` which contains the record of the corresponding row.
@@ -215,7 +215,7 @@ this.dataGrid.HeaderContextMenu.Items.Add(new MenuItem() { Header = "BestFit" })
 {% endhighlight %}
 {% endtabs %}
 
-![Context Menu for Header Row in WPF DataGrid](Interactive-Features_images/wpf-datagrid-header-context-menu.png)
+![Context Menu for Header Row](Interactive-Features_images/wpf-datagrid-header-context-menu.png)
 
 
 While binding the menu item using CommandBinding you can get the parameter as `GridColumnContextMenuInfo` which contains the particular GridColumn.
@@ -276,7 +276,7 @@ this.dataGrid.GroupDropAreaContextMenu.Items.Add(new MenuItem() { Header = "Clea
 {% endhighlight %}
 {% endtabs %}
 
-![Context Menu for GroupDropArea in WPF DataGrid](Interactive-Features_images/wpf-datagrid-group-drop-area-context-menu.png)
+![Context Menu for GroupDropArea](Interactive-Features_images/wpf-datagrid-group-drop-area-context-menu.png)
 
 
 While binding the menu item using CommandBinding you can get the parameter as `GroupDropAreaContextMenuInfo`. 
@@ -341,7 +341,7 @@ this.dataGrid.GroupDropItemContextMenu.Items.Add(new MenuItem() { Header = "Clea
 {% endhighlight %}
 {% endtabs %}
 
-![Context Menu for GroupDropItem in WPF DataGrid](Interactive-Features_images/wpf-datagrid-group-drop-item-context-menu.png)
+![Context Menu for GroupDropItem](Interactive-Features_images/wpf-datagrid-group-drop-item-context-menu.png)
 
 
 While binding the menu item using CommandBinding you can get the parameter as `GridColumnContextMenuInfo` which contains the particular GridColumn.
@@ -398,7 +398,7 @@ this.dataGrid.GroupCaptionContextMenu.Items.Add(new MenuItem() { Header = "Colla
 {% endhighlight %}
 {% endtabs %}
 
-![Context Menu for GroupCaptionRows in WPF DataGrid](Interactive-Features_images/wpf-datagrid-caption-row-context-menu.png)
+![Context Menu for GroupCaptionRows](Interactive-Features_images/wpf-datagrid-caption-row-context-menu.png)
 
 
 While binding the menu item using CommandBinding you can get the command parameter as `GridRecordContextMenuInfo` which contains the record of the corresponding row.
@@ -453,7 +453,7 @@ this.dataGrid.GroupSummaryContextMenu.Items.Add(new MenuItem() { Header = "Clear
 {% endhighlight %}
 {% endtabs %}
 
-![Context Menu for GroupSummaryRows in WPF DataGrid](Interactive-Features_images/wpf-datagrid-summary-row-context-menu.png)
+![Context Menu for GroupSummaryRows](Interactive-Features_images/wpf-datagrid-summary-row-context-menu.png)
 
 
 While binding the menu item using CommandBinding you can get the command parameter as `GridRecordContextMenuInfo` which contains the record of the corresponding row.
@@ -518,7 +518,7 @@ this.dataGrid.TableSummaryContextMenu.Items.Add(new MenuItem() { Header = "Sum" 
 {% endhighlight %}
 {% endtabs %}
 
-![Context Menu for TableSummaryRows in WPF DataGrid](Interactive-Features_images/wpf-datagrid-table-summary-context-menu.png)
+![Context Menu for TableSummaryRows](Interactive-Features_images/wpf-datagrid-table-summary-context-menu.png)
 
 
 While binding the menu item using CommandBinding you can get the command parameter as `GridRecordContextMenuInfo` which contains the record of the corresponding row.
@@ -562,7 +562,7 @@ private static void OnTotalSummaryCountClicked(object obj)
 
 ### GridContextMenuOpening
 
-[GridContextMenuOpening](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html) event occurs while opening the context menu in SfDataGrid. 
+[GridContextMenuOpening](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html) event occurs while opening the context menu in Data Grid. 
 
 [GridContextMenuEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridContextMenuEventArgs.html) has the following members which provides the information about `GridContextMenuOpening` event.
 
@@ -622,7 +622,7 @@ void dataGrid_GridContextMenuOpening(object sender, GridContextMenuEventArgs e)
 {% endhighlight %}
 {% endtabs %}
        
-![Changing Context Menu for Record Cell while Opening in WPF DataGrid](Interactive-Features_images/wpf-datagrid-context-menu.png)
+![Changing Context Menu for Record Cell while Opening](Interactive-Features_images/wpf-datagrid-context-menu.png)
 
 
 ### Changing background of Context menu
@@ -647,4 +647,4 @@ You can change the appearance of the context menu by customizing the style with 
 {% endhighlight %}
 {% endtabs %}
 
-![Changing Context Menu Background in WPF DataGrid](Interactive-Features_images/wpf-datagrid-context-menu-background.png)
+![Changing Context Menu Background](Interactive-Features_images/wpf-datagrid-context-menu-background.png)

@@ -247,7 +247,7 @@ void dataGrid_QueryUnboundColumnValue(object sender, GridUnboundColumnEventsArgs
 {% endhighlight %}
 {% endtabs %}
 
-![Populating data with Unbound Column in WPF SfDataGrid](Unbound-Column_images/wpf-datagrid-populating-data.png)
+![Populating data with Unbound Column](Unbound-Column_images/wpf-datagrid-populating-data.png)
 
 ## Refreshing the unbound column at runtime
 
@@ -372,7 +372,7 @@ You can refer the [Styling](https://help.syncfusion.com/wpf/datagrid/column-type
 
 ## Customize the Unbound column behavior
 
-SfDataGrid allows you to customize the operations like key navigation and UI related interactions by overriding the corresponding renderer associated with the unbound column.  
+The Data Grid allows you to customize the operations like key navigation and UI related interactions by overriding the corresponding renderer associated with the unbound column.  
 Below table lists the available cell types for unbound column.
 
 <table>
@@ -441,7 +441,7 @@ public class GridUnBoundCellTextBoxRendererExt : GridUnBoundCellTextBoxRenderer
 {% endhighlight %}
 {% endtabs %}
 
-![Customizing Unbound Column behavior in WPF SfDataGrid](Unbound-Column_images/wpf-datagrid-unbound-column-behavior.png)
+![Customizing Unbound Column behavior](Unbound-Column_images/wpf-datagrid-unbound-column-behavior.png)
 
 ### Custom Renderer
 
