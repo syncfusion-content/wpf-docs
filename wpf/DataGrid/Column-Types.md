@@ -868,7 +868,6 @@ You can automatically convert user-entered text to uppercase or lowercase by set
                        AllowEditing="True"                       
                        ItemsSource="{Binding Orders}">
     <syncfusion:SfDataGrid.Columns>
-        <syncfusion:GridNumericColumn MappingName="OrderID" HeaderText="Order ID" />
         <syncfusion:GridTextColumn MappingName="CustomerID" HeaderText="Customer ID" />
         <syncfusion:GridTextColumn MappingName="CustomerName" HeaderText="Customer Name" CharacterCasing="Upper" />
         <syncfusion:GridTextColumn MappingName="Country" HeaderText="Country" CharacterCasing="Lower"/>
@@ -878,12 +877,10 @@ You can automatically convert user-entered text to uppercase or lowercase by set
 
 {% endhighlight %}
 {% highlight c# %}
-this.dataGrid.Columns.Add(new GridTextColumn()
-{
-    HeaderText = "Customer Name",
-    MappingName = "CustomerName",
-    CharacterCasing = CharacterCasing.Upper                                 
-});
+this.dataGrid.Columns.Add(new GridTextColumn(){MappingName = "CustomerID", HeaderText = "Customer ID"});
+this.dataGrid.Columns.Add(new GridTextColumn(){MappingName = "CustomerName", HeaderText = "Customer Name", CharacterCasing = CharacterCasing.Upper});
+this.dataGrid.Columns.Add(new GridTextColumn(){MappingName = "Country", HeaderText = "Country", CharacterCasing = CharacterCasing.Lower});
+this.dataGrid.Columns.Add(new GridTextColumn(){MappingName = "ShipCity", HeaderText = "Ship City"});
 {% endhighlight %}
 {% endtabs %}
 
