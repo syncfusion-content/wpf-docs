@@ -877,10 +877,12 @@ You can automatically convert user-entered text to uppercase or lowercase by set
 
 {% endhighlight %}
 {% highlight c# %}
-this.dataGrid.Columns.Add(new GridTextColumn(){MappingName = "CustomerID", HeaderText = "Customer ID"});
-this.dataGrid.Columns.Add(new GridTextColumn(){MappingName = "CustomerName", HeaderText = "Customer Name", CharacterCasing = CharacterCasing.Upper});
-this.dataGrid.Columns.Add(new GridTextColumn(){MappingName = "Country", HeaderText = "Country", CharacterCasing = CharacterCasing.Lower});
-this.dataGrid.Columns.Add(new GridTextColumn(){MappingName = "ShipCity", HeaderText = "Ship City"});
+this.dataGrid.AllowEditing = true;
+
+this.dataGrid.Columns.Add(new GridTextColumn() { MappingName = "CustomerID", HeaderText = "Customer ID" });
+this.dataGrid.Columns.Add(new GridTextColumn() { MappingName = "CustomerName", HeaderText = "Customer Name", CharacterCasing = CharacterCasing.Upper });
+this.dataGrid.Columns.Add(new GridTextColumn() { MappingName = "Country", HeaderText = "Country", CharacterCasing = CharacterCasing.Lower });
+this.dataGrid.Columns.Add(new GridTextColumn() { MappingName = "ShipCity", HeaderText = "Ship City" });
 {% endhighlight %}
 {% endtabs %}
 
