@@ -9,7 +9,7 @@ documentation: ug
 
 # Cell Types in WPF Excel-like Grid
 
-Essential<sup>®</sup> Grid allows the inclusion of some special controls in the grid cells. This greatly improves the usability and appearance of the grid control. This attribute of a grid cell is referred to as its Cell Type. This section lists out various cell controls that can be placed inside the grid cells. Essential<sup>®</sup> Grid currently supports 20+ cell types. It also provides support to create and use custom cell types.
+Essential<sup>®</sup> Grid allows the inclusion of some special controls in the grid cells. This greatly improves the usability and appearance of the Excel-like Grid. This attribute of a grid cell is referred to as its Cell Type. This section lists out various cell controls that can be placed inside the grid cells. Essential<sup>®</sup> Grid currently supports 20+ cell types. It also provides support to create and use custom cell types.
 
 Following is the list of built-in cell types:
 
@@ -183,7 +183,7 @@ private void Gridcontrol_QueryCellInfo(object sender, GridQueryCellInfoEventArgs
 
 Likewise, you can also add other controls from the table above. A sample output is displayed below.
 
-![Checkbox cell type in WPF GridControl](Cell-Types_images/Cell-Types_img1.jpeg)
+![Checkbox cell type](Cell-Types_images/Cell-Types_img1.jpeg)
 
 ## Button cell type
 
@@ -327,7 +327,7 @@ private void Gridcontrol_QueryCellInfo(object sender, GridQueryCellInfoEventArgs
 {% endhighlight %}
 {% endtabs %}
 
-![Editable Combo Box using ChoiceList in WPF GridControl](Cell-Types_images/Cell-Types_img2.jpeg)
+![Editable Combo Box using ChoiceList](Cell-Types_images/Cell-Types_img2.jpeg)
 
 **Setting Up Autocomplete ComboBox** 
 
@@ -353,7 +353,7 @@ private void Gridcontrol_QueryCellInfo(object sender, GridQueryCellInfoEventArgs
 {% endhighlight %}
 {% endtabs %}
 
-![Autocomplete Combo box using ChoiceList in WPF GridControl](Cell-Types_images/Cell-Types_img3.jpeg)
+![Autocomplete Combo box using ChoiceList](Cell-Types_images/Cell-Types_img3.jpeg)
 
 **Setting Up Exclusive ComboBox** 
 
@@ -379,7 +379,7 @@ private void Gridcontrol_QueryCellInfo(object sender, GridQueryCellInfoEventArgs
 {% endhighlight %}
 {% endtabs %}
 
-![Exclusive Combo box using ChoiceList in WPF GridControl](Cell-Types_images/Cell-Types_img4.jpeg)
+![Exclusive Combo box using ChoiceList](Cell-Types_images/Cell-Types_img4.jpeg)
 
 ### Using ItemsSource
 
@@ -398,7 +398,7 @@ combo1.DropDownStyle = GridDropDownStyle.Editable;
 {% endtabs %}
 
 
-![Editable Combo box using ItemsSource in WPF GridControl](Cell-Types_images/Cell-Types_img5.jpeg)
+![Editable Combo box using ItemsSource](Cell-Types_images/Cell-Types_img5.jpeg)
 
 Setting Up an Autocomplete Combo Box
 
@@ -415,7 +415,7 @@ combo2.ValueMember = "EmployeeID";
 {% endtabs %}
 
 
-![Autocomplete Combo box using ItemsSource in WPF GridControl](Cell-Types_images/Cell-Types_img6.jpeg)
+![Autocomplete Combo box using ItemsSource](Cell-Types_images/Cell-Types_img6.jpeg)
 
 Setting Up an Exclusive Combo Box
 
@@ -429,7 +429,7 @@ combo3.DropDownStyle = GridDropDownStyle.Exclusive;
 {% endhighlight  %}
 {% endtabs %}
 
-![Exclusive Combo box using ItemsSource in WPF GridControl](Cell-Types_images/Cell-Types_img7.jpeg)
+![Exclusive Combo box using ItemsSource](Cell-Types_images/Cell-Types_img7.jpeg)
 
 N> Download demo application from [GitHub](https://github.com/syncfusion/wpf-demos/tree/master/gridcontrol/Cell%20Types/ComboBoxCell)
 
@@ -459,7 +459,7 @@ dropdown1.DropDownStyle = GridDropDownStyle.Editable;
 {% endtabs %}
 
 
-![Editable Drop-down List Control in WPF GridControl](Cell-Types_images/Cell-Types_img8.jpeg)
+![Editable Drop-down List Control](Cell-Types_images/Cell-Types_img8.jpeg)
 
 Autocomplete Drop-down List Bound to LINQ source with ‘FirstName’ as its Display Member and ‘EmployeeID’ as its ValueMember.
 
@@ -481,7 +481,7 @@ dropdown2.DropDownStyle = GridDropDownStyle.AutoComplete;
 {% endhighlight  %}
 {% endtabs %}
 
-![Autocomplete Drop-down List Control in WPF GridControl](Cell-Types_images/Cell-Types_img9.jpeg)
+![Autocomplete Drop-down List Control](Cell-Types_images/Cell-Types_img9.jpeg)
 
 Exclusive Drop-down List Bound to LINQ Source with FirstName as its DisplayMember.
 
@@ -502,7 +502,7 @@ dropdown3.DropDownStyle = GridDropDownStyle.Exclusive;
 {% endhighlight  %}
 {% endtabs %}
 
-![Exclusive Drop-down List Control in WPF GridControl](Cell-Types_images/Cell-Types_img10.jpeg)
+![Exclusive Drop-down List Control](Cell-Types_images/Cell-Types_img10.jpeg)
 
 N> Download demo application from [GitHub](https://github.com/syncfusion/wpf-demos/tree/master/gridcontrol/Cell%20Types/ComboBoxCell)
 
@@ -636,7 +636,7 @@ private void Gridcontrol_QueryCellInfo(object sender, GridQueryCellInfoEventArgs
 {% endhighlight %}
 {% endtabs %}
 
-![Datetime celltype in WPF GridControl](Cell-Types_images/Cell-Types_img14.jpeg)
+![Datetime celltype](Cell-Types_images/Cell-Types_img14.jpeg)
 
 N> Download demo application from [GitHub](https://github.com/syncfusion/wpf-demos/tree/master/gridcontrol/Cell%20Types/DateTimeCell/View)
 
@@ -724,7 +724,7 @@ private void Gridcontrol_QueryCellInfo(object sender, GridQueryCellInfoEventArgs
 {% endhighlight %}
 {% endtabs %}
 
-![Integeredit celltype in WPF GridControl](Cell-Types_images/Cell-Types_img16.jpeg)
+![Integeredit celltype](Cell-Types_images/Cell-Types_img16.jpeg)
 
 N> Download demo application from [GitHub](https://github.com/syncfusion/wpf-demos/tree/master/gridcontrol/Cell%20Types/IntegerEditCell)
 
@@ -852,7 +852,7 @@ private void Gridcontrol_QueryCellInfo(object sender, GridQueryCellInfoEventArgs
 {% endhighlight  %}
 {% endtabs %}
 
-![Doubleedit celltype in WPF GridControl](Cell-Types_images/Cell-Types_img15.jpeg)
+![Doubleedit celltype](Cell-Types_images/Cell-Types_img15.jpeg)
 
 N> Download demo application from [GitHub](https://github.com/syncfusion/wpf-demos/tree/master/gridcontrol/Cell%20Types/DoubleEditCell)
 
@@ -937,7 +937,7 @@ private void Gridcontrol_QueryCellInfo(object sender, GridQueryCellInfoEventArgs
 {% endhighlight  %}
 {% endtabs %}
 
-![Currency celltype in WPF GridControl](Cell-Types_images/Cell-Types_img11.jpeg)
+![Currency celltype](Cell-Types_images/Cell-Types_img11.jpeg)
 
 Currency Cell with a Negative Currency Value and a Different Negative Pattern
 
@@ -981,7 +981,7 @@ private void Gridcontrol_QueryCellInfo(object sender, GridQueryCellInfoEventArgs
 {% endhighlight %}
 {% endtabs %}
 
-![Currency value with nagative pattern in WPF GridControl](Cell-Types_images/Cell-Types_img12.jpeg)
+![Currency value with nagative pattern](Cell-Types_images/Cell-Types_img12.jpeg)
 
 Currency Cell with a Positive Currency Value with ‘.’ as the Decimal Separator and ‘$’ as Currency Symbol
 
@@ -1023,7 +1023,7 @@ private void Gridcontrol_QueryCellInfo(object sender, GridQueryCellInfoEventArgs
 {% endhighlight  %}
 {% endtabs %}
 
-![Currency Cell with a Positive Value in WPF GridControl](Cell-Types_images/Cell-Types_img13.jpeg)
+![Currency Cell with a Positive Value](Cell-Types_images/Cell-Types_img13.jpeg)
 
 N> Download demo application from [GitHub](https://github.com/syncfusion/wpf-demos/tree/master/gridcontrol/Cell%20Types/CurrencyCell)
 
@@ -1131,7 +1131,7 @@ private void Gridcontrol_QueryCellInfo(object sender, GridQueryCellInfoEventArgs
 {% endhighlight %}
 {% endtabs %}
 
-![Percentedit celltype in WPF GridControl](Cell-Types_images/Cell-Types_img18.jpeg)
+![Percentedit celltype](Cell-Types_images/Cell-Types_img18.jpeg)
 
 N> Download demo application from [GitHub](https://github.com/syncfusion/wpf-demos/tree/master/gridcontrol/Cell%20Types/PercentEditCell)
 
@@ -1188,7 +1188,7 @@ private void Gridcontrol_QueryCellInfo(object sender, GridQueryCellInfoEventArgs
 {% endhighlight %}
 {% endtabs %}
 
-![Maskedit celltype in WPF GridControl](Cell-Types_images/Cell-Types_img17.jpeg)
+![Maskedit celltype](Cell-Types_images/Cell-Types_img17.jpeg)
 
 
 N> Download demo application from [GitHub](https://github.com/syncfusion/wpf-demos/tree/master/gridcontrol/Cell%20Types/MaskEditCell)
@@ -1315,7 +1315,7 @@ private void Gridcontrol_QueryCellInfo(object sender, GridQueryCellInfoEventArgs
 {% endhighlight %}
 {% endtabs %}
 
-![Updownedit celltype in WPF GridControl](Cell-Types_images/Cell-Types_img20.jpeg)
+![Updownedit celltype](Cell-Types_images/Cell-Types_img20.jpeg)
 
 
 N> Download demo application from [GitHub](https://github.com/syncfusion/wpf-demos/tree/master/gridcontrol/Cell%20Types/UpdownCell)
@@ -1362,7 +1362,7 @@ this.grid.Model[rowIndex, colIndex].CellValue = _flowDocument;
 {% endhighlight  %}
 {% endtabs %}
 
-![Richtextbox celltype in WPF GridControl](Cell-Types_images/Cell-Types_img19.png)
+![Richtextbox celltype](Cell-Types_images/Cell-Types_img19.png)
 
 N> Download demo application from [GitHub](https://github.com/syncfusion/wpf-demos/tree/master/gridcontrol/Cell%20Types/RichTextBoxCell)
 
@@ -1402,9 +1402,9 @@ N> Download demo application from [GitHub](https://github.com/syncfusion/wpf-dem
 
 The Nested grid's can be added inside a row, column or covered range. When you nest a grid inside a covered range you can specify whether the rows or columns derive their state from the parent control. You have multiple independent options for both rows and columns.
 
-The Nested grid cell type of WPF [GridControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Grid.GridControl.html) allows to host the one grid into another grid control. When you scroll within the parent grid, the nested grid also scrolls based on the parent grid scroller.
+The Nested grid cell type of WPF [Excel-like Grid](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Grid.GridControl.html) allows to host the one grid into another Excel-like Grid. When you scroll within the parent grid, the nested grid also scrolls based on the parent grid scroller.
 
-You can add the nested grids within the other grid control by the following ways.
+You can add the nested grids within the other Excel-like Grid by the following ways.
 
 * Nested grid inside a row or column
 * Multiple nested grid inside a covered range with its rows using row layout
@@ -1457,7 +1457,7 @@ gridControl.CoveredCells.Add(new Syncfusion.Windows.Controls.Cells.CoveredCellIn
 
 {% endtabs %}
 
-![Nestedgrid in WPF GridControl](Cell-Types_images/wpf-gridcontrol-nestedgrid.png)
+![Nestedgrid](Cell-Types_images/wpf-gridcontrol-nestedgrid.png)
 
 N> Similarly, you can also create a nested grid inside a whole column.
 
@@ -1673,7 +1673,7 @@ private GridModel GetThirdNestedGridWithSharedRowsModel()
 
 {% endtabs %}
 
-![Nested grid rows tied to the parent grid rows in WPF GridControl](Cell-Types_images/wpf-gridcontrol-nestedgrid-rows.png)
+![Nested grid rows tied to the parent grid rows](Cell-Types_images/wpf-gridcontrol-nestedgrid-rows.png)
 
 ### Multiple nested grid inside a covered range with its columns using column layout
 
@@ -1834,7 +1834,7 @@ private GridModel GetSecondNestedGridWithSharedColumnssModel()
 
 {% endtabs %}
 
-![Nested grid columns tied to the parent grid columns in WPF GridControl](Cell-Types_images/wpf-gridcontrol-nestedgrid-columns.png)
+![Nested grid columns tied to the parent grid columns](Cell-Types_images/wpf-gridcontrol-nestedgrid-columns.png)
 
 ### Nested grid inside a covered with its rows and columns independent of parent grid
 
@@ -1884,7 +1884,7 @@ gridControl.CoveredCells.Add(new CoveredCellInfo(3, 2, 5, 4));
 
 {% endtabs %}
 
-![Nested grid rows and columns independent of parent grid in WPF GridControl](Cell-Types_images/wpf-gridcontrol-nestedgrid-rows-and-columns.png)
+![Nested grid rows and columns independent of parent grid](Cell-Types_images/wpf-gridcontrol-nestedgrid-rows-and-columns.png)
 
 N> [View sample in GitHub](https://github.com/SyncfusionExamples/nestedgird-in-wpf-girdcontrol)
 
@@ -2036,7 +2036,7 @@ dropdown1.DropDownStyle = GridDropDownStyle.Editable;
 {% endhighlight  %}
 {% endtabs %}
 
-![Cutom drop-down in WPF GridControl](Cell-Types_images/Cell-Types_img26.jpeg)
+![Cutom drop-down](Cell-Types_images/Cell-Types_img26.jpeg)
 
 N> Download demo application from [GitHub](https://github.com/syncfusion/wpf-demos/tree/master/gridcontrol/Cell%20Types/CustomDropDown)
 
@@ -2155,7 +2155,7 @@ void Model_QueryCellInfo(object sender, Syncfusion.Windows.Controls.Grid.GridQue
 {% endtabs %}
 
 
-![Data template with cell template assigned in WPF GridControl](Cell-Types_images/Cell-Types_img27.jpeg)
+![Data template with cell template assigned](Cell-Types_images/Cell-Types_img27.jpeg)
 
 N> Download demo application from [GitHub](https://github.com/syncfusion/wpf-demos/tree/master/gridcontrol/Cell%20Types/DataTemplateCell)
 
@@ -2287,7 +2287,7 @@ grid.Model[10, 2].CellValue = myFlowDocument;
 {% endtabs %}
 
 
-![Richtextbox celltype in WPF GridControl](Cell-Types_images/Cell-Types_img28.jpeg)
+![Richtextbox celltype](Cell-Types_images/Cell-Types_img28.jpeg)
 
 ### Chart Cells
 
@@ -2380,7 +2380,7 @@ grid.Model.RowHeights[2] = 400d;
 {% endcapture %}
 {{ codesnippet2 | OrderList_Indent_Level_1 }}
 
-![Chart cell in WPF GridControl](Cell-Types_images/Cell-Types_img29.jpeg)
+![Chart cell](Cell-Types_images/Cell-Types_img29.jpeg)
 
 ## Inserting Images into Grid Cells
 
@@ -2428,5 +2428,5 @@ grid.Model[2, 2].ImageIndex = 1;
 
 The following output is generated using the code above.
 
-![Text image cell in WPF GridControl](Cell-Types_images/Cell-Types_img30.jpeg)
+![Text image cell](Cell-Types_images/Cell-Types_img30.jpeg)
 

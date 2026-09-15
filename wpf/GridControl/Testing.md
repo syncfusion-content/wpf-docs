@@ -9,18 +9,18 @@ documentation: ug
 
 # Testing in WPF Excel-like Grid
 
-GridControl provides support for UI Automation and VS2010 Coded UI testing. This section provides the detailed description about using them with the Grid.
+Excel-like Grid provides support for UI Automation and VS2010 Coded UI testing. This section provides the detailed description about using them with the Grid.
 
-##  Grid Control UI Automation Support
+##  Excel-like Grid UI Automation Support
 
 Microsoft UI Automation provides a single, generalized interface that automation clients can examine or use to operate the user interfaces of a variety of platforms and frameworks. For more information, see [https://learn.microsoft.com/en-us/dotnet/desktop/wpf/controls/ui-automation-of-a-wpf-custom-control?view=netframeworkdesktop-4.8](https://learn.microsoft.com/en-us/dotnet/desktop/wpf/controls/ui-automation-of-a-wpf-custom-control?view=netframeworkdesktop-4.8).
 
-With the Grid control, UI Automation is enabled for writing testable applications. It involves the patterns below.
+With the Excel-like Grid, UI Automation is enabled for writing testable applications. It involves the patterns below.
 
 
-![WPF GridControl UI Automation Providers](Testability-Frameworks_images/Testability-Frameworks_img1.png)
+![UI Automation Providers](Testability-Frameworks_images/Testability-Frameworks_img1.png)
 
-Grid control is customized for maximum performance, and thus the visuals are always virtualized. Automation Elements are generated for these live visuals alone. The different sets of automation providers implemented, provide access to the inner elements.
+Excel-like Grid is customized for maximum performance, and thus the visuals are always virtualized. Automation Elements are generated for these live visuals alone. The different sets of automation providers implemented, provide access to the inner elements.
 
 Following are the different sets of identifiers that can be obtained for the Grid:
 
@@ -31,7 +31,7 @@ Following are the different sets of identifiers that can be obtained for the Gri
 
 Each cell in the grid is considered as an Automation Element, which in itself has some providers implemented. The following figure displays the different sets of identifiers for a Grid Cell Element.
 
-![Cell element automation provider in WPF GridControl](Testability-Frameworks_images/Testability-Frameworks_img2.png)
+![Cell element automation provider](Testability-Frameworks_images/Testability-Frameworks_img2.png)
 
 
 Following are the different set of identifiers that can be obtained for each Grid Cell Element:
@@ -49,7 +49,7 @@ Let us walkthrough the following sample application that demonstrates the usage 
 
 ### API Usage
 
-Setting up an Automation Sample is very useful to understand the usage of API for Automation Peer in Grid control. Automation Elements are run on a different thread from the main GUI thread.
+Setting up an Automation Sample is very useful to understand the usage of API for Automation Peer in Excel-like Grid. Automation Elements are run on a different thread from the main GUI thread.
 
 The following set of instructions illustrates the same.
 
@@ -153,7 +153,7 @@ You can get the Extension Project of Coded UI from [this](https://www.syncfusion
 
 The architectural diagram is as follows:
 
-![Architectural Diagram of WPF GridControl testing process](Testability-Frameworks_images/Testability-Frameworks_img5.jpeg)
+![Architectural Diagram of the testing process](Testability-Frameworks_images/Testability-Frameworks_img5.jpeg)
 
 * Grid Test Plugin implements the necessary details to communicate with the VS 2010 Test Framework.
 * The Grid application host runs with a .NET Remoting channel hosted internally to communicate with the Test plugin through an interface. The data is then channeled across to the VS 2010 Test Framework to identify the Cells.

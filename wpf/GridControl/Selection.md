@@ -9,11 +9,11 @@ documentation: ug
 
 # Selection in WPF Excel-like Grid
 
-WPF GridControl supports for range and record selection modes. Selection will highlight the specified range. 
+WPF Excel-like Grid supports for range and record selection modes. Selection will highlight the specified range. 
 
 ## Selection modes
 
-There are two modes of selection available in the GridControl. They are,
+There are two modes of selection available in the Excel-like Grid. They are,
 
 * Range selection
 * Record selection 
@@ -345,11 +345,11 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 
 ## See also
 
-[How to get first and last selected row index](https://www.syncfusion.com/kb/11183)
+[How to get first and last selected row index](https://support.syncfusion.com/kb/article/9754/how-to-get-first-and-last-selected-row-index-in-wpf-gridcontrol)
 
-[How to set extended selection mode to select a row when user-click-a-cell](https://www.syncfusion.com/kb/11185)
+[How to set extended selection mode to select a row when user-click-a-cell](https://support.syncfusion.com/kb/article/9752/how-to-set-extended-selectionmode-in-wpf-gridcontrol-to-select-a-row-when-user-click-a-cell)
 
-[How to avoid selection header cell](https://www.syncfusion.com/kb/11186)
+[How to avoid selection header cell](https://support.syncfusion.com/kb/article/9751/how-to-avoid-selection-in-header-cell-of-wpf-gridcontrol)
 
 [How to programmatically invert selection](https://www.syncfusion.com/kb/11195)
 

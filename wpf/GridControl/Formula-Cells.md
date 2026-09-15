@@ -255,7 +255,7 @@ cellModel.Engine.AddFunction("SumPosNums", New GridFormulaEngine.LibraryFunction
 
 ## Function Reference Section
 
-The Syncfusion<sup>®</sup> Grid control supports 370 formulas under various categories including math, statistical, logical, engineering, information, date, time, text, web, financial, lookup, and database functions.
+The Syncfusion<sup>®</sup> Excel-like Grid supports 370 formulas under various categories including math, statistical, logical, engineering, information, date, time, text, web, financial, lookup, and database functions.
 
 ### Math & Trigonometry functions
 
