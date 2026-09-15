@@ -884,7 +884,7 @@ this.dataGrid.Columns.Add(new GridTextColumn(){MappingName = "ShipCity", HeaderT
 {% endhighlight %}
 {% endtabs %}
 
-![WPF DataGrid TextColumn CharacterCasing](Column-Types_images/wpf-datagrid-textcolumn-charactercasing.gif)
+![TextColumn CharacterCasing](Column-Types_images/wpf-datagrid-textcolumn-charactercasing.gif)
 
 N> The property only affects manually entered keystrokes. Existing values, pasted text, and programmatically assigned values are not modified.
 
