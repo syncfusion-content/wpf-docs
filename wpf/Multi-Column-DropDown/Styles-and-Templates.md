@@ -11,11 +11,11 @@ documentation: ug
 
 WPF styles and templates refer to a suite of features (styles and templates) that allows you to create visually compelling effects and to create consistent appearance for the products.
 
-This section elaborates the information to understand the possible ways, by which you can change the visual appearance of the SfMultiColumnDropDownControl. In addition, you can edit the structure of SfMultiColumnDropDownControl by using Blend and VisualStudio that enables you to customize the appearance. 
+This section elaborates the information to understand the possible ways, by which you can change the visual appearance of the WPF MultiColumn Dropdown. In addition, you can edit its structure by using Blend and VisualStudio that enables you to customize the appearance. 
 
 ## Edit Appearance in Expression Blend
 
-This section explains you how to edit the SfMultiColumnDropDownControl structure in Expression Blend. To edit the Control Template in Expression Blend, refer to the following steps.
+This section explains you how to edit the MultiColumn Dropdown structure in Expression Blend. To edit the Control Template in Expression Blend, refer to the following steps.
 
 1. Open your application in Expression Blend.        
 2. Select the SfMultiColumnDropDownControl from the window              
@@ -44,15 +44,15 @@ This section explains you how to edit the SfMultiColumnDropDownControl structure
 
 	The Create style Resources dialog prompts you to enter the name or change the name for your style, as well as to choose the location for the Style.
 
-	Now, press ‘Ok’. Expression Blend generates the style of the SfMultiColumnDropDownControl in the Resource section. You can edit the generated code in the XAML view.
+Now, press ‘Ok’. Expression Blend generates the style of the MultiColumn Dropdown in the Resource section. You can edit the generated code in the XAML view.
 
-2. Create Empty- create an empty style for the SfMultiColumnDropDownControl. When you select this option, the same Create style Resources dialog opens. You should enter the name or change the name of style and choose the location for the Style.                   
+2. Create Empty- create an empty style for the MultiColumn Dropdown. When you select this option, the same Create style Resources dialog opens. You should enter the name or change the name of style and choose the location for the Style.                   
 
-	Now, press ‘Ok’. Expression Blend generates the empty style of the SfMultiColumnDropDownControl in the Resource section. You can edit the generated code in the XAML view.
+	Now, press ‘Ok’. Expression Blend generates the empty style of the MultiColumn Dropdown in the Resource section. You can edit the generated code in the XAML view.
 
 ## Edit Appearance in VisualStudio
 
-This section explain you how to edit a SfMultiColumnDropDownControl style in Visual Studio Design View. To Edit the control style in Visual Studio, refer to the following steps,
+This section explain you how to edit a MultiColumn Dropdown style in Visual Studio Design View. To Edit the control style in Visual Studio, refer to the following steps,
 
 1. Open your application in Visual Studio.
 2. Open Design view > Select SfMultiColumnDropDownControl >Right Click on SfMultiColumnDropDownControl, Menu options is displayed.                                                                                                                                                                
@@ -73,8 +73,8 @@ This section explain you how to edit a SfMultiColumnDropDownControl style in Vis
 
 	The Create ControlTemplate Resources dialog prompts you to enter the name or change the name for your style, as well as to choose the location for the style. 
 
-	Now press ‘Ok’. Visual Studio generates the style of SfMultiColumnDropDownControl in the Resource section. You can edit the generated code in the XAML view.
+Now press ‘Ok’. Visual Studio generates the style of MultiColumn Dropdown in the Resource section. You can edit the generated code in the XAML view.
 
-2. Create Empty- Create an empty style for the SfMultiColumnDropDownControl. When you select this option, the same Create ControlTemplate Resources dialog opens. Enter the name or change the name of style and choose the location for the style.            
-	Now press ‘Ok’. Visual Studio generates the empty style of SfMultiColumnDropDownControl in the Resource section. You can edit the generated code in the XAML view.
+2. Create Empty- Create an empty style for the MultiColumn Dropdown. When you select this option, the same Create ControlTemplate Resources dialog opens. Enter the name or change the name of style and choose the location for the style.            
+Now press ‘Ok’. Visual Studio generates the empty style of MultiColumn Dropdown in the Resource section. You can edit the generated code in the XAML view.
 
