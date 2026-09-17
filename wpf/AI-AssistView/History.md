@@ -174,7 +174,7 @@ The `NavigationHeader` property sets the text displayed at the top of the naviga
 {% highlight xaml tabtitle="MainWindow.xaml" hl_lines="2" %}
 
 <syncfusion:SfAIAssistView x:Name="aiAssistView"
-                           NavigationHeader="Chat History" />
+                           NavigationHeader="Sync AI Assist" />
 
 {% endhighlight %}
 {% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="8" %}
@@ -188,7 +188,7 @@ namespace AIAssistViewHistoryWPF
         public MainWindow()
         {
             InitializeComponent();
-            aiAssistView.NavigationHeader = "Chat History";
+            aiAssistView.NavigationHeader = "Sync AI Assist";
         }
     }
 }
