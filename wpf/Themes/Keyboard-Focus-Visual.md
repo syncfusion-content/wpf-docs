@@ -8,6 +8,7 @@ documentation: ug
 ---
 
 # Keyboard Focus Visual in WPF Skin Manager
+Source: https://help.syncfusion.com/wpf/welcome-to-syncfusion-essential-wpf
 
 The [WPF Skin Manager](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSkinManager.SfSkinManager.html) allows you to apply various keyboard focus visual styles for both Syncfusion<sup>&reg;</sup> and Framework controls using the [FocusVisualKind](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSkinManager.Theme.html#Syncfusion_SfSkinManager_Theme_FocusVisualKind) property. 
 
