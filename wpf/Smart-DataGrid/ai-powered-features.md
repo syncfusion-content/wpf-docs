@@ -93,3 +93,25 @@ clear cell highlight
 ```
 
 <img alt="row-highlight" src="ai-powered-features_images\WPF-smart-datagrid-highlight.png" width="600" />
+
+## Exporting
+
+Exporting allows grid data to be exported to **Excel**, **PDF**, or both formats simultaneously using natural language commands. The AI interprets the request, determines the appropriate export format, and performs the export action without requiring users to navigate export data manually.
+
+```
+// Example Prompts
+
+// Exports the grid data to Excel format
+Export the DataGrid to Excel.
+
+// Export the grid data to PDF format
+Export the DataGrid to PDF.
+
+// Exports the grid data to both Excel and PDF formats
+Export the data 
+```
+### Excel Exporting
+<img alt="export-excel" src="ai-powered-features_images\WPF-smart-datagrid-exporting-excel.gif" width="600" />
+
+### PDF Exporting
+<img alt="export-excel" src="ai-powered-features_images\WPF-smart-datagrid-exporting-pdf.gif" width="600" />
