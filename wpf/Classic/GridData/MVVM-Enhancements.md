@@ -10,17 +10,17 @@ documentation: ug
 
 ## View – View Model Communication
 
-In MVVM, commands are used to communicate between the View and View Model when a particular action takes place in the View. The GridData control contains events for all actions. In some cases, you may have to use events to meet requirements that do not adhere to the MVVM policy; you can overcome this with the EventToCommand approach.
+In MVVM, commands are used to communicate between the View and View Model when a particular action takes place in the View. The GridDataControl contains events for all actions. In some cases, you may have to use events to meet requirements that do not adhere to the MVVM policy; you can overcome this with the EventToCommand approach.
 
-To support the EventToCommand approach, commands have been added for all events in the GridData control and tables to provide complete MVVM support.
+To support the EventToCommand approach, commands have been added for all events in the GridDataControl and tables to provide complete MVVM support.
 
 ![View and View Model communication](Getting-Started_images/Getting-Started_img162.png)
 
-GridData control has two commands for each event. The first one passes the event argument to the command as parameter, and the second one does not pass any parameter to the command. This apart, the command parameter can also be changed at Sample level.
+GridDataControl has two commands for each event. The first one passes the event argument to the command as parameter, and the second one does not pass any parameter to the command. This apart, the command parameter can also be changed at Sample level.
 
-## Adding Commands to a GridData Control
+## Adding Commands to a GridDataControl
 
-You can add commands to a GridData control in the following three ways:
+You can add commands to a GridDataControl in the following three ways:
 
 * By using Command with actual event arguments
 * By using Command with custom parameter
@@ -28,7 +28,7 @@ You can add commands to a GridData control in the following three ways:
 
 ### By using a Command with Actual Event Arguments
 
-This section explains how to add GridDataControlRecordsSelectionChangedCommandWithEventArgs command to the GridData control. The actual event arguments are passed to the Command method as parameters.
+This section explains how to add GridDataControlRecordsSelectionChangedCommandWithEventArgs command to the GridDataControl. The actual event arguments are passed to the Command method as parameters.
 
 The following code example illustrates how to define the GridDataControlRecordsSelectionChangedCommandWithEventArgs command in XAML.
 
@@ -85,7 +85,7 @@ this.SelectedCustomerID = "Customer ID : " + data.CustomerID;
 
 When you select a record while running your application, the SelectedItemChanged command is triggered with the actual GridDataRecordsSelectionChangedEventArgs event argument.
 
-![Adding commands to WPF GridData control](Getting-Started_images/Getting-Started_img163.png)
+![Adding commands](Getting-Started_images/Getting-Started_img163.png)
 
 ### Sample Location
 
@@ -95,7 +95,7 @@ A sample application can be downloaded from the following location:
 
 ## By using a Command with a Custom Parameter
 
-This section illustrates how to add the GridDataControlRecordsSelectionChangedCommand command to the GridData control and pass the GridData control as customer parameter.
+This section illustrates how to add the GridDataControlRecordsSelectionChangedCommand command to the GridDataControl and pass the control as customer parameter.
 
 The following code example can be used to define GridDataControlRecordsSelectionChangedCommand in XAML.
 
@@ -154,12 +154,12 @@ void SelectedItemChangedMethod(object parameter)
 
 When you select a record while running your application, the SelectedItemChanged command gets triggered with the custom GridDataControl parameter.
 
-![Command with custom parameter in WPF GridData control](Getting-Started_images/Getting-Started_img164.png)
+![Command with custom parameter](Getting-Started_images/Getting-Started_img164.png)
 
 
 If there is no parameter set in the View, then the parameter is passed in the method call.
 
-![Null parameter value set in View of WPF GridData control](Getting-Started_images/Getting-Started_img165.png)
+![Null parameter value set in View](Getting-Started_images/Getting-Started_img165.png)
 
 ### Sample Location
 
@@ -212,7 +212,7 @@ public class MyGridDataControlMouseMoveCommand : GridDataControlCellMouseMov
 
 {% endhighlight  %}
 
-Now, bind the behavior to the GridData control. The following code example illustrates this.
+Now, bind the behavior to the GridDataControl. The following code example illustrates this.
 
 {% highlight xaml %}
 
@@ -224,7 +224,7 @@ Now, bind the behavior to the GridData control. The following code example illus
 
 When you hover the mouse over a row while running your application, the overridden behavior class triggers and returns the current record.
 
-![Override the mouse hover behavior method in WPF GridData control](Getting-Started_images/Getting-Started_img166.png)
+![Override the mouse hover behavior method](Getting-Started_images/Getting-Started_img166.png)
 
 #### Sample Location
 

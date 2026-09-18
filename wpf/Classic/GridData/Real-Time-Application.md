@@ -14,7 +14,7 @@ Essential Grid finds a wide range of applications in real time. It is completely
 
 Essential Grid is the proper choice to use in portfolio applications, as it deals with both huge and real time data without a performance hit. This section illustrates how to employ the grid in portfolio applications.
 
-This example displays three GridData controls (GDCs) and three Chart controls hosted in a Grid control using its CellTypes feature. The three GDCs display stock details in three different views – Overview, Sector Industry View and Stock Exchange View.  Among the charts, one illustrates the performance of large portfolio account, and the other two illustrates the individual country contributions to specific portfolio accounts. You can click any portfolio account in the PortfolioAccounts chart to drill down to its contributions.
+This example displays three GridDataControls (GDCs) and three Chart controls hosted in a Grid control using its CellTypes feature. The three GDCs display stock details in three different views – Overview, Sector Industry View and Stock Exchange View.  Among the charts, one illustrates the performance of large portfolio account, and the other two illustrates the individual country contributions to specific portfolio accounts. You can click any portfolio account in the PortfolioAccounts chart to drill down to its contributions.
 
 The GDCs are extremely customized with appropriate groups and summaries in order to provide the desired view. It also highlights the change of stock values. Value increase is indicated by green foreground and decrease in values is indicated by red foreground.
 
