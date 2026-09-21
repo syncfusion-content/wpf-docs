@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Item Navigation in WPF Carousel | Syncfusion®
-description: Navigate WPF Carousel items using keyboard shortcuts, mouse wheel scrolling, scroll bars, commands, and looping support.
+description: Navigate carousel items using keyboard shortcuts, mouse wheel scrolling, scroll bars, commands, and looping support.
 platform: wpf
 control: Carousel 
 documentation: ug
@@ -9,11 +9,11 @@ documentation: ug
 
 # Items Navigation in WPF Carousel
 
-You can navigate to WPF Carousel items by using the mouse or keyboard navigation in the [WPF Carousel](https://www.syncfusion.com/wpf-controls/carousel) control.
+You can navigate to carousel items by using the mouse or keyboard navigation in the [WPF Carousel](https://www.syncfusion.com/wpf-controls/carousel) control.
 
 ## Navigate WPF CarouselItem using keyboard navigation
 
-You can navigate to the previous or next WPF Carousel items one at a time in either direction by pressing the keyboard keys.
+You can navigate to the previous or next carousel items one at a time in either direction by pressing the keyboard keys.
 
 {% tabs %}
 {% highlight C# %}
@@ -78,7 +78,7 @@ public class ViewModel {
 {% endhighlight %}
 {% endtabs %}
 
-The following table explains how to navigate the WPF CarouselItem using the keyboard:
+The following table explains how to navigate the carousel item using the keyboard:
 
 <table>
 <tr>
@@ -133,7 +133,7 @@ The following table explains how to navigate the WPF CarouselItem using the keyb
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-carousel-examples/tree/master/Samples/Carousel-Scrolling)
 
-## Navigate WPF CarouselItem using scroll bar
+## Navigate carousel item using scroll bar
 
 By default, scroll bars are collapsed. To navigate to the previous or next item from the currently selected item by using scroll bars, enable the vertical or horizontal scroll bars by setting the `ScrollViewer.VerticalScrollBarVisibility` or `ScrollViewer.HorizontalScrollBarVisibility` properties to `Visible` or `auto`.
 
@@ -178,15 +178,15 @@ ScrollViewer.SetVerticalScrollBarVisibility(carousel, ScrollBarVisibility.Visibl
 {% endhighlight %}
 {% endtabs %}
 
-![Navigate WPF CarouselItem using scroll bars](Scrolling_images/scrollbar.png)
+![Navigate carousel item using scroll bars](Scrolling_images/scrollbar.png)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-carousel-examples/tree/master/Samples/Carousel-Scrolling)
 
-## Navigate WPF CarouselItem using mouse wheel
+## Navigate carousel item using mouse wheel
 
 You can navigate to the previous or next item one by one from the currently selected item by using the mouse wheel on forward and backward direction.
 
-![Navigate WPF CarouselItem using mouse wheel](Scrolling_images/Mousewheel.gif)
+![Navigate carousel item using mouse wheel](Scrolling_images/Mousewheel.gif)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-carousel-examples/tree/master/Samples/Carousel-Scrolling)
 
@@ -283,7 +283,7 @@ Carousel.VisualMode = VisualMode.CustomPath;
 {% endhighlight %}
 {% endtabs %}
 
-![Circular scroll WPF CarouselItem](Scrolling_images/EnableLooping.png)
+![Circular scroll carousel item](Scrolling_images/EnableLooping.png)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-carousel-examples/tree/master/Samples/Carousel-Scrolling) 
 

@@ -126,7 +126,7 @@ carousel.Items.Add(new CarouselItem() { Content = new Viewbox(){ Child = image7 
 {% endhighlight %}
 {% endtabs %}
 
-![WPF Carousel items are populated to the Carousel control](Getting-Started_images/wpf-carousel-item.jpeg)
+![carousel items are populated to the Carousel control](Getting-Started_images/wpf-carousel-item.jpeg)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-carousel-examples/tree/master/Samples/CarouselItem-Selection)
 
@@ -199,13 +199,13 @@ public class ViewModel {
 {% endhighlight %}
 {% endtabs %}
 
-![WPF Carousel items populated by using the collection binding](Getting-Started_images/wpf-carousel-item-binding.png)
+![carousel items populated by using the collection binding](Getting-Started_images/wpf-carousel-item-binding.png)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-carousel-examples/tree/master/Samples/Binding)
 
-## Custom UI for WPF CarouselItem using template
+## Custom UI for carousel item using template
 
-You can customize the appearance of each WPF CarouselItem by using the `ItemTemplate` property. To change the appearance of a particular WPF Carousel item, use the `ItemTemplateSelector` property. The `DataContext` of the `ItemTemplate` property is `CarouselItem`.
+You can customize the appearance of each carousel item by using the `ItemTemplate` property. To change the appearance of a particular carousel item, use the `ItemTemplateSelector` property. The `DataContext` of the `ItemTemplate` property is `CarouselItem`.
 
 {% tabs %}
 {% highlight C# %}
@@ -272,13 +272,13 @@ public class ViewModel {
 {% endhighlight %}
 {% endtabs %}
 
-![Custom UI of WPF CarouselItem using ItemTemplate](customization_images/ItemTemplate.png)
+![Custom UI of carousel item using ItemTemplate](customization_images/ItemTemplate.png)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-carousel-examples/tree/master/Samples/ItemTemplate)
 
-## Custom UI for WPF CarouselItem using a style
+## Custom UI for carousel item using a style
 
-You can change the appearance of each WPF CarouselItem by using the `ItemContainerStyle`, which is applied to the container element generated for each WPF CarouselItem. The default value of the `ItemContainerStyle` property is `null`. The `DataContext` of the `ItemContainerStyle` property is `CarouselItem`.
+You can change the appearance of each carousel item by using the `ItemContainerStyle`, which is applied to the container element generated for each carousel item. The default value of the `ItemContainerStyle` property is `null`. The `DataContext` of the `ItemContainerStyle` property is `CarouselItem`.
 
 {% tabs %}
 {% highlight C# %}
@@ -405,13 +405,13 @@ public class ViewModel {
 {% endhighlight %}
 {% endtabs %}
 
-![Custom UI of WPF CarouselItem using ItemContainerStyle](customization_images/ItemContainerStyle.jpg)
+![Custom UI of carousel item using ItemContainerStyle](customization_images/ItemContainerStyle.jpg)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-carousel-examples/tree/master/Samples/ItemContainerStyle)
 
-## Custom UI for specific WPF CarouselItem using style selector
+## Custom UI for specific carousel item using style selector
 
-You can select from various custom appearances for WPF Carousel items by using the `ItemContainerStyleSelector` property. The `DataContext` of the `ItemContainerStyleSelector` property is `CarouselItem`.
+You can select from various custom appearances for carousel items by using the `ItemContainerStyleSelector` property. The `DataContext` of the `ItemContainerStyleSelector` property is `CarouselItem`.
 
 {% tabs %}
 {% highlight C# %}
@@ -521,7 +521,7 @@ public class PersonStyleSelector : StyleSelector {
 {% endhighlight %}
 {% endtabs %}
 
-![Different custom UI of WPF Carousel items using ItemContainerStyleSelector](customization_images/ItemContainerStyleSelector.png)
+![Different custom UI of carousel items using ItemContainerStyleSelector](customization_images/ItemContainerStyleSelector.png)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-carousel-examples/tree/master/Samples/ItemContainerStyleSelector)
 
@@ -544,15 +544,15 @@ carousel.EnableVirtualization = true;
 {% endhighlight %}
 {% endtabs %}
 
-## Select WPF CarouselItem
+## Select carousel item
 
-You can select a WPF CarouselItem by clicking the item. You can get the selected item and its value by using the [SelectedItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.Carousel.html#Syncfusion_Windows_Shared_Carousel_SelectedItem) and [SelectedValue](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.Carousel.html#Syncfusion_Windows_Shared_Carousel_SelectedValue) properties. You can also get the selected item index by using the [SelectedIndex](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.Carousel.html#Syncfusion_Windows_Shared_Carousel_SelectedIndex) property. You can select only one item at a time.
+You can select a carousel item by clicking the item. You can get the selected item and its value by using the [SelectedItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.Carousel.html#Syncfusion_Windows_Shared_Carousel_SelectedItem) and [SelectedValue](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.Carousel.html#Syncfusion_Windows_Shared_Carousel_SelectedValue) properties. You can also get the selected item index by using the [SelectedIndex](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.Carousel.html#Syncfusion_Windows_Shared_Carousel_SelectedIndex) property. You can select only one item at a time.
 
-![WPF Carousel items rotation speed changed](Rotation-images/RotationSpeed.gif)
+![carousel items rotation speed changed](Rotation-images/RotationSpeed.gif)
 
-## Select WPF CarouselItem programmatically using property
+## Select carousel item programmatically using property
 
-You can select a particular WPF CarouselItem programmatically by using the [CarouselItem.IsSelected](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.CarouselItem.html#Syncfusion_Windows_Shared_CarouselItem_IsSelected) property.
+You can select a particular carousel item programmatically by using the [CarouselItem.IsSelected](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.CarouselItem.html#Syncfusion_Windows_Shared_CarouselItem_IsSelected) property.
 
 {% tabs %}
 {% highlight XAML %}
@@ -581,13 +581,13 @@ You can select a particular WPF CarouselItem programmatically by using the [Caro
 {% endhighlight %}
 {% endtabs %}
 
-![Particular WPF CarouselItem selected using IsSelected property](Getting-Started_images/IsSelected.png)
+![Particular carousel item selected using IsSelected property](Getting-Started_images/IsSelected.png)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-carousel-examples/tree/master/Samples/CarouselItem-Selection)
 
-## Select WPF CarouselItem programmatically using command and methods
+## Select carousel item programmatically using command and methods
 
-You can select a previous, next, first or last WPF Carousel items programmatically by using the commands and methods.
+You can select a previous, next, first or last carousel items programmatically by using the commands and methods.
 
 * [SelectFirstItemCommand](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.Carousel.html#Syncfusion_Windows_Shared_Carousel_SelectFirstItemCommand) or [SelectFirstItem()](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.Carousel.html#Syncfusion_Windows_Shared_Carousel_SelectFirstItem().html) - To select the first item.
 * [SelectLastItemCommand](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.Carousel.html#Syncfusion_Windows_Shared_Carousel_SelectLastItemCommand) or [SelectLastItem()](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.Carousel.html#Syncfusion_Windows_Shared_Carousel_SelectLastItem().html) - To select the last item.

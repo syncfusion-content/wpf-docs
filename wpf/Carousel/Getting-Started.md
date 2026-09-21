@@ -307,13 +307,13 @@ public class ViewModel {
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-carousel-examples/tree/master/Samples/Binding)
 
-## Select WPF CarouselItem
+## Select carousel item
 
-You can select a WPF Carousel item by clicking it. You can get the selected item and its value by using the [SelectedItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.Carousel.html#Syncfusion_Windows_Shared_Carousel_SelectedItem) and [SelectedValue](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.Carousel.html#Syncfusion_Windows_Shared_Carousel_SelectedValue) properties. You can also get the selected item index by using the [SelectedIndex](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.Carousel.html#Syncfusion_Windows_Shared_Carousel_SelectedIndex) property. You can select only one item at a time.
+You can select a carousel item by clicking it. You can get the selected item and its value by using the [SelectedItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.Carousel.html#Syncfusion_Windows_Shared_Carousel_SelectedItem) and [SelectedValue](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.Carousel.html#Syncfusion_Windows_Shared_Carousel_SelectedValue) properties. You can also get the selected item index by using the [SelectedIndex](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.Carousel.html#Syncfusion_Windows_Shared_Carousel_SelectedIndex) property. You can select only one item at a time.
 
-### Select WPF CarouselItem programmatically using property
+### Select carousel item programmatically using property
 
-You can select a particular WPF CarouselItem programmatically by using the [CarouselItem.IsSelected](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.CarouselItem.html#Syncfusion_Windows_Shared_CarouselItem_IsSelected) property.
+You can select a particular carousel item programmatically by using the [CarouselItem.IsSelected](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.CarouselItem.html#Syncfusion_Windows_Shared_CarouselItem_IsSelected) property.
 
 {% tabs %}
 {% highlight XAML %}
@@ -341,11 +341,11 @@ You can select a particular WPF CarouselItem programmatically by using the [Caro
 {% endhighlight %}
 {% endtabs %}
 
-![Particular WPF CarouselItem selected using IsSelected property](Getting-Started_images/IsSelected.png)
+![Particular carousel item selected using IsSelected property](Getting-Started_images/IsSelected.png)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-carousel-examples/tree/master/Samples/CarouselItem-Selection)
 
-### Select WPF CarouselItem programmatically using command and methods
+### Select carousel item programmatically using command and methods
 
 You can select the previous, next, first, or last Carousel items programmatically by using the commands and methods.
 
@@ -363,9 +363,9 @@ You can select the previous, next, first, or last Carousel items programmaticall
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-carousel-examples/tree/master/Samples/Carousel-Scrolling)
 
-## Rotate WPF CarouselItem
+## Rotate carousel item
 
-You can place a WPF CarouselItem at a specific rotation angle by using the [RotationAngle](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.Carousel.html#Syncfusion_Windows_Shared_Carousel_RotationAngle) property. You can change the rotation speed of the Carousel items by using the [RotationSpeed](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.Carousel.html#Syncfusion_Windows_Shared_Carousel_RotationSpeed) property. You can also disable rotation animation by setting the [EnableRotationAnimation](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.Carousel.html#Syncfusion_Windows_Shared_Carousel_EnableRotationAnimation) property to `false`. The default value of the `RotationAngle` property is `0`, the default value of the `RotationSpeed` property is `200`, and the default value of the `EnableRotationAnimation` property is `true`.
+You can place a carousel item at a specific rotation angle by using the [RotationAngle](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.Carousel.html#Syncfusion_Windows_Shared_Carousel_RotationAngle) property. You can change the rotation speed of the Carousel items by using the [RotationSpeed](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.Carousel.html#Syncfusion_Windows_Shared_Carousel_RotationSpeed) property. You can also disable rotation animation by setting the [EnableRotationAnimation](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.Carousel.html#Syncfusion_Windows_Shared_Carousel_EnableRotationAnimation) property to `false`. The default value of the `RotationAngle` property is `0`, the default value of the `RotationSpeed` property is `200`, and the default value of the `EnableRotationAnimation` property is `true`.
 
 {% tabs %}
 {% highlight XAML %}
@@ -413,7 +413,7 @@ carousel. ScaleFraction = 0.50;
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-carousel-examples/tree/master/Samples/StandardPath)
 
-## Change radius of WPF CarouselItem
+## Change radius of carousel item
 
 You can change the radius of the `Carousel` control by setting values for the [RadiusX](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.Carousel.html#Syncfusion_Windows_Shared_Carousel_RadiusX) and [RadiusY](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.Carousel.html#Syncfusion_Windows_Shared_Carousel_RadiusY) properties. Items are arranged based on the radius points. The default value of the `RadiusX` property is `250`, and the default value of the `RadiusY` property is `150`.
 
@@ -438,9 +438,9 @@ carousel.RadiusY = 100;
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-carousel-examples/tree/master/Samples/StandardPath)
 
-## Custom UI of WPF CarouselItem
+## Custom UI of carousel item
 
-You can customize the appearance of each WPF CarouselItem by using the `ItemTemplate` property. To change the appearance of a particular WPF CarouselItem, use the `ItemTemplateSelector` property. The `DataContext` of the `ItemTemplate` property is `CarouselItem`.
+You can customize the appearance of each carousel item by using the `ItemTemplate` property. To change the appearance of a particular carousel item, use the `ItemTemplateSelector` property. The `DataContext` of the `ItemTemplate` property is `CarouselItem`.
 
 {% tabs %}
 {% highlight C# %}
@@ -507,7 +507,7 @@ public class ViewModel {
 {% endhighlight %}
 {% endtabs %}
 
-![Custom UI of WPF CarouselItem using ItemTemplate](customization_images/ItemTemplate.png)
+![Custom UI of carousel item using ItemTemplate](customization_images/ItemTemplate.png)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-carousel-examples/tree/master/Samples/ItemTemplate)
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Standard Path in WPF Carousel | Syncfusion®
-description: Configure WPF Carousel items in the standard circular path with scaling, opacity, skewing, radius, and rotation customization.
+description: Configure carousel items in the standard circular path with scaling, opacity, skewing, radius, and rotation customization.
 platform: wpf
 control: Carousel
 documentation: ug
@@ -11,9 +11,9 @@ documentation: ug
 
 This section explains the resizing, skewing, rotation animation, and opacity support available in the standard path mode of the [WPF Carousel](https://www.syncfusion.com/wpf-controls/carousel) control.
 
-## Load WPF Carousel items in standard path
+## Load carousel items in standard path
 
-You can load WPF Carousel items in the standard path by setting the [VisualMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.Carousel.html#Syncfusion_Windows_Shared_Carousel_VisualMode) property to `VisualMode.Standard`. The standard path of WPF Carousel items is circular. The default value of the `VisualMode` property is `VisualMode.Standard`.
+You can load carousel items in the standard path by setting the [VisualMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.Carousel.html#Syncfusion_Windows_Shared_Carousel_VisualMode) property to `VisualMode.Standard`. The standard path of carousel items is circular. The default value of the `VisualMode` property is `VisualMode.Standard`.
 
 {% tabs %}
 {% highlight C# %}
@@ -86,7 +86,7 @@ carousel.VisualMode = VisualMode.Standard;
 {% endhighlight %}
 {% endtabs %}
 
-![WPF Carousel items loaded in standard path mode](Getting-Started_images/wpf-carousel-item-binding.png)
+![carousel items loaded in standard path mode](Getting-Started_images/wpf-carousel-item-binding.png)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-carousel-examples/tree/master/Samples/StandardPath)
 
@@ -118,7 +118,7 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-
 
 ## Change rotation speed
 
-To change the rotation speed of WPF Carousel items when selecting or navigating from one item to another, use the [RotationSpeed](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.Carousel.html#Syncfusion_Windows_Shared_Carousel_RotationSpeed) property. The default value of the `RotationSpeed` property is `200`.
+To change the rotation speed of carousel items when selecting or navigating from one item to another, use the [RotationSpeed](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.Carousel.html#Syncfusion_Windows_Shared_Carousel_RotationSpeed) property. The default value of the `RotationSpeed` property is `200`.
 
 {% tabs %}
 {% highlight XAML %}
@@ -136,13 +136,13 @@ carousel.VisualMode = VisualMode.Standard;
 {% endhighlight %}
 {% endtabs %}
 
-![WPF Carousel items rotation speed changed](Rotation-images/RotationSpeed.gif)
+![carousel items rotation speed changed](Rotation-images/RotationSpeed.gif)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-carousel-examples/tree/master/Samples/StandardPath)
 
 ## Disable rotation animation
 
-To disable the animated rotation of WPF Carousel items when selecting or navigating from one item to another, set the [EnableRotationAnimation](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.Carousel.html#Syncfusion_Windows_Shared_Carousel_EnableRotationAnimation) property to `false`. The default value of the `EnableRotationAnimation` property is `true`.
+To disable the animated rotation of carousel items when selecting or navigating from one item to another, set the [EnableRotationAnimation](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.Carousel.html#Syncfusion_Windows_Shared_Carousel_EnableRotationAnimation) property to `false`. The default value of the `EnableRotationAnimation` property is `true`.
 
 {% tabs %}
 {% highlight XAML %}
@@ -160,13 +160,13 @@ carousel.VisualMode = VisualMode.Standard;
 {% endhighlight %}
 {% endtabs %}
 
-![WPF Carousel items animated rotation disabled](Rotation-images/EnableRotationAnimation.gif)
+![carousel items animated rotation disabled](Rotation-images/EnableRotationAnimation.gif)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-carousel-examples/tree/master/Samples/StandardPath)
 
-## Resize WPF CarouselItem
+## Resize carousel item
 
-To change the size of WPF Carousel items except the selected item in `VisualMode.Standard` mode, use the [ScaleFraction](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.Carousel.html#Syncfusion_Windows_Shared_Carousel_ScaleFraction) property. You can disable scaling by setting the [ScalingEnabled](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.Carousel.html#Syncfusion_Windows_Shared_Carousel_ScalingEnabled) property to `false`. The value range of the `ScaleFraction` property is `0` to `1`. The default value of the `ScaleFraction` property is `0`, and the default value of the `ScalingEnabled` property is `true`.
+To change the size of carousel items except the selected item in `VisualMode.Standard` mode, use the [ScaleFraction](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.Carousel.html#Syncfusion_Windows_Shared_Carousel_ScaleFraction) property. You can disable scaling by setting the [ScalingEnabled](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.Carousel.html#Syncfusion_Windows_Shared_Carousel_ScalingEnabled) property to `false`. The value range of the `ScaleFraction` property is `0` to `1`. The default value of the `ScaleFraction` property is `0`, and the default value of the `ScalingEnabled` property is `true`.
 
 {% tabs %}
 {% highlight XAML %}
@@ -190,9 +190,9 @@ carousel.VisualMode = VisualMode.Standard;
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-carousel-examples/tree/master/Samples/StandardPath)
 
-## Opacity for WPF CarouselItem
+## Opacity for carousel item
 
-To change the opacity of WPF Carousel items except the selected item in `VisualMode.Standard` mode, set the fraction value for the [OpacityFraction](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.Carousel.html#Syncfusion_Windows_Shared_Carousel_OpacityFraction) property. You can disable opacity by setting the [OpacityEnabled](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.Carousel.html#Syncfusion_Windows_Shared_Carousel_OpacityEnabled) property to `false`. The value range of the `OpacityFraction` property is `0` to `1`. The default value of the `OpacityFraction` property is `0`, and the default value of the `OpacityEnabled` property is `true`.
+To change the opacity of carousel items except the selected item in `VisualMode.Standard` mode, set the fraction value for the [OpacityFraction](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.Carousel.html#Syncfusion_Windows_Shared_Carousel_OpacityFraction) property. You can disable opacity by setting the [OpacityEnabled](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.Carousel.html#Syncfusion_Windows_Shared_Carousel_OpacityEnabled) property to `false`. The value range of the `OpacityFraction` property is `0` to `1`. The default value of the `OpacityFraction` property is `0`, and the default value of the `OpacityEnabled` property is `true`.
 
 {% tabs %}
 {% highlight XAML %}
@@ -212,13 +212,13 @@ carousel.VisualMode = VisualMode.Standard;
 {% endhighlight %}
 {% endtabs %}
 
-![WPF Carousel items opacity fraction changed in standard path mode](Rotation-images/OpacityFraction.png)
+![carousel items opacity fraction changed in standard path mode](Rotation-images/OpacityFraction.png)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-carousel-examples/tree/master/Samples/StandardPath)
 
-## Skewing the WPF CarouselItem
+## Skewing the carousel item
 
-To skew WPF Carousel items by a particular `X-Y` fraction angle, use the [SkewAngleXFraction](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.Carousel.html#Syncfusion_Windows_Shared_Carousel_SkewAngleXFraction) and [SkewAngleYFraction](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.Carousel.html#Syncfusion_Windows_Shared_Carousel_SkewAngleYFraction) properties. You can enable skewing by setting the [SkewAngleXEnabled](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.Carousel.html#Syncfusion_Windows_Shared_Carousel_SkewAngleXEnabled) and [SkewAngleYEnabled](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.Carousel.html#Syncfusion_Windows_Shared_Carousel_SkewAngleYEnabled) properties to `true`. The default value of the `SkewAngleXFraction` and `SkewAngleYFraction` properties is `0`, and the default value of the `SkewAngleXEnabled` and `SkewAngleYEnabled` properties is `false`.
+To skew carousel items by a particular `X-Y` fraction angle, use the [SkewAngleXFraction](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.Carousel.html#Syncfusion_Windows_Shared_Carousel_SkewAngleXFraction) and [SkewAngleYFraction](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.Carousel.html#Syncfusion_Windows_Shared_Carousel_SkewAngleYFraction) properties. You can enable skewing by setting the [SkewAngleXEnabled](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.Carousel.html#Syncfusion_Windows_Shared_Carousel_SkewAngleXEnabled) and [SkewAngleYEnabled](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.Carousel.html#Syncfusion_Windows_Shared_Carousel_SkewAngleYEnabled) properties to `true`. The default value of the `SkewAngleXFraction` and `SkewAngleYFraction` properties is `0`, and the default value of the `SkewAngleXEnabled` and `SkewAngleYEnabled` properties is `false`.
 
 {% tabs %}
 {% highlight XAML %}
@@ -242,6 +242,6 @@ carousel.VisualMode = VisualMode.Standard;
 {% endhighlight %}
 {% endtabs %}
 
-![WPF Carousel items skewed in standard path](Scaling-Opacity-and-Skewing-Support_images/SkewAngleXY.png)
+![carousel items skewed in standard path](Scaling-Opacity-and-Skewing-Support_images/SkewAngleXY.png)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-carousel-examples/tree/master/Samples/StandardPath)
