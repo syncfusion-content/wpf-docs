@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Events in WPF Button | Syncfusion®
-description: Events in WPF Button provide notifications for user interactions, command execution, and WPF Button state changes.
+description: Events in WPF Button provide notifications for user interactions, command execution, and button state changes.
 platform: wpf
 control: ButtonAdv
 documentation: ug

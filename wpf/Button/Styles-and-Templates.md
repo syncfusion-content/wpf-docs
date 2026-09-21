@@ -11,7 +11,7 @@ documentation: ug
 
 The [WPF Button](https://www.syncfusion.com/wpf-controls/button) control supports styles and templates that allow developers and designers to create visually compelling effects and a consistent product appearance. The WPF Button is implemented through the [ButtonAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ButtonAdv.html) class.
 
-This document provides information about changing the visual appearance of the Button control. You can also edit the structure of the Button control by using Blend and Visual Studio to customize its appearance.
+This document provides information about changing the visual appearance of the button control. You can also edit the structure of the Button control by using Blend and Visual Studio to customize its appearance.
 
 ## Edit appearance in Expression Blend
 
@@ -27,7 +27,7 @@ This document provides information about changing the visual appearance of the B
 
     ![Blendability](Blendability_images/Blendability_img3.png)
 
-    The **Create Style Resource** dialog allows you to enter or change the style name and choose the location for the style. When you select **OK**, Expression Blend generates the Button control style in the **Resource** section. You can edit the generated XAML in XAML view or Visual Studio.
+    The **Create Style Resource** dialog allows you to enter or change the style name and choose the location for the style. When you select **OK**, Expression Blend generates the button control style in the **Resource** section. You can edit the generated XAML in XAML view or Visual Studio.
 
     * **Create Empty...** - Creates an empty WPF Button style. Selecting this option opens the **Create ControlTemplate Resource** dialog, which allows you to enter or change the control template name and choose the location for the template.
 
@@ -43,7 +43,7 @@ WPF Button control edited in Expression Blend
 ## Edit appearance in Visual Studio
 
 * Open the application in Visual Studio.
-* Open design view and select the WPF Button control. Right-click the Button control to view the available menu options.
+* Open design view and select the WPF Button control. Right-click the button control to view the available menu options.
 
     ![Blendability](Blendability_images/Blendability_img6.png)
 

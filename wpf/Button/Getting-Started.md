@@ -549,7 +549,7 @@ button.SmallIcon = new BitmapImage(new Uri("image/syncfusion.png", UriKind.Relat
 
 ## IsDefault mode
 
-The [IsDefault](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ButtonAdv.html#Syncfusion_Windows_Tools_Controls_ButtonAdv_IsDefault) property indicates whether the WPF Button is a default button that can be activated by pressing the Enter key. When you set the `IsDefault` property to `true`, the user can invoke the Button by pressing the `Enter` key.
+The [IsDefault](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ButtonAdv.html#Syncfusion_Windows_Tools_Controls_ButtonAdv_IsDefault) property indicates whether the WPF Button is a default button that can be activated by pressing the Enter key. When you set the `IsDefault` property to `true`, the user can invoke the button by pressing the `Enter` key.
 
 {% tabs %}
 
@@ -563,7 +563,7 @@ The [IsDefault](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Cont
 
 ## IsCancel mode
 
-The [IsCancel](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ButtonAdv.html#Syncfusion_Windows_Tools_Controls_ButtonAdv_IsCancel) property indicates whether the WPF Button is a cancel button that can be activated by pressing the Escape key. When you set the `IsCancel` property to `true`, the user can invoke the Button by pressing the `Escape` key.
+The [IsCancel](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ButtonAdv.html#Syncfusion_Windows_Tools_Controls_ButtonAdv_IsCancel) property indicates whether the WPF Button is a cancel button that can be activated by pressing the Escape key. When you set the `IsCancel` property to `true`, the user can invoke the button by pressing the `Escape` key.
 
 {% tabs %}
 
@@ -577,7 +577,7 @@ The [IsCancel](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Contr
 
 ## Theme
 
-The WPF Button supports various built-in themes. Refer to the following links to apply themes to the Button:
+The WPF Button supports various built-in themes. Refer to the following links to apply themes to the button:
 
   * [Apply theme using SfSkinManager](https://help.syncfusion.com/wpf/themes/skin-manager)
 	
