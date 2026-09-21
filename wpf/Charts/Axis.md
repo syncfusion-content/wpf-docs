@@ -3381,6 +3381,72 @@ chart.PrimaryAxis.MultiLevelLabels.Add(label);
 
 **Customizing** **multi-level** **labels**
 
+**Label rotation angle**
+
+Multi-level label rotation angle can be customized using the [`MultiLevelLabelRotationAngle`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAxisBase2D.html#Syncfusion_UI_Xaml_Charts_ChartAxisBase2D_MultiLevelLabelRotationAngle) property. By default rotation angle value is `0`. The following code example illustrates how to rotate multi-level labels.This property supports rotating multi-level labels on both the primary and secondary axes.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<chart:SfChart.PrimaryAxis>
+    <chart:CategoryAxis ShowLabelBorder="True" LabelBorderWidth="2" MultiLevelLabelRotationAngle="45">
+        <chart:CategoryAxis.MultiLevelLabels>
+            <chart:ChartMultiLevelLabel Start="-0.5" End="2.5" Text="Quarter 1"/>
+            <chart:ChartMultiLevelLabel Start="2.5" End="5.5" Text="Quarter 2"/>
+            <chart:ChartMultiLevelLabel Start="5.5" End="8.5" Text="Quarter 3"/>
+            <chart:ChartMultiLevelLabel Start="8.5" End="11.5" Text="Quarter 4"/>
+        </chart:CategoryAxis.MultiLevelLabels>
+    </chart:CategoryAxis>
+</chart:SfChart.PrimaryAxis>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+CategoryAxis primaryAxis = new CategoryAxis()
+{
+    ShowLabelBorder = true,
+    LabelBorderWidth = 2,
+    MultiLevelLabelRotationAngle = 45
+};
+
+primaryAxis.MultiLevelLabels.Add(new ChartMultiLevelLabel()
+{
+    Start = -0.5,
+    End = 2.5,
+    Text = "Quarter 1"
+});
+
+primaryAxis.MultiLevelLabels.Add(new ChartMultiLevelLabel()
+{
+    Start = 2.5,
+    End = 5.5,
+    Text = "Quarter 2"
+});
+
+primaryAxis.MultiLevelLabels.Add(new ChartMultiLevelLabel()
+{
+    Start = 5.5,
+    End = 8.5,
+    Text = "Quarter 3"
+});
+
+primaryAxis.MultiLevelLabels.Add(new ChartMultiLevelLabel()
+{
+    Start = 8.5,
+    End = 11.5,
+    Text = "Quarter 4"
+});
+
+chart.PrimaryAxis = primaryAxis;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![WPF Chart displays Multi-Level Label Rotation](Axis_images/wpf-chart-multi-level-label-rotation.png)
+
 **Border Customization**
 
 [`ChartMultiLevelLabel`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartMultiLevelLabel.html) border width and color can be customized with [`LabelBorderWidth`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAxisBase2D.html#Syncfusion_UI_Xaml_Charts_ChartAxisBase2D_LabelBorderWidth) and [`LabelBorderBrush`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAxisBase2D.html#Syncfusion_UI_Xaml_Charts_ChartAxisBase2D_LabelBorderBrush) properties of chart axis. It can be set as shown in the following code example.

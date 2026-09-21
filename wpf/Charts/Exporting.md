@@ -22,9 +22,9 @@ The following screenshot illustrates the chart, which has to be exported.
 
 ![WPF Chart For Printing](Exporting_images/wpf-chart-for-printing.png)
 
-## Methods
+## Export as an image
 
-Chart contains the following overloading methods for saving a chart as an image.
+The chart provides the following overloaded methods for exporting it as an image.
 
 ### Save(string filename)
 
@@ -36,9 +36,7 @@ The following code examples illustrates the usage of this method:
 
 private void SaveImage_Click(object sender, RoutedEventArgs e)
 {
-    this.SampleChart.Save("ExportedChart"); //Save in Debug location
-
-    this.SampleChart.Save("D:\\Pictures\\Test\\ExportedChart"); //Save in ‘D:\Picture\Test’ location.
+    this.SampleChart.Save("ExportedChart.png"); //Save in Debug location
 }
 
 {% endhighlight %}
@@ -53,16 +51,9 @@ This helps to export the chart to any stream as in below code example.
 
 private void SaveImageEncoder_Click(object sender, RoutedEventArgs e)
 {
-    SaveFileDialog sfd = new SaveFileDialog();
-
-    sfd.Filter = "Bitmap(*.bmp)|*.bmp|JPEG(*.jpg,*.jpeg)|*.jpg;*.jpeg|Gif (*.gif)|*.gif|PNG(*.png)|*.png|TIFF(*.tif,*.tiff)|*.tif|All files (*.*)|*.*";
-
-    if (sfd.ShowDialog() == true)
+    using (FileStream fileStream = new FileStream("ExportedChart.png", FileMode.Create))
     {
-        using (Stream fs = sfd.OpenFile())
-        {
-            SampleChart.Save(fs, new PngBitmapEncoder());
-        }
+        SampleChart.Save(fileStream, new PngBitmapEncoder());
     }
 }
 
@@ -94,6 +85,70 @@ source.RootVisual = chart;
 
 //Save chart
 chart.Save("Chart.png");
+
+{% endhighlight  %}
+
+## Export to XPS
+
+Chart has built-in support for exporting to the XPS file format, providing scalable, print-ready output without any loss of quality when zooming or printing.
+
+### SaveAsXps(string fileName)
+
+This method helps to export the chart as a vector-based XPS file. By default, the exported file will be saved in the “../bin/Debug” location.
+
+The following code example illustrates how to use this method:
+
+{% highlight C# %}
+
+private void ExportAsXps_Click(object sender, RoutedEventArgs e)
+{             
+    SampleChart.SaveAsXps(Chart_Export.xps);
+}
+
+{% endhighlight %}
+
+### SaveAsXps(Stream stream)
+
+This method helps to export the chart as a vector-based XPS file using a stream. By default, the exported file will be saved in the “../bin/Debug” location.
+
+The following code example illustrates how to use this method:
+
+{% highlight C# %}
+
+private void ExportAsStream_Click(object sender, RoutedEventArgs e)
+{
+    using (FileStream fileStream = new FileStream("Chart_Export_Stream.xps", FileMode.Create))
+    {
+        SampleChart.SaveAsXps(fileStream);
+    }
+}
+
+{% endhighlight %}
+
+The following screenshot illustrates the chart, which has to be exported.
+
+![WPF Chart XPS Exported](Exporting_images/wpf-chart-for-xps-export.png)
+
+### Export WPF charts to vector image without rendering in UI
+
+You can export the chart to vector image without rendering in UI by setting the chart to **RootVisual** in **HwndSource** and passing **HwndSourceParameters** to the **HwndSource**. The following code snippet demonstrates this.
+
+{% highlight c# %}
+
+static IntPtr ApplicationMessageFilter(IntPtr hwnd, int message, IntPtr wParam, IntPtr lParam, ref bool handled)
+{
+    return IntPtr.Zero;
+}
+
+HwndSourceParameters sourceParameters = new HwndSourceParameters();
+
+sourceParameters.HwndSourceHook = ApplicationMessageFilter;
+
+HwndSource source = new HwndSource(sourceParameters);
+source.RootVisual = chart;
+
+//Save chart
+chart.Save("Chart.xps");
 
 {% endhighlight  %}
 
