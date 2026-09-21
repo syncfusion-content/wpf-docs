@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Header in WPF SfBusyIndicator | Syncfusion®
-description: Header support in WPF SfBusyIndicator allows developers to display informative text alongside busy indicators, improving user communication during operations.
+title: Header in WPF Busy Indicator | Syncfusion®
+description: Header support in WPF Busy Indicator allows developers to display informative text alongside busy indicators, improving user communication during operations.
 platform: wpf
 control: Busy Indicator
 documentation: ug
 ---
 
-# Header in WPF SfBusyIndicator
+# Header in WPF Busy Indicator
 
 ## Header
 
@@ -17,7 +17,7 @@ The Header is displayed below the animation. The Header property can be used to 
 
 {% highlight xaml %}
 
-<!--To set the header for SfBusyIndicator-->
+<!--To set the header for Busy Indicator-->
 
 <Grid  Background="CornflowerBlue">
 <Notification:SfBusyIndicator Header="Loading..." Foreground="White" />
@@ -27,7 +27,7 @@ The Header is displayed below the animation. The Header property can be used to 
 
 {% highlight C# %}
 
-// To set the Header for SfBusyIndicator
+// To set the Header for Busy Indicator
 SfBusyIndicator SfBusyIndicator = new SfBusyIndicator();
 SfBusyIndicator.Header = "Loading..";
 grid1.Children.Add(SfBusyIndicator);
@@ -36,7 +36,7 @@ grid1.Children.Add(SfBusyIndicator);
 
 {% highlight VB %}
 
-'To set the Header for SfBusyIndicator
+'To set the Header for Busy Indicator
 Dim SfBusyIndicator As New SfBusyIndicator()
 SfBusyIndicator.Header = "Loading.."
 grid1.Children.Add(SfBusyIndicator)
@@ -54,13 +54,13 @@ Busy Indicator with header
 
 ## Header Template
 
-Header template can be used to get or set the template that defines how the header section of the SfBusyIndicator control is displayed.
+Header template can be used to get or set the template that defines how the header section of the Busy Indicator control is displayed.
 
 {% tabs %}
 
 {% highlight xaml %}
 
-<!--To set the HeaderTemplate for SfBusyIndicator-->
+<!--To set the HeaderTemplate for Busy Indicator-->
 
 <Notification:SfBusyIndicator Grid.Row="0" Foreground="White" Background="CornflowerBlue" >
 <Notification:SfBusyIndicator.HeaderTemplate>

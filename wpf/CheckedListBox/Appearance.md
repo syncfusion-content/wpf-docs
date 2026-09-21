@@ -7,13 +7,13 @@ control: CheckListBox
 documentation: ug
 ---
 
-# Appearance in WPF CheckListBox
+# Appearance in WPF CheckedListBox
 
-This section explains different UI customization, styling, theming options available in [CheckListBox](https://www.syncfusion.com/wpf-ui-controls/CheckedListBox) control.
+This section explains different UI customization, styling, theming options available in [WPF CheckedListBox](https://www.syncfusion.com/wpf-ui-controls/CheckedListBox) control.
 
 ## Setting the Foreground
 
-You can change the foreground color of `CheckListBox` items by setting the `Foreground` property. The default value of the `Foreground` property is `Black`.
+You can change the foreground color of `WPF CheckedListBox` items by setting the `Foreground` property. The default value of the `Foreground` property is `Black`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -47,7 +47,7 @@ checkListBox.Foreground=Brushes.Red;
 
 ### Setting the Background 
 
- You can change the background color of `CheckListBox` items by setting the `Background` property. To distinguish a hovered item or a currently selected item from other items, you can use the [MouseOverBackground](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.CheckListBox.html#Syncfusion_Windows_Tools_Controls_CheckListBox_MouseOverBackground) and [SelectedItemBackground](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.CheckListBox.html#Syncfusion_Windows_Tools_Controls_CheckListBox_SelectedItemBackground) properties.
+ You can change the background color of `WPF CheckedListBox` items by setting the `Background` property. To distinguish a hovered item or a currently selected item from other items, you can use the [MouseOverBackground](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.CheckListBox.html#Syncfusion_Windows_Tools_Controls_CheckListBox_MouseOverBackground) and [SelectedItemBackground](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.CheckListBox.html#Syncfusion_Windows_Tools_Controls_CheckListBox_SelectedItemBackground) properties.
 
 {% tabs %}
 {% highlight xaml %}
@@ -85,7 +85,7 @@ checkListBox.SelectedItemBackground = Brushes.Yellow;
 
 ## Change flow direction
 
-You can change the flow direction of the `CheckListBox` layout from right to left by setting the `FlowDirection` property to `RightToLeft`. The default value of the `FlowDirection` property is `LeftToRight`.
+You can change the flow direction of the `WPF CheckedListBox` layout from right to left by setting the `FlowDirection` property to `RightToLeft`. The default value of the `FlowDirection` property is `LeftToRight`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -121,7 +121,7 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/wpf-checked-lis
 
 ## Item Template
 
-You can change the `DataTemplate` of each `CheckListBox` item by using the `ItemTemplate` property.
+You can change the `DataTemplate` of each `WPF CheckedListBox` item by using the `ItemTemplate` property.
 
 {% tabs %}
 {% highlight C# %}
@@ -331,7 +331,7 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/wpf-checked-lis
 
 ## ItemContainerStyle
 
-You can change the item container style of `CheckListBox` by using the `ItemContainerStyle`, which is applied to the container element that is generated for each item. The default value of `ItemContainerStyle` is `null`.
+You can change the item container style of `WPF CheckedListBox` by using the `ItemContainerStyle`, which is applied to the container element that is generated for each item. The default value of `ItemContainerStyle` is `null`.
 
 {% tabs %}
 {% highlight C# %}
@@ -389,7 +389,7 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/wpf-checked-lis
 
 ## ItemTemplateSelector
 
-You can change the `DataTemplate` for `CheckListBox` items based on the provided logic by using the `ItemTemplateSelector`.
+You can change the `DataTemplate` for `WPF CheckedListBox` items based on the provided logic by using the `ItemTemplateSelector`.
  
  {% tabs %}
 {% highlight C# %}
@@ -488,7 +488,7 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/wpf-checked-lis
 
 ## ItemContainerStyleSelection
 
-You can choose the style for `CheckListBox` items based on the provided logic by using the `ItemContainerStyleSelector`.
+You can choose the style for `WPF CheckedListBox` items based on the provided logic by using the `ItemContainerStyleSelector`.
 
 {% tabs %}
 {% highlight C# %}
@@ -586,7 +586,7 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/wpf-checked-lis
 
 ## Theme
 
-CheckListBox supports various built-in themes. Refer to the below links to apply themes for the CheckListBox,
+The WPF CheckedListBox supports various built-in themes. Refer to the links below to apply themes,
 
   * [Apply theme using SfSkinManager](https://help.syncfusion.com/wpf/themes/skin-manager)
 	

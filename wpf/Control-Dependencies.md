@@ -395,13 +395,36 @@ Syncfusion.Gantt.WPF
 </tr>
 <tr>
 <td> 
-Syncfusion.Core <br/>
 Syncfusion.Grid.WPF <br/>
 Syncfusion.GridCommon.WPF <br/>
-Syncfusion.Shared.WPF
+Syncfusion.Linq.Base <br/>
+Syncfusion.Shared.WPF <br/>
+Syncfusion.Telemetry
 </td>
 <td> 
 Syncfusion.Grid.WPF
+</td>
+</tr>
+</table>
+
+### Exporting Grid Control to Excel, PDF and CSV
+The following reference needs to be added in your application for exporting Grid Control to Excel, PDF and CSV.
+
+<table>
+<tr>
+<th>Assembly references </th>
+<th>NuGet package </th>
+</tr>
+<tr>
+<td> 
+Syncfusion.XlsIO.Base <br/>
+Syncfusion.Pdf.Base <br/>
+Syncfusion.Compression.Base <br/>
+Syncfusion.GridConverter.WPF <br/>
+Syncfusion.Markdown
+</td>
+<td> 
+Syncfusion.GridExcelExport.WPF
 </td>
 </tr>
 </table>
@@ -420,6 +443,24 @@ Syncfusion.Shared.WPF
 </td>
 <td> 
 Syncfusion.Tools.WPF
+</td>
+</tr>
+</table>
+
+## Grouping
+
+<table>
+<tr>
+<th>Assembly references </th>
+<th>NuGet package </th>
+</tr>
+<tr>
+<td> 
+Syncfusion.Shared.Base <br/>
+Syncfusion.Grouping.Base
+</td>
+<td> 
+Syncfusion.Grouping.Base
 </td>
 </tr>
 </table>
@@ -581,6 +622,7 @@ Syncfusion.ExportOlapChart.Wpf
 </tr>
 <tr>
 <td> 
+Syncfusion.OlapClient.WPF <br/>
 Syncfusion.Chart.WPF <br/>
 Syncfusion.Grid.WPF <br/>
 Syncfusion.GridCommon.WPF <br/>
@@ -595,7 +637,8 @@ Syncfusion.OlapShared.WPF <br/>
 Syncfusion.OlapTools.WPF <br/>
 Syncfusion.Shared.WPF <br/>
 Syncfusion.Tools.WPF <br/>
-Syncfusion.Tools.WPF.Resources
+Syncfusion.Tools.WPF.Resources <br/>
+Syncfusion.Telemetry
 </td>
 <td> 
 Syncfusion.OlapClient.WPF
@@ -632,6 +675,7 @@ Syncfusion.OlapGauge.WPF
 </tr>
 <tr>
 <td> 
+Syncfusion.OlapGrid.WPF <br/>
 Syncfusion.Grid.WPF <br/>
 Syncfusion.GridCommon.WPF <br/>
 Syncfusion.Linq.Base <br/>
@@ -639,7 +683,8 @@ Syncfusion.Olap.Base <br/>
 Syncfusion.OlapGridCommon.WPF <br/>
 Syncfusion.OlapShared.WPF <br/>
 Syncfusion.Shared.WPF <br/>
-Syncfusion.Tools.WPF
+Syncfusion.Tools.WPF <br/>
+Syncfusion.Telemetry
 </td>
 <td> 
 Syncfusion.OlapGrid.WPF
@@ -658,7 +703,13 @@ In addition to the above assemblies, the following reference needs to be added t
 </tr>
 <tr>
 <td> 
-Syncfusion.OlapGridConverter.WPF
+Syncfusion.OlapGridConverter.WPF <br/>
+Syncfusion.Compression.Base <br/>
+Syncfusion.DocIO.Base <br/>
+Syncfusion.OfficeChart.Base <br/>
+Syncfusion.Pdf.Base <br/>
+Syncfusion.XlsIO.Base <br/>
+Syncfusion.Markdown
 </td>
 <td> 
 Syncfusion.ExportOlapGrid.Wpf
@@ -733,8 +784,10 @@ Syncfusion.Shared.WPF
 Syncfusion.Grid.WPF <br/>
 Syncfusion.GridCommon.WPF <br/>
 Syncfusion.Linq.Base <br/>
+Syncfusion.PivotAnalysis.WPF <br/>
 Syncfusion.PivotAnalysis.Base <br/>
-Syncfusion.Shared.WPF
+Syncfusion.Shared.WPF <br/>
+Syncfusion.Telemetry
 </td>
 <td> 
 Syncfusion.PivotTable.Wpf
@@ -753,7 +806,12 @@ In addition to the above assemblies, the following reference needs to be added t
 <tr>
 <td> 
 Syncfusion.PivotGridConverter.WPF <br/>
-Syncfusion.XlsIO.Base
+Syncfusion.Compression.Base <br/>
+Syncfusion.DocIO.Base <br/>
+Syncfusion.OfficeChart.Base <br/>
+Syncfusion.Pdf.Base <br/>
+Syncfusion.XlsIO.Base <br/>
+Syncfusion.Markdown
 </td>
 <td> 
 Syncfusion.PivotTableExport.Wpf
@@ -1111,7 +1169,8 @@ Syncfusion.SfChart.WPF
 <td> 
 Syncfusion.SfGrid.WPF <br/>
 Syncfusion.Data.WPF <br/>
-Syncfusion.Shared.WPF 
+Syncfusion.Shared.WPF <br/>
+Syncfusion.Telemetry
 </td>
 <td> 
 Syncfusion.SfGrid.WPF
@@ -1132,7 +1191,8 @@ The following reference needs to be added in your application for exporting Data
 Syncfusion.SfGridConverter.WPF <br/>
 Syncfusion.XlsIO.Base <br/>
 Syncfusion.Pdf.Base <br/>
-Syncfusion.Compression.Base 
+Syncfusion.Compression.Base <br/>
+Syncfusion.Markdown
 </td>
 <td> 
 Syncfusion.DataGridExcelExport.Wpf
@@ -1156,6 +1216,8 @@ Syncfusion.SfGrid.WPF
 Syncfusion.Data.WPF
 <br/>
 Syncfusion.Shared.WPF
+<br/>
+Syncfusion.Telemetry
 </td>
 <td> 
 Syncfusion.SfGrid.WPF
@@ -1455,6 +1517,26 @@ Syncfusion.SfInput.WPF
 </tr>
 </table>
 
+## SfMultiColumnDropDown
+
+<table>
+<tr>
+<th>Assembly references </th>
+<th>NuGet package </th>
+</tr>
+<tr>
+<td> 
+Syncfusion.SfGrid.WPF <br/>
+Syncfusion.Data.WPF <br/>
+Syncfusion.Shared.WPF <br/>
+Syncfusion.Telemetry
+</td>
+<td> 
+Syncfusion.SfGrid.WPF
+</td>
+</tr>
+</table>
+
 ## SfNavigationDrawer
 
 <table>
@@ -1632,6 +1714,50 @@ Syncfusion.Shared.WPF
 </td>
 <td> 
 Syncfusion.SfScheduler.WPF
+</td>
+</tr>
+</table>
+
+## SfSmartDataGrid
+
+<table>
+<tr>
+<th>Assembly references </th>
+<th>NuGet package </th>
+</tr>
+<tr>
+<td> 
+Syncfusion.SfSmartComponents.WPF <br/>
+Syncfusion.SfGrid.WPF <br/>
+Syncfusion.Data.WPF <br/>
+Syncfusion.Shared.WPF <br/>
+Syncfusion.SfChat.WPF <br/>
+Syncfusion.Telemetry
+</td>
+<td> 
+Syncfusion.SfSmartComponents.WPF
+</td>
+</tr>
+</table>
+
+### Exporting SmartDataGrid to Excel and PDF
+The following reference needs to be added in your application for exporting SmartDataGrid to Excel and PDF.
+
+<table>
+<tr>
+<th>Assembly references </th>
+<th>NuGet package </th>
+</tr>
+<tr>
+<td> 
+Syncfusion.SfGridConverter.WPF <br/>
+Syncfusion.XlsIO.Base <br/>
+Syncfusion.Pdf.Base <br/>
+Syncfusion.Compression.Base <br/>
+Syncfusion.Markdown
+</td>
+<td> 
+Syncfusion.SfSmartComponents.WPF
 </td>
 </tr>
 </table>
@@ -1850,7 +1976,8 @@ Syncfusion.SfToastNotification.WPF
 <td> 
 Syncfusion.SfGrid.WPF <br/>
 Syncfusion.Data.WPF <br/>
-Syncfusion.Shared.WPF 
+Syncfusion.Shared.WPF <br/>
+Syncfusion.Telemetry
 </td>
 <td> 
 Syncfusion.SfGrid.WPF
@@ -1871,7 +1998,8 @@ The following references need to be added in your application for exporting Tree
 Syncfusion.SfGridConverter.WPF <br/>
 Syncfusion.XlsIO.Base <br/>
 Syncfusion.Pdf.Base <br/>
-Syncfusion.Compression.Base 
+Syncfusion.Compression.Base <br/>
+Syncfusion.Markdown
 </td>
 <td> 
 Syncfusion.DataGridExcelExport.Wpf

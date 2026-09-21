@@ -7,16 +7,16 @@ control: ColorPickerPalette
 documentation: ug
 ---
 
-# Getting Started with WPF ColorPickerPalette
+# Getting Started with WPF Color Picker Palette
 
-This section explains how to create a [WPF ColorPickerPalette](https://www.syncfusion.com/wpf-controls/color-picker-palette) and explains about its structure and features.
+This section explains how to create a [WPF Color Picker Palette](https://www.syncfusion.com/wpf-controls/color-picker-palette) and explains about its structure and features.
 
 ## Control Structure
 
 ![WPF Color Picker Palette control structure](getting-started_images/wpf-color-picker-palette-control-structure.png)
 
 * The selected color represents the color that you have selected.
-* The drop-down represents a button; the `ColorPickerPalette` window opens when you click it.
+* The drop-down represents a button; the `WPF Color Picker Palette` window opens when you click it.
 * The automatic color represents the default color that you can configure.
 * The tooltip with color details is shown when the mouse hovers over a color.
 * The standard colors store colors such as red, green, and blue.
@@ -36,7 +36,7 @@ You can find more details about installing the NuGet package in a WPF applicatio
 
 [How to install nuget packages](https://help.syncfusion.com/wpf/installation/install-nuget-packages)
 
-## Adding WPF ColorPickerPalette via designer
+## Adding WPF Color Picker Palette via designer
 
 You can add the WPF Color Picker Palette control to an application by dragging it from the toolbox onto a view in the designer. The following dependent assemblies will be added automatically:
 
@@ -44,9 +44,9 @@ You can add the WPF Color Picker Palette control to an application by dragging i
 
 ![WPF Color Picker Palette Control added by designer](getting-started_images/wpf-color-picker-palette-designer.png)
  
-## Adding WPF ColorPickerPalette via XAML
+## Adding WPF Color Picker Palette via XAML
 
-To add the `ColorPickerPalette` control manually in XAML, follow these steps:
+To add the `WPF Color Picker Palette` control manually in XAML, follow these steps:
 
 1. Create a new WPF project in Visual Studio.
 
@@ -54,7 +54,7 @@ To add the `ColorPickerPalette` control manually in XAML, follow these steps:
 
    * Syncfusion.Shared.WPF
  
-3. Import the Syncfusion<sup>®</sup> WPF schema **http://schemas.syncfusion.com/wpf** and declare the `ColorPickerPalette` control on the XAML page.
+3. Import the Syncfusion<sup>®</sup> WPF schema **http://schemas.syncfusion.com/wpf** and declare the `WPF Color Picker Palette` control on the XAML page.
 
 {% capture codesnippet1 %}
 {% tabs %}
@@ -77,17 +77,17 @@ To add the `ColorPickerPalette` control manually in XAML, follow these steps:
 {% endcapture %}
 {{ codesnippet1 | OrderList_Indent_Level_1 }}
 
-## Adding WPF ColorPickerPalette via C\#
+## Adding WPF Color Picker Palette via C\#
 
-To add the `ColorPickerPalette` in Visual Studio.
+To add the `WPF Color Picker Palette` in Visual Studio.
 
 2. Add the following assembly reference to the project:
 
     * Syncfusion.Shared.WPF
 
-3. Include the required namespace, create an instance of `ColorPickerPalette`, and add it to the window.
+3. Include the required namespace, create an instance of `WPF Color Picker Palette`, and add it to the window.
 
-4. Declare the `ColorPickerPalette` control using C#.
+4. Declare the `WPF Color Picker Palette` control using C#.
 
 {% capture codesnippet2 %}
 {% tabs %}
@@ -115,7 +115,7 @@ public partial class MainWindow : Window {
 
 ![WPF Color Picker Palette control added by xaml and code](getting-started_images/wpf-color-picker-palette-control-added-via-xaml-code.png)
 
-You can set or change the selected color of the `ColorPickerPalette` programmatically by setting the [Color](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ColorPickerPalette.html#Syncfusion_Windows_Tools_Controls_ColorPickerPalette_Color) property. To get the selected color's name, use the [ColorName](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ColorPickerPalette.html#Syncfusion_Windows_Tools_Controls_ColorPickerPalette_ColorName) property, which holds the name of the selected color item. The default value of `Color` is `Black`, and the default value of `ColorName` is the string `"Color"`.
+You can set or change the selected color of the `WPF Color Picker Palette` programmatically by setting the [Color](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ColorPickerPalette.html#Syncfusion_Windows_Tools_Controls_ColorPickerPalette_Color) property. To get the selected color's name, use the [ColorName](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ColorPickerPalette.html#Syncfusion_Windows_Tools_Controls_ColorPickerPalette_ColorName) property, which holds the name of the selected color item. The default value of `Color` is `Black`, and the default value of `ColorName` is the string `"Color"`.
 
 N> You can also set or change the selected color brush by using the [SelectedBrush](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ColorPickerPalette.html#Syncfusion_Windows_Tools_Controls_ColorPickerPalette_SelectedBrush) property. Setting either `Color` or `SelectedBrush` updates the other Palette_Color property. If we want know the selected color name, use the [ColorName](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ColorPickerPalette.html#Syncfusion_Windows_Tools_Controls_ColorPickerPalette_ColorName) property that holds the name of the selected color item. The default value of `Color` and `ColorName` property is `Black` and `Color`.
 
@@ -143,7 +143,7 @@ colorPickerPalette.Height = 40;
 
 ![WPF  Color Picker Palette programmatically picked the red color](dealing-with-colorpickerpalette_images/wpf-programmatically-picked-red.png)
 
-Here, `Red` color is selected color in the `ColorPickerPalette`.
+Here, `Red` color is selected color in the `WPF Color Picker Palette`.
 
 ## Select color from color palette
 
@@ -320,7 +320,7 @@ N> [View Sample  in GitHub](https://github.com/SyncfusionExamples/syncfusion-col
 
 ## Selected brush or color changed notification
 
-The selected brush or color in `ColorPickerPalette` can be observed using the [SelectedBrushChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ColorPickerPalette.html) event. The `SelectedBrushChangedEventArgs` contains the old and newly selected brush and its color values in the `OldBrush`, `NewBrush`, `OldColor`, and `NewColor` properties.
+The selected brush or color in `WPF Color Picker Palette` can be observed using the [SelectedBrushChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ColorPickerPalette.html) event. The `SelectedBrushChangedEventArgs` contains the old and newly selected brush and its color values in the `OldBrush`, `NewBrush`, `OldColor`, and `NewColor` properties.
 
 {% tabs %}
 {% highlight xaml %}
@@ -363,13 +363,13 @@ Click [here](https://github.com/SyncfusionExamples/syncfusion-color-picker-palet
 
 ## Localization support
 
-Localization is the process of translating the application resources into different language for the specific cultures. You can localize the `ColorPickerPalette` control by adding resource file for each language.
+Localization is the process of translating the application resources into different language for the specific cultures. You can localize the `WPF Color Picker Palette` control by adding resource file for each language.
 
-N> Refer [Localization](https://help.syncfusion.com/wpf/localization) page to know more about how to provide a localization support for the `ColorPickerPalette`.
+N> Refer [Localization](https://help.syncfusion.com/wpf/localization) page to know more about how to provide a localization support for the `WPF Color Picker Palette`.
 
 ## Theme
 
-ColorPickerPalette supports various built-in themes. Refer to the below links to apply themes for the ColorPickerPalette,
+The WPF Color Picker Palette supports various built-in themes. Refer to the links below to apply themes,
 
   * [Apply theme using SfSkinManager](https://help.syncfusion.com/wpf/themes/skin-manager)
 	

@@ -1,15 +1,15 @@
 ---
 layout: post
 title: Appearance in WPF TreeView | Syncfusion®
-description: Appearance in SfTreeView enables customizing node templates, styling, indentation, expanders, and animations for tailored tree views.
+description: Appearance in WPF TreeView enables customizing node templates, styling, indentation, expanders, and animations for tailored tree views.
 platform: wpf
 control: SfTreeView
 documentation: ug
 ---
 
-# Appearance in WPF TreeView (SfTreeView)
+# Appearance in WPF TreeView
 
-The TreeView allows customizing the appearance of the underlying data and provides different functionalities to the end-user.
+This section explains the appearance customization options available in the [WPF TreeView](https://www.syncfusion.com/wpf-controls/treeview) control.
 
 ## ItemTemplate
 
@@ -78,9 +78,9 @@ The [WPF TreeView](https://www.syncfusion.com/wpf-controls/treeview) allows you 
 
 ## BindingContext for ItemTemplate
 
-By default, the binding context of tree view item will be the data model object for Bound Mode and [TreeViewNode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.Engine.TreeViewNode.html) for Unbound Mode.
+By default, the binding context of [TreeViewItem](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.TreeViewItem.html) will be the data model object for Bound Mode and [TreeViewNode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.Engine.TreeViewNode.html) for Unbound Mode.
 
-For Bound Mode, you can change the binding context of the TreeView items by using the [ItemTemplateDataContextType](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_ItemTemplateDataContextType) property.
+For Bound Mode, you can change the binding context of the WPF TreeView items by using the [ItemTemplateDataContextType](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_ItemTemplateDataContextType) property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -154,7 +154,7 @@ For Bound Mode, you can change the binding context of the TreeView items by usin
 
 ## ItemTemplate Selector
 
-The TreeView allows you to customize the appearance of each item with different templates based on specific constraints by using the [ItemTemplateSelector](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_ItemTemplateSelector). You can choose a [DataTemplate](https://docs.microsoft.com/en-us/dotnet/api/system.windows.datatemplate?view=netcore-3.1) for each item at runtime based on the value of data-bound property using `ItemTemplateSelector`.
+The WPF TreeView allows you to customize the appearance of each item with different templates based on specific constraints by using the [ItemTemplateSelector](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_ItemTemplateSelector). You can choose a [DataTemplate](https://docs.microsoft.com/en-us/dotnet/api/system.windows.datatemplate?view=netcore-3.1) for each item at runtime based on the value of data-bound property using `ItemTemplateSelector`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -217,7 +217,7 @@ N> View sample in [GitHub](https://github.com/SyncfusionExamples/How-to-customiz
 
 ## Indentation
 
-The TreeView allows you to customize the indent spacing of items by setting the [Indentation](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_Indentation) property. The default value of this property is `20`. This property can be customized at runtime.
+The WPF TreeView allows you to customize the indent spacing of items by setting the [Indentation](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_Indentation) property. The default value of this property is `20`. This property can be customized at runtime.
 
 {% tabs %}
 {% highlight xaml %}
@@ -235,7 +235,7 @@ sfTreeView.Indentation = 40;
 
 ## ExpanderWidth
 
-The TreeView allows customizing the width of expander view by setting the [ExpanderWidth](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_ExpanderWidth) property. The default value of this property is 20. This property can be customized at runtime.
+The WPF TreeView allows customizing the width of expander view by setting the [ExpanderWidth](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_ExpanderWidth) property. The default value of this property is 20. This property can be customized at runtime.
 
 {% tabs %}
 {% highlight xaml %}
@@ -253,7 +253,7 @@ sfTreeView.ExpanderWidth = "40";
 
 ## ExpanderPosition
 
-The TreeView allows you to change the position of the expander view by setting the [ExpanderPosition](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_ExpanderPosition) property. The default value is `Start`. The property has the following values:
+The WPF TreeView allows you to change the position of the expander view by setting the [ExpanderPosition](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_ExpanderPosition) property. The default value is `Start`. The property has the following values:
 
 * `Start` — Displays the expander view at the start position.
 * `End` — Displays the expander view at the end position.
@@ -274,7 +274,7 @@ sfTreeView.ExpanderPosition = ExpanderPosition.End;
 
 ## Level based styling
 
-The TreeView allows you to customize the style of [TreeViewItem](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.TreeViewItem.html) based on different levels by using [IValueConverter](https://docs.microsoft.com/en-us/dotnet/api/system.windows.data.ivalueconverter?view=netcore-3.1).
+The WPF TreeView allows you to customize the style of [TreeViewItem](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.TreeViewItem.html) based on different levels by using [IValueConverter](https://docs.microsoft.com/en-us/dotnet/api/system.windows.data.ivalueconverter?view=netcore-3.1).
 
 {% tabs %}
 {% highlight xaml %}
@@ -323,7 +323,7 @@ N> View sample in [GitHub](https://github.com/SyncfusionExamples/How-to-customiz
 
 ## Animation
 
-The SfTreeView supports animating the expand and collapse of the [TreeViewNode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.TreeNodeView.html). To enable or disable the animation, use the [IsAnimationEnabled](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_IsAnimationEnabled) property of SfTreeView.
+The WPF TreeView supports animating the expand and collapse of the [TreeViewNode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.TreeNodeView.html). To enable or disable the animation, use the [IsAnimationEnabled](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_IsAnimationEnabled) property of SfTreeView.
 
 {% tabs %}
 {% highlight xaml %}

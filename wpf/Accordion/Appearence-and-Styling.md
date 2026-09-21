@@ -1,18 +1,18 @@
 ---
 layout: post
-title: Appearance and Styling in WPF SfAccordion | Syncfusion®
-description: The Appearance and Styling support in SfAccordion lets you customize headers, content, icons, and themes for a consistent UI.
+title: Appearance and Styling in WPF Accordion | Syncfusion®
+description: The Appearance and Styling support in Accordion lets you customize headers, content, icons, and themes for a consistent UI.
 platform: wpf
-control: SfAccordion
+control: Accordion
 documentation: ug
 
 ---
 
-# Appearance and Styling in WPF SfAccordion
+# Appearance and Styling in WPF Accordion
 
 ## Applying accent colors
 
-SfAccordion supports accent colors to highlight the hot spots of the control. You can customize the accent colors using the [AccentBrush](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Layout.SfAccordion.html#Syncfusion_Windows_Controls_Layout_SfAccordion_AccentBrush) property.
+Accordion supports accent colors to highlight the hot spots of the control. You can customize the accent colors using the [AccentBrush](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Layout.SfAccordion.html#Syncfusion_Windows_Controls_Layout_SfAccordion_AccentBrush) property.
 
 {% tabs %}
 {% highlight XAML %}
@@ -27,7 +27,7 @@ accordion.AccentBrush = new SolidColorBrush() { Color = Windows.UI.Colors.Red };
 
 ## Accordion header style
 
-You can customize the appearance of SfAccordionItem header by setting the [HeaderTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Layout.SfAccordion.html#Syncfusion_Windows_Controls_Layout_SfAccordion_HeaderTemplate) property of SfAccordion.
+You can customize the appearance of `SfAccordion` header by setting the [HeaderTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Layout.SfAccordion.html#Syncfusion_Windows_Controls_Layout_SfAccordion_HeaderTemplate) property.
 
 {% tabs %}
 {% highlight XAML %}
@@ -107,7 +107,7 @@ You can customize the appearance of expander button by writing style of [Accordi
         </Setter.Value>
     </Setter>
 </Style>
-<!--SfAccordion Control -->
+<!--Accordion Control -->
 <syncfusion:SfAccordion x:Name="accordion1" HorizontalAlignment="Right" VerticalAlignment="Center" Width="180">
 	<!-- Setting AccordionButtonStyle -->
 	<syncfusion:SfAccordion.ItemContainerStyle>
@@ -123,7 +123,7 @@ You can customize the appearance of expander button by writing style of [Accordi
 
 ## AccordionItem header height customization
 
-You can customize the height of SfAccordionItem header by setting the [HeaderTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Layout.SfAccordion.html#Syncfusion_Windows_Controls_Layout_SfAccordion_HeaderTemplate) property of SfAccordion. 
+You can customize the height of SfAccordionItem header by setting the [HeaderTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Layout.SfAccordion.html#Syncfusion_Windows_Controls_Layout_SfAccordion_HeaderTemplate) property of `SfAccordion`. 
 
 {% tabs %}
 {% highlight XAML %}
@@ -140,7 +140,7 @@ You can customize the height of SfAccordionItem header by setting the [HeaderTem
 
 ## AccordionItem content height customization
 
-You can customize the height of SfAccordionItem content by setting the [ContentTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Layout.SfAccordion.html#Syncfusion_Windows_Controls_Layout_SfAccordion_ContentTemplate) property of SfAccordion.
+You can customize the height of SfAccordionItem content by setting the [ContentTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Layout.SfAccordion.html#Syncfusion_Windows_Controls_Layout_SfAccordion_ContentTemplate) property of `SfAccordion`.
 
 {% tabs %}
 {% highlight XAML %}
@@ -157,7 +157,7 @@ You can customize the height of SfAccordionItem content by setting the [ContentT
 
 ## Enable or disable the animation behaviour
 
-You can enable or disable the animation behaviour when its item is expanded or collapsed. It can be achieved by setting [TargetSize](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Layout.ExpandableContentControl.html#Syncfusion_Windows_Controls_Layout_ExpandableContentControl_TargetSize) and [Percentage](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Layout.ExpandableContentControl.html#Syncfusion_Windows_Controls_Layout_ExpandableContentControl_Percentage) properties in [ExpandableContentControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Layout.ExpandableContentControl.html) and writing the animation style in [SfAccordionItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Layout.SfAccordionItem.html), the edited style can be applied by using the [ItemContainerStyle](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Layout.SfAccordion.html#Syncfusion_Windows_Controls_Layout_SfAccordion_ItemContainerStyle) property of the SfAccordion control.
+You can enable or disable the animation behaviour when its item is expanded or collapsed. It can be achieved by setting [TargetSize](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Layout.ExpandableContentControl.html#Syncfusion_Windows_Controls_Layout_ExpandableContentControl_TargetSize) and [Percentage](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Layout.ExpandableContentControl.html#Syncfusion_Windows_Controls_Layout_ExpandableContentControl_Percentage) properties in [ExpandableContentControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Layout.ExpandableContentControl.html) and writing the animation style in [SfAccordionItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Layout.SfAccordionItem.html), the edited style can be applied by using the [ItemContainerStyle](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Layout.SfAccordion.html#Syncfusion_Windows_Controls_Layout_SfAccordion_ItemContainerStyle) property of the `SfAccordion` control.
 
 {% tabs %}
 {% highlight XAML %}
@@ -203,9 +203,9 @@ You can enable or disable the animation behaviour when its item is expanded or c
 	</Border>
 </Style>
 
-<!--SfAccordion Control -->
+<!--Accordion Control -->
 <syncfusion:SfAccordion x:Name="accordion1" HorizontalAlignment="Center" VerticalAlignment="Center"  ItemContainerStyle="{StaticResource animationStyle}" />
 {% endhighlight %}
 {% endtabs %}
 
-![WPF Accordion Animation](Appearance-and-Styling-images/wpf-accordion-animation.png)
+![Animation support in WPF Accordion](Appearance-and-Styling-images/wpf-accordion-animation.png)

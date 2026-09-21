@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Annotation Positioning and Appearance in WPF SfDiagram | Syncfusion®
-description: Learn about annotation positioning and appearance in Syncfusion® WPF SfDiagram control, including alignment, sizing, wrapping, styling, and editing.
+title: Annotation Positioning and Appearance in WPF Diagram | Syncfusion®
+description: Learn about annotation positioning and appearance in Syncfusion® WPF Diagram control, including alignment, sizing, wrapping, styling, and editing.
 platform: wpf
 control: SfDiagram
 documentation: ug
 ---
 
-# Annotation Positioning and Appearance in WPF SfDiagram
+# Annotation Positioning and Appearance in WPF Diagram
 
-[WPF SfDiagram](https://www.syncfusion.com/diagram-sdk/wpf-diagram) allows you to customize the position and appearance of the annotation efficiently.
+[WPF Diagram](https://www.syncfusion.com/diagram-sdk/wpf-diagram) allows you to customize the position and appearance of the annotation efficiently.
 
 ## How to position node's annotation 
 
@@ -577,8 +577,8 @@ Annotations = new ObservableCollection<IAnnotation>()
 
 [How to programmatically Show/Hide the Annotations of node and connector?](https://support.syncfusion.com/kb/article/6281/how-to-programmatically-showhide-annotations-in-wpf-diagram-)
 
-[How to set font properties for newly added items Annotations in WPF SfDiagram?](https://support.syncfusion.com/kb/article/18670/how-to-set-font-properties-for-newly-added-items-annotations-in-wpf-diagram-sfdiagram)
+[How to set font properties for newly added items Annotations in WPF Diagram?](https://support.syncfusion.com/kb/article/18670/how-to-set-font-properties-for-newly-added-items-annotations-in-wpf-diagram-sfdiagram)
 
-[How to update text formatting properties of an Annotation in WPF SfDiagram?](https://support.syncfusion.com/kb/article/18407/how-to-update-text-formatting-properties-of-an-annotation-in-wpf-diagram-sfdiagram)
+[How to update text formatting properties of an Annotation in WPF Diagram?](https://support.syncfusion.com/kb/article/18407/how-to-update-text-formatting-properties-of-an-annotation-in-wpf-diagram-sfdiagram)
 
-[How to change the annotation content of a node using context menu in WPF SfDiagram?](https://support.syncfusion.com/kb/article/14962/how-to-change-the-annotation-content-of-a-node-using-context-menu-in-wpf-diagram-sfdiagram)
+[How to change the annotation content of a node using context menu in WPF Diagram?](https://support.syncfusion.com/kb/article/14962/how-to-change-the-annotation-content-of-a-node-using-context-menu-in-wpf-diagram-sfdiagram)

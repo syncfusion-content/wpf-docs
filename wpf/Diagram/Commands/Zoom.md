@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Zoom Command in WPF SfDiagram | Syncfusion®
-description: Perform zooming, panning, scrolling, and reset operations in Syncfusion® WPF SfDiagram using customizable zoom commands.
+title: Zoom Command in WPF Diagram | Syncfusion®
+description: Perform zooming, panning, scrolling, and reset operations in Syncfusion® WPF Diagram using customizable zoom commands.
 platform: wpf
 control: SfDiagram
 documentation: ug
 ---
 
-# Zoom Command in WPF SfDiagram
+# Zoom Command in WPF Diagram
 
 The [Zoom](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IDiagramCommands.html#Syncfusion_UI_Xaml_Diagram_IDiagramCommands_Zoom) commands are used to perform zoom-in and zoom-out operations on the [WPF SfDiagram](https://www.syncfusion.com/diagram-sdk/wpf-diagram) view. This command is also used to do scroll and pan operations through its parameters.
 
@@ -40,7 +40,7 @@ For ZoomIn operation
 
 {% highlight c# %}
 
-//Initialize the SfDiagram 
+//Initialize the Diagram 
 SfDiagram diagramcontrol = new SfDiagram();
 
 IGraphInfo graphinfo = diagramcontrol.Info as IGraphInfo;
@@ -69,7 +69,7 @@ For ZoomOut operation
 
 {% highlight c# %}
 
-//Initialize the SfDiagram 
+//Initialize the Diagram 
 SfDiagram diagramcontrol = new SfDiagram();
 
 IGraphInfo graphinfo = diagramcontrol.Info as IGraphInfo;
@@ -100,7 +100,7 @@ For ZoomTo specific value
 
 {% highlight c# %}
 
-//Initialize the SfDiagram 
+//Initialize the Diagram 
 SfDiagram diagramcontrol = new SfDiagram();
 
 IGraphInfo graphinfo = diagramcontrol.Info as IGraphInfo;
@@ -122,7 +122,7 @@ For Panning
 {% tabs %}
 {% highlight c# %}
 
-//Initialize the SfDiagram 
+//Initialize the Diagram 
 SfDiagram diagramcontrol = new SfDiagram();
 
 IGraphInfo graphinfo = diagramcontrol.Info as IGraphInfo;
@@ -152,7 +152,7 @@ For HorizontalScroll
 
 {% highlight c# %}
 
-//Initialize the SfDiagram 
+//Initialize the Diagram 
 SfDiagram diagramcontrol = new SfDiagram();
 
 IGraphInfo graphinfo = diagramcontrol.Info as IGraphInfo;
@@ -181,7 +181,7 @@ For VerticalScroll
 
 {% highlight c# %}
 
-//Initialize the SfDiagram 
+//Initialize the Diagram 
 SfDiagram diagramcontrol = new SfDiagram();
 
 IGraphInfo graphinfo = Diagram.Info as IGraphInfo;
@@ -228,7 +228,7 @@ The `Reset` parameter is used to define the behavior of the Reset Command.
 
 {% highlight c# %}
 
-//Initialize the SfDiagram 
+//Initialize the Diagram 
 SfDiagram diagramcontrol = new SfDiagram();
 
 IGraphInfo graphinfo = diagramcontrol.Info as IGraphInfo;

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: FitToPage Command in WPF SfDiagram | Syncfusion®
-description: Fit diagram content within the view in Syncfusion® WPF SfDiagram using FitToPage commands and customizable fitting parameters.
+title: FitToPage Command in WPF Diagram | Syncfusion®
+description: Fit diagram content within the view in Syncfusion® WPF Diagram using FitToPage commands and customizable fitting parameters.
 platform: wpf
 control: SfDiagram
 documentation: ug
 ---
 
-# FitToPage Command in WPF SfDiagram
+# FitToPage Command in WPF Diagram
 
 The [FitToPage](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IDiagramCommands.html#Syncfusion_UI_Xaml_Diagram_IDiagramCommands_FitToPage) command is used to bring the entire diagram into view. The [FitToPageParameter](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.FitToPageParameter.html) parameter is used to customize the `FitToPage` command behavior. If the parameter is null, the entire diagram fits into view.
 
@@ -21,7 +21,7 @@ The [FitToPage](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ID
 
 {% highlight c# %}
 
-//Initialize the SfDiagram 
+//Initialize the Diagram 
 SfDiagram diagramcontrol = new SfDiagram();
 
 IGraphInfo graphinfo = diagramcontrol.Info as IGraphInfo;
@@ -75,7 +75,7 @@ The following example shows how to create a `FitToPageParameter` instance and pa
 {% tabs %}
 {% highlight c# %}
 
-//Initialize the SfDiagram 
+//Initialize the Diagram 
 SfDiagram diagram = new SfDiagram();
 
 IGraphInfo graphinfo = diagram.Info as IGraphInfo;

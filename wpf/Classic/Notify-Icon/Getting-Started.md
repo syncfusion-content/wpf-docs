@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Getting Started with WPF NotifyIcon | Syncfusion®
-description: Learn how to get started with the Syncfusion® WPF NotifyIcon control. Explore setup, features, examples, and customization options.
+title: Getting Started with WPF Notify Icon | Syncfusion®
+description: Learn how to get started with the Syncfusion® WPF Notify Icon control. Explore setup, features, examples, and customization options.
 platform: wpf
-control: NotifyIcon
+control: Notify Icon
 documentation: ug
 ---
 
-# Getting Started with WPF NotifyIcon
+# Getting Started with WPF Notify Icon
 
-This section provides you an overview of working with [NotifyIcon](https://www.syncfusion.com/wpf-controls/notify-icon) for WPF and provides a walkthrough to configure the NotifyIcon control in a real-time scenario.
+This section provides you an overview of working with [Notify Icon](https://www.syncfusion.com/wpf-controls/notify-icon) for WPF and provides a walkthrough to configure the Notify Icon control in a real-time scenario.
 
 ## Assembly deployment
 
@@ -18,11 +18,11 @@ Refer to the [control dependencies](https://help.syncfusion.com/wpf/control-depe
 Further information on installing the NuGet package can be found in the following link:
 [How to install nuget packages](https://help.syncfusion.com/wpf/installation/install-nuget-packages).
 
-You can also use the [Syncfusion Reference Manager](https://help.syncfusion.com/wpf/visual-studio-integration/visual-studio-extensions/add-references) to refer to the NotifyIcon's dependent assemblies.
+You can also use the [Syncfusion Reference Manager](https://help.syncfusion.com/wpf/visual-studio-integration/visual-studio-extensions/add-references) to refer to the Notify Icon's dependent assemblies.
 
-## Creating an application with NotifyIcon control
+## Creating an application with Notify Icon control
 
-In this walkthrough, you will create a WPF application that contains the NotifyIcon control.
+In this walkthrough, you will create a WPF application that contains the Notify Icon control.
 
 ## Creating a project
 
@@ -80,7 +80,7 @@ To add the control manually in C#, follow the given steps:
     * Syncfusion.Shared.WPF.Classic
     * Syncfusion.Tools.WPF.Classic
 
-2. Import the `NotifyIcon` namespace **Syncfusion.Windows.Tools.Controls**.
+2. Import the namespace **Syncfusion.Windows.Tools.Controls**.
 
 3. Create the `NotifyIcon` control instance and add it to the page.
 
@@ -130,7 +130,7 @@ You can set the icon to the [NotifyIcon](https://help.syncfusion.com/cr/wpf/Sync
 
 {% endtabs %}
 
-![Set the icon to WPF NotifyIcon](Getting-Started_images/wpf-notifyicon-icon.png)
+![Set the icon to WPF Notify Icon](Getting-Started_images/wpf-notifyicon-icon.png)
 
 ## Text
 
@@ -152,7 +152,7 @@ notify.Text = "Notify me";
 
 {% endtabs %}
 
-![Set the text value to WPF NotifyIcon](Getting-Started_images/wpf-notifyicon-text.png)
+![Set the text value to WPF Notify Icon](Getting-Started_images/wpf-notifyicon-text.png)
 
 ## Tooltip
 
@@ -178,16 +178,16 @@ notify.ShowBalloonTip(3000);
 
 {% endtabs %}
 
-![Set the tooltip to WPF NotifyIcon](Getting-Started_images/wpf-notifyicon-tooltip.png)
+![Set the tooltip to WPF Notify Icon](Getting-Started_images/wpf-notifyicon-tooltip.png)
 
 N> [View sample in GitHub](https://github.com/SyncfusionExamples/GettingStarted-WPF-NotifyIcon).
 
 ## Theme
 
-NotifyIcon supports various built-in themes. Refer to the below links to apply themes for the NotifyIcon,
+Notify Icon supports various built-in themes. Refer to the below links to apply themes for the Notify Icon,
 
   * [Apply theme using SfSkinManager](https://help.syncfusion.com/wpf/themes/skin-manager)
 	
   * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
 
-  ![Setting theme to WPF NotifyIcon](Getting-Started_images/wpf-notifyicon-theme.png)
+  ![Setting theme to WPF Notify Icon](Getting-Started_images/wpf-notifyicon-theme.png)

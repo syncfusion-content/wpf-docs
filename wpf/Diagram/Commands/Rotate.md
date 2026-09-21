@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Rotate Command in WPF SfDiagram | Syncfusion®
-description: Rotate diagram elements in Syncfusion® WPF SfDiagram using rotate commands with configurable angles and rotation directions.
+title: Rotate Command in WPF Diagram | Syncfusion®
+description: Rotate diagram elements in Syncfusion® WPF Diagram using rotate commands with configurable angles and rotation directions.
 platform: wpf
 control: SfDiagram
 documentation: ug
 ---
 
-# Rotate Command in WPF SfDiagram
+# Rotate Command in WPF Diagram
 
 The [Rotate](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IDiagramCommands.html#Syncfusion_UI_Xaml_Diagram_IDiagramCommands_Rotate) command is used to rotate elements in the diagram. 
 
@@ -36,7 +36,7 @@ The `Angle` property is used to specify the rotation angle in degrees. The defau
 
 {% highlight c# %}
 
-//Initialize the SfDiagram 
+//Initialize the Diagram 
 SfDiagram diagramcontrol = new SfDiagram();
 
 IGraphInfo graphinfo = diagramcontrol.Info as IGraphInfo;

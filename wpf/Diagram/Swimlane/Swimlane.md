@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Swimlane in WPF SfDiagram | Syncfusion®
-description: Learn about swimlane in Syncfusion® WPF SfDiagram control, including swimlane creation, headers, customization, orientation, and interactions.
+title: Swimlane in WPF Diagram | Syncfusion®
+description: Learn about swimlane in Syncfusion® WPF Diagram control, including swimlane creation, headers, customization, orientation, and interactions.
 platform: wpf
 control: SfDiagram
 documentation: ug
 ---
 
-# Swimlane in WPF SfDiagram
+# Swimlane in WPF Diagram
 
 A [Swimlane](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Swimlane.html) is a type of diagram node, which is typically used to visualize the relationship between a business process and the department responsible for it by focusing on the logical relationships between activities.
 
@@ -15,7 +15,7 @@ A [Swimlane](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Swiml
 
 ## Create a swimlane
 
-A swimlane can be created and added to the [WPF SfDiagram](https://www.syncfusion.com/diagram-sdk/wpf-diagram), either programmatically or interactively. 
+A swimlane can be created and added to the [WPF Diagram](https://www.syncfusion.com/diagram-sdk/wpf-diagram), either programmatically or interactively. 
 
 ### Add Swimlane through the Swimlanes collection 
 
@@ -39,9 +39,9 @@ N> By default, if you create a swimlane, one lane and phase will be added.
 {% endhighlight %}
 {% highlight c# %}
 
-//Initialize the SfDiagram
+//Initialize the Diagram
 SfDiagram diagram = new SfDiagram();
-//Initialize the SwimlaneCollection to SfDiagram
+//Initialize the SwimlaneCollection to Diagram
 diagram.Swimlanes = new SwimlaneCollection();
 
 //Creating the SwimlaneViewModel
@@ -100,7 +100,7 @@ The following code example explains how to define the swimlane header.
 {% highlight c# %}
   //Initialize the SfDiagram
   SfDiagram diagram = new SfDiagram();
- //Initialize the SwimlaneCollection to SfDiagram
+ //Initialize the SwimlaneCollection to Diagram
  diagram.Swimlanes = new SwimlaneCollection();
 
  //Creating the SwimlaneViewModel
@@ -179,7 +179,7 @@ The following code example explains how to customize the swimlane header.
         </syncfusion:SfDiagram>
 {% endhighlight %}
 {% highlight c# %}
-  //Initialize the SfDiagram
+  //Initialize the Diagram
   SfDiagram diagram = new SfDiagram();
  //Initialize the SwimlaneCollection to SfDiagram
  diagram.Swimlanes = new SwimlaneCollection();
@@ -271,7 +271,7 @@ The following code example explains how to set the orientation of the swimlane.
 {% endhighlight %}
 {% highlight c# %}
 
-//Initialize the SfDiagram
+//Initialize the Diagram
 SfDiagram diagram = new SfDiagram();
 //Initialize the SwimlaneCollection to SfDiagram
 diagram.Swimlanes = new SwimlaneCollection();
@@ -324,6 +324,6 @@ Please find the swimlane sample as follows.
 [View Swimlane sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Swimlane/Swimlane-Sample)
 
 ## See Also
-[How to restrict node’s dragging from native lane to other lanes in WPF SfDiagram?](https://support.syncfusion.com/kb/article/11744/how-to-restrict-nodes-dragging-from-native-lane-to-other-lanes-in-wpf-diagramsfdiagram)
+[How to restrict node’s dragging from native lane to other lanes in WPF Diagram?](https://support.syncfusion.com/kb/article/11744/how-to-restrict-nodes-dragging-from-native-lane-to-other-lanes-in-wpf-diagramsfdiagram)
 
-[How to render the Swimlane at the top-left corner of the diagram in the WPF SfDiagram ?](https://support.syncfusion.com/kb/article/18841/how-to-render-the-swimlane-at-the-top-left-corner-of-the-diagram-in-the-wpf-diagram-sfdiagram)
+[How to render the Swimlane at the top-left corner of the diagram in the WPF Diagram ?](https://support.syncfusion.com/kb/article/18841/how-to-render-the-swimlane-at-the-top-left-corner-of-the-diagram-in-the-wpf-diagram-sfdiagram)

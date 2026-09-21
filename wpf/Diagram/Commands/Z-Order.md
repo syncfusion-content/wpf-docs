@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Z-Order Commands in WPF SfDiagram | Syncfusion®
-description: Arrange diagram elements in Syncfusion® WPF SfDiagram using Z-order commands to bring items forward or send them backward.
+title: Z-Order Commands in WPF Diagram | Syncfusion®
+description: Arrange diagram elements in Syncfusion® WPF Diagram using Z-order commands to bring items forward or send them backward.
 platform: wpf
 control: SfDiagram
 documentation: ug
 ---
 
-# Z-Order Commands in WPF SfDiagram
+# Z-Order Commands in WPF Diagram
 
-Z – Order commands are used to visually arrange the selected objects such as Nodes and Connectors on the [WPF SfDiagram](https://www.syncfusion.com/diagram-sdk/wpf-diagram) page with its Z-order values.
+Z – Order commands are used to visually arrange the selected objects such as Nodes and Connectors on the [WPF Diagram](https://www.syncfusion.com/diagram-sdk/wpf-diagram) page with its Z-order values.
 
 Z-order determines the visual stacking order of diagram elements on the page. When two or more elements overlap, the element with a higher Z-order value appears in front of elements with lower Z-order values. Z-Order commands can be used to change this stacking order and control the visibility of overlapping elements.
 
@@ -29,7 +29,7 @@ N> If the selected element is already at the highest Z-order level, executing th
 
 {% highlight c# %}
 
-//Initialize the SfDiagram 
+//Initialize the Diagram 
 SfDiagram diagramcontrol = new SfDiagram();
 
 IGraphInfo graphinfo = diagramcontrol.Info as IGraphInfo;
@@ -56,7 +56,7 @@ N> If the selected element is already at the lowest Z-order level, executing the
 
 {% highlight c# %}
 
-//Initialize the SfDiagram 
+//Initialize the Diagram 
 SfDiagram diagramcontrol = new SfDiagram();
 
 IGraphInfo graphinfo = diagramcontrol.Info as IGraphInfo;
@@ -85,7 +85,7 @@ N> The `SendBackward` command moves the selected element one level backward in t
 
 {% highlight c# %}
 
-//Initialize the SfDiagram 
+//Initialize the Diagram 
 SfDiagram diagramcontrol = new SfDiagram();
 
 IGraphInfo graphinfo = diagramcontrol.Info as IGraphInfo;
@@ -112,7 +112,7 @@ N> The `BringForward` command moves the selected element one level forward in th
 
 {% highlight c# %}
 
-//Initialize the SfDiagram 
+//Initialize the Diagram 
 SfDiagram diagramcontrol = new SfDiagram();
 
 IGraphInfo graphinfo = diagramcontrol.Info as IGraphInfo;

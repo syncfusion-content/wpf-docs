@@ -1,15 +1,15 @@
 ---
 layout: post
 title: Load on Demand in WPF TreeView | Syncfusion®
-description: Load on Demand in SfTreeView enables loading child nodes when expanded using commands, improving performance for hierarchical data.
+description: Load on Demand in WPF TreeView enables loading child nodes when expanded using commands, improving performance for hierarchical data.
 platform: wpf
 control: SfTreeView
 documentation: ug
 ---
 
-# Load On Demand in WPF TreeView (SfTreeView)
+# Load On Demand in WPF TreeView
 
-TreeView allows you to load child items only when they are requested, using Load on-demand (lazy load). It helps to load child items from services when the end-user expands a node. Initially, populate the root [Nodes](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_Nodes) by assigning the [ItemsSource](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_ItemsSource); then, when a node is expanded, child items can be loaded using the [LoadOnDemandCommand](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_LoadOnDemandCommand). Load on-demand is applicable only for bound mode.
+The [WPF TreeView](https://www.syncfusion.com/wpf-controls/treeview) control allows you to load child items only when they are requested by using load on demand (lazy loading). It helps load child items from services when the end user expands a node. Initially, populate the root [Nodes](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_Nodes) by assigning the [ItemsSource](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_ItemsSource); then, when a node is expanded, child items can be loaded using the [LoadOnDemandCommand](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_LoadOnDemandCommand). Load on demand is applicable only in bound mode.
 
 {% tabs %}
 {% highlight xaml %}
@@ -258,7 +258,7 @@ N> `LoadOnDemandCommand` receives the [TreeViewNode](https://help.syncfusion.com
 
 ## Handling expander visibility
 
-The TreeView shows the expander for a particular node based on the return value of the [CanExecute](https://learn.microsoft.com/en-us/dotnet/api/system.windows.input.icommand.canexecute) method of the [LoadOnDemandCommand](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_LoadOnDemandCommand). If `CanExecute` returns `true`, the expander icon is displayed for that node. If `CanExecute` returns `false`, the expander icon is not displayed. The `CanExecute` method is called to decide the visibility of the expander icon and before executing `LoadOnDemandCommand`.
+The WPF TreeView shows the expander for a particular node based on the return value of the [CanExecute](https://learn.microsoft.com/en-us/dotnet/api/system.windows.input.icommand.canexecute) method of the [LoadOnDemandCommand](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_LoadOnDemandCommand). If `CanExecute` returns `true`, the expander icon is displayed for that node. If `CanExecute` returns `false`, the expander icon is not displayed. The `CanExecute` method is called to decide the visibility of the expander icon and before executing `LoadOnDemandCommand`.
 
 {% tabs %}
 {% highlight c# %}

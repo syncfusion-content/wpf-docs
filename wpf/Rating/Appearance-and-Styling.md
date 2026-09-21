@@ -1,25 +1,25 @@
 ---
 layout: post
-title: Appearance and Styling in WPF SfRating | Syncfusion®
-description: Appearance and styling in WPF SfRating allow customization of rating item visuals, colors, shapes, and layouts to match application themes.
+title: Appearance and Styling in WPF Rating | Syncfusion®
+description: Appearance and styling in WPF Rating allow customization of rating item visuals, colors, shapes, and layouts to match application themes.
 platform: wpf
-control: SfRating
+control: Rating
 documentation: ug
 ---
 
-# Appearance and Styling in WPF SfRating
+# Appearance and Styling in WPF Rating 
 
-When the default view is not needed, you can customize the view of WPF SfRating control. The SfRating control provides support to customize the size, item count, and space between rating items.
+When the default view is not needed, you can customize the view of WPF Rating  control. The Rating control provides support to customize the size, item count, and space between rating items.
 
-N> These properties are available in SfRatingItem. To set this property, use the ItemContainerStyle property of the SfRating control.
+N> These properties are available in SfRatingItem. To set this property, use the ItemContainerStyle property of the Rating control.
 
 ## Set fill color
 
-The SfRating control supports to set the fill color to the selected and unselected items.
+The Rating control supports to set the fill color to the selected and unselected items.
 
 ### Selected items
 
-The `RatedFill` property fills the rated area with the specified solid color in the SfRating control.
+The `RatedFill` property fills the rated area with the specified solid color in the Rating control.
 
 {% highlight xaml %}
 
@@ -37,7 +37,7 @@ The `RatedFill` property fills the rated area with the specified solid color in 
 
 ### Unselected items
 
-The `UnRatedFill` property fills the unrated area with the specified solid color in the SfRating control.
+The `UnRatedFill` property fills the unrated area with the specified solid color in the Rating control.
 
 {% highlight xaml %}
 
@@ -56,11 +56,11 @@ The `UnRatedFill` property fills the unrated area with the specified solid color
 
 ## Set stroke color
 
-The SfRating control supports to set the stroke color to the selected and unselected items.
+The Rating control supports to set the stroke color to the selected and unselected items.
 
 ### Selected items
 
-The `RatedStroke` property sets the stroke color to the rated area with the specified solid color to the selected items in the SfRating control.
+The `RatedStroke` property sets the stroke color to the rated area with the specified solid color to the selected items in the Rating control.
 
 {% highlight xaml %}
 
@@ -79,7 +79,7 @@ The `RatedStroke` property sets the stroke color to the rated area with the spec
 
 ### Unselected items
 
-The `UnratedStroke` property sets the stroke color to the unrated area with the specified solid color in the SfRating control.
+The `UnratedStroke` property sets the stroke color to the unrated area with the specified solid color in the Rating control.
 
 {% highlight xaml %}
 
@@ -98,11 +98,11 @@ The `UnratedStroke` property sets the stroke color to the unrated area with the 
 
 ## Set stroke thickness
 
-The SfRating control supports to set the stroke thickness to the selected and unselected items.
+The Rating control supports to set the stroke thickness to the selected and unselected items.
 
 ### Selected items
 
-The `RatedStrokeThickness` property sets the stroke thickness to the rated area with the specified value in the SfRating control.
+The `RatedStrokeThickness` property sets the stroke thickness to the rated area with the specified value in the Rating control.
 
 {% highlight xaml %}
 
@@ -121,7 +121,7 @@ The `RatedStrokeThickness` property sets the stroke thickness to the rated area 
 
 ### Unselected items
 
-The `UnratedStrokeThickness` property sets the stroke thickness to the unrated area with the specified value in the SfRating control.
+The `UnratedStrokeThickness` property sets the stroke thickness to the unrated area with the specified value in the Rating control.
 
 {% highlight xaml %}
 
@@ -140,7 +140,7 @@ The `UnratedStrokeThickness` property sets the stroke thickness to the unrated a
 
 ### PointerOverFill
 
-The `PointerOverFill` property fills the mouse over area with the specified solid color in the SfRating control.
+The `PointerOverFill` property fills the mouse over area with the specified solid color in the Rating control.
 
 {% highlight xaml %}
 
@@ -158,7 +158,7 @@ The `PointerOverFill` property fills the mouse over area with the specified soli
 
 ### PointerOverStroke
 
-The `PointerOverStroke` property sets the stroke color to the mouse over area with the specified solid color in the SfRating control.
+The `PointerOverStroke` property sets the stroke color to the mouse over area with the specified solid color in the Rating control.
 
 {% highlight xaml %}
 
@@ -176,7 +176,7 @@ The `PointerOverStroke` property sets the stroke color to the mouse over area wi
 
 ### PointerOverStrokeThickness
 
-The `PointerOverStrokeThickness` property sets the stroke thickness to the mouse over area with the specified value in the SfRating control.
+The `PointerOverStrokeThickness` property sets the stroke thickness to the mouse over area with the specified value in the Rating control.
 
 {% highlight xaml %}
 
@@ -213,11 +213,10 @@ You can set the height of each SfRatingItem using the `Height` property.
 
 {% highlight C# %}
 
-SfRating rating;
 public MainWindow()
 {
     InitializeComponent();
-    rating = new SfRating();
+    SfRating rating = new SfRating();
     rating.Value = 3;
     rating.Items.Add(new SfRatingItem() { Height = 20 });
     rating.Items.Add(new SfRatingItem() { Height = 18 });
@@ -231,7 +230,7 @@ public MainWindow()
 
 {% endtabs %}
 
-![SfRating item custom height](images/height_customization.png)
+![Rating item custom height](images/height_customization.png)
 
 To set same height to each SfRatingItem, use the `ItemContainerStyle` property.
 
@@ -247,4 +246,4 @@ To set same height to each SfRatingItem, use the `ItemContainerStyle` property.
 
 {% endhighlight %}
 
-![SfRating item normal height](images/equal_height.png)
+![Rating item normal height](images/equal_height.png)

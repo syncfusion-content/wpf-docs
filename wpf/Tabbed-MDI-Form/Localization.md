@@ -7,13 +7,13 @@ control: DocumentContainer
 documentation: ug
 ---
 
-# Localization in WPF DocumentContainer
+# Localization in WPF Tabbed MDI Form
 
-The DocumentContainer exposes a set of resource keys that you can override in a `.resx` file to localize its context menu items and command labels to a specific culture. You can simply provide translated string values in the resource file for a specific culture and set the culture in the application.
+The WPF Tabbed MDI Form exposes a set of resource keys that you can override in a `.resx` file to localize its context menu items and command labels to a specific culture. You can simply provide translated string values in the resource file for a specific culture and set the culture in the application.
 
 ## Localizable Resource Keys
 
-The following table lists the resource keys that the DocumentContainer (and DockingManager) read at runtime.
+The following table lists the resource keys that the WPF Tabbed MDI Form (and DockingManager) read at runtime.
 
 | Resource key | Description | Default menu text (en-US) |
 |---|---|---|
@@ -26,8 +26,8 @@ The following table lists the resource keys that the DocumentContainer (and Dock
 | `MDIMinimize` | Minimizes the MDI window. | Minimize |
 | `MDIMaximize` | Maximizes the MDI window. | Maximize |
 | `MDIClose` | Closes the MDI window. | Close |
-| `MoveToNextTabGroup` | Moves the tab to the next tab group (DockingManager and DocumentContainer). | Move to Next Tab Group |
-| `MoveToPreviousTabGroup` | Moves the tab to the previous tab group (DockingManager and DocumentContainer). | Move to Previous Tab Group |
+| `MoveToNextTabGroup` | Moves the tab to the next tab group (WPF Docking Control and WPF Tabbed MDI Form). | Move to Next Tab Group |
+| `MoveToPreviousTabGroup` | Moves the tab to the previous tab group (WPF Docking Control and WPF Tabbed MDI Form). | Move to Previous Tab Group |
 | `NewTabgroupMenuItemCancel` | Cancels a new tab group drag operation. | Cancel |
 | `TabClose` | Closes the active tab. | Close |
 | `CloseAllButThis` | Closes all tabs except the active one. | Close All But This |
@@ -38,9 +38,9 @@ The following table lists the resource keys that the DocumentContainer (and Dock
 | `NewHorizontalTabGroup` | Creates a new horizontal tab group. | New Horizontal Tab Group |
 | `NewVerticalTabGroup` | Creates a new vertical tab group. | New Vertical Tab Group |
 
-## Localizing the DocumentContainer
+## Localizing the WPF Tabbed MDI Form
 
-To localize the DocumentContainer, create a resource file (for example `Syncfusion.Tools.WPF.fr-FR.resx`) in your project, add the keys above with translated values, and set the application culture at startup.
+To localize the WPF Tabbed MDI Form, create a resource file (for example `Syncfusion.Tools.WPF.fr-FR.resx`) in your project, add the keys above with translated values, and set the application culture at startup.
 
 {% tabs %}
 {% highlight C# %}

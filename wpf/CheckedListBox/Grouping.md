@@ -7,9 +7,9 @@ control: CheckListBox
 documentation: ug
 ---
 
-# Grouping in WPF CheckListBox
+# Grouping in WPF CheckedListBox
 
- By default, the [CheckListBox](https://www.syncfusion.com/wpf-ui-controls/CheckedListBox) items are displayed in a listed view. You can group the `CheckListBox` items by adding a group description to the `CollectionView.GroupDescriptions` collection.
+ By default, the [WPF CheckedListBox](https://www.syncfusion.com/wpf-ui-controls/CheckedListBox) items are displayed in a listed view. You can group the items by adding a group description to the `CollectionView.GroupDescriptions` collection.
 
  The selection state of the group header varies based on the checked or unchecked state of the child items. Groups can be expanded or collapsed, and the child items in a group can be checked or unchecked based on the user's perspective.
 
@@ -72,11 +72,11 @@ Here, the `Vegetables` items are grouped based on their price.
 
 ![CheckListBox items grouped by the Price property](Grouping-Sorting_images/Grouping_image.png)
 
-Click [here](https://github.com/SyncfusionExamples/wpf-checked-listbox-examples/tree/master/Samples/Grouping) to download the sample that showcases the grouping support in the `CheckListBox`.
+Click [here](https://github.com/SyncfusionExamples/wpf-checked-listbox-examples/tree/master/Samples/Grouping) to download the sample that showcases the grouping support in the `WPF CheckedListBox`.
 
 ## Nested Grouping
 
- We can create multi-level nested groups for the `CheckListBox` items by adding two or more group descriptions to the `CollectionView.GroupDescriptions` collection. Child level groups are created in the order of the group descriptions added to the collection.
+ We can create multi-level nested groups for the `WPF CheckedListBox` items by adding two or more group descriptions to the `CollectionView.GroupDescriptions` collection. Child level groups are created in the order of the group descriptions added to the collection.
 
 {% tabs %}
 {% highlight C# %}
@@ -143,11 +143,11 @@ Here, the `Vegetables` items are grouped based on their Category and then, the c
 
 ![CheckListBox items with nested grouping ](Grouping-Sorting_images/NestedGrouping_image.png)
 
-Click [here](https://github.com/SyncfusionExamples/wpf-checked-listbox-examples/tree/master/Samples/NestedGrouping) to download the sample that showcases the nested grouping support in the `CheckListBox`.
+Click [here](https://github.com/SyncfusionExamples/wpf-checked-listbox-examples/tree/master/Samples/NestedGrouping) to download the sample that showcases the nested grouping support in the `WPF CheckedListBox`.
 
 ## Custom grouping
 
-`CheckListBox` allows you to group the items based on custom logic when the common grouping functionality does not meet your requirement. This can be achieved by using the `IValueConverter`.
+`WPF CheckedListBox` allows you to group the items based on custom logic when the common grouping functionality does not meet your requirement. This can be achieved by using the `IValueConverter`.
 
 {% tabs %}
 {% highlight C# %}

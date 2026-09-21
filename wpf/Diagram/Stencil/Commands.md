@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Command Manager for Stencil in WPF SfDiagram | Syncfusion®
-description: Manage keyboard shortcuts and custom commands in Syncfusion® WPF SfDiagram Stencil for navigation, selection, and clipboard operations.
+title: Command Manager for Stencil in WPF Diagram | Syncfusion®
+description: Manage keyboard shortcuts and custom commands in Syncfusion® WPF Diagram Stencil for navigation, selection, and clipboard operations.
 platform: wpf
 control: SfDiagram
 documentation: ug
 ---
 
-# Command Manager for Stencil in WPF SfDiagram
+# Command Manager for Stencil in WPF Diagram
 
-The [Stencil](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.html) in the [WPF SfDiagram](https://www.syncfusion.com/diagram-sdk/wpf-diagram) (SfDiagram) supports a variety of keyboard commands. These enable navigation, multi-selection, and clipboard operations without a mouse. The [`CommandManager`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.Stencil.html#Syncfusion_UI_Xaml_Diagram_Stencil_Stencil_CommandManager) maps keyboard gestures to Stencil commands and lets you add or remove gesture commands.
+The [Stencil](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.html) in the [WPF Diagram](https://www.syncfusion.com/diagram-sdk/wpf-diagram) supports a variety of keyboard commands. These enable navigation, multi-selection, and clipboard operations without a mouse. The [`CommandManager`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.Stencil.html#Syncfusion_UI_Xaml_Diagram_Stencil_Stencil_CommandManager) maps keyboard gestures to Stencil commands and lets you add or remove gesture commands.
 
 ## Built-in Commands and Key Gestures
 

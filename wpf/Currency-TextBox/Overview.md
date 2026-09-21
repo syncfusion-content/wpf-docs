@@ -7,13 +7,13 @@ control: CurrencyTextBox
 documentation: ug
 ---
 
-# About Syncfusion® WPF CurrencyTextBox Control
+# About Syncfusion® WPF Currency TextBox Control
 
-The `CurrencyTextBox` is a specialized input control designed to accept, format, and display numeric values as currency in WPF applications. It enforces numeric input, formats numbers according to currency conventions, and exposes a concise API for common scenarios such as data binding, range validation, culture-aware formatting, and UI-driven value adjustment. The control is intended for forms, financial entry screens, reporting dialogs, dashboards, and any UI that requires reliable currency input and presentation.
+The `WPF Currency TextBox` is a specialized input control designed to accept, format, and display numeric values as currency in WPF applications. It enforces numeric input, formats numbers according to currency conventions, and exposes a concise API for common scenarios such as data binding, range validation, culture-aware formatting, and UI-driven value adjustment. The control is intended for forms, financial entry screens, reporting dialogs, dashboards, and any UI that requires reliable currency input and presentation.
 
 ## Control Structure
 
-The `CurrencyTextBox` combines a text-editing area with a number-formatting layer and optional adorner for visual feedback. Typical visual elements include a watermark (placeholder text) when the control is empty, the formatted currency text, and an optional range adorner that can act like a progress indicator based on `MinValue`/`MaxValue`.
+The `WPF Currency TextBox` combines a text-editing area with a number-formatting layer and optional adorner for visual feedback. Typical visual elements include a watermark (placeholder text) when the control is empty, the formatted currency text, and an optional range adorner that can act like a progress indicator based on `MinValue`/`MaxValue`.
 
 ![WPF Currency TextBox](getting-started_images/wpf-currency-textbox-control-structure.png)
 
@@ -42,7 +42,7 @@ Refer to the [control dependencies](https://help.syncfusion.com/wpf/control-depe
 
 ## Integration and Quick Start
 
-To add a `CurrencyTextBox` to your view and get started quickly, see the step-by-step instructions in [Getting Started](Getting-Started.md). That page shows the required assembly reference, XAML and C# examples, and the preferred `Value`-based approach for setting and binding currency data.
+To add a `WPF Currency TextBox` to your view and get started quickly, see the step-by-step instructions in [Getting Started](Getting-Started.md). That page shows the required assembly reference, XAML and C# examples, and the preferred `Value`-based approach for setting and binding currency data.
 
 ## Behavior and Developer Notes
 
@@ -52,4 +52,4 @@ To add a `CurrencyTextBox` to your view and get started quickly, see the step-by
 
 ## Theming, Styling and Extensibility
 
-The `CurrencyTextBox` supports built-in visual themes and can be styled using standard WPF templates and brushes. Visual states for positive, negative and zero values can be customized to make value meaning immediately perceptible. For examples and theming notes see the related Getting Started and Culture/Formatting documentation.
+The `WPF Currency TextBox` supports built-in visual themes and can be styled using standard WPF templates and brushes. Visual states for positive, negative and zero values can be customized to make value meaning immediately perceptible. For examples and theming notes see the related Getting Started and Culture/Formatting documentation.

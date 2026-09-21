@@ -9,23 +9,23 @@ documentation: ug
 
 # Getting Started with WPF Tabbed Window
 
-This section explains how to create a tabbed window interface using the [SfChromelessWindow](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.SfChromelessWindow.html) and [SfTabControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.SfTabControl.html) controls. The Tabbed Window provides a browser-style, document-based user interface that integrates tabs directly into the window chrome, similar to modern IDEs and web browsers.
+This section explains how to create a WPF Tabbed Window interface using the [WPF SfChromeless Window](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.SfChromelessWindow.html) and [WPF Tabbed Window](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.SfTabControl.html) controls. It provides a browser-style, document-based user interface that integrates tabs directly into the window chrome, similar to modern IDEs and web browsers.
 
 ## Assembly Deployment
 
-To integrate the Tabbed Window in your WPF application, add the following required assemblies or NuGet packages:
+To integrate the WPF Tabbed Window in your WPF application, add the following required assemblies or NuGet packages:
 
 - Syncfusion.SfChromelessWindow.WPF
 - Syncfusion.Shared.WPF
 
-## Adding Tabbed Window via XAML
+## Adding WPF Tabbed Window via XAML
 
-To add the Tabbed Window manually in XAML, follow these steps:
+To add the WPF Tabbed Window manually in XAML, follow these steps:
 
 1. Create a new WPF project in Visual Studio targeting the required .NET Framework or .NET Core version.
 2. Add the required assembly references or NuGet packages mentioned in the Assembly Deployment section.
 3. Import the Syncfusion WPF schema **http://schemas.syncfusion.com/wpf** in your XAML file.
-4. Create a window that uses [SfChromelessWindow](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.SfChromelessWindow.html) and set its [WindowType](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.SfChromelessWindow.html#Syncfusion_Windows_Controls_SfChromelessWindow_WindowType) property to `Tabbed`, then include an [SfTabControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.SfTabControl.html) with the required tab items.
+4. Create a window that uses [WPF SfChromeless Window](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.SfChromelessWindow.html) and set its [WindowType](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.SfChromelessWindow.html#Syncfusion_Windows_Controls_SfChromelessWindow_WindowType) property to `Tabbed`, then include an [WPF Tabbed Window](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.SfTabControl.html) with the required tab items.
 
 {% tabs %}
 
@@ -57,11 +57,11 @@ To add the Tabbed Window manually in XAML, follow these steps:
 
 ## Adding WPF Tabbed Window via C#
 
-To add the Tabbed Window control manually in C#, follow these steps:
+To add the WPF Tabbed Window control manually in C#, follow these steps:
 
 1. Create a new WPF project in Visual Studio targeting the required .NET Framework or .NET Core version.
 2. Add the required assembly references or NuGet packages mentioned in the Assembly Deployment section.
-3. Include the required namespace and create a window that inherits from [SfChromelessWindow](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.SfChromelessWindow.html), set its [WindowType](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.SfChromelessWindow.html#Syncfusion_Windows_Controls_SfChromelessWindow_WindowType) to `Tabbed`, and add the required tab items.
+3. Include the required namespace and create a window that inherits from [WPF SfChromeless Window](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.SfChromelessWindow.html), set its [WindowType](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.SfChromelessWindow.html#Syncfusion_Windows_Controls_SfChromelessWindow_WindowType) to `Tabbed`, and add the required tab items.
 
 {% tabs %}
 
