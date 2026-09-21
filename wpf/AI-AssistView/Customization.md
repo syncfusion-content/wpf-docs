@@ -93,8 +93,6 @@ The `EmptyView` property accepts any object as its content, which is then displa
 {% endhighlight %}
 {% endtabs %}
 
-![EmptyView feature in WPF AI AssistView control](aiassistview_images/wpf_aiassistview_emptyview.png)
-
 ### EmptyViewTemplate
 
 The `EmptyViewTemplate` property allows you to fully customize the appearance of the empty view by providing a `DataTemplate`. This is helpful when you need to display richer content such as images, multiple text blocks, or styled layouts.
@@ -282,7 +280,7 @@ Define `UserTemplate` and `BotTemplate` inside the `ViewTemplateSelector`. `BotT
                     <DataTemplate>
                         <markdown:SfMarkdownViewer
                             Source="{Binding Text}"
-                            Height="250"/>
+                            Height="150"/>
                     </DataTemplate>
                 </local:ViewTemplateSelector.BotTemplate>
             </local:ViewTemplateSelector>
@@ -292,7 +290,7 @@ Define `UserTemplate` and `BotTemplate` inside the `ViewTemplateSelector`. `BotT
                                    CurrentUser="{Binding CurrentUser}"
                                    Messages="{Binding Chats}"
                                    ViewTemplateSelector="{StaticResource viewTemplateSelector}"
-                                   IsResponseToolbarVisible="False"/>
+                                   IsResponseToolbarVisible="True"/>
     </Grid>
 </Window>
 
