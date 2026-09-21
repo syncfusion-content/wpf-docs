@@ -230,7 +230,7 @@ carousel.Items.Add(new CarouselItem() { Content = new Viewbox(){ Child = image7 
 {% endhighlight %}
 {% endtabs %}
 
-![WPF Carousel items are populated to the WPF Carousel control](Getting-Started_images/wpf-carousel-item.jpeg)
+![Carousel items are populated to the WPF Carousel control](Getting-Started_images/wpf-carousel-item.jpeg)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-carousel-examples/tree/master/Samples/CarouselItem-Selection)
 
@@ -303,7 +303,7 @@ public class ViewModel {
 {% endhighlight %}
 {% endtabs %}
 
-![WPF Carousel items populated by using the collection binding](Getting-Started_images/wpf-carousel-item-binding.png)
+![Carousel items populated by using the collection binding](Getting-Started_images/wpf-carousel-item-binding.png)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-carousel-examples/tree/master/Samples/Binding)
 
@@ -386,7 +386,7 @@ carousel.EnableRotationAnimation = true;
 {% endhighlight %}
 {% endtabs %}
 
-![WPF Carousel items rotated with 25 degree angle](Getting-Started_images/Rotating.png)
+![Carousel items rotated with 25 degree angle](Getting-Started_images/Rotating.png)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-carousel-examples/tree/master/Samples/StandardPath)
 
