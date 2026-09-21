@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Group in WPF SfDiagram | Syncfusion®
-description: Learn about group in Syncfusion® WPF SfDiagram control, including creating groups, managing grouped nodes and connectors, and group interactions.
+title: Group in WPF Diagram | Syncfusion®
+description: Learn about group in Syncfusion® WPF Diagram control, including creating groups, managing grouped nodes and connectors, and group interactions.
 platform: wpf
 control: SfDiagram
 documentation: ug
 ---
 
-# Group in WPF SfDiagram
+# Group in WPF Diagram
 
 A Group is used to cluster multiple Nodes and Connectors into a single element. It acts like a container for its children (Nodes, Groups, and Connectors). Every change made to the Group also affects the children. Child elements can be edited individually.
 
@@ -73,8 +73,8 @@ You can edit the Group and its children at runtime. For more information about h
 
 [How to Notify when diagramming object is duplicated with source?](https://support.syncfusion.com/kb/article/6268/how-to-notify-when-diagramming-object-is-duplicated-with-source-in-wpf-diagram-sfdiagram)
 
-[How to Obtain InConnectors and OutConnectors of a Node in WPF SfDiagram?](https://support.syncfusion.com/kb/article/18250/how-to-obtain-inconnectors-and-outconnectors-of-node-in-wpf-diagram)
+[How to Obtain InConnectors and OutConnectors of a Node in WPF Diagram?](https://support.syncfusion.com/kb/article/18250/how-to-obtain-inconnectors-and-outconnectors-of-node-in-wpf-diagram)
 
-[How to prevent the node from moving outside the group in WPF SfDiagram?](https://support.syncfusion.com/kb/article/18852/how-to-prevent-the-node-from-moving-outside-the-group-in-wpf-diagram-sfdiagram)
+[How to prevent the node from moving outside the group in WPF Diagram?](https://support.syncfusion.com/kb/article/18852/how-to-prevent-the-node-from-moving-outside-the-group-in-wpf-diagram-sfdiagram)
 
-[How to switch the visibility of an icon in the ContentTemplate in WPF SfDiagram ?](https://support.syncfusion.com/kb/article/17725/how-to-switch-the-visibility-of-an-icon-in-the-contenttemplate-in-wpf-diagram-sfdiagram-)
+[How to switch the visibility of an icon in the ContentTemplate in WPF Diagram ?](https://support.syncfusion.com/kb/article/17725/how-to-switch-the-visibility-of-an-icon-in-the-contenttemplate-in-wpf-diagram-sfdiagram-)

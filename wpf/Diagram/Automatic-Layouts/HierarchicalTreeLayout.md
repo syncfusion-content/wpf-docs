@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Hierarchical Tree Layout in WPF SfDiagram | Syncfusion®
-description: Arrange nodes in a hierarchical tree structure in Syncfusion® WPF SfDiagram using parent-child relationships and layout settings.
+title: Hierarchical Tree Layout in WPF Diagram | Syncfusion®
+description: Arrange nodes in a hierarchical tree structure in Syncfusion® WPF Diagram using parent-child relationships and layout settings.
 platform: wpf
 control: SfDiagram
 documentation: ug
 ---
 
-# Hierarchical Tree Layout in WPF SfDiagram
+# Hierarchical Tree Layout in WPF Diagram
 
 The hierarchical tree layout arranges nodes in a tree-like structure and supports multiple parents per node. You do not need to specify a layout root; the algorithm infers it from the data. To create a tree with a single explicit root, set the [`Root`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.DataSourceSettings.html#Syncfusion_UI_Xaml_Diagram_DataSourceSettings_Root) property of `DataSourceSettings`.
 
@@ -82,7 +82,7 @@ The `DirectedTreeLayout` properties used in this article are:
 //using Syncfusion.UI.Xaml.Diagram.Layout;
 //using System.Collections.ObjectModel;
 
-//Initialize the SfDiagram instance
+//Initialize the Diagram instance
 SfDiagram diagram = new SfDiagram();
 
 //Initialize the employee collection

@@ -1,19 +1,19 @@
 ---
 layout: post
-title: Layout Related Features in WPF WizardControl | Syncfusion®
-description: The Layout-related features in WPF WizardControl provide flexible page organization, responsive arrangement, and customizable wizard interfaces.
+title: Layout Related Features in WPF Wizard Control | Syncfusion®
+description: The Layout-related features in WPF Wizard Control provide flexible page organization, responsive arrangement, and customizable wizard interfaces.
 platform: wpf
-control: Wizard
+control: Wizard Control
 documentation: ug
 ---
 
-# Layout Related Features in WPF WizardControl
+# Layout Related Features in WPF Wizard Control
 
-This section illustrates the following Layout-related features of [Wizard Control](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.WizardControl.html).
+This section illustrates the following Layout-related features of [WizardControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.WizardControl.html).
 
 ## Setting the Minimum Height for the Interior Wizard Page Header
 
-You can set the minimum height for the header of the Interior wizard page by using the [InteriorPageHeaderMinHeight](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.WizardControl.html#Syncfusion_Windows_Tools_Controls_WizardControl_InteriorPageHeaderMinHeight) property in [Wizard Control](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.WizardControl.html).
+You can set the minimum height for the header of the Interior wizard page by using the [InteriorPageHeaderMinHeight](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.WizardControl.html#Syncfusion_Windows_Tools_Controls_WizardControl_InteriorPageHeaderMinHeight) property in [WizardControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.WizardControl.html).
 
 {%tabs%}
 
@@ -43,7 +43,7 @@ wizardControl.InteriorPageHeaderMinHeight = 150;
 
 ## Setting the Banner Background Color
 
-You can set the background color of the banner for the [Wizard Control](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.WizardControl.html) by using the [BannerBackground](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.WizardPage.html#Syncfusion_Windows_Tools_Controls_WizardPage_BannerBackground) property. 
+You can set the background color of the banner for the [WizardControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.WizardControl.html) by using the [BannerBackground](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.WizardPage.html#Syncfusion_Windows_Tools_Controls_WizardPage_BannerBackground) property. 
 
 {%tabs%}
 
@@ -69,11 +69,11 @@ wizardPage.BannerBackground = Brushes.Navy;
 
 {%endtabs%}
 
-![BannerBackground in WizardControl](Layout-Related-Features_images/Layout-Related-Features_img2.jpeg)
+![BannerBackground in Wizard Control](Layout-Related-Features_images/Layout-Related-Features_img2.jpeg)
 
 ## Setting the Banner Image
 
-You can set an image for the banner of the [Wizard Page](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.WizardPage.html) in  [Wizard Control](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.WizardControl.html)
+You can set an image for the banner of the [Wizard Page](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.WizardPage.html) in [WizardControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.WizardControl.html)
  using the [BannerImage](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.WizardPage.html#Syncfusion_Windows_Tools_Controls_WizardPage_BannerImage) property.
 
 N> You can set the banner image either on the interior or exterior wizard page based on the wizard page type.
@@ -142,10 +142,10 @@ wizardControl.ExteriorPageBannerImageMinWidth = 10;
 
 ## Theme
 
-WizardControl supports various built-in themes. Refer to the below links to apply themes for the WizardControl,
+Wizard Control supports various built-in themes. Refer to the below links to apply themes for the Wizard Control,
 
   * [Apply theme using SfSkinManager](https://help.syncfusion.com/wpf/themes/skin-manager)
 	
   * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
 
- ![Setting theme to WPF WizardControl](getting-started_images\wpf-wizard-control-theme.png)
+ ![Setting theme to WPF Wizard Control](getting-started_images\wpf-wizard-control-theme.png)

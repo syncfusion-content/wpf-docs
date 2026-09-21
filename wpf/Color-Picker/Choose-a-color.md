@@ -21,7 +21,7 @@ Choosing a solid color from HSV (Hue, Saturation, and Value) is explained below.
 
 ### Hue 
 
-Hue is the color portion of the model, expressed as a number between `0` and `360` degrees, with all colors falling within a certain range. In [ColorPicker](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.ColorPicker.html), the Hue value can be modified using the slider or H-Hue value editor.
+Hue is the color portion of the model, expressed as a number between `0` and `360` degrees, with all colors falling within a certain range. In [WPF ColorPicker](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.ColorPicker.html), the Hue value can be modified using the slider or H-Hue value editor.
 
 ![ColorPicker with Hue editor](Selection-Mode_images/ColorPicker_Hue_editor.png)
 
@@ -39,7 +39,7 @@ Value works in conjunction with saturation and describes the brightness or inten
 
 ## Select RGB and HSV color
 
-`ColorPicker` controls can be displayed in two different modes. They are HSV and RGB modes. The [VisualizationStyle](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.ColorPicker.html#Syncfusion_Windows_Shared_ColorPicker_VisualizationStyle) property is used to switch between these modes. By default, the RGB mode is enabled.
+`WPF ColorPicker` controls can be displayed in two different modes. They are HSV and RGB modes. The [VisualizationStyle](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.ColorPicker.html#Syncfusion_Windows_Shared_ColorPicker_VisualizationStyle) property is used to switch between these modes. By default, the RGB mode is enabled.
 
 ### RGB
 
@@ -85,19 +85,19 @@ this.Content = colorPicker;
 
 ## Get solid color using Hexadecimal code
 
-Hexadecimal color values are also supported in `ColorPicker`. The built-in `TextBox` allows you to enter or edit a color by hex value. The color is selected based on the hex value entered in the `TextBox`.
+Hexadecimal color values are also supported in `WPF ColorPicker`. The built-in `TextBox` allows you to enter or edit a color by hex value. The color is selected based on the hex value entered in the `TextBox`.
 
 ![ColorPicker with Hexadecimal color value editor](Selection-Mode_images/ColorPicker_Hexadecimal_Color-Code.png)
 
 ## Pick a color from anywhere (Eye Dropper)
 
-`ColorPicker` includes an eye-dropper that you can drag anywhere on the screen. The eye-dropper picks the color of the pixel under it, along with the associated hexadecimal (HEX) color value.
+`WPF ColorPicker` includes an eye-dropper that you can drag anywhere on the screen. The eye-dropper picks the color of the pixel under it, along with the associated hexadecimal (HEX) color value.
 
 ![ColorPicker with Eye-Dropper](Selection-Mode_images/ColorPicker_Eyedropper.gif)
 
 ## Select a standard color
 
-`ColorPicker` has a built-in color `ComboBox` to select a standard color easily. By default, the standard-color `ComboBox` is not shown. To display it, set the [IsColorPaletteVisible](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.ColorPicker.html#Syncfusion_Windows_Shared_ColorPicker_IsColorPaletteVisible) property to `true`. The default value of `IsColorPaletteVisible` is `false`.
+`WPF ColorPicker` has a built-in color `ComboBox` to select a standard color easily. By default, the standard-color `ComboBox` is not shown. To display it, set the [IsColorPaletteVisible](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.ColorPicker.html#Syncfusion_Windows_Shared_ColorPicker_IsColorPaletteVisible) property to `true`. The default value of `IsColorPaletteVisible` is `false`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -118,7 +118,7 @@ colorPicker.IsColorPaletteVisible = true;
 
 ## Solid color changed notification
 
-The selected color in [ColorPicker](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.ColorPicker.html) can be observed using the [ColorChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.ColorPicker.html#Syncfusion_Windows_Shared_ColorPicker_ColorChanged) event.
+The selected color in [WPF ColorPicker](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.ColorPicker.html) can be observed using the [ColorChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.ColorPicker.html#Syncfusion_Windows_Shared_ColorPicker_ColorChanged) event.
 
 {% tabs %}
 {% highlight xaml %}
@@ -150,7 +150,7 @@ private void ColorPicker_ColorChanged(DependencyObject d, DependencyPropertyChan
 
 ## Get color name from color property
 
-`ColorEdit` (the editable variant of `ColorPicker`) provides a [SuchColor](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.ColorEdit.html#Syncfusion_Windows_Shared_ColorEdit_SuchColor_System_Windows_Media_Color_) method that returns up to four similar color names for the current [Color](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.ColorEdit.html#Syncfusion_Windows_Shared_ColorEdit_Color) value. Pass an index from 0 to 3 to retrieve each name.
+`ColorEdit` (the editable variant of `WPF ColorPicker`) provides a [SuchColor](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.ColorEdit.html#Syncfusion_Windows_Shared_ColorEdit_SuchColor_System_Windows_Media_Color_) method that returns up to four similar color names for the current [Color](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.ColorEdit.html#Syncfusion_Windows_Shared_ColorEdit_Color) value. Pass an index from 0 to 3 to retrieve each name.
 
 {% tabs %}
 {% highlight xaml %}
@@ -180,10 +180,10 @@ private void ColorPicker_SelectedBrushChanged(DependencyObject d, DependencyProp
 {% endhighlight %}
 {% endtabs %}
 
-N> `SuchColor` is defined on the `ColorEdit` control. If you are using `ColorPicker`, cast the underlying model or switch the example to `ColorEdit`.
+N> `SuchColor` is defined on the `ColorEdit` control. If you are using `WPF ColorPicker`, cast the underlying model or switch the example to `ColorEdit`.
 
 ![ColorPicker with selected color name](Selection-Mode_images/ColorPicker_Selected_ColorName.png)
  
  You can select a gradient color, which is explained in the [Select gradient color](https://help.syncfusion.com/wpf/color-picker/gradient-brush) page.
 
- Click [here](https://github.com/SyncfusionExamples/wpf-colorpicker-examples/tree/master/Samples/ChooseColor) to download the sample that showcases how to select a solid color from the `ColorPicker`.
+ Click [here](https://github.com/SyncfusionExamples/wpf-colorpicker-examples/tree/master/Samples/ChooseColor) to download the sample that showcases how to select a solid color from the `WPF ColorPicker`.

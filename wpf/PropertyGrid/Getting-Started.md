@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started with WPF PropertyGrid
 
-This section explains how to explore and edit the properties of an object using WPF [PropertyGrid](https://www.syncfusion.com/wpf-controls/propertygrid) control.
+This section explains how to explore and edit the properties of an object using the [WPF PropertyGrid](https://www.syncfusion.com/wpf-controls/propertygrid) control. The WPF PropertyGrid is implemented through the [PropertyGrid](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.PropertyGrid.html) class.
 
 ## Assembly deployment
 
@@ -21,13 +21,13 @@ You can find more details about installing the NuGet package in a WPF applicatio
 
 ## Adding WPF PropertyGrid via designer
 
-You can add the [PropertyGrid](https://www.syncfusion.com/wpf-controls/propertygrid) control to an application by dragging it from the toolbox to a view of the designer. The following dependent assembly will be added automatically:
+You can add the [WPF PropertyGrid](https://www.syncfusion.com/wpf-controls/propertygrid) control to an application by dragging it from the toolbox to a view of the designer. The following dependent assemblies will be added automatically:
 
 * Syncfusion.PropertyGrid.Wpf
 * Syncfusion.Shared.WPF
 * Syncfusion.Tools.Wpf
 
-![WPF PropertyGrid Control added by designer](getting-started_images/wpf-propertygrid-added-by-designer.png)
+![PropertyGrid Control added by designer](getting-started_images/wpf-propertygrid-added-by-designer.png)
 
 ## Adding WPF PropertyGrid via XAML
 
@@ -41,7 +41,7 @@ To add the `PropertyGrid` control manually in XAML, follow these steps:
    * Syncfusion.Shared.WPF
    * Syncfusion.Tools.Wpf
  
-3. Import Syncfusion WPF schema **http://schemas.syncfusion.com/wpf** and declare the `PropertyGrid` control in XAML page.
+3. Import the Syncfusion WPF schema **http://schemas.syncfusion.com/wpf** and declare the `PropertyGrid` control in the XAML page.
 
 {% capture codesnippet1 %}
 {% tabs %}
@@ -77,7 +77,7 @@ To add the `PropertyGrid` control manually in C#, follow these steps:
     * Syncfusion.Shared.WPF
     * Syncfusion.Tools.Wpf
 
-3. Include the required namespace and create an instance of `PropertyGrid` and add it to the window.
+3. Include the required namespace, create an instance of `PropertyGrid`, and add it to the window.
 
 {% capture codesnippet2 %}
 {% tabs %}
@@ -106,7 +106,7 @@ public partial class MainWindow : Window {
 {% endcapture %}
 {{ codesnippet2 | OrderList_Indent_Level_1 }}
 
-![WPF PropertyGrid control added to Window by code](getting-started_images/wpf-propertygrid-added-by-code.png)
+![PropertyGrid control added to Window by code](getting-started_images/wpf-propertygrid-added-by-code.png)
 
 ## Populating the properties
 
@@ -164,13 +164,13 @@ propertyGrid1.SetBinding(PropertyGrid.SelectedObjectProperty, new Binding("Selec
 
 ![ Populating the SelectedEmployee object properties into the PropertyGrid control](getting-started_images/wpf-propertygrid-populating-properties.png)
 
-Here, the `SelectedEmployee` object is set as `SelectedObject` for the `PropertyGrid`. Thus, the `PropertyGrid` shows all the properties available in the `SelectedEmployee` object.
+Here, the `SelectedEmployee` object is set as the `SelectedObject` of the `PropertyGrid`. As a result, all the properties available in the `SelectedEmployee` object are displayed.
 
 ## Custom Editor as value editors
 
-The [PropertyGrid](https://www.syncfusion.com/wpf-controls/propertygrid) control supports several built-in editors for edit the property values. We can assign own value editor(control) as a value editor for the properties instead of default value editors by using the [Editor](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.editorattribute?view=netframework-4.8) attribute or [CustomEditorCollection](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.PropertyGrid.html#Syncfusion_Windows_PropertyGrid_PropertyGrid_CustomEditorCollection). 
+The [WPF PropertyGrid](https://www.syncfusion.com/wpf-controls/propertygrid) control supports several built-in editors for editing the property values. We can assign our own value editor (control) as a value editor for the properties instead of the default value editors by using the [Editor](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.editorattribute?view=netframework-4.8) attribute or [CustomEditorCollection](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.PropertyGrid.html#Syncfusion_Windows_PropertyGrid_PropertyGrid_CustomEditorCollection). 
 
-For example, if we create an `EmailID` property as a string type, `TextBox` will assigned as a value editor and all the text will be allowed. If we want to accept the input that is only in the mail id format, we can assign [MaskEdit](https://www.syncfusion.com/wpf-controls/maskedtextbox) control with mail ID mask as the value editor for the `EmailID` property. 
+For example, if we create an `EmailID` property as a string type, a `TextBox` will be assigned as a value editor and any text will be allowed. If we want to accept only input in the mail ID format, we can assign a [MaskEdit](https://www.syncfusion.com/wpf-controls/maskedtextbox) control with a mail ID mask as the value editor for the `EmailID` property. 
 
 ### Creating the Custom Editor 
 
@@ -272,7 +272,7 @@ propertyGrid1.SetBinding(PropertyGrid.SelectedObjectProperty, new Binding("Selec
 {% endtabs %}
 
 
-Here, The `EmailID` property is accepts only the inputs which are in the email-id format by the `EmailEditor`.
+Here, the `EmailID` property accepts only the inputs that are in the email ID format through the `EmailEditor`.
 
 ![Property grid with specified custom value editor for EmailID property](customeditor-support_images/wpf-propertygrid-customeditor-attribute.png)
 
@@ -280,7 +280,7 @@ Click [here](https://github.com/SyncfusionExamples/wpf-property-grid-examples/tr
 
 ## Selected property item changed notification
 
-The property item selection changed in `PropertyGrid` can be examined using [SelectedPropertyItemChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.PropertyGrid.html#Syncfusion_Windows_PropertyGrid_PropertyGrid_SelectedPropertyItemChanged) event. The `SelectedPropertyItemChanged` event contains the old and newly selected property item details in the `OldValue` and  `NewValue` properties.
+The property item selection change in the `PropertyGrid` can be examined using the [SelectedPropertyItemChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.PropertyGrid.html#Syncfusion_Windows_PropertyGrid_PropertyGrid_SelectedPropertyItemChanged) event. The `SelectedPropertyItemChanged` event contains the old and newly selected property item details in the `OldValue` and `NewValue` properties.
 
 {% tabs %}
 {% highlight xaml %}
@@ -317,7 +317,7 @@ private void PropertyGrid_SelectedPropertyItemChanged(DependencyObject d, Depend
 
 ## Disable animation on loading selected object
 
-You can load the selected's object property items without any animation into the `PropertyGrid` by using the [DisableAnimationOnObjectSelection](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.PropertyGrid.html#Syncfusion_Windows_PropertyGrid_PropertyGrid_DisableAnimationOnObjectSelection) property value as `true`. The default value of `DisableAnimationOnObjectSelection` property is `false`.
+You can load the selected object's property items without any animation into the `PropertyGrid` by setting the [DisableAnimationOnObjectSelection](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.PropertyGrid.html#Syncfusion_Windows_PropertyGrid_PropertyGrid_DisableAnimationOnObjectSelection) property to `true`. The default value of the `DisableAnimationOnObjectSelection` property is `false`.
 
 {% tabs %}
 {% highlight C# %}
@@ -372,13 +372,13 @@ propertyGrid1.SetBinding(PropertyGrid.SelectedObjectProperty, new Binding("Selec
 {% endhighlight %}
 {% endtabs %}
 
-![Loading selected object without animation in WPF PropertyGrid](getting-started_images/wpf-propertygrid-object-selection.png)
+![Loading selected object without animation in PropertyGrid](getting-started_images/wpf-propertygrid-object-selection.png)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/wpf-property-grid-examples/blob/master/Samples/Common)
 
 ## Tooltip support
 
-You can get the value and description about the property item through tooltip when hover the mouse on the respective property item and its value field. If the property item not contains any description, tooltip shows the property display name. You can restrict the tooltip support by setting the [EnableToolTip](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.PropertyGrid.html#Syncfusion_Windows_PropertyGrid_PropertyGrid_EnableToolTip) property as `false`. The default value of `EnableToolTip` property is `true`.
+You can view the value and description of a property item through a tooltip by hovering the mouse over the respective property item or its value field. If the property item does not contain a description, the tooltip shows the property display name. You can restrict the tooltip support by setting the [EnableToolTip](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.PropertyGrid.html#Syncfusion_Windows_PropertyGrid_PropertyGrid_EnableToolTip) property to `false`. The default value of the `EnableToolTip` property is `true`.
 
 {% tabs %}
 {% highlight C# %}
@@ -448,7 +448,7 @@ The `PropertyGrid` control notifies the users when a property item is created an
 * [**DisplayName**](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.AutoGeneratingPropertyGridItemEventArgs.html#Syncfusion_Windows_PropertyGrid_AutoGeneratingPropertyGridItemEventArgs_DisplayName) - Gets or sets a display name to the property item.
 * [**ExpandMode**](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.AutoGeneratingPropertyGridItemEventArgs.html#Syncfusion_Windows_PropertyGrid_AutoGeneratingPropertyGridItemEventArgs_ExpandMode) - Gets or sets whether to populate nested properties of PropertyItem or not.
 * [**Order**](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.AutoGeneratingPropertyGridItemEventArgs.html#Syncfusion_Windows_PropertyGrid_AutoGeneratingPropertyGridItemEventArgs_Order) - Gets or sets a value to arrange the property item into the property collection when the value of `SortDirection` property is **null**. 
-* [**OriginalSource**](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.AutoGeneratingPropertyGridItemEventArgs.html#Syncfusion_Windows_PropertyGrid_AutoGeneratingPropertyGridItemEventArgs_OriginalSource) - Gets the PropertyItem that is being added to the property collection of PropertyGrid.
+* [**OriginalSource**](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.AutoGeneratingPropertyGridItemEventArgs.html#Syncfusion_Windows_PropertyGrid_AutoGeneratingPropertyGridItemEventArgs_OriginalSource) - Gets the PropertyItem that is being added to the property collection of WPF PropertyGrid.
 * [**ReadOnly**](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.AutoGeneratingPropertyGridItemEventArgs.html#Syncfusion_Windows_PropertyGrid_AutoGeneratingPropertyGridItemEventArgs_ReadOnly) - Gets or sets a value indicating whether the property item is ready only or not.
 
 {% tabs %}
@@ -513,7 +513,7 @@ private void propertyGrid1_AutoGeneratingPropertyGridItem(object sender, Syncfus
 {% endhighlight %}
 {% endtabs %}
 
-![WPF PropertyGrid change editor in AutoGeneratingPropertyGridItem event](getting-started_images/wpf-propertygrid-auto-generating-items.png)
+![PropertyGrid change editor in AutoGeneratingPropertyGridItem event](getting-started_images/wpf-propertygrid-auto-generating-items.png)
 
 ## Property item value changed notification
 
@@ -557,10 +557,10 @@ Click [here](https://github.com/SyncfusionExamples/wpf-property-grid-examples/tr
 
 ## Theme
 
-PropertyGrid supports various built-in themes. Refer to the below links to apply themes for the PropertyGrid,
+The WPF PropertyGrid includes support for various built-in themes. Refer to the following links for details on applying them:
 
   * [Apply theme using SfSkinManager](https://help.syncfusion.com/wpf/themes/skin-manager)
 	
   * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
 
-![Setting theme to WPF PropertyGrid](getting-started_images/wpf-propertygrid-theme.png)
+![Setting theme to PropertyGrid](getting-started_images/wpf-propertygrid-theme.png)

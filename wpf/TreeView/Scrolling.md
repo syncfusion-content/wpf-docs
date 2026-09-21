@@ -1,18 +1,18 @@
 ---
 layout: post
 title: Scrolling in WPF TreeView | Syncfusion®
-description: Scrolling in SfTreeView enables programmatic navigation to nodes, custom scroll positioning, and horizontal scrolling support.
+description: Scrolling in WPF TreeView enables programmatic navigation to nodes, custom scroll positioning, and horizontal scrolling support.
 platform: wpf
 control: SfTreeView
 documentation: ug
 ---
 
-# Scrolling in WPF TreeView (SfTreeView)
-The TreeView provides various options to achieve programmatic scrolling. Please walkthrough the below section in detail to achieve the same.
+# Scrolling in WPF TreeView
+The [WPF TreeView](https://www.syncfusion.com/wpf-controls/treeview) control provides various options for programmatic scrolling.
 
 ## Bring Into View
 
-The TreeView allows programmatic scrolling based on the data model and [TreeViewNode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.Engine.TreeViewNode.html) by using the [BringIntoView](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_BringIntoView_Syncfusion_UI_Xaml_TreeView_Engine_TreeViewNode_System_Boolean_System_Boolean_Syncfusion_UI_Xaml_TreeView_ScrollToPosition_) method.
+The WPF TreeView allows programmatic scrolling based on the data model and [TreeViewNode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.Engine.TreeViewNode.html) by using the [BringIntoView](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_BringIntoView_Syncfusion_UI_Xaml_TreeView_Engine_TreeViewNode_System_Boolean_System_Boolean_Syncfusion_UI_Xaml_TreeView_ScrollToPosition_) method.
 
 {% tabs %}
 {% highlight c# %}
@@ -53,8 +53,8 @@ private void BringIntoView_Click(object sender, RoutedEventArgs e)
 
  The third optional parameter `canExpand` in `BringIntoView` method decides whether we need to expand and show the collapsed node or not when item passed for `BringIntoView` method which is in collapsed state. By default, this parameter value will be `false`.
  
- * If the parameter value is `true`, the TreeView expands the collapsed node and scrolls to the specified item.
- * If the parameter value is `false`, the TreeView does not expand the collapsed node and only scrolls for items that are not in a collapsed state.
+ * If the parameter value is `true`, the WPF TreeView expands the collapsed node and scrolls to the specified item.
+ * If the parameter value is `false`, collapsed nodes are not expanded, and scrolling occurs only for items that are not in a collapsed state.
 
 {% tabs %}
 {% highlight c# %}
@@ -92,7 +92,7 @@ private void BringIntoView_Click(object sender, RoutedEventArgs e)
 
 ## Horizontal scrolling
 
-By default, the horizontal scrollbar is not enabled in the TreeView. To enable horizontal scrolling based on the content, set [ScrollViewer.HorizontalScrollBarVisibility](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.scrollviewer.horizontalscrollbarvisibility?view=netcore-3.1) to `Auto`.
+By default, the horizontal scrollbar is not enabled in the WPF TreeView. To enable horizontal scrolling based on the content, set [ScrollViewer.HorizontalScrollBarVisibility](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.scrollviewer.horizontalscrollbarvisibility?view=netcore-3.1) to `Auto`.
 
 {% tabs %}
 {% highlight xaml %}

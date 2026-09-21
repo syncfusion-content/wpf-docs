@@ -1,19 +1,19 @@
 ---
 layout: post
 title: Item Height Customization in WPF TreeView | Syncfusion®
-description: Item Height Customization in SfTreeView enables setting fixed, custom, or auto-fit node heights based on content and application needs.
+description: Item Height Customization in WPF TreeView enables setting fixed, custom, or auto-fit node heights based on content and application needs.
 platform: wpf
 control: SfTreeView
 documentation: ug
 ---
 
-# Item Height Customization in WPF TreeView (SfTreeView)
+# Item Height Customization in WPF TreeView
 
-The TreeView provides various options to customize the height of items. Walk through the following sections to achieve this customization.
+The [WPF TreeView](https://www.syncfusion.com/wpf-controls/treeview) control provides various options to customize the height of items.
 
 ## Customize Item Height
 
-The TreeView allows customizing the height of items by setting the [ItemHeight](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_ItemHeight) property. The default value of this property is `24`. This property can be customized at runtime.
+The WPF TreeView allows customizing the height of items by setting the [ItemHeight](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_ItemHeight) property. The default value of this property is `24`. This property can be customized at runtime.
 
 {% tabs %}
 {% highlight xaml %}
@@ -25,7 +25,7 @@ sfTreeView.ItemHeight = 30;
 {% endtabs %}
 
 ## Customize Item height using `QueryNodeSize` event
- The TreeView allows customizing the height of the items using [QueryNodeSize](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html) event. This event is raised whenever the item comes into view and triggered with [QueryNodeSizeEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.QueryNodeSizeEventArgs.html).
+You can customize the height of items using the [QueryNodeSize](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html) event. This event is raised whenever an item comes into view and is triggered with [QueryNodeSizeEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.QueryNodeSizeEventArgs.html).
 
 The `SfTreeView.QueryNodeSize` event provides the following arguments:
  
@@ -35,7 +35,7 @@ The `SfTreeView.QueryNodeSize` event provides the following arguments:
 
 ### Customize specific item height using custom value
 
-The TreeView allows customizing the height of the specific item by setting the custom value directly to the [Height](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.QueryNodeSizeEventArgs.html#Syncfusion_UI_Xaml_TreeView_QueryNodeSizeEventArgs_Height) argument which is available in [QueryNodeSizeEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.QueryNodeSizeEventArgs.html).
+The WPF TreeView allows customizing the height of the specific item by setting the custom value directly to the [Height](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.QueryNodeSizeEventArgs.html#Syncfusion_UI_Xaml_TreeView_QueryNodeSizeEventArgs_Height) argument which is available in [QueryNodeSizeEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.QueryNodeSizeEventArgs.html).
 
 {% tabs %}
 {% highlight xaml %}
@@ -64,7 +64,7 @@ private void SfTreeView_QueryNodeSize(object sender, Syncfusion.UI.Xaml.TreeView
 
 ## Autofit item height based on content
 
-The TreeView allows adjusting height of items based on the content measured size while loaded by setting the `Height` argument with value returned from [QueryNodeSizeEventArgs.GetAutoFitNodeHeight](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.QueryNodeSizeEventArgs.html#Syncfusion_UI_Xaml_TreeView_QueryNodeSizeEventArgs_GetAutoFitNodeHeight) method.
+The WPF TreeView allows adjusting height of items based on the content measured size while loaded by setting the `Height` argument with value returned from [QueryNodeSizeEventArgs.GetAutoFitNodeHeight](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.QueryNodeSizeEventArgs.html#Syncfusion_UI_Xaml_TreeView_QueryNodeSizeEventArgs_GetAutoFitNodeHeight) method.
 
 {% tabs %}
 {% highlight xaml %}

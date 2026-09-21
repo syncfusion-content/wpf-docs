@@ -9,7 +9,7 @@ documentation: ug
 
 # Text Selection in WPF Syntax Editor
 
-The `SyntaxEditor` (EditControl) supports the selection of content through mouse, keyboard, and touch interactions.
+The Syntax Editor supports the selection of content through mouse, keyboard, and touch interactions.
 
 ## Selection using the mouse
 

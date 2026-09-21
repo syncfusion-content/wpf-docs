@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Keyboard Support in WPF HierarchyNavigator | Syncfusion®
-description: Keyboard Support in WPF HierarchyNavigator enables efficient navigation through shortcuts and key-based actions.
+title: Keyboard Support in WPF BreadCrumb | Syncfusion®
+description: Keyboard Support in WPF BreadCrumb enables efficient navigation through shortcuts and key-based actions.
 platform: wpf
-control: Hierarchical Navigator
+control: BreadCrumb
 documentation: ug
 ---
 
-# Keyboard Support in WPF HierarchyNavigator
+# Keyboard Support in WPF BreadCrumb
 
-The HierarchyNavigator control supports keyboard navigation. This allows you to select an item and open a pop-up menu by using the keyboard.
+The BreadCrumb control supports keyboard navigation. This allows you to select an item and open a pop-up menu by using the keyboard.
 
 ## Keyboard functionality table
 

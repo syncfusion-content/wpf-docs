@@ -1,15 +1,15 @@
 ---
 layout: post
 title: Tree Lines in WPF TreeView | Syncfusion®
-description: Tree Lines in SfTreeView enable visualizing hierarchical relationships with customizable line display, color, and thickness.
+description: Tree Lines in WPF TreeView enable visualizing hierarchical relationships with customizable line display, color, and thickness.
 platform: wpf
 control: SfTreeView
 documentation: ug
 ---
 
-# Tree lines in WPF TreeView (SfTreeView)
+# Tree lines in WPF TreeView
 
-TreeView allows to show the tree lines for treeview nodes by enabling the [ShowLines](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_ShowLines) property to `true`. The default value is `false`.
+The [WPF TreeView](https://www.syncfusion.com/wpf-controls/treeview) control allows you to show tree lines for its nodes by setting the [ShowLines](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_ShowLines) property to `true`. The default value of the `ShowLines` property is `false`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -30,7 +30,7 @@ sfTreeView.ShowLines = true;
 
 ## Enable tree line for root nodes
 
-The TreeView also supports showing tree lines for root nodes by enabling the [ShowRootLines](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_ShowRootLines) property to `true`. The default value is `false`.
+The control also supports showing tree lines for root nodes by setting the [ShowRootLines](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_ShowRootLines) property to `true`. The default value of the `ShowRootLines` property is `false`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -54,7 +54,7 @@ sfTreeView.ShowRootLines = true;
 ## Customizing the tree lines
 
 ### Customizing the line color
-TreeView allows to change the color of tree lines by using the [LineStroke](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_LineStroke) property. The default value is `System.Windows.Media.Colors.LightSlateGray`.
+You can change the color of tree lines by using the [LineStroke](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_LineStroke) property. The default value of the `LineStroke` property is `System.Windows.Media.Colors.LightSlateGray`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -77,7 +77,7 @@ sfTreeView.LineStroke = new SolidColorBrush(Colors.DeepSkyBlue);
 ![WPF TreeView Custom TreeLines](TreeLine_images/wpf-treeview-custom-treelines.png)
 
 ### Customizing the line thickness
-TreeView allows to change the thickness of tree lines by using the [LineStrokeThickness](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_LineStrokeThickness) property. The default value is `1`.
+You can change the thickness of tree lines by using the [LineStrokeThickness](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_LineStrokeThickness) property. The default value of the `LineStrokeThickness` property is `1`.
 
 {% tabs %}
 {% highlight xaml %}

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Symbol Filtering in WPF SfDiagram | Syncfusion®
-description: Filter and organize stencil symbols in Syncfusion® WPF SfDiagram using SymbolFilters and customizable filter providers.
+title: Symbol Filtering in WPF Diagram | Syncfusion®
+description: Filter and organize stencil symbols in Syncfusion® WPF Diagram using SymbolFilters and customizable filter providers.
 platform: wpf
 control: SfDiagram
 documentation: ug
 ---
 
-# Symbol Filtering in WPF SfDiagram
+# Symbol Filtering in WPF Diagram
 
 You can filter or hide grouped symbols using the [`SymbolFilters`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.Stencil.html#Syncfusion_UI_Xaml_Diagram_Stencil_Stencil_SymbolFilters) property. The `SymbolFilters` collection contains [`SymbolFilterProvider`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.SymbolFilterProvider.html) instances. Each provider has a [`SymbolFilter`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.SymbolFilterProvider.html#Syncfusion_UI_Xaml_Diagram_Stencil_SymbolFilterProvider_SymbolFilter) delegate that decides whether a symbol belongs to the group.
 

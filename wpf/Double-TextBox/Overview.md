@@ -7,9 +7,9 @@ control: DoubleTextBox
 documentation: ug
 ---
 
-# About Syncfusion® WPF DoubleTextBox Control
+# About Syncfusion® WPF Double TextBox Control
 
-The [DoubleTextBox](https://www.syncfusion.com/wpf-controls/double-textbox) control restricts input to double values with support for data binding, watermark, null value, and culture. It provides various customization options to improve its appearance and suit an application.
+The [WPF Double TextBox](https://www.syncfusion.com/wpf-controls/double-textbox) control restricts input to double values with support for data binding, watermark, null value, and culture. It provides various customization options to improve its appearance and suit an application.
 
 ## Control structure
 
@@ -19,7 +19,7 @@ The [DoubleTextBox](https://www.syncfusion.com/wpf-controls/double-textbox) cont
 
 ## Features
 
-The core features of the `DoubleTextBox` are as follows:
+The core features of the `WPF Double TextBox` are as follows:
 
 * Provides the ability to control the range of input values by using the [MinValue](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.DoubleTextBox.html#Syncfusion_Windows_Shared_DoubleTextBox_MinValue) and [MaxValue](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.DoubleTextBox.html#Syncfusion_Windows_Shared_DoubleTextBox_MaxValue) properties.
 * Provides different foreground brushes for positive, negative, and zero values.

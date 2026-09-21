@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Snapping in WPF SfDiagram | Syncfusion®
-description: Learn about snapping in Syncfusion® WPF SfDiagram, including snap-to-objects, snap-to-lines, dock port snapping, and indicator customization.
+title: Snapping in WPF Diagram | Syncfusion®
+description: Learn about snapping in Syncfusion® WPF Diagram, including snap-to-objects, snap-to-lines, dock port snapping, and indicator customization.
 platform: wpf
 control: SfDiagram
 documentation: ug
 ---
 
-# Snapping in WPF SfDiagram
+# Snapping in WPF Diagram
 
 When you draw, resize, or move a diagramming element on the page, you can set it, so that it will align or snap to the nearest intersection in the page even when the grid is visible or not. However, you can control the alignment and snap-to capabilities of elements by using the snapping option of `SfDiagram`.
 
@@ -35,7 +35,7 @@ Snapping to objects can be enabled by assigning values to the `SnapToObject` pro
 {% endhighlight %}
 {% highlight c# %}
 
-//Initialize SfDiagram
+//Initialize Diagram
 SfDiagram diagram = new SfDiagram();
 //Enables the SnapToObject value as All
 diagram.SnapSettings.SnapToObject = SnapToObject.All;
@@ -95,7 +95,7 @@ When snapping, cyan-colored indicator lines will be shown. These indication line
 
 {% highlight c# %}
 
-//Initialize SfDiagram
+//Initialize Diagram
 SfDiagram diagram = new SfDiagram();
 //Custom style for Snap indicator
 Style pathStyle = new Style(typeof(Shape));
@@ -133,7 +133,7 @@ Snapping to gridlines can be enabled or disabled with the [SnapConstraints](http
 {% endhighlight %}
 {% highlight c# %}
 
-//Initialize SfDiagram
+//Initialize Diagram
 SfDiagram diagram = new SfDiagram();
 //Enables the SnapConstraints value as SnapToLines
 diagram.SnapSettings.SnapConstraints = SnapConstraints.ShowLines | SnapConstraints.SnapToLines;
@@ -155,4 +155,4 @@ Find the [Snapping sample](https://github.com/SyncfusionExamples/WPF-Diagram-Exa
 
 [How to enable snapping in diagram?](https://support.syncfusion.com/kb/article/5908/how-to-enable-snapping-in-wpf-diagram-sfdiagram)
 
-[How to enable the snapping lines only for nodes in the WPF SfDiagram ?](https://support.syncfusion.com/kb/article/15540/how-to-enable-the-snapping-lines-only-for-nodes-in-the-wpf-diagram-sfdiagram)
+[How to enable the snapping lines only for nodes in the WPF Diagram ?](https://support.syncfusion.com/kb/article/15540/how-to-enable-the-snapping-lines-only-for-nodes-in-the-wpf-diagram-sfdiagram)

@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Data Binding in WPF TabNavigation | Syncfusion®
-description: Data binding in WPF TabNavigation enables seamless connection to data sources, ensuring dynamic content updates and flexible navigation.
+title: Data Binding in WPF Tab Navigation | Syncfusion®
+description: Data binding in WPF Tab Navigation enables seamless connection to data sources, ensuring dynamic content updates and flexible navigation.
 platform: wpf
-control: TabNavigation
+control: Tab Navigation
 documentation: ug
 ---
 
-# Data Binding in WPF TabNavigation
+# Data Binding in WPF Tab Navigation
 
-Business object collections can be easily bound to the TabNavigation control using [ItemsSource](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.itemscontrol.itemssourceproperty?view=netframework-4.7.2) property. 
+Business object collections can be easily bound to the Tab Navigation control using [ItemsSource](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.itemscontrol.itemssourceproperty?view=netframework-4.7.2) property. 
 
 ## Binding IEnumerable
 
@@ -54,7 +54,7 @@ namespace TabNavigationSample
 {% endhighlight %}
 {% endtabs %}
 
-![wpf tabnavigation control supports data binding](Data-binding_images/Adding-items-through-Items-Source_img1.png)
+![wpf tab navigation control supports data binding](Data-binding_images/Adding-items-through-Items-Source_img1.png)
 
 ## Binding data from XML
 
@@ -264,7 +264,7 @@ namespace TabNavigationXMLBinding
 	<local:ViewModel/>
 </Window.DataContext>
 
-<!--TabNavigationControl-->
+<!--Tab Navigation Control-->
 <syncfusion:TabNavigationControl x:Name="TabNavigation" Grid.Column="1" Grid.Row="1"  ItemsSource="{Binding BookCollection}"/>
 {% endhighlight %}
 {% endtabs %}

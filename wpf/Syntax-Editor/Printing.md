@@ -9,7 +9,7 @@ documentation: ug
 
 # Printing in WPF Syntax Editor
 
-The `EditControl` provides support for printing the content displayed in the control using the [Print](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Edit.EditControl.html#Syncfusion_Windows_Edit_EditControl_Print) method, and for previewing the printed output using the [ShowPrintPreview](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Edit.EditControl.html#Syncfusion_Windows_Edit_EditControl_ShowPrintPreview) method. The samples below assume `using Syncfusion.Windows.Edit;` and an `EditControl` instance named `editControl`.
+The Syntax Editor provides support for printing the content displayed in the control using the [Print](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Edit.EditControl.html#Syncfusion_Windows_Edit_EditControl_Print) method, and for previewing the printed output using the [ShowPrintPreview](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Edit.EditControl.html#Syncfusion_Windows_Edit_EditControl_ShowPrintPreview) method. The samples below assume `using Syncfusion.Windows.Edit;` and an `EditControl` instance named `editControl`.
 
 {% tabs %}
 
@@ -29,7 +29,7 @@ editControl.Print
 
 ## Print Preview
 
-EditControl provides option to display print preview to review and customize the document in desired format before printing. Print preview window can be opened by calling [ShowPrintPreview](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Edit.EditControl.html#Syncfusion_Windows_Edit_EditControl_ShowPrintPreview) method.
+Syntax Editor provides option to display print preview to review and customize the document in desired format before printing. Print preview window can be opened by calling [ShowPrintPreview](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Edit.EditControl.html#Syncfusion_Windows_Edit_EditControl_ShowPrintPreview) method.
 
 {% tabs %}
 
@@ -51,7 +51,7 @@ editControl.ShowPrintPreview
 
 ### Print and Quick Print
 
-The print preview window has **Print** and **Quick Print** buttons which are clicked to print the EditControl.
+The print preview window has **Print** and **Quick Print** buttons which are clicked to print the Syntax Editor.
 
 ![Print preview window](Printing_images/Print.png)
 
@@ -150,7 +150,7 @@ The page margin can be changed in the print preview as well by selecting from th
 
 ## Setting Header and Footer
 
-EditControl provides a way to display additional content at the top (Header) or bottom (Footer) of the page while printing. This can be achieved by setting `PageHeaderHeight` , `PageHeaderTemplate` , `PageFooterHeight` , `PageFooterTemplate` properties in `PrintSettings`.
+Syntax Editor provides a way to display additional content at the top (Header) or bottom (Footer) of the page while printing. This can be achieved by setting `PageHeaderHeight` , `PageHeaderTemplate` , `PageFooterHeight` , `PageFooterTemplate` properties in `PrintSettings`.
 
 Steps to add page header while printing,
 

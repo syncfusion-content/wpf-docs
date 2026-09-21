@@ -1,21 +1,21 @@
 ---
 layout: post
 title: MVVM in WPF TreeView | Syncfusion®
-description: MVVM in SfTreeView supports binding selected items, synchronizing selection state, and converting events to commands.
+description: MVVM in WPF TreeView supports binding selected items, synchronizing selection state, and converting events to commands.
 platform: wpf
 control: SfTreeView
 documentation: ug
 ---
 
-# MVVM in WPF TreeView (SfTreeView)
+# MVVM in WPF TreeView
 
-This section explains how to work with the MVVM pattern in TreeView.
+This section explains how to work with the MVVM pattern in the [WPF TreeView](https://www.syncfusion.com/wpf-controls/treeview) control.
 
 ## Binding properties in MVVM pattern
 
 ### Binding SelectedItem
 
-The TreeView supports selecting items by binding the [SelectedItem](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_SelectedItem) property to a property on the view model. Implement the `INotifyPropertyChanged` interface on the view model so that changes are propagated back to the UI.
+The WPF TreeView supports selecting items by binding the [SelectedItem](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_SelectedItem) property to a property on the view model. Implement the `INotifyPropertyChanged` interface on the view model so that changes are propagated back to the UI.
 
 {% tabs %}
 {% highlight xaml %}
@@ -103,7 +103,7 @@ sfTreeView.SetBinding(SfTreeView.SelectedItemProperty, new Binding("SelectedNode
 
 ### Binding SelectedItems
 
-The TreeView supports selecting multiple items by binding the [SelectedItems](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_SelectedItems) property to a view-model property of type `ObservableCollection<object>`.
+The WPF TreeView supports selecting multiple items by binding the [SelectedItems](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_SelectedItems) property to a view-model property of type `ObservableCollection<object>`.
 
 {% tabs %}
 {% highlight xaml %}

@@ -7,27 +7,27 @@ control: DomainUpDown
 documentation: ug
 ---
 
-# Getting Started with WPF SfDomainUpdown
+# Getting Started with WPF Domain UpDown
 
-This section provides you an overview of working with [SfDomainUpDown](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfDomainUpDown.html) for WPF and provides a walk through to configure the `SfDomainUpDown` control in a real time scenario.
+This section provides you an overview of working with [WPF Domain UpDown](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfDomainUpDown.html) for WPF and provides a walk through to configure the control in a real time scenario.
 
 ## Assembly deployment
 
 Refer to the [control dependencies](https://help.syncfusion.com/wpf/control-dependencies#sfdomainupdown) section to get the list of assemblies or NuGet packages that need to be added as a reference to use the control in any application.
 
-Further information on installing the NuGet package can be found in the following link. [How to install nuget packages](https://help.syncfusion.com/wpf/installation/install-nuget-packages). You can also use the [Syncfusion Reference Manager](https://help.syncfusion.com/wpf/visual-studio-integration/visual-studio-extensions/add-references) to refer to the SfDomainUpDown's dependent assemblies.
+Further information on installing the NuGet package can be found in the following link. [How to install nuget packages](https://help.syncfusion.com/wpf/installation/install-nuget-packages). You can also use the [Syncfusion Reference Manager](https://help.syncfusion.com/wpf/visual-studio-integration/visual-studio-extensions/add-references) to refer to the WPF Domain UpDown's dependent assemblies.
 
-## Creating Application with SfDomainUpDown control
+## Creating Application with WPF Domain UpDown control
 
-In this walkthrough, you will create a WPF application that contains the [SfDomainUpDown](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfDomainUpDown.html) control.
+In this walkthrough, you will create a WPF application that contains the [WPF Domain UpDown](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfDomainUpDown.html) control.
 
 ## Creating project
 
-Create a new WPF project to show the [SfDomainUpDown](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfDomainUpDown.html) control in Visual Studio.
+Create a new WPF project to show the [WPF Domain UpDown](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfDomainUpDown.html) control in Visual Studio.
 
 ## Adding control via designer
 
-The [SfDomainUpDown](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfDomainUpDown.html) control can be added to the application by dragging it from Toolbox and dropping it in the designer. The required [assemblies](https://help.syncfusion.com/wpf/control-dependencies#sfdomainupdown) will be added automatically.
+The [WPF Domain UpDown](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfDomainUpDown.html) control can be added to the application by dragging it from Toolbox and dropping it in the designer. The required [assemblies](https://help.syncfusion.com/wpf/control-dependencies#sfdomainupdown) will be added automatically.
 
 ![Adding control via designer](Getting-Started_images/SfDomainUpDown_GettingStarted_img2.png)
 
@@ -42,7 +42,7 @@ To add the control manually in XAML page, follow the given steps:
 
 2. Import Syncfusion WPF schema **http://schemas.syncfusion.com/wpf** in the XAML page or Syncfusion.Windows.Tools.Controls namespace.
 
-3. Declare [SfDomainUpDown](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfDomainUpDown.html) in XAML page.
+3. Declare [WPF Domain UpDown](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfDomainUpDown.html) in XAML page.
 
 {% capture codesnippet1 %}
 {% tabs %}
@@ -77,9 +77,9 @@ To add the control manually in C#, follow the given steps:
     * Syncfusion.SfInput.WPF
     * Syncfusion.SfShared.WPF
 
-2. Import the `SfDomainUpDown` namespace **Syncfusion.Windows.Controls.Input**.
+2. Import the `WPF Domain UpDown` namespace **Syncfusion.Windows.Controls.Input**.
 
-3. Create the `SfDomainUpDown` control instance and add it to the page.
+3. Create the `WPF Domain UpDown` control instance and add it to the page.
 
 {% capture codesnippet2 %}
 {% tabs %}
@@ -118,7 +118,7 @@ namespace GettingStartedDomainUpDown
 
 ## Populating with Data Binding
 
-You can populate the [SfDomainUpDown](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfDomainUpDown.html) control using the [ItemsSource](https://learn.microsoft.com/en-us/dotnet/api/system.windows.controls.itemscontrol.itemssourceproperty?view=netframework-4.7.2) property.
+You can populate the [WPF Domain UpDown](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfDomainUpDown.html) control using the [ItemsSource](https://learn.microsoft.com/en-us/dotnet/api/system.windows.controls.itemscontrol.itemssourceproperty?view=netframework-4.7.2) property.
 
 1. You can create a data object class named **Employee** as Model and declare properties as shown below,
 
@@ -181,7 +181,7 @@ public class ViewModel
 {% endcapture %}
 {{ codesnippet4 | OrderList_Indent_Level_1 }}
 
-3. You can bind the Employees property from the ViewModel class to the ItemSource property of `SfDomainUpDown` control and the control is set to display content based on the Name inside the [ContentTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfDomainUpDown.html#Syncfusion_Windows_Controls_Input_SfDomainUpDown_ContentTemplateProperty) property.
+3. You can bind the Employees property from the ViewModel class to the ItemSource property of `WPF Domain UpDown` control and the control is set to display content based on the Name inside the [ContentTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfDomainUpDown.html#Syncfusion_Windows_Controls_Input_SfDomainUpDown_ContentTemplateProperty) property.
 
 {% capture codesnippet5 %}
 {% tabs %}
@@ -208,7 +208,7 @@ N> [View sample in GitHub](https://github.com/SyncfusionExamples/WPF-GettingStar
 
 ## Spin button alignment
 
-You can customize the position of the spin button in the [SfDomainUpDown](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfDomainUpDown.html) control using the [SpinButtonsAlignment](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfDomainUpDown.html#Syncfusion_Windows_Controls_Input_SfDomainUpDown_SpinButtonsAlignment) property. The `SpinButtonsAlignment` enum is defined in the `Syncfusion.Windows.Controls` namespace. For more details and additional examples, see [Spin Button Alignment](Spin-Button-Alignment.md).
+You can customize the position of the spin button in the [WPF Domain UpDown](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfDomainUpDown.html) control using the [SpinButtonsAlignment](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfDomainUpDown.html#Syncfusion_Windows_Controls_Input_SfDomainUpDown_SpinButtonsAlignment) property. The `SpinButtonsAlignment` enum is defined in the `Syncfusion.Windows.Controls` namespace. For more details and additional examples, see [Spin Button Alignment](Spin-Button-Alignment.md).
 
 {% tabs %}
 {% highlight XAML %}
