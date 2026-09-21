@@ -93,8 +93,6 @@ The `EmptyView` property accepts any object as its content, which is then displa
 {% endhighlight %}
 {% endtabs %}
 
-![EmptyView feature in WPF AI AssistView control](aiassistview_images/wpf_aiassistview_emptyview.png)
-
 ### EmptyViewTemplate
 
 The `EmptyViewTemplate` property allows you to fully customize the appearance of the empty view by providing a `DataTemplate`. This is helpful when you need to display richer content such as images, multiple text blocks, or styled layouts.
@@ -142,11 +140,11 @@ The `EmptyViewTemplate` property allows you to fully customize the appearance of
 
 ## ViewTemplateSelector
 
-The `ViewTemplateSelector` property of [SfAIAssistView](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Chat.SfAIAssistView.html) lets you choose a different `DataTemplate` for each chat item based on its runtime information. This is helpful when you want to render messages differently, for example by showing the bot's reply with a formatted Markdown viewer while keeping the user's messages as plain text. Use a custom `DataTemplateSelector` to return the appropriate template for each message type.
+The `ViewTemplateSelector` property of [SfAIAssistView](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Chat.SfAIAssistView.html) lets you choose a different `DataTemplate` for each chat item based on its runtime information. This is helpful when you want to render messages differently — for example, by showing the bot's reply through a Markdown viewer while keeping the user's messages as plain text. Use a custom `DataTemplateSelector` to return the appropriate template for each message type.
 
 ### Create a custom DataTemplateSelector
 
-Create a custom selector that derives from `DataTemplateSelector` and returns a `DataTemplate` for each message type used in the AI AssistView. In this example, `AIMessage` items are rendered with the Markdown viewer (`BotTemplate`), and `TextMessage` items are rendered as plain text (`UserTemplate`).
+Create a selector that derives from `DataTemplateSelector` and returns a `DataTemplate` for each message. In this example, bot replies (`TextMessage` items with `Author.Name == "Bot"`) are rendered through the Markdown viewer (`BotTemplate`), and user messages are rendered as plain text (`UserTemplate`).
 
 {% tabs %}
 {% highlight C# %}
@@ -180,7 +178,7 @@ namespace GettingStarted
 
 ### Create the ViewModel
 
-Add a `ViewModel` that exposes `Chats` and `CurrentUser`, and populate it with a user `TextMessage` and an AIAssistView `AIMessage` whose `Text` contains Markdown formatting.
+Add a `ViewModel` that exposes `Chats` and `CurrentUser`, and populate it with a user `TextMessage` and a bot `TextMessage` whose `Text` contains Markdown formatting.
 
 {% tabs %}
 {% highlight C# %}
@@ -206,32 +204,34 @@ namespace GettingStarted
 
         private void GenerateMessages()
         {
+            string goalSuggest = "How do I set daily goals in my work day?";
+            string goalSolution = "To stay focused and productive, try these steps for setting daily goals:\n\n" +
+                                  "- **Identify Priorities**: List the most important tasks based on deadlines or significance.\n" +
+                                  "- **Break Down Tasks**: Split larger tasks into smaller, manageable steps.\n" +
+                                  "- **Set SMART Goals**: Make sure goals are Specific, Measurable, Achievable, Relevant, and Time-bound.\n" +
+                                  "- **Time Blocking**: Allocate specific times for each task to stay organized and on track.\n" +
+                                  "Would you like more tips on any of these steps?";
+
+            var user = new Author { Name = "John" };
+
             Chats.Add(new TextMessage
             {
-                Author = CurrentUser,
-                Text = "Show me a markdown reply."
+                Author = user,
+                DateTime = DateTime.Now,
+                Text = goalSuggest
             });
 
-            string markdownReply =
-                "## WPF AI AssistView\n" +
-                "The WPF [SfAIAssistView](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Chat.SfAIAssistView.html) renders AI replies through a **ViewTemplateSelector**.\n\n" +
-                "### Markdown formatting\n" +
-                "- *Italic*, **bold**, and `inline code`\n" +
-                "- Ordered and bulleted lists\n" +
-                "- [Syncfusion WPF Controls](https://www.syncfusion.com/wpf-controls)\n\n";
-      
-                // AI reply — Author name "Bot" identifies it for the ViewTemplateSelector
             Chats.Add(new TextMessage
             {
                 Author = new Author { Name = "Bot" },
                 DateTime = DateTime.Now,
-                Text = markdownReply
+                Text = goalSolution
             });
         }
 
-    public event PropertyChangedEventHandler PropertyChanged;
-    private void RaisePropertyChanged(string propertyName) =>
-        PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
+        public event PropertyChangedEventHandler PropertyChanged;
+        private void RaisePropertyChanged(string propertyName) =>
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
     }
 }
 
@@ -240,21 +240,21 @@ namespace GettingStarted
 
 ### Define the templates and apply the selector
 
-Define the `UserTemplate` and `BotTemplate` inside the `ViewTemplateSelector`. The bot template renders the response inside the [SfMarkdownViewer](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Markdown.SfMarkdownViewer.html) control from the `Syncfusion.SfMarkdownViewer.WPF` NuGet package so that Markdown formatting (headings, bold, lists, code blocks, links, and so on) is rendered correctly. Then assign the selector to `ViewTemplateSelector` of the SfAIAssistView.
+Define `UserTemplate` and `BotTemplate` inside the `ViewTemplateSelector`. `BotTemplate` renders the response inside the [SfMarkdownViewer](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Markdown.SfMarkdownViewer.html) control from the `Syncfusion.SfMarkdownViewer.WPF` NuGet so that Markdown formatting (headings, bold, lists, code blocks, links) is rendered correctly. `UserTemplate` wraps the text in a `Border` with a corner radius so the user bubble is clearly visible. Then assign the selector to `ViewTemplateSelector` of the SfAIAssistView.
 
 {% tabs %}
 {% highlight xaml %}
 
-<Window
-    x:Class="GettingStarted.MainWindow"
-    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:local="clr-namespace:GettingStarted"
-    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    xmlns:syncfusion="clr-namespace:Syncfusion.UI.Xaml.Chat;assembly=Syncfusion.SfChat.Wpf"
-    xmlns:markdown="clr-namespace:Syncfusion.UI.Xaml.Markdown;assembly=Syncfusion.SfMarkdownViewer.WPF"
-    mc:Ignorable="d">
+<Window x:Class="GettingStarted.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:syncfusion="clr-namespace:Syncfusion.UI.Xaml.Chat;assembly=Syncfusion.SfChat.Wpf"
+        xmlns:local="clr-namespace:GettingStarted"
+        xmlns:markdown="clr-namespace:Syncfusion.UI.Xaml.Markdown;assembly=Syncfusion.SfMarkdownViewer.WPF"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
     <Grid x:Name="grid">
         <Grid.DataContext>
             <local:ViewModel/>
@@ -263,10 +263,16 @@ Define the `UserTemplate` and `BotTemplate` inside the `ViewTemplateSelector`. T
             <local:ViewTemplateSelector x:Key="viewTemplateSelector">
                 <local:ViewTemplateSelector.UserTemplate>
                     <DataTemplate>
-                        <TextBlock Text="{Binding Text}"
-                                   TextWrapping="Wrap"
-                                   Foreground="White"
-                                   FontSize="14"/>
+                        <Border
+                                CornerRadius="6"
+                                Padding="10,6"
+                                HorizontalAlignment="Right"
+                                MaxWidth="380">
+                            <TextBlock Text="{Binding Text}"
+                                       TextWrapping="Wrap"
+                                       Foreground="Black"
+                                       FontSize="14"/>
+                        </Border>
                     </DataTemplate>
                 </local:ViewTemplateSelector.UserTemplate>
 
@@ -274,7 +280,7 @@ Define the `UserTemplate` and `BotTemplate` inside the `ViewTemplateSelector`. T
                     <DataTemplate>
                         <markdown:SfMarkdownViewer
                             Source="{Binding Text}"
-                            Height="250"/>
+                            Height="150"/>
                     </DataTemplate>
                 </local:ViewTemplateSelector.BotTemplate>
             </local:ViewTemplateSelector>
@@ -284,7 +290,7 @@ Define the `UserTemplate` and `BotTemplate` inside the `ViewTemplateSelector`. T
                                    CurrentUser="{Binding CurrentUser}"
                                    Messages="{Binding Chats}"
                                    ViewTemplateSelector="{StaticResource viewTemplateSelector}"
-                                   IsResponseToolbarVisible="False"/>
+                                   IsResponseToolbarVisible="True"/>
     </Grid>
 </Window>
 
