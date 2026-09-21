@@ -9,7 +9,7 @@ documentation: ug
 
 # Touch Support in WPF Range Slider (SfRangeSlider)
 
-The [WPF Range Slider](https://www.syncfusion.com/wpf-controls/range-slider) can move the thumb by tapping or clicking the track. The WPF Range Slider is implemented through the [SfRangeSlider](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfRangeSlider.html) class. The [MoveToPoint](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfRangeSlider~MoveToPoint.html) API allows the [SfRangeSlider](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfRangeSlider.html) to move the thumb by tapping or clicking the track of the [SfRangeSlider](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfRangeSlider.html). This property provides the following options:
+The [WPF Range Slider](https://www.syncfusion.com/wpf-controls/range-slider) can move the thumb by tapping or clicking the track. The [MoveToPoint](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfRangeSlider~MoveToPoint.html) API allows the [SfRangeSlider](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfRangeSlider.html) to move the thumb by tapping or clicking the track of the [SfRangeSlider](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfRangeSlider.html). This property provides the following options:
 
 * MoveToTapPosition
 * IncrementBySmallChange

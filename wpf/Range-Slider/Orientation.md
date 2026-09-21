@@ -9,7 +9,7 @@ documentation: ug
 
 # Orientation in WPF Range Slider (SfRangeSlider)
 
-The [WPF Range Slider](https://www.syncfusion.com/wpf-controls/range-slider) supports the [Orientation](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfRangeSlider~Orientation.html) property with the following two options. The WPF Range Slider is implemented through the [SfRangeSlider](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfRangeSlider.html) class.
+The [WPF Range Slider](https://www.syncfusion.com/wpf-controls/range-slider) supports the [Orientation](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfRangeSlider~Orientation.html) property with the following two options.
 
 1. Horizontal  
 2. Vertical  

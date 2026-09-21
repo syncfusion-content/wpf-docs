@@ -9,7 +9,7 @@ documentation: ug
 
 # How to Trigger Events in WPF Range Slider (SfRangeSlider)
 
-This section explains how to trigger and handle events in the [WPF Range Slider](https://www.syncfusion.com/wpf-controls/range-slider) control. Learn about the available events, their event arguments, and how to respond to value and range changes programmatically. The WPF Range Slider is implemented through the [SfRangeSlider](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfRangeSlider.html) class.
+This section explains how to trigger and handle events in the [WPF Range Slider](https://www.syncfusion.com/wpf-controls/range-slider) control. Learn about the available events, their event arguments, and how to respond to value and range changes programmatically.
 
 ## How to trigger LabelLoaded event? 
 
@@ -63,14 +63,14 @@ The [LabelLoaded](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls
 
 {% endtabs %}
 
-## How to trigger RangeChangedEvent?
+## How to trigger the RangeChanged event?
 
-The [RangeChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfRangeSlider.html#Syncfusion_Windows_Controls_Input_SfRangeSlider_RangeChanged) event is triggered when either `RangeStart` or `RangeEnd` values are changed. The argument contains the following information.
+The [RangeChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfRangeSlider.html#Syncfusion_Windows_Controls_Input_SfRangeSlider_RangeChanged) event is triggered when either the `RangeStart` or `RangeEnd` value changes. The event arguments provide the following information:
 
-`NewEndValue` – Gets or sets the new end value of WPF Range Slider.
-`NewStartValue` – Gets or sets the new start value of WPF Range Slider.
-`OldStartValue` – Gets or sets the old start value of WPF Range Slider.
-`OldEndValue` – Gets or set the old end value of WPF Range Slider.
+- `NewEndValue` – Gets or sets the new end value.
+- `NewStartValue` – Gets or sets the new start value.
+- `OldStartValue` – Gets or sets the previous start value.
+- `OldEndValue` – Gets or sets the previous end value.
 
 {% tabs %}
 
@@ -124,10 +124,10 @@ The [RangeChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Control
 
 ## How to trigger RangeStartChanged event?
 
-The [RangeStartChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfRangeSlider.html#Syncfusion_Windows_Controls_Input_SfRangeSlider_RangeStartChanged) event is triggered when `RangeStart` value is changed. The argument contains the following information.
+The [RangeStartChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfRangeSlider.html#Syncfusion_Windows_Controls_Input_SfRangeSlider_RangeStartChanged) event is triggered when the `RangeStart` value changes. The event arguments provide the following information:
 
-`OldStartValue` – Gets or sets the old start value of WPF Range Slider.
-`NewStartValue` – Gets or sets the new start value of WPF Range Slider.
+`OldStartValue` – Gets or sets the previous start value.
+`NewStartValue` – Gets or sets the new start value.
 
 {% tabs %}
 
@@ -181,8 +181,8 @@ The [RangeStartChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Co
 
 The [RangeEndChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfRangeSlider.html#Syncfusion_Windows_Controls_Input_SfRangeSlider_RangeEndChanged) event is triggered when `RangeEnd` value is changed. The argument contains the following information.
 
-`OldEndValue` – Gets or sets the old end value of WPF Range Slider.
-`NewEndValue` – Gets or sets the new end value of WPF Range Slider.
+`OldEndValue` – Gets or sets the previous end value.
+`NewEndValue` – Gets or sets the new end value.
 
 {% tabs %}
 

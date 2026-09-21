@@ -9,7 +9,7 @@ documentation: ug
 
 # Label Support in WPF Range Slider (SfRangeSlider)
 
-The [WPF Range Slider](https://www.syncfusion.com/wpf-controls/range-slider) supports displaying labels for custom values in the `CustomLabels` collection when the `ShowCustomLabels` property is set to `true`. When the `ShowValueLabels` property is set to `true`, it also displays labels for all tick values. The WPF Range Slider is implemented through the [SfRangeSlider](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfRangeSlider.html) class.
+The [WPF Range Slider](https://www.syncfusion.com/wpf-controls/range-slider) supports displaying labels for custom values in the `CustomLabels` collection when the `ShowCustomLabels` property is set to `true`. When the `ShowValueLabels` property is set to `true`, it also displays labels for all tick values.
 
 Property Table
 
