@@ -80,7 +80,7 @@ this.Content = tabsplitter;
 
 ## Panel items
 
-The WPF Tab Splitter items contain a collection of pages. These pages are defined as panel items.
+The WPF Tab Splitter items contains a collection of pages. These pages are defined as panel items.
 
  There are two types of panel Items:
 

@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started with WPF Tab Splitter
 
-This section explains how to create the [WPF Tab Splitter](https://www.syncfusion.com/wpf-controls/tab-splitter) control. The WPF Tab Splitter is implemented through the [Tab Splitter](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.TabSplitter.html) class.
+This section explains how to create the [WPF Tab Splitter](https://www.syncfusion.com/wpf-controls/tab-splitter) control. The WPF Tab Splitter is implemented through the [TabSplitter](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.TabSplitter.html) class.
 
 ## Assembly deployment
 
