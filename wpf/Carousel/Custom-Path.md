@@ -156,7 +156,7 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-
 
 ## Resize specific carousel item
 
-To individually change the size of the next, previous, or selected Carousel items in `VisualMode.CustomPath` mode, set the fraction values for the [ScaleFractions](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.Carousel.html#Syncfusion_Windows_Shared_Carousel_ScaleFractions) collection property. The value range for resizing is `0` to `1`. The default value of the `ScaleFractions` property is `null`.
+To individually change the size of the next, previous, or selected carousel items in `VisualMode.CustomPath` mode, set the fraction values for the [ScaleFractions](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.Carousel.html#Syncfusion_Windows_Shared_Carousel_ScaleFractions) collection property. The value range for resizing is `0` to `1`. The default value of the `ScaleFractions` property is `null`.
 
 N> This is effective only when the `ScalingEnabled` property is set to `true`.
 
@@ -213,7 +213,7 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-
 
 ## Opacity for carousel items
 
-To change the opacity of Carousel items except the selected item in `VisualMode.CustomPath` mode, set the fraction value for the [OpacityFraction](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.Carousel.html#Syncfusion_Windows_Shared_Carousel_OpacityFraction) property. You can disable opacity by setting the [OpacityEnabled](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.Carousel.html#Syncfusion_Windows_Shared_Carousel_OpacityEnabled) property to `false`. The value range of the `OpacityFraction` property is `0` to `1`. The default value of the `OpacityFraction` property is `Double.NaN`, and the default value of the `OpacityEnabled` property is `true`.
+To change the opacity of carousel items except the selected item in `VisualMode.CustomPath` mode, set the fraction value for the [OpacityFraction](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.Carousel.html#Syncfusion_Windows_Shared_Carousel_OpacityFraction) property. You can disable opacity by setting the [OpacityEnabled](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.Carousel.html#Syncfusion_Windows_Shared_Carousel_OpacityEnabled) property to `false`. The value range of the `OpacityFraction` property is `0` to `1`. The default value of the `OpacityFraction` property is `Double.NaN`, and the default value of the `OpacityEnabled` property is `true`.
 
 {% tabs %}
 {% highlight XAML %}
@@ -238,13 +238,13 @@ carousel.VisualMode = VisualMode.CustomPath;
 {% endhighlight %}
 {% endtabs %}
 
-![carousel items opacity fraction changed in custom path mode](Rotation-images/OpacityFraction_custom.png)
+![Carousel items opacity fraction changed in custom path mode](Rotation-images/OpacityFraction_custom.png)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-carousel-examples/tree/master/Samples/CustomPath_customization)
 
 ## Opacity for specific carousel item
 
-To individually change the opacity of the next, previous, or selected Carousel items in `VisualMode.CustomPath` mode, set the fraction values for the [OpacityFractions](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.Carousel.html#Syncfusion_Windows_Shared_Carousel_OpacityFractions) collection property. The value range of opacity is `0` to `1`. The default value of the `OpacityFractions` property is `null`.
+To individually change the opacity of the next, previous, or selected carousel items in `VisualMode.CustomPath` mode, set the fraction values for the [OpacityFractions](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.Carousel.html#Syncfusion_Windows_Shared_Carousel_OpacityFractions) collection property. The value range of opacity is `0` to `1`. The default value of the `OpacityFractions` property is `null`.
 
 N> This is effective only when the `OpacityEnabled` property is set to `true`.
 
@@ -295,7 +295,7 @@ carousel.VisualMode = VisualMode.CustomPath;
 {% endhighlight %}
 {% endtabs %}
 
-![carousel items opacity fraction changed in custom path view mode](Rotation-images/OpacityFractions.gif)
+![Carousel items opacity fraction changed in custom path view mode](Rotation-images/OpacityFractions.gif)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-carousel-examples/tree/master/Samples/CustomPath)
 
@@ -330,7 +330,7 @@ carousel.VisualMode = VisualMode.CustomPath;
 {% endhighlight %}
 {% endtabs %}
 
-![carousel items skewed in custom path](Scaling-Opacity-and-Skewing-Support_images/SkewAngleXY_custom.png)
+![Carousel items skewed in custom path](Scaling-Opacity-and-Skewing-Support_images/SkewAngleXY_custom.png)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-carousel-examples/tree/master/Samples/CustomPath_customization)
 
@@ -391,6 +391,6 @@ carousel.VisualMode = VisualMode.CustomPath;
 {% endhighlight %}
 {% endtabs %}
 
-![carousel items skewed in custom view](Scaling-Opacity-and-Skewing-Support_images/SkewAngle.gif)
+![Carousel items skewed in custom view](Scaling-Opacity-and-Skewing-Support_images/SkewAngle.gif)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-carousel-examples/tree/master/Samples/CustomPath)

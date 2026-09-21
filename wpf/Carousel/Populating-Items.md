@@ -126,7 +126,7 @@ carousel.Items.Add(new CarouselItem() { Content = new Viewbox(){ Child = image7 
 {% endhighlight %}
 {% endtabs %}
 
-![carousel items are populated to the Carousel control](Getting-Started_images/wpf-carousel-item.jpeg)
+![Carousel items are populated to the Carousel control](Getting-Started_images/wpf-carousel-item.jpeg)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-carousel-examples/tree/master/Samples/CarouselItem-Selection)
 
@@ -199,7 +199,7 @@ public class ViewModel {
 {% endhighlight %}
 {% endtabs %}
 
-![carousel items populated by using the collection binding](Getting-Started_images/wpf-carousel-item-binding.png)
+![Carousel items populated by using the collection binding](Getting-Started_images/wpf-carousel-item-binding.png)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-carousel-examples/tree/master/Samples/Binding)
 
@@ -548,7 +548,7 @@ carousel.EnableVirtualization = true;
 
 You can select a carousel item by clicking the item. You can get the selected item and its value by using the [SelectedItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.Carousel.html#Syncfusion_Windows_Shared_Carousel_SelectedItem) and [SelectedValue](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.Carousel.html#Syncfusion_Windows_Shared_Carousel_SelectedValue) properties. You can also get the selected item index by using the [SelectedIndex](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.Carousel.html#Syncfusion_Windows_Shared_Carousel_SelectedIndex) property. You can select only one item at a time.
 
-![carousel items rotation speed changed](Rotation-images/RotationSpeed.gif)
+![Carousel items rotation speed changed](Rotation-images/RotationSpeed.gif)
 
 ## Select carousel item programmatically using property
 

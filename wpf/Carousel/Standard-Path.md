@@ -86,7 +86,7 @@ carousel.VisualMode = VisualMode.Standard;
 {% endhighlight %}
 {% endtabs %}
 
-![carousel items loaded in standard path mode](Getting-Started_images/wpf-carousel-item-binding.png)
+![Carousel items loaded in standard path mode](Getting-Started_images/wpf-carousel-item-binding.png)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-carousel-examples/tree/master/Samples/StandardPath)
 
@@ -136,7 +136,7 @@ carousel.VisualMode = VisualMode.Standard;
 {% endhighlight %}
 {% endtabs %}
 
-![carousel items rotation speed changed](Rotation-images/RotationSpeed.gif)
+![Carousel items rotation speed changed](Rotation-images/RotationSpeed.gif)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-carousel-examples/tree/master/Samples/StandardPath)
 
@@ -160,7 +160,7 @@ carousel.VisualMode = VisualMode.Standard;
 {% endhighlight %}
 {% endtabs %}
 
-![carousel items animated rotation disabled](Rotation-images/EnableRotationAnimation.gif)
+![Carousel items animated rotation disabled](Rotation-images/EnableRotationAnimation.gif)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-carousel-examples/tree/master/Samples/StandardPath)
 
@@ -212,7 +212,7 @@ carousel.VisualMode = VisualMode.Standard;
 {% endhighlight %}
 {% endtabs %}
 
-![carousel items opacity fraction changed in standard path mode](Rotation-images/OpacityFraction.png)
+![Carousel items opacity fraction changed in standard path mode](Rotation-images/OpacityFraction.png)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-carousel-examples/tree/master/Samples/StandardPath)
 
@@ -242,6 +242,6 @@ carousel.VisualMode = VisualMode.Standard;
 {% endhighlight %}
 {% endtabs %}
 
-![carousel items skewed in standard path](Scaling-Opacity-and-Skewing-Support_images/SkewAngleXY.png)
+![Carousel items skewed in standard path](Scaling-Opacity-and-Skewing-Support_images/SkewAngleXY.png)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-carousel-examples/tree/master/Samples/StandardPath)
