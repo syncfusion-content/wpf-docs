@@ -1,21 +1,21 @@
-﻿---
+---
 layout: post
-title: Commands and Events in WPF NavigationDrawer | Syncfusion®
-description: Handle drawer opening, closing, item interaction events, and execute commands for navigation items in the WPF NavigationDrawer control.
+title: Commands and Events in WPF Navigation Drawer | Syncfusion®
+description: Handle drawer opening, closing, item interaction events, and execute commands for navigation items in the WPF Navigation Drawer control.
 platform: wpf
 control: NavigationDrawer
 documentation: ug
 ---
 
-# Commands and Events in WPF NavigationDrawer
+# Commands and Events in WPF Navigation Drawer
 
-This section describes the events and command support available in the Navigation Drawer sidebar.
+This section describes the events and command support available in the WPF Navigation Drawer sidebar.
 
 ## Opening event
 
-This [Opening](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.NavigationDrawer.SfNavigationDrawer.html#Syncfusion_UI_Xaml_NavigationDrawer_SfNavigationDrawer_Opening) event gets triggered when the drawer menu is opening. 
+The [Opening](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.NavigationDrawer.SfNavigationDrawer.html#Syncfusion_UI_Xaml_NavigationDrawer_SfNavigationDrawer_Opening) event gets triggered when the drawer menu is opening. 
 
-Using the `Cancel` property the opening of the drawer menu can be handled.
+Using the `Cancel` property, the opening of the drawer menu can be handled.
 
 {% tabs %}
 {% highlight xml %}
@@ -98,7 +98,7 @@ namespace NavigationDrawerWPF
 
 ## Opened event
 
-This [Opened](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.NavigationDrawer.SfNavigationDrawer.html#Syncfusion_UI_Xaml_NavigationDrawer_SfNavigationDrawer_Opened) event gets triggered once the drawer menu is fully animated and opened.
+The [Opened](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.NavigationDrawer.SfNavigationDrawer.html#Syncfusion_UI_Xaml_NavigationDrawer_SfNavigationDrawer_Opened) event gets triggered once the drawer menu is fully animated and opened.
 
 {% tabs %}
 {% highlight xml %}
@@ -181,7 +181,7 @@ namespace NavigationDrawerWPF
 
 ## Closing event
 
-This[Closing](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.NavigationDrawer.SfNavigationDrawer.html#Syncfusion_UI_Xaml_NavigationDrawer_SfNavigationDrawer_Closing) event gets triggered when the drawer is about to close.
+The [Closing](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.NavigationDrawer.SfNavigationDrawer.html#Syncfusion_UI_Xaml_NavigationDrawer_SfNavigationDrawer_Closing) event gets triggered when the drawer is about to close.
 
 Closing of the drawer menu can be handled using the `Cancel` property.
 
@@ -266,7 +266,7 @@ namespace NavigationDrawerWPF
 
 ## Closed event
 
-This [Closed](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.NavigationDrawer.SfNavigationDrawer.html#Syncfusion_UI_Xaml_NavigationDrawer_SfNavigationDrawer_Closed) event gets triggered once the drawer menu is Closed.
+The [Closed](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.NavigationDrawer.SfNavigationDrawer.html#Syncfusion_UI_Xaml_NavigationDrawer_SfNavigationDrawer_Closed) event gets triggered once the drawer menu is closed.
 
 {% tabs %}
 {% highlight xml %}
@@ -352,7 +352,7 @@ namespace NavigationDrawerWPF
 
 The [ItemClicked](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.NavigationDrawer.SfNavigationDrawer.html#Syncfusion_UI_Xaml_NavigationDrawer_SfNavigationDrawer_ItemClicked) event gets triggered when the item in the navigation menu is clicked. 
 
-N> This event will get triggered only when the display mode is either compact or expanded.
+N> This event will get triggered only when the `DisplayMode` is either compact or expanded.
 
 {% tabs %}
 {% highlight xaml %}
@@ -445,9 +445,9 @@ N> This event will get triggered only when the display mode is either compact or
 
 ## ItemCollapsed event
 
-The [ItemCollapsed](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.NavigationDrawer.SfNavigationDrawer.html#Syncfusion_UI_Xaml_NavigationDrawer_SfNavigationDrawer_ItemCollapsed) event gets triggered when the sub items gets collapsed.
+The [ItemCollapsed](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.NavigationDrawer.SfNavigationDrawer.html#Syncfusion_UI_Xaml_NavigationDrawer_SfNavigationDrawer_ItemCollapsed) event gets triggered when the sub items get collapsed.
 
-N> This event will get triggered only when the display mode is either compact or expanded.
+N> This event will get triggered only when the `DisplayMode` is either compact or expanded.
 
 {% tabs %}
 {% highlight xaml %}
@@ -594,9 +594,9 @@ N> This event will get triggered only when the display mode is either compact or
 
 ## ItemExpanded event
 
-The [ItemExpanded](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.NavigationDrawer.SfNavigationDrawer.html#Syncfusion_UI_Xaml_NavigationDrawer_SfNavigationDrawer_ItemExpanded) event gets triggered when the sub items gets expanded.
+The [ItemExpanded](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.NavigationDrawer.SfNavigationDrawer.html#Syncfusion_UI_Xaml_NavigationDrawer_SfNavigationDrawer_ItemExpanded) event gets triggered when the sub items get expanded.
 
-N> This event will get triggered only when the display mode is either compact or expanded.
+N> This event will get triggered only when the `DisplayMode` is either compact or expanded.
 
 {% tabs %}
 {% highlight xaml %}
@@ -737,9 +737,9 @@ N> This event will get triggered only when the display mode is either compact or
 
 ## Commands
 
-The command binds to the `NavigationItem`, and will be executed while the items gets clicked. 
+The command binds to the `NavigationItem`, and will be executed while the items get clicked. 
 
-The `Tab` and `Button` navigation item types alone executes the [Command](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.NavigationDrawer.NavigationItem.html#Syncfusion_UI_Xaml_NavigationDrawer_NavigationItem_Command). [CommandParameter](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.NavigationDrawer.NavigationItem.html#Syncfusion_UI_Xaml_NavigationDrawer_NavigationItem_CommandParameter) is user defined data value that can be passed to the `Command` when it is executed.
+The `Tab` and `Button` navigation item types alone execute the [Command](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.NavigationDrawer.NavigationItem.html#Syncfusion_UI_Xaml_NavigationDrawer_NavigationItem_Command). The [CommandParameter](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.NavigationDrawer.NavigationItem.html#Syncfusion_UI_Xaml_NavigationDrawer_NavigationItem_CommandParameter) is a user-defined data value that can be passed to the `Command` when it is executed.
 
 ### DelegateCommand class
 
@@ -935,7 +935,7 @@ public class DelegateCommand<T> : ICommand
 
 {% endtabs %}
 
-![WPF NavigationDrawer displays Command](Command_image/wpf-navigation-drawer-command.png)
+![WPF Navigation Drawer displays Command](Command_image/wpf-navigation-drawer-command.png)
 
 N> The `Command` execution is only applicable for compact and expanded display mode.
 
