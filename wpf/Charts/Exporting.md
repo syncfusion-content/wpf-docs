@@ -62,6 +62,8 @@ private void SaveImageEncoder_Click(object sender, RoutedEventArgs e)
 
 {% endhighlight %}
 
+N> The FileMode argument determines how the output file is created or accessed. The example uses FileMode.Create, which creates a new file or overwrites in an existing file. You can use other FileMode values such as CreateNew, Open, OpenOrCreate, Append, or Truncate depending on your file handling requirements.
+
 ### Export without UI rendering
 
 Export the chart as an image without rendering it in the UI by setting the chart as the **RootVisual** of an **HwndSource** and assigning **HwndSourceParameters** to the **HwndSource**. The following code example demonstrates this process.
@@ -126,6 +128,8 @@ private void ExportAsStream_Click(object sender, RoutedEventArgs e)
 }
 
 {% endhighlight %}
+
+N> The FileMode argument determines how the output file is created or accessed. The example uses FileMode.Create, which creates a new file or overwrites in an existing file. You can use other FileMode values such as CreateNew, Open, OpenOrCreate, Append, or Truncate depending on your file handling requirements.
 
 ### Export without UI rendering
 

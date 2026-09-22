@@ -3383,7 +3383,7 @@ chart.PrimaryAxis.MultiLevelLabels.Add(label);
 
 **Label rotation angle**
 
-Multi-level label rotation angle can be customized using the [`MultiLevelLabelRotationAngle`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAxisBase2D.html#Syncfusion_UI_Xaml_Charts_ChartAxisBase2D_MultiLevelLabelRotationAngle) property. By default rotation angle value is `0`. The following code example illustrates how to rotate multi-level labels.This property supports rotating multi-level labels on both the primary and secondary axes.
+Multi-level labels can be rotated using the [`MultiLevelLabelRotationAngle`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAxisBase2D.html#Syncfusion_UI_Xaml_Charts_ChartAxisBase2D_MultiLevelLabelRotationAngle) property. By default rotation angle value is `0`.
 
 {% tabs %}
 
