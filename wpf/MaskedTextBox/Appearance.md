@@ -9,7 +9,7 @@ documentation: ug
 
 # Appearance in WPF MaskedTextBox (SfMaskedEdit)
 
-This section explains the UI customization and theming options available in the [WPF MaskedTextBox](https://www.syncfusion.com/wpf-controls/maskedtextbox) control. The WPF MaskedTextBox control is implemented through the [SfMaskedEdit](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfMaskedEdit.html) class.
+This section explains the UI customization and theming options available in the [WPF MaskedTextBox](https://www.syncfusion.com/wpf-controls/maskedtextbox) control.
 
 ## Setting the background
 
