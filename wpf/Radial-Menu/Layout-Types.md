@@ -1,6 +1,6 @@
-﻿---
+---
 layout: post
-title: Layout Types in WPF RadialMenu | Syncfusion®
+title: Layout Types in WPF Radial Menu | Syncfusion®
 description: Configure default and custom radial layouts using visible segment counts, segment indexes, and circular panel arrangements.
 platform: wpf
 control: SfRadialMenu 
@@ -8,7 +8,7 @@ documentation: ug
 ---
 # Layout Types in WPF Radial Menu (SfRadialMenu)
 
-There are two different layout types available for SfRadialMenu.
+There are two different layout types available for the WPF Radial Menu.
 
 * Default
 * Custom
@@ -17,15 +17,15 @@ There are two different layout types available for SfRadialMenu.
 
 ## Default
 
-Number of segments in the panel is determined by children count in the level. Hence segment count in each hierarchical level differs. RadialMenuItem is arranged in the sequential order as added in the RadialMenu.
+The number of segments in the panel is determined by the children count in the level. Hence, the segment count in each hierarchical level differs. `RadialMenuItem` is arranged in the sequential order as added in the WPF Radial Menu.
 
 ## Custom
 
-Number of segments in the panel is determined by VisibleSegmentsCount property. Hence segment count in all the hierarchical levels are same. RadialMenuItem is arranged in any order based on the SegmentIndex property.
+The number of segments in the panel is determined by the `VisibleSegmentsCount` property. Hence, the segment count in all the hierarchical levels is the same. `RadialMenuItem` is arranged in any order based on the `SegmentIndex` property.
 
 ### VisibleSegmentsCount
 
-VisibleSegmentsCount property is used to specify the number of segments available in circular panel. When children count is greater than the value given in VisibleSegmentsCount property then overflowing children are not arranged in the panel. When children count is lesser than VisibleSegmentsCount property then remaining segments are left free.
+The `VisibleSegmentsCount` property is used to specify the number of segments available in the circular panel. When the children count is greater than the value given in the `VisibleSegmentsCount` property, then the overflowing children are not arranged in the panel. When the children count is less than the `VisibleSegmentsCount` property, then the remaining segments are left free.
 
 {%tabs%}
 {%highlight xaml%}
@@ -45,7 +45,7 @@ radialMenu.LayoutType = LayoutType.Custom;
 
 ### SegmentIndex
 
-SegmentIndex property is used to specify the index of the SfRadialMenuItem in circular panel. Based on the index, the RadialMenuItems are inserted in the segment. When SegmentIndex is not specified for a RadialMenuItem (or) two or more RadialMenuItems having the same SegmentIndex, then the menu item is arranged in the next available free segment. 
+The `SegmentIndex` property is used to specify the index of the `SfRadialMenuItem` in the circular panel. Based on the index, the `RadialMenuItem`s are inserted in the segment. When `SegmentIndex` is not specified for a `RadialMenuItem` (or) two or more `RadialMenuItem`s have the same `SegmentIndex`, then the menu item is arranged in the next available free segment. 
 
 {%tabs%}
 {%highlight xaml%}

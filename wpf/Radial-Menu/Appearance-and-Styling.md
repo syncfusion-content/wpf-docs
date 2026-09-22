@@ -1,7 +1,7 @@
-﻿---
+---
 layout: post
-title: Appearance and Styling in WPF RadialMenu | Syncfusion®
-description: Customize the appearance of the WPF RadialMenu using radius settings, rim styling, navigation buttons, and item background customization.
+title: Appearance and Styling in WPF Radial Menu | Syncfusion®
+description: Customize the appearance of the WPF Radial Menu using radius settings, rim styling, navigation buttons, and item background customization.
 platform: wpf
 control: SfRadialMenu 
 documentation: ug
@@ -11,7 +11,7 @@ documentation: ug
 
 ## Radius
 
-RadiusX and RadiusY properties in the Radial Menu can be used to define the X and Y axis radius to render the control. 
+The `RadiusX` and `RadiusY` properties in the WPF Radial Menu can be used to define the X and Y axis radius to render the control. 
 
 
 {%highlight xaml%}
@@ -24,7 +24,7 @@ RadiusX and RadiusY properties in the Radial Menu can be used to define the X an
 
 ## CenterRimRadiusFactor
 
-CenterRimRadiusFactor property can be used to define the radius of the center rim (inner circle). 
+The `CenterRimRadiusFactor` property can be used to define the radius of the center rim (inner circle). 
 
 {%highlight xaml%}
 
@@ -41,7 +41,7 @@ CenterRimRadiusFactor property can be used to define the radius of the center ri
 
 ## RimBackground
 
-RimBackground property used to fill the outer rim (outer circle).
+The `RimBackground` property is used to fill the outer rim (outer circle).
 
 {%highlight xaml%}
 
@@ -56,13 +56,13 @@ RimBackground property used to fill the outer rim (outer circle).
 
 
 
-RadialMenu outer ring filled with color
+The WPF Radial Menu outer ring filled with color
 
 
 
 ## RimActiveBrush
 
-RimActiveBrush property used to fill the expander rim and this expander rim only visible when the items have sub items.   
+The `RimActiveBrush` property is used to fill the expander rim and this expander rim is only visible when the items have sub items.
 
 {%highlight xaml%}
 
@@ -81,7 +81,7 @@ RimActiveBrush property used to fill the expander rim and this expander rim only
 
 ##RimInactiveBrush
 
-`RimInactiveBrush` property used to fill the expander rim item background when the corresponding menu item doesn’t have sub items.
+The `RimInactiveBrush` property is used to fill the expander rim item background when the corresponding menu item does not have sub items.
 
 {%highlight xaml%}
 
@@ -106,7 +106,7 @@ RimActiveBrush property used to fill the expander rim and this expander rim only
 
 ## RimHoverBrush
 
-The RimHoverBrush property can be used to fill the expander rim while the pointer is hovering over it. 
+The `RimHoverBrush` property can be used to fill the expander rim while the pointer is hovering over it. 
 
 {%highlight xaml%}
 
@@ -123,7 +123,7 @@ The RimHoverBrush property can be used to fill the expander rim while the pointe
 
 ## IsExpanderVisible
 
-Expander arrow in the OuterRim of `SfRadialMenu` visibility can be changed by `IsExpanderVisible` property of `SfRadialMenuItem`. By default, `IsExpanderVisible` value is True.
+The expander arrow in the OuterRim of `SfRadialMenu` visibility can be changed by the `IsExpanderVisible` property of `SfRadialMenuItem`. By default, the value of `IsExpanderVisible` is `True`.
 
 {%highlight xaml%}
 
@@ -151,7 +151,7 @@ Expander arrow in the OuterRim of `SfRadialMenu` visibility can be changed by `I
 
 ## RimRadiusFactor
 
-RimRadiusFactor property of Radial Menu can be used to set the radius of the items panel. Lowest values to this factor increases the thickness of the outer rim. Highest values to this factor decreases the thickness of the outer rim. 
+The `RimRadiusFactor` property of the WPF Radial Menu can be used to set the radius of the items panel. Lowest values to this factor increase the thickness of the outer rim. Highest values to this factor decrease the thickness of the outer rim. 
 
 {%highlight xaml%}
 
@@ -168,7 +168,7 @@ RimRadiusFactor property of Radial Menu can be used to set the radius of the ite
 
 ## Navigation Button Style
 
-The navigation button displayed in the center of radial menu can be styled using NavigationButtonStyle property. 
+The navigation button displayed in the center of the WPF Radial Menu can be styled using the `NavigationButtonStyle` property. 
 
 {%highlight xaml%}
 
@@ -231,7 +231,7 @@ Each `SfRadialMenuItem` can be set a different background color using `MenuBackg
 
 ## MenuMouseOverBackgroundColor
 
-Each SfRadialMenuItem can be set with a different background color on mouse over by using the MenuMouseOverBackgroundColor property. Before that, the ShowMouseOverStyle property should be set to true.
+Each `SfRadialMenuItem` can be set with a different background color on mouse over by using the `MenuMouseOverBackgroundColor` property. Before that, the `ShowMouseOverStyle` property should be set to `true`.
 
 {%highlight xaml%}
 
