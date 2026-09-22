@@ -9,9 +9,9 @@ documentation: ug
 
 # Getting Started with WPF ColorPicker
 
-This section explains how to create a WPF [ColorPicker](https://www.syncfusion.com/wpf-controls/colorpicker) and explains about its structure and features.
+This section explains how to create a [WPF ColorPicker](https://www.syncfusion.com/wpf-controls/colorpicker) and explains about its structure and features.
 
-## Structure of ColorPicker
+## Structure of WPF ColorPicker
 
 ![Structure of WPF Color Picker](getting-started_images/wpf-color-picker-structure.png)
 
@@ -23,7 +23,7 @@ Refer to this [documentation](https://help.syncfusion.com/wpf/installation/insta
 
 ## Adding WPF ColorPicker via designer
 
-`ColorPicker` can be added to an application by dragging it from the toolbox onto a view in the designer. The following dependent assembly will be added automatically:
+`WPF ColorPicker` can be added to an application by dragging it from the toolbox onto a view in the designer. The following dependent assembly will be added automatically:
 
 * Syncfusion.Shared.WPF
 
@@ -31,7 +31,7 @@ Refer to this [documentation](https://help.syncfusion.com/wpf/installation/insta
 
 ## Adding WPF ColorPicker via XAML
 
-To add the `ColorPicker` manually in XAML, follow these steps:
+To add the `WPF ColorPicker` manually in XAML, follow these steps:
 
 1. Create a new WPF project in Visual Studio.
 
@@ -39,7 +39,7 @@ To add the `ColorPicker` manually in XAML, follow these steps:
 
     * Syncfusion.Shared.WPF
 
-3. Import the Syncfusion<sup>®</sup> WPF schema **http://schemas.syncfusion.com/wpf** and declare the `ColorPicker` on the XAML page.
+3. Import the Syncfusion<sup>®</sup> WPF schema **http://schemas.syncfusion.com/wpf** and declare the `WPF ColorPicker` on the XAML page.
 
 {% capture codesnippet1 %}
 {% tabs %}
@@ -64,7 +64,7 @@ To add the `ColorPicker` manually in XAML, follow these steps:
 
 ## Adding WPF ColorPicker via C#
 
-To add the `ColorPicker` manually in C#, follow these steps:
+To add the `WPF ColorPicker` manually in C#, follow these steps:
 
 1. Create a new WPF application in Visual Studio.
 
@@ -72,7 +72,7 @@ To add the `ColorPicker` manually in C#, follow these steps:
 
     * Syncfusion.Shared.WPF
 
-3. Include the required namespace and create an instance of `ColorPicker`.
+3. Include the required namespace and create an instance of the `WPF ColorPicker`.
 
 {% capture codesnippet2 %}
 {% tabs %}
@@ -95,7 +95,7 @@ colorPicker.Height = 100;
 
 ## Select a Color
 
-You can select a solid color or a gradient color from `ColorPicker` using the [Color](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.ColorPicker.html#Syncfusion_Windows_Shared_ColorPicker_Color) and [Brush](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.ColorPicker.html#Syncfusion_Windows_Shared_ColorPicker_Brush) properties. The default value of `Color` is `Transparent`, and the default value of `Brush` is `null`.
+You can select a solid color or a gradient color from `WPF ColorPicker` using the [Color](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.ColorPicker.html#Syncfusion_Windows_Shared_ColorPicker_Color) and [Brush](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.ColorPicker.html#Syncfusion_Windows_Shared_ColorPicker_Brush) properties. The default value of `Color` is `Transparent`, and the default value of `Brush` is `null`.
 
 ### Select Solid Color
 
@@ -120,7 +120,7 @@ colorPicker.Color = Colors.Yellow;
 
 ### Select a Gradient Color
 
-You can select a linear or radial gradient brush that contains multiple colors from the `ColorPicker`.
+You can select a linear or radial gradient brush that contains multiple colors from the `WPF ColorPicker`.
 
 #### Linear Gradient
 
@@ -206,7 +206,7 @@ colorPicker.Brush = radialGradient;
 
 ### Change Selected Color at runtime
 
-The selected color and brush in [ColorPicker](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.ColorPicker.html) can be observed using the [SelectedBrushChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.ColorPicker.html#Syncfusion_Windows_Shared_ColorPicker_SelectedBrushChanged) and [ColorChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.ColorPicker.html#Syncfusion_Windows_Shared_ColorPicker_ColorChanged) events.
+The selected color and brush in the [WPF ColorPicker](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.ColorPicker.html) can be observed using the [SelectedBrushChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.ColorPicker.html#Syncfusion_Windows_Shared_ColorPicker_SelectedBrushChanged) and [ColorChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.ColorPicker.html#Syncfusion_Windows_Shared_ColorPicker_ColorChanged) events.
 
 {% tabs %}
 {% highlight xaml %}
@@ -247,7 +247,7 @@ private void ColorPicker_SelectedBrushChanged(DependencyObject d, DependencyProp
 
 ## Change opacity of the color
 
-You can change the opacity of the selected color using the A (alpha) value editor or the alpha slider in the `ColorPicker`. You can hide the alpha value editor and the slider by setting the [IsAlphaVisible](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.ColorPicker.html#Syncfusion_Windows_Shared_ColorPicker_IsAlphaVisible) property to `false`. The default value of `IsAlphaVisible` is `true`.
+You can change the opacity of the selected color using the A (alpha) value editor or the alpha slider in the `WPF ColorPicker`. You can hide the alpha value editor and the slider by setting the [IsAlphaVisible](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.ColorPicker.html#Syncfusion_Windows_Shared_ColorPicker_IsAlphaVisible) property to `false`. The default value of `IsAlphaVisible` is `true`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -267,7 +267,7 @@ colorPicker.IsAlphaVisible = false;
 
 ## Switch between Solid, Linear and Gradient brush mode
 
-You can switch the color-selection mode by clicking the corresponding Solid, Linear, or Gradient button placed in the bottom-right corner of the `ColorPicker`. The default brush mode is `Solid`.
+You can switch the color-selection mode by clicking the corresponding Solid, Linear, or Gradient button placed in the bottom-right corner of the `WPF ColorPicker`. The default brush mode is `Solid`.
 
 ![WPF Color Picker popup gradient Editor](colorpicker-with-gradient-support_images/wpf-color-picker-switch-brushes.png)
 
@@ -292,11 +292,11 @@ colorPicker.EnableSolidToGradientSwitch = false;
 
 ![WPF Color Picker Solid to Gradient brush transition is disabled](colorpicker-with-gradient-support_images/wpf-color-picker-gradient-transition.png)
 
-Click [here](https://github.com/SyncfusionExamples/wpf-colorpicker-examples/tree/master/Samples/Over%20all%20features) to download the sample that showcases the `ColorPicker` overall features.
+Click [here](https://github.com/SyncfusionExamples/wpf-colorpicker-examples/tree/master/Samples/Over%20all%20features) to download the sample that showcases the `WPF ColorPicker` overall features.
 
 ## Theme
 
-ColorPicker supports various built-in themes. Refer to the below links to apply themes for the ColorPicker,
+The WPF ColorPicker supports various built-in themes. Refer to the links below to apply themes,
 
   * [Apply theme using SfSkinManager](https://help.syncfusion.com/wpf/themes/skin-manager)
 	

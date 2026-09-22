@@ -7,13 +7,13 @@ control: SfColorPalette
 documentation: ug
 ---
 
-# Appearance in WPF SfColorPalette
+# Appearance in WPF Color Palette
 
-This section explains different UI customization options available in [ColorPalette](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Media.SfColorPalette.html) control.
+This section explains different UI customization options available in [WPF Color Palette](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Media.SfColorPalette.html) control.
 
 ## Setting the Foreground
 
-You can change the foreground color of the `SfColorPalette` by setting the `Foreground` property. The default value of the `Foreground` property is `Gray`.
+You can change the foreground color of the `WPF Color Palette` by setting the `Foreground` property. The default value of the `Foreground` property is `Gray`.
 
 > The C# sample below requires the `using System.Windows.Media;` namespace for `Brushes`.
 
@@ -38,7 +38,7 @@ N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-sfcolorpal
 
 ## Setting the Background
 
-You can change the background color of the `SfColorPalette` by setting the `Background` property. The default value of the `Background` property is `Snow`.
+You can change the background color of the `WPF Color Palette` by setting the `Background` property. The default value of the `Background` property is `Snow`.
 
 > The C# sample below requires the `using System.Windows.Media;` namespace for `Brushes`.
 
@@ -63,7 +63,7 @@ N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-sfcolorpal
 
 ## Changing the Flow Direction
 
-You can change the flow direction of the `SfColorPalette` layout to right-to-left by setting the `FlowDirection` property value to `RightToLeft`. The default value of the `FlowDirection` property is `LeftToRight`.
+You can change the flow direction of the `WPF Color Palette` layout to right-to-left by setting the `FlowDirection` property value to `RightToLeft`. The default value of the `FlowDirection` property is `LeftToRight`.
 
 > The C# sample below requires the `using System.Windows;` namespace for `FlowDirection`.
 
@@ -88,7 +88,7 @@ N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-sfcolorpal
 
 ## Theme
 
-ColorPalette supports various built-in themes. Refer to the links below to apply themes for the ColorPalette:
+The WPF Color Palette supports various built-in themes. Refer to the links below to apply themes:
 
   * [Apply theme using SfSkinManager](https://help.syncfusion.com/wpf/themes/skin-manager)
 	

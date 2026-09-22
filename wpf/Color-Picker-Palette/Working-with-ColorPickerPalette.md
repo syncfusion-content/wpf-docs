@@ -7,13 +7,13 @@ control: ColorPickerPalette
 documentation: ug
 ---
 
-# Color Selection in WPF ColorPickerPalette
+# Color Selection in WPF Color Picker Palette
 
-This section explains the different types of colors available in the [ColorPickerPalette](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ColorPickerPalette.html) and how to choose the colors and customize the panels.
+This section explains the different types of colors available in the [WPF Color Picker Palette](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ColorPickerPalette.html) and how to choose the colors and customize the panels.
 
 ## Accessing a Color programmatically
 
-You can get or change the selected color of the `ColorPickerPalette` programmatically by setting the [Color](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ColorPickerPalette.html#Syncfusion_Windows_Tools_Controls_ColorPickerPalette_Color) property. To get the selected color's name, use the [ColorName](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ColorPickerPalette.html#Syncfusion_Windows_Tools_Controls_ColorPickerPalette_ColorName) property, which holds the name of the selected color item. The default value of `Color` is `Black`, and the default value of `ColorName` is the string `"Color"`.
+You can get or change the selected color of the `WPF Color Picker Palette` programmatically by setting the [Color](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ColorPickerPalette.html#Syncfusion_Windows_Tools_Controls_ColorPickerPalette_Color) property. To get the selected color's name, use the [ColorName](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ColorPickerPalette.html#Syncfusion_Windows_Tools_Controls_ColorPickerPalette_ColorName) property, which holds the name of the selected color item. The default value of `Color` is `Black`, and the default value of `ColorName` is the string `"Color"`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -43,7 +43,7 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-colo
 
 ## Accessing a color brush programmatically
 
-You can get or change the selected brush of the `ColorPickerPalette` programmatically by setting the [SelectedBrush](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ColorPickerPalette.html#Syncfusion_Windows_Tools_Controls_ColorPickerPalette_SelectedBrush) property. The default value of `SelectedBrush` is `Black`.
+You can get or change the selected brush of the `WPF Color Picker Palette` programmatically by setting the [SelectedBrush](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ColorPickerPalette.html#Syncfusion_Windows_Tools_Controls_ColorPickerPalette_SelectedBrush) property. The default value of `SelectedBrush` is `Black`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -61,7 +61,7 @@ colorPickerPalette.SelectedBrush = Brushes.Yellow;
 
 ![ColorPickerPalette programmatically picked the yellow color brush](Dealing-with-ColorPickerPalette_images/Colorbrushprogrammatically.png)
 
-Here, the `Yellow` color brush is selected in the `ColorPickerPalette`.
+Here, the `Yellow` color brush is selected in the `WPF Color Picker Palette`.
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-color-picker-palette-wpf-examples/tree/master/Samples/Getting-Started)
 
@@ -385,7 +385,7 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-colo
 
 ## Selected brush or color changed notification
 
-The selected brush or color in `ColorPickerPalette` can be observed using the [SelectedBrushChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ColorPickerPalette.html) event. The `SelectedBrushChangedEventArgs` contains the old and newly selected brush and its color values in the `OldBrush`, `NewBrush`, `OldColor`, and `NewColor` properties. You can also receive a notification when the selected brush or color changes by using the [SelectedCommand](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ColorPickerPalette.html#Syncfusion_Windows_Tools_Controls_ColorPickerPalette_SelectedCommand) property.
+The selected brush or color in `WPF Color Picker Palette` can be observed using the [SelectedBrushChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ColorPickerPalette.html) event. The `SelectedBrushChangedEventArgs` contains the old and newly selected brush and its color values in the `OldBrush`, `NewBrush`, `OldColor`, and `NewColor` properties. You can also receive a notification when the selected brush or color changes by using the [SelectedCommand](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ColorPickerPalette.html#Syncfusion_Windows_Tools_Controls_ColorPickerPalette_SelectedCommand) property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -426,9 +426,9 @@ private void ColorPickerPalette_SelectedBrushChanged(object sender, SelectedBrus
 
 ## Customize the header
 
-You can customize the appearance of the `ColorPickerPalette` header and display the selected color name in it by using the [HeaderTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ColorPickerPalette.html#Syncfusion_Windows_Tools_Controls_ColorPickerPalette_HeaderTemplate) property.
+You can customize the appearance of the `WPF Color Picker Palette` header and display the selected color name in it by using the [HeaderTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ColorPickerPalette.html#Syncfusion_Windows_Tools_Controls_ColorPickerPalette_HeaderTemplate) property.
 
-N> The `DataContext` of `HeaderTemplate` is the `ColorPickerPalette` instance.
+N> The `DataContext` of `HeaderTemplate` is the `WPF Color Picker Palette` instance.
 
 {% tabs %}
 {% highlight xaml %}
@@ -487,13 +487,13 @@ N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-color-picker-p
 
 ## Tooltip support
 
-A tooltip is used to show information about a color item when the mouse hovers over it. The `ColorPickerPalette` displays the name of each color in the tooltip by default. No additional configuration is required.
+A tooltip is used to show information about a color item when the mouse hovers over it. The `WPF Color Picker Palette` displays the name of each color in the tooltip by default. No additional configuration is required.
 
 ![WPF Color Picker Palette with tooltip support](appearance_images/wpf-color-picker-palette-tooltip-support.gif)
 
 ## Expanded mode
 
-By default, `ColorPickerPalette` is shown as a drop-down button. To use the palette directly without a drop-down button, set the `Mode` property to `Palette`. To use the palette as both a button and a drop-down, set the `Mode` property to `Split`.
+By default, `WPF Color Picker Palette` is shown as a drop-down button. To use the palette directly without a drop-down button, set the `Mode` property to `Palette`. To use the palette as both a button and a drop-down, set the `Mode` property to `Split`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -514,9 +514,9 @@ colorPickerPalette.Mode = PickerMode.Palette;
 
 N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-color-picker-palette-wpf-examples/tree/master/Samples/Getting-Started) in GitHub
 
-## ColorPickerPalette as a command button
+## WPF Color Picker Palette as a command button
 
-By default, `ColorPickerPalette` acts like a drop-down. It opens a color palette when you click anywhere on the header. By setting the [Mode](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ColorPickerPalette.html#Syncfusion_Windows_Tools_Controls_ColorPickerPalette_Mode) property to `Split`, it acts as both a button and a drop-down as explained below:
+By default, `WPF Color Picker Palette` acts like a drop-down. It opens a color palette when you click anywhere on the header. By setting the [Mode](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ColorPickerPalette.html#Syncfusion_Windows_Tools_Controls_ColorPickerPalette_Mode) property to `Split`, it acts as both a button and a drop-down as explained below:
 
 1. When you click the drop-down arrow button, it acts like a drop-down.
 2. When you click the header area, it acts like a button and the [SelectedCommand](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ColorPickerPalette.html#Syncfusion_Windows_Tools_Controls_ColorPickerPalette_SelectedCommand) is triggered. Using this command, you can perform an action such as applying the selected color to the selected text.
@@ -697,7 +697,7 @@ Click [here](https://github.com/SyncfusionExamples/syncfusion-color-picker-palet
 
 ## Hide the drop-down button
 
-You can hide the drop-down button in the `ColorPickerPalette` by setting its visibility to `Collapsed`. You can then open the pop-up palette by clicking the header area.
+You can hide the drop-down button in the `WPF Color Picker Palette` by setting its visibility to `Collapsed`. You can then open the pop-up palette by clicking the header area.
 
 N> The example below uses the `UpDownBorder` template part. Template-part names are subject to change between versions; if the part name does not match, inspect the default template using a tool such as XAML Spy or Snoop.
 

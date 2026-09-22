@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Ports in WPF SfDiagram | Syncfusion®
-description: Learn about ports in Syncfusion® WPF SfDiagram control, including node ports, connector ports, dock ports, connections, appearance, and behavior.
+title: Ports in WPF Diagram | Syncfusion®
+description: Learn about ports in Syncfusion® WPF Diagram control, including node ports, connector ports, dock ports, connections, appearance, and behavior.
 platform: wpf
 control: SfDiagram
 documentation: ug
 ---
 
-# Ports in WPF SfDiagram
+# Ports in WPF Diagram
 
 Port is a special connection point on a Node or Connector that you can glue the connectors. When you glue a connector to a node or port, they stay connected, even if one of the nodes is moved.
 
@@ -556,10 +556,10 @@ The [`Constraints`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagra
 
 [How to add port to the connector?](https://support.syncfusion.com/kb/article/5939/how-to-add-port-to-the-connector-in-wpf-diagram-sfdiagram)
 
-[How to change the source and target ports of the connector at runtime in the WPF SfDiagram ?](https://support.syncfusion.com/kb/article/18302/how-to-change-the-source-and-target-ports-of-the-connector-at-runtime-in-the-wpf-diagram-sfdiagram)
+[How to change the source and target ports of the connector at runtime in the WPF Diagram ?](https://support.syncfusion.com/kb/article/18302/how-to-change-the-source-and-target-ports-of-the-connector-at-runtime-in-the-wpf-diagram-sfdiagram)
 
-[How to display only the ports of the same color in the target node based on the source node's port color in WPF SfDiagram?](https://support.syncfusion.com/kb/article/17723/how-to-display-only-the-ports-of-the-same-color-in-the-target-node-based-on-the-source-nodes-port-color-in-wpf-diagram-sfdiagram)
+[How to display only the ports of the same color in the target node based on the source node's port color in WPF Diagram?](https://support.syncfusion.com/kb/article/17723/how-to-display-only-the-ports-of-the-same-color-in-the-target-node-based-on-the-source-nodes-port-color-in-wpf-diagram-sfdiagram)
 
-[How to customize the connection indicator style of node and port in WPF SfDiagram?](https://support.syncfusion.com/kb/article/10048/how-to-customize-the-connection-indicator-style-of-node-and-port-in-wpf-diagram-sfdiagram)
+[How to customize the connection indicator style of node and port in WPF Diagram?](https://support.syncfusion.com/kb/article/10048/how-to-customize-the-connection-indicator-style-of-node-and-port-in-wpf-diagram-sfdiagram)
 
-[How to change the connector style based on its SourcePort style in WPF SfDiagram?](https://support.syncfusion.com/kb/article/18851/how-to-change-the-connector-style-based-on-its-sourceport-style-in-wpf-diagram-sfdiagram)
+[How to change the connector style based on its SourcePort style in WPF Diagram?](https://support.syncfusion.com/kb/article/18851/how-to-change-the-connector-style-based-on-its-sourceport-style-in-wpf-diagram-sfdiagram)

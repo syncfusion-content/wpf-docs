@@ -9,11 +9,11 @@ documentation: ug
 
 # Display Name Support in WPF PropertyGrid
 
-By default, the property name is displayed in the [PropertyGrid](https://www.syncfusion.com/wpf-ui-controls/propertygrid) . We can change the display name of the properties instead of the property name by using the attributes and event.
+By default, the property name is displayed in the [WPF PropertyGrid](https://www.syncfusion.com/wpf-ui-controls/propertygrid). We can change the display name of the properties instead of the property name by using attributes and events.
 
 ## Change property display name using attributes
 
-We can give a meaningful name to the properties that are displayed in the [PropertyGrid](https://www.syncfusion.com/wpf-ui-controls/propertygrid) instead of the property name by using the [Name](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.dataannotations.displayattribute.name?view=netframework-4.8#System_ComponentModel_DataAnnotations_DisplayAttribute_Name) field of the [Display](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.dataannotations.displayattribute?view=netframework-4.8) attribute and [DisplayName](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.displaynameattribute?view=netframework-4.8) attribute.
+We can give a meaningful name to the properties that are displayed in the [WPF PropertyGrid](https://www.syncfusion.com/wpf-ui-controls/propertygrid) instead of the property name by using the [Name](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.dataannotations.displayattribute.name?view=netframework-4.8#System_ComponentModel_DataAnnotations_DisplayAttribute_Name) field of the [Display](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.dataannotations.displayattribute?view=netframework-4.8) attribute and the [DisplayName](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.displaynameattribute?view=netframework-4.8) attribute.
 
 {% tabs %}
 {% highlight C# %}
@@ -67,7 +67,7 @@ propertyGrid1.SetBinding(PropertyGrid.SelectedObjectProperty, new Binding("Selec
 
 ![Value specified in the Name field of the Display attribute and DisplayName attributes is displayed as Name of the property in PropertyGrid](Attribute-Images\Display-Name-Attribute.png)
 
-Here, the `Name` and `ID` properties are displayed as `Employee Name` and  `Employee ID` respectively.
+Here, the `Name` and `ID` properties are displayed as `Employee Name` and `Employee ID`, respectively.
 
 N> If you use both the `DisplayName` attribute and `Name` field of the `Display` attribute, the `Name` field of the `Display` attribute will have higher priority.
 
@@ -75,7 +75,7 @@ N> If you use both the `DisplayName` attribute and `Name` field of the `Display`
 
 ## Change property display name at runtime
 
-We can set and change the property display name instead of the property name at runtime without using attributes by handling the [AutoGeneratingPropertyGridItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.PropertyGrid.html)  event with [AutoGeneratingPropertyGridItemEventArgs.DisplayName](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.AutoGeneratingPropertyGridItemEventArgs.html#Syncfusion_Windows_PropertyGrid_AutoGeneratingPropertyGridItemEventArgs_DisplayName) property.
+We can set and change the property display name instead of the property name at runtime without using attributes by handling the [AutoGeneratingPropertyGridItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.PropertyGrid.html) event with the [AutoGeneratingPropertyGridItemEventArgs.DisplayName](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.AutoGeneratingPropertyGridItemEventArgs.html#Syncfusion_Windows_PropertyGrid_AutoGeneratingPropertyGridItemEventArgs_DisplayName) property.
    
 {% tabs %}
 {% highlight C# %}
@@ -146,19 +146,19 @@ private void PropertyGrid1_AutoGeneratingPropertyGridItem(object sender, AutoGen
 
 ![Display name of the ID property changed to Employee ID by the DisplayName property of the AutoGeneratingPropertyGridItemEventArgs](Attribute-Images\DisplayName-AutoGeneratingPropertyGridItem.png)
 
-Here, the `Name` and `DOB` property display name is changed as `Employee Name` and `Date of Birth` by the `AutoGeneratingPropertyGridItemEventArgs.Name` property of the `AutoGeneratingPropertyGridItem` event, not by any attributes.
+Here, the `Name` and `DOB` property display names are changed to `Employee Name` and `Date of Birth` by the `AutoGeneratingPropertyGridItemEventArgs.DisplayName` property of the `AutoGeneratingPropertyGridItem` event, not by any attributes.
 
 Click [here](https://github.com/SyncfusionExamples/wpf-property-grid-examples/tree/master/Samples/AutoGeneratingPropertyGridItem%20event) to download the sample that showcases the property `Display Name` support using `AutoGeneratingPropertyGridItem` event.
 
 ## Change width of property's name column
 
-By default, you can change the width of property's name column by using grid splitter after loading the control. If you want to set or changes the width of property's name column when loading the `PropertyGrid`, use the [PropertyNameColumnDefinition](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.PropertyGrid.html#Syncfusion_Windows_PropertyGrid_PropertyGrid_PropertyNameColumnDefinition) property. 
+By default, you can change the width of the property's name column by using the grid splitter after loading the control. If you want to set or change the width of the property's name column when loading the `PropertyGrid`, use the [PropertyNameColumnDefinition](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.PropertyGrid.html#Syncfusion_Windows_PropertyGrid_PropertyGrid_PropertyNameColumnDefinition) property. 
 
-You can use the `double` or `Star` values for changing the column definition. The default value of `PropertyNameColumnDefinition` property is `1*`. Property's value column always occupiers `1*`, which cannot be changed.
+You can use the `double` or `Star` values for changing the column definition. The default value of the `PropertyNameColumnDefinition` property is `1*`. The property's value column always occupies `1*`, which cannot be changed.
 
-N> `PropertyGrid.PropertyNameColumnWidth` property does not supports `Auto` size value.
+N> The `PropertyGrid.PropertyNameColumnWidth` property does not support the `Auto` size value.
 
-For example, if you set the value for `PropertyNameColumnDefinition` property to `200`, then property's name column occupies `200` pixels. On the other hands, if `0.5*` is set to `PropertyNameColumnDefinition` property, then property's name column occupies, one third of available width. Remaining two third is occupied by property's value column. 
+For example, if you set the value of the `PropertyNameColumnDefinition` property to `200`, then the property's name column occupies `200` pixels. On the other hand, if `0.5*` is set to the `PropertyNameColumnDefinition` property, then the property's name column occupies one third of the available width, and the remaining two thirds are occupied by the property's value column. 
 
 {% tabs %}
 {% highlight C# %}

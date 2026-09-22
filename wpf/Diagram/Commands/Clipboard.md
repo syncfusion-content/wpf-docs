@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Clipboard Commands in WPF SfDiagram | Syncfusion®
-description: Use clipboard commands in Syncfusion® WPF SfDiagram to cut, copy, paste, and duplicate selected diagram elements efficiently.
+title: Clipboard Commands in WPF Diagram | Syncfusion®
+description: Use clipboard commands in Syncfusion® WPF Diagram to cut, copy, paste, and duplicate selected diagram elements efficiently.
 platform: wpf
 control: SfDiagram
 documentation: ug
 ---
 
-# Clipboard Commands in WPF SfDiagram
+# Clipboard Commands in WPF Diagram
 
-Clipboard commands are used to cut or copy the selected diagram objects to the clipboard and paste the valid clipboard content onto the [WPF SfDiagram](https://www.syncfusion.com/diagram-sdk/wpf-diagram) page.
+Clipboard commands are used to cut or copy the selected diagram objects to the clipboard and paste the valid clipboard content onto the [WPF Diagram](https://www.syncfusion.com/diagram-sdk/wpf-diagram) page.
 
 ## Cut command
 
@@ -27,7 +27,7 @@ N> The Cut command is applicable only when one or more diagram elements are sele
 
 {% highlight c# %}
 
-//Initialize the SfDiagram 
+//Initialize the Diagram 
 SfDiagram diagramcontrol = new SfDiagram();
 
 IGraphInfo graphinfo = diagramcontrol.Info as IGraphInfo;
@@ -54,7 +54,7 @@ N> The Copy command is applicable only when one or more diagram elements are sel
 
 {% highlight c# %}
 
-//Initialize the SfDiagram 
+//Initialize the Diagram 
 SfDiagram diagramcontrol = new SfDiagram();
 
 IGraphInfo graphinfo = diagramcontrol.Info as IGraphInfo;
@@ -81,7 +81,7 @@ N> The Paste command is applicable only when the clipboard contains supported di
 
 {% highlight c# %}
 
-//Initialize the SfDiagram 
+//Initialize the Diagram 
 SfDiagram diagramcontrol = new SfDiagram();
 
 IGraphInfo graphinfo = diagramcontrol.Info as IGraphInfo;
@@ -110,7 +110,7 @@ N> The Duplicate command creates copies of the selected diagram elements within 
 
 {% highlight c# %}
 
-//Initialize the SfDiagram 
+//Initialize the Diagram 
 SfDiagram diagramcontrol = new SfDiagram();
 
 IGraphInfo graphinfo = diagramcontrol.Info as IGraphInfo;
@@ -126,6 +126,6 @@ graphinfo.Commands.Duplicate.Execute(null);
 [View sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Commands/Clipboard%20commands)
 
 ## See Also
-[How to Display Different QuickCommands Based on Nodes in WPF SfDiagram?](https://support.syncfusion.com/kb/article/17969/how-to-display-different-quickcommands-based-on-nodes-in-wpf-diagram)
+[How to Display Different QuickCommands Based on Nodes in WPF Diagram?](https://support.syncfusion.com/kb/article/17969/how-to-display-different-quickcommands-based-on-nodes-in-wpf-diagram)
 
 [How to disable or override clipboard support](https://support.syncfusion.com/kb/article/9010/how-to-disable-or-override-clipboard-support)

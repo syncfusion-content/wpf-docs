@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Annotations in WPF SfDiagram | Syncfusion®
-description: Learn about annotations in Syncfusion® WPF SfDiagram control, including annotation creation, text labels, multiple annotations, and editing.
 platform: wpf
+title: Annotations in WPF Diagram | Syncfusion®
+description: Learn about annotations in Syncfusion® WPF Diagram control, including annotation creation, text labels, multiple annotations, and editing.
 control: SfDiagram
 documentation: ug
 ---
 
-# Annotations in WPF SfDiagram
+# Annotations in WPF Diagram
 
 Annotation is a block of text that can be displayed over a node or connector. Annotation is used to textually represent an object with a string that can be edited at run time. Multiple annotations can be added to a node or connector.
 
@@ -166,12 +166,12 @@ Annotations = new ObservableCollection<IAnnotation>()
 
 [How to programmatically Show/Hide the Annotations of node and connector?](https://support.syncfusion.com/kb/article/6281/how-to-programmatically-showhide-annotations-in-wpf-diagram-)
 
-[How to set font properties for newly added items Annotations in WPF SfDiagram?](https://support.syncfusion.com/kb/article/18670/how-to-set-font-properties-for-newly-added-items-annotations-in-wpf-diagram-sfdiagram)
+[How to set font properties for newly added items Annotations in WPF Diagram?](https://support.syncfusion.com/kb/article/18670/how-to-set-font-properties-for-newly-added-items-annotations-in-wpf-diagram-sfdiagram)
 
-[How to highlight the node when selecting an annotation of the node and vice versa in the WPF SfDiagram ?](https://support.syncfusion.com/kb/article/18245/how-to-highlight-the-node-when-selecting-an-annotation-of-the-node-and-vice-versa-in-the-wpf-diagram-sfdiagram)
+[How to highlight the node when selecting an annotation of the node and vice versa in the WPF Diagram ?](https://support.syncfusion.com/kb/article/18245/how-to-highlight-the-node-when-selecting-an-annotation-of-the-node-and-vice-versa-in-the-wpf-diagram-sfdiagram)
 
-[How to update text formatting properties of an Annotation in WPF SfDiagram?](https://support.syncfusion.com/kb/article/18407/how-to-update-text-formatting-properties-of-an-annotation-in-wpf-diagram-sfdiagram)
+[How to update text formatting properties of an Annotation in WPF Diagram?](https://support.syncfusion.com/kb/article/18407/how-to-update-text-formatting-properties-of-an-annotation-in-wpf-diagram-sfdiagram)
 
-[How to get parent of annotation using changed command in WPF SfDiagram?](https://support.syncfusion.com/kb/article/16202/how-to-get-parent-of-annotation-using-changed-command-in-wpf-diagram)
+[How to get parent of annotation using changed command in WPF Diagram?](https://support.syncfusion.com/kb/article/16202/how-to-get-parent-of-annotation-using-changed-command-in-wpf-diagram)
 
-[How to add image annotations to a node in WPF SfDiagram control?](https://support.syncfusion.com/kb/article/6078/how-to-add-image-annotations-to-a-node-in-wpf-diagram-sfdiagram-control)
+[How to add image annotations to a node in WPF Diagram control?](https://support.syncfusion.com/kb/article/6078/how-to-add-image-annotations-to-a-node-in-wpf-diagram-sfdiagram-control)

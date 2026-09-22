@@ -1,14 +1,14 @@
 ---
 layout: post
-title: End-User Capabilities in WPF ChromelessWindow | Syncfusion®
-description: End-user capabilities in the ChromelessWindow provide support for window operations such as moving, resizing, minimizing, and maximizing.
+title: End-User Capabilities in WPF Chromeless Window | Syncfusion®
+description: End-user capabilities in the Chromeless Window provide support for window operations such as moving, resizing, minimizing, and maximizing.
 platform: wpf
-control: ChromelessWindow
+control: Chromeless Window
 documentation: ug
 ---
-# End-User Capabilities in WPF ChromelessWindow
+# End-User Capabilities in WPF Chromeless Window
 
-The user can perform the operations listed below through the UI provided by the ChromelessWindow.
+The user can perform the operations listed below through the UI provided by the Chromeless Window.
 
 1. Maximize/Minimize
 
@@ -20,7 +20,7 @@ The user can perform the operations listed below through the UI provided by the 
 
 ## Maximize/Minimize
 
-The end user can maximize or minimize the window by using the Maximize and Minimize buttons at the top-right corner of the ChromelessWindow.
+The end user can maximize or minimize the window by using the Maximize and Minimize buttons at the top-right corner of the Chromeless Window.
 
 ![End-user-capabilities_images1](End-user-capabilities_images/End-user-capabilities_img1.jpeg)
 
@@ -32,7 +32,7 @@ After the window is minimized or maximized, the respective button is replaced by
 
 ## Close
 
-The user can close the window by using the Close button at the top-right corner of the ChromelessWindow.
+The user can close the window by using the Close button at the top-right corner of the Chromeless Window.
 
 ![End-user-capabilities_images3](End-user-capabilities_images/End-user-capabilities_img3.jpeg)
 
@@ -40,7 +40,7 @@ The user can close the window by using the Close button at the top-right corner 
 
 The window can be resized by clicking and dragging the resize border.
 
-ChromelessWindow supports the following four resize modes. The default value is `CanResize`.
+Chromeless Window supports the following four resize modes. The default value is `CanResize`.
 
 * `NoResize`
 * `CanMinimize`

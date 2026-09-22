@@ -7,22 +7,22 @@ control: SfToastNotification
 documentation: ug
 ---
 
-# Getting Started with WPF Toast Notification
+# Getting Started with WPF Toast Control
 
-This section explains how to get started with [SfToastNotification](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.SfToastNotification.html) in a WPF application by adding the required assemblies, showing a basic toast notification, configuring application startup for native toast support, defining toast content, and using the supported toast modes.
+This section explains how to get started with [WPF Toast Control](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.SfToastNotification.html) in a WPF application by adding the required assemblies, showing a basic notification, configuring application startup for native notification support, defining notification content, and using the supported display modes.
 
 ## Assembly Deployment
 
-Add references to the following assemblies to use [SfToastNotification](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.SfToastNotification.html) in your WPF application:
+Add references to the following assemblies to use [WPF Toast Control](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.SfToastNotification.html) in your WPF application:
 
 - `Syncfusion.SfToastNotification.WPF`
 - `Syncfusion.Shared.WPF`
 
 Alternatively, you can install the **Syncfusion.SfToastNotification.WPF** NuGet package, which automatically installs the required dependent assemblies.
 
-## Showing a Basic Toast
+## Showing a Basic WPF Toast Control
 
-Since [SfToastNotification](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.SfToastNotification.html) is a non-UI control, you can create and display toast notifications entirely through C# code without adding any XAML configuration. You can display a basic toast notification by using the [Show](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.SfToastNotification.SfToastNotification.html#Syncfusion_UI_Xaml_SfToastNotification_SfToastNotification_Show_System_Windows_DependencyObject_Syncfusion_UI_Xaml_SfToastNotification_ToastOptions_) method.
+Since [WPF Toast Control](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.SfToastNotification.html) is a non-UI control, you can create and display notifications entirely through C# code without adding any XAML configuration. You can display a basic WPF Toast Control by using the [Show](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.SfToastNotification.SfToastNotification.html#Syncfusion_UI_Xaml_SfToastNotification_SfToastNotification_Show_System_Windows_DependencyObject_Syncfusion_UI_Xaml_SfToastNotification_ToastOptions_) method.
 
 The following XAML wires up the trigger button.
 
@@ -53,27 +53,27 @@ private void Button_Click(object sender, RoutedEventArgs e)
 
 ![SfToastNotification image](Images/SimpleToast.png)
 
-N> For displaying default or native toast notifications, you must initialize the `WindowsToastBootstrapper` for your application in `App.xaml.cs`. This initialization is required for OS-level toast notifications.
+N> For displaying default or native WPF Toast Control, you must initialize the `WindowsToastBootstrapper` for your application in `App.xaml.cs`. This initialization is required for OS-level notifications.
 
-## Toast Content
+## WPF Toast Control Content
 
-The following properties are used to define the textual content of a toast notification:
+The following properties are used to define the textual content of a WPF Toast Control:
 
-- **Title** – Represents the bold text displayed at the top of the toast and is typically used to summarize the purpose of the notification.
-- **Message** – Represents the main body text of the toast and conveys the primary notification information.
-- **Header** – Represents an additional header displayed above the message. This property applies only to in-app toast modes (`Window` and `Screen`) and is ignored in native (`Default`) mode.
+- **Title** – Represents the bold text displayed at the top of the WPF Toast Control and is typically used to summarize the purpose of the notification.
+- **Message** – Represents the main body text of the WPF Toast Control and conveys the primary notification information.
+- **Header** – Represents an additional header displayed above the message. This property applies only to in-app modes (`Window` and `Screen`) and is ignored in native (`Default`) mode.
 
-## Toast Modes
+## WPF Toast Control Modes
 
-[SfToastNotification](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.SfToastNotification.html) supports three display modes to suit different application scenarios.
+[WPF Toast Control](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.SfToastNotification.html) supports three display modes to suit different application scenarios.
 
 ### Default Mode
 
-`Default` mode uses the native operating system toast notifications and is suitable for applications that want to integrate with the OS notification system.
+`Default` mode uses the native operating system notifications and is suitable for applications that want to integrate with the OS notification system.
 
 #### Application Startup Configuration
 
-To use native OS toast notifications, import the `Syncfusion.UI.Xaml.SfToastNotification` namespace in `App.xaml.cs` and initialize the `WindowsToastBootstrapper` in the `Application_Startup` event.
+To use native OS notifications, import the `Syncfusion.UI.Xaml.SfToastNotification` namespace in `App.xaml.cs` and initialize the `WindowsToastBootstrapper` in the `Application_Startup` event.
 
 {% tabs %}
 {% highlight C# %}
@@ -116,7 +116,7 @@ Configure the `Application_Startup` event in `App.xaml`.
 
 ### Window Mode
 
-`Window` mode displays toast notifications within the owning window. This mode is useful when notifications should remain within the application boundaries.
+`Window` mode displays WPF Toast Control within the owning window. This mode is useful when notifications should remain within the application boundaries.
 
 {% tabs %}
 {% highlight C# %}
@@ -133,7 +133,7 @@ SfToastNotification.Show(this, new ToastOptions
 
 ### Screen Mode
 
-`Screen` mode displays toast notifications as an in-app overlay across the screen. This mode is useful for application-wide notifications that should remain visible regardless of window focus.
+`Screen` mode displays WPF Toast Control as an in-app overlay across the screen. This mode is useful for application-wide notifications that should remain visible regardless of window focus.
 
 {% tabs %}
 {% highlight C# %}
@@ -148,4 +148,4 @@ SfToastNotification.Show(this, new ToastOptions
 {% endhighlight %}
 {% endtabs %}
 
-N> `Window` and `Screen` are in-app toast modes and support customization, while `Default` mode uses native OS behavior and has limited customization.
+N> `Window` and `Screen` are in-app WPF Toast Control modes and support customization, while `Default` mode uses native OS behavior and has limited customization.

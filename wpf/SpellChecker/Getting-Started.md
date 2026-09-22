@@ -7,9 +7,9 @@ control: SfSpellChecker
 documentation: ug
 --- 
 
-# Getting Started with WPF SfSpellChecker
+# Getting Started with WPF SpellChecker
 
-This section explains how to create a [WPF SpellChecker](https://www.syncfusion.com/wpf-controls/spellchecker) (SfSpellChecker) and spell check the text.
+This section explains how to create a [WPF SpellChecker](https://www.syncfusion.com/wpf-controls/spellchecker) and spell check the text.
 
 ## Control Structure
 
@@ -23,11 +23,11 @@ You can find more details about installing the NuGet package in a WPF applicatio
 
 [How to install nuget packages](https://help.syncfusion.com/wpf/installation/install-nuget-packages)
 
-## Adding WPF SfSpellChecker to an application
+## Adding WPF SpellChecker to an application
 
-Spell-checking operations can be performed on text-editor controls through `SfSpellChecker` in a WPF application.
+Spell-checking operations can be performed on text-editor controls through `WPF SpellChecker` in a WPF application.
 
-You can add the `SfSpellChecker` to an application by following these steps:
+You can add the `WPF SpellChecker` to an application by following these steps:
 
 1. Create a WPF project in Visual Studio and include the following assembly:
 
@@ -84,7 +84,7 @@ SfSpellChecker.SetSpellChecker(textbox, spellChecker);
 {% endcapture %}
 {{ codesnippet1 | OrderList_Indent_Level_1 }}
 
-3. If you want to open the `SfSpellChecker` while clicking on the `Spell Check button`, call the [PerformSpellCheckUsingDialog](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.SfSpellChecker.html#Syncfusion_Windows_Controls_SfSpellChecker_PerformSpellCheckUsingDialog_Syncfusion_Windows_Controls_IEditorProperties_) method inside the `SpellCheck ButtonClick` method.
+3. If you want to open the `WPF SpellChecker` while clicking on the `Spell Check button`, call the [PerformSpellCheckUsingDialog](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.SfSpellChecker.html#Syncfusion_Windows_Controls_SfSpellChecker_PerformSpellCheckUsingDialog_Syncfusion_Windows_Controls_IEditorProperties_) method inside the `SpellCheck ButtonClick` method.
 
 {% capture codesnippet2 %}
 {% tabs %}
@@ -106,7 +106,7 @@ N> View [Sample](https://github.com/SyncfusionExamples/WPF-SpellChecker-examples
 
 ## Fix spelling mistakes using spell check dialog
 
-1. Open a `SfSpellChecker` by clicking the **Spell Check** button; it opens as a pop-up containing a `TextSpellEditor`.
+1. Open a `WPF SpellChecker` by clicking the **Spell Check** button; it opens as a pop-up containing a `TextSpellEditor`.
 
 2. Error words are highlighted with a red foreground.
 
@@ -312,7 +312,7 @@ private void SpellCheck_ButtonClick(object sender, RoutedEventArgs e) {
 {% endhighlight %}
 {% endtabs %}
 
-## SpellCheck for any language(culture) 
+## WPF SpellChecker for any language(culture) 
 
 You can spell check any language(culture) by adding the respective culture to the [SfSpellChecker.Culture](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.SfSpellChecker.html#Syncfusion_Windows_Controls_SfSpellChecker_Culture) property and add the dictionaries which contains the basic word file and grammar file to the [SfSpellChecker.Dictionaries](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.SfSpellChecker.html#Syncfusion_Windows_Controls_SfSpellChecker_Dictionaries) collection.
 
@@ -389,7 +389,7 @@ N> View [Sample](https://github.com/SyncfusionExamples/WPF-SpellChecker-examples
 
 ## Theme
 
-WPF SpellChecker (SfSpellChecker) supports various built-in themes. Refer to the below links to apply themes for the SfSpellChecker,
+The WPF SpellChecker supports various built-in themes. Refer to the below links to apply themes,
 
   * [Apply theme using SfSkinManager](https://help.syncfusion.com/wpf/themes/skin-manager)
 	

@@ -9,7 +9,7 @@ documentation: ug
 
 # Data Binding in WPF Tab Control
 
-You can add a tab item using data binding in the WPF [WPF Tab Control](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.TabControlExt.html).
+You can add a tab item using data binding in the [WPF Tab Control](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.TabControlExt.html).
 
 ## Adding tab items using data binding
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Cubic Bezier Segment Interaction in WPF SfDiagram | Syncfusion®
-description: Learn about cubic bezier segment interactions in Syncfusion® WPF SfDiagram control, including control point editing and smoothness options.
+title: Cubic Bezier Segment Interaction in WPF Diagram | Syncfusion®
+description: Learn about cubic bezier segment interactions in Syncfusion® WPF Diagram control, including control point editing and smoothness options.
 platform: wpf
 control: SfDiagram
 documentation: ug
 ---
 
-# Cubic Bezier Segment Interaction in WPF SfDiagram
+# Cubic Bezier Segment Interaction in WPF Diagram
 
 While interacting with multiple cubic bezier segments, you can maintain their control points in same distance and angle by using [`BezierSmoothness`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.CubicCurveSegment.html#Syncfusion_UI_Xaml_Diagram_CubicCurveSegment_BezierSmoothness) property of [`CubicCurveSegment`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.CubicCurveSegment.html) class.
 

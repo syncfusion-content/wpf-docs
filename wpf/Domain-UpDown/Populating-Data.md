@@ -7,11 +7,11 @@ control: DomainUpDown
 documentation: ug
 ---
 
-# Populating Data in WPF SfDomainUpdown
+# Populating Data in WPF Domain UpDown
 
-The `DomainUpDown` control can be populated with a predefined list of items. The following example shows how to populate the control with a list of employees.
+The `WPF Domain UpDown` control can be populated with a predefined list of items. The following example shows how to populate the control with a list of employees.
 
-For example, in the following code, the DomainUpDown populates a list of employees:
+For example, in the following code, the WPF Domain UpDown populates a list of employees:
 
 {% tabs %}
 {%highlight c#%}
@@ -58,7 +58,7 @@ Employees.Add(new Employee { Name = "Jacob", Email = "jacob@syncfusion.com" });
 
 ## ItemsSource
 
-Bind the `Employees` collection to the `ItemsSource` property of the `DomainUpDown` control. Set the `DataContext` to an instance of your view model so the binding resolves.
+Bind the `Employees` collection to the `ItemsSource` property of the `WPF Domain UpDown` control. Set the `DataContext` to an instance of your view model so the binding resolves.
 
 {% tabs %}
 {%highlight xaml%}
@@ -82,7 +82,7 @@ Bind the `Employees` collection to the `ItemsSource` property of the `DomainUpDo
 {%endhighlight%}
 {% endtabs %}
 
-N> When the `ContentTemplate` property of the `DomainUpDown` control is not set, items are displayed by calling `ToString()` on each data object.
+N> When the `ContentTemplate` property of the `WPF Domain UpDown` control is not set, items are displayed by calling `ToString()` on each data object.
 
 ## ContentTemplate
 

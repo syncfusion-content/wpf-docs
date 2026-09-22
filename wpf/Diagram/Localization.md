@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Localization in WPF SfDiagram | Syncfusion®
-description: Localize annotations and context menu content in Syncfusion® WPF SfDiagram using resource files and ResourceManager support.
+title: Localization in WPF Diagram | Syncfusion®
+description: Localize annotations and context menu content in Syncfusion® WPF Diagram using resource files and ResourceManager support.
 platform: wpf
 control: SfDiagram
 documentation: ug
 ---
 
-# Localization in WPF SfDiagram
+# Localization in WPF Diagram
 
-Localization is the process of adapting an application to a specific language or culture. [WPF SfDiagram](https://www.syncfusion.com/diagram-sdk/wpf-diagram) lets you localize all static text used for annotations and context menu contents.
+Localization is the process of adapting an application to a specific language or culture. [WPF Diagram](https://www.syncfusion.com/diagram-sdk/wpf-diagram) lets you localize all static text used for annotations and context menu contents.
 
 The following items can be localized:
 
@@ -25,7 +25,7 @@ N> Set `CurrentUICulture` in `App.OnStartup` (or in `App.xaml.cs` before `Applic
 
 ## Localize the Annotations Using ResourceManager
 
-SfDiagram supports localizing the annotations of nodes and connectors. The following code illustrates how to provide localization support for an annotation.
+Diagram supports localizing the annotations of nodes and connectors. The following code illustrates how to provide localization support for an annotation.
 
 The `NewIdea` resource key referenced below uses the following `.resx` entry (default `Resources.resx`) and culture-specific overrides:
 
@@ -105,7 +105,7 @@ N> For right-to-left (RTL) cultures such as `ar-SA`, set `FlowDirection="RightTo
 
 ## Localize the Context Menu Items
 
-SfDiagram exposes its context menu items through `SfDiagram.Menu` so the labels can be localized. The following example binds the menu text to a `ResourceManager`.
+Diagram exposes its context menu items through `SfDiagram.Menu` so the labels can be localized. The following example binds the menu text to a `ResourceManager`.
 
 {% tabs %}
 {% highlight c# %}

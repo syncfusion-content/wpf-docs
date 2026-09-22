@@ -1,17 +1,17 @@
 ---
 layout: post
-title: Populating Data in WPF HierarchyNavigator | Syncfusion®
-description: Populating Data in WPF HierarchyNavigator enables efficient loading and display of hierarchical information from various sources.
+title: Populating Data in WPF BreadCrumb | Syncfusion®
+description: Populating Data in WPF BreadCrumb enables efficient loading and display of hierarchical information from various sources.
 platform: wpf
-control: Hierarchical Navigator
+control: BreadCrumb
 documentation: ug
 ---
 
-# Populating Data in WPF HierarchyNavigator
+# Populating Data in WPF BreadCrumb
 
-## HierarchyNavigator Initialization 
+## BreadCrumb Initialization 
 
-The steps to add items to the HierarchyNavigator in XAML are as follows: 
+The steps to add items to the BreadCrumb (HierarchyNavigator) control in XAML are as follows: 
 
 1. Create a [HierarchyNavigator](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.HierarchyNavigator.html) control.
 
@@ -101,7 +101,7 @@ Data binding is the process of establishing a connection between the application
 
 ### Binding to an object
 
-To bind to a Business Object collection, the `ItemsSource` property and `ItemTemplate` should be used in [HierarchyNavigator](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.HierarchyNavigator.html). HierarchicalDataTemplate should be used for all item templates.
+To bind to a Business Object collection, the `ItemsSource` property and `ItemTemplate` should be used in [HierarchyNavigator](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.HierarchyNavigator.html) control. HierarchicalDataTemplate should be used for all item templates.
 
 The steps to bind to a Business Object collection are as follows:
 
@@ -258,7 +258,7 @@ public class HierarchyItem
 {% endcapture %}
 {{ codesnippet7 | OrderList_Indent_Level_1 }}
 
-2. Convert the XML data to a collection, and then bind the collection to the `ItemsSource` property of [HierarchyNavigator](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.HierarchyNavigator.html).
+2. Convert the XML data to a collection, and then bind the collection to the `ItemsSource` property of [HierarchyNavigator](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.HierarchyNavigator.html) control.
 
 {% capture codesnippet8 %}
 {% tabs %}
@@ -448,4 +448,4 @@ The image displayed below shows the output of the above code—items bound to XM
 
 ## See Also
 
-[How to load items in WPF HierarchyNavigator (Breadcrumb) control in on-demand?](https://support.syncfusion.com/kb/article/9834/how-to-load-items-in-wpf-hierarchynavigator-breadcrumb-control-in-on-demand)
+[How to load items in WPF BreadCrumb control in on-demand?](https://support.syncfusion.com/kb/article/9834/how-to-load-items-in-wpf-hierarchynavigator-breadcrumb-control-in-on-demand)

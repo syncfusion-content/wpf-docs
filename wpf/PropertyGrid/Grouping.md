@@ -9,13 +9,13 @@ documentation: ug
 
 # Grouping in WPF PropertyGrid
 
-We can combine the properties and club them into expandable groups according to our needs by  `Category` attribute and `Display.GroupName` field. By default, the grouped properties are displayed in sorted view. If we want to display the property in grouped view, we can set the [EnableGrouping](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.PropertyGrid.html#Syncfusion_Windows_PropertyGrid_PropertyGrid_EnableGrouping) property to `true`. 
+We can combine the properties and club them into expandable groups according to our needs by using the `Category` attribute and the `Display.GroupName` field. By default, the grouped properties are displayed in the sorted view. If we want to display the properties in the grouped view, we can set the [EnableGrouping](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.PropertyGrid.html#Syncfusion_Windows_PropertyGrid_PropertyGrid_EnableGrouping) property to `true`. 
 
 ![Properties of PropertyGrid is in grouped view](Sorting-Images/Grouping.png)
 
 ## Grouping using attributes
 
-Properties in the [PropertyGrid](https://www.syncfusion.com/wpf-ui-controls/propertygrid) will be grouped based on the name specified in the [Category](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.categoryattribute?view=netframework-4.8) attribute and `GroupName` field of the `Display` attribute. If the property item doesn't have any category name, that property will be grouped under `Misc` category.
+Properties in the [WPF PropertyGrid](https://www.syncfusion.com/wpf-ui-controls/propertygrid) will be grouped based on the name specified in the [Category](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.categoryattribute?view=netframework-4.8) attribute and the `GroupName` field of the `Display` attribute. If a property item doesn't have any category name, that property will be grouped under the `Misc` category.
 
 {% tabs %}
 {% highlight C# %}
@@ -78,11 +78,11 @@ propertyGrid1.EnableGrouping = true;
 Here, the `ID` and `Name` properties are grouped under the 'Basic Info' category and the `Experience` property is grouped under the 'Additional Info' category by using the `Category` attribute or the `Display.GroupName` field.
 The `Age` and `DOB` properties do not contain any group name, so they are grouped under the `Misc` category.
 
-N> If we use both the `Category` attribute and `GroupName` field of the `Display` attribute, the `Category` attribute will have higher priority.
+N> If we use both the `Category` attribute and the `GroupName` field of the `Display` attribute, the `Category` attribute will have higher priority.
 
 ## Grouping the Properties at runtime
 
-We can group the properties in the `PropertyGrid` without using the attributes at runtime by handling the [AutoGeneratingPropertyGridItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.PropertyGrid.html) event with [AutoGeneratingPropertyGridItemEventArgs.Category](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.AutoGeneratingPropertyGridItemEventArgs.html#Syncfusion_Windows_PropertyGrid_AutoGeneratingPropertyGridItemEventArgs_Category) property. Based on the value of `Category` property, the properties are grouped.
+We can group the properties in the `PropertyGrid` without using the attributes at runtime by handling the [AutoGeneratingPropertyGridItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.PropertyGrid.html) event with the [AutoGeneratingPropertyGridItemEventArgs.Category](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.AutoGeneratingPropertyGridItemEventArgs.html#Syncfusion_Windows_PropertyGrid_AutoGeneratingPropertyGridItemEventArgs_Category) property. Based on the value of the `Category` property, the properties are grouped.
 
 {% tabs %}
 {% highlight C# %}
@@ -170,11 +170,11 @@ Click [here](https://github.com/SyncfusionExamples/wpf-property-grid-examples/tr
 
 ## Expand or Collapse Category group
 
-We can expand or collapse the grouped properties programmatically by using [ExpandCategory](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.PropertyGrid.html#Syncfusion_Windows_PropertyGrid_PropertyGrid_ExpandCategory_System_String_) and [CollapseCategory](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.PropertyGrid.html#Syncfusion_Windows_PropertyGrid_PropertyGrid_CollapseCategory_System_String_) methods in the `PropertyGrid`. These methods will accept group name as argument.
+We can expand or collapse the grouped properties programmatically by using the [ExpandCategory](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.PropertyGrid.html#Syncfusion_Windows_PropertyGrid_PropertyGrid_ExpandCategory_System_String_) and [CollapseCategory](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.PropertyGrid.html#Syncfusion_Windows_PropertyGrid_PropertyGrid_CollapseCategory_System_String_) methods in the `PropertyGrid`. These methods accept the group name as an argument.
 
 ### Expand Category group 
 
-`ExpandCategory` method will expand the specified category if it is in collapsed view.
+`ExpandCategory` method will expand the specified category if it is in the collapsed view.
 
 {% tabs %}
 {% highlight C# %}
@@ -191,7 +191,7 @@ propertyGrid1.ExpandCategory("Identity");
 
 ### Collapse Category group 
 
-`CollapseCategory` method will collapse the specified category if it is in expand view.
+`CollapseCategory` method will collapse the specified category if it is in the expanded view.
 
 {% tabs %}
 {% highlight C# %}
@@ -208,7 +208,7 @@ propertyGrid1.CollapseCategory("Identity");
 
 ## Show or Hide the Group Button
 
-We can change the view of the properties from sorted view to grouped view by the `GroupButton`. We can show or hide the group button by using the [ButtonPanelVisibility](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.PropertyGrid.html#Syncfusion_Windows_PropertyGrid_PropertyGrid_ButtonPanelVisibility) property. If we want to hide the `GroupButton`, set the `ButtonPanelVisibility` property as `Collapsed`. The Default value of the `ButtonPanelVisibility` property is `Visible`.
+We can change the view of the properties from the sorted view to the grouped view by using the `GroupButton`. We can show or hide the group button by using the [ButtonPanelVisibility](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.PropertyGrid.html#Syncfusion_Windows_PropertyGrid_PropertyGrid_ButtonPanelVisibility) property. If we want to hide the `GroupButton`, set the `ButtonPanelVisibility` property to `Collapsed`. The default value of the `ButtonPanelVisibility` property is `Visible`.
 
 {% tabs %}
 {% highlight xaml %}

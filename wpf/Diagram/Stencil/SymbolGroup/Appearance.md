@@ -1,17 +1,17 @@
 ---
 layout: post
-title: Appearance of SymbolGroup in WPF SfDiagram | Syncfusion®
-description: Customize SymbolGroup appearance in Syncfusion® WPF SfDiagram by displaying symbol groups in accordion, list, or tab views.
+title: Appearance of SymbolGroup in WPF Diagram | Syncfusion®
+description: Customize SymbolGroup appearance in Syncfusion® WPF Diagram by displaying symbol groups in accordion, list, or tab views.
 platform: wpf
 control: SfDiagram
 documentation: ug
 ---
 
-# Appearance of SymbolGroup in WPF SfDiagram
+# Appearance of SymbolGroup in WPF Diagram
 
 You can change the appearance of the `SymbolGroup` in the Stencil by setting the `SymbolGroupDisplayMode` property. Symbol groups can be displayed as Accordion, List, or Tab views in the Stencil.
 
-For the `SymbolGroupViewModel` defaults (such as `IsChecked` defaulting to `true`) and the `ExpandMode` values that control which groups are expanded, see [Symbol Groups in WPF SfDiagram](https://help.syncfusion.com/wpf/diagram/stencil/symbolgroup/symbolgroup).
+For the `SymbolGroupViewModel` defaults (such as `IsChecked` defaulting to `true`) and the `ExpandMode` values that control which groups are expanded, see [Symbol Groups in WPF Diagram](https://help.syncfusion.com/wpf/diagram/stencil/symbolgroup/symbolgroup).
 
 ## Properties
 
@@ -87,6 +87,6 @@ Stencil stencil = new Stencil()
 
 [How to expand all SymbolGroups?](https://support.syncfusion.com/kb/article/5492/how-to-expand-all-symbol-groups-in-wpf-diagram-sfdiagram)
 
-[How to group all the SymbolViewModels into the same group in the WPF SfDiagram ?](https://support.syncfusion.com/kb/article/18672/how-to-group-all-the-symbolviewmodels-into-the-same-group-in-the-wpf-diagram-sfdiagram)
+[How to group all the SymbolViewModels into the same group in the WPF Diagram ?](https://support.syncfusion.com/kb/article/18672/how-to-group-all-the-symbolviewmodels-into-the-same-group-in-the-wpf-diagram-sfdiagram)
 
-[How to change the background color of a symbol in WPF SfDiagram?](https://support.syncfusion.com/kb/article/18241/how-to-change-the-background-color-of-a-symbol-in-wpf-sfdiagram)
+[How to change the background color of a symbol in WPF Diagram?](https://support.syncfusion.com/kb/article/18241/how-to-change-the-background-color-of-a-symbol-in-wpf-sfdiagram)

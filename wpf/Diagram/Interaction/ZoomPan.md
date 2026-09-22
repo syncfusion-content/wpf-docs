@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Zoom Pan in WPF SfDiagram | Syncfusion®
-description: Navigate large diagrams in Syncfusion® WPF SfDiagram with zooming, panning, IntelliMouse support, and viewport exploration features.
+title: Zoom Pan in WPF Diagram | Syncfusion®
+description: Navigate large diagrams in Syncfusion® WPF Diagram with zooming, panning, IntelliMouse support, and viewport exploration features.
 platform: wpf
 control: SfDiagram
 documentation: ug
 ---
 
-# Zoom Pan in WPF SfDiagram
+# Zoom Pan in WPF Diagram
 
-* You can zoom in or zoom out the diagram view. [WPF SfDiagram](https://www.syncfusion.com/diagram-sdk/wpf-diagram) can be zoomed in or out by simply holding down the Ctrl key and scrolling with your mouse wheel.
+* You can zoom in or zoom out the diagram view. [WPF Diagram](https://www.syncfusion.com/diagram-sdk/wpf-diagram) can be zoomed in or out by simply holding down the Ctrl key and scrolling with your mouse wheel.
 
 * When a large Diagram is loaded, only a certain portion of the Diagram is visible. The remaining portions are clipped. Clipped portions can be explored by scrolling the scrollbars or panning the Diagram.
 
@@ -33,10 +33,10 @@ documentation: ug
 
 [How to get notification when zooming and panning the diagram page?](https://support.syncfusion.com/kb/article/5470/how-to-get-notification-when-zooming-and-panning-the-wpf-diagram-sfdiagram)
 
-[How to Use the Mouse Middle Button for Pan and Middle Button Scroll for Zoom in WPF SfDiagram?](https://support.syncfusion.com/kb/article/15645/how-to-use-the-mouse-middle-button-for-pan-and-middle-button-scroll-for-zoom-in-wpf-diagram-sfdiagram)
+[How to Use the Mouse Middle Button for Pan and Middle Button Scroll for Zoom in WPF Diagram?](https://support.syncfusion.com/kb/article/15645/how-to-use-the-mouse-middle-button-for-pan-and-middle-button-scroll-for-zoom-in-wpf-diagram-sfdiagram)
 
-[How to do Panning in all the directions at a time in WPF SfDiagram?](https://support.syncfusion.com/kb/article/5874/how-to-do-panning-in-all-the-directions-at-a-time-in-wpf-diagram)
+[How to do Panning in all the directions at a time in WPF Diagram?](https://support.syncfusion.com/kb/article/5874/how-to-do-panning-in-all-the-directions-at-a-time-in-wpf-diagram)
 
-[How to deactivate the rubber band zoom in the WPF SfDiagram ?](https://support.syncfusion.com/kb/article/15535/how-to-deactivate-the-rubberbandzoom-in-the-wpf-diagram-sfdiagram)
+[How to deactivate the rubber band zoom in the WPF Diagram ?](https://support.syncfusion.com/kb/article/15535/how-to-deactivate-the-rubberbandzoom-in-the-wpf-diagram-sfdiagram)
 
-[How to use the Magnifier control in the WPF SfDiagram ?](https://support.syncfusion.com/kb/article/17727/how-to-use-the-magnifier-control-in-the-wpf-diagram-sfdiagram)
+[How to use the Magnifier control in the WPF Diagram ?](https://support.syncfusion.com/kb/article/17727/how-to-use-the-magnifier-control-in-the-wpf-diagram-sfdiagram)
