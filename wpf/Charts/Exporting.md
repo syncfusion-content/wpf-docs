@@ -99,7 +99,7 @@ Chart has built-in support for exporting to the XPS file format, providing scala
 
 The following APIs are used to export the chart as an XPS file:
 
-* `SaveAsXps(string fileName)` - Exports the SfChart as an XPS file withdesired location.
+* `SaveAsXps(string fileName)` - Exports the SfChart as an XPS file with the specified file name to the desired location.
 * `SaveAsXps(Stream stream)` - Exports the SfChart as an XPS file using the specified stream.
 
 ### SaveAsXps(string fileName)
