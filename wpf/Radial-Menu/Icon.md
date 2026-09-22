@@ -9,7 +9,7 @@ documentation: ug
 
 # Icon Customization in WPF Radial Menu (SfRadialMenu)
 
-The `Icon` property of the WPF Radial Menu is used to customize the icon displayed in the center of the WPF Radial Menu circle.   
+The `Icon` property is used to customize the icon displayed at the center of the WPF Radial Menu.
 
 {%highlight xaml%}
 

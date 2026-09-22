@@ -1,7 +1,7 @@
 ---
 layout: post
 title: ToolTips in WPF Radial Menu | Syncfusion®
-description: Display tooltips for WPF Radial Menu items and customize tooltip placement around the WPF Radial Menu control.
+description: Display tooltips for radial menu items and customize tooltip placement around the WPF Radial Menu control.
 platform: wpf
 control: SfRadialMenu 
 documentation: ug
@@ -9,7 +9,7 @@ documentation: ug
 
 # ToolTips in WPF Radial Menu (SfRadialMenu)
 
-Tooltip support is available for the WPF Radial Menu items. This will show when the mouse hovers over the corresponding item. 
+Tooltip support is available for the radial menu items. This will show when the mouse hovers over the corresponding item. 
 
 ToolTip Placement
 
