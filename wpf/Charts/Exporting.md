@@ -26,6 +26,11 @@ The following screenshot illustrates the chart, which has to be exported.
 
 The chart provides the following overloaded methods for exporting it as an image.
 
+The following APIs are used to export the chart as an image:
+
+* [`Save(string filename)`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartBase.html#Syncfusion_UI_Xaml_Charts_ChartBase_Save_System_String_) - Export the SfChart into image with the given filename to the mentioned location.
+* [`Save(Stream, BitmapEncoder)`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartBase.html#Syncfusion_UI_Xaml_Charts_ChartBase_Save_System_IO_Stream_System_Windows_Media_Imaging_BitmapEncoder_) - Export the SfChart into image using the stream with provided bitmap encoder value.
+
 ### Save(string filename)
 
 This method will export chart to the specified location with the given name. By default, i.e., if you didn’t mention any specific location. It will be exported to “../bin/debug” location.
@@ -91,6 +96,11 @@ chart.Save("Chart.png");
 ## Export to XPS
 
 Chart has built-in support for exporting to the XPS file format, providing scalable, print-ready output without any loss of quality when zooming or printing.
+
+The following APIs are used to export the chart as an XPS file:
+
+* `SaveAsXps(string fileName)` - Exports the SfChart as an XPS file with the specified file name to the desired location.
+* `SaveAsXps(Stream stream)` - Exports the SfChart as an XPS file using the specified stream.
 
 ### SaveAsXps(string fileName)
 

@@ -3390,7 +3390,7 @@ Multi-level label rotation angle can be customized using the [`MultiLevelLabelRo
 {% highlight xaml %}
 
 <chart:SfChart.PrimaryAxis>
-    <chart:CategoryAxis ShowLabelBorder="True" LabelBorderWidth="2" MultiLevelLabelRotationAngle="45">
+    <chart:CategoryAxis ShowLabelBorder="True" MultiLevelLabelRotationAngle="45">
         <chart:CategoryAxis.MultiLevelLabels>
             <chart:ChartMultiLevelLabel Start="-0.5" End="2.5" Text="Quarter 1"/>
             <chart:ChartMultiLevelLabel Start="2.5" End="5.5" Text="Quarter 2"/>
@@ -3407,7 +3407,6 @@ Multi-level label rotation angle can be customized using the [`MultiLevelLabelRo
 CategoryAxis primaryAxis = new CategoryAxis()
 {
     ShowLabelBorder = true,
-    LabelBorderWidth = 2,
     MultiLevelLabelRotationAngle = 45
 };
 
