@@ -18,17 +18,18 @@ Chart can be exported into image format. The following are the supported image f
 * BMP
 * TIFF
 
-The following screenshot illustrates the chart, which has to be exported.
+## Export chart as an image
 
-![WPF Chart For Printing](Exporting_images/wpf-chart-for-printing.png)
+Chart provides the following overloaded methods for exporting it as an image.
 
-## Methods
+The following methods used to export the chart as an image:
 
-Chart contains the following overloading methods for saving a chart as an image.
+* [`Save(string filename)`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartBase.html#Syncfusion_UI_Xaml_Charts_ChartBase_Save_System_String_) - Exports the chart as an image to the specified location using the provided file name.
+* [`Save(Stream, BitmapEncoder)`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartBase.html#Syncfusion_UI_Xaml_Charts_ChartBase_Save_System_IO_Stream_System_Windows_Media_Imaging_BitmapEncoder_) - Exports the chart as an image to the specified stream using the provided bitmap encoder.
 
 ### Save(string filename)
 
-This method will export chart to the specified location with the given name. By default, i.e., if you didn’t mention any specific location. It will be exported to “../bin/debug” location.
+Use this method to export the chart to a specified location with a custom file name. If a location is not provided, the chart will be exported to the ../bin/Debug directory by default.
 
 The following code examples illustrates the usage of this method:
 
@@ -36,9 +37,7 @@ The following code examples illustrates the usage of this method:
 
 private void SaveImage_Click(object sender, RoutedEventArgs e)
 {
-    this.SampleChart.Save("ExportedChart"); //Save in Debug location
-
-    this.SampleChart.Save("D:\\Pictures\\Test\\ExportedChart"); //Save in ‘D:\Picture\Test’ location.
+    this.SampleChart.Save("ExportedChart.png"); //Save in Debug location
 }
 
 {% endhighlight %}
@@ -47,36 +46,27 @@ T> We can change the image formats in above code by changing its extension as .j
 
 ### Save(Stream stream, BitmapEncoder imgEncoderID)
 
-This helps to export the chart to any stream as in below code example.
+Use this method to export the chart to the specified stream using the provided bitmap encoder.
+
+The following code examples illustrates the usage of this method:
 
 {% highlight C# %}
 
 private void SaveImageEncoder_Click(object sender, RoutedEventArgs e)
 {
-    SaveFileDialog sfd = new SaveFileDialog();
-
-    sfd.Filter = "Bitmap(*.bmp)|*.bmp|JPEG(*.jpg,*.jpeg)|*.jpg;*.jpeg|Gif (*.gif)|*.gif|PNG(*.png)|*.png|TIFF(*.tif,*.tiff)|*.tif|All files (*.*)|*.*";
-
-    if (sfd.ShowDialog() == true)
+    using (FileStream fileStream = new FileStream("ExportedChart.png", FileMode.Create))
     {
-        using (Stream fs = sfd.OpenFile())
-        {
-            SampleChart.Save(fs, new PngBitmapEncoder());
-        }
+        SampleChart.Save(fileStream, new PngBitmapEncoder());
     }
 }
 
 {% endhighlight %}
 
-![WPF Chart For Export Location](Exporting_images/wpf-chart-for-export-location.png)
+N> The FileMode argument determines how the output file is created or accessed. The example uses FileMode.Create, which creates a new file or overwrites in an existing file. You can use other FileMode values such as CreateNew, Open, OpenOrCreate, Append, or Truncate depending on your file handling requirements.
 
-The image will be saved in the specified location in the SaveFileDialog.
+### Export without UI rendering
 
-![WPF Chart Exported](Exporting_images/wpf-chart-exported.png)
-
-### Export WPF Charts to image without rendering in UI
-
-You can export the chart to image without rendering in UI by setting the chart to **RootVisual** in **HwndSource** and passing **HwndSourceParameters** to the **HwndSource**. The following code snippet demonstrates this.
+Export the chart as an image without rendering it in the UI by setting the chart as the **RootVisual** of an **HwndSource** and assigning **HwndSourceParameters** to the **HwndSource**. The following code example demonstrates this process.
 
 {% highlight c# %}
 
@@ -94,6 +84,73 @@ source.RootVisual = chart;
 
 //Save chart
 chart.Save("Chart.png");
+
+{% endhighlight  %}
+
+## Export chart to XPS
+
+Chart has built-in support for exporting to the XPS file format, providing scalable, print-ready output without any loss of quality when zooming or printing.
+
+The following methods used to export the chart as an XPS file:
+
+* `SaveAsXps(string fileName)` - Exports the chart as an XPS file with the specified file name to the desired location.
+* `SaveAsXps(Stream stream)` - Exports the chart as an XPS file using the specified stream.
+
+### SaveAsXps(string fileName)
+
+Use this method to export the chart as a vector-based XPS file to a specified location with a custom file name. If a location is not provided, the chart will be exported to the ../bin/Debug directory by default.
+
+The following code examples illustrates the usage of this method:
+
+{% highlight C# %}
+
+private void ExportAsXps_Click(object sender, RoutedEventArgs e)
+{             
+    SampleChart.SaveAsXps(Chart_Export.xps);
+}
+
+{% endhighlight %}
+
+### SaveAsXps(Stream stream)
+
+Use this method to export the chart as a vector-based XPS file using the specified stream.
+
+The following code examples illustrates the usage of this method:
+
+{% highlight C# %}
+
+private void ExportAsStream_Click(object sender, RoutedEventArgs e)
+{
+    using (FileStream fileStream = new FileStream("Chart_Export_Stream.xps", FileMode.Create))
+    {
+        SampleChart.SaveAsXps(fileStream);
+    }
+}
+
+{% endhighlight %}
+
+N> The FileMode argument determines how the output file is created or accessed. The example uses FileMode.Create, which creates a new file or overwrites in an existing file. You can use other FileMode values such as CreateNew, Open, OpenOrCreate, Append, or Truncate depending on your file handling requirements.
+
+### Export without UI rendering
+
+Export the chart as an vector image without rendering it in the UI by setting the chart as the **RootVisual** of an **HwndSource** and assigning **HwndSourceParameters** to the **HwndSource**. The following code example demonstrates this process.
+
+{% highlight c# %}
+
+static IntPtr ApplicationMessageFilter(IntPtr hwnd, int message, IntPtr wParam, IntPtr lParam, ref bool handled)
+{
+    return IntPtr.Zero;
+}
+
+HwndSourceParameters sourceParameters = new HwndSourceParameters();
+
+sourceParameters.HwndSourceHook = ApplicationMessageFilter;
+
+HwndSource source = new HwndSource(sourceParameters);
+source.RootVisual = chart;
+
+//Save chart
+chart.Save("Chart.xps");
 
 {% endhighlight  %}
 
