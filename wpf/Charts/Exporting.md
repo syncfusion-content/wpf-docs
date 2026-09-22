@@ -18,22 +18,18 @@ Chart can be exported into image format. The following are the supported image f
 * BMP
 * TIFF
 
-The following screenshot illustrates the chart, which has to be exported.
+## Export chart as an image
 
-![WPF Chart For Printing](Exporting_images/wpf-chart-for-printing.png)
+Chart provides the following overloaded methods for exporting it as an image.
 
-## Export as an image
+The following methods used to export the chart as an image:
 
-The chart provides the following overloaded methods for exporting it as an image.
-
-The following APIs are used to export the chart as an image:
-
-* [`Save(string filename)`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartBase.html#Syncfusion_UI_Xaml_Charts_ChartBase_Save_System_String_) - Export the SfChart into image with the given filename to the mentioned location.
-* [`Save(Stream, BitmapEncoder)`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartBase.html#Syncfusion_UI_Xaml_Charts_ChartBase_Save_System_IO_Stream_System_Windows_Media_Imaging_BitmapEncoder_) - Export the SfChart into image using the stream with provided bitmap encoder value.
+* [`Save(string filename)`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartBase.html#Syncfusion_UI_Xaml_Charts_ChartBase_Save_System_String_) - Exports the chart as an image to the specified location using the provided file name.
+* [`Save(Stream, BitmapEncoder)`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartBase.html#Syncfusion_UI_Xaml_Charts_ChartBase_Save_System_IO_Stream_System_Windows_Media_Imaging_BitmapEncoder_) - Exports the chart as an image to the specified stream using the provided bitmap encoder.
 
 ### Save(string filename)
 
-This method will export chart to the specified location with the given name. By default, i.e., if you didn’t mention any specific location. It will be exported to “../bin/debug” location.
+Use this method to export the chart to a specified location with a custom file name. If a location is not provided, the chart will be exported to the ../bin/Debug directory by default.
 
 The following code examples illustrates the usage of this method:
 
@@ -50,7 +46,9 @@ T> We can change the image formats in above code by changing its extension as .j
 
 ### Save(Stream stream, BitmapEncoder imgEncoderID)
 
-This helps to export the chart to any stream as in below code example.
+Use this method to export the chart to the specified stream using the provided bitmap encoder.
+
+The following code examples illustrates the usage of this method:
 
 {% highlight C# %}
 
@@ -64,15 +62,9 @@ private void SaveImageEncoder_Click(object sender, RoutedEventArgs e)
 
 {% endhighlight %}
 
-![WPF Chart For Export Location](Exporting_images/wpf-chart-for-export-location.png)
+### Export without UI rendering
 
-The image will be saved in the specified location in the SaveFileDialog.
-
-![WPF Chart Exported](Exporting_images/wpf-chart-exported.png)
-
-### Export WPF Charts to image without rendering in UI
-
-You can export the chart to image without rendering in UI by setting the chart to **RootVisual** in **HwndSource** and passing **HwndSourceParameters** to the **HwndSource**. The following code snippet demonstrates this.
+Export the chart as an image without rendering it in the UI by setting the chart as the **RootVisual** of an **HwndSource** and assigning **HwndSourceParameters** to the **HwndSource**. The following code example demonstrates this process.
 
 {% highlight c# %}
 
@@ -93,20 +85,20 @@ chart.Save("Chart.png");
 
 {% endhighlight  %}
 
-## Export to XPS
+## Export chart to XPS
 
 Chart has built-in support for exporting to the XPS file format, providing scalable, print-ready output without any loss of quality when zooming or printing.
 
-The following APIs are used to export the chart as an XPS file:
+The following methods used to export the chart as an XPS file:
 
-* `SaveAsXps(string fileName)` - Exports the SfChart as an XPS file with the specified file name to the desired location.
-* `SaveAsXps(Stream stream)` - Exports the SfChart as an XPS file using the specified stream.
+* `SaveAsXps(string fileName)` - Exports the chart as an XPS file with the specified file name to the desired location.
+* `SaveAsXps(Stream stream)` - Exports the chart as an XPS file using the specified stream.
 
 ### SaveAsXps(string fileName)
 
-This method helps to export the chart as a vector-based XPS file. By default, the exported file will be saved in the “../bin/Debug” location.
+Use this method to export the chart as a vector-based XPS file to a specified location with a custom file name. If a location is not provided, the chart will be exported to the ../bin/Debug directory by default.
 
-The following code example illustrates how to use this method:
+The following code examples illustrates the usage of this method:
 
 {% highlight C# %}
 
@@ -119,9 +111,9 @@ private void ExportAsXps_Click(object sender, RoutedEventArgs e)
 
 ### SaveAsXps(Stream stream)
 
-This method helps to export the chart as a vector-based XPS file using a stream. By default, the exported file will be saved in the “../bin/Debug” location.
+Use this method to export the chart as a vector-based XPS file using the specified stream.
 
-The following code example illustrates how to use this method:
+The following code examples illustrates the usage of this method:
 
 {% highlight C# %}
 
@@ -135,13 +127,9 @@ private void ExportAsStream_Click(object sender, RoutedEventArgs e)
 
 {% endhighlight %}
 
-The following screenshot illustrates the chart, which has to be exported.
+### Export without UI rendering
 
-![WPF Chart XPS Exported](Exporting_images/wpf-chart-for-xps-export.png)
-
-### Export WPF charts to vector image without rendering in UI
-
-You can export the chart to vector image without rendering in UI by setting the chart to **RootVisual** in **HwndSource** and passing **HwndSourceParameters** to the **HwndSource**. The following code snippet demonstrates this.
+Export the chart as an vector image without rendering it in the UI by setting the chart as the **RootVisual** of an **HwndSource** and assigning **HwndSourceParameters** to the **HwndSource**. The following code example demonstrates this process.
 
 {% highlight c# %}
 
