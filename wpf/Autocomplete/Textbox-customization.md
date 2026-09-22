@@ -9,7 +9,7 @@ documentation: ug
 
 # Textbox customization in WPF AutoComplete (SfTextBoxExt)
 
-The [WPF AutoComplete](https://www.syncfusion.com/wpf-controls/autocomplete) control provides user-friendly text box customization options. This section explains how to customize the entire control. The WPF AutoComplete control is implemented through the [SfTextBoxExt](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html) class.
+The [WPF AutoComplete](https://www.syncfusion.com/wpf-controls/autocomplete) control provides user-friendly text box customization options. This section explains how to customize the entire control.
 
 
 ## Water mark 

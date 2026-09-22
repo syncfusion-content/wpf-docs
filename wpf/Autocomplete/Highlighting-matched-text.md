@@ -9,7 +9,7 @@ documentation: ug
 
 # Highlighting Matched Text in WPF AutoComplete (SfTextBoxExt)
 
-The [WPF AutoComplete](https://www.syncfusion.com/wpf-controls/autocomplete) control can highlight matching and unmatched characters in a suggestion list by using the [TextHighlightMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_TextHighlightMode) property. The WPF AutoComplete control is implemented through the [SfTextBoxExt](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html) class. The default value is `None`. The matching text can be highlighted in the following ways:
+The [WPF AutoComplete](https://www.syncfusion.com/wpf-controls/autocomplete) control can highlight matching and unmatched characters in a suggestion list by using the [TextHighlightMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_TextHighlightMode) property. The default value is `None`. The matching text can be highlighted in the following ways:
 
 * First occurrence
 * Multiple occurrence

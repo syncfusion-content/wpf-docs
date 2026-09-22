@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started with WPF Autocomplete SfTextBoxExt | Syncfusion®
-description: Learn how to get started with the Syncfusion® WPF Autocomplete SfTextBoxExt control, including setup, features, examples, and customization options.
+description: Learn how to get started with the Syncfusion® WPF Autocomplete (SfTextBoxExt) control. Explore setup, features, examples, and customization options.
 platform: wpf
 control: SfTextBoxExt
 documentation: ug
@@ -237,7 +237,7 @@ For further details, refer to [WPF AutoComplete source](https://help.syncfusion.
 
 ![GettingStarted](GettingStarted_images/AutoCompleteSource.png)
 
-## WPF AutoComplete modes 
+## AutoComplete modes 
 
 Suggestions can be shown in number of ways. [SfTextBoxExt](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html) supports the following.
 
