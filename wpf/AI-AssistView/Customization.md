@@ -13,7 +13,7 @@ This section covers the ways the [SfAIAssistView](https://help.syncfusion.com/cr
 
 ## BannerTemplate
 
-The `BannerTemplate` property of [SfAIAssistView](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Chat.SfAIAssistView.html) lets you define the UI shown above the chat list. It is useful for displaying a welcome message, brand identity, or any custom header content. The banner area can host any WPF element through a `DataTemplate`. When `BannerTemplate` is set, the banner takes priority over the `EmptyView` and `EmptyViewTemplate` content.
+The `BannerTemplate` property of [SfAIAssistView](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Chat.SfAIAssistView.html) lets you define the UI shown above the chat list. It is useful for displaying a welcome message, brand identity, or any custom header content. The banner area can host any WPF element through a `DataTemplate`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -31,7 +31,6 @@ The `BannerTemplate` property of [SfAIAssistView](https://help.syncfusion.com/cr
         <syncfusion:SfAIAssistView x:Name="aiAssistView"
                                    CurrentUser="{Binding CurrentUser}"
                                    Messages="{Binding Chats}">
-
             <syncfusion:SfAIAssistView.BannerTemplate>
                 <DataTemplate>
                     <StackPanel Orientation="Vertical"
@@ -64,7 +63,7 @@ The `BannerTemplate` property of [SfAIAssistView](https://help.syncfusion.com/cr
 
 ## EmptyView and EmptyViewTemplate
 
-By using the [EmptyView](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Chat.SfAIAssistView.html#Syncfusion_UI_Xaml_Chat_SfAIAssistView_EmptyView) and `EmptyViewTemplate` properties, the [SfAIAssistView](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Chat.SfAIAssistView.html) displays custom content (such as a welcome message, an image, or a call-to-action) when the conversation has no messages. This is useful for guiding the user before a chat begins.
+By using the `EmptyView` and `EmptyViewTemplate` properties, the [SfAIAssistView](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Chat.SfAIAssistView.html) displays custom content (such as a welcome message, an image, or a call-to-action) when the conversation has no messages. This is useful for guiding the user before a chat begins.
 
 The empty view is automatically shown when the `Messages` collection is empty and either `EmptyView` or `EmptyViewTemplate` is set. When a `BannerTemplate` is provided, the empty view is hidden and the banner is displayed instead.
 
