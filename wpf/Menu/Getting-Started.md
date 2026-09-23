@@ -9,11 +9,11 @@ documentation: ug
 
 # Getting Started with WPF Menu (MenuAdv)
 
-This section provides a quick overview for working with the Menu ([MenuAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.MenuAdv.html)).
+This section provides a quick overview for working with the Menu ([WPF Menu](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.MenuAdv.html)).
 
-## Structure of the MenuAdv Control
+## Structure of the WPF Menu Control
 
-![WPF MenuAdv Structure](getting-started_images/wpf-menu-structure.png)
+![WPF Menu Structure](getting-started_images/wpf-menu-structure.png)
 
 ## Assembly deployment
 Refer to the [control dependencies](https://help.syncfusion.com/wpf/control-dependencies#menuadv) section to get the list of assemblies or NuGet package that needs to be added as a reference to use the [MenuAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.MenuAdv.html) control in any application.
@@ -24,8 +24,8 @@ You can find more details about installing the NuGet package in a WPF applicatio
 >**Important**
 Starting with v16.2.0.x, if you refer to Syncfusion assemblies from trial setup or from the NuGet feed, include a license key in your projects. Refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/overview) to learn about registering Syncfusion license key in your WPF application to use our components.
 
-## Creating Application with MenuAdv control
-In this walk through, user will create a WPF application that contains [MenuAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.MenuAdv.html) control.
+## Creating Application with WPF Menu control
+In this walk through, user will create a WPF application that contains [WPF Menu](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.MenuAdv.html) control.
 1. [Creating project](#Creating-the-project)
 2. [Adding control via designer](#Adding-control-via-designer)
 3. [Adding control manually in XAML](#Adding-control-manually-in-XAML)
@@ -34,61 +34,61 @@ In this walk through, user will create a WPF application that contains [MenuAdv]
 6. [Binding to Data ](#Creating-Data-Model-for-sample-application)
 
 ## Creating project 
-Below section provides detailed information to create new project using [MenuAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.MenuAdv.html).
+Below section provides detailed information to create new project using [WPF Menu](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.MenuAdv.html).
 
 ## Adding control via designer
-The [MenuAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.MenuAdv.html) control can be added to the application in VisualStudio or ExpressionBlend by dragging it from Toolbox and dropping it in designer. The required assembly will be added automatically.
+The [WPF Menu](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.MenuAdv.html) control can be added to the application in VisualStudio or ExpressionBlend by dragging it from Toolbox and dropping it in designer. The required assembly will be added automatically.
 
 ### Through Visual Studio
 
-The following are the steps to create the [MenuAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.MenuAdv.html) control using Visual Studio.
+The following are the steps to create the [WPF Menu](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.MenuAdv.html) control using Visual Studio.
 
-1. Drag [MenuAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.MenuAdv.html) from the Visual Studio Toolbox and drop it in the designer.
+1. Drag [WPF Menu](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.MenuAdv.html) from the Visual Studio Toolbox and drop it in the designer.
 
    ![WPF Designer ThroughVisualStudio](getting-started_images/wpf-menu-designer.png)
 
-2. Select the [MenuAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.MenuAdv.html) and go to properties.
+2. Select the [WPF Menu](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.MenuAdv.html) and go to properties.
 
 3. Click the three dotted button given in Items property. Collection Editor window will open.
 
-   ![WPF MenuAdv Collection Editor ThroughVisualStudio](getting-started_images/wpf-menu-collection-editor.png)
+   ![WPF Menu Collection Editor ThroughVisualStudio](getting-started_images/wpf-menu-collection-editor.png)
 
 4. Using the Collection Editor, add the GroupBarItems and configure their properties.
 
 ### Through Expression Blend
 
-The [MenuAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.MenuAdv.html) control can also be created and configured using Expression Blend by following steps.
+The [WPF Menu](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.MenuAdv.html) control can also be created and configured using Expression Blend by following steps.
 
 1. Create a WPF project in the Expression Blend and refer the following assembly.
     
     * Syncfusion.Shared.Wpf
 
-2. Search for [MenuAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.MenuAdv.html) in the Toolbox.
+2. Search for [WPF Menu](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.MenuAdv.html) in the Toolbox.
 
-   ![WPF MenuAdv Through Expression Blend](getting-started_images/wpf-menu-through-expression-blend.png)
+   ![WPF Menu Through Expression Blend](getting-started_images/wpf-menu-through-expression-blend.png)
 
-3. Drag the [MenuAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.MenuAdv.html) to designer to generate an empty menu bar. 
+3. Drag the [WPF Menu](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.MenuAdv.html) to designer to generate an empty menu bar. 
 
-4. To add the [MenuItemAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.MenuItemAdv.html) to the [MenuAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.MenuAdv.html) control, select the [MenuAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.MenuAdv.html) and go to Properties area.
+4. To add the [MenuItemAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.MenuItemAdv.html) to the [WPF Menu](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.MenuAdv.html) control, select the [MenuAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.MenuAdv.html) and go to Properties area.
 
 5. Click Items (Collection) under Common Properties.
 
-   ![ItemCollection in WPF MenuAdv](getting-started_images/wpf-menu-common-properties.png)
+   ![ItemCollection in WPF Menu](getting-started_images/wpf-menu-common-properties.png)
 
 6. Once the Collection Editor opens, click Add another item.  The Select Object window will open.
 
 7. Select [MenuItemAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.MenuItemAdv.html) by typing [MenuItemAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.MenuItemAdv.html) in the search box, and then click OK.
 
-    ![Item Collection in WPF MenuAdv](getting-started_images/wpf-menu-item-collection.png)
+    ![Item Collection in WPF Menu](getting-started_images/wpf-menu-item-collection.png)
 
 8. Configure the properties (such as header or icon) of the [MenuItemAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.MenuItemAdv.html) using the properties in the Collection Editor. This will generate the following control.
 
-	![Output in WPF MenuAdv](getting-started_images/wpf-menu-output.png)
+	![Output in WPF Menu](getting-started_images/wpf-menu-output.png)
 
 N> You can customize the appearance of the [MenuItemAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.MenuItemAdv.html) using the template-editing feature available in the Expression Blend.
 
 ## Adding control manually in XAML
-In order to add [MenuAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.MenuAdv.html) control manually in XAML, do the below steps,
+In order to add [WPF Menu](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.MenuAdv.html) control manually in XAML, do the below steps,
 
 1. Add the below required assembly references to the project,
 
@@ -96,7 +96,7 @@ In order to add [MenuAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.
 
 2. Import Syncfusion WPF schema **http://schemas.syncfusion.com/wpf** in XAML page.
 
-3. Declare [MenuAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.MenuAdv.html) in XAML page.
+3. Declare [WPF Menu](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.MenuAdv.html) in XAML page.
 
 {% capture codesnippet1 %}
 {% highlight xaml %}
@@ -124,13 +124,13 @@ In order to add [MenuAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.
 {{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 ## Adding control manually in C#
-In order to add [MenuAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.MenuAdv.html) control manually in C#, do the below steps,
+In order to add [WPF Menu](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.MenuAdv.html) control manually in C#, do the below steps,
 
 1. Add the below required assembly references to the project,
 
     * Syncfusion.Shared.WPF
 
-2. Import MenuAdv namespace **Syncfusion.Windows.Shared**.
+2. Import WPF Menu namespace **Syncfusion.Windows.Shared**.
 
 {% capture codesnippet2 %}
 {% highlight C# %}
@@ -141,7 +141,7 @@ using Syncfusion.Windows.Shared;
 {% endcapture %}
 {{ codesnippet2 | OrderList_Indent_Level_1 }}
 
-3. Create MenuAdv control instance and add it to the page.
+3. Create WPF Menu control instance and add it to the page.
 
 {% capture codesnippet3 %}
 {% highlight C# %}
@@ -276,14 +276,14 @@ menuAdv.Items.Add(Project);
 {% endhighlight %}
 {% endtabs %}
 
-![Icons in WPF MenuAdv](getting-started_images/wpf-menu-icons.png)
+![Icons in WPF Menu](getting-started_images/wpf-menu-icons.png)
 
 ## Theme
 
-MenuAdv supports various built-in themes. Refer to the below links to apply themes for the MenuAdv,
+The WPF Menu supports various built-in themes. Refer to the below links to apply themes for the WPF Menu,
 
   * [Apply theme using SfSkinManager](https://help.syncfusion.com/wpf/themes/skin-manager)
 	
   * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
 
-  ![Setting theme to WPF MenuAdv](getting-started_images/wpf-menu-theme.png)
+  ![Setting theme to WPF Menu](getting-started_images/wpf-menu-theme.png)

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Animation Support in WPF Menu | Syncfusion®
-description: Animation Support in MenuAdv provides visual transition effects when opening and interacting with menu items.
+description: Animation Support in WPF Menu provides visual transition effects when opening and interacting with menu items.
 platform: wpf
 control: MenuAdv
 documentation: ug
@@ -9,7 +9,7 @@ documentation: ug
 
 # Animation Support in WPF Menu (MenuAdv)
 
-MenuAdv supports animation types to open the submenu pop-up. The following animation types are supported by MenuAdv:
+The WPF Menu supports animation types to open the submenu pop-up. The following animation types are supported by Menu:
 
 * Fade
 * Slide
@@ -62,7 +62,7 @@ Data Type </th></tr>
 <tr>
 <td>
 PopUpAnimationType</td><td>
-Gets or sets the PopUpAnimationType of MenuAdv.</td><td>
+Gets or sets the PopUpAnimationType of Menu.</td><td>
 DependencyProperty</td><td>
 PopUpAnimationType(None)</td></tr>
 </table>

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Input Gesture Text Support in WPF Menu | Syncfusion®
-description: Input Gesture Text Support in MenuAdv enables showing keyboard shortcut text with menu item headers using InputGestureText or commands.
+description: Input Gesture Text Support in WPF Menu enables showing keyboard shortcut text with menu item headers using InputGestureText or commands.
 platform: wpf
 control: MenuAdv
 documentation: ug
@@ -13,7 +13,7 @@ InputGestureText is used to set MenuItemAdv to display shortcut keys along with 
 
 ## Use Case Scenarios
 
-MenuAdv helps users to display the shortcut keys along with the MenuItemAdv header.
+The WPF Menu helps users to display the shortcut keys along with the MenuItemAdv header.
 
 ## Adding the InputGestureText Support to an Application 
 

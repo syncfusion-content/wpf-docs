@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Customizing Data Templates in WPF Menu | Syncfusion®
-description: Data template customization in MenuAdv enables personalized layouts and visual presentation of menu items.
+description: Data template customization in WPF Menu enables personalized layouts and visual presentation of menu items.
 platform: wpf
 control: MenuAdv
 documentation: ug
@@ -9,11 +9,11 @@ documentation: ug
 
 # Customizing Data Templates in WPF Menu (MenuAdv)
 
-Data templates can be customized for items of the MenuAdv control. The next section explains how to customize the MenuItemAdv using data templates.
+Data templates can be customized for items of the WPF Menu control. The next section explains how to customize the MenuItemAdv using data templates.
 
 ## Item Template 
 
-You can customize how a business object is displayed as MenuItemAdv using ItemTemplate of MenuAdv. The MenuAdv displays hierarchical data. HierarchicalDataTemplate is used to define the ItemTemplate. The following code example shows the usage of ItemTemplate.
+You can customize how a business object is displayed as MenuItemAdv using ItemTemplate of WPF Menu. The WPF Menu displays hierarchical data. HierarchicalDataTemplate is used to define the ItemTemplate. The following code example shows the usage of ItemTemplate.
 
 {% highlight xaml %}
 
@@ -35,7 +35,7 @@ You can customize how a business object is displayed as MenuItemAdv using ItemTe
 
 N> [View sample in GitHub](https://github.com/SyncfusionExamples/customizing-data-templates-in-menuadv)
 
-Implementing the above code will generate the following MenuAdv control.
+Implementing the above code will generate the following WPF Menu control.
 
 ![Image showing the menu with ItemTemplate](Customizing-Data-Templates_images/Customizing-Data-Templates_img1.png)
 

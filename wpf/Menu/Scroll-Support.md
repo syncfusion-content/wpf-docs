@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Scroll Support in WPF Menu | Syncfusion®
-description: Scroll Support in MenuAdv enables accessing menu items that extend beyond the available display area.
+description: Scroll Support in WPF Menu enables accessing menu items that extend beyond the available display area.
 platform: wpf
 control: MenuAdv
 documentation: ug
@@ -9,13 +9,13 @@ documentation: ug
 
 # Scroll Support in WPF Menu (MenuAdv)
 
-MenuAdv allows users to scroll through the submenu items so that all the items of the submenu are visible even if the submenu crosses the vertical boundary. The Scroll support can be enabled by setting the IsScrollEnabled property to true. If the IsScrollEnabled property is set to false, users will not be able to scroll through the submenu items and the items that cross the vertical boundary will not be visible.
+The WPF Menu allows users to scroll through the submenu items so that all the items of the submenu are visible even if the submenu crosses the vertical boundary. The Scroll support can be enabled by setting the IsScrollEnabled property to true. If the IsScrollEnabled property is set to false, users will not be able to scroll through the submenu items and the items that cross the vertical boundary will not be visible.
 
 ![Scroll-Support_img1](Scroll-Support_images/Scroll-Support_img1.png)
 
 ## Use Case Scenarios
 
-MenuAdv will be very useful in the case of adding more number of items to the single MenuItemAdv and the size of the submenu crosses the vertical boundary.
+The WPF Menu will be very useful in the case of adding more number of items to the single MenuItemAdv and the size of the submenu crosses the vertical boundary.
 
 ## Using the Scroll Support in an Application
 
@@ -36,7 +36,7 @@ Data Type </th></tr>
 <tr>
 <td>
 IsScrollEnabled</td><td>
-Gets or sets IsScrollEnabled of MenuAdv.</td><td>
+Gets or sets IsScrollEnabled of Menu.</td><td>
 DependencyProperty</td><td>
 bool(true)</td></tr>
 </table>

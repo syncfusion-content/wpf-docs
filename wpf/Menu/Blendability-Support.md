@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Blendability Support in WPF Menu | Syncfusion®
-description: Blendability Support in Menu (MenuAdv) enables design-time customization of styles and templates using Expression Blend.
+description: Blendability Support in WPF Menu (MenuAdv) enables design-time customization of styles and templates using Expression Blend.
 platform: wpf
 control: MenuAdv
 documentation: ug
@@ -9,7 +9,7 @@ documentation: ug
 
 # Blendability Support in WPF Menu (MenuAdv)
 
-You can customize MenuAdv and MenuItemAdv in Expression Blend. After adding MenuAdv and MenuItemAdv to the design view, you can see MenuAdv and MenuItemAdv in the Objects and Timeline window.
+You can customize WPF Menu and MenuItemAdv in Expression Blend. After adding Menu and MenuItemAdv to the design view, you can see Menu and MenuItemAdv in the Objects and Timeline window.
 
 ![Blendability-Support_img1](Blendability-Support_images/Blendability-Support_img1.png)
 
@@ -19,7 +19,7 @@ You can customize MenuAdv and MenuItemAdv in Expression Blend. After adding Menu
 
 
 
-Right-click MenuAdv and in EditTemplate option select Edit a Copy and assign the key name to the resource edited. The same process can be repeated to edit the MenuItemAdv style.
+Right-click Menu and in EditTemplate option select Edit a Copy and assign the key name to the resource edited. The same process can be repeated to edit the MenuItemAdv style.
 
 ![Blendability-Support_img3](Blendability-Support_images/Blendability-Support_img3.png)
 
@@ -35,7 +35,7 @@ User can also customize the appearance of the TopScrollButtonStyle, BottomScroll
 
 
 
-The following screen shot shows the MenuAdv and MenuItemAdv templates edited and customized by using Expression Blend.
+The following screen shot shows the Menu and MenuItemAdv templates edited and customized by using Expression Blend.
 
 ![Blendability-Support_img6](Blendability-Support_images/Blendability-Support_img6.png)
 

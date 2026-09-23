@@ -9,9 +9,9 @@ documentation: ug
 
 # About Syncfusion® WPF Menu (MenuAdv) Control
 
-A MenuAdv control allows the hierarchal organization of elements that are associated with commands and event handlers. This control contains a collection of MenuItemAdv, which can be expanded to display additional MenuItemAdv’s or to perform a specific action when being clicked. 
+A WPF Menu control allows the hierarchal organization of elements that are associated with commands and event handlers. This control contains a collection of MenuItemAdv, which can be expanded to display additional MenuItemAdv’s or to perform a specific action when being clicked. 
 
-The main features of MenuAdv include:
+The main features of WPF Menu include:
 
 * Binding and DataTemplate support
 * Command Binding and Command Target support
