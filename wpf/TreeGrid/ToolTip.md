@@ -5,6 +5,7 @@ description: ToolTip in SfTreeGrid displays additional information for cells, ro
 platform: wpf
 control: SfTreeGrid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # ToolTip in WPF SfTreeGrid

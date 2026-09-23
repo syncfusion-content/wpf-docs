@@ -5,6 +5,7 @@ description: Learn how to get started with the Syncfusion® WPF Calendar control
 platform: wpf
 control: CalendarEdit
 documentation: ug
+appliesto: UI Component Suite, Scheduler SDK
 ---
 
 # Getting Started with WPF Calendar
@@ -565,3 +566,4 @@ CalendarEdit supports various built-in themes. Refer to the below links to apply
   * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
 
    ![Setting theme to WPF CalendarEdit](Getting-Started_images/wpf-calendar-theme.png)
+

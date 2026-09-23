@@ -5,6 +5,7 @@ description: Learn about cubic curve connector segments in Syncfusion® WPF Diag
 platform: wpf
 control: SfDiagram
 documentation: ug
+appliesto: UI Component Suite, Diagram SDK
 ---
 
 # Cubic Curve Segments in WPF Diagram
@@ -168,4 +169,5 @@ ConnectorViewModel cubicBezierConnector = new ConnectorViewModel()
 {% endtabs %}
 
 ![Cubic curve segments](Connector_images/MultipleCubicSegments.PNG) &ensp;&ensp;&ensp;&ensp; ![Cubic curve segments](Connector_images/CubicSegmentEdit.png)
+
 

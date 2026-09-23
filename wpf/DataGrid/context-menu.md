@@ -5,6 +5,7 @@ description: Context Menu in Data Grid provides customizable menu options for ro
 platform: wpf
 control: Data Grid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Context Menu in WPF Data Grid
@@ -648,3 +649,4 @@ You can change the appearance of the context menu by customizing the style with 
 {% endtabs %}
 
 ![Changing Context Menu Background in WPF DataGrid](Interactive-Features_images/wpf-datagrid-context-menu-background.png)
+

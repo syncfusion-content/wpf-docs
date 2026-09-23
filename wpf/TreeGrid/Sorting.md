@@ -5,6 +5,7 @@ description: Sorting in SfTreeGrid provides single and multi-column sorting, cus
 platform: wpf
 control: SfTreeGrid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 

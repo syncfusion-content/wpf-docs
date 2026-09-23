@@ -5,6 +5,7 @@ description: Learn about Cards support in Syncfusion WPF Kanban Board using cust
 platform: wpf
 control: SfKanban
 documentation: ug
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Cards in WPF Kanban Board

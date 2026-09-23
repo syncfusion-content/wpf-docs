@@ -5,6 +5,7 @@ description: Learn about SfTimeSelector in WPF TimePicker that enables time sele
 platform: wpf
 control: SfTimePicker
 documentation: ug
+appliesto: UI Component Suite, Scheduler SDK
 ---
 
 # Time Selector in WPF TimePicker
@@ -214,3 +215,4 @@ sfTimePicker.SelectorItemSpacing = 50;
 ![SfTimeSelector item with custom spacing](Features_images/SelectorItemSpacing.png)
 
 Click [here](https://github.com/SyncfusionExamples/wpf-time-picker-examples/tree/master/Samples/TimeSelectorTemplates) to download the sample that showcases the `SfTimeSelector` template customization. 
+

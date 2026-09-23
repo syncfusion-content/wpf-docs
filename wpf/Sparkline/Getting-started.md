@@ -5,6 +5,7 @@ description: Learn how to get started with the Syncfusion® WPF Sparkline contro
 platform: wpf
 control: SfSparkline
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Getting Started with WPF Sparkline
@@ -61,7 +62,7 @@ SfLineSparkline sparkline = new SfLineSparkline();
 
 ### Create a sample data source
 
-Since the above step will produce only an empty sparkline, we need to add some data to the sparkline for plotting. In this step, let’s create a sample data source.
+Since the above step will produce only an empty sparkline, we need to add some data to the sparkline for plotting. In this step, letâ€™s create a sample data source.
 
 {% highlight c# %}
 

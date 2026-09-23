@@ -5,6 +5,7 @@ description: Learn about BPMN groups in Syncfusion® WPF Diagram control, includ
 platform: wpf
 control: SfDiagram
 documentation: ug
+appliesto: UI Component Suite, Diagram SDK
 ---
 
 # BPMN Group in WPF Diagram
@@ -151,3 +152,4 @@ You can add the BPMN Nodes or Groups into BPMNGroup at runtime in two ways.
  The following image shows how to add BPMNNode into the BPMNGroup at runtime.
 
 ![BPMNGroup from diagram](BPMN-Shapes-Images/BPMN-GroupElement.gif)
+

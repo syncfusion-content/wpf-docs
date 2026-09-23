@@ -5,6 +5,7 @@ description: Learn about the introduction of Syncfusion Essential Studio® WPF R
 platform: wpf
 control: SfDateTimeRangeNavigator
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # About Syncfusion® WPF Range Selector Control

@@ -5,6 +5,7 @@ description: Tooltip in the WPF OLAP Chart displays detailed information about d
 platform: wpf
 control: OLAP Chart
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Tooltip in WPF Olap Chart
@@ -17,7 +18,7 @@ The following code sample shows how to disable the series tooltip using the `Sho
 
 {% highlight c# %}
  
-this.olapChart.Series[0].ShowToolTip = false;
+this.olapChart.Series[0].ShowToolTipÂ =Â false;
 
 {% endhighlight %}
 
@@ -37,7 +38,7 @@ The following code sample shows how to enable the series tooltip using the `Show
 
 {% highlight c# %}
  
-this.olapChart.Series[0].ShowToolTip = true;
+this.olapChart.Series[0].ShowToolTipÂ =Â true;
 
 {% endhighlight %}
 

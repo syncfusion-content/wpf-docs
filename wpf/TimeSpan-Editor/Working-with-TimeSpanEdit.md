@@ -5,6 +5,7 @@ description: Learn how to work with TimeSpanEdit to change time values and forma
 platform: wpf
 control: TimeSpanEdit
 documentation: ug
+appliesto: UI Component Suite, Scheduler SDK
 ---
 
 # Working with TimeSpanEdit in WPF TimeSpan Editor
@@ -415,4 +416,5 @@ timeSpanEdit.Value = new TimeSpan(5, 2, 25, 52);
 ![Time span value restriction within min-max value limit](Deals-with-TimeSpanEdit_images/MinMax_Value.png)
 
 N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-timespanedit-control-examples/tree/master/Samples/TimeSpanEdit-Features) in GitHub
+
 

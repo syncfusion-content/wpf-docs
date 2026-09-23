@@ -5,6 +5,7 @@ description: Learn how to select dates and customize the date selection user int
 platform: wpf
 control: CalendarEdit
 documentation: ug
+appliesto: UI Component Suite, Scheduler SDK
 ---
 
 # Date Selection in WPF Calendar
@@ -721,3 +722,4 @@ private void CalendarEdit_DateChanged(DependencyObject d, DependencyPropertyChan
 
 {% endhighlight %}
 {% endtabs %}
+

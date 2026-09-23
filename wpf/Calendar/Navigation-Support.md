@@ -5,6 +5,7 @@ description: Learn about date navigation features in WPF Calendar to move betwee
 platform: wpf
 control: CalendarEdit
 documentation: ug
+appliesto: UI Component Suite, Scheduler SDK
 ---
 
 # Date Navigation in WPF Calendar
@@ -195,6 +196,7 @@ Swipe support is provided for the calendar. When you swipe from right to left ov
 ![Touch support for Calendar](Getting-Started_images/Codebehind_CalendarEdit.png)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusin-wpf-calendar-examples/tree/master/Samples/Navigation)
+
 
 
 

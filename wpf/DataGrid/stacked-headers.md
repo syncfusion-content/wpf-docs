@@ -5,6 +5,7 @@ description: Stacked Headers in Data Grid groups related columns under shared he
 platform: wpf
 control: Data Grid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Stacked Headers in WPF Data Grid
@@ -179,3 +180,4 @@ void dataGrid_QueryRowHeight(object sender, Syncfusion.UI.Xaml.Grid.QueryRowHeig
 }
 {% endhighlight %}
 {% endtabs %}
+

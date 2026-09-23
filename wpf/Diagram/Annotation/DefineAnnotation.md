@@ -5,6 +5,7 @@ title: Annotations in WPF Diagram | Syncfusion®
 description: Learn about annotations in Syncfusion® WPF Diagram control, including annotation creation, text labels, multiple annotations, and editing.
 control: SfDiagram
 documentation: ug
+appliesto: UI Component Suite, Diagram SDK
 ---
 
 # Annotations in WPF Diagram

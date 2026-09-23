@@ -5,6 +5,7 @@ description: Orientation in the WPF Bullet Graph allows you to display the graph
 platform: wpf
 control: SfBulletGraph
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Orientation in WPF Bullet Graph

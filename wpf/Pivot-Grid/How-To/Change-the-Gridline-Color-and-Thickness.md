@@ -5,6 +5,7 @@ description: Change the grid line color and thickness in Syncfusion® WPF Pivot 
 platform: wpf
 control: Pivot Grid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # How to Change GridLine Color and Thickness in WPF Pivot Grid
@@ -37,5 +38,6 @@ public MainWindow() {
 }
 		
 {% endhighlight %}
+
 
 

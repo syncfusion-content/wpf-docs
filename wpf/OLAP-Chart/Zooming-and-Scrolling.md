@@ -5,6 +5,7 @@ description: Zooming and scrolling in the WPF OLAP Chart enable users to navigat
 platform: wpf
 control: OLAP Chart
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Zooming and Scrolling in WPF Olap Chart
@@ -30,34 +31,34 @@ The following code sample illustrates the above settings.
 
 {% highlight xaml %}
 
-<syncfusion:OlapChart Name="olapChart" 
-    syncfusion:ChartZoomingToolkit.ZoomInButtonVisibility="{Binding IsChecked, 
-          ElementName=cbxZoomIn, Converter={StaticResource boolToVisibilityConverter}}"
-    syncfusion:ChartZoomingToolkit.ZoomOutButtonVisibility="{Binding IsChecked, 
-          ElementName=cbxZoomOut, Converter={StaticResource boolToVisibilityConverter }}"
-    syncfusion:ChartZoomingToolkit.ZoomCloseButtonVisibility="{Binding IsChecked, 
-          ElementName=cbxZoomClose, Converter={StaticResource boolToVisibilityConverter }}"
-    syncfusion:ChartZoomingToolkit.ZoomResetButtonVisibility="{Binding IsChecked, 
-          ElementName=cbxZoomReset, Converter={StaticResource boolToVisibilityConverter }}">
+<syncfusion:OlapChartÂ Name="olapChart"Â 
+    syncfusion:ChartZoomingToolkit.ZoomInButtonVisibility="{BindingÂ IsChecked,Â 
+          ElementName=cbxZoomIn,Â Converter={StaticResourceÂ boolToVisibilityConverter}}"
+    syncfusion:ChartZoomingToolkit.ZoomOutButtonVisibility="{BindingÂ IsChecked,Â 
+          ElementName=cbxZoomOut,Â Converter={StaticResourceÂ boolToVisibilityConverter }}"
+    syncfusion:ChartZoomingToolkit.ZoomCloseButtonVisibility="{BindingÂ IsChecked,Â 
+          ElementName=cbxZoomClose,Â Converter={StaticResourceÂ boolToVisibilityConverter }}"
+    syncfusion:ChartZoomingToolkit.ZoomResetButtonVisibility="{BindingÂ IsChecked,Â 
+          ElementName=cbxZoomReset,Â Converter={StaticResourceÂ boolToVisibilityConverter }}">
 </syncfusion:OlapChart>
 
 {% endhighlight %}
 
 {% highlight c# %}
  
-ChartZoomingToolkit.SetZoomInButtonVisibility(olapChart, Visibility.Collapsed);
-ChartZoomingToolkit.SetZoomOutButtonVisibility(olapChart, Visibility.Hidden);
-ChartZoomingToolkit.SetZoomResetButtonVisibility(olapChart, Visibility.Collapsed);
-ChartZoomingToolkit.SetZoomingToolkitVisibility(olapChart, Visibility.Visible);
+ChartZoomingToolkit.SetZoomInButtonVisibility(olapChart,Â Visibility.Collapsed);
+ChartZoomingToolkit.SetZoomOutButtonVisibility(olapChart,Â Visibility.Hidden);
+ChartZoomingToolkit.SetZoomResetButtonVisibility(olapChart,Â Visibility.Collapsed);
+ChartZoomingToolkit.SetZoomingToolkitVisibility(olapChart,Â Visibility.Visible);
 
 {% endhighlight %}
 
 {% highlight vbnet %}
   
-ChartZoomingToolkit.SetZoomInButtonVisibility(olapChart, Visibility.Collapsed)
-ChartZoomingToolkit.SetZoomOutButtonVisibility(olapChart, Visibility.Hidden)
-ChartZoomingToolkit.SetZoomResetButtonVisibility(olapChart, Visibility.Collapsed)
-ChartZoomingToolkit.SetZoomingToolkitVisibility(olapChart, Visibility.Visible)
+ChartZoomingToolkit.SetZoomInButtonVisibility(olapChart,Â Visibility.Collapsed)
+ChartZoomingToolkit.SetZoomOutButtonVisibility(olapChart,Â Visibility.Hidden)
+ChartZoomingToolkit.SetZoomResetButtonVisibility(olapChart,Â Visibility.Collapsed)
+ChartZoomingToolkit.SetZoomingToolkitVisibility(olapChart,Â Visibility.Visible)
 
 {% endhighlight %}
 

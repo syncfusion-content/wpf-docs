@@ -5,6 +5,7 @@ description: Serialization and Deserialization in Data Grid saves and restores g
 platform: wpf
 control: Data Grid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Serialization and Deserialization in WPF Data Grid
@@ -612,3 +613,4 @@ public class SerializationControllerExt : SerializationController
 {% endtabs %}
 
 You can download the sample demo [here](https://www.syncfusion.com/downloads/support/directtrac/general/ze/Serialization_Deserialization-1041317411.zip).
+

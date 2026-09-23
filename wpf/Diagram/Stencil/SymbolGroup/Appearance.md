@@ -5,6 +5,7 @@ description: Customize SymbolGroup appearance in Syncfusion® WPF Diagram by dis
 platform: wpf
 control: SfDiagram
 documentation: ug
+appliesto: UI Component Suite, Diagram SDK
 ---
 
 # Appearance of SymbolGroup in WPF Diagram
@@ -90,3 +91,4 @@ Stencil stencil = new Stencil()
 [How to group all the SymbolViewModels into the same group in the WPF Diagram ?](https://support.syncfusion.com/kb/article/18672/how-to-group-all-the-symbolviewmodels-into-the-same-group-in-the-wpf-diagram-sfdiagram)
 
 [How to change the background color of a symbol in WPF Diagram?](https://support.syncfusion.com/kb/article/18241/how-to-change-the-background-color-of-a-symbol-in-wpf-sfdiagram)
+

@@ -5,6 +5,7 @@ description: Learn about introduction of Syncfusion® Essential Studio WPF TimeS
 platform: wpf
 control: TimeSpanEdit
 documentation: ug
+appliesto: UI Component Suite, Scheduler SDK
 ---
 
 # About Syncfusion® WPF TimeSpan Editor Control
@@ -44,3 +45,4 @@ Monitor value changes with the [ValueChanged](https://help.syncfusion.com/cr/wpf
 - **Event Notification & Data Binding** - `ValueChanged` event and bindable `Value` property support MVVM integration.
 - **Milliseconds Precision** - include milliseconds in the display and editing using the `Format` (for example the `z` specifier).
 - **Localization & Theming** - works with resource-based localization and Syncfusion themes for consistent styling.
+

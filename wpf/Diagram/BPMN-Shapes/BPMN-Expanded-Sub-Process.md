@@ -5,6 +5,7 @@ description: Learn about BPMN expanded subprocesses in Syncfusion® WPF Diagram 
 platform: wpf
 control: SfDiagram
 documentation: ug
+appliesto: UI Component Suite, Diagram SDK
 ---
 
 # Expanded SubProcess in WPF Diagram
@@ -382,3 +383,4 @@ The following table contains various types of the BPMN SubProcess.
 | Event | ![Event Boundary BPMN Shape](BPMN-Shapes-Images/Group-SubProcessType-Event.png) |The event subprocess is a subprocess that is triggered by an event. An event subprocess can be added at the process level or at any subprocess level|
 | Default | ![Default Boundary BPMN Shape](BPMN-Shapes-Images/Group-Loop-None.png) |The task that is performed in a business process. It is represented by a rounded rectangle|
 | Transaction | ![Transaction Boundary BPMN Shape](BPMN-Shapes-Images/Group-SubProcessType-Transaction.png) |It is a specialized sub-process that involves payment|
+

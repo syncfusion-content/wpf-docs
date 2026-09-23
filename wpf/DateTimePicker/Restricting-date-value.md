@@ -5,6 +5,7 @@ description: Learn how to restrict date and time values within a particular rang
 platform: wpf
 control: DateTimeEdit
 documentation: ug
+appliesto: UI Component Suite, Scheduler SDK
 ---
 
 # Restricting Date Value in WPF DateTimePicker
@@ -195,3 +196,4 @@ dateTimeEdit.DateTime = new DateTime(2020, 06, 20);
 ![WPF DateTimePicker in read only mode](Maximum-and-Minimum-Value_images/wpf-datetimeedit-read-only-mode.png)
 
 N> View [Sample](https://github.com/SyncfusionExamples/wpf-datetimepicker-examples/tree/master/Samples/Dropdown-Options) in GitHub
+

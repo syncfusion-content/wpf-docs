@@ -5,6 +5,7 @@ description: Printing in the WPF Chart enables chart visuals to be printed direc
 platform: wpf
 control: SfChart
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Printing in WPF Charts

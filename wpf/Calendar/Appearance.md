@@ -5,6 +5,7 @@ description: Learn about appearance customization including styling and theming 
 platform: wpf
 control: CalendarEdit
 documentation: ug
+appliesto: UI Component Suite, Scheduler SDK
 ---
 
 # Appearance in WPF Calendar
@@ -104,3 +105,4 @@ CalendarEdit supports various built-in themes. Refer to the below links to apply
   * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
 
  ![Setting theme to WPF WPF Calendar](Getting-Started_images/wpf-calendar-theme.png)
+

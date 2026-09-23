@@ -5,6 +5,7 @@ description: Learn about the shapes palette in Syncfusion® WPF Diagram control,
 platform: wpf
 control: SfDiagram
 documentation: ug
+appliesto: UI Component Suite, Diagram SDK
 ---
 
 # Shapes Palette in WPF Diagram
@@ -102,3 +103,4 @@ The following code sample shows how to add the BPMN shapes to palette.
 {% endtabs %}
 
 ![BPMN SymbolPalette Shapes](BPMN-Shapes-Images/Swimlane-BPMN.gif)
+

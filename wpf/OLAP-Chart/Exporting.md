@@ -5,6 +5,7 @@ description: Exporting in the WPF OLAP Chart enables chart data and visuals to b
 platform: wpf
 control: OLAP Chart
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Exporting in WPF Olap Chart
@@ -49,13 +50,13 @@ The following code sample illustrates how to export an WPF OLAP Chart to a Micro
 
 {% highlight c# %}
  
-// Export the WPF OLAP Chart into a new Word Document.
+//Â ExportÂ theÂ WPF OLAP ChartÂ intoÂ aÂ newÂ WordÂ Document.
 OlapChartWordExport olapChartWordExport = new OlapChartWordExport(this.olapChart);
 olapChartWordExport.ExportintoNewDoc(@"..\..\OutputDocument\Document.doc");
-// Export the OlapChart into a new Word Document file in the default marker string location.
+//Â ExportÂ theÂ OlapChartÂ intoÂ aÂ newÂ WordÂ DocumentÂ fileÂ inÂ theÂ defaultÂ markerÂ stringÂ location.
 OlapChartWordExport olapChartWordExport = new OlapChartWordExport(this.olapChart);
 olapChartWordExport.ExportIntoTemplateDoc(@"..\..\OutputDocument\Document.doc");
-// Export the WPF OLAP Chart into an existing Word Document file in the given marker string location.
+//Â ExportÂ theÂ WPF OLAP ChartÂ intoÂ anÂ existingÂ WordÂ DocumentÂ fileÂ inÂ theÂ givenÂ markerÂ stringÂ location.
 OlapChartWordExport olapChartWordExport = new OlapChartWordExport(this.olapChart);
 olapChartWordExport.ExportIntoTemplateDoc(@"..\..\OutputDocument\Document.doc", "MarkerString1");
 
@@ -63,13 +64,13 @@ olapChartWordExport.ExportIntoTemplateDoc(@"..\..\OutputDocument\Document.doc", 
 
 {% highlight vbnet %}
   
-' Export the WPF OLAP Chart into a new Word Document.
+'Â ExportÂ theÂ WPF OLAP ChartÂ intoÂ aÂ newÂ WordÂ Document.
 Dim olapChartWordExport As New olapChartWordExport(Me.olapChart)
 olapChartWordExport.ExportintoNewDoc("..\..\OutputDocument\Document.doc")
-' Export the WPF OLAP Chart into a new Word Document file in the default marker string location.
+'Â ExportÂ theÂ WPF OLAP ChartÂ intoÂ aÂ newÂ WordÂ DocumentÂ fileÂ inÂ theÂ defaultÂ markerÂ stringÂ location.
 Dim olapChartWordExport As New olapChartWordExport(Me.olapChart)
 olapChartWordExport.ExportIntoTemplateDoc("..\..\OutputDocument\Document.doc")
-' Export the WPF OLAP Chart into an existing Word Document file in the given marker string location.
+'Â ExportÂ theÂ WPF OLAP ChartÂ intoÂ anÂ existingÂ WordÂ DocumentÂ fileÂ inÂ theÂ givenÂ markerÂ stringÂ location.
 Dim olapChartWordExport As New olapChartWordExport(Me.olapChart)
 olapChartWordExport.ExportIntoTemplateDoc("..\..\OutputDocument\Document.doc", "MarkerString1")
 

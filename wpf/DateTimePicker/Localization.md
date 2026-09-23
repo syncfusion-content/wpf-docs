@@ -5,6 +5,7 @@ description: Learn how to localize and support multiple languages in WPF DateTim
 platform: wpf
 control: DateTimeEdit
 documentation: ug
+appliesto: UI Component Suite, Scheduler SDK
 ---
 
 # Localization in WPF DateTimePicker
@@ -50,3 +51,4 @@ The following screenshot shows the localized DateTimeEdit control.
 ![WPF DateTimeEdit contain localized today and none button text](Localization_images/wpf-datetimeedit-localization.png)
 
 N> View [Sample](https://github.com/SyncfusionExamples/wpf-date-time-edit-examples/tree/master/Samples/Localization) in GitHub
+

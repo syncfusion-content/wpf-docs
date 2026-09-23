@@ -5,6 +5,7 @@ description: Learn about nodes in Syncfusion® WPF Diagram control, including no
 platform: wpf
 control: SfDiagram
 documentation: ug
+appliesto: UI Component Suite, Diagram SDK
 ---
 
 # Node in the WPF Diagram
@@ -869,3 +870,4 @@ The [`Constraints`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagra
 [How to bring the specific node to the center or viewport in WPF Diagram?](https://support.syncfusion.com/kb/article/9918/how-to-bring-the-specific-node-to-the-center-or-viewport-in-wpf-diagram-sfdiagram)
 
 [How to switch the visibility of an icon in the ContentTemplate in WPF Diagram ?](https://support.syncfusion.com/kb/article/17725/how-to-switch-the-visibility-of-an-icon-in-the-contenttemplate-in-wpf-diagram-sfdiagram-)
+

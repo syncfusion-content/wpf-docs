@@ -5,6 +5,7 @@ description: Learn how to get started with the Syncfusion® WPF HeatMap control.
 platform: wpf
 control: SfHeatMap
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Getting Started with WPF HeatMap
@@ -85,7 +86,7 @@ Populate product information in a collection.
                    Y2011="2" Y2012="2" Y2013="3" Y2014="2" Y2015="3" Y2016="3"/>
     <local:Product ProductName="Chartreuse verte" Y2007="15" Y2008="14" Y2009="14" Y2010="13" 
                    Y2011="10" Y2012="8" Y2013="9" Y2014="9" Y2015="8" Y2016="8"/>
-    <local:Product ProductName="Fløtemysost" Y2007="3" Y2008="3" Y2009="4" Y2010="5" Y2011="4" 
+    <local:Product ProductName="FlÃ¸temysost" Y2007="3" Y2008="3" Y2009="4" Y2010="5" Y2011="4" 
                    Y2012="6" Y2013="8" Y2014="2" Y2015="5" Y2016="7"/>
     <local:Product ProductName="Carnarvon Tigers" Y2007="20" Y2008="21" Y2009="20" Y2010="20"
                    Y2011="20" Y2012="21" Y2013="20" Y2014="20" Y2015="21" Y2016="22"/>
@@ -264,7 +265,7 @@ The final `MainWindow.xaml` looks like this.
             <local:Product ProductName="Raclette Courdavault" Y2007="12" Y2008="12" Y2009="15" Y2010="18" Y2011="19" Y2012="20" Y2013="22" Y2014="21" Y2015="22" Y2016="25"/>
             <local:Product ProductName="Gorgonzola Telino" Y2007="1" Y2008="1" Y2009="2" Y2010="3" Y2011="2" Y2012="2" Y2013="3" Y2014="2" Y2015="3" Y2016="3"/>
             <local:Product ProductName="Chartreuse verte" Y2007="15" Y2008="14" Y2009="14" Y2010="13" Y2011="10" Y2012="8" Y2013="9" Y2014="9" Y2015="8" Y2016="8"/>
-            <local:Product ProductName="Fløtemysost" Y2007="3" Y2008="3" Y2009="4" Y2010="5" Y2011="4" Y2012="6" Y2013="8" Y2014="2" Y2015="5" Y2016="7"/>
+            <local:Product ProductName="FlÃ¸temysost" Y2007="3" Y2008="3" Y2009="4" Y2010="5" Y2011="4" Y2012="6" Y2013="8" Y2014="2" Y2015="5" Y2016="7"/>
             <local:Product ProductName="Carnarvon Tigers" Y2007="20" Y2008="21" Y2009="20" Y2010="20" Y2011="20" Y2012="21" Y2013="20" Y2014="20" Y2015="21" Y2016="22"/>
             <local:Product ProductName="Vegie-spread" Y2007="18" Y2008="19" Y2009="20" Y2010="21" Y2011="22" Y2012="23" Y2013="24" Y2014="25" Y2015="25" Y2016="25"/>
             <local:Product ProductName="Tarte au sucre" Y2007="1" Y2008="2" Y2009="3" Y2010="3" Y2011="4" Y2012="4" Y2013="7" Y2014="10" Y2015="12" Y2016="16"/>

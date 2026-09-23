@@ -5,6 +5,7 @@ description: Learn about Holidays Customization support in Syncfusion WPF Gantt 
 platform: wpf
 control: Gantt
 documentation: ug
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Holidays Customization in WPF Gantt
@@ -199,3 +200,4 @@ The following screenshot illustrates the customized holidays sample.
 
 You can download the holiday customization sample from the following link:
 [Holiday customization sample](https://github.com/SyncfusionExamples/WPF-Gantt-holiday-customization-).
+

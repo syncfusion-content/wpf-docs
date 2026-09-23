@@ -5,6 +5,7 @@ description: Header in the WPF Chart displays a title for the chart, providing c
 platform: wpf
 control: SfChart
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Header in WPF Charts
@@ -86,6 +87,6 @@ chart.Header = border;
 ![Customizing Header of WPF Chart](Area_images/wpf-chart-header-customization.jpeg)
 
 
-N> Here, HorizontalHeaderAlignment is set as ‘Right’.
+N> Here, HorizontalHeaderAlignment is set as â€˜Rightâ€™.
 
 N> You can refer to our [WPF Charts](https://www.syncfusion.com/wpf-controls/charts) feature tour page for its groundbreaking feature representations. You can also explore our [WPF Charts example](https://github.com/syncfusion/wpf-demos/tree/master/chart/Views) to know various chart types and how to easily configure them with built-in support for creating stunning visual effects.

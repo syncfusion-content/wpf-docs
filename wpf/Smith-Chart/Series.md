@@ -5,6 +5,7 @@ description: Series in the WPF Smith Chart define how data is visualized, enabli
 platform: wpf
 control: series
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Series in WPF Smith Chart
@@ -13,11 +14,11 @@ Chart series is the visual representation of the given data.
 
 The following APIs are used in the line series:
 
-* ResistancePath – A string property that represents the X values for the series.
-* ReactancePath – A string property that represents the Y values for the series.
-* Interior – Represents the brush for the series color.
-* StrokeThickness – Represents the thickness of the series outline.
-* Palette –  Represents the set of pre-defined or custom colors for the series.
+* ResistancePath â€“ A string property that represents the X values for the series.
+* ReactancePath â€“ A string property that represents the Y values for the series.
+* Interior â€“ Represents the brush for the series color.
+* StrokeThickness â€“ Represents the thickness of the series outline.
+* Palette â€“  Represents the set of pre-defined or custom colors for the series.
 
 The below code example explains how to create a simple `LineSeries` by using the given data.
 

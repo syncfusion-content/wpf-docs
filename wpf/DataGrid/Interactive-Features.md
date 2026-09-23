@@ -5,6 +5,7 @@ description: Interactive Features in Data Grid provides Column Chooser support t
 platform: wpf
 control: Data Grid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Interactive Features in WPF Data Grid
@@ -249,5 +250,6 @@ void MainWindow_Loaded(object sender, RoutedEventArgs e)
 {% endtabs %}
 
 ![Customizing Column Chooser Appearance in wpf datagrid](Interactive-Features_images/wpf-datagrid-column-chooser-customization.png)
+
 
 

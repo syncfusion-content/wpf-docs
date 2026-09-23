@@ -5,6 +5,7 @@ description: Learn about Custom Schedule support in Syncfusion WPF Gantt using S
 platform: wpf
 control: Gantt
 documentation: ug
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Custom Schedule in WPF Gantt
@@ -1197,4 +1198,5 @@ To view samples:
 ## ScheduleCellCreatedEventArgs Class
 
 The `ScheduleCellCreatedEventArgs` consists of the current schedule cell named `CurrentCell`. It is of the `GanttScheduleCell` type. 
+
 

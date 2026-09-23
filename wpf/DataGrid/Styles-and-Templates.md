@@ -5,6 +5,7 @@ description: Styles and Templates in Data Grid customizes the appearance and beh
 platform: wpf
 control: Data Grid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Styles and Templates in WPF Data Grid
@@ -1436,3 +1437,4 @@ void sfDataGrid_ItemsSourceChanged(object sender, GridItemsSourceChangedEventArg
 {% endtabs %}
 
 ![WPF DataGrid displays Busy Indicator before Loading Data](styles-and-templates_images/wpf-datagrid-busy-indicator.png)
+

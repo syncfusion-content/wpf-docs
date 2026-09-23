@@ -5,6 +5,7 @@ description: Learn how to set and change time values in WPF TimePicker using tim
 platform: wpf
 control: SfTimePicker
 documentation: ug
+appliesto: UI Component Suite, Scheduler SDK
 ---
 
 # Setting Time in WPF TimePicker
@@ -292,3 +293,4 @@ private void SftimePicker_ValueChanged(DependencyObject d, DependencyPropertyCha
 {% endtabs %}
 
 Click [here](https://github.com/SyncfusionExamples/wpf-time-picker-examples/tree/master/Samples/Value-setting) to download the sample that showcases the input types and selected time with its notification supports.
+

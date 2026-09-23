@@ -5,6 +5,7 @@ description: Filtering in Data Grid refines and displays relevant data through b
 platform: wpf
 control: Data Grid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 # Filtering in WPF Data Grid
 Filtering is the process of retrieving the values from the collection which satisfy the specified condition. In the [WPF DataGrid](https://www.syncfusion.com/wpf-controls/datagrid) the filtering can be applied though the UI as well as the programmatic filters. 
@@ -951,3 +952,4 @@ When you apply above style to [FilterToggleButton](https://help.syncfusion.com/c
 [How to change the FilterToggleButton color while filtering?](https://support.syncfusion.com/kb/article/2903/how-to-change-the-filtertogglebutton-color-while-filtering-in-wpf-)
 
 [How to access the filtered records from SfDataGrid?](https://support.syncfusion.com/kb/article/2853/how-to-access-the-filtered-records-from-sfdatagrid)
+

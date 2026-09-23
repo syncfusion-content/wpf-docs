@@ -5,6 +5,7 @@ description: Themes in Data Grid apply built-in themes to customize grid appeara
 platform: wpf
 control: Data Grid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Themes in WPF Data Grid
@@ -16,3 +17,4 @@ documentation: ug
   * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
  
   ![Applying Theme to WPF DataGrid](Getting-Started_images/wpf-datagrid-theme.png)
+

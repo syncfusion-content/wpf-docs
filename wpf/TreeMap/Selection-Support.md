@@ -5,11 +5,12 @@ description: Selection support in the WPF TreeMap enables users to highlight and
 platform: wpf
 control: TreeMap
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Selection Support in WPF TreeMap
 
-While selecting a leaf node, you can highlight it by setting HighlightOnSelection property of [SfTreeMap](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeMap.SfTreeMap.html) to “True”. The border of highlight on selection can be customized by HighlightBorderBrush and HighlightBorderThickness properties of SfTreeMap. SelectionMode can also be set to either “Default” or “Multiple”. “Multiple” selection of leaf nodes is made possible by pressing the control key continuously while Mouse Click happens.
+While selecting a leaf node, you can highlight it by setting HighlightOnSelection property of [SfTreeMap](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeMap.SfTreeMap.html) to â€œTrueâ€. The border of highlight on selection can be customized by HighlightBorderBrush and HighlightBorderThickness properties of SfTreeMap. SelectionMode can also be set to either â€œDefaultâ€ or â€œMultipleâ€. â€œMultipleâ€ selection of leaf nodes is made possible by pressing the control key continuously while Mouse Click happens.
 
 
 {% highlight xaml %}
@@ -30,7 +31,7 @@ While selecting a leaf node, you can highlight it by setting HighlightOnSelectio
 ![Selection Support_images](Selection-Support_images/Selection-Support_img1.png)
 
 
-GroupSelection support is also provided under selection support where the whole group can be selected. While selecting a leaf node, you can highlight it by setting [HighlightGroupOnSelection](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeMap.SfTreeMap.html#Syncfusion_UI_Xaml_TreeMap_SfTreeMap_HighlightGroupOnSelection) property of WPF TreeMap to “True”. The helper properties, [HighlightBorderBrush](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeMap.SfTreeMap.html#Syncfusion_UI_Xaml_TreeMap_SfTreeMap_HighlightBorderBrush), [HighlightBorderThickness](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeMap.SfTreeMap.html#Syncfusion_UI_Xaml_TreeMap_SfTreeMap_HighlightBorderThickness), and [SelectionModes](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeMap.SfTreeMap.html#Syncfusion_UI_Xaml_TreeMap_SfTreeMap_SelectionModes) are shared for both [HighlightOnSelection](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeMap.SfTreeMap.html#Syncfusion_UI_Xaml_TreeMap_SfTreeMap_HighlightOnSelection) and [HighlightGroupOnSelection](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeMap.SfTreeMap.html#Syncfusion_UI_Xaml_TreeMap_SfTreeMap_HighlightGroupOnSelection).
+GroupSelection support is also provided under selection support where the whole group can be selected. While selecting a leaf node, you can highlight it by setting [HighlightGroupOnSelection](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeMap.SfTreeMap.html#Syncfusion_UI_Xaml_TreeMap_SfTreeMap_HighlightGroupOnSelection) property of WPF TreeMap to â€œTrueâ€. The helper properties, [HighlightBorderBrush](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeMap.SfTreeMap.html#Syncfusion_UI_Xaml_TreeMap_SfTreeMap_HighlightBorderBrush), [HighlightBorderThickness](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeMap.SfTreeMap.html#Syncfusion_UI_Xaml_TreeMap_SfTreeMap_HighlightBorderThickness), and [SelectionModes](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeMap.SfTreeMap.html#Syncfusion_UI_Xaml_TreeMap_SfTreeMap_SelectionModes) are shared for both [HighlightOnSelection](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeMap.SfTreeMap.html#Syncfusion_UI_Xaml_TreeMap_SfTreeMap_HighlightOnSelection) and [HighlightGroupOnSelection](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeMap.SfTreeMap.html#Syncfusion_UI_Xaml_TreeMap_SfTreeMap_HighlightGroupOnSelection).
 
 
 {% highlight xaml %}

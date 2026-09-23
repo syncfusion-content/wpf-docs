@@ -5,6 +5,7 @@ description: Column and bar series in the WPF Chart compare categorical data usi
 platform: wpf
 control: SfChart
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Column and Bar in WPF Charts

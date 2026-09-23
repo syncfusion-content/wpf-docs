@@ -5,6 +5,7 @@ description: Learn about DateTime Indicator Customization support in Syncfusion 
 platform: wpf
 control: Gantt
 documentation: ug
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # DateTime Indicator Customization in WPF Gantt
@@ -252,3 +253,4 @@ To view samples:
 5. Expand the Styles category in the Sample Browser.
 6. Choose the Gantt Style Properties sample.
 7. The sample contains different styles of the DateTime indicator.
+

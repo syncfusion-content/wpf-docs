@@ -5,6 +5,7 @@ description: Selection in Data Grid provides flexible row, cell, and multi-selec
 platform: wpf
 control: Data Grid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Selection in WPF Data Grid
@@ -1924,3 +1925,4 @@ public class GridSelectionControllerExt : GridSelectionController
 [How to set current cell on particular row when DataGrid loaded?](https://support.syncfusion.com/kb/article/2796/how-to-set-current-cell-on-particular-row-when-datagrid-loaded)
 
 [How to select the multiple rows on the SfDataGrid?](https://support.syncfusion.com/kb/article/2884/how-to-select-the-multiple-rows-on-the-wpf-sfdatagrid-)
+

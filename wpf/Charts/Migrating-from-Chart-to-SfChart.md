@@ -5,6 +5,7 @@ description: Migrating from Chart to SfChart in the WPF Chart helps transition e
 platform: wpf
 control: SfChart
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Migrating from Chart to SfChart in WPF Charts
@@ -365,7 +366,7 @@ In SfChart, Axis can be an instance of NumericalAxis, DateTimeAxis, CategoryAxis
 {% highlight xaml %}
 
 <syncfusion:SfChart.PrimaryAxis>
-    <syncfusion:DateTimeAxis Header="X-Axis"/>
+    <syncfusion:DateTimeAxisÂ Header="X-Axis"/>
 </syncfusion:SfChart.PrimaryAxis>
 
 {% endhighlight %}
@@ -924,7 +925,7 @@ The following table illustrates the API comparison for series,
 <tr>
 <th>
 ChartSeries</th><th>
-LineSeries, ColumnSeries, SplineSeries … etc.,</th><th>
+LineSeries, ColumnSeries, SplineSeries â€¦ etc.,</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -1269,7 +1270,7 @@ area.InteractiveCursors.Add(incCursor);
 
 <syncfusion:SfChart>
     <syncfusion:SfChart.Behaviors>
-        <syncfusion:ChartCrossHairBehavior HorizontalAxisLabelAlignment="Center" VerticalAxisLabelAlignment="Center"/>
+        <syncfusion:ChartCrossHairBehaviorÂ HorizontalAxisLabelAlignment="Center" VerticalAxisLabelAlignment="Center"/>
     </syncfusion:SfChart.Behaviors>
 </syncfusion:SfChart>
 
@@ -1298,8 +1299,8 @@ The Zooming and Panning are achieved using the ChartZoomPanBehavior in SfChart a
 {% tabs %}
 {% highlight xaml %}
 
- <syncfusion:ChartArea 
-     EnableZoomOnScroll="True" 
+ <syncfusion:ChartAreaÂ 
+     EnableZoomOnScroll="True"Â 
      ZoomAllAxes="True"
      chart:ChartZoomingToolkit.ZoomingToolkitVisibility="Visible"
      EnableMouseDragZooming="True">                
@@ -1483,7 +1484,7 @@ Gets or sets start value for axis.</td></tr>
 <td>
 Width</td><td>
 Width</td><td>
-Gets or sets the width. When IsPixelWidth is ‘true’, then it considers unit of width as pixel otherwise it is axis value.</td></tr>
+Gets or sets the width. When IsPixelWidth is â€˜trueâ€™, then it considers unit of width as pixel otherwise it is axis value.</td></tr>
 <tr>
 <td>
 Interior</td><td>
@@ -1638,7 +1639,7 @@ chart.Watermark = waterMark;
 
 In Chart, you can add Annotations to chart and series. Annotations added to Chart are positioned based on OffsetX and OffsetY whose values are in the unit of pixel. Annotations added to series are positioned relative to axis. Annotation shape is specified in AnnotationShape property.
 
-Following code example illustrates the Annotation types and Annotation API’s for both Charts:
+Following code example illustrates the Annotation types and Annotation APIâ€™s for both Charts:
 
 ### Chart
 
@@ -1684,14 +1685,14 @@ chart.AnnotationLabels.Add(chartannotation);
 {% tabs %}
 {% highlight xaml %}
 
-<syncfusion:ChartSeries.Annotations>   
-    <syncfusion:AnnotationsCollection>   
-        <syncfusion:ChartSeriesAnnotation 
+<syncfusion:ChartSeries.Annotations>Â Â Â 
+    <syncfusion:AnnotationsCollection>Â Â Â 
+        <syncfusion:ChartSeriesAnnotationÂ 
             X="40702"
             Y="468"
             AnnotationShape="Diamond"
             Stroke="Black"
-            Fill="Orange"/>                              
+            Fill="Orange"/>                           Â Â Â 
     </syncfusion:AnnotationsCollection>
 </syncfusion:ChartSeries.Annotations>
 
@@ -1884,7 +1885,7 @@ chart.Annotations.Add(rectAnnotation);
 
 <syncfusion:SfChart.Annotations>
     <syncfusion:VerticalLineAnnotation
-        CanDrag="True" 
+        CanDrag="True"Â 
         ShowAxisLabel="True"
         CanResize="True"
         CoordinateUnit="Axis" X1="3">
@@ -1994,7 +1995,7 @@ The following table illustrates the API comparison for TechnicalIndicators,
 <tr>
 <th>
 ChartTechnicalIndicator (Chart)</th><th>
-AccumulationDistributionIndicator, BollingerBandIndicator… etc.,(SfChart)</th><th>
+AccumulationDistributionIndicator, BollingerBandIndicatorâ€¦ etc.,(SfChart)</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -2139,7 +2140,7 @@ In Chart, you can split chart area into multiple plotting areas that share commo
 
 In SfChart, you can split chart into multiple plotting areas that share common axis, crosshair/interactive cursor and zooming functionalities by defining multiple rows and columns using RowDefinitions and ColumnDefinition properties. It is similar to defining rows and columns in Grid panel.
 
-The following code example illustrates the API’s for both charts,
+The following code example illustrates the APIâ€™s for both charts,
 
 ### Chart
 

@@ -5,11 +5,12 @@ description: Coded UI in the WPF Chart supports automated UI testing by enabling
 platform: wpf
 control: SfChart
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Coded UI in WPF Charts
 
-Automated tests that drive your application through its user interface (UI) are known as **coded UI** **tests** (CUITs). These tests include functional testing of the UI controls. WPF Charts supports Coded UI automation that helps you create automated tests for inner elements and records the sequence of actions. While dragging the crosshair on UI elements, it shows the properties of the respective UI elements and you can also add assertion for each of the properties.
+Automated tests that drive your application through its user interface (UI) are known asÂ **coded UI** **tests**Â (CUITs). These tests include functional testing of the UI controls. WPF Charts supports Coded UI automation that helps you create automated tests for inner elements and records the sequence of actions. While dragging the crosshair on UI elements, it shows the properties of the respective UI elements and you can also add assertion for each of the properties.
 
 ## Levels
 
@@ -44,7 +45,7 @@ For more info about the platforms and configurations refer [here](https://learn.
 
 ## Configuration
 
-To test WPF Charts with CUITs, build the Extension Project and place it in the mentioned location. You can get the Extension Project from [`here`](https://www.syncfusion.com/downloads/support/directtrac/general/ze/CodedUI-1453395823.zip).
+To test WPF Charts with CUITs, build the Extension Project and place it in the mentioned location. You can get the Extension Project fromÂ [`here`](https://www.syncfusion.com/downloads/support/directtrac/general/ze/CodedUI-1453395823.zip).
 
 1. Open the extension project and build it.
 
@@ -87,7 +88,7 @@ You can also open the CodedUITestBuilder from existing Coded UI project by right
 
 ### Record  and Generate code
 
-If you create a Coded UI Test project, UIMap – CodedUITestBuilder shown at bottom right corner.
+If you create a Coded UI Test project, UIMap â€“ CodedUITestBuilder shown at bottom right corner.
 
 Now you can record and perform actions in your application.
 

@@ -5,6 +5,7 @@ description: Learn about BPMN gateways in Syncfusion® WPF Diagram control, incl
 platform: wpf
 control: SfDiagram
 documentation: ug
+appliesto: UI Component Suite, Diagram SDK
 ---
 
 # Gateway in WPF Diagram
@@ -64,3 +65,4 @@ The following table shows the different types of gateways:
 | EventBased | ![EventBased GateWay BPMNShape](BPMN-Shapes-Images/EventBased.png) |The event-based Gateway allows you to make a decision based on events|
 | ExclusiveEventBased | ![Exclusive EventBased GateWay BPMN Shape](BPMN-Shapes-Images/EEBased.png) |Starts a new process instance with each occurrence of a subsequent event|
 | ParallelEventBased | ![Parallel EventBased GateWay BPMN Shape](BPMN-Shapes-Images/PEBased.png) |This gateway is similar to a parallel gateway. It allows for multiple processes to happen at the same time but unlike the parallel gateway, the processes are event-dependent|
+

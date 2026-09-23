@@ -5,6 +5,7 @@ description: Row Height Customization in Data Grid customizes row heights dynami
 platform: wpf
 control: Data Grid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Row Height Customization in WPF Data Grid
@@ -409,4 +410,5 @@ void dataGrid_QueryRowHeight(object sender, QueryRowHeightEventArgs e)
 {% endtabs %}
 
 ![Customizing TableSummaryRow Height in WPF DataGrid](row-height-customization_images/wpf-datagrid-table-summary-row-height.png)
+
 

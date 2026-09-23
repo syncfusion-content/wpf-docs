@@ -5,6 +5,7 @@ description: Digital characters in the WPF Digital Gauge allow you to display nu
 platform: wpf
 control: SfDigitalGauge
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Digital Characters in WPF Digital Gauge
@@ -99,9 +100,9 @@ The digital characters set as the [`Value`](https://help.syncfusion.com/cr/wpf/S
 
 ![Digital Gauge with SegmentSixteen CharacterType](Digital-Characters_images/Digital-Characters_img4.png)
 
-## 8×8 Dot Matrix Segments
+## 8Ã—8 Dot Matrix Segments
 
-The digital characters set as the [`Value`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.SfDigitalGauge.html#Syncfusion_UI_Xaml_Gauges_SfDigitalGauge_Value) property can be displayed using 8×8 dot matrix segments. This type of character is used to display special characters along with alphabets and numbers. Set the [`CharacterType`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.SfDigitalGauge.html#Syncfusion_UI_Xaml_Gauges_SfDigitalGauge_CharacterType) property to `EightCrossEightDotMatrix` to display characters in this format.
+The digital characters set as the [`Value`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.SfDigitalGauge.html#Syncfusion_UI_Xaml_Gauges_SfDigitalGauge_Value) property can be displayed using 8Ã—8 dot matrix segments. This type of character is used to display special characters along with alphabets and numbers. Set the [`CharacterType`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.SfDigitalGauge.html#Syncfusion_UI_Xaml_Gauges_SfDigitalGauge_CharacterType) property to `EightCrossEightDotMatrix` to display characters in this format.
 
 {% tabs %}
 {% highlight xaml %}

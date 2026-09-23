@@ -5,6 +5,7 @@ description: Learn about Data Virtualization support in Syncfusion Essential Stu
 platform: wpf
 control: Gantt
 documentation: ug
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Data Virtualization in WPF Gantt
@@ -877,3 +878,4 @@ public class ViewModel
 The following image illustrates the WPF Gantt control with timeline virtualization enabled:
 
 ![gantt-control-data-virtualization](Data-Virtualization-Images/data-virtualization-for-gantt-control.gif){:width="725" height="325"}
+

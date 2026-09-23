@@ -5,6 +5,7 @@ description: Learn about introduction of Syncfusion® Essential Studio WPF Calen
 platform: wpf
 control: CalendarEdit
 documentation: ug
+appliesto: UI Component Suite, Scheduler SDK
 ---
 
 # About Syncfusion WPF Calendar Control
@@ -30,6 +31,7 @@ The [CalendarEdit](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.
 * Display area of Calendar control is limited using abbreviated days and months.
 
 * A ToolTip can be set to the required date, or by row and column.
+
 
 
 

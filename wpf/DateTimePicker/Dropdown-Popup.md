@@ -5,6 +5,7 @@ description: Learn how to customize and use the dropdown popup with calendar and
 platform: wpf
 control: DateTimeEdit
 documentation: ug
+appliesto: UI Component Suite, Scheduler SDK
 ---
 
 # Dropdown Popup in WPF DateTimePicker
@@ -357,3 +358,4 @@ private void DateTimeEdit_Loaded(object sender, RoutedEventArgs e)
 {% endtabs %}
 
 ![Hide Today Button of DateTimeEdit](Dropdown-Popup_images/HideTodayButton.png)
+

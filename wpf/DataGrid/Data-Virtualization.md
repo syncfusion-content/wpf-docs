@@ -5,6 +5,7 @@ description: Data Virtualization in Data Grid enables efficient handling of larg
 platform: wpf
 control: Data Grid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Data Virtualization in WPF Data Grid
@@ -379,3 +380,4 @@ You can download the sample from [here](https://www.syncfusion.com/downloads/sup
 ## Paging
 
 SfDataGrid supports to load paged data source using [SfDataPager](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Controls.DataPager.SfDataPager.html). You can use the paging in SfDataGrid by go through the [Paging](https://help.syncfusion.com/wpf/datagrid/paging) section.
+

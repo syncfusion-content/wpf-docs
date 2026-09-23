@@ -5,6 +5,7 @@ description: Multilayer support in the WPF Maps enables multiple map layers to b
 platform: wpf
 control: SfMap
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Multilayer Support in WPF Maps
@@ -86,7 +87,7 @@ SubShapeFileLayers is the collection of [`SubShapeFileLayer`](https://help.syncf
                                     <TextBlock FontFamily="Segoe UI" Foreground="#FF333333" 
                                                FontSize="12"  Text="{Binding Data.Weather}"/>
                                     <TextBlock FontFamily="Segoe UI" Foreground="#FF333333" 
-                                               FontSize="12"  Text="°C"/>
+                                               FontSize="12"  Text="Â°C"/>
                                 </StackPanel>
                             </Border>
                         </DataTemplate>
@@ -118,7 +119,7 @@ SubShapeFileLayers is the collection of [`SubShapeFileLayer`](https://help.syncf
                                             <TextBlock FontFamily="Segoe UI" Foreground="#FF333333" 
                                                        FontSize="12"  Text="{Binding Data.Weather}"/>
                                             <TextBlock FontFamily="Segoe UI" Foreground="#FF333333" 
-                                                       FontSize="12"  Text="°C"/>
+                                                       FontSize="12"  Text="Â°C"/>
                                         </StackPanel>
                                     </Border>
                                 </DataTemplate>
@@ -161,7 +162,7 @@ SubShapeFileLayers is the collection of [`SubShapeFileLayer`](https://help.syncf
                                             <TextBlock FontFamily="Segoe UI" Foreground="#FF333333" 
                                                        FontSize="12"  Text="{Binding Data.Weather}"/>
                                             <TextBlock FontFamily="Segoe UI" Foreground="#FF333333" 
-                                                       FontSize="12"  Text="°C"/>
+                                                       FontSize="12"  Text="Â°C"/>
                                         </StackPanel>
                                     </Border>
                                 </DataTemplate>

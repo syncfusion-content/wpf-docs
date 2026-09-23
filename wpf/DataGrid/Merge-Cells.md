@@ -5,6 +5,7 @@ description: Merge Cells in Data Grid combines adjacent cells with matching valu
 platform: wpf
 control: Data Grid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Merge Cells in WPF Data Grid
@@ -451,4 +452,5 @@ private void dataGrid_ExternalExceptionThrown(ExternalExceptionThrownEventArgs a
 } 
 {% endhighlight %}
 {% endtabs %}
+
 

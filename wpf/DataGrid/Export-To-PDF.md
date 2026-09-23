@@ -5,6 +5,7 @@ description: Export To PDF in Data Grid exports grid data to PDF documents while
 platform: wpf
 control: Data Grid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Export To PDF in WPF Data Grid
@@ -671,5 +672,6 @@ private void CellsExportingEventHandler(object sender, GridCellPdfExportingEvent
 {% endtabs %}
 
 ![Customizing WPF DetailsView DataGrid Cells Exported to PDF File](export-to-pdf_images/wpf-datagrid-details-view-cells-customization.png)
+
 
 

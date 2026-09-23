@@ -5,6 +5,7 @@ description: Export diagrams from Syncfusion® WPF Diagram to image and XPS form
 platform: wpf
 control: SfDiagram
 documentation: ug
+appliesto: UI Component Suite, Diagram SDK
 ---
 
 # Exporting in WPF Diagram

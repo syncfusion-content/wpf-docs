@@ -5,6 +5,7 @@ description: Learn about Custom Node Style support in Syncfusion WPF Gantt, incl
 platform: wpf
 control: Gantt
 documentation: ug
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Custom Node Style in WPF Gantt
@@ -468,6 +469,7 @@ To view samples:
 4. Select Gantt.
 5. Expand the Styles item in the Sample Browser.
 6. Choose the Custom Node Style sample to launch.
+
 
 
 

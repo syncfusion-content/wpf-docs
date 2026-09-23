@@ -5,6 +5,7 @@ description: Learn how to get started with the Syncfusion® WPF Diagram control.
 platform: wpf
 control: SfDiagram
 documentation: ug
+appliesto: UI Component Suite, Diagram SDK
 ---
 
 # Getting Started with WPF Diagram
@@ -938,3 +939,4 @@ SfDiagram supports various built-in themes. Refer to the links below to apply th
 [How to Automate Diagram using WinAppDriver](https://support.syncfusion.com/kb/article/15642/how-to-automate-diagram-using-winappdriver)
 
 [How to get the coordinates of the current viewport in WPF Diagram?](https://support.syncfusion.com/kb/article/18032/how-to-get-the-coordinates-of-the-current-viewport-in-wpf-diagram-sfdiagram)
+

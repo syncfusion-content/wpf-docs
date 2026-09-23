@@ -5,6 +5,7 @@ description: Learn about appearance customization and styling options available 
 platform: wpf
 control: TimeSpanEdit
 documentation: ug
+appliesto: UI Component Suite, Scheduler SDK
 ---
 
 # Appearance in WPF TimeSpan Editor
@@ -114,3 +115,4 @@ TimeSpanEdit supports various built-in themes. Refer to the below links to apply
   * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
 
  ![Setting theme to WPF TimeSpanEdit](Getting-Started_images/Theme.png)
+

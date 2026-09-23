@@ -5,6 +5,7 @@ description: Paging in Data Grid displays data in pages to improve navigation, p
 platform: wpf
 control: Data Grid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Paging in WPF Data Grid
@@ -569,3 +570,4 @@ public class EmployeeInfoRepository
 2. Data processing operations (Sorting, Grouping) are done only on the current page. 
 3. Deleting is not supported. You can code to delete a row at the application level. 
 4. Only the navigated pages are exported when `OnDemandPaging` is enabled, if the navigated page cache is cleared then the corresponding page will not be exported.
+

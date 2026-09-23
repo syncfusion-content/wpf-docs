@@ -5,6 +5,7 @@ description: Learn about connectors in Syncfusion® WPF Diagram control, includi
 platform: wpf
 control: SfDiagram
 documentation: ug
+appliesto: UI Component Suite, Diagram SDK
 ---
 
 # Connector in WPF Diagram
@@ -514,3 +515,4 @@ For more information about adding connectors from stencil, refer to [Stencil](/w
 [How to change the connector style based on its SourcePort style in WPF Diagram?](https://support.syncfusion.com/kb/article/18851/how-to-change-the-connector-style-based-on-its-sourceport-style-in-wpf-diagram-sfdiagram)
 
 [How to identify the dragging state of connectors in the WPF Diagram ?](https://support.syncfusion.com/kb/article/18846/how-to-identify-the-dragging-state-of-connectors-in-the-wpf-diagram-sfdiagram)
+

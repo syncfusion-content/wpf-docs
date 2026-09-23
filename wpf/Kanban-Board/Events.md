@@ -5,6 +5,7 @@ description: Learn about Events support in Syncfusion WPF Kanban Board, includin
 platform: wpf
 control: SfKanban
 documentation: ug
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Events in WPF Kanban Board
@@ -358,4 +359,5 @@ This event is triggered for each column as it is generated. The [`KanbanColumnGe
 * [`Columns`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.KanbanColumnsGeneratedEventArgs.html#Syncfusion_UI_Xaml_Kanban_KanbanColumnsGeneratedEventArgs_Columns) - Used to get the generated columns.
 * [`IsCancel`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.KanbanColumnGeneratedEventArgs.html#Syncfusion_UI_Xaml_Kanban_KanbanColumnGeneratedEventArgs_IsCancel) - Used to cancel the generated column from being added to the `SfKanban`.
 * [`CurrentColumn`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.KanbanColumnGeneratedEventArgs.html#Syncfusion_UI_Xaml_Kanban_KanbanColumnGeneratedEventArgs_CurrentColumn) - Used to get the current generated column.
+
 

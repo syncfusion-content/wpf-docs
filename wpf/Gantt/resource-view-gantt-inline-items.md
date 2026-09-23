@@ -5,6 +5,7 @@ description: Learn about Resource View Gantt Inline Items support in Syncfusion 
 platform: wpf
 control: Gantt
 documentation: ug
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Resource View Gantt Inline Items in WPF Gantt
@@ -1274,6 +1275,7 @@ To view samples:
 4. Select Gantt.
 5. Expand the Data Binding item in the Sample Browser.
 6. Choose the Resource View Gantt sample to launch. 
+
 
 
 

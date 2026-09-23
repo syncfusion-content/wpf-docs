@@ -5,6 +5,7 @@ description: Learn about Data Binding support in Syncfusion WPF Gantt with built
 platform: wpf
 control: Gantt
 documentation: ug
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Data Binding in WPF Gantt
@@ -496,3 +497,4 @@ To view samples:
 4. Select Gantt.
 5. Expand the DataBinding Features item in the Sample Browser.
 6. Choose the External Property Binding sample to launch.
+

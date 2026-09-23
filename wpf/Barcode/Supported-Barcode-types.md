@@ -5,6 +5,7 @@ description: Symbology Types in the WPF Barcode include various 1D and 2D symbol
 platform: wpf
 control: SfBarcode
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Symbology Types in WPF Barcode
@@ -22,7 +23,7 @@ The following table lists the supported barcode types and their associated valid
 <td>
 {{'[QR Code](https://en.wikipedia.org/wiki/QR_code)'| markdownify }}</td><td>
 QRBarcode</td><td>
-[0–9]; [A–Z (upper-case only)]; [space $ % * + - . / , :]; [Shift JIS characters]</td><td>
+[0â€“9]; [Aâ€“Z (upper-case only)]; [space $ % * + - . / , :]; [Shift JIS characters]</td><td>
 variable</td></tr>
 <tr>
 <td>
@@ -82,7 +83,7 @@ variable</td></tr>
 <td>
 {{'[Code 128B](https://en.wikipedia.org/wiki/Code_128)'| markdownify }}</td><td>
 Code128B</td><td>
-[0-9]; [A-Z]; [a-z]; [SPACE (0x20) ! " # $ % & ' ( ) * + , - . / : &lt; = &gt; ? @ [ / ]^ _ `  { | } ~ DEL (•) ]</td><td>
+[0-9]; [A-Z]; [a-z]; [SPACE (0x20) ! " # $ % & ' ( ) * + , - . / : &lt; = &gt; ? @ [ / ]^ _ `  { | } ~ DEL (â€¢) ]</td><td>
 variable</td></tr>
 <tr>
 <td>

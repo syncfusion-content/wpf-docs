@@ -5,6 +5,7 @@ description: Learn about Swimlane support in Syncfusion WPF Kanban Board using t
 platform: wpf
 control: SfKanban
 documentation: ug
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Swimlane in WPF Kanban Board
@@ -113,3 +114,4 @@ N> If no value is assigned to the [`SwimlaneKey`](https://help.syncfusion.com/cr
 {% endtabs %}
 
 ![Swimlane customization in WPF Kanban](SfKanban_images/swimlane_header.png)
+

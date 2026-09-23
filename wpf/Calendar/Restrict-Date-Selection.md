@@ -5,6 +5,7 @@ description: Learn how to restrict date selection within a particular range in W
 platform: wpf
 control: CalendarEdit
 documentation: ug
+appliesto: UI Component Suite, Scheduler SDK
 ---
 
 # Restrict Date Selection in WPF Calendar
@@ -238,4 +239,5 @@ this.calendarEdit.Date = new DateTime(2020, 08, 12);
 ![ReadOnly mode of the WPF Calendar control](Restrict-Date-Selection_images/AllowSelection.png)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusin-wpf-calendar-examples/tree/master/Samples/Restrict-Date)
+
 

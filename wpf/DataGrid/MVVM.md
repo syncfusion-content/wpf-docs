@@ -5,6 +5,7 @@ description: MVVM in Data Grid enables seamless integration with the MVVM patter
 platform: wpf
 control: Data Grid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # MVVM in WPF Data Grid
@@ -259,3 +260,4 @@ public class ViewModel
 {% endtabs %}
 
 You can download the sample [here](https://www.syncfusion.com/downloads/support/directtrac/general/ze/ColumnCollection-341303193.zip).
+

@@ -5,6 +5,7 @@ description: Editing in Data Grid provides built-in features to add, modify, and
 platform: wpf
 control: Data Grid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Editing in WPF Data Grid
@@ -745,3 +746,4 @@ public class SfDataGridExt : SfDataGrid
 [How to get the parent grid while editing the child grid?](https://support.syncfusion.com/kb/article/2795/how-to-get-the-parent-grid-while-editing-the-child-grid-in-wpf-datagrid)
 
 [How to handle keyboard and mouse interactions for GridTemplateColumn?](https://support.syncfusion.com/kb/article/2877/how-to-handle-keyboard-and-mouse-interactions-for-gridtemplatecolumn)
+

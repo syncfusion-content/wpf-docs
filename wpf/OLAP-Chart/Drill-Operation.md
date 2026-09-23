@@ -5,6 +5,7 @@ description: Drill operation in the WPF OLAP Chart enables users to expand and c
 platform: wpf
 control: OLAP Chart
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Drill Operation in WPF Olap Chart

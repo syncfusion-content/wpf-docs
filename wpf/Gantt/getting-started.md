@@ -5,6 +5,7 @@ description: Learn how to get started with the Syncfusion WPF Gantt control. Exp
 platform: wpf
 control: Gantt
 documentation: ug
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Getting Started with WPF Gantt
@@ -374,4 +375,5 @@ The control supports various built-in themes. Refer to the below links to apply 
 [How to create a gantt chart by hiding the gantt grid](https://support.syncfusion.com/kb/article/8961/how-to-create-a-ganttchart-by-hiding-the-ganttgrid)
 
 [How to wrap WPF gantt in Windows Forms](https://support.syncfusion.com/kb/article/8200/how-to-wrap-wpf-gantt-in-windows-forms)
+
 

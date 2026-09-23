@@ -5,6 +5,7 @@ description: Area in the WPF OLAP Chart displays data as filled regions between 
 platform: wpf
 control: OLAP Chart
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Area in WPF Olap Chart
@@ -23,7 +24,7 @@ In general, chart series contains a chart area instance, which can be used to cu
 
 {% highlight c# %}
 
-this.olapchart1.Series[0].Area.Header = "Simple Report";
+this.olapchart1.Series[0].Area.HeaderÂ =Â "Simple Report";
 	
 {% endhighlight %}
 
@@ -62,7 +63,7 @@ The OLAP area allows you to customize the border properties. The following code 
 
 {% highlight c# %}
  
-this.olapChart.Series[0].Area.BorderBrush = Brushes.Black;
+this.olapChart.Series[0].Area.BorderBrushÂ =Â Brushes.Black;
 
 {% endhighlight %}
 
@@ -80,7 +81,7 @@ Me.olapChart.Series(0).Area.BorderBrush = Brushes.Black
 
 {% highlight c# %}
  
-this.olapChart.Series[0].Area.BorderThickness = new Thickness(2);
+this.olapChart.Series[0].Area.BorderThicknessÂ =Â newÂ Thickness(2);
 
 {% endhighlight %}
 
@@ -98,7 +99,7 @@ Me.olapChart.Series(0).Area.BorderThickness = New Thickness(2)
 
 {% highlight c# %}
  
-this.olapChart.Series[0].Area.CornerRadius = new CornerRadius(5);
+this.olapChart.Series[0].Area.CornerRadiusÂ =Â newÂ CornerRadius(5);
 
 {% endhighlight %}
 
@@ -116,7 +117,7 @@ Me.olapChart.Series(0).Area.CornerRadius = New CornerRadius(5)
 
 {% highlight c# %}
 
-this.olapChart.Series[0].Area.Background = Brushes.SkyBlue;
+this.olapChart.Series[0].Area.BackgroundÂ =Â Brushes.SkyBlue;
 
 {% endhighlight %}
 
@@ -134,7 +135,7 @@ Me.olapChart.Series(0).Area.Background = Brushes.SkyBlue
 
 {% highlight c# %}
  
-this.olapChart.Series[0].Area.GridBackground = Brushes.LightBlue;
+this.olapChart.Series[0].Area.GridBackgroundÂ =Â Brushes.LightBlue;
 
 {% endhighlight %}
 
@@ -152,7 +153,7 @@ Me.olapChart.Series(0).Area.GridBackground = Brushes.LightBlue
 
 {% highlight c# %}
  
-this.olapChart.Series[0].Area.FontStyle = FontStyles.Italic;
+this.olapChart.Series[0].Area.FontStyleÂ =Â FontStyles.Italic;
 
 {% endhighlight %}
 

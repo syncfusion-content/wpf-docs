@@ -5,6 +5,7 @@ description: Learn about multiple connector segments in Syncfusion® WPF Diagram
 platform: wpf
 control: SfDiagram
 documentation: ug
+appliesto: UI Component Suite, Diagram SDK
 ---
 
 # Multiple Connector Segments in WPF Diagram

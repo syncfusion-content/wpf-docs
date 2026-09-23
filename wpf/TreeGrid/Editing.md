@@ -5,6 +5,7 @@ description: Enable cell editing in SfTreeGrid with support for custom editors, 
 platform: wpf
 control: SfTreeGrid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Editing in WPF SfTreeGrid

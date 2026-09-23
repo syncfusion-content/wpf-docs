@@ -5,6 +5,7 @@ description: Learn about introduction of Syncfusion® Essential Studio WPF DateP
 platform: wpf
 control: SfDatePicker
 documentation: ug
+appliesto: UI Component Suite, Scheduler SDK
 ---
 
 # About Syncfusion WPF DatePicker Control
@@ -24,4 +25,5 @@ The [SfDatePicker](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Control
 Formatting – The control displays the selected Date value in various formats.
 
 Date Selector – The drop-down portion used for selecting the date can be customized.
+
 

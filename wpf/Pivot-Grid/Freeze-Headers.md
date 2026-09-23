@@ -5,6 +5,7 @@ description: Freeze headers in the Syncfusion® WPF Pivot Grid control to keep r
 platform: wpf
 control: Pivot Grid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Freeze Headers in WPF Pivot Grid
@@ -89,3 +90,4 @@ _PivotGrid when freeze headers enabled_
 _PivotGrid when freeze headers disabled_
 
 N> You can also explore our [WPF Pivot Grid example](https://github.com/syncfusion/wpf-demos) to knows how to organizes and summarizes business data and displays the result in a cross-table format.
+

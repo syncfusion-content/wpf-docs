@@ -5,6 +5,7 @@ description: Learn about UML diagram shapes in Syncfusion® WPF Diagram control,
 platform: wpf
 control: SfDiagram
 documentation: ug
+appliesto: UI Component Suite, Diagram SDK
 ---
 
 # UML Diagrams in WPF Diagram
@@ -51,3 +52,4 @@ The list of UML Diagram Shapes are available in the diagram resource dictionary,
 |  | Attribute | ![Attribute](UMLShapes_images/Attribute.png) |
 |  | MultivaluedAttribute | ![MultivaluedAttribute](UMLShapes_images/MultivaluedAttribute.png) |
 |  | StrongRelationship | ![StrongRelationship](UMLShapes_images/StrongRelationship.png) |
+

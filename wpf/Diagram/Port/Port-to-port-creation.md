@@ -5,6 +5,7 @@ description: Learn about port-to-port connections in Syncfusion® WPF Diagram co
 platform: wpf
 control: SfDiagram
 documentation: ug
+appliesto: UI Component Suite, Diagram SDK
 ---
 
 # Port-to-Port Connections in WPF Diagram
@@ -212,3 +213,4 @@ public NodeViewModel AddNode(double offsetX, double offsetY, string shape, doubl
 ![WPF Diagram Dock Port Connection](Port_images/wpf-diagram-dock-port-connection.png)
 
 For more information, refer to [Draw Connectors](https://help.syncfusion.com/wpf/sfdiagram/tools#connectors).
+

@@ -5,6 +5,7 @@ description: Learn about shapes in Syncfusion® WPF Diagram control, including b
 platform: wpf
 control: SfDiagram
 documentation: ug
+appliesto: UI Component Suite, Diagram SDK
 ---
 
 # Shapes in WPF Diagram

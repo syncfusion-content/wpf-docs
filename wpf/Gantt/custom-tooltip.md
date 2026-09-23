@@ -5,6 +5,7 @@ description: Learn about CustomToolTip support in Syncfusion WPF Gantt using the
 platform: wpf
 control: Gantt
 documentation: ug
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # CustomToolTip in WPF Gantt
@@ -451,6 +452,7 @@ To view samples:
 4. Select Gantt.
 5. Expand the Interactive Features item in the Sample Browser.
 6. Choose the CustomToolTip sample to launch.
+
 
 
 

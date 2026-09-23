@@ -5,11 +5,12 @@ description: Localization in the WPF OLAP Gauge enables gauge content, labels, a
 platform: wpf
 control: OLAP Gauge
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Localization in WPF OLAP Gauge
 
-Localization is a key feature for providing software solutions that are targeted at global users. The WPF OLAP Gauge allows users to localize the control to a specific locale and supports “resx” based localization.
+Localization is a key feature for providing software solutions that are targeted at global users. The WPF OLAP Gauge allows users to localize the control to a specific locale and supports â€œresxâ€ based localization.
 
 You should perform the following steps to localize the control:
 
@@ -27,7 +28,7 @@ N> The localization key field should be the same for all the locales. Do not tra
 
 After translating the strings, perform the following steps in the application:
 
-1. Right-click the project file to create a new folder in the project by selecting Add > New Folder and rename the folder as “Resources”.
+1. Right-click the project file to create a new folder in the project by selecting Add > New Folder and rename the folder as â€œResourcesâ€.
 
 2. Then, right-click the **Resources** folder to create a new resource file by selecting Add > New Item.
 
@@ -35,7 +36,7 @@ After translating the strings, perform the following steps in the application:
 
 ![Shows add new resource file for WPF OLAP Gauge](Localization_images/Localization-step2.png)
 
-N> The resource file name should be in the format “Syncfusion.OlapGauge.wpf.&lt;Culture Code&gt;.resx”.
+N> The resource file name should be in the format â€œSyncfusion.OlapGauge.wpf.&lt;Culture Code&gt;.resxâ€.
 
 3. Copy and paste the translated locale into the resource file that was created in the previous step.
 

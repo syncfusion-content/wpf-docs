@@ -5,6 +5,7 @@ description: Customization in the WPF Barcode allows you to modify appearance, c
 platform: wpf
 control: SfBarcode
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Customization in WPF Barcode
@@ -27,12 +28,12 @@ The following images illustrate the barcode rendered with different color combin
 
 ![WPF-Barcode-Red-Color-Combination](Barcode-Customization_images/wpf-barcode-red-color-combination.png)
 
-Barcode color combinations – Red
+Barcode color combinations â€“ Red
 {:.caption}
 
 ![WPF-Barcode-Blue-Color-Combination](Barcode-Customization_images/wpf-barcode-blue-color-combination.png)
 
-Barcode color combinations – Blue
+Barcode color combinations â€“ Blue
 {:.caption}
 
 ## Limitations

@@ -5,6 +5,7 @@ description: Arrange connected nodes in Syncfusion® WPF Diagram using Force-Dir
 platform: wpf
 control: SfDiagram
 documentation: ug
+appliesto: UI Component Suite, Diagram SDK
 ---
 
 
@@ -774,3 +775,4 @@ Diagram.LayoutManager = new LayoutManager()
 - **Layout is slow or freezes:** Lower `MaximumIteration` and/or `RepulsionStrength`. For large graphs, run layout on a background thread and provide a cancel option.
 
 ## See also
+

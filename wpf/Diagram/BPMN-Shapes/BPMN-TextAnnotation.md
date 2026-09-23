@@ -5,6 +5,7 @@ description: Learn about BPMN text annotations in Syncfusion® WPF Diagram contr
 platform: wpf
 control: SfDiagram
 documentation: ug
+appliesto: UI Component Suite, Diagram SDK
 ---
 
 # TextAnnotation in WPF Diagram
@@ -168,3 +169,4 @@ Drag and drop any bpmn shapes from the stencil to diagram and make a connection 
 The following image shows how to drag a symbol from the palette and create a connection between the `TextAnnotation` to `BPMNNode` with interaction.
 
 ![BPMN Text Annotation](BPMN-Shapes-Images/textannotationbpmn.gif)
+

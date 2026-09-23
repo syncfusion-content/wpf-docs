@@ -5,6 +5,7 @@ description: Unbound Rows in Data Grid display custom rows for calculations, sum
 platform: wpf
 control: Data Grid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 
@@ -752,3 +753,4 @@ void FirstLevelNestedGrid_QueryUnBoundRow(object sender, GridUnBoundRowEventsArg
 {% endtabs %}
 
 ![WPF DataGrid displays Unbound Rows in Master Details View](Unbound-Rows_images/wpf-datagrid-unbound-row-in-master-details-view.png)
+

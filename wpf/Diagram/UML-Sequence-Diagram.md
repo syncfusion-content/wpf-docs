@@ -5,6 +5,7 @@ description: Learn about the UML Sequence Diagram Model in Syncfusion® WPF Diag
 platform: wpf
 control: SfDiagram
 documentation: ug
+appliesto: UI Component Suite, Diagram SDK
 ---
 
 # UML Sequence Diagram Model in WPF Diagram
@@ -739,5 +740,6 @@ Diagram.Model = new UMLSequenceDiagramModel()
 {% endtabs %}  
 
 [View Sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Sequence%20Diagram)
+
 
 

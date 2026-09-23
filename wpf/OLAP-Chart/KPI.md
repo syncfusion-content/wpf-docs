@@ -5,6 +5,7 @@ description: KPI in the WPF OLAP Chart displays key performance indicators to mo
 platform: wpf
 control: OLAP Chart
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # KPI in WPF Olap Chart

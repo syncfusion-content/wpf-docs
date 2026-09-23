@@ -5,6 +5,7 @@ description: Restrict diagram object dragging in Syncfusion® WPF Diagram using 
 platform: wpf
 control: SfDiagram
 documentation: ug
+appliesto: UI Component Suite, Diagram SDK
 ---
 
 # Drag Limit in WPF Diagram
@@ -71,3 +72,4 @@ private void Diagram_SelectorChangedEvent(object sender, SelectorChangedEventArg
 [How to restrict diagram objects dragging in the positive side?](https://support.syncfusion.com/kb/article/9917/how-to-restrict-diagram-objects-dragging-in-the-positive-side-in-wpf-diagram)
 
 {% endseealso %}
+

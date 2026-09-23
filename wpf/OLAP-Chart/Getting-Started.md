@@ -5,6 +5,7 @@ description: Learn how to get started with the Syncfusion® WPF Olap Chart contr
 platform: wpf
 control: OLAP Chart
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Getting Started with WPF Olap Chart
@@ -477,7 +478,7 @@ First drag the WPF OLAP Chart control from the toolbox to the Visual Studio desi
 
 ![WPF OLAP Chart Getting-Started Image1](Getting-Started_images/Getting-Started_img1.png)
 
-Right-click the WPF OLAP Chart available in the designer and go to **Configure data source > Create/Edit data source…** option in the context menu. Now, the **Data Source Properties** wizard opens.
+Right-click the WPF OLAP Chart available in the designer and go to **Configure data source > Create/Edit data sourceâ€¦** option in the context menu. Now, the **Data Source Properties** wizard opens.
 
 ![WPF OLAP Chart Getting-Started Image4](Getting-Started_images/Getting-Started_img4.png)
 

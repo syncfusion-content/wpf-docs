@@ -5,6 +5,7 @@ description: Learn about SfDateSelector in WPF DatePicker that enables date sele
 platform: wpf
 control: SfDatePicker
 documentation: ug
+appliesto: UI Component Suite, Scheduler SDK
 ---
 
 # Date Selector in WPF DatePicker
@@ -209,3 +210,4 @@ sfDatePicker.SelectorItemSpacing = 50;
 ![WPF DatePicker Item Spacing](Customizing-DropDown_images/wpf-datepicker-item-spacing.png)
 
 Click [here](https://github.com/SyncfusionExamples/wpf-date-picker-examples/tree/master/Samples/DateSelectorTemplates) to download the sample that showcases the `SfDateSelector` template customization. 
+

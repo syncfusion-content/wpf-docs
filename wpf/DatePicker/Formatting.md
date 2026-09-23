@@ -5,6 +5,7 @@ description: Learn how to format and display dates in various formats in WPF Dat
 platform: wpf
 control: SfDatePicker
 documentation: ug
+appliesto: UI Component Suite, Scheduler SDK
 ---
 
 # Date Formatting in WPF DatePicker
@@ -69,4 +70,5 @@ Here, we are only able to select the month value from the `SfDateSelector`.
 Click [here](https://github.com/SyncfusionExamples/wpf-date-picker-examples/tree/master/Samples/Formatting) to download the sample that showcases the edit, display date formatting and date selection formatting by the `SfDatePicker`.
 
 N> A detailed explanation of standard date time formatting is available [here](https://learn.microsoft.com/en-us/previous-versions/dotnet/netframework-1.1/az4se3k1(v=vs.71)). The result string produced by these format specifiers are influenced by the settings in the Regional Options control panel. Computers with different cultures or different date and time settings will generate different result strings.
+
 

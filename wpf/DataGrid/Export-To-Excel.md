@@ -5,6 +5,7 @@ description: Export To Excel in Data Grid exports grid data to Excel files while
 platform: wpf
 control: Data Grid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Export To Excel in WPF Data Grid
@@ -801,5 +802,6 @@ condition2.BackColorRGB = System.Drawing.Color.LightGray;
 {% endtabs %}
 
 ![Displaying Row Style while Exporting to Excel in WPF DataGrid](export-to-excel_images/wpf-datagrid-row-style.png)
+
 
 

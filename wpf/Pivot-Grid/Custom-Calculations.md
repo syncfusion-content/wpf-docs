@@ -5,6 +5,7 @@ description: Define custom calculations in the Syncfusion® WPF Pivot Grid contr
 platform: wpf
 control: Pivot Grid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Custom Calculations in WPF Pivot Grid
@@ -171,3 +172,4 @@ public partial class MainWindow: Window {
 ![To display the pivot calculation values based on given formula](Calculation-Type-images/PivotGrid shows formula calculation type.png)
 
 N> You can refer to our [WPF Pivot Grid](https://www.syncfusion.com/wpf-controls/pivot-grid) feature tour page for its groundbreaking feature representations. You can also explore our [WPF Pivot Grid example](https://github.com/syncfusion/wpf-demos) to knows how to organizes and summarizes business data and displays the result in a cross-table format.
+

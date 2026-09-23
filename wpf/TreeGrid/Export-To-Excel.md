@@ -5,6 +5,7 @@ description: Export SfTreeGrid data to Excel with support for headers, stacked h
 platform: wpf
 control: SfTreeGrid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Export To Excel in WPF SfTreeGrid
@@ -788,3 +789,4 @@ You can download the sample [here](https://www.syncfusion.com/downloads/support/
 
 
 N> You can refer to our [WPF TreeGrid](https://www.syncfusion.com/wpf-controls/treegrid) feature tour page for its groundbreaking feature representations. You can also explore our [WPF TreeGrid example](https://github.com/syncfusion/wpf-demos) to know how to render and configure the treegrid.
+

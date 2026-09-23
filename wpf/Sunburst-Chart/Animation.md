@@ -7,6 +7,7 @@ platform: wpf
 control: SfSunburstChart 
 documentation: ug
 
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Animation in WPF Sunburst Chart
@@ -37,9 +38,9 @@ sunburstChart.AnimationDuration = 5000;
 
 The Sunburst Chart provides options to animate the chart segments in different ways using the [`AnimationType`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.SunburstChart.SfSunburstChart.html#Syncfusion_UI_Xaml_SunburstChart_SfSunburstChart_AnimationType) property.
 
-FadeIn – It gradually changes the opacity of the chart segment.
+FadeIn â€“ It gradually changes the opacity of the chart segment.
 
-Rotation – During an animation, the control rotates from 0 to 360 degrees.
+Rotation â€“ During an animation, the control rotates from 0 to 360 degrees.
 
 ### FadeIn
 

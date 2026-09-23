@@ -5,6 +5,7 @@ description: Prevent element overlaps in Syncfusion® WPF Diagram using collisio
 platform: wpf
 control: SfDiagram
 documentation: ug
+appliesto: UI Component Suite, Diagram SDK
 ---
 # Collision State in WPF Diagram
 
@@ -127,4 +128,5 @@ In addition to this,[`IgnoreList`](https://help.syncfusion.com/cr/wpf/Syncfusion
 ![list to ignore detect overlapping](Drag_images/AutomaticAlignment_img3.gif)
 
 [View Sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Collision%20State).
+
 

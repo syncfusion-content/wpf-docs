@@ -5,6 +5,7 @@ description: UI Automation in  Data Grid enables accessibility and automated tes
 platform: wpf
 control: Data Grid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # UI Automation in WPF Data Grid
@@ -288,3 +289,4 @@ public MainWindow()
 ## Quick Test Professional (QTP)
 
 You can refer the UFT/QTP document from [here](https://help.syncfusion.com/wpf/testing/uft)
+

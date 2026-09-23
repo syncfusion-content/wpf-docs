@@ -5,6 +5,7 @@ description: Row Height Customization in SfTreeGrid customizes row heights dynam
 platform: wpf
 control: SfTreeGrid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Row Height Customization in WPF SfTreeGrid
@@ -393,3 +394,4 @@ void TreeGrid_QueryRowHeight(object sender, TreeGridQueryRowHeightEventArgs e)
 {% endtabs %}
 
 ![AutoFit Stacked HeaderRow Height based on Content in WPF TreeGrid](Row-Height-Customization_images/wpf-treegrid-stacked-header-row-height.png)
+

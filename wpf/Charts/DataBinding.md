@@ -5,6 +5,7 @@ description: Data binding in the WPF Chart connects chart series to data sources
 platform: wpf
 control: SfChart
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Data Binding in WPF Charts
@@ -81,7 +82,7 @@ public sealed partial class MainPage : Page
 
 ### Binding complex property to the chart
 
-The complex property binding feature enables you to access nested object reference property values to render the chart segment. 
+The complex property binding feature enables you to access nested object reference property values to render the chart segment.Â 
 
 {% tabs %}
 
@@ -156,34 +157,34 @@ The following code example demonstrates how to bind the array values for the XBi
 
 public class Model
 {
-      public string[] Brand { get; set; }
-      public double[] Count { get; set; }
+      publicÂ string[]Â BrandÂ {Â get;Â set;Â }
+      publicÂ double[]Â CountÂ {Â get;Â set;Â }
 }
 
-public class ViewModel
+publicÂ classÂ ViewModel
 {
-   public ViewModel()
+   publicÂ ViewModel()
    {
-      Brands = new ObservableCollection<Model>();
-      Brands.Add(new Model() { Brand = new string[] { "Reebok", "Adidas" }, Count = new  double[] { 34, 23 } });
-      Brands.Add(new Model() { Brand = new string[] { "Benz", "Audi" }, Count =  new double[] { 50, 20 } });
-      Brands.Add(new Model() { Brand = new string[] { "iPhone", "Nokia" }, Count = new double[] { 24, 30 } });
-      Brands.Add(new Model() { Brand = new string[] { "Lenovo", "Acer" }, Count = new double[] { 38, 23 } });
-      Brands.Add(new Model() { Brand = new string[] { "Fastrack", "Titan" },Count = new double[] { 27, 29 } });
+      BrandsÂ =Â newÂ ObservableCollection<Model>();
+      Brands.Add(newÂ Model()Â {Â BrandÂ =Â newÂ string[]Â {Â "Reebok",Â "Adidas"Â },Â CountÂ =Â newÂ  double[]Â {Â 34,Â 23Â }Â });
+      Brands.Add(newÂ Model()Â {Â BrandÂ =Â newÂ string[]Â {Â "Benz",Â "Audi"Â },Â CountÂ =Â  newÂ double[]Â {Â 50,Â 20Â }Â });
+      Brands.Add(newÂ Model()Â {Â BrandÂ =Â newÂ string[]Â {Â "iPhone",Â "Nokia"Â },Â CountÂ =Â newÂ double[]Â {Â 24,Â 30Â }Â });
+      Brands.Add(newÂ Model()Â {Â BrandÂ =Â newÂ string[]Â {Â "Lenovo",Â "Acer"Â },Â CountÂ =Â newÂ double[]Â {Â 38,Â 23Â }Â });
+      Brands.Add(newÂ Model()Â {Â BrandÂ =Â newÂ string[]Â {Â "Fastrack",Â "Titan"Â },CountÂ =Â newÂ double[]Â {Â 27,Â 29Â }Â });
    }
 
-   public ObservableCollection<Model> Brands { get; set; }
+   publicÂ ObservableCollection<Model>Â BrandsÂ {Â get;Â set;Â }
 }
 
-private void CreateChart()
+privateÂ voidÂ CreateChart()
 {
-   ViewModel view = new ViewModel();
-   SfChart chart = new SfChart();
+   ViewModelÂ viewÂ =Â newÂ ViewModel();
+   SfChartÂ chartÂ =Â newÂ SfChart();
 
-   ColumnSeries series = new ColumnSeries();
-   series.ItemsSource = view.Brands;
-   series.XBindingPath = "Brand[1]";
-   series.YBindingPath = "Count[0]";
+   ColumnSeriesÂ seriesÂ =Â newÂ ColumnSeries();
+   series.ItemsSourceÂ =Â view.Brands;
+   series.XBindingPathÂ =Â "Brand[1]";
+   series.YBindingPathÂ =Â "Count[0]";
 
    chart.Series.Add(series);
    grid.Children.Add(chart);

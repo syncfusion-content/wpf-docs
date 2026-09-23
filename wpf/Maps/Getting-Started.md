@@ -5,11 +5,12 @@ description: Learn how to get started with the Syncfusion® WPF Maps control. Ex
 platform: wpf
 control: SfMap
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Getting Started with WPF Maps
 
-This section explains the steps required to configure the [`SfMap`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.SfMap.html) and add basic elements to it using various APIs.
+This section explains the steps required to configure theÂ [`SfMap`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.SfMap.html) and add basic elements toÂ it using various APIs.
 
 ## Adding WPF Map reference
 
@@ -31,7 +32,7 @@ If you prefer to manually reference the assemblies instead of referencing from N
 
 Location: {Installed location}/{version}/WPF/Assemblies
 
-You can refer to [this](https://help.syncfusion.com/wpf/control-dependencies#sfmaps) link to know about the assemblies required for adding map to your project.
+You can referÂ to [this](https://help.syncfusion.com/wpf/control-dependencies#sfmaps)Â link to know about the assemblies required for adding map to your project.
 
 ## Create SfMap control 
 
@@ -54,8 +55,8 @@ The SfMap control can also be created and configured by using Expression Blend. 
 1. Create a WPF project in Expression Blend and reference the following assemblies:
    1. Syncfusion.SfMaps.Wpf
    2. Syncfusion.Shared.Wpf
-2. Search for SfMap in the Toolbox.
-3. Drag WPF Map to the designer. It generates the SfMap control with one child element.
+2. Search forÂ SfMapÂ in the Toolbox.
+3. DragÂ WPF MapÂ to the designer. It generates the SfMap control with one child element.
 
 
 
@@ -148,7 +149,7 @@ All files must adhere to the 8.3 naming conventions. The Main file and dBase fil
 
 The main file (.shp) contains a fixed-length file header followed by the variable-length records. Each variable-length record is made up of a fixed-length record header followed by the variable-length record contents.  
 
-The dBase file (.dbf) contains any desired feature attributes or attribute keys, where other tables can be joined. Its format is a standard .dbf file used by many table-based applications in Windows™ and DOS.  Any set of fields can be present in the table.
+The dBase file (.dbf) contains any desired feature attributes or attribute keys, where other tables can be joined. Its format is a standard .dbf file used by many table-based applications in Windowsâ„¢ and DOS.  Any set of fields can be present in the table.
 
 For more information about the 8.3 naming convention, shape files and their descriptions, visit the following link:
 
@@ -158,7 +159,7 @@ Maps read the main file and create the map shapes. The associated .dbf file cont
 
 ## Attach the Shape file with Map
 
-To read the shape file using Map, the shape file’s main file and .dbf file need to be added as an embedded resource in the application project. Then, the main file’s path has to be given in the Uri file of the shape file layer.
+To read the shape file using Map, the shape fileâ€™s main file and .dbf file need to be added as an embedded resource in the application project. Then, the main fileâ€™s path has to be given in the Uri file of the shape file layer.
 
 ### About the Uri property
 

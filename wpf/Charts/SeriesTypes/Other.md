@@ -5,6 +5,7 @@ description: Other chart types in the WPF Chart provide specialized visualizatio
 platform: wpf
 control: SfChart
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Other Types in WPF Charts
@@ -47,9 +48,9 @@ N> You can refer to our [WPF Box and Whisker Chart](https://www.syncfusion.com/w
 
 The series box plotting mode can be changed by using the [`BoxPlotMode`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.BoxAndWhiskerSeries.html#Syncfusion_UI_Xaml_Charts_BoxAndWhiskerSeries_BoxPlotMode) property of [`BoxAndWhiskerSeries`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.BoxAndWhiskerSeries.html). The plotting mode of the series can be calculated as follows:
 
-* [`Exclusive`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.BoxPlotMode.html) – The quartile values are calculated by using the formula (N+1) * P (N count, P percentile), and the index value starts from 1 in the list.
-* [`Inclusive`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.BoxPlotMode.html) – The quartile values are calculated by using the formula (N−1) * P (N count, P percentile), and the index value starts from 0 in the list.
-* [`Normal`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.BoxPlotMode.html) – The quartile values are calculated by splitting the list and getting the median values.
+* [`Exclusive`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.BoxPlotMode.html) â€“ The quartile values are calculated by using the formula (N+1) * P (N count, P percentile), and the index value starts from 1 in the list.
+* [`Inclusive`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.BoxPlotMode.html) â€“ The quartile values are calculated by using the formula (Nâˆ’1) * P (N count, P percentile), and the index value starts from 0 in the list.
+* [`Normal`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.BoxPlotMode.html) â€“ The quartile values are calculated by splitting the list and getting the median values.
 
 **Normal**
 

@@ -5,6 +5,7 @@ description: Summaries in Data Grid display aggregate values such as count, sum,
 platform: wpf
 control: Data Grid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 
@@ -2480,3 +2481,4 @@ You can download the sample demo [here](https://www.syncfusion.com/downloads/sup
 [How to customize the CaptionSummaryCell text in the SfDataGrid?](https://support.syncfusion.com/kb/article/3433/how-to-customize-the-captionsummarycell-text-in-wpf-datagrid)
 
 [How to Set the horizontal alignment on summary columns?](https://support.syncfusion.com/kb/article/2923/how-to-set-the-horizontal-alignment-on-summary-columns-in-wpf-datagrid)
+

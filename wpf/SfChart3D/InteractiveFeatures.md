@@ -5,6 +5,7 @@ description: Interactive features in the WPF 3D Chart enable zooming, selection,
 platform: wpf
 control: SfChart3D
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Interactive Features in WPF 3D Chart
@@ -170,7 +171,7 @@ chart3D.Series.Add(series1);
 
 {% endtabs %}
 
-The following screenshot is an example of a WPF 3D Chart with series selection.
+The following screenshot is an example of aÂ WPF 3D ChartÂ with series selection.
 
 ![Series selection support in WPF 3D Chart](3D-Charts_images/Interaction/SeriesSelection.png)
 

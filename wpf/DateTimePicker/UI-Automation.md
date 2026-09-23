@@ -5,6 +5,7 @@ description: Learn about UI automation support in WPF DateTimePicker control for
 platform: wpf
 control: DateTimeEdit
 documentation: ug
+appliesto: UI Component Suite, Scheduler SDK
 ---
 
 # UI Automation in WPF DateTimePicker
@@ -49,3 +50,4 @@ This XML configuration file should contain the fully qualified type name of the 
 ## Coded UI
 
 You can refer the Coded UI document from [here](https://help.syncfusion.com/wpf/testing/coded-ui)
+

@@ -5,6 +5,7 @@ description: Learn about Auto Update Hierarchy support in Syncfusion WPF Gantt t
 platform: wpf
 control: Gantt
 documentation: ug
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Auto Update Hierarchy in WPF Gantt
@@ -795,6 +796,7 @@ To view samples:
 4. Select Gantt.
 5. Expand the Data Binding Features item in the Sample Browser.
 6. Choose the External Property Binding Demo sample to launch.
+
 
 
 

@@ -5,6 +5,7 @@ description: Annotations in the WPF Chart enable you to add custom text, shapes,
 platform: wpf
 control: SfChart
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 # Annotations in WPF Charts
 
@@ -336,11 +337,11 @@ The following properties are used to customize the text:
 
 * [`Foreground`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.Annotation.html#Syncfusion_UI_Xaml_Charts_Annotation_Foreground) - Used to change the text color.
 
-* [`FontSize`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.Annotation.html#Syncfusion_UI_Xaml_Charts_Annotation_FontSize)– An int value that represents the font size of the annotation text.
+* [`FontSize`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.Annotation.html#Syncfusion_UI_Xaml_Charts_Annotation_FontSize)â€“ An int value that represents the font size of the annotation text.
 
-* [`FontFamily`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.Annotation.html#Syncfusion_UI_Xaml_Charts_Annotation_FontFamily)– Represents the font family of the annotation text.
+* [`FontFamily`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.Annotation.html#Syncfusion_UI_Xaml_Charts_Annotation_FontFamily)â€“ Represents the font family of the annotation text.
 
-* [`FontStyle`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.Annotation.html#Syncfusion_UI_Xaml_Charts_Annotation_FontStyle)– Represents the font style of the annotation text.
+* [`FontStyle`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.Annotation.html#Syncfusion_UI_Xaml_Charts_Annotation_FontStyle)â€“ Represents the font style of the annotation text.
 
 * [`FontWeight`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.Annotation.html#Syncfusion_UI_Xaml_Charts_Annotation_FontWeight)- Represents the font weight of the annotation text.
 
@@ -401,10 +402,10 @@ chart.Annotations.Add(annotation);
 
 * [`VerticalLineAnnotation`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.VerticalLineAnnotation.html)- Used to draw a vertical line across the chart area.
 
-* [`HorizontalLineAnnotation`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.HorizontalLineAnnotation.html) - Used to add a horizontal line across the chart area.
+* [`HorizontalLineAnnotation`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.HorizontalLineAnnotation.html)Â - Used to add a horizontal line across the chart area.
 
 
-The following API’s are commonly used in all ShapeAnnotation:
+The following APIâ€™s are commonly used in all ShapeAnnotation:
 
 * [`Fill`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ShapeAnnotation.html#Syncfusion_UI_Xaml_Charts_ShapeAnnotation_Fill) - Represents the brush inside the Shape Annotation.
 
@@ -709,7 +710,7 @@ N> [`HorizontalTextAlignment`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.
 
 WPF Charts allows customization of shape annotation using the following properties.
 
-* [`Stroke`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ShapeAnnotation.html#Syncfusion_UI_Xaml_Charts_ShapeAnnotation_Stroke) - Represents the brush for the annotation outline.
+* [`Stroke`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ShapeAnnotation.html#Syncfusion_UI_Xaml_Charts_ShapeAnnotation_Stroke) - Represents theÂ brushÂ for the annotation outline.
 * [`StrokeThickness`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ShapeAnnotation.html#Syncfusion_UI_Xaml_Charts_ShapeAnnotation_StrokeThickness) - Represents the thickness of the annotation outline.
 * [`StrokeDashArray`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ShapeAnnotation.html#Syncfusion_UI_Xaml_Charts_ShapeAnnotation_StrokeDashArray) - Represents the DashArray of the annotation stroke.
 * [`StrokeDashCap`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ShapeAnnotation.html#Syncfusion_UI_Xaml_Charts_ShapeAnnotation_StrokeDashCap)- Represents the DashCap of the annotation stroke.
@@ -773,9 +774,9 @@ chart.Annotations.Add(annotation);
 
 WPF Charts provides support to add images as Annotation over the chart area, using the class [ImageAnnotation](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ImageAnnotation.html#). 
 
-The following API’s are used in ImageAnnotation.
+The following APIâ€™s are used in ImageAnnotation.
 
-* [`Angle`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SolidShapeAnnotation.html#Syncfusion_UI_Xaml_Charts_SolidShapeAnnotation_Angle)  – An integer value that represents the rotation angle for the text in Annotation.
+* [`Angle`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SolidShapeAnnotation.html#Syncfusion_UI_Xaml_Charts_SolidShapeAnnotation_Angle)  â€“ An integer value that represents the rotation angle for the text in Annotation.
 * [`ImageSource`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ImageAnnotation.html#Syncfusion_UI_Xaml_Charts_ImageAnnotation_ImageSource)  - Represents the source from where the image must be added.
 * [`X2`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ImageAnnotation.html#Syncfusion_UI_Xaml_Charts_ImageAnnotation_X2) - Represents the X2 Coordinate of the Annotation.
 * [`Y2`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ImageAnnotation.html#Syncfusion_UI_Xaml_Charts_ImageAnnotation_Y2) - Represents the Y2 Coordinate of the Annotation.
@@ -821,7 +822,7 @@ ImageAnnotation annotation = new ImageAnnotation()
 
 WPF Charts provides dragging and resizing support for [`ShapeAnnotations`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ShapeAnnotation.html#).
 
-The following API’s are used for dragging and resizing the annotation
+The following APIâ€™s are used for dragging and resizing the annotation
 
 * [`CanDrag`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ShapeAnnotation.html#Syncfusion_UI_Xaml_Charts_ShapeAnnotation_CanDrag)- A Boolean value that allows the annotation to drag. 
 
@@ -1094,21 +1095,21 @@ The value of X1, X2, Y1, and Y2 properties of annotation will differ based on th
 <td>1</td>
 <td>CategoryAxis</td>
 <td>Index based</td>
-<td>X1 = 2, X2 = 3 (start point = 2nd index’s value and end point 3rd index value)</td>
+<td>X1 = 2, X2 = 3 (start point = 2nd indexâ€™s value and end point 3rd index value)</td>
 </tr>
 
 <tr>
 <td>2</td>
 <td>DateTimeCategoryAxis</td>
 <td>Index based</td>
-<td>X1 = 2, X2 = 3 (start point = 2nd index’s value and end point 3rd index value)</td>
+<td>X1 = 2, X2 = 3 (start point = 2nd indexâ€™s value and end point 3rd index value)</td>
 </tr>
 
 <tr>
 <td>3</td>
 <td>DateTimeAxis</td>
 <td>Value based</td>
-<td>X1 = “2015/01/31”, X2 = “2015/02/01”</td>
+<td>X1 = â€œ2015/01/31â€, X2 = â€œ2015/02/01â€</td>
 </tr>
 
 <tr>

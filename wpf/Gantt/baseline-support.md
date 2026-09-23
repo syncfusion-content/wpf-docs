@@ -5,6 +5,7 @@ description: Learn about Baseline Support in Syncfusion WPF Gantt, including var
 platform: wpf
 control: Gantt
 documentation: ug
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Baseline Support in WPF Gantt
@@ -2118,3 +2119,4 @@ To view samples:
 3. Select Gantt.
 4. Expand the Baseline Support item in the Sample Browser.
 5. Choose the Project Statistics sample to launch.
+

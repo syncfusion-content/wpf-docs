@@ -5,11 +5,12 @@ description: Shapes color customization in the WPF Maps allows you to apply cust
 platform: wpf
 control: SfMap
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Shapes Color Customization in WPF Maps
 
-[WPF Maps](https://www.syncfusion.com/wpf-controls/map) highly support the customization of the shape’s color. The shape’s color can be customized by using the following methods:
+[WPF Maps](https://www.syncfusion.com/wpf-controls/map) highly support the customization of the shapeâ€™s color. The shapeâ€™s color can be customized by using the following methods:
 
 1. Using the ShapeFill, ShapeStroke and ShapeStrokeThickness properties.
 2. Using tree map-like support.
@@ -88,7 +89,7 @@ ShapeFill is set based on the under-bound values of the shape. This provides a t
 
 ## Range Color Mapping
 
-Range color mapping is one of the features used to differentiate the shape’s fill based on its under-bound value and color ranges. Range color mapping contains the following properties:
+Range color mapping is one of the features used to differentiate the shapeâ€™s fill based on its under-bound value and color ranges. Range color mapping contains the following properties:
 
 Property Table
 

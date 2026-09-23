@@ -5,6 +5,7 @@ description: Learn about appearance customization and styling options in the Syn
 platform: wpf
 control: DateTimeEdit
 documentation: ug
+appliesto: UI Component Suite, Scheduler SDK
 ---
 
 # Appearance in WPF DateTimePicker
@@ -130,3 +131,4 @@ DateTimeEdit supports various built-in themes. Refer to the below links to apply
   * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
 
 ![Setting theme to WPF DateTimeEdit](Getting-Started_images/wpf-datetimeedit-theme-support.png)
+

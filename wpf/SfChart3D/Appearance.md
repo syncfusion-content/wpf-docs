@@ -5,6 +5,7 @@ description: Appearance in the WPF 3D Chart allows you to customize chart elemen
 platform: wpf
 control: SfChart3D
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Appearance in WPF 3D Chart
@@ -33,7 +34,7 @@ We have some predefined palettes such as,
 
 ### Applying Palette to Series
 
-Each palette applies a set of predefined brushes to the series in a predefined order. The following code example shows you how to set the Metro Palette for the chart series.
+Each palette applies a set of predefined brushes to the series in a predefined order. The following code example shows you how to set theÂ MetroÂ PaletteÂ for the chart series.
 
 {% tabs %}
 

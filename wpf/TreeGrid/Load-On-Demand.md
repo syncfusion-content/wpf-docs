@@ -5,6 +5,7 @@ description: Load SfTreeGrid child nodes on demand to improve performance when w
 platform: wpf
 control: SfTreeGrid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Load On Demand in WPF SfTreeGrid
@@ -568,3 +569,4 @@ public class ViewModel
 ![WPF TreeGrid Asynchronous Load on demand support](Getting-Started_images/wpf-treegrid-async-on-demand-load.gif)
 
 N> Refer to our [WPF TreeGrid](https://www.syncfusion.com/wpf-controls/treegrid) feature tour page for its groundbreaking feature representations. You can also explore our [WPF TreeGrid example](https://github.com/syncfusion/wpf-demos) to learn how to render and configure the treegrid.
+

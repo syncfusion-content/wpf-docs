@@ -5,6 +5,7 @@ description: Scale in the WPF Linear Gauge defines value ranges, intervals, and 
 platform: wpf
 control: SfLinearGauge
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Scale in WPF Linear Gauge

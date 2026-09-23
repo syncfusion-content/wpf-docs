@@ -5,6 +5,7 @@ description: ToolTip in Data Grid displays additional information for cells, row
 platform: wpf
 control: Data Grid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # ToolTip in WPF Data Grid
@@ -265,3 +266,4 @@ private void DataGrid_CellToolTipOpening(object sender, Syncfusion.UI.Xaml.Grid.
 }
 {% endhighlight %}
 {% endtabs %}
+

@@ -6,6 +6,7 @@ platform: wpf
 control: Smart Data Grid
 documentation: ug
 keywords : WPF smart data grid,wpf smart grid, wpf datagrid, ai assist, natural language commands, sorting, grouping, filtering, highlighting
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # AI-Powered Features in WPF Smart Data Grid
@@ -93,3 +94,4 @@ clear cell highlight
 ```
 
 <img alt="row-highlight" src="ai-powered-features_images\WPF-smart-datagrid-highlight.png" width="600" />
+

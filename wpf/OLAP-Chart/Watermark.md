@@ -5,6 +5,7 @@ description: Watermark in the WPF OLAP Chart adds background text or images to t
 platform: wpf
 control: OLAP Chart
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Watermark in WPF Olap Chart

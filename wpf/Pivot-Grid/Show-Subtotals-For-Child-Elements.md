@@ -5,6 +5,7 @@ description: Sub-Totals for Child Elements in the Syncfusion® WPF Pivot Grid co
 platform: wpf
 control: Pivot Grid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Sub-Totals for Child Elements in WPF Pivot Grid

@@ -5,6 +5,7 @@ description: Show or hide sub-totals in the Syncfusion® WPF Pivot Grid control 
 platform: wpf
 control: Pivot Grid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Show/Hide Sub-Totals in WPF Pivot Grid
@@ -307,3 +308,4 @@ public partial class MainWindow: Window {
 ![To hides the subtotals for specific pivot item](Hiding-SubTotals-images/PivotGrid shows the subtotal hidden for specific pivot item.png)
 
 N> You can refer to our [WPF Pivot Grid](https://www.syncfusion.com/wpf-controls/pivot-grid) feature tour page for its groundbreaking feature representations. You can also explore our [WPF Pivot Grid example](https://github.com/syncfusion/wpf-demos) to knows how to organizes and summarizes business data and displays the result in a cross-table format.
+

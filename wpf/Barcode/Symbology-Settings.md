@@ -5,6 +5,7 @@ description: Symbology settings in the WPF Barcode allow you to configure barcod
 platform: wpf
 control: SfBarcode
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Symbology Settings in WPF Barcode
@@ -232,7 +233,7 @@ The QRBarcode settings include properties to modify the version, error correctio
 
 ## Version
 
-The QR Barcode uses versions from 1 to 40. Version 1 measures 21 modules × 21 modules, Version 2 measures 25 modules × 25 modules, and so on, increasing in steps of 4 modules per side up to Version 40, which measures 177 modules × 177 modules. Each version has its own capacity. By default, the QR Version is `Auto`, which automatically sets the version according to the input text length.
+The QR Barcode uses versions from 1 to 40. Version 1 measures 21 modules Ã— 21 modules, Version 2 measures 25 modules Ã— 25 modules, and so on, increasing in steps of 4 modules per side up to Version 40, which measures 177 modules Ã— 177 modules. Each version has its own capacity. By default, the QR Version is `Auto`, which automatically sets the version according to the input text length.
 
 ## Error correction level
 
@@ -281,7 +282,7 @@ Numeric Mode</td><td>
 <tr>
 <td>
 Alphanumeric Mode</td><td>
-0–9, A–Z (upper-case only), space, $, %, *, +, -, ., /, :</td></tr>
+0â€“9, Aâ€“Z (upper-case only), space, $, %, *, +, -, ., /, :</td></tr>
 <tr>
 <td>
 Binary Mode</td><td>

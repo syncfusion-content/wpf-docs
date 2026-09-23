@@ -5,6 +5,7 @@ description: Conditional Styling in Data Grid applies custom styles to cells, ro
 platform: wpf
 control: Data Grid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Conditional Styling in WPF Data Grid
@@ -1599,4 +1600,5 @@ public class ColorConverter : IValueConverter
 {% endtabs %}
 
 ![Customizing Row Header Cell Style in WPF DataGrid](Conditional-Styling_images/wpf-datagrid-row-header-cell-style.png)
+
 

@@ -5,6 +5,7 @@ description: Learn about arc connector segments in Syncfusion® WPF Diagram cont
 platform: wpf
 control: SfDiagram
 documentation: ug
+appliesto: UI Component Suite, Diagram SDK
 ---
 
 # Arc Segments in WPF Diagram

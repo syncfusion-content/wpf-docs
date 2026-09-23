@@ -5,6 +5,7 @@ description: Localization in Data Grid customizes grid content and user interfac
 platform: wpf
 control: Data Grid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 
@@ -81,4 +82,5 @@ Now, change the Name/Value pair in Resource Designer of **Syncfusion.SfGrid.WPF.
 
 
 ![WPF DataGrid displays Editing Default Culture Resource](Localization_images/wpf-datagrid-edit-default-resource.png)
+
 

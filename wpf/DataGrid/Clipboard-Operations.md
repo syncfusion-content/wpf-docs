@@ -5,6 +5,7 @@ description: Clipboard Operations in Data Grid enables copy, cut, and paste acti
 platform: wpf
 control: Data Grid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 
@@ -593,4 +594,5 @@ public class CustomCopyPaste : GridCutCopyPaste
 [How to copy one cell and paste it into all the selected cells in the SfDataGrid like the Excel?](https://support.syncfusion.com/kb/article/4484/how-to-copy-one-cell-and-paste-it-into-all-the-selected-cells-in-the-sfdatagrid-like-the-excel-in-wpf-)
 
 [How to copy the column and paste it as a new column by ContextMenu in SfDataGrid?](https://support.syncfusion.com/kb/article/3439/how-to-copy-the-column-and-paste-it-as-a-new-column-by-contextmenu-in-sfdatagrid)
+
 

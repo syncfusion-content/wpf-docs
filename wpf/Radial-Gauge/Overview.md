@@ -5,6 +5,7 @@ description: Learn about the introduction of Syncfusion Essential Studio WPF Rad
 platform: wpf
 control: SfCircularGauge
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 # About Syncfusion WPF Radial Gauge Control
 

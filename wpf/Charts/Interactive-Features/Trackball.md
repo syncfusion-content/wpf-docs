@@ -5,6 +5,7 @@ description: Trackball in the WPF Chart displays contextual information across d
 platform: wpf
 control: SfChart
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Trackball in WPF Charts
@@ -204,7 +205,7 @@ N>By default the value of ShowTrackBallInfo is false.
 
 The alignment of the axis label while moving trackball can be defined using [`AxisLabelAlignment`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartTrackBallBehavior.html#Syncfusion_UI_Xaml_Charts_ChartTrackBallBehavior_AxisLabelAlignment) property.
 
-    Auto – Axis label is aligned in Near/Far positions based on the trackball movement.
+    Auto â€“ Axis label is aligned in Near/Far positions based on the trackball movement.
 
     Far - Axis label is positioned far from the position of trackball.
 

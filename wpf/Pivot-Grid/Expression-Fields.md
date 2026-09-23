@@ -5,6 +5,7 @@ description: Add expression fields in the Syncfusion® WPF Pivot Grid control to
 platform: wpf
 control: Pivot Grid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Expression Fields in WPF Pivot Grid
@@ -165,3 +166,4 @@ public partial class MainWindow: Window {
 ![Adding the expression fields in PivotGrid](Expression-Field-Images/PivotGrid shows expression fields.png)
 
 N> You can also explore our [WPF Pivot Grid example](https://github.com/syncfusion/wpf-demos) to knows how to organizes and summarizes business data and displays the result in a cross-table format.
+

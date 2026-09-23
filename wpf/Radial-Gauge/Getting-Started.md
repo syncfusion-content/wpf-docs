@@ -5,10 +5,11 @@ description: Learn how to get started with the Syncfusion® WPF Radial Gauge con
 platform: wpf
 control: SfCircularGauge
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 # Getting Started with WPF Radial Gauge
 
-This section explains the steps required to configure the [`SfCircularGauge`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.SfCircularGauge.html) and add basic elements to it using various APIs.
+This section explains the steps required to configure theÂ [`SfCircularGauge`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.SfCircularGauge.html) and add basic elements toÂ it using various APIs.
 
 ## Adding gauge references
 
@@ -16,7 +17,7 @@ You can add gauge reference using one of the following methods:
 
 **Method 1: Adding gauge reference from nuget.org**
 
-Syncfusion WPF components are available in [`nuget.org`](https://www.nuget.org/). To add gauge to your project, open the NuGet package manager in Visual Studio, search for [Syncfusion.SfGauge.WPF](https://www.nuget.org/packages/Syncfusion.SfGauge.WPF), and then install it.
+Syncfusion WPF components are available in [`nuget.org`](https://www.nuget.org/). To add gauge to your project, open the NuGet package manager in Visual Studio, search forÂ [Syncfusion.SfGauge.WPF](https://www.nuget.org/packages/Syncfusion.SfGauge.WPF), and then install it.
 
 ![Adding gauge reference from NuGet](Getting-Started_images/Adding gauge reference.png)
 
@@ -30,7 +31,7 @@ If you prefer to manually reference the assemblies instead referencing from NuGe
 
 Location: {Installed location}/{version}/WPF/Assemblies
 
-You can refer to [this](https://help.syncfusion.com/wpf/control-dependencies#sfgauge) link to know about the assemblies required for adding gauge to your project.
+You can referÂ to [this](https://help.syncfusion.com/wpf/control-dependencies#sfgauge)Â link to know about the assemblies required for adding gauge to your project.
 
 ## Initialize the gauge
 
@@ -73,7 +74,7 @@ this.Content = sfCircularGauge;
 
 ## Adding headers
 
-You can assign a unique header to the [`SfCircularGauge`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.SfCircularGauge.html) by using the [`GaugeHeader`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.SfCircularGauge.html#Syncfusion_UI_Xaml_Gauges_SfCircularGauge_GaugeHeader) property.
+You can assign a unique header toÂ the [`SfCircularGauge`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.SfCircularGauge.html) by using theÂ [`GaugeHeader`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.SfCircularGauge.html#Syncfusion_UI_Xaml_Gauges_SfCircularGauge_GaugeHeader)Â property.
 
 {% tabs %}
 
@@ -161,7 +162,7 @@ SfCircularGauge sfCircularGauge = new SfCircularGauge();
 
 ## Adding ranges
 
-You can add ranges to the [`SfCircularGauge`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.SfCircularGauge.html) by creating ranges collection using the [`CircularRange`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.CircularRange.html)  property.
+You can add ranges toÂ the [`SfCircularGauge`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.SfCircularGauge.html) by creating ranges collection using the [`CircularRange`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.CircularRange.html)  property.
 
 {% tabs %}
 
@@ -249,7 +250,7 @@ Create a `Needle Pointer`, and associate it with a scale that is to display the 
 
 ## Adding a range pointer
 
-The `Range Pointer` provides an alternative way to indicate the current value.
+The `Range Pointer`Â provides an alternative way to indicate the current value.
 
 {% tabs %}
 
@@ -289,7 +290,7 @@ The `Range Pointer` provides an alternative way to indicate the current value.
 
 ## Adding a symbol pointer
 
-The `Symbol Pointer` points to the current value in a scale.
+The `Symbol Pointer`Â points to the current value in a scale.
 
 {% tabs %}
 
@@ -483,7 +484,7 @@ The following screenshot illustrates the result of the previous codes.
 
 ![Getting started image](Getting-Started_images/Getting_Started_img1.png)
 
-You can find the complete getting started sample from this [`link`](https://github.com/SyncfusionExamples/WPF-UG-getting-started-samples/tree/master/GettingStartedCircularGauge).
+You can find the complete getting started sample from thisÂ [`link`](https://github.com/SyncfusionExamples/WPF-UG-getting-started-samples/tree/master/GettingStartedCircularGauge).
 
 ## Theme
 

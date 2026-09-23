@@ -5,6 +5,7 @@ description: Key features in the WPF Digital Gauge include customizable digital 
 platform: wpf
 control: SfDigitalGauge
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Key Features in WPF Digital Gauge
@@ -14,7 +15,7 @@ A digital gauge is composed of segments, which are a major UI component of the d
 * 7-Segment Display
 * 14-Segment Display
 * 16-Segment Display
-* 8×8 Dot Matrix Display
+* 8Ã—8 Dot Matrix Display
 
 **7-Segment Display**
 
@@ -28,9 +29,9 @@ This type of digital gauge displays the digital characters in 14 segments. These
 
 This type of digital gauge displays the digital characters in 16 segments. This type is also mainly used to display both numbers and alphabets.
 
-**8×8 Dot Matrix Display**
+**8Ã—8 Dot Matrix Display**
 
-This type of digital gauge displays the digital characters in 8×8 dot matrix segments, where the characters are spotted by the regular brush and the remaining dots are spotted by the dimmed brush. These are mainly used to display numbers, alphabets, and special characters.
+This type of digital gauge displays the digital characters in 8Ã—8 dot matrix segments, where the characters are spotted by the regular brush and the remaining dots are spotted by the dimmed brush. These are mainly used to display numbers, alphabets, and special characters.
 
 **Easy to use**
 

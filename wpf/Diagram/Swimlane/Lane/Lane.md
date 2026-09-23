@@ -5,6 +5,7 @@ description: Learn about lane in Syncfusion® WPF Diagram control, including lan
 platform: wpf
 control: SfDiagram
 documentation: ug
+appliesto: UI Component Suite, Diagram SDK
 ---
 
 # Lane in the WPF Diagram
@@ -453,3 +454,4 @@ Diagram provides the support to edit Lane headers at runtime. You can achieve th
 The following image shows how to edit the lane header.
 
 ![Lane Header Editing](../Swimlane-images/Lane_Header_Edit.gif)
+

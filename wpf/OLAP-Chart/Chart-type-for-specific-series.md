@@ -5,6 +5,7 @@ description: Chart type for specific series in the WPF OLAP Chart allows differe
 platform: wpf
 control: OLAP Chart
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Chart Type for Specific Series in WPF Olap Chart

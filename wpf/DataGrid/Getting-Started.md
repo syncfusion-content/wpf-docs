@@ -6,6 +6,7 @@ description: Learn how to get started with the Syncfusion® WPF Data Grid contro
 platform: wpf
 control: Data Grid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Getting Started with WPF Data Grid
@@ -614,4 +615,5 @@ SfDataGrid supports various built-in themes. Refer to the below links to apply t
   * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
 
   ![Applying Theme to WPF DataGrid](getting-started_images/wpf-datagrid-theme.png)
+
 

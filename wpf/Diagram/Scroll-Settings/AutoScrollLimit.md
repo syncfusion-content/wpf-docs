@@ -5,6 +5,7 @@ description: Control the auto-scrolling region in Syncfusion® WPF Diagram by co
 platform: wpf
 control: SfDiagram
 documentation: ug
+appliesto: UI Component Suite, Diagram SDK
 ---
 
 # Auto-Scroll Limit in WPF Diagram
@@ -44,3 +45,4 @@ diagram.ScrollSettings = new ScrollSettings()
 | Infinity |![AutoScroll infinity](Scroll-Settings_images/AutoScrollInfinity.gif) |
 | Diagram |![AutoScroll diagram](Scroll-Settings_images/AutoScrollDiagram.gif) |
 | Limited <br> ScrollableArea = (0,0,1500,1500) | ![AutoScroll limited](Scroll-Settings_images/AutoScrollLimited.gif) |
+

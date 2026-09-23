@@ -5,6 +5,7 @@ description: Apply built-in themes and variant styles in Syncfusion® WPF Diagra
 platform: wpf
 control: SfDiagram
 documentation: ug
+appliesto: UI Component Suite, Diagram SDK
 ---
 
 # Themes in WPF Diagram
@@ -138,3 +139,4 @@ N> When you apply a theme, it affects all [SfDiagram](https://help.syncfusion.co
 - [How to apply built-in theme for node and connector](https://support.syncfusion.com/kb/article/9995/how-to-apply-built-in-theme-for-node-and-connector-in-wpf-diagram-sfdiagram)
 
 - [How to create a custom theme using the Diagram control in the WPF Diagram](https://support.syncfusion.com/kb/article/18673/how-to-create-a-custom-theme-using-the-sfdiagram-control-in-the-wpf-diagram)
+

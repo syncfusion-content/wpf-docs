@@ -5,6 +5,7 @@ description: Learn about Dependency Relationship support in Syncfusion WPF Gantt
 platform: wpf
 control: Gantt
 documentation: ug
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Dependency Relationship in WPF Gantt
@@ -622,3 +623,4 @@ private void OnGanttPredecessorChanged(object sender, PredecessorChangedEventArg
 
 {% endhighlight %}
 {% endtabs %}
+

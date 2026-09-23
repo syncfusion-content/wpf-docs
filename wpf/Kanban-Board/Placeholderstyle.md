@@ -5,6 +5,7 @@ description: Learn about Placeholder support in Syncfusion WPF Kanban Board usin
 platform: wpf
 control: SfKanban
 documentation: ug
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Placeholder in WPF Kanban Board
@@ -100,3 +101,4 @@ The following output demonstrates the above code example.
 ![Placeholder support in WPF SfKanban](SfKanban_images/PlaceholderStyle.png)
 
 N> The UI of the placeholder can be replaced entirely using the [`PlaceholderTemplate`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.PlaceholderStyle.html#Syncfusion_UI_Xaml_Kanban_PlaceholderStyle_PlaceholderTemplate) property of [`PlaceholderStyle`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.PlaceholderStyle.html).
+

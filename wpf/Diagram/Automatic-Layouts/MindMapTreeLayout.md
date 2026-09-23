@@ -5,6 +5,7 @@ description: Create balanced mind maps in Syncfusion® WPF Diagram with customiz
 platform: wpf
 control: SfDiagram
 documentation: ug
+appliesto: UI Component Suite, Diagram SDK
 ---
 
 # MindMap Tree Layout in WPF Diagram
@@ -315,4 +316,5 @@ public class SfMindMapTreeLayout : MindMapTreeLayout
 ## Spacing and updating layout
 
 The `HorizontalSpacing` and `VerticalSpacing` properties of `MindMapTreeLayout` are used the same way as in the other layout types; see [Customize spacing between nodes in layout](https://help.syncfusion.com/wpf/diagram/automatic-layouts#customize-spacing-between-nodes-in-layout) and [Updating layout](https://help.syncfusion.com/wpf/diagram/automatic-layouts#updating-layout) for the shared reference.
+
 
