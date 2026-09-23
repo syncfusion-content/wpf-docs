@@ -5,6 +5,7 @@ description: Printing in the WPF OLAP Chart enables chart visuals to be printed 
 platform: wpf
 control: OLAP Chart
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Printing in WPF Olap Chart

@@ -5,6 +5,7 @@ description: Crosshair in the WPF Chart displays intersecting lines and axis val
 platform: wpf
 control: SfChart
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Crosshair in WPF Charts

@@ -5,6 +5,7 @@ description: Filter SfTreeGrid records using built-in filter predicates, UI opti
 platform: wpf
 control: SfTreeGrid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Filtering in WPF SfTreeGrid

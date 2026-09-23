@@ -5,6 +5,7 @@ description: Paging in SfTreeGrid displays data in pages to improve navigation, 
 platform: wpf
 control: SfTreeGrid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Paging in WPF SfTreeGrid

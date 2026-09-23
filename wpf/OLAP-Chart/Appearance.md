@@ -5,6 +5,7 @@ description: Appearance in the WPF OLAP Chart allows you to customize chart elem
 platform: wpf
 control: OLAP Chart
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Appearance in WPF Olap Chart

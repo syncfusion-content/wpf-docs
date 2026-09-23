@@ -5,6 +5,7 @@ description: Learn about Custom Node Style support in Syncfusion WPF Gantt, incl
 platform: wpf
 control: Gantt
 documentation: ug
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Custom Node Style in WPF Gantt

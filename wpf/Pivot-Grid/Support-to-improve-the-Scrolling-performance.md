@@ -5,6 +5,7 @@ description: Improved Scrolling in the Syncfusion® WPF Pivot Grid control boost
 platform: wpf
 control: Pivot Grid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Improved Deferred Scrolling in WPF Pivot Grid

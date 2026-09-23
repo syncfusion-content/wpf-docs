@@ -5,6 +5,7 @@ description: XAML configuration in the WPF OLAP Chart enables chart elements, da
 platform: wpf
 control: OLAP Chart
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # XAML Configuration in WPF Olap Chart

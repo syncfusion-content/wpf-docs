@@ -5,6 +5,7 @@ description: Learn about BPMN gateways in Syncfusion® WPF Diagram control, incl
 platform: wpf
 control: SfDiagram
 documentation: ug
+appliesto: UI Component Suite, Diagram SDK
 ---
 
 # Gateway in WPF Diagram

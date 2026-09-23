@@ -5,6 +5,7 @@ description: Theming in the WPF OLAP Chart applies predefined visual styles to c
 platform: wpf
 control: OLAP Chart
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Theming in WPF Olap Chart

@@ -5,6 +5,7 @@ description: Axes in the WPF OLAP Chart define data scales, labels, ranges, and 
 platform: wpf
 control: OLAP Chart
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Axes in WPF Olap Chart

@@ -5,6 +5,7 @@ description: Bind hierarchical and self-relational data to SfTreeGrid using Item
 platform: wpf
 control: SfTreeGrid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Data Binding in WPF SfTreeGrid

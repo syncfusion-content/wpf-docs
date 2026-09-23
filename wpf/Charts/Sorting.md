@@ -5,6 +5,7 @@ description: Sorting in the WPF Chart arranges data points based on specified va
 platform: wpf
 control: SfChart
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Sorting in WPF Charts

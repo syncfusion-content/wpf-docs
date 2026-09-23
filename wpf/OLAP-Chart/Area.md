@@ -5,6 +5,7 @@ description: Area in the WPF OLAP Chart displays data as filled regions between 
 platform: wpf
 control: OLAP Chart
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Area in WPF Olap Chart

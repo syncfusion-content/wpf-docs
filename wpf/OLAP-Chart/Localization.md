@@ -5,6 +5,7 @@ description: Localization in the WPF OLAP Chart enables chart content, labels, a
 platform: wpf
 control: OLAP Chart
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Localization in WPF Olap Chart

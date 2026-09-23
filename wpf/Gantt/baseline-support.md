@@ -5,6 +5,7 @@ description: Learn about Baseline Support in Syncfusion WPF Gantt, including var
 platform: wpf
 control: Gantt
 documentation: ug
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Baseline Support in WPF Gantt

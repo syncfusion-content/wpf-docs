@@ -5,6 +5,7 @@ description: Apply gradient color scale formatting in the Syncfusion® WPF Pivot
 platform: wpf
 control: Pivot Grid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Formatting using gradient color scales in WPF Pivot Grid

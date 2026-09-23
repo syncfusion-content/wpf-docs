@@ -5,6 +5,7 @@ description: Tooltip in the WPF OLAP Gauge displays detailed information about g
 platform: wpf
 control: OLAP Gauge
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Tooltip in WPF OLAP Gauge

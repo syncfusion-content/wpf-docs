@@ -5,6 +5,7 @@ description: Define scrolling boundaries in Syncfusion® WPF Diagram with scroll
 platform: wpf
 control: SfDiagram
 documentation: ug
+appliesto: UI Component Suite, Diagram SDK
 ---
 
 # Scroll Limit in WPF Diagram

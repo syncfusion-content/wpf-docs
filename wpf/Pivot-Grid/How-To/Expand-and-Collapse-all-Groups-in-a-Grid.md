@@ -5,6 +5,7 @@ description: Expand or collapse all groups programmatically in Syncfusion® WPF 
 platform: wpf
 control: Pivot Grid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # How to Expand and Collapse Entire Groups in WPF Pivot Grid

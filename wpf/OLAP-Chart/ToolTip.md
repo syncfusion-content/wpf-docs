@@ -5,6 +5,7 @@ description: Tooltip in the WPF OLAP Chart displays detailed information about d
 platform: wpf
 control: OLAP Chart
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Tooltip in WPF Olap Chart

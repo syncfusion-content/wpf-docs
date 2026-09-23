@@ -5,6 +5,7 @@ description: Learn about Import and Export Support in Syncfusion WPF Gantt and M
 platform: wpf
 control: Gantt
 documentation: ug
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Import and Export in WPF Gantt

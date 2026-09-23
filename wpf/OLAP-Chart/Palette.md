@@ -5,6 +5,7 @@ description: Palette in the WPF OLAP Chart allows you to customize series colors
 platform: wpf
 control: OLAP Chart
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Palette in WPF Olap Chart

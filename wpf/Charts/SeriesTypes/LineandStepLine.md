@@ -5,6 +5,7 @@ description: Line and step line series in the WPF Chart display trends and chang
 platform: wpf
 control: SfChart
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Line and StepLine in WPF Charts

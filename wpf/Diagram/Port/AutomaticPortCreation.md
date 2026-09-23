@@ -5,6 +5,7 @@ description: Learn about automatic port creation in Syncfusion® WPF Diagram con
 platform: wpf
 control: SfDiagram
 documentation: ug
+appliesto: UI Component Suite, Diagram SDK
 ---
 
 # Automatic Port Creation in WPF Diagram

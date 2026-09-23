@@ -5,6 +5,7 @@ description: Zooming and scrolling in the WPF OLAP Chart enable users to navigat
 platform: wpf
 control: OLAP Chart
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Zooming and Scrolling in WPF Olap Chart

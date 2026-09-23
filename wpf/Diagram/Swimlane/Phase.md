@@ -5,6 +5,7 @@ description: Learn about phase in Syncfusion® WPF Diagram control, including ph
 platform: wpf
 control: SfDiagram
 documentation: ug
+appliesto: UI Component Suite, Diagram SDK
 ---
 
 # Phase in WPF Diagram

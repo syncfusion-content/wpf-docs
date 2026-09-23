@@ -5,6 +5,7 @@ description: Conditional Styling in SfTreeGrid applies custom styles to cells, r
 platform: wpf
 control: SfTreeGrid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Conditional Styling in WPF SfTreeGrid

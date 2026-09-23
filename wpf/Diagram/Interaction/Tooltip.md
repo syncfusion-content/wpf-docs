@@ -5,6 +5,7 @@ description: Display informative tooltips in Syncfusion® WPF Diagram to show po
 platform: wpf
 control: SfDiagram
 documentation: ug
+appliesto: UI Component Suite, Diagram SDK
 ---
 
 # Tooltip in WPF Diagram

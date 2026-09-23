@@ -5,6 +5,7 @@ description: Legend in the WPF OLAP Chart identifies series and data categories,
 platform: wpf
 control: OLAP Chart
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Legend in WPF Olap Chart

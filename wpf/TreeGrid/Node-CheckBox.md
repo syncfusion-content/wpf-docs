@@ -5,6 +5,7 @@ description: Node CheckBox in WPF SfTreeGrid adds checkboxes to nodes for select
 platform: wpf
 control: SfTreeGrid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 # Node CheckBox in WPF SfTreeGrid
 

@@ -5,6 +5,7 @@ description: Paging in the WPF OLAP Chart enables users to navigate large volume
 platform: wpf
 control: OLAP Chart
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Paging in WPF Olap Chart

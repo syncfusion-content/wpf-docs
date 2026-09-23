@@ -5,6 +5,7 @@ description: Data labels in the WPF Chart display data point values directly on 
 platform: wpf
 control: SfChart
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Data Label in WPF Charts

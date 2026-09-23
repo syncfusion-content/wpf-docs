@@ -5,6 +5,7 @@ description: Interactive features in SfTreeGrid enhance usability by offering co
 platform: wpf
 control: SfTreeGrid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Interactive Features in WPF SfTreeGrid

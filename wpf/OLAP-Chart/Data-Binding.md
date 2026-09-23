@@ -5,6 +5,7 @@ description: Data binding in the WPF OLAP Chart connects multidimensional data s
 platform: wpf
 control: OLAP Chart
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Data Binding in WPF Olap Chart

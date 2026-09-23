@@ -5,6 +5,7 @@ description: Learn about Custom Schedule support in Syncfusion WPF Gantt using S
 platform: wpf
 control: Gantt
 documentation: ug
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Custom Schedule in WPF Gantt

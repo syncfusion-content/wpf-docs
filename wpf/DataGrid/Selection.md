@@ -5,6 +5,7 @@ description: Selection in Data Grid provides flexible row, cell, and multi-selec
 platform: wpf
 control: Data Grid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Selection in WPF Data Grid

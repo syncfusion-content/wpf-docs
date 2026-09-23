@@ -5,6 +5,7 @@ description: Tooltip in the Syncfusion® WPF Pivot Grid control displays cell va
 platform: wpf
 control: Pivot Grid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Tooltip in WPF Pivot Grid

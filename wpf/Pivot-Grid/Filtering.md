@@ -5,6 +5,7 @@ description: Apply filtering in Syncfusion WPF Pivot Grid control using FilterEx
 platform: wpf
 control: Pivot Grid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Filtering in WPF Pivot Grid

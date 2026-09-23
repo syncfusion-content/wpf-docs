@@ -5,6 +5,7 @@ description: Populate Syncfusion® WPF Diagram from data sources, define layouts
 platform: wpf
 control: SfDiagram
 documentation: ug
+appliesto: UI Component Suite, Diagram SDK
 ---
 
 # DataSource in WPF Diagram

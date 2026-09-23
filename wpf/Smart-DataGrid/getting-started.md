@@ -5,6 +5,7 @@ description: Learn how to get started with the Syncfusion® WPF Smart Data Grid 
 platform: wpf
 control: Smart Data Grid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Getting Started with WPF Smart Data Grid

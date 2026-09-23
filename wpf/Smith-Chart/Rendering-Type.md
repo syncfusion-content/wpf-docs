@@ -5,6 +5,7 @@ description: Rendering type in the WPF Smith Chart determines how series data is
 platform: wpf
 control: SfSmithChart
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Rendering Type in WPF Smith Chart
