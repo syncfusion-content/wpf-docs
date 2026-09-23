@@ -253,4 +253,3 @@ To view samples:
 5. Expand the Styles category in the Sample Browser.
 6. Choose the Gantt Style Properties sample.
 7. The sample contains different styles of the DateTime indicator.
-

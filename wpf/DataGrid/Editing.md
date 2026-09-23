@@ -746,4 +746,3 @@ public class SfDataGridExt : SfDataGrid
 [How to get the parent grid while editing the child grid?](https://support.syncfusion.com/kb/article/2795/how-to-get-the-parent-grid-while-editing-the-child-grid-in-wpf-datagrid)
 
 [How to handle keyboard and mouse interactions for GridTemplateColumn?](https://support.syncfusion.com/kb/article/2877/how-to-handle-keyboard-and-mouse-interactions-for-gridtemplatecolumn)
-

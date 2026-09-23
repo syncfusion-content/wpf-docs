@@ -804,4 +804,3 @@ condition2.BackColorRGB = System.Drawing.Color.LightGray;
 ![Displaying Row Style while Exporting to Excel in WPF DataGrid](export-to-excel_images/wpf-datagrid-row-style.png)
 
 
-

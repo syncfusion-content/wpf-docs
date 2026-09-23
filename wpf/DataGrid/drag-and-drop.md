@@ -855,4 +855,3 @@ private void sfDataGrid_Drop(object sender, GridRowDropEventArgs e)
 ![Row Drag and Drop between WPF DataGrid and TreeGrid](Interactive-Features_images/wpf-datagrid-drag-between-different-controls.png)
 
 You can download the sample [here](https://github.com/SyncfusionExamples/how-to-drag-and-drop-rows-between-datagrid-and-treegrid-in-wpf).
-

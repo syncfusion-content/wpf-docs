@@ -192,7 +192,7 @@ chart.SecondaryAxis = axis;
 ![WPF Chart displays Label Rotated in Stripline](Striplines_images/wpf-chart-stripline-label-rotation.png)
 
 
-N> Here, Start and Width of the stripline as adjusted based on the rotation angle. Stripline wonâ€™t adjust its range based on the stripline angle.
+N> Here, Start and Width of the stripline as adjusted based on the rotation angle. Stripline won’t adjust its range based on the stripline angle.
 
 ### Template support for the label
 

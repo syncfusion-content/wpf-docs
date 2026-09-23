@@ -974,4 +974,3 @@ Below code, binds the `ViewModel.AllowFiltering` property to `GridColumn.AllowFi
 
 ![WPF DataGrid Column with Data Binding](columns_images/wpf-datagrid-data-binding-columns.png)
 
-

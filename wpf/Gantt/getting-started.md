@@ -376,4 +376,3 @@ The control supports various built-in themes. Refer to the below links to apply 
 
 [How to wrap WPF gantt in Windows Forms](https://support.syncfusion.com/kb/article/8200/how-to-wrap-wpf-gantt-in-windows-forms)
 
-

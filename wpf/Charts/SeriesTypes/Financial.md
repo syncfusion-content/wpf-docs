@@ -177,7 +177,7 @@ series.ComparisonMode = Syncfusion.UI.Xaml.Charts.FinancialPrice.Open;
 
 ![WPF Candle Chart displays Comparison between Opened Segment](Series_images/wpf-candle-chart-comparision.png)
 
-In the above screenshot, the second segmentâ€™s Open value is greater than the first segmentâ€™s open value. So, the stroke color is filled with bull fill color.
+In the above screenshot, the second segment’s Open value is greater than the first segment’s open value. So, the stroke color is filled with bull fill color.
 
 **Comparing the close values**
 
@@ -202,7 +202,7 @@ series.ComparisonMode = Syncfusion.UI.Xaml.Charts.FinancialPrice.Close;
 
 ![WPF Candle Chart displays Comparison between Closed Segment](Series_images/wpf-candle-chart-closed-segment-comparison.png)
 
- In the above screenshot, the second segmentâ€™s close value is greater than the first segmentâ€™s close value. So, the stroke color is filled with bull fill color.
+ In the above screenshot, the second segment’s close value is greater than the first segment’s close value. So, the stroke color is filled with bull fill color.
 
 **Comparing the high values**
 
@@ -227,7 +227,7 @@ series.ComparisonMode = Syncfusion.UI.Xaml.Charts.FinancialPrice.High;
 
 ![Comparing High Value of WPF Candle Chart](Series_images/wpf-cadle-chart-compare-high-value.png)
 
- In the above screenshot, the second segmentâ€™s high value is less than the first segmentâ€™s high value. So, the stroke color is filled with bear fill color.
+ In the above screenshot, the second segment’s high value is less than the first segment’s high value. So, the stroke color is filled with bear fill color.
 
  **Comparing the low values**
 
@@ -252,4 +252,4 @@ series.ComparisonMode = Syncfusion.UI.Xaml.Charts.FinancialPrice.Low;
 
 ![Comparing Low Values of WPF Candle Chart](Series_images/wpf-candle-chart-compare-low-value.png)
 
-In the above screenshot, the second segmentâ€™s low value is greater than the first segmentâ€™s low value. So, the stroke color filled with bull fill color.
+In the above screenshot, the second segment’s low value is greater than the first segment’s low value. So, the stroke color filled with bull fill color.

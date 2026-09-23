@@ -2119,4 +2119,3 @@ To view samples:
 3. Select Gantt.
 4. Expand the Baseline Support item in the Sample Browser.
 5. Choose the Project Statistics sample to launch.
-

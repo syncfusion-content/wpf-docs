@@ -200,4 +200,3 @@ The following screenshot illustrates the customized holidays sample.
 
 You can download the holiday customization sample from the following link:
 [Holiday customization sample](https://github.com/SyncfusionExamples/WPF-Gantt-holiday-customization-).
-

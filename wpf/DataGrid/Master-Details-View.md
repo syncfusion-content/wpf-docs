@@ -2083,4 +2083,3 @@ Following are the limitations of Master-Details View in SfDataGrid.
 [How to enable NestedGrid when I don't have relations in my datasource](https://support.syncfusion.com/kb/article/2907/how-to-enable-nestedgrid-when-i-dont-have-relations-in-my-datasource-in-wpf-)
 
 [How to hide the HeaderRow in Nested Grid?](https://support.syncfusion.com/kb/article/2887/how-to-hide-the-headerrow-in-nested-grid)
-

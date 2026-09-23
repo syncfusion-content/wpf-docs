@@ -489,4 +489,3 @@ Limitations are:
 
 * Does not support both `DetailsViewTemplate` and `DetailsViewDataGrid` at same level.
 * Does not support more than one `DetailsViewTemplate` in same level.
-

@@ -55,4 +55,3 @@ For example, you have to give the name as **Syncfusion.Gantt.WPF.fr.resx** for t
 ![localization-in-wpf-gantt-control](Localization_images/localization-in-wpf-gantt-control.png)
 
 You can download the localization sample from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Localization_Gantt-1030234357.zip)
-

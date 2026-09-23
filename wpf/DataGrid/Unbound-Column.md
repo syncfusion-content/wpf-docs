@@ -451,4 +451,3 @@ You can change the renderer of unbound column by removing the predefined cell ty
 ## Templating unbound column
 
 You can load any WPF control in the display mode for `GridUnBoundColumn` by setting [GridColumn.CellTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridColumnBase.html#Syncfusion_UI_Xaml_Grid_GridColumnBase_CellTemplate) property. In edit mode, corresponding editor will be loaded based on column type. You can refer the [CellTemplate](https://help.syncfusion.com/wpf/datagrid/column-types#celltemplate-in-gridcolumn) section of `GridColumn` and [GridTemplateColumn](https://help.syncfusion.com/wpf/datagrid/column-types#gridtemplatecolumn) for more information.
-

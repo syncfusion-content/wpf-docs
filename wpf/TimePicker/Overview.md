@@ -25,4 +25,3 @@ The [WPF TimePicker](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Contr
 * **Formatting** – The control displays the selected time value in various formats.
 
 * **Time Selector** – The drop-down portion used for selecting the time can be customized.
-

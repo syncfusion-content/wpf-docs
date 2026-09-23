@@ -24,4 +24,3 @@ Please refer the below code snippet.
         }
 
 {% endhighlight %}
-

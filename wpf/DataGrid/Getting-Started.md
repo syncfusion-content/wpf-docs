@@ -616,4 +616,3 @@ SfDataGrid supports various built-in themes. Refer to the below links to apply t
 
   ![Applying Theme to WPF DataGrid](getting-started_images/wpf-datagrid-theme.png)
 
-

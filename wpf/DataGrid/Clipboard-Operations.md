@@ -595,4 +595,3 @@ public class CustomCopyPaste : GridCutCopyPaste
 
 [How to copy the column and paste it as a new column by ContextMenu in SfDataGrid?](https://support.syncfusion.com/kb/article/3439/how-to-copy-the-column-and-paste-it-as-a-new-column-by-contextmenu-in-sfdatagrid)
 
-

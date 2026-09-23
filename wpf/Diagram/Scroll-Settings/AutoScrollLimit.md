@@ -45,4 +45,3 @@ diagram.ScrollSettings = new ScrollSettings()
 | Infinity |![AutoScroll infinity](Scroll-Settings_images/AutoScrollInfinity.gif) |
 | Diagram |![AutoScroll diagram](Scroll-Settings_images/AutoScrollDiagram.gif) |
 | Limited <br> ScrollableArea = (0,0,1500,1500) | ![AutoScroll limited](Scroll-Settings_images/AutoScrollLimited.gif) |
-

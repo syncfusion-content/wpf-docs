@@ -952,4 +952,3 @@ When you apply above style to [FilterToggleButton](https://help.syncfusion.com/c
 [How to change the FilterToggleButton color while filtering?](https://support.syncfusion.com/kb/article/2903/how-to-change-the-filtertogglebutton-color-while-filtering-in-wpf-)
 
 [How to access the filtered records from SfDataGrid?](https://support.syncfusion.com/kb/article/2853/how-to-access-the-filtered-records-from-sfdatagrid)
-

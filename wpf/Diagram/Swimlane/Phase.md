@@ -370,4 +370,3 @@ Phase can be selected by clicking (tap) the header of the phase.
 * You must select the phase header to enable the phase selection.
 * Once the phase can be resized, the lane size will be updated automatically.
 * Phase can be resized by resizing the right and bottom direction for horizontal, and the top and bottom direction for vertical swimlane.
-

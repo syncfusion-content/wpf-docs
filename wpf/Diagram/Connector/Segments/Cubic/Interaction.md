@@ -68,4 +68,3 @@ ConnectorViewModel cubicBezierConnector = new ConnectorViewModel()
 };
 {% endhighlight %}
 {% endtabs %}
-

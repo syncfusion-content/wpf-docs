@@ -91,4 +91,3 @@ Annotations = new ObservableCollection<IAnnotation>()
 | DragLimit | (10,10,10,10) | ![WPF Diagram Annotation NoWrap](Annotation_images/wpf-diagram-annotation-drag-limit-default.gif) | ![WPF Diagram Annotation Nudging](Annotation_images/wpf-diagram-annotation-nudging-draglimit-default.gif) |
 | |(40,80,40,40) | ![WPF Diagram Annotation Wrap](Annotation_images/wpf-diagram-annotation-custom-drag-limit.gif) | ![WPF Diagram Annotation Nudging Custom](Annotation_images/wpf-diagram-annotation-nudging-draglimit-custom.gif) |
 
-

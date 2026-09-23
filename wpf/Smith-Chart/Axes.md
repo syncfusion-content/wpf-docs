@@ -518,7 +518,7 @@ chart.RadialAxis.LabelIntersectAction = LabelIntersectActions.None;
 
 ## Events
 
-* `LabelCreated`â€“ Occurs when the label is created.
+* `LabelCreated`– Occurs when the label is created.
 
 {% highlight C# %} 
 

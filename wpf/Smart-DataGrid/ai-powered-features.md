@@ -94,4 +94,3 @@ clear cell highlight
 ```
 
 <img alt="row-highlight" src="ai-powered-features_images\WPF-smart-datagrid-highlight.png" width="600" />
-

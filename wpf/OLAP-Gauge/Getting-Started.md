@@ -29,11 +29,11 @@ The OLAP gauge control can be initialized and added to an application in the fol
 
 2. Select the toolbox option from the view menu. It will appear inside the Visual Studio IDE. 
 
-3. From the toolbox, select the OLAP gauge control under the â€œSyncfusion BI WPFâ€ group, and then drag it to the designer section of the MainPage.xaml file.
+3. From the toolbox, select the OLAP gauge control under the “Syncfusion BI WPF” group, and then drag it to the designer section of the MainPage.xaml file.
 
 ![WPF OLAP Gauge Getting-Started Image1](Getting-Started_images/Getting-Started_img1.png)
 
-4. Then, name the added OLAP gauge control as â€œOlapGauge1â€ in MainPage.xaml to refer to it in the code-behind as follows:
+4. Then, name the added OLAP gauge control as “OlapGauge1” in MainPage.xaml to refer to it in the code-behind as follows:
 
 {% tabs %}
 

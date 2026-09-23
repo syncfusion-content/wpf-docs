@@ -1199,4 +1199,3 @@ To view samples:
 
 The `ScheduleCellCreatedEventArgs` consists of the current schedule cell named `CurrentCell`. It is of the `GanttScheduleCell` type. 
 
-

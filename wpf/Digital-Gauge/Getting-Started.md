@@ -18,7 +18,7 @@ You can add gauge references using one of the following methods:
 
 **Method 1: Adding gauge reference from nuget.org**
 
-Syncfusion WPF components are available in [`nuget.org`](https://www.nuget.org/). To add gauge to your project, open the NuGet package manager in Visual Studio, search forÂ [Syncfusion.SfGauge.WPF](https://www.nuget.org/packages/Syncfusion.SfGauge.WPF), and then install it.
+Syncfusion WPF components are available in [`nuget.org`](https://www.nuget.org/). To add gauge to your project, open the NuGet package manager in Visual Studio, search for [Syncfusion.SfGauge.WPF](https://www.nuget.org/packages/Syncfusion.SfGauge.WPF), and then install it.
 
 ![Adding gauge reference from NuGet](Getting-Started_images/Adding gauge reference.png)
 
@@ -32,7 +32,7 @@ If you prefer to manually reference the assemblies instead of referencing them f
 
 Location: {Installed location}/{version}/WPF/Assemblies
 
-You can referÂ to [this](https://help.syncfusion.com/wpf/control-dependencies#sfgauge)Â link to know about the assemblies required for adding gauge to your project.
+You can refer to [this](https://help.syncfusion.com/wpf/control-dependencies#sfgauge) link to know about the assemblies required for adding gauge to your project.
 
 ## Initialize gauge
 
@@ -99,13 +99,13 @@ this.Content = digitalgauge;
 
 By using the [`CharacterType`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.SfDigitalGauge.html#Syncfusion_UI_Xaml_Gauges_SfDigitalGauge_CharacterType) property, you can set the segments for the digital gauge. The digital characters can be drawn in the following four different segment types:
 
-â€¢	EightCrossEightDotMatrix
+•	EightCrossEightDotMatrix
 
-â€¢	SegmentFourteen
+•	SegmentFourteen
 
-â€¢	SegmentSeven
+•	SegmentSeven
 
-â€¢	SegmentSixteen
+•	SegmentSixteen
 
 {% tabs %}
 {% highlight xaml %}
@@ -191,7 +191,7 @@ The following screenshot illustrates the result of the previous codes.
 ![Digital gauge getting started](Getting-Started_images/Getting-Started.png)
 
 
-You can find the complete getting started sample from thisÂ [`link`](https://github.com/SyncfusionExamples/WPF-UG-getting-started-samples/tree/master/GettingStartedDigitalGauge).
+You can find the complete getting started sample from this [`link`](https://github.com/SyncfusionExamples/WPF-UG-getting-started-samples/tree/master/GettingStartedDigitalGauge).
 
 ## Theme
 

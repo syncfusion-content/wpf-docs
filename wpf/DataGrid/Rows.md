@@ -490,4 +490,3 @@ void dataGrid_QueryColumnDragging(object sender, QueryColumnDraggingEventArgs e)
 
 N> 1. Header rows, table summary rows and row header are frozen regardless of `FrozenRowsCount` and `FooterRowsCount`.
    2. `FrozenRowsCount` and `FooterRowsCount` values should be less than the number of rows and column visible.
-

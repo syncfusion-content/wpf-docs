@@ -819,4 +819,3 @@ By default, the scrollbar position is not maintained and gets reset when changin
 dataGrid.CanMaintainScrollPosition = true;
 {% endhighlight %}
 {% endtabs %}
-

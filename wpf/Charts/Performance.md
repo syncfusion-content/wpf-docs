@@ -10,10 +10,10 @@ appliesto: UI Component Suite, Chart SDK
 
 # Performance in WPF Charts
 
-* When your underlying data object implements INotifyPropertyChanged, you need to enable the ListenPropertyChange property of the series, to make the chart listen to the property changes of your data object. However enabling this property registers PropertyChangedÂ event of every object in the data source. Due to this, chartâ€™s loading time is affected when there are a large number of points. By default, ListenPropertyChange is set to false in order to avoid the event registration unnecessarily.
-* In case of a Line Series, when you have a large number of points to plot, you can make use of fast series types likeÂ FastLineSeries and FastLineBitmapSeries.
-* In case of a Column Series, when you have large number of points to plot, you can make use ofÂ FastColumnBitmapSeries.
-* You also have Fast Series types for financial charts like HiLo and HiLoOpenClose and they are named asÂ FastHiLoBitmapSeriesÂ and FastHiLoOpenCloseBitmapSeriesÂ respectively.
+* When your underlying data object implements INotifyPropertyChanged, you need to enable the ListenPropertyChange property of the series, to make the chart listen to the property changes of your data object. However enabling this property registers PropertyChanged event of every object in the data source. Due to this, chart’s loading time is affected when there are a large number of points. By default, ListenPropertyChange is set to false in order to avoid the event registration unnecessarily.
+* In case of a Line Series, when you have a large number of points to plot, you can make use of fast series types like FastLineSeries and FastLineBitmapSeries.
+* In case of a Column Series, when you have large number of points to plot, you can make use of FastColumnBitmapSeries.
+* You also have Fast Series types for financial charts like HiLo and HiLoOpenClose and they are named as FastHiLoBitmapSeries and FastHiLoOpenCloseBitmapSeries respectively.
 
 N> Stopped to provide support for the DirectX series. Instead of that, use FastLineBitmapSeries to render a large amount of data with good performance.
 

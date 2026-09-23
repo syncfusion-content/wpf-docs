@@ -152,4 +152,3 @@ You can add the BPMN Nodes or Groups into BPMNGroup at runtime in two ways.
  The following image shows how to add BPMNNode into the BPMNGroup at runtime.
 
 ![BPMNGroup from diagram](BPMN-Shapes-Images/BPMN-GroupElement.gif)
-

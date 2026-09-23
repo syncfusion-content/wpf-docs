@@ -380,4 +380,3 @@ You can download the sample from [here](https://www.syncfusion.com/downloads/sup
 ## Paging
 
 SfDataGrid supports to load paged data source using [SfDataPager](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Controls.DataPager.SfDataPager.html). You can use the paging in SfDataGrid by go through the [Paging](https://help.syncfusion.com/wpf/datagrid/paging) section.
-

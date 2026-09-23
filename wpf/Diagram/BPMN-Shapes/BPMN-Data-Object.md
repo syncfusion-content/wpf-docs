@@ -60,4 +60,3 @@ The following table contains various representation of the BPMN data object.
 | None | ![Collection Data BPMN Shape](BPMN-Shapes-Images/DataObject.png) |![Collection Data BPMN Shape](BPMN-Shapes-Images/NoneCollectiveDataObject.png) |None of the business process with the signified information collected within a DataObject|
 | Data Input | ![Data Input BPMN Shape](BPMN-Shapes-Images/InputDataObject.png) |![Collection Data BPMN Shape](BPMN-Shapes-Images/InputCollectiveDataObject.png) |Represents the data requirements that the tasks in the business process depend on with the signified information collected within a DataObject|
 | Data Output | ![Data Output BPMN Shape](BPMN-Shapes-Images/OutputDataObject.png) |![Collection Data BPMN Shape](BPMN-Shapes-Images/OutputCollectiveDataObject.png) |Demonstrates information produced as the result of a business process with the signified information collected within a DataObject|
-

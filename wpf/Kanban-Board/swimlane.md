@@ -114,4 +114,3 @@ N> If no value is assigned to the [`SwimlaneKey`](https://help.syncfusion.com/cr
 {% endtabs %}
 
 ![Swimlane customization in WPF Kanban](SfKanban_images/swimlane_header.png)
-

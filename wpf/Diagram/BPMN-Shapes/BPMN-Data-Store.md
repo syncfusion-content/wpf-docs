@@ -50,4 +50,3 @@ BpmnNodeViewModel node = new BpmnNodeViewModel()
 {%  endtabs %}
 
 ![BPMN DataStore](BPMN-Shapes-Images/DataStore.png)
-

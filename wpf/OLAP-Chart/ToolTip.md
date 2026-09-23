@@ -18,7 +18,7 @@ The following code sample shows how to disable the series tooltip using the `Sho
 
 {% highlight c# %}
  
-this.olapChart.Series[0].ShowToolTipÂ =Â false;
+this.olapChart.Series[0].ShowToolTip = false;
 
 {% endhighlight %}
 
@@ -38,7 +38,7 @@ The following code sample shows how to enable the series tooltip using the `Show
 
 {% highlight c# %}
  
-this.olapChart.Series[0].ShowToolTipÂ =Â true;
+this.olapChart.Series[0].ShowToolTip = true;
 
 {% endhighlight %}
 

@@ -83,4 +83,3 @@ The list of supported BPMN shapes are as follows:
 Please find the BPMN Editor sample as follows.
 
 [View BPMN Editor sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/BPMNEditor/Sample)
-

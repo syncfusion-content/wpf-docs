@@ -775,4 +775,3 @@ Diagram.LayoutManager = new LayoutManager()
 - **Layout is slow or freezes:** Lower `MaximumIteration` and/or `RepulsionStrength`. For large graphs, run layout on a background thread and provide a cancel option.
 
 ## See also
-

@@ -26,4 +26,3 @@ Formatting – The control displays the selected Date value in various formats.
 
 Date Selector – The drop-down portion used for selecting the date can be customized.
 
-

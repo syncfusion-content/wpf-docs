@@ -14,17 +14,17 @@ appliesto: UI Component Suite, Chart SDK
 
 The Sunburst region represents the entire chart and all its elements. It includes all the chart elements like Legend, DataLabel, Levels, etc. It has some major properties as:
 
-[`ItemsSource`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.SunburstChart.SfSunburstChart.html#Syncfusion_UI_Xaml_SunburstChart_SfSunburstChart_ItemsSource) â€“ Gets or sets the IEnumerable values used to generate the chart.
+[`ItemsSource`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.SunburstChart.SfSunburstChart.html#Syncfusion_UI_Xaml_SunburstChart_SfSunburstChart_ItemsSource) – Gets or sets the IEnumerable values used to generate the chart.
 
-[`ValueMemberPath`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.SunburstChart.SfSunburstChart.html#Syncfusion_UI_Xaml_SunburstChart_SfSunburstChart_ValueMemberPath) â€“ Gets or sets the property path of the value.
+[`ValueMemberPath`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.SunburstChart.SfSunburstChart.html#Syncfusion_UI_Xaml_SunburstChart_SfSunburstChart_ValueMemberPath) – Gets or sets the property path of the value.
 
-[`Legend`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.SunburstChart.SfSunburstChart.html#Syncfusion_UI_Xaml_SunburstChart_SfSunburstChart_Legend) â€“ Gets or sets the legend for the chart.
+[`Legend`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.SunburstChart.SfSunburstChart.html#Syncfusion_UI_Xaml_SunburstChart_SfSunburstChart_Legend) – Gets or sets the legend for the chart.
 
-[`Levels`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.SunburstChart.SfSunburstChart.html#Syncfusion_UI_Xaml_SunburstChart_SfSunburstChart_Levels) â€“ Gets or sets the collection of hierarchical levels for the chart.
+[`Levels`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.SunburstChart.SfSunburstChart.html#Syncfusion_UI_Xaml_SunburstChart_SfSunburstChart_Levels) – Gets or sets the collection of hierarchical levels for the chart.
 
-[`DataLabels`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.SunburstChart.SfSunburstChart.html#Syncfusion_UI_Xaml_SunburstChart_SfSunburstChart_DataLabels) â€“ Gets or sets the collection of DataLabels for the chart.
+[`DataLabels`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.SunburstChart.SfSunburstChart.html#Syncfusion_UI_Xaml_SunburstChart_SfSunburstChart_DataLabels) – Gets or sets the collection of DataLabels for the chart.
 
-[`Behaviors`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.SunburstChart.SfSunburstChart.html#Syncfusion_UI_Xaml_SunburstChart_SfSunburstChart_Behaviors) â€“ Gets or sets the collection of behaviors for the chart.
+[`Behaviors`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.SunburstChart.SfSunburstChart.html#Syncfusion_UI_Xaml_SunburstChart_SfSunburstChart_Behaviors) – Gets or sets the collection of behaviors for the chart.
 
 ## Start and End Angle
 

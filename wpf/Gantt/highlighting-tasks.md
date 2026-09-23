@@ -1025,4 +1025,3 @@ To view samples:
 ## See Also
 
 [How to view the gantt control with the desired date tasks at load time in WPF](https://www.syncfusion.com/kb/7728/how-to-view-the-gantt-control-with-the-desired-date-tasks-at-load-time-in-wpf)
-

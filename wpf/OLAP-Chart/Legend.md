@@ -24,7 +24,7 @@ Legends are used to display the names of data series. The chart legend can be ad
 
 {% highlight c# %}
 
-this.olapChart.LegendÂ =Â newÂ ChartLegend();
+this.olapChart.Legend = new ChartLegend();
 
 {% endhighlight %}
 
@@ -47,14 +47,14 @@ The chart legend has a `Visibility` property using which you can show or hide th
 {% highlight xaml %}
 
 <syncfusion:OlapChart.Legend>
-     <syncfusion:ChartLegendÂ Visibility="Collapsed"Â />
+     <syncfusion:ChartLegend Visibility="Collapsed" />
 </syncfusion:OlapChart.Legend>
 
 {% endhighlight %}
  
 {% highlight c# %}
 
-this.olapChart.Legend.VisibilityÂ =Â System.Windows.Visibility.Collapsed;
+this.olapChart.Legend.Visibility = System.Windows.Visibility.Collapsed;
 
 {% endhighlight %}
 
@@ -77,14 +77,14 @@ The visibility of the legend check box can be toggled by using the `CheckBoxVisi
 {% highlight xaml %}
 
 <syncfusion:OlapChart.Legend>
-     <syncfusion:ChartLegendÂ CheckBoxVisibility="Collapsed"Â />
+     <syncfusion:ChartLegend CheckBoxVisibility="Collapsed" />
 </syncfusion:OlapChart.Legend>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-this.olapChart.Legend.CheckBoxVisibilityÂ =Â System.Windows.Visibility.Collapsed;
+this.olapChart.Legend.CheckBoxVisibility = System.Windows.Visibility.Collapsed;
 
 {% endhighlight %}
 
@@ -103,14 +103,14 @@ The visibility of the legend icon can be toggled by using the `IconVisibility` p
 {% highlight xaml %}
     
 <syncfusion:OlapChart.Legend>
-     <syncfusion:ChartLegendÂ IconVisibility="Collapsed"Â />
+     <syncfusion:ChartLegend IconVisibility="Collapsed" />
 </syncfusion:OlapChart.Legend>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-this.olapChart.Legend.IconVisibilityÂ =Â System.Windows.Visibility.Collapsed;
+this.olapChart.Legend.IconVisibility = System.Windows.Visibility.Collapsed;
 
 {% endhighlight %}
 
@@ -130,7 +130,7 @@ The chart legend contains an enum property called ChartDock, which has the follo
 
 {% highlight c# %}
 
-ChartDockPanel.SetDock(this.olapChart.Legend,Â ChartDock.Right);
+ChartDockPanel.SetDock(this.olapChart.Legend, ChartDock.Right);
 
 {% endhighlight %}
 
@@ -151,16 +151,16 @@ You can use the `RowsCount` and `ColumnsCount` properties to create the rows or 
 {% highlight xaml %}
 
 <syncfusion:OlapChart.Legend>
-     <syncfusion:ChartLegendÂ Background="Transparent"Â 
-          RowsCount="2"Â ColumnsCount="2"Â />
+     <syncfusion:ChartLegend Background="Transparent" 
+          RowsCount="2" ColumnsCount="2" />
 </syncfusion:OlapChart.Legend>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-this.olapChart.Legend.RowsCountÂ =Â 2;
-this.olapChart.Legend.ColumnsCountÂ =Â 2;
+this.olapChart.Legend.RowsCount = 2;
+this.olapChart.Legend.ColumnsCount = 2;
 
 {% endhighlight %}
 

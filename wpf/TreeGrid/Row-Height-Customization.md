@@ -394,4 +394,3 @@ void TreeGrid_QueryRowHeight(object sender, TreeGridQueryRowHeightEventArgs e)
 {% endtabs %}
 
 ![AutoFit Stacked HeaderRow Height based on Content in WPF TreeGrid](Row-Height-Customization_images/wpf-treegrid-stacked-header-row-height.png)
-

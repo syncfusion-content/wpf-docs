@@ -260,4 +260,3 @@ public class ViewModel
 {% endtabs %}
 
 You can download the sample [here](https://www.syncfusion.com/downloads/support/directtrac/general/ze/ColumnCollection-341303193.zip).
-

@@ -17,4 +17,3 @@ appliesto: UI Component Suite, Grid SDK
   * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
  
   ![Applying Theme to WPF DataGrid](Getting-Started_images/wpf-datagrid-theme.png)
-

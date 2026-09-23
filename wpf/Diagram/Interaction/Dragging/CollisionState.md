@@ -129,4 +129,3 @@ In addition to this,[`IgnoreList`](https://help.syncfusion.com/cr/wpf/Syncfusion
 
 [View Sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Collision%20State).
 
-

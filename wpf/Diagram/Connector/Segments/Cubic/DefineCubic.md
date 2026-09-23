@@ -170,4 +170,3 @@ ConnectorViewModel cubicBezierConnector = new ConnectorViewModel()
 
 ![Cubic curve segments](Connector_images/MultipleCubicSegments.PNG) &ensp;&ensp;&ensp;&ensp; ![Cubic curve segments](Connector_images/CubicSegmentEdit.png)
 
-

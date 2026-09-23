@@ -515,4 +515,3 @@ WPF Smart Data Grid supports various built-in themes. Refer to the below links t
   * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
 
   ![Applying Theme to WPF SmartDataGrid](getting-started_images/wpf-smart-datagrid-theme.png)
-

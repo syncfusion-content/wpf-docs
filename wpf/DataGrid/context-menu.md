@@ -649,4 +649,3 @@ You can change the appearance of the context menu by customizing the style with 
 {% endtabs %}
 
 ![Changing Context Menu Background in WPF DataGrid](Interactive-Features_images/wpf-datagrid-context-menu-background.png)
-

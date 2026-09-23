@@ -1366,4 +1366,3 @@ You can download a working demo for the above customization from [here](https://
 [How to change the validation error template color?](https://support.syncfusion.com/kb/article/2775/how-to-change-the-validation-error-template-color-in-wpf-datagrid)
 
 [How to wire the RowValidating event after pasted the content to datagrid?](https://support.syncfusion.com/kb/article/8249/how-to-wire-the-rowvalidating-event-after-pasted-content-to-wpf-datagrid-sfdatagrid)
-

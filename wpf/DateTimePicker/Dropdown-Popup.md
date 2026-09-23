@@ -358,4 +358,3 @@ private void DateTimeEdit_Loaded(object sender, RoutedEventArgs e)
 {% endtabs %}
 
 ![Hide Today Button of DateTimeEdit](Dropdown-Popup_images/HideTodayButton.png)
-

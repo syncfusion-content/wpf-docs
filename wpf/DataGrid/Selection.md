@@ -1925,4 +1925,3 @@ public class GridSelectionControllerExt : GridSelectionController
 [How to set current cell on particular row when DataGrid loaded?](https://support.syncfusion.com/kb/article/2796/how-to-set-current-cell-on-particular-row-when-datagrid-loaded)
 
 [How to select the multiple rows on the SfDataGrid?](https://support.syncfusion.com/kb/article/2884/how-to-select-the-multiple-rows-on-the-wpf-sfdatagrid-)
-

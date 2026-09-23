@@ -878,4 +878,3 @@ public class ViewModel
 The following image illustrates the WPF Gantt control with timeline virtualization enabled:
 
 ![gantt-control-data-virtualization](Data-Virtualization-Images/data-virtualization-for-gantt-control.gif){:width="725" height="325"}
-

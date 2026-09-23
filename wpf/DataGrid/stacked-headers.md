@@ -180,4 +180,3 @@ void dataGrid_QueryRowHeight(object sender, Syncfusion.UI.Xaml.Grid.QueryRowHeig
 }
 {% endhighlight %}
 {% endtabs %}
-

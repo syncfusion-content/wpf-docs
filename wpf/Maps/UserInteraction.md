@@ -15,9 +15,9 @@ appliesto: UI Component Suite, Chart SDK
 Tooltip provides additional information about the shapes in the maps. To enable tooltip, set the [`ToolTipSettings`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.ShapeFileLayer.html#Syncfusion_UI_Xaml_Maps_ShapeFileLayer_ToolTipSettings) property in the [`ShapeFileLayer`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.ShapeFileLayer.html) and also set the [`ValuePath`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.ToolTipSetting.html#Syncfusion_UI_Xaml_Maps_ToolTipSetting_ValuePath) property of [`ToolTipSetting`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.ToolTipSetting.html).
 
 Tooltip is displayed by tapping the following elements:
-â€¢ Shapes
-â€¢ Bubbles
-â€¢ Markers
+• Shapes
+• Bubbles
+• Markers
 
 ## Tooltip for shapes
 

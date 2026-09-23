@@ -216,4 +216,3 @@ kanban.Columns.Add(kanbanColumn);
 
 {% endhighlight %}
 {% endtabs %}
-

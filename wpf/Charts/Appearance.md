@@ -14,7 +14,7 @@ WPF Charts supports various customizing and styling options that allows you to e
 
 ## Palettes
 
-WPF ChartsÂ provides options to apply different kinds of themes or palettes to your chart. You can defineÂ [`Palette`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartBase.html#Syncfusion_UI_Xaml_Charts_ChartBase_Palette)Â either for the entire chart or for an individual series.
+WPF Charts provides options to apply different kinds of themes or palettes to your chart. You can define [`Palette`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartBase.html#Syncfusion_UI_Xaml_Charts_ChartBase_Palette) either for the entire chart or for an individual series.
 
 We have some predefined palette such as:
 
@@ -35,7 +35,7 @@ N> Elite, SandyBeach and LightCandy palettes are not supported in the bitmap ser
 
 ### Applying Palette to Series
 
-Each palette applies a set of predefined brushes to the series in a predefined order. The following code example shows you how to set theÂ MetroÂ PaletteÂ for the chart series.
+Each palette applies a set of predefined brushes to the series in a predefined order. The following code example shows you how to set the Metro Palette for the chart series.
 
 {% tabs %}
 
@@ -79,7 +79,7 @@ chart.Palette = ChartColorPalette.BlueChrome;
 
 ### Applying Palette to Segment
 
-Each palette applies a set of predefined brushes to the segment in a predefined order. The following code example shows you how to set theÂ MetroÂ PaletteÂ for the chart series.
+Each palette applies a set of predefined brushes to the segment in a predefined order. The following code example shows you how to set the Metro Palette for the chart series.
 
 {% tabs %}
 

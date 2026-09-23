@@ -289,4 +289,3 @@ public MainWindow()
 ## Quick Test Professional (QTP)
 
 You can refer the UFT/QTP document from [here](https://help.syncfusion.com/wpf/testing/uft)
-

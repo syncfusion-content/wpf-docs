@@ -35,4 +35,3 @@ Else if through *Code-Behind*, please refer the below code sample.
         }
 
 {% endhighlight %}
-

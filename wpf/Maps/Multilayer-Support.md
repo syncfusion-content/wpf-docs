@@ -87,7 +87,7 @@ SubShapeFileLayers is the collection of [`SubShapeFileLayer`](https://help.syncf
                                     <TextBlock FontFamily="Segoe UI" Foreground="#FF333333" 
                                                FontSize="12"  Text="{Binding Data.Weather}"/>
                                     <TextBlock FontFamily="Segoe UI" Foreground="#FF333333" 
-                                               FontSize="12"  Text="Â°C"/>
+                                               FontSize="12"  Text="°C"/>
                                 </StackPanel>
                             </Border>
                         </DataTemplate>
@@ -119,7 +119,7 @@ SubShapeFileLayers is the collection of [`SubShapeFileLayer`](https://help.syncf
                                             <TextBlock FontFamily="Segoe UI" Foreground="#FF333333" 
                                                        FontSize="12"  Text="{Binding Data.Weather}"/>
                                             <TextBlock FontFamily="Segoe UI" Foreground="#FF333333" 
-                                                       FontSize="12"  Text="Â°C"/>
+                                                       FontSize="12"  Text="°C"/>
                                         </StackPanel>
                                     </Border>
                                 </DataTemplate>
@@ -162,7 +162,7 @@ SubShapeFileLayers is the collection of [`SubShapeFileLayer`](https://help.syncf
                                             <TextBlock FontFamily="Segoe UI" Foreground="#FF333333" 
                                                        FontSize="12"  Text="{Binding Data.Weather}"/>
                                             <TextBlock FontFamily="Segoe UI" Foreground="#FF333333" 
-                                                       FontSize="12"  Text="Â°C"/>
+                                                       FontSize="12"  Text="°C"/>
                                         </StackPanel>
                                     </Border>
                                 </DataTemplate>

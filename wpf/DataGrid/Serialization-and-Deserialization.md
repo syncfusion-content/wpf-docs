@@ -613,4 +613,3 @@ public class SerializationControllerExt : SerializationController
 {% endtabs %}
 
 You can download the sample demo [here](https://www.syncfusion.com/downloads/support/directtrac/general/ze/Serialization_Deserialization-1041317411.zip).
-

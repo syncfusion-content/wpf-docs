@@ -169,4 +169,3 @@ private void OnGanttControlNodeDragCompleted(object sender, NodeDragAndDropEvent
 
 {% endhighlight  %}
 {% endtabs %}
-

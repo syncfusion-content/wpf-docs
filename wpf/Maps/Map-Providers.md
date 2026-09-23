@@ -18,7 +18,7 @@ The [OpenStreetMap](https://www.openstreetmap.org) (OSM) is a map of the world b
 
 ### Enable an OSM
 
-You can enable this feature by setting theÂ [LayerType](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.ImageryLayer.html#Syncfusion_UI_Xaml_Maps_ImageryLayer_LayerType)Â property value as [OSM](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.LayerType.html#fields).
+You can enable this feature by setting the [LayerType](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.ImageryLayer.html#Syncfusion_UI_Xaml_Maps_ImageryLayer_LayerType) property value as [OSM](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.LayerType.html#fields).
 
 {% tabs %}
 {% highlight xaml hl_lines="2 3 4" %}
@@ -183,7 +183,7 @@ By default, the Bing Maps view style is set to [Road](https://help.syncfusion.co
 
 ### Aerial View
 
-The Aerial view shows satellite images with clearly visible roads and landmarks. This view is useful for visually exploring realâ€‘world locations. You can apply this view by setting [BingMapStyle](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.ImageryLayer.html#Syncfusion_UI_Xaml_Maps_ImageryLayer_BingMapStyle) to [Aerial](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.BingMapStyle.html#fields).
+The Aerial view shows satellite images with clearly visible roads and landmarks. This view is useful for visually exploring real‑world locations. You can apply this view by setting [BingMapStyle](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.ImageryLayer.html#Syncfusion_UI_Xaml_Maps_ImageryLayer_BingMapStyle) to [Aerial](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.BingMapStyle.html#fields).
 
 {% tabs %}
 {% highlight xaml %}

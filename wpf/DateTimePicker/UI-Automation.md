@@ -50,4 +50,3 @@ This XML configuration file should contain the fully qualified type name of the 
 ## Coded UI
 
 You can refer the Coded UI document from [here](https://help.syncfusion.com/wpf/testing/coded-ui)
-

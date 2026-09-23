@@ -169,7 +169,7 @@ The vertical line in contact with the x axes shows axis label. The horizontal ax
 
 Axis Label can be aligned by Near, Far, Center, Auto and None Options.
 
-* [`Auto`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAlignment.html) â€“ Axis label is aligned in Near/Far positions based on the movement of vertical line.
+* [`Auto`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAlignment.html) – Axis label is aligned in Near/Far positions based on the movement of vertical line.
 
 * [`Far`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAlignment.html) - Axis label is positioned far from the position of vertical line in cross hair.
 

@@ -293,4 +293,3 @@ private void SfdatePicker_ValueChanged(DependencyObject d, DependencyPropertyCha
 {% endtabs %}
 
 Click [here](https://github.com/SyncfusionExamples/wpf-date-picker-examples/tree/master/Samples/Value-setting) to download the sample that showcases the input types and selected date with its notification supports.
-

@@ -51,4 +51,3 @@ The following screenshot shows the localized DateTimeEdit control.
 ![WPF DateTimeEdit contain localized today and none button text](Localization_images/wpf-datetimeedit-localization.png)
 
 N> View [Sample](https://github.com/SyncfusionExamples/wpf-date-time-edit-examples/tree/master/Samples/Localization) in GitHub
-

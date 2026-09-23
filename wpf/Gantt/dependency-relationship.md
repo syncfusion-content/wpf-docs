@@ -623,4 +623,3 @@ private void OnGanttPredecessorChanged(object sender, PredecessorChangedEventArg
 
 {% endhighlight %}
 {% endtabs %}
-

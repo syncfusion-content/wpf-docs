@@ -189,4 +189,3 @@ dateTimeEdit.Pattern = DateTimePattern.FullDateTime;
 ![Setting US culture in WPF DateTimeEdit](DateTime-Format_images/wpf-datetimeedit-culture.png)
 
 N> View [Sample](https://github.com/SyncfusionExamples/wpf-datetimepicker-examples/tree/master/Samples/DateTimeFormatting) in GitHub
-

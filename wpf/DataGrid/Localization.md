@@ -83,4 +83,3 @@ Now, change the Name/Value pair in Resource Designer of **Syncfusion.SfGrid.WPF.
 
 ![WPF DataGrid displays Editing Default Culture Resource](Localization_images/wpf-datagrid-edit-default-resource.png)
 
-

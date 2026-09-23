@@ -210,4 +210,3 @@ sfDatePicker.SelectorItemSpacing = 50;
 ![WPF DatePicker Item Spacing](Customizing-DropDown_images/wpf-datepicker-item-spacing.png)
 
 Click [here](https://github.com/SyncfusionExamples/wpf-date-picker-examples/tree/master/Samples/DateSelectorTemplates) to download the sample that showcases the `SfDateSelector` template customization. 
-

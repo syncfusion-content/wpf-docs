@@ -266,4 +266,3 @@ private void DataGrid_CellToolTipOpening(object sender, Syncfusion.UI.Xaml.Grid.
 }
 {% endhighlight %}
 {% endtabs %}
-

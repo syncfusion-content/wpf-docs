@@ -903,4 +903,3 @@ You can get the sample from [here](https://www.syncfusion.com/downloads/support/
 [How to load the symbols in FilterRow and perform actions based on that ?](https://support.syncfusion.com/kb/article/8135/how-to-load-the-symbols-in-filterrow-in-wpf-datagrid-sfdatagrid)
 
 [How to show filter status message in SfDataGrid?](https://support.syncfusion.com/kb/article/6877/how-to-show-the-filter-status-message-in-wpf-datagrid-sfdatagrid)
-

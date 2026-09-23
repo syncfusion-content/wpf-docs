@@ -674,4 +674,3 @@ private void CellsExportingEventHandler(object sender, GridCellPdfExportingEvent
 ![Customizing WPF DetailsView DataGrid Cells Exported to PDF File](export-to-pdf_images/wpf-datagrid-details-view-cells-customization.png)
 
 
-

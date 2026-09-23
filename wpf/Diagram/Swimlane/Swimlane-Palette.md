@@ -56,4 +56,3 @@ You can add the swimlane shapes using the category. For more information, refer 
 * A phase will only drop on the swimlane shape with the same orientation.
 The following image shows how to drag a symbol from the palette.
 ![Drag Symbol from Palette](Swimlane-images/Symbol_palette.gif)
-

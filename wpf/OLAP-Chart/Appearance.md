@@ -28,41 +28,41 @@ The following code sample illustrates how to customize the chart style and legen
 
 {% highlight c# %}
  
-//Â SetÂ theÂ ChartÂ Type.
-this.olapChart.ChartTypeÂ =Â ChartTypes.Column;
-//Â SetÂ theÂ ChartÂ Series Color.
-this.olapChart.ColorModel.PaletteÂ =Â ChartColorPalette.Colorful;
-//Â SetÂ theÂ ChartÂ LegendÂ andÂ LegendÂ CheckÂ BoxÂ Visibility.
-this.olapChart.Legend.VisibilityÂ =Â Visibility.Visible;
-this.olapChart.Legend.VisibilityÂ =Â Visibility.Collapsed;
-this.olapChart.Legend.CheckBoxVisibilityÂ =Â Visibility.Visible;
-this.olapChart.Legend.CheckBoxVisibilityÂ =Â Visibility.Collapsed;
-//Â SetÂ theÂ ChartÂ LegendÂ Position.
-ChartDockPanel.SetDock(this.olapChart.Legend,Â ChartDock.Right);
-ChartDockPanel.SetDock(this.olapChart.Legend,Â ChartDock.Left);
-ChartDockPanel.SetDock(this.olapChart.Legend,Â ChartDock.Top);
-ChartDockPanel.SetDock(this.olapChart.Legend,Â ChartDock.Bottom);
-ChartDockPanel.SetDock(this.olapChart.Legend,Â ChartDock.Floating);
+// Set the Chart Type.
+this.olapChart.ChartType = ChartTypes.Column;
+// Set the Chart Series Color.
+this.olapChart.ColorModel.Palette = ChartColorPalette.Colorful;
+// Set the Chart Legend and Legend Check Box Visibility.
+this.olapChart.Legend.Visibility = Visibility.Visible;
+this.olapChart.Legend.Visibility = Visibility.Collapsed;
+this.olapChart.Legend.CheckBoxVisibility = Visibility.Visible;
+this.olapChart.Legend.CheckBoxVisibility = Visibility.Collapsed;
+// Set the Chart Legend Position.
+ChartDockPanel.SetDock(this.olapChart.Legend, ChartDock.Right);
+ChartDockPanel.SetDock(this.olapChart.Legend, ChartDock.Left);
+ChartDockPanel.SetDock(this.olapChart.Legend, ChartDock.Top);
+ChartDockPanel.SetDock(this.olapChart.Legend, ChartDock.Bottom);
+ChartDockPanel.SetDock(this.olapChart.Legend, ChartDock.Floating);
 
 {% endhighlight %}
 
 {% highlight vbnet %}
   
-'Â SetÂ theÂ ChartÂ Type.
-Me.olapChart.ChartTypeÂ =Â ChartTypes.Column
-'Â SetÂ theÂ ChartÂ SeriesÂ Color.
-Me.olapChart.ColorModel.PaletteÂ =Â ChartColorPalette.Colorful
-'Â SetÂ theÂ ChartÂ LegendÂ andÂ LegendÂ CheckÂ BoxÂ Visibility.
-Me.olapChart.Legend.VisibilityÂ =Â Visibility.Visible
-Me.olapChart.Legend.VisibilityÂ =Â Visibility.Collapsed
-Me.olapChart.Legend.CheckBoxVisibilityÂ =Â Visibility.Visible
-Me.olapChart.Legend.CheckBoxVisibilityÂ =Â Visibility.Collapsed
-'Â SetÂ theÂ ChartÂ LegendÂ Position.
-ChartDockPanel.SetDock(Me.olapChart.Legend,Â ChartDock.Right)
-ChartDockPanel.SetDock(Me.olapChart.Legend,Â ChartDock.Left)
-ChartDockPanel.SetDock(Me.olapChart.Legend,Â ChartDock.Top)
-ChartDockPanel.SetDock(Me.olapChart.Legend,Â ChartDock.Bottom)
-ChartDockPanel.SetDock(Me.olapChart.Legend,Â ChartDock.Floating)
+' Set the Chart Type.
+Me.olapChart.ChartType = ChartTypes.Column
+' Set the Chart Series Color.
+Me.olapChart.ColorModel.Palette = ChartColorPalette.Colorful
+' Set the Chart Legend and Legend Check Box Visibility.
+Me.olapChart.Legend.Visibility = Visibility.Visible
+Me.olapChart.Legend.Visibility = Visibility.Collapsed
+Me.olapChart.Legend.CheckBoxVisibility = Visibility.Visible
+Me.olapChart.Legend.CheckBoxVisibility = Visibility.Collapsed
+' Set the Chart Legend Position.
+ChartDockPanel.SetDock(Me.olapChart.Legend, ChartDock.Right)
+ChartDockPanel.SetDock(Me.olapChart.Legend, ChartDock.Left)
+ChartDockPanel.SetDock(Me.olapChart.Legend, ChartDock.Top)
+ChartDockPanel.SetDock(Me.olapChart.Legend, ChartDock.Bottom)
+ChartDockPanel.SetDock(Me.olapChart.Legend, ChartDock.Floating)
 
 {% endhighlight %}
 
@@ -96,12 +96,12 @@ this.olapChart.GridBackground = Brushes.LightGray;
 
 {% highlight vbnet %}
   
-'Â SetÂ theÂ ChartÂ BorderÂ Style.
-Me.olapChart.BorderThicknessÂ =Â NewÂ Thickness(2)
-Me.olapChart.BorderBrushÂ =Â Brushes.Blue
-'Â SetÂ theÂ ChartÂ BackgroundÂ Style.
-Me.olapChart.BackgroundÂ =Â Brushes.LightBlue
-Me.olapChart.GridBackgroundÂ =Â Brushes.LightGray
+' Set the Chart Border Style.
+Me.olapChart.BorderThickness = New Thickness(2)
+Me.olapChart.BorderBrush = Brushes.Blue
+' Set the Chart Background Style.
+Me.olapChart.Background = Brushes.LightBlue
+Me.olapChart.GridBackground = Brushes.LightGray
 
 {% endhighlight %}
 
@@ -117,32 +117,32 @@ The WPF OLAP Chart supports customizing the labels and symbols of chart points. 
 
 {% highlight c# %}
  
-foreachÂ (ChartSeriesÂ seriesÂ inÂ this.Series)
+foreach (ChartSeries series in this.Series)
 {
-Â Â Â Â series.AdornmentsInfo.VisibleÂ =Â true;
-Â Â Â Â ChartAdornmentInfoÂ caiÂ =Â series.AdornmentsInfo;
-Â Â Â Â //Â ToÂ displayÂ theÂ x-axisÂ labelÂ value.
-Â Â Â Â series.AdornmentsInfo.LabelContentPathÂ =Â "DataPoint.X";
-Â Â Â Â //Â ToÂ displayÂ theÂ y-axisÂ labelÂ value.
-Â Â Â Â series.AdornmentsInfo.LabelContentPathÂ =Â "DataPoint.Y";
-Â Â Â Â //Â ToÂ displayÂ theÂ SeriesÂ labelÂ value.
-Â Â Â Â series.AdornmentsInfo.LabelContentPathÂ =Â "Series.Label";
+    series.AdornmentsInfo.Visible = true;
+    ChartAdornmentInfo cai = series.AdornmentsInfo;
+    // To display the x-axis label value.
+    series.AdornmentsInfo.LabelContentPath = "DataPoint.X";
+    // To display the y-axis label value.
+    series.AdornmentsInfo.LabelContentPath = "DataPoint.Y";
+    // To display the Series label value.
+    series.AdornmentsInfo.LabelContentPath = "Series.Label";
 }
 
 {% endhighlight %}
 
 {% highlight vbnet %}
   
-ForÂ EachÂ seriesÂ AsÂ ChartSeriesÂ InÂ Me.Series
-Â Â Â Â series.AdornmentsInfo.VisibleÂ =Â True
-Â Â Â Â DimÂ caiÂ AsÂ ChartAdornmentInfoÂ =Â series.AdornmentsInfo
-Â Â Â Â 'Â ToÂ displayÂ theÂ x-axisÂ labelÂ value.
-Â Â Â Â series.AdornmentsInfo.LabelContentPathÂ =Â "DataPoint.X"
-Â Â Â Â 'Â ToÂ displayÂ theÂ y-axisÂ labelÂ value.
-Â Â Â Â series.AdornmentsInfo.LabelContentPathÂ =Â "DataPoint.Y"
-Â Â Â Â 'Â ToÂ displayÂ theÂ SeriesÂ labelÂ value.
-Â Â Â Â series.AdornmentsInfo.LabelContentPathÂ =Â "Series.Label"
-NextÂ series
+For Each series As ChartSeries In Me.Series
+    series.AdornmentsInfo.Visible = True
+    Dim cai As ChartAdornmentInfo = series.AdornmentsInfo
+    ' To display the x-axis label value.
+    series.AdornmentsInfo.LabelContentPath = "DataPoint.X"
+    ' To display the y-axis label value.
+    series.AdornmentsInfo.LabelContentPath = "DataPoint.Y"
+    ' To display the Series label value.
+    series.AdornmentsInfo.LabelContentPath = "Series.Label"
+Next series
 
 {% endhighlight %}
 
@@ -168,23 +168,23 @@ The following code sample illustrates how to customize the font style of the pri
 
 {% highlight c# %}
  
-//Â SetÂ theÂ FontÂ Family.
-this.olapChart.PrimaryAxis.LabelFontFamilyÂ =Â newÂ FontFamily("Arial");
-//Â SetÂ theÂ FontÂ Color.
-this.olapChart.PrimaryAxis.LabelForegroundÂ =Â Brushes.LightBlue;
-//Â SetÂ theÂ FontÂ Weight.
-this.olapChart.PrimaryAxis.LabelFontWeightÂ =Â FontWeights.Bold;
+// Set the Font Family.
+this.olapChart.PrimaryAxis.LabelFontFamily = new FontFamily("Arial");
+// Set the Font Color.
+this.olapChart.PrimaryAxis.LabelForeground = Brushes.LightBlue;
+// Set the Font Weight.
+this.olapChart.PrimaryAxis.LabelFontWeight = FontWeights.Bold;
 
 {% endhighlight %}
 
 {% highlight vbnet %}
   
-'Â SetÂ theÂ FontÂ Family.
-Me.olapChart.PrimaryAxis.LabelFontFamilyÂ =Â NewÂ FontFamily("Arial")
-'Â SetÂ theÂ FontÂ Color.
-Me.olapChart.PrimaryAxis.LabelForegroundÂ =Â Brushes.LightBlue
-'Â SetÂ theÂ FontÂ Weight.
-Me.olapChart.PrimaryAxis.LabelFontWeightÂ =Â FontWeights.Bold
+' Set the Font Family.
+Me.olapChart.PrimaryAxis.LabelFontFamily = New FontFamily("Arial")
+' Set the Font Color.
+Me.olapChart.PrimaryAxis.LabelForeground = Brushes.LightBlue
+' Set the Font Weight.
+Me.olapChart.PrimaryAxis.LabelFontWeight = FontWeights.Bold
 
 {% endhighlight %}
 
@@ -204,23 +204,23 @@ The following code sample illustrates how to customize the font style of the sec
 
 {% highlight c# %}
  
-//Â SetÂ theÂ FontÂ Family.
-this.olapChart.SecondaryAxis.LabelFontFamilyÂ =Â newÂ FontFamily("Arial");
-//Â SetÂ theÂ ForegroundÂ Color.
-this.olapChart.SecondaryAxis.LabelForegroundÂ =Â Brushes.LightBlue;
-//Â SetÂ theÂ FontÂ Weight.
-this.olapChart.SecondaryAxis.LabelFontWeightÂ =Â FontWeights.Bold;
+// Set the Font Family.
+this.olapChart.SecondaryAxis.LabelFontFamily = new FontFamily("Arial");
+// Set the Foreground Color.
+this.olapChart.SecondaryAxis.LabelForeground = Brushes.LightBlue;
+// Set the Font Weight.
+this.olapChart.SecondaryAxis.LabelFontWeight = FontWeights.Bold;
 
 {% endhighlight %}
 
 {% highlight vbnet %}
   
-'Â SetÂ theÂ FontÂ Family.
-Me.olapChart.SecondaryAxis.LabelFontFamilyÂ =Â NewÂ FontFamily("Arial")
-'Â SetÂ theÂ ForegroundÂ Color.
-Me.olapChart.SecondaryAxis.LabelForegroundÂ =Â Brushes.LightBlue
-'Â SetÂ theÂ FontÂ Weight.
-Me.olapChart.SecondaryAxis.LabelFontWeightÂ =Â FontWeights.Bold
+' Set the Font Family.
+Me.olapChart.SecondaryAxis.LabelFontFamily = New FontFamily("Arial")
+' Set the Foreground Color.
+Me.olapChart.SecondaryAxis.LabelForeground = Brushes.LightBlue
+' Set the Font Weight.
+Me.olapChart.SecondaryAxis.LabelFontWeight = FontWeights.Bold
 
 {% endhighlight %}
 

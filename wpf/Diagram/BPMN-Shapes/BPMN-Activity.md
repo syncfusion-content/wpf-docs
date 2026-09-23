@@ -408,4 +408,3 @@ The following table contains the various types of BPMN SubProcess.
 | Event | ![Event Boundary BPMN Shape](BPMN-Shapes-Images/BPMN-SubProcessType-Event.png) |The event sub-process is a sub-process that is triggered by an event. An event sub-process can be added at the process level or at any sub-process level|
 | Default | ![Default Boundary BPMN Shape](BPMN-Shapes-Images/BPMN-Loop-None.png) |The task that is performed in a business process. It is represented by a rounded rectangle|
 | Transaction | ![Transaction Boundary BPMN Shape](BPMN-Shapes-Images/BPMN-SubProcessType-Transaction.png) |It is a specialized sub-process that involves payment|
-

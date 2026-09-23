@@ -753,4 +753,3 @@ void FirstLevelNestedGrid_QueryUnBoundRow(object sender, GridUnBoundRowEventsArg
 {% endtabs %}
 
 ![WPF DataGrid displays Unbound Rows in Master Details View](Unbound-Rows_images/wpf-datagrid-unbound-row-in-master-details-view.png)
-

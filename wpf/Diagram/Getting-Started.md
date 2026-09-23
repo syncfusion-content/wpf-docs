@@ -939,4 +939,3 @@ SfDiagram supports various built-in themes. Refer to the links below to apply th
 [How to Automate Diagram using WinAppDriver](https://support.syncfusion.com/kb/article/15642/how-to-automate-diagram-using-winappdriver)
 
 [How to get the coordinates of the current viewport in WPF Diagram?](https://support.syncfusion.com/kb/article/18032/how-to-get-the-coordinates-of-the-current-viewport-in-wpf-diagram-sfdiagram)
-

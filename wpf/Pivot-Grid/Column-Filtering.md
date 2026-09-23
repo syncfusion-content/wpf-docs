@@ -52,4 +52,3 @@ Refer to the following code sample.
 ![To filter the records using column filter popup](Features-in-RowPivotsOnly-images/Filtering Enable in RowPivotsOnly.png)
 
 N> You can also explore our [WPF Pivot Grid example](https://github.com/syncfusion/wpf-demos) to knows how to organizes and summarizes business data and displays the result in a cross-table format.
-

@@ -28,12 +28,12 @@ The following images illustrate the barcode rendered with different color combin
 
 ![WPF-Barcode-Red-Color-Combination](Barcode-Customization_images/wpf-barcode-red-color-combination.png)
 
-Barcode color combinations â€“ Red
+Barcode color combinations – Red
 {:.caption}
 
 ![WPF-Barcode-Blue-Color-Combination](Barcode-Customization_images/wpf-barcode-blue-color-combination.png)
 
-Barcode color combinations â€“ Blue
+Barcode color combinations – Blue
 {:.caption}
 
 ## Limitations

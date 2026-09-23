@@ -375,4 +375,3 @@ void dataGrid_SortColumnsChanging(object sender, Syncfusion.UI.Xaml.Grid.GridSor
 [How to change the position of FilterToggleButton and SortIcon in header cell of SfDataGrid?](https://support.syncfusion.com/kb/article/4194/how-to-change-the-position-of-header-cell-in-wpf-datagrid)
 
 [How to sort your binded collection of ViewModel?](https://support.syncfusion.com/kb/article/2850/how-to-sort-your-binded-collection-of-viewmodel-in-wpf-datagrid)
-

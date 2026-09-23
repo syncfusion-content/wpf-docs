@@ -722,4 +722,3 @@ private void CalendarEdit_DateChanged(DependencyObject d, DependencyPropertyChan
 
 {% endhighlight %}
 {% endtabs %}
-

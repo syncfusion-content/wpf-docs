@@ -20,17 +20,17 @@ Point label provides information about the data point. The data point can be add
 
 {% highlight c# %}
 
-for(intÂ i=0;Â i<Â this.olapChart.Series.Count;Â i++)
+for(int i=0; i< this.olapChart.Series.Count; i++)
 { 
-    ////Â SettingÂ theÂ visibilityÂ ofÂ adornment.
-    this.olapChart.Series[i].AdornmentsInfo.VisibleÂ =Â true;
-    ////Â SettingÂ horizontalÂ alignment
-    this.olapChart.Series[i].AdornmentsInfo.SegmentHorizontalAlignmentÂ =Â System.Windows.HorizontalAlignment.Right;
-    ////Â MakesÂ theÂ segmentÂ outÂ fromÂ theÂ series.
-    this.olapChart.Series[i].AdornmentsInfo.SegmentIsOutÂ =Â true;
+    //// Setting the visibility of adornment.
+    this.olapChart.Series[i].AdornmentsInfo.Visible = true;
+    //// Setting horizontal alignment
+    this.olapChart.Series[i].AdornmentsInfo.SegmentHorizontalAlignment = System.Windows.HorizontalAlignment.Right;
+    //// Makes the segment out from the series.
+    this.olapChart.Series[i].AdornmentsInfo.SegmentIsOut = true;
     this.olapChart.Series[i].AdornmentsInfo.LabelContentPath = "DataPoint.Y";
-    this.olapChart.Series[i].AdornmentsInfo.SegmentLabelFontSizeÂ =Â 12;
-    this.olapChart.Series[i].AdornmentsInfo.SegmentLabelRotationÂ =Â 325;
+    this.olapChart.Series[i].AdornmentsInfo.SegmentLabelFontSize = 12;
+    this.olapChart.Series[i].AdornmentsInfo.SegmentLabelRotation = 325;
 }
 
 {% endhighlight %}
@@ -65,7 +65,7 @@ You can set a custom color for each series in the WPF OLAP Chart. To apply diffe
 
 {% highlight c# %}
 
-this.olapChart.Series[0].InteriorÂ =Â Brushes.Orange;
+this.olapChart.Series[0].Interior = Brushes.Orange;
 
 {% endhighlight %}
 
@@ -85,8 +85,8 @@ You can customize the thickness of the series border of the WPF OLAP Chart by us
 
 {% highlight c# %}
     
-this.olapchart.Series[0].StrokeÂ =Â Brushes.Black;
-this.olapChart.Series[0].StrokeThicknessÂ =Â 4;
+this.olapchart.Series[0].Stroke = Brushes.Black;
+this.olapChart.Series[0].StrokeThickness = 4;
 
 {% endhighlight %}
 
@@ -123,27 +123,27 @@ The following data template can be used to customize the series.
 
 {% highlight xaml %}
 
-<DataTemplateÂ x:Key="ColumnTemplate">
-  <CanvasÂ Name="myCanvas">
-     <GridÂ Name="OuterGrid" Canvas.Left="{BindingÂ X}"Â Width="{BindingÂ Width}"Â 
-           Height="{BindingÂ ElementName=myCanvas,Â Path=ActualHeight}"Â >
-           <BorderÂ Name="ColumnRect"Â VerticalAlignment="Bottom"Â   Width="{BindingÂ Width}"Â Height="{BindingÂ Height}" 
-               CornerRadius="8,8,0,0"Â Background="{BindingÂ Interior}">
-Â Â Â Â Â Â Â Â Â Â Â </Border>
-Â Â Â Â Â </Grid>
-Â Â </Canvas>
+<DataTemplate x:Key="ColumnTemplate">
+  <Canvas Name="myCanvas">
+     <Grid Name="OuterGrid" Canvas.Left="{Binding X}" Width="{Binding Width}" 
+           Height="{Binding ElementName=myCanvas, Path=ActualHeight}" >
+           <Border Name="ColumnRect" VerticalAlignment="Bottom"   Width="{Binding Width}" Height="{Binding Height}" 
+               CornerRadius="8,8,0,0" Background="{Binding Interior}">
+           </Border>
+     </Grid>
+  </Canvas>
 </DataTemplate>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-forÂ (intÂ iÂ =Â 0;Â iÂ <Â this.olapchart1.Series.Count;Â i++)
+for (int i = 0; i < this.olapchart1.Series.Count; i++)
 {
-    //ApplyÂ SeriesÂ TemplateÂ toÂ displayÂ theÂ seriesÂ cylindricalÂ style.
-    this.olapchart1.Series[i].TemplateÂ =Â this.Resources["ColumnTemplate"]Â asÂ DataTemplate;
-    //ApplyÂ SeriesÂ InteriorÂ toÂ displayÂ theÂ seriesÂ inÂ differentÂ colors.
-    this.olapchart1.Series[i].InteriorÂ =Â App.Current.Resources["SeriesInterior"Â +Â i]Â asÂ LinearGradientBrush;
+    //Apply Series Template to display the series cylindrical style.
+    this.olapchart1.Series[i].Template = this.Resources["ColumnTemplate"] as DataTemplate;
+    //Apply Series Interior to display the series in different colors.
+    this.olapchart1.Series[i].Interior = App.Current.Resources["SeriesInterior" + i] as LinearGradientBrush;
 }
 
 {% endhighlight %}
@@ -176,12 +176,12 @@ The following code sample demonstrates how the **ChartMouseEventArgs** can be us
 {% highlight c# %}
 
 //// Event Tagging
-this.olapchart1.Series[0].MouseClickÂ +=Â newÂ ChartMouseEventHandler(series_MouseClick);
-////Â MouseÂ clickÂ eventÂ forÂ aÂ series.
-voidÂ series_MouseClick(objectÂ sender,Â ChartMouseEventArgsÂ e)
+this.olapchart1.Series[0].MouseClick += new ChartMouseEventHandler(series_MouseClick);
+//// Mouse click event for a series.
+void series_MouseClick(object sender, ChartMouseEventArgs e)
 {
-    ChartPointÂ pointÂ =Â (ChartPoint)e.Segment.CorrespondingPoints[0].DataPoint;
-    MessageBox.Show("XÂ =Â "Â +Â point.X.ToString()Â +Â "\n"Â +Â "YÂ =Â "Â +Â point.Y.ToString());
+    ChartPoint point = (ChartPoint)e.Segment.CorrespondingPoints[0].DataPoint;
+    MessageBox.Show("X = " + point.X.ToString() + "\n" + "Y = " + point.Y.ToString());
 }
 
 {% endhighlight %}

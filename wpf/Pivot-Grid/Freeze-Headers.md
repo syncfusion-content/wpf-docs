@@ -90,4 +90,3 @@ _PivotGrid when freeze headers enabled_
 _PivotGrid when freeze headers disabled_
 
 N> You can also explore our [WPF Pivot Grid example](https://github.com/syncfusion/wpf-demos) to knows how to organizes and summarizes business data and displays the result in a cross-table format.
-

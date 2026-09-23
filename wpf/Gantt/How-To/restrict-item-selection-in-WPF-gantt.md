@@ -138,4 +138,3 @@ this.gantt.SelectionMode = GanttSelectionMode.None;
 
 {% endhighlight %}
 {% endtabs %}
-

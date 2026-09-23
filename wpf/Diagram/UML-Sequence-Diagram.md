@@ -742,4 +742,3 @@ Diagram.Model = new UMLSequenceDiagramModel()
 [View Sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Sequence%20Diagram)
 
 
-

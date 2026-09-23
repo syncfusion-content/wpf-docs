@@ -240,4 +240,3 @@ this.calendarEdit.Date = new DateTime(2020, 08, 12);
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusin-wpf-calendar-examples/tree/master/Samples/Restrict-Date)
 
-

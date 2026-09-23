@@ -1601,4 +1601,3 @@ public class ColorConverter : IValueConverter
 
 ![Customizing Row Header Cell Style in WPF DataGrid](Conditional-Styling_images/wpf-datagrid-row-header-cell-style.png)
 
-

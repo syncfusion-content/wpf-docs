@@ -317,4 +317,3 @@ public class SfMindMapTreeLayout : MindMapTreeLayout
 
 The `HorizontalSpacing` and `VerticalSpacing` properties of `MindMapTreeLayout` are used the same way as in the other layout types; see [Customize spacing between nodes in layout](https://help.syncfusion.com/wpf/diagram/automatic-layouts#customize-spacing-between-nodes-in-layout) and [Updating layout](https://help.syncfusion.com/wpf/diagram/automatic-layouts#updating-layout) for the shared reference.
 
-

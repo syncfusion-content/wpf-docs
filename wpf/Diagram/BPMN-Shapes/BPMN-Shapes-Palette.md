@@ -103,4 +103,3 @@ The following code sample shows how to add the BPMN shapes to palette.
 {% endtabs %}
 
 ![BPMN SymbolPalette Shapes](BPMN-Shapes-Images/Swimlane-BPMN.gif)
-

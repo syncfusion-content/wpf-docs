@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Visual Data Editing in WPF Charts | Syncfusion
 description: Visual data editing in the WPF Chart allows users to modify data points directly within the chart for interactive data updates.
@@ -292,17 +292,17 @@ chart.Series.Add(series);
 
 The dragging tooltip can be customized by using the [`DragTooltipStyle`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.XySegmentDraggingBase.html#Syncfusion_UI_Xaml_Charts_XySegmentDraggingBase_DragTooltipStyle) property of the series.
 
-The following are the APIâ€™s in `ChartDragTooltipStyle`.
+The following are the API’s in `ChartDragTooltipStyle`.
 
-[`FontFamily`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartDragTooltipStyle.html#Syncfusion_UI_Xaml_Charts_ChartDragTooltipStyle_FontFamily) â€“ Gets or sets the font family for dragging tooltip text.
+[`FontFamily`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartDragTooltipStyle.html#Syncfusion_UI_Xaml_Charts_ChartDragTooltipStyle_FontFamily) – Gets or sets the font family for dragging tooltip text.
 
-[`FontSize`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartDragTooltipStyle.html#Syncfusion_UI_Xaml_Charts_ChartDragTooltipStyle_FontSize) â€“ Gets or sets the font size for dragging tooltip text.
+[`FontSize`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartDragTooltipStyle.html#Syncfusion_UI_Xaml_Charts_ChartDragTooltipStyle_FontSize) – Gets or sets the font size for dragging tooltip text.
 
-[`FontStyle`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartDragTooltipStyle.html#Syncfusion_UI_Xaml_Charts_ChartDragTooltipStyle_FontStyle) â€“ Gets or sets the font style for dragging tooltip text.
+[`FontStyle`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartDragTooltipStyle.html#Syncfusion_UI_Xaml_Charts_ChartDragTooltipStyle_FontStyle) – Gets or sets the font style for dragging tooltip text.
 
-[`Foreground`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartDragTooltipStyle.html#Syncfusion_UI_Xaml_Charts_ChartDragTooltipStyle_Foreground) â€“ Gets or sets the brush for dragging tooltip text.
+[`Foreground`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartDragTooltipStyle.html#Syncfusion_UI_Xaml_Charts_ChartDragTooltipStyle_Foreground) – Gets or sets the brush for dragging tooltip text.
 
-[`Background`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartDragTooltipStyle.html#Syncfusion_UI_Xaml_Charts_ChartDragTooltipStyle_Background) â€“ Gets or sets the background brush for dragging tooltip.
+[`Background`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartDragTooltipStyle.html#Syncfusion_UI_Xaml_Charts_ChartDragTooltipStyle_Background) – Gets or sets the background brush for dragging tooltip.
 
 {% tabs %}
 

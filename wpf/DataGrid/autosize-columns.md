@@ -427,4 +427,3 @@ public class CustomColumnSizer:GridColumnSizer
 }      
 {% endhighlight %}
 {% endtabs %}
-

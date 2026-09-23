@@ -417,4 +417,3 @@ timeSpanEdit.Value = new TimeSpan(5, 2, 25, 52);
 
 N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-timespanedit-control-examples/tree/master/Samples/TimeSpanEdit-Features) in GitHub
 
-

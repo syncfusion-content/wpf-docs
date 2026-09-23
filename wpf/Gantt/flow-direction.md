@@ -167,4 +167,3 @@ this.ganttControl.TaskAttributeMapping = taskAttributeMapping;
 
 ![gantt-control-flow-direction-right-to-left](Flow-Direction-Images/gantt-control-flow-direction-right-to-left.png)
 
-

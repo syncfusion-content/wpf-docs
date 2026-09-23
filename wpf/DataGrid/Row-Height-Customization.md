@@ -411,4 +411,3 @@ void dataGrid_QueryRowHeight(object sender, QueryRowHeightEventArgs e)
 
 ![Customizing TableSummaryRow Height in WPF DataGrid](row-height-customization_images/wpf-datagrid-table-summary-row-height.png)
 
-

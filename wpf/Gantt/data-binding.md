@@ -497,4 +497,3 @@ To view samples:
 4. Select Gantt.
 5. Expand the DataBinding Features item in the Sample Browser.
 6. Choose the External Property Binding sample to launch.
-

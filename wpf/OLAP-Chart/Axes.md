@@ -26,7 +26,7 @@ The following code sample describes how to disable the horizontal grid lines.
 
 {% highlight c# %}
 
-this.olapChart.Series[0].Area.SecondaryAxis.SetValue(ChartArea.ShowGridLinesProperty,Â false);
+this.olapChart.Series[0].Area.SecondaryAxis.SetValue(ChartArea.ShowGridLinesProperty, false);
 
 {% endhighlight %}
 
@@ -52,7 +52,7 @@ The following code sample describes how to disable the vertical grid lines.
 
 {% highlight c# %}
 
-this.olapChart.Series[0].Area.PrimaryAxis.SetValue(ChartArea.ShowGridLinesProperty,Â false);
+this.olapChart.Series[0].Area.PrimaryAxis.SetValue(ChartArea.ShowGridLinesProperty, false);
 
 {% endhighlight %}
 
@@ -68,7 +68,7 @@ N> For bar type charts such as bar, stacking bar, and stacking 100 bar, you can 
 
 ## Format settings
 
-To display the â€˜%â€™ symbol in the secondary axis, you should set the secondary axis label format property. The following code sample describes the usage of â€˜%â€™ in the secondary axis label.
+To display the ‘%’ symbol in the secondary axis, you should set the secondary axis label format property. The following code sample describes the usage of ‘%’ in the secondary axis label.
 
 {% highlight xaml %}
 
@@ -101,32 +101,32 @@ The label font settings of the primary and secondary axes can be easily applied 
 {% highlight xaml %}
 
 <syncfusion:OlapChart.PrimaryAxis>
-<syncfusion:ChartAxisÂ LabelFormat="C"
-      LabelFontFamily="Arial"Â 
-      LabelFontSize="14"Â 
-      LabelFontWeight="ExtraBold"Â 
-      LabelForeground="DarkGray"Â Â />
+<syncfusion:ChartAxis LabelFormat="C"
+      LabelFontFamily="Arial" 
+      LabelFontSize="14" 
+      LabelFontWeight="ExtraBold" 
+      LabelForeground="DarkGray"  />
 </syncfusion:OlapChart.PrimaryAxis>
 <syncfusion:OlapChart.SecondaryAxis>
-<syncfusion:ChartAxisÂ LabelFormat="C"
-      LabelFontFamily="Arial"Â 
-      LabelFontSize="14"Â 
-      LabelFontWeight="ExtraBold"Â 
-      LabelForeground="DarkGray"Â Â />
+<syncfusion:ChartAxis LabelFormat="C"
+      LabelFontFamily="Arial" 
+      LabelFontSize="14" 
+      LabelFontWeight="ExtraBold" 
+      LabelForeground="DarkGray"  />
 </syncfusion:OlapChart.SecondaryAxis>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-this.olapChart.PrimaryAxis.LabelForegroundÂ =Â Brushes.DarkGray;
-this.olapChart.PrimaryAxis.LabelFontFamilyÂ =Â newÂ FontFamily("Arial");
-this.olapChart.PrimaryAxis.LabelFontSizeÂ =Â 14d;
-this.olapChart.PrimaryAxis.LabelFontWeightÂ =Â FontWeights.ExtraBold;
-this.olapChart.SecondaryAxis.LabelForegroundÂ =Â Brushes.DarkGray;
-this.olapChart.SecondaryAxis.LabelFontFamilyÂ =Â newÂ FontFamily("Arial");
-this.olapChart.SecondaryAxis.LabelFontSizeÂ =Â 14d;
-this.olapChart.SecondaryAxis.LabelFontWeightÂ =Â FontWeights.ExtraBold;
+this.olapChart.PrimaryAxis.LabelForeground = Brushes.DarkGray;
+this.olapChart.PrimaryAxis.LabelFontFamily = new FontFamily("Arial");
+this.olapChart.PrimaryAxis.LabelFontSize = 14d;
+this.olapChart.PrimaryAxis.LabelFontWeight = FontWeights.ExtraBold;
+this.olapChart.SecondaryAxis.LabelForeground = Brushes.DarkGray;
+this.olapChart.SecondaryAxis.LabelFontFamily = new FontFamily("Arial");
+this.olapChart.SecondaryAxis.LabelFontSize = 14d;
+this.olapChart.SecondaryAxis.LabelFontWeight = FontWeights.ExtraBold;
 
 {% endhighlight %}
 
@@ -153,13 +153,13 @@ The primary axis label panel visibility can be toggled by setting the `PrimaryAx
 
 {% highlight xaml %}
 
-<syncfusion:OlapChartÂ Name="olapChart"Â PrimaryAxisLabelVisibility="Collapsed" />
+<syncfusion:OlapChart Name="olapChart" PrimaryAxisLabelVisibility="Collapsed" />
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-this.olapChart.PrimaryAxisLabelVisibilityÂ =Â System.Windows.Visibility.Collapsed;
+this.olapChart.PrimaryAxisLabelVisibility = System.Windows.Visibility.Collapsed;
 
 {% endhighlight %}
 

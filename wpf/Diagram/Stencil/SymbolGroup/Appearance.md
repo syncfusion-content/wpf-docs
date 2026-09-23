@@ -91,4 +91,3 @@ Stencil stencil = new Stencil()
 [How to group all the SymbolViewModels into the same group in the WPF Diagram ?](https://support.syncfusion.com/kb/article/18672/how-to-group-all-the-symbolviewmodels-into-the-same-group-in-the-wpf-diagram-sfdiagram)
 
 [How to change the background color of a symbol in WPF Diagram?](https://support.syncfusion.com/kb/article/18241/how-to-change-the-background-color-of-a-symbol-in-wpf-sfdiagram)
-

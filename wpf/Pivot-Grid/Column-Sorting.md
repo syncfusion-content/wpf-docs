@@ -115,4 +115,3 @@ public partial class MainWindow: Window {
 Refer to the [link here](http://help.syncfusion.com/wpf/pivotgrid/multi-column-sorting#multi-column-sorting-in-row-pivots-only-mode-of-pivotgrid-control).
 
 N> You can also explore our [WPF Pivot Grid example](https://github.com/syncfusion/wpf-demos) to knows how to organizes and summarizes business data and displays the result in a cross-table format.
-

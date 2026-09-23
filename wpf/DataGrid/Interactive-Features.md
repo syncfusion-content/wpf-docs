@@ -252,4 +252,3 @@ void MainWindow_Loaded(object sender, RoutedEventArgs e)
 ![Customizing Column Chooser Appearance in wpf datagrid](Interactive-Features_images/wpf-datagrid-column-chooser-customization.png)
 
 
-

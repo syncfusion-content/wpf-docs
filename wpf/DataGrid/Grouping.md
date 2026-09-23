@@ -656,4 +656,3 @@ The [SfDataGrid.GroupCollapsed](https://help.syncfusion.com/cr/wpf/Syncfusion.UI
 [How to avoid selection while grouping and ungrouping in SfDataGrid?](https://support.syncfusion.com/kb/article/2809/how-to-avoid-selection-while-grouping-and-ungrouping-in-sfdatagrid)
 
 [How to customize the GroupDropArea?](https://support.syncfusion.com/kb/article/2878/how-to-customize-the-groupdroparea-in-wpf-datagrid-control)
-
