@@ -9,7 +9,7 @@ documentation: ug
 
 # Customization in WPF AI AssistView
 
-This section covers the ways the [SfAIAssistView](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Chat.SfAIAssistView.html) control can be customized to meet application requirements. Use the options below to define a banner that appears above the chat list, render rich content before a chat begins, and switch the look of each AI response using a template selector.
+This section explains how to customize the [SfAIAssistView](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Chat.SfAIAssistView.html) control to suit your application's requirements. Use the available customization options to display a banner above the chat list, render rich content before the conversation starts, and customize the appearance of AI responses through a template selector.
 
 ## BannerTemplate
 
@@ -94,7 +94,7 @@ The `EmptyView` property accepts any object as its content, which is then displa
 
 ### EmptyViewTemplate
 
-The `EmptyViewTemplate` property allows you to fully customize the appearance of the empty view by providing a `DataTemplate`. This is helpful when you need to display richer content such as images, multiple text blocks, or styled layouts.
+The `EmptyViewTemplate` property allows you to customize the appearance of the empty view by specifying a `DataTemplate`. This is useful for displaying rich content, such as images, formatted text, or custom layouts, when no messages are available.
 
 {% tabs %}
 {% highlight xaml %}
@@ -232,7 +232,7 @@ namespace GettingStarted
 
 ### Define the templates and apply the selector
 
-Define `UserTemplate` and `BotTemplate` inside the `ViewTemplateSelector`. `BotTemplate` renders the response inside the [SfMarkdownViewer](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Markdown.SfMarkdownViewer.html) control from the `Syncfusion.SfMarkdownViewer.WPF` NuGet so that Markdown formatting (headings, bold, lists, code blocks, links) is rendered correctly. `UserTemplate` wraps the text in a `Border` with a corner radius so the user bubble is clearly visible. Then assign the selector to `ViewTemplateSelector` of the SfAIAssistView.
+Define the `UserTemplate` and `BotTemplate` properties within the custom `ViewTemplateSelector`. In this example, the `BotTemplate` renders bot responses using the [SfMarkdownViewer](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Markdown.SfMarkdownViewer.html) control, allowing Markdown content to be displayed with rich formatting.
 
 {% tabs %}
 {% highlight xaml %}
