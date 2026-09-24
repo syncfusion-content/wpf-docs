@@ -5,6 +5,7 @@ description: Rim in the WPF Radial Gauge customizes the outer boundary of the ga
 platform: wpf
 control: SfCircularGauge
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Rim in WPF Radial Gauge

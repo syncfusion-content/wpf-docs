@@ -5,6 +5,7 @@ description: Align nodes and connectors in Syncfusion® WPF Diagram using built-
 platform: wpf
 control: SfDiagram
 documentation: ug
+appliesto: UI Component Suite, Diagram SDK
 ---
 
 # Alignment Commands in WPF Diagram

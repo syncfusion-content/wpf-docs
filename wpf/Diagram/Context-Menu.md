@@ -5,6 +5,7 @@ description: Customize context menus in Syncfusion® WPF Diagram with built-in c
 platform: wpf
 control: SfDiagram
 documentation: ug
+appliesto: UI Component Suite, Diagram SDK
 ---
 
 # Context Menu in WPF Diagram

@@ -5,6 +5,7 @@ description: Customize grid lines in SfTreeGrid to show vertical, horizontal, or
 platform: wpf
 control: TreeGrid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Grid Lines in WPF SfTreeGrid

@@ -5,6 +5,7 @@ description: Color value path in the WPF TreeMap maps data values to color range
 platform: wpf
 control: TreeMap
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Color Value Path in WPF TreeMap

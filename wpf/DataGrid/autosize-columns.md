@@ -5,6 +5,7 @@ description: AutoSize Columns in Data Grid automatically adjusts column widths b
 platform: wpf
 control: Data Grid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # AutoSize Columns in WPF Data Grid

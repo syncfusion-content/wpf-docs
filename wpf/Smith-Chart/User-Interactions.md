@@ -5,6 +5,7 @@ description: User interactions in the WPF Smith Chart enable selection, tooltips
 platform: wpf
 control: SfSmithChart
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # User Interactions in WPF Smith Chart

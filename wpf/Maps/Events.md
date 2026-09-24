@@ -5,6 +5,7 @@ description: Events in the WPF Maps enable you to respond to user interactions a
 platform: wpf
 control: SfMap
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Interaction Events in WPF Maps
@@ -15,7 +16,7 @@ documentation: ug
 • [`Panned`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.SfMap.html) - Occurs after panning the map.
 • [`MapToolTipOpening`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.SfMap.html) - Occurs when any tooltip on the SfMap control is opened.
 
-### Tooltip opening event
+## Tooltip opening event
 
 The [`MapToolTipOpening`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.SfMap.html) event occurs whenever you select a shape, bubble, or marker. You will get the `Data` and `TooltipType` properties as arguments from the `TooltipOpeningEventArgs` handler, and you can cancel the event for a particular shape using the `Cancel` property.
 

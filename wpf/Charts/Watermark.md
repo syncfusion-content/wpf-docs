@@ -5,6 +5,7 @@ description: Watermark in the WPF Chart adds background text or images to the ch
 platform: wpf
 control: SfChart
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Watermark in WPF Charts

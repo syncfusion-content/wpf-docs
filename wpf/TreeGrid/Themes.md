@@ -5,6 +5,7 @@ description: Themes in SfTreeGrid apply built in themes to customize grid appear
 platform: wpf
 control: SfTreeGrid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Themes in WPF SfTreeGrid

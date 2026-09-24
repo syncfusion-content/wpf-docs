@@ -5,6 +5,7 @@ description: Column Types in SfTreeGrid provides built-in and custom column type
 platform: wpf
 control: SfTreeGrid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 

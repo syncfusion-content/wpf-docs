@@ -5,6 +5,7 @@ description: Tooltip in the WPF Bullet Graph displays detailed information about
 platform: wpf
 control: SfBulletGraph
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Tooltip in WPF Bullet Graph

@@ -5,6 +5,7 @@ description: Retrieve raw data objects in the Syncfusion® WPF Pivot Grid for va
 platform: wpf
 control: Pivot Grid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # GetRawItem in WPF Pivot Grid

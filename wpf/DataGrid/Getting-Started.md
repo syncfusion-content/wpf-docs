@@ -6,6 +6,7 @@ description: Learn how to get started with the Syncfusion® WPF Data Grid contro
 platform: wpf
 control: Data Grid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Getting Started with WPF Data Grid

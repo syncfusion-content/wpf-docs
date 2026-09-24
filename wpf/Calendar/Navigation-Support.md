@@ -5,6 +5,7 @@ description: Learn about date navigation features in WPF Calendar to move betwee
 platform: wpf
 control: CalendarEdit
 documentation: ug
+appliesto: UI Component Suite, Scheduler SDK
 ---
 
 # Date Navigation in WPF Calendar

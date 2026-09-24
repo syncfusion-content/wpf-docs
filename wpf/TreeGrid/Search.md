@@ -5,6 +5,7 @@ description: Search in SfTreeGrid quickly locates records across grid data to im
 platform: wpf
 control: SfTreeGrid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Search in WPF SfTreeGrid

@@ -5,6 +5,7 @@ description: Learn about Data Binding support in Syncfusion WPF Gantt with built
 platform: wpf
 control: Gantt
 documentation: ug
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Data Binding in WPF Gantt

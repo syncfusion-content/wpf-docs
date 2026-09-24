@@ -5,6 +5,7 @@ description: Learn about Sorting support in Syncfusion WPF Kanban Board using cu
 platform: wpf
 control: SfKanban
 documentation: ug
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Sorting in WPF Kanban Board

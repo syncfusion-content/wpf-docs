@@ -5,6 +5,7 @@ description: Exporting in the WPF Chart enables chart data and visuals to be sav
 platform: wpf
 control: SfChart
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Exporting in WPF Charts

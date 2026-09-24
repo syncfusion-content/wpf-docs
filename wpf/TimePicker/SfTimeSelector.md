@@ -5,6 +5,7 @@ description: Learn about SfTimeSelector in WPF TimePicker that enables time sele
 platform: wpf
 control: SfTimePicker
 documentation: ug
+appliesto: UI Component Suite, Scheduler SDK
 ---
 
 # Time Selector in WPF TimePicker

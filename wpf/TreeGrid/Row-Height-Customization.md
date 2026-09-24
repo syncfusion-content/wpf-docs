@@ -5,6 +5,7 @@ description: Row Height Customization in SfTreeGrid customizes row heights dynam
 platform: wpf
 control: SfTreeGrid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Row Height Customization in WPF SfTreeGrid

@@ -5,6 +5,7 @@ description: Learn about group in Syncfusion® WPF Diagram control, including cr
 platform: wpf
 control: SfDiagram
 documentation: ug
+appliesto: UI Component Suite, Diagram SDK
 ---
 
 # Group in WPF Diagram

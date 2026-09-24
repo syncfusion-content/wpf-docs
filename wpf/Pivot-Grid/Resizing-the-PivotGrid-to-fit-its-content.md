@@ -5,6 +5,7 @@ description: Resize to Fit in the Syncfusion® WPF Pivot Grid control resizes th
 platform: wpf
 control: Pivot Grid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Resize to Fit in WPF Pivot Grid

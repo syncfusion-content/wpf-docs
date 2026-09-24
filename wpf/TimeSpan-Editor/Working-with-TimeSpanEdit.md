@@ -5,6 +5,7 @@ description: Learn how to work with TimeSpanEdit to change time values and forma
 platform: wpf
 control: TimeSpanEdit
 documentation: ug
+appliesto: UI Component Suite, Scheduler SDK
 ---
 
 # Working with TimeSpanEdit in WPF TimeSpan Editor

@@ -5,6 +5,7 @@ description: Ranges in the WPF Bullet Graph highlight specific value intervals, 
 platform: wpf
 control: SfBulletGraph
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Ranges in WPF Bullet Graph

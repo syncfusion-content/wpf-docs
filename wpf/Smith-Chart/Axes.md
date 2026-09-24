@@ -5,6 +5,7 @@ description: Axes in the WPF Smith Chart define coordinate grids, scales, and la
 platform: wpf
 control: SfSmithChart
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Axes in WPF Smith Chart

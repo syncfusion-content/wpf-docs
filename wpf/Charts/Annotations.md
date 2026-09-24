@@ -5,6 +5,7 @@ description: Annotations in the WPF Chart enable you to add custom text, shapes,
 platform: wpf
 control: SfChart
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 # Annotations in WPF Charts
 

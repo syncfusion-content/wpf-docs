@@ -5,6 +5,7 @@ description: Organize stencil symbols in Syncfusion® WPF Diagram using symbol g
 platform: wpf
 control: SfDiagram
 documentation: ug
+appliesto: UI Component Suite, Diagram SDK
 ---
 
 # Symbol Groups in WPF Diagram

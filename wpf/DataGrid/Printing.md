@@ -5,6 +5,7 @@ description: Printing in Data Grid prints grid data with customizable layouts, f
 platform: wpf
 control: Data Grid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Printing in WPF Data Grid

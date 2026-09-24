@@ -5,6 +5,7 @@ description: Other chart types in the WPF Chart provide specialized visualizatio
 platform: wpf
 control: SfChart
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Other Types in WPF Charts
