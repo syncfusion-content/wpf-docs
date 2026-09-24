@@ -5,6 +5,7 @@ description: Configure grouping bar in the Syncfusion® WPF Pivot Grid control t
 platform: wpf
 control: Pivot Grid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Defining Grouping Bar Properties in WPF Pivot Grid

@@ -5,6 +5,7 @@ description: Serialization in SfTreeGrid enables saving and restoring grid state
 platform: wpf
 control: SfTreeGrid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Serialization and Deserialization in WPF SfTreeGrid

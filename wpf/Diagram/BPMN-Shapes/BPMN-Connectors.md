@@ -5,6 +5,7 @@ description: Learn about BPMN connectors in Syncfusion® WPF Diagram control, in
 platform: wpf
 control: SfDiagram
 documentation: ug
+appliesto: UI Component Suite, Diagram SDK
 ---
 
 # Connectors in WPF Diagram

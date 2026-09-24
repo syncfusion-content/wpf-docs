@@ -5,6 +5,7 @@ description: Empty points in the WPF Chart handle missing data values by skippin
 platform: wpf
 control: SfChart
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Empty Points in WPF Charts

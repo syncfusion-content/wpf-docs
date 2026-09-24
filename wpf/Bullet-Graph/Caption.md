@@ -5,6 +5,7 @@ description: Caption in the WPF Bullet Graph displays descriptive text for the g
 platform: wpf
 control: SfBulletGraph
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Caption in WPF Bullet Graph

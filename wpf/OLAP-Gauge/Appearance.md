@@ -5,6 +5,7 @@ description: Appearance in the WPF OLAP Gauge allows you to customize gauge elem
 platform: wpf
 control: OLAP Gauge
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Appearance in WPF OLAP Gauge

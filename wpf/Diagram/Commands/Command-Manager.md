@@ -5,6 +5,7 @@ description: Map keyboard and mouse gestures to commands in Syncfusion® WPF Dia
 platform: wpf
 control: SfDiagram
 documentation: ug
+appliesto: UI Component Suite, Diagram SDK
 ---
 
 # Command Manager in WPF Diagram

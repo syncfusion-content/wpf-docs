@@ -7,6 +7,7 @@ platform: wpf
 control: SfSunburstChart 
 documentation: ug
 
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Animation in WPF Sunburst Chart

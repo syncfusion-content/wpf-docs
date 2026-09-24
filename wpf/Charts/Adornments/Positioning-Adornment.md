@@ -5,6 +5,7 @@ description: Positioning data markers in the WPF Chart allows you to customize m
 platform: wpf
 control: SfChart
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Positioning Data Markers in WPF Charts

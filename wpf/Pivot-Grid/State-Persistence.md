@@ -5,6 +5,7 @@ description: State Persistence in the Syncfusion® WPF Pivot Grid control preser
 platform: wpf
 control: Pivot Grid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # State Persistence in WPF Pivot Grid

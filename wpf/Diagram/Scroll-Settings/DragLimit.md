@@ -5,6 +5,7 @@ description: Restrict diagram object dragging in Syncfusion® WPF Diagram using 
 platform: wpf
 control: SfDiagram
 documentation: ug
+appliesto: UI Component Suite, Diagram SDK
 ---
 
 # Drag Limit in WPF Diagram

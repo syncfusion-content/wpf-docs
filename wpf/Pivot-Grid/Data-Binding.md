@@ -5,6 +5,7 @@ description: Bind data sources to the Syncfusion® WPF Pivot Grid control to dis
 platform: wpf
 control: Pivot Grid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Data Binding in WPF Pivot Grid

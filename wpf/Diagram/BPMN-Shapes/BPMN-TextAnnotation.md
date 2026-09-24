@@ -5,6 +5,7 @@ description: Learn about BPMN text annotations in Syncfusion® WPF Diagram contr
 platform: wpf
 control: SfDiagram
 documentation: ug
+appliesto: UI Component Suite, Diagram SDK
 ---
 
 # TextAnnotation in WPF Diagram

@@ -5,6 +5,7 @@ description: Custom data binding in the WPF Maps enables map elements to be conn
 platform: wpf
 control: SfMap
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Custom Data Binding in WPF Maps

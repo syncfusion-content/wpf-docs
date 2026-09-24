@@ -5,6 +5,7 @@ description: Edit annotations and format text in Syncfusion® WPF Diagram using 
 platform: wpf
 control: SfDiagram
 documentation: ug
+appliesto: UI Component Suite, Diagram SDK
 ---
 
 # Edit and Format Text Commands in WPF Diagram

@@ -5,6 +5,7 @@ description: Learn how to customize dropdown visibility and height in WPF TimePi
 platform: wpf
 control: SfTimePicker
 documentation: ug
+appliesto: UI Component Suite, Scheduler SDK
 ---
 
 # Customizing DropDown in WPF TimePicker

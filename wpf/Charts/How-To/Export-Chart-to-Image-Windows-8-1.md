@@ -5,6 +5,7 @@ description: Export a chart to an image in the WPF Chart on Windows 8.1 to save 
 platform: wpf
 control: SfChart
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # How to export chart to image in WPF Chart

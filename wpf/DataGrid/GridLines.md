@@ -5,6 +5,7 @@ description: Grid Lines Customization in Data Grid customizes grid and header li
 platform: wpf
 control: Data Grid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Grid Lines Customization in WPF Data Grid

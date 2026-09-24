@@ -5,6 +5,7 @@ description: Learn about BPMN expanded subprocesses in Syncfusion® WPF Diagram 
 platform: wpf
 control: SfDiagram
 documentation: ug
+appliesto: UI Component Suite, Diagram SDK
 ---
 
 # Expanded SubProcess in WPF Diagram

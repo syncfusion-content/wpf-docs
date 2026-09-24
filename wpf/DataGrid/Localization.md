@@ -5,6 +5,7 @@ description: Localization in Data Grid customizes grid content and user interfac
 platform: wpf
 control: Data Grid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 

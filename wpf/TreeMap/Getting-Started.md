@@ -5,6 +5,7 @@ description: Learn how to get started with the Syncfusion® WPF TreeMap control.
 platform: wpf
 control: TreeMap
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Getting Started with WPF TreeMap

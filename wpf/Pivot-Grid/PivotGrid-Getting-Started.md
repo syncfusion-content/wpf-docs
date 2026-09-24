@@ -5,6 +5,7 @@ description: Learn how to get started with the Syncfusion® WPF Pivot Grid contr
 platform: wpf
 control: Pivot Grid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Getting Started with WPF Pivot Grid

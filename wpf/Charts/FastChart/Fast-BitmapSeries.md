@@ -5,6 +5,7 @@ description: Fast Bitmap Series in the WPF Chart renders large volumes of data e
 platform: wpf
 control: SfChart
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Fast Bitmap Series in WPF Charts 

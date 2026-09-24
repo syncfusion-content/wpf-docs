@@ -5,6 +5,7 @@ description: Bubble and scatter series in the WPF Chart visualize relationships 
 platform: wpf
 control: SfChart
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Bubble and Scatter in WPF Charts

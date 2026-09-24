@@ -5,6 +5,7 @@ description: Learn about Localization support in Syncfusion WPF Gantt  for diffe
 platform: wpf
 control: Gantt
 documentation: ug
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 

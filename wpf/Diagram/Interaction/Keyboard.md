@@ -5,6 +5,7 @@ description: Use keyboard shortcuts in Syncfusion® WPF Diagram for selection, e
 platform: wpf
 control: SfDiagram
 documentation: ug
+appliesto: UI Component Suite, Diagram SDK
 ---
 
 # Keyboard Support in WPF Diagram

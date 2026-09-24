@@ -5,6 +5,7 @@ description: Rotate diagram elements in Syncfusion® WPF Diagram using rotate co
 platform: wpf
 control: SfDiagram
 documentation: ug
+appliesto: UI Component Suite, Diagram SDK
 ---
 
 # Rotate Command in WPF Diagram
