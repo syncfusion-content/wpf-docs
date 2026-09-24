@@ -45,7 +45,11 @@ The built-in hamburger button collapses or expands the navigation view when it i
 
 ## Conversation history
 
-The `Conversations` property stores the archived conversations displayed in the navigation view. Each conversation is represented by an `AssistConversationItem` that contains a title, start date and time, and a collection of messages.
+The SfAIAssistView control provides a History feature that allows you to display the conversation history from interactions with real-time AI. To disable this feature, set the ShowNavigationView property to false.
+
+### Binding data into conversation history
+
+The SfAIAssistView control provides the `Conversations` property to manually set the conversation history items source. This source also updates at runtime when new requests are made in the conversation.
 
 ### Define the view model
 
@@ -162,13 +166,13 @@ Set the window's data context and bind the `Conversations` property to display t
 {% endhighlight %}
 {% endtabs %}
 
-Selecting an archived conversation replaces the current messages with the messages stored in its `AssistItems` collection. The built-in **New Chat** option clears the current conversation and preserves a conversation that contains a request in the history.
+Selecting a conversation from the history replaces the current messages with the messages stored in its AssistItems collection. The built-in New Chat option starts a new conversation while preserving existing conversations that contain user requests in the conversation history.
 
 ![Conversation history in WPF AI AssistView](aiassistview_images/wpf_aiassistview_conversation_history.png)
 
 ## Customize the navigation header
 
-The `NavigationHeader` property sets the text displayed at the top of the navigation view. Its default value is `string.Empty`.
+The SfAIAssistView control provides the NavigationHeader property to set the header text for the navigation view. By default, this property is set to string.Empty.
 
 {% tabs %}
 {% highlight xaml tabtitle="MainWindow.xaml" hl_lines="2" %}
