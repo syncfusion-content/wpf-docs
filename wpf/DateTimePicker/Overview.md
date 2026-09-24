@@ -5,6 +5,7 @@ description: Learn about introduction of Syncfusion® Essential Studio WPF DateT
 platform: wpf
 control: DateTimeEdit
 documentation: ug
+appliesto: UI Component Suite, Scheduler SDK
 ---
 
 # About Syncfusion® WPF DateTimePicker Control

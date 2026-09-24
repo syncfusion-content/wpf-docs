@@ -5,6 +5,7 @@ description: Control the auto-scrolling region in Syncfusion® WPF Diagram by co
 platform: wpf
 control: SfDiagram
 documentation: ug
+appliesto: UI Component Suite, Diagram SDK
 ---
 
 # Auto-Scroll Limit in WPF Diagram

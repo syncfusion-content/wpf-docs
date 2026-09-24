@@ -5,6 +5,7 @@ description: Print diagrams in Syncfusion® WPF Diagram with print preview, page
 platform: wpf
 control: SfDiagram
 documentation: ug
+appliesto: UI Component Suite, Diagram SDK
 ---
 # Printing in WPF Diagram
 

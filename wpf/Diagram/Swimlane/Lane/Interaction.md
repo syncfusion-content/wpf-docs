@@ -5,6 +5,7 @@ description: Learn about lane interactions in Syncfusion® WPF Diagram control, 
 platform: wpf
 control: SfDiagram
 documentation: ug
+appliesto: UI Component Suite, Diagram SDK
 ---
 
 # Lane Interactions in WPF Diagram

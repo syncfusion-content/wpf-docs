@@ -5,6 +5,7 @@ description: Search in Data Grid quickly locates records across grid data to imp
 platform: wpf
 control: Data Grid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Search in WPF Data Grid

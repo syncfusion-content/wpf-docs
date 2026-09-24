@@ -5,9 +5,10 @@ description: Drill operation in the WPF OLAP Chart enables users to expand and c
 platform: wpf
 control: OLAP Chart
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
-# Drill Operation in WPF Olap Chart
+# Drill Operation in WPF OLAP Chart
 
 This is a basic feature of WPF OLAP Chart through which the amount of information can be limited, for a better view. It allows you to drill down to access the detailed level of data or drill up to see the summarized data by using the context menu present in the WPF OLAP Chart.
 

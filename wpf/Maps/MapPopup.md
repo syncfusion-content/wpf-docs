@@ -5,6 +5,7 @@ description: Interactive popup in the WPF Maps displays additional information f
 platform: wpf
 control: SfMap
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Interactive Popup in WPF Maps

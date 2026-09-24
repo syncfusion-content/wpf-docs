@@ -5,6 +5,7 @@ description: Load an existing or external PivotEngine into Syncfusion® WPF Pivo
 platform: wpf
 control: Pivot Grid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # How to Load an Existing PivotEngine into WPF Pivot Grid

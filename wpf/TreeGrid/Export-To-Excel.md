@@ -5,6 +5,7 @@ description: Export SfTreeGrid data to Excel with support for headers, stacked h
 platform: wpf
 control: SfTreeGrid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Export To Excel in WPF SfTreeGrid

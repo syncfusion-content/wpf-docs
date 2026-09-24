@@ -5,6 +5,7 @@ description: Pie and doughnut series in the WPF Chart display proportional data 
 platform: wpf
 control: SfChart
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Pie and Doughnut in WPF Charts

@@ -5,6 +5,7 @@ description: Localization in the WPF OLAP Gauge enables gauge content, labels, a
 platform: wpf
 control: OLAP Gauge
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Localization in WPF OLAP Gauge

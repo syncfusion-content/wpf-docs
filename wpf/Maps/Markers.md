@@ -5,6 +5,7 @@ description: Markers in the WPF Maps highlight geographic locations using custom
 platform: wpf
 control: SfMap
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Marker Customization in WPF Maps

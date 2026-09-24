@@ -5,6 +5,7 @@ description: Providers in the WPF Maps supply map tile sources and geographic da
 platform: wpf
 control: SfMap
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Providers in WPF Maps

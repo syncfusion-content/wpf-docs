@@ -5,6 +5,7 @@ description: Learn about port-to-port connections in Syncfusion® WPF Diagram co
 platform: wpf
 control: SfDiagram
 documentation: ug
+appliesto: UI Component Suite, Diagram SDK
 ---
 
 # Port-to-Port Connections in WPF Diagram

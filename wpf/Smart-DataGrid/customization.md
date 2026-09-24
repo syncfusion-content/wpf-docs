@@ -6,6 +6,7 @@ platform: wpf
 control: Smart Data Grid
 documentation: ug
 keywords : WPF smart data grid,wpf smart grid, wpf datagrid, customization, assistview, prompts, smart actions
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Customization in WPF Smart Data Grid

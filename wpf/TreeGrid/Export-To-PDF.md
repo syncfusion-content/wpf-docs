@@ -5,6 +5,7 @@ description: Export SfTreeGrid data to PDF with options to include headers, stac
 platform: wpf
 control: SfTreeGrid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Export To PDF in WPF SfTreeGrid

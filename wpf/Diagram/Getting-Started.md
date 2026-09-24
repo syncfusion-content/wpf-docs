@@ -5,6 +5,7 @@ description: Learn how to get started with the Syncfusion® WPF Diagram control.
 platform: wpf
 control: SfDiagram
 documentation: ug
+appliesto: UI Component Suite, Diagram SDK
 ---
 
 # Getting Started with WPF Diagram

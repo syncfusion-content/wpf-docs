@@ -5,6 +5,7 @@ description: Coded UI in the WPF Chart supports automated UI testing by enabling
 platform: wpf
 control: SfChart
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Coded UI in WPF Charts

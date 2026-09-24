@@ -5,6 +5,7 @@ description: Learn about annotation events in Syncfusion® WPF Diagram control, 
 platform: wpf
 control: SfDiagram
 documentation: ug
+appliesto: UI Component Suite, Diagram SDK
 ---
 
 # Annotation Events in WPF Diagram

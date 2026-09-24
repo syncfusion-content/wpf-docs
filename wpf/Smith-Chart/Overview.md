@@ -5,6 +5,7 @@ description: Learn about the introduction of Syncfusion Essential Studio® WPF S
 platform: wpf
 control: SfSmithChart
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # About Syncfusion® WPF Smith Chart control

@@ -5,6 +5,7 @@ description: Symbology Types in the WPF Barcode include various 1D and 2D symbol
 platform: wpf
 control: SfBarcode
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Symbology Types in WPF Barcode

@@ -5,6 +5,7 @@ description: Learn how to get started with the Syncfusion® WPF Sunburst Chart c
 platform: wpf
 control: SfSunburstChart
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Getting Started with WPF Sunburst Chart

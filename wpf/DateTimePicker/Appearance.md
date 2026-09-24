@@ -5,6 +5,7 @@ description: Learn about appearance customization and styling options in the Syn
 platform: wpf
 control: DateTimeEdit
 documentation: ug
+appliesto: UI Component Suite, Scheduler SDK
 ---
 
 # Appearance in WPF DateTimePicker

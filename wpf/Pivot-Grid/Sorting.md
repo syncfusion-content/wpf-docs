@@ -5,6 +5,7 @@ description: Sorting in the Syncfusion® WPF Pivot Grid control organizes data i
 platform: wpf
 control: Pivot Grid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Sorting in WPF Pivot Grid

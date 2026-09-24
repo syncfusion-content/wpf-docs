@@ -5,6 +5,7 @@ description: Grouping bar visibility in Syncfusion® WPF Pivot Grid to show head
 platform: wpf
 control: Pivot Grid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Visibility of Grouping Bar in WPF Pivot Grid

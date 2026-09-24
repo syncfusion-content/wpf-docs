@@ -5,6 +5,7 @@ description: Column Types in Data Grid provides built-in and custom column types
 platform: wpf
 control: Data Grid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Column Types in WPF Data Grid

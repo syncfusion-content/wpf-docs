@@ -5,6 +5,7 @@ description: Legend in the WPF Chart identifies series and data categories, help
 platform: wpf
 control: SfChart
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Legend in WPF Charts

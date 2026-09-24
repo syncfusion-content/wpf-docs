@@ -5,6 +5,7 @@ description: Legend in the WPF Maps identifies map elements, categories, and dat
 platform: wpf
 control: SfMap
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Legend Customization in WPF Maps

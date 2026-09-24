@@ -5,6 +5,7 @@ description: Learn how to get started with the Syncfusion® WPF Range Selector c
 platform: wpf
 control: SfDateTimeRangeNavigator
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Getting Started with WPF Range Selector

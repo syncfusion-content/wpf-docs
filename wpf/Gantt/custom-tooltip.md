@@ -5,6 +5,7 @@ description: Learn about CustomToolTip support in Syncfusion WPF Gantt using the
 platform: wpf
 control: Gantt
 documentation: ug
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # CustomToolTip in WPF Gantt

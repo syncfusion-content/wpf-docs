@@ -5,6 +5,7 @@ description: Quantitative scale in the WPF Bullet Graph defines value ranges, in
 platform: wpf
 control: SfBulletGraph
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Quantitative Scale in WPF Bullet Graph

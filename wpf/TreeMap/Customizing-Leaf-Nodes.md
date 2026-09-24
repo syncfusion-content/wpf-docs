@@ -5,6 +5,7 @@ description: Leaf nodes customization in the WPF TreeMap allows you to modify th
 platform: wpf
 control: TreeMap
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Leaf Nodes Customization in WPF TreeMap

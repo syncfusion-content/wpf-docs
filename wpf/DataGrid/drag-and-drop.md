@@ -5,6 +5,7 @@ description: Row Drag and Drop in Data Grid provides drag-and-drop support for m
 platform: wpf
 control: Data Grid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Row Drag and Drop in WPF Data Grid

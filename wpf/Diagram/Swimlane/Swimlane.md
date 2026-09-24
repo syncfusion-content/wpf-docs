@@ -5,6 +5,7 @@ description: Learn about swimlane in Syncfusion® WPF Diagram control, including
 platform: wpf
 control: SfDiagram
 documentation: ug
+appliesto: UI Component Suite, Diagram SDK
 ---
 
 # Swimlane in WPF Diagram

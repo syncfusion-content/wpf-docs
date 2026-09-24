@@ -5,6 +5,7 @@ description: Learn about snapping in Syncfusion® WPF Diagram, including snap-to
 platform: wpf
 control: SfDiagram
 documentation: ug
+appliesto: UI Component Suite, Diagram SDK
 ---
 
 # Snapping in WPF Diagram

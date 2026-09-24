@@ -5,6 +5,7 @@ description: Range series in the WPF Chart display minimum and maximum values ac
 platform: wpf
 control: SfChart
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Range Chart in WPF Charts

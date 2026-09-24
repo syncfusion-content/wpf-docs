@@ -5,6 +5,7 @@ description: Export To Excel in Data Grid exports grid data to Excel files while
 platform: wpf
 control: Data Grid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Export To Excel in WPF Data Grid

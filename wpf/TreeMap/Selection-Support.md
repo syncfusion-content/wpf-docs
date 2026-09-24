@@ -5,6 +5,7 @@ description: Selection support in the WPF TreeMap enables users to highlight and
 platform: wpf
 control: TreeMap
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Selection Support in WPF TreeMap
