@@ -114,5 +114,6 @@ Export the data to both Excel and PDF.
 ### Excel Exporting
 <img alt="export-excel" src="ai-powered-features_images\WPF-smart-datagrid-exporting-excel.gif" width="600" />
 
+
 ### PDF Exporting
 <img alt="export-pdf" src="ai-powered-features_images\WPF-smart-datagrid-exporting-pdf.gif" width="600" />
