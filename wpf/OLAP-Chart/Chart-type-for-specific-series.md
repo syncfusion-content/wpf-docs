@@ -8,7 +8,7 @@ documentation: ug
 appliesto: UI Component Suite, Chart SDK
 ---
 
-# Chart Type for Specific Series in WPF Olap Chart
+# Chart Type for Specific Series in WPF OLAP Chart
 
 The WPF OLAP Chart supports changing the chart type of each series using the context menu.
 

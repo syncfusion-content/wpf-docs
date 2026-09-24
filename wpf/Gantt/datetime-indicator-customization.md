@@ -32,7 +32,7 @@ Essential Gantt allows you to customize the appearance of the DateTime indicator
 2. You can customize the DateTime indicator to give a similar look and feel to your product.
 3. You can change the style of DateTime indicator to differentiate the DateTime indicator from other vertical lines.
 
-#### Properties
+### Properties
 
 <table>
 <tr>
@@ -231,7 +231,7 @@ this.ganttControl.CurrentDateLine.StrokeThickness = 1;
 
 {% endtabs %}
 
-#### Output
+### Output
 
 The following image shows the resultant output:
 

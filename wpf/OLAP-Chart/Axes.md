@@ -8,7 +8,7 @@ documentation: ug
 appliesto: UI Component Suite, Chart SDK
 ---
 
-# Axes in WPF Olap Chart
+# Axes in WPF OLAP Chart
 
 An OLAP area contains two axes, the primary axis and secondary axis, in an OLAP chart control. Values or data in the chart are plotted against these axes.
 

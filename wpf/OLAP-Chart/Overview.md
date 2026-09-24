@@ -8,7 +8,7 @@ documentation: ug
 appliesto: UI Component Suite, Chart SDK
 ---
 
-# About Syncfusion WPF Olap Chart control
+# About Syncfusion WPF OLAP Chart control
 
 A WPF OLAP Chart control is a lightweight control that allows you to efficiently visualize multi-dimensional data from the OLAP data source with the help of a report bound to it.
 

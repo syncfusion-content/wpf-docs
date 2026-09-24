@@ -405,7 +405,7 @@ The following image shows the Dependency Relationship:
 
 ![gantt-control-dependency-relationship](Dependency-Relationship_images/gantt-control-dependency-relationship.png)
 
-#### Samples Link
+### Samples Link
 
 To view samples: 
 
@@ -432,7 +432,7 @@ There are two predecessor validation modes in Gantt Control.
 * Auto - Successor nodes will adjust its position based on its predecessor nodes automatically.
 * Manual - Successor nodes need to adjust manually with respect to predecessor.
 
-#### Properties
+### Properties
 
 <table>
 <tr>

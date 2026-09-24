@@ -8,7 +8,7 @@ documentation: ug
 appliesto: UI Component Suite, Chart SDK
 ---
 
-# Appearance in WPF Olap Chart
+# Appearance in WPF OLAP Chart
 
 The WPF OLAP Chart supports customizing the appearance of charts. You can customize the chart style, legend style, border and background style, point label style, and label style of the primary and secondary axes.
 

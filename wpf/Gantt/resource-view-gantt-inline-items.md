@@ -47,7 +47,7 @@ You can populate a resource view Gantt by populating the collection of tasks in 
 
 You can populate a Resource view Gantt for both date-time schedules and numeric schedules. 
 
-#### Resource View Gantt in a Custom Numeric Schedule
+### Resource View Gantt in a Custom Numeric Schedule
 
 To populate a Resource view Gantt in a Custom Numeric Schedule:
 
