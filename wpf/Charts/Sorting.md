@@ -12,7 +12,7 @@ appliesto: UI Component Suite, Chart SDK
 
 Chart provides the support for sorting the data point either in ascending or descending based on X or Y axis.
 
-### Enable Sorting
+## Enable Sorting
 This [`IsSortData`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#Syncfusion_UI_Xaml_Charts_ChartSeriesBase_IsSortData) property used to enable the sorting in series.
 
 ### Changing sorting direction

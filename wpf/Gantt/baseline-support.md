@@ -26,7 +26,7 @@ N> Variance view will have the read-only Grid. You cannot edit the cells in Gant
 
 This will help the Project Leads to compare the current progress of the project to the baseline and modify or rework the plan of existing tasks in order to meet deadlines. Organizations can use this to compare the current progress of the project to the initial estimation, analyze the rework of the plan or the budget of the project to meet deadlines and exact user requirements.
 
-#### Methods
+### Methods
 
 <table>
 <tr>
@@ -696,7 +696,7 @@ In Gantt chart, baseline start and end values are graphically visualized.
 * Line shape represents the header node and node.
 * Diamond shape represents the milestone.
 
-#### Properties
+### Properties
 
 <table>
 <tr>
@@ -719,7 +719,7 @@ NA</td></tr>
 
 Able to customize the baseline color and thickness by using following properties.
 
-#### Properties
+### Properties
 
 <table>
 <tr>
@@ -765,7 +765,7 @@ On-Demand Baseline Column inclusion will dynamically add the baseline columns na
 
 Initially, Gantt will get loaded with a default set of columns. Then, you can add the baseline columns on demand basis to Gantt Grid, by selecting the columns from the drop down cell. 
 
-#### Use Case Scenario
+### Use Case Scenario
 
 This helps the Project Lead to store the estimation and will help to schedule the project in an efficient way by comparing the progress on planning itself. Organizations can have the default set of columns on Gantt Grid on loading, and when they need to compare a field with the estimate data, they can pick that column from the drop down. 
 
@@ -1443,7 +1443,7 @@ Project statistics will provide the current statistics of the project in an obje
 
 This will provide enough information about the project. The entire project information will be available in the form of an object of type “ProjectInfo”. You can set your own visual to display the statistics. 
 
-#### Use Case Scenario
+### Use Case Scenario
 
 This will be useful for Project Leads to take decisions based on the current status. An Organization can use this to present the current statuses of their projects to their clients. They can also use this for analysis before making important decisions on projects.
 

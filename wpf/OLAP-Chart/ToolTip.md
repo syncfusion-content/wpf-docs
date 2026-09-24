@@ -8,7 +8,7 @@ documentation: ug
 appliesto: UI Component Suite, Chart SDK
 ---
 
-# Tooltip in WPF Olap Chart
+# Tooltip in WPF OLAP Chart
 
 The WPF OLAP Chart provides series information, such as measure values, primary x-axis and y-axis values, and the series name, through series tooltips when the mouse pointer is moved over chart points.
 

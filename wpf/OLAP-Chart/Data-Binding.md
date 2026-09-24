@@ -8,7 +8,7 @@ documentation: ug
 appliesto: UI Component Suite, Chart SDK
 ---
 
-# Data Binding in WPF Olap Chart
+# Data Binding in WPF OLAP Chart
 
 ## Binding WPF OLAP Chart to offline cube
 

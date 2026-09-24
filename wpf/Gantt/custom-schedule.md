@@ -43,7 +43,7 @@ In both the custom schedules, Gantt will get the information from the applicatio
     * Months—represents the corresponding row as a months row.
     * Years—represents the corresponding row as a years row.
 
-#### Use Case Scenario
+### Use Case Scenario
 
 This will be useful when you like to define your own schedules with your own measurements/calendars.
 
@@ -89,7 +89,7 @@ Routed Event </td></tr>
 
 The properties of the GanttScheduleCell class are as follows:
 
-#### Properties
+### Properties
 
 <table>
 <tr>
