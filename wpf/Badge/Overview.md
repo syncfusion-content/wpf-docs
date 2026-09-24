@@ -1,9 +1,9 @@
 ---
 layout: post
-title: About Syncfusion® WPF SfBadge Control | Syncfusion®
-description: Learn about introduction of Syncfusion Essential Studio WPF SfBadge control, its features and more details.
+title: About Syncfusion® WPF Badge Control | Syncfusion®
+description: Learn about introduction of Syncfusion Essential Studio WPF Badge control, its features and more details.
 platform: wpf
-control: SfBadge
+control: Badge
 documentation: ug
 ---
 

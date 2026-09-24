@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Appearance in WPF ColorPickerPalette | Syncfusion®
-description: Customize the look and feel of the Syncfusion WPF ColorPickerPalette control using built-in themes, custom templates, and styling options.
+title: Appearance in WPF Color Picker Palette | Syncfusion®
+description: Customize the look and feel of the Syncfusion WPF Color Picker Palette control using built-in themes, custom templates, and styling options.
 platform: wpf
 control: ColorPickerPalette
 documentation: ug

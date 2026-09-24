@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Range Adorner in WPF IntegerTextBox | Syncfusion®
-description: Visualize the current value within a range using the built-in range adorner of the Syncfusion WPF IntegerTextBox control.
+title: Range Adorner in WPF Integer TextBox | Syncfusion®
+description: Visualize the current value within a range using the built-in range adorner of the Syncfusion WPF Integer TextBox control.
 platform: wpf
-control: IntegerTextBox 
+control: IntegerTextBox
 documentation: ug
 ---
 

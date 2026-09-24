@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Appearance in WPF CheckListBox | Syncfusion®
-description: Customize the look and feel of the Syncfusion WPF CheckListBox control using built-in themes, custom templates, and styling options.
+title: Appearance in WPF CheckedListBox | Syncfusion®
+description: Customize the look and feel of the Syncfusion WPF CheckedListBox control using built-in themes, custom templates, and styling options.
 platform: wpf
-control: CheckListBox
+control: CheckedListBox
 documentation: ug
 ---
 

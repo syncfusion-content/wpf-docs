@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Culture and Formatting in WPF PercentTextBox | Syncfusion®
-description: Format the percent value in the Syncfusion WPF PercentTextBox control using culture settings, number formats, and grouping separators.
+title: Culture and Formatting in WPF Percent TextBox | Syncfusion®
+description: Format the percent value in the Syncfusion WPF Percent TextBox control using culture settings, number formats, and grouping separators.
 platform: wpf
-control: PercentTextBox
+control: Percent TextBox
 documentation: ug
 ---
 

@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Data Binding in WPF CheckListBox | Syncfusion®
-description: Bind the Syncfusion WPF CheckListBox control to data sources such as collections and IEnumerable objects with full MVVM support.
+title: Data Binding in WPF CheckedListBox | Syncfusion®
+description: Bind the Syncfusion WPF CheckedListBox control to data sources such as collections and IEnumerable objects with full MVVM support.
 platform: wpf
-control: CheckListBox
+control: CheckedListBox
 documentation: ug
 ---
 

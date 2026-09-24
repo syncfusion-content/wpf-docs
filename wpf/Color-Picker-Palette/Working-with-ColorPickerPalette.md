@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Color Selection in WPF ColorPickerPalette | Syncfusion®
-description: Learn how to select colors, switch modes, customize tooltips, and manage custom colors in Syncfusion WPF ColorPickerPalette control.
+title: Color Selection in WPF Color Picker Palette | Syncfusion®
+description: Learn how to select colors, switch modes, customize tooltips, and manage custom colors in Syncfusion WPF Color Picker Palette control.
 platform: wpf
 control: ColorPickerPalette
 documentation: ug
