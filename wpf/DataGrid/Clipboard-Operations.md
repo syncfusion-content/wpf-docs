@@ -584,7 +584,7 @@ public class CustomCopyPaste : GridCutCopyPaste
 
 [How to paste the empty string while using Cell selection?](https://support.syncfusion.com/kb/article/6095/how-to-paste-the-empty-string-while-using-cell-selection-in-wpf-datagrid-sfdatagrid)
 
-[How to paste the data by custom column order instead of the first column in the SfDataGrid when SelectionUnit is a Row?](https://support.syncfusion.com/kb/article/5159/how-to-paste-the-data-by-custom-column-order-instead-of-the-first-column-in-the-sfdatagrid)
+[How to paste the data by custom column order instead of the first column in the SfDataGrid when SelectionUnit is a Row?](https://support.syncfusion.com/kb/article/5159/how-to-paste-the-data-by-custom-column-order-instead-of-the-first-column-in-the-wpf-datagrid-when-selectionunit-is-a-row)
 
 [How to add the copied rows as new rows in the SfDataGrid while pasting?](https://support.syncfusion.com/kb/article/4640/how-to-add-the-copied-rows-as-new-rows-in-wpf-datagrid-while-pasting)
 
@@ -592,5 +592,5 @@ public class CustomCopyPaste : GridCutCopyPaste
 
 [How to copy one cell and paste it into all the selected cells in the SfDataGrid like the Excel?](https://support.syncfusion.com/kb/article/4484/how-to-copy-one-cell-and-paste-it-into-all-the-selected-cells-in-the-sfdatagrid-like-the-excel-in-wpf-)
 
-[How to copy the column and paste it as a new column by ContextMenu in SfDataGrid?](https://support.syncfusion.com/kb/article/3439/how-to-copy-the-column-and-paste-it-as-a-new-column-by-contextmenu-in-sfdatagrid)
+[How to copy the column and paste it as a new column by ContextMenu in SfDataGrid?](https://support.syncfusion.com/kb/article/3439/how-to-add-menu-items-into-contextmenu-in-wpf-datagrid)
 

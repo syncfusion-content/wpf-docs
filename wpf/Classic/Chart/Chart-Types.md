@@ -200,7 +200,7 @@ Pen</td><td>
 Gets and sets various types of pen for drawing fastchat type. </td><td>
 Attached property for ChartFastSeriesPresenter </td><td>
 System.Drawing.Pen </td><td>
-{{ '[Pen Class](https://docs.microsoft.com/en-us/dotnet/api/system.drawing.pen)' | markdownify }}</td></tr>
+{{ '[Pen Class](https://learn.microsoft.com/en-us/dotnet/api/system.drawing.pen)' | markdownify }}</td></tr>
 </table>
 
 ### Customizing Fastline

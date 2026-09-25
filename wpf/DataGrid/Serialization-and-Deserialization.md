@@ -548,7 +548,7 @@ public class SerializationControllerExt : SerializationController
 {% endcapture %}
 {{ codesnippet7 | OrderList_Indent_Level_1 }}
 
-You can download the sample demo [here](https://www.syncfusion.com/downloads/support/directtrac/general/ze/Serialization_Deserialization-1590961253.zip).
+You can download the sample demo [here](https://s3.amazonaws.com/files2.syncfusion.com/dtsupport/directtrac/general/ze/Serialization_Deserialization-1590961253.zip).
 
 ### Serializing template column content
 
@@ -611,4 +611,4 @@ public class SerializationControllerExt : SerializationController
 {% endhighlight %}
 {% endtabs %}
 
-You can download the sample demo [here](https://www.syncfusion.com/downloads/support/directtrac/general/ze/Serialization_Deserialization-1041317411.zip).
+You can download the sample demo [here](https://s3.amazonaws.com/files2.syncfusion.com/dtsupport/directtrac/general/ze/Serialization_Deserialization-1041317411.zip).

@@ -1275,7 +1275,7 @@ To view samples:
 
 One can easily add the details view to the GridData control by defining the DetailsViewTemplate and binding it to the corresponding GridData control. In the following procedure we have bound the GridData control with a list of product information and created a details view template and bound it to the GridData control.
 
-1. Bind an items source to the grid. Refer to the following link for more information about binding items source to the grid. [Data Binding](http://help.syncfusion.com/wpf/griddata/data-binding)
+1. Bind an items source to the grid. Refer to the following link for more information about binding items source to the grid. [Data Binding](https://help.syncfusion.com/wpf/classic/griddata/data-binding)
 2. Define a data template for the details view. You can bind the data by fetching it through Record.Data (data is the underlying object bound).
 
    ~~~ xaml
@@ -4991,7 +4991,7 @@ Choose the Export to PDF sample to launch.
 ## Adding Column Chooser to an Application
 
 1. Bind an ItemsSource to GridDataControl. Refer to the following link for more information about binding an ItemsSource to GridDataControl: 
-[Data Binding](http://help.syncfusion.com/wpf/griddata/data-binding).
+[Data Binding](https://help.syncfusion.com/wpf/classic/griddata/data-binding).
 
 {% capture codesnippet1 %}
 {% highlight xaml %}

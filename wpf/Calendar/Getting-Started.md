@@ -375,7 +375,7 @@ public class ViewModel {
 
 ![Custom appearance for the special Day cell](Working-with-Calendar_images/SpecialDays.png)
 
-N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusin-wpf-calendaredit-examples/tree/master/Samples/SpecialDays)
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusin-wpf-calendar-examples/tree/master/Samples/SpecialDays)
 
 ## Display week numbers
 

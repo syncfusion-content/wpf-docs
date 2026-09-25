@@ -138,7 +138,7 @@ this.dateTimeEdit.DateTime = new DateTime(2010, 07, 05);
 
 ![Setting date in WPF DateTimeEdit](Getting-Started_images/wpf-datetimeedit-setting-date.png)
 
-N> [View sample in GitHub](https://github.com/SyncfusionExamples/wpf-date-time-edit-examples/tree/master/Samples/SettingDate).
+N> [View sample in GitHub](https://github.com/SyncfusionExamples/wpf-datetimepicker-examples/tree/master/Samples/SettingDate).
 
 ## Binding date time value
 
@@ -553,7 +553,7 @@ private void DateTimeEdit_Loaded(object sender, RoutedEventArgs e)
 
 ![Block particular dates in WPF DateTimeEdit](Maximum-and-Minimum-Value_images/BlackOutDays.gif)
 
-N> [View sample in GitHub](https://github.com/SyncfusionExamples/wpf-date-time-edit-examples/tree/master/Samples/BlackOutdates).
+N> [View sample in GitHub](https://github.com/SyncfusionExamples/wpf-datetimepicker-examples/tree/master/Samples/BlackOutdates).
 
 ## Theme
 

@@ -9,7 +9,7 @@ documentation: ug
 
 # Grouping in WPF CheckedListBox
 
- By default, the [WPF CheckedListBox](https://www.syncfusion.com/wpf-ui-controls/CheckedListBox) items are displayed in a listed view. You can group the items by adding a group description to the `CollectionView.GroupDescriptions` collection.
+ By default, the [WPF CheckedListBox](https://www.syncfusion.com/wpf-controls/CheckedListBox) items are displayed in a listed view. You can group the items by adding a group description to the `CollectionView.GroupDescriptions` collection.
 
  The selection state of the group header varies based on the checked or unchecked state of the child items. Groups can be expanded or collapsed, and the child items in a group can be checked or unchecked based on the user's perspective.
 

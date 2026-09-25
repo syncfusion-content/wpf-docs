@@ -650,7 +650,7 @@ public class StringToImageConverter : IValueConverter
 
 ![Filter with Image in WPF DataGrid Column](filtering_images/wpf-datagrid-filter-with-image.png)
 
-You can get the sample from [here](https://www.syncfusion.com/downloads/support/directtrac/general/ze/CheckBoxFilterControlImage1515534249.zip).
+You can get the sample from [here](https://s3.amazonaws.com/files2.syncfusion.com/dtsupport/directtrac/general/ze/CheckBoxFilterControlImage1515534249.zip).
 
 ## Apply ICollectionView.Filter and DataView.RowFilter on initial loading
 By default, the default filter created by [ICollectionView.Filter](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.icollectionview.filter?view=netframework-4.8#System_ComponentModel_ICollectionView_Filter) and [DataView.RowFilter](https://learn.microsoft.com/en-us/dotnet/api/system.data.dataview.rowfilter?view=netframework-4.8) will not be applied to the data on initial loading. These filters can be applied on initial loading by enabling [CanUseViewFilter](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_CanUseViewFilter) property. 
@@ -920,7 +920,7 @@ When you apply above style to [FilterToggleButton](https://help.syncfusion.com/c
 ## See Also
 [How to display values with underscore in check boxes of the filter control?](https://support.syncfusion.com/kb/article/8938/how-to-display-values-with-underscore-in-check-boxes-of-the-filter-control)
 
-[How to serialize the filtered values based on FilterMode of the column](https://support.syncfusion.com/kb/article/8777/how-to-serialize-the-filtered-values-based-on-filter-mode-of-the-column-in-wpf-datagrid)
+[How to serialize the filtered values based on FilterMode of the column](https://support.syncfusion.com/kb/article/8777/how-to-serialize-the-filtered-values-based-on-filter-mode-of-the-column-in-wpf-datagrid-sfdatagrid)
 
 [How to apply search and filter for one column in SfDataGrid?](https://support.syncfusion.com/kb/article/7984/how-to-apply-search-and-filter-for-one-column-in-wpf-datagrid-sfdatagrid)
 
@@ -932,15 +932,15 @@ When you apply above style to [FilterToggleButton](https://help.syncfusion.com/c
 
 [How to localize the filter values in GridCheckBoxColumn ?](https://support.syncfusion.com/kb/article/6117/how-to-localize-the-filter-values-in-gridcheckboxcolumn-in-wpf-datagrid-sfdatagrid)
 
-[How to load NumberFilters in AdvanceFilters using Dynamic Collection?](https://support.syncfusion.com/kb/article/6103/how-to-load-numberfilters-in-advancefilters-using-dynamic-collection-in-wpf-datagrid)
+[How to load NumberFilters in AdvanceFilters using Dynamic Collection?](https://support.syncfusion.com/kb/article/6103/how-to-load-numberfilters-in-advancefilters-using-dynamic-collection-in-wpf-datagrid-sfdatagrid)
 
 [How to search and select record in SfDataGrid?](https://support.syncfusion.com/kb/article/6187/how-to-search-and-select-record-in-wpf-datagrid-sfdatagrid)
 
-[How to skip the frozen row data from filtering in the SfDataGrid?](https://support.syncfusion.com/kb/article/4780/how-to-skip-the-frozen-row-data-from-filtering-in-the-sfdatagrid)
+[How to skip the frozen row data from filtering in the SfDataGrid?](https://support.syncfusion.com/kb/article/4780/how-to-skip-the-frozen-row-data-from-filtering-in-the-wpf-sfdatagrid)
 
 [How to filter the records based on display text in the SfDataGrid?](https://support.syncfusion.com/kb/article/4684/how-to-filter-the-records-based-on-display-text-in-the-sfdatagrid)
 
-[How to change the position of FilterToggleButton and SortIcon in header cell of SfDataGrid?](https://support.syncfusion.com/kb/article/4194/how-to-change-the-position-of-filtertogglebutton-and-sorticon-in-header-cell-of-sfdatagrid)
+[How to change the position of FilterToggleButton and SortIcon in header cell of SfDataGrid?](https://support.syncfusion.com/kb/article/4194/how-to-change-the-position-of-header-cell-in-wpf-datagrid)
 
 [How to Save and Reload the filters in SfDataGrid?](https://support.syncfusion.com/kb/article/3331/how-to-save-and-reload-the-filters-of-datagrid-in-wpf-application)
 
@@ -950,4 +950,4 @@ When you apply above style to [FilterToggleButton](https://help.syncfusion.com/c
 
 [How to change the FilterToggleButton color while filtering?](https://support.syncfusion.com/kb/article/2903/how-to-change-the-filtertogglebutton-color-while-filtering-in-wpf-)
 
-[How to access the filtered records from SfDataGrid?](https://support.syncfusion.com/kb/article/2853/how-to-access-the-filtered-records-from-sfdatagrid)
+[How to access the filtered records from SfDataGrid?](https://support.syncfusion.com/kb/article/2853/how-to-access-the-filtered-records-from-wpf-datagrid)

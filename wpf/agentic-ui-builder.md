@@ -24,9 +24,9 @@ Before installing WPF UI Builder, ensure the following:
 - WPF application (existing or new); see [Overview](https://help.syncfusion.com/wpf/welcome-to-syncfusion-essential-wpf)
 - A supported AI agent or IDE that integrates with the Skills (VS Code, Cursor, Syncfusion® Code Studio, etc.)
 - Active Syncfusion<sup style="font-size:70%">&reg;</sup> license(any of the following):  
-  - [Commercial](https://www.syncfusion.com/sales/unlimitedlicense)  
+  - [Commercial](https://www.syncfusion.com/sales/pricing?category=ui-components)  
   - [Community License](https://www.syncfusion.com/products/communitylicense)  
-  - [Free Trial](https://www.syncfusion.com/account/manage-trials/start-trials)
+  - [Free Trial](https://www.syncfusion.com/Account/Login?ReturnUrl=%2faccount%2fmanage-trials%2fstart-trials)
 
 ## Key Benefits
 

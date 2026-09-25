@@ -315,7 +315,7 @@ Follow the below steps to define **ADO.NET Entity Data Model** in the web projec
 
     ![Choose the model contents from visual studio](Data-Binding_images/Data-Binding_img2.png)
 
-5. **Choose Your Data Connection** page appears and select **Northwind** database available in the drop-down list (OR) select the **New Connection** button to configure a new data connection. For more information, you can refer: [How to: Create Connections to SQL Server Databases](https://learn.microsoft.com/en-us/previous-versions/visualstudio/visual-studio-2008/s4yys16a(v=vs.90)).
+5. **Choose Your Data Connection** page appears and select **Northwind** database available in the drop-down list (OR) select the **New Connection** button to configure a new data connection. For more information, you can refer: [How to: Create Connections to SQL Server Databases](https://learn.microsoft.com/en-us/previous-versions/visualstudio/visual-studio-2008/s4yys16a(v=vs.90))).
 
     ![Choose the Northwind database from visual studio](Data-Binding_images/Data-Binding_img3.png)
 
@@ -409,7 +409,7 @@ Now, run the application and you can see the SfDataGrid control loaded with data
  
 ## Binding data from ADO.NET Entity Framework
 
-SfDataGrid control supports to bind data from ADO.NET Entity Framework. In this walk-through, you will learn about binding data from ADO.NET Entity Framework and save back the changes to the database. You can download the entire source code of this demo from [here](https://www.syncfusion.com/downloads/support/directtrac/general/ze/ADO.Net_EntityFrmeworkDemo-1459994268.zip).
+SfDataGrid control supports to bind data from ADO.NET Entity Framework. In this walk-through, you will learn about binding data from ADO.NET Entity Framework and save back the changes to the database. You can download the entire source code of this demo from [here](https://s3.amazonaws.com/files2.syncfusion.com/dtsupport/directtrac/general/ze/ADO.Net_EntityFrmeworkDemo-1459994268.zip).
 
 To load the data from ADO.NET Entity Framework, you can refer the steps mentioned in below follow the below steps,
 
@@ -419,9 +419,9 @@ To load the data from ADO.NET Entity Framework, you can refer the steps mentione
 
 References :
 
-[https://learn.microsoft.com/en-us/previous-versions/dd465159(v=vs.120)](https://learn.microsoft.com/en-us/previous-versions/dd465159(v=vs.120))
+[https://learn.microsoft.com/en-us/previous-versions/dd465159(v=vs.120))](https://learn.microsoft.com/en-us/previous-versions/dd465159(v=vs.120)))
 
-[https://learn.microsoft.com/en-us/previous-versions/dotnet/netframework-4.0/ee340709(v=vs.100)](https://learn.microsoft.com/en-us/previous-versions/dotnet/netframework-4.0/ee340709(v=vs.100))
+[https://learn.microsoft.com/en-us/previous-versions/dotnet/netframework-4.0/ee340709(v=vs.100))](https://learn.microsoft.com/en-us/previous-versions/dotnet/netframework-4.0/ee340709(v=vs.100)))
 
 [https://learn.microsoft.com/en-us/ef/ef6/modeling/designer/workflows/database-first](https://learn.microsoft.com/en-us/ef/ef6/modeling/designer/workflows/database-first)
 
@@ -445,7 +445,7 @@ To create Data Model using Entity Framework in WPF application created in the pr
 
     ![Choose the modelcontents when using the Enity framework 4.0](Data-Binding_images/Data-Binding_img8.png)
 
-6. In the **Choose Your Data Connection**, select **Northwind** database from the drop-down list for data connection. To configure/modify connection, you can refer: [How to: Create Connections to SQL Server Databases](https://learn.microsoft.com/en-us/previous-versions/visualstudio/visual-studio-2008/s4yys16a(v=vs.90)).
+6. In the **Choose Your Data Connection**, select **Northwind** database from the drop-down list for data connection. To configure/modify connection, you can refer: [How to: Create Connections to SQL Server Databases](https://learn.microsoft.com/en-us/previous-versions/visualstudio/visual-studio-2008/s4yys16a(v=vs.90))).
 
     ![The Northwind database when using the Enity framework 4.0](Data-Binding_images/Data-Binding_img9.png)
 
@@ -668,7 +668,7 @@ To display the data from the ADO.NET data service, create a new WPF Application
 
 To connect SQL database to your WPF application, refer the below MSDN link or follow the below steps,
 
-[https://learn.microsoft.com/en-us/previous-versions/visualstudio/visual-studio-2008/s4yys16a(v=vs.90)](https://learn.microsoft.com/en-us/previous-versions/visualstudio/visual-studio-2008/s4yys16a(v=vs.90))
+[https://learn.microsoft.com/en-us/previous-versions/visualstudio/visual-studio-2008/s4yys16a(v=vs.90))](https://learn.microsoft.com/en-us/previous-versions/visualstudio/visual-studio-2008/s4yys16a(v=vs.90)))
 
 1. In the Tools menu, select the **Connect to Database**.
 2. The **Add Connection** wizard appeared with the default data source as **Microsoft SQL Server Database File (SqlClient)**.
@@ -694,7 +694,7 @@ To access the data from data source using ADO.NET, follow the below steps.
 
 1. Create a user interface with SfDataGrid control and add the required assemblies to your WPF application.
 2. Create a connection through any of the [.NET Framework data provider](https://learn.microsoft.com/en-us/dotnet/framework/data/adonet/data-providers) based on the type of data source that you have owned.
-3. Set the [ItemsSource](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_ItemsSource) as Shippers table from data set. For more information refer [here](https://learn.microsoft.com/en-us/previous-versions/visualstudio/visual-studio-2008/s4yys16a(v=vs.90)).
+3. Set the [ItemsSource](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_ItemsSource) as Shippers table from data set. For more information refer [here](https://learn.microsoft.com/en-us/previous-versions/visualstudio/visual-studio-2008/s4yys16a(v=vs.90))).
 
 {% capture codesnippet3 %}
 {% tabs %}

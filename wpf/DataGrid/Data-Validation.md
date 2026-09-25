@@ -1343,7 +1343,7 @@ Please refer the below code example for further details about achieving Validati
 {% endhighlight %}
 {% endtabs %}
 
-You can download a working demo for the above customization from [here](https://www.syncfusion.com/downloads/support/directtrac/general/ze/WPF1707875331). 
+You can download a working demo for the above customization from [here](https://s3.amazonaws.com/files2.syncfusion.com/dtsupport/directtrac/general/ze/WPF1707875331.zip). 
 
 ## Limitations
  

@@ -115,7 +115,7 @@ schedule.AppointmentMapping = dataMapping;
 {% endhighlight %}
 {% endtabs %}
 
-Download demo from [GitHub](https://github.com/SyncfusionExamples/SfSchedule_Reminder_Demo/tree/master/ReminderDemo)
+Download demo from [GitHub](https://github.com/SyncfusionExamples/wpf-scheduler-setting-reminder-appointment/tree/master/ReminderDemo)
 
 ## Handling Reminder events
 
@@ -127,7 +127,7 @@ Download demo from [GitHub](https://github.com/SyncfusionExamples/SfSchedule_Rem
 
 [RemindAppCollection](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.ReminderControlOpeningEventArgs.html#Syncfusion_UI_Xaml_Schedule_ReminderControlOpeningEventArgs_RemindAppCollection) – Gets list of reminder appointments.
 
-You can prevent the reminder window opening through [ReminderControlOpeningEventArgs.Cancel](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.canceleventargs.cancel) property of [ReminderOpening](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.SfSchedule.html) event.
+You can prevent the reminder window opening through [ReminderControlOpeningEventArgs.Cancel](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.canceleventargs.cancel) property of [ReminderOpening](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.SfSchedule.html) event.
 
 {% tabs %}
 {% highlight c# %}
@@ -157,4 +157,4 @@ private void Schedule_ReminderOpening(object sender, ReminderControlOpeningEvent
 
 [SnoozeTime](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.ReminderFormActionChangedEventArgs.html#Syncfusion_UI_Xaml_Schedule_ReminderFormActionChangedEventArgs_SnoozeTime) – Gets the snooze time of action changed appointments.
 
-Download demo from [GitHub](https://github.com/SyncfusionExamples/SfSchedule_Reminder_Events/tree/master/ReminderEvents)
+Download demo from [GitHub](https://github.com/SyncfusionExamples/wpf-schedule-working-with-reminder-events/tree/master/ReminderEvents)

@@ -168,4 +168,4 @@ public class ButtonViewModel : NotificationObject
 {% endhighlight %}
 {% endtabs %}
 
-N> View [sample](https://github.com/SyncfusionExamples/wpf-button-examples/blob/master/Samples/MVVM) in GitHub. This sample showcases how to bind commands to the WPF Button control.
+N> View [sample](https://github.com/SyncfusionExamples/wpf-button-examples/tree/master/Samples/MVVM) in GitHub. This sample showcases how to bind commands to the WPF Button control.
