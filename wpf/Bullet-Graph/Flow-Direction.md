@@ -5,6 +5,7 @@ description: Flow direction in the WPF Bullet Graph controls the layout orientat
 platform: wpf
 control: SfBulletGraph
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Flow Direction in WPF Bullet Graph

@@ -5,6 +5,7 @@ description: Learn how to get started with the Syncfusion® WPF SfTreeGrid contr
 platform: wpf
 control: SfTreeGrid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Getting Started with WPF SfTreeGrid

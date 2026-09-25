@@ -5,6 +5,7 @@ description: Learn about Custom Node Style support in Syncfusion WPF Gantt, incl
 platform: wpf
 control: Gantt
 documentation: ug
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Custom Node Style in WPF Gantt
@@ -29,7 +30,7 @@ The following are the steps to add custom node style to an application:
 
 1. Define a style as needed with the target type for each node type as given in the following table:
 
-#### Custom Node Types
+### Custom Node Types
 
 <table>
 <tr>

@@ -1,13 +1,14 @@
 ---
 layout: post
-title: Alignment Commands in WPF SfDiagram | Syncfusion®
-description: Align nodes and connectors in Syncfusion® WPF SfDiagram using built-in alignment commands for left, right, center, top, bottom, and middle positioning.
+title: Alignment Commands in WPF Diagram | Syncfusion®
+description: Align nodes and connectors in Syncfusion® WPF Diagram using built-in alignment commands for left, right, center, top, bottom, and middle positioning.
 platform: wpf
 control: SfDiagram
 documentation: ug
+appliesto: UI Component Suite, Diagram SDK
 ---
 
-# Alignment Commands in WPF SfDiagram
+# Alignment Commands in WPF Diagram
 
 Alignment commands are used to align the selected objects such as Nodes and Connectors on a page with respect to a reference object(first item in the selection list).
 
@@ -25,7 +26,7 @@ The [`AlignLeft`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.
 
 {% highlight c# %}
 
-//Initialize the SfDiagram 
+//Initialize the Diagram 
 SfDiagram diagramcontrol = new SfDiagram();
 
 IGraphInfo graphinfo = diagramcontrol.Info as IGraphInfo;
@@ -50,7 +51,7 @@ The [`AlignRight`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram
 
 {% highlight c# %}
 
-//Initialize the SfDiagram 
+//Initialize the Diagram 
 SfDiagram diagramcontrol = new SfDiagram();
 
 IGraphInfo graphinfo = diagramcontrol.Info as IGraphInfo;
@@ -74,7 +75,7 @@ The [`AlignCenter`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagra
 
 {% highlight c# %}
 
-//Initialize the SfDiagram 
+//Initialize the Diagram 
 SfDiagram diagramcontrol = new SfDiagram();
 
 IGraphInfo graphinfo = diagramcontrol.Info as IGraphInfo;
@@ -100,7 +101,7 @@ The [`AlignTop`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.I
 
 {% highlight c# %}
 
-//Initialize the SfDiagram 
+//Initialize the Diagram 
 SfDiagram diagramcontrol = new SfDiagram();
 
 IGraphInfo graphinfo = diagramcontrol.Info as IGraphInfo;
@@ -124,7 +125,7 @@ The [`AlignBottom`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagra
 
 {% highlight c# %}
 
-//Initialize the SfDiagram 
+//Initialize the Diagram 
 SfDiagram diagramcontrol = new SfDiagram();
 
 IGraphInfo graphinfo = diagramcontrol.Info as IGraphInfo;
@@ -148,7 +149,7 @@ The [`AlignMiddle`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagra
 
 {% highlight c# %}
 
-//Initialize the SfDiagram 
+//Initialize the Diagram 
 SfDiagram diagramcontrol = new SfDiagram();
 
 IGraphInfo graphinfo = diagramcontrol.Info as IGraphInfo;

@@ -5,6 +5,7 @@ description: Vertical charts in the WPF Chart display series with transposed axe
 platform: wpf
 control: SfChart
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Vertical Charts in WPF Charts

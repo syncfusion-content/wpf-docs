@@ -5,6 +5,7 @@ description: Stacked series in the WPF Chart display cumulative values across ca
 platform: wpf
 control: SfChart
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Stacked Chart in WPF Charts

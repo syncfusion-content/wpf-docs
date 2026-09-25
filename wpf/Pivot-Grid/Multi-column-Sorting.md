@@ -5,6 +5,7 @@ description: Apply multi-column sorting in the Syncfusion® WPF Pivot Grid contr
 platform: wpf
 control: Pivot Grid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Multi-Column Sorting in WPF Pivot Grid

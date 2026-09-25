@@ -5,6 +5,7 @@ description: Editing in Data Grid provides built-in features to add, modify, and
 platform: wpf
 control: Data Grid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Editing in WPF Data Grid

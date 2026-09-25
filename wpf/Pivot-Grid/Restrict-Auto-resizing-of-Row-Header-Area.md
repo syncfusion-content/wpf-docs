@@ -5,6 +5,7 @@ description: Restrict Resizing of Row Header in the Syncfusion® WPF Pivot Grid 
 platform: wpf
 control: Pivot Grid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Restrict Resizing of Row Header in WPF Pivot Grid

@@ -5,6 +5,7 @@ description: Serialization in the WPF Chart enables chart state, settings, and d
 platform: wpf
 control: SfChart
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Serialization in WPF Charts

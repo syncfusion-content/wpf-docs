@@ -5,6 +5,7 @@ description: Localization in SfTreeGrid customizes grid content to support multi
 platform: wpf
 control: SfTreeGrid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 # Localization in WPF SfTreeGrid
 

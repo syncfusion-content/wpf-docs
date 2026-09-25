@@ -1,15 +1,16 @@
 ---
 layout: post
-title: Flip Command in WPF SfDiagram | Syncfusion®
-description: Mirror nodes, ports, and groups in Syncfusion® WPF SfDiagram using flip commands with configurable modes and directions.
+title: Flip Command in WPF Diagram | Syncfusion®
+description: Mirror nodes, ports, and groups in Syncfusion® WPF Diagram using flip commands with configurable modes and directions.
 platform: wpf
 control: SfDiagram
 documentation: ug
+appliesto: UI Component Suite, Diagram SDK
 ---
 
-# Flip Command in WPF SfDiagram
+# Flip Command in WPF Diagram
 
-The [`Flip`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IDiagramCommands.html#Syncfusion_UI_Xaml_Diagram_IDiagramCommands_Flip) command is used to mirror the selected object's content and port in the [WPF SfDiagram](https://www.syncfusion.com/diagram-sdk/wpf-diagram) page in both horizontal and vertical directions. 
+The [`Flip`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IDiagramCommands.html#Syncfusion_UI_Xaml_Diagram_IDiagramCommands_Flip) command is used to mirror the selected object's content and port in the [WPF Diagram](https://www.syncfusion.com/diagram-sdk/wpf-diagram) page in both horizontal and vertical directions. 
 
 {% tabs %}
 
@@ -21,7 +22,7 @@ The [`Flip`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IDiag
 
 {% highlight c# %}
 
-//Initialize the SfDiagram 
+//Initialize the Diagram 
 SfDiagram Diagram = new SfDiagram();
 
 IGraphInfo graphinfo = Diagram.Info as IGraphInfo;
@@ -60,7 +61,7 @@ The [Flip](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Flip.ht
 {% tabs %}
 {% highlight c# %}
 
-//Initialize the SfDiagram 
+//Initialize the Diagram 
 SfDiagram Diagram = new SfDiagram();
 
 IGraphInfo graphinfo = Diagram.Info as IGraphInfo;

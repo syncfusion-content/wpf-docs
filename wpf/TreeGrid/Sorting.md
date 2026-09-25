@@ -1,10 +1,11 @@
-﻿---
+---
 layout: post
 title: Sorting in WPF SfTreeGrid | Syncfusion®
 description: Sorting in SfTreeGrid provides single and multi-column sorting, custom sorting, programmatic sorting, and sorting event support for efficient data organization.
 platform: wpf
 control: SfTreeGrid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 

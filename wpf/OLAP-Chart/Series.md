@@ -5,9 +5,10 @@ description: Series in the WPF OLAP Chart define how multidimensional data is vi
 platform: wpf
 control: OLAP Chart
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
-# Series in WPF Olap Chart
+# Series in WPF OLAP Chart
 
 Series are the data points plotted in the rectangular co-ordinate system.
 

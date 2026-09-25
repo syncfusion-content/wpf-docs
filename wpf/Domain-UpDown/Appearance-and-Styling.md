@@ -7,7 +7,7 @@ control: DomainUpDown
 documentation: ug
 ---
 
-# Appearance and Styling in WPF SfDomainUpdown
+# Appearance and Styling in WPF Domain UpDown
 
 ## Spin animation
 
@@ -26,7 +26,7 @@ Items will spin up or down with a smooth transition. The transition can be disab
 
 ## Accent brush
 
-The `AccentBrush` property is used to decorate the hot spots of the `SfDomainUpDown` control with a solid color. The default value is the system accent color.
+The `AccentBrush` property is used to decorate the hot spots of the `WPF Domain UpDown` control with a solid color. The default value is the system accent color.
 
 {% tabs %}
 {%highlight xaml%}
@@ -50,9 +50,9 @@ The `AccentBrush` property is used to decorate the hot spots of the `SfDomainUpD
 
 ## Customize Up, Down button Style
 
-You can customize the appearance of the up/down buttons in the [SfDomainUpDown](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfDomainUpDown.html) control by using the [UpDownStyle](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfDomainUpDown.html#Syncfusion_Windows_Controls_Input_SfDomainUpDown_UpDownStyle) property.
+You can customize the appearance of the up/down buttons in the [WPF Domain UpDown](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfDomainUpDown.html) control by using the [UpDownStyle](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfDomainUpDown.html#Syncfusion_Windows_Controls_Input_SfDomainUpDown_UpDownStyle) property.
 
-This property allows you to apply a custom style and template to the internal `SfUpDown` control, which hosts the up/down buttons.
+This property allows you to apply a custom style and template to the internal [WPF Numeric UpDown](https://www.syncfusion.com/wpf-controls/numericupdown) control, which hosts the up/down buttons.
 
 {% tabs %}
 {%highlight xaml%}
@@ -157,7 +157,7 @@ This property allows you to apply a custom style and template to the internal `S
 
 ## Theme
 
-SfDomainUpDown supports various built-in themes. Refer to the below links to apply themes for the SfDomainUpDown,
+The WPF Domain UpDown supports various built-in themes. Refer to the links below to apply themes,
 
   * [Apply theme using SfSkinManager](https://help.syncfusion.com/wpf/themes/skin-manager)
     

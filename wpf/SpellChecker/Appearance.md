@@ -7,13 +7,13 @@ control: SfSpellChecker
 documentation: ug
 ---
 
-# Appearance in WPF SfSpellChecker
+# Appearance in WPF SpellChecker
 
-This section explains the different theming options available for the [SfSpellChecker](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.SfSpellChecker.html) control.
+This section explains the different theming options available for the [WPF SpellChecker](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.SfSpellChecker.html) control.
 
 ## Theme
 
-`SfSpellChecker` supports various built-in themes. Refer to the following links to apply themes to the `SfSpellChecker`:
+The `WPF SpellChecker` supports various built-in themes. Refer to the following links to apply themes:
 
 * [Apply theme using SfSkinManager](https://help.syncfusion.com/wpf/themes/skin-manager)
 * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)

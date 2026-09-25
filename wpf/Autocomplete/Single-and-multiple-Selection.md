@@ -1,19 +1,19 @@
 ---
 layout: post
 title: Selection Support in WPF AutoComplete | Syncfusion®
-description: Selection support in AutoComplete (SfTextBoxExt) enables choosing single or multiple items from suggestions with configurable selection behavior.
+description: Selection support in WPF AutoComplete (SfTextBoxExt) enables choosing single or multiple items from suggestions with configurable selection behavior.
 platform: wpf
 control: SfTextBoxExt
 documentation: ug
 ---
 
-# Selection in WPF Autocomplete (SfTextBoxExt)
+# Selection in WPF AutoComplete (SfTextBoxExt)
 
-In AutoComplete selection can be performed using single selection or multi-selection. This can be handled by [MultiSelectMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_MultiSelectMode) property. The default value of `MultiSelectMode` is `None` which performs single selection.
+The [WPF AutoComplete](https://www.syncfusion.com/wpf-controls/autocomplete) control supports single and multiple selection. You can configure selection by using the [MultiSelectMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_MultiSelectMode) property. The default value of the `MultiSelectMode` property is `None`, which enables single selection.
 
 ## Single selection
 
-The single selection can be performed by setting the [MultiSelectMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_MultiSelectMode) property to None. In this mode we can set and retrieve the selected item using the [SelectedItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_SelectedItem) property.
+You can enable single selection by setting the [MultiSelectMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_MultiSelectMode) property to `None`. In this mode, you can set and retrieve the selected item by using the [SelectedItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_SelectedItem) property.
 
 ## Multi selection
 
@@ -29,7 +29,7 @@ Each selected items can be displayed as a token representation having a close bu
 
 In token representation the control behavior of arranging the items can be done in two ways which is handled by the property [TokensWrapMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_TokensWrapMode).
 
-* `Wrap` - The selected items will be wrapped to the next line of the AutoComplete.
+* `Wrap` - The selected items will be wrapped to the next line of the WPF AutoComplete.
 
 * `None` - The selected items will be arranged in horizontal layout in single line.
 
@@ -61,7 +61,7 @@ textBoxExt.MultiSelectMode = MultiSelectMode.Token;
 ![Token Representation](Single_and_multiple_selection_images/Token.png)
 
 
-### Customization of Tokens
+### Customization of tokens using TokenItem style
 
 The token can be customized by overriding the default style targeting the `TokenItem` class.
 
@@ -115,6 +115,84 @@ The token can be customized by overriding the default style targeting the `Token
 
 ![Token_Customization](Single_and_multiple_selection_images/Token_Customization.png)
 
+### Customization of tokens using TokenItemTemplate
+
+The `TokenItemTemplate` property allows you to customize the content displayed within a token when the `MultiSelectMode` is set to Token. This property accepts a DataTemplate and enables rendering custom content such as images, icons, and formatted text instead of the default token text representation.
+
+The `TokenItemTemplate` property can also be used to maintain a consistent appearance between suggestion items and generated tokens by using the same DataTemplate for both [AutoCompleteItemTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_AutoCompleteItemTemplate) and `TokenItemTemplate`.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<Window.Resources>
+    <DataTemplate x:Key="EmployeeTemplate">
+        <StackPanel Orientation="Horizontal">
+            <Image Width="20"
+                Height="20"
+                Source="{Binding Image}" />
+            <StackPanel Orientation="Vertical">
+                <TextBlock
+                    Margin="4,2,4,0"
+                    Text="{Binding Name}" />
+                <TextBlock
+                    Margin="4,1,2,2"
+                    Text="{Binding Email}" />
+            </StackPanel>
+        </StackPanel>
+    </DataTemplate>
+</Window.Resources>
+
+<editors:SfTextBoxExt x:Name="textBoxExt"
+                      Width="250" 
+                      Height="30"
+                      SearchItemPath="Name"
+                      AutoCompleteMode="Suggest"
+                      TokensWrapMode="Wrap"
+                      EnableAutoSize="True"
+                      AutoCompleteSource="{Binding Employees}"
+                      TokenItemTemplate="{StaticResource EmployeeTemplate}"
+                      AutoCompleteItemTemplate="{StaticResource EmployeeTemplate}"/>                   
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Customize Token Content Using TokenItemTemplate](Single_and_multiple_selection_images/TokenItemTemplate_Customization.png)
+
+### Customization of tokens using TokenItemContainerStyle
+
+The `TokenItemContainerStyle` property allows you to customize the appearance and behavior of the generated token items without overriding the default `TokenItem` control template. Since `TokenItem` derives from `ContentControl`, you can customize various properties such as `Background`, `Foreground`, `BorderThickness`, `BorderBrush`, `ContentTemplate`, and `ContentTemplateSelector` to control the visual representation of tokens while retaining the default token structure and functionality.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<editors:SfTextBoxExt x:Name="textBoxExt"
+                      Width="250" 
+                      Height="30"
+                      SearchItemPath="Name"
+                      AutoCompleteMode="Suggest"
+                      TokensWrapMode="Wrap"
+                      EnableAutoSize="True"
+                      AutoCompleteSource="{Binding Employees}">
+    <editors:SfTextBoxExt.TokenItemContainerStyle>
+        <Style TargetType="editors:TokenItem">
+                <Setter Property="Background" Value="LightCoral"/>
+                <Setter Property="Foreground" Value="White"/>
+        </Style>
+    </editors:SfTextBoxExt.TokenItemContainerStyle>
+</editors:SfTextBoxExt>                 
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Customize Token Content Using TokenItemContainerStyle](Single_and_multiple_selection_images/TokenItemContainerStyle_Customization.png)
+
+N> The `TokenItemTemplate` property is applicable only when `MultiSelectMode` is set to `Token`.
+
+N> When displaying images using controls defined inside the `TokenItemTemplate`, do not set the `ImageMemberPath` property simultaneously. Use either the TokenItemTemplate or the ImageMemberPath property to display images in tokens.
 
 ### Enable autosize in token mode 
 
@@ -152,7 +230,7 @@ textBoxExt.EnableAutoSize = true;
 
 ### ShowClearButton:
 
-This feature allows to show or hide the clear button in Token mode for the AutoComplete control using the [ShowClearButton]( https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_ShowClearButton) property.
+This feature allows to show or hide the clear button in Token mode for the WPF AutoComplete control using the [ShowClearButton]( https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_ShowClearButton) property.
 
 {% tabs %}
 
@@ -183,7 +261,7 @@ textBoxExt.ShowClearButton = true;
 
 N> The default `ShowClearButton` property value is false. It will be only applicable for `MultiSelectMode` is `Token`.  
 
-See also [Multiple selection using tokens ](https://help.syncfusion.com/wpf/autocomplete/single-and-multiple-selection#multiple-selection-using-tokens) topic in AutoComplete.
+See also [Multiple selection using tokens ](https://help.syncfusion.com/wpf/autocomplete/single-and-multiple-selection#multiple-selection-using-tokens) topic in WPF AutoComplete.
 
 
 ## Multiple selection using delimiter 

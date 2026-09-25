@@ -5,6 +5,7 @@ description: Financial series in the WPF Chart visualize stock market and financ
 platform: wpf
 control: SfChart
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Financial in WPF Charts

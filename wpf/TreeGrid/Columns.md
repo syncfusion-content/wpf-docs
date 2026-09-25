@@ -5,6 +5,7 @@ description: Columns in SfTreeGrid supports auto-generated and custom columns, c
 platform: wpf
 control: SfTreeGrid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Columns in WPF SfTreeGrid

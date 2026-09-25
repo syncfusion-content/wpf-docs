@@ -5,6 +5,7 @@ description: Load large data sets asynchronously in the Syncfusion® WPF Pivot G
 platform: wpf
 control: Pivot Grid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Asynchronous Data Loading in WPF Pivot Grid

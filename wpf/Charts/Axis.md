@@ -5,6 +5,7 @@ description: Axis in the WPF Chart defines data scales, ranges, labels, and inte
 platform: wpf
 control: SfChart
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Axis Types and Customization in WPF Chart
@@ -3380,6 +3381,71 @@ chart.PrimaryAxis.MultiLevelLabels.Add(label);
 
 
 **Customizing** **multi-level** **labels**
+
+**Label rotation angle**
+
+Multi-level labels can be rotated using the [`MultiLevelLabelRotationAngle`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAxisBase2D.html#Syncfusion_UI_Xaml_Charts_ChartAxisBase2D_MultiLevelLabelRotationAngle) property. By default rotation angle value is `0`.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<chart:SfChart.PrimaryAxis>
+    <chart:CategoryAxis ShowLabelBorder="True" MultiLevelLabelRotationAngle="45">
+        <chart:CategoryAxis.MultiLevelLabels>
+            <chart:ChartMultiLevelLabel Start="-0.5" End="2.5" Text="Quarter 1"/>
+            <chart:ChartMultiLevelLabel Start="2.5" End="5.5" Text="Quarter 2"/>
+            <chart:ChartMultiLevelLabel Start="5.5" End="8.5" Text="Quarter 3"/>
+            <chart:ChartMultiLevelLabel Start="8.5" End="11.5" Text="Quarter 4"/>
+        </chart:CategoryAxis.MultiLevelLabels>
+    </chart:CategoryAxis>
+</chart:SfChart.PrimaryAxis>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+CategoryAxis primaryAxis = new CategoryAxis()
+{
+    ShowLabelBorder = true,
+    MultiLevelLabelRotationAngle = 45
+};
+
+primaryAxis.MultiLevelLabels.Add(new ChartMultiLevelLabel()
+{
+    Start = -0.5,
+    End = 2.5,
+    Text = "Quarter 1"
+});
+
+primaryAxis.MultiLevelLabels.Add(new ChartMultiLevelLabel()
+{
+    Start = 2.5,
+    End = 5.5,
+    Text = "Quarter 2"
+});
+
+primaryAxis.MultiLevelLabels.Add(new ChartMultiLevelLabel()
+{
+    Start = 5.5,
+    End = 8.5,
+    Text = "Quarter 3"
+});
+
+primaryAxis.MultiLevelLabels.Add(new ChartMultiLevelLabel()
+{
+    Start = 8.5,
+    End = 11.5,
+    Text = "Quarter 4"
+});
+
+chart.PrimaryAxis = primaryAxis;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![WPF Chart displays Multi-Level Label Rotation](Axis_images/wpf-chart-multi-level-label-rotation.png)
 
 **Border Customization**
 

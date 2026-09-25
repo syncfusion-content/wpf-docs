@@ -5,6 +5,7 @@ description: Learn about appearance customization including styling and theming 
 platform: wpf
 control: CalendarEdit
 documentation: ug
+appliesto: UI Component Suite, Scheduler SDK
 ---
 
 # Appearance in WPF Calendar

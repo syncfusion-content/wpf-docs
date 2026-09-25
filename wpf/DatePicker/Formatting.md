@@ -5,6 +5,7 @@ description: Learn how to format and display dates in various formats in WPF Dat
 platform: wpf
 control: SfDatePicker
 documentation: ug
+appliesto: UI Component Suite, Scheduler SDK
 ---
 
 # Date Formatting in WPF DatePicker

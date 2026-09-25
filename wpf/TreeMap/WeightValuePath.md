@@ -5,6 +5,7 @@ description: Weight value path in the WPF TreeMap maps data values to item sizes
 platform: wpf
 control: TreeMap
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Weight Value Path in WPF TreeMap
