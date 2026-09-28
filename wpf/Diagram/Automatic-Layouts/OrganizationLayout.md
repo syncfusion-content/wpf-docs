@@ -415,6 +415,6 @@ private void MainWindow_ItemDropped(object sender, ItemDropEventArgs args)
 
 ## See Also
 
-[How to show assistants to the parent node in the organization layout?](https://support.syncfusion.com/kb/article/9115/how-to-show-assistants-to-the-parent-node-of-the-organization-layout-in-wpf-diagram)
+[How to show assistants to the parent node in the organization layout?](https://support.syncfusion.com/kb/article/9115/how-to-show-assistants-to-the-parent-node-of-the-organization-layout-in-wpf-diagram-sfdiagram)
 
 [How to change the level of nodes in DirectedTreeLayout?](https://support.syncfusion.com/kb/article/6309/how-to-change-the-level-of-nodes-in-directedtreelayout-of-wpf-diagram-sfdiagram)

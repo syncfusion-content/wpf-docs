@@ -159,4 +159,4 @@ editor.Crop(new Rect(0, 0, 0, 0)
 
 ## See also
 
-[How to crop an image based on the ratio in the Image Editor](https://www.syncfusion.com/kb/11225/how-to-crop-an-image-based-on-the-ratio-in-the-image-editor)
+[How to crop an image based on the ratio in the Image Editor](https://support.syncfusion.com/kb/article/9790/how-to-crop-an-image-based-on-the-ratio-in-the-image-editor)

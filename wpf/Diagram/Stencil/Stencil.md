@@ -418,23 +418,23 @@ stencil.Constraints = StencilConstraints.AllowDragDrop
 
 [How to drag and drop different shapes from SfTreeView to WPF Diagram?](https://support.syncfusion.com/kb/article/10960/how-to-drag-and-drop-different-shapes-from-sftreeview-to-wpf-diagram-sfdiagram)
 
-[How to refresh the stencil when adding a new symbol in the symbol source?](https://www.syncfusion.com/kb/9928/how-to-refresh-the-stencil-when-adding-new-symbol-in-symbol-source)
+[How to refresh the stencil when adding a new symbol in the symbol source?](https://support.syncfusion.com/kb/article/8714/how-to-refresh-stencil-with-new-collection-or-symbol-in-wpf-diagram)
 
 [How to refresh the stencil with a new collection or new symbol?](https://support.syncfusion.com/kb/article/8714/how-to-refresh-stencil-with-new-collection-or-symbol-in-wpf-diagram)
 
-[How to create the WPF Diagram with a Stencil?](https://support.syncfusion.com/kb/article/8908/how-to-create-the-wpf-diagram-sfdiagram-with-stencil)
+[How to create the WPF Diagram with a Stencil?](https://support.syncfusion.com/kb/article/8908/how-to-create-the-wpf-diagram-sfdiagram-with-the-stencil)
 
-[How to host different UI elements as node content?](https://www.syncfusion.com/kb/9456/how-to-host-different-ui-elements-as-node-content)
+[How to host different UI elements as node content?](https://support.syncfusion.com/kb/article/8182/how-to-host-different-ui-elements-as-node-content-in-the-wpf-diagram-sfdiagram)
 
-[How to notify that the Stencil has been loaded?](https://www.syncfusion.com/kb/6256/how-to-notify-stencil-has-been-loaded)
+[How to notify that the Stencil has been loaded?](https://support.syncfusion.com/kb/article/5863/how-to-notify-stencil-in-wpf-diagram-sfdiagram)
 
 [How to get the notification when a symbol is added to the Stencil?](https://support.syncfusion.com/kb/article/5863/how-to-notify-stencil-in-wpf-diagram-sfdiagram)
 
-[How to get the base node interface while dropping a symbol from the Stencil to Diagram?](https://support.syncfusion.com/kb/article/5494/how-to-get-base-node-interface-while-dropping-a-symbol-from-stencil-to-wpf-diagram)
+[How to get the base node interface while dropping a symbol from the Stencil to Diagram?](https://support.syncfusion.com/kb/article/5494/how-to-get-base-node-interface-while-dropping-a-symbol-from-stencil-to-wpf-diagram-sfdiagram)
 
-[How to use different user controls in a Stencil?](https://www.syncfusion.com/kb/11459/how-to-use-different-user-controls-into-stencil-in-the-wpf-diagramsfdiagram)
+[How to use different user controls in a Stencil?](https://support.syncfusion.com/kb/article/9924/how-to-use-different-user-controls-into-stencil-in-the-wpf-diagram-sfdiagram)
 
-[How to modify a Stencil's symbol template dynamically at run time?](https://support.syncfusion.com/kb/article/11582/how-to-modify-stencils-symbol-template-dynamically-at-run-time-in-wpf-diagramsfdiagram)
+[How to modify a Stencil's symbol template dynamically at run time?](https://support.syncfusion.com/kb/article/11582/how-to-modify-stencils-symbol-template-at-run-time-in-wpf-diagram)
 
 [How to restrict symbol dropping from the Stencil?](https://support.syncfusion.com/kb/article/9919/how-to-restrict-the-symbol-dropping-from-the-symbolpalette-in-the-wpf-diagram-sfdiagram)
 
@@ -458,4 +458,4 @@ stencil.Constraints = StencilConstraints.AllowDragDrop
 
 [How to achieve the Stencil preview effect without dragging a symbol in WPF Diagram ?](https://support.syncfusion.com/kb/article/15537/how-to-achieve-the-stencil-preview-effect-without-dragging-a-symbol-in-the-wpf-diagram-sfdiagram)
 
-[How to achieve the AutoConnect functionality in WPF Diagram?](https://support.syncfusion.com/kb/article/18252/how-to-achieve-the-autoconnect-functionality-in-wpf-diagram-sfdiagram)
+[How to achieve the AutoConnect functionality in WPF Diagram?](https://support.syncfusion.com/kb/article/18252/how-to-achieve-the-auto-connect-functionality-in-wpf-diagram)

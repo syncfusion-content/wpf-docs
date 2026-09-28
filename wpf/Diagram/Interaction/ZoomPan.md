@@ -23,7 +23,7 @@ documentation: ug
 
 ## See Also
 
-[How to get notified when zooming and panning the diagram?](https://www.syncfusion.com/kb/5877/how-to-get-notification-when-zooming-and-panning-the-diagram)
+[How to get notified when zooming and panning the diagram?](https://support.syncfusion.com/kb/article/5470/how-to-get-notification-when-zooming-and-panning-the-wpf-diagram-sfdiagram)
 
 [How to do Panning the diagram in all the directions at a time?](https://support.syncfusion.com/kb/article/5874/how-to-do-panning-in-all-the-directions-at-a-time-in-wpf-diagram)
 
@@ -39,4 +39,4 @@ documentation: ug
 
 [How to deactivate the rubber band zoom in the WPF Diagram ?](https://support.syncfusion.com/kb/article/15535/how-to-deactivate-the-rubberbandzoom-in-the-wpf-diagram-sfdiagram)
 
-[How to use the Magnifier control in the WPF Diagram ?](https://support.syncfusion.com/kb/article/17727/how-to-use-the-magnifier-control-in-the-wpf-diagram-sfdiagram)
+[How to use the Magnifier control in the WPF Diagram ?](https://support.syncfusion.com/kb/article/17727/how-to-use-the-magnifier-control-in-the-wpf-diagram)

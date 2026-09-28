@@ -53,4 +53,4 @@ N> The Redo command restores the most recently undone action. If there are no ac
 [View sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Commands/Undo%20Redo)
 
 ## See Also
-[How to enable Undo/Redo feature in WPF Diagram?](https://support.syncfusion.com/kb/article/11090/how-to-enable-undo-redo-feature-in-wpf-diagram-sfdiagram)
+[How to enable Undo/Redo feature in WPF Diagram?](https://support.syncfusion.com/kb/article/11090/how-to-enable-undoredo-feature-in-wpf-diagram-sfdiagram)

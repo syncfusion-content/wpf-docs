@@ -80,7 +80,7 @@ QuickCommand can be aligned relative to boundaries of the Node or segments of th
 * [HorizontalAlignment](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.QuickCommandViewModel.html#Syncfusion_UI_Xaml_Diagram_QuickCommandViewModel_HorizontalAlignment) and [VerticalAlignment](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.QuickCommandViewModel.html#Syncfusion_UI_Xaml_Diagram_QuickCommandViewModel_VerticalAlignment) properties are used to align QuickCommands horizontally and vertically.
 * [Margin](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.QuickCommandViewModel.html#Syncfusion_UI_Xaml_Diagram_QuickCommandViewModel_Margin) is an absolute value used to add some blank space in any one of its four sides.
 
-The Alignment of QuickCommand is similar  to [Annotation Alignment](https://help.syncfusion.com/wpf/sfdiagram/annotation/positioningandappearance).   
+The Alignment of QuickCommand is similar  to [Annotation Alignment](https://help.syncfusion.com/wpf/diagram/annotation/positioningandappearance).   
 
 {% tabs %}
 
@@ -136,11 +136,11 @@ QuickCommandViewModel quickcommand = new QuickCommandViewModel()
 
 ## See Also
 
-[How to create a quick command in diagram?](https://www.syncfusion.com/kb/10403/how-to-create-a-quick-command-in-diagram)
+[How to create a quick command in diagram?](https://support.syncfusion.com/kb/article/8951/how-to-create-a-quick-command-in-wpf-diagram)
 
-[How to enable or disable QuickCommands?](https://www.syncfusion.com/kb/6351/how-to-enable-or-disable-quickcommands)
+[How to enable or disable QuickCommands?](https://support.syncfusion.com/kb/article/5902/how-to-enable-or-disable-quickcommands-in-wpf-diagram)
 
-[How to hide specific default QuickCommands of Node?](https://www.syncfusion.com/kb/13236/how-to-hide-specific-default-quickcommands-of-node-in-wpf-diagramsfdiagram)
+[How to hide specific default QuickCommands of Node?](https://support.syncfusion.com/kb/article/11519/how-to-hide-specific-default-quickcommands-of-node-in-wpf-diagram)
 
 [How to Notify when diagramming object is duplicated with source?](https://support.syncfusion.com/kb/article/6268/how-to-notify-when-diagramming-object-is-duplicated-with-source-in-wpf-diagram-sfdiagram)
 

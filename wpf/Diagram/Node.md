@@ -737,11 +737,11 @@ The [`Constraints`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagra
 
 ## See Also
  
-[How to add Annotations to the Node?](https://help.syncfusion.com/wpf/diagram/annotation)
+[How to add Annotations to the Node?](https://help.syncfusion.com/wpf/diagram/annotation/)
 
 [How to add Port to the Node?](https://help.syncfusion.com/wpf/diagram/port/port#node-port)
 
-[How to add Nodes to the stencil?](https://help.syncfusion.com/wpf/diagram/stencil#using-the-diagram-elements)
+[How to add Nodes to the stencil?](https://help.syncfusion.com/wpf/diagram/stencil/stencil#using-the-diagram-elements)
 
 [How to apply built-in theme for node and connector?](https://support.syncfusion.com/kb/article/9995/how-to-apply-built-in-theme-for-node-and-connector-in-wpf-diagram-sfdiagram)
 
@@ -749,11 +749,11 @@ The [`Constraints`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagra
 
 [How to host different UI elements as node content?](https://support.syncfusion.com/kb/article/8182/how-to-host-different-ui-elements-as-node-content-in-the-wpf-diagram-sfdiagram)
 
-[How to restrict the child node dragging whereas allow group dragging?](https://support.syncfusion.com/kb/article/9921/how-to-restrict-the-child-node-dragging-whereas-allow-group-dragging-in-wpf-diagram)
+[How to restrict the child node dragging whereas allow group dragging?](https://support.syncfusion.com/kb/article/9921/how-to-restrict-the-child-node-dragging-whereas-allow-group-dragging-in-wpf-diagram-sfdiagram)
 
 [How to restrict the node dragging within boundaries?](https://support.syncfusion.com/kb/article/6121/how-to-restrict-the-node-dragging-within-boundaries-in-the-wpf-diagram-sfdiagram)
 
-[How to show assistants to the parent node of the organization layout?](https://support.syncfusion.com/kb/article/9115/how-to-show-assistants-to-the-parent-node-of-the-organization-layout-in-wpf-diagram)
+[How to show assistants to the parent node of the organization layout?](https://support.syncfusion.com/kb/article/9115/how-to-show-assistants-to-the-parent-node-of-the-organization-layout-in-wpf-diagram-sfdiagram)
 
 [How to create port at runtime though SetTool?](https://support.syncfusion.com/kb/article/9967/how-to-create-port-at-runtime-through-set-tool-in-wpf-diagram-sfdiagram)
 
@@ -767,7 +767,7 @@ The [`Constraints`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagra
 
 [How to notify state of operation performed on node?](https://support.syncfusion.com/kb/article/5523/how-to-notify-state-of-operation-performed-on-node-in-wpf-diagram)
 
-[How to restrict annotation editing by double-clicking the node or connector?](https://support.syncfusion.com/kb/article/8539/how-to-restrict-annotation-editing-by-double-clicking-the-node-or-connector-in-wpf-diagram)
+[How to restrict annotation editing by double-clicking the node or connector?](https://support.syncfusion.com/kb/article/8539/how-to-restrict-annotation-editing-by-double-clicking-the-node-or-connector-in-wpf-diagram-sfdiagram)
 
 [How to disable the animation while creating a connection in diagram?](https://support.syncfusion.com/kb/article/8187/how-to-disable-the-animation-while-creating-a-connection-in-wpf-diagram-sfdiagram)
 
@@ -779,7 +779,7 @@ The [`Constraints`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagra
 
 [How to hide the specific default QuickCommands of a node?](https://support.syncfusion.com/kb/article/11519/how-to-hide-specific-default-quickcommands-of-node-in-wpf-diagram)
 
-[How to show the copied diagram elements as preview image along with the mouse pointer?](https://support.syncfusion.com/kb/article/12037/how-to-show-the-copied-diagram-elements-as-preview-image-along-with-the-mouse-pointer-in)
+[How to show the copied diagram elements as preview image along with the mouse pointer?](https://support.syncfusion.com/kb/article/12037/how-to-show-the-copied-diagram-elements-as-preview-image-along-with-the-mouse-pointer-in-wpf-diagramsfdiagram)
 
 [How to serialize the Content and ContentTemplate properties of a Node?](https://support.syncfusion.com/kb/article/11574/how-to-serialize-content-and-contenttemplate-properties-of-a-node-in-wpf-diagramsfdiagram)
 
@@ -795,7 +795,7 @@ The [`Constraints`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagra
 
 [How to add multiple ports for Node?](https://support.syncfusion.com/kb/article/9948/how-to-add-multiple-ports-for-node-in-the-wpf-diagram-sfdiagram)
 
-[How to override the default cursors while interacting on diagram objects?](https://support.syncfusion.com/kb/article/9997/how-to-override-the-default-cursors-while-interaction-in-wpf-diagram-sfdiagram)
+[How to override the default cursors while interacting on diagram objects?](https://support.syncfusion.com/kb/article/9997/how-to-override-the-default-cursors-while-interaction-in-wpf-diagram)
 
 [How to create parent and child relationship by drag and drop nodes?](https://support.syncfusion.com/kb/article/10008/how-to-create-parent-and-child-relationship-by-drag-and-drop-nodes-in-wpf-diagram-sfdiagram)
 
@@ -813,11 +813,11 @@ The [`Constraints`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagra
 
 [How to disable the selection of diagram objects?](https://support.syncfusion.com/kb/article/5495/how-to-disable-the-selection-in-wpf-diagram)
 
-[How to get base node interface while dropping a symbol from stencil?](https://support.syncfusion.com/kb/article/5494/how-to-get-base-node-interface-while-dropping-a-symbol-from-stencil-to-wpf-diagram)
+[How to get base node interface while dropping a symbol from stencil?](https://support.syncfusion.com/kb/article/5494/how-to-get-base-node-interface-while-dropping-a-symbol-from-stencil-to-wpf-diagram-sfdiagram)
 
 [How to enable the AspectRatio for node?](https://support.syncfusion.com/kb/article/5473/how-to-enable-the-aspectratio-of-node-in-wpf-diagram-sfdiagram)
 
-[How to select the node that is outside of the selection region in the WPF Diagram ?](https://support.syncfusion.com/kb/article/18896/how-to-select-the-node-that-is-outside-of-the-selection-region-in-the-wpf-diagram-sfdiagram)
+[How to select the node that is outside of the selection region in the WPF Diagram ?](https://support.syncfusion.com/kb/article/18896/how-to-select-a-node-outside-the-selection-region-in-wpf-diagram)
 
 [How to manage the node's visibility when it is dropped onto another node in WPF Diagram?](https://support.syncfusion.com/kb/article/18312/how-to-manage-the-nodes-visibility-when-it-is-dropped-onto-another-node-in-wpf-diagram-sfdiagram)
 
@@ -827,17 +827,17 @@ The [`Constraints`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagra
 
 [How to Obtain InConnectors and OutConnectors of Node in WPF Diagram?](https://support.syncfusion.com/kb/article/18250/how-to-obtain-inconnectors-and-outconnectors-of-node-in-wpf-diagram)
 
-[How to highlight the node when selecting an annotation of the node and vice versa in the WPF Diagram ?](https://support.syncfusion.com/kb/article/18245/how-to-highlight-the-node-when-selecting-an-annotation-of-the-node-and-vice-versa-in-the-wpf-diagram-sfdiagram)
+[How to highlight the node when selecting an annotation of the node and vice versa in the WPF Diagram ?](https://support.syncfusion.com/kb/article/18245/how-to-highlight-node-when-selecting-an-annotatio-in-wpf-sfdiagram)
 
 [How to disable Ctrl + Drag duplicate behavior in WPF Diagram ?](https://support.syncfusion.com/kb/article/18502/how-to-disable-ctrl--drag-duplicate-behavior-in-wpf-diagramsfdiagram)
 
 [How to Fit Selected Nodes and Connectors to the WPF Diagram Window?](https://support.syncfusion.com/kb/article/18062/how-to-fit-selected-nodes-and-connectors-to-the-wpf-diagram-window)
 
-[How to add a node as a child of a container using the context menu in the WPF Diagram?](https://support.syncfusion.com/kb/article/18053/how-to-add-a-node-as-a-child-of-a-container-using-the-context-menu-in-the-wpf-diagram-sfdiagram)
+[How to add a node as a child of a container using the context menu in the WPF Diagram?](https://support.syncfusion.com/kb/article/18053/how-to-add-node-as-a-child-to-container-via-wpf-diagram-context-menu)
 
-[How to set the rotation angle for a node based on the angle of the connector decorator's shape in WPF Diagram?](https://support.syncfusion.com/kb/article/17744/how-to-set-the-rotation-angle-for-a-node-based-on-the-angle-of-the-connector-decorators-shape-in-wpf-diagram-Diagram)
+[How to set the rotation angle for a node based on the angle of the connector decorator's shape in WPF Diagram?](https://support.syncfusion.com/kb/article/17744/how-to-set-node-angle-by-connector-decorator-angle-in-wpf-diagram)
 
-[How to set the semi-transparent color to Nodes in the WPF Diagram ?](https://support.syncfusion.com/kb/article/17882/how-to-set-the-semi-transparent-color-to-nodes-in-the-wpf-diagram-sfdiagram)
+[How to set the semi-transparent color to Nodes in the WPF Diagram ?](https://support.syncfusion.com/kb/article/17882/how-to-set-the-semi-transparent-color-to-nodes-in-wpf-diagram)
 
 [How to update the ShapeStyle of the selected node at runtime in WPF Diagram ?](https://support.syncfusion.com/kb/article/17728/how-to-update-the-shapestyle-of-the-selected-node-at-runtime-in-wpf-diagram-sfdiagram-)
 
@@ -847,7 +847,7 @@ The [`Constraints`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagra
 
 [How to clone the NodeViewModel in Diagram?](https://support.syncfusion.com/kb/article/17763/how-to-clone-the-nodeviewmodel-in-sfdiagram)
 
-[How to apply styles to nodes based on key values in the WPF Diagram?](https://support.syncfusion.com/kb/article/16203/how-to-apply-styles-to-nodes-based-on-key-values-in-the-wpf-sfdiagram)
+[How to apply styles to nodes based on key values in the WPF Diagram?](https://support.syncfusion.com/kb/article/16203/how-to-apply-styles-to-nodes-based-on-key-values-in-the-wpf-diagram)
 
 [How to Get the Node or Connector in the MouseMove Event in the WPF Diagram ?](https://support.syncfusion.com/kb/article/15646/how-to-get-the-node-or-connector-in-the-mousemove-event-in-the-wpf-diagram-sfdiagram)
 
@@ -860,9 +860,9 @@ The [`Constraints`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagra
 
 [How to remove all its children when deleting a parent node in WPF Diagram?](https://support.syncfusion.com/kb/article/10027/how-to-remove-all-its-children-when-deleting-a-parent-node-in-wpf-diagram-sfdiagram)
 
-[How to restrict annotation editing by double-clicking the node or connector in WPF Diagram ?](https://support.syncfusion.com/kb/article/8539/how-to-restrict-annotation-editing-by-double-clicking-the-node-or-connector-in-wpf-diagram)
+[How to restrict annotation editing by double-clicking the node or connector in WPF Diagram ?](https://support.syncfusion.com/kb/article/8539/how-to-restrict-annotation-editing-by-double-clicking-the-node-or-connector-in-wpf-diagram-sfdiagram)
 
-[How to restrict Connector's source/target changing from native Nodes to other Nodes in WPF Diagram?](https://support.syncfusion.com/kb/article/11796/how-to-restrict-connectors-source-target-changing-from-native-nodes-to-other-nodes-in-wpf)
+[How to restrict Connector's source/target changing from native Nodes to other Nodes in WPF Diagram?](https://support.syncfusion.com/kb/article/11796/how-to-restrict-connectors-sourcetarget-changing-from-native-nodes-to-other-nodes-in-wpf-diagramsfdiagram)
 
 [How to create filled PolyLine Node in WPF Diagram ?](https://support.syncfusion.com/kb/article/10255/how-to-create-filled-polyline-node-in-wpf-diagram-sfdiagram)
 

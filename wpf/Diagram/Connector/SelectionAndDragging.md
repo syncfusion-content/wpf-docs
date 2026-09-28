@@ -172,9 +172,9 @@ Find the [Connector interactions sample](https://github.com/SyncfusionExamples/W
 
 ## See Also
  
-[How to restrict Connector's source/target changing from native Nodes to other Nodes?](https://www.syncfusion.com/kb/13210/how-to-restrict-connectors-source-target-changing-from-native-nodes-to-other-nodes-in-wpf)
+[How to restrict Connector's source/target changing from native Nodes to other Nodes?](https://support.syncfusion.com/kb/article/11796/how-to-restrict-connectors-sourcetarget-changing-from-native-nodes-to-other-nodes-in-wpf-diagramsfdiagram)
 
-[How to restrict annotation editing by double-clicking the node or connector?](https://support.syncfusion.com/kb/article/8539/how-to-restrict-annotation-editing-by-double-clicking-the-node-or-connector-in-wpf-diagram)
+[How to restrict annotation editing by double-clicking the node or connector?](https://support.syncfusion.com/kb/article/8539/how-to-restrict-annotation-editing-by-double-clicking-the-node-or-connector-in-wpf-diagram-sfdiagram)
 
 [How to bring the specific diagram object to the center or viewport of the Diagram?](https://support.syncfusion.com/kb/article/8390/how-to-bring-the-specific-object-to-the-center-or-viewport-of-the-diagram-in-wpf)
 
@@ -182,8 +182,8 @@ Find the [Connector interactions sample](https://github.com/SyncfusionExamples/W
 
 [How to use the property grid for diagram elements?](https://support.syncfusion.com/kb/article/9861/how-to-use-the-property-grid-in-the-wpf-diagram-sfdiagram)
 
-[How to decide whether to drag or draw a connection on port at runtime?](https://support.syncfusion.com/kb/article/8538/how-to-decide-whether-to-drag-or-draw-a-connection-on-port-at-runtime-in-the-wpf-diagram)
+[How to decide whether to drag or draw a connection on port at runtime?](https://support.syncfusion.com/kb/article/8538/how-to-decide-whether-to-drag-or-draw-a-connection-on-port-at-runtime-in-the-wpf-diagram-sfdiagram)
 
 [How to select a connector when the mouse hovers over a node port that is connected by the connector in the WPF Diagram?](https://support.syncfusion.com/kb/article/18695/how-to-select-a-connector-when-the-mouse-hovers-over-a-node-port-that-is-connected-by-the-connector-in-the-wpf-diagram-sfdiagram)
 
-[How to identify the dragging state of connectors in the WPF Diagram ?](https://support.syncfusion.com/kb/article/18846/how-to-identify-the-dragging-state-of-connectors-in-the-wpf-diagram-sfdiagram)
+[How to identify the dragging state of connectors in the WPF Diagram ?](https://support.syncfusion.com/kb/article/18846/how-to-identify-the-dragging-state-of-connectors-in-the-wpf-diagram)

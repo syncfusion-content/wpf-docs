@@ -160,7 +160,7 @@ Diagram.LayoutManager = new LayoutManager()
 {% endhighlight %}
 {% endtabs %}
 
-To learn more about the supported built-in layout, refer to the [Automatic Layouts](https://help.syncfusion.com/wpf/diagram/automatic-layouts) page.
+To learn more about the supported built-in layout, refer to the [Automatic Layouts](https://help.syncfusion.com/wpf/diagram/automatic-layouts/automatic-layouts) page.
 
 ### Performing Add, Remove, Reset, and Move Operations on DataSource
 
@@ -523,9 +523,9 @@ public class DataItems : ObservableCollection<ItemInfo>
 
 ## See Also
 
-[How to do Expand/Collapse for Multi-Parent Layout?](https://support.syncfusion.com/kb/article/11417/how-to-do-expand-collapse-for-multiparent-layout-in-wpf-diagramsfdiagram)
+[How to do Expand/Collapse for Multi-Parent Layout?](https://support.syncfusion.com/kb/article/11417/how-to-do-expandcollapse-for-multiparent-layout-in-wpf-diagramsfdiagram)
 
-[How to generate Layout with DataSource as NodeViewModel instead of business object class?](https://support.syncfusion.com/kb/article/10187/how-to-generate-layout-with-datasource-as-nodeviewmodel-instead-of-business-object-class-in)
+[How to generate Layout with DataSource as NodeViewModel instead of business object class?](https://support.syncfusion.com/kb/article/10187/how-to-generate-layout-with-datasource-as-nodeviewmodel-instead-of-business-object-class-in-wpf-diagram-sfdiagram)
 
 [How to update layout automatically when collection is changed?](https://support.syncfusion.com/kb/article/5857/how-to-update-layout-automatically-when-collection-is-changed-in-wpf-diagram-sfdiagram)
 

@@ -21,7 +21,7 @@ The following section helps you to build your application with [WPF Diagram](htt
 
 ## Creating the project
 
-Create a new WPF project using Visual Studio. For more [details](https://learn.microsoft.com/en-us/previous-versions/visualstudio/visual-studio-2008/bb546958(v=vs.90)).
+Create a new WPF project using Visual Studio. For more [details](https://learn.microsoft.com/en-us/previous-versions/visualstudio/visual-studio-2008/bb546958(v=vs.90))).
 
 ### Adding control via Designer
 
@@ -734,7 +734,7 @@ We have represented the steps to interact with stencil such as drag and drop ele
 
 [View Sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/GettingStarted/StencilCreation)
 
-For more information about stencil, please [refer](https://help.syncfusion.com/wpf/diagram/stencil#using-the-diagram-elements). 
+For more information about stencil, please [refer](https://help.syncfusion.com/wpf/diagram/stencil/stencil#using-the-diagram-elements). 
 
 ## Organization layout
 
@@ -937,4 +937,4 @@ SfDiagram supports various built-in themes. Refer to the links below to apply th
 
 [How to Automate Diagram using WinAppDriver](https://support.syncfusion.com/kb/article/15642/how-to-automate-diagram-using-winappdriver)
 
-[How to get the coordinates of the current viewport in WPF Diagram?](https://support.syncfusion.com/kb/article/18032/how-to-get-the-coordinates-of-the-current-viewport-in-wpf-diagram-sfdiagram)
+[How to get the coordinates of the current viewport in WPF Diagram?](https://support.syncfusion.com/kb/article/18032/how-to-get-the-coordinates-of-the-viewport-in-wpf-diagram)

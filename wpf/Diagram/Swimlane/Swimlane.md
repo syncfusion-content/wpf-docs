@@ -313,7 +313,7 @@ Swimlane can be selected by clicking (tap) the header of the swimlane.
 
 * Selected object can be dragged by clicking and dragging the header of the swimlane. 
 
-* Instead of dragging original object, preview of the node alone can be dragged. For preview dragging, refer to the [PreviewSettings](https://help.syncfusion.com/wpf/sfdiagram/preview-settings). 
+* Instead of dragging original object, preview of the node alone can be dragged. For preview dragging, refer to the [PreviewSettings](https://help.syncfusion.com/wpf/diagram/preview-settings). 
 
 * The `NodeChangedEvent` will notify the `OffsetX` and `OffsetY` changes with their old and new values. Along with that, this event will give information about interaction state. To learn about the arguments, refer to the [NodeChangedEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.NodeChangedEventArgs.html) .
 
@@ -326,4 +326,4 @@ Please find the swimlane sample as follows.
 ## See Also
 [How to restrict node’s dragging from native lane to other lanes in WPF Diagram?](https://support.syncfusion.com/kb/article/11744/how-to-restrict-nodes-dragging-from-native-lane-to-other-lanes-in-wpf-diagramsfdiagram)
 
-[How to render the Swimlane at the top-left corner of the diagram in the WPF Diagram ?](https://support.syncfusion.com/kb/article/18841/how-to-render-the-swimlane-at-the-top-left-corner-of-the-diagram-in-the-wpf-diagram-sfdiagram)
+[How to render the Swimlane at the top-left corner of the diagram in the WPF Diagram ?](https://support.syncfusion.com/kb/article/18841/how-to-render-the-swimlane-in-wpf-diagram)

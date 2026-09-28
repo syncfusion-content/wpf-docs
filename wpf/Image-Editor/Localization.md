@@ -30,7 +30,7 @@ Use the below code to change the application culture to French.
 To localize Image Editor based on `CurrentUICulture` using resource files, follow the below steps.
 
 1.Create new folder and name it as **Resources** in your application.
-2.Add the default resource file of SfImageEditor into **Resources** folder. You can download the Syncfusion.SfImageEditor.WPF.resx [`here`](https://www.syncfusion.com/downloads/support/directtrac/general/ze/Syncfusion.SfImageEditor.WPF-240771729).
+2.Add the default resource file of SfImageEditor into **Resources** folder. You can download the Syncfusion.SfImageEditor.WPF.resx [`here`](https://s3.amazonaws.com/files2.syncfusion.com/dtsupport/directtrac/general/ze/Syncfusion.SfImageEditor.WPF-240771729.zip).
 
 ![Shapes](Images/Localization_img1.png) 
 

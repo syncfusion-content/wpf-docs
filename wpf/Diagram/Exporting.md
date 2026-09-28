@@ -162,7 +162,7 @@ diagram.Export();
 
 ### Export to PDF
 
-Diagram does not have built-in support for converting the diagram to a PDF file, but you can achieve this by exporting the diagram as an XPS file and then converting the exported XPS file to a PDF using [Syncfusion.XPS.XPSToPdfConverter](https://help.syncfusion.com/cr/file-formats/Syncfusion.XPS.XPSToPdfConverter.html).
+Diagram does not have built-in support for converting the diagram to a PDF file, but you can achieve this by exporting the diagram as an XPS file and then converting the exported XPS file to a PDF using [Syncfusion.XPS.XPSToPdfConverter](https://help.syncfusion.com/cr/document-processing/Syncfusion.XPS.XPSToPdfConverter.html).
 
 ### Export Specific Region of the Diagram
 
@@ -297,7 +297,7 @@ diagram.Export();
 
 ## See Also
  
-[How to export the Diagram as PDF?](https://support.syncfusion.com/kb/article/7520/how-to-export-the-diagram-as-a-pdf-in-the-wpf-diagram-sfdiagram)
+[How to export the Diagram as PDF?](https://support.syncfusion.com/kb/article/7520/how-to-export-the-diagram-as-a-pdf-in-the-wpf-diagram)
 
 [How to Export the Visible Area Within the ViewPort in WPF Diagram?](https://support.syncfusion.com/kb/article/18001/how-to-export-the-visible-area-within-the-viewport-in-wpf-diagram)
 

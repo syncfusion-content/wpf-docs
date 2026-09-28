@@ -673,13 +673,13 @@ Find the [Sample](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tre
 
 [How to customize the connection indicator style of node and port?](https://support.syncfusion.com/kb/article/10048/how-to-customize-the-connection-indicator-style-of-node-and-port-in-wpf-diagram-sfdiagram)
 
-[How to get or set the positions of the segments by programmatically?](https://support.syncfusion.com/kb/article/10082/how-to-get-or-set-the-positions-of-the-segments-by-programmatically-in-wpf-diagram)
+[How to get or set the positions of the segments by programmatically?](https://support.syncfusion.com/kb/article/10082/how-to-get-or-set-the-positions-of-the-segments-by-programmatically-in-wpf-diagram-sfdiagram)
 
 [How to toggle the visibility of connector at runtime?](https://support.syncfusion.com/kb/article/8897/how-to-toggle-the-visibility-of-connector-at-runtime-in-wpf-diagram-sfdiagram)
 
-[How to detect or get notification when editing the thumbs of connector?](https://support.syncfusion.com/kb/article/9030/how-to-detect-or-get-notification-when-editing-the-thumbs-of-connector-in-wpf-diagram)
+[How to detect or get notification when editing the thumbs of connector?](https://support.syncfusion.com/kb/article/9030/how-to-detect-or-get-notification-when-editing-the-thumbs-of-connector-in-wpf-diagram-sfdiagram)
 
-[How to decide whether to drag or draw a connection on port at runtime?](https://support.syncfusion.com/kb/article/8538/how-to-decide-whether-to-drag-or-draw-a-connection-on-port-at-runtime-in-the-wpf-diagram)
+[How to decide whether to drag or draw a connection on port at runtime?](https://support.syncfusion.com/kb/article/8538/how-to-decide-whether-to-drag-or-draw-a-connection-on-port-at-runtime-in-the-wpf-diagram-sfdiagram)
 
 [How to validate the connection and port visibility?](https://support.syncfusion.com/kb/article/8392/how-to-validate-the-connection-and-port-visibility-in-wpf-diagram-sfdiagram)
 
@@ -693,13 +693,13 @@ Find the [Sample](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tre
 
 [How to customize the direction of bridge?](https://support.syncfusion.com/kb/article/6010/how-to-customize-the-direction-of-bridge-in-wpf-diagram-sfdiagram)
 
-[How to update the size of a Connector's source and target decorators in the WPF Diagram ?](https://support.syncfusion.com/kb/article/18246/how-to-update-the-size-of-a-connectors-source-and-target-decorators-in-the-wpf-diagram-sfdiagram)
+[How to update the size of a Connector's source and target decorators in the WPF Diagram ?](https://support.syncfusion.com/kb/article/18246/how-to-update-size-of-connectors-source-and-target-decorators-in-wpf-sfdiagram)
 
 [How to prevent the Connector lines from overlapping the Connector's target decorator in WPF Diagram ?](https://support.syncfusion.com/kb/article/18404/how-to-prevent-the-connector-lines-from-overlapping-the-connectors-target-decorator-in-wpf-diagramsfdiagram)
 
 [How to restrict the Connector's source and target decorator from being positioned in different places in WPF Diagram?](https://support.syncfusion.com/kb/article/18413/how-to-restrict-the-connectors-source-and-target-decorator-from-being-positioned-in-different-places-in-wpf-diagram-sfdiagram)
 
-[How to set the rotation angle for a node based on the angle of the connector decorator's shape in WPF Diagram?](https://support.syncfusion.com/kb/article/17744/how-to-set-the-rotation-angle-for-a-node-based-on-the-angle-of-the-connector-decorators-shape-in-wpf-diagram-sfdiagram)
+[How to set the rotation angle for a node based on the angle of the connector decorator's shape in WPF Diagram?](https://support.syncfusion.com/kb/article/17744/how-to-set-node-angle-by-connector-decorator-angle-in-wpf-diagram)
 
 [How to manage the visibility of node and connector objects in the WPF Diagram ?](https://support.syncfusion.com/kb/article/14995/how-to-manage-the-visibility-of-node-and-connector-objects-in-the-wpf-diagram-sfdiagram)
 
