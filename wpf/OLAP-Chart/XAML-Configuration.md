@@ -5,13 +5,14 @@ description: XAML configuration in the WPF OLAP Chart enables chart elements, da
 platform: wpf
 control: OLAP Chart
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
-# XAML Configuration in WPF Olap Chart
+# XAML Configuration in WPF OLAP Chart
 
 XAML configuration is one of the important features of the OLAP chart, as it enables users to configure the control entirely through XAML, eliminating the need for code-behind.
 
-### Properties 
+## Properties 
 * **DataSource.ConnectionString**: Specifies the connection string of the data manager.
 * **DataSource.ConnectionName**: Specifies the connection name, which is available in the App.Config file of the application.
 * **DataSource.DataManagerName**: Specifies the data manager name.

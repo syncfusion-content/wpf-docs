@@ -5,6 +5,7 @@ description: Printing in SfTreeGrid prints grid data with customizable layouts, 
 platform: wpf
 control: SfTreeGrid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Printing in WPF SfTreeGrid

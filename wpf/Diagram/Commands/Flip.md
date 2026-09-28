@@ -5,6 +5,7 @@ description: Mirror nodes, ports, and groups in Syncfusion® WPF Diagram using f
 platform: wpf
 control: SfDiagram
 documentation: ug
+appliesto: UI Component Suite, Diagram SDK
 ---
 
 # Flip Command in WPF Diagram

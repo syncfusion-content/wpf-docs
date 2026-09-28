@@ -5,6 +5,7 @@ description: Select diagram elements in Syncfusion® WPF Diagram using single, m
 platform: wpf
 control: SfDiagram
 documentation: ug
+appliesto: UI Component Suite, Diagram SDK
 ---
 
 # Selection in WPF Diagram

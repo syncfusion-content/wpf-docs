@@ -5,6 +5,7 @@ description: Custom charts in the WPF Chart allow you to create tailored chart v
 platform: wpf
 control: SfChart
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Custom Charts in WPF

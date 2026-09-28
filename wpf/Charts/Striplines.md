@@ -5,6 +5,7 @@ description: Striplines in the WPF Chart highlight specific ranges or regions on
 platform: wpf
 control: SfChart
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Striplines in WPF Charts

@@ -5,6 +5,7 @@ description: Trendlines in the WPF Chart display data trends and patterns using 
 platform: wpf
 control: SfChart
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Trendlines in WPF Charts

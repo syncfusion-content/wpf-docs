@@ -5,6 +5,7 @@ description: Perform zooming, panning, scrolling, and reset operations in Syncfu
 platform: wpf
 control: SfDiagram
 documentation: ug
+appliesto: UI Component Suite, Diagram SDK
 ---
 
 # Zoom Command in WPF Diagram

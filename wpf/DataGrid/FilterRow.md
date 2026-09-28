@@ -5,6 +5,7 @@ description: Filter Row in Data Grid filters data directly within the grid throu
 platform: wpf
 control: Data Grid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Filter Row in WPF Data Grid

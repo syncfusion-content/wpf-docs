@@ -5,6 +5,7 @@ description: Learn about swimlane stencil support in Syncfusion® WPF Diagram co
 platform: wpf
 control: SfDiagram
 documentation: ug
+appliesto: UI Component Suite, Diagram SDK
 ---
 
 # Swimlane Stencil in WPF Diagram

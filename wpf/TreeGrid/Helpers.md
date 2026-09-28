@@ -5,6 +5,7 @@ description: Helpers in SfTreeGrid provides helper classes and methods to custom
 platform: wpf
 control: SfTreeGrid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Helpers in WPF SfTreeGrid

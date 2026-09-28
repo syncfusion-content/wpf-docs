@@ -5,6 +5,7 @@ description: Reverse or restore diagram changes in Syncfusion® WPF Diagram usin
 platform: wpf
 control: SfDiagram
 documentation: ug
+appliesto: UI Component Suite, Diagram SDK
 ---
 
 # Undo Redo Commands in WPF Diagram

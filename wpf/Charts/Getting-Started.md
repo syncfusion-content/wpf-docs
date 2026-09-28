@@ -5,6 +5,7 @@ description: Learn how to get started with the Syncfusion® WPF Charts control. 
 platform: wpf
 control: SfChart
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Getting Started with WPF Charts

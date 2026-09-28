@@ -5,6 +5,7 @@ description: Restrict nodes, connectors, groups, and symbols from dragging into 
 platform: wpf
 control: SfDiagram
 documentation: ug
+appliesto: UI Component Suite, Diagram SDK
 ---
 # Restrict Dragging at Negative Axis in WPF Diagram
 

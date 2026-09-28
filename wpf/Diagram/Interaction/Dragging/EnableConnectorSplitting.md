@@ -5,6 +5,7 @@ description: Split existing connectors in Syncfusion® WPF Diagram by dropping n
 platform: wpf
 control: SfDiagram
 documentation: ug
+appliesto: UI Component Suite, Diagram SDK
 ---
 
 # Connector Splitting in WPF Diagram

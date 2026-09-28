@@ -5,6 +5,7 @@ description: Learn about annotation selection and resizing in Syncfusion® WPF D
 platform: wpf
 control: SfDiagram
 documentation: ug
+appliesto: UI Component Suite, Diagram SDK
 ---
 
 # Annotation Selection and Resizing in WPF Diagram

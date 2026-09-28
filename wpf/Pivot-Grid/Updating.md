@@ -5,6 +5,7 @@ description: Updating in the Syncfusion® WPF Pivot Grid control enables real-ti
 platform: wpf
 control: Pivot Grid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Updating in WPF Pivot Grid

@@ -6,6 +6,7 @@ description: Single Calculation Header in the Syncfusion® WPF Pivot Grid contro
 platform: wpf
 control: Pivot Grid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Single Calculation Header in WPF Pivot Grid

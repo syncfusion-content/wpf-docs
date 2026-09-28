@@ -5,6 +5,7 @@ description: Performance in Data Grid provides optimizations for efficient rende
 platform: wpf
 control: Data Grid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Performance in WPF Data Grid

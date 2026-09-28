@@ -5,6 +5,7 @@ description: RTL Support in the Syncfusion® WPF Pivot Grid control enables righ
 platform: wpf
 control: Pivot Grid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # RTL Support in WPF Pivot Grid

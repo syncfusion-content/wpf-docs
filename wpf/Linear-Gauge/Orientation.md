@@ -5,6 +5,7 @@ description: Orientation and its Customization in the WPF Linear Gauge allows yo
 platform: wpf
 control: SfLinearGauge
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Orientation and its Customization in WPF Linear Gauge

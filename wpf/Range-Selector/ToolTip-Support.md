@@ -5,6 +5,7 @@ description: Tooltip support in the WPF Range Selector displays additional infor
 platform: wpf
 control: SfDateTimeRangeNavigator
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Tooltip Support in WPF Range Selector

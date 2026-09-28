@@ -5,6 +5,7 @@ description: Chart Area in the WPF Chart displays data as filled regions between
 platform: wpf
 control: SfChart
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Chart Area in WPF Chart

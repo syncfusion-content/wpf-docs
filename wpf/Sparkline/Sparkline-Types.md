@@ -5,6 +5,7 @@ description: Types in the WPF Sparkline provide multiple visualization options t
 platform: wpf
 control: SfSparkline
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Types in WPF Sparkline

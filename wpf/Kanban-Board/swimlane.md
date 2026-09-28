@@ -5,6 +5,7 @@ description: Learn about Swimlane support in Syncfusion WPF Kanban Board using t
 platform: wpf
 control: SfKanban
 documentation: ug
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Swimlane in WPF Kanban Board

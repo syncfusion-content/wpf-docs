@@ -5,6 +5,7 @@ description: Learn about nodes in Syncfusion® WPF Diagram control, including no
 platform: wpf
 control: SfDiagram
 documentation: ug
+appliesto: UI Component Suite, Diagram SDK
 ---
 
 # Node in the WPF Diagram

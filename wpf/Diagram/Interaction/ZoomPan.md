@@ -5,6 +5,7 @@ description: Navigate large diagrams in Syncfusion® WPF Diagram with zooming, p
 platform: wpf
 control: SfDiagram
 documentation: ug
+appliesto: UI Component Suite, Diagram SDK
 ---
 
 # Zoom Pan in WPF Diagram

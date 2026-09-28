@@ -5,6 +5,7 @@ description: Expand or collapse hierarchical nodes in Syncfusion® WPF Diagram a
 platform: wpf
 control: SfDiagram
 documentation: ug
+appliesto: UI Component Suite, Diagram SDK
 ---
 
 # Expand Collapse Command in WPF Diagram

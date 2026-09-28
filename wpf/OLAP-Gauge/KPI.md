@@ -5,6 +5,7 @@ description: KPI in the WPF OLAP Gauge displays key performance indicators to mo
 platform: wpf
 control: OLAP Gauge
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # KPI in WPF OLAP Gauge

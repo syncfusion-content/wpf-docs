@@ -5,6 +5,7 @@ description: Shape labels in the WPF Maps display text for geographic regions, h
 platform: wpf
 control: SfMap
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Shape Labels in WPF Maps

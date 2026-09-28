@@ -5,6 +5,7 @@ description: Data binding in the WPF OLAP Gauge connects multidimensional data s
 platform: wpf
 control: OLAP Gauge
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Data Binding in WPF OLAP Gauge

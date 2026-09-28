@@ -5,6 +5,7 @@ description: Columns in Data Grid supports auto-generated and custom columns, co
 platform: wpf
 control: Data Grid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Columns in WPF Data Grid

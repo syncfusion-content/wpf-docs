@@ -5,6 +5,7 @@ description: Serialization and Deserialization in Data Grid saves and restores g
 platform: wpf
 control: Data Grid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Serialization and Deserialization in WPF Data Grid

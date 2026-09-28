@@ -5,6 +5,7 @@ description: Fast Charts in the WPF Chart provide high-performance rendering for
 platform: wpf
 control: SfChart
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Fast Charts in WPF Charts

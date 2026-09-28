@@ -5,6 +5,7 @@ description: MVVM in SfTreeGrid enables seamless integration with the MVVM patte
 platform: wpf
 control: SfTreeGrid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # MVVM in WPF SfTreeGrid

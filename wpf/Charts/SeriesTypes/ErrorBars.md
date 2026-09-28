@@ -5,6 +5,7 @@ description: Error bars in the WPF Chart represent data variability and uncertai
 platform: wpf
 control: SfChart
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # ErrorBar in WPF Charts

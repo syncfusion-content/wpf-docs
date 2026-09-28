@@ -5,6 +5,7 @@ description: Ticks in the WPF Linear Gauge indicate scale intervals and support 
 platform: wpf
 control: SfLinearGauge
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Ticks in WPF Linear Gauge

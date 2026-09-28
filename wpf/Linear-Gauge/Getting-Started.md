@@ -5,6 +5,7 @@ description: Learn how to get started with the Syncfusion® WPF Linear Gauge con
 platform: wpf
 control: SfLinearGauge
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 # Getting Started with WPF Linear Gauge
 

@@ -5,6 +5,7 @@ description: Data Validation in Data Grid helps validate user input, display val
 platform: wpf
 control: Data Grid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Data Validation in WPF Data Grid

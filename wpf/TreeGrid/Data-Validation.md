@@ -5,6 +5,7 @@ description: Validate user input in SfTreeGrid with built-in rules, IDataErrorIn
 platform: wpf
 control: SfTreeGrid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 

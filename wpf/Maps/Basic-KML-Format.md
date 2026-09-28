@@ -5,6 +5,7 @@ description: KML format in the WPF Maps enables geographic data from KML files t
 platform: wpf
 control: SfMap
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # KML Format in WPF Maps

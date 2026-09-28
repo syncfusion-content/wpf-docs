@@ -5,6 +5,7 @@ description: Pointers in the WPF Linear Gauge indicate values on the scale using
 platform: wpf
 control: SfLinearGauge
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Pointers in WPF Linear Gauge

@@ -5,6 +5,7 @@ description: Positioning data markers in the WPF 3D Chart allows you to customiz
 platform: wpf
 control: SfChart3D
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Positioning Data Markers in WPF 3D Chart

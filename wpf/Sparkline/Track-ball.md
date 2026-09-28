@@ -5,6 +5,7 @@ description: Trackball in the WPF Sparkline displays data values at specific poi
 platform: wpf
 control: SfSparkline
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Trackball in WPF Sparkline

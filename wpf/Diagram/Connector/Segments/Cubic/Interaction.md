@@ -5,6 +5,7 @@ description: Learn about cubic bezier segment interactions in Syncfusion® WPF D
 platform: wpf
 control: SfDiagram
 documentation: ug
+appliesto: UI Component Suite, Diagram SDK
 ---
 
 # Cubic Bezier Segment Interaction in WPF Diagram

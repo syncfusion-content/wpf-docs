@@ -5,6 +5,7 @@ description: Populate data in the WPF Maps by binding geographic and business da
 platform: wpf
 control: SfMap 
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Populate Data in WPF Maps

@@ -5,6 +5,7 @@ description: Custom Summary in the Syncfusion® WPF Pivot Grid control lets user
 platform: wpf
 control: Pivot Grid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Custom Summary in WPF Pivot Grid

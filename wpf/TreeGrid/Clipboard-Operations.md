@@ -5,6 +5,7 @@ description: Clipboard Operations in SfTreeGrid enables copy, cut, and paste act
 platform: wpf
 control: SfTreeGrid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Clipboard Operations in WPF SfTreeGrid 

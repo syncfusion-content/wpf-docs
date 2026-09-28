@@ -5,6 +5,7 @@ description: Manage keyboard shortcuts and custom commands in Syncfusion® WPF D
 platform: wpf
 control: SfDiagram
 documentation: ug
+appliesto: UI Component Suite, Diagram SDK
 ---
 
 # Command Manager for Stencil in WPF Diagram

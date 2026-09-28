@@ -5,6 +5,7 @@ description: Grouping stacked series in the WPF Chart organize multiple stacked 
 platform: wpf
 control: SfChart
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Grouping Stacked in WPF Charts

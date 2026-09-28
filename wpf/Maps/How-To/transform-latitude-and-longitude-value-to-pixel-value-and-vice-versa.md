@@ -5,6 +5,7 @@ description: Transform latitude and longitude values to pixel coordinates and co
 platform: wpf
 control: SfMap
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # How to transform latitude and longitude in WPF Maps

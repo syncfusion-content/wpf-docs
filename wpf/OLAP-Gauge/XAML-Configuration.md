@@ -5,6 +5,7 @@ description: XAML configuration in the WPF OLAP Gauge enables gauge elements, da
 platform: wpf
 control: OLAP Gauge
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # XAML Configuration in WPF OLAP Gauge

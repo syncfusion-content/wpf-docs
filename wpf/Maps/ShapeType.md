@@ -5,6 +5,7 @@ description: Shape types in the WPF Maps define how geographic regions are rende
 platform: wpf
 control: SfMaps
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Shape Types in WPF Maps

@@ -5,6 +5,7 @@ description: Appearance in the WPF Chart allows you to customize chart elements,
 platform: wpf
 control: SfChart
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Appearance in WPF Charts

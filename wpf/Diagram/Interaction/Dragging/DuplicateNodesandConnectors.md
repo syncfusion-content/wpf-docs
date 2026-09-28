@@ -5,6 +5,7 @@ description: Duplicate nodes, connectors, and groups in Syncfusion® WPF Diagram
 platform: wpf
 control: SfDiagram
 documentation: ug
+appliesto: UI Component Suite, Diagram SDK
 ---
 # Duplicate Nodes and Connectors in WPF Diagram
 

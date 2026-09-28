@@ -5,6 +5,7 @@ description: UI Automation in SfTreeGrid enables accessibility and automated tes
 platform: wpf
 control: SfTreeGrid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # UI Automation in WPF SfTreeGrid

@@ -5,6 +5,7 @@ description: Configure preview dragging in Syncfusion® WPF Diagram with outline
 platform: wpf
 control: SfDiagram
 documentation: ug
+appliesto: UI Component Suite, Diagram SDK
 ---
 # Preview Settings in WPF Diagram
 

@@ -5,6 +5,7 @@ description: Apply localization in the Syncfusion® WPF Pivot Grid control to di
 platform: wpf
 control: Pivot Grid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Localization in WPF Pivot Grid

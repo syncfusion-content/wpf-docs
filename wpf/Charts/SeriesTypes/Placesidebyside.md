@@ -5,6 +5,7 @@ description: Side by side placement in the WPF Chart arranges series adjacent to
 platform: wpf
 control: SfChart
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Side By Side Placement in WPF Charts

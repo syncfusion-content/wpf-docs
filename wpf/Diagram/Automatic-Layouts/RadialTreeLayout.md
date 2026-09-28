@@ -5,6 +5,7 @@ description: Arrange nodes in Syncfusion® WPF Diagram with a radial tree layout
 platform: wpf
 control: SfDiagram
 documentation: ug
+appliesto: UI Component Suite, Diagram SDK
 ---
 
 # Radial Tree Layout in WPF Diagram

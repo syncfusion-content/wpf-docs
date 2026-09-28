@@ -5,6 +5,7 @@ description: Learn about introduction of Syncfusion® Essential Studio WPF Pivot
 platform: wpf
 control: Pivot Grid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # About Syncfusion WPF PivotSchemaDesigner Control

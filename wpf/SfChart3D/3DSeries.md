@@ -5,6 +5,7 @@ description: Series in the WPF 3D Chart define how data is visualized, enabling 
 platform: wpf
 control: SfChart3D
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Series in WPF 3D Chart

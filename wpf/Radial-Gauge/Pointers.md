@@ -5,6 +5,7 @@ description: Pointers in the WPF Radial Gauge indicate values on the gauge scale
 platform: wpf
 control: SfCircularGauge
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Pointers in WPF Radial Gauge

@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Rows in WPF SfTreeGrid | Syncfusion®
 description: Rows in SfTreeGrid include headers, unbound, and data rows with customizable styles, indicators, and flexible layouts.
@@ -6,6 +6,7 @@ description: Rows in SfTreeGrid include headers, unbound, and data rows with cus
 platform: wpf
 control: SfTreeGrid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Rows in WPF SfTreeGrid

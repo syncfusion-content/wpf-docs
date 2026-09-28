@@ -5,6 +5,7 @@ description: Switch tools and drawing modes in Syncfusion® WPF Diagram using th
 platform: wpf
 control: SfDiagram
 documentation: ug
+appliesto: UI Component Suite, Diagram SDK
 ---
 
 # SelectTool Command in WPF Diagram

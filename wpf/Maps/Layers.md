@@ -5,6 +5,7 @@ description: Layers in the WPF Maps organize and display geographic data, enabli
 platform: wpf
 control: SfMap
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Layer Types in WPF Maps

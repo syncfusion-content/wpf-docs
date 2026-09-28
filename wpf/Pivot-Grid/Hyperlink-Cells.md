@@ -5,6 +5,7 @@ description: Hyperlink cells in the Syncfusion® WPF Pivot Grid control allow us
 platform: wpf
 control: Pivot Grid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Hyperlink Cells in WPF Pivot Grid

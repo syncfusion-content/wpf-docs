@@ -5,6 +5,7 @@ description: Layout in the WPF TreeMap determines how hierarchical data items ar
 platform: wpf
 control: TreeMap
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Layout in WPF TreeMap

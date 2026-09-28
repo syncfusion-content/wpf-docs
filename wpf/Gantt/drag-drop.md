@@ -5,6 +5,7 @@ description: Learn about drag and drop support in Syncfusion WPF Gantt using dra
 platform: wpf
 control: Gantt
 documentation: ug
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Drag and drop in WPF Gantt

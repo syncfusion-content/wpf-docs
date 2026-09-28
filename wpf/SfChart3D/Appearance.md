@@ -5,6 +5,7 @@ description: Appearance in the WPF 3D Chart allows you to customize chart elemen
 platform: wpf
 control: SfChart3D
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Appearance in WPF 3D Chart

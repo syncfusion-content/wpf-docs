@@ -5,6 +5,7 @@ description: Filtering in Data Grid refines and displays relevant data through b
 platform: wpf
 control: Data Grid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 # Filtering in WPF Data Grid
 Filtering is the process of retrieving the values from the collection which satisfy the specified condition. In the [WPF DataGrid](https://www.syncfusion.com/wpf-controls/datagrid) the filtering can be applied though the UI as well as the programmatic filters. 

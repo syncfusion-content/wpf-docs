@@ -5,6 +5,7 @@ description: Context Menu in the Syncfusion® WPF Pivot Grid control provides qu
 platform: wpf
 control: Pivot Grid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Context Menu in WPF Pivot Grid

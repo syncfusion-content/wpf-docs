@@ -5,9 +5,10 @@ description: Legend in the WPF OLAP Chart identifies series and data categories,
 platform: wpf
 control: OLAP Chart
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
-# Legend in WPF Olap Chart
+# Legend in WPF OLAP Chart
 
 Legends are used to display the names of data series. The chart legend can be added to a WPF OLAP Chart by adding the chart legend of the chart WPF, which is found under the Syncfusion.Windows.Chart namespace. The following code sample explains how to add a legend to a WPF OLAP Chart.
 

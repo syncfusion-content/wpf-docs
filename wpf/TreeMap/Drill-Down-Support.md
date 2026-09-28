@@ -5,6 +5,7 @@ description: Drill down support in the WPF TreeMap enables users to navigate hie
 platform: wpf
 control: TreeMap
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Drill Down Support in WPF TreeMap

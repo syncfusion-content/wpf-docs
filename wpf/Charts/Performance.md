@@ -5,6 +5,7 @@ description: Performance in the WPF Chart provides optimized rendering, efficien
 platform: wpf
 control: SfChart
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Performance in WPF Charts

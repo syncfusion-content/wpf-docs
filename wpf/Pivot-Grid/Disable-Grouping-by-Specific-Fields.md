@@ -5,6 +5,7 @@ description: Restrict grouping in the Syncfusion® WPF Pivot Grid by preventing 
 platform: wpf
 control: Pivot Grid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Prevent Grouping of Specific Pivot Item in WPF Pivot Grid

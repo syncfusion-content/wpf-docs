@@ -5,6 +5,7 @@ description: Interactive features in the WPF 3D Chart enable zooming, selection,
 platform: wpf
 control: SfChart3D
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Interactive Features in WPF 3D Chart

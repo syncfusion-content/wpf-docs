@@ -5,6 +5,7 @@ description: PivotItem in the Syncfusion® WPF Pivot Grid control defines field 
 platform: wpf
 control: Pivot Grid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # PivotItem in WPF Pivot Grid

@@ -5,6 +5,7 @@ description: Learn about BPMN groups in Syncfusion® WPF Diagram control, includ
 platform: wpf
 control: SfDiagram
 documentation: ug
+appliesto: UI Component Suite, Diagram SDK
 ---
 
 # BPMN Group in WPF Diagram

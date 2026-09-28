@@ -5,6 +5,7 @@ description: Learn how to format and display time values in various formats in W
 platform: wpf
 control: SfTimePicker
 documentation: ug
+appliesto: UI Component Suite, Scheduler SDK
 ---
 
 # Time Formatting in WPF TimePicker

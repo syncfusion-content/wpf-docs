@@ -5,6 +5,7 @@ description: Learn how to get started with the Syncfusion® WPF Maps control. Ex
 platform: wpf
 control: SfMap
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Getting Started with WPF Maps

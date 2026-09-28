@@ -5,6 +5,7 @@ description: Context Menu in Data Grid provides customizable menu options for ro
 platform: wpf
 control: Data Grid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Context Menu in WPF Data Grid

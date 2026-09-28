@@ -5,6 +5,7 @@ description: Radar and polar series in the WPF Chart display multivariable data 
 platform: wpf
 control: SfChart
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Radar and Polar in WPF Charts

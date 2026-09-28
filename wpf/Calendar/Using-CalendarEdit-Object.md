@@ -5,6 +5,7 @@ description: Learn how to work with CalendarEdit object in WPF Calendar control 
 platform: wpf
 control: CalendarEdit
 documentation: ug
+appliesto: UI Component Suite, Scheduler SDK
 ---
 
 # Using CalendarEdit Object in WPF Calendar

@@ -5,6 +5,7 @@ description: Migrating from Chart to SfChart in the WPF Chart helps transition e
 platform: wpf
 control: SfChart
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Migrating from Chart to SfChart in WPF Charts

@@ -5,6 +5,7 @@ description: Multilayer support in the WPF Maps enables multiple map layers to b
 platform: wpf
 control: SfMap
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Multilayer Support in WPF Maps

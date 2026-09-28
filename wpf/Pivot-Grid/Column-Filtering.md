@@ -5,6 +5,7 @@ description: Apply column filtering in the Syncfusion® WPF Pivot Grid control t
 platform: wpf
 control: Pivot Grid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Column Filtering in WPF Pivot Grid

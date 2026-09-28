@@ -5,6 +5,7 @@ description: Accessibility in the WPF TreeMap enables keyboard navigation, scree
 platform: wpf
 control: TreeMap
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 #  Accessibility in WPF TreeMap

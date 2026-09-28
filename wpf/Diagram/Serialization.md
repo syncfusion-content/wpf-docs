@@ -5,6 +5,7 @@ description: Save, load, and serialize diagrams in Syncfusion® WPF Diagram, inc
 platform: wpf
 control: SfDiagram
 documentation: ug
+appliesto: UI Component Suite, Diagram SDK
 ---
 
 # Serialization in WPF SfDiagram

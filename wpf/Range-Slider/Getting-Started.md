@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Getting Started with WPF RangeSlider | Syncfusion®
-description: Learn how to get started with the Syncfusion® WPF RangeSlider (SfRangeSlider) control. Explore setup, features, examples, and customization options.
+title: Getting Started with WPF Range Slider | Syncfusion®
+description: Learn how to get started with the Syncfusion® WPF Range Slider (SfRangeSlider) control. Explore setup, features, examples, and customization options.
 platform: wpf
 control: SfRangeSlider 
 documentation: ug
 ---
 
-# Getting Started with WPF RangeSlider (SfRangeSlider)
+# Getting Started with WPF Range Slider (SfRangeSlider)
 
-This section describes how to design a [SfRangeSlider](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfRangeSlider.html) control in a WPF application and overview of its basic functionalities.
+This section describes how to design a [WPF Range Slider](https://www.syncfusion.com/wpf-controls/range-slider) control in a WPF application and provides an overview of its basic functionalities. The WPF Range Slider is implemented through the [SfRangeSlider](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfRangeSlider.html) class.
 
 ## Assembly deployment
 
@@ -20,7 +20,7 @@ This section describes how to design a [SfRangeSlider](https://help.syncfusion.c
 Dependent assembly: Syncfusion.SfShared.WPF.dll
 
 
-## Creating a simple application with SfRangeSlider
+## Creating a simple application with WPF Range Slider
 
 The [SfRangeSlider](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfRangeSlider.html) control can be added to an application using Visual Studio.
 
@@ -89,7 +89,7 @@ SfRangeSlider rangeSlider = new SfRangeSlider()
 
 ## Theme
 
-SfRangeSlider supports various built-in themes. Refer to the below links to apply themes for the SfRangeSlider,
+The WPF Range Slider supports various built-in themes. Refer to the following links to apply themes to the control:
 
   * [Apply theme using SfSkinManager](https://help.syncfusion.com/wpf/themes/skin-manager)
 	

@@ -5,6 +5,7 @@ description: Learn how to get started with the Syncfusion® WPF DateTimePicker c
 platform: wpf
 control: DateTimeEdit
 documentation: ug
+appliesto: UI Component Suite, Scheduler SDK
 ---
 
 # Getting Started with WPF DateTimePicker

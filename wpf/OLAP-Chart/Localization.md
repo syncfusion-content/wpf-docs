@@ -5,9 +5,10 @@ description: Localization in the WPF OLAP Chart enables chart content, labels, a
 platform: wpf
 control: OLAP Chart
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
-# Localization in WPF Olap Chart
+# Localization in WPF OLAP Chart
 
 Localization is the key feature for providing software solutions targeted at global users. The WPF OLAP Chart allows users to localize the control to a specific locale and supports "resx" based localization.
 

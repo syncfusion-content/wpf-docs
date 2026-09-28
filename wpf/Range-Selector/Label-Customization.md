@@ -5,6 +5,7 @@ description: Customization in the WPF Range Selector enables modification of vis
 platform: wpf
 control: SfDateTimeRangeNavigator
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Customization in WPF Range Selector

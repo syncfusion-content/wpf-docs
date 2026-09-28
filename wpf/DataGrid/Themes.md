@@ -5,6 +5,7 @@ description: Themes in Data Grid apply built-in themes to customize grid appeara
 platform: wpf
 control: Data Grid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Themes in WPF Data Grid

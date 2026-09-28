@@ -5,6 +5,7 @@ description: Use the Overview Control in Syncfusion® WPF Diagram to preview, na
 platform: wpf
 control: SfDiagram
 documentation: ug
+appliesto: UI Component Suite, Diagram SDK
 ---
 
 # Overview Control in WPF Diagram

@@ -5,6 +5,7 @@ description: Key features in the WPF Bullet Graph include comparative measuremen
 platform: wpf
 control: SfBulletGraph
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Key Features in WPF Bullet Graph

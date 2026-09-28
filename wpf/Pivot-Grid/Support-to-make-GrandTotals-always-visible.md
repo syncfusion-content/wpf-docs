@@ -5,6 +5,7 @@ description: Show or hide grand totals in the Syncfusion® WPF Pivot Grid contro
 platform: wpf
 control: Pivot Grid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Show/Hide Grand Total in WPF Pivot Grid

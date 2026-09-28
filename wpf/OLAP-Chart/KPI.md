@@ -5,9 +5,10 @@ description: KPI in the WPF OLAP Chart displays key performance indicators to mo
 platform: wpf
 control: OLAP Chart
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
-# KPI in WPF Olap Chart
+# KPI in WPF OLAP Chart
 
 KPI is a collection of calculations that are associated with a measure group in a cube, which is used to evaluate business success. Typically, these calculations are a combination of multi-dimensional expressions (MDX) or calculated members. KPIs also have additional metadata that provides information about how Grid applications should display the results of KPIs calculations.
 

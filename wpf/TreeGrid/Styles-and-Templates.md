@@ -5,6 +5,7 @@ description: Styles and Templates in SfTreeGrid provide flexible customization o
 platform: wpf
 control: SfTreeGrid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Styles and Templates in WPF SfTreeGrid

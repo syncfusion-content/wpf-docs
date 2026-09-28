@@ -5,6 +5,7 @@ description: Data Binding in Data Grid provides flexible data source binding, co
 platform: wpf
 control: Data Grid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Data Binding in WPF Data Grid

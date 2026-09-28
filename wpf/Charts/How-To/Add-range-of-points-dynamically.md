@@ -5,6 +5,7 @@ description: Add a range of points dynamically in the WPF Chart to update chart 
 platform: wpf
 control: SfChart
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # How to dynamically add a range of points in WPF Chart

@@ -5,6 +5,7 @@ description: Bubbles in the WPF Maps visualize location-based data using proport
 platform: wpf
 control: SfMap
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Bubble Markers in WPF Maps

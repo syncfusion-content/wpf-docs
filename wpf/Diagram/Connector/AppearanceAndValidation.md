@@ -5,6 +5,7 @@ description: Learn about connector appearance and validation in Syncfusion® WPF
 platform: wpf
 control: SfDiagram
 documentation: ug
+appliesto: UI Component Suite, Diagram SDK
 ---
 
 # Appearance and Validation in WPF Diagram

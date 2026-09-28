@@ -5,6 +5,7 @@ description: Localize annotations and context menu content in Syncfusion® WPF D
 platform: wpf
 control: SfDiagram
 documentation: ug
+appliesto: UI Component Suite, Diagram SDK
 ---
 
 # Localization in WPF Diagram

@@ -5,6 +5,7 @@ description: Learn about lane in Syncfusion® WPF Diagram control, including lan
 platform: wpf
 control: SfDiagram
 documentation: ug
+appliesto: UI Component Suite, Diagram SDK
 ---
 
 # Lane in the WPF Diagram

@@ -5,6 +5,7 @@ description: Series in the WPF Smith Chart define how data is visualized, enabli
 platform: wpf
 control: series
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Series in WPF Smith Chart

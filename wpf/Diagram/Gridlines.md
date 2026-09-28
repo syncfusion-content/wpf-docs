@@ -5,6 +5,7 @@ description: Learn about gridlines in Syncfusion® WPF Diagram control, includin
 platform: wpf
 control: SfDiagram
 documentation: ug
+appliesto: UI Component Suite, Diagram SDK
 ---
 
 # Gridlines in WPF Diagram

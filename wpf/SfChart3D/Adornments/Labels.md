@@ -5,6 +5,7 @@ description: Data labels in the WPF 3D Chart display data point values directly 
 platform: wpf
 control: SfChart3D
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Data Label in WPF 3D Chart

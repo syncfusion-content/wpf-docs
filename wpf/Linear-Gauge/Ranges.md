@@ -5,6 +5,7 @@ description: Ranges in the WPF Linear Gauge highlight specific value intervals o
 platform: wpf
 control: SfLinearGauge
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Ranges in WPF Linear Gauge

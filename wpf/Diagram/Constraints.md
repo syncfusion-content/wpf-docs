@@ -5,6 +5,7 @@ description: Control diagram behaviors in Syncfusion® WPF Diagram using graph, 
 platform: wpf
 control: SfDiagram
 documentation: ug
+appliesto: UI Component Suite, Diagram SDK
 ---
 
 # Constraints in WPF Diagram

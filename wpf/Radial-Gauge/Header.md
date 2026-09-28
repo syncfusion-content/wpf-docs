@@ -5,6 +5,7 @@ description: Header in the WPF Radial Gauge displays a title for the gauge, prov
 platform: wpf
 control: SfCircularGauge
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Header in WPF Radial Gauge

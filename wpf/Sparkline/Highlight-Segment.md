@@ -5,6 +5,7 @@ description: Highlight segment in the WPF Sparkline emphasizes specific data poi
 platform: wpf
 control: SfSparkline
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Highlight Segment in WPF Sparkline 

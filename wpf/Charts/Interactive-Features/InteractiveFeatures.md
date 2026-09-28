@@ -5,6 +5,7 @@ description: Interactive features in the WPF Chart enable zooming, panning, sele
 platform: wpf
 control: SfChart
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Interactive Features in WPF Charts

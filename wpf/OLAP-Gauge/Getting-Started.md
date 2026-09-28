@@ -5,6 +5,7 @@ description: Learn how to get started with the Syncfusion® WPF OLAP Gauge contr
 platform: wpf
 control: OLAP Gauge
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Getting Started with WPF OLAP Gauge

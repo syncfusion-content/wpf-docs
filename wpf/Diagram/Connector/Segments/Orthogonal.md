@@ -5,6 +5,7 @@ description: Learn about orthogonal connector segments in Syncfusion® WPF Diagr
 platform: wpf
 control: SfDiagram
 documentation: ug
+appliesto: UI Component Suite, Diagram SDK
 ---
 
 # Orthogonal Segments in WPF Diagram

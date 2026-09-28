@@ -5,6 +5,7 @@ description: Delete selected elements in Syncfusion® WPF Diagram using commands
 platform: wpf
 control: SfDiagram
 documentation: ug
+appliesto: UI Component Suite, Diagram SDK
 ---
 
 # Deletion in WPF Diagram

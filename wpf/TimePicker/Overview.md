@@ -5,6 +5,7 @@ description: Learn about introduction of Syncfusion® Essential Studio WPF TimeP
 platform: wpf
 control: SfTimePicker
 documentation: ug
+appliesto: UI Component Suite, Scheduler SDK
 ---
 
 # About Syncfusion® WPF TimePicker Control

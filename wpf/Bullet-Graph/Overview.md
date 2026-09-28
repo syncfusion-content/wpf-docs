@@ -5,6 +5,7 @@ description: Learn about the introduction of Syncfusion Essential Studio® WPF B
 platform: wpf
 control: SfBulletGraph
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # About Syncfusion® WPF Bullet Graph Control

@@ -5,6 +5,7 @@ description: Learn about ports in Syncfusion® WPF Diagram control, including no
 platform: wpf
 control: SfDiagram
 documentation: ug
+appliesto: UI Component Suite, Diagram SDK
 ---
 
 # Ports in WPF Diagram

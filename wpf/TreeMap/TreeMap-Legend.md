@@ -5,6 +5,7 @@ description: Legend in the WPF TreeMap identifies color mappings and data catego
 platform: wpf
 control: TreeMap
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Legend in WPF TreeMap

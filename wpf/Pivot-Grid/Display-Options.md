@@ -5,6 +5,7 @@ description: Configure display options in the Syncfusion® WPF Pivot Grid contro
 platform: wpf
 control: Pivot Grid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Display Options in WPF Pivot Grid

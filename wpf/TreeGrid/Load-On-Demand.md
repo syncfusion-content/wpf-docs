@@ -5,6 +5,7 @@ description: Load SfTreeGrid child nodes on demand to improve performance when w
 platform: wpf
 control: SfTreeGrid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Load On Demand in WPF SfTreeGrid

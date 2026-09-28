@@ -5,6 +5,7 @@ description: Learn about appearance customization and styling options available 
 platform: wpf
 control: TimeSpanEdit
 documentation: ug
+appliesto: UI Component Suite, Scheduler SDK
 ---
 
 # Appearance in WPF TimeSpan Editor

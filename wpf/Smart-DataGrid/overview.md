@@ -6,6 +6,7 @@ platform: wpf
 control: Smart Data Grid
 documentation: ug
 keywords: wpf smart datagrid, ai datagrid wpf, smart grid wpf, ai gridview wpf, wpf smart datagrid, wpf ai grid
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # About Syncfusion® WPF Smart Data Grid Control

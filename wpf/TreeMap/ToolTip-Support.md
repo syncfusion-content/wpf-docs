@@ -5,6 +5,7 @@ description: Tooltip support in the WPF TreeMap displays detailed information ab
 platform: wpf
 control: TreeMap
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Tooltip Support in WPF TreeMap

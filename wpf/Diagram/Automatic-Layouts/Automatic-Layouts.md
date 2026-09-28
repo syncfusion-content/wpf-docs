@@ -5,6 +5,7 @@ description: Automatically arrange diagram elements in Syncfusion® WPF Diagram 
 platform: wpf
 control: SfDiagram
 documentation: ug
+appliesto: UI Component Suite, Diagram SDK
 ---
 
 # Automatic Layout in WPF Diagram

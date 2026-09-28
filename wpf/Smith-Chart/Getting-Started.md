@@ -5,6 +5,7 @@ description: Learn how to get started with the Syncfusion® WPF Smith Chart cont
 platform: wpf
 control: SfSmithChart
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Getting Started with WPF Smith Chart control

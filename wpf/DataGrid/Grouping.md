@@ -5,6 +5,7 @@ description: Grouping in Data Grid organizes and displays data in groups to impr
 platform: wpf
 control: Data Grid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Grouping in WPF Data Grid

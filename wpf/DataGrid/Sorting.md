@@ -5,6 +5,7 @@ description: Sorting in Data Grid provides single and multi-column sorting, cust
 platform: wpf
 control: Data Grid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Sorting in WPF Data Grid

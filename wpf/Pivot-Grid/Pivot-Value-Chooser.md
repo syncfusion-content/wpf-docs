@@ -5,6 +5,7 @@ description: Pivot Value Chooser in the Syncfusion® WPF Pivot Grid control lets
 platform: wpf
 control: Pivot Grid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Pivot Value Chooser in WPF Pivot Grid

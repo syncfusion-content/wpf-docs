@@ -5,6 +5,7 @@ description: Column Sizing in SfTreeGrid adjusts column widths automatically or 
 platform: wpf
 control: SfTreeGrid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Column Sizing in WPF SfTreeGrid 

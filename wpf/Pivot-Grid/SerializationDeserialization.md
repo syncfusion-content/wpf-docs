@@ -5,6 +5,7 @@ description: Serialization and Deserialization in the Syncfusion® WPF Pivot Gri
 platform: wpf
 control: Pivot Grid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Serialization and Deserialization in WPF Pivot Grid

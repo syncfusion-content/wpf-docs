@@ -5,6 +5,7 @@ description: Manage fields using the PivotGrid Field List in the Syncfusion® WP
 platform: wpf
 control: Pivot Grid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # PivotGrid Field List in WPF Pivot Grid

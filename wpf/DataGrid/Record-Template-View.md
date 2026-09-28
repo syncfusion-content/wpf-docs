@@ -5,6 +5,7 @@ description: Record Template View in Data Grid customizes row layouts with templ
 platform: wpf
 control: Data Grid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Record Template View in WPF Data Grid

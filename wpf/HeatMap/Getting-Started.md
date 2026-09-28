@@ -5,6 +5,7 @@ description: Learn how to get started with the Syncfusion® WPF HeatMap control.
 platform: wpf
 control: SfHeatMap
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Getting Started with WPF HeatMap

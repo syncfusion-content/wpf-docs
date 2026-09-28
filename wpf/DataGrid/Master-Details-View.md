@@ -5,6 +5,7 @@ description: Master-Details View in Data Grid displays hierarchical data through
 platform: wpf
 control: Data Grid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Master-Details View in WPF Data Grid
