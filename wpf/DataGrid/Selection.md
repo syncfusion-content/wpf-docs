@@ -1532,7 +1532,7 @@ You can bind the selection properties like [SelectedItem](https://help.syncfusio
 {% endhighlight %}
 {% endtabs %}
 
-In DetailsView, it is not possible to bind selection properties directly with ViewModel. You can use [Behavior](https://learn.microsoft.com/en-us/previous-versions/visualstudio/design-tools/expression-studio-4/ff726530(v=expression.40))) to achieve this requirement. 
+In DetailsView, it is not possible to bind selection properties directly with ViewModel. You can use [Behavior](https://learn.microsoft.com/en-us/previous-versions/visualstudio/design-tools/expression-studio-4/ff726530(v=expression.40)))) to achieve this requirement. 
 
 {% tabs %}
 {% highlight xaml %}

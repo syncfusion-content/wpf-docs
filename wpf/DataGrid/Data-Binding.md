@@ -245,7 +245,7 @@ The following events are associated with View.
 
 [Action](https://learn.microsoft.com/en-us/dotnet/api/system.collections.specialized.notifycollectionchangedeventargs.action?f1url=%3FappId%3DDev10IDEF1%26l%3DEN-US%26k%3Dk(System.Collections.Specialized.NotifyCollectionChangedEventArgs.Action)%26rd%3Dtrue&view=net-5.0) - It contains the current action. (i.e.) Add, Remove, Move, Replace, Reset.
 
-[NewItems](https://learn.microsoft.com/en-us/dotnet/api/system.collections.specialized.notifycollectionchangedeventargs.newitems?f1url=%3FappId%3DDev10IDEF1%26l%3DEN-US%26k%3Dk(System.Collections.Specialized.NotifyCollectionChangedEventArgs.NewItems)%26rd%3Dtrue&view=net-5.0) - It contains the list of new items involved in the change.
+[NewItems](https://learn.microsoft.com/en-us/dotnet/api/system.collections.specialized.notifycollectionchangedeventargs.newitems?view=net-10.0&f1url=%3FappId%3DDev10IDEF1%26l%3DEN-US%26k%3Dk%28System.Collections.Specialized.NotifyCollectionChangedEventArgs.NewItems)%26rd%3Dtrue&view=net-5.0) - It contains the list of new items involved in the change.
 
 [OldItems](https://learn.microsoft.com/en-us/dotnet/api/system.collections.specialized.notifycollectionchangedeventargs.olditems?f1url=%3FappId%3DDev10IDEF1%26l%3DEN-US%26k%3Dk(System.Collections.Specialized.NotifyCollectionChangedEventArgs.OldItems)%26rd%3Dtrue&view=net-5.0) - It contains the list of old items affected by the Action.
 
@@ -315,7 +315,7 @@ Follow the below steps to define **ADO.NET Entity Data Model** in the web projec
 
     ![Choose the model contents from visual studio](Data-Binding_images/Data-Binding_img2.png)
 
-5. **Choose Your Data Connection** page appears and select **Northwind** database available in the drop-down list (OR) select the **New Connection** button to configure a new data connection. For more information, you can refer: [How to: Create Connections to SQL Server Databases](https://learn.microsoft.com/en-us/previous-versions/visualstudio/visual-studio-2008/s4yys16a(v=vs.90))).
+5. **Choose Your Data Connection** page appears and select **Northwind** database available in the drop-down list (OR) select the **New Connection** button to configure a new data connection. For more information, you can refer: [How to: Create Connections to SQL Server Databases](https://learn.microsoft.com/en-us/previous-versions/visualstudio/visual-studio-2008/s4yys16a(v=vs.90)))).
 
     ![Choose the Northwind database from visual studio](Data-Binding_images/Data-Binding_img3.png)
 
@@ -419,9 +419,9 @@ To load the data from ADO.NET Entity Framework, you can refer the steps mentione
 
 References :
 
-[https://learn.microsoft.com/en-us/previous-versions/dd465159(v=vs.120))](https://learn.microsoft.com/en-us/previous-versions/dd465159(v=vs.120)))
+[https://learn.microsoft.com/en-us/previous-versions/dd465159(v=vs.120)))](https://learn.microsoft.com/en-us/previous-versions/dd465159(v=vs.120))))
 
-[https://learn.microsoft.com/en-us/previous-versions/dotnet/netframework-4.0/ee340709(v=vs.100))](https://learn.microsoft.com/en-us/previous-versions/dotnet/netframework-4.0/ee340709(v=vs.100)))
+[https://learn.microsoft.com/en-us/previous-versions/dotnet/netframework-4.0/ee340709(v=vs.100)))](https://learn.microsoft.com/en-us/previous-versions/dotnet/netframework-4.0/ee340709(v=vs.100))))
 
 [https://learn.microsoft.com/en-us/ef/ef6/modeling/designer/workflows/database-first](https://learn.microsoft.com/en-us/ef/ef6/modeling/designer/workflows/database-first)
 
@@ -445,7 +445,7 @@ To create Data Model using Entity Framework in WPF application created in the pr
 
     ![Choose the modelcontents when using the Enity framework 4.0](Data-Binding_images/Data-Binding_img8.png)
 
-6. In the **Choose Your Data Connection**, select **Northwind** database from the drop-down list for data connection. To configure/modify connection, you can refer: [How to: Create Connections to SQL Server Databases](https://learn.microsoft.com/en-us/previous-versions/visualstudio/visual-studio-2008/s4yys16a(v=vs.90))).
+6. In the **Choose Your Data Connection**, select **Northwind** database from the drop-down list for data connection. To configure/modify connection, you can refer: [How to: Create Connections to SQL Server Databases](https://learn.microsoft.com/en-us/previous-versions/visualstudio/visual-studio-2008/s4yys16a(v=vs.90)))).
 
     ![The Northwind database when using the Enity framework 4.0](Data-Binding_images/Data-Binding_img9.png)
 
@@ -668,7 +668,7 @@ To display the data from the ADO.NET data service, create a new WPF Application
 
 To connect SQL database to your WPF application, refer the below MSDN link or follow the below steps,
 
-[https://learn.microsoft.com/en-us/previous-versions/visualstudio/visual-studio-2008/s4yys16a(v=vs.90))](https://learn.microsoft.com/en-us/previous-versions/visualstudio/visual-studio-2008/s4yys16a(v=vs.90)))
+[https://learn.microsoft.com/en-us/previous-versions/visualstudio/visual-studio-2008/s4yys16a(v=vs.90)))](https://learn.microsoft.com/en-us/previous-versions/visualstudio/visual-studio-2008/s4yys16a(v=vs.90))))
 
 1. In the Tools menu, select the **Connect to Database**.
 2. The **Add Connection** wizard appeared with the default data source as **Microsoft SQL Server Database File (SqlClient)**.
@@ -694,7 +694,7 @@ To access the data from data source using ADO.NET, follow the below steps.
 
 1. Create a user interface with SfDataGrid control and add the required assemblies to your WPF application.
 2. Create a connection through any of the [.NET Framework data provider](https://learn.microsoft.com/en-us/dotnet/framework/data/adonet/data-providers) based on the type of data source that you have owned.
-3. Set the [ItemsSource](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_ItemsSource) as Shippers table from data set. For more information refer [here](https://learn.microsoft.com/en-us/previous-versions/visualstudio/visual-studio-2008/s4yys16a(v=vs.90))).
+3. Set the [ItemsSource](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_ItemsSource) as Shippers table from data set. For more information refer [here](https://learn.microsoft.com/en-us/previous-versions/visualstudio/visual-studio-2008/s4yys16a(v=vs.90)))).
 
 {% capture codesnippet3 %}
 {% tabs %}

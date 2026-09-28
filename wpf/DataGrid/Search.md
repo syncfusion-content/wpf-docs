@@ -169,7 +169,7 @@ You can navigate to the cells contains the SearchText using [SearchHelper.FindNe
 
 {% endhighlight %}
 {% endtabs %}
-You can get the sample from [here](https://www.syncfusion.com/downloads/support/directtrac/general/ze/MasterDetailsViewSearch-140489943.zip).
+You can get the sample from [here](https://s3.amazonaws.com/files2.syncfusion.com/dtsupport/directtrac/general/ze/MasterDetailsViewSearch-140489943.zip).
 
 N> It is not possible to Navigate with the two DataGrid at a time.
 
