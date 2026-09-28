@@ -98,7 +98,7 @@ Following are the sequence of sorting orders when clicking column header,
 
 ## Initial sort direction
 
-By default, the first time a column is sorted, the data is arranged in ascending order. You can change this behavior and specify whether a column should sort in ascending or descending order when sorting is applied for the first time by using `SfTreeGrid.InitialSortDirection` and `TreeGridColumn.InitialSortDirection`.
+By default, when a column is sorted for the first time by clicking its header, the data is arranged in ascending order. You can change this behavior and specify whether a column should sort in ascending or descending order when sorting is applied for the first time by using `SfTreeGrid.InitialSortDirection` and `TreeGridColumn.InitialSortDirection`.
 
 N> The `TreeGridColumn.InitialSortDirection` takes higher priority than `SfTreeGrid.InitialSortDirection` property.
 
@@ -167,37 +167,13 @@ When `InitialSortDirection` is set to `Descending`, the sorting cycle follows:
 * Ascending
 * Clear sorting
 
-![Descending sorting example](Sorting_images/wpf-treegrid-initial-sorting-descending.gif)
-
 When `InitialSortDirection` is set to `Ascending`, the sorting cycle follows:
 
 * Ascending
 * Descending
 * Clear sorting
 
-![Ascending sorting example](Sorting_images/wpf-treegrid-initial-sorting-ascending.gif)
-
-### Runtime behavior
-
-When the sort direction of a column is modified at runtime, the change is reflected immediately in the UI.
-
-After sorting is cleared, the column follows the currently configured `InitialSortDirection` value when sorting is applied again.
-
-### Programmatic sorting behavior
-
-When a column is sorted programmatically before the user clicks the column header, the header-click sorting sequence is based on the current sort state and the configured `InitialSortDirection` value.
-
-When `InitialSortDirection` is `Descending`:
-
-* If the column is programmatically sorted in `Ascending` order, the first header click clears sorting. After that, the sorting sequence continues as `Descending` → `Ascending` → `Clear sorting`
-* If the column is programmatically sorted in `Descending` order, the first header click changes the sort direction to `Ascending`. After that, the sorting sequence follows `Clear sorting` → `Descending` → `Ascending`
-
-When `InitialSortDirection` is `Ascending`:
-
-* If the column is programmatically sorted in `Descending` order, the first header click clears sorting. After that, the sorting sequence continues as `Ascending` → `Descending` → `Clear sorting`
-* If the column is programmatically sorted in `Ascending` order, the first header click changes the sort direction to `Descending`. After that, the sorting sequence follows `Clear sorting` → `Ascending` → `Descending`
-
-N> This property affects the initial sort direction only. It does not sort the grid automatically when the control is loaded.
+N> This property affects the initial sort direction only when a column is sorted for the first time by clicking its header. It does not automatically sort the column when the control is loaded.
 
 ## Multi column sorting
 
