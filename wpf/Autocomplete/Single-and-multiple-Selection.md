@@ -61,7 +61,7 @@ textBoxExt.MultiSelectMode = MultiSelectMode.Token;
 ![Token Representation](Single_and_multiple_selection_images/Token.png)
 
 
-### Customization of Tokens
+### Customization of tokens using TokenItem style
 
 The token can be customized by overriding the default style targeting the `TokenItem` class.
 
@@ -115,6 +115,84 @@ The token can be customized by overriding the default style targeting the `Token
 
 ![Token_Customization](Single_and_multiple_selection_images/Token_Customization.png)
 
+### Customization of tokens using TokenItemTemplate
+
+The `TokenItemTemplate` property allows you to customize the content displayed within a token when the `MultiSelectMode` is set to Token. This property accepts a DataTemplate and enables rendering custom content such as images, icons, and formatted text instead of the default token text representation.
+
+The `TokenItemTemplate` property can also be used to maintain a consistent appearance between suggestion items and generated tokens by using the same DataTemplate for both [AutoCompleteItemTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_AutoCompleteItemTemplate) and `TokenItemTemplate`.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<Window.Resources>
+    <DataTemplate x:Key="EmployeeTemplate">
+        <StackPanel Orientation="Horizontal">
+            <Image Width="20"
+                Height="20"
+                Source="{Binding Image}" />
+            <StackPanel Orientation="Vertical">
+                <TextBlock
+                    Margin="4,2,4,0"
+                    Text="{Binding Name}" />
+                <TextBlock
+                    Margin="4,1,2,2"
+                    Text="{Binding Email}" />
+            </StackPanel>
+        </StackPanel>
+    </DataTemplate>
+</Window.Resources>
+
+<editors:SfTextBoxExt x:Name="textBoxExt"
+                      Width="250" 
+                      Height="30"
+                      SearchItemPath="Name"
+                      AutoCompleteMode="Suggest"
+                      TokensWrapMode="Wrap"
+                      EnableAutoSize="True"
+                      AutoCompleteSource="{Binding Employees}"
+                      TokenItemTemplate="{StaticResource EmployeeTemplate}"
+                      AutoCompleteItemTemplate="{StaticResource EmployeeTemplate}"/>                   
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Customize Token Content Using TokenItemTemplate](Single_and_multiple_selection_images/TokenItemTemplate_Customization.png)
+
+### Customization of tokens using TokenItemContainerStyle
+
+The `TokenItemContainerStyle` property allows you to customize the appearance and behavior of the generated token items without overriding the default `TokenItem` control template. Since `TokenItem` derives from `ContentControl`, you can customize various properties such as `Background`, `Foreground`, `BorderThickness`, `BorderBrush`, `ContentTemplate`, and `ContentTemplateSelector` to control the visual representation of tokens while retaining the default token structure and functionality.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<editors:SfTextBoxExt x:Name="textBoxExt"
+                      Width="250" 
+                      Height="30"
+                      SearchItemPath="Name"
+                      AutoCompleteMode="Suggest"
+                      TokensWrapMode="Wrap"
+                      EnableAutoSize="True"
+                      AutoCompleteSource="{Binding Employees}">
+    <editors:SfTextBoxExt.TokenItemContainerStyle>
+        <Style TargetType="editors:TokenItem">
+                <Setter Property="Background" Value="LightCoral"/>
+                <Setter Property="Foreground" Value="White"/>
+        </Style>
+    </editors:SfTextBoxExt.TokenItemContainerStyle>
+</editors:SfTextBoxExt>                 
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Customize Token Content Using TokenItemContainerStyle](Single_and_multiple_selection_images/TokenItemContainerStyle_Customization.png)
+
+N> The `TokenItemTemplate` property is applicable only when `MultiSelectMode` is set to `Token`.
+
+N> When displaying images using controls defined inside the `TokenItemTemplate`, do not set the `ImageMemberPath` property simultaneously. Use either the TokenItemTemplate or the ImageMemberPath property to display images in tokens.
 
 ### Enable autosize in token mode 
 
