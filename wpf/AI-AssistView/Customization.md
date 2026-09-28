@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Customization in WPF AI AssistView | Syncfusion®
-description: Learn how to customize the WPF AI AssistView using the BannerTemplate, EmptyView, EmptyViewTemplate, and ViewTemplateSelector properties.
+description: Learn how to customize the WPF AI AssistView using the BannerTemplate, EmptyView, EmptyViewTemplate,ViewTemplateSelector, and InputPlaceHolderText properties.
 platform: wpf
 control: AI AssistView
 documentation: ug
