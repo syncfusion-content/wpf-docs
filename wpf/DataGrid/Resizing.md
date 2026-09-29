@@ -47,7 +47,7 @@ SfDataGrid shows indication for hidden columns in column header and also allows 
 
 ![Resizing Hidden Column](columns_images/wpf-datagrid-resize-hidden-column.png)
 
-### Disable resizing
+### Disable column resizing
 
 You can cancel resizing of particular column by setting [GridColumn.AllowResizing](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridColumn.html#Syncfusion_UI_Xaml_Grid_GridColumn_AllowResizing) property to `false`. In another way, you can cancel the resizing by handling [SfDataGrid.ResizingColumns](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_ResizingColumns) event. The `ResizingColumns` event occurs when you start dragging by resizing cursor on headers.
 [ResizingColumnsEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.ResizingColumnsEventArgs.html) of `ResizingColumns` provides information about the columns’s index and width. 
@@ -118,7 +118,7 @@ SfDataGrid shows indication for hidden rows and also allows end-users to resize 
 
 ![Resizing Hidden Row](resize_images/wpf-datagrid-resize-hidden-row.png)
 
-### Cancel resizing
+### Disable row resizing
 
 You can cancel the resizing of a particular row by handling [SfDataGrid.RowResizing](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_RowResizing) event. The `RowResizing` event occurs when you start dragging by resizing cursor at the bottom edge of the row.
 [RowResizingEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.RowResizingEventArgs.html) of `RowResizing` provides information about the row’s index, data, and height. 
