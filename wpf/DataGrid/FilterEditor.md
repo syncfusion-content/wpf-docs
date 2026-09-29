@@ -81,7 +81,7 @@ The Filter Editor Panel displays the current filter criteria applied to the Grid
 * Open the Filter Editor to modify the filter criteria.
 * Hide the panel without clearing the applied filter.
 
-The panel is synchronized with the filtering changes performed through the supported Grid filtering interfaces.
+The panel is synchronized with the filtering changes performed through the supported Grid filtering options.
 
 You can display the Filter Editor Panel by setting the `SfDataGrid.FilterPanelPosition` property to `Top` or `Bottom`. The default value is `None`.
 
@@ -127,9 +127,9 @@ Expanding or collapsing the filter expression changes only its presentation and 
 
 You can use the **Enable Filter** CheckBox in the Filter Editor Panel to enable or suspend the applied filter criteria.
 
-When the CheckBox is selected, the retained filter criteria are applied to the Grid. When the CheckBox is cleared, filtering is suspended without removing the retained filter criteria.
+When the CheckBox is checked, the retained filter criteria are applied to the Grid. When the CheckBox is unchecked, filtering is suspended without removing the retained filter criteria.
 
-When filtering is suspended using the CheckBox, the retained filter criteria can be enabled again by selecting the CheckBox.
+When filtering is suspended by unchecking the CheckBox, you can reapply the retained filter criteria by checking the CheckBox again.
 
 The CheckBox always reflects the current filtering state of the Grid.
 
