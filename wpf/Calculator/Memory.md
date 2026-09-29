@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Memory in WPF SfCalculator | Syncfusion®
-description: Store and recall values with the built-in memory support of the Syncfusion WPF SfCalculator control for repeated calculations.
+title: Memory in WPF Calculator | Syncfusion®
+description: Store and recall values with the built-in memory support of the Syncfusion WPF Calculator control for repeated calculations.
 platform: wpf
-control: SfCalculator
+control: Calculator
 documentation: ug
 ---
 

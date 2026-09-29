@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Grouping in WPF CheckListBox | Syncfusion®
-description: Organize items into logical groups in the Syncfusion WPF CheckListBox control using built-in grouping and grouping descriptions support.
+title: Grouping in WPF CheckedListBox | Syncfusion®
+description: Organize items into logical groups in the Syncfusion WPF CheckedListBox control using built-in grouping and grouping descriptions support.
 platform: wpf
-control: CheckListBox
+control: CheckedListBox
 documentation: ug
 ---
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: About Syncfusion® WPF ColorPickerPalette Control | Syncfusion®
-description: Learn about introduction of Syncfusion Essential Studio WPF ColorPickerPalette control and more details.
+title: About Syncfusion® WPF Color Picker Palette Control | Syncfusion®
+description: Learn about introduction of Syncfusion Essential Studio WPF Color Picker Palette control and more details.
 platform: wpf
 control: ColorPickerPalette
 documentation: ug

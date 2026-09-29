@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Setting Window State in WPF DocumentContainer | Syncfusion®
+title: Setting Window State in WPF Tabbed MDI Form | Syncfusion®
 description: Set the window state of documents in the Syncfusion WPF Tabbed MDI Form (DocumentContainer) control such as normal, minimized, or maximized.
 platform: wpf
-control: DocumentContainer
+control: Tabbed MDI Form
 documentation: ug
 ---
 # Setting Window State in WPF Tabbed MDI Form 

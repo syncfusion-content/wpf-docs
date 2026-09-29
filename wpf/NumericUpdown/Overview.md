@@ -1,7 +1,7 @@
 ---
 layout: post
-title: About Syncfusion® WPF UpDown Control | Syncfusion®
-description: Learn about introduction of Syncfusion Essential Studio WPF UpDown control, its features and more details.
+title: About Syncfusion® WPF Numeric UpDown Control | Syncfusion®
+description: Learn about introduction of Syncfusion Essential Studio WPF Numeric UpDown control, its features and more details.
 platform: wpf
 control: UpDown
 documentation: ug

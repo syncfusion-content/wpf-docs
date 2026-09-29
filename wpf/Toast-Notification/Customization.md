@@ -7,7 +7,7 @@ control: SfToastNotification
 documentation: ug
 ---
 
-# Customization in WPF Toast Control
+# Customization in WPF Toast Notification
 
 This section explains how to customize WPF Toast Control interaction elements such as action buttons, callbacks, templates, and close button behavior.
 

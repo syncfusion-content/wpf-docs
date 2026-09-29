@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with WPF SfSpellChecker | Syncfusion®
-description: Learn how to get started with the Syncfusion WPF SfSpellChecker control, its elements, and more details.
+title: Getting Started with WPF SpellChecker | Syncfusion®
+description: Learn how to get started with the Syncfusion WPF SpellChecker control, its elements, and more details.
 platform: wpf
 control: SfSpellChecker
 documentation: ug

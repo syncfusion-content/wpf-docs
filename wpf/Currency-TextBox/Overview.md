@@ -1,6 +1,6 @@
 ---
 layout: post
-title: About Syncfusion® WPF CurrencyTextBox Control | Syncfusion®
+title: About Syncfusion® WPF Currency TextBox Control | Syncfusion®
 description: Learn about introduction of Syncfusion Essential Studio WPF CurrencyTextBox control and more details.
 platform: wpf
 control: CurrencyTextBox

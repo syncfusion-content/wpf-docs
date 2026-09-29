@@ -1,7 +1,7 @@
 ---
 layout: post
-title: About Syncfusion® WPF SfColorPalette Control | Syncfusion®
-description: Learn about introduction of Syncfusion Essential Studio WPF SfColorPalette control, its features and more details.
+title: About Syncfusion® WPF Color Palette Control | Syncfusion®
+description: Learn about introduction of Syncfusion Essential Studio WPF Color Palette control, its features, and more details.
 platform: wpf
 control: SfColorPalette
 documentation: ug

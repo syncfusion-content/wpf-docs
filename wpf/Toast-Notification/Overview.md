@@ -7,7 +7,7 @@ control: SfToastNotification
 documentation: ug
 ---
 
-# About Syncfusion® WPF Toast Control
+# About Syncfusion® WPF Toast Notification Control
 
 The [WPF Toast Control](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.SfToastNotification.html) is a non-UI control that displays both native Windows and in-app notifications to inform users about events or status changes in an application.
 

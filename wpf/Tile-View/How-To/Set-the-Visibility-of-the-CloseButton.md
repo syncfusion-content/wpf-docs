@@ -3,11 +3,11 @@ layout: post
 title: How to Set the CloseButton Visibility in WPF Tile View | Syncfusion®
 description: Set the visibility of the close button on a TileViewItem in the Syncfusion WPF Tile View (TileViewControl) control.
 platform: wpf
-control: TileView Control
+control: TileViewControl
 documentation: ug
 ---
 
-# How to Set the CloseButton Visibility in WPF Tile View Control
+# How to Set the CloseButton Visibility in WPF Tile View
 
 You can set the visibility of the CloseButton by using the CloseButtonVisibility property through C# as below. Refer to the detailed sample.
 

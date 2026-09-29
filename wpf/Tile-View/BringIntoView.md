@@ -1,13 +1,13 @@
 ---
 layout: post
-title: BringIntoView in WPF TileView | Syncfusion®
-description: Scroll a specific TileViewItem into view in the Syncfusion WPF TileView (TileViewControl) using the built-in BringIntoView support.
+title: BringIntoView in WPF Tile View | Syncfusion®
+description: Scroll a specific TileViewItem into view in the Syncfusion WPF Tile View (TileViewControl) using the built-in BringIntoView support.
 platform: wpf
 control: TileViewControl
 documentation: ug
 ---
 
-# BringIntoView in WPF Tile View Control
+# BringIntoView in WPF Tile View
 
 This section explains how to bring the `TileViewItem` which is out of view to view programmatically in WPF Tile View Control. 
 
