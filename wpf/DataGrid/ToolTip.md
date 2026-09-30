@@ -135,7 +135,7 @@ You can customize the appearance of the ToolTip for particular column by setting
 ![Customizing ToolTip using ToolTipTemplate in WPF DataGrid](Interactive-Features_images/wpf-datagrid-tooltip-customization.png)
 
 
-You can get the sample from [here](https://www.syncfusion.com/downloads/support/directtrac/general/ze/ToolTipTemplateSample-904850425.zip). 
+You can get the sample from [here](https://s3.amazonaws.com/files2.syncfusion.com/dtsupport/directtrac/general/ze/ToolTipTemplateSample-904850425.zip). 
 
 ### Customize the ToolTip with ToolTipTemplateSelector
 
@@ -235,7 +235,7 @@ The below image refers the `AlternateTemplate` which is applied through `ToolTip
 
 ![Displaying AlternateTemplate for ToolTip in WPF DataGrid](Interactive-Features_images/wpf-datagrid-alternate-template-tooltip.png)
 
-You can get the sample from [here](https://www.syncfusion.com/downloads/support/directtrac/general/ze/IEnumerableBinding_Demo-1708191985.zip).
+You can get the sample from [here](https://s3.amazonaws.com/files2.syncfusion.com/dtsupport/directtrac/general/ze/IEnumerableBinding_Demo-1708191985.zip).
 
 ## Events
 

@@ -11,7 +11,7 @@ appliesto: UI Component Suite, Gantt SDK
 
 # Localization in WPF Gantt
 
-Localization is the process of translating the application resources into different languages for the specific cultures. You can localize the [GanttControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html) by [adding a resource file](https://docs.microsoft.com/en-us/previous-versions/visualstudio/visual-studio-2010/aa992030(v=vs.100)). The application culture can be changed by setting `CurrentUICulture` and `CurrentCulture` before the `InitializeComponent()` method.
+Localization is the process of translating the application resources into different languages for the specific cultures. You can localize the [GanttControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html) by [adding a resource file](https://learn.microsoft.com/en-us/previous-versions/visualstudio/visual-studio-2010/aa992030(v=vs.100))). The application culture can be changed by setting `CurrentUICulture` and `CurrentCulture` before the `InitializeComponent()` method.
 
 In the application below, the culture is configured to French language.
 
@@ -32,7 +32,7 @@ public MainWindow()
 To localize the [GanttControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html) based on `CurrentUICulture` using resource files, follow the steps below.
 
 1. Create a new folder named **Resources** in your application.
-2. Add the default resource file into the **Resources** folder. You can download the Syncfusion.Gantt.WPF.resx [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Resources-2137559261.zip).
+2. Add the default resource file into the **Resources** folder. You can download the Syncfusion.Gantt.WPF.resx [here](https://s3.amazonaws.com/files2.syncfusion.com/dtsupport/directtrac/general/ze/Resources-2137559261.zip).
 
 ![ResourceReference](Localization_images/ResourceReference.png)
 
@@ -54,4 +54,4 @@ For example, you have to give the name as **Syncfusion.Gantt.WPF.fr.resx** for t
 
 ![localization-in-wpf-gantt-control](Localization_images/localization-in-wpf-gantt-control.png)
 
-You can download the localization sample from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Localization_Gantt-1030234357.zip)
+You can download the localization sample from [here](https://s3.amazonaws.com/files2.syncfusion.com/dtsupport/directtrac/general/ze/Localization_Gantt-1030234357.zip)

@@ -697,7 +697,7 @@ public class SfDataGridExt : SfDataGrid
 
 ## See Also
 
-[How to change row background based on RowState.Modified when underlying itemsSource is DataTable in SfDataGrid?](https://support.syncfusion.com/kb/article/8757/how-to-change-row-background-based-on-row-state-when-underlying-source-is-data-table-in-wpf)
+[How to change row background based on RowState.Modified when underlying itemsSource is DataTable in SfDataGrid?](https://support.syncfusion.com/kb/article/8757/how-to-change-row-background-based-on-row-state--when-underlying-source-is-data-table-in-wpf-datagrid-sfdatagrid)
 
 [How to show different controls in same column of SfDataGrid?](https://support.syncfusion.com/kb/article/6667/how-to-show-different-controls-in-same-column-of-wpf-datagrid-sfdatagrid)
 
@@ -713,7 +713,7 @@ public class SfDataGridExt : SfDataGrid
 
 [How to validate the AddNewRow value based on already existing records?](https://support.syncfusion.com/kb/article/6055/how-to-validate-the-addnewrow-value-based-on-existing-records-in-wpf-datagrid-sfdatagrid)
 
-[How to change the CheckBox value for all SelectedItems when any selected CheckBox value changed?](https://support.syncfusion.com/kb/article/5755/how-to-change-the-checkbox-value-for-all-selecteditems-when-any-selected-checkbox-value-changed-in-wpf-datagrid)
+[How to change the CheckBox value for all SelectedItems when any selected CheckBox value changed?](https://support.syncfusion.com/kb/article/5755/how-to-change-the-checkbox-value-for-all-selecteditems-when-any-selected-checkbox-value-changed--in-wpf-datagrid)
 
 [How to fire RowValidating event for GridCheckBoxColumn in SfDataGrid](https://support.syncfusion.com/kb/article/5634/how-to-fire-rowvalidating-event-for-gridcheckboxcolumn-in-sfdatagrid-in-wpf-)
 
@@ -731,11 +731,11 @@ public class SfDataGridExt : SfDataGrid
 
 [How to edit SfDataGrid Template column by single tap?](https://support.syncfusion.com/kb/article/3307/how-to-edit-datagrid-template-column-by-single-tap-in-wpf-application)
 
-[How to set the Copy and Paste option of the Grid by using ContextMenu and SfRibbon?](https://support.syncfusion.com/kb/article/3306/how-to-set-the-copy-and-paste-option-of-the-grid-by-using-contextmenu-and-sfribbion)
+[How to set the Copy and Paste option of the Grid by using ContextMenu and SfRibbon?](https://support.syncfusion.com/kb/article/3306/how-to-set-the-copy-and-paste-option-of-the-grid-in-wpf)
 
 [How to hide the rows based on condition in SfDataGrid?](https://support.syncfusion.com/kb/article/3324/how-to-hide-the-rows-based-on-condition-in-wpf-datagrid)
 
-[How to disable Edit mode for cells in SfDataGrid with different background for those disabled cells?](https://support.syncfusion.com/kb/article/2981/how-to-disable-edit-mode-for-cells-in-sfdatagrid-with-different-background-for-those-disabled-cells-in-wpf)
+[How to disable Edit mode for cells in SfDataGrid with different background for those disabled cells?](https://support.syncfusion.com/kb/article/2981/how-to-disable-edit-mode-for-cells-and-columns-in-wpf-datagrid)
 
 [How to focus a particular UIElement inside DataTemplate after calling CurrentCell.BeginEdit() or when entering edit mode?](https://support.syncfusion.com/kb/article/2835/how-to-focus-a-particular-uielement-inside-datatemplate-after-calling-currentcellbeginedit-or-when-entering-edit-mode-in-wpf-grid)
 

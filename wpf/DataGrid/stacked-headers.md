@@ -51,7 +51,7 @@ dataGrid.StackedHeaderRows.Add(stackedHeaderRow1);
 
 ## Stacked Headers using Data Annotation
 
-You can also add the stacked headers using `GroupName` property of [Data Annotations Display attributes](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.dataannotations.displayattribute?view=net-5.0). 
+You can also add the stacked headers using `GroupName` property of [Data Annotations Display attributes](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.dataannotations.displayattribute?view=net-5.0). 
 
 {% tabs %}
 {% highlight c# %}

@@ -20,7 +20,7 @@ The following items can be localized:
 
 ![Diagram UI with French annotations](Localization_images/Localization_img1.png)
 
-You can refer to the [WPF Localization](https://help.syncfusion.com/wpf/localization) overview to add a [resource file](https://learn.microsoft.com/en-us/previous-versions/visualstudio/visual-studio-2010/aa992030(v=vs.100)) to the application.
+You can refer to the [WPF Localization](https://help.syncfusion.com/wpf/localization) overview to add a [resource file](https://learn.microsoft.com/en-us/previous-versions/visualstudio/visual-studio-2010/aa992030(v=vs.100))) to the application.
 
 N> Set `CurrentUICulture` in `App.OnStartup` (or in `App.xaml.cs` before `Application.Run`) so the culture is applied before any UI is created. Setting it inside `MainWindow` only affects that window's flow after construction, too late for resources resolved during layout.
 

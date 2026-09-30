@@ -582,4 +582,4 @@ Annotations = new ObservableCollection<IAnnotation>()
 
 [How to update text formatting properties of an Annotation in WPF Diagram?](https://support.syncfusion.com/kb/article/18407/how-to-update-text-formatting-properties-of-an-annotation-in-wpf-diagram-sfdiagram)
 
-[How to change the annotation content of a node using context menu in WPF Diagram?](https://support.syncfusion.com/kb/article/14962/how-to-change-the-annotation-content-of-a-node-using-context-menu-in-wpf-diagram-sfdiagram)
+[How to change the annotation content of a node using context menu in WPF Diagram?](https://support.syncfusion.com/kb/article/14962/how-to-change-the-annotation-content-of-a-node-using-the-context-menu-in-wpf-diagram-sfdiagram)

@@ -9,7 +9,7 @@ documentation: ug
 
 # Changing Currency Value in WPF Currency TextBox
 
-The [WPF Currency TextBox](https://www.syncfusion.com/wpf-ui-controls/currency-textbox) allows the user to change the value using the [Value](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.CurrencyTextBox.html#Syncfusion_Windows_Shared_CurrencyTextBox_Value) property.
+The [WPF Currency TextBox](https://www.syncfusion.com/wpf-controls/currency-textbox) allows the user to change the value using the [Value](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.CurrencyTextBox.html#Syncfusion_Windows_Shared_CurrencyTextBox_Value) property.
 
 {%tabs%}
 {% highlight xaml %}

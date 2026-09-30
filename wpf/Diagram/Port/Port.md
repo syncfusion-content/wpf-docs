@@ -123,7 +123,7 @@ RootGrid.Children.Add(diagram);
 
 ![WPF Diagram Node Port](Port_images/wpf-diagram-node-Port.PNG)
 
-N> By default, port will be visible while dragging the connector thumb hover the diagram element where port presents within the diagram element. For more information , refer to the [PortVisibility](https://help.syncfusion.com/wpf/diagram/port#portvisibility) 
+N> By default, port will be visible while dragging the connector thumb hover the diagram element where port presents within the diagram element. For more information , refer to the [PortVisibility](https://help.syncfusion.com/wpf/diagram/port/port#portvisibility) 
 
 ### NodeOffset
 The `NodeOffsetX` and `NodeOffsetY` properties of port is used to position the port based on fractions. 0 represents Node’s top/left corner, 1 represents Node’s bottom/right corner, and 0.5 represents Node’s center point. Default value is (0.5, 0.5).
@@ -471,7 +471,7 @@ For more information , refer to [ConnectionDirection](https://help.syncfusion.co
 
 * The  [`PortVisibility`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.DockPortViewModel.html#Syncfusion_UI_Xaml_Diagram_DockPortViewModel_PortVisibility) property allows you to define, when the port should be visible.
 
-N> For DockPort customization, refer to [Geometry Style](https://help.syncfusion.com/wpf/diagram/port#geometry-style)
+N> For DockPort customization, refer to [Geometry Style](https://help.syncfusion.com/wpf/diagram/port/port#geometry-style)
 
 {% tabs %}
 {% highlight xaml %}
@@ -533,25 +533,25 @@ The [`Constraints`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagra
 
 ## See Also
 
-[How to control the visibility of Ports?](https://www.syncfusion.com/kb/6687/how-to-control-the-visibility-of-ports)
+[How to control the visibility of Ports?](https://support.syncfusion.com/kb/article/6140/how-to-control-the-visibility-of-ports-in-wpf-diagram-sfdiagram)
 
-[How to connect only with port not with node?](https://www.syncfusion.com/kb/9455/how-to-connect-only-with-port-not-with-node)
+[How to connect only with port not with node?](https://support.syncfusion.com/kb/article/8241/how-to-connect-only-with-port-not-with-node-in-wpf-diagram-sfdiagram)
 
-[How to validate the connection and port visibility (inport and outport) in the diagram?](https://www.syncfusion.com/kb/9553/how-to-validate-the-connection-and-port-visibility-inport-and-outport-in-the-diagram)
+[How to validate the connection and port visibility (inport and outport) in the diagram?](https://support.syncfusion.com/kb/article/8392/how-to-validate-the-connection-and-port-visibility-in-wpf-diagram-sfdiagram)
 
-[How to customize the connection indicator style of node and port?](https://www.syncfusion.com/kb/11400/how-to-customize-the-connection-indicator-style-of-node-and-port-in-wpf-diagramsfdiagram)
+[How to customize the connection indicator style of node and port?](https://support.syncfusion.com/kb/article/10048/how-to-customize-the-connection-indicator-style-of-node-and-port-in-wpf-diagram-sfdiagram)
 
-[How to add multiple ports for the node?](https://www.syncfusion.com/kb/11435/how-to-add-multiple-ports-for-node-in-the-wpf-diagramsfdiagram)
+[How to add multiple ports for the node?](https://support.syncfusion.com/kb/article/9948/how-to-add-multiple-ports-for-node-in-the-wpf-diagram-sfdiagram)
 
-[How to decide whether to drag or draw a connection on port at runtime?](https://www.syncfusion.com/kb/9622/how-to-decide-whether-to-drag-or-draw-a-connection-on-port-at-runtime-in-the-wpf)
+[How to decide whether to drag or draw a connection on port at runtime?](https://support.syncfusion.com/kb/article/8538/how-to-decide-whether-to-drag-or-draw-a-connection-on-port-at-runtime-in-the-wpf-diagram-sfdiagram)
 
-[How to add ToolTip for Diagram objects of Node, NodePort in Diagram?](https://www.syncfusion.com/kb/13207/how-to-add-tooltip-for-diagram-objects-of-node-nodeport-in-wpf-diagramsfdiagram)
+[How to add ToolTip for Diagram objects of Node, NodePort in Diagram?](https://support.syncfusion.com/kb/article/11748/how-to-add-tooltip-for-diagram-objects-of-node-nodeport-in-wpf-diagramsfdiagram)
 
 [How to disable the animation while creating a connection in diagram?](https://support.syncfusion.com/kb/article/8187/how-to-disable-the-animation-while-creating-a-connection-in-wpf-diagram-sfdiagram)
 
 [How to create port at runtime through set tool?](https://support.syncfusion.com/kb/article/9967/how-to-create-port-at-runtime-through-set-tool-in-wpf-diagram-sfdiagram)
 
-[How to override the default cursors while interact on diagram objects?](https://support.syncfusion.com/kb/article/9997/how-to-override-the-default-cursors-while-interaction-in-wpf-diagram-sfdiagram)
+[How to override the default cursors while interact on diagram objects?](https://support.syncfusion.com/kb/article/9997/how-to-override-the-default-cursors-while-interaction-in-wpf-diagram)
 
 [How to achieve zoom in or zoom out functionality to ports?](https://support.syncfusion.com/kb/article/10002/how-to-achieve-zoom-in-or-zoom-out-functionality-to-ports-in-wpf-diagram-sfdiagram)
 
@@ -563,4 +563,4 @@ The [`Constraints`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagra
 
 [How to customize the connection indicator style of node and port in WPF Diagram?](https://support.syncfusion.com/kb/article/10048/how-to-customize-the-connection-indicator-style-of-node-and-port-in-wpf-diagram-sfdiagram)
 
-[How to change the connector style based on its SourcePort style in WPF Diagram?](https://support.syncfusion.com/kb/article/18851/how-to-change-the-connector-style-based-on-its-sourceport-style-in-wpf-diagram-sfdiagram)
+[How to change the connector style based on its SourcePort style in WPF Diagram?](https://support.syncfusion.com/kb/article/18851/how-to-change-connector-style-based-on-its-sourceport-in-wpf-diagram)

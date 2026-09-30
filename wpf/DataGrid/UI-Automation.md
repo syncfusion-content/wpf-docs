@@ -51,7 +51,7 @@ Coded UI Test Builder generates code from recorded session and custom class is i
 
 Coded UI provides support only in Visual Studio Ultimate and Visual Studio Premium. For more information about the platforms and configurations that are supported by Coded UI tests, refer this [link](https://learn.microsoft.com/en-us/previous-versions/visualstudio/visual-studio-2015/test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings?view=vs-2015&redirectedfrom=MSDN).
 
-To test SfDataGrid with CUITs, build the Extension Project and place it in the mentioned location. You can get the Extension Project of SfDataGrid from [this](https://www.syncfusion.com/downloads/support/directtrac/general/ze/Src-229533545.zip) location.
+To test SfDataGrid with CUITs, build the Extension Project and place it in the mentioned location. You can get the Extension Project of SfDataGrid from [this](https://s3.amazonaws.com/files2.syncfusion.com/dtsupport/directtrac/general/ze/Src-229533545.zip) location.
 
 1. Open the Extension Project and build it.
 2. You can get the `Syncfusion.VisualStudio.TestTools.UITest.SfGridExtension.dll` from bin folder. 
@@ -61,7 +61,7 @@ The above assembly must be placed into the following directory based on your Vis
 For Visual Studio 2015: 
 C:\Program Files (x86)\Common Files\Microsoft Shared\VSTT\14.0\UITestExtensionPackages
 
-N> `Syncfusion.VisualStudio.TestTools.UITest.SfGridExtension.dll` need to be installed in GAC location. Please refer the MSDN link for  [GAC](https://learn.microsoft.com/en-us/previous-versions/dotnet/netframework-2.0/ex0ss12c(v=vs.80))  installation.
+N> `Syncfusion.VisualStudio.TestTools.UITest.SfGridExtension.dll` need to be installed in GAC location. Please refer the MSDN link for  [GAC](https://learn.microsoft.com/en-us/previous-versions/dotnet/netframework-2.0/ex0ss12c(v=vs.80))))  installation.
 
 ### Getting Started
 

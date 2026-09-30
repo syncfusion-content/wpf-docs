@@ -595,7 +595,7 @@ class ViewModel : NotificationObject {
 
 ![Custom calendar in WPF DateTimeEdit](appearance-images/wpf-datetimeedit-custom-calendar.png)
 
-N> View [Sample](https://github.com/SyncfusionExamples/wpf-date-time-edit-examples/tree/master/Samples/Custom-clock-and-calendar) in GitHub
+N> View [Sample](https://github.com/SyncfusionExamples/wpf-datetimepicker-examples/tree/master/Samples/Custom-clock-and-calendar) in GitHub
 
 ### Custom clock
 
@@ -648,10 +648,10 @@ class ViewModel : NotificationObject {
 
 ![Customize the Clock in DateTimeEdit](appearance-images/wpf-datetimeedit-custom-clock.png)
 
-N> View [Sample](https://github.com/SyncfusionExamples/wpf-date-time-edit-examples/tree/master/Samples/Custom-clock-and-calendar) in GitHub
+N> View [Sample](https://github.com/SyncfusionExamples/wpf-datetimepicker-examples/tree/master/Samples/Custom-clock-and-calendar) in GitHub
 
 
-N> You can also use both custom clock and calendar in the full datetime pattern by setting the `DropDownView` property as `Combined`. View [Sample](https://github.com/SyncfusionExamples/wpf-date-time-edit-examples/tree/master/Samples/Custom-FullDateSelector) in GitHub
+N> You can also use both custom clock and calendar in the full datetime pattern by setting the `DropDownView` property as `Combined`. View [Sample](https://github.com/SyncfusionExamples/wpf-datetimepicker-examples/tree/master/Samples/Custom-FullDateSelector) in GitHub
 
 ## Setting the null value
 

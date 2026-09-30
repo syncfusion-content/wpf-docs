@@ -270,7 +270,7 @@ To explore about selection and selection related events, refer to the [Selection
 
 [How to prevent a containers size from updating when drawing a connector between child nodes of different containers in WPF Diagram?](https://support.syncfusion.com/kb/article/18402/how-to-prevent-a-containers-size-from-updating-when-drawing-a-connector-between-child-nodes-of-different-containers-in-wpf-diagram-sfdiagram)
 
-[How to add a node as a child of a container using the context menu in the WPF Diagram ?](https://support.syncfusion.com/kb/article/18053/how-to-add-a-node-as-a-child-of-a-container-using-the-context-menu-in-the-wpf-diagram-sfdiagram)
+[How to add a node as a child of a container using the context menu in the WPF Diagram ?](https://support.syncfusion.com/kb/article/18053/how-to-add-node-as-a-child-to-container-via-wpf-diagram-context-menu)
 
 [How to rearrange the containers after the layout has been updated in WPF Diagram ?](https://support.syncfusion.com/kb/article/17749/how-to-rearrange-the-containers-after-the-layout-has-been-updated-in-wpf-diagram-sfdiagram-)
 

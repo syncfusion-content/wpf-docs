@@ -48,7 +48,7 @@ Diagram provides support to add lanes and phases to Stencil.
 
 ## Add Swimlane shapes to palette using the category
 
-You can add the swimlane shapes using the category. For more information, refer to the [Symbol categories](https://help.syncfusion.com/wpf/diagram/stencil/symbolgroup#symbol-categories). 
+You can add the swimlane shapes using the category. For more information, refer to the [Symbol categories](https://help.syncfusion.com/wpf/diagram/stencil/symbolgroup/symbolgroup#symbol-categories). 
 
 ## Interactions
 * Drag-and-drop support for swimlane shapes is provided.

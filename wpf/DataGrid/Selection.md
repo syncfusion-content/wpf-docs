@@ -749,7 +749,7 @@ if (detailsViewDataGrid == null)
 ![Programmatic Expansion and Scrolling of Master-Details View in WPF DataGrid](Selection_images/wpf-datagrid-expansion-and-scrolling-selection.png)
 
 
-You can get the sample from [here](https://www.syncfusion.com/downloads/support/directtrac/general/ze/MasterDetailsViewSample1099992369.zip).
+You can get the sample from [here](https://s3.amazonaws.com/files2.syncfusion.com/dtsupport/directtrac/general/ze/MasterDetailsViewSample1099992369.zip).
 
 ### Programmatically select the records in DetailsViewDataGrid which is not in view
 
@@ -811,7 +811,7 @@ detailsViewDataGrid.SelectedIndex = childIndex;
 {% endhighlight %}
 {% endtabs %}
 
-You can get the sample from [here](https://www.syncfusion.com/downloads/support/directtrac/general/ze/SelectDetailsviewRecord1830272123.zip).
+You can get the sample from [here](https://s3.amazonaws.com/files2.syncfusion.com/dtsupport/directtrac/general/ze/SelectDetailsviewRecord1830272123.zip).
 
 ### Customizing the SelectionController for DetailsViewDataGrid
 
@@ -1533,7 +1533,7 @@ You can bind the selection properties like [SelectedItem](https://help.syncfusio
 {% endhighlight %}
 {% endtabs %}
 
-In DetailsView, it is not possible to bind selection properties directly with ViewModel. You can use [Behavior](https://learn.microsoft.com/en-us/previous-versions/visualstudio/design-tools/expression-studio-4/ff726530(v=expression.40)) to achieve this requirement. 
+In DetailsView, it is not possible to bind selection properties directly with ViewModel. You can use [Behavior](https://learn.microsoft.com/en-us/previous-versions/visualstudio/design-tools/expression-studio-4/ff726530(v=expression.40)))) to achieve this requirement. 
 
 {% tabs %}
 {% highlight xaml %}
@@ -1619,7 +1619,7 @@ public class SelectionBehavior : Behavior<SfDataGrid>
 {% endhighlight %}
 {% endtabs %}
 
-You can get the sample from [here](https://www.syncfusion.com/downloads/support/directtrac/general/ze/BindingProperties1330432406.zip)
+You can get the sample from [here](https://s3.amazonaws.com/files2.syncfusion.com/dtsupport/directtrac/general/ze/BindingProperties1330432406.zip)
 
 ## Customizing Selection Behaviors
 
@@ -1821,7 +1821,7 @@ private void dataGrid_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-You can get the sample from [here](https://www.syncfusion.com/downloads/support/directtrac/general/ze/SelectColumn1411579311.zip).
+You can get the sample from [here](https://s3.amazonaws.com/files2.syncfusion.com/dtsupport/directtrac/general/ze/SelectColumn1411579311.zip).
 
 ![WPF DataGrid displays Column Selection While Clicking Column Header](Selection_images/wpf-datagrid-column-selection.png)
 
@@ -1858,23 +1858,23 @@ public class GridSelectionControllerExt : GridSelectionController
 
 ## See Also
 
-[How to disable the row selection while clicking on the checkbox column](https://support.syncfusion.com/kb/article/8784/how-to-disable-the-row-selection-while-clicking-on-the-checkbox-column-in-wpf-datagrid)
+[How to disable the row selection while clicking on the checkbox column](https://support.syncfusion.com/kb/article/8784/how-to-disable-the-row-selection-while-clicking-on-the-checkbox-column-in-wpf-datagrid-sfdatagrid)
 
 [How to copy active cell value alone when SelectionUnit as Row](https://support.syncfusion.com/kb/article/8778/how-to-copy-active-cell-value-alone-when-row-selection-in-wpf-datagrid-sfdatagrid)
 
-[How to improve the performance while selecting rows using Shift key ?](https://support.syncfusion.com/kb/article/8250/how-to-improve-the-performance-while-selecting-row-using-shift-key-in-wpf-datagrid)
+[How to improve the performance while selecting rows using Shift key ?](https://support.syncfusion.com/kb/article/8250/how-to-improve-the-performance-while-selecting-row-using-shift-key-in-wpf-datagrid-sfdatagrid)
 
 [How to scroll and select record programmatically ?](https://support.syncfusion.com/kb/article/7567/how-to-scroll-and-select-the-record-programmatically-in-wpf-datagrid-sfdatagrid)
 
-[How to prevent the selection while pressing rightclick ?](https://support.syncfusion.com/kb/article/6950/how-to-prevent-the-selection-while-pressing-right-click-in-wpf-datagrid-sfdatagrid)
+[How to prevent the selection while pressing rightclick ?](https://support.syncfusion.com/kb/article/6950/how-to-prevent-selection-while-pressing-right-click-in-wpf-datagrid)
 
 [How to get the SelectedItem of the DetailsView?](https://support.syncfusion.com/kb/article/6337/how-to-get-the-selecteditem-of-the-detailsview-in-wpf-datagrid-sfdatagrid)
 
-[How to add a new row continuously in AddNewRow without moving the selection to next row?](https://support.syncfusion.com/kb/article/6321/how-to-add-a-new-row-continuously-without-any-selection-to-next-row-in-wpf-datagrid)
+[How to add a new row continuously in AddNewRow without moving the selection to next row?](https://support.syncfusion.com/kb/article/6321/how-to-add-a-new-row-continuously-without-any-selection-to-next-row-in-wpf-datagrid-sfdatagrid)
 
 [How to change the CheckBoxColumn values based on row selection?](https://support.syncfusion.com/kb/article/6028/how-to-change-the-checkboxcolumn-values-based-on-row-selection-in-wpf-datagrid-sfdatagrid)
 
-[How to bind SelectedItem and CurrentItem in DetailsViewDataGrid](https://support.syncfusion.com/kb/article/6020/how-to-bind-the-selecteditem-and-currentitem-in-detailsviewdatagrid-of-wpf-datagrid)
+[How to bind SelectedItem and CurrentItem in DetailsViewDataGrid](https://support.syncfusion.com/kb/article/6020/how-to-bind-the-selecteditem-and-currentitem-in-wpf-datagrid-sfdatagrid)
 
 [How to select the rows based on a CellValue?](https://support.syncfusion.com/kb/article/6129/how-to-select-the-rows-based-on-a-cell-value-in-wpf-datagrid-sfdatagrid)
 
@@ -1886,31 +1886,31 @@ public class GridSelectionControllerExt : GridSelectionController
 
 [How to read cell values from SelectedItems?](https://support.syncfusion.com/kb/article/6001/how-to-read-cell-values-from-selecteditems-in-wpf-datagrid)
 
-[How to add a new record in specific DetailsViewDataGrid ?](https://support.syncfusion.com/kb/article/5885/how-to-add-new-record-in-specific-detailsview-datagrid-for-wpf)
+[How to add a new record in specific DetailsViewDataGrid ?](https://support.syncfusion.com/kb/article/5885/how-to-add-new-record-in-specific-detailsview-datagrid-for-wpf-datagrid)
 
 [How to move selection to newly added record using AddNewRow?](https://support.syncfusion.com/kb/article/5596/how-to-move-newly-added-records-in-wpf-datagrid)
 
-[How to paste the data by custom column order instead of the first column in the SfDataGrid when SelectionUnit is a Row?](https://support.syncfusion.com/kb/article/5159/how-to-paste-the-data-by-custom-column-order-instead-of-the-first-column-in-the-sfdatagrid)
+[How to paste the data by custom column order instead of the first column in the SfDataGrid when SelectionUnit is a Row?](https://support.syncfusion.com/kb/article/5159/how-to-paste-the-data-by-custom-column-order-instead-of-the-first-column-in-the-wpf-datagrid-when-selectionunit-is-a-row)
 
 [How to remove the top-right corner error mark from the GridCell by pressing Esc key when validated by handling the CurrentCellValidating event?](https://support.syncfusion.com/kb/article/5019/how-to-remove-the-top-right-corner-error-mark-from-the-gridcell-in-wpf-datagrid)
 
 [How to programmatically select the records of the Master-DetailsView at run time?](https://support.syncfusion.com/kb/article/5079/how-to-programmatically-select-the-records-of-the-master-detailsview-at-run-time-in-wpf-)
 
-[How to accomplish RecordNavigationBar in the SfDataGrid like Syncfusion<sup>®</sup> Windows Forms DataBoundGrid?](https://support.syncfusion.com/kb/article/5122/how-to-accomplish-recordnavigationbar-in-the-wpf-sfdatagrid-like-syncfusion-windowsforms-databoundgrid)
+[How to accomplish RecordNavigationBar in the SfDataGrid like Syncfusion<sup>®</sup> Windows Forms DataBoundGrid?](https://support.syncfusion.com/kb/article/5122/how-to-accomplish-recordnavigationbar-in-the-wpf-datagrid)
 
-[How to select the entire column in SfDataGrid ?](https://support.syncfusion.com/kb/article/4862/how-to-select-the-entire-column-in-sfdatagrid)
+[How to select the entire column in SfDataGrid ?](https://support.syncfusion.com/kb/article/4862/how-to-select-the-entire-column-in-sfdatagrid-)
 
 [How to move the CurrentCell to the first column of the AddNewRow when the Tab key is pressed from the last column and its position is at the Bottom of the SfDataGrid?](https://support.syncfusion.com/kb/article/4551/how-to-move-the-currentcell-to-the-first-column-in-wpf-datagrid)
 
-[How to navigate the current cell within the selected ranges as in Excel, while pressing Enter or Tab key in SfDataGrid?](https://support.syncfusion.com/kb/article/4491/how-to-navigate-the-current-cell-within-the-selected-ranges-as-in-excel-while-pressing)
+[How to navigate the current cell within the selected ranges as in Excel, while pressing Enter or Tab key in SfDataGrid?](https://support.syncfusion.com/kb/article/4491/how-to-navigate--current-cell-within-selected-region-in-wpf-datagrid)
 
-[How to add selection to data rows of each group on expanding its CaptionSummaryRow?](https://support.syncfusion.com/kb/article/4115/how-to-add-selection-to-data-rows-of-each-group-on-expanding-its-captionsummaryrow-in-wpf-grid-)
+[How to add selection to data rows of each group on expanding its CaptionSummaryRow?](https://support.syncfusion.com/kb/article/4115/how-to-add-selection-to-data-rows-of-each-group-on-expanding-its-captionsummaryrow-in-wpf-datagrid)
 
 [How to change the Enter key behavior in SfDataGrid?](https://support.syncfusion.com/kb/article/3830/how-to-change-the-enter-key-behavior-in-sfdatagrid)
 
 [How to change the Enter key behavior to insert line break when the CurrentCell is in the edit mode?](https://support.syncfusion.com/kb/article/3874/how-to-change-the-enter-key-behavior-to-insert-line-break-when-the-currentcell-is-in-the-edit-mode-for-wpf-grid)
 
-[How to show the selection of row/cell when setting the background for SfDataGrid GridCell?](https://support.syncfusion.com/kb/article/3268/how-to-show-the-selection-of-rowcell-when-setting-the-background-for-sfdatagrid-gridcell-in-wpf-)
+[How to show the selection of row/cell when setting the background for SfDataGrid GridCell?](https://support.syncfusion.com/kb/article/3268/how-to-show-the-selection-of-rowcell-when-setting-the-background-for-gridcell-in-wpf-datagrid-sfdatagrid)
 
 [How to set Border for the Selected Rows?](https://support.syncfusion.com/kb/article/3505/how-to-set-border-for-the-selected-rows-in-wpf-datagrid-)
 
@@ -1918,9 +1918,9 @@ public class GridSelectionControllerExt : GridSelectionController
 
 [How to get information from the selected cells when using cell selection?](https://support.syncfusion.com/kb/article/3053/how-to-get-information-from-the-selected-cells-when-using-cell-selection)
 
-[How to avoid selection while grouping and ungrouping in SfDataGrid?](https://support.syncfusion.com/kb/article/2809/how-to-avoid-selection-while-grouping-and-ungrouping-in-sfdatagrid)
+[How to avoid selection while grouping and ungrouping in SfDataGrid?](https://support.syncfusion.com/kb/article/2809/how-to-avoid-selection-while-grouping-and-ungrouping-in-wpf-datagrid)
 
-[How to change the background and foreground for the selected row or cell?](https://support.syncfusion.com/kb/article/2902/how-to-change-the-background-and-foreground-for-the-selected-row-or-cell-in-wpf-datagrid)
+[How to change the background and foreground for the selected row or cell?](https://support.syncfusion.com/kb/article/2902/how-to-set-selected-rowcell-backgroundforeground-in-wpf-datagrid)
 
 [How to set current cell on particular row when DataGrid loaded?](https://support.syncfusion.com/kb/article/2796/how-to-set-current-cell-on-particular-row-when-datagrid-loaded)
 

@@ -147,7 +147,7 @@ You can display the corresponding row index in each row header, by customizing t
 ![WPF DataGrid displays Row Header Cells with Row Index](Interactive-Features_images/wpf-datagrid-row-index.png)
 
 
-You can get the sample from [here](https://www.syncfusion.com/downloads/support/directtrac/general/ze/WPF-13678149272112665828.zip).
+You can get the sample from [here](https://s3.amazonaws.com/files2.syncfusion.com/dtsupport/directtrac/general/ze/WPF-13678149272112665828.zip).
 
 ### Change the current row indicator
 
@@ -200,7 +200,7 @@ You can change the CurrentRowIndicator in the row header by customizing the cont
 
 ![Customizing Current Row Indicator in WPF DataGrid](Interactive-Features_images/wpf-datagrid-row-indicator.png)
 
-You can get the sample from [here](https://www.syncfusion.com/downloads/support/directtrac/general/ze/ChangingCurrentRowIndicator257326168.zip).
+You can get the sample from [here](https://s3.amazonaws.com/files2.syncfusion.com/dtsupport/directtrac/general/ze/ChangingCurrentRowIndicator257326168.zip).
 
 ### Change the background of row header 
 
@@ -251,7 +251,7 @@ public class CustomConverter:IValueConverter
 
 ![Changing Row Header Background of WPF DataGrid](Interactive-Features_images/wpf-datagrid-row-header-background.png)
 
-You can get the sample from [here](https://www.syncfusion.com/downloads/support/directtrac/general/ze/BackgroundColorForRowHeader_WPF18250214901515913833.zip).
+You can get the sample from [here](https://s3.amazonaws.com/files2.syncfusion.com/dtsupport/directtrac/general/ze/BackgroundColorForRowHeader_WPF18250214901515913833.zip).
 
 ## Header Row
 

@@ -442,7 +442,7 @@ For more information about adding connectors from stencil, refer to [Stencil](/w
 
 [How to apply built-in theme for node and connector?](https://support.syncfusion.com/kb/article/9995/how-to-apply-built-in-theme-for-node-and-connector-in-wpf-diagram-sfdiagram)
 
-[How to decide whether to drag or draw a connection on port at runtime?](https://support.syncfusion.com/kb/article/8538/how-to-decide-whether-to-drag-or-draw-a-connection-on-port-at-runtime-in-the-wpf-diagram)
+[How to decide whether to drag or draw a connection on port at runtime?](https://support.syncfusion.com/kb/article/8538/how-to-decide-whether-to-drag-or-draw-a-connection-on-port-at-runtime-in-the-wpf-diagram-sfdiagram)
 
 [How to customize the context menu?](https://support.syncfusion.com/kb/article/9270/how-to-customize-the-contextmenu-in-wpf-diagram-sfdiagram)
 
@@ -450,29 +450,29 @@ For more information about adding connectors from stencil, refer to [Stencil](/w
 
 [How to customize the connection indicator style of node and port?](https://support.syncfusion.com/kb/article/10048/how-to-customize-the-connection-indicator-style-of-node-and-port-in-wpf-diagram-sfdiagram)
 
-[How to restrict annotation editing by double-clicking the node or connector?](https://support.syncfusion.com/kb/article/8539/how-to-restrict-annotation-editing-by-double-clicking-the-node-or-connector-in-wpf-diagram)
+[How to restrict annotation editing by double-clicking the node or connector?](https://support.syncfusion.com/kb/article/8539/how-to-restrict-annotation-editing-by-double-clicking-the-node-or-connector-in-wpf-diagram-sfdiagram)
 
 [How to disable the animation while creating a connection in diagram?](https://support.syncfusion.com/kb/article/8187/how-to-disable-the-animation-while-creating-a-connection-in-wpf-diagram-sfdiagram)
 
 [How to bring the specific diagram object to the center or viewport of the Diagram?](https://support.syncfusion.com/kb/article/8390/how-to-bring-the-specific-object-to-the-center-or-viewport-of-the-diagram-in-wpf)
 
-[How to show the copied diagram elements as preview image along with the mouse pointer?](https://support.syncfusion.com/kb/article/12037/how-to-show-the-copied-diagram-elements-as-preview-image-along-with-the-mouse-pointer-in)
+[How to show the copied diagram elements as preview image along with the mouse pointer?](https://support.syncfusion.com/kb/article/12037/how-to-show-the-copied-diagram-elements-as-preview-image-along-with-the-mouse-pointer-in-wpf-diagramsfdiagram)
 
-[How to restrict Connector's source/target changing from native Nodes to other Nodes?](https://support.syncfusion.com/kb/article/11796/how-to-restrict-connectors-source-target-changing-from-native-nodes-to-other-nodes-in-wpf)
+[How to restrict Connector's source/target changing from native Nodes to other Nodes?](https://support.syncfusion.com/kb/article/11796/how-to-restrict-connectors-sourcetarget-changing-from-native-nodes-to-other-nodes-in-wpf-diagramsfdiagram)
 
 [How to restrict diagram objects dragging in the positive side?](https://support.syncfusion.com/kb/article/9917/how-to-restrict-diagram-objects-dragging-in-the-positive-side-in-wpf-diagram)
 
 [How to use the property grid for diagram elements?](https://support.syncfusion.com/kb/article/9861/how-to-use-the-property-grid-in-the-wpf-diagram-sfdiagram)
 
-[How to override the default cursors while interact on diagram objects?](https://support.syncfusion.com/kb/article/9997/how-to-override-the-default-cursors-while-interaction-in-wpf-diagram-sfdiagram)
+[How to override the default cursors while interact on diagram objects?](https://support.syncfusion.com/kb/article/9997/how-to-override-the-default-cursors-while-interaction-in-wpf-diagram)
 
 [How to create parent and child relationship by drag and drop nodes?](https://support.syncfusion.com/kb/article/10008/how-to-create-parent-and-child-relationship-by-drag-and-drop-nodes-in-wpf-diagram-sfdiagram)
 
-[How to get or set the positions of the segments by programmatically?](https://support.syncfusion.com/kb/article/10082/how-to-get-or-set-the-positions-of-the-segments-by-programmatically-in-wpf-diagram)
+[How to get or set the positions of the segments by programmatically?](https://support.syncfusion.com/kb/article/10082/how-to-get-or-set-the-positions-of-the-segments-by-programmatically-in-wpf-diagram-sfdiagram)
 
 [How to toggle the visibility of connector at runtime?](https://support.syncfusion.com/kb/article/8897/how-to-toggle-the-visibility-of-connector-at-runtime-in-wpf-diagram-sfdiagram)
 
-[How to detect or get notification when editing the thumbs of connector?](https://support.syncfusion.com/kb/article/9030/how-to-detect-or-get-notification-when-editing-the-thumbs-of-connector-in-wpf-diagram)
+[How to detect or get notification when editing the thumbs of connector?](https://support.syncfusion.com/kb/article/9030/how-to-detect-or-get-notification-when-editing-the-thumbs-of-connector-in-wpf-diagram-sfdiagram)
 
 [How to Notify when diagramming object is duplicated with source?](https://support.syncfusion.com/kb/article/6268/how-to-notify-when-diagramming-object-is-duplicated-with-source-in-wpf-diagram-sfdiagram)
 
@@ -488,7 +488,7 @@ For more information about adding connectors from stencil, refer to [Stencil](/w
 
 [How to disable the selection of diagram objects?](https://support.syncfusion.com/kb/article/5495/how-to-disable-the-selection-in-wpf-diagram)
 
-[How to Obtain the Polyline Connector Completed status in WPF Diagram?](https://support.syncfusion.com/kb/article/18899/how-to-obtain-the-completed-status-of-a-polyline-connector-in-the-wpf-diagram-sfdiagram)
+[How to Obtain the Polyline Connector Completed status in WPF Diagram?](https://support.syncfusion.com/kb/article/18899/how-to-obtain-the-polyline-connector-completed-status-in-wpf-diagram)
 
 [How to select a connector when the mouse hovers over a node port that is connected by the connector in the WPF Diagram?](https://support.syncfusion.com/kb/article/18695/how-to-select-a-connector-when-the-mouse-hovers-over-a-node-port-that-is-connected-by-the-connector-in-the-wpf-diagram-sfdiagram)
 
@@ -502,9 +502,9 @@ For more information about adding connectors from stencil, refer to [Stencil](/w
 
 [How to Fit Selected Nodes and Connectors to the WPF Diagram Window?](https://support.syncfusion.com/kb/article/18062/how-to-fit-selected-nodes-and-connectors-to-the-wpf-diagram-window)
 
-[How to set the rotation angle for a node based on the angle of the connector decorator's shape in WPF Diagram?](https://support.syncfusion.com/kb/article/17744/how-to-set-the-rotation-angle-for-a-node-based-on-the-angle-of-the-connector-decorators-shape-in-wpf-diagram-sfdiagram)
+[How to set the rotation angle for a node based on the angle of the connector decorator's shape in WPF Diagram?](https://support.syncfusion.com/kb/article/17744/how-to-set-node-angle-by-connector-decorator-angle-in-wpf-diagram)
 
-[How to prevent the connector segment from collapsing while dragging a node in WPF Diagram ?](https://support.syncfusion.com/kb/article/17746/how-to-prevent-the-connector-segment-from-collapsing-while-dragging-a-node-in-wpf-diagram-sfdiagram-)
+[How to prevent the connector segment from collapsing while dragging a node in WPF Diagram ?](https://support.syncfusion.com/kb/article/17746/how-to-prevent-connector-collapse-when-dragging-node-in-wpf-diagram)
 
 [How to Get the Node or Connector in the MouseMove Event in the WPF Diagram ?](https://support.syncfusion.com/kb/article/15646/how-to-get-the-node-or-connector-in-the-mousemove-event-in-the-wpf-diagram-sfdiagram)
 
@@ -512,6 +512,6 @@ For more information about adding connectors from stencil, refer to [Stencil](/w
 
 [How to manage the visibility of node and connector objects in the WPF Diagram ?](https://support.syncfusion.com/kb/article/14995/how-to-manage-the-visibility-of-node-and-connector-objects-in-the-wpf-diagram-sfdiagram)
 
-[How to change the connector style based on its SourcePort style in WPF Diagram?](https://support.syncfusion.com/kb/article/18851/how-to-change-the-connector-style-based-on-its-sourceport-style-in-wpf-diagram-sfdiagram)
+[How to change the connector style based on its SourcePort style in WPF Diagram?](https://support.syncfusion.com/kb/article/18851/how-to-change-connector-style-based-on-its-sourceport-in-wpf-diagram)
 
-[How to identify the dragging state of connectors in the WPF Diagram ?](https://support.syncfusion.com/kb/article/18846/how-to-identify-the-dragging-state-of-connectors-in-the-wpf-diagram-sfdiagram)
+[How to identify the dragging state of connectors in the WPF Diagram ?](https://support.syncfusion.com/kb/article/18846/how-to-identify-the-dragging-state-of-connectors-in-the-wpf-diagram)

@@ -292,7 +292,7 @@ You can add ranges to bullet graph by creating ranges collection using [`Qualita
 
 WPF Bullet Graph ranges are displayed as follows.
 
-You can get the complete getting started sample [`here`](https://www.syncfusion.com/downloads/support/directtrac/general/ze/BulletGraphDemo-1174716111).
+You can get the complete getting started sample [`here`](https://s3.amazonaws.com/files2.syncfusion.com/dtsupport/directtrac/general/ze/BulletGraphDemo-1174716111.zip).
 
 ![Adding Ranges to SfBulletGraph control](Getting-Started_images/Getting-Started_img10.jpg)
 

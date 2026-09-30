@@ -170,7 +170,7 @@ You can navigate to the cells contains the SearchText using [SearchHelper.FindNe
 
 {% endhighlight %}
 {% endtabs %}
-You can get the sample from [here](https://www.syncfusion.com/downloads/support/directtrac/general/ze/MasterDetailsViewSearch-140489943.zip).
+You can get the sample from [here](https://s3.amazonaws.com/files2.syncfusion.com/dtsupport/directtrac/general/ze/MasterDetailsViewSearch-140489943.zip).
 
 N> It is not possible to Navigate with the two DataGrid at a time.
 
@@ -380,6 +380,6 @@ public class ComboBoxRendererExt : GridVirtualizingCellRenderer<TextBlock, Combo
 
 [How to apply search and filter for one column in SfDataGrid?](https://support.syncfusion.com/kb/article/7984/how-to-apply-search-and-filter-for-one-column-in-wpf-datagrid-sfdatagrid)
 
-[How to filter the records with searching when underlying items source is DataTable in SfDataGrid?](https://support.syncfusion.com/kb/article/7966/how-to-filter-the-records-with-searching-when-underlying-items-source-is-datatable-in-wpf)
+[How to filter the records with searching when underlying items source is DataTable in SfDataGrid?](https://support.syncfusion.com/kb/article/7966/how-to-filter-the-records-with-searching-when-underlying-items-source-is-datatable-in-wpf-datagrid-sfdatagrid)
 
 [How to perform incremental search ?](https://support.syncfusion.com/kb/article/7649/how-to-perform-the-incremental-search-in-wpf-datagrid-sfdatagrid)

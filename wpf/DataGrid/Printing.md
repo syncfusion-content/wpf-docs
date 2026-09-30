@@ -972,4 +972,4 @@ this.PrintPreviewArea.PrintManagerBase.Print();
 
 ![Custom Print Preview Window in WPF DataGrid](printing_images/wpf-datagrid-custom-print-preview-window.png)
 
-You can get the sample for custom print preview [here](https://www.syncfusion.com/downloads/support/directtrac/general/CUSTOM~1272396097.ZIP).
+You can get the sample for custom print preview [here](https://s3.amazonaws.com/files2.syncfusion.com/dtsupport/directtrac/general/CUSTOM~1272396097.ZIP).

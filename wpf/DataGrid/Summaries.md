@@ -2250,7 +2250,7 @@ this.dataGrid.TableSummaryRows.Add(new GridTableSummaryRow()
 
 ![Custom Aggregate Summaries in WPF DataGrid](Summaries_images/wpf-datagrid-custom-summaries.png)
 
-You can download the sample demo [here](https://www.syncfusion.com/downloads/support/directtrac/general/ze/CustomSummaries-366686956.zip) .
+You can download the sample demo [here](https://s3.amazonaws.com/files2.syncfusion.com/dtsupport/directtrac/general/ze/CustomSummaries-366686956.zip) .
 
 ## Overriding Summary Renderer
 
@@ -2363,7 +2363,7 @@ public class GridTableSummaryCellRendererExt : GridTableSummaryCellRenderer
 
 ![Table Summary Formatting using Renderer in WPF DataGrid](Summaries_images/wpf-datagrid-table-summary-formatting.png)
 
-You can download the sample demo [here](https://www.syncfusion.com/downloads/support/directtrac/general/ze/SfDataGridDemo-462271589.zip).
+You can download the sample demo [here](https://s3.amazonaws.com/files2.syncfusion.com/dtsupport/directtrac/general/ze/SfDataGridDemo-462271589.zip).
 
 ### Customizing GroupCaptionText
 
@@ -2458,17 +2458,17 @@ public class GridCaptionSummaryCellRendererExt : GridCaptionSummaryCellRenderer
 
 ![Customized Group Caption Text Format in WPF DataGrid](Summaries_images/wpf-datagrid-customization.png)
 
-You can download the sample demo [here](https://www.syncfusion.com/downloads/support/directtrac/general/ze/SfDataGridDemo-1006707349.zip). 
+You can download the sample demo [here](https://s3.amazonaws.com/files2.syncfusion.com/dtsupport/directtrac/general/ze/SfDataGridDemo-1006707349.zip). 
 
 ## See Also
 
-[How to show vertical border to the column wise summary rows?](https://support.syncfusion.com/kb/article/8850/how-to-show-vertical-border-to-the-column-wise-summary-rows-in-wpf-datagrid)
+[How to show vertical border to the column wise summary rows?](https://support.syncfusion.com/kb/article/8850/how-to-show-vertical-border-to-summary-cell-rows-in-wpf-datagrid)
 
 [How to define summary rows using AttachedProperty in datagrid](https://support.syncfusion.com/kb/article/8658/how-to-define-summary-rows-using-attached-property-in-wpf-datagrid-)
 
-[How to add a textbox under each group and binding a underlying property on that?](https://support.syncfusion.com/kb/article/7999/how-to-add-the-textbox-under-each-group-and-binding-underlying-property-in-wpf-datagrid)
+[How to add a textbox under each group and binding a underlying property on that?](https://support.syncfusion.com/kb/article/7999/how-to-add-the-textbox-under-each-group-and-binding-underlying-property-in-wpf-datagrid-sfdatagrid)
 
-[How to load a button in CaptionSummaryRow and prevent expanding and collapsing of groups upon clicking it?](https://support.syncfusion.com/kb/article/7231/how-to-load-a-button-in-caption-summary-row-and-prevent-expand-and-collapse-of-groups-in)
+[How to load a button in CaptionSummaryRow and prevent expanding and collapsing of groups upon clicking it?](https://support.syncfusion.com/kb/article/7231/how-to-load-a-button-in-caption-summary-row-and-prevent-expand-and-collapse-of-groups-in-wpf-datagrid-sfdatagrid)
 
 [How to display the NumberFormatInfo in GridSummaryColumn?](https://support.syncfusion.com/kb/article/6127/how-to-display-the-numberformat-info-in-gridsummarycolumn-of-wpf-datagrid-sfdatagrid)
 

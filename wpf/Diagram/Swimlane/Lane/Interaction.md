@@ -56,4 +56,4 @@ The following image shows interaction with the lane's children.
 
 ## See Also
 
-[How to restrict node’s dragging from native lane to other lanes in diagram?](https://www.syncfusion.com/kb/13208/how-to-restrict-nodes-dragging-from-native-lane-to-other-lanes-in-wpf-diagramsfdiagram)
+[How to restrict node’s dragging from native lane to other lanes in diagram?](https://support.syncfusion.com/kb/article/11744/how-to-restrict-nodes-dragging-from-native-lane-to-other-lanes-in-wpf-diagramsfdiagram)

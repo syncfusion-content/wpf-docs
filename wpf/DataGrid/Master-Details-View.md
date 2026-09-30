@@ -1376,7 +1376,7 @@ public static class GridHelperClass
 {% endhighlight %}
 {% endtabs %}
 
-You can get the sample from [here](https://www.syncfusion.com/downloads/support/directtrac/general/ze/WPF96131267.zip).
+You can get the sample from [here](https://s3.amazonaws.com/files2.syncfusion.com/dtsupport/directtrac/general/ze/WPF96131267.zip).
 
 N> To display parent and [DetailsViewDataGrid](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.DetailsViewDataGrid.html) in the same line, set [DetailsViewPadding](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_DetailsViewPadding) as `Zero`.
 
@@ -1594,7 +1594,7 @@ if (detailsViewDataGrid == null)
 {% endhighlight %}
 {% endtabs %}
 
-You can get the sample from [here](https://www.syncfusion.com/downloads/support/directtrac/general/MASTER~3548859394.ZIP).
+You can get the sample from [here](https://s3.amazonaws.com/files2.syncfusion.com/dtsupport/directtrac/general/MASTER~3548859394.ZIP).
 
 ### Customizing Selection for DetailsViewDataGrid
 
@@ -1882,7 +1882,7 @@ this.dataGrid.LiveDataUpdateMode = LiveDataUpdateMode.AllowChildViewUpdate | Liv
 {% endhighlight %}
 {% endtabs %}
 
-You can get the sample from [here](https://www.syncfusion.com/downloads/support/directtrac/general/ze/WPF_-_Sample1341078924).
+You can get the sample from [here](https://s3.amazonaws.com/files2.syncfusion.com/dtsupport/directtrac/general/ze/WPF_-_Sample1341078924.zip).
 
 ## Refreshing UI while adding records to relation property at run time
 
@@ -2048,11 +2048,11 @@ Following are the limitations of Master-Details View in SfDataGrid.
 
 ## See Also
 
-[How to maintain the DetailsView expanded state when Sorting and Grouping the DataGrid (SfDataGrid)?](https://support.syncfusion.com/kb/article/9579/how-to-maintain-the-detailsview-expanded-state-when-sorting-and-grouping-the-datagrid)
+[How to maintain the DetailsView expanded state when Sorting and Grouping the DataGrid (SfDataGrid)?](https://support.syncfusion.com/kb/article/9579/how-to-maintain-the-detailsview-expanded-state-when-sorting-and-grouping-the-datagrid-sfdatagrid)
 
 [How to set the background for selected DetailsViewGrid?](https://support.syncfusion.com/kb/article/8282/how-to-set-the-background-for-selected-detailsviewgrid-in-wpf-datagrid-sfdatagrid)
 
-[How to load the button command inside the Detailsview datagrid column and setting AncestorLevel?](https://support.syncfusion.com/kb/article/6542/how-to-load-the-button-command-inside-the-detailsview-wpf-datagrid-sfdatagrid-column-and)
+[How to load the button command inside the Detailsview datagrid column and setting AncestorLevel?](https://support.syncfusion.com/kb/article/6542/how-to-load-the-button-command-inside-the-detailsview-wpf-datagrid-sfdatagrid-column--and-setting-ancestorlevel-)
 
 [How to export the DetailsView records in expanded state to Excel?](https://support.syncfusion.com/kb/article/6537/how-to-export-detailsview-records-in-expanded-state-from-wpf-datagrid)
 
@@ -2060,19 +2060,19 @@ Following are the limitations of Master-Details View in SfDataGrid.
 
 [How to get the SelectedItem of the DetailsView?](https://support.syncfusion.com/kb/article/6337/how-to-get-the-selecteditem-of-the-detailsview-in-wpf-datagrid-sfdatagrid)
 
-[How to bind SelectedItem and CurrentItem in DetailsViewDataGrid](https://support.syncfusion.com/kb/article/6020/how-to-bind-the-selecteditem-and-currentitem-in-detailsviewdatagrid-of-wpf-datagrid)
+[How to bind SelectedItem and CurrentItem in DetailsViewDataGrid](https://support.syncfusion.com/kb/article/6020/how-to-bind-the-selecteditem-and-currentitem-in-wpf-datagrid-sfdatagrid)
 
-[How to get the CurrentCell for DetailsViewDatagrid at runtime?](https://support.syncfusion.com/kb/article/5800/how-to-get-the-currentcell-for-detailsviewdatagrid-at-runtime-in-wpf-datagrid)
+[How to get the CurrentCell for DetailsViewDatagrid at runtime?](https://support.syncfusion.com/kb/article/5800/how-to-get-the-currentcell-for-detailsview-datagrid-at-runtime-in-wpf-datagrid)
 
-[How to add a new record in specific DetailsViewDataGrid ?](https://support.syncfusion.com/kb/article/5885/how-to-add-new-record-in-specific-detailsview-datagrid-for-wpf)
+[How to add a new record in specific DetailsViewDataGrid ?](https://support.syncfusion.com/kb/article/5885/how-to-add-new-record-in-specific-detailsview-datagrid-for-wpf-datagrid)
 
 [How to hide the key mapping column in DetailsViewDataGrid?](https://support.syncfusion.com/kb/article/5990/how-to-hide-the-key-mapping-column-in-details-view-in-wpf-datagrid)
 
-[How to resize the parent grid and DetailsViewDataGrid simultaneously?](https://support.syncfusion.com/kb/article/4769/how-to-resize-the-parent-grid-and-detailsviewdatagrid-simultaneously-in-wpf-grid-)
+[How to resize the parent grid and DetailsViewDataGrid simultaneously?](https://support.syncfusion.com/kb/article/4769/how-to-resize-the-parent-grid-and-detailsviewdatagrid-simultaneously-in-wpf-datagrid)
 
 [How to create Custom Column in the DetailsViewDataGrid?](https://support.syncfusion.com/kb/article/4244/how-to-create-custom-column-in-the-wpf-details-view-datagrid-)
 
-[How to change the background color of the Header alone in DetailsView or Nested Grid?](https://support.syncfusion.com/kb/article/3382/how-to-change-the-background-color-of-the-header-alone-in-detailsview-or-nested-grid)
+[How to change the background color of the Header alone in DetailsView or Nested Grid?](https://support.syncfusion.com/kb/article/3382/how-to-change-background-color-of-header-alone-in-grid)
 
 [How to prevent resizing the last column, when parent Grid width is less than the child Grid width?](https://support.syncfusion.com/kb/article/3295/how-to-prevent-resizing-the-last-column-when-parent-grid-width-is-less-than-the-child-grid-width-in-wpf-)
 
@@ -2080,6 +2080,6 @@ Following are the limitations of Master-Details View in SfDataGrid.
 
 [How to get the parent grid while editing the child grid?](https://support.syncfusion.com/kb/article/2795/how-to-get-the-parent-grid-while-editing-the-child-grid-in-wpf-datagrid)
 
-[How to enable NestedGrid when I don't have relations in my datasource](https://support.syncfusion.com/kb/article/2907/how-to-enable-nestedgrid-when-i-dont-have-relations-in-my-datasource-in-wpf-)
+[How to enable NestedGrid when I don't have relations in my datasource](https://support.syncfusion.com/kb/article/2907/how-to-enable-nested-grid-in-my-data-source-with-wpf-datagrid)
 
 [How to hide the HeaderRow in Nested Grid?](https://support.syncfusion.com/kb/article/2887/how-to-hide-the-headerrow-in-nested-grid)

@@ -45,7 +45,7 @@ For more info about the platforms and configurations refer [here](https://learn.
 
 ## Configuration
 
-To test WPF Charts with CUITs, build the Extension Project and place it in the mentioned location. You can get the Extension Project from [`here`](https://www.syncfusion.com/downloads/support/directtrac/general/ze/CodedUI-1453395823.zip).
+To test WPF Charts with CUITs, build the Extension Project and place it in the mentioned location. You can get the Extension Project from [`here`](https://s3.amazonaws.com/files2.syncfusion.com/dtsupport/directtrac/general/ze/CodedUI-1453395823.zip).
 
 1. Open the extension project and build it.
 
@@ -58,7 +58,7 @@ The above assembly must be placed into the following directory based on your Vis
 For Visual Studio 2015: 
 C:\Program Files (x86)\Common Files\Microsoft Shared\VSTT\14.0\UITestExtensionPackages
 
-N> Syncfusion.SfChart.CUITExtension.WPF.dll need to be installed in GAC location. Please refer the MSDN link for_ [GAC](https://learn.microsoft.com/en-us/previous-versions/dotnet/netframework-2.0/ex0ss12c(v=vs.80)) _installation.
+N> Syncfusion.SfChart.CUITExtension.WPF.dll need to be installed in GAC location. Please refer the MSDN link for_ [GAC](https://learn.microsoft.com/en-us/previous-versions/dotnet/netframework-2.0/sxe8hcf2(v=vs.80)))) _installation.
 
 ## Getting Started
 

@@ -648,7 +648,7 @@ N> You can refer to our [WPF Charts](https://www.syncfusion.com/wpf-controls/cha
 [`How to display the chart area alone in Chart?`](https://support.syncfusion.com/kb/article/5116/how-to-display-the-chart-area-alone-in-wpf-chart-sfchart)
 [`How to redraw the chart while dragging the series out of the range?`](https://support.syncfusion.com/kb/article/5173/how-to-redraw-wpf-chart-sfchart-while-dragging-the-series-out-of-the-range)
 [`How to create a real time Chart using MVVM in WPF?`](https://support.syncfusion.com/kb/article/10039/how-to-create-a-real-time-chart-sfchart-using-mvvm-in-wpf)
-[`How to add watermark to chart?`](https://support.syncfusion.com/kb/article/4952/how-to-add-watermark-in-wpf-chart-sfchart)
+[`How to add watermark to chart?`](https://support.syncfusion.com/kb/article/4952/how-to-add-watermark-in-wpf-chart-sfchart-)
 
 ## Theme
 

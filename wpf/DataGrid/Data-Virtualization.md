@@ -169,7 +169,7 @@ Public class ViewModel
 {% endhighlight %}
 {% endtabs %}
 
-You can download the sample from [here](https://www.syncfusion.com/downloads/support/directtrac/general/ze/IncrementalLoading-519410720.zip).
+You can download the sample from [here](https://s3.amazonaws.com/files2.syncfusion.com/dtsupport/directtrac/general/ze/IncrementalLoading-519410720.zip).
 
 ### Displaying animation when fetching data from services
 
@@ -275,7 +275,7 @@ public class ViewModel : INotifyPropertyChanged
 
 ![WPF DataGrid displays Incremental Data Loading](data-virtualization_images/wpf-datagrid-loading-data.png)
 
-You can download the sample from [here](https://www.syncfusion.com/downloads/support/directtrac/general/ze/IncrementalLoading_Animation-1160118925.zip).
+You can download the sample from [here](https://s3.amazonaws.com/files2.syncfusion.com/dtsupport/directtrac/general/ze/IncrementalLoading_Animation-1160118925.zip).
 
 ### LoadMore using ISupportIncrementalLoading
 
@@ -370,7 +370,7 @@ public class ViewModel
 {% endhighlight %}
 {% endtabs %}
 
-You can download the sample from [here](https://www.syncfusion.com/downloads/support/directtrac/general/ze/IncrementalLoading_-_LoadMoreItems-1914949679.zip).
+You can download the sample from [here](https://s3.amazonaws.com/files2.syncfusion.com/dtsupport/directtrac/general/ze/IncrementalLoading_-_LoadMoreItems-1914949679.zip).
 
 ### Limitations
 

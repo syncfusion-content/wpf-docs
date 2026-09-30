@@ -616,7 +616,7 @@ void dataGrid_AutoGeneratingColumn(object sender, AutoGeneratingColumnArgs e)
 
 ## Column styling
 
-`GridColumn` support to customize the style of particular column using [GridColumn.CellStyle](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridColumnBase.html#Syncfusion_UI_Xaml_Grid_GridColumnBase_CellStyle) property. For more information, refer [Styling and Template](https://help.syncfusion.com/wpf/sfdatagrid/styles-and-templates) section.
+`GridColumn` support to customize the style of particular column using [GridColumn.CellStyle](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridColumnBase.html#Syncfusion_UI_Xaml_Grid_GridColumnBase_CellStyle) property. For more information, refer [Styling and Template](https://help.syncfusion.com/wpf/datagrid/styles-and-templates) section.
 
 ### Change the column font setting
 
@@ -1626,7 +1626,7 @@ You can keep the drop-down control open when start editing on the text box of `C
 
 ### Improving dropdown opening time
 
-You can improve the drop-down opening time on loading by setting [VirtualizingStackPanel](https://learn.microsoft.com/en-us/previous-versions/windows/silverlight/dotnet-windows-silverlight/ms617901(v=vs.95)) as [ItemsPanelTemplate](https://learn.microsoft.com/en-us/dotnet/api/system.windows.controls.itemspaneltemplate?view=windowsdesktop-7.0&viewFallbackFrom=net-5.0) of `ComboBox`, when the large number of items loaded in it.
+You can improve the drop-down opening time on loading by setting [VirtualizingStackPanel](https://learn.microsoft.com/en-us/previous-versions/windows/silverlight/dotnet-windows-silverlight/ms617901(v=vs.95)))) as [ItemsPanelTemplate](https://learn.microsoft.com/en-us/dotnet/api/system.windows.controls.itemspaneltemplate?view=windowsdesktop-7.0&viewFallbackFrom=net-5.0) of `ComboBox`, when the large number of items loaded in it.
 
 {% tabs %}
 {% highlight xaml %}
@@ -1816,7 +1816,7 @@ The following screenshot illustrates the different ShipCity ItemsSource bound to
 
 ![WPF DataGrid Column with ComboBox using Template](Column-Types_images/wpf-datagrid-combobox-template.png)
 
-You can download the sample from [here](https://www.syncfusion.com/downloads/support/directtrac/general/ze/ComboBoxColumnsDemo-1585046085.zip).
+You can download the sample from [here](https://s3.amazonaws.com/files2.syncfusion.com/dtsupport/directtrac/general/ze/ComboBoxColumnsDemo-1585046085.zip).
 
 ## GridMultiColumnDropDownList
 

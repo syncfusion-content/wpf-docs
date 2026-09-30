@@ -9,7 +9,7 @@ documentation: ug
 
 # Virtualization in WPF CheckedListBox
 
-UI Virtualization support is enabled by default in [WPF CheckedListBox](https://www.syncfusion.com/wpf-ui-controls/CheckedListBox), which allows the users to load large sets of data without affecting loading or scrolling performance. This feature allows users to reduce the loading time of `WPF CheckedListBox` items regardless of items count.
+UI Virtualization support is enabled by default in [WPF CheckedListBox](https://www.syncfusion.com/wpf-controls/CheckedListBox), which allows the users to load large sets of data without affecting loading or scrolling performance. This feature allows users to reduce the loading time of `WPF CheckedListBox` items regardless of items count.
 
 {% tabs %}
 {% highlight C# %}

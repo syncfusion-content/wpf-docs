@@ -477,7 +477,7 @@ Similarly, you can validate the cells in AddNewRow by using the [CurrentCellVali
 
 SfDataGrid enables you to customize the watermark text of AddNewRow by changing value of AddNewRowText in Resource Designer. For more information, you can refer [Editing default culture resource](https://help.syncfusion.com/wpf/datagrid/localization#editing-default-culture-resource) section.
 
-To customize the AddNewRowText, add the default `Syncfusion.SfDataGrid.WPF.resx` file in **Resources** folder and then customize the value of AddNewRowText. Refer [here](https://help.syncfusion.com/windowsforms/sfdatagrid/localization) to learn more about localization. 
+To customize the AddNewRowText, add the default `Syncfusion.SfDataGrid.WPF.resx` file in **Resources** folder and then customize the value of AddNewRowText. Refer [here](https://help.syncfusion.com/windowsforms/datagrid/localization) to learn more about localization. 
 
 ![WPF DataGrid Resource File](Data-Manipulation_images/wpf-datagrid-resource-file.png)
 
