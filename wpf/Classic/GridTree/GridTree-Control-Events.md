@@ -7,25 +7,25 @@ control: GridTreeControl
 documentation: ug
 ---
 
-# GridTree Control Events in WPF GridTreeControl
+# GridTreeControl Events in WPF GridTreeControl
 
-Here is the list of events exposed in GridTree control. Additionally, you have access to all the GridControl events exposed on the GridTreeControl.InternalGrid.
+Here is the list of events exposed in GridTreeControl. Additionally, you have access to all the GridControl events exposed on the GridTreeControl.InternalGrid.
 
 
 
 <table>
 <tr>
 <th>
-GridTree control Event</th><th>
+GridTreeControl Event</th><th>
 Description</th></tr>
 <tr>
 <td>
 ModelLoaded</td><td>
-Handled once the InternalGrid is created and after the template is applied to the GridTree control. This is the correct place to set the properties and subscribe to events on the InternalGrid.</td></tr>
+Handled once the InternalGrid is created and after the template is applied to the GridTreeControl. This is the correct place to set the properties and subscribe to events on the InternalGrid.</td></tr>
 <tr>
 <td>
 RequestTreeItems</td><td>
-Required event that is used to provide the underlying data to the GridTree control on demand. This event is discussed earlier in this document.</td></tr>
+Required event that is used to provide the underlying data to the GridTreeControl on demand. This event is discussed earlier in this document.</td></tr>
 <tr>
 <td>
 RequestNodeImage</td><td>

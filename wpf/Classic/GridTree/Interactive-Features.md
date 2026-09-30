@@ -18,18 +18,18 @@ This section elaborates on the following run time interactive features:
 ## Selection Support
 
 
-GridTree control has the following two types of selection support: 
+GridTreeControl has the following two types of selection support: 
 
 * Whole Node selection-Whole node selections involve selecting the the entire row when a cell is clicked, and is enabled by setting the EnableNodeSelection property to true.  This is the default node selection type in the Grid Tree.
-* Cell Range selection-The cell range selection support allows the selection of cell ranges within the GridTree control. This support is enabled by setting EnableNodeSelection property to _false_.
+* Cell Range selection-The cell range selection support allows the selection of cell ranges within the GridTreeControl. This support is enabled by setting EnableNodeSelection property to _false_.
 
 ### Disabling the Selection
 
-To disable all selection support in the GridTree control, set GridTreeControl.EnableSelections to _false_.
+To disable all selection support in the GridTreeControl, set GridTreeControl.EnableSelections to _false_.
 
 ### Selection Features
 
-GridTree control does not use the selection support inherited from the Grid control, because the selections in the Grid Tree need to be persisted, as the nodes are expanded/collapsed and sorted. The GridTreeNode.IsSelected property indicates whether the node is selected or not and the GridTreeNode.SelectedColumns property contains the names of the columns selected for the node. You can access selected nodes by using the GridTreeControl.SelectedNodes property. 
+GridTreeControl does not use the selection support inherited from the Grid control, because the selections in the Grid Tree need to be persisted, as the nodes are expanded/collapsed and sorted. The GridTreeNode.IsSelected property indicates whether the node is selected or not and the GridTreeNode.SelectedColumns property contains the names of the columns selected for the node. You can access selected nodes by using the GridTreeControl.SelectedNodes property. 
 
 The following code example illustrates cell range selections in the Grid Tree.
 
@@ -59,7 +59,7 @@ foreach (GridTreeNode node in treeGrid.SelectedNodes)
 
 ## Sorting
 
-Sorting will arrange the records either in ascending or descending order of the selected field values. The GridTree control allows you to sort the data against one or more columns. The number of columns on which the sorting can be applied is unlimited.
+Sorting will arrange the records either in ascending or descending order of the selected field values. The GridTreeControl allows you to sort the data against one or more columns. The number of columns on which the sorting can be applied is unlimited.
 
 ### Properties
 
@@ -75,7 +75,7 @@ Data Type</th></tr>
 <tr>
 <td>
 AllowSort</td><td>
-Enables/disables the sorting feature in the GridTree control.</td><td>
+Enables/disables the sorting feature in the GridTreeControl.</td><td>
 Dependency property</td><td>
 Boolean</td></tr>
 <tr>
@@ -151,7 +151,7 @@ this.treeGrid.AllowSort = true;
 
 ### Sorting Options
 
-The GridTree control supports the following sorting options:
+The GridTreeControl supports the following sorting options:
 
 * Multicolumn Sorting
 * Tri-state Sorting 
@@ -159,7 +159,7 @@ The GridTree control supports the following sorting options:
 
 ### Multicolumn Sorting
 
-The GridTree control provides support to perform multicolumn sorting by holding down the Ctrl key and clicking the left mouse button.
+The GridTreeControl provides support to perform multicolumn sorting by holding down the Ctrl key and clicking the left mouse button.
 
 The multicolumn sorting can be enabled by using the EnableMultiColumnSorting property. The following code example illustrates this.
 
@@ -189,7 +189,7 @@ this.treeGrid.EnableMultiColumnSorting = true;
 {% endhighlight %}
 {% endtabs %}
 
-The following screenshot shows the GridTree control enabled with multicolumn sorting where the First Name column is sorted in ascending order and the Last Name column is sorted in descending order.
+The following screenshot shows the GridTreeControl enabled with multicolumn sorting where the First Name column is sorted in ascending order and the Last Name column is sorted in descending order.
 
 
 
@@ -197,12 +197,12 @@ The following screenshot shows the GridTree control enabled with multicolumn sor
 
 
 
-Multicolumn Sorting in GridTree Control
+Multicolumn Sorting in GridTreeControl
 {:.caption}
 
 ### Tri-state Sorting
 
-The GridTree control also supports the tri-state sorting. There are three states in this sorting:
+The GridTreeControl also supports the tri-state sorting. There are three states in this sorting:
 
 * Ascending—sorts the records in an increasing order.
 * Descending—sorts the records in a decreasing order.
@@ -244,17 +244,17 @@ ExpandStateAtStartUp="RootNodesExpanded"
 
 ### Custom Sorting
 
-The GridTree control also features the custom sorting. The following additional members of GridTreeControlImpl allow you to access sort information and provide support for the custom sorting. 
+The GridTreeControl also features the custom sorting. The following additional members of GridTreeControlImpl allow you to access sort information and provide support for the custom sorting. 
 
 * public bool IsPropertySorted(string propertyName, out SortState state)—determines whether a particular column is sorted.
 * public IComparer<GridTreeNode> SortComparer—allows to perform the custom sorting. The default implementation assumes the underlying node items implement the IComparable technique and uses that implementation for the sorting comparisons within the columns. If your objects are not sortable using this technique, then you need to provide a sort comparer that properly sorts the grid nodes items based on the sort property values.
 * public string SortProperty—it is a string that holds the column name to be sorted. You can specify a sort direction by appending a space followed by either ASC or DESC. In addition, you can specify the multicolumn sorting by passing several columns separated by commas. For example, "Price ASC, Weight DESC", which will indicate to sort the Price column in ascending order, and then sort the Weight column in descending order.
-* public List<SortState> SortStates—it is a list of sort states for the columns currently sorted in the GridTree control. The SortState class contains information regarding the direction and the property sorted, and it exposes static helper methods, which takes care of the changes between SortStates and SortProperty.
+* public List<SortState> SortStates—it is a list of sort states for the columns currently sorted in the GridTreeControl. The SortState class contains information regarding the direction and the property sorted, and it exposes static helper methods, which takes care of the changes between SortStates and SortProperty.
 
 ## Column Sizing
 
 
-The GridTree control supports auto sizing its columns such that the display of the tree occupies the entire width of the client area available in the Grid Tree. The sizing is done by columns occupying certain percentages of the available space. To implement this feature, the Grid Tree must be free to size with its parent.
+The GridTreeControl supports auto sizing its columns such that the display of the tree occupies the entire width of the client area available in the Grid Tree. The sizing is done by columns occupying certain percentages of the available space. To implement this feature, the Grid Tree must be free to size with its parent.
 
 N> You cannot set the Width or HorizontalAlignment properties of the Grid Tree when this feature has been enabled.
 
@@ -305,7 +305,7 @@ The PercentSizingBehavior property provides the following options to size the co
 ## Update Mode
 
 
-The UpdateMode property defines the behavior when updating data to the underlying collection while editing. Below are the three UpdateMode behaviors supported by the GridTree control.
+The UpdateMode property defines the behavior when updating data to the underlying collection while editing. Below are the three UpdateMode behaviors supported by the GridTreeControl.
 
 Lost Focus—Update the values to the underlying collection when the current cell is out of focus or moved to another cell. Validation also will take place on lost focus of the cell.
 
@@ -377,7 +377,7 @@ This section will elaborate on different style settings.
 
 ### Visual Styles
 
-The GridTreeControl.VisualStyle property is used to specify the visual style for the Grid Tree. This property is also bound through the Grid Tree Template to the SkinStorage.VisualStyle property, so it can participate in the general themed appearance of all Syncfusion WPF controls. You can also turn off the visual style support in the GridTree control by setting the SupportVisualStyles property to false.
+The GridTreeControl.VisualStyle property is used to specify the visual style for the Grid Tree. This property is also bound through the Grid Tree Template to the SkinStorage.VisualStyle property, so it can participate in the general themed appearance of all Syncfusion WPF controls. You can also turn off the visual style support in the GridTreeControl by setting the SupportVisualStyles property to false.
 
 ### Style Object
 
@@ -553,13 +553,13 @@ N> Level styles are the lowest in precedence, followed by column styles, and the
 
 The GridTreeControl.InternalGrid has a ExpandGlyphType property that enables you to customize the appearance of the Expand cell. It also has a GridTreeControl.InternalGrid.SetExpandBrushesAndPen method that is used to provide the brushes used to draw the expand glyphs. The ExpandGlyph property has the following settings.
 
-GridTree control Property
+GridTreeControl Property
 {:.caption}
 
 <table>
 <tr>
 <th>
-GridTree control Property</th><th>
+GridTreeControl Property</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -709,11 +709,11 @@ Custom Glyphs and Node Images
 
 ## Blendability
 
-The GridTree control supports setting its styles through XAML and Microsoft Expression Blend.  
+The GridTreeControl supports setting its styles through XAML and Microsoft Expression Blend.  
 
 ### Use Case Scenarios
 
-This feature allows the GridTree control to be customized through Microsoft Expression Blend 3 or 4.
+This feature allows the GridTreeControl to be customized through Microsoft Expression Blend 3 or 4.
 
 ### Properties
 
@@ -741,13 +741,13 @@ The Blend Styling demo in the sample browser is purely customized in XAML throug
 1. Open the Syncfusion Essential Studio dashboard.
 2. Select User Interface Edition.
 3. Select WPF and click the orange Run Samples button on the right side of the screen.
-4. Select GridTree control. 
+4. Select GridTreeControl. 
 5. In the Styles menu item, select the Blend Styling demo.
 
 ## Adding Styles to an Application 
 
 
-The appearance of the GridTree control can be customized using Microsoft Expression Blend 3 or 4®. This can be achieved through the StyleManager property of type GridTreeStyleManager. The properties required to customize the appearance are defined in the GridTreeStyleManager class. 
+The appearance of the GridTreeControl can be customized using Microsoft Expression Blend 3 or 4®. This can be achieved through the StyleManager property of type GridTreeStyleManager. The properties required to customize the appearance are defined in the GridTreeStyleManager class. 
 
 
 
@@ -758,7 +758,7 @@ The appearance of the GridTree control can be customized using Microsoft Express
  Blend Property Window Showing StyleManager Properties
  {:.caption}
 
-GridTreeStyleManager properties are organized under different groups, each representing a specific area of the GridTree control.
+GridTreeStyleManager properties are organized under different groups, each representing a specific area of the GridTreeControl.
 
 * CellAppearance
 * ExpanderAppearance
@@ -894,7 +894,7 @@ After Cell Appearance Applied
 
 
 
-Cell Appearance Applied to GridTree Control
+Cell Appearance Applied to GridTreeControl
 {:.caption}
 
 ### Expander Appearance
@@ -1020,7 +1020,7 @@ After Expander Appearance Applied
 
 
 
-Expander Appearance Applied to the GridTree Control
+Expander Appearance Applied to the GridTreeControl
 {:.caption}
 
 ### Header Appearance
@@ -1231,11 +1231,11 @@ Used to change the row header foreground color</td></tr>
 <tr>
 <td>
 RowHoverBackgroundBrush</td><td>
-Used to change the hover color of the GridTree control</td></tr>
+Used to change the hover color of the GridTreeControl</td></tr>
 <tr>
 <td>
 RowHoverForegroundBrush</td><td>
-Used to change the hover foreground color of the GridTree control</td></tr>
+Used to change the hover foreground color of the GridTreeControl</td></tr>
 </table>
 
 
@@ -1301,14 +1301,14 @@ After Row Appearance Applied
 
 
 
-Row Appearance Applied to the GridTree Control
+Row Appearance Applied to the GridTreeControl
 {:.caption}
 
 ## Serialization
 
-The GridTree control’s state can be serialized and deserialized in XML format. All the styles and properties that reflect the state of the grid can be serialized.
+The GridTreeControl’s state can be serialized and deserialized in XML format. All the styles and properties that reflect the state of the grid can be serialized.
 
-The following options in the GridTree control can be serialized and deserialized.
+The following options in the GridTreeControl can be serialized and deserialized.
 
 * Width Options
 * Sort Options
@@ -1381,19 +1381,19 @@ void</th></tr>
 
 ### Sample Link
 
-The Serialization Demo sample in the sample browser illustrates the GridTree control’s serialization feature.
+The Serialization Demo sample in the sample browser illustrates the GridTreeControl’s serialization feature.
 
 1. Open the Syncfusion Essential Studio Dashboard.
 2. Select User Interface Edition.
 3. Select WPF and click the orange Run Samples button on the right side of the window.
-4. Select GridTree Control. 
+4. Select GridTreeControl. 
 5. Under the Serialization menu item, select Serialization Demo.
 Adding Serialization/Deserialization to an Application 
 
 
 ### Serializing 
 
-There are three methods of serialization/deserialization available in the GridTree control.
+There are three methods of serialization/deserialization available in the GridTreeControl.
 
 * XML string
 * XML file
@@ -1403,7 +1403,7 @@ There are three methods of serialization/deserialization available in the GridTr
 
 ### Serializing as an XML String
 
-The following code illustrates how to serialize the GridTree control as an XML string. 
+The following code illustrates how to serialize the GridTreeControl as an XML string. 
 
 {% highlight c# %}
 
@@ -1415,7 +1415,7 @@ string result=this.treeGrid.InternalGrid.SerializeAsString();
 
 ### Serializing as an XML File
 
-The following code illustrates how to serialize the GridTree control as an XML file. 
+The following code illustrates how to serialize the GridTreeControl as an XML file. 
 
 {% highlight c# %}
 
@@ -1427,7 +1427,7 @@ this.treeGrid.InternalGrid.Serialize("newChanges.xml");
 
 ### Serializing as an XML Stream
 
-The following code illustrates how to serialize the GridTree control as an XML stream. 
+The following code illustrates how to serialize the GridTreeControl as an XML stream. 
 
 {% highlight c# %}
 
