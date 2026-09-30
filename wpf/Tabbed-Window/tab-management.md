@@ -272,6 +272,35 @@ private void CustomTab_NewWindowCreating(object sender, NewWindowCreatingEventAr
 
 ![WPF TabbedWindow Customizing TearOff Window](customize-tearOff-images/customized-tearOff-Window.gif)
 
+## Tab Scrolling
+
+When the number of tabs exceeds the available tab header area, scroll buttons are displayed automatically, allowing users to navigate between tabs. You can additionally enable mouse wheel based tab navigation by setting the [EnableTabScrolling](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.SfTabControl.html#Syncfusion_Windows_Controls_SfTabControl_EnableTabScrolling) property of `SfTabControl` to `true`.
+
+{% tabs %}
+
+{% highlight XAML %}
+
+<syncfusion:SfTabControl EnableTabScrolling="True">
+    <syncfusion:SfTabItem Header="Document 1"/>
+    <syncfusion:SfTabItem Header="Document 2"/>
+    <syncfusion:SfTabItem Header="Document 3"/>
+    <syncfusion:SfTabItem Header="Document 4"/>
+    <syncfusion:SfTabItem Header="Document 5"/>
+    <syncfusion:SfTabItem Header="Document 6"/>
+</syncfusion:SfTabControl>
+
+{% endhighlight %}
+
+{% highlight C# %}
+
+tabControl.EnableTabScrolling = true;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![MouseWheel Scrolling](tab-management_images/tabbedwindow_scrolling.gif)
+
 ## NewWindowCreatingEventArgs Properties
 
 | Property       | Type                | Description                                              |
