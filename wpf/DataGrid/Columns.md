@@ -700,67 +700,6 @@ foreach (var name in childColumns)
 {% endhighlight %}
 {% endtabs %}
 
-## DataGrid column resizing 
-
-SfDataGrid allows to resize the columns like in excel by resizing column header. This can be enabled or disabled by setting [SfDataGrid.AllowResizingColumns](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_AllowResizingColumns) or [GridColumn.AllowResizing](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridColumn.html#Syncfusion_UI_Xaml_Grid_GridColumn_AllowResizing) property.
-
-N> Resizing considers MinWidth and MaxWidth of column.
-
-{% tabs %}
-{% highlight xaml %}
-<syncfusion:SfDataGrid  x:Name="dataGrid"
-                        AllowResizingColumns="True"
-                        AutoGenerateColumns="True"
-                        ItemsSource="{Binding Orders}" />
-{% endhighlight %}
-{% endtabs %}
-
-You can change the column width by clicking and dragging the resizing cursor at the edge of column header. The resizing cursor appears when you hover the grid line exists between two columns. 
-
-![Column Resizing in WPF DataGrid](columns_images/wpf-datagrid-resize-column.png)
-
-### Hidden column resizing
-
-SfDataGrid shows indication for hidden columns in column header and also allows end-users to resize the hidden columns when setting [SfDataGrid.AllowResizingHiddenColumns](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_AllowResizingHiddenColumns) property to `true`.
-
-![Resizing Hidden Column in WPF DataGrid](columns_images/wpf-datagrid-resize-hidden-column.png)
-
-### Disable resizing
-
-You can cancel resizing of particular column by setting [GridColumn.AllowResizing](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridColumn.html#Syncfusion_UI_Xaml_Grid_GridColumn_AllowResizing) property to `false`. In another way, you can cancel the resizing by handling [SfDataGrid.ResizingColumns](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html) event. The `ResizingColumns` event occurs when you start dragging by resizing cursor on headers.
-[ResizingColumnsEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.ResizingColumnsEventArgs.html) of `ResizingColumns` provides information about the columns’s index and width. 
-
-{% tabs %}
-{% highlight c# %}
-this.dataGrid.ResizingColumns += dataGrid_ResizingColumns;
-
-void dataGrid_ResizingColumns(object sender, ResizingColumnsEventArgs e)
-{    
-
-    if(e.ColumnIndex == 1)            
-        e.Cancel = true;         
-}
-{% endhighlight %}
-{% endtabs %}
-
-### Identify resizing of the column gets completed
-
-SfDataGrid allows you to identify the progress of the resizing of columns through [ResizingColumnsEventArgs.Reason](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.ResizingColumnsEventArgs.html#Syncfusion_UI_Xaml_Grid_ResizingColumnsEventArgs_Reason) property. You can get the width of the column after resizing completed by getting [ResizingColumnsEventArgs.Width](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.ResizingColumnsEventArgs.html#Syncfusion_UI_Xaml_Grid_ResizingColumnsEventArgs_Width) when `ResizingColumnsEventArgs.Reason` is [ColumnResizingReason.Resized](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.ColumnResizingReason.html) in [ResizingColumns](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html) event.
-
-{% tabs %}
-{% highlight c# %}
-this.dataGrid.ResizingColumns += OnResizingColumns;
-
-void OnResizingColumns(object sender, ResizingColumnsEventArgs e)
-{
-    if (e.Reason == Syncfusion.UI.Xaml.Grid.ColumnResizingReason.Resized)
-    {
-        var resizedWidth = e.Width;
-    }
-}
-{% endhighlight %}
-{% endtabs %}
-
 ## DataGrid column drag and drop
 
 You can allow end-users to rearrange the columns by drag and drop the column headers by setting [SfDataGrid.AllowDraggingColumns](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_AllowDraggingColumns) to `true`.

@@ -96,6 +96,85 @@ Following are the sequence of sorting orders when clicking column header,
 * Sorts the data in descending order
 * Clears the sorting and records displayed in its initial order
 
+## Initial sort direction
+
+By default, when a column is sorted for the first time by clicking its header, the data is arranged in ascending order. You can change this behavior and specify whether a column should sort in ascending or descending order when sorting is applied for the first time by using `SfTreeGrid.InitialSortDirection` and `TreeGridColumn.InitialSortDirection`.
+
+N> The `TreeGridColumn.InitialSortDirection` takes higher priority than `SfTreeGrid.InitialSortDirection` property.
+
+### Set initial sort direction at WPF Tree Grid level
+
+Use the `SfTreeGrid.InitialSortDirection` property to apply the same initial sort direction to all sortable columns.
+
+{% tabs %}
+{% highlight xaml %}
+
+<syncfusion:SfTreeGrid Name="treeGrid"
+					   AllowSorting="True"
+					   InitialSortDirection="Descending"
+					   AutoExpandMode="RootNodesExpanded"
+					   ChildPropertyName="Children"
+					   ItemsSource="{Binding EmployeeDetails}">
+{% endhighlight %}
+{% highlight c# %}
+this.treeGrid.InitialSortDirection = ListSortDirection.Descending;
+{% endhighlight %}
+{% endtabs %}
+
+In this example, the first time the user sorts any column, it sorts in descending order.
+
+### Set initial sort direction at column level
+
+Use the `TreeGridColumn.InitialSortDirection` property to define the initial sort direction for a specific column.
+
+{% tabs %}
+{% highlight xaml %}
+
+<syncfusion:SfTreeGrid Name="treeGrid"
+					   AllowSorting="True"
+					   AutoGenerateColumns="False"
+					   AutoExpandMode="RootNodesExpanded"
+					   ChildPropertyName="Children"
+					   ItemsSource="{Binding EmployeeDetails}">
+						
+	<syncfusion:SfTreeGrid.Columns>
+		<syncfusion:TreeGridTextColumn MappingName="ID" InitialSortDirection="Descending" />
+		<syncfusion:TreeGridTextColumn MappingName="FirstName" HeaderText="First Name" InitialSortDirection="Ascending" />
+		<syncfusion:TreeGridTextColumn MappingName="LastName" HeaderText="Last Name" />
+	</syncfusion:SfTreeGrid.Columns>
+
+</syncfusion:SfTreeGrid>
+{% endhighlight %}
+{% highlight c# %}
+
+this.treeGrid.Columns["ID"].InitialSortDirection = ListSortDirection.Descending;
+this.treeGrid.Columns["FirstName"].InitialSortDirection = ListSortDirection.Ascending;
+
+{% endhighlight %}
+{% endtabs %}
+
+In this example, the `ID` column starts in descending order when sorted for the first time, the `FirstName` column starts in ascending order, and the `LastName` column uses the grid-level default.
+
+### Initial sorting sequence
+
+When [SfTreeGrid.AllowTriStateSorting](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_AllowTriStateSorting) is enabled, the sorting sequence includes clear sorting after the ascending and descending states.
+
+The sorting sequence is determined by the value of the `InitialSortDirection` property.
+
+When `InitialSortDirection` is set to `Descending`, the sorting cycle follows:
+
+* Descending
+* Ascending
+* Clear sorting
+
+When `InitialSortDirection` is set to `Ascending`, the sorting cycle follows:
+
+* Ascending
+* Descending
+* Clear sorting
+
+N> This property affects the initial sort direction only when a column is sorted for the first time by clicking its header. It does not automatically sort the column when the control is loaded.
+
 ## Multi column sorting
 
 SfTreeGrid control allows you sort more than one column, where sorting is applied one column against other columns. To apply sorting on multiple columns, user have to click the column header by pressing the <kbd>Ctrl</kbd> key.
