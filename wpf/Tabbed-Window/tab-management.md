@@ -299,8 +299,6 @@ tabControl.EnableTabScrolling = true;
 
 {% endtabs %}
 
-![MouseWheel Scrolling](tab-management_images/tabbedwindow_scrolling.gif)
-
 ## NewWindowCreatingEventArgs Properties
 
 | Property       | Type                | Description                                              |

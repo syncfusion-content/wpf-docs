@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Grouping Toast Notifications in WPF Toast Notification | Syncfusion®
-description: Learn how to group related toast notifications using GroupName, enable grouped view, and customize group container headers in the Syncfusion WPF Toast Notification (SfToastNotification) control.
+description: Group related toast notifications and customize group headers in the Syncfusion WPF Toast Notification control.
 platform: wpf
 control: SfToastNotification
 documentation: ug
 ---
 
-## Grouping Toast Notifications
+# Grouping Toast Notifications
 
 You can group related toast notifications by assigning the same value to the [GroupName](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.SfToastNotification.ToastOptions.html#Syncfusion_UI_Xaml_SfToastNotification_ToastOptions_GroupName) property in [ToastOptions](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.SfToastNotification.ToastOptions.html). Grouping helps organize related notifications and reduces clutter when multiple toasts are displayed.
 
@@ -53,7 +53,7 @@ To display a toast in a different group, specify a different group name. Toasts 
 
 ![WPF toast notification group name support](Images/wpf_toast_grouping.png)
 
-### Grouping Toast Notifications
+## Grouping Toast Notifications
 
 You can also customize the header text displayed for the group container using the [GroupContainerHeader](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.SfToastNotification.SfToastNotification.html#Syncfusion_UI_Xaml_SfToastNotification_SfToastNotification_GroupContainerHeader) property. By default, the group container header is displayed as "Notification".
 
