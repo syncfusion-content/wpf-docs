@@ -83,6 +83,76 @@ Following are the sequence of sorting orders when clicking column header,
 * Sorts the data in descending order 
 * Clears the sorting and records displayed in its initial order
 
+## Initial sort direction
+
+By default, when a column is sorted for the first time by clicking its header, the data is arranged in ascending order. You can change this behavior and specify whether a column should sort in ascending or descending order when sorting is applied for the first time by using `SfDataGrid.InitialSortDirection` and `GridColumn.InitialSortDirection`.
+
+N> The `GridColumn.InitialSortDirection` takes higher priority than `SfDataGrid.InitialSortDirection` property.
+
+### Set initial sort direction at WPF Data Grid level
+
+Use the `SfDataGrid.InitialSortDirection` property to apply the same initial sort direction to all sortable columns.
+
+{% tabs %}
+{% highlight xaml %}
+<syncfusion:SfDataGrid x:Name="dataGrid"
+                       AllowSorting="True"
+                       InitialSortDirection="Descending"
+                       ItemsSource="{Binding Orders}" />
+{% endhighlight %}
+{% highlight c# %}
+this.dataGrid.InitialSortDirection = ListSortDirection.Descending;
+{% endhighlight %}
+{% endtabs %}
+
+In this example, the first time the user sorts any column, it sorts in descending order.
+
+### Set initial sort direction at column level
+
+Use the `GridColumn.InitialSortDirection` property to define the initial sort direction for a specific column.
+
+{% tabs %}
+{% highlight xaml %}
+<syncfusion:SfDataGrid x:Name="dataGrid"
+                       AllowSorting="True"
+                       AutoGenerateColumns="False"
+                       ItemsSource="{Binding Orders}">
+
+    <syncfusion:SfDataGrid.Columns>
+        <syncfusion:GridTextColumn MappingName="OrderID" HeaderText="Order ID" InitialSortDirection="Descending" />
+        <syncfusion:GridTextColumn MappingName="CustomerName" HeaderText="Customer Name" InitialSortDirection="Ascending" />
+        <syncfusion:GridTextColumn MappingName="Country" />
+    </syncfusion:SfDataGrid.Columns>
+    
+</syncfusion:SfDataGrid>
+{% endhighlight %}
+{% highlight c# %}
+this.dataGrid.Columns["OrderID"].InitialSortDirection = ListSortDirection.Descending;
+this.dataGrid.Columns["CustomerName"].InitialSortDirection = ListSortDirection.Ascending;
+{% endhighlight %}
+{% endtabs %}
+
+In this example, the `OrderID` column starts in descending order when sorted for the first time, the `CustomerName` column starts in ascending order, and the `Country` column uses the grid-level default.
+
+### Initial sorting sequence
+
+When [SfDataGrid.AllowTriStateSorting](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_AllowTriStateSorting) is enabled, the sorting sequence includes clear sorting after the ascending and descending states.
+
+The sorting sequence is determined by the value of the `InitialSortDirection` property.
+
+When `InitialSortDirection` is set to `Descending`, the sorting cycle follows:
+
+* Descending
+* Ascending
+* Clear sorting
+
+When `InitialSortDirection` is set to `Ascending`, the sorting cycle follows:
+
+* Ascending
+* Descending
+* Clear sorting
+
+N> This property affects the initial sort direction only when a column is sorted for the first time by clicking its header. It does not automatically sort the column when the control is loaded.
 
 ## Multi column sorting
 
