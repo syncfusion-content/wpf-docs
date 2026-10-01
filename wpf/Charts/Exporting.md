@@ -106,7 +106,7 @@ The following code examples illustrates the usage of this method:
 {% highlight C# %}
 
 private void ExportAsXps_Click(object sender, RoutedEventArgs e)
-{             
+{
     SampleChart.SaveAsXps(Chart_Export.xps);
 }
 
