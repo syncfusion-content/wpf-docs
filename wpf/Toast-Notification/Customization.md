@@ -170,3 +170,77 @@ SfToastNotification.Show(this, new ToastOptions
 {% endtabs %}
 
 ![SfToastNotification Close Button](Images/CloseButton-image.png)
+
+## Custom Position
+
+The [ToastOptions](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.SfToastNotification.ToastOptions.html) class provides flexible toast positioning. Use the [Placement](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.SfToastNotification.ToastOptions.html#Syncfusion_UI_Xaml_SfToastNotification_ToastOptions_Placement) property with a built-in [ToastPlacement](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.SfToastNotification.ToastPlacement.html) value, and use `HorizontalOffset` and `VerticalOffset` to adjust the toast relative to that placement. To position a toast at exact coordinates, set `Placement` to `Custom` and specify the `X` and `Y` coordinates. Positive and negative offset values move the toast relative to its selected placement. When `Placement` is set to `Custom`, `X` and `Y` specify the toast position directly.
+
+{% tabs %}
+{% highlight C# %}
+
+// Apply offsets to a built-in placement.
+SfToastNotification.Show(this, new ToastOptions
+{
+    Mode = ToastMode.Screen,
+    Placement = ToastPlacement.BottomRight,
+    Title = "Offset Toast",
+    Message = "This toast is displayed with custom offsets.",
+    HorizontalOffset = -50.0,
+    VerticalOffset = 20.0
+});
+
+![WPF toast notification custom position](Images/wpf_customoffset.gif)
+
+// Display a toast at an exact position.
+SfToastNotification.Show(this, new ToastOptions
+{
+    Mode = ToastMode.Window,
+    Placement = ToastPlacement.Custom,
+    Title = "Custom positioned toast",
+    Message = "This toast is displayed at the specified coordinates.",
+    X = 200,
+    Y = 450,
+    PreventAutoClose = true
+});
+
+{% endhighlight %}
+{% endtabs %}
+
+![WPF toast notification custom position](Images/wpf_customXY.gif)
+
+N> Absolute coordinates disable automatic stacking so each toast remains at its defined location. Offsets with predefined placements retain the normal stacking behavior.
+
+## Toast Distance Customization
+
+Use the [Spacing](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.SfToastNotification.SfToastNotification.html#Syncfusion_UI_Xaml_SfToastNotification_SfToastNotification_Spacing) property to customize the vertical distance between stacked toast notifications. The spacing value is applied globally to the toasts displayed by [SfToastNotification](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.SfToastNotification.SfToastNotification.html).
+
+{% tabs %}
+{% highlight XAML %}
+
+<TextBox Name="ToastSpacingTextBox"
+         Text="8"
+         Height="20"
+         Width="80"
+         TextAlignment="Center" />
+
+<Button Content="Show Toasts"
+        Click="Button_Click" />
+
+{% endhighlight %}
+
+{% highlight C# %}
+
+private void Button_Click(object sender, RoutedEventArgs e)
+{
+    SfToastNotification.Spacing = double.Parse(ToastSpacingTextBox.Text);
+
+    SfToastNotification.Show(this, new ToastOptions
+    {
+        Mode = ToastMode.Screen
+    });
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+![WPF toast notification distance customization](Images/wpf_custom_distance.gif)
