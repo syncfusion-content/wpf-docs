@@ -94,8 +94,8 @@ Chart has built-in support for exporting to the XPS file format, providing scala
 
 The following methods used to export the chart as an XPS file:
 
-* `SaveAsXps(string fileName)` - Exports the chart as an XPS file with the specified file name to the desired location.
-* `SaveAsXps(Stream stream)` - Exports the chart as an XPS file using the specified stream.
+* [`SaveAsXps(string fileName)`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartBase.html#Syncfusion_UI_Xaml_Charts_ChartBase_SaveAsXps_System_String_) - Exports the chart as an XPS file with the specified file name to the desired location.
+* [`SaveAsXps(Stream stream)`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartBase.html#Syncfusion_UI_Xaml_Charts_ChartBase_SaveAsXps_System_String_) - Exports the chart as an XPS file using the specified stream.
 
 ### SaveAsXps(string fileName)
 
