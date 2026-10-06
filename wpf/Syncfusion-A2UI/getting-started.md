@@ -11,12 +11,12 @@ documentation: ug
 
 This section explains the steps to add and configure the [Syncfusion® A2UI for WPF](https://a2ui.org/specification/v0.9-a2ui/) package in a WPF application. Follow the steps below to integrate the A2UI renderer and render A2UI v0.9 content using Syncfusion® WPF controls.
 
-The Syncfusion® A2UI for WPF package converts streamed [A2UI v0.9](https://a2ui.org/specification/v0.9-a2ui/) messages into a `SurfaceModel` that is rendered as Syncfusion® WPF controls - **DataGrid**, **Chart**, **Scheduler**, **Calendar**, **RichTextEditor**, **PdfViewer**, **TreeView**, **Maps**, **Gauges**, and more.
+The Syncfusion® A2UI for WPF package converts streamed [A2UI v0.9](https://a2ui.org/specification/v0.9-a2ui/) messages into a `SurfaceModel` that is rendered as Syncfusion® WPF controls - **DataGrid**, **SfChart**, **Scheduler**, **CalendarEdit**, **Syntax Editor**, **PdfViewer**, **SfTreeView**, **SfMap**, **Diagram**, **DockingManager**, **Ribbon**, **SfGantt**, and more.
 
 The runtime is composed of two NuGet packages:
 
 - `Syncfusion.A2UI.Core` - the framework-agnostic A2UI v0.9 engine.
-- `Syncfusion.A2UI.WPF` - the WPF renderer that adds Syncfusion® WPF control adapters on top of the engine. When you call `SyncfusionWpfCatalogBuilder.BuildRegistry()` it transitively brings in every Syncfusion® WPF control package the renderers depend on (`Syncfusion.SfGrid.WPF`, `Syncfusion.SfChart.WPF`, `Syncfusion.SfSchedule.WPF`, `Syncfusion.SfRichTextBoxAdv.WPF`, `Syncfusion.PdfViewer.WPF`, `Syncfusion.SfDiagram.WPF`, and more).
+- `Syncfusion.A2UI.WPF` - the WPF renderer that adds Syncfusion® WPF control adapters on top of the engine. When you call `SyncfusionWpfCatalogBuilder.BuildRegistry()` it transitively brings in every Syncfusion® WPF control package the renderers depend on (`Syncfusion.Shared.WPF`, `Syncfusion.Tools.WPF`, `Syncfusion.SfInput.WPF`, `Syncfusion.SfGrid.WPF`, `Syncfusion.SfChart.WPF`, `Syncfusion.SfScheduler.WPF`, `Syncfusion.SfDiagram.WPF`, `Syncfusion.SfMaps.WPF`, `Syncfusion.SfImageEditor.WPF`, `Syncfusion.SfHeatMap.WPF`, `Syncfusion.SfTreeView.WPF`, `Syncfusion.Edit.WPF`, `Syncfusion.PdfViewer.WPF`, `Syncfusion.Gantt.WPF`, and more).
 
 > Syncfusion® A2UI for WPF is currently in **preview (beta)** and will be published on NuGet under the package `Syncfusion.A2UI.WPF` (with `Syncfusion.A2UI.Core` as a transitive dependency).
 
@@ -51,7 +51,7 @@ Before proceeding, ensure the following are set up:
 
 1. Install [.NET 8 SDK](https://dotnet.microsoft.com/en-us/download/dotnet/8.0) or later.
 2. Set up a WPF environment with Visual Studio Code.
-3. Ensure that the .NET desktop workloads are installed and configured as described [here](https://learn.microsoft.com/en-us/dotnet/desktop/wpf/get-started/create-app-visual-studio-code?view=netdesktop-8.0).
+3. Ensure that the .NET desktop workloads are installed and configured as described [here](https://learn.microsoft.com/en-us/dotnet/desktop/wpf/get-started/create-app-visual-studio).
 
 ## Step 1: Create a new WPF project
 
@@ -62,7 +62,7 @@ Before proceeding, ensure the following are set up:
 
 ## Step 2: Install the Syncfusion<sup>®</sup> WPF A2UI NuGet package
 
-1. Press <kbd>Ctrl</kbd> + <kbd>`</kbd> (backtick) to open the integrated terminal in Visual Studio Code.
+1. Press <kbd>Ctrl</kbd> + <kbd>`</kbd> to open the integrated terminal in Visual Studio Code.
 2. Ensure you are in the project root directory where your .csproj file is located.
 3. Run the command `dotnet add package Syncfusion.A2UI.WPF` to install the Syncfusion<sup>®</sup> A2UI for WPF package.
 4. To ensure all dependencies are installed, run `dotnet restore`.
@@ -76,7 +76,7 @@ Before proceeding, ensure the following are set up:
 
 1. Install [.NET 8 SDK](https://dotnet.microsoft.com/en-us/download/dotnet/8.0) or later.
 2. Set up a WPF environment with JetBrains Rider 2024.3 or later.
-3. Make sure the .NET desktop workloads are installed and configured as described [here](https://www.jetbrains.com/help/rider/Getting_started_with_WPF_Applications.html).
+3. Make sure the .NET desktop workloads are installed and configured as described [here](https://www.jetbrains.com/help/rider/Get_started_with_net_desktop_apps.html).
 
 ## Step 1: Create a new WPF project
 
@@ -93,7 +93,7 @@ Before proceeding, ensure the following are set up:
 {% endtabcontent %}
 {% endtabcontents %}
 
-> The Syncfusion® WPF control packages the renderer depends on (`Syncfusion.SfGrid.WPF`, `Syncfusion.SfChart.WPF`, `Syncfusion.SfSchedule.WPF`, `Syncfusion.SfRichTextBoxAdv.WPF`, etc.) come in transitively from `Syncfusion.A2UI.WPF`. No separate `dotnet add package` is needed. See [Supported Components](./supported-components) for the full list of control families the agent can render.
+> The Syncfusion® WPF control packages the renderer depends on (`Syncfusion.Shared.WPF`, `Syncfusion.Tools.WPF`, `Syncfusion.SfInput.WPF`, `Syncfusion.SfGrid.WPF`, `Syncfusion.SfChart.WPF`, `Syncfusion.SfScheduler.WPF`, `Syncfusion.SfDiagram.WPF`, `Syncfusion.SfMaps.WPF`, `Syncfusion.SfImageEditor.WPF`, `Syncfusion.SfHeatMap.WPF`, `Syncfusion.SfTreeView.WPF`, `Syncfusion.Edit.WPF`, `Syncfusion.PdfViewer.WPF`, `Syncfusion.Gantt.WPF`, etc.) come in transitively from `Syncfusion.A2UI.WPF`. No separate `dotnet add package` is needed. See [Supported Components](./supported-components) for the full list of control families the agent can render.
 
 ## Register the A2UI catalog
 
@@ -122,7 +122,7 @@ var host = new SurfaceHost(syncfusionRegistry);
 {% endhighlight %}
 {% endtabs %}
 
-> The A2UI v0.9 `MessageProcessor` and `SurfaceModel` types are part of `Syncfusion.A2UI.Core` and expose the four-message lifecycle (`createSurface`, `updateComponents`, `updateDataModel`, `deleteSurface`). `A2uiSurface` and `SurfaceHost` consume the resulting `SurfaceModel`.
+> The A2UI v0.9 `MessageProcessor` and `SurfaceModel` types are part of `Syncfusion.A2UI.Core` and expose the four-message life cycle (`createSurface`, `updateComponents`, `updateDataModel`, `deleteSurface`). `A2uiSurface` and `SurfaceHost` consume the resulting `SurfaceModel`.
 
 ## Register the Syncfusion® license key
 

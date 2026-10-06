@@ -9,7 +9,7 @@ documentation: ug
 
 # About Syncfusion® A2UI Overview
 
-The `Syncfusion® A2UI for WPF` package brings the [A2UI v0.9](https://a2ui.org/specification/v0.9-a2ui/) agent-to-UI protocol to WPF applications, enabling AI agents to dynamically generate rich, interactive user interfaces using Syncfusion® WPF controls. Instead of returning plain text or HTML, applications can display fully functional controls such as **DataGrid**, **Chart**, **Scheduler**, **RichTextEditor**, **Image Editor**, and more through structured UI messages - significantly reducing manual UI development effort.
+The `Syncfusion® A2UI for WPF` package brings the [A2UI v0.9](https://a2ui.org/specification/v0.9-a2ui/) agent-to-UI protocol to WPF applications, enabling AI agents to dynamically generate rich, interactive user interfaces using Syncfusion® WPF controls. Instead of returning plain text or HTML, applications can display fully functional controls such as **SfDataGrid**, **SfChart**, **SfScheduler**, **SfImageEditor**, **SfDiagram**, **PdfViewer**, **Ribbon**, and more through structured UI messages - significantly reducing manual UI development effort.
 
 > The package is currently in preview (beta) and may undergo API enhancements before its first stable release. The underlying **A2UI v0.9 wire format** remains stable, with future updates expected to be additive and backward compatible.
 
@@ -19,7 +19,7 @@ Before installing Syncfusion® A2UI for WPF, ensure you have:
 
 - An existing **WPF application** targeting **.NET 8**, **.NET 9**, or **.NET 10** on Windows.
 - The companion `Syncfusion.A2UI.Core` runtime - a framework-agnostic protocol engine that ships as a transitive dependency of the WPF package. The Core engine also supports Blazor, MAUI, WinForms, and ASP.NET Core hosts.
-- The Syncfusion® WPF packages that back the controls the agent is expected to render - for example, `Syncfusion.SfGrid.WPF`, `Syncfusion.SfChart.WPF`, `Syncfusion.SfSchedule.WPF`, `Syncfusion.SfRichTextBoxAdv.WPF`, `Syncfusion.PdfViewer.WPF`, `Syncfusion.SfDiagram.WPF`, `Syncfusion.SfMaps.WPF`, `Syncfusion.SfTreeMap.WPF`, and `Syncfusion.SfHeatMap.WPF`. Install only the packages for the controls you intend to use.
+- The Syncfusion® WPF packages that back the controls the agent is expected to render - for example, `Syncfusion.Shared.WPF`, `Syncfusion.Tools.WPF`, `Syncfusion.SfInput.WPF`, `Syncfusion.SfGrid.WPF`, `Syncfusion.SfChart.WPF`, `Syncfusion.SfScheduler.WPF`, `Syncfusion.SfDiagram.WPF`, `Syncfusion.SfMaps.WPF`, `Syncfusion.SfImageEditor.WPF`, `Syncfusion.SfHeatMap.WPF`, `Syncfusion.SfTreeView.WPF`, `Syncfusion.Edit.WPF`, `Syncfusion.PdfViewer.WPF`, and `Syncfusion.Gantt.WPF`. Install only the packages for the controls you intend to use.
 - An [A2UI v0.9-compatible agent](https://a2ui.org/specification/v0.9-a2ui/) that emits messages conforming to the four-message lifecycle - `createSurface`, `updateComponents`, `updateDataModel`, and `deleteSurface`.
 - A registered Syncfusion® license key if your application also uses other Syncfusion® controls outside the A2UI surface.
 
@@ -39,7 +39,7 @@ The `Syncfusion® A2UI for WPF` package provides the Syncfusion® implementation
 - Renders AI-generated surfaces as fully .NET WPF controls and delivers a consistent experience on Windows desktop.
 - Offers a configurable rendering framework that allows developers to extend, customize, and integrate AI-driven experiences into existing WPF applications.
 
-As a result, AI agents can dynamically generate rich, interactive user experiences with controls such as **DataGrid**, **Chart**, **Scheduler**, **RichTextEditor**, **Image Editor**, **Maps**, **PDF Viewer**, **PropertyGrid**, **TreeView**, **TreeMap**, **Diagram**, **Gantt**, and more - without requiring developers to manually create and connect each UI element.
+As a result, AI agents can dynamically generate rich, interactive user experiences with controls such as **SfDataGrid**, **SfChart**, **SfScheduler**, **SfImageEditor**, **SfMap**, **PdfViewer**, **PropertyGrid**, **SfTreeView**, **SfDiagram**, **SfGantt**, **DockingManager**, **Ribbon**, and more - without requiring developers to manually create and connect each UI element.
 
 ## Core concepts
 
@@ -72,20 +72,21 @@ The package is for teams that want to combine the power of a generative AI agent
 - **Customer support / CRM teams** that need the agent to show real, interactive forms and reports, not just text suggestions.
 - **Anyone shipping Syncfusion® WPF UIs** who wants the same controls to be reachable from a chat surface, an MCP server, or an autonomous agent.
 
-Because each adapter renders a Syncfusion® WPF control, generated surfaces inherit the capabilities of the underlying controls - accessibility support, keyboard navigation, themeable visuals, and consistent behavior on Windows desktop.
+Because each adapter renders a Syncfusion® WPF control, generated surfaces inherit the capabilities of the underlying controls, including accessibility support, keyboard navigation, customizable visuals, and consistent behavior on Windows desktop.
 
 ## What you get in the package
 
 - **A2UI primitives** — `Column`, `Row`, `Text`, `Image`, `Icon`, `Divider`, `Card`, `Modal`, `Tabs`, `List`, `Button`, `TextField`, `CheckBox`, `Slider`, `ChoicePicker`, `DateTimeInput`, `AudioPlayer`, `Video` (18 basic catalog renderers). Real visuals ship for `Text`, `Button`, `Row`, and `Column`; the rest fall back to typed placeholders that participate in layout.
 - **Syncfusion® WPF control adapters** - 48 components covering the Syncfusion® WPF suite, including:
   - **Data Grid** and **PropertyGrid** for tabular data and property editing.
-  - **Scheduler**, **Calendar**, and **Kanban** for scheduling, date selection, and workflow boards.
-  - **Maps**, **TreeMap**, **HeatMap**, **Diagram**, and **Gantt** for geospatial, hierarchical, graph, and project surfaces.
-  - **Rich Text Editor**, **Syntax Editor** (`Syncfusion.Edit.WPF`), and **Markdown Viewer** for document and code workflows.
-  - **Inputs** - ButtonAdv, ComboBoxAdv, SfTextBoxExt, MaskedEdit, CurrencyTextBox, IntegerTextBox, DomainUpDown, DateTimeEdit, ColorPickerPalette, DropDownButtonAdv, SplitButtonAdv.
-  - **Layout & Navigation** - CardView, Accordion, TabControlExt, TabNavigation, ToolBarAdv, Menu, Ribbon, Docking, NavigationDrawer, NavigationPane, RadialMenu, TreeNavigator, TaskBar, TreeView.
-  - **Display & Feedback** - AvatarView, BusyIndicator, CircularProgressBar, StepProgressBar, Rating, AIAssistView, ChromelessWindow.
-  - **Viewers & Document** - PdfViewer, ImageEditor, MarkdownViewer.
+  - **SfScheduler** (`Syncfusion.UI.Xaml.Scheduler`) and **CalendarEdit** (`Syncfusion.Windows.Shared`) for scheduling and date selection.
+  - **SfMap** (`Syncfusion.UI.Xaml.Maps`), **SfHeatMap** (`Syncfusion.UI.Xaml.HeatMap`), **SfDiagram** (`Syncfusion.UI.Xaml.Diagram`), and **SfGantt** (`Syncfusion.Windows.Controls.Gantt`) for geospatial, matrix, graph, and project surfaces.
+  - **Syntax Editor** (`Syncfusion.Windows.Edit.EditControl` from `Syncfusion.Edit.WPF`) and **Markdown Viewer** (`Syncfusion.UI.Xaml.Markdown.SfMarkdownViewer`) for code and document workflows.
+  - **AIAssistView** (`Syncfusion.UI.Xaml.Chat.SfAIAssistView`) and **ChromelessWindow** (`Syncfusion.Windows.Shared.ChromelessWindow`) for AI-driven and shell-style surfaces.
+  - **Inputs** - `ButtonAdv`, `ComboBoxAdv`, `SfTextBoxExt`, `SfMaskedEdit`, `CurrencyTextBox`, `IntegerTextBox`, `SfDomainUpDown`, `DateTimeEdit`, `ColorPickerPalette`, `DropDownButtonAdv`, `SplitButtonAdv`, `SfRating`.
+  - **Layout & Navigation** - `CardView`, `SfAccordion`, `TabControlExt`, `TabNavigationControl`, `ToolBarAdv` (on `ToolBarTrayAdv`), `MenuAdv`, `Ribbon` (built from `ToolBarAdv` + `TabControlExt`), `DockingManager`, `SfNavigationDrawer`, `GroupBar`, `SfRadialMenu`, `SfRadialSlider`, `SfTreeNavigator`, `TaskBar`, `SfTreeView`.
+  - **Display & Feedback** - `SfAvatarView`, `SfBusyIndicator`, `SfCircularProgressBar`, `SfStepProgressBar`, `SfRating`.
+  - **Viewers & Document** - `PdfViewerControl` (from `Syncfusion.PdfViewer.WPF`), `SfImageEditor` (from `Syncfusion.SfImageEditor.WPF`), `SfMarkdownViewer` (from `Syncfusion.SfMarkdownViewer.WPF`).
 - **WPF app-builder extensions** - `SyncfusionWpfCatalogBuilder.BuildRegistry()`, `SyncfusionCatalogFactory.Create()`, and `BasicCatalogFactory.Create()` register the `WpfComponentRegistry`, the combined catalog, the basic catalog, and the markdown renderer.
 - **Registry-driven surface control** - `A2uiSurface` (a WPF `ContentControl`) auto-builds a complete registry from the bundled builders and walks the `SurfaceComponentsModel` to produce the visual tree.
 - **Markdown rendering** - `BasicMarkdownRenderer` provides a CommonMark subset (**bold**, *italic*, `code`, [link](url), and # headings) out of the box; hosts can plug a richer `IA2uiMarkdownRenderer` into `A2uiMarkdownContext.Renderer`.
