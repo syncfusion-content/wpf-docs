@@ -858,9 +858,9 @@ this.dataGrid.Columns.Add(new GridTextColumn()
 
 ### Character casing
 
-`GridTextColumn` provides support for controlling the casing of text manually entered by users during editing through the **CharacterCasing** property.
+`GridTextColumn` provides support for controlling the casing of text manually entered by users during editing through the [CharacterCasing](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridTextColumn.html#Syncfusion_UI_Xaml_Grid_GridTextColumn_CharacterCasing) property.
 
-You can automatically convert user-entered text to uppercase or lowercase by setting the property to `Upper` or `Lower`, respectively. The default value of **CharacterCasing** property is `Normal`.
+You can automatically convert user-entered text to uppercase or lowercase by setting the property to `Upper` or `Lower`, respectively. The default value of `CharacterCasing` property is `Normal`.
 
 {% tabs %}
 {% highlight xaml %}
