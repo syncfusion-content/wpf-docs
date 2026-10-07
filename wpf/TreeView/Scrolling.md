@@ -92,7 +92,7 @@ private void BringIntoView_Click(object sender, RoutedEventArgs e)
 
 ## Horizontal scrolling
 
-By default, the horizontal scrollbar is not enabled in the WPF TreeView. To enable horizontal scrolling based on the content, set [ScrollViewer.HorizontalScrollBarVisibility](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.scrollviewer.horizontalscrollbarvisibility?view=netcore-3.1) to `Auto`.
+By default, the horizontal scrollbar is not enabled in the WPF TreeView. To enable horizontal scrolling based on the content, set [ScrollViewer.HorizontalScrollBarVisibility](https://learn.microsoft.com/en-us/dotnet/api/system.windows.controls.scrollviewer.horizontalscrollbarvisibility?view=netcore-3.1) to `Auto`.
 
 {% tabs %}
 {% highlight xaml %}

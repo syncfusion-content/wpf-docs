@@ -265,7 +265,7 @@ series.AdornmentsInfo = new ChartAdornmentInfo3D()
 
 {% endtabs %}
 
-Refer to [`Adornments`](https://help.syncfusion.com/wpf/SfChart3D/Adornments) to learn more about the options to customize chart adornments.
+Refer to [`Adornments`](https://help.syncfusion.com/wpf/sfchart3d/adornments/datamarkers) to learn more about the options to customize chart adornments.
 
 ## Enable legend
 

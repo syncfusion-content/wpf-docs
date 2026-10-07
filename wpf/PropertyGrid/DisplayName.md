@@ -9,11 +9,11 @@ documentation: ug
 
 # Display Name Support in WPF PropertyGrid
 
-By default, the property name is displayed in the [WPF PropertyGrid](https://www.syncfusion.com/wpf-ui-controls/propertygrid). We can change the display name of the properties instead of the property name by using attributes and events.
+By default, the property name is displayed in the [WPF PropertyGrid](https://www.syncfusion.com/wpf-controls/propertygrid). We can change the display name of the properties instead of the property name by using attributes and events.
 
 ## Change property display name using attributes
 
-We can give a meaningful name to the properties that are displayed in the [WPF PropertyGrid](https://www.syncfusion.com/wpf-ui-controls/propertygrid) instead of the property name by using the [Name](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.dataannotations.displayattribute.name?view=netframework-4.8#System_ComponentModel_DataAnnotations_DisplayAttribute_Name) field of the [Display](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.dataannotations.displayattribute?view=netframework-4.8) attribute and the [DisplayName](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.displaynameattribute?view=netframework-4.8) attribute.
+We can give a meaningful name to the properties that are displayed in the [WPF PropertyGrid](https://www.syncfusion.com/wpf-controls/propertygrid) instead of the property name by using the [Name](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.dataannotations.displayattribute.name?view=netframework-4.8) field of the [Display](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.dataannotations.displayattribute?view=netframework-4.8) attribute and the [DisplayName](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.displaynameattribute?view=netframework-4.8) attribute.
 
 {% tabs %}
 {% highlight C# %}

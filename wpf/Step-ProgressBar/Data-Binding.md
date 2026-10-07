@@ -13,11 +13,11 @@ You can add a [StepViewItem](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xa
 
 ## Data binding to Objects
 
-The [SfStepProgressBar](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.ProgressBar.SfStepProgressBar.html) can bound to an external source to auto-create [StepViewItem](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.ProgressBar.StepViewItem.html) and display the data using the [ItemsSource](https://docs.microsoft.com/en-us/previous-versions/windows/silverlight/dotnet-windows-silverlight/ms593015(v=vs.95)#:~:text=You%20can%20add%20items%20to,items%20property%20are%20read%2Donly.) property.   
+The [SfStepProgressBar](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.ProgressBar.SfStepProgressBar.html) can bound to an external source to auto-create [StepViewItem](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.ProgressBar.StepViewItem.html) and display the data using the [ItemsSource](https://learn.microsoft.com/en-us/previous-versions/windows/silverlight/dotnet-windows-silverlight/ms593015(v=vs.95))#:~:text=You%20can%20add%20items%20to,items%20property%20are%20read%2Donly.) property.   
 
-N> To bind the [ItemsSource](https://docs.microsoft.com/en-us/previous-versions/windows/silverlight/dotnet-windows-silverlight/ms593015(v=vs.95)#:~:text=You%20can%20add%20items%20to,items%20property%20are%20read%2Donly.) to [SfStepProgressBar](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.ProgressBar.SfStepProgressBar.html), you need to have a collection with a data object which holds the step view item details.
+N> To bind the [ItemsSource](https://learn.microsoft.com/en-us/previous-versions/windows/silverlight/dotnet-windows-silverlight/ms593015(v=vs.95))#:~:text=You%20can%20add%20items%20to,items%20property%20are%20read%2Donly.) to [SfStepProgressBar](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.ProgressBar.SfStepProgressBar.html), you need to have a collection with a data object which holds the step view item details.
 
-Here, the `StepItem` class defined with [Content](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.contentcontrol.content?view=net-5.0) and its properties, and the `ViewModel` class has the [ItemsSource](https://docs.microsoft.com/en-us/previous-versions/windows/silverlight/dotnet-windows-silverlight/ms593015(v=vs.95)#:~:text=You%20can%20add%20items%20to,items%20property%20are%20read%2Donly.) property of type `ObservableCollection<StepItem>`.
+Here, the `StepItem` class defined with [Content](https://learn.microsoft.com/en-us/dotnet/api/system.windows.controls.contentcontrol.content?view=net-5.0) and its properties, and the `ViewModel` class has the [ItemsSource](https://learn.microsoft.com/en-us/previous-versions/windows/silverlight/dotnet-windows-silverlight/ms593015(v=vs.95))#:~:text=You%20can%20add%20items%20to,items%20property%20are%20read%2Donly.) property of type `ObservableCollection<StepItem>`.
 
 {% tabs %}
 {% highlight C# %}
@@ -159,7 +159,7 @@ Download demo from [GitHub](https://github.com/SyncfusionExamples/WPF-StepProgre
 
 ## Data-Binding with XML
 
-An XML file can also be used as the [ItemsSource](https://docs.microsoft.com/en-us/previous-versions/windows/silverlight/dotnet-windows-silverlight/ms593015(v=vs.95)#:~:text=You%20can%20add%20items%20to,items%20property%20are%20read%2Donly.) for the Step Progress Bar control. The following example shows this.
+An XML file can also be used as the [ItemsSource](https://learn.microsoft.com/en-us/previous-versions/windows/silverlight/dotnet-windows-silverlight/ms593015(v=vs.95))#:~:text=You%20can%20add%20items%20to,items%20property%20are%20read%2Donly.) for the Step Progress Bar control. The following example shows this.
 
 Create an XML file with the following information and name it Data.xml.
 

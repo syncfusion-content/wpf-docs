@@ -227,7 +227,7 @@ You can clean and build the extension project, it will generate the design-time 
 
 N> You can create a standalone report designer application with the help of given [Getting Started Documentation](/wpf/reportdesigner/getting-started). 
 
-You can download the extension project with barcode custom report item for report designer from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Syncfusion.Extensions.BarcodeDesigner647552659).
+You can download the extension project with barcode custom report item for report designer from [here](https://s3.amazonaws.com/files2.syncfusion.com/dtsupport/directtrac/general/ze/Syncfusion.Extensions.BarcodeDesigner647552659.zip).
 
 ## Deploy a custom report item
 

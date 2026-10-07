@@ -52,4 +52,4 @@ GroupSelection support is also provided under selection support where the whole 
 
 ## see also
 
-[How to highlight group selection](https://www.syncfusion.com/kb/7654/how-to-highlight-group-selection) 
+[How to highlight group selection](https://support.syncfusion.com/kb/article/6797/how-to-highlight-group-selection) 

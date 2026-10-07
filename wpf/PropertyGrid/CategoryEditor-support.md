@@ -9,7 +9,7 @@ documentation: ug
 
 # CategoryEditor support in WPF PropertyGrid
 
-The [WPF PropertyGrid](https://www.syncfusion.com/wpf-ui-controls/propertygrid) control supports several built-in editors. `CategoryEditor` support enables us to set the related properties (one or more properties) under a single or multiple categories based on the need. The `CategoryEditor` can be applied in the category view. In the sorted view, the default editors will be applied.
+The [WPF PropertyGrid](https://www.syncfusion.com/wpf-controls/propertygrid) control supports several built-in editors. `CategoryEditor` support enables us to set the related properties (one or more properties) under a single or multiple categories based on the need. The `CategoryEditor` can be applied in the category view. In the sorted view, the default editors will be applied.
 
 ## Adding Category Editor to WPF PropertyGrid
 

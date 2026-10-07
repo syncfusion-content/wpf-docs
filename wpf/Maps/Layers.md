@@ -376,11 +376,11 @@ N> You can also explore our [WPF Map example](https://github.com/syncfusion/wpf-
 
 ## See also
 
-[How to customize the markers in maps](https://www.syncfusion.com/kb/7656/how-to-customize-the-markers-in-maps)
+[How to customize the markers in maps](https://support.syncfusion.com/kb/article/6824/how-to-customize-the-markers-in-maps)
 
-[How to drilldown map layers](https://www.syncfusion.com/kb/7647/how-to-drilldown-map-layers)
+[How to drilldown map layers](https://support.syncfusion.com/kb/article/6771/how-to-drilldown-map-layers-in-wpf-application)
 
-[How to specify ItemTemplate to shape file layer](https://www.syncfusion.com/kb/10001/how-to-specify-itemtemplate-to-shape-file-layer) 
+[How to specify ItemTemplate to shape file layer](https://support.syncfusion.com/kb/article/8886/how-to-specify-itemtemplate-to-shape-file-layer) 
 
-[How to render custom data source in WPF Map](https://www.syncfusion.com/kb/3237/how-to-render-customdatasource-in-sfmap)
+[How to render custom data source in WPF Map](https://support.syncfusion.com/kb/article/3412/how-to-render-customdatasource-in-wpf-map)
 

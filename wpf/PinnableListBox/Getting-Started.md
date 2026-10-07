@@ -110,7 +110,7 @@ pinnableListBox.Items.Add(new PinnableListBoxItem() { Content = "AutoComplete" }
 
 ## Bind data
 
-You can populate the PinnableListBox control using the [ItemsSource](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.itemscontrol.itemssourceproperty?view=netframework-4.7.2) property. 
+You can populate the PinnableListBox control using the [ItemsSource](https://learn.microsoft.com/en-us/dotnet/api/system.windows.controls.itemscontrol.itemssourceproperty?view=netframework-4.7.2) property. 
 
 * **Model.cs**
 

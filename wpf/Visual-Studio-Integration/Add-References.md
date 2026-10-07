@@ -61,7 +61,7 @@ To add the Syncfusion® assembly references in Visual Studio, follow the steps b
 
    **Themes Option:** Choose the necessary themes based on your requirements. To learn more about the built-in themes and their available assemblies, click the link below.
 
-   [https://help.syncfusion.com/wpf/themes/](https://help.syncfusion.com/wpf/themes)
+   [https://help.syncfusion.com/wpf/themes//](https://help.syncfusion.com/wpf/themes/)
 
    ![Themes selection option in Syncfusion Reference Manger](Syncfusion-Reference-Manger_images/Syncfusion-Reference-Manger-img5.png)
 
@@ -78,7 +78,7 @@ To add the Syncfusion® assembly references in Visual Studio, follow the steps b
 
    ![Syncfusion Reference Manager success status in Visual Studio status bar](Syncfusion-Reference-Manger_images/Syncfusion-Reference-Manger-img8.png)
 
-6. Then, a message box stating that Syncfusion® license registration is required will be shown if you installed the trial setup or NuGet packages, since Syncfusion® introduced the licensing system starting with the 2018 Volume 2 (v16.2.0.41) Essential Studio® release. Navigate to the [help topic](https://help.syncfusion.com/common/essential-studio/licensing/overview#how-to-generate-syncfusion-license-key), which is shown in the licensing message box, to generate and register the Syncfusion® license key in your project. Refer to this [blog](https://www.syncfusion.com/blogs/post/whats-new-in-2018-volume-2.aspx) post to understand the licensing changes introduced in Essential Studio®.
+6. Then, a message box stating that Syncfusion® license registration is required will be shown if you installed the trial setup or NuGet packages, since Syncfusion® introduced the licensing system starting with the 2018 Volume 2 (v16.2.0.41) Essential Studio® release. Navigate to the [help topic](https://help.syncfusion.com/common/essential-studio/licensing/overview#how-to-generate-syncfusion-license-key), which is shown in the licensing message box, to generate and register the Syncfusion® license key in your project. Refer to this [blog](https://www.syncfusion.com/blogs/post/whats-new-in-2018-volume-2) post to understand the licensing changes introduced in Essential Studio®.
 
    ![Syncfusion license registration required information dialog in Syncfusion Reference Manager](Syncfusion-Reference-Manger_images/Syncfusion-Reference-Manger-img9.png)
 

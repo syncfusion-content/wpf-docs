@@ -15,7 +15,7 @@ The [WPF Range Slider](https://www.syncfusion.com/wpf-controls/range-slider) dis
 
 ## Thumb ToolTip Precision  
 
-[ThumbToolTipPrecision](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfRangeSlider~ThumbToolTipPrecision.html) property is used to define the precision of the value displayed in the tooltip.  
+[ThumbToolTipPrecision](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfRangeSlider.html#Syncfusion_Windows_Controls_Input_SfRangeSlider_ThumbToolTipPrecision) property is used to define the precision of the value displayed in the tooltip.  
 
 
 {% tabs %}
@@ -84,7 +84,7 @@ N> Default value of `ToolTipFormat` is N.
 
 ## Thumb ToolTip Position 
 
-The position of the Thumb tooltip in relation to the Thumb can be controlled by the [ThumbToolTipPlacement](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfRangeSlider~ThumbToolTipPlacement.html) property. It has the following options.  
+The position of the Thumb tooltip in relation to the Thumb can be controlled by the [ThumbToolTipPlacement](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfRangeSlider.html#Syncfusion_Windows_Controls_Input_SfRangeSlider_ThumbToolTipPlacement) property. It has the following options.  
 
 1. BottomRight 
 2. TopLeft 
@@ -211,7 +211,7 @@ No Tooltip appears.
 
 ## ThumbInterval
 
-[ThumbInterval](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfRangeSlider~ThumbInterval.html) is an interval between the two thumbs, the thumbs cannot be moved within this range.
+[ThumbInterval](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfRangeSlider.html#Syncfusion_Windows_Controls_Input_SfRangeSlider_ThumbInterval) is an interval between the two thumbs, the thumbs cannot be moved within this range.
 
 {% tabs %}
 

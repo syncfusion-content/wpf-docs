@@ -43,7 +43,7 @@ tileViewControl.Items.Add(new TileViewItem() { Header = "Item 4",
 
 ![TileViewItems with various foreground](Appearance_images/Foreground.png)
 
-N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-tileview-control-examples/blob/master/Samples/Appearance)
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-tileview-control-examples/tree/master/Samples/Appearance)
 
 ## Setting the background
 
@@ -77,7 +77,7 @@ tileViewControl.Items.Add(new TileViewItem() { Header = "Item 4",
 
 ![TileViewItems with various background](Appearance_images/Background.png)
 
-N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-tileview-control-examples/blob/master/Samples/Appearance)
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-tileview-control-examples/tree/master/Samples/Appearance)
 
 ## Setting the border
 
@@ -115,7 +115,7 @@ tileViewControl.Items.Add(new TileViewItem() { Header = "Item 4", Content = "Con
 
 ![TileViewItems with various border colors](Appearance_images/BorderBrush.png)
 
-N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-tileview-control-examples/blob/master/Samples/Appearance)
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-tileview-control-examples/tree/master/Samples/Appearance)
 
 ## Change flow direction
 
@@ -142,7 +142,7 @@ tileViewControl.FlowDirection = FlowDirection.RightToLeft;
 
 ![TileViewControl with right to left flow direction](Appearance_images/rtl.png)
 
-N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-tileview-control-examples/blob/master/Samples/Appearance)
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-tileview-control-examples/tree/master/Samples/Appearance)
 
 ### Change flow direction for specific TileViewItem
 
@@ -178,7 +178,7 @@ tileViewControl.Items.Add(new TileViewItem() { Header = "Item 4",
 
 ![Particular TileViewItem flow direction changed](Appearance_images/TileViewItem_rtl.png)
 
-N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-tileview-control-examples/blob/master/Samples/Appearance)
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-tileview-control-examples/tree/master/Samples/Appearance)
 
 ## Theme
 

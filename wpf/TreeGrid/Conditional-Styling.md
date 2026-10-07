@@ -147,7 +147,7 @@ internal class StyleConverter : IValueConverter
 
 ## Style cells using triggers
 
-The record cells ([TreeGridCell](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridCell.html)) can be customized by setting [Style.Triggers](https://docs.microsoft.com/en-us/dotnet/api/system.windows.style.triggers?redirectedfrom=MSDN&view=net-5.0#System_Windows_Style_Triggers) that apply property values based on specified conditions. Multiple conditions can be specified by setting [MultiDataTrigger](https://docs.microsoft.com/en-us/dotnet/api/system.windows.multidatatrigger?redirectedfrom=MSDN&view=net-5.0).
+The record cells ([TreeGridCell](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridCell.html)) can be customized by setting [Style.Triggers](https://learn.microsoft.com/en-us/dotnet/api/system.windows.style.triggers?redirectedfrom=MSDN&view=net-5.0) that apply property values based on specified conditions. Multiple conditions can be specified by setting [MultiDataTrigger](https://learn.microsoft.com/en-us/dotnet/api/system.windows.multidatatrigger?redirectedfrom=MSDN&view=net-5.0).
 
 {% tabs %}
 {% highlight xaml %}

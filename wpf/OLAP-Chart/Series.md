@@ -203,7 +203,7 @@ End Sub
 
 {% seealso %}
 
-[Chart Series](http://help.syncfusion.com/wpf/sfchart/series)
+[Chart Series](https://help.syncfusion.com/wpf/charts/seriestypes/series)
 
 {% endseealso %}
 

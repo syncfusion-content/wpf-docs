@@ -9,7 +9,7 @@ documentation: ug
 
 # Printing in WPF SfTreeGrid
 
-The printing feature can be achieved by exporting the tree grid to PDF and printing the exported PDF using the [PdfViewerControl](https://help.syncfusion.com/wpf/pdf-viewer/printing-pdf-files) .
+The printing feature can be achieved by exporting the tree grid to PDF and printing the exported PDF using the [PdfViewerControl](https://help.syncfusion.com/document-processing/pdf/pdf-viewer/wpf/printing-pdf-files) .
 
 {% tabs %}
 {% highlight c# %}

@@ -66,7 +66,7 @@ private void SfMultiColumn_AutoGeneratingColumn(object sender, AutoGeneratingCol
 {% endhighlight %}
 {% endtabs %}
 
-[AutoGeneratingColumnArgs](http://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.AutoGeneratingColumnArgs.html) provides the information about the auto-generated column to the `AutoGeneratingColumn` event. [AutoGeneratingColumnArgs.Column](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.AutoGeneratingColumnArgs.html#Syncfusion_UI_Xaml_Grid_AutoGeneratingColumnArgs_Column) property returns the newly created column.
+[AutoGeneratingColumnArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.AutoGeneratingColumnArgs.html) provides the information about the auto-generated column to the `AutoGeneratingColumn` event. [AutoGeneratingColumnArgs.Column](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.AutoGeneratingColumnArgs.html#Syncfusion_UI_Xaml_Grid_AutoGeneratingColumnArgs_Column) property returns the newly created column.
 
 ### Cancel column generation for particular property
 
@@ -167,7 +167,7 @@ Below screenshot shows the customized header template loaded on the header of Co
 You can also set the column width based on certain logic by setting [SfMultiColumnDropDownControl.GridColumnSizer](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfMultiColumnDropDownControl.html#Syncfusion_UI_Xaml_Grid_SfMultiColumnDropDownControl_GridColumnSizer). You can refer here to know more about the [GridColumn.ColumnSizer](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridColumn.html#Syncfusion_UI_Xaml_Grid_GridColumn_ColumnSizer).
 In the below code, `GridLengthUnitType.Star` is sets as `GridColumnSizer` for equally sets the column widths.
 
-You can [refer here](http://help.syncfusion.com/wpf/sfdatagrid/columns#column-sizing) to know more about the column sizing.
+You can [refer here](https://help.syncfusion.com/wpf/datagrid/columns) to know more about the column sizing.
 
 {% tabs %}
 {% highlight xaml %}

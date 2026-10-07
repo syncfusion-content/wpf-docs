@@ -696,7 +696,7 @@ private void ListView_PreviewMouseMove(object sender, System.Windows.Input.Mouse
 {% endhighlight %}
 {% endtabs %}
 
-Sample for dragging and dropping the items between list view and treegrid: [Sample](https://github.com/SyncfusionExamples/how-to-drag-and-drop-rows-in-wpf-between-listview-and-treegrid).
+Sample for dragging and dropping the items between list view and treegrid: [Sample](https://github.com/SyncfusionExamples/how-to-drag-and-drop-rows-in-wpf-and-uwp-between-listview-and-treegrid).
 
 ![Drag and Drop between WPF TreeGrid and Listview Controls](Row-Drag-and-Drop_images/wpf-treegrid-drag-and-drop-between-controls.jpeg)
 

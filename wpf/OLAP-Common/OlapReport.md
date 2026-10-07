@@ -58,13 +58,13 @@ Architecture of Items
 
 ### Dimension element
 
-A simple [dimension](https://docs.microsoft.com/en-us/dotnet/api/microsoft.analysisservices.dimension?redirectedfrom=MSDN&view=sqlserver-2016) object is composed of basic information such as name, hierarchy, level, and members. You can create a dimension element by specifying its name and providing the hierarchy and level name.
+A simple [dimension](https://learn.microsoft.com/en-us/dotnet/api/microsoft.analysisservices.dimension?redirectedfrom=MSDN&view=sqlserver-2016) object is composed of basic information such as name, hierarchy, level, and members. You can create a dimension element by specifying its name and providing the hierarchy and level name.
 
 The dimension element contains the hierarchical details and information about each included level elements in that hierarchy. A hierarchy can have any number of level elements and the level elements can have any number of members and the member elements can have any number of child members.
 
 ### Hierarchy element
 
-Each element of a dimension can be summarized using a [hierarchy](http://en.wikipedia.org/wiki/Hierarchy). The hierarchy is a series of parent-child relationship, where a parent member represents the consolidation of members which are its children. Parent members can be further aggregated as the children of another parent.
+Each element of a dimension can be summarized using a [hierarchy](https://en.wikipedia.org/wiki/Hierarchy). The hierarchy is a series of parent-child relationship, where a parent member represents the consolidation of members which are its children. Parent members can be further aggregated as the children of another parent.
 
 For example, May 2005 can be summarized into Second Quarter 2005 which in turn would be summarized in the year 2005.
 

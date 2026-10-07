@@ -86,7 +86,7 @@ tileViewControl.Items.Add(new TileViewItem() { Content = "Content 4",
 
 ![TileViewItem selected by mouse click](Working-with-TileView_images/Selection.gif)
 
-N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-tileview-control-examples/blob/master/Samples/Getting-Started)
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-tileview-control-examples/tree/master/Samples/Getting-Started)
 
 ### Select TileViewItem programmatically using property
 
@@ -121,7 +121,7 @@ tileViewControl.Items.Add(new TileViewItem() { Content = "Content 4",
 
 ![Particular TileViewItem selected by using IsSelected property](Working-with-TileView_images/IsSelected.png)
 
-N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-tileview-control-examples/blob/master/Samples/Getting-Started)
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-tileview-control-examples/tree/master/Samples/Getting-Started)
 
 ## Selected item changed notification
 
@@ -189,7 +189,7 @@ tileViewControl.SplitterVisibility = Visibility.Visible;
 
 ![Displaying the TileViewItem splitter](Working-with-TileView_images/SplitterColor.png)
 
-N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-tileview-control-examples/blob/master/Samples/MinMax-TileItem)
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-tileview-control-examples/tree/master/Samples/MinMax-TileItem)
 
 ## Custom UI of TileViewItem header
 
@@ -221,7 +221,7 @@ You can customize the appearance of `TileViewItem` headers by using the [HeaderT
 
 ![TileViewItem header panel UI changed](TileViewHeader_images/TileView_HeaderTemplate.png)
 
-N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-tileview-control-examples/blob/master/Samples/Custom-UI)
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-tileview-control-examples/tree/master/Samples/Custom-UI)
 
 ### Custom UI of specific TileViewItem header
 
@@ -256,7 +256,7 @@ You can customize the appearance of specific `TileViewItem` headers by using the
 
 ![Specific TileViewItem header panel UI changed](TileViewHeader_images/Tile_HeaderTemplate.png)
 
-N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-tileview-control-examples/blob/master/Samples/Specific-CustomUI)
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-tileview-control-examples/tree/master/Samples/Specific-CustomUI)
 
 ## Custom UI of TileViewItem content
 
@@ -291,7 +291,7 @@ You can customize the appearance of `TileViewItem` content by using the [ItemTem
 
 ![TileViewItem content UI changed](Working-with-TileView_images/ItemTemplate.png)
 
-N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-tileview-control-examples/blob/master/Samples/Custom-UI)
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-tileview-control-examples/tree/master/Samples/Custom-UI)
 
 ### Custom UI of specific TileViewItem content
 
@@ -326,4 +326,4 @@ You can customize the appearance of specific `TileViewItem` content by using the
 
 ![Specific TileViewItem content UI changed](Working-with-TileView_images/Tile_ContentTemplate.png)
 
-N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-tileview-control-examples/blob/master/Samples/Specific-CustomUI)
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-tileview-control-examples/tree/master/Samples/Specific-CustomUI)

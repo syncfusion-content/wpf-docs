@@ -281,7 +281,7 @@ The following screenshot illustrates the AerialWithLabel view.
 
 [Azure Maps](https://learn.microsoft.com/en-us/azure/azure-maps/) can be rendered by setting the [UrlTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.ImageryLayer.html#Syncfusion_UI_Xaml_Maps_ImageryLayer_UrlTemplate) property with the tile server URL provided by the online map provider. A subscription key is required for [Azure Maps](https://learn.microsoft.com/en-us/azure/azure-maps/).
 
-Follow the steps in this [link](https://docs.microsoft.com/en-us/azure/search/search-security-api-keys) to generate an API key, and then add the key to the URL.
+Follow the steps in this [link](https://learn.microsoft.com/en-us/azure/search/search-security-api-keys) to generate an API key, and then add the key to the URL.
 
 N>
 * Refer to [Azure Maps Licensing](https://azure.microsoft.com/en-in/support/legal/).

@@ -13,7 +13,7 @@ The Essential Report Designer helps you design and easily organize the data from
 
 The important features of the Essential Report Designer for WPF are:
 
-* RDL Specification - Supports RDL Specification for the SQL Server 2008 and RDL Specification for the SQL Server 2008 R2 only. List of available report definition formats: https://msdn.microsoft.com/library/dd297486(SQL.100).aspx.
+* RDL Specification - Supports RDL Specification for the SQL Server 2008 and RDL Specification for the SQL Server 2008 R2 only. List of available report definition formats: https://learn.microsoft.com/en-us/previous-versions/sql/sql-server-2008/dd297486(v=sql.100)).aspx.
 * Data sources - You can use advanced database servers DataSources in Report Designer (SQL and Oracle).
 * Data sets - You can add data sets to the DataSource.
 * Filters - You can select or exclude the data from the dataset using filters.

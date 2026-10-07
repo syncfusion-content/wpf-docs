@@ -13,7 +13,7 @@ This section explains the steps required to build the application with WPF Smith
 
 ## Steps
 
-1. Create a new WPF project using Visual Studio. For more [details](https://learn.microsoft.com/en-us/previous-versions/visualstudio/visual-studio-2008/bb546958(v=vs.90)).
+1. Create a new WPF project using Visual Studio. For more [details](https://learn.microsoft.com/en-us/previous-versions/visualstudio/visual-studio-2008/bb546958(v=vs.90))).
 2. Add the WPF Smith Chart assembly to your application. 
 3. Initialize the smith chart control.
 4. Add a header to the smith chart control.

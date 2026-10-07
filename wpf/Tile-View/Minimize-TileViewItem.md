@@ -39,7 +39,7 @@ tileViewControl.Items.Add(new TileViewItem() { Header = "Item 4" });
 
 ![TileViewItem is minimizing](Minimize_images/Minimize.gif)
 
-N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-tileview-control-examples/blob/master/Samples/MinMax-TileItem)
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-tileview-control-examples/tree/master/Samples/MinMax-TileItem)
 
 ## Direction for minimized items 
 
@@ -66,7 +66,7 @@ tileViewControl.MinimizedItemsOrientation = MinimizedItemsOrientation.Bottom;
 
 ![Minimized TileViewItem direction is changed as bottom](Minimize_images/MinimizedItemsOrientation.png)
 
-N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-tileview-control-examples/blob/master/Samples/MinMax-TileItem)
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-tileview-control-examples/tree/master/Samples/MinMax-TileItem)
 
 ## Allocate size for minimized TileViewItem
 
@@ -93,7 +93,7 @@ tileViewControl.MinimizedItemsPercentage = 50;
 
 ![Allocated certain percentage of the total size to the minimized items](Minimize_images/MinimizedItemsPercentage.png)
 
-N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-tileview-control-examples/blob/master/Samples/MinMax-TileItem)
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-tileview-control-examples/tree/master/Samples/MinMax-TileItem)
 
 ## Change minimized TileViewItem content
 
@@ -132,7 +132,7 @@ tileViewControl.Items.Add(new TileViewItem() { Header = "Item 4",
 
 ![Minimized TileViewItem content changed](Minimize_images/MinimizedItemContent.png)
 
-N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-tileview-control-examples/blob/master/Samples/MinMax-TileItem)
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-tileview-control-examples/tree/master/Samples/MinMax-TileItem)
 
 ## Custom UI of minimized TileViewItem content
 
@@ -167,7 +167,7 @@ You can customize the appearance of minimized `TileViewItem` content by using th
 
 ![Minimized TileViewItem content UI changed](Minimize_images/MinimizedItemTemplate.png)
 
-N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-tileview-control-examples/blob/master/Samples/CustomUI-MinMaxTileItem)
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-tileview-control-examples/tree/master/Samples/CustomUI-MinMaxTileItem)
 
 ## Change minimized TileViewItem header
 

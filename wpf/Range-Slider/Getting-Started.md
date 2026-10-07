@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started with WPF Range Slider (SfRangeSlider)
 
-This section describes how to design a [WPF Range Slider](https://www.syncfusion.com/wpf-controls/range-slider) control in a WPF application and provides an overview of its basic functionalities. The WPF Range Slider is implemented through the [SfRangeSlider](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfRangeSlider.html) class.
+This section describes how to design a [WPF Range Slider](https://www.syncfusion.com/wpf-controls/range-slider) control in a WPF application and provides an overview of its basic functionalities. The WPF Range Slider is implemented through the [SfRangeSlider](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfRangeSlider.html) class.
 
 ## Assembly deployment
 
@@ -22,9 +22,9 @@ Dependent assembly: Syncfusion.SfShared.WPF.dll
 
 ## Creating a simple application with WPF Range Slider
 
-The [SfRangeSlider](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfRangeSlider.html) control can be added to an application using Visual Studio.
+The [SfRangeSlider](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfRangeSlider.html) control can be added to an application using Visual Studio.
 
-Create the WPF application with [SfRangeSlider](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfRangeSlider.html) control as follows:
+Create the WPF application with [SfRangeSlider](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfRangeSlider.html) control as follows:
 
 1. [Creating project](#creating-the-project)
 2. [Adding control via designer](#adding-control-via-designer)
@@ -32,7 +32,7 @@ Create the WPF application with [SfRangeSlider](https://help.syncfusion.com/cr/w
 
 ### Creating the project
 
-The steps to create a [SfRangeSlider](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfRangeSlider.html) control by using Visual Studio in C# are as follows:
+The steps to create a [SfRangeSlider](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfRangeSlider.html) control by using Visual Studio in C# are as follows:
 
 1.	Open Visual Studio.
 
@@ -40,7 +40,7 @@ The steps to create a [SfRangeSlider](https://help.syncfusion.com/cr/wpf/Syncfus
 
 ### Adding a control via designer
 
-[SfRangeSlider](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfRangeSlider.html) control can be added to the application by dragging it from the toolbox and dropping it in a designer view. The following required assembly references will be added automatically:
+[SfRangeSlider](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfRangeSlider.html) control can be added to the application by dragging it from the toolbox and dropping it in a designer view. The following required assembly references will be added automatically:
 
 * Syncfusion.SfInput.WPF
 * Syncfusion.SfShared.WPF
@@ -65,7 +65,7 @@ The steps to create a [SfRangeSlider](https://help.syncfusion.com/cr/wpf/Syncfus
 
 ### Adding a control manually in code
 
-The following code sample shows how to create the [SfRangeSlider](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfRangeSlider.html) from code-behind.
+The following code sample shows how to create the [SfRangeSlider](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfRangeSlider.html) from code-behind.
 
 {% tabs %}
 

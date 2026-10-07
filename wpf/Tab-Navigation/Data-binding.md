@@ -9,7 +9,7 @@ documentation: ug
 
 # Data Binding in WPF Tab Navigation
 
-Business object collections can be easily bound to the Tab Navigation control using [ItemsSource](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.itemscontrol.itemssourceproperty?view=netframework-4.7.2) property. 
+Business object collections can be easily bound to the Tab Navigation control using [ItemsSource](https://learn.microsoft.com/en-us/dotnet/api/system.windows.controls.itemscontrol.itemssourceproperty?view=netframework-4.7.2) property. 
 
 ## Binding IEnumerable
 

@@ -15,7 +15,7 @@ We can combine the properties and club them into expandable groups according to 
 
 ## Grouping using attributes
 
-Properties in the [WPF PropertyGrid](https://www.syncfusion.com/wpf-ui-controls/propertygrid) will be grouped based on the name specified in the [Category](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.categoryattribute?view=netframework-4.8) attribute and the `GroupName` field of the `Display` attribute. If a property item doesn't have any category name, that property will be grouped under the `Misc` category.
+Properties in the [WPF PropertyGrid](https://www.syncfusion.com/wpf-controls/propertygrid) will be grouped based on the name specified in the [Category](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.categoryattribute?view=netframework-4.8) attribute and the `GroupName` field of the `Display` attribute. If a property item doesn't have any category name, that property will be grouped under the `Misc` category.
 
 {% tabs %}
 {% highlight C# %}

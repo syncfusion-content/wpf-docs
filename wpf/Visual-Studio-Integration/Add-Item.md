@@ -65,7 +65,7 @@ The following steps will guide you to add the Syncfusion® WPF components to you
 
 	![Syncfusion WPF Item template Gallery](Add-Item-images/Add-syncfusion-item-details.png)
 
-9.	Then, a message box stating that Syncfusion® license registration is required will be shown if you installed the trial setup or NuGet packages, since Syncfusion® introduced the licensing system starting with the 2018 Volume 2 (v16.2.0.41) Essential Studio® release. Navigate to the [help topic](https://help.syncfusion.com/common/essential-studio/licensing/license-key#how-to-generate-syncfusion-license-key), which is shown in the licensing message box, to generate and register the Syncfusion® license key in your project. Refer to this [blog](https://blog.syncfusion.com/post/Whats-New-in-2018-Volume-2-Licensing-Changes-in-the-1620x-Version-of-Essential-Studio.aspx) post to understand the licensing changes introduced in Essential Studio®.
+9.	Then, a message box stating that Syncfusion® license registration is required will be shown if you installed the trial setup or NuGet packages, since Syncfusion® introduced the licensing system starting with the 2018 Volume 2 (v16.2.0.41) Essential Studio® release. Navigate to the [help topic](https://help.syncfusion.com/common/essential-studio/licensing/overview#how-to-generate-syncfusion-license-key), which is shown in the licensing message box, to generate and register the Syncfusion® license key in your project. Refer to this [blog](https://blog.syncfusion.com/post/Whats-New-in-2018-Volume-2-Licensing-Changes-in-the-1620x-Version-of-Essential-Studio.aspx) post to understand the licensing changes introduced in Essential Studio®.
 
     ![Syncfusion WPF Item template Gallery](Add-Item-images/LicensePage.png)
 

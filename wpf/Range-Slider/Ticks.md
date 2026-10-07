@@ -13,7 +13,7 @@ The [WPF Range Slider](https://www.syncfusion.com/wpf-controls/range-slider) mak
 
 ## Tick Frequency 
 
-The [TickFrequency](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfRangeSlider~TickFrequency.html) property is used to define the number of ticks along the track, based on Minimum and Maximum values. 
+The [TickFrequency](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfRangeSlider.html#Syncfusion_Windows_Controls_Input_SfRangeSlider_TickFrequency) property is used to define the number of ticks along the track, based on Minimum and Maximum values. 
 
 {% tabs %}
 
@@ -95,7 +95,7 @@ The `MinorTickFrequency` property, determines the number of minor ticks on the t
 
 ## Step Frequency  
 
-When the [SnapsTo](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfRangeSlider~SnapsTo.html) property is set to StepValues, the [StepFrequency](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfRangeSlider~StepFrequency.html) property is used to specify the interval between snap points. 
+When the [SnapsTo](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfRangeSlider.html#Syncfusion_Windows_Controls_Input_SfRangeSlider_SnapsTo) property is set to StepValues, the [StepFrequency](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfRangeSlider.html#Syncfusion_Windows_Controls_Input_SfRangeSlider_StepFrequency) property is used to specify the interval between snap points. 
 
 {% tabs %}
 
@@ -132,7 +132,7 @@ When the [SnapsTo](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syn
 
 ## Snaps To 
 
-The [SnapsTo](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfRangeSlider~SnapsTo.html) property determines whether the [SfRangeSlider](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfRangeSlider.html) snaps to steps or ticks. Available options for this property are 
+The [SnapsTo](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfRangeSlider.html#Syncfusion_Windows_Controls_Input_SfRangeSlider_SnapsTo) property determines whether the [SfRangeSlider](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfRangeSlider.html) snaps to steps or ticks. Available options for this property are 
 
 1. StepValues 
 2. Ticks 
@@ -142,7 +142,7 @@ Default option is StepValues and StepFrequency property is used to specify the i
 
 ## Tick Placement 
 
-The [TickPlacement](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfRangeSlider~TickPlacement.html) property is used to determine where to draw tick marks in relation to the track. Available options for this property are 
+The [TickPlacement](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfRangeSlider.html#Syncfusion_Windows_Controls_Input_SfRangeSlider_TickPlacement) property is used to determine where to draw tick marks in relation to the track. Available options for this property are 
 
 1. BottomRight 
 2. Inline 

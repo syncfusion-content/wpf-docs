@@ -9,7 +9,7 @@ documentation: ug
 
 # Time Formatting in WPF TimePicker
 
-The [WPF TimePicker](https://www.syncfusion.com/wpf-ui-controls/timepicker) control allows the user to select and display the time in various formats.
+The [WPF TimePicker](https://www.syncfusion.com/wpf-controls/timepicker) control allows the user to select and display the time in various formats.
 
 ## Display the time using the FormatString
 
@@ -71,4 +71,4 @@ Here, we are only able to select the hour and meridiem value from the `SfTimeSel
 
 Click [here](https://github.com/SyncfusionExamples/wpf-time-picker-examples/tree/master/Samples/Formatting) to download the sample that showcases the edit, display time formatting and time selection formatting by the `SfTimePicker`.
 
-N> A detailed explanation of standard time formatting is available [here](https://docs.microsoft.com/en-us/previous-versions/dotnet/netframework-1.1/az4se3k1(v=vs.71)). The result string produced by these format specifiers are influenced by the settings in the Regional Options control panel. Computers with different cultures or different time settings will generate different result strings.
+N> A detailed explanation of standard time formatting is available [here](https://learn.microsoft.com/en-us/previous-versions/dotnet/netframework-1.1/az4se3k1(v=vs.71))). The result string produced by these format specifiers are influenced by the settings in the Regional Options control panel. Computers with different cultures or different time settings will generate different result strings.

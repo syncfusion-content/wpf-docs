@@ -42,7 +42,7 @@ inputLayout.InputView = new TextBox();
 
 ### Helper text visibility
 
-We can specify the display state of the helper text using the `HelperTextVisibility` property, the type of which is [`Visibility`](https://docs.microsoft.com/en-us/dotnet/api/system.windows.visibility?view=netframework-4.8).
+We can specify the display state of the helper text using the `HelperTextVisibility` property, the type of which is [`Visibility`](https://learn.microsoft.com/en-us/dotnet/api/system.windows.visibility?view=netframework-4.8).
 
 ## Error message
 
@@ -81,7 +81,7 @@ inputLayout.InputView = new TextBox();
 N> Error validations should be done in the application level.
 
 ## Character counter
-Character counter is used when characters need to be limited. Use the `CharMaxLength` property to set the limit for characters. We can specify the display state of the character count using the `CharCountVisibility` property, the type of which is [`Visibility`](https://docs.microsoft.com/en-us/dotnet/api/system.windows.visibility?view=netframework-4.8).
+Character counter is used when characters need to be limited. Use the `CharMaxLength` property to set the limit for characters. We can specify the display state of the character count using the `CharCountVisibility` property, the type of which is [`Visibility`](https://learn.microsoft.com/en-us/dotnet/api/system.windows.visibility?view=netframework-4.8).
 
 
 {% tabs %} 
