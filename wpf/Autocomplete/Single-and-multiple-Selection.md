@@ -190,9 +190,9 @@ The [TokenItemContainerStyle](https://help.syncfusion.com/cr/wpf/Syncfusion.Wind
 
 ![Customize Token Content Using TokenItemContainerStyle](Single_and_multiple_selection_images/TokenItemContainerStyle_Customization.png)
 
-N> The [TokenItemTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_TokenItemTemplate) property is applicable only when [MultiSelectMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_MultiSelectMode) is set to `Token`.
+N> The `TokenItemTemplate` property is applicable only when `MultiSelectMode` is set to `Token`.
 
-N> When displaying images using controls defined inside the [TokenItemTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_TokenItemTemplate), do not set the [ImageMemberPath](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_ImageMemberPath) property simultaneously. Use either the TokenItemTemplate or the ImageMemberPath property to display images in tokens.
+N> When displaying images using controls defined inside the `TokenItemTemplate`, do not set the `ImageMemberPath` property simultaneously. Use either the TokenItemTemplate or the ImageMemberPath property to display images in tokens.
 
 ### Enable autosize in token mode 
 
