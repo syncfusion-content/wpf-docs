@@ -6,7 +6,9 @@ platform: wpf
 control: Themes
 documentation: ug
 ---
+
 # Get Started with Skin Manager in WPF
+Source: https://help.syncfusion.com/wpf/welcome-to-syncfusion-essential-wpf
 
 The [SfSkinManager](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSkinManager.SfSkinManager.html) helps you apply themes for both Syncfusion<sup>&reg;</sup> and Framework controls.
 
