@@ -32,7 +32,7 @@ workBook.SaveAs("Sample.xlsx");
 {% endhighlight %}
 {% endtabs %}
 
-N> SfTreeGrid exports the data to Excel using [XlsIO](https://help.syncfusion.com/document-processing/excel/excel-library/net/overview). You can refer to the [XlsIO documentation](https://help.syncfusion.com/file-formats/xlsio/working-with-excel-worksheet) for manipulating the exported work sheets.
+N> SfTreeGrid exports the data to Excel using [XlsIO](https://help.syncfusion.com/document-processing/excel/excel-library/net/overview). You can refer to the [XlsIO documentation](https://help.syncfusion.com/document-processing/excel/excel-library/net/working-with-excel-worksheet) for manipulating the exported work sheets.
 
 ## Export options
 
@@ -264,7 +264,7 @@ workBook.SaveAs(fileStream);
 {% endhighlight %}
 {% endtabs %}
 
-You can refer to the [XlsIO documentation](https://help.syncfusion.com/file-formats/xlsio/faq).
+You can refer to the [XlsIO documentation](https://help.syncfusion.com/document-processing/excel/excel-library/net/faq).
 
 ### Save Excel using File dialog
 
@@ -315,7 +315,7 @@ if (sfd.ShowDialog() == true)
 
 ### Open exported Excel without saving in disk
 
-You can open the exported workbook without saving by using the [SfSpreadsheet](https://help.syncfusion.com/wpf/spreadsheet/overview) control.
+You can open the exported workbook without saving by using the [SfSpreadsheet](https://help.syncfusion.com/document-processing/excel/spreadsheet/wpf/overview) control.
 
 {% tabs %}
 {% highlight c# %}
@@ -348,7 +348,7 @@ workBook.SaveAsHtml("Sample.html", HtmlSaveOptions.Default);
 {% endhighlight %}
 {% endtabs %}
 
-It is also possible to save the worksheet as HTML by using the [SaveAsHtml](https://help.syncfusion.com/cr/file-formats/Syncfusion.XlsIO.IWorkbook.html#Syncfusion_XlsIO_IWorkbook_SaveAsHtml_System_IO_Stream_) method. You can refer to[XlsIO documentation](https://help.syncfusion.com/file-formats/xlsio/working-with-excel-worksheet#save-worksheet-as-html).
+It is also possible to save the worksheet as HTML by using the [SaveAsHtml](https://help.syncfusion.com/cr/document-processing/Syncfusion.XlsIO.IWorkbook.html) method. You can refer to[XlsIO documentation](https://help.syncfusion.com/document-processing/excel/excel-library/net/working-with-excel-worksheet).
 
 ## Export to mail
 
@@ -431,11 +431,11 @@ workBook.SaveAs("Sample.csv", ",");
 {% endhighlight %}
 {% endtabs %}
 
-Similarly, you can also save the exported worksheet to CSV. Refer to the  [XlsIO documentation.](https://help.syncfusion.com/file-formats/xlsio/working-with-excel-worksheet#save-worksheet-as-csv)
+Similarly, you can also save the exported worksheet to CSV. Refer to the  [XlsIO documentation.](https://help.syncfusion.com/document-processing/excel/excel-library/net/working-with-excel-worksheet)
 
 ## Customize row height and column width 
 
-After exporting the data to Excel, you can set different row heights and column widths for the columns. You can refer to [here](https://help.syncfusion.com/file-formats/xlsio/worksheet-rows-and-columns-manipulation#adjust-row-height-and-column-width) for more information.
+After exporting the data to Excel, you can set different row heights and column widths for the columns. You can refer to [here](https://help.syncfusion.com/document-processing/excel/excel-library/net/worksheet-rows-and-columns-manipulation) for more information.
 
 {% tabs %}
 {% highlight c# %}
@@ -662,7 +662,7 @@ You can perform cell level customizations such as row-level styling, formatting 
 In the following code snippet, NumberFormat for `Employee ID` column is changed in the exported sheet after exporting without using the [CellsExportingEventHandler](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.Converter.TreeGridExcelExportingOptions.html#Syncfusion_UI_Xaml_TreeGrid_Converter_TreeGridExcelExportingOptions_CellsExportingEventHandler).
 
 Reference:
-[https://help.syncfusion.com/file-formats/xlsio/working-with-cell-or-range-formatting](https://help.syncfusion.com/document-processing/excel/excel-library/net/working-with-cell-or-range-formatting)
+[https://help.syncfusion.com/document-processing/excel/excel-library/net/working-with-cell-or-range-formatting](https://help.syncfusion.com/document-processing/excel/excel-library/net/working-with-cell-or-range-formatting)
 
 {% tabs %}
 {% highlight c# %}
@@ -784,7 +784,7 @@ protected override void ExportNodesToExcel(SfTreeGrid treeGrid, TreeNodes nodes,
 {% endhighlight %}
 {% endtabs %}
 
-You can download the sample [here](https://www.syncfusion.com/downloads/support/directtrac/general/ze/ExcelExportingDemo1880731953.zip).
+You can download the sample [here](https://s3.amazonaws.com/files2.syncfusion.com/dtsupport/directtrac/general/ze/ExcelExportingDemo1880731953.zip).
 
 
 N> You can refer to our [WPF TreeGrid](https://www.syncfusion.com/wpf-controls/treegrid) feature tour page for its groundbreaking feature representations. You can also explore our [WPF TreeGrid example](https://github.com/syncfusion/wpf-demos) to know how to render and configure the treegrid.

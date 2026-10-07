@@ -290,7 +290,7 @@ Let us see the procedure for ensuring theme assembly generation for exported the
 
 Rebuild the exported single SDK-Style theme project in `Release` mode to generate the theme assembly.  
 
-The export theme project has default `ThemeStudio.snk` key pair. If it is not required, use the already created private key pair by referring to the export theme project inside the application properties or [Create a new key pair](https://docs.microsoft.com/en-us/dotnet/standard/assembly/create-public-private-key-pair) using Visual Studio if the private key pair was not created externally.
+The export theme project has default `ThemeStudio.snk` key pair. If it is not required, use the already created private key pair by referring to the export theme project inside the application properties or [Create a new key pair](https://learn.microsoft.com/en-us/dotnet/standard/assembly/create-public-private-key-pair) using Visual Studio if the private key pair was not created externally.
 
 Ensure whether the `Sign the assembly` checkbox is clicked or not, to use the private key pair for generating theme assembly.
 

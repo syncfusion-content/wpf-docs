@@ -84,7 +84,7 @@ While filtering, if the node satisfies filter condition, [IsFiltered](https://he
 
 N> SfTreeGrid refreshes the filtering on property change if [SfTreeGrid.LiveNodeUpdateMode ](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_LiveNodeUpdateMode)property is set as `AllowDataShaping`.
 
-You can download the sample from [here](https://www.syncfusion.com/downloads/support/directtrac/general/ze/FilteringDemo-587565594).
+You can download the sample from [here](https://s3.amazonaws.com/files2.syncfusion.com/dtsupport/directtrac/general/ze/FilteringDemo-587565594.zip).
 
 ### Clear filters
 
