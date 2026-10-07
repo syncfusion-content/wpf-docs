@@ -64,8 +64,8 @@ Before proceeding, ensure the following are set up:
 
 1. Press <kbd>Ctrl</kbd> + <kbd>`</kbd> to open the integrated terminal in Visual Studio Code.
 2. Ensure you are in the project root directory where your .csproj file is located.
-3. Run the command `dotnet add package Syncfusion.A2UI.WPF` to install the Syncfusion<sup>®</sup> A2UI for WPF package.
-4. To ensure all dependencies are installed, run `dotnet restore`.
+3. Run the command `dotnet add package Syncfusion.A2UI.WPF` to install the Syncfusion<sup>®</sup> A2UI for WPF package. (The first word in the command is the literal `dotnet` CLI executable name.)
+4. To ensure all dependencies are installed, run `dotnet restore`. (The first word in the command is the literal `dotnet` CLI executable name.)
 
 {% endtabcontent %}
 {% tabcontent JetBrains Rider %}
@@ -88,12 +88,12 @@ Before proceeding, ensure the following are set up:
 
 1. In **Solution Explorer,** right-click the project and choose **Manage NuGet Packages.**
 2. Search for `Syncfusion.A2UI.WPF` and install the latest version.
-3. Ensure the necessary dependencies are installed correctly, and the project is restored. If not, open the Terminal in Rider and manually run: `dotnet restore`.
+3. Ensure the necessary dependencies are installed correctly, and the project is restored. If not, open the Terminal in Rider and manually run: `dotnet restore`. (The first word in the command is the literal `dotnet` CLI executable name.)
 
 {% endtabcontent %}
 {% endtabcontents %}
 
-> The Syncfusion® WPF control packages the renderer depends on (`Syncfusion.Shared.WPF`, `Syncfusion.Tools.WPF`, `Syncfusion.SfInput.WPF`, `Syncfusion.SfGrid.WPF`, `Syncfusion.SfChart.WPF`, `Syncfusion.SfScheduler.WPF`, `Syncfusion.SfDiagram.WPF`, `Syncfusion.SfMaps.WPF`, `Syncfusion.SfImageEditor.WPF`, `Syncfusion.SfHeatMap.WPF`, `Syncfusion.SfTreeView.WPF`, `Syncfusion.Edit.WPF`, `Syncfusion.PdfViewer.WPF`, `Syncfusion.Gantt.WPF`, etc.) come in transitively from `Syncfusion.A2UI.WPF`. No separate `dotnet add package` is needed. See [Supported Components](./supported-components) for the full list of control families the agent can render.
+> The Syncfusion® WPF control packages the renderer depends on (`Syncfusion.Shared.WPF`, `Syncfusion.Tools.WPF`, `Syncfusion.SfInput.WPF`, `Syncfusion.SfGrid.WPF`, `Syncfusion.SfChart.WPF`, `Syncfusion.SfScheduler.WPF`, `Syncfusion.SfDiagram.WPF`, `Syncfusion.SfMaps.WPF`, `Syncfusion.SfImageEditor.WPF`, `Syncfusion.SfHeatMap.WPF`, `Syncfusion.SfTreeView.WPF`, `Syncfusion.Edit.WPF`, `Syncfusion.PdfViewer.WPF`, `Syncfusion.Gantt.WPF`, etc.) come in transitively from `Syncfusion.A2UI.WPF`. No separate `dotnet add package` invocation is needed. See [Supported Components](./supported-components) for the full list of control families the agent can render.
 
 ## Register the A2UI catalog
 
