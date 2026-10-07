@@ -98,13 +98,13 @@ Following are the sequence of sorting orders when clicking column header,
 
 ## Initial sort direction
 
-By default, when a column is sorted for the first time by clicking its header, the data is arranged in ascending order. You can change this behavior and specify whether a column should sort in ascending or descending order when sorting is applied for the first time by using `SfTreeGrid.InitialSortDirection` and `TreeGridColumn.InitialSortDirection`.
+By default, when a column is sorted for the first time by clicking its header, the data is arranged in ascending order. You can change this behavior and specify whether a column should sort in ascending or descending order when sorting is applied for the first time by using [SfTreeGrid.InitialSortDirection](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_InitialSortDirection) and [TreeGridColumn.InitialSortDirection](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridColumnBase.html#Syncfusion_UI_Xaml_Grid_GridColumnBase_InitialSortDirection).
 
 N> The `TreeGridColumn.InitialSortDirection` takes higher priority than `SfTreeGrid.InitialSortDirection` property.
 
 ### Set initial sort direction at WPF Tree Grid level
 
-Use the `SfTreeGrid.InitialSortDirection` property to apply the same initial sort direction to all sortable columns.
+Use the [SfTreeGrid.InitialSortDirection](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_InitialSortDirection) property to apply the same initial sort direction to all sortable columns.
 
 {% tabs %}
 {% highlight xaml %}
@@ -125,7 +125,7 @@ In this example, the first time the user sorts any column, it sorts in descendin
 
 ### Set initial sort direction at column level
 
-Use the `TreeGridColumn.InitialSortDirection` property to define the initial sort direction for a specific column.
+Use the [TreeGridColumn.InitialSortDirection](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridColumnBase.html#Syncfusion_UI_Xaml_Grid_GridColumnBase_InitialSortDirection) property to define the initial sort direction for a specific column.
 
 {% tabs %}
 {% highlight xaml %}
