@@ -9,7 +9,7 @@ documentation: ug
 
 # Icon Support in WPF Menu (MenuAdv)
 
-MenuItemAdv allows users to display an image on the left of the control. Icon for MenuItemAdv can be set by providing the image source as a value for the Icon property of the MenuItemAdv class.
+MenuItemAdv allows users to display an image on the left of the control. An icon for a MenuItemAdv can be set by providing the image source as a value for the Icon property of the MenuItemAdv class.
 
 ## Use Case Scenarios
 
@@ -49,7 +49,7 @@ The Icon support can be added to an application by using the Icon property of Me
 
 ### Properties
 
-The property for the Icon support is described in the following tabulation:
+The property for the Icon support is described in the following table:
 
 
 <table>

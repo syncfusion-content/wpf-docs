@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Check Box and Radio Button Support in MenuAdv | Syncfusion®
+title: Check Box and Radio Button Support in WPF Menu | Syncfusion®
 description: Check box and radio button support in MenuAdv enable selectable and mutually exclusive menu options.
 platform: wpf
 control: MenuAdv
@@ -9,7 +9,7 @@ documentation: ug
 
 # Check Box and Radio Button Support in WPF Menu (MenuAdv)
 
-MenuAdv provides a support for selecting several items. MenuItemAdv can be checked by setting the IsCheckable property of the MenuItemAdv to “true”. You can change the icon type (Check Box or Radio Button) by using the CheckIcon property also it can be checked by using the IsChecked property.
+MenuAdv provides support for selecting several items. MenuItemAdv can be checked by setting the IsCheckable property of the MenuItemAdv to "true". You can change the icon type (Check Box or Radio Button) by using the CheckIconType property. Also, items can be checked by using the IsChecked property.
 
 ### Use Case Scenarios
 
@@ -17,7 +17,7 @@ MenuAdv helps users to use MenuItemAdv with the CheckBox or RadioButton support.
 
 ## Using the Check Box and Radio Button Support in an Application
 
-If you set the CheckIcon property to RadioButton, then MenuItemAdv’s will be grouped based on the value of the GroupName property and end user can select only one item from the group. Similarly, if you set the CheckIcon property to CheckBox, then MenuItemAdv can be checked and unchecked. The Check Box and Radio Button support can be used in an application, as shown in the following the code snippet.
+If you set the CheckIconType property to RadioButton, then the MenuItemAdv items will be grouped based on the value of the GroupName property and the end user can select only one item from the group. Similarly, if you set the CheckIconType property to CheckBox, then MenuItemAdv can be checked and unchecked. The Check Box and Radio Button support can be used in an application, as shown in the following code snippet.
 
 {% highlight xaml %}
 
@@ -62,9 +62,7 @@ If you set the CheckIcon property to RadioButton, then MenuItemAdv’s will be g
 
 ### Properties
 
-The properties for the Check box and Radio button support are described in the following tabulation:   
-
-
+The properties for the Check box and Radio button support are described in the following table:
 
 <table>
 <tr>

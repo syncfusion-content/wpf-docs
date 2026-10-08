@@ -9,7 +9,7 @@ documentation: ug
 
 # InputGestureText Support in WPF Menu (MenuAdv)
 
-InputGestureText is used to set MenuItemAdv to display shortcut keys along with its Header. This support can be utilized by using the InputGestureText property. The value given by using this property will be displayed along with the Header of MenuItemAdv. Also, InputGestureText can be displayed in MenuItemAdv by using the command support. If you set the value of the Command property by using ApplicationCommands the corresponding InputGestureText will be displayed along with its header value automatically.
+InputGestureText is used to display shortcut keys along with the header of a MenuItemAdv. This support can be utilized by using the InputGestureText property. The value given by using this property will be displayed along with the Header of the MenuItemAdv. Also, InputGestureText can be displayed in a MenuItemAdv automatically by using the command support. If you set the value of the Command property by using ApplicationCommands, the corresponding InputGestureText will be displayed along with the header value automatically, as shown below.
 
 ## Use Case Scenarios
 
@@ -17,7 +17,7 @@ MenuAdv helps users to display the shortcut keys along with the MenuItemAdv head
 
 ## Adding the InputGestureText Support to an Application 
 
-The value assigned by using the InputGestureText property will be displayed in MenuItemAdv along with the Header property value of MenuItemAdv. The InputGestureText support can be added to an application, as shown in the following code snippet.
+The value assigned by using the InputGestureText property will be displayed in the MenuItemAdv along with the Header property value of the MenuItemAdv. The InputGestureText support can be added to an application, as shown in the following code snippet.
 
 {% highlight xaml %}
 
@@ -68,7 +68,7 @@ The value assigned by using the InputGestureText property will be displayed in M
 
 ### Properties
 
-The property for the InputGestureText support is described in the following tabulation:
+The property for the InputGestureText support is described in the following table:
 
 
 <table>
