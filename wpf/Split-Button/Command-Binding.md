@@ -16,7 +16,7 @@ The command and command parameter properties allow executing any action on click
 
 {% tabs %}
 {% highlight xaml %}
-
+WPF-1047346
 <Window x:Class="Split_Button_Command_Binding.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
