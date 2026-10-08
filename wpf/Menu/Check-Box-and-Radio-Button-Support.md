@@ -11,7 +11,7 @@ documentation: ug
 
 MenuAdv provides support for selecting several items. MenuItemAdv can be checked by setting the IsCheckable property of the MenuItemAdv to "true". You can change the icon type (Check Box or Radio Button) by using the CheckIconType property. Also, items can be checked by using the IsChecked property.
 
-### Use Case Scenarios
+## Use Case Scenarios
 
 MenuAdv helps users to use MenuItemAdv with the CheckBox or RadioButton support.
 
