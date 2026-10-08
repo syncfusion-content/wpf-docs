@@ -15,7 +15,9 @@ The progress bar for the BreadCrumb control can be displayed or removed.
 
 
 
-## There are two methods to display the progress bar:
+## Display the progress bar
+
+There are two methods to display the progress bar:
 
 1. Calling the ShowProgressBar method in BreadCrumb, which displays the progress bar for a time span of 500 ms.
 
@@ -45,7 +47,9 @@ hierarchyNavigator.ShowProgressBar(new TimeSpan(0, 0, 0, 0, 1000));
 {% endcapture %}
 {{ codesnippet2 | OrderList_Indent_Level_1 }}
 
-### The progress bar can be canceled by using two methods:
+## Cancel the progress bar
+
+The progress bar can be canceled by using two methods:
 
 1. Calling the CancelProgressBar method in BreadCrumb.
 
