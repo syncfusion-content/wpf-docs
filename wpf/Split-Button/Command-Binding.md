@@ -1,6 +1,6 @@
-﻿---
+---
 layout: post
-title: Command Binding in WPF SplitButton | Syncfusion®
+title: Command Binding in WPF SplitButton | Syncfusion�
 description: Bind commands and command parameters to SplitButton and dropdown menu items using ICommand and MVVM patterns.
 platform: wpf
 control: SplitButtonAdv
@@ -9,10 +9,10 @@ documentation: ug
 
 # Command Binding in WPF Split Button
 
-The command and command parameter properties allow to execute any action on clicking either the button or the dropdown menu items.
+The command and command parameter properties allow executing any action on clicking either the button or the dropdown menu items.
 
-* **Command** - The [Command](https://docs.microsoft.com/en-us/dotnet/api/system.windows.input.icommandsource.command?view=netframework-4.8) property accept all commands derived from interface [ICommand](https://docs.microsoft.com/en-us/dotnet/api/system.windows.input.icommand?view=netframework-4.8). 
-* **CommandParameter** - The [CommandParameter](https://docs.microsoft.com/en-us/dotnet/api/system.windows.input.icommandsource.commandparameter?view=netframework-4.8) property allows the user to provide additional data required in the command handler in-order to perform any operation. 
+* **Command** - The [Command](https://learn.microsoft.com/en-us/dotnet/api/system.windows.input.icommandsource.command?view=netframework-4.8) property accepts all commands derived from the interface [ICommand](https://learn.microsoft.com/en-us/dotnet/api/system.windows.input.icommand?view=netframework-4.8). 
+* **CommandParameter** - The [CommandParameter](https://learn.microsoft.com/en-us/dotnet/api/system.windows.input.icommandsource.commandparameter?view=netframework-4.8) property allows the user to provide additional data required in the command handler in order to perform any operation. 
 
 {% tabs %}
 {% highlight xaml %}
@@ -69,7 +69,7 @@ The command and command parameter properties allow to execute any action on clic
             </syncfusion:DropDownMenuGroup >
         </syncfusion:SplitButtonAdv>
     </Grid>
-</window>
+</Window>
 
 {% endhighlight %}
 {% highlight c# %}
@@ -81,7 +81,7 @@ public class DelegateCommand<T> : ICommand
     bool _canExecuteCache = true;
 
     /// <summary>
-    /// Initializes a new instance of the <see cref="DelegateCommand"/> class.
+    /// Initializes a new instance of the <see cref="DelegateCommand{T}"/> class.
     /// </summary>
     /// <param name="method">The method.</param>
     public DelegateCommand(Action<T> method)
@@ -90,7 +90,7 @@ public class DelegateCommand<T> : ICommand
     }
 
     /// <summary>
-    /// Initializes a new instance of the <see cref="DelegateCommand"/> class.
+    /// Initializes a new instance of the <see cref="DelegateCommand{T}"/> class.
     /// </summary>
     /// <param name="method">The method.</param>
     /// <param name="canExecute">The can execute.</param>
@@ -147,14 +147,14 @@ public class DelegateCommand<T> : ICommand
     #region ICommand Members
 
     /// <summary>
-    /// 
+    /// Occurs when changes occur that affect whether the command should execute.
     /// </summary>
     public event EventHandler CanExecuteChanged;
 
     #endregion
 }
 
-class DropDownViewModel: NotificationObject
+public class DropDownViewModel : NotificationObject
 {
     private bool _canperformaction = true;
 

@@ -1,6 +1,6 @@
-﻿---
+---
 layout: post
-title: Events in WPF SplitButton | Syncfusion®
+title: Events in WPF SplitButton | Syncfusion�
 description: Handle SplitButton and dropdown menu item events including click actions and popup opening or closing notifications.
 platform: wpf
 control: SplitButtonAdv
@@ -83,7 +83,7 @@ private void splitbutton_DropDownClosing(object sender, System.ComponentModel.Ca
 
 ## DropDownClosed 
 
-The event occurs before closing the dropdown menu popup and any action can be handled in respective event handler.
+The event occurs before closing the dropdown menu popup and any action can be handled in the respective event handler.
 
 {% tabs %}
 {% highlight xaml %} 
@@ -106,7 +106,7 @@ private void splitbutton_DropDownClosed(object sender, RoutedEventArgs e)
 
 ## Click
 
-The events occurs when the Split Button control is clicked and any action can be handled in the respective event handler.
+The event occurs when the Split Button control is clicked and any action can be handled in the respective event handler.
 
 {% tabs %}
 {% highlight xaml %}
@@ -117,9 +117,9 @@ The events occurs when the Split Button control is clicked and any action can be
 {% highlight c# %}
 
 SplitButtonAdv splitbutton = new SplitButtonAdv();
-splitbuttonbutton.Click += new RoutedEventHandler(splitbuttonbutton_Click);
+splitbutton.Click += new RoutedEventHandler(splitbutton_Click);
 
-private void splitbuttonbutton_Click(object sender, RoutedEventArgs e)
+private void splitbutton_Click(object sender, RoutedEventArgs e)
 {
 
 }
@@ -131,12 +131,12 @@ private void splitbuttonbutton_Click(object sender, RoutedEventArgs e)
 
 ### Click
 
-The events occurs when the dropdown menu item is clicked and any action can be handled in respective event handler.
+The event occurs when the dropdown menu item is clicked and any action can be handled in the respective event handler.
 
 {% tabs %}
 {% highlight xaml %} 
 
-<syncfusion:DropDownMenuItem x:Name="dropDownMenuItem" Click="dropDownMenuItem_Click/> 
+<syncfusion:DropDownMenuItem x:Name="dropDownMenuItem" Click="dropDownMenuItem_Click"/> 
 
 {% endhighlight %} 
 {% highlight C# %} 
@@ -154,20 +154,19 @@ private void dropDownMenuItem_Click(object sender, RoutedEventArgs e)
 
 ### IsCheckedChanged
 
-The events occur when the dropdown menu item is checked or unchecked, that is, only when [IsCheckable](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DropDownMenuItem.html#Syncfusion_Windows_Tools_Controls_DropDownMenuItem_IsCheckable) property is set to **true**. Any action can be handled in the respective event handler.
+The event occurs when the dropdown menu item is checked or unchecked, that is, only when the [IsCheckable](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DropDownMenuItem.html#Syncfusion_Windows_Tools_Controls_DropDownMenuItem_IsCheckable) property is set to **true**. Any action can be handled in the respective event handler.
 
 {% tabs %}
 {% highlight xaml %} 
 
-<syncfusion:DropDownMenuItem x:Name="dropDownMenuItem" IsCheckable="True" IsCheckedChanged="DropDownMenuItem_IsCheckedChanged"/>
+<syncfusion:DropDownMenuItem x:Name="dropDownMenuItem" IsCheckable="True" IsCheckedChanged="dropDownMenuItem_IsCheckedChanged"/>
 
 {% endhighlight %} 
 {% highlight C# %} 
 
 DropDownMenuItem dropDownMenuItem  = new DropDownMenuItem();
-dropDownMenuItem.IsCheckable=true;
-dropDownMenuItem.IsCheckedChanged +=new RoutedEventHandler(dropDownMenuItem_IsCheckedChanged);
-
+dropDownMenuItem.IsCheckable = true;
+dropDownMenuItem.IsCheckedChanged += new PropertyChangedCallback(dropDownMenuItem_IsCheckedChanged);
 private void dropDownMenuItem_IsCheckedChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
 {
 
