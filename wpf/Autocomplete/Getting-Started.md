@@ -115,11 +115,11 @@ namespace TextBoxExt
 
 ## Populating WPF AutoComplete with Data
 
-The WPF AutoComplete is a data-bound control. So before create binding to the control, you must create data model for Application.
+The WPF AutoComplete is a data-bound control. So, before creating a binding to the control, you must create a data model for the application.
 
 For illustration, let us create a textbox, which will populate a list of employees.
 
-1. Create data object class named **Employee** and declare properties as shown below,
+1. Create a data object class named **Employee** and declare properties as shown below,
 
 {% capture codesnippet3 %}
 {% highlight c# %}
@@ -147,7 +147,7 @@ public class Employee
 {{ codesnippet3 | OrderList_Indent_Level_1 }}
 
 
-2. Create a **EmployeeViewModel** class with Employees property and Employees property is initialized with several data objects in constructor.
+2. Create an **EmployeeViewModel** class with an Employees property, and initialize the Employees property with several data objects in the constructor.
 
 {% capture codesnippet4 %}
 {% highlight c# %}
@@ -249,7 +249,7 @@ Suggestions can be shown in number of ways. [SfTextBoxExt](https://help.syncfusi
 <tr>
 <td>Suggest</td>
 <td>
-Shows the suggestion in the drop-down list user.
+Shows the suggestions in the drop-down list.
 </td>
 </tr>
 <tr>
@@ -300,7 +300,7 @@ textBoxExt.AutoCompleteMode = AutoCompleteMode.Suggest;
 
 ## Selection 
 
-By default single selection is enable in WPF AutoComplete control. It can set the [MultiSelectMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_MultiSelectMode) property to specify whether a single or multiple selection.
+By default, single selection is enabled in the WPF AutoComplete control. The [MultiSelectMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_MultiSelectMode) property can be set to specify single or multiple selection.
 
 Index of the selected items can be retrieved using the [SuggestionIndex](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_SuggestionIndex) property. 
 

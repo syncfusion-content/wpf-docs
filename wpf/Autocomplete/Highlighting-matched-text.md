@@ -46,7 +46,7 @@ textBoxExt.TextHighlightMode = OccurrenceMode.FirstOccurrence;
 
 {% endtabs %}
 
-![First Occurrance](Highlighting_matched_text_images/FirstOccurrance.png)
+![First Occurrence](Highlighting_matched_text_images/FirstOccurrance.png)
 
 ## Multiple occurrence
 
@@ -76,7 +76,7 @@ textBoxExt.TextHighlightMode = OccurrenceMode.MultipleOccurrence;
 
 {% endtabs %}
 
-![Multiple Occurrance](Highlighting_matched_text_images/MultipleOccurrance.png)
+![Multiple Occurrence](Highlighting_matched_text_images/MultipleOccurrance.png)
 
 
 ## Unmatched
