@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Command Binding in WPF DropDown Button | Syncfusion®
 description: Execute commands from dropdown menu items and pass command parameters using ICommand and MVVM patterns.
