@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Command Binding in WPF DropDown Button | Syncfusion®
 description: Execute commands from dropdown menu items and pass command parameters using ICommand and MVVM patterns.
@@ -11,8 +11,8 @@ documentation: ug
 
 The command and command parameter properties allow to execute any action on clicking the dropdown menu items.
 
-* **Command** - The [Command](https://docs.microsoft.com/en-us/dotnet/api/system.windows.input.icommandsource.command?view=netframework-4.8) property accept all commands derived from interface [ICommand](https://docs.microsoft.com/en-us/dotnet/api/system.windows.input.icommand?view=netframework-4.8). 
-* **CommandParameter** - The [CommandParameter](https://docs.microsoft.com/en-us/dotnet/api/system.windows.input.icommandsource.commandparameter?view=netframework-4.8) property allows the user to provide additional data required in the command handler in-order to perform any operation. 
+* **Command** - The [Command](https://docs.microsoft.com/en-us/dotnet/api/system.windows.input.icommandsource.command?view=netframework-4.8) property accepts all commands derived from the interface [ICommand](https://docs.microsoft.com/en-us/dotnet/api/system.windows.input.icommand?view=netframework-4.8). 
+* **CommandParameter** - The [CommandParameter](https://docs.microsoft.com/en-us/dotnet/api/system.windows.input.icommandsource.commandparameter?view=netframework-4.8) property allows the user to provide additional data required in the command handler in order to perform any operation. 
 
 {% tabs %}
 {% highlight xaml %}
@@ -67,7 +67,7 @@ The command and command parameter properties allow to execute any action on clic
                 </syncfusion:DropDownMenuGroup >
             </syncfusion:DropDownButtonAdv>
     </Grid>
-    </window>
+</Window>
 
 {% endhighlight %}
 {% highlight c# %}
