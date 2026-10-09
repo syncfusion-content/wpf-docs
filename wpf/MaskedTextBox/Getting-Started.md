@@ -23,7 +23,7 @@ You can find more details about installing the NuGet package in a WPF applicatio
 
 [How to install nuget packages](https://help.syncfusion.com/wpf/installation/install-nuget-packages)
 
-## Adding WPF WPF MaskedTextBox via designer
+## Adding WPF MaskedTextBox via designer
 
 You can add the `SfMaskedEdit` control to an application by dragging it from the toolbox to a view of the designer. The following dependent assembly will be added automatically.
 
@@ -37,11 +37,11 @@ You can add the `SfMaskedEdit` control to an application by dragging it from the
 To add the `SfMaskedEdit` control manually in XAML, follow these steps:
 1. Create a new WPF project in Visual Studio.
 
-2. Add the  following assembly references to the project,
+2. Add the following assembly references to the project,
 
     * Syncfusion.SfInput.WPF
     * Syncfusion.SfShared.WPF
- 
+
 3. Import Syncfusion<sup>®</sup> WPF schema **http://schemas.syncfusion.com/wpf** and declare the `SfMaskedEdit` control in XAML page.
 
 4. Declare the `SfMaskedEdit` control in XAML page.
@@ -73,10 +73,10 @@ To add the `SfMaskedEdit` control manually in C#, follow these steps:
 
 1. Create a new WPF application via Visual Studio.
 
-2. Add the  following assembly references to the project,
+2. Add the following assembly references to the project,
    * Syncfusion.SfInput.WPF
    * Syncfusion.SfShared.WPF
-3. Include the required namespace and create an instance of `SfMaskedEdit` and add it to the window.
+3. Include the required namespace, create an instance of `SfMaskedEdit`, and add it to the window.
 
 4. Declare the `SfMaskedEdit` control using C#.
 
@@ -111,7 +111,7 @@ N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-maskedtext
 
 ## Restrict the user to enter valid data
 
-You can restrict valid input without custom validation by creating a mask pattern. Enable the mask by setting the mask pattern to the [Mask](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfMaskedEdit.html#Syncfusion_Windows_Controls_Input_SfMaskedEdit_Mask) property and set the [MaskType](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfMaskedEdit.html#Syncfusion_Windows_Controls_Input_SfMaskedEdit_MaskType) property to `Regex`. The default value of the `Mask` property is `null`, and the default value of the `MaskType` property is `Simple`.
+You can restrict valid input without custom validation by creating a mask pattern. Enable the mask by setting the mask pattern to the [Mask](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfMaskedEdit.html#Syncfusion_Windows_Controls_Input_SfMaskedEdit_Mask) property and set the [MaskType](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfMaskedEdit.html#Syncfusion_Windows_Controls_Input_SfMaskedEdit_MaskType) property to `RegEx`. The default value of the `Mask` property is `null`, and the default value of the `MaskType` property is `Simple`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -132,9 +132,9 @@ sfMaskedEdit.Mask = @"-?\d+\.?\d*";
 
 ![WPF MaskedTextBox displays Value in RegularExpression](MaskOptions_images/wpf-maskededit-negative-value.png)
 
-Here, the `SfMaskedEdit` accept the positive and negative whole or float type numbers.
+Here, the `SfMaskedEdit` accepts the positive and negative whole or float type numbers.
 
-N> Please refer the [Restrict the user to enter valid data](https://help.syncfusion.com/wpf/maskedtextbox/input-restriction#restrict-the-user-to-enter-valid-data) page to know more about the various mask pattern with examples.
+N> Please refer the [Restrict the user to enter valid data](https://help.syncfusion.com/wpf/maskedtextbox/input-restriction#restrict-the-user-to-enter-valid-data) page to know more about the various mask patterns with examples.
 
 N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-maskedtextbox-examples/tree/master/Samples/InputOptions) in GitHub
 

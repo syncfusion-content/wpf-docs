@@ -23,7 +23,7 @@ Description</th></tr>
 <tr>
 <td>
 []</td><td>
-It denotes the set to define the particular input elements</td></tr>
+It denotes the set to define the particular input elements.</td></tr>
 <tr>
 <td>
 [ABC]</td><td>
@@ -66,20 +66,20 @@ Accepts any non-white space characters.</td></tr>
 Matches a group after the main expression without including it in the result.</td></tr>
 <tr>
 <td>
-(?!subexpression )</td><td>
+(?!subexpression)</td><td>
 Specifies a group that cannot match after the main expression.</td></tr>
 <tr>
 <td>
 {n}</td><td>
-Accepts the input for n number of times.</td></tr>
+Accepts the input n number of times.</td></tr>
 <tr>
 <td>
 {n,}</td><td>
-Accepts the input for 'n' and more than 'n' number of times. </td></tr>
+Accepts the input 'n' or more number of times.</td></tr>
 <tr>
 <td>
 {n,m}</td><td>
-Accepts the input for n minimum number of times and m maximum number of times.</td></tr>
+Accepts the input a minimum of n times and a maximum of m times.</td></tr>
 <tr>
 <td>
 +</td><td>
@@ -91,7 +91,7 @@ Accepts zero or more matches for the preceding character.</td></tr>
 <tr>
 <td>
 ?</td><td>
-Optional input (Zero or one occurrence  of the matching input).</td></tr>
+Optional input (zero or one occurrence of the matching input).</td></tr>
 <tr>
 <td>
 |</td><td>
@@ -124,7 +124,7 @@ sfMaskedEdit.Mask = @"(?=123)\d{3}";
 {% endhighlight %}
 {% endtabs %}
 
-For the input mask `(?=123)\d{3}`. It allows first two digit. While entering the third digit, it will validate the regex and restrict the input. It allows the output only when the MaskText is “123” for this given input.
+For the input mask `(?=123)\d{3}`, the control accepts only the value `123`. While entering the digits, each input is validated against the regex and invalid input is restricted. The output is allowed only when the MaskText is `123`.
 
 ![WPF MaskedTextBox displays Specific Values with Mask](MaskOptions_images/wpf-maskededit-mask-value.jpg)
 
@@ -149,7 +149,7 @@ sfMaskedEdit.Mask = @"(?!55)(?!000)(?!666)\d{3}";
 {% endhighlight %}
 {% endtabs %}
 
-For the input mask `(?!55)(?!000)(?!666)\d{3}` – `\d{3}` denotes that the output will be of 3 character length. `(?55)` denotes the value will not begin with `55`. `(?!000)(?!666)` denotes the output cannot be `000` or `666`.
+For the input mask `(?!55)(?!000)(?!666)\d{3}` – `\d{3}` denotes that the output will be of 3 character length. `(?!55)` denotes the value cannot begin with `55`. `(?!000)(?!666)` denotes the output cannot be `000` or `666`.
 
 ![Restrict Specific Values with Mask in WPF MaskedTextBox](MaskOptions_images/wpf-maskededit-value-restriction.jpg)
 
@@ -300,7 +300,7 @@ By default, the `Value` property holds your input characters, prompt characters,
 
 ### Value without prompt character and literals
 
-If you wants to get only the text entered by the user, use the `ValueMaskFormat` property as `ExcludePromptAndLiterals`. It does not include prompt and literals characters in the `Value` property.
+If you want to get only the text entered by the user, use the `ValueMaskFormat` property as `ExcludePromptAndLiterals`. It does not include prompt and literal characters in the `Value` property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -327,7 +327,7 @@ N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-maskedtext
 
 ### Value with literals
 
-If you wants to get the text entered by the user as well as any literal characters defined in the mask, use the `ValueMaskFormat` property as `IncludeLiterals`. It does not include prompt characters in the `Value` property.
+If you want to get the text entered by the user as well as any literal characters defined in the mask, use the `ValueMaskFormat` property as `IncludeLiterals`. It does not include prompt characters in the `Value` property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -354,7 +354,7 @@ N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-maskedtext
 
 ### Value with prompt character
 
-If you wants to get the text entered by the user as well as any prompt characters defined in the mask, use the `ValueMaskFormat` property as `IncludePrompt`. It does not include literals characters in the `Value` property.
+If you want to get the text entered by the user as well as any prompt characters defined in the mask, use the `ValueMaskFormat` property as `IncludePrompt`. It does not include literal characters in the `Value` property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -381,7 +381,7 @@ N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-maskedtext
 
 ### Value with prompt characters and literals
 
-If you wants to get the text entered by the user as well as any literals and the prompt character defined in the mask , use the `ValueMaskFormat` property as `IncludePromptAndLiterals`. It includes the prompt and literals characters in the `Value` property.
+If you want to get the text entered by the user as well as any literals and the prompt character defined in the mask, use the `ValueMaskFormat` property as `IncludePromptAndLiterals`. It includes the prompt and literal characters in the `Value` property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -412,7 +412,7 @@ You can validate the user input on key press or control lost focus.
 
 ### Input validation on each input entering
 
-You can validate the user input on each input key press. You can enable it by setting the [ValidationMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfMaskedEdit.html#Syncfusion_Windows_Controls_Input_SfMaskedEdit_ValidationMode) property as `KeyPress` . The default value of `ValidationMode` property is `KeyPress`.
+You can validate the user input on each key press. You can enable it by setting the [ValidationMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfMaskedEdit.html#Syncfusion_Windows_Controls_Input_SfMaskedEdit_ValidationMode) property as `KeyPress`. The default value of the `ValidationMode` property is `KeyPress`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -439,7 +439,7 @@ N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-maskedtext
 
 ### Input validation on lost focus
 
-You can validate the user input on when control lost focus. You can enable it by setting the `ValidationMode` property as `LostFocus`. 
+You can validate the user input when the control loses focus. You can enable it by setting the `ValidationMode` property as `LostFocus`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -466,7 +466,7 @@ N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-maskedtext
 
 ## Get the validation result
 
-You can check whether the input validation is succeed or failed by using the [HasError](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfMaskedEdit.html#Syncfusion_Windows_Controls_Input_SfMaskedEdit_HasError) property on once validation is completed. The `HasError` property returns the following results,
+You can check whether the input validation has succeeded or failed by using the [HasError](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfMaskedEdit.html#Syncfusion_Windows_Controls_Input_SfMaskedEdit_HasError) property once validation is completed. The `HasError` property returns the following results,
 
 * **True** - If validation is successful.
 * **False** - If validation is failed.
@@ -492,7 +492,7 @@ sfMaskedEdit.LostFocus += SfMaskedEdit_LostFocus;
 {% endhighlight %}
 {% endtabs %}
 
-You can Get the validation result as follows,
+You can get the validation result as follows,
 
 {% tabs %}
 {% highlight C# %}
@@ -510,7 +510,7 @@ private void SfMaskedEdit_LostFocus(object sender, RoutedEventArgs e) {
 
 ## Indicates error on invalid input
 
-After input validation failed, you can indicate to the user about the invalid input by the showing error border. The error border automatically disappeared when the input validation is succeed. You can change the error border color by using the [ErrorBorderBrush](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfMaskedEdit.html#Syncfusion_Windows_Controls_Input_SfMaskedEdit_ErrorBorderBrush) property. The default value of `ErrorBorderBrush` property is `Red`.
+After input validation fails, you can indicate the invalid input to the user by showing an error border. The error border automatically disappears when the input validation succeeds. You can change the error border color by using the [ErrorBorderBrush](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfMaskedEdit.html#Syncfusion_Windows_Controls_Input_SfMaskedEdit_ErrorBorderBrush) property. The default value of the `ErrorBorderBrush` property is `Red`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -560,7 +560,7 @@ N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-maskedtext
 
 ### Display the prompt character on got focus
 
-By default, the prompt character shown only on while entering the input. If you want to show the prompt character on when control got focus, use the [ShowPromptOnFocus](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfMaskedEdit.html#Syncfusion_Windows_Controls_Input_SfMaskedEdit_ShowPromptOnFocus) property value as `true`. The default vale of `ShowPromptOnFocus` property is `false`. 
+By default, the prompt character is shown only while entering the input. If you want to show the prompt character when the control gets focus, use the [ShowPromptOnFocus](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfMaskedEdit.html#Syncfusion_Windows_Controls_Input_SfMaskedEdit_ShowPromptOnFocus) property with the value `true`. The default value of the `ShowPromptOnFocus` property is `false`.
 
 
 {% tabs %}
@@ -590,7 +590,7 @@ N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-maskedtext
 
 ## Setting the watermark
 
-You can prompt the user with instructions or important information when control is not on focus and any valid character is not entered. You can set watermark by using the [Watermark](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_Watermark) property. The default value of `Watermark` property is `null`.
+You can prompt the user with instructions or important information when the control is not in focus and no valid character has been entered. You can set the watermark by using the [Watermark](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfMaskedEdit.html#Syncfusion_Windows_Controls_Input_SfMaskedEdit_Watermark) property. The default value of the `Watermark` property is `null`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -641,7 +641,7 @@ N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-maskedtext
 
 ## Value changed notification
 
-you can notified when changing the value of `SfMaskedEdit.Value` property by using the [ValueChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfMaskedEdit.html) event.
+You can receive a notification when the value of the `SfMaskedEdit.Value` property changes by using the [ValueChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfMaskedEdit.html) event.
 
 N> Your valid input character is updated to the `Value` property based on the `ValidationMode` property.
 Refer  [Input Validation](https://help.syncfusion.com/wpf/maskedtextbox/input-restriction#input-validation) to know more about the `ValidationMode`.
