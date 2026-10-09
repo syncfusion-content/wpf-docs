@@ -7,7 +7,7 @@ control: NavigationDrawer
 documentation: ug
 ---
 
-# Commands and Events in WPF Navigation Drawer
+# Commands and Events in WPF Navigation Drawer (SfNavigationDrawer)
 
 This section describes the events and command support available in the WPF Navigation Drawer sidebar.
 
@@ -87,7 +87,7 @@ namespace NavigationDrawerWPF
 
         private void NavigationDrawer_Opening(object sender, System.ComponentModel.CancelEventArgs e)
         {
-            // To restrict drawer opening, by setting the e.Cancel value true.
+            // To restrict drawer opening, set the e.Cancel value to true.
         }
     }
 }
@@ -170,7 +170,7 @@ namespace NavigationDrawerWPF
 
         private void NavigationDrawer_Opened(object sender, System.EventArgs e)
         {
-            //Necessary action perform here
+            // Perform the necessary action here.
         }
     }
 }
@@ -338,7 +338,7 @@ namespace NavigationDrawerWPF
 
         private void NavigationDrawer_Closed(object sender, System.EventArgs e)
         {
-            // Necessary action perform here
+            // Perform the necessary action here.
         }
     }
 }
