@@ -1,4 +1,4 @@
-ï»¿---
+---
 layout: post
 title: Dropdown Menu Items in WPF SplitButton | Syncfusion®
 description: Customize dropdown menu items with icons, check states, scrollbars, resizing support, and custom menu content.
