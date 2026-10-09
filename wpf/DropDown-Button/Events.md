@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Events in WPF DropDown Button | Syncfusion®
 description: Handle dropdown opening, closing, selection, and check state events to customize menu interaction behavior.
@@ -9,7 +9,7 @@ documentation: ug
 
 # Events in WPF Dropdown Button (DropDownButtonAdv)
 
-The Dropdown Button control comprises of various pre-defined events to perform any required action that are illustrated below.
+The Dropdown Button control comprises various pre-defined events to perform any required action that are illustrated below.
 
 ## DropDownOpening
 
@@ -112,7 +112,7 @@ The event occurs when the dropdown menu item is clicked and any action can be ha
 {% tabs %}
 {% highlight xaml %} 
 
-<syncfusion:DropDownMenuItem x:Name="dropDownMenuItem" Click="dropDownMenuItem_Click/> 
+<syncfusion:DropDownMenuItem x:Name="dropDownMenuItem" Click="dropDownMenuItem_Click"/> 
 
 {% endhighlight %} 
 {% highlight C# %} 
@@ -142,7 +142,7 @@ The event occurs when the dropdown menu item is checked or unchecked, that is, o
 
 DropDownMenuItem dropDownMenuItem  = new DropDownMenuItem();
 dropDownMenuItem.IsCheckable=true;
-dropDownMenuItem.IsCheckedChanged +=new RoutedEventHandler(dropDownMenuItem_IsCheckedChanged); 
+dropDownMenuItem.IsCheckedChanged += dropDownMenuItem_IsCheckedChanged; 
     
 private void dropDownMenuItem_IsCheckedChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
 {

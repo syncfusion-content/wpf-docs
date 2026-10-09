@@ -25,7 +25,7 @@ The [WPF AutoComplete](https://www.syncfusion.com/wpf-controls/autocomplete) con
                       HighlightedTextColor="Red"
                       TextHighlightMode="MultipleOccurrence"
                       SearchItemPath="Item"
-                      AutoCompleteSource="{Binding DiacriticCollenction}"/>
+                      AutoCompleteSource="{Binding DiacriticCollection}"/>
 
 {% endhighlight %}
 {% highlight c# %}

@@ -21,7 +21,7 @@ Refer [DropDownButtonAdv](https://help.syncfusion.com/wpf/control-dependencies#d
 
 ## Creating simple application with Dropdown Button
 
-In this walk through, will create WPF application that contains Dropdown Button control. By the following ways, one can add the controls:
+In this walkthrough, we will create a WPF application that contains Dropdown Button control. By the following ways, one can add the controls:
 
 1. [Adding control via designer](#adding-control-via-designer)
 
@@ -145,7 +145,7 @@ The label on the button is a text that explains its action to the end-user. Appl
 
 DropDownButtonAdv button = new DropDownButtonAdv();
 button.Label = "Country";
-button.SmallIcon = new BitmapImage(new Uri("Images\flagsmall.png", UriKind.RelativeOrAbsolute)); 
+button.SmallIcon = new BitmapImage(new Uri(@"Images\flagsmall.png", UriKind.RelativeOrAbsolute));
 
 {% endhighlight %}
 {% endtabs %}
@@ -177,7 +177,7 @@ When the mode is set to small, the control is displayed without the label. Only 
 DropDownButtonAdv button = new DropDownButtonAdv();
 button.Label = "Country";
 button.SizeMode = SizeMode.Small; 
-button.SmallIcon = new BitmapImage(new Uri("Images\flagsmall.png", UriKind.RelativeOrAbsolute));
+button.SmallIcon = new BitmapImage(new Uri(@"Images\flagsmall.png", UriKind.RelativeOrAbsolute));
 
 {% endhighlight %}
 {% endtabs %}
@@ -199,7 +199,7 @@ In a normal size button, a small image with the text on the side will be display
 DropDownButtonAdv button = new DropDownButtonAdv();
 button.Label = "Country";
 button.SizeMode = SizeMode.Normal;
-button.SmallIcon = new BitmapImage(new Uri("Images\flagsmall.png", UriKind.RelativeOrAbsolute));
+button.SmallIcon = new BitmapImage(new Uri(@"Images\flagsmall.png", UriKind.RelativeOrAbsolute));
 
 {% endhighlight %}
 {% endtabs %}
@@ -221,7 +221,7 @@ In a large size button, a large image along with the text at the bottom will be 
 DropDownButtonAdv button = new DropDownButtonAdv();
 button.Label = "Country";
 button.SizeMode = SizeMode.Large;
-button.LargeIcon = new BitmapImage(new Uri("Images\flaglarge.png", UriKind.RelativeOrAbsolute));
+button.LargeIcon = new BitmapImage(new Uri(@"Images\flaglarge.png", UriKind.RelativeOrAbsolute));
 
 {% endhighlight %} 
 {% endtabs %}
@@ -292,7 +292,7 @@ The [IconTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.C
 
  ![Setting Icon Template](Getting-Started_images/Getting-Started_img12.png)
 
- N> The [DropDownButtonAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DropDownButton.html) the icon in the following priority order.
+ N> The [DropDownButtonAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DropDownButton.html) uses the icon in the following priority order.
 * [IconTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DropDownButtonAdv.html#Syncfusion_Windows_Tools_Controls_DropDownButtonAdv_IconTemplate)
 * [LargeIcon](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DropDownButtonAdv.html#Syncfusion_Windows_Tools_Controls_DropDownButtonAdv_LargeIcon)
 * [SmallIcon](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DropDownButtonAdv.html#Syncfusion_Windows_Tools_Controls_DropDownButtonAdv_SmallIcon)
@@ -379,7 +379,7 @@ The [IconTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.C
 
  {% endtabs %}
 
- N> The [DropDownButtonAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DropDownButton.html) the icon in the following priority order.
+ N> The [DropDownButtonAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DropDownButton.html) uses the icon in the following priority order.
 * [IconTemplateSelector](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DropDownButtonAdv.html#Syncfusion_Windows_Tools_Controls_DropDownButtonAdv_IconTemplateSelector)
 * [IconTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DropDownButtonAdv.html#Syncfusion_Windows_Tools_Controls_DropDownButtonAdv_IconTemplate)
 * [LargeIcon](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DropDownButtonAdv.html#Syncfusion_Windows_Tools_Controls_DropDownButtonAdv_LargeIcon)
@@ -405,7 +405,7 @@ The **SmallIcon** property can be set as follows:
 DropDownButtonAdv button = new DropDownButtonAdv();
 button.Label = "Syncfusion";
 button.SizeMode = SizeMode.Small;
-button.SmallIcon = new BitmapImage(new Uri("Images\syncfusion.png", UriKind.RelativeOrAbsolute));
+button.SmallIcon = new BitmapImage(new Uri(@"Images\syncfusion.png", UriKind.RelativeOrAbsolute));
 
 {% endhighlight %} 
 {% endtabs %}
@@ -425,7 +425,7 @@ The **SmallIcon** property can be set even when the sizeMode is **Normal**.
 DropDownButtonAdv button = new DropDownButtonAdv();
 button.Label = "Syncfusion";
 button.SizeMode = SizeMode.Normal;
-button.SmallIcon = new BitmapImage(new Uri("Images\syncfusion.png", UriKind.RelativeOrAbsolute)); 
+button.SmallIcon = new BitmapImage(new Uri(@"Images\syncfusion.png", UriKind.RelativeOrAbsolute)); 
 
 {% endhighlight %} 
 {% endtabs %}
@@ -445,7 +445,7 @@ The **LargeIcon** property can be set as follows:
 DropDownButtonAdv button = new DropDownButtonAdv();
 button.Label = "Syncfusion";
 button.SizeMode = SizeMode.Large;
-button.LargeIcon = new BitmapImage(new Uri("Images\syncfusion.png", UriKind.RelativeOrAbsolute)); 
+button.LargeIcon = new BitmapImage(new Uri(@"Images\syncfusion.png", UriKind.RelativeOrAbsolute)); 
 
 {% endhighlight %}
 {% endtabs %}
@@ -469,7 +469,7 @@ DropDownButtonAdv button1 = new DropDownButtonAdv();
 button1.Label = "Syncfusion";
 button1.IconWidth=20;
 button1.IconHeight=20;
-button1.SmallIcon = new BitmapImage(new Uri("Images\syncfusion.png", UriKind.RelativeOrAbsolute));
+button1.SmallIcon = new BitmapImage(new Uri(@"Images\syncfusion.png", UriKind.RelativeOrAbsolute));
 
 {% endhighlight %}
 {% endtabs %}
@@ -488,7 +488,7 @@ DropDownButtonAdv button2 = new DropDownButtonAdv();
 button2.Label = "Syncfusion";
 button2.IconWidth=30;
 button2.IconHeight=30;
-button2.SmallIcon = new BitmapImage(new Uri(Images\syncfusion.png", UriKind.RelativeOrAbsolute));
+button2.SmallIcon = new BitmapImage(new Uri(@"Images\syncfusion.png", UriKind.RelativeOrAbsolute));
 
 {% endhighlight %}
 {% endtabs %}
@@ -501,7 +501,7 @@ N> View [sample](https://github.com/SyncfusionExamples/wpf-dropdown-button-examp
 
 The [DropDownMenuGroup](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DropDownMenuGroup.html) acts as a container for the Dropdown Button control. It provides options to add menu items and also options like header name, re-sizing and scrollbar.
 
-N> For more information on how to bind data with command actions for Dropdown Button please refer to the topics [Data Binding](https://github.com/SyncfusionExamples/wpf-dropdown-button-examples/tree/master/Samples/Data-Binding) and [Command Binding](https://github.com/SyncfusionExamples/wpf-dropdown-button-examples/tree/master/Samples/Command-Binding).
+N> For more information on how to bind data with command actions for Dropdown Button please refer to the topics [Data Binding](https://help.syncfusion.com/wpf/dropdown-button/data-binding) and [Command Binding](https://help.syncfusion.com/wpf/dropdown-button/command-binding).
 
 {% tabs %}
 {% highlight xaml %} 
@@ -533,7 +533,7 @@ N> For more information on how to bind data with command actions for Dropdown Bu
             </syncfusion:DropDownMenuGroup>
         </syncfusion:DropDownButtonAdv>
     </Grid>
-</window>
+</Window>
 
 {% endhighlight %} 
 {% highlight c# %} 

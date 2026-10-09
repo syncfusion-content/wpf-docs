@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Dropdown Direction in WPF DropDown Button | Syncfusion®
 description: Control the position of the dropdown popup using configurable directions such as left, right, top, and bottom.
@@ -11,7 +11,7 @@ documentation: ug
 
 Dropdown direction is used to change the position of the popup being loaded while clicking the dropdown arrow. The direction can be changed using the [DropDirection](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DropDownButtonAdv.html#Syncfusion_Windows_Tools_Controls_DropDownButtonAdv_DropDirection) enumeration.
 
-The [DropDirection](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DropDownButtonAdv.html#Syncfusion_Windows_Tools_Controls_DropDownButtonAdv_DropDirection) enumeration comprises of following values: 
+The [DropDirection](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DropDownButtonAdv.html#Syncfusion_Windows_Tools_Controls_DropDownButtonAdv_DropDirection) enumeration contains the following values: 
 
 * Left
 * Right
@@ -63,11 +63,11 @@ dropdownbutton.Label = "Country";
 dropdownbutton.DropDirection = DropDirection.BottomLeft;
 dropdownbutton.SmallIcon = new BitmapImage(new Uri("images\country.png"));
 DropDownMenuGroup menu = new DropDownMenuGroup();
-DropDownMenuItem Item1 = new DropDownMenuItem() { Header ="India", Icon =new BitmapImage(new Uri("images\india.png")), HorizontalAlignment="Left"};
-DropDownMenuItem Item2 = new DropDownMenuItem() { Header ="France", Icon =new BitmapImage(new Uri("images\france.png")), HorizontalAlignment="Left"};
-DropDownMenuItem Item3 = new DropDownMenuItem() { Header ="Germany", Icon =new BitmapImage(new Uri("images\germany.png")), HorizontalAlignment="Left"};
-DropDownMenuItem Item4 = new DropDownMenuItem() { Header ="Canada", Icon =new BitmapImage(new Uri("images\canada.png")), HorizontalAlignment="Left"};
-DropDownMenuItem Item5 = new DropDownMenuItem() { Header ="China", Icon =new BitmapImage(new Uri("images\china.png")), HorizontalAlignment="Left"};
+DropDownMenuItem Item1 = new DropDownMenuItem() { Header ="India", Icon =new BitmapImage(new Uri("images\india.png")), HorizontalAlignment=HorizontalAlignment.Left};
+DropDownMenuItem Item2 = new DropDownMenuItem() { Header ="France", Icon =new BitmapImage(new Uri("images\france.png")), HorizontalAlignment=HorizontalAlignment.Left};
+DropDownMenuItem Item3 = new DropDownMenuItem() { Header ="Germany", Icon =new BitmapImage(new Uri("images\germany.png")), HorizontalAlignment=HorizontalAlignment.Left};
+DropDownMenuItem Item4 = new DropDownMenuItem() { Header ="Canada", Icon =new BitmapImage(new Uri("images\canada.png")), HorizontalAlignment=HorizontalAlignment.Left};
+DropDownMenuItem Item5 = new DropDownMenuItem() { Header ="China", Icon =new BitmapImage(new Uri("images\china.png")), HorizontalAlignment=HorizontalAlignment.Left};
 menu.Items.Add(Item1);
 menu.Items.Add(Item2);
 menu.Items.Add(Item3);
