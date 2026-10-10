@@ -32,4 +32,3 @@ private void HierarchyNavigatorRefreshButtonClick(object sender, EventArgs 
     
 {% endhighlight %}
 {% endtabs %}
-
