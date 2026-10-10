@@ -384,7 +384,7 @@ The WPF Navigation Drawer has four built-in item types that can be set to each `
 * **Header** — This item type does not have any interaction or selection and acts like a header label. This item gets visible only in the drawer menu expanded state. This item can be added as a sub item also but cannot have a sub item. 
 * **Separator** — This item type does not have any interaction or selection and acts as a separator line. This item can be added as a sub item also but cannot have a sub item. 
 
-See also [Populating using built in items](https://help.syncfusion.com/wpf/navigation-drawer/populating-data#populating-using-built-in-items) section.
+See also [Populating using built-in items](https://help.syncfusion.com/wpf/navigation-drawer/populating-data#populating-using-built-in-items) section.
 
 N> The default value of `ItemType` is `Tab`.
 
@@ -577,11 +577,10 @@ When using the `ItemsSource`, the content of the item is shown by the [DisplayMe
 {% tabs %}
 {% highlight c# %}
 
-     public class ViewModel
+    public class ViewModel
     {
         public ObservableCollection<Model> Items { get; set; }
         ObservableCollection<Model> SubItems = new ObservableCollection<Model>();
-      
         public ViewModel()
         {
             Items = new ObservableCollection<Model>();
@@ -592,7 +591,8 @@ When using the `ItemsSource`, the content of the item is shown by the [DisplayMe
             SubItems.Add(new Model()
             {
                 Item = "Item2",
-            }); SubItems.Add(new Model()
+            });
+            SubItems.Add(new Model()
             {
                 Item = "Item3",
             });
@@ -816,7 +816,7 @@ This property is used to change the horizontal position of sub items. The left m
 
 {% endtabs %}
 
-See also [Populating using built in items](https://help.syncfusion.com/wpf/navigation-drawer/populating-data#populating-using-built-in-items) section.
+See also [Populating using built-in items](https://help.syncfusion.com/wpf/navigation-drawer/populating-data#populating-using-built-in-items) section.
 
 ![Changing Horizontal Position of WPF Navigation Drawer Items](populating_data_images/wpf-navigation-drawer-position.png)
 

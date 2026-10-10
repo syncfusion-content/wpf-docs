@@ -9,7 +9,7 @@ documentation: ug
 
 # About Syncfusion® WPF Radial Menu (SfRadialMenu) Control
 
-The [WPF Radial Menu](https://www.syncfusion.com/wpf-controls/radial-menu) displays a hierarchical menu in a circular layout. The WPF Radial Menu is implemented through the `SfRadialMenu` class. Typically used as a context menu, it can expose more menu items in the same space than traditional menus.
+The [WPF Radial Menu](https://www.syncfusion.com/wpf-controls/radial-menu) displays a hierarchical menu in a circular layout. The WPF Radial Menu is implemented through the `SfRadialMenu` class. It is typically used as a context menu and can expose more menu items in the same space than traditional menus.
 
 ## Key Features
 

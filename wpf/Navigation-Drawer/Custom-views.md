@@ -160,7 +160,7 @@ namespace NavigationDrawerWPF
 
 ## Customizing the drawer
 
-## Customize Panel size
+### Customize Panel size
 
 The size of the sidebar can be adjusted using the `DrawerHeight` and `DrawerWidth` properties.
 

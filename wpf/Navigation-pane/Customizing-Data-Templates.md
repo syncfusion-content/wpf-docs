@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Data Templates in WPF Navigation Pane | Syncfusion®
 description: Customize item, header, and content presentation using data templates and template selectors in the Navigation Pane control.
@@ -152,7 +152,7 @@ You can customize the header of a GroupViewItem by using a header template. This
 
 ~~~   
 
-The code above applies HeaderTemplate to the GroupBar, so the headers of the group-bar items will contains a text box with a white foreground. 
+The code above applies HeaderTemplate to the GroupBar, so the headers of the group-bar items will contain a text block with a white foreground. 
 
 ## Content Template
 
@@ -243,7 +243,7 @@ public class GroupBarItemHeaderTemplateSelector : DataTemplateSelector
 			<ColumnDefinition Width="*" />
 		</Grid.ColumnDefinitions>
 		<Image Source="csicon.png"/>
-		<TextBlock Text="{Binding XPath=@Name}" Margin="5" Foreground="Blue" VerticalAlignment="Center" FontWeight="Bold" FontFamily="Bookman Old Style" Grid.Column="1">
+		<TextBlock Text="{Binding XPath=@Name}" Margin="5" Foreground="Blue" VerticalAlignment="Center" FontWeight="Bold" FontFamily="Bookman Old Style" Grid.Column="1"/>
 	</Grid>
 </DataTemplate>
 ~~~
@@ -288,15 +288,15 @@ public class GroupBarItemContentTemplateSelector : DataTemplateSelector
 
 2. Define the data templates in the Window’s resources.
 
-~~~csharp
-<DataTemplate x:Key="CsBookHeaderTemplate">
+~~~xaml
+<DataTemplate x:Key="CsBookContentTemplate">
 	<Grid>
 		<Grid.ColumnDefinitions>
 			<ColumnDefinition Width="25" />
 			<ColumnDefinition Width="*" />
 		</Grid.ColumnDefinitions>
 		<Image Source="csicon.png"/>
-		<TextBlock Text="{Binding XPath=@Name}" Margin="5" Foreground="Blue" VerticalAlignment="Center" FontWeight="Bold" FontFamily="Bookman Old Style" Grid.Column="1">
+		<TextBlock Text="{Binding XPath=@Name}" Margin="5" Foreground="Blue" VerticalAlignment="Center" FontWeight="Bold" FontFamily="Bookman Old Style" Grid.Column="1"/>
 	</Grid>
 </DataTemplate>
 
