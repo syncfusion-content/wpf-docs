@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Configure Navigation Pane Features in WPF GroupBar | Syncfusion®
 description: Configure navigation pane popup resizing, gripper support, and layout behavior within the WPF GroupBar control.

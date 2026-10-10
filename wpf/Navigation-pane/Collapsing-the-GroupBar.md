@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Collapse GroupBar in WPF Navigation Pane | Syncfusion®
 description: Enable collapsing behavior, configure collapse settings, and manage expanded or collapsed states in stack mode.

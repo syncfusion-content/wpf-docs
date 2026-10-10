@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Orientation in WPF Navigation Pane | Syncfusion®
 description: Configure horizontal and vertical layouts for GroupBar and GroupView controls and respond to orientation change events.

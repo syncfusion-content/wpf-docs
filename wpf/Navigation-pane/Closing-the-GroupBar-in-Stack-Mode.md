@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Close GroupBar in Stack Mode in WPF Navigation Pane | Syncfusion®
 description: Enable close buttons and configure visible item counts when using the Navigation Pane (GroupBar) stack mode.

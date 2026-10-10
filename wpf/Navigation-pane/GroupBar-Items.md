@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: GroupBar Items in WPF Navigation Pane | Syncfusion®
 description: Configure GroupBar item behavior including dragging, cursor customization, content sizing, visibility tracking, and corner radius settings.
