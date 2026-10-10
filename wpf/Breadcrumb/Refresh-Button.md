@@ -9,14 +9,14 @@ documentation: ug
 
 # Refresh Button in WPF BreadCrumb
 
-The Refresh button enables the HierarchyNavigatorRefreshButtonClick event to initiate in the BreadCrumb control.
+The Refresh button raises the HierarchyNavigatorRefreshButtonClick event in the BreadCrumb control.
 
 ![Refresh Button in WPF BreadCrumb control](Refresh-Button_images/Refresh-Button_img1.png)
 
 
 {% tabs %}
 {% highlight xaml %}
-<locals:HierarchyNavigator HierarchyNavigatorRefreshButtonClick="HierarchyNavigatorRefreshButtonClick" />
+<syncfusion:HierarchyNavigator HierarchyNavigatorRefreshButtonClick="HierarchyNavigatorRefreshButtonClick" />
 {% endhighlight %}
 
 {% highlight C# %}
@@ -32,4 +32,3 @@ private void HierarchyNavigatorRefreshButtonClick(object sender, EventArgs 
     
 {% endhighlight %}
 {% endtabs %}
-

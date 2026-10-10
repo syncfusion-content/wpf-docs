@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started with WPF TextInputLayout (SfTextInputLayout)
 
-This section explains the steps needed to configure the control of the text input layout.
+This section explains the steps needed to configure the `SfTextInputLayout` control in a WPF application.
 
 ## Adding TextInputLayout reference
 
@@ -17,7 +17,7 @@ Refer to this [document](https://help.syncfusion.com/wpf/add-syncfusion-controls
 
 ## Initialize TextInputLayout
 
-Import the namespace of the text input layout as shown in the following code snippet.
+Import the `SfTextInputLayout` namespace as shown in the following code snippet.
 
 {% tabs %} 
 
@@ -35,7 +35,7 @@ using Syncfusion.UI.Xaml.TextInputLayout;
 
 {% endtabs %} 
 
-You can either use the below schemas or the above mentioned namespace to refer the TextInputLayout control in xaml.
+Alternatively, use the following schema instead of the preceding namespace to refer to the `SfTextInputLayout` control in XAML.
 
 {% tabs %} 
 
@@ -47,7 +47,7 @@ xmlns:inputLayout="http://schemas.syncfusion.com/wpf"
 
 {% endtabs %} 
 
-Then, initialize the text input layout as demonstrated in the following code snippet.
+Then, initialize `SfTextInputLayout` with an input view as demonstrated in the following code snippet. See [Supported Input Views](Supported-Input-Views.md) for the list of supported controls.
 
 {% tabs %} 
 
@@ -63,6 +63,7 @@ Then, initialize the text input layout as demonstrated in the following code sni
 
  SfTextInputLayout inputLayout = new SfTextInputLayout();
  inputLayout.InputView = new TextBox();
+ this.Content = inputLayout;
 
 {% endhighlight %}
 

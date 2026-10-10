@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started with WPF Split Button (SplitButtonAdv)
 
-This section provides an overview of how to work with WPF Split Button control. It describes the control structure, the control initialization and the image setting for the control and add items to the control.
+This section provides an overview of how to work with the WPF Split Button control. It describes the control structure, the control initialization, the image setting for the control, and adding items to the control.
 
 ## Control structure
 
@@ -119,8 +119,8 @@ namespace ButtonSample
         {
             InitializeComponent();
             SplitButtonAdv splitButtonAdv = new SplitButtonAdv();
-            splitButtonAdv.Height=44;
-            splitButtonAdv.Width=31;
+            splitButtonAdv.Height = 44;
+            splitButtonAdv.Width = 31;
             Root.Children.Add(splitButtonAdv);
         }
     }
@@ -138,14 +138,14 @@ The label on the button is a text that explains its action to the end-user. Appl
 {% tabs %}
 {% highlight xaml %}
 
-<syncfusion:SplitButtonAdv Label="Colors" SmallIcon="Images\color.png"/>
+<syncfusion:SplitButtonAdv Label="Colors" SmallIcon="Images/color.png"/>
 
 {% endhighlight %}
 {% highlight c# %}
 
 SplitButtonAdv button = new SplitButtonAdv();
 button.Label = "Colors";
-button.SmallIcon = new BitmapImage(new Uri("Images\colors.png", UriKind.RelativeOrAbsolute));
+button.SmallIcon = new BitmapImage(new Uri("Images/color.png", UriKind.RelativeOrAbsolute));
 
 {% endhighlight %}
 {% endtabs %}
@@ -169,7 +169,7 @@ When the mode is set to small, the control is displayed without the label. Only 
 {% tabs %}
 {% highlight xaml %}
 
-<syncfusion:SplitButtonAdv SizeMode="Small" SmallIcon="Images\color.png" Label="Colors"/>
+<syncfusion:SplitButtonAdv SizeMode="Small" SmallIcon="Images/color.png" Label="Colors"/>
 
 {% endhighlight %}
 {% highlight c# %}
@@ -177,7 +177,7 @@ When the mode is set to small, the control is displayed without the label. Only 
 SplitButtonAdv button = new SplitButtonAdv();
 button.Label = "Colors";
 button.SizeMode = SizeMode.Small;
-button.SmallIcon = new BitmapImage(new Uri("Images\colors.png", UriKind.RelativeOrAbsolute));
+button.SmallIcon = new BitmapImage(new Uri("Images/color.png", UriKind.RelativeOrAbsolute));
 
 {% endhighlight %}
 {% endtabs %}
@@ -191,7 +191,7 @@ In a normal size button, a small image with the text on the side will be display
 {% tabs %}
 {% highlight xaml %}
 
-<syncfusion:SplitButtonAdv SizeMode="Normal" SmallIcon="Images\color.png" Label="Colors"/>
+<syncfusion:SplitButtonAdv SizeMode="Normal" SmallIcon="Images/color.png" Label="Colors"/>
 
 {% endhighlight %}
 {% highlight c# %}
@@ -199,7 +199,7 @@ In a normal size button, a small image with the text on the side will be display
 SplitButtonAdv button = new SplitButtonAdv();
 button.Label = "Colors";
 button.SizeMode = SizeMode.Normal;
-button.SmallIcon = new BitmapImage(new Uri("Images\colors.png", UriKind.RelativeOrAbsolute));
+button.SmallIcon = new BitmapImage(new Uri("Images/color.png", UriKind.RelativeOrAbsolute));
 
 {% endhighlight %}
 {% endtabs %}
@@ -213,7 +213,7 @@ In a large size button, a large image along with the text at the bottom will be 
 {% tabs %}
 {% highlight xaml %}
 
-<syncfusion:SplitButtonAdv SizeMode="Large" LargeIcon="Images\color.png" Label="Colors"/>
+<syncfusion:SplitButtonAdv SizeMode="Large" LargeIcon="Images/color.png" Label="Colors"/>
 
 {% endhighlight %}
 {% highlight c# %}
@@ -221,7 +221,7 @@ In a large size button, a large image along with the text at the bottom will be 
 SplitButtonAdv button = new SplitButtonAdv();
 button.Label = "Colors";
 button.SizeMode = SizeMode.Large;
-button.LargeIcon = new BitmapImage(new Uri("Images\colors.png", UriKind.RelativeOrAbsolute));
+button.LargeIcon = new BitmapImage(new Uri("Images/color.png", UriKind.RelativeOrAbsolute));
 
 {% endhighlight %}
 {% endtabs %}
@@ -392,7 +392,7 @@ The **SmallIcon** property can be set as follows:
 {% tabs %}
 {% highlight xaml %}
 
-<syncfusion:SplitButtonAdv SizeMode="Small" Label="Syncfusion" SmallIcon="Images\syncfusion.png"/>
+<syncfusion:SplitButtonAdv SizeMode="Small" Label="Syncfusion" SmallIcon="Images/syncfusion.png"/>
 
 {% endhighlight %}
 {% highlight c# %}
@@ -400,19 +400,19 @@ The **SmallIcon** property can be set as follows:
 SplitButtonAdv button = new SplitButtonAdv();
 button.Label = "Syncfusion";
 button.SizeMode = SizeMode.Small;
-button.SmallIcon = new BitmapImage(new Uri("Images\syncfusion.png", UriKind.RelativeOrAbsolute));
+button.SmallIcon = new BitmapImage(new Uri("Images/syncfusion.png", UriKind.RelativeOrAbsolute));
 
 {% endhighlight %}
 {% endtabs %}
 
 ![Small Image](Getting-Started_images/Getting-Started_img6.png)
 
-The **SmallIcon** property can be set even when the sizeMode is **Normal**.
+The **SmallIcon** property can be set even when the size mode is **Normal**.
 
 {% tabs %}
 {% highlight xaml %}
 
-<syncfusion:SplitButtonAdv SizeMode="Normal" SmallIcon="Images\Syncfusion.png" Label="Syncfusion"/>
+<syncfusion:SplitButtonAdv SizeMode="Normal" SmallIcon="Images/syncfusion.png" Label="Syncfusion"/>
 
 {% endhighlight %}
 {% highlight c# %}
@@ -420,7 +420,7 @@ The **SmallIcon** property can be set even when the sizeMode is **Normal**.
 SplitButtonAdv button = new SplitButtonAdv();
 button.Label = "Syncfusion";
 button.SizeMode = SizeMode.Normal;
-button.SmallIcon = new BitmapImage(new Uri("Images\syncfusion.png", UriKind.RelativeOrAbsolute));
+button.SmallIcon = new BitmapImage(new Uri("Images/syncfusion.png", UriKind.RelativeOrAbsolute));
 
 {% endhighlight %}
 {% endtabs %}
@@ -432,7 +432,7 @@ The **LargeIcon** property can be set as follows:
 {% tabs %}
 {% highlight xaml %}
 
-<syncfusion:SplitButtonAdv SizeMode="Large" LargeIcon="Images\Syncfusion.png" Label="Syncfusion"/>
+<syncfusion:SplitButtonAdv SizeMode="Large" LargeIcon="Images/syncfusion.png" Label="Syncfusion"/>
 
 {% endhighlight %}
 {% highlight c# %}
@@ -440,7 +440,7 @@ The **LargeIcon** property can be set as follows:
 SplitButtonAdv button = new SplitButtonAdv();
 button.Label = "Syncfusion";
 button.SizeMode = SizeMode.Large;
-button.LargeIcon = new BitmapImage(new Uri("Images\syncfusion.png", UriKind.RelativeOrAbsolute));
+button.LargeIcon = new BitmapImage(new Uri("Images/syncfusion.png", UriKind.RelativeOrAbsolute));
 
 {% endhighlight %}
 {% endtabs %}
@@ -449,21 +449,21 @@ button.LargeIcon = new BitmapImage(new Uri("Images\syncfusion.png", UriKind.Rela
 
 ## Setting icon width and height
 
-Icon width and icon height can be set using [IconWidth](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DropDownButtonAdv.html#Syncfusion_Windows_Tools_Controls_DropDownButtonAdv_IconWidth) and [IconHeight](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DropDownButtonAdv.html#Syncfusion_Windows_Tools_Controls_DropDownButtonAdv_IconHeight) properties respectively.
+Icon width and icon height can be set using the [IconWidth](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DropDownButtonAdv.html#Syncfusion_Windows_Tools_Controls_DropDownButtonAdv_IconWidth) and [IconHeight](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DropDownButtonAdv.html#Syncfusion_Windows_Tools_Controls_DropDownButtonAdv_IconHeight) properties respectively.
 
 {% tabs %}
 {% highlight xaml %}
 
-<syncfusion:SplitButtonAdv SizeMode="Normal" IconHeight="20" IconWidth="20"  Label="Syncfusion" SmallIcon="Images\syncfusion.png" />
+<syncfusion:SplitButtonAdv SizeMode="Normal" IconHeight="20" IconWidth="20"  Label="Syncfusion" SmallIcon="Images/syncfusion.png" />
 
 {% endhighlight %}
 {% highlight c# %}
 
 SplitButtonAdv splitbutton = new SplitButtonAdv();
 splitbutton.Label = "Syncfusion";
-splitbutton.IconWidth=20;
-splitbutton.IconHeight=20;
-splitbutton.SmallIcon = new BitmapImage(new Uri("Images\syncfusion.png", UriKind.RelativeOrAbsolute));
+splitbutton.IconWidth = 20;
+splitbutton.IconHeight = 20;
+splitbutton.SmallIcon = new BitmapImage(new Uri("Images/syncfusion.png", UriKind.RelativeOrAbsolute));
 
 {% endhighlight %}
 {% endtabs %}
@@ -473,16 +473,16 @@ splitbutton.SmallIcon = new BitmapImage(new Uri("Images\syncfusion.png", UriKind
 {% tabs %}
 {% highlight xaml %}
 
-<syncfusion:SplitButtonAdv x:Name="splitbutton"  SizeMode="Normal" IconHeight="30" IconWidth="30"  Label="Syncfusion"  SmallIcon="Images\syncfusion.png" />
+<syncfusion:SplitButtonAdv x:Name="splitbutton"  SizeMode="Normal" IconHeight="30" IconWidth="30"  Label="Syncfusion"  SmallIcon="Images/syncfusion.png" />
 
 {% endhighlight %}
 {% highlight c# %}
 
 SplitButtonAdv splitbutton = new SplitButtonAdv();
 splitbutton.Label = "Syncfusion";
-splitbutton.IconWidth=30;
-splitbutton.IconHeight=30;
-splitbutton.SmallIcon = new BitmapImage(new Uri("Images\syncfusion.png", UriKind.RelativeOrAbsolute));
+splitbutton.IconWidth = 30;
+splitbutton.IconHeight = 30;
+splitbutton.SmallIcon = new BitmapImage(new Uri("Images/syncfusion.png", UriKind.RelativeOrAbsolute));
 
 {% endhighlight %}
 {% endtabs %}
@@ -493,10 +493,9 @@ N> View [sample](https://github.com/SyncfusionExamples/wpf-split-button-examples
 
 ## IsDefault mode
 
-The [IsDefault](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.SplitButtonAdv.html#Syncfusion_Windows_Tools_Controls_SplitButtonAdv_IsDefault) property indicates whether the SplitButtonAdv is a Default button and is used to activate the SplitButtonAdv by pressing using Enter key. When setting the IsDefault property to true, the user can invoke the button by pressing the `Enter` key. 
+The [IsDefault](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.SplitButtonAdv.html#Syncfusion_Windows_Tools_Controls_SplitButtonAdv_IsDefault) property indicates whether the SplitButtonAdv is a default button and is used to activate the SplitButtonAdv by pressing the Enter key. When setting the IsDefault property to true, the user can invoke the button by pressing the `Enter` key. 
 
 {% tabs %}
-
 {% highlight xaml %}
 
  <syncfusion:SplitButtonAdv x:Name="defaultButton" Label="Default" Grid.Column="1" Grid.Row="1" VerticalAlignment="Top" HorizontalAlignment="Center" Click="SplitButtonAdv_Click" IsDefault="True" />
@@ -507,9 +506,9 @@ The [IsDefault](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Cont
 
 ## Adding items to Split Button
 
-The DropDownMenuGroup acts as a container for the Split Button control. It provides options to add menu items and also options like header name, re-sizing and scrollbar.
+The DropDownMenuGroup acts as a container for the Split Button control. It provides options to add menu items and also options like header name, resizing and scrollbar.
 
-N> For more information on how to bind data with command actions for Split Button please refer to the topics [Data Binding](https://help.syncfusion.com/wpf/split-button/data-binding) and [Command Binding](https://help.syncfusion.com/wpf/split-button/command-binding).
+N> For more information on how to bind data with command actions for Split Button, refer to the topics [Data Binding](https://help.syncfusion.com/wpf/split-button/data-binding) and [Command Binding](https://help.syncfusion.com/wpf/split-button/command-binding).
 
 {% tabs %}
 {% highlight xaml %}
@@ -519,7 +518,7 @@ N> For more information on how to bind data with command actions for Split Butto
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:Dropdown_Button_Menuitem_Binding"
+        xmlns:local="clr-namespace:Split_Button_Menuitem_Binding"
         xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
@@ -541,7 +540,7 @@ N> For more information on how to bind data with command actions for Split Butto
             </syncfusion:DropDownMenuGroup>
         </syncfusion:SplitButtonAdv>
     </Grid>
-</window>
+</Window>
 
 {% endhighlight %}
 {% highlight c# %}
@@ -609,7 +608,7 @@ public class CountryViewModel
             Name = "Germany",
             Flag = new BitmapImage(new Uri("/Images/germany.png", UriKind.RelativeOrAbsolute))
         });
-        }
+    }
 }
 
 {% endhighlight %}

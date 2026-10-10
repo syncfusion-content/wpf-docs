@@ -11,15 +11,16 @@ documentation: ug
 
 MenuAdv supports animation types to open the submenu pop-up. The following animation types are supported by MenuAdv:
 
-* Fade
-* Slide
-* Scroll
+* Fade - The submenu will open with a faded animation.
+* Slide - The submenu will open like a slide.
+* Scroll - The submenu pop-up will open with a scroll animation.
+* None - The submenu will open without any animation.
 
 The Animation support can be used by using the PopUpAnimationType property. If the PopUpAnimationType property is set to None, the submenu will open without any animation.
 
 ## Adding the Animation Support to an Application
 
-If the PopUpAnimationType property is set to Fade, the submenu will open with faded animation. If the PopUpAnimationType property is set to Slide, the submenu will open like the slide. If the PopUpAnimationType property is set to Scroll, the submenu popup open with scroll animation. The Animation support can be added to an application, as shown in the following code snippet.
+The Animation support can be added to an application, as shown in the following code snippet.
 
 {% highlight xaml %}
 
@@ -49,7 +50,7 @@ If the PopUpAnimationType property is set to Fade, the submenu will open with fa
 
 ### Properties
 
-The property for the Animation support is described in the following tabulation:
+The property for the Animation support is described in the following table:
 
 
 <table>

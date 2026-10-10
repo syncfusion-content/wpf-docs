@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Command Binding Support in WPF Menu | Syncfusion®
+title: Command Binding and Command Target Support in WPF Menu | Syncfusion®
 description: Command Binding Support in MenuAdv enables executing routed commands through menu items by using command, parameter, and target bindings.
 platform: wpf
 control: MenuAdv
@@ -11,7 +11,7 @@ documentation: ug
 
 Commands are a way to bind the UI to the logic that performs the action, which is to be executed. MenuAdv supports command binding. When users press the Enter key or click to select an item, the command will be triggered. This can be attained by using the Command and CommandParameter properties of MenuItemAdv.
 
-The command target is the element on which the command is to be executed with regards to a RoutedCommand and routing of the Executed and CanExecute starts. This can be attained by using the CommandTarget property of MenuItemAdv.
+The command target is the element on which the command is to be executed with regard to a RoutedCommand, and where the routing of the Executed and CanExecute events starts. This can be attained by using the CommandTarget property of MenuItemAdv.
 
 ## Use Case Scenarios
 
@@ -19,7 +19,11 @@ MenuAdv helps users handle any command that can be routed outside the boundaries
 
 ## Using the Command Binding Support in an Application
 
-To use the Command Binding support in an application users have to create a DelegateCommand class, which is obtained from the ICommand interface in the ViewModel sample class, which can be used to bind the command in the sample WPF application. The Command can be bound to MenuItemAdv by using the Command property and the target element can be bound to MenuItemAdv by using the CommandTarget property, as shown in the following code snippets.
+To use the Command Binding support in an application, follow these steps:
+
+1. Create a `DelegateCommand` class implementing the `ICommand` interface in the application.
+2. Create a ViewModel (or use the window's code-behind, as shown below) that exposes the command.
+3. Bind the command to MenuItemAdv by using the Command property and bind the target element by using the CommandTarget property, as shown in the following code snippets.
 
 {% tabs %}
 {% highlight xaml %}
@@ -156,7 +160,7 @@ public class DelegateCommand : ICommand
 
 ### Properties
 
-The properties for the Command Binding support are described in the following tabulation:
+The properties for the Command Binding support are described in the following table:
 
 
 
