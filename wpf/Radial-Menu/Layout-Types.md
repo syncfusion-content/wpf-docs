@@ -45,7 +45,7 @@ radialMenu.LayoutType = LayoutType.Custom;
 
 ### SegmentIndex
 
-The `SegmentIndex` property is used to specify the index of the `SfRadialMenuItem` in the circular panel. Based on the index, the `SfRadialMenuItem`s are inserted in the segment. When `SegmentIndex` is not specified for an `SfRadialMenuItem` or two or mSfore `RadialMenuItem`s have the same `SegmentIndex`, then the menu item is arranged in the next available free segment. 
+The `SegmentIndex` property is used to specify the index of the `SfRadialMenuItem` in the circular panel. Based on the index, the `SfRadialMenuItem`s are inserted in the segment. When `SegmentIndex` is not specified for an `SfRadialMenuItem` or two or more `RadialMenuItem`s have the same `SegmentIndex`, then the menu item is arranged in the next available free segment. 
 
 {%tabs%}
 {%highlight xaml%}

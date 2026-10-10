@@ -25,7 +25,7 @@ You can change the background color of the `SfGridSplitter` by setting the `Back
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition />
-            <RowDefinition Height="auto" />
+            <RowDefinition Height="Auto" />
             <RowDefinition />
         </Grid.RowDefinitions>
         <TextBlock Grid.Row="0" 
@@ -44,7 +44,7 @@ You can change the background color of the `SfGridSplitter` by setting the `Back
         <!--Grid Splitter-->
         <syncfusion:SfGridSplitter Background="Green"
                                    HorizontalAlignment="Stretch"
-                                   Width="auto"
+                                   Width="Auto"
                                    Grid.Row="1">
         </syncfusion:SfGridSplitter>
     </Grid>
@@ -57,7 +57,7 @@ You can change the background color of the `SfGridSplitter` by setting the `Back
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-gridsplitter-control-examples/tree/master/Samples/Appearance) 
 
-### Custom drag preview
+## Custom drag preview
 
 You can customize the preview UI of the WPF GridSplitter by using the [SfGridSplitter.PreviewStyle](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfGridSplitter.html) property. The `PreviewStyle` property takes effect only when the `ShowsPreview` property is set to `true`.
 
@@ -71,7 +71,7 @@ You can customize the preview UI of the WPF GridSplitter by using the [SfGridSpl
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition />
-            <RowDefinition Height="auto" />
+            <RowDefinition Height="Auto" />
             <RowDefinition />
         </Grid.RowDefinitions>
         <TextBlock Grid.Row="0" 
@@ -90,7 +90,7 @@ You can customize the preview UI of the WPF GridSplitter by using the [SfGridSpl
         <!--Grid Splitter-->
         <syncfusion:SfGridSplitter ShowsPreview="True"
                            HorizontalAlignment="Stretch"
-                           Width="auto"
+                           Width="Auto"
                            Grid.Row="1" >
             <syncfusion:SfGridSplitter.PreviewStyle>
                 <Style TargetType="Control">

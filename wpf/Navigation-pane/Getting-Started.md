@@ -25,7 +25,7 @@ You can create a WPF application with GroupBar control using the following steps
 
 Create a new WPF project in Visual Studio to display the GroupBar with functionalities.
 
-## Add control through designer
+### Add control through designer
 
 The GroupBar control can be added to an application by dragging it from the toolbox to a designer view. The following assembly references will be added automatically.
 
@@ -34,7 +34,7 @@ The GroupBar control can be added to an application by dragging it from the tool
 
 ![wpf group bar button control added by designer](getting-started_images/wpf-group-bar-control-added-by-designer.png)
 
-## Add control manually in XAML
+### Add control manually in XAML
 
 To add the control manually in XAML, follow the given steps:
 
@@ -59,7 +59,7 @@ To add the control manually in XAML, follow the given steps:
 {% endhighlight %}
 {% endtabs %}
 
-## Add control manually in C\#
+### Add control manually in C\#
 
 To add the control manually in C#, follow the given steps:
 1.	Add the following required assembly references to the project:
@@ -201,7 +201,7 @@ public class ViewModel
 * **MainWindow.Xaml**
 
 {% tabs %}
-{% highlight C# %}
+{% highlight XAML %}
 <Window.DataContext>
 	<local:ViewModel/>
 </Window.DataContext>
@@ -239,7 +239,7 @@ You can add content to a GroupBar Item using a panel or a [GroupView](https://he
 			<syncfusion:GroupViewItem Name="groupViewItem3" ImageSource="Images\trash.png" Text="Deleted Items"/>
 		</syncfusion:GroupView>
 	</syncfusion:GroupBarItem>
-</<syncfusion:GroupBar>
+</syncfusion:GroupBar>
 {% endhighlight %}
 {% highlight C# %}
 //Create instances

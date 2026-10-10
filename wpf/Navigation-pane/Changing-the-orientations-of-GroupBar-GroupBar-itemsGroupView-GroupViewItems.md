@@ -151,7 +151,7 @@ Use the following code snippet to set GroupView Orientation to Vertical.
 
 {% highlight C# %}
 
-//Setting the orientation of GroupView as Horizontal
+//Setting the orientation of GroupView as Vertical
 
 groupView.Orientation = Orientation.Vertical;
 
@@ -165,7 +165,7 @@ groupView.Orientation = Orientation.Vertical;
 
 ## Events to Handle Orientation of Groupbar
 
-The events corresponding to this property are [OrientationChanged]() and [OrientationChanging]().           
+The events corresponding to this property are [OrientationChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.GroupBar.html#Syncfusion_Windows_Tools_Controls_GroupBar_OrientationChanged) and [OrientationChanging](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.GroupBar.html#Syncfusion_Windows_Tools_Controls_GroupBar_OrientationChanging).           
 
 ## OrientationChanged Event
 

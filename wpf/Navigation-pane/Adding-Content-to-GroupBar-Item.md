@@ -41,8 +41,9 @@ GroupView groupView = new GroupView();
 groupBarItem.Content = groupView;
 //Adding GroupBar item to GroupBar
 groupBar.Items.Add(groupBarItem);
-//Adding GroupBar to the windowthis.Content = groupBar;
- {% endhighlight %} 
+//Adding GroupBar to the window
+this.Content = groupBar;
+ {% endhighlight %}
 {% endtabs %}
 
 

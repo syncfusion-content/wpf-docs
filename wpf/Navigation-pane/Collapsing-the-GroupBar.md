@@ -69,7 +69,7 @@ The event corresponding to this property is BeforeGroupBarItemPopupOpened. This 
 
 N> AllowCollapse property settings works only for GroupBar in StackMode.
 
-Collapsing the GroupBar in Stack Mode
+## Collapsing the GroupBar in Stack Mode
 
 Collapsing and expanding the GroupBar in StackMode is done by using IsCollapsed property. This dependency property indicates the state of GroupBar, whether collapsed or expanded. By setting this property to _true_, groupbar is collapsed. By setting _false_, groupbar is expanded. 
 
@@ -104,8 +104,10 @@ Use the below code snippet to set this property.
 {% endhighlight %}
 
 {% highlight C# %}
-//Set the visual mode as stack modegroupBar.VisualMode = VisualMode.StackMode;
-//Collapsing the GroupBar in stack modegroupBar.IsCollapsed = true;
+//Set the visual mode as stack mode
+groupBar.VisualMode = VisualMode.StackMode;
+//Collapsing the GroupBar in stack mode
+groupBar.IsCollapsed = true;
 {% endhighlight %}
 {% endtabs %}
 

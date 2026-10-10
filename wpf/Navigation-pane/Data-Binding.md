@@ -9,7 +9,7 @@ documentation: ug
 
 # Data Binding in WPF Navigation Pane (GroupBar)
 
-You can bind the custom object to the DataContext property of the GroupBar control and their corresponding elements can be binded with the children of the GroupBar control. When a DataContext is set to a window or to a GroupBar, it gets inherited to all its logical children. The OnInitialized method will get this DataContext value. As you use this DataContext in the template with DataTriggers, you need to set that property to active host tab or null.
+You can bind the custom object to the DataContext property of the GroupBar control and their corresponding elements can be bound with the children of the GroupBar control. When a DataContext is set to a window or to a GroupBar, it gets inherited to all its logical children. The OnInitialized method will get this DataContext value. As you use this DataContext in the template with DataTriggers, you need to set that property to active host tab or null.
 
 Use the code snippet to apply a DataContext to the GroupBar control.
 {% tabs %}
@@ -196,7 +196,7 @@ public class ViewModel
    ~~~
 
 
-This creates the following GroupBar control. 
+This creates the following GroupBar control.
 
 
 
