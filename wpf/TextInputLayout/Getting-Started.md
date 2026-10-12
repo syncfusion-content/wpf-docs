@@ -47,7 +47,7 @@ xmlns:inputLayout="http://schemas.syncfusion.com/wpf"
 
 {% endtabs %} 
 
-Then, initialize `SfTextInputLayout` with an input view as demonstrated in the following code snippet. See [Supported Input Views](Supported-Input-Views.md) for the list of supported controls.
+Then, initialize `SfTextInputLayout` with an input view as demonstrated in the following code snippet. See [Supported Input Views](https://help.syncfusion.com/wpf/textinputlayout/supported-input-views) for the list of supported controls.
 
 {% tabs %} 
 
@@ -63,8 +63,7 @@ Then, initialize `SfTextInputLayout` with an input view as demonstrated in the f
 
  SfTextInputLayout inputLayout = new SfTextInputLayout();
  inputLayout.InputView = new TextBox();
- this.Content = inputLayout;
-
+ 
 {% endhighlight %}
 
 {% endtabs %} 
