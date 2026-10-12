@@ -21,7 +21,7 @@ Thumb moves left and updates the corresponding value.
 
 ### Right Key 
 
-Thumbs moves right and updates the corresponding value.  
+Thumb moves right and updates the corresponding value.  
 
 ### Down Key 
 

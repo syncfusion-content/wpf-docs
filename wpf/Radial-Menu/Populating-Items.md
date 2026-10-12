@@ -11,9 +11,9 @@ documentation: ug
 
 ## Items Source  
 
-Radial menu items can be populated with the business object collection. Let us create a WPF Radial Menu which will show the list of application commands.   
+Radial menu items can be populated with the business object collection. The following steps create a WPF Radial Menu that shows a list of application commands.
 
-The Application command model looks like below.  
+The application command model is as follows.
 
 
 
@@ -78,7 +78,9 @@ Populate the Application command collection as follows.
 
  Options = new List<ApplicationCommand>(); 
 
- Options.Add(new ApplicationCommand() { Name="Bold" , ImagePath="bold.png" });    			  Options.Add(new ApplicationCommand() { Name = "Cut" , ImagePath="cut.png"}); 
+ Options.Add(new ApplicationCommand() { Name = "Bold", ImagePath = "bold.png" });
+
+ Options.Add(new ApplicationCommand() { Name = "Cut" , ImagePath="cut.png"}); 
 
  Options.Add(new ApplicationCommand() { Name = "Copy" ,ImagePath="copy.png"}); 
 

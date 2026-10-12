@@ -15,7 +15,7 @@ This section explains the UI customization and common features available in the 
 
 You can select any tick value by dragging the pointer along the circular track or clicking on the corresponding track value. You can get the selected value by using the `Value` property. The default value of the `Value` property is `0`.
 
-![Selecting a value by clicking and draging](getting-started_images/wpf-radial-slider-drag-select-value.gif)
+![Selecting a value by clicking and dragging](getting-started_images/wpf-radial-slider-drag-select-value.gif)
 
 ### Select tick value programmatically
 
@@ -55,7 +55,7 @@ public class ViewModel
             return selectedValue;
         }
         set {
-            selectedValue= value;
+            selectedValue = value;
         }
     }
 }
@@ -64,7 +64,7 @@ public class ViewModel
 {% endtabs %}
 
 {% tabs %}
-{% highlight C# %}
+{% highlight xaml %}
 
 <syncfusion:SfRadialSlider Content="{Binding SelectedValue,Mode=TwoWay}"
                            Value="{Binding SelectedValue,Mode=TwoWay}" 
@@ -97,7 +97,7 @@ public class ViewModel
             return selectedValue;
         }
         set {
-            selectedValue= value;
+            selectedValue = value;
         }
     }
 }
@@ -167,7 +167,7 @@ You can change the starting and ending positions for generating ticks in the cir
 {% highlight C# %}
 
 radialSlider.StartAngle = 90;
-radialSlider.EndAngle = 300;
+radialSlider.EndAngle = 330;
 
 {% endhighlight %}
 {% endtabs %}

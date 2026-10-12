@@ -15,7 +15,7 @@ This section explains how to trigger and handle events in the [WPF Range Slider]
 
 The [LabelLoaded](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfRangeSlider.html#Syncfusion_Windows_Controls_Input_SfRangeSlider_LabelLoaded) event is triggered when the slider label is created. The argument contains the label content.
 
-`Content` - Used to gets or sets the content of the label.
+`Content` - Gets or sets the content of the label.
 
 {% tabs %}
 
@@ -167,7 +167,7 @@ The [RangeStartChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Co
             this.Content = parentGrid;
         }
 
-        private void SfRangeSlider_RangeStartChanged(object sender, RangeStartChagedEventArgs e)
+        private void SfRangeSlider_RangeStartChanged(object sender, RangeStartChagedEventArgse)
         {
             var newStartValue = e.NewStartValue;
             var oldStartValue = e.OldStartValue;

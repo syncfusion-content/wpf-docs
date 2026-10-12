@@ -36,7 +36,7 @@ The [WPF Button](https://www.syncfusion.com/wpf-controls/button) control support
         </Grid.ColumnDefinitions>
         <CheckBox IsChecked="{Binding CanPerformAction}" Grid.Column="0" Content="Can perform action in button"/>
             
-        <syncfusion:ButtonAdv SizeMode="Large" LargeIcon="image\userlarge.png" Label="Log in"  
+        <syncfusion:ButtonAdv SizeMode="Large" LargeIcon="image/userlarge.png" Label="Log in"  
                             Command="{Binding ClickCommand}" 
                             Grid.Column="1"
                             CommandParameter="Action completed" 
@@ -131,7 +131,6 @@ public class DelegateCommand<T> : ICommand
 public class ButtonViewModel : NotificationObject
 {
     private bool _canperformaction = true;
-        
 
     public ButtonViewModel()
     {
