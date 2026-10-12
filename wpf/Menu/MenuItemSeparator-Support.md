@@ -9,11 +9,11 @@ documentation: ug
 
 # MenuItemSeparator Support in WPF Menu (MenuAdv)
 
-MenuItemSeparator is a line, which is used to separate MenuItemAdv’s. MenuItemSeparator can be included in the items list of MenuItemAdv.  
+MenuItemSeparator is a line that is used to separate MenuItemAdv items. MenuItemSeparator can be included in the items list of MenuItemAdv. 
 
 ## Use Case Scenarios
 
-MenuAdv helps users to separate MenuItemAdv’s by using MenuItemSeparator. In the case of separating the radio button group of items from other items, separator can be used.
+MenuAdv helps users to separate MenuItemAdv items by using MenuItemSeparator. In the case of separating the radio button group of items from other items, a separator can be used.
 
 ## Adding the MenuItemSeparator Support to an Application 
 

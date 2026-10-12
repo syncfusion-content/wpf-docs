@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Data Binding in WPF DropDown Button | Syncfusion®
 description: Bind menu items from business objects and connect commands using view models and ItemsSource support.
@@ -136,7 +136,7 @@ public partial class MainWindow:Window
 
 ## Bind command from view model
 
-Bind the command to [DropDownMenuItem.Command](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DropDownMenuItem.html#Syncfusion_Windows_Tools_Controls_DropDownMenuItem_Command) property of [DropDownMenuItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DropDownMenuItem.html). For example, `ClickCommand` has been bounded to `DropDownMenuItem`.
+Bind the command to [DropDownMenuItem.Command](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DropDownMenuItem.html#Syncfusion_Windows_Tools_Controls_DropDownMenuItem_Command) property of [DropDownMenuItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DropDownMenuItem.html). For example, `ClickCommand` has been bound to `DropDownMenuItem`.
 
 N> For more information on Command Binding, please refer [Command Binding](https://help.syncfusion.com/wpf/dropdown-button/command-binding)
 

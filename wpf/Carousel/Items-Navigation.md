@@ -135,7 +135,7 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-
 
 ## Navigate carousel item using scroll bar
 
-By default, scroll bars are collapsed. To navigate to the previous or next item from the currently selected item by using scroll bars, enable the vertical or horizontal scroll bars by setting the `ScrollViewer.VerticalScrollBarVisibility` or `ScrollViewer.HorizontalScrollBarVisibility` properties to `Visible` or `auto`.
+By default, scroll bars are collapsed. To navigate to the previous or next item from the currently selected item by using scroll bars, enable the vertical or horizontal scroll bars by setting the `ScrollViewer.VerticalScrollBarVisibility` or `ScrollViewer.HorizontalScrollBarVisibility` properties to `Visible` or `Auto`.
 
 N> If you set the `ScrollViewer.VerticalScrollBarVisibility` or `ScrollViewer.HorizontalScrollBarVisibility` properties to `Auto`, the scroll bar is automatically visible based on the items.
 

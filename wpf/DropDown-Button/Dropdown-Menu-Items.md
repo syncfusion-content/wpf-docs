@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Dropdown Menu Items in WPF DropDown Button | Syncfusion®
 description: Customize dropdown menu items with icons, check states, scrollbars, resizing support, and custom content.
@@ -33,9 +33,9 @@ The icon option helps to provide pictorial representation of the dropdown menu i
 
 DropDownButtonAdv dropdownbutton = new DropDownButtonAdv();
 DropDownMenuGroup menu = new DropDownMenuGroup();
-DropDownMenuItem Item1 = new DropDownMenuItem() { Header="India",Icon=new BitmapImage(new Uri("Images\india.png", UriKind.RelativeOrAbsolute)), HorizontalAlignment="Left"};
-DropDownMenuItem Item2 = new DropDownMenuItem() { Header ="France", HorizontalAlignment="Left" };
-DropDownMenuItem Item3 = new DropDownMenuItem() { Header ="Germany", HorizontalAlignment="Left" };
+DropDownMenuItem Item1 = new DropDownMenuItem() { Header="India",Icon=new BitmapImage(new Uri(@"Images\india.png", UriKind.RelativeOrAbsolute)), HorizontalAlignment=System.Windows.HorizontalAlignment.Left};
+DropDownMenuItem Item2 = new DropDownMenuItem() { Header ="France", HorizontalAlignment=HorizontalAlignment.Left };
+DropDownMenuItem Item3 = new DropDownMenuItem() { Header ="Germany", HorizontalAlignment=HorizontalAlignment.Left };
 menu.Items.Add(Item1);
 menu.Items.Add(Item2);
 menu.Items.Add(Item3);
@@ -43,7 +43,7 @@ dropdownbutton.Content = menu;
 dropdownbutton.Label = "Country";
 dropdownbutton.DropDirection = DropDirection.BottomRight;
 dropdownbutton.SizeMode = SizeMode.Normal;
-dropdownbutton.SmallIcon = new BitmapImage(new Uri("Images\country.png", UriKind.RelativeOrAbsolute));
+dropdownbutton.SmallIcon = new BitmapImage(new Uri(@"Images\country.png", UriKind.RelativeOrAbsolute));
 
 {% endhighlight %}
 {% endtabs %}
@@ -76,9 +76,9 @@ dropdownbutton.SmallIcon = new BitmapImage(new Uri("Images\country.png", UriKind
 
 DropDownButtonAdv dropdownbutton = new DropDownButtonAdv();
 DropDownMenuGroup menu = new DropDownMenuGroup();
-DropDownMenuItem Item1 = new DropDownMenuItem() { Header="India",Icon=new BitmapImage(new Uri("Images\india.png", UriKind.RelativeOrAbsolute)), HorizontalAlignment="Left"};
-DropDownMenuItem Item2 = new DropDownMenuItem() { Header ="France", HorizontalAlignment="Left" };
-DropDownMenuItem Item3 = new DropDownMenuItem() { Header ="Germany", HorizontalAlignment="Left" };
+DropDownMenuItem Item1 = new DropDownMenuItem() { Header="India",Icon=new BitmapImage(new Uri(@"Images\india.png", UriKind.RelativeOrAbsolute)), HorizontalAlignment=HorizontalAlignment.Left};
+DropDownMenuItem Item2 = new DropDownMenuItem() { Header ="France", HorizontalAlignment=HorizontalAlignment.Left };
+DropDownMenuItem Item3 = new DropDownMenuItem() { Header ="Germany", HorizontalAlignment=HorizontalAlignment.Left };
 menu.Items.Add(Item1);
 menu.Items.Add(Item2);
 menu.Items.Add(Item3);
@@ -87,7 +87,7 @@ dropdownbutton.Content = menu;
 dropdownbutton.Label = "Country";
 dropdownbutton.SizeMode = SizeMode.Normal;
 dropdownbutton.DropDirection = DropDirection.BottomRight;
-dropdownbutton.SmallIcon = new BitmapImage(new Uri("Images\country.png", UriKind.RelativeOrAbsolute));
+dropdownbutton.SmallIcon = new BitmapImage(new Uri(@"Images\country.png", UriKind.RelativeOrAbsolute));
 
 {% endhighlight %}
 {% endtabs %}
@@ -141,16 +141,16 @@ The dropdown menu group supports built-in scrollbar to show large number of menu
 
 DropDownButtonAdv dropdownbutton = new DropDownButtonAdv();
 DropDownMenuGroup menu = new DropDownMenuGroup();
-DropDownMenuItem Item1 = new DropDownMenuItem() { Header="India",Icon=new BitmapImage(new Uri("Images\india.png", UriKind.RelativeOrAbsolute)), HorizontalAlignment="Left"};
-DropDownMenuItem Item2 = new DropDownMenuItem() { Header ="France", Icon=new BitmapImage(new Uri("Images\france.png", UriKind.RelativeOrAbsolute)), HorizontalAlignment="Left"};
-DropDownMenuItem Item3 = new DropDownMenuItem() { Header ="Germany", Icon=new BitmapImage(new Uri("Images\germany.png", UriKind.RelativeOrAbsolute)), HorizontalAlignment="Left"};
-DropDownMenuItem Item4 = new DropDownMenuItem() { Header ="Canada", Icon=new BitmapImage(new Uri("Images\canada.png", UriKind.RelativeOrAbsolute)), HorizontalAlignment="Left"};
-DropDownMenuItem Item5 = new DropDownMenuItem() { Header ="China", Icon=new BitmapImage(new Uri("Images\china.png", UriKind.RelativeOrAbsolute)), HorizontalAlignment="Left"};
-DropDownMenuItem Item6 = new DropDownMenuItem() { Header ="United State", HorizontalAlignment="Left"};
-DropDownMenuItem Item7 = new DropDownMenuItem() { Header ="Italy", HorizontalAlignment="Left"};
-DropDownMenuItem Item8 = new DropDownMenuItem() { Header ="Japan", HorizontalAlignment="Left"};
-DropDownMenuItem Item9 = new DropDownMenuItem() { Header ="Spain", HorizontalAlignment="Left"};
-DropDownMenuItem Item10 = new DropDownMenuItem() { Header ="Pakistan", HorizontalAlignment="Left"};
+DropDownMenuItem Item1 = new DropDownMenuItem() { Header="India",Icon=new BitmapImage(new Uri(@"Images\india.png", UriKind.RelativeOrAbsolute)), HorizontalAlignment=HorizontalAlignment.Left};
+DropDownMenuItem Item2 = new DropDownMenuItem() { Header ="France", Icon=new BitmapImage(new Uri(@"Images\france.png", UriKind.RelativeOrAbsolute)), HorizontalAlignment=HorizontalAlignment.Left};
+DropDownMenuItem Item3 = new DropDownMenuItem() { Header ="Germany", Icon=new BitmapImage(new Uri(@"Images\germany.png", UriKind.RelativeOrAbsolute)), HorizontalAlignment=HorizontalAlignment.Left};
+DropDownMenuItem Item4 = new DropDownMenuItem() { Header ="Canada", Icon=new BitmapImage(new Uri(@"Images\canada.png", UriKind.RelativeOrAbsolute)), HorizontalAlignment=HorizontalAlignment.Left};
+DropDownMenuItem Item5 = new DropDownMenuItem() { Header ="China", Icon=new BitmapImage(new Uri(@"Images\china.png", UriKind.RelativeOrAbsolute)), HorizontalAlignment=HorizontalAlignment.Left};
+DropDownMenuItem Item6 = new DropDownMenuItem() { Header ="United States", HorizontalAlignment=HorizontalAlignment.Left};
+DropDownMenuItem Item7 = new DropDownMenuItem() { Header ="Italy", HorizontalAlignment=HorizontalAlignment.Left};
+DropDownMenuItem Item8 = new DropDownMenuItem() { Header ="Japan", HorizontalAlignment=HorizontalAlignment.Left};
+DropDownMenuItem Item9 = new DropDownMenuItem() { Header ="Spain", HorizontalAlignment=HorizontalAlignment.Left};
+DropDownMenuItem Item10 = new DropDownMenuItem() { Header ="Pakistan", HorizontalAlignment=HorizontalAlignment.Left};
 menu.Items.Add(Item1);
 menu.Items.Add(Item2);
 menu.Items.Add(Item3);
@@ -167,7 +167,7 @@ dropdownbutton.Content = menu;
 dropdownbutton.Label = "Country";
 dropdownbutton.SizeMode = SizeMode.Normal;
 dropdownbutton.DropDirection = DropDirection.BottomRight;
-dropdownbutton.SmallIcon = new BitmapImage(new Uri("Images\country.png", UriKind.RelativeOrAbsolute));
+dropdownbutton.SmallIcon = new BitmapImage(new Uri(@"Images\country.png", UriKind.RelativeOrAbsolute));
 
 {% endhighlight %}
 {% endtabs %}
@@ -206,9 +206,9 @@ The dropdown menu group height can be increased or decreased using the resizing 
 
 DropDownButtonAdv dropdownbutton = new DropDownButtonAdv();
 DropDownMenuGroup menu = new DropDownMenuGroup();
-DropDownMenuItem Item1 = new DropDownMenuItem() { Header ="India", Icon =new BitmapImage(new Uri("Imagess\india.png", UriKind.RelativeOrAbsolute)), HorizontalAlignment="Left"};
-DropDownMenuItem Item2 = new DropDownMenuItem() { Header ="France", Icon =new BitmapImage(new Uri("Images\france.png", UriKind.RelativeOrAbsolute)), HorizontalAlignment="Left"};
-DropDownMenuItem Item3 = new DropDownMenuItem() { Header ="Germany", Icon =new BitmapImage(new Uri("Images\germany.png", UriKind.RelativeOrAbsolute)), HorizontalAlignment="Left"};
+DropDownMenuItem Item1 = new DropDownMenuItem() { Header ="India", Icon =new BitmapImage(new Uri(@"Images\india.png", UriKind.RelativeOrAbsolute)), HorizontalAlignment=HorizontalAlignment.Left};
+DropDownMenuItem Item2 = new DropDownMenuItem() { Header ="France", Icon =new BitmapImage(new Uri(@"Images\france.png", UriKind.RelativeOrAbsolute)), HorizontalAlignment=HorizontalAlignment.Left};
+DropDownMenuItem Item3 = new DropDownMenuItem() { Header ="Germany", Icon =new BitmapImage(new Uri(@"Images\germany.png", UriKind.RelativeOrAbsolute)), HorizontalAlignment=HorizontalAlignment.Left};
 menu.Items.Add(Item1);
 menu.Items.Add(Item2);
 menu.Items.Add(Item3);
@@ -216,7 +216,7 @@ menu.IsResizable = true;
 dropdownbutton.Content = menu;
 dropdownbutton.Label = "Country";
 dropdownbutton.DropDirection = DropDirection.BottomRight;
-dropdownbutton.SmallIcon = new BitmapImage(new Uri("Images\country.png", UriKind.RelativeOrAbsolute));
+dropdownbutton.SmallIcon = new BitmapImage(new Uri(@"Images\country.png", UriKind.RelativeOrAbsolute));
 
 {% endhighlight %}
 {% endtabs %}
@@ -243,9 +243,9 @@ The checkable option helps to check/uncheck the dropdown menu item on selection 
 
 DropDownButtonAdv dropdownbutton = new DropDownButtonAdv();
 DropDownMenuGroup menu = new DropDownMenuGroup();
-DropDownMenuItem Item1 = new DropDownMenuItem() { Header="India", IsChecked=true, IsCheckable=true, HorizontalAlignment="Left"};
-DropDownMenuItem Item2 = new DropDownMenuItem() { Header ="France", IsChecked=true, IsCheckable=true, HorizontalAlignment="Left"};
-DropDownMenuItem Item3 = new DropDownMenuItem() { Header ="Germany", HorizontalAlignment="Left"};
+DropDownMenuItem Item1 = new DropDownMenuItem() { Header="India", IsChecked=true, IsCheckable=true, HorizontalAlignment=HorizontalAlignment.Left};
+DropDownMenuItem Item2 = new DropDownMenuItem() { Header ="France", IsChecked=true, IsCheckable=true, HorizontalAlignment=HorizontalAlignment.Left};
+DropDownMenuItem Item3 = new DropDownMenuItem() { Header ="Germany", HorizontalAlignment=HorizontalAlignment.Left};
 menu.Items.Add(Item1);
 menu.Items.Add(Item2);
 menu.Items.Add(Item3);
@@ -253,7 +253,7 @@ dropdownbutton.Content = menu;
 dropdownbutton.Label = "Country";
 dropdownbutton.SizeMode = SizeMode.Normal;
 dropdownbutton.DropDirection = DropDirection.BottomRight;
-dropdownbutton.SmallIcon = new BitmapImage(new Uri("Images\country.png", UriKind.RelativeOrAbsolute));
+dropdownbutton.SmallIcon = new BitmapImage(new Uri(@"Images\country.png", UriKind.RelativeOrAbsolute));
     
 {% endhighlight %}
 {% endtabs %}
@@ -266,7 +266,7 @@ N> View [sample](https://github.com/SyncfusionExamples/wpf-dropdown-button-examp
 
 The dropdown menu group has option to load custom items apart from actual dropdown menu items. One can populate the custom items using the [MoreItems](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DropDownMenuGroup.html#Syncfusion_Windows_Tools_Controls_DropDownMenuGroup_MoreItems) property.
 
-N> The **MoreItems** property has return type `ObservableCollection<UIElement>`, so it can accept any UIElement as its child items.
+N> The **MoreItems** property has a return type `ObservableCollection<UIElement>`, so it can accept any UIElement as its child items.
 
 {% tabs %}
 {% highlight xaml %}
