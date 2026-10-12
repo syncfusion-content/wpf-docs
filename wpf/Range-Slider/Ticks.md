@@ -175,7 +175,7 @@ Tick marks are placed either below the track in horizontal orientation or right 
             Grid parentGrid = new Grid();
             SfRangeSlider rangeSlider = new SfRangeSlider()
             {
-                Width = 200,
+                Width = 300,
                 Maximum = 100,
                 Minimum = 0,
                 TickFrequency = 20,
@@ -217,7 +217,7 @@ Tick marks are placed either above the track in horizontal orientation or left o
             Grid parentGrid = new Grid();
             SfRangeSlider rangeSlider = new SfRangeSlider()
             {
-                Width = 200,
+                Width = 300,
                 Maximum = 100,
                 Minimum = 0,
                 TickFrequency = 20,
@@ -300,7 +300,7 @@ Ticks are placed inside the track.
             Grid parentGrid = new Grid();
             SfRangeSlider rangeSlider = new SfRangeSlider()
             {
-                Width = 200,
+                Width = 300,
                 Maximum = 100,
                 Minimum = 0,
                 TickFrequency = 20,
@@ -340,7 +340,7 @@ No Tick mark appears.
             Grid parentGrid = new Grid();
             SfRangeSlider rangeSlider = new SfRangeSlider()
             {
-                Width = 200,
+                Width = 300,
                 Maximum = 100,
                 Minimum = 0,
                 TickFrequency = 20,

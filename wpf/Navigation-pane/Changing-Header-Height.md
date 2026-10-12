@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Header Height in WPF Navigation Pane | Syncfusion®
 description: Customize GroupBar item header height and selected header container height to control Navigation Pane layout.
@@ -43,7 +43,8 @@ Use the below code to set this property.
 {% endhighlight %} 
 
 {% highlight C# %}
- //Set the height of GroupBar item headergroupBar.ItemHeaderHeight = 50;
+ //Set the height of GroupBar item header
+groupBar.ItemHeaderHeight = 50;
  {% endhighlight %} 
 {% endtabs %}
 

@@ -66,7 +66,7 @@ tabSplitter.Items.Add(tabSplitterItem1);
 
 // Adding TabSplitter to Window 
 
-this.Content = tabsplitter;
+this.Content = tabSplitter;
 {% endhighlight %}
 
 
@@ -80,7 +80,7 @@ this.Content = tabsplitter;
 
 ## Panel items
 
-The WPF Tab Splitter items contains a collection of pages. These pages are defined as panel items.
+The WPF Tab Splitter items contain a collection of pages. These pages are defined as panel items.
 
  There are two types of panel Items:
 
@@ -211,7 +211,7 @@ tabSplitter.Items.Add(tabSplitterItem1);
 
 // Adding TabSplitter to Window 
 
-this.Content = tabsplitter;
+this.Content = tabSplitter;
 {% endhighlight %}
 
 {%endtabs%}
@@ -345,7 +345,7 @@ tabSplitter.Items.Add(tabSplitterItem1);
 
 // Adding TabSplitter to Window 
 
-this.Content = tabsplitter;
+this.Content = tabSplitter;
 {% endhighlight %}
 
 
@@ -425,8 +425,7 @@ You can collapse or expand the bottom panel by using the [IsCollapsedBottomPanel
 
 
 
-// Enable IsCollapseBottomPanel property.
-
+// Enable IsCollapsedBottomPanel property.
 tabSplitterItem1.IsCollapsedBottomPanel = true;  
 {% endhighlight %}
 

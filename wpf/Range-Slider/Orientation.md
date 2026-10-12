@@ -42,7 +42,7 @@ The default option is Horizontal.
             };
 
             parentGrid.Children.Add(rangeSlider);
-            this.Content = parentGrid;;
+            this.Content = parentGrid;
 
 {% endhighlight %}
 
@@ -81,7 +81,7 @@ The following code sample illustrates how to set vertical orientation to [SfRang
             };
 
             parentGrid.Children.Add(rangeSlider);
-            this.Content = parentGrid;;
+            this.Content = parentGrid;
 
 {% endhighlight %}
 

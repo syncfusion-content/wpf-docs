@@ -9,7 +9,7 @@ documentation: ug
 
 # Layout Features in WPF Tab Splitter
 
-This section illustrates the following layout-related feature of the [WPF Tab Splitter](https://www.syncfusion.com/wpf-controls/tab-splitter) control.
+This section illustrates the following layout-related features of the [WPF Tab Splitter](https://www.syncfusion.com/wpf-controls/tab-splitter) control.
 
 ## Customizing the appearance of WPF Tab Splitter
 
@@ -43,16 +43,16 @@ You can customize the appearance of the [WPF Tab Splitter](https://www.syncfusio
 {% highlight c# %}
 
 // Set the selected background.
-tabsplitter.SelectedBackground = Brushes.Red;
+tabSplitter.SelectedBackground = Brushes.Red;
 
 // Set the selected foreground.
-tabsplitter.SelectedForeground = Brushes.YellowGreen;
+tabSplitter.SelectedForeground = Brushes.YellowGreen;
 
 // Set the MouseOverBackground.
-tabsplitter.MouseOverBackground = Brushes.Green;
+tabSplitter.MouseOverBackground = Brushes.Green;
 
 // Set the MouseOverForeground.
-tabsplitter.MouseOverForeground = Brushes.Yellow;
+tabSplitter.MouseOverForeground = Brushes.Yellow;
 
 {% endhighlight %}
 

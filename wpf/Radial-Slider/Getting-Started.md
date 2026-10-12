@@ -121,7 +121,7 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-
 
 You can select any tick value by dragging the pointer along the circular track or clicking on the corresponding track value. You can get the selected value by using the `Value` property. The default value of the `Value` property is `0`.
 
-![Selecting a Value by Clicking and Draging in WPF Radial Slider](getting-started_images/wpf-radial-slider-drag-select-value.gif)
+![Selecting a Value by Clicking and Dragging in WPF Radial Slider](getting-started_images/wpf-radial-slider-drag-select-value.gif)
 
 ### Select tick value programmatically
 
@@ -161,7 +161,7 @@ public class ViewModel
             return selectedValue;
         }
         set {
-            selectedValue= value;
+            selectedValue = value;
         }
     }
 }

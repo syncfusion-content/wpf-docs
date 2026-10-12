@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Add GroupBar Items in WPF Navigation Pane | Syncfusion®
 description: Learn how to create and add GroupBar items programmatically or through XAML in the WPF Navigation Pane control.
@@ -24,10 +24,10 @@ GroupBar Item is added to the GroupBar using XAML or C# code. The following code
 {% highlight C# %} 
 //Creating an instance of GroupBar
 GroupBar groupBar = new GroupBar();
-//Creating an instance of GroupBar
-ItemGroupBarItem groupBarItem = new GroupBarItem();
-//Setting header for GroupBar itemgroup
-BarItem.Header = "GroupBarItem";
+//Creating an instance of GroupBarItem
+GroupBarItem groupBarItem = new GroupBarItem();
+//Setting header for GroupBar item
+groupBarItem.Header = "GroupBarItem";
 //Adding GroupBar item to GroupBar
 groupBar.Items.Add(groupBarItem);
 //Adding GroupBar to the window

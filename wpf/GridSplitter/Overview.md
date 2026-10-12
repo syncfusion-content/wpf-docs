@@ -16,7 +16,7 @@ The [WPF GridSplitter](https://www.syncfusion.com/wpf-controls/gridsplitter) is 
 ## Features of WPF GridSplitter
 
 * Dynamic resizing: Splits available space with movable splitter that helps resize controls on demand.
-* Expand / Collapse: Supports to expand and collapse splitter controls interactively in UI.
+* Expand / Collapse: Supports expanding and collapsing splitter controls interactively in UI.
 * Orientation: Supports both horizontal and vertical orientation to split controls based on user layout.
 
 
