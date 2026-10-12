@@ -18,13 +18,13 @@ The icon option helps to provide pictorial representation of the dropdown menu i
 
 <syncfusion:DropDownButtonAdv Label="Country" x:Name="dropdownbutton" DropDirection="BottomRight" SizeMode="Normal" SmallIcon="Images\country.png">
     <syncfusion:DropDownMenuGroup>
-        <syncfusion:DropDownMenuItem HorizontalAlignment=System.Windows.HorizontalAlignment.Left Header="India">
+        <syncfusion:DropDownMenuItem HorizontalAlignment="Left" Header="India">
             <syncfusion:DropDownMenuItem.Icon>
                 <Image Source="Images\india.png"/>
             </syncfusion:DropDownMenuItem.Icon>
         </syncfusion:DropDownMenuItem>
-        <syncfusion:DropDownMenuItem HorizontalAlignment=System.Windows.HorizontalAlignment.Left Header="France"/>
-        <syncfusion:DropDownMenuItem HorizontalAlignment=System.Windows.HorizontalAlignment.Left Header="Germany"/>
+        <syncfusion:DropDownMenuItem HorizontalAlignment="Left" Header="France"/>
+        <syncfusion:DropDownMenuItem HorizontalAlignment="Left" Header="Germany"/>
     </syncfusion:DropDownMenuGroup>
 </syncfusion:DropDownButtonAdv>
 
@@ -34,8 +34,8 @@ The icon option helps to provide pictorial representation of the dropdown menu i
 DropDownButtonAdv dropdownbutton = new DropDownButtonAdv();
 DropDownMenuGroup menu = new DropDownMenuGroup();
 DropDownMenuItem Item1 = new DropDownMenuItem() { Header="India",Icon=new BitmapImage(new Uri(@"Images\india.png", UriKind.RelativeOrAbsolute)), HorizontalAlignment=System.Windows.HorizontalAlignment.Left};
-DropDownMenuItem Item2 = new DropDownMenuItem() { Header ="France", HorizontalAlignment=System.Windows.HorizontalAlignment.Left };
-DropDownMenuItem Item3 = new DropDownMenuItem() { Header ="Germany", HorizontalAlignment=System.Windows.HorizontalAlignment.Left };
+DropDownMenuItem Item2 = new DropDownMenuItem() { Header ="France", HorizontalAlignment=HorizontalAlignment.Left };
+DropDownMenuItem Item3 = new DropDownMenuItem() { Header ="Germany", HorizontalAlignment=HorizontalAlignment.Left };
 menu.Items.Add(Item1);
 menu.Items.Add(Item2);
 menu.Items.Add(Item3);
@@ -61,13 +61,13 @@ dropdownbutton.SmallIcon = new BitmapImage(new Uri(@"Images\country.png", UriKin
 
 <syncfusion:DropDownButtonAdv Label="Country" x:Name="dropdownbutton" DropDirection="BottomRight" SizeMode="Normal" SmallIcon="Images\country.png">
     <syncfusion:DropDownMenuGroup IconBarEnabled="True">
-        <syncfusion:DropDownMenuItem HorizontalAlignment=System.Windows.HorizontalAlignment.Left Header="India">
+        <syncfusion:DropDownMenuItem HorizontalAlignment="Left" Header="India">
             <syncfusion:DropDownMenuItem.Icon>
                 <Image Source="Images\india.png"/>
             </syncfusion:DropDownMenuItem.Icon>
         </syncfusion:DropDownMenuItem>
-        <syncfusion:DropDownMenuItem HorizontalAlignment=System.Windows.HorizontalAlignment.Left Header="France"/>
-        <syncfusion:DropDownMenuItem HorizontalAlignment=System.Windows.HorizontalAlignment.Left Header="Germany"/>
+        <syncfusion:DropDownMenuItem HorizontalAlignment="Left" Header="France"/>
+        <syncfusion:DropDownMenuItem HorizontalAlignment="Left" Header="Germany"/>
     </syncfusion:DropDownMenuGroup>
 </syncfusion:DropDownButtonAdv>
 
@@ -76,9 +76,9 @@ dropdownbutton.SmallIcon = new BitmapImage(new Uri(@"Images\country.png", UriKin
 
 DropDownButtonAdv dropdownbutton = new DropDownButtonAdv();
 DropDownMenuGroup menu = new DropDownMenuGroup();
-DropDownMenuItem Item1 = new DropDownMenuItem() { Header="India",Icon=new BitmapImage(new Uri(@"Images\india.png", UriKind.RelativeOrAbsolute)), HorizontalAlignment=System.Windows.HorizontalAlignment.Left};
-DropDownMenuItem Item2 = new DropDownMenuItem() { Header ="France", HorizontalAlignment=System.Windows.HorizontalAlignment.Left };
-DropDownMenuItem Item3 = new DropDownMenuItem() { Header ="Germany", HorizontalAlignment=System.Windows.HorizontalAlignment.Left };
+DropDownMenuItem Item1 = new DropDownMenuItem() { Header="India",Icon=new BitmapImage(new Uri(@"Images\india.png", UriKind.RelativeOrAbsolute)), HorizontalAlignment=HorizontalAlignment.Left};
+DropDownMenuItem Item2 = new DropDownMenuItem() { Header ="France", HorizontalAlignment=HorizontalAlignment.Left };
+DropDownMenuItem Item3 = new DropDownMenuItem() { Header ="Germany", HorizontalAlignment=HorizontalAlignment.Left };
 menu.Items.Add(Item1);
 menu.Items.Add(Item2);
 menu.Items.Add(Item3);
@@ -103,36 +103,36 @@ The dropdown menu group supports built-in scrollbar to show large number of menu
 
 <syncfusion:DropDownButtonAdv Label="Country" DropDirection="BottomRight" x:Name="dropdownbutton" SizeMode="Normal" SmallIcon="Images\country.png">
     <syncfusion:DropDownMenuGroup MaxHeight="111" ScrollBarVisibility="Visible">
-        <syncfusion:DropDownMenuItem HorizontalAlignment=System.Windows.HorizontalAlignment.Left Header="India">
+        <syncfusion:DropDownMenuItem HorizontalAlignment="Left" Header="India">
             <syncfusion:DropDownMenuItem.Icon>
                 <Image Source="Images/india.png"/>
             </syncfusion:DropDownMenuItem.Icon>
         </syncfusion:DropDownMenuItem>
-        <syncfusion:DropDownMenuItem HorizontalAlignment=System.Windows.HorizontalAlignment.Left Header="France">
+        <syncfusion:DropDownMenuItem HorizontalAlignment="Left" Header="France">
             <syncfusion:DropDownMenuItem.Icon>
                 <Image Source="Image\france.png"/>
             </syncfusion:DropDownMenuItem.Icon>
         </syncfusion:DropDownMenuItem>
-        <syncfusion:DropDownMenuItem HorizontalAlignment=System.Windows.HorizontalAlignment.Left Header="Germany" >
+        <syncfusion:DropDownMenuItem HorizontalAlignment="Left" Header="Germany" >
             <syncfusion:DropDownMenuItem.Icon>
                 <Image Source="Image\germany.png"/>
             </syncfusion:DropDownMenuItem.Icon>
         </syncfusion:DropDownMenuItem>
-        <syncfusion:DropDownMenuItem HorizontalAlignment=System.Windows.HorizontalAlignment.Left Header="Canada">
+        <syncfusion:DropDownMenuItem HorizontalAlignment="Left" Header="Canada">
             <syncfusion:DropDownMenuItem.Icon>
                 <Image Source="Image\canada.png"/>
             </syncfusion:DropDownMenuItem.Icon>
         </syncfusion:DropDownMenuItem>
-        <syncfusion:DropDownMenuItem HorizontalAlignment=System.Windows.HorizontalAlignment.Left Header="China">
+        <syncfusion:DropDownMenuItem HorizontalAlignment="Left" Header="China">
             <syncfusion:DropDownMenuItem.Icon>
                 <Image Source="Image\china.png"/>
         </syncfusion:DropDownMenuItem.Icon>
         </syncfusion:DropDownMenuItem>
-        <syncfusion:DropDownMenuItem HorizontalAlignment=System.Windows.HorizontalAlignment.Left Header="United States"/>
-        <syncfusion:DropDownMenuItem HorizontalAlignment=System.Windows.HorizontalAlignment.Left Header="Italy"/>
-        <syncfusion:DropDownMenuItem HorizontalAlignment=System.Windows.HorizontalAlignment.Left Header="Japan"/>
-        <syncfusion:DropDownMenuItem HorizontalAlignment=System.Windows.HorizontalAlignment.Left Header="Spain"/>
-        <syncfusion:DropDownMenuItem HorizontalAlignment=System.Windows.HorizontalAlignment.Left Header="Pakistan"/>
+        <syncfusion:DropDownMenuItem HorizontalAlignment="Left" Header="United States"/>
+        <syncfusion:DropDownMenuItem HorizontalAlignment="Left" Header="Italy"/>
+        <syncfusion:DropDownMenuItem HorizontalAlignment="Left" Header="Japan"/>
+        <syncfusion:DropDownMenuItem HorizontalAlignment="Left" Header="Spain"/>
+        <syncfusion:DropDownMenuItem HorizontalAlignment="Left" Header="Pakistan"/>
     </syncfusion:DropDownMenuGroup>
 </syncfusion:DropDownButtonAdv>
 
@@ -141,16 +141,16 @@ The dropdown menu group supports built-in scrollbar to show large number of menu
 
 DropDownButtonAdv dropdownbutton = new DropDownButtonAdv();
 DropDownMenuGroup menu = new DropDownMenuGroup();
-DropDownMenuItem Item1 = new DropDownMenuItem() { Header="India",Icon=new BitmapImage(new Uri(@"Images\india.png", UriKind.RelativeOrAbsolute)), HorizontalAlignment=System.Windows.HorizontalAlignment.Left};
-DropDownMenuItem Item2 = new DropDownMenuItem() { Header ="France", Icon=new BitmapImage(new Uri(@"Images\france.png", UriKind.RelativeOrAbsolute)), HorizontalAlignment=System.Windows.HorizontalAlignment.Left};
-DropDownMenuItem Item3 = new DropDownMenuItem() { Header ="Germany", Icon=new BitmapImage(new Uri(@"Images\germany.png", UriKind.RelativeOrAbsolute)), HorizontalAlignment=System.Windows.HorizontalAlignment.Left};
-DropDownMenuItem Item4 = new DropDownMenuItem() { Header ="Canada", Icon=new BitmapImage(new Uri(@"Images\canada.png", UriKind.RelativeOrAbsolute)), HorizontalAlignment=System.Windows.HorizontalAlignment.Left};
-DropDownMenuItem Item5 = new DropDownMenuItem() { Header ="China", Icon=new BitmapImage(new Uri(@"Images\china.png", UriKind.RelativeOrAbsolute)), HorizontalAlignment=System.Windows.HorizontalAlignment.Left};
-DropDownMenuItem Item6 = new DropDownMenuItem() { Header ="United States", HorizontalAlignment=System.Windows.HorizontalAlignment.Left};
-DropDownMenuItem Item7 = new DropDownMenuItem() { Header ="Italy", HorizontalAlignment=System.Windows.HorizontalAlignment.Left};
-DropDownMenuItem Item8 = new DropDownMenuItem() { Header ="Japan", HorizontalAlignment=System.Windows.HorizontalAlignment.Left};
-DropDownMenuItem Item9 = new DropDownMenuItem() { Header ="Spain", HorizontalAlignment=System.Windows.HorizontalAlignment.Left};
-DropDownMenuItem Item10 = new DropDownMenuItem() { Header ="Pakistan", HorizontalAlignment=System.Windows.HorizontalAlignment.Left};
+DropDownMenuItem Item1 = new DropDownMenuItem() { Header="India",Icon=new BitmapImage(new Uri(@"Images\india.png", UriKind.RelativeOrAbsolute)), HorizontalAlignment=HorizontalAlignment.Left};
+DropDownMenuItem Item2 = new DropDownMenuItem() { Header ="France", Icon=new BitmapImage(new Uri(@"Images\france.png", UriKind.RelativeOrAbsolute)), HorizontalAlignment=HorizontalAlignment.Left};
+DropDownMenuItem Item3 = new DropDownMenuItem() { Header ="Germany", Icon=new BitmapImage(new Uri(@"Images\germany.png", UriKind.RelativeOrAbsolute)), HorizontalAlignment=HorizontalAlignment.Left};
+DropDownMenuItem Item4 = new DropDownMenuItem() { Header ="Canada", Icon=new BitmapImage(new Uri(@"Images\canada.png", UriKind.RelativeOrAbsolute)), HorizontalAlignment=HorizontalAlignment.Left};
+DropDownMenuItem Item5 = new DropDownMenuItem() { Header ="China", Icon=new BitmapImage(new Uri(@"Images\china.png", UriKind.RelativeOrAbsolute)), HorizontalAlignment=HorizontalAlignment.Left};
+DropDownMenuItem Item6 = new DropDownMenuItem() { Header ="United States", HorizontalAlignment=HorizontalAlignment.Left};
+DropDownMenuItem Item7 = new DropDownMenuItem() { Header ="Italy", HorizontalAlignment=HorizontalAlignment.Left};
+DropDownMenuItem Item8 = new DropDownMenuItem() { Header ="Japan", HorizontalAlignment=HorizontalAlignment.Left};
+DropDownMenuItem Item9 = new DropDownMenuItem() { Header ="Spain", HorizontalAlignment=HorizontalAlignment.Left};
+DropDownMenuItem Item10 = new DropDownMenuItem() { Header ="Pakistan", HorizontalAlignment=HorizontalAlignment.Left};
 menu.Items.Add(Item1);
 menu.Items.Add(Item2);
 menu.Items.Add(Item3);
@@ -183,17 +183,17 @@ The dropdown menu group height can be increased or decreased using the resizing 
 
 <syncfusion:DropDownButtonAdv Label="Country" x:Name="dropdownbutton" SmallIcon="Images\country.png">
     <syncfusion:DropDownMenuGroup IsResizable="True">
-        <syncfusion:DropDownMenuItem HorizontalAlignment=System.Windows.HorizontalAlignment.Left Header="India">
+        <syncfusion:DropDownMenuItem HorizontalAlignment="Left" Header="India">
             <syncfusion:DropDownMenuItem.Icon>
             <Image Source="Images\india.png"/>
             </syncfusion:DropDownMenuItem.Icon>
         </syncfusion:DropDownMenuItem>
-        <syncfusion:DropDownMenuItem HorizontalAlignment=System.Windows.HorizontalAlignment.Left Header="France">
+        <syncfusion:DropDownMenuItem HorizontalAlignment="Left" Header="France">
             <syncfusion:DropDownMenuItem.Icon   >
                 <Image Source="Images\france.png"/>
             </syncfusion:DropDownMenuItem.Icon>
         </syncfusion:DropDownMenuItem>
-        <syncfusion:DropDownMenuItem HorizontalAlignment=System.Windows.HorizontalAlignment.Left Header="Germany">
+        <syncfusion:DropDownMenuItem HorizontalAlignment="Left" Header="Germany">
             <syncfusion:DropDownMenuItem.Icon>
                 <Image Source="Images\germany.png"/>
             </syncfusion:DropDownMenuItem.Icon>
@@ -206,9 +206,9 @@ The dropdown menu group height can be increased or decreased using the resizing 
 
 DropDownButtonAdv dropdownbutton = new DropDownButtonAdv();
 DropDownMenuGroup menu = new DropDownMenuGroup();
-DropDownMenuItem Item1 = new DropDownMenuItem() { Header ="India", Icon =new BitmapImage(new Uri(@"Images\india.png", UriKind.RelativeOrAbsolute)), HorizontalAlignment=System.Windows.HorizontalAlignment.Left};
-DropDownMenuItem Item2 = new DropDownMenuItem() { Header ="France", Icon =new BitmapImage(new Uri(@"Images\france.png", UriKind.RelativeOrAbsolute)), HorizontalAlignment=System.Windows.HorizontalAlignment.Left};
-DropDownMenuItem Item3 = new DropDownMenuItem() { Header ="Germany", Icon =new BitmapImage(new Uri(@"Images\germany.png", UriKind.RelativeOrAbsolute)), HorizontalAlignment=System.Windows.HorizontalAlignment.Left};
+DropDownMenuItem Item1 = new DropDownMenuItem() { Header ="India", Icon =new BitmapImage(new Uri(@"Images\india.png", UriKind.RelativeOrAbsolute)), HorizontalAlignment=HorizontalAlignment.Left};
+DropDownMenuItem Item2 = new DropDownMenuItem() { Header ="France", Icon =new BitmapImage(new Uri(@"Images\france.png", UriKind.RelativeOrAbsolute)), HorizontalAlignment=HorizontalAlignment.Left};
+DropDownMenuItem Item3 = new DropDownMenuItem() { Header ="Germany", Icon =new BitmapImage(new Uri(@"Images\germany.png", UriKind.RelativeOrAbsolute)), HorizontalAlignment=HorizontalAlignment.Left};
 menu.Items.Add(Item1);
 menu.Items.Add(Item2);
 menu.Items.Add(Item3);
@@ -232,9 +232,9 @@ The checkable option helps to check/uncheck the dropdown menu item on selection 
 
 <syncfusion:DropDownButtonAdv Label="Country" DropDirection="BottomRight" x:Name="dropdownbutton" SizeMode="Normal" SmallIcon="Images\country.png">
     <syncfusion:DropDownMenuGroup>
-        <syncfusion:DropDownMenuItem HorizontalAlignment=System.Windows.HorizontalAlignment.Left Header="India" IsChecked="True" IsCheckable="True"/>
-        <syncfusion:DropDownMenuItem HorizontalAlignment=System.Windows.HorizontalAlignment.Left Header="France" IsChecked="True" IsCheckable="True"/>
-        <syncfusion:DropDownMenuItem HorizontalAlignment=System.Windows.HorizontalAlignment.Left Header="Germany"/>
+        <syncfusion:DropDownMenuItem HorizontalAlignment="Left" Header="India" IsChecked="True" IsCheckable="True"/>
+        <syncfusion:DropDownMenuItem HorizontalAlignment="Left" Header="France" IsChecked="True" IsCheckable="True"/>
+        <syncfusion:DropDownMenuItem HorizontalAlignment="Left" Header="Germany"/>
     </syncfusion:DropDownMenuGroup>
 </syncfusion:DropDownButtonAdv>
 
@@ -243,9 +243,9 @@ The checkable option helps to check/uncheck the dropdown menu item on selection 
 
 DropDownButtonAdv dropdownbutton = new DropDownButtonAdv();
 DropDownMenuGroup menu = new DropDownMenuGroup();
-DropDownMenuItem Item1 = new DropDownMenuItem() { Header="India", IsChecked=true, IsCheckable=true, HorizontalAlignment=System.Windows.HorizontalAlignment.Left};
-DropDownMenuItem Item2 = new DropDownMenuItem() { Header ="France", IsChecked=true, IsCheckable=true, HorizontalAlignment=System.Windows.HorizontalAlignment.Left};
-DropDownMenuItem Item3 = new DropDownMenuItem() { Header ="Germany", HorizontalAlignment=System.Windows.HorizontalAlignment.Left};
+DropDownMenuItem Item1 = new DropDownMenuItem() { Header="India", IsChecked=true, IsCheckable=true, HorizontalAlignment=HorizontalAlignment.Left};
+DropDownMenuItem Item2 = new DropDownMenuItem() { Header ="France", IsChecked=true, IsCheckable=true, HorizontalAlignment=HorizontalAlignment.Left};
+DropDownMenuItem Item3 = new DropDownMenuItem() { Header ="Germany", HorizontalAlignment=HorizontalAlignment.Left};
 menu.Items.Add(Item1);
 menu.Items.Add(Item2);
 menu.Items.Add(Item3);
@@ -286,17 +286,17 @@ N> The **MoreItems** property has a return type `ObservableCollection<UIElement>
     <Grid>
         <syncfusion:DropDownButtonAdv Label="Colors" x:Name="dropdownbutton" SizeMode="Normal" SmallIcon="Images\colors.png">
             <syncfusion:DropDownMenuGroup MoreItems="{Binding Items}" IconBarEnabled="True" IsMoreItemsIconTrayEnabled="False">
-                <syncfusion:DropDownMenuItem HorizontalAlignment=System.Windows.HorizontalAlignment.Left Header="Black">
+                <syncfusion:DropDownMenuItem HorizontalAlignment="Left" Header="Black">
                     <syncfusion:DropDownMenuItem.Icon>
                         <Image Source="Images\black.png"/>
                     </syncfusion:DropDownMenuItem.Icon>
                 </syncfusion:DropDownMenuItem>
-                <syncfusion:DropDownMenuItem HorizontalAlignment=System.Windows.HorizontalAlignment.Left Header="Orange">
+                <syncfusion:DropDownMenuItem HorizontalAlignment="Left" Header="Orange">
                     <syncfusion:DropDownMenuItem.Icon   >
                         <Image Source="Images\orange.png"/>
                     </syncfusion:DropDownMenuItem.Icon>
                 </syncfusion:DropDownMenuItem>
-                <syncfusion:DropDownMenuItem HorizontalAlignment=System.Windows.HorizontalAlignment.Left Header="Red">
+                <syncfusion:DropDownMenuItem HorizontalAlignment="Left" Header="Red">
                     <syncfusion:DropDownMenuItem.Icon>
                         <Image Source="Images\red.png"/>
                     </syncfusion:DropDownMenuItem.Icon>
@@ -360,17 +360,17 @@ The custom dropdown menu items icon visibility can be enabled/disabled by settin
     <Grid>
         <syncfusion:DropDownButtonAdv Label="Colors" x:Name="dropdownbutton" SizeMode="Normal" SmallIcon="Images\colors.png">
             <syncfusion:DropDownMenuGroup MoreItems="{Binding Colors}" IconBarEnabled="True" IsMoreItemsIconTrayEnabled="True">
-                <syncfusion:DropDownMenuItem HorizontalAlignment=System.Windows.HorizontalAlignment.Left Header="Black">
+                <syncfusion:DropDownMenuItem HorizontalAlignment="Left" Header="Black">
                     <syncfusion:DropDownMenuItem.Icon>
                         <Image Source="Images\black.png"/>
                     </syncfusion:DropDownMenuItem.Icon>
                 </syncfusion:DropDownMenuItem>
-                <syncfusion:DropDownMenuItem HorizontalAlignment=System.Windows.HorizontalAlignment.Left Header="Orange">
+                <syncfusion:DropDownMenuItem HorizontalAlignment="Left" Header="Orange">
                     <syncfusion:DropDownMenuItem.Icon   >
                         <Image Source="Images\orange.png"/>
                     </syncfusion:DropDownMenuItem.Icon>
                 </syncfusion:DropDownMenuItem>
-                <syncfusion:DropDownMenuItem HorizontalAlignment=System.Windows.HorizontalAlignment.Left Header="Red">
+                <syncfusion:DropDownMenuItem HorizontalAlignment="Left" Header="Red">
                     <syncfusion:DropDownMenuItem.Icon>
                         <Image Source="Images\red.png"/>
                     </syncfusion:DropDownMenuItem.Icon>
