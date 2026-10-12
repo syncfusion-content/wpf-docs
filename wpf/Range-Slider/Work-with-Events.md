@@ -167,7 +167,7 @@ The [RangeStartChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Co
             this.Content = parentGrid;
         }
 
-        private void SfRangeSlider_RangeStartChanged(object sender, RangeStartChangedEventArgs e)
+        private void SfRangeSlider_RangeStartChanged(object sender, RangeStartChagedEventArgse)
         {
             var newStartValue = e.NewStartValue;
             var oldStartValue = e.OldStartValue;
@@ -222,7 +222,7 @@ The [RangeEndChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Cont
             this.Content = parentGrid;
         }
 
-        private void SfRangeSlider_RangeEndChanged(object sender, RangeEndChangedEventArgs e)
+        private void SfRangeSlider_RangeEndChanged(object sender, RangeEndChagedEventArgs e)
         {
             var newEndValue = e.NewEndValue;
             var oldEndValue = e.OldEndValue;
