@@ -21,7 +21,7 @@ For more information about installing NuGet packages in a WPF application, refer
 
 Follow these steps to create a WPF application that uses the `HierarchyNavigator` control.
 
-## Create a project
+### Create a project
 
 Create a new WPF project in Visual Studio to use the `HierarchyNavigator` control and explore its features.
 
@@ -29,7 +29,7 @@ Create a new WPF project in Visual Studio to use the `HierarchyNavigator` contro
 2. Select **WPF App (.NET)** (or **WPF App (.NET Framework)**) and click **Next**.
 3. Enter the project name (for example, `HierarchyNavigatorSample`) and click **Create**.
 
-## Add control through designer
+### Add control through designer
 
 You can add the `HierarchyNavigator` control to an application by dragging it from the **Toolbox** and dropping it onto the designer surface. The following required assembly references are added automatically.
 

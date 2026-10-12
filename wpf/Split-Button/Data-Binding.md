@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Data Binding in WPF SplitButton | Syncfusion®
 description: Bind collections and commands to SplitButton dropdown items using view models, item templates, and ItemsSource support.
@@ -9,7 +9,7 @@ documentation: ug
 
 # Data Binding in WPF Split Button
 
-Data binding provides an easier way to assign, visualize and interact with the collection of predefined data. The data binding can be achieved by populating the [DropDownMenuGroup.ItemsSource](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.itemscontrol.itemssource?redirectedfrom=MSDN&view=netframework-4.8#System_Windows_Controls_ItemsControl_ItemsSource) property.
+Data binding provides an easier way to assign, visualize and interact with a predefined collection of data. The data binding can be achieved by populating the [DropDownMenuGroup.ItemsSource](https://learn.microsoft.com/en-us/dotnet/api/system.windows.controls.itemscontrol.itemssource?view=netframework-4.8) property.
 
 ## Creating model
 
@@ -100,7 +100,7 @@ public class CountryViewModel
 
 ## Bind data from view model
 
-Bind the list of menu items to [DropDownMenuGroup.ItemsSource](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.itemscontrol.itemssource?redirectedfrom=MSDN&view=netframework-4.8#System_Windows_Controls_ItemsControl_ItemsSource) property of [DropDownMenuGroup](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DropDownMenuGroup.html) and also set the `DataContext` with ViewModel instance. For example, `CountryViewModel` instance has been set as DataContext.
+Bind the list of menu items to the [DropDownMenuGroup.ItemsSource](https://learn.microsoft.com/en-us/dotnet/api/system.windows.controls.itemscontrol.itemssource?view=netframework-4.8) property of [DropDownMenuGroup](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DropDownMenuGroup.html) and also set the `DataContext` with the view model instance. For example, the `CountryViewModel` instance has been set as `DataContext`.
  
 {% tabs %}
 {% highlight xaml %}
@@ -122,23 +122,23 @@ Bind the list of menu items to [DropDownMenuGroup.ItemsSource](https://docs.micr
 {% endhighlight %}
 {% highlight C# %}
 
-    public partial class MainWindow:Window
+public partial class MainWindow : Window
+{
+    public MainWindow()
     {
-        public MainWindow()
-        {
-            InitializeComponent();
-            this.DataContext = new CountryViewModel();
-        }
+        InitializeComponent();
+        this.DataContext = new CountryViewModel();
     }
+}
 
 {% endhighlight %}
 {% endtabs %}
 
 ## Bind command from view model
 
-Bind the command to [DropDownMenuItem.Command](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DropDownMenuItem.html#Syncfusion_Windows_Tools_Controls_DropDownMenuItem_Command) property of [DropDownMenuItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DropDownMenuItem.html). For example, `ClickCommand` has been bounded to `DropDownMenuItem`.
+Bind the command to the [DropDownMenuItem.Command](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DropDownMenuItem.html#Syncfusion_Windows_Tools_Controls_DropDownMenuItem_Command) property of [DropDownMenuItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DropDownMenuItem.html). For example, the `ClickCommand` has been bound to `DropDownMenuItem`.
 
-N> For more information on Command Binding, please refer [Command Binding](https://help.syncfusion.com/wpf/split-button/command-binding)
+N> For more information on command binding, refer to [Command Binding](https://help.syncfusion.com/wpf/split-button/command-binding).
 
 {% tabs %}
 {% highlight xaml %}
@@ -189,7 +189,7 @@ public class DelegateCommand<T> : ICommand
     bool _canExecuteCache = true;
 
     /// <summary>
-    /// Initializes a new instance of the <see cref="DelegateCommand"/> class.
+    /// Initializes a new instance of the <see cref="DelegateCommand{T}"/> class.
     /// </summary>
     /// <param name="method">The method.</param>
     public DelegateCommand(Action<T> method)
@@ -198,7 +198,7 @@ public class DelegateCommand<T> : ICommand
     }
 
     /// <summary>
-    /// Initializes a new instance of the <see cref="DelegateCommand"/> class.
+    /// Initializes a new instance of the <see cref="DelegateCommand{T}"/> class.
     /// </summary>
     /// <param name="method">The method.</param>
     /// <param name="canExecute">The can execute.</param>
@@ -255,14 +255,14 @@ public class DelegateCommand<T> : ICommand
     #region ICommand Members
 
     /// <summary>
-    /// 
+    /// Occurs when changes occur that affect whether the command should execute.
     /// </summary>
     public event EventHandler CanExecuteChanged;
 
     #endregion
 }
 
-public class CountryViewModel: NotificationObject
+public class CountryViewModel : NotificationObject
 {
     private List<Country> dropDownItems;
 

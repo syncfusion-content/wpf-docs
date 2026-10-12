@@ -42,11 +42,11 @@ inputLayout.InputView = new TextBox();
 
 ### Helper text visibility
 
-We can specify the display state of the helper text using the `HelperTextVisibility` property, the type of which is [`Visibility`](https://docs.microsoft.com/en-us/dotnet/api/system.windows.visibility?view=netframework-4.8).
+The display state of the helper text can be specified using the `HelperTextVisibility` property, whose type is [`Visibility`](https://docs.microsoft.com/en-us/dotnet/api/system.windows.visibility?view=netframework-4.8).
 
 ## Error message
 
-If the text `Input` is not acknowledged, the troubleshooting instructions will be shown in the error message. Error messages are shown below the input line until the correct text has been entered. It can be set using the `ErrorText` property, but it will only be shown when the `HasError` property is set to `true`.
+If the entered text is invalid, an error message with troubleshooting instructions is shown below the input line until valid text is entered. Set the message using the `ErrorText` property. It is shown only when the `HasError` property is set to `true`.
 
 {% tabs %} 
 
@@ -104,7 +104,7 @@ Character counter is used when characters need to be limited. Use the `CharMaxLe
 var inputLayout = new SfTextInputLayout();
 inputLayout.Hint = "Name";
 inputLayout.CharMaxLength = 7;
-inputLayout.CharCountVisibility = Visiblity.Visible;
+inputLayout.CharCountVisibility = Visibility.Visible;
 inputLayout.HelperText = "Enter 5 to 7 characters";
 inputLayout.InputView = new TextBox(); 
 
@@ -114,5 +114,5 @@ inputLayout.InputView = new TextBox();
 
 ![Character count](Images/charactercount.png)
 
-N> When the number of characters to be entered in the input view exceeds the `CharMaxLength`, the `ErrorForeground` value will be applied to the hint label, base line, border and counter label.
+N> When the number of characters entered in the input view exceeds `CharMaxLength`, the `ErrorForeground` value is applied to the hint label, base line, border, and counter label.
 

@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Styles and Templates in WPF SplitButton | Syncfusion®
 description: Customize the appearance and structure of the SplitButton control using styles, templates, Expression Blend, and Visual Studio.
@@ -9,7 +9,7 @@ documentation: ug
 
 # Styles and Templates in WPF Split Button
 
-WPF styles and templates is a suite of features that allow developers and designers to create visual compelling effects and consistent appearance of the products. 
+WPF styles and templates is a suite of features that allow developers and designers to create visually compelling effects and a consistent appearance of the products. 
 
 This document provides information to change the visual appearance of the Split Button control. In addition, one can edit the structure of the Split Button control by using Blend and Visual Studio that helps to customize their appearances.
 
@@ -20,7 +20,7 @@ This document provides information to change the visual appearance of the Split 
 
     ![Blendability](Blendability_images/Blendability_img1.png)
 
-* Right click on the Split Button control and choose the menu option **Edit Template**. It will comprise of following two options.
+* Right click on the Split Button control and choose the menu option **Edit Template**. It comprises the following two options.
     * **Edit a Copy...** – Edit a copy of the default style. When selecting this option, a new dialog opens as follows.
 
     ![Blendability](Blendability_images/Blendability_img2.png)
@@ -47,7 +47,7 @@ Split Button control edited in Expression Blend
 
     ![Blendability](Blendability_images/Blendability_img6.png)
 
-* On choosing menu option **Edit Template**, it further comprise of following two options.
+* On choosing menu option **Edit Template**, it further comprises the following two options.
     * **Edit a Copy...** – Edit a copy of the default style. When selecting this option, a new dialog opens as follows.
 
     ![Blendability](Blendability_images/Blendability_img7.png)
