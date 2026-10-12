@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Multiline Text Support in WPF DropDown Button | Syncfusion®
 description: Display button labels across multiple lines in large-size mode to improve readability and presentation.
@@ -25,7 +25,7 @@ DropDownButtonAdv dropdownbutton = new DropDownButtonAdv();
 dropdownbutton.SizeMode = SizeMode.Large;
 dropdownbutton.Label = "Sign in with your Syncfusion Account";
 dropdownbutton.IsMultiLine =true;
-dropdownbutton.LargeIcon = new BitmapImage(new Uri("image\employee.png"));
+dropdownbutton.LargeIcon = new BitmapImage(new Uri(@"image\employee.png", UriKind.RelativeOrAbsolute));
 
 {% endhighlight %}
 {% endtabs %}

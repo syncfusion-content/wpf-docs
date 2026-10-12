@@ -37,7 +37,7 @@ The [WPF AutoComplete](https://www.syncfusion.com/wpf-controls/autocomplete) con
 
 {% highlight c# %}
 
-    public class Viewmodel
+    public class ViewModel
     {
         public ICommand ControlLoaded
         {
@@ -142,23 +142,23 @@ The [WPF AutoComplete](https://www.syncfusion.com/wpf-controls/autocomplete) con
 
 {% highlight c# %}
 
-            Viewmodel viewmodel = new Viewmodel();
-            this.DataContext = viewmodel;
+            ViewModel viewModel = new ViewModel();
+            this.DataContext = viewModel;
             StackPanel stackPanel = new StackPanel()
             {
                 Margin = new Thickness(10),
                 VerticalAlignment = VerticalAlignment.Center
             };
 
-            SfTextBoxExt autocomplete = new SfTextBoxExt()
+            SfTextBoxExt autoComplete = new SfTextBoxExt()
             {
                 Width = 200,
                 Height = 40,
                 HorizontalAlignment = HorizontalAlignment.Center,
                 VerticalAlignment = VerticalAlignment.Center,
                 AutoCompleteMode = AutoCompleteMode.Suggest,
-                AutoCompleteSource = viewmodel.Employees,
-                Filter= viewmodel.Filtering,
+                AutoCompleteSource = viewModel.Employees,
+                Filter = viewModel.Filtering,
                 SearchItemPath = "Name",
                 SuggestionMode = SuggestionMode.Custom
             };
@@ -182,7 +182,7 @@ The [WPF AutoComplete](https://www.syncfusion.com/wpf-controls/autocomplete) con
             grid.AppendChild(textBlockName);
             DataTemplate template = new DataTemplate { VisualTree = grid };
             autoComplete.AutoCompleteItemTemplate = template;
-            stackPanel.Children.Add(autocomplete);
+            stackPanel.Children.Add(autoComplete);
             this.Content = stackPanel;
 
 {% endhighlight %}

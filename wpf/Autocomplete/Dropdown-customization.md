@@ -47,7 +47,7 @@ The [SuggestionBoxPlacement](https://help.syncfusion.com/cr/wpf/Syncfusion.Windo
 2. Bottom
 3. None
 
-The default value is bottom.
+The default value is Bottom.
 
 ### Top
 

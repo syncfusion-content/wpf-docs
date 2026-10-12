@@ -25,9 +25,9 @@ The multi-selection, there are two ways to display the selection in the control.
 
 ## Multiple selection using tokens 
 
-Each selected items can be displayed as a token representation having a close button for each token. 
+Each selected item can be displayed as a token representation having a close button for each token. 
 
-In token representation the control behavior of arranging the items can be done in two ways which is handled by the property [TokensWrapMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_TokensWrapMode).
+In token representation, the control behavior of arranging the items can be done in two ways, which is handled by the property [TokensWrapMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_TokensWrapMode).
 
 * `Wrap` - The selected items will be wrapped to the next line of the WPF AutoComplete.
 
@@ -196,9 +196,9 @@ N> When displaying images using controls defined inside the `TokenItemTemplate`,
 
 ### Enable autosize in token mode 
 
-In token representation when we have set `Wrap` mode enabling the [EnableAutoSize](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_EnableAutoSize) property re-renders the control height based on the number of lines the tokens are wrapped inside the control. 
+In token representation, when the `Wrap` mode is set, enabling the [EnableAutoSize](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_EnableAutoSize) property re-renders the control height based on the number of lines the tokens are wrapped inside the control. 
 
-To use this feature, it is need to set the `MultiSelectMode` as `Token` and `TokensWrapMode` as `Wrap`. By default this feature is disabled.
+To use this feature, you need to set the `MultiSelectMode` as `Token` and the `TokensWrapMode` as `Wrap`. By default, this feature is disabled.
 
 {% tabs %}
 
@@ -228,9 +228,9 @@ textBoxExt.EnableAutoSize = true;
 ![EnableAutoSize](Single_and_multiple_selection_images/EnableAutoSize.png)
 
 
-### ShowClearButton:
+### ShowClearButton
 
-This feature allows to show or hide the clear button in Token mode for the WPF AutoComplete control using the [ShowClearButton]( https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_ShowClearButton) property.
+This feature allows you to show or hide the clear button in Token mode for the WPF AutoComplete control using the [ShowClearButton]( https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_ShowClearButton) property.
 
 {% tabs %}
 
@@ -259,10 +259,9 @@ textBoxExt.ShowClearButton = true;
 
 ![ShowClearButton](Single_and_multiple_selection_images/ShowClearButton.png)
 
-N> The default `ShowClearButton` property value is false. It will be only applicable for `MultiSelectMode` is `Token`.  
+N> The default `ShowClearButton` property value is false. It is applicable only when `MultiSelectMode` is set to `Token`.  
 
 See also [Multiple selection using tokens ](https://help.syncfusion.com/wpf/autocomplete/single-and-multiple-selection#multiple-selection-using-tokens) topic in WPF AutoComplete.
-
 
 ## Multiple selection using delimiter 
 
@@ -327,7 +326,7 @@ public class Employee
 {% endhighlight %}
 {% endtabs %}
 
-In EmployeeViewModel class the [SelectedItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_SelectedItem) updated initially from the Employees collection. 
+In the EmployeeViewModel class, the [SelectedItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_SelectedItem) property is updated initially from the Employees collection. 
 
 {% tabs %}
 {% highlight c# %}

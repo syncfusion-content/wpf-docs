@@ -16,15 +16,15 @@ N> This property is applicable only when the WPF Button is in large size mode.
 {% tabs %}
 {% highlight XAML %}
 
-<syncfusion:ButtonAdv x:Name="ButtonAdv" IsMultiLine="True" LargeIcon="image1/employee.png" Label="Sign in with your Syncfusion Account" SizeMode="Large" />
+<syncfusion:ButtonAdv x:Name="ButtonAdv" IsMultiLine="True" LargeIcon="image/employee.png" Label="Sign in with your Syncfusion Account" SizeMode="Large" />
 
 {% endhighlight %}
 {% highlight c# %}
 
 ButtonAdv button = new ButtonAdv();
 button.SizeMode = SizeMode.Large;
-button.LargeIcon = new BitmapImage(new Uri("employee.png"));
-button.IsMultiLine="true";
+button.LargeIcon = new BitmapImage(new Uri(@"image\employee.png", UriKind.RelativeOrAbsolute));
+button.IsMultiLine = true;
 button.Label = "Sign in with your Syncfusion Account";
 
 {% endhighlight %}

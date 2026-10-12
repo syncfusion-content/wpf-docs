@@ -30,7 +30,7 @@ The [SfTextBoxExt](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Control
 {% endhighlight %}
 {% endtabs %}
 
-For further details, refer to [Populating WPF AutoComplete with Data](https://help.syncfusion.com/wpf/autocomplete/getting-started#populating-autocomplete-with-data).
+For further details, refer to [Populating WPF AutoComplete with Data](https://help.syncfusion.com/wpf/autocomplete/getting-started#populating-wpf-autocomplete-with-data).
 
 ![AutoCompleteSource](AutoComplete_and_filtering_images/AutoCompleteSource.png)
 
@@ -363,7 +363,7 @@ Filter items in the suggestion list based on the users' custom search. This will
 
 ## Prefix characters constraint
 
-Instead of displaying suggestion list on every character entry, matches can be filtered and displayed after a few character entries. This can be done using the [MinimumPrefixCharacter](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_MinimumPrefixCharacters) property. By default the constraint is  set for each character entry.
+Instead of displaying suggestion list on every character entry, matches can be filtered and displayed after a few character entries. This can be done using the [MinimumPrefixCharacter](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_MinimumPrefixCharacters) property. By default, the constraint is set for each character entry.
 
 {% tabs %}
 
@@ -465,7 +465,7 @@ N> View [sample](https://github.com/SyncfusionExamples/wpf-textboxext-examples/t
 
 ## Display a message when suggestions are empty 
 
-When the entered item is not in the suggestion list, the WPF AutoComplete displays a text indicating that there is no search results found. Th text to be displayed for this can be customized using the [NoResultsFoundTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_NoResultsFoundTemplate) property.
+When the entered item is not in the suggestion list, the WPF AutoComplete displays a text indicating that there are no search results found. The text to be displayed for this can be customized using the [NoResultsFoundTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_NoResultsFoundTemplate) property.
 
 {% tabs %}
 {% highlight xaml %}
