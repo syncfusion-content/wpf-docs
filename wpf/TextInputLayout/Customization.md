@@ -15,7 +15,7 @@ Based on the text input layout state, the colors will be applied to the hint lab
 
 When the input view is focused, the value of the `FocusedForeground` property will be added to the hint label, base line and border.
 
-I> The cursor color of the input view is the same as the `Accent` color of the  application.
+I> The cursor color of the input view is the same as the `Accent` color of the application.
 
 {% tabs %} 
 
@@ -24,7 +24,7 @@ I> The cursor color of the input view is the same as the `Accent` color of the  
 <inputLayout:SfTextInputLayout
     Hint="User name" 
     FocusedForeground="Green"
-    HelperText="Enter your name"
+    HelperText="Enter your name">
  <TextBox Text="John" />
 </inputLayout:SfTextInputLayout>  
  
@@ -58,7 +58,7 @@ When the input view is unfocused, the `Foreground` property value will be applie
 <inputLayout:SfTextInputLayout
     Hint="User name" 
     Foreground="Gray"
-    HelperText="Enter your name"
+    HelperText="Enter your name">
  <TextBox Text="John" />
 </inputLayout:SfTextInputLayout>  
  
@@ -79,7 +79,7 @@ inputLayout.InputView = new TextBox() { Text = "John" };
 
 ## Error color
 
-When the input layout is set to error state, the `ErrorForeground` property value will be added to the hint label, base line, border and error text.
+When the input layout is in the error state, the `ErrorForeground` property value is applied to the hint label, base line, border, and error text.
 
 {% tabs %} 
 
@@ -142,7 +142,7 @@ inputLayout.InputView = new Entry() { TextBox = "John" };
 
 ![WPF TextInputLayout Container color](Images/Containercolor.png)
 
-N> Container color is not applicable for `None' type.
+N> Container color is not applicable for the `None` type.
 
 ## Outline corner radius
 

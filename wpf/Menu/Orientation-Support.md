@@ -29,7 +29,7 @@ MenuAdv helps users to set the Menu items in Horizontal or Vertical orientations
 
 ## Adding the Orientation Support to an Application
 
-Users can add the Orientation support to MenuAdv used in the application as mentioned in the code snippet below.
+Users can add the Orientation support to MenuAdv used in the application, as shown in the following code snippet.
 
 {% highlight xaml %}
 
@@ -58,7 +58,7 @@ Users can add the Orientation support to MenuAdv used in the application as ment
 
 ### Properties
 
-The property for the Orientation support is described in the following tabulation:
+The property for the Orientation support is described in the following table:
 
 
 
@@ -84,7 +84,7 @@ WPF Sample Browser-> Tools -> MenuAdv -> MenuAdv Demo
 
 ## Expand Modes Support
 
-Expand Modes in MenuAdv is used to open the submenu of each MenuItemAdv, which is added in MenuAdv by doing click to open the submenu or by doing mouse hover to open the submenu. MenuAdv supports two kinds of Expand Modes, namely ExpandOnClick and ExpandOnMouseOver, which can be obtained by using the ExpandMode property. 
+Expand Modes in MenuAdv are used to open the submenu of each MenuItemAdv, which is added in MenuAdv, either by clicking to open the submenu or by hovering the mouse over the item to open the submenu. MenuAdv supports two kinds of Expand Modes, namely ExpandOnClick and ExpandOnMouseOver, which can be obtained by using the ExpandMode property.
 
 ### Use Case Scenarios
 
@@ -92,7 +92,7 @@ MenuAdv helps users to use Expand Modes to open the submenu of MenuItemAdv added
 
 ### Using the Expand Modes Support in an Application 
 
-When the ExpandMode property is set to ExpandOnClick, you can open the submenu of each MenuItemAdv, which is added MenuAdv by clicking it. This type of expand mode is used to open menus in Windows operating system. Similarly, when the ExpandMode property is set to ExpandOnMouseOver, you can open the submenu of each MenuItemAdv, which is added in MenuAdv by moving the mouse pointer over it. Therefore, you need not click to open the submenu. You can achieve this functionality by using the ExpandMode property, as shown in the following code snippet.
+When the ExpandMode property is set to ExpandOnClick, you can open the submenu of each MenuItemAdv, which is added in MenuAdv, by clicking it. This type of expand mode is used to open menus in the Windows operating system. Similarly, when the ExpandMode property is set to ExpandOnMouseOver, you can open the submenu of each MenuItemAdv, which is added in MenuAdv, by moving the mouse pointer over it. Therefore, you need not click to open the submenu. You can achieve this functionality by using the ExpandMode property, as shown in the following code snippet.
 
 {% highlight xaml %}
 
@@ -121,7 +121,7 @@ When the ExpandMode property is set to ExpandOnClick, you can open the submenu o
 
 ### Properties
 
-The property for the Expand Modes support is described in the following tabulation:
+The property for the Expand Modes support is described in the following table:
 
 
 <table>
