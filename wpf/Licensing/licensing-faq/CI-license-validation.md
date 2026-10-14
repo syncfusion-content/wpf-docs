@@ -28,18 +28,10 @@ The following section shows how to validate the Syncfusion license key in CI ser
 * Open the LicenseKeyValidation.ps1 PowerShell script in a text or code editor as shown in the example below.
 
 {% tabs %}
-{% highlight c# tabtitle="v34.1.29 and later" %}
+{% highlight c# tabtitle="PowerShell" %}
 # Replace the parameters with the desired platform, version, and actual license key.
 
-$result = & $PSScriptRoot"\LicenseKeyValidatorConsole.exe" /platform:"UIComponent" /version:"34.1.29" /licensekey:"Your License Key"
-
-Write-Host $result
-{% endhighlight %}
-
-{% highlight c# tabtitle="Before v34.1.29" %}
-# Replace the parameters with the desired platform, version, and actual license key.
-
-$result = & $PSScriptRoot"\LicenseKeyValidatorConsole.exe" /platform:"WPF" /version:"26.2.4" /licensekey:"Your License Key"
+$result = & $PSScriptRoot"\LicenseKeyValidatorConsole.exe" /platform:"WPF" /version:"34.1.29" /licensekey:"Your License Key"
 
 Write-Host $result
 {% endhighlight %}
@@ -47,11 +39,11 @@ Write-Host $result
 
 * Update the parameters in the script:
   
-  **Platform:** Set /platform:"**UIComponent**" for v34.1.29 and later, or /platform:"**WPF**" for earlier versions (use the relevant Syncfusion platform as needed).
+  **Platform:** Modify the value for `/platform:` to the actual platform `"WPF"`. 
 
-  **Version:**  Set the value for /version: to the required version (for example, "26.2.4").
+  **Version:**  Set the value for `/version:` to the required version (for example, `"34.1.29"`).
 
-  **License Key:** Replace the value for /licensekey: with your actual license key.
+  **License Key:** Replace the value for `/licensekey:` with your actual license key(e.g., `"Your License Key"`).
   
   N> This feature is supported only from the 16.2.0.41 version of the Essential Studio.
 
@@ -133,7 +125,7 @@ pipeline {
 
 * Register the license key properly by calling RegisterLicense("License Key") method with the license key. 
 
-* Once the license key is registered, it can be validated by using the `ValidateLicense(Platform.WPF)` method. This ensures that the license key is valid for the platform and version you are using. For reference, please check the following example.
+* Once the license key is registered, it can be validated by using the `ValidateLicense(Platform.WPF)` method for version prior to v34.1.29, or the `ValidateLicense(new[] { Platform.WPF })` method for v34.1.29 and later. This ensures that the license key is valid for the platform and version you are using. Refer to the following example.
 
 {% tabs %}
 {% highlight c# tabtitle="v34.1.29 and later" %}
@@ -144,7 +136,7 @@ SyncfusionLicenseProvider.RegisterLicense("YOUR LICENSE KEY");
 
 //Validate the registered license key.
 // The array overload allows validating against multiple platforms in a single call.
-bool isValid = SyncfusionLicenseProvider.ValidateLicense(new[] { Platform.UIComponent });
+bool isValid = SyncfusionLicenseProvider.ValidateLicense(new[] { Platform.WPF });
 {% endhighlight %}
 
 {% highlight c# tabtitle="Before v34.1.29" %}
@@ -157,8 +149,6 @@ SyncfusionLicenseProvider.RegisterLicense("YOUR LICENSE KEY");
 bool isValid = SyncfusionLicenseProvider.ValidateLicense(Platform.WPF);
 {% endhighlight %}
 {% endtabs %}
-
-N> Use `Platform.UIComponent` for UI component license validation in v34.1.29 and later. `Platform.WPF` is not supported from v34.1.29 onwards.
 
 * If the ValidateLicense() method returns true, the registered license key is valid and the application can proceed with deployment.
 
