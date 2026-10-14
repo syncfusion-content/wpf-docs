@@ -22,7 +22,7 @@ Theming is the process of applying particular settings to the visual elements of
 *	Office2013White
 *	VS
 
-The `VisualStyle` property allows you to set a theme for the OLAP grid control. The following code sample demonstrates how to add theming to the OLAP grid control.
+The `VisualStyle` property allows you to set a theme for the control. The following code sample demonstrates how to add theming to the OLAP Grid.
 
 {% tabs %}
   
