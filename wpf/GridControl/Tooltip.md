@@ -37,7 +37,7 @@ gridcontrol.Model[1, 1].ShowTooltip = true;
 
 {% endtabs %}
 
-![ToolTip for specific cell in WPF GridControl](Tooltip_images/show-tooltip-cell.png)
+![ToolTip for specific cell](Tooltip_images/show-tooltip-cell.png)
 
 ## ToolTip for row and column
 
@@ -59,7 +59,7 @@ gridcontrol.Model.ColStyles[1].ShowTooltip = true;
 
 {% endtabs %}
 
-![Tooltip for specific row in WPF GridControl](Tooltip_images/show-tooltip-rows.png)
+![Tooltip for specific row](Tooltip_images/show-tooltip-rows.png)
 
 N> [View sample in GitHub](https://github.com/SyncfusionExamples/WPF-GridControl-ToolTip/tree/master/ToolTip_simple)
 
@@ -89,7 +89,7 @@ private void Gridcontrol_QueryCellInfo(object sender, GridQueryCellInfoEventArgs
 
 {% endtabs %}
 
-![ToolTip for row or column using QueryCellInfo in WPF GridControl](Tooltip_images/show-tooltip-querycell.png)
+![ToolTip for row or column using QueryCellInfo](Tooltip_images/show-tooltip-querycell.png)
 
 N> [View sample in GitHub](https://github.com/SyncfusionExamples/WPF-GridControl-ToolTip/tree/master/ToolTip_using_querycellinfo)
 
@@ -146,7 +146,7 @@ private void Gridcontrol_CellToolTipOpening(object sender, GridCellToolTipOpenin
 
 {% endtabs %}
 
-![Change the ToolTip text at run time in WPF GridControl](Tooltip_images/show-tooltip-openingevent.png)
+![Change the ToolTip text at run time](Tooltip_images/show-tooltip-openingevent.png)
 
 ## Hide ToolTip for disabled cell
 
@@ -202,7 +202,7 @@ private void Gridcontrol_QueryCellInfo(object sender, GridQueryCellInfoEventArgs
 
 {% endtabs %}
 
-![Highlight the row applied to ToolTip in WPF GridControl](ToolTip_images/show-tooltip-highlight.png)
+![Highlight the row applied to ToolTip](ToolTip_images/show-tooltip-highlight.png)
 
 ## Customize the ToolTip
 
@@ -288,13 +288,13 @@ private void Gridcontrol_QueryCellInfo(object sender, GridQueryCellInfoEventArgs
 
 {% endtabs %}
 
-![Customize the ToolTip for WPF GridControl](Tooltip_images/show-tooltip-customization.png)
+![Customize the ToolTip](Tooltip_images/show-tooltip-customization.png)
 
 N> [View sample in GitHub](https://github.com/SyncfusionExamples/WPF-GridControl-ToolTip/tree/master/ToolTip_customization)
 
 ## Remove the ToolTip
 
-The `ResetValue` method is used to remove the ToolTip for any cell or row or column in GridControl and to reset the ToolTip value to the default values.
+The `ResetValue` method is used to remove the ToolTip for any cell or row or column in Excel-like Grid and to reset the ToolTip value to the default values.
 
 {% tabs %}
 

@@ -40,7 +40,7 @@ grid.Model.Options.ExcelLikeCurrentCell = true;
 {% endcapture %}
 {{ codesnippet1 | OrderList_Indent_Level_1 }}
 
-![Showing Excel like Current Cell Selection in WPF GridControl](Real-Time-Applications_images/Real-Time-Applications_img1.jpeg)
+![Showing Excel like Current Cell Selection](Real-Time-Applications_images/Real-Time-Applications_img1.jpeg)
 
 
 N>  If you have selected a current cell within a specified range, and when you move the current cell selection out of this range, the range will be cleared.
@@ -59,12 +59,12 @@ grid.Model.Options.ExcelLikeSelectionFrame = true;
 {% endcapture %}
 {{ codesnippet2 | OrderList_Indent_Level_1 }}
 
-![Displaying Excel like Selection Frame in WPF GridControl](Real-Time-Applications_images/Real-Time-Applications_img2.jpeg)
+![Displaying Excel like Selection Frame](Real-Time-Applications_images/Real-Time-Applications_img2.jpeg)
 
 
 c. Formula Cells
 
-As we discussed in the previous chapter, Grid control provides complete support to formula cells. It can be enabled for the grid by setting the format string, FormulaCell to the TableStyle.CellType property, as follows: 
+As we discussed in the previous chapter, the Excel-like Grid provides complete support to formula cells. It can be enabled by setting the format string, FormulaCell to the TableStyle.CellType property, as follows: 
 
 {% capture codesnippet3 %}
 {% tabs %}
@@ -75,7 +75,7 @@ grid.Model.TableStyle.CellType = "FormulaCell";
 {% endcapture %}
 {{ codesnippet3 | OrderList_Indent_Level_1 }}
 
-![WPF GridControl with Excel like Formula Cell](Real-Time-Applications_images/Real-Time-Applications_img3.jpeg)
+![Grid with Excel like Formula Cell](Real-Time-Applications_images/Real-Time-Applications_img3.jpeg)
 
 
 d. Markup Headers
@@ -108,18 +108,18 @@ protected override void OnPrepareRenderCell(GridPrepareRenderCellEventArgs e)
 {% endcapture %}
 {{ codesnippet4 | OrderList_Indent_Level_1 }}
 
-![WPF GridControl with markup headers](Real-Time-Applications_images/Real-Time-Applications_img4.jpeg)
+![Grid with markup headers](Real-Time-Applications_images/Real-Time-Applications_img4.jpeg)
 
 
 e. Workbook of Sheets
 
-You can create a workbook with multiple sheets similar to excel, using a Tab control, where individual tab represents a worksheet embedded within a Grid control.
+You can create a workbook with multiple sheets similar to excel, using a Tab control, where individual tab represents a worksheet embedded within the grid.
 
 
-![WPF GridControl with workbook of sheets](Real-Time-Applications_images/Real-Time-Applications_img5.jpeg)
+![Grid with workbook of sheets](Real-Time-Applications_images/Real-Time-Applications_img5.jpeg)
 
 
-![Complete application in WPF GridControl](Real-Time-Applications_images/Real-Time-Applications_img6.jpeg)
+![Complete application](Real-Time-Applications_images/Real-Time-Applications_img6.jpeg)
 
 
 N> Download demo application from [GitHub](https://github.com/syncfusion/wpf-demos/tree/master/gridcontrol/Product%20ShowCase/ExcelLikeUi)

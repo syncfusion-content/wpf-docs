@@ -9,7 +9,7 @@ documentation: ug
 
 # Editing in WPF Excel-like Grid
 
-This section explains the clipboard and undo redo support of Grid control.
+This section explains the clipboard and undo redo support of Excel-like Grid.
 
 * Clipboard Support - Elaborates on different clipboard operations
 * Undo or Redo support - Grid supports undo or redo operation to those achieved with Microsoft Office-type applications.
@@ -54,7 +54,7 @@ gridControl.Model.Options.CopyPasteOption |= CopyPaste.PasteText;
 {% endhighlight %}
 {%  endtabs %}
 
-![Pasting the grid data in notepad in WPF GridControl](Editing_images/paste_in_notepad.jpeg)
+![Pasting the grid data in notepad](Editing_images/paste_in_notepad.jpeg)
 
 ### Text Data Exchange
 
@@ -75,7 +75,7 @@ gridControl.Model.TextDataExchange.TabDelimiter = ",";
 {% endhighlight  %}
 {% endtabs %}
 
-![Pasting the grid data in CSV format in WPF GridControl](Editing_images/paste_in_csv.jpeg)
+![Pasting the grid data in CSV format](Editing_images/paste_in_csv.jpeg)
 
 ### CopyTextToBuffer() Method
 
@@ -235,7 +235,7 @@ public void Copy(GridCellData gridData, GridRangeInfoList rangeList)
 {% endhighlight  %}
 {% endtabs %}
 
-The next step is to attach the above custom copy and paste operations to the grid control.
+The next step is to attach the above custom copy and paste operations to the Excel-like Grid.
 
 {% tabs %}
 {% highlight c# %}
@@ -244,7 +244,7 @@ gridControl.Model.GridCopyPaste = htmlCopy;
 {% endhighlight  %}
 {% endtabs %}
 
-![Pasting the grid data in HTML format in WPF GridControl](Editing_images/paste_in_html.jpeg)
+![Pasting the grid data in HTML format](Editing_images/paste_in_html.jpeg)
 
 {% seealso %}
 
@@ -270,7 +270,7 @@ The undo/redo architecture is extensible, thereby allowing users to derive the b
 
 Essential<sup>®</sup> Grid has a GridModelCommandManager class that implements support for the undo/redo commands in the Grid control. Depending upon the grid settings, as a user makes changes to the grid these changes will be tracked in stack structures which will be found in the GridModelCommandManager class. This class has methods that allow you to undo the last action, redo the last undone action, and batch transactions so that a series of actions can be undone or redone in a single step.
 
-The CommandStack property of the GridControl class will return a reference to the GridCommandStack object that is associated with a grid. It is through this property that you can access the undo/redo support in Essential<sup>®</sup> Grid. For example, you can use the enabled property of the CommandStack to control whether or not the grid supports undo/redo at any given moment. The following code samples show you some CommandStack properties.
+The CommandStack property of the Excel-like Grid class will return a reference to the GridCommandStack object that is associated with a grid. It is through this property that you can access the undo/redo support in Essential<sup>®</sup> Grid. For example, you can use the enabled property of the CommandStack to control whether or not the grid supports undo/redo at any given moment. The following code samples show you some CommandStack properties.
 
 {% tabs %}
 {% highlight c# %}
@@ -350,7 +350,7 @@ Me.grid.Model.CommandStack.UndoStack.Rollback()
 
 It is also possible to nest transactions. If you are in the middle of a transaction, it is okay to call BeginTrans again. But, when such nested transactions are undone, they are treated as part of a single parent transaction.
 
-![Undo or Redo Stack in WPF GridControl](Editing_images/undo_redo.png)
+![Undo or Redo Stack](Editing_images/undo_redo.png)
 
 ### Derived Commands
 
@@ -420,7 +420,7 @@ Data Type </th></tr>
 <tr>
 <td>
 Enabled</td><td>
-Enable undo/redo support in the Grid Control.</td><td>
+Enable undo/redo support in the Excel-like Grid.</td><td>
 CLR Property </td><td>
 bool</td></tr>
 <tr>
@@ -450,7 +450,7 @@ bool</td></tr>
 <tr>
 <td>
 Mode</td><td>
-Indicates the Grid control’s regular operation.</td><td>
+Indicates the Excel-like Grid's regular operation.</td><td>
 CLR Property</td><td>
 GridCommandMode</td></tr>
 <tr>
@@ -519,6 +519,6 @@ N> [View sample in GitHub](https://github.com/syncfusion/wpf-demos/tree/master/g
 
 ## See also
 
-[How to exclude header while copying](https://www.syncfusion.com/kb/11194)
+[How to exclude header while copying](https://support.syncfusion.com/kb/article/9711/how-to-exclude-header-while-copying-in-wpf-gridcontrol-when-table-is-selected)
 
-[How to invoke CommitCellInfo event](https://www.syncfusion.com/kb/11193)
+[How to invoke CommitCellInfo event](https://support.syncfusion.com/kb/article/9744/how-to-invoke-commitcellinfo-event-of-wpf-gridcontrol-when-selecting-an-item-in-dropdown)
