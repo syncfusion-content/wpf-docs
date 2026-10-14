@@ -8,6 +8,7 @@ documentation: ug
 ---
 
 # Touch Support in WPF Skin Manager
+Source: https://help.syncfusion.com/wpf/welcome-to-syncfusion-essential-wpf
 
 ## Size mode
 
