@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Orientation Support in WPF Menu | Syncfusion®
-description: Orientation Support in MenuAdv enables arranging menu items horizontally or vertically to suit application layout requirements.
+description: Orientation Support in WPF Menu enables arranging menu items horizontally or vertically to suit application layout requirements.
 platform: wpf
 control: MenuAdv
 documentation: ug
@@ -9,7 +9,7 @@ documentation: ug
 
 # Orientation Support in WPF Menu (MenuAdv)
 
-The MenuAdv control can align its content vertically and horizontally by using the Orientation property of the MenuAdv class.
+The WPF Menu control can align its content vertically and horizontally by using the Orientation property of the MenuAdv class.
 
 When the value of the Orientation property is set to Horizontal, the Items of MenuAdv will be arranged horizontally.
 
@@ -25,11 +25,11 @@ Similarly, when the value of the Orientation property is set to Vertical, the It
 
 ## Use Case Scenarios
 
-MenuAdv helps users to set the Menu items in Horizontal or Vertical orientations.
+WPF Menu helps users to set the Menu items in Horizontal or Vertical orientations.
 
 ## Adding the Orientation Support to an Application
 
-Users can add the Orientation support to MenuAdv used in the application as mentioned in the code snippet below.
+Users can add the Orientation support to WPF Menu used in the application as mentioned in the code snippet below.
 
 {% highlight xaml %}
 
@@ -72,7 +72,7 @@ Data Type </th></tr>
 <tr>
 <td>
 Orientation</td><td>
-Gets or sets the Orientation of MenuAdv.</td><td>
+Gets or sets the Orientation of Menu.</td><td>
 DependencyProperty</td><td>
 Orientation(Horizontal)</td></tr>
 </table>
@@ -84,15 +84,15 @@ WPF Sample Browser-> Tools -> MenuAdv -> MenuAdv Demo
 
 ## Expand Modes Support
 
-Expand Modes in MenuAdv is used to open the submenu of each MenuItemAdv, which is added in MenuAdv by doing click to open the submenu or by doing mouse hover to open the submenu. MenuAdv supports two kinds of Expand Modes, namely ExpandOnClick and ExpandOnMouseOver, which can be obtained by using the ExpandMode property. 
+Expand Modes in WPF Menu is used to open the submenu of each MenuItemAdv, which is added in Menu by doing click to open the submenu or by doing mouse hover to open the submenu. MenuAdv supports two kinds of Expand Modes, namely ExpandOnClick and ExpandOnMouseOver, which can be obtained by using the ExpandMode property. 
 
 ### Use Case Scenarios
 
-MenuAdv helps users to use Expand Modes to open the submenu of MenuItemAdv added in MenuAdv.
+WPF Menu helps users to use Expand Modes to open the submenu of MenuItemAdv added in Menu.
 
 ### Using the Expand Modes Support in an Application 
 
-When the ExpandMode property is set to ExpandOnClick, you can open the submenu of each MenuItemAdv, which is added MenuAdv by clicking it. This type of expand mode is used to open menus in Windows operating system. Similarly, when the ExpandMode property is set to ExpandOnMouseOver, you can open the submenu of each MenuItemAdv, which is added in MenuAdv by moving the mouse pointer over it. Therefore, you need not click to open the submenu. You can achieve this functionality by using the ExpandMode property, as shown in the following code snippet.
+When the ExpandMode property is set to ExpandOnClick, you can open the submenu of each MenuItemAdv, which is added Menu by clicking it. This type of expand mode is used to open menus in Windows operating system. Similarly, when the ExpandMode property is set to ExpandOnMouseOver, you can open the submenu of each MenuItemAdv, which is added in Menu by moving the mouse pointer over it. Therefore, you need not click to open the submenu. You can achieve this functionality by using the ExpandMode property, as shown in the following code snippet.
 
 {% highlight xaml %}
 
@@ -134,7 +134,7 @@ Data Type </th></tr>
 <tr>
 <td>
 ExpandMode</td><td>
-Gets or sets the ExpandMode of MenuAdv.</td><td>
+Gets or sets the ExpandMode of Menu.</td><td>
 DependencyProperty</td><td>
 ExpandModes(ExpandOnClick)</td></tr>
 </table>

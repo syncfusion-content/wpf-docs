@@ -1,21 +1,21 @@
 ---
 layout: post
-title: Getting Started with WPF TextInputLayout | Syncfusion®
-description: Learn how to get started with the Syncfusion® WPF TextInputLayout control. Explore setup, features, examples, and customization options.
+title: Getting Started with WPF Text Input Layout | Syncfusion®
+description: Learn how to get started with the Syncfusion® WPF Text Input Layout control. Explore setup, features, examples, and customization options.
 platform: wpf
 control: SfTextInputLayout
 documentation: ug
 ---
 
-# Getting Started with WPF TextInputLayout (SfTextInputLayout)
+# Getting Started with WPF Text Input Layout (SfTextInputLayout)
 
 This section explains the steps needed to configure the control of the text input layout.
 
-## Adding TextInputLayout reference
+## Adding WPF Text Input Layout reference
 
-Refer to this [document](https://help.syncfusion.com/wpf/add-syncfusion-controls) to learn how to add Syncfusion controls in Visual Studio projects through various ways. Refer to this [document](https://help.syncfusion.com/wpf/control-dependencies) to learn about the assemblies required for adding TextInputLayout to your project.
+Refer to this [document](https://help.syncfusion.com/wpf/add-syncfusion-controls) to learn how to add Syncfusion controls in Visual Studio projects through various ways. Refer to this [document](https://help.syncfusion.com/wpf/control-dependencies) to learn about the assemblies required for adding WPF Text Input Layout to your project.
 
-## Initialize TextInputLayout
+## Initialize WPF Text Input Layout
 
 Import the namespace of the text input layout as shown in the following code snippet.
 
@@ -35,7 +35,7 @@ using Syncfusion.UI.Xaml.TextInputLayout;
 
 {% endtabs %} 
 
-You can either use the below schemas or the above mentioned namespace to refer the TextInputLayout control in xaml.
+You can either use the below schemas or the above mentioned namespace to refer the WPF Text Input Layout control in xaml.
 
 {% tabs %} 
 
@@ -100,10 +100,10 @@ Run the project, and check if you get following output to make sure that the pro
 
 ## Theme
 
-SfTextInputLayout supports various built-in themes. Refer to the below links to apply themes for the SfTextInputLayout,
+The WPF Text Input Layout supports various built-in themes. Refer to the below links to apply themes for the WPF Text Input Layout,
 
   * [Apply theme using SfSkinManager](https://help.syncfusion.com/wpf/themes/skin-manager)
 	
   * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
 
-  ![Setting theme to WPF TextInputLayout](Images/Theme.png)
+  ![Setting theme to WPF Text Input Layout](Images/Theme.png)

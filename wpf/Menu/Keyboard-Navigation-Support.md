@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Keyboard Navigation Support in WPF Menu | Syncfusion®
-description: Keyboard Navigation Support in MenuAdv enables accessing and operating menu items using the keyboard.
+description: Keyboard Navigation Support in WPF Menu enables accessing and operating menu items using the keyboard.
 platform: wpf
 control: MenuAdv
 documentation: ug
@@ -9,7 +9,7 @@ documentation: ug
 
 # Keyboard Navigation Support in WPF Menu (MenuAdv)
 
-The MenuAdv control supports keyboard navigation, which allows users to select MenuItemAdv to open and close the submenu. The following keys are used for keyboard navigation:
+The WPF Menu control supports keyboard navigation, which allows users to select MenuItemAdv to open and close the submenu. The following keys are used for keyboard navigation:
 
 * Arrow keys- The Arrow keys can be used to navigate to items in the submenu and to open the submenu.
 * Enter key - The Enter key can be used to select an item and to open the submenu.

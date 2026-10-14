@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Hint Position in WPF TextInputLayout | Syncfusion®
-description: Hint Position in SfTextInputLayout enables controlling how hint labels float, remain visible, or hide based on input focus.
+title: Hint Position in WPF Text Input Layout | Syncfusion®
+description: Hint Position in WPF Text Input Layout enables controlling how hint labels float, remain visible, or hide based on input focus.
 platform: wpf
 control: SfTextInputLayout
 documentation: ug
 ---
 
-# Hint Position in WPF TextInputLayout (SfTextInputLayout)
+# Hint Position in WPF Text Input Layout (SfTextInputLayout)
 
 We can decide how the floating label will display by setting the `HintFloatMode` property.
 
@@ -43,7 +43,7 @@ inputLayout.InputView = new TextBox();
 
 {% endtabs %}
 
-![WPF TextInputLayout Float](Images/Float.png)
+![WPF Text Input Layout Float](Images/Float.png)
 
 
 ## AlwaysFloat
@@ -75,7 +75,7 @@ inputLayout.InputView = new TextBox();
 
 {% endtabs %}
 
-![WPF TextInputLayout AlwaysFloat](Images/AlwaysFloat.png)
+![WPF Text Input Layout AlwaysFloat](Images/AlwaysFloat.png)
 
 
 ## None
@@ -108,7 +108,7 @@ inputLayout.InputView = new TextBox();
 
 {% endtabs %}
 
-![WPF TextInputLayout None type](Images/HintLabelHidden.png)
+![WPF Text Input Layout None type](Images/HintLabelHidden.png)
 
 
 

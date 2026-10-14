@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Customization in WPF TextInputLayout | Syncfusion®
-description: Customization in SfTextInputLayout enables personalizing input layout colors, container appearance, and outline styles for different states.
+title: Customization in WPF Text Input Layout | Syncfusion®
+description: Customization in WPF Text Input Layout enables personalizing input layout colors, container appearance, and outline styles for different states.
 platform: wpf
 control: SfTextInputLayout
 documentation: ug
 ---
 
-# Customization in WPF TextInputLayout (SfTextInputLayout)
+# Customization in WPF Text Input Layout (SfTextInputLayout)
 
 Based on the text input layout state, the colors will be applied to the hint label, base line, border and assistive labels.
 
@@ -41,7 +41,7 @@ inputLayout.InputView = new TextBox() { Text = "John" };
 
 {% endtabs %}
 
-![WPF TextInputLayout Focused color](Images/Focusedcolor.png)
+![WPF Text Input Layout Focused color](Images/Focusedcolor.png)
 
 N> The current active color of the text input layout can be obtained from the `ActiveForeground` property.
 
@@ -75,7 +75,7 @@ inputLayout.InputView = new TextBox() { Text = "John" };
 
 {% endtabs %}
 
-![WPF TextInputLayout Unfocused color](Images/Unfocusedcolor.png)
+![WPF Text Input Layout Unfocused color](Images/Unfocusedcolor.png)
 
 ## Error color
 
@@ -108,7 +108,7 @@ inputLayout.InputView = new TextBox() { Text = "John/" };
 
 {% endtabs %}
 
-![WPF TextInputLayout Error color](Images/Errorcolor.png)
+![WPF Text Input Layout Error color](Images/Errorcolor.png)
 
 ## Container color
 The color of the container can be customized by setting the `ContainerBackground` property. It is applicable when the `ContainerType` property is set to `Filled` and `Outlined`.
@@ -140,7 +140,7 @@ inputLayout.InputView = new Entry() { TextBox = "John" };
 
 {% endtabs %}
 
-![WPF TextInputLayout Container color](Images/Containercolor.png)
+![WPF Text Input Layout Container color](Images/Containercolor.png)
 
 N> Container color is not applicable for `None' type.
 
@@ -173,7 +173,7 @@ inputLayout.InputView = new TextBox();
 
 {% endtabs %}
 
-![WPF TextInputLayout Outline radius](Images/outlineradius.png)
+![WPF Text Input Layout Outline radius](Images/outlineradius.png)
 
 >**NOTE**
 It is only applicable to the `Outlined` type of container.

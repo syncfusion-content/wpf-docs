@@ -1,21 +1,21 @@
 ---
 layout: post
 title: Data Binding in WPF Menu | Syncfusion®
-description: Data Binding in MenuAdv enables generating hierarchical menu items from object collections and XML data sources.
+description: Data Binding in WPF Menu enables generating hierarchical menu items from object collections and XML data sources.
 platform: wpf
 control: MenuAdv
 documentation: ug
 ---
 
-# Data Binding in WPF MenuAdv
+# Data Binding in WPF Menu
 
-The topics under this section explain the data binding support for the MenuAdv control.
+The topics under this section explain the data binding support for the WPF Menu control.
 
 ## Data Binding to Objects
 
-The MenuAdv control also supports binding to objects. The following example shows this.
+The WPF Menu control also supports binding to objects. The following example shows this.
 
-1. Create a class that act as a model for MenuAdv.
+1. Create a class that act as a model for WPF Menu.
 
 {% tabs %}
 {% highlight C# %}
@@ -105,7 +105,7 @@ public class ViewModel
 {% endhighlight %} 
 {% endtabs %}
 
-4. Now configure the ItemsSource and ItemTemplate of MenuAdv.
+4. Now configure the ItemsSource and ItemTemplate of WPF Menu.
 
 {% tabs %}
 {% highlight xaml %}
@@ -129,7 +129,7 @@ public class ViewModel
 
 ## Data Binding with XML
 
-An XML file can also be used as _ItemsSource_ for the MenuAdv control. The following example illustrates this.
+An XML file can also be used as _ItemsSource_ for the WPF Menu control. The following example illustrates this.
 
 1. Create an XML file with the following details as follows and name it as Data.xml.
 
@@ -183,7 +183,7 @@ An XML file can also be used as _ItemsSource_ for the MenuAdv control. The follo
 {% endtabs %}
 
 
-3. Set ItemsSource property for the MenuAdv.
+3. Set ItemsSource property for the WPF Menu.
 
 {% tabs %}
 {% highlight xaml %}
@@ -199,7 +199,7 @@ An XML file can also be used as _ItemsSource_ for the MenuAdv control. The follo
 {% endhighlight %} 
 {% endtabs %}
 
-   This will create the following MenuAdv control.
+   This will create the following WPF Menu control.
 
    ![Data-Binding_images2](Data-Binding_images/Data-Binding_img2.png)
 
