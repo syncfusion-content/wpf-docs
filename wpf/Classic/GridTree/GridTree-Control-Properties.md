@@ -9,14 +9,14 @@ documentation: ug
 
 # Properties in WPF GridTreeControl 
 
-The GridTree control has the following properties that allow you to control much of the behavior available within the control. Here is a list of these properties along with some discussion of each. 
+The GridTreeControl has the following properties that allow you to control much of the behavior available within the control. Here is a list of these properties along with some discussion of each. 
 
 
 
 <table>
 <tr>
 <th>
-GridTree control Property</th><th>
+GridTreeControl Property</th><th>
 Description</th><th>
 Type of Property</th><th>
 Value It Accepts</th><th>
@@ -52,7 +52,7 @@ treeGrid.ColumnHeaderStyle = new GridStyleInfo() { };</td></tr>
 <tr>
 <td>
 DefaultColumnWidth</td><td>
-Provides the default settings for the column width used in the GridTree control.</td><td>
+Provides the default settings for the column width used in the GridTreeControl.</td><td>
 Dependency property</td><td>
 Double</td><td>
 treeGrid.DefaultColumnWidth</td></tr>
@@ -66,7 +66,7 @@ treeGrid. EnableHotRowMarker</td></tr>
 <tr>
 <td>
 EnableSelections</td><td>
-Controls whether selections are supported. The GridTree control support two types of selections, node selections and cell selections. Use the EnableNodeSelection property to determine which selection type is active.</td><td>
+Controls whether selections are supported. The GridTreeControl support two types of selections, node selections and cell selections. Use the EnableNodeSelection property to determine which selection type is active.</td><td>
 Dependency property</td><td>
 bool</td><td>
 treeGrid.EnableSelections</td></tr>
@@ -80,14 +80,14 @@ treeGrid.EnableNodeSelection</td></tr>
 <tr>
 <td>
 HideEmptyChildGlyphs</td><td>
-Controls whether you can possibly see the expand glyph on a node with no children. The default value is true that indicates glyphs on empty nodes will be hidden when initially displayed. In order to support this behavior, the GridTree control must request the child nodes at the time the parent node is expanded (instead of at the time the child node is clicked to be expanded).</td><td>
+Controls whether you can possibly see the expand glyph on a node with no children. The default value is true that indicates glyphs on empty nodes will be hidden when initially displayed. In order to support this behavior, the GridTreeControl must request the child nodes at the time the parent node is expanded (instead of at the time the child node is clicked to be expanded).</td><td>
 Dependency property</td><td>
 bool</td><td>
 treeGrid.HideEmptyChildGlyphs</td></tr>
 <tr>
 <td>
 InternalGrid</td><td>
-Gets a reference to the GridControlImpl object associated with this GridTree control. This property will be null until the ModelLoaded event is raised by the GridTree control. ModeLoaded event is triggered once the grid model is loaded.</td><td>
+Gets a reference to the GridControlImpl object associated with this GridTreeControl. This property will be null until the ModelLoaded event is raised by the GridTreeControl. ModeLoaded event is triggered once the grid model is loaded.</td><td>
 Normal</td><td>
 GridTreeControl</td><td>
 treeGrid.InternalGrid</td></tr>
@@ -101,14 +101,14 @@ treeGrid.LevelStyles</td></tr>
 <tr>
 <td>
 Model</td><td>
-Gives access to the GridTreeModel object associated with this GridTree control. The Model.Options property gives access to the properties that control the behavior of the InternalGrid object associated with this GridTree control. </td><td>
+Gives access to the GridTreeModel object associated with this GridTreeControl. The Model.Options property gives access to the properties that control the behavior of the InternalGrid object associated with this GridTreeControl. </td><td>
 Normal</td><td>
 GridTreeModel</td><td>
 treeGrid.Model</td></tr>
 <tr>
 <td>
 ReadOnly</td><td>
-Determines whether the cells in the GridTree control can be edited. This is a GridTree control-wide setting. You can use the LevelStyles[].StyleInfo.ReadOnly to edit the particular levels. Additionally, you can use Columns[].StyleInfo.ReadOnly to control the edit operation, column-by-column. Finally, you can use the Model.QueryCellInfo event to set ReadOnly properties cell-by-cell in an on-demand manner.</td><td>
+Determines whether the cells in the GridTreeControl can be edited. This is a GridTreeControl-wide setting. You can use the LevelStyles[].StyleInfo.ReadOnly to edit the particular levels. Additionally, you can use Columns[].StyleInfo.ReadOnly to control the edit operation, column-by-column. Finally, you can use the Model.QueryCellInfo event to set ReadOnly properties cell-by-cell in an on-demand manner.</td><td>
 Dependency property</td><td>
 bool</td><td>
 treeGrid.ReadOnly</td></tr>
@@ -122,7 +122,7 @@ treeGrid.RowHeaderWidth</td></tr>
 <tr>
 <td>
 SelectedNodes</td><td>
-A collection of nodes selected in the GridTree control. The items in the collection are GridTreeNode objects.</td><td>
+A collection of nodes selected in the GridTreeControl. The items in the collection are GridTreeNode objects.</td><td>
 Normal</td><td>
 GridSelectedTreeNodes</td><td>
 treeGrid.SelectedNodes</td></tr>
@@ -136,7 +136,7 @@ treeGrid.ShowColumnHeaders</td></tr>
 <tr>
 <td>
 ShowExpandColumnBorders</td><td>
-Determines whether the GridTree control display cell borders for the Expand column.</td><td>
+Determines whether the GridTreeControl display cell borders for the Expand column.</td><td>
 Dependency property</td><td>
 bool</td><td>
 treeGrid.ShowExpandColumnBorders</td></tr>
@@ -157,14 +157,14 @@ treeGrid.SupportRowSizing</td></tr>
 <tr>
 <td>
 SupportsVisualStyles</td><td>
-Determines whether the GridTree control will use the VisualStyle property to control the appearance of the GridTree control. If this property is {{ '_true_' | markdownify }}, you can directly set the VisualStyle property for the grid. You also have the option of applying the changes through the SkinManager found in the Syncfusion.Shared.WPF library. The GridTree control is bound to the SkinManager values through its Template.</td><td>
+Determines whether the GridTreeControl will use the VisualStyle property to control the appearance of the control. If this property is {{ '_true_' | markdownify }}, you can directly set the VisualStyle property for the grid. You also have the option of applying the changes through the SkinManager found in the Syncfusion.Shared.WPF library. The GridTreeControl is bound to the SkinManager values through its Template.</td><td>
 Dependency property</td><td>
 bool</td><td>
 treeGrid.SupportsVisualStyle</td></tr>
 <tr>
 <td>
 VisualStyle</td><td>
-Determines the VisualStyle that is applied to the GridTree control when SupportsVisualStyles property is set to {{ '_true_' | markdownify }}.</td><td>
+Determines the VisualStyle that is applied to the GridTreeControl when SupportsVisualStyles property is set to {{ '_true_' | markdownify }}.</td><td>
 Dependency property</td><td>
 VisualStyle</td><td>
 treeGrid.VisualStyle</td></tr>

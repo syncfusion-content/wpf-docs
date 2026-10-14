@@ -35,7 +35,7 @@ High Performance - EssentialGrid is a great asset to high-performance applicatio
 
 
 
-File Explorer - Applications that deal with hierarchical data can make use of Essential Grid’s file explorer feature, which allows child items to be displayed on-demand by using the GridTree control.
+File Explorer - Applications that deal with hierarchical data can make use of Essential Grid’s file explorer feature, which allows child items to be displayed on-demand by using the GridTreeControl.
 
 ![Overview of GridTree in WPF](overview_images/wpf-classic-grid-tree-file-explorer.png)
 
@@ -109,13 +109,13 @@ This section provides basic information, such as definitions and usage, regardin
 
 ## Overview in WPF GridTreeControl (Classic)Control 
 
-The GridTree control is a dynamic data-bound control used to present hierarchical data.
+The GridTreeControl is a dynamic data-bound control used to present hierarchical data.
 
 ### Data Binding
 
-The GridTree control supports all popular data sources including observable collections, data tables, and binding lists.
+The GridTreeControl supports all popular data sources including observable collections, data tables, and binding lists.
 
-Data sources can be bound to the GridTree control by either directly binding ItemsSource with the relational information or by retrieving node elements dynamically with the RequestTreeItems event. RequestTreeItems will load the data in an on-demand basis.
+Data sources can be bound to the GridTreeControl by either directly binding ItemsSource with the relational information or by retrieving node elements dynamically with the RequestTreeItems event. RequestTreeItems will load the data in an on-demand basis.
 
 For instance, a database may have 100,000 records in it; in the first approach (binding ItemSource) you have to set ItemsSource of GridTreeControl, and it will take care of populating root and child nodes. But in the second approach, you have to dynamically pass the source of the root and child by handling the RequestTreeItems event. The child element will load only when the parent node expands. 
 
@@ -146,7 +146,7 @@ Several built-in cell types can be used to display and edit any underlying data 
 
 ## Interactive Features
 
-The GridTree control provides an effective option for sorting. Also, its appearance can easily be customized through an API that can be used to set different types of glyphs such as triangles, plus and minus signs, and tree lines in various brush styles. By handling the GlyphDrawing event on the cell renderer, you can draw custom expand-and-collapse glyphs. The GridTree control also supports placing images next to expand-and-collapse glyphs.
+The GridTreeControl provides an effective option for sorting. Also, its appearance can easily be customized through an API that can be used to set different types of glyphs such as triangles, plus and minus signs, and tree lines in various brush styles. By handling the GlyphDrawing event on the cell renderer, you can draw custom expand-and-collapse glyphs. The GridTreeControl also supports placing images next to expand-and-collapse glyphs.
 
 
 
@@ -156,5 +156,5 @@ The GridTree control provides an effective option for sorting. Also, its appeara
 
 ## Serialization
 
-The GridTree control supports XML serialization to preserve and restore a grid’s schema and style settings. All styles and properties that reflect the state of the Grid can be serialized.
+The GridTreeControl supports XML serialization to preserve and restore a grid’s schema and style settings. All styles and properties that reflect the state of the Grid can be serialized.
 
