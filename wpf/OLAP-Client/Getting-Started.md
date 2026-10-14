@@ -13,17 +13,17 @@ documentation: ug
 >**Important**
 Starting with v16.2.0.x, if you refer to Syncfusion<sup>®</sup> assemblies from trial setup or from the NuGet feed, include a license key in your projects. Refer to this [License Guidelines](https://help.syncfusion.com/wpf/licensing/overview) to learn about registering Syncfusion<sup>®</sup> license key in your WPF application to use the components.
 
-This section covers the information required to create a simple OLAP client bound to the OLAP data source.
+This section covers the information required to create a simple OLAP Client bound to the OLAP data source.
 
 ## Through Visual Studio
 
 Open the Visual Studio IDE and navigate to File > New > Project > WPF application (inside Visual C# templates) to create a new WPF application.
 
-After creating the WPF application, go to View menu and select Toolbox option. Now, the toolbox will appear inside the Visual Studio IDE. From the Visual Studio Toolbox, drag the OLAP client under the **Syncfusion<sup>®</sup> BI WPF** tag. It will automatically add the required assemblies to the application.
+After creating the WPF application, go to View menu and select Toolbox option. Now, the toolbox will appear inside the Visual Studio IDE. From the Visual Studio Toolbox, drag the OLAP Client under the **Syncfusion<sup>®</sup> BI WPF** tag. It will automatically add the required assemblies to the application.
    
 ![WPF OLAP Client Getting-Started Image1](Getting-Started_images/Getting-Started_img1.png)
 
-Add a **Name** to the OLAP client component for accessing it through code-behind as shown in the following code sample.
+Add a **Name** to the OLAP Client component for accessing it through code-behind as shown in the following code sample.
 
 {% highlight xaml %}
 
@@ -39,7 +39,7 @@ Add a **Name** to the OLAP client component for accessing it through code-behind
 		
 {% endhighlight %}
 
-Include the following namespace in the code-behind for using OlapDataManger in the application. The **OlapDataManager** class contains the connection details, current report, cube name, cube schema, and pivot engine for rendering the OLAP client control.
+Include the following namespace in the code-behind for using OlapDataManger in the application. The **OlapDataManager** class contains the connection details, current report, cube name, cube schema, and pivot engine for rendering the OLAP Client control.
 
    * Syncfusion.Olap.Manager
 
@@ -113,11 +113,11 @@ Select the **Project** tab available in the left-corner of the Blend IDE, right-
 
 N> You can also get the assemblies by browsing to the default assembly location {System Drive}:\Program Files (x86)\Syncfusion\Essential Studio\&lt;version number&gt;\precompiledassemblies\&lt;version number&gt;\&lt;framework version&gt;\
 
-On adding the above assemblies, the OLAP client control will be added under the **Assets** tab automatically. Now, choose the **Assets** tab and drag the OLAP client to the designer.
+On adding the above assemblies, the OLAP Client control will be added under the **Assets** tab automatically. Now, choose the **Assets** tab and drag the OLAP Client to the designer.
 
 ![WPF OLAP Client Getting-Started Image3](Getting-Started_images/Getting-Started_img3.png)
 
-Add a **Name** to the OLAP client component for accessing it through code-behind as shown in the following code sample.
+Add a **Name** to the OLAP Client component for accessing it through code-behind as shown in the following code sample.
 
 {% highlight xaml %}
 
@@ -212,7 +212,7 @@ To add the dependency assemblies within the application, right-click the **Refer
 
 N> You can also get the assemblies by browsing to the default assembly location {System Drive}:\Program Files (x86)\Syncfusion\Essential Studio\&lt;version number&gt;\precompiledassemblies\&lt;version number&gt;\&lt;{framework version&gt;\
 
-Include the following namespaces in code-behind for using OLAP client and OlapDataManger in the application.
+Include the following namespaces in code-behind for using OLAP Client and OlapDataManger in the application.
 
 * Syncfusion.Olap.Manager
 * Syncfusion.Windows.Client.Olap

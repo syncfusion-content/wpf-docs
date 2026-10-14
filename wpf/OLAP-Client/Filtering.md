@@ -51,7 +51,7 @@ The options in the filtering tab are as follows:
 * **Filter on**: You can choose any one measure element from the list, on which you want to apply the filter.
 * **Value**: Enter the conditional value for the expression.
 
-You can toggle the visibility of the filter and sort buttons in the OLAP client toolbar by using the `ShowFilterSortButtons` property.
+You can toggle the visibility of the filter and sort buttons in the OLAP Client toolbar by using the `ShowFilterSortButtons` property.
 
 {% tabs %}
 

@@ -9,7 +9,7 @@ documentation: ug
 
 # Calculated Members in WPF OLAP Client
 
-This feature allows users to define measures and members using the calculated member editor. The calculated member editor can be opened just by clicking the respective icon available in the OLAP client toolbar. The icon will be visible only by setting the `IsCalculatedMembersEnabled` property to true.
+This feature allows users to define measures and members using the calculated member editor. The calculated member editor can be opened just by clicking the respective icon available in the OLAP Client toolbar. The icon will be visible only by setting the `IsCalculatedMembersEnabled` property to true.
 
 ![Calculated memeber option is enabled in OlapClient toolbar](Calculated-Members_images/Calculated-Members_img1.png)
 

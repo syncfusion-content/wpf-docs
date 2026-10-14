@@ -9,7 +9,7 @@ documentation: ug
 
 # Exporting in WPF OLAP Client
 
-When creating an OLAP report in the OLAP client, the report will be visualized in the OLAP chart and OLAP grid. The OLAP client has an option to export the current view of the OLAP chart and OLAP grid to various forms.
+When creating an OLAP report in the OLAP Client, the report will be visualized in the OLAP chart and OLAP grid. The OLAP Client has an option to export the current view of the OLAP chart and OLAP grid to various forms.
 
 ## Exporting OLAP chart
 
@@ -34,7 +34,7 @@ Name</th><th>
 Description</th></tr>
 <tr>
 <td> 
-{{ '![WPF OLAP Client Exporting Image2](Exporting_images/Exporting_img2.png)' | markdownify }}
+{{ '![Exporting Image2](Exporting_images/Exporting_img2.png)' | markdownify }}
 
 </td><td>
 Export to Image</td><td>
@@ -42,14 +42,14 @@ Export the current view of the OLAP chart as image</td></tr>
 
 <tr>
 <td>
-{{ '![WPF OLAP Client Exporting Image4](Exporting_images/Exporting_img4.png)' | markdownify }}
+{{ '![Exporting Image4](Exporting_images/Exporting_img4.png)' | markdownify }}
 
 </td><td>
 Export to Word</td><td>
 Export the current view of the OLAP chart to a Word document.</td></tr>
 <tr>
 <td>
-{{ '![WPF OLAP Client Exporting Image5](Exporting_images/Exporting_img5.png)' | markdownify }}
+{{ '![Exporting Image5](Exporting_images/Exporting_img5.png)' | markdownify }}
 
 </td><td>
 Export to PDF</td><td>
@@ -231,28 +231,28 @@ Name</th><th>
 Description</th></tr>
 <tr>
 <td> 
-{{ '![WPF OLAP Client Exporting Image7](Exporting_images/Exporting_img7.png)' | markdownify }}
+{{ '![Exporting Image7](Exporting_images/Exporting_img7.png)' | markdownify }}
 
 </td><td>
 Export to Excel</td><td>
 Export the OLAP grid to an Excel document.</td></tr>
 <tr>
 <td>
-{{ '![WPF OLAP Client Exporting Image8](Exporting_images/Exporting_img8.png)' | markdownify }}
+{{ '![Exporting Image8](Exporting_images/Exporting_img8.png)' | markdownify }}
 
 </td><td>
 Export to Word</td><td>
 Export the OLAP grid to a Word document.</td></tr>
 <tr>
 <td> 
-{{ '![WPF OLAP Client Exporting Image9](Exporting_images/Exporting_img9.png)' | markdownify }}
+{{ '![Exporting Image9](Exporting_images/Exporting_img9.png)' | markdownify }}
 
 </td><td>
 Export to PDF</td><td>
 Export the OLAP grid to a PDF document.</td></tr>
 <tr>
 <td>
-{{ '![WPF OLAP Client Exporting Image10](Exporting_images/Exporting_img10.png)' | markdownify }}
+{{ '![Exporting Image10](Exporting_images/Exporting_img10.png)' | markdownify }}
 
 </td><td>
 Export to CSV</td><td>
