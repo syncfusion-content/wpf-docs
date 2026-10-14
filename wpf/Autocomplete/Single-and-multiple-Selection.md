@@ -117,9 +117,9 @@ The token can be customized by overriding the default style targeting the `Token
 
 ### Customization of tokens using TokenItemTemplate
 
-The `TokenItemTemplate` property allows you to customize the content displayed within a token when the `MultiSelectMode` is set to Token. This property accepts a DataTemplate and enables rendering custom content such as images, icons, and formatted text instead of the default token text representation.
+The [TokenItemTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_TokenItemTemplate) property allows you to customize the content displayed within a token when the [MultiSelectMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_MultiSelectMode) is set to Token. This property accepts a DataTemplate and enables rendering custom content such as images, icons, and formatted text instead of the default token text representation.
 
-The `TokenItemTemplate` property can also be used to maintain a consistent appearance between suggestion items and generated tokens by using the same DataTemplate for both [AutoCompleteItemTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_AutoCompleteItemTemplate) and `TokenItemTemplate`.
+The [TokenItemTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_TokenItemTemplate) property can also be used to maintain a consistent appearance between suggestion items and generated tokens by using the same DataTemplate for both [AutoCompleteItemTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_AutoCompleteItemTemplate) and [TokenItemTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_TokenItemTemplate).
 
 {% tabs %}
 
@@ -162,7 +162,7 @@ The `TokenItemTemplate` property can also be used to maintain a consistent appea
 
 ### Customization of tokens using TokenItemContainerStyle
 
-The `TokenItemContainerStyle` property allows you to customize the appearance and behavior of the generated token items without overriding the default `TokenItem` control template. Since `TokenItem` derives from `ContentControl`, you can customize various properties such as `Background`, `Foreground`, `BorderThickness`, `BorderBrush`, `ContentTemplate`, and `ContentTemplateSelector` to control the visual representation of tokens while retaining the default token structure and functionality.
+The [TokenItemContainerStyle](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_TokenItemContainerStyle) property allows you to customize the appearance and behavior of the generated token items without overriding the default `TokenItem` control template. Since `TokenItem` derives from `ContentControl`, you can customize various properties such as `Background`, `Foreground`, `BorderThickness`, `BorderBrush`, `ContentTemplate`, and `ContentTemplateSelector` to control the visual representation of tokens while retaining the default token structure and functionality.
 
 {% tabs %}
 
