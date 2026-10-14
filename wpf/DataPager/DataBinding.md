@@ -10,11 +10,11 @@ documentation: ug
 # DataBinding in WPF SfDataPager
 
 
-Data binding is the master feature of SfDataPager. SfDataPager is bound to an external data source to display the data. 
+Data binding is the master feature of SfDataPager. It is bound to an external data source to display the data. 
 
 ## Source and PagedSource
 
-SfDataPager exposes the Source property, where you can pass your collection of data for Paging. SfDataPager automatically wrap the collection in the PagedCollectionView and exposes to the PagedSource property. You can pass the PagedSource property to any ItemsControl’s ItemsSource property.
+SfDataPager exposes the Source property, where you can pass your collection of data for Paging. The control automatically wraps the collection in the PagedCollectionView and exposes to the PagedSource property. You can pass the PagedSource property to any ItemsControl’s ItemsSource property.
 
 The following code example explains how to use the Source and PagedSource property.
 
@@ -45,7 +45,7 @@ The following screenshot displays the output of the above code.
 
 ![Features_images1](Features_images/Features_img1.png)
 
-SfDataPager exposes the PageIndex property. It contains the index of the currently selected page.You can use this property to set or get the current page of the SfDataPager. 
+SfDataPager exposes the PageIndex property. It contains the index of the currently selected page. You can use this property to set or get the current page of the control.
 
 Events
 
@@ -119,7 +119,7 @@ The following screenshot displays the output for ListView binded with PagedColle
 
 ## On DemandPaging
 
-In normal paging, the entire data collection is initially loaded into the SfDataPager control. However, the SfDataPager control allows you to load the data for the current page dynamically. To enable on demand paging, set UseOnDemandPaging to true.__
+In normal paging, the entire data collection is initially loaded into the control. However, the control allows you to load the data for the current page dynamically. To enable on demand paging, set UseOnDemandPaging to true.__
 
 OnDemandPaging can be achieved by using the OnDemandLoading event and LoadDynamicItems method.
 
@@ -135,7 +135,7 @@ N> In OnDemandPaging, you cannot assign a value for the Source property.
 The following steps help you to achieve an OnDemandLoading with the SfDataPager control.
 
 1. Set the UseOnDemandPaging property to true.
-2. Set the PageCount value for the SfDataPager control.
+2. Set the PageCount value for the control.
 
 {% capture codesnippet1 %}
 {% tabs %}
@@ -164,7 +164,7 @@ The following steps help you to achieve an OnDemandLoading with the SfDataPager 
 {{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 
-3. Wire up the OnDemandLoading event of SfDataPager.
+3. Wire up the OnDemandLoading event of the control.
 
 {% capture codesnippet2 %}
 {% tabs %}
@@ -188,7 +188,7 @@ The following screenshot displays the output for OnDemandPaging,
 
 SfDataPager splits the data into separate pages based on the PageSize. In order to specify the size of the page, you can use the PageSize property. By defaults, it is set to 0 and all the data is displayed in a single page.
 
-The following code example explains how to use PageSize property in SfDataPager.
+The following code example explains how to use PageSize property in the control.
 
 {% tabs %}
 {% highlight xaml %}

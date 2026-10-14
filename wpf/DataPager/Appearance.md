@@ -99,7 +99,7 @@ AccentBrush properties are used to decorate the SfDataPager control with a solid
 * NumericButtonStyle – Property that is applied to the Style of Numeric Button. This is the Style type property. By default, it set to Null.
 
 
-The following code example explains how to apply the AccentBackground and AccentForeground properties for the SfDataPager control.
+The following code example explains how to apply the AccentBackground and AccentForeground properties for the control.
 
 {% tabs %}
 {% highlight xaml %}
@@ -124,7 +124,7 @@ The following screenshot displays the output for AccentBackground and AccentFore
 ![Features_images10](Features_images/Features_img10.png)
 
 
-The following code example explains how to use NumericButtonStyle in SfDataPager.
+The following code example explains how to use NumericButtonStyle in the control.
 
 {% tabs %}
 {% highlight xaml %}
