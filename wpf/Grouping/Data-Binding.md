@@ -11,7 +11,7 @@ documentation: ug
 
 Essential<sup>®</sup> Grouping lets you sort, group and summarize data. The data needs to be an IList object. For this lesson, we will use an ArrayList of custom objects which have four public properties: A, B, C, and D.
 
-The below section illustrates how to access the data that is bound to the grouping engine.
+The below section illustrates how to access the data that is bound to the Grouping engine.
 
 * Iterating Through the Data
 
@@ -357,7 +357,7 @@ End Sub
 
 
 
-Add the following grouping namespace for referring the assemblies deployed in the application.
+Add the following Grouping namespace for referring the assemblies deployed in the application.
 
 
  Refer Deploying Essential<sup>®</sup> Grouping section to know about deploying Essential<sup>®</sup> Grouping.
