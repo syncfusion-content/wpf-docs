@@ -9,9 +9,9 @@ documentation: ug
 
 # About Syncfusion® WPF MultiColumn Dropdown Control.
 
-Syncfusion's MultiColumnDropDown control is combined with an Editor (TextBox Control) and powerful SfDataGrid (DataGrid Control) to search and select items by using the DropDownGrid. The Editor accepts free-flow text that is used to filter the DropDownGrid.
+Syncfusion's WPF MultiColumn Dropdown is combined with an Editor (TextBox Control) and powerful Data Grid to search and select items by using the DropDownGrid. The Editor accepts free-flow text that is used to filter the DropDownGrid.
 
-Following are the key features of SfMultiColumnDropDownControl
+Following are the key features of MultiColumn Dropdown
 
 * **Data binding** – Supports to bind different types of data sources.
 * **Columns** – Support for various column types.
