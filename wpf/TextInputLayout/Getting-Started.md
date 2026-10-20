@@ -70,7 +70,7 @@ Then, initialize the text input layout as demonstrated in the following code sni
 
 ## Adding hint
 
-Floating label for the text input layout can be added by setting the `Hint` property. We can specify the display state of the hint label using the `HintVisibility` property, the type of which is [`Visibility`](https://docs.microsoft.com/en-us/dotnet/api/system.windows.visibility?view=netframework-4.8).
+Floating label for the text input layout can be added by setting the `Hint` property. We can specify the display state of the hint label using the `HintVisibility` property, the type of which is [`Visibility`](https://learn.microsoft.com/en-us/dotnet/api/system.windows.visibility?view=netframework-4.8).
 {% tabs %} 
 
 {% highlight xaml %} 

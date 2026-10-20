@@ -97,7 +97,7 @@ namespace SfProgressBar
 
 ![wpf Circular ProgressBar control added through code](Getting-Started_images/wpf-SfCircularProgressBar-control-added-manually.png)
 
-The complete source for this demo can be downloaded [here](https://www.syncfusion.com/downloads/support/directtrac/general/ze/CircularProgressbarSample-990574246)
+The complete source for this demo can be downloaded [here](https://s3.amazonaws.com/files2.syncfusion.com/dtsupport/directtrac/general/ze/CircularProgressbarSample-990574246.zip)
 
 ## Theme
 

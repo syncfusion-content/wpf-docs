@@ -5,7 +5,6 @@ description: Manage stencil interactions in Syncfusion® WPF Diagram with symbol
 platform: wpf
 control: SfDiagram
 documentation: ug
-appliesto: UI Component Suite, Diagram SDK
 ---
 
 # Stencil interactions in WPF Diagram

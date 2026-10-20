@@ -139,7 +139,7 @@ SfBadge.SetBadge(button, sfBadge);
 
 ![WPF Badge Button](Getting-Started_images/wpf-badge-button.png)
 
-N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-badge-control-examples/blob/main/Samples/Getting_Started)
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-badge-control-examples/tree/main/Samples/Getting_Started)
 
 ## Setting WPF Badge display content
 
@@ -167,7 +167,7 @@ badge.Content = "99+";
 
 ![WPF Badge Display Content](Getting-Started_images/wpf-badge-display-content.png)
 
-N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-badge-control-examples/blob/main/Samples/Content_CustomUI)
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-badge-control-examples/tree/main/Samples/Content_CustomUI)
 
 ## Alignment of WPF Badge
 
@@ -199,7 +199,7 @@ badge.Content = "99+";
 
 ![WPF Badge Alignment](Getting-Started_images/wpf-badge-alignment.png)
 
-N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-badge-control-examples/blob/main/Samples/Badge_Features)
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-badge-control-examples/tree/main/Samples/Badge_Features)
 
 ## Positioning of WPF Badge
 
@@ -231,7 +231,7 @@ badge.Content = "10";
 
 ![WPF Badge Position](Getting-Started_images/wpf-badge-position.png)
 
-N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-badge-control-examples/blob/main/Samples/Badge_Features)
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-badge-control-examples/tree/main/Samples/Badge_Features)
 
 ## Place the WPF Badge any where on the container
 
@@ -270,7 +270,7 @@ badge.VerticalPosition = 0.8;
 
 ![WPF Badge Custom Alignment](Getting-Started_images/wpf-badge-custom-alignment.png)
 
-N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-badge-control-examples/blob/main/Samples/Custom_Alignment)
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-badge-control-examples/tree/main/Samples/Custom_Alignment)
 
 ## Adding WPF Badge without BadgeContainer
 
@@ -353,7 +353,7 @@ namespace GettingStarted.Models
 
 ![WPF Badge ListView Items](Getting-Started_images/wpf-badge-listview-items.png)
 
-N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-badge-control-examples/blob/main/Samples/Badge_without_BadgeContainer)
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-badge-control-examples/tree/main/Samples/Badge_without_BadgeContainer)
 
 ## Predefined colors for displaying the WPF Badge
 
@@ -397,7 +397,7 @@ badge.Content = "99+";
 
 ![WPF Badge Information States](Getting-Started_images/wpf-badge-information-states.png)
 
-N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-badge-control-examples/blob/main/Samples/Badge_Features)
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-badge-control-examples/tree/main/Samples/Badge_Features)
 
 ## Predefined shapes for displaying the WPF Badge
 
@@ -436,7 +436,7 @@ badge.Content = "99+";
 
 ![WPF Oval Shaped Badge](Getting-Started_images/wpf-oval-shaped-badge.png)
 
-N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-badge-control-examples/blob/main/Samples/Badge_Features)
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-badge-control-examples/tree/main/Samples/Badge_Features)
 
 ## Animate when content changes
 
@@ -502,7 +502,7 @@ private void BadgeContent_ValueChanged(DependencyObject d, DependencyPropertyCha
 
 ![WPF Badge Opacity Based Animation](Getting-Started_images/wpf-badge-opacity-based-animation.gif)
 
-N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-badge-control-examples/blob/main/Samples/Badge_Features)
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-badge-control-examples/tree/main/Samples/Badge_Features)
 
 ## Custom Content Formats
 
@@ -580,7 +580,7 @@ private void BadgeContent_ValueChanged(DependencyObject d, DependencyPropertyCha
 
 ![WPF Badge Number Formatting](Getting-Started_images/wpf-badge-number-formatting.gif)
 
-N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-badge-control-examples/blob/main/Samples/Content_CustomUI)
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-badge-control-examples/tree/main/Samples/Content_CustomUI)
 
 ## Theme
 

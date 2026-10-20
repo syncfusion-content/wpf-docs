@@ -5,7 +5,6 @@ description: Items mapping in the WPF HeatMap enables data fields to be mapped t
 platform: wpf
 control: SfHeatMap
 documentation: ug
-appliesto: UI Component Suite, Chart SDK
 ---
 
 # Items Mapping in WPF HeatMap

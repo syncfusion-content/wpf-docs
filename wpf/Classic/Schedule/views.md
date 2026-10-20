@@ -14,8 +14,8 @@ Scheduler provides the following different types of views.
 * Day view
 * Week view
 * WorkWeek view
-* Timeline View - Refer [scheduler timeline view](https://help.syncfusion.com/wpf/sfschedule/getting-started#timeline-view) documentation for more customization details.
-* Month View - Refer [scheduler month view](https://help.syncfusion.com/wpf/sfschedule/getting-started#month-view) documentation for more customization details.
+* Timeline View - Refer [scheduler timeline view](https://help.syncfusion.com/scheduler-sdk/wpf/schedule/getting-started#timeline-view) documentation for more customization details.
+* Month View - Refer [scheduler month view](https://help.syncfusion.com/scheduler-sdk/wpf/schedule/getting-started#month-view) documentation for more customization details.
 
 This topic covers customization of day, week and workweek views of the scheduler which shares common properties.
 

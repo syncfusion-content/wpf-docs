@@ -5,7 +5,6 @@ description: Learn about the introduction of Syncfusion Essential Studio® WPF M
 platform: wpf
 control: SfMap
 documentation: ug
-appliesto: UI Component Suite, Chart SDK
 ---
 
 # About Syncfusion® WPF Maps Control

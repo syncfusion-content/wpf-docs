@@ -213,12 +213,12 @@ N> The name of the Visual Studio Toolbox entry provided when the common control 
 	</tr>
 	<tr>
 		<td>
-			<a href="https://help.syncfusion.com/document-processing/word/word-processor/wpf/getting-started Documentation" aria-label="Open the RichTextBox">RichTextBox</a><br/>
+			<a href="https://help.syncfusion.com/document-processing/word/word-processor/wpf/getting-started" aria-label="Open the RichTextBox">RichTextBox</a><br/>
 		</td>
 	</tr>
 	<tr>
 		<td>
-			<a href="https://help.syncfusion.com/wpf/syntax-editor/getting-started Documentation" aria-label="Open the Syntax Editor">Syntax Editor</a><br/>
+			<a href="https://help.syncfusion.com/wpf/syntax-editor/getting-started" aria-label="Open the Syntax Editor">Syntax Editor</a><br/>
 		</td>
 	</tr>
 	<tr>
@@ -226,7 +226,7 @@ N> The name of the Visual Studio Toolbox entry provided when the common control 
 		FILE FORMAT FRAMEWORKS<br/>
 		</td>
 		<td>
-			<a href="https://help.syncfusion.com/file-formats/xlsio/getting-started-create-excel-file-csharp-vbnet" aria-label="Open the Excel Documentation">Excel</a><br/>
+			<a href="https://help.syncfusion.com/document-processing/excel/excel-library/net/create-excel-file-csharp-vbnet" aria-label="Open the Excel Documentation">Excel</a><br/>
 		</td>
 	</tr>	
     <tr>
@@ -409,6 +409,6 @@ Similar to the [Knowledge Base](https://support.syncfusion.com/kb/desktop/catego
 
 ## Support and feedback
 
-If you are unable to find the information that you are looking for in the self-help resources mentioned above then you contact us by creating a [support ticket](https://www.syncfusion.com/support/directtrac/incidents).
+If you are unable to find the information that you are looking for in the self-help resources mentioned above then you contact us by creating a [support ticket](https://www.syncfusion.com/Account/Login?ReturnUrl=%2fsupport%2fdirecttrac%2fincidents).
 
 Don't see what you need? Please request it in our [feedback portal](https://www.syncfusion.com/feedback/wpf).

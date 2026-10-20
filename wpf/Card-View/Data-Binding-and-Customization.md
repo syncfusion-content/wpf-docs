@@ -115,7 +115,7 @@ public class ViewModel : NotificationObject
 
 ![Card view items added into WPF CardView control using data binding](Data-Binding-to-Objects_images/databinding_withUI.png)
 
-N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-card-view-examples/blob/master/Samples/Editing)
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-card-view-examples/tree/master/Samples/Editing)
 
 ## Custom UI for CardViewItem header
 
@@ -142,7 +142,7 @@ You can change the appearance of card item's header by using the [HeaderTemplate
 
 ![wpf card view items with customized header](Data-Binding-to-Objects_images/HeaderTemplate.png)
 
-N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-card-view-examples/blob/master/Samples/CustomUI)
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-card-view-examples/tree/master/Samples/CustomUI)
 
 ## Custom UI for CardViewItem content
 
@@ -205,7 +205,7 @@ You can change the appearance of card item's content by using the `ItemTemplate`
 
 ![wpf card view items with customized content](Data-Binding-to-Objects_images/ItemTemplate.png)
 
-N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-card-view-examples/blob/master/Samples/CustomUI)
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-card-view-examples/tree/master/Samples/CustomUI)
 
 ## Custom UI for edit mode CardViewItem
 
@@ -279,7 +279,7 @@ cardView.CanEdit = true;
 
 ![Custom UI for edit mode card view items](Grouping-Sorting-Filtering_images/customEditUI.png)
 
-N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-card-view-examples/blob/master/Samples/CustomUI)
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-card-view-examples/tree/master/Samples/CustomUI)
 
 ## Different UI styles for specific CardViewItem
 
@@ -382,7 +382,7 @@ public class CardViewItemContainerStyleSelector : StyleSelector
 
 Here, the different style are applied to the card items based on the `LastName` field.
 
-N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-card-view-examples/blob/master/Samples/Specific-CustomUI)
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-card-view-examples/tree/master/Samples/Specific-CustomUI)
 
 ## Change flow direction
 
@@ -405,7 +405,7 @@ cardView.FlowDirection = FlowDirection.RightToLeft;
 
 ![wpf card view items flow direction changed to right to left](Data-Binding-to-Objects_images/FlowDirection.png)
 
-N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-card-view-examples/blob/master/Samples/Editing)
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-card-view-examples/tree/master/Samples/Editing)
 
 ## Theme
 
@@ -460,4 +460,4 @@ SfSkinManager.SetVisualStyle(cardView, VisualStyles.Blend);
 
 Here, the `Blend` style is applied to the `Card View` control.
 
-N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-card-view-examples/blob/master/Samples/Themes)
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-card-view-examples/tree/master/Samples/Themes)

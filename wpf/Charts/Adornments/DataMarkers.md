@@ -5,7 +5,6 @@ description: Data markers in the WPF Chart display customizable indicators for d
 platform: wpf
 control: SfChart
 documentation: ug
-appliesto: UI Component Suite, Chart SDK
 ---
 
 # Data Markers in WPF Charts

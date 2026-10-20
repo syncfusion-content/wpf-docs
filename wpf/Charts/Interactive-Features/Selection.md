@@ -5,7 +5,6 @@ description: Selection in the WPF Chart enables users to highlight and interact 
 platform: wpf
 control: SfChart
 documentation: ug
-appliesto: UI Component Suite, Chart SDK
 ---
 
 # Selection in WPF Charts

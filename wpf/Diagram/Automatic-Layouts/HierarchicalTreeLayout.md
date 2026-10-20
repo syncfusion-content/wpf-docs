@@ -5,7 +5,6 @@ description: Arrange nodes in a hierarchical tree structure in Syncfusion® WPF 
 platform: wpf
 control: SfDiagram
 documentation: ug
-appliesto: UI Component Suite, Diagram SDK
 ---
 
 # Hierarchical Tree Layout in WPF Diagram
@@ -143,6 +142,6 @@ diagram.LayoutManager = new LayoutManager()
 
 ## See Also
 
-[How to generate Layout with DataSource as NodeViewModel instead of business object class?](https://support.syncfusion.com/kb/article/10187/how-to-generate-layout-with-datasource-as-nodeviewmodel-instead-of-business-object-class-in)
+[How to generate Layout with DataSource as NodeViewModel instead of business object class?](https://support.syncfusion.com/kb/article/10187/how-to-generate-layout-with-datasource-as-nodeviewmodel-instead-of-business-object-class-in-wpf-diagram-sfdiagram)
 
 [How to change the level of nodes in DirectedTreeLayout?](https://support.syncfusion.com/kb/article/6309/how-to-change-the-level-of-nodes-in-directedtreelayout-of-wpf-diagram-sfdiagram)

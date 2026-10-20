@@ -5,7 +5,6 @@ description: Marker customization in the WPF Sparkline allows you to modify mark
 platform: wpf
 control: SfSparkline
 documentation: ug
-appliesto: UI Component Suite, Chart SDK
 ---
 
 # Marker Customization in WPF Sparkline

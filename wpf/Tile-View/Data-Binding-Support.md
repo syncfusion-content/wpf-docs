@@ -80,7 +80,7 @@ public class ViewModel : NotificationObject {
 
 ![TileViewControl auto creates tileview item from objects using data binding](Data-binding_images/Data-Binding_img1.png)
 
-N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-tileview-control-examples/blob/master/Samples/Binding-Object)
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-tileview-control-examples/tree/master/Samples/Binding-Object)
 
 ## Data binding with XML
 
@@ -150,7 +150,7 @@ You can bind the `XML` file as `ItemsSource` for creating the `TileViewItem` in 
 
 ![TileViewControl auto creates tileview item from XML using data binding](Data-binding_images/Data-Binding_img2.png)
 
-N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-tileview-control-examples/blob/master/Samples/Binding-XML)
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-tileview-control-examples/tree/master/Samples/Binding-XML)
 
 ## Virtualization support
 

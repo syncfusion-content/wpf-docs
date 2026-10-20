@@ -5,7 +5,6 @@ description: User interaction in the WPF Maps enables tooltips, zooming, panning
 platform: wpf
 control: SfMap
 documentation: ug
-appliesto: UI Component Suite, Chart SDK
 ---
 
 # User Interaction in WPF Maps

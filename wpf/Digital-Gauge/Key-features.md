@@ -5,7 +5,6 @@ description: Key features in the WPF Digital Gauge include customizable digital 
 platform: wpf
 control: SfDigitalGauge
 documentation: ug
-appliesto: UI Component Suite, Chart SDK
 ---
 
 # Key Features in WPF Digital Gauge

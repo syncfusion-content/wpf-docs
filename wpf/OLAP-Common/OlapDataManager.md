@@ -162,7 +162,7 @@ DataManager.DataProvider.ProviderName = Syncfusion.Olap.DataProvider.Providers
 {% endhighlight  %}
 {% endtabs %}
 
-[Click here](http://mondrian.pentaho.com/) for more information about Mondrian XMLA configurations.
+[Click here](https://mondrian.pentaho.com/) for more information about Mondrian XMLA configurations.
 
 
 
@@ -199,7 +199,7 @@ DataManager.DataProvider.ProviderName = Syncfusion.Olap.DataProvider.Providers
 {% endtabs %}
 
 
-[Click here](http://quartetfs.com/) for more information on Active Pivot server.
+[Click here](https://www.activeviam.com/) for more information on Active Pivot server.
 
 
 
@@ -236,7 +236,7 @@ DataManager.DataProvider.ProviderName = Syncfusion.Olap.DataProvider.Providers
 {% endtabs %}
 
 
-[Click here](https://www.sap.com/index.html) for more information on SAP BW server.
+[Click here](https://www.sap.com/india/index.html) for more information on SAP BW server.
 
 
 

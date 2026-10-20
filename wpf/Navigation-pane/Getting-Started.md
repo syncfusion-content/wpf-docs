@@ -139,7 +139,7 @@ this.Content = groupBar;
 
 ## Bind data
 
-Items in a GroupBar can also be added by binding a collection of business objects using the [ItemsSource](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.itemscontrol.itemssourceproperty?view=netframework-4.7.2) property.
+Items in a GroupBar can also be added by binding a collection of business objects using the [ItemsSource](https://learn.microsoft.com/en-us/dotnet/api/system.windows.controls.itemscontrol.itemssourceproperty?view=netframework-4.7.2) property.
 
 * **Model.cs**
 

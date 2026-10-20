@@ -5,7 +5,6 @@ description: Create and customize flowchart layouts in Syncfusion® WPF Diagram 
 platform: wpf
 control: SfDiagram
 documentation: ug
-appliesto: UI Component Suite, Diagram SDK
 ---
 
 

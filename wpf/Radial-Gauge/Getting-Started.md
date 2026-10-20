@@ -5,7 +5,6 @@ description: Learn how to get started with the Syncfusion® WPF Radial Gauge con
 platform: wpf
 control: SfCircularGauge
 documentation: ug
-appliesto: UI Component Suite, Chart SDK
 ---
 # Getting Started with WPF Radial Gauge
 

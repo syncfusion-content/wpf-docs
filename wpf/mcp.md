@@ -27,16 +27,16 @@ Before beginning, ensure the following prerequisites are met:
 
 - Microsoft [.NET SDK 8.0](https://dotnet.microsoft.com/en-us/download/dotnet/8.0) or later
 - A **compatible MCP client** (VS Code, Syncfusion<sup style="font-size:70%">&reg;</sup> Code Studio, Cursor, JetBrains, etc.)
-- An active [Syncfusion<sup style="font-size:70%">&reg;</sup> API key](https://syncfusion.com/account/api-key)
+- An active [Syncfusion<sup style="font-size:70%">&reg;</sup> API key](https://www.syncfusion.com/Account/Login?ReturnUrl=%2faccount%2fapi-key)
 - A **WPF application** (existing or new); see [ WPF application that includes Syncfusion WPF](https://help.syncfusion.com/wpf/welcome-to-syncfusion-essential-wpf)
 - An active Syncfusion<sup style="font-size:70%">&reg;</sup> license (any of the following):
-  - [Commercial License](https://www.syncfusion.com/sales/unlimitedlicense)
+  - [Commercial License](https://www.syncfusion.com/sales/pricing)
   - [Free Community License](https://www.syncfusion.com/products/communitylicense)
-  - [Free Trial](https://www.syncfusion.com/account/manage-trials/start-trials)
+  - [Free Trial](https://www.syncfusion.com/Account/Login?ReturnUrl=%2faccount%2fmanage-trials%2fstart-trials)
 
 ### Getting Your API Key
 
-Generate the Syncfusion<sup style="font-size:70%">&reg;</sup> API key from the [API Key page](https://www.syncfusion.com/account/api-key) and store it in a `.txt` or `.key` file. The saved file will be referenced in the MCP configuration:
+Generate the Syncfusion<sup style="font-size:70%">&reg;</sup> API key from the [API Key page](https://www.syncfusion.com/Account/Login?ReturnUrl=%2faccount%2fapi-key) and store it in a `.txt` or `.key` file. The saved file will be referenced in the MCP configuration:
 
 ````json
 "env": {
@@ -233,7 +233,7 @@ To get the most out of the Syncfusion<sup style="font-size:70%">&reg;</sup> WPF 
 - **Stay Consistent** - Keep file organization, naming conventions, and coding standards consistent throughout your WPF project.
 - **Start Fresh for New Topics** - Begin a new chat when switching to a different control or task to maintain clean context.
 - **Use Advanced AI Models** - For the best results, use advanced AI models such as the latest-generation **Claude**, **GPT**, or **Gemini** models.
-- **For Troubleshooting** - Use AI suggestions for common issues; consult the [official documentation](https://help.syncfusion.com/wpf/welcome-to-syncfusion-essential-wpf) or [support](https://support.syncfusion.com/support/tickets/create) for complex problems.
+- **For Troubleshooting** - Use AI suggestions for common issues; consult the [official documentation](https://help.syncfusion.com/wpf/welcome-to-syncfusion-essential-wpf) or [support](https://support.syncfusion.com/id/login?ReturnUrl=%2Fid%2Fconnect%2Fauthorize%2Fcallback%3Fclient_id%3D14da53e04d2dad770eccf8471c640eee%26scope%3Dopenid%2520profile%2520customer.ai.integration.api%26response_type%3Dcode%26redirect_uri%3Dhttps%253A%252F%252Fsupport.syncfusion.com%252Fcallback%26state%3DCfDJ8Okdn0QFg9NKvO46qnJz7w3yeRTZHOAKRYSSHrdgu91Z7tc6_P4EQAafTtDE5K_Kou0kxpXXV0ZfH3PWNstUaHvxmfHWicxN_WVsNirOkPEbWEgKEnzkFmxbaqbCDyB9pB-AwLEFxlNiqKGqxMD_--Bxp35AtB6_20ItnSjbnmDigWacy0GMqMaAMq7hA2b0DXysoYJDSHNyAblLWHDk7HAjhcQX_6sY7ScmLnRvqXfvF8AG0JVT5NZ-JDDBMXYLMf16T2_L31ZCiWSXlLnKnmwCJE1Bv8vKdxIuzqPSJxN1) for complex problems.
 - **Minimize Active Tools** - Limit the number of active MCP tools in your IDE to prevent tool-selection ambiguity and improve response accuracy.
 
 > Always review AI-generated code before using it in production.
@@ -245,7 +245,7 @@ The table below lists frequently encountered issues and suggested resolutions to
 | Issue | Solution |
 |-------|----------|
 | **Server failed to start** | Update to .NET 8 SDK or higher, verify JSON syntax in the config file, and restart your IDE. |
-| **Invalid API key** | Verify your key is active at the [Syncfusion Account Page](https://syncfusion.com/account/api-key). |
+| **Invalid API key** | Verify your key is active at the [Syncfusion Account Page](https://www.syncfusion.com/Account/Login?ReturnUrl=%2faccount%2fapi-key). |
 | **Incorrect API key config** | For the file path: verify file location and content. For inline key: check the key is correctly updated. |
 | **Wrong config file location** | VS Code: `.vscode/mcp.json` • Code Studio: `.codestudio/mcp.json` • Cursor: `.cursor/mcp.json` in the workspace root. |
 | **Check IDE logs** | VS Code / Code Studio: Output panel → "MCP" • Cursor: Developer Console for MCP errors. |

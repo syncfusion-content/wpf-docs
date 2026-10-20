@@ -17,7 +17,7 @@ If you want to rearrange the [TileViewItem](https://help.syncfusion.com/cr/wpf/S
 
 ![TileViewItems are rearranged by drag and drop](Arrange_images/Arrange.gif)
 
-N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-tileview-control-examples/blob/master/Samples/Arrange-Items)
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-tileview-control-examples/tree/master/Samples/Arrange-Items)
 
 ## Restrict rearranging of TileViewItem
 
@@ -44,7 +44,7 @@ tileViewControl.AllowItemRepositioning = false;
 
 ![TileViewItems repositioning disabled](Arrange_images/Arrange_disable.png)
 
-N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-tileview-control-examples/blob/master/Samples/Arrange-Items)
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-tileview-control-examples/tree/master/Samples/Arrange-Items)
 
 ## Arrange TileViewItem in rows and columns
 
@@ -74,7 +74,7 @@ tileViewControl.ColumnCount = 1;
 
 ![TileViewItems arranged in particular rows and cloumns](Arrange_images/RowCount.png)
 
-N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-tileview-control-examples/blob/master/Samples/Arrange-Items)
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-tileview-control-examples/tree/master/Samples/Arrange-Items)
 
 ## Arrange TileViewItem in custom order
 
@@ -166,7 +166,7 @@ tileViewControl.ColumnWidth = 100;
 
 ![TileViewControl rows and columns size changed](Arrange_images/RowHeight.png)
 
-N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-tileview-control-examples/blob/master/Samples/Arrange-Items)
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-tileview-control-examples/tree/master/Samples/Arrange-Items)
 
 ## Navigate to TileViewItem
 
@@ -210,7 +210,7 @@ tileViewControl. HorizontalScrollBarVisibility = Visibility.Auto;
 
 ![Navigate to the hidden items in TileViewControl using scroll bars](Arrange_images/ScrollBarVisibility.png)
 
-N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-tileview-control-examples/blob/master/Samples/Arrange-Items)
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-tileview-control-examples/tree/master/Samples/Arrange-Items)
 
 ## Change built-in animation duration
 
@@ -237,7 +237,7 @@ tileViewControl.AnimationDuration = new TimeSpan(0, 0, 0, 0, 300);
 
 ![Animation time for navigation is changed](Arrange_images/AnimationDuration.gif)
 
-N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-tileview-control-examples/blob/master/Samples/Arrange-Items)
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-tileview-control-examples/tree/master/Samples/Arrange-Items)
 
 ## Disable built-in navigation animation
 
@@ -266,4 +266,4 @@ tileViewControl.EnableAnimation = false;
 
 ![Built-in navigation animation is disabled](Arrange_images/EnableAnimation.png)
 
-N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-tileview-control-examples/blob/master/Samples/Arrange-Items)
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-tileview-control-examples/tree/master/Samples/Arrange-Items)

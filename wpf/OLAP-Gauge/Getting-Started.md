@@ -5,13 +5,12 @@ description: Learn how to get started with the Syncfusion® WPF OLAP Gauge contr
 platform: wpf
 control: OLAP Gauge
 documentation: ug
-appliesto: UI Component Suite, Chart SDK
 ---
 
 # Getting Started with WPF OLAP Gauge
 
 >**Important**
-Starting with v16.2.0.x, if you refer to Syncfusion assemblies from the trial setup or from the NuGet feed, include a license key in your projects. Refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/license-key) to learn about registering the Syncfusion license key in your WPF application to use the components.
+Starting with v16.2.0.x, if you refer to Syncfusion assemblies from the trial setup or from the NuGet feed, include a license key in your projects. Refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/overview) to learn about registering the Syncfusion license key in your WPF application to use the components.
 
 This section covers the information required to create a simple OLAP gauge control bound to the OLAP data source.
 

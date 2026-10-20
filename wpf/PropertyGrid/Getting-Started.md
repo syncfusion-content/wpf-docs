@@ -374,7 +374,7 @@ propertyGrid1.SetBinding(PropertyGrid.SelectedObjectProperty, new Binding("Selec
 
 ![Loading selected object without animation in PropertyGrid](getting-started_images/wpf-propertygrid-object-selection.png)
 
-N> [View Sample in GitHub](https://github.com/SyncfusionExamples/wpf-property-grid-examples/blob/master/Samples/Common)
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/wpf-property-grid-examples/tree/master/Samples/Common)
 
 ## Tooltip support
 

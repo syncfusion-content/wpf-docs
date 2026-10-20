@@ -5,7 +5,6 @@ description: Apply built-in themes and variant styles in Syncfusion® WPF Diagra
 platform: wpf
 control: SfDiagram
 documentation: ug
-appliesto: UI Component Suite, Diagram SDK
 ---
 
 # Themes in WPF Diagram

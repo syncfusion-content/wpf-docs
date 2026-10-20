@@ -5,7 +5,6 @@ description: Axis in the WPF 3D Chart defines data scales, ranges, labels, and i
 platform: wpf
 control: SfChart3D
 documentation: ug
-appliesto: UI Component Suite, Chart SDK
 ---
 
 # Axis in WPF 3D Chart
@@ -315,4 +314,4 @@ this.Content = chart;
 
 ![Manhattan support in WPF 3D Chart](3D-Charts_images/Axis/Manhattan_Chart.png)
 
-The Manhattan chart sample can be downloaded from this [link](https://github.com/SyncfusionExamples/3D-Chart-with-DepthAxis-Z-Axis-).
+The Manhattan chart sample can be downloaded from this [link](https://github.com/SyncfusionExamples/Depth-axis-in-WPF-3D-Chart).

@@ -9,7 +9,7 @@ documentation: ug
 
 # Appearance in WPF CheckedListBox
 
-This section explains different UI customization, styling, theming options available in [WPF CheckedListBox](https://www.syncfusion.com/wpf-ui-controls/CheckedListBox) control.
+This section explains different UI customization, styling, theming options available in [WPF CheckedListBox](https://www.syncfusion.com/wpf-controls/CheckedListBox) control.
 
 ## Setting the Foreground
 

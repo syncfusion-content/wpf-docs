@@ -322,5 +322,5 @@ End Sub
 
 #### Command target
 
-The element where the command exists can be determined using the EventBinding’s `CommandTarget` property. Refer to [CommandTarget Property](https://docs.microsoft.com/en-us/dotnet/api/system.windows.input.icommandsource.commandtarget?redirectedfrom=MSDN&view=net-5.0#System_Windows_Input_ICommandSource_CommandTarget), for more reference.
+The element where the command exists can be determined using the EventBinding’s `CommandTarget` property. Refer to [CommandTarget Property](https://learn.microsoft.com/en-us/dotnet/api/system.windows.input.icommandsource.commandtarget?redirectedfrom=MSDN&view=net-5.0), for more reference.
 

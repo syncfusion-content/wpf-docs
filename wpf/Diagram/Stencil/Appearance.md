@@ -5,7 +5,6 @@ description: Customize the appearance of the Syncfusion® WPF Diagram Stencil us
 platform: wpf
 control: SfDiagram
 documentation: ug
-appliesto: UI Component Suite, Diagram SDK
 ---
 
 # Stencil Appearance in WPF Diagram

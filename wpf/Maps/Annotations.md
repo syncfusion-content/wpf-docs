@@ -5,7 +5,6 @@ description: Annotations in the WPF Maps allow you to add custom text, shapes, a
 platform: wpf
 control: SfMap
 documentation: ug
-appliesto: UI Component Suite, Chart SDK
 ---
 
 # Annotations in WPF Maps

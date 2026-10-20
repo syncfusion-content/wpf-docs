@@ -5,7 +5,6 @@ description: Learn about BPMN shapes in Syncfusion® WPF Diagram control, includ
 platform: wpf
 control: SfDiagram
 documentation: ug
-appliesto: UI Component Suite, Diagram SDK
 ---
 
 # BPMN Shapes in WPF Diagram

@@ -5,7 +5,6 @@ description: Data markers in the WPF Chart highlight individual data points with
 platform: wpf
 control: SfChart
 documentation: ug
-appliesto: UI Component Suite, Chart SDK
 ---
 
 # Data Marker in WPF Charts

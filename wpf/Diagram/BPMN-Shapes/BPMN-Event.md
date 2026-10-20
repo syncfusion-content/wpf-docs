@@ -5,7 +5,6 @@ description: Learn about BPMN events in Syncfusion® WPF Diagram control, includ
 platform: wpf
 control: SfDiagram
 documentation: ug
-appliesto: UI Component Suite, Diagram SDK
 ---
 # Event in WPF Diagram
 

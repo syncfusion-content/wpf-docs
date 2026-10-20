@@ -5,7 +5,6 @@ description: Show and hide the axis in the WPF Sparkline to control axis visibil
 platform: wpf
 control: SfSparkline
 documentation: ug
-appliesto: UI Component Suite, Chart SDK
 ---
 
 # Show and Hide Axis in WPF Sparkline

@@ -131,7 +131,7 @@ GridColumnAutoSizer.CanRoundCalculation = true;
 
 ## Change the size of row height and column width to fit all cells in View
 
- When GridControl is placed inside custom control and if you want to auto fit the row/column size of GridControl based on custom control resized position, then you can invoke [SizeChanged](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.control.sizechanged?view=netframework-4.8) event of GridControl and set the [RowHeights](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Grid.GridModel.html#Syncfusion_Windows_Controls_Grid_GridModel_RowHeights) and [ColumnWidths](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Grid.GridModel.html#Syncfusion_Windows_Controls_Grid_GridModel_ColumnWidths) property of [GridModel](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Grid.GridModel.html) to the resized height/width.
+ When GridControl is placed inside custom control and if you want to auto fit the row/column size of GridControl based on custom control resized position, then you can invoke [SizeChanged](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.control.sizechanged?view=netframework-4.8) event of GridControl and set the [RowHeights](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Grid.GridModel.html#Syncfusion_Windows_Controls_Grid_GridModel_RowHeights) and [ColumnWidths](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Grid.GridModel.html#Syncfusion_Windows_Controls_Grid_GridModel_ColumnWidths) property of [GridModel](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Grid.GridModel.html) to the resized height/width.
 
 {% tabs %}
 {% highlight c# %}
@@ -155,9 +155,9 @@ void grid_SizeChanged(object sender, SizeChangedEventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-N> [View sample in GitHub](https://github.com/SyncfusionExamples/fit-the-columns-and-rows-size-based-on-custom-control-size)
+N> [View sample in GitHub](https://github.com/SyncfusionExamples/wpf-gridcontrol-fit-the-columns-and-rows-size-based-on-content)
 
 
 ## See also
 
-[How to auto fit all the columns in a GridControl based on the Window size](https://www.syncfusion.com/kb/7810)
+[How to auto fit all the columns in a GridControl based on the Window size](https://support.syncfusion.com/kb/article/7030/how-to-auto-fit-all-the-columns-in-a-gridcontrol-based-on-the-window-size)

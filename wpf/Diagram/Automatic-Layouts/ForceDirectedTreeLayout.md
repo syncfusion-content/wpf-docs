@@ -5,7 +5,6 @@ description: Arrange connected nodes in Syncfusion® WPF Diagram using Force-Dir
 platform: wpf
 control: SfDiagram
 documentation: ug
-appliesto: UI Component Suite, Diagram SDK
 ---
 
 

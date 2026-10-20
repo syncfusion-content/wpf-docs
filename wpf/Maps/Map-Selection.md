@@ -5,7 +5,6 @@ description: Map selection in the WPF Maps enables users to highlight and intera
 platform: wpf
 control: SfMap
 documentation: ug
-appliesto: UI Component Suite, Chart SDK
 ---
 
 # Selection in WPF Maps

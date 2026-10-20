@@ -5,7 +5,6 @@ description: Learn how to get started with the Syncfusion WPF Gantt control. Exp
 platform: wpf
 control: Gantt
 documentation: ug
-appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Getting Started with WPF Gantt

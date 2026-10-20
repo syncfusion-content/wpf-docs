@@ -5,7 +5,6 @@ description: Learn about quadratic curve connector segments in Syncfusion® WPF 
 platform: wpf
 control: SfDiagram
 documentation: ug
-appliesto: UI Component Suite, Diagram SDK
 ---
 
 # Quadratic Curve Segments in WPF Diagram
@@ -72,4 +71,4 @@ N> Quadratic bezier segments also supports to have multiple quadratic bezier seg
 
 ## See Also
 
-[How to detect or get notification when editing the thumbs of connector?](https://support.syncfusion.com/kb/article/9030/how-to-detect-or-get-notification-when-editing-the-thumbs-of-connector-in-wpf-diagram)
+[How to detect or get notification when editing the thumbs of connector?](https://support.syncfusion.com/kb/article/9030/how-to-detect-or-get-notification-when-editing-the-thumbs-of-connector-in-wpf-diagram-sfdiagram)

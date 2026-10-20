@@ -5,7 +5,6 @@ description: Learn Label Customization in WPF Bullet Graph using Syncfusion cont
 platform: wpf
 control: SfBulletGraph
 documentation: ug
-appliesto: UI Component Suite, Chart SDK
 ---
 
 # Label Customization in WPF Bullet Graph

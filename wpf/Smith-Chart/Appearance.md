@@ -5,7 +5,6 @@ description: Appearance in the WPF Smith Chart allows you to customize chart ele
 platform: wpf
 control: SfSmithChart
 documentation: ug
-appliesto: UI Component Suite, Chart SDK
 ---
 
 # Appearance in WPF Smith Chart

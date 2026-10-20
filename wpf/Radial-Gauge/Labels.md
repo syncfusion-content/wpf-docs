@@ -5,7 +5,6 @@ description: Labels in the WPF Radial Gauge display scale values and support cus
 platform: wpf
 control: SfCircularGauge
 documentation: ug
-appliesto: UI Component Suite, Chart SDK
 ---
 
 # Labels in WPF Radial Gauge

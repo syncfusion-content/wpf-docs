@@ -94,7 +94,7 @@ badge.Content = "99+";
 
 ![WPF Badge Alignment](Getting-Started_images/wpf-badge-alignment.png)
 
-N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-badge-control-examples/blob/main/Samples/Badge_Features)
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-badge-control-examples/tree/main/Samples/Badge_Features)
 
 ## Positioning of WPF Badge
 
@@ -181,7 +181,7 @@ badge.Content = "10";
 
 ![WPF Badge Position](Getting-Started_images/wpf-badge-position.png)
 
-N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-badge-control-examples/blob/main/Samples/Badge_Features)
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-badge-control-examples/tree/main/Samples/Badge_Features)
 
 ## Place the WPF Badge anywhere on the container
 
@@ -221,7 +221,7 @@ badge.VerticalPosition = 0.8;
 
 ![WPF Badge Custom Alignment](Getting-Started_images/wpf-badge-custom-alignment.png)
 
-N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-badge-control-examples/blob/main/Samples/Custom_Alignment)
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-badge-control-examples/tree/main/Samples/Custom_Alignment)
 
 ## Custom alignment and positioning of WPF Badge
 
@@ -303,7 +303,7 @@ badge.Content = "99+";
 
 ![WPF Badge Custom Position](Getting-Started_images/wpf-badge-custom-position.png)
 
-N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-badge-control-examples/blob/main/Samples/Custom_Alignment)
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-badge-control-examples/tree/main/Samples/Custom_Alignment)
 
 ## WPF Badge content alignment
 
@@ -335,4 +335,4 @@ badge.Content = "99+";
 
 ![WPF Badge Content Alignment](Getting-Started_images/wpf-badge-content-alignment.png)
 
-N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-badge-control-examples/blob/main/Samples/Badge_Features)
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-badge-control-examples/tree/main/Samples/Badge_Features)

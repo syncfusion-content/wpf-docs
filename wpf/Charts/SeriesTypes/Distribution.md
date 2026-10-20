@@ -5,7 +5,6 @@ description: Histogram in the WPF Chart displays the frequency distribution of d
 platform: wpf
 control: SfChart
 documentation: ug
-appliesto: UI Component Suite, Chart SDK
 ---
 
 # Histogram in WPF Charts

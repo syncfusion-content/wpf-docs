@@ -29,7 +29,7 @@ cardView.CanGroup = true;
 {% endhighlight %}
 {% endtabs %}
 
-N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-card-view-examples/blob/master/Samples/Editing)
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-card-view-examples/tree/master/Samples/Editing)
 
 ## Group the CardViewItems
 
@@ -141,7 +141,7 @@ cardView.CanGroup = true;
 
 Here, `CardViewItems` grouped based on `Age` field.
 
-N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-card-view-examples/blob/master/Samples/Editing)
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-card-view-examples/tree/master/Samples/Editing)
 
 ## Group the cards programmatically
 
@@ -161,7 +161,7 @@ Here, the cards are grouped programmatically based on the `Age` and `FirstName` 
 
 ![wpf card view items grouped programmatically](Grouping-Sorting-Filtering_images/porgrammaticgrouping.png)
 
-N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-card-view-examples/blob/master/Samples/CardView-EditMode)
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-card-view-examples/tree/master/Samples/CardView-EditMode)
 
 ## Nested grouping of CardViewItems
 
@@ -184,7 +184,7 @@ cardView.CanGroup = true;
 
 ![wpf card view items grouped with nested level](Grouping-Sorting-Filtering_images/nestedgrouping.gif)
 
-N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-card-view-examples/blob/master/Samples/Editing)
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-card-view-examples/tree/master/Samples/Editing)
 
 ## Hide the grouping header
 
@@ -206,4 +206,4 @@ cardView.ShowHeader = false;
 
 ![wpf card view control hides the group header](Grouping-Sorting-Filtering_images/hidegroupheader.png)
 
-N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-card-view-examples/blob/master/Samples/Editing)
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-card-view-examples/tree/master/Samples/Editing)

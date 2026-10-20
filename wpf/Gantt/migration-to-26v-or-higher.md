@@ -5,7 +5,6 @@ description: Learn about GridTreeControl to SfTreeGrid migration in Syncfusion W
 platform: wpf
 control: Gantt
 documentation: ug
-appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Migrate GridTreeControl to SfTreeGrid in WPF Gantt

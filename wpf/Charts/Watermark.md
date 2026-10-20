@@ -5,7 +5,6 @@ description: Watermark in the WPF Chart adds background text or images to the ch
 platform: wpf
 control: SfChart
 documentation: ug
-appliesto: UI Component Suite, Chart SDK
 ---
 
 # Watermark in WPF Charts
@@ -109,5 +108,5 @@ N> You can refer to our [WPF Charts](https://www.syncfusion.com/wpf-controls/cha
 
 ## See also
 
-[`How to add watermark to chart?`](https://www.syncfusion.com/kb/5225/how-to-add-watermark-to-chart)
+[`How to add watermark to chart?`](https://support.syncfusion.com/kb/article/4952/how-to-add-watermark-in-wpf-chart-sfchart-)
 

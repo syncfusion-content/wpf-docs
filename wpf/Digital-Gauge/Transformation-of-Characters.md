@@ -5,7 +5,6 @@ description: Transformation of characters in the WPF Digital Gauge enables chara
 platform: wpf
 control: SfDigitalGauge
 documentation: ug
-appliesto: UI Component Suite, Chart SDK
 ---
 
 # Transformation of Characters in WPF Digital Gauge

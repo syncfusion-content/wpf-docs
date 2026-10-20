@@ -5,7 +5,6 @@ description: Learn about Strip Lines support in Syncfusion WPF Gantt to highligh
 platform: wpf
 control: Gantt
 documentation: ug
-appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Strip Lines in WPF Gantt

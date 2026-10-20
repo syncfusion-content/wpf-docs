@@ -248,12 +248,12 @@ gridControl.Model.GridCopyPaste = htmlCopy;
 
 {% seealso %}
 
-* [ClipboardCanCopy event](http://help.syncfusion.com/wpf/grid/events#clipboardcancopy)
-* [ClipboardCanCut event](http://help.syncfusion.com/wpf/grid/events#clipboardcancut)
-* [ClipboardCanPaste event](http://help.syncfusion.com/wpf/grid/events#clipboardcanpaste)
-* [ClipboardCopy event](http://help.syncfusion.com/wpf/grid/events#clipboardcopy)
-* [ClipboardCut event](http://help.syncfusion.com/wpf/grid/events#clipboardcut)
-* [ClipboardPaste event](http://help.syncfusion.com/wpf/grid/events#clipboardpaste)
+* [ClipboardCanCopy event](https://help.syncfusion.com/wpf/gridcontrol/events#clipboardcancopy)
+* [ClipboardCanCut event](https://help.syncfusion.com/wpf/gridcontrol/events#clipboardcancut)
+* [ClipboardCanPaste event](https://help.syncfusion.com/wpf/gridcontrol/events#clipboardcanpaste)
+* [ClipboardCopy event](https://help.syncfusion.com/wpf/gridcontrol/events#clipboardcopy)
+* [ClipboardCut event](https://help.syncfusion.com/wpf/gridcontrol/events#clipboardcut)
+* [ClipboardPaste event](https://help.syncfusion.com/wpf/gridcontrol/events#clipboardpaste)
 
 {% endseealso %}
 
@@ -519,6 +519,6 @@ N> [View sample in GitHub](https://github.com/syncfusion/wpf-demos/tree/master/g
 
 ## See also
 
-[How to exclude header while copying](https://www.syncfusion.com/kb/11194)
+[How to exclude header while copying](https://support.syncfusion.com/kb/article/9711/how-to-exclude-header-while-copying-in-wpf-gridcontrol-when-table-is-selected)
 
-[How to invoke CommitCellInfo event](https://www.syncfusion.com/kb/11193)
+[How to invoke CommitCellInfo event](https://support.syncfusion.com/kb/article/9744/how-to-invoke-commitcellinfo-event-of-wpf-gridcontrol-when-selecting-an-item-in-dropdown)

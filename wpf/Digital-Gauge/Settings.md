@@ -5,7 +5,6 @@ description: Settings in the WPF Digital Gauge allow you to configure display be
 platform: wpf
 control: SfDigitalGauge
 documentation: ug
-appliesto: UI Component Suite, Chart SDK
 ---
 
 # Settings in WPF Digital Gauge

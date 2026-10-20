@@ -272,7 +272,7 @@ recurrenceAppointment.RecursiveExceptionDates.Add(new DateTime(2017, 09, 05));
 {% endtabs %}
 
 ### Create recurrence exceptions for custom appointment
-You can add/remove the recurrence exception appointments and recurrence exception dates to the CustomAppointment, You can create a custom class Meeting(refer [DataBinding](https://help.syncfusion.com/wpf/sfschedule/adding-appointments#using-data-binding-technique)) with mandatory field RecurrenceExceptionDates.
+You can add/remove the recurrence exception appointments and recurrence exception dates to the CustomAppointment, You can create a custom class Meeting(refer [DataBinding](https://help.syncfusion.com/scheduler-sdk/wpf/schedule/appointments)) with mandatory field RecurrenceExceptionDates.
 
 {% tabs %}
 {% highlight c# %}

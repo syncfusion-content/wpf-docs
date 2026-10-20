@@ -9,7 +9,7 @@ documentation: ug
 
 # About Syncfusion® WPF AI AssistView Control
 
-The Syncfusion [WPF AI AssistView control](https://www.syncfusion.com/wpf-controls/aiassist-view) is used to enhance interaction between users and AI services. It offers a user-friendly interface for creating intelligent and responsive applications with AI services, allowing users to customize the appearance easily.
+The Syncfusion [WPF AI AssistView control](https://help.syncfusion.com/wpf/ai-assistview/getting-started) is used to enhance interaction between users and AI services. It offers a user-friendly interface for creating intelligent and responsive applications with AI services, allowing users to customize the appearance easily.
 
 ## Key features
 

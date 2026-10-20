@@ -215,4 +215,4 @@ You can make changes on the settings such as stroke etc. This is applied after t
 
 ## See also
 
-[How to load the image annotated with shapes and text on the Image Editor](https://www.syncfusion.com/kb/11215/how-to-load-the-image-annotated-with-shapes-and-text-on-the-image-editor)
+[How to load the image annotated with shapes and text on the Image Editor](https://support.syncfusion.com/kb/article/9825/how-to-load-the-image-annotated-with-shapes-and-text-in-wpf-image-editor)

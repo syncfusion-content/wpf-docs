@@ -23,4 +23,4 @@ The [WPF Calculator](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Contr
 * **Memory operations** - Supports `MS`, `MR`, `M+`, `M-`, and `MC` memory keys. See [Memory](memory).
 * **Theming** - Supports various built-in themes. See the [Theme](getting-started#theme) section.
 
-> Starting with Syncfusion<sup>®</sup> version 16.2 (2018 Vol 2), the `Syncfusion.Licensing.dll` is added as a reference for all Syncfusion WPF controls. Refer to the [licensing help topic](https://help.syncfusion.com/common/essential-studio/licensing/license-key) for more information.
+> Starting with Syncfusion<sup>®</sup> version 16.2 (2018 Vol 2), the `Syncfusion.Licensing.dll` is added as a reference for all Syncfusion WPF controls. Refer to the [licensing help topic](https://help.syncfusion.com/common/essential-studio/licensing/overview) for more information.

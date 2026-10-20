@@ -5,7 +5,6 @@ description: Legend in the WPF HeatMap identifies data value ranges through colo
 platform: wpf
 control: SfHeatMap
 documentation: ug
-appliesto: UI Component Suite, Chart SDK
 ---
 
 # Legend in WPF HeatMap

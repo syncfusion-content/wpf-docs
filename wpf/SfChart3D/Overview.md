@@ -5,7 +5,6 @@ description: Learn about the introduction of Syncfusion Essential Studio WPF 3D 
 platform: wpf
 control: SfChart3D
 documentation: ug
-appliesto: UI Component Suite, Chart SDK
 ---
 
 # About Syncfusion WPF 3D Chart control

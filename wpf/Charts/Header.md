@@ -5,7 +5,6 @@ description: Header in the WPF Chart displays a title for the chart, providing c
 platform: wpf
 control: SfChart
 documentation: ug
-appliesto: UI Component Suite, Chart SDK
 ---
 
 # Header in WPF Charts

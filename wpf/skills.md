@@ -42,7 +42,7 @@ Before installing Syncfusion<sup style="font-size:70%">&reg;</sup> WPF Agent Ski
 
 ## Installation
 
-Install [Syncfusion<sup style="font-size:70%">&reg;</sup> WPF components skills](https://github.com/syncfusion/wpf-ui-components-skills.git) using the Skills CLI. Users can also explore available skills from the [marketplace](https://www.skills.sh/syncfusion/).
+Install [Syncfusion<sup style="font-size:70%">&reg;</sup> WPF components skills](https://github.com/syncfusion/wpf-ui-components-skills) using the Skills CLI. Users can also explore available skills from the [marketplace](https://www.skills.sh/syncfusion).
 
 ### Install all skills
 
@@ -118,7 +118,7 @@ Choose your installation scope (project-level or global), then confirm to comple
 {% endhighlight %}
 {% endtabs %}
 
-This registers the Syncfusion<sup style="font-size:70%">&reg;</sup> skill pack so that AI assistants can automatically load it in supported IDEs such as [Code Studio](https://help.syncfusion.com/code-studio/reference/configure-properties/skills), [Visual Studio Code](https://code.visualstudio.com/docs/copilot/customization/agent-skills), and [Cursor](https://cursor.com/docs/skills).
+This registers the Syncfusion<sup style="font-size:70%">&reg;</sup> skill pack so that AI assistants can automatically load it in supported IDEs such as [Code Studio](https://help.syncfusion.com/code-studio/customization/configure-the-code-studio), [Visual Studio Code](https://code.visualstudio.com/docs/agent-customization/agent-skills), and [Cursor](https://cursor.com/docs/skills).
 
 To learn more about the Skills CLI, refer [here](https://www.skills.sh/docs).
 

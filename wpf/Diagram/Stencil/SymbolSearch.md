@@ -5,7 +5,6 @@ description: Search stencil symbols in Syncfusion® WPF Diagram using symbol nam
 platform: wpf
 control: SfDiagram
 documentation: ug
-appliesto: UI Component Suite, Diagram SDK
 ---
 
 # Symbol Search in WPF Diagram

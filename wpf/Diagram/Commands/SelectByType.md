@@ -5,7 +5,6 @@ description: Select specific diagram element types in Syncfusion® WPF Diagram u
 platform: wpf
 control: SfDiagram
 documentation: ug
-appliesto: UI Component Suite, Diagram SDK
 ---
 
 # SelectByType Command in WPF Diagram

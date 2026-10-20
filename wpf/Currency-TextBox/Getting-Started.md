@@ -123,7 +123,7 @@ currencyTextBox.Value = 100;
 
 ![WPF Currency TextBox displays Value](getting-started_images/wpf-currency-textbox-value.png)
 
-N> Do not use the [Text](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.textbox.text?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Controls_TextBox_Text) property to set the value for the WPF Currency TextBox. Use only the `Value` property.
+N> Do not use the [Text](https://learn.microsoft.com/en-us/dotnet/api/system.windows.controls.textbox.text?redirectedfrom=MSDN&view=netframework-4.7.2) property to set the value for the WPF Currency TextBox. Use only the `Value` property.
 
 ### Binding Value
 

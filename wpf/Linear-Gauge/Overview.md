@@ -5,7 +5,6 @@ description: Learn about the introduction of Syncfusion Essential Studio® WPF L
 platform: wpf
 control: SfLinearGauge
 documentation: ug
-appliesto: UI Component Suite, Chart SDK
 ---
 # About Syncfusion® WPF Linear Gauge Control
 

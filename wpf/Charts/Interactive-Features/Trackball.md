@@ -5,7 +5,6 @@ description: Trackball in the WPF Chart displays contextual information across d
 platform: wpf
 control: SfChart
 documentation: ug
-appliesto: UI Component Suite, Chart SDK
 ---
 
 # Trackball in WPF Charts

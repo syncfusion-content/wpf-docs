@@ -5,7 +5,6 @@ description: Color mapping in the WPF TreeMap applies colors to hierarchical dat
 platform: wpf
 control: TreeMap
 documentation: ug
-appliesto: UI Component Suite, Chart SDK
 ---
 
 # Color Mapping in WPF TreeMap

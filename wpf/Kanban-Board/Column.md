@@ -5,7 +5,6 @@ description: Learn about Column support in Syncfusion WPF Kanban Board, includin
 platform: wpf
 control: SfKanban
 documentation: ug
-appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Column in WPF Kanban Board

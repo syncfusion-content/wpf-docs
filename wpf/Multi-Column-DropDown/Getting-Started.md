@@ -18,7 +18,7 @@ Features,
     * Ability to customize popup width, height and resize at runtime
     * Editor can be Read-only
     
-You can [refer here](http://help.syncfusion.com/wpf/sfdatagrid/overview) to know more about `SfDataGrid`.
+You can [refer here](https://help.syncfusion.com/wpf/datagrid/overview) to know more about `SfDataGrid`.
 
 ![MultiColumnDropDown - Getting Started](Getting-Started_images/Getting-Started_img1.png)
 
@@ -279,7 +279,7 @@ sfMultiColumn.ItemsSource = viewModel.Orders;
 
 [DisplayMember](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfMultiColumnDropDownControl.html#Syncfusion_UI_Xaml_Grid_SfMultiColumnDropDownControl_DisplayMember) denotes the path to a value on the data object for visual presentation of the selected object in editor and [ValueMember](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfMultiColumnDropDownControl.html#Syncfusion_UI_Xaml_Grid_SfMultiColumnDropDownControl_ValueMember) denotes the path to a value on the data object for [SelectedValue](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfMultiColumnDropDownControl.html#Syncfusion_UI_Xaml_Grid_SfMultiColumnDropDownControl_SelectedValue). 
 
-Refer [here](http://help.syncfusion.com/wpf/sfmulticolumndropdown/data-binding) to know more about the `DisplayMember` and `ValueMember`.
+Refer [here](https://help.syncfusion.com/wpf/multi-column-dropdown/data-binding) to know more about the `DisplayMember` and `ValueMember`.
 
 ## Defining Columns
 

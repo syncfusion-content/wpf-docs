@@ -9,7 +9,7 @@ documentation: ug
 
 # Attached Properties in WPF PropertyGrid
 
-The [WPF PropertyGrid](https://www.syncfusion.com/wpf-ui-controls/propertygrid) control provides support to display the attached properties of the `SelectedObject`.
+The [WPF PropertyGrid](https://www.syncfusion.com/wpf-controls/propertygrid) control provides support to display the attached properties of the `SelectedObject`.
 
 ## Show or hide attached properties of SelectedObject
 

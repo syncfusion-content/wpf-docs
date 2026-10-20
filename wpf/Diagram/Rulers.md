@@ -5,7 +5,6 @@ description: Measure, align, and position diagram elements in Syncfusion® WPF D
 platform: wpf
 control: SfDiagram
 documentation: ug
-appliesto: UI Component Suite, Diagram SDK
 ---
 
 # Rulers in WPF Diagram

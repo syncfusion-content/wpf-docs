@@ -5,7 +5,6 @@ description: Spline series in the WPF Chart display smooth curves between data p
 platform: wpf
 control: SfChart
 documentation: ug
-appliesto: UI Component Suite, Chart SDK
 ---
 
 # Spline in WPF Charts

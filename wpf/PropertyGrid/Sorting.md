@@ -15,7 +15,7 @@ You can sort the properties according to your needs. You can change the sorting 
 
 ## Sorting the Properties
 
-Properties in the [WPF PropertyGrid](https://www.syncfusion.com/wpf-ui-controls/propertygrid) are sorted by using the `SortDirection` property. They are sorted based only on the name of the property, not by the display name of the property. If the properties are in the grouped view, then the groups are sorted based on the group name in either `Ascending` or `Descending` order. 
+Properties in the [WPF PropertyGrid](https://www.syncfusion.com/wpf-controls/propertygrid) are sorted by using the `SortDirection` property. They are sorted based only on the name of the property, not by the display name of the property. If the properties are in the grouped view, then the groups are sorted based on the group name in either `Ascending` or `Descending` order. 
 
 {% tabs %}
 {% highlight C# %}

@@ -39,7 +39,7 @@ tileViewControl.Items.Add(new TileViewItem() { Header = "Item 4" });
 
 ![TileViewItem is maximizing](Maximize_images/Maximize.gif)
 
-N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-tileview-control-examples/blob/master/Samples/MinMax-TileItem)
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-tileview-control-examples/tree/master/Samples/MinMax-TileItem)
 
 ## Maximize on click the header
 
@@ -65,7 +65,7 @@ tileViewControl.ClickHeaderToMaximize = true;
 
 ![TileViewItem is maximized using clicking the header](Maximize_images/HeaderMaximize.gif)
 
-N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-tileview-control-examples/blob/master/Samples/MinMax-TileItem)
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-tileview-control-examples/tree/master/Samples/MinMax-TileItem)
 
 ## Show maximize button only on mouse hover
 
@@ -91,7 +91,7 @@ tileViewControl.IsMinMaxButtonOnMouseOverOnly = true;
 
 ![Displaying the maximize button only by mouse hover on the particular TileViewItem](Maximize_images/IsMinMaxButtonOnMouseOverOnly.gif)
 
-N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-tileview-control-examples/blob/master/Samples/MinMax-TileItem)
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-tileview-control-examples/tree/master/Samples/MinMax-TileItem)
 
 ## Hide maximize button
 
@@ -125,7 +125,7 @@ tileViewControl.Items.Add(new TileViewItem() { Header = "Item 4" });
 
 ![Particular TileViewItem maximize button hided](Maximize_images/MinMaxButtonVisibility.png)
 
-N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-tileview-control-examples/blob/master/Samples/Custom-Maximize-Button)
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-tileview-control-examples/tree/master/Samples/Custom-Maximize-Button)
 
 ## Custom UI of the maximize button
 
@@ -165,7 +165,7 @@ You can customize the appearance of particular `TileViewItem`'s maximize button 
 
 ![Maximize button UI changed](Maximize_images/MinMaxButtonStyle.png)
 
-N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-tileview-control-examples/blob/master/Samples/Custom-Maximize-Button)
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-tileview-control-examples/tree/master/Samples/Custom-Maximize-Button)
 
 ## Change maximized TileViewItem content
 
@@ -204,7 +204,7 @@ tileViewControl.Items.Add(new TileViewItem() { Header = "Item 4",
 
 ![Maximized TileViewItem content changed](Maximize_images/MaximizedItemContent.png)
 
-N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-tileview-control-examples/blob/master/Samples/MinMax-TileItem)
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-tileview-control-examples/tree/master/Samples/MinMax-TileItem)
 
 ## Custom UI of maximized TileViewItem content
 
@@ -239,7 +239,7 @@ You can customize the appearance of maximized `TileViewItem` content by using th
 
 ![Maximized TileViewItem content UI changed](Maximize_images/MaximizedItemTemplate.png)
 
-N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-tileview-control-examples/blob/master/Samples/CustomUI-MinMaxTileItem)
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-tileview-control-examples/tree/master/Samples/CustomUI-MinMaxTileItem)
 
 
 ## Change maximized TileViewItem header

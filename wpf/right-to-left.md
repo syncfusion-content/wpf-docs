@@ -10,7 +10,7 @@ documentation: ug
 # Right-to-Left in WPF Controls
 
 
-Right-to-Left (RTL) support displays the content from right-to-left direction by setting the [FlowDirection](https://docs.microsoft.com/en-us/dotnet/api/system.windows.flowdirection) property to `RightToLeft`. This is helpful to support the Right-to-Left scripted languages like Arabic, Hebrew, Urdu, etc.
+Right-to-Left (RTL) support displays the content from right-to-left direction by setting the [FlowDirection](https://learn.microsoft.com/en-us/dotnet/api/system.windows.flowdirection) property to `RightToLeft`. This is helpful to support the Right-to-Left scripted languages like Arabic, Hebrew, Urdu, etc.
 
 All WPF Syncfusion<sup>&reg;</sup> controls support Right-to-Left (RTL) based on the `FlowDirection` property. In addition to that, most controls provide [localization](https://help.syncfusion.com/wpf/localization) support to change the language of strings used in the control for any specific culture.
 

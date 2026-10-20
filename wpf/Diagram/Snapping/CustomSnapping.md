@@ -5,7 +5,6 @@ description: Customize snapping behavior in Syncfusion® WPF Diagram by defining
 platform: wpf
 control: SfDiagram
 documentation: ug
-appliesto: UI Component Suite, Diagram SDK
 ---
 # Custom Snapping in WPF Diagram
 

@@ -5,7 +5,6 @@ description: Learn about the shapes palette in Syncfusion® WPF Diagram control,
 platform: wpf
 control: SfDiagram
 documentation: ug
-appliesto: UI Component Suite, Diagram SDK
 ---
 
 # Shapes Palette in WPF Diagram

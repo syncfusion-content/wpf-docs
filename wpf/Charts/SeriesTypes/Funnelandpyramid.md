@@ -5,7 +5,6 @@ description: Funnel and pyramid series in the WPF Chart visualize proportional d
 platform: wpf
 control: SfChart
 documentation: ug
-appliesto: UI Component Suite, Chart SDK
 ---
 
 # Funnel and Pyramid in WPF Charts

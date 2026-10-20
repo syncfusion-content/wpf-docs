@@ -5,7 +5,6 @@ description: Learn about Highlighting Tasks support in Syncfusion   WPF Gantt us
 platform: wpf
 control: Gantt
 documentation: ug
-appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Highlighting Tasks in WPF Gantt
@@ -1024,4 +1023,4 @@ To view samples:
 
 ## See Also
 
-[How to view the gantt control with the desired date tasks at load time in WPF](https://www.syncfusion.com/kb/7728/how-to-view-the-gantt-control-with-the-desired-date-tasks-at-load-time-in-wpf)
+[How to view the gantt control with the desired date tasks at load time in WPF](https://support.syncfusion.com/kb/article/6895/how-to-view-the-gantt-control-with-the-desired-date-tasks-at-load-time-in-wpf)

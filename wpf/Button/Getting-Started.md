@@ -518,7 +518,7 @@ button2.SmallIcon = new BitmapImage(new Uri("image/syncfusion.png", UriKind.Rela
 
 ![Icon Size](Getting-Started_images/Getting-Started_img10.png)
 
-N> View [sample](https://github.com/SyncfusionExamples/wpf-button-examples/blob/master/Samples/Getting-Started) in GitHub. This sample showcases how to add button control and its basic features like image sizing options and size modes.
+N> View [sample](https://github.com/SyncfusionExamples/wpf-button-examples/tree/master/Samples/Getting-Started) in GitHub. This sample showcases how to add button control and its basic features like image sizing options and size modes.
 
 ## Setting corner radius
 

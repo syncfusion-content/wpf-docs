@@ -5,7 +5,6 @@ description: Customize a data point marker in the WPF Sparkline to apply distinc
 platform: wpf
 control: SfSparkline
 documentation: ug
-appliesto: UI Component Suite, Chart SDK
 ---
 
 # How to customize a data point marker in WPF Sparkline

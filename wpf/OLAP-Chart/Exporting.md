@@ -5,10 +5,9 @@ description: Exporting in the WPF OLAP Chart enables chart data and visuals to b
 platform: wpf
 control: OLAP Chart
 documentation: ug
-appliesto: UI Component Suite, Chart SDK
 ---
 
-# Exporting in WPF OLAP Chart
+# Exporting in WPF Olap Chart
 
 A WPF OLAP Chart can be exported to various image and document formats. The following topics illustrate this in detail:
 

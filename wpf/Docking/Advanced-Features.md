@@ -726,7 +726,7 @@ AddToTargetManagersList </td><td>
  (DockingManager docking)</td><td>
 NA</td><td>
 void </td><td>
-http://help.syncfusion.com/windowsforms/tools</td></tr>
+https://help.syncfusion.com/windowsforms/overview</td></tr>
 <tr>
 <td>
 RemoveFromTargetManagersList</td><td>
@@ -734,7 +734,7 @@ Removes the WPF Docking Control from the Target Providers List, belonging to the
 (DockingManager docking)</td><td>
 NA</td><td>
 void </td><td>
-http://help.syncfusion.com/windowsforms/tools</td></tr>
+https://help.syncfusion.com/windowsforms/overview</td></tr>
 </table>
 
 ### Events
@@ -753,14 +753,14 @@ TransferredToManager </td><td>
 The TransferredToManager event occurs after a dockable control that previously belonged to some other WPF Docking Control has been transferred to the docking layout hosted by the current WPF Docking Control.</td><td>
 DockingManager PreviousManager, FrameworkElement TargetElement, DockingManager TargetManager</td><td>
 TransferManagerEventArgs</td><td>
-http://help.syncfusion.com/windowsforms/tools</td></tr>
+https://help.syncfusion.com/windowsforms/overview</td></tr>
 <tr>
 <td>
 TransferringFromManager </td><td>
 The TransferringFromManager event occurs when a dockable control hosted by a WPF Docking Control is about to be transferred to the docking layout hosted by some other WPF Docking Control.</td><td>
 DockingManager PreviousManager, FrameworkElement TargetElement, DockingManager TargetManager</td><td>
 TransferManagerEventArgs</td><td>
-http://help.syncfusion.com/windowsforms/tools</td></tr>
+https://help.syncfusion.com/windowsforms/overview</td></tr>
 </table>
 
 ### Features of Linked Manager Support
