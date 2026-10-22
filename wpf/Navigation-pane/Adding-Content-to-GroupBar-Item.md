@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Add Content to GroupBar Items in WPF Navigation Pane | Syncfusion®
 description: Add panels, GroupView controls, and GroupView items to GroupBar items and handle item-related events in the Navigation Pane (GroupBar).
