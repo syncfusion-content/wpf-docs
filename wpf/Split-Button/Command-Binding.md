@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Command Binding in WPF SplitButton | Syncfusion®
 description: Bind commands and command parameters to SplitButton and dropdown menu items using ICommand and MVVM patterns.

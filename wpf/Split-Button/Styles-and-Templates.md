@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Styles and Templates in WPF SplitButton | Syncfusion®
 description: Customize the appearance and structure of the SplitButton control using styles, templates, Expression Blend, and Visual Studio.

@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Add GroupBar Items in WPF Navigation Pane | Syncfusion®
 description: Learn how to create and add GroupBar items programmatically or through XAML in the WPF Navigation Pane control.

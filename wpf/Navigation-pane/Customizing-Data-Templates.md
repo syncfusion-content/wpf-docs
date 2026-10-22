@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Data Templates in WPF Navigation Pane | Syncfusion®
 description: Customize item, header, and content presentation using data templates and template selectors in the Navigation Pane control.

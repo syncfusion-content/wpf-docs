@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Styles and Templates in WPF DropDown Button | Syncfusion®
 description: Customize the visual appearance of the DropDownButtonAdv control using styles, templates, Expression Blend, and Visual Studio.

@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Dropdown Direction in WPF DropDown Button | Syncfusion®
 description: Control the position of the dropdown popup using configurable directions such as left, right, top, and bottom.
