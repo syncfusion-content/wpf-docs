@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Appearance in WPF Navigation Pane | Syncfusion®
 description: Customize the Navigation Pane appearance using visual modes, themes, styles, drag markers, collapse buttons, and header customization.

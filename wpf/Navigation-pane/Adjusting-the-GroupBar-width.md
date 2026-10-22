@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Adjust GroupBar Width in WPF Navigation Pane | Syncfusion®
 description: Control the width of the collapsed Navigation Pane by configuring the Navigation Pane (GroupBar) collapsed width settings.
