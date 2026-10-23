@@ -146,7 +146,7 @@ Run `sf new`, or select **Create a new project** from the main menu. The WPF cre
 
     The theme applies to the generated app through [SkinManager](https://help.syncfusion.com/wpf/themes/skin-manager). An empty project uses the `Windows11Light` default without prompting.
 
-    ![Configured WPF options in the Syncfusion .NET CLI](images/configured-wpf-options.png)
+    ![Configured WPF options in the Syncfusion .NET CLI](images/cli-configured-wpf-options.png)
 
 8. **Post-create:** Select **Generate only** or **Build project**.
 9. **Confirmation:** Review the selected values and confirm to create the project.
@@ -190,6 +190,8 @@ sf new wpf --name Reports --language C# --target-framework net10.0 --theme Windo
 
 A generated project places each control sample in a `TabControl` tab with a Welcome page. The [SkinManager](https://help.syncfusion.com/wpf/themes/skin-manager) applies the selected theme through `SfSkinManager.SetTheme`.
 
+![Generated WPF project with control samples in the Syncfusion .NET CLI](images/cli-sample-generated.png)
+
 N> A complete direct command does not open the wizard. Neither `--force` nor confirmation authorizes overwriting an existing project destination.
 
 ## Run the created project
@@ -222,7 +224,7 @@ To list the available WPF packages:
 sf list wpf packages
 ```
 
-![List of available WPF packages in the Syncfusion .NET CLI](images/list-of-avilable-packages.png)
+![List of available WPF packages in the Syncfusion .NET CLI](images/cli-list-of-available-packages.png)
 
 To list the installed packages in an existing project, and to search the catalog:
 
@@ -242,7 +244,7 @@ sf help
 sf help wpf
 ```
 
-![Show help in the Syncfusion .NET CLI](images/show-help.png)
+![Show help in the Syncfusion .NET CLI](images/cli-show-help.png)
 
 ## Options reference
 
