@@ -102,7 +102,7 @@ Complete direct commands remain usable without opening the menu. `--no-interacti
 | `sf update wpf <package>` | Update a package in an existing project |
 | `sf list wpf packages` | List available packages |
 | `sf list wpf installed` | List installed packages in an existing project |
-| `sf search wpf <text>` | Search packages |
+| `sf search <text> --framework wpf` | Search the WPF package catalog |
 | `sf info` | Show CLI information |
 | `sf help wpf` | Show the WPF command map |
 | `sf --version` | Show the CLI version |
@@ -228,7 +228,7 @@ To list the installed packages in an existing project, and to search the catalog
 
 ```bash
 sf list wpf installed --path ./MyApp
-sf search wpf chart
+sf search chart --framework wpf
 ```
 
 Existing-project commands accept `-p/--path` with a project file, a project directory, or a supported subdirectory. Discovery stops at the nearest project or repository boundary. `--json` emits one JSON document for script use. Use `--details` or `--verbose` to see package descriptions and whether a generated sample is available.
