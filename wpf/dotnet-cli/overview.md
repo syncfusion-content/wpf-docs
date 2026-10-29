@@ -25,42 +25,62 @@ This documentation covers the WPF platform.
 
 ## Prerequisites
 
-The following software is required before you install and use the CLI:
-
 * [.NET SDK](https://dotnet.microsoft.com/download). The SDK selected through `PATH` takes precedence, with the running .NET installation as a fallback.
 * On Windows, the **.NET desktop development** workload for building and running WPF applications. On Linux and macOS, use `--post-action generate` for portable source generation.
-* An internet connection so package operations can reach [nuget.org](https://www.nuget.org).
-* A Syncfusion<sup style="font-size:70%">&reg;</sup> account to activate licenses. Sign in is performed through the browser during license activation.
+* An internet connection so package operations can reach [nuget.org](https://www.nuget.org), and a Syncfusion<sup style="font-size:70%">&reg;</sup> account to activate licenses.
 
 N> Syncfusion<sup style="font-size:70%">&reg;</sup> packages resolve from the official nuget.org feed, `https://api.nuget.org/v3/index.json`. The CLI accepts only this source through `--source`.
 
-## Installation
+## Installation and setup
 
 The CLI is published as a .NET global tool with the package ID `Syncfusion.DotNet.CLI`.
 
 1. Open a terminal and run the following command. Add `--prerelease` while only preview versions are available.
 
-    ```bash
+    {% tabs %}
+    {% highlight bash %}
+
     dotnet tool install -g Syncfusion.DotNet.CLI --prerelease
-    ```
 
-2. Verify the installation and print the CLI version.
+    {% endhighlight %}
+    {% endtabs %}
 
-    ```bash
+2. Add the .NET global tools directory to the `PATH` environment variable so the `sf` command is available in any terminal.
+
+    * On Windows, add `%USERPROFILE%\.dotnet\tools` to `PATH`.
+    * On Linux and macOS, add `~/.dotnet/tools` to `PATH`.
+
+    N> The .NET SDK installer usually adds this directory to `PATH` automatically. Add it manually only if the terminal cannot find the `sf` command after installation.
+
+3. Verify the installation and print the CLI version.
+
+    {% tabs %}
+    {% highlight bash %}
+
     sf --version
-    ```
+
+    {% endhighlight %}
+    {% endtabs %}
 
 To update the tool to the latest release, run:
 
-```bash
+{% tabs %}
+{% highlight bash %}
+
 dotnet tool update -g Syncfusion.DotNet.CLI --prerelease
-```
+
+{% endhighlight %}
+{% endtabs %}
 
 To remove the tool, run:
 
-```bash
+{% tabs %}
+{% highlight bash %}
+
 dotnet tool uninstall -g Syncfusion.DotNet.CLI
-```
+
+{% endhighlight %}
+{% endtabs %}
 
 ## Initialize the CLI
 
@@ -68,25 +88,25 @@ Run `sf` in an interactive terminal to open the main menu. The menu shows the cu
 
 ![Syncfusion .NET CLI main menu](images/cli-main-menu.png)
 
-| Group | Operation | Command reference |
+| Command | Operation | For details, refer to |
 | --- | --- | --- |
-| Project creation | Create a new project | `sf new` |
-| Package management | Add a package to an existing project | `sf add` |
-| Package management | Update a package in an existing project | `sf update` |
-| Discovery | List available packages | `sf list <platform> packages` |
-| Discovery | List installed packages in an existing project | `sf list <platform> installed` |
-| Discovery | Search for packages | `sf search` |
-| AI & Skills | Setup Model Context Protocol (MCP) | `sf mcp init` |
-| AI & Skills | Add component skills to AI Agent | `sf skills install` |
-| License management | Activate license | `sf license activate` |
-| License management | View installed licenses | `sf license view` |
-| License management | Sign in to Syncfusion | `sf login` |
-| License management | Sign out | `sf logout` |
-| Help and information | View CLI information | `sf info` |
-| Help and information | Show help | `sf help` |
-| Exit | Exit | `Ctrl+C` |
+| `sf new wpf` | Create a new WPF project | [Create a WPF project](/wpf/dotnet-cli/create-project) |
+| `sf add wpf <package>` | Add a package to an existing project | [Manage packages](/wpf/dotnet-cli/manage-packages) |
+| `sf update wpf <package>` | Update a package in an existing project | [Manage packages](/wpf/dotnet-cli/manage-packages) |
+| `sf list wpf packages` | List available packages | [Manage packages](/wpf/dotnet-cli/manage-packages) |
+| `sf list wpf installed` | List installed packages in an existing project | [Manage packages](/wpf/dotnet-cli/manage-packages) |
+| `sf search <text> --framework wpf` | Search the WPF package catalog | [Manage packages](/wpf/dotnet-cli/manage-packages) |
+| `sf mcp init wpf` | Setup Model Context Protocol (MCP) | [MCP configuration](/wpf/dotnet-cli/configure-mcp) |
+| `sf skills install wpf` | Add component skills to AI Agent | [AI skills installation](/wpf/dotnet-cli/install-skills) |
+| `sf license activate` | Activate license | [License activation](/wpf/dotnet-cli/licensing) |
+| `sf license view` | View installed licenses | [License activation](/wpf/dotnet-cli/licensing) |
+| `sf login` | Sign in to Syncfusion | [License activation](/wpf/dotnet-cli/licensing) |
+| `sf logout` | Sign out | [License activation](/wpf/dotnet-cli/licensing) |
+| `sf info` | View CLI information | |
+| `sf help wpf` | Show the WPF command map | |
+| `sf --version` | Show the CLI version | |
 
-N> The `<platform>` text is a usage placeholder. Use `wpf` for WPF.
+N> The `<platform>` text is a usage placeholder. Use `wpf` for WPF. Complete direct commands remain usable without opening the menu. `--no-interactive` disables prompts in any command.
 
 Use the following keys to navigate the interactive screens:
 
@@ -97,28 +117,6 @@ Use the following keys to navigate the interactive screens:
 | Space | Toggle a checkbox in a multi-selection list |
 | Escape | Cancel the current question and return to the menu |
 | `Ctrl+C` | Exit the interactive session |
-
-Complete direct commands remain usable without opening the menu. `--no-interactive` disables prompts in any command.
-
-## Available commands
-
-| Command | Purpose | For details, refer to |
-| --- | --- | --- |
-| `sf new wpf` | Create a new WPF project | [Create a WPF project](/wpf/dotnet-cli/create-project) |
-| `sf add wpf <package>` | Add a Syncfusion<sup style="font-size:70%">&reg;</sup> package to an existing project | [Manage packages](/wpf/dotnet-cli/manage-packages) |
-| `sf update wpf <package>` | Update a package in an existing project | [Manage packages](/wpf/dotnet-cli/manage-packages) |
-| `sf list wpf packages` | List available packages | [Manage packages](/wpf/dotnet-cli/manage-packages) |
-| `sf list wpf installed` | List installed packages in an existing project | [Manage packages](/wpf/dotnet-cli/manage-packages) |
-| `sf search <text> --framework wpf` | Search the WPF package catalog | [Manage packages](/wpf/dotnet-cli/manage-packages) |
-| `sf mcp init wpf` | Configure a project-local Syncfusion<sup style="font-size:70%">&reg;</sup> MCP client | [MCP configuration](/wpf/dotnet-cli/configure-mcp) |
-| `sf skills install wpf` | Install Syncfusion<sup style="font-size:70%">&reg;</sup> component skills for AI agents | [AI skills installation](/wpf/dotnet-cli/install-skills) |
-| `sf login` | Sign in to Syncfusion through the browser | [License activation](/wpf/dotnet-cli/licensing) |
-| `sf logout` | Sign out and clear the local session | [License activation](/wpf/dotnet-cli/licensing) |
-| `sf license activate` | Download the license for the project's packages and register it in the project's startup code | [License activation](/wpf/dotnet-cli/licensing) |
-| `sf license view` | Show the licenses cached for the project (no network call) | [License activation](/wpf/dotnet-cli/licensing) |
-| `sf info` | Show CLI information | |
-| `sf help wpf` | Show the WPF command map | |
-| `sf --version` | Show the CLI version | |
 
 ## See also
 
