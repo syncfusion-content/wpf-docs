@@ -33,14 +33,14 @@ N> Syncfusion<sup style="font-size:70%">&reg;</sup> packages resolve from the of
 
 ## Installation and setup
 
-The CLI is published as a .NET global tool with the package ID `Syncfusion.DotNet.CLI`.
+The CLI is published as a .NET global tool with the package ID `Syncfusion.DotNet.Cli`.
 
 1. Open a terminal and run the following command. Add `--prerelease` while only preview versions are available.
 
     {% tabs %}
     {% highlight bash %}
 
-    dotnet tool install -g Syncfusion.DotNet.CLI --prerelease
+    dotnet tool install -g Syncfusion.DotNet.Cli --prerelease
 
     {% endhighlight %}
     {% endtabs %}
@@ -67,7 +67,7 @@ To update the tool to the latest release, run:
 {% tabs %}
 {% highlight bash %}
 
-dotnet tool update -g Syncfusion.DotNet.CLI --prerelease
+dotnet tool update -g Syncfusion.DotNet.Cli --prerelease
 
 {% endhighlight %}
 {% endtabs %}
@@ -77,7 +77,7 @@ To remove the tool, run:
 {% tabs %}
 {% highlight bash %}
 
-dotnet tool uninstall -g Syncfusion.DotNet.CLI
+dotnet tool uninstall -g Syncfusion.DotNet.Cli
 
 {% endhighlight %}
 {% endtabs %}
