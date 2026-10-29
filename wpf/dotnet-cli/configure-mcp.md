@@ -15,9 +15,9 @@ The MCP setup workflow does not install component libraries and does not modify 
 
 ## Prerequisites
 
-* The .NET SDK 8 or later must be selected in the target workspace. The `--runner dnx` mode requires .NET SDK 10 or later.
 * A Syncfusion<sup style="font-size:70%">&reg;</sup> MCP API key, generated at [https://www.syncfusion.com/account/api-key](https://www.syncfusion.com/account/api-key).
 * An active Syncfusion<sup style="font-size:70%">&reg;</sup> license for MCP usage.
+* The .NET SDK requirements are described in the [overview](/wpf/dotnet-cli/overview). The `--runner dnx` mode requires .NET SDK 10 or later.
 
 N> The MCP API key is separate from your product license key and from the `sf login` session. It is used only by the MCP server.
 
@@ -45,14 +45,18 @@ N> Saving the configuration does not verify the connection to the MCP server. Th
 
 ## Configure MCP using direct commands
 
-```bash
-sf mcp init wpf --client vscode --key-file "C:\Users\me\.syncfusion\api-key.txt"
-sf mcp init wpf --client cursor --path "C:\Projects\MyApp" --key-file "C:\Keys\syncfusion.key"
+{% tabs %}
+{% highlight bash %}
+
+sf mcp init wpf --client vscode --key-file "%USERPROFILE%\.syncfusion\api-key.txt"
+sf mcp init wpf --client cursor --path ./MyApp --key-file "C:\Keys\syncfusion.key"
 sf mcp init wpf --client codestudio --key-file "C:\Keys\syncfusion.key" --dry-run
 sf mcp init wpf --client claude-code --key-file "C:\Keys\syncfusion.key" --no-interactive --json
-```
 
-In a direct command, the platform is the positional argument. `--path` defaults to the current directory. In noninteractive or `--json` usage, the platform, client, and key file must be provided explicitly.
+{% endhighlight %}
+{% endtabs %}
+
+In a direct command, the platform is the positional argument. `--path` defaults to the current directory. In `--no-interactive` or `--json` usage, the platform, client, and key file must be provided explicitly.
 
 ## MCP configuration file location
 
@@ -103,7 +107,7 @@ The MCP server authenticates with a Syncfusion<sup style="font-size:70%">&reg;</
 **Create the API key file:**
 
 1. Sign in to your Syncfusion<sup style="font-size:70%">&reg;</sup> account and generate an API key at [https://www.syncfusion.com/account/api-key](https://www.syncfusion.com/account/api-key).
-2. Save the key into a `.txt` or `.key` file, such as `C:\Users\me\.syncfusion\api-key.txt` or `~/.syncfusion/api-key.key`. These are the only supported file extensions.
+2. Save the key into a `.txt` or `.key` file, such as `%USERPROFILE%\.syncfusion\api-key.txt` or `~/.syncfusion/api-key.key`. These are the only supported file extensions.
 3. Keep the file outside the workspace directory. Setup rejects a key file located inside the workspace to prevent the credential from being committed to source control.
 4. Pass the file path through `--key-file` or enter it at the prompt. The CLI suggests the path stored in the `Syncfusion_API_Key_Path` environment variable as the default.
 
@@ -130,9 +134,13 @@ W> Never commit the API-key file to source control, and never paste the key valu
 
 ## FAQs
 
-**Is the MCP API key the same as my product license key?** No. The MCP server uses a separate API key generated at [https://www.syncfusion.com/account/api-key](https://www.syncfusion.com/account/api-key). Store it in a `.txt` or `.key` file outside the workspace, and pass the file path through `--key-file`. The CLI writes only the file path into the MCP configuration; it never reads or copies the key.
+**Is the MCP API key the same as my product license key?**
 
-**Does MCP setup verify the server connection?** No. Setup writes the client configuration and installs the required tool, but does not contact the server. Open or reload the workspace in the client, start the server, confirm its tools are listed, and then ask a Syncfusion documentation question.
+No. The MCP server uses a separate API key generated at [https://www.syncfusion.com/account/api-key](https://www.syncfusion.com/account/api-key). Store it in a `.txt` or `.key` file outside the workspace, and pass the file path through `--key-file`. The CLI writes only the file path into the MCP configuration; it never reads or copies the key.
+
+**Does MCP setup verify the server connection?**
+
+No. Setup writes the client configuration and installs the required tool, but does not contact the server. Open or reload the workspace in the client, start the server, confirm its tools are listed, and then ask a Syncfusion documentation question.
 
 ## See also
 
