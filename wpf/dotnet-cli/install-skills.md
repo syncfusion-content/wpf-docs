@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Install AI Component Skills using Syncfusion .NET CLI | Syncfusion®
-description: Learn here about how to install Syncfusion® WPF component skills for AI agents using the Syncfusion® .NET CLI (sf).
+description: Learn here about how to install Syncfusion® WPF component skills for AI agents using the Syncfusion® .NET CLI (sfdotnet).
 platform: wpf
 control: Syncfusion<sup>®</sup> .NET CLI
 documentation: ug
@@ -9,7 +9,7 @@ documentation: ug
 
 # Install AI component skills
 
-The `sf skills install` command installs the official Syncfusion<sup style="font-size:70%">&reg;</sup> WPF component skills for AI agents from the `syncfusion/wpf-ui-components-skills` GitHub repository. Skills give AI agents product-specific guidance for generating and editing Syncfusion<sup style="font-size:70%">&reg;</sup> control code. Skills are installed for the agents you choose, either project-local or global.
+The `sfdotnet skills install` command installs the official Syncfusion<sup style="font-size:70%">&reg;</sup> WPF component skills for AI agents from the `syncfusion/wpf-ui-components-skills` GitHub repository. Skills give AI agents product-specific guidance for generating and editing Syncfusion<sup style="font-size:70%">&reg;</sup> control code. Skills are installed for the agents you choose, either project-local or global.
 
 No Syncfusion<sup style="font-size:70%">&reg;</sup> account, API key, or license is required to install or read skills.
 
@@ -20,7 +20,7 @@ No Syncfusion<sup style="font-size:70%">&reg;</sup> account, API key, or license
 
 ## Install skills through the interactive menu
 
-1. Run `sf` to open the main menu, and under **AI & Skills**, select **Add component skills to AI Agent**.
+1. Run `sfdotnet` to open the main menu, and under **AI & Skills**, select **Add component skills to AI Agent**.
 
     ![Add component skills to AI Agent option in the Syncfusion .NET CLI main menu](images/cli-setup-skills-command-menu.png)
 
@@ -41,10 +41,10 @@ No Syncfusion<sup style="font-size:70%">&reg;</sup> account, API key, or license
 {% tabs %}
 {% highlight bash %}
 
-sf skills install wpf
-sf skills install wpf --list
-sf skills install wpf --agent github-copilot --skill <exact-skill-name> --yes
-sf skills install wpf --agent cursor claude-code --all --yes
+sfdotnet skills install wpf
+sfdotnet skills install wpf --list
+sfdotnet skills install wpf --agent github-copilot --skill <exact-skill-name> --yes
+sfdotnet skills install wpf --agent cursor claude-code --all --yes
 
 {% endhighlight %}
 {% endtabs %}
