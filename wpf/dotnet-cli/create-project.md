@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Create WPF Projects using Syncfusion .NET CLI | Syncfusion®
-description: Learn here about how to create a Syncfusion® WPF project using the Syncfusion® .NET CLI (sf) through the interactive wizard or direct commands.
+description: Learn here about how to create a Syncfusion® WPF project using the Syncfusion® .NET CLI (sfdotnet) through the interactive wizard or direct commands.
 platform: wpf
 control: Syncfusion<sup>®</sup> .NET CLI
 documentation: ug
@@ -13,7 +13,7 @@ You can create a WPF project through the interactive wizard or a direct command.
 
 ## Create a project using the interactive wizard
 
-Run `sf new`, or select **Create a new project** from the main menu. The WPF creation flow is:
+Run `sfdotnet new`, or select **Create a new project** from the main menu. The WPF creation flow is:
 
 1. **Platform:** Select **WPF**.
 2. **Language:** Select **C#** or **VB**. C# is the default for direct commands.
@@ -74,7 +74,7 @@ To create a blank project without the wizard:
 {% tabs %}
 {% highlight bash %}
 
-sf new wpf --name MyApp
+sfdotnet new wpf --name MyApp
 
 {% endhighlight %}
 {% endtabs %}
@@ -84,10 +84,10 @@ To create a project containing Syncfusion<sup style="font-size:70%">&reg;</sup> 
 {% tabs %}
 {% highlight bash %}
 
-sf new wpf --name MyApp --control datagrid
-sf new wpf --name MyApp --control datagrid scheduler
-sf new wpf --name ReportsVB --language VB --target-framework net48
-sf new wpf --name Reports --language C# --target-framework net10.0 --theme Windows11Dark --control chart --control datagrid --post-action build
+sfdotnet new wpf --name MyApp --control datagrid
+sfdotnet new wpf --name MyApp --control datagrid scheduler
+sfdotnet new wpf --name ReportsVB --language VB --target-framework net48
+sfdotnet new wpf --name Reports --language C# --target-framework net10.0 --theme Windows11Dark --control chart --control datagrid --post-action build
 
 {% endhighlight %}
 {% endtabs %}
@@ -134,7 +134,7 @@ N> Modern WPF projects (`net8.0` and later) use `EnableWindowsTargeting`, so res
 
 ## FAQs
 
-**Does `sf add wpf datagrid` generate the DataGrid sample?**
+**Does `sfdotnet add wpf datagrid` generate the DataGrid sample?**
 
 In a CLI-generated project, yes. In an ordinary project, the command adds the NuGet package reference only, and the CLI reports that no sample was generated. For details, refer to [Manage packages](/wpf/dotnet-cli/manage-packages).
 
@@ -144,7 +144,7 @@ In a CLI-generated project, yes. In an ordinary project, the command adds the Nu
 
 **Can I add more controls after the project is created?**
 
-Yes. Run `sf new wpf --control <control-id>` again with the additional control IDs, or use `sf add wpf --control <control-id>` in the generated project to add the package and integrate the matching sample.
+Yes. Run `sfdotnet new wpf --control <control-id>` again with the additional control IDs, or use `sfdotnet add wpf --control <control-id>` in the generated project to add the package and integrate the matching sample.
 
 ## See also
 
