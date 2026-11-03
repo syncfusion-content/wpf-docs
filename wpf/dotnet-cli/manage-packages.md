@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Manage Syncfusion WPF NuGet Packages using .NET CLI | Syncfusion®
-description: Learn here about how to add, update, list, and search Syncfusion® WPF NuGet packages in an existing project using the Syncfusion® .NET CLI (sf).
+description: Learn here about how to add, update, list, and search Syncfusion® WPF NuGet packages in an existing project using the Syncfusion® .NET CLI (sfdotnet).
 platform: wpf
 control: Syncfusion<sup>®</sup> .NET CLI
 documentation: ug
@@ -18,7 +18,7 @@ To add a Syncfusion<sup style="font-size:70%">&reg;</sup> package to an existing
 {% tabs %}
 {% highlight bash %}
 
-sf add wpf datagrid --path ./MyApp
+sfdotnet add wpf datagrid --path ./MyApp
 
 {% endhighlight %}
 {% endtabs %}
@@ -30,7 +30,7 @@ To add a package using its exact NuGet package identifier:
 {% tabs %}
 {% highlight bash %}
 
-sf add wpf Syncfusion.SfGrid.WPF --path ./MyApp
+sfdotnet add wpf Syncfusion.SfGrid.WPF --path ./MyApp
 
 {% endhighlight %}
 {% endtabs %}
@@ -44,7 +44,7 @@ To update a package in an existing project to a specific version:
 {% tabs %}
 {% highlight bash %}
 
-sf update wpf chart --path ./MyApp --version 35.1.40
+sfdotnet update wpf chart --path ./MyApp --version 35.1.40
 
 {% endhighlight %}
 {% endtabs %}
@@ -56,7 +56,7 @@ To list the Syncfusion<sup style="font-size:70%">&reg;</sup> WPF packages availa
 {% tabs %}
 {% highlight bash %}
 
-sf list wpf packages
+sfdotnet list wpf packages
 
 {% endhighlight %}
 {% endtabs %}
@@ -70,7 +70,7 @@ To list the Syncfusion<sup style="font-size:70%">&reg;</sup> packages already in
 {% tabs %}
 {% highlight bash %}
 
-sf list wpf installed --path ./MyApp
+sfdotnet list wpf installed --path ./MyApp
 
 {% endhighlight %}
 {% endtabs %}
@@ -82,7 +82,7 @@ To search the WPF package catalog:
 {% tabs %}
 {% highlight bash %}
 
-sf search chart --framework wpf
+sfdotnet search chart --framework wpf
 
 {% endhighlight %}
 {% endtabs %}
@@ -104,7 +104,7 @@ Existing-project commands accept `-p/--path` with a project file, a project dire
 
 ## FAQs
 
-**Does `sf add wpf datagrid` generate the DataGrid sample?**
+**Does `sfdotnet add wpf datagrid` generate the DataGrid sample?**
 
 In a CLI-generated project, yes. In an ordinary project, the command adds the NuGet package reference only, and the CLI reports that no sample was generated.
 
