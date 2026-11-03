@@ -149,6 +149,5 @@ Yes. Run `sfdotnet new wpf --control <control-id>` again with the additional con
 ## See also
 
 * [Manage packages](/wpf/dotnet-cli/manage-packages)
-* [License activation](/wpf/dotnet-cli/licensing)
 * [MCP configuration](/wpf/dotnet-cli/configure-mcp)
 * [AI skills installation](/wpf/dotnet-cli/install-skills)
