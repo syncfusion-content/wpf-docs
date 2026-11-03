@@ -1,0 +1,118 @@
+---
+layout: post
+title: Syncfusion .NET CLI Overview for WPF | Syncfusion®
+description: Learn to install and use the Syncfusion® .NET CLI (sfdotnet) to create WPF apps and manage Syncfusion WPF NuGet packages from the command line.
+platform: wpf
+control: Syncfusion<sup>®</sup> .NET CLI
+documentation: ug
+---
+
+# Overview of the Syncfusion<sup>®</sup> .NET CLI for WPF
+
+The Syncfusion<sup style="font-size:70%">&reg;</sup> .NET CLI (`sfdotnet`) is a cross-platform command line tool that creates WPF projects, manages Syncfusion<sup style="font-size:70%">&reg;</sup> WPF NuGet packages from a terminal. After you install the CLI, you can run `sfdotnet` with no arguments to open an interactive menu, or run a direct command such as `sfdotnet new wpf` for scripted, prompt-free creation.
+
+You can use the CLI to perform the following actions:
+
+* Create a blank WPF app, or an app containing generated Syncfusion<sup style="font-size:70%">&reg;</sup> control samples. For details, refer to [Create a WPF project](/wpf/dotnet-cli/create-project).
+* Add or update Syncfusion<sup style="font-size:70%">&reg;</sup> WPF NuGet package references in an existing project. For details, refer to [Manage packages](/wpf/dotnet-cli/manage-packages).
+* Configure an official Syncfusion<sup style="font-size:70%">&reg;</sup> Model Context Protocol (MCP) server for AI coding clients. For details, refer to [MCP configuration](/wpf/dotnet-cli/configure-mcp).
+* Install official Syncfusion<sup style="font-size:70%">&reg;</sup> component skills for AI agents. For details, refer to [AI skills installation](/wpf/dotnet-cli/install-skills).
+
+This documentation covers the WPF platform.
+
+## Prerequisites
+
+* [.NET SDK](https://dotnet.microsoft.com/download). The SDK selected through `PATH` takes precedence, with the running .NET installation as a fallback.
+* On Windows, the **.NET desktop development** workload for building and running WPF applications. On Linux and macOS, use `--post-action generate` for portable source generation.
+* An internet connection so package operations can reach [nuget.org](https://www.nuget.org).
+
+N> Syncfusion<sup style="font-size:70%">&reg;</sup> packages resolve from the official nuget.org feed, `https://api.nuget.org/v3/index.json`. The CLI accepts only this source through `--source`.
+
+## Installation and setup
+
+The CLI is published as a .NET global tool with the package ID `Syncfusion.DotNet.Cli`.
+
+1. Open a terminal and run the following command.
+
+    {% tabs %}
+    {% highlight bash %}
+
+    dotnet tool install -g Syncfusion.DotNet.Cli
+
+    {% endhighlight %}
+    {% endtabs %}
+
+2. Add the .NET global tools directory to the `PATH` environment variable so the `sfdotnet` command is available in any terminal.
+
+    * On Windows, add `%USERPROFILE%\.dotnet\tools` to `PATH`.
+    * On Linux and macOS, add `~/.dotnet/tools` to `PATH`.
+
+    N> The .NET SDK installer usually adds this directory to `PATH` automatically. Add it manually only if the terminal cannot find the `sfdotnet` command after installation.
+
+3. Verify the installation and print the CLI version.
+
+    {% tabs %}
+    {% highlight bash %}
+
+    sfdotnet --version
+
+    {% endhighlight %}
+    {% endtabs %}
+
+To update the tool to the latest release, run:
+
+{% tabs %}
+{% highlight bash %}
+
+dotnet tool update -g Syncfusion.DotNet.Cli
+
+{% endhighlight %}
+{% endtabs %}
+
+To remove the tool, run:
+
+{% tabs %}
+{% highlight bash %}
+
+dotnet tool uninstall -g Syncfusion.DotNet.Cli
+
+{% endhighlight %}
+{% endtabs %}
+
+## Initialize the CLI
+
+Run `sfdotnet` in an interactive terminal to open the main menu. The menu shows the current CLI version and groups the available operations.
+
+![Syncfusion .NET CLI main menu](images/cli-main-menu.png)
+
+| Command | Operation | For details, refer to |
+| --- | --- | --- |
+| `sfdotnet new wpf` | Create a new WPF project | [Create a WPF project](/wpf/dotnet-cli/create-project) |
+| `sfdotnet add wpf <package>` | Add a package to an existing project | [Manage packages](/wpf/dotnet-cli/manage-packages) |
+| `sfdotnet update wpf <package>` | Update a package in an existing project | [Manage packages](/wpf/dotnet-cli/manage-packages) |
+| `sfdotnet list wpf packages` | List available packages | [Manage packages](/wpf/dotnet-cli/manage-packages) |
+| `sfdotnet list wpf installed` | List installed packages in an existing project | [Manage packages](/wpf/dotnet-cli/manage-packages) |
+| `sfdotnet search <text> --framework wpf` | Search the WPF package catalog | [Manage packages](/wpf/dotnet-cli/manage-packages) |
+| `sfdotnet mcp init wpf` | Setup Model Context Protocol (MCP) | [MCP configuration](/wpf/dotnet-cli/configure-mcp) |
+| `sfdotnet skills install wpf` | Add component skills to AI Agent | [AI skills installation](/wpf/dotnet-cli/install-skills) |
+| `sfdotnet info` | View CLI information | |
+| `sfdotnet help wpf` | Show the WPF command map | |
+| `sfdotnet --version` | Show the CLI version | |
+
+N> The `<platform>` text is a usage placeholder. Use `wpf` for WPF. Complete direct commands remain usable without opening the menu. `--no-interactive` disables prompts in any command.
+
+Use the following keys to navigate the interactive screens:
+
+| Key | Action |
+| --- | --- |
+| Up / Down | Move through the options |
+| Enter | Choose the focused option, or continue |
+| Space | Toggle a checkbox in a multi-selection list |
+| Escape | Cancel the current question and return to the menu |
+| `Ctrl+C` | Exit the interactive session |
+
+## See also
+
+* [Syncfusion WPF controls](https://www.syncfusion.com/wpf-ui-controls)
+* [WPF system requirements](https://help.syncfusion.com/wpf/system-requirements)
+* [Installing WPF NuGet packages](https://help.syncfusion.com/wpf/installation/install-nuget-packages)
