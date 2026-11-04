@@ -16,10 +16,9 @@ The MCP setup workflow does not install component libraries and does not modify 
 ## Prerequisites
 
 * A Syncfusion<sup style="font-size:70%">&reg;</sup> MCP API key, generated at [https://www.syncfusion.com/account/api-key](https://www.syncfusion.com/account/api-key).
-* An active Syncfusion<sup style="font-size:70%">&reg;</sup> license for MCP usage.
 * The .NET SDK requirements are described in the [overview](/wpf/dotnet-cli/overview). The `--runner dnx` mode requires .NET SDK 10 or later.
 
-N> The MCP API key is separate from your product license key and from the `sfdotnet login` session. It is used only by the MCP server.
+N> The MCP API key is separate from your product license key. It is used only by the MCP server.
 
 ## Configure MCP through the interactive menu
 
@@ -145,5 +144,4 @@ No. Setup writes the client configuration and installs the required tool, but do
 ## See also
 
 * [AI skills installation](/wpf/dotnet-cli/install-skills)
-* [License activation](/wpf/dotnet-cli/licensing)
 * [Syncfusion WPF controls](https://www.syncfusion.com/wpf-ui-controls)

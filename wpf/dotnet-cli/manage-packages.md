@@ -115,5 +115,4 @@ No. The CLI resolves packages from the official nuget.org feed, `https://api.nug
 ## See also
 
 * [Create a WPF project](/wpf/dotnet-cli/create-project)
-* [License activation](/wpf/dotnet-cli/licensing)
 * [Installing WPF NuGet packages](https://help.syncfusion.com/wpf/installation/install-nuget-packages)
