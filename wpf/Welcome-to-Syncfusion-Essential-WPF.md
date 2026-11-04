@@ -7,7 +7,7 @@ control: Overview
 documentation: ug
 ---
 
-> With the 2025 Volume 1 release, we will discontinue support for .NET 6.0 and 7.0 in WinForms, WPF, WinUI, and Document Processing Libraries. Please plan to upgrade to .Net 8.0 or higher.
+> Starting with the 2027 Volume 1 release, support for .NET 8.0 and .NET 9.0 will be discontinued for WinForms, WPF, WinUI, and Document Processing Libraries. We recommend upgrading to .NET 10.0 or a later version.
 
 # About Syncfusion® WPF Essential Studio Controls
 
