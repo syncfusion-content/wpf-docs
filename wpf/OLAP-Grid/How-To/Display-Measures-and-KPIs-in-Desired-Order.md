@@ -9,7 +9,7 @@ documentation: ug
 
 # How to display measures and KPIs in desired order in WPF OLAP Grid
 
-By default, the measure items and KPI items are separately grouped and displayed one after another in the OLAP grid control. To display them in the desired order, the `DisplayMeasuresInDesiredOrder` property of the OLAP report should be set to `true` and the elements of measures and KPIs should be defined by using the `ValueElements` object.
+By default, the measure items and KPI items are separately grouped and displayed one after another in the OLAP Grid control. To display them in the desired order, the `DisplayMeasuresInDesiredOrder` property of the OLAP report should be set to `true` and the elements of measures and KPIs should be defined by using the `ValueElements` object.
 
 Refer to the following code sample to display the measures and KPIs in the desired order.
 
