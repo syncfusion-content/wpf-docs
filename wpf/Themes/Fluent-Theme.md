@@ -8,6 +8,7 @@ documentation: ug
 ---
 
 # Fluent Theme in WPF Themes
+Source: https://help.syncfusion.com/wpf/welcome-to-syncfusion-essential-wpf
 
 
 [Fluent Theme](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSkinManager.FluentTheme.html) provides an elegant UI design with reveal animation, [high visibility keyboard visual](https://help.syncfusion.com/wpf/themes/keyboard-focus-visual), and acrylic effect for Windows in a WPF application. The following theme variants are supported:
