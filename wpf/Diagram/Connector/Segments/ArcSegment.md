@@ -5,7 +5,6 @@ description: Learn about arc connector segments in Syncfusion® WPF Diagram cont
 platform: wpf
 control: SfDiagram
 documentation: ug
-appliesto: UI Component Suite, Diagram SDK
 ---
 
 # Arc Segments in WPF Diagram
@@ -134,4 +133,4 @@ ConnectorViewModel arcSegment = new ConnectorViewModel()
 
 ## See Also
 
-[How to detect or get notification when editing the thumbs of connector?](https://support.syncfusion.com/kb/article/9030/how-to-detect-or-get-notification-when-editing-the-thumbs-of-connector-in-wpf-diagram)
+[How to detect or get notification when editing the thumbs of connector?](https://support.syncfusion.com/kb/article/9030/how-to-detect-or-get-notification-when-editing-the-thumbs-of-connector-in-wpf-diagram-sfdiagram)

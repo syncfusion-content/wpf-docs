@@ -7,7 +7,6 @@ platform: wpf
 control: SfSunburstChart 
 documentation: ug
 
-appliesto: UI Component Suite, Chart SDK
 ---
 
 # Region in WPF Sunburst Chart

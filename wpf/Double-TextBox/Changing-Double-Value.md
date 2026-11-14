@@ -9,7 +9,7 @@ documentation: ug
 
 # Changing Double Value in WPF Double TextBox
 
-The [WPF Double TextBox](https://www.syncfusion.com/wpf-ui-controls/double-textbox) allows the user to change the value using the [Value](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.DoubleTextBox.html#Syncfusion_Windows_Shared_DoubleTextBox_Value) property.
+The [WPF Double TextBox](https://www.syncfusion.com/wpf-controls/double-textbox) allows the user to change the value using the [Value](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.DoubleTextBox.html#Syncfusion_Windows_Shared_DoubleTextBox_Value) property.
 
 {% tabs %}
 {% highlight XAML %}

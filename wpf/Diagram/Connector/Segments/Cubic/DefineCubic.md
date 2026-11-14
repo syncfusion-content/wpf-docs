@@ -5,7 +5,6 @@ description: Learn about cubic curve connector segments in Syncfusion® WPF Diag
 platform: wpf
 control: SfDiagram
 documentation: ug
-appliesto: UI Component Suite, Diagram SDK
 ---
 
 # Cubic Curve Segments in WPF Diagram

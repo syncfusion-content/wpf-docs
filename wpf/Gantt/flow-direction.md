@@ -5,7 +5,6 @@ description: Learn about Flow Direction support in Syncfusion WPF Gantt to custo
 platform: wpf
 control: Gantt
 documentation: ug
-appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Flow Direction in WPF Gantt

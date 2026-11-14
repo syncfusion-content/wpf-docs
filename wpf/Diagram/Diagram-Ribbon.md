@@ -5,7 +5,6 @@ description: Use the Diagram Ribbon in Syncfusion® WPF Diagram to access editin
 platform: wpf
 control: SfDiagram
 documentation: ug
-appliesto: UI Component Suite, Diagram SDK
 ---
 
 # Diagram Ribbon in WPF Diagram

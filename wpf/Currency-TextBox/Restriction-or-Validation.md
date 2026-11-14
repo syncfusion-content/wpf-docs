@@ -112,7 +112,7 @@ currencyTextBox.CurrencyDecimalDigits = 3;
 
 ## Read-Only Mode
 
-The `WPF Currency TextBox` does not allow the user to input or edit the value when the [IsReadOnly](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.primitives.textboxbase.isreadonly?view=netframework-4.8) property is set to `true`. The user can still select text and display the cursor on the `WPF Currency TextBox` by setting the [IsReadOnlyCaretVisible](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.primitives.textboxbase.isreadonlycaretvisible?view=netframework-4.8) property to `true`. However, the value can still be changed programmatically in read-only mode.
+The `WPF Currency TextBox` does not allow the user to input or edit the value when the [IsReadOnly](https://learn.microsoft.com/en-us/dotnet/api/system.windows.controls.primitives.textboxbase.isreadonly?view=netframework-4.8) property is set to `true`. The user can still select text and display the cursor on the `WPF Currency TextBox` by setting the [IsReadOnlyCaretVisible](https://learn.microsoft.com/en-us/dotnet/api/system.windows.controls.primitives.textboxbase.isreadonlycaretvisible?view=netframework-4.8) property to `true`. However, the value can still be changed programmatically in read-only mode.
 
 {% tabs %}
 {% highlight XAML %}

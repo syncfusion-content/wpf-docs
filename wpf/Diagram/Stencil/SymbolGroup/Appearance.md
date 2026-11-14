@@ -5,7 +5,6 @@ description: Customize SymbolGroup appearance in Syncfusion® WPF Diagram by dis
 platform: wpf
 control: SfDiagram
 documentation: ug
-appliesto: UI Component Suite, Diagram SDK
 ---
 
 # Appearance of SymbolGroup in WPF Diagram

@@ -5,7 +5,6 @@ description: Serialize and deserialize the WPF Chart to save and restore chart s
 platform: wpf
 control: SfChart
 documentation: ug
-appliesto: UI Component Suite, Chart SDK
 ---
 
 # How to serialize the chart in WPF Chart

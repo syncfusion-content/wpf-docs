@@ -5,7 +5,6 @@ description: Filter and organize stencil symbols in Syncfusion® WPF Diagram usi
 platform: wpf
 control: SfDiagram
 documentation: ug
-appliesto: UI Component Suite, Diagram SDK
 ---
 
 # Symbol Filtering in WPF Diagram

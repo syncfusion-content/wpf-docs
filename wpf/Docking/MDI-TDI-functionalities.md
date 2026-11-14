@@ -1190,7 +1190,7 @@ dockingManager.DocumentTabItemContextMenuItems.Add(menu2);
 
 ![WPF Docking Custom Context Menu for Tab Items](MDI_TDIfunctionalities_images\wpf-docking-custom-context-menu-for-tab-items.png)
 
-N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-docking-manager-wpf-examples/blob/master/Samples/Custom-ContextMenu)
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-docking-manager-wpf-examples/tree/master/Samples/Custom-ContextMenu)
 
 ## Custom tab list context menu item
 
@@ -1267,6 +1267,6 @@ dockingManager.TabListContextMenuItems.Add(menu2);
 
 ![WPF Docking Custom Tab List ContextMenu Items](MDI_TDIfunctionalities_images\wpf-docking-custom-tab-list-contextmenu-items.png)
 
-N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-docking-manager-wpf-examples/blob/master/Samples/Custom-ContextMenu)
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-docking-manager-wpf-examples/tree/master/Samples/Custom-ContextMenu)
 
 

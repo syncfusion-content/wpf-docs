@@ -520,7 +520,7 @@ this.Content = surface;
 
 The following output is displayed as a result of the above code example.
 
-You can get the complete getting started sample [`here`](https://www.syncfusion.com/downloads/support/directtrac/general/ze/SurfaceChartDemo-1998279060).
+You can get the complete getting started sample [`here`](https://s3.amazonaws.com/files2.syncfusion.com/dtsupport/directtrac/general/ze/SurfaceChartDemo-1998279060.zip).
 
 ![simple surface from Code behind](surface_chart_images/surface_chart_img7.jpeg)
 

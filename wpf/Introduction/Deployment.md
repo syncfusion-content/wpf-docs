@@ -430,7 +430,7 @@ Syncfusion.Grid.WPFSyncfusion.GridCommon.WPFSyncfusion.Shared.WPFSyncfusion.Pivo
 
 ## ClickOnce Deployment
 
-While processing [ClickOnce](https://docs.microsoft.com/en-us/previous-versions/dotnet/articles/ms996413(v=msdn.10)) deployment for publishing an applications with Syncfusion WPF component, change the Publish Status option of the Syncfusion Assemblies as “Include”.
+While processing [ClickOnce](https://learn.microsoft.com/en-us/previous-versions/dotnet/articles/ms996413(v=msdn.10))) deployment for publishing an applications with Syncfusion WPF component, change the Publish Status option of the Syncfusion Assemblies as “Include”.
 
 ![Deployment_images1](Deployment_images/Deployment_img1.png)
 

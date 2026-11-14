@@ -9,7 +9,7 @@ documentation: ug
 
 # Changing Integer Value in WPF Integer TextBox
 
-The [WPF Integer TextBox](https://www.syncfusion.com/wpf-ui-controls/integer-textbox) allows the user to change the value using the [Value](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.IntegerTextBox.html#Syncfusion_Windows_Shared_IntegerTextBox_Value) property.
+The [WPF Integer TextBox](https://www.syncfusion.com/wpf-controls/integer-textbox) allows the user to change the value using the [Value](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.IntegerTextBox.html#Syncfusion_Windows_Shared_IntegerTextBox_Value) property.
 
 {% tabs %}
 {% highlight XAML %}

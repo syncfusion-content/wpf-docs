@@ -345,23 +345,23 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 
 ## See also
 
-[How to get first and last selected row index](https://www.syncfusion.com/kb/11183)
+[How to get first and last selected row index](https://support.syncfusion.com/kb/article/9754/how-to-get-first-and-last-selected-row-index-in-wpf-gridcontrol)
 
-[How to set extended selection mode to select a row when user-click-a-cell](https://www.syncfusion.com/kb/11185)
+[How to set extended selection mode to select a row when user-click-a-cell](https://support.syncfusion.com/kb/article/9752/how-to-set-extended-selectionmode-in-wpf-gridcontrol-to-select-a-row-when-user-click-a-cell)
 
-[How to avoid selection header cell](https://www.syncfusion.com/kb/11186)
+[How to avoid selection header cell](https://support.syncfusion.com/kb/article/9751/how-to-avoid-selection-in-header-cell-of-wpf-gridcontrol)
 
-[How to programmatically invert selection](https://www.syncfusion.com/kb/11195)
+[How to programmatically invert selection](https://support.syncfusion.com/kb/article/9773/how-to-programatically-invert-selection-in-wpf-gridcontrol)
 
-[How to exclude header while copying](https://www.syncfusion.com/kb/11194)
+[How to exclude header while copying](https://support.syncfusion.com/kb/article/9711/how-to-exclude-header-while-copying-in-wpf-gridcontrol-when-table-is-selected)
 
-[How to invoke CommitCellInfo event](https://www.syncfusion.com/kb/11193)
+[How to invoke CommitCellInfo event](https://support.syncfusion.com/kb/article/9744/how-to-invoke-commitcellinfo-event-of-wpf-gridcontrol-when-selecting-an-item-in-dropdown)
 
-[How to change the selected cell border color](https://www.syncfusion.com/kb/11223)
+[How to change the selected cell border color](https://support.syncfusion.com/kb/article/9836/how-to-change-selected-cell-border-color-in-wpf-gridcontrol)
 
-[How to highlighted selected cells with border color for each cell](https://www.syncfusion.com/kb/11222)
+[How to highlighted selected cells with border color for each cell](https://support.syncfusion.com/kb/article/9805/how-to-highlight-selected-cells-with-border-for-each-cell-in-wpf-gridcontrol)
 
-[How to select a row or column when click a cell](https://www.syncfusion.com/kb/11239)
+[How to select a row or column when click a cell](https://support.syncfusion.com/kb/article/9704/how-to-select-a-row-or-column-when-click-a-cell-in-wpf-gridcontrol)
 
-[How to select a row or column programmatically in code](https://www.syncfusion.com/kb/11245)
+[How to select a row or column programmatically in code](https://support.syncfusion.com/kb/article/9698/how-to-select-cellsrows-and-columns-in-wpf-gridcontrol)
 

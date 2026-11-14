@@ -5,7 +5,6 @@ description: Animation in the WPF Chart provides smooth visual transitions for s
 platform: wpf
 control: SfChart
 documentation: ug
-appliesto: UI Component Suite, Chart SDK
 ---
 
 # Animation in WPF Charts

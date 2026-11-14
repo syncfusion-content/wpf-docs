@@ -5,7 +5,6 @@ description: Print diagrams in Syncfusion® WPF Diagram with print preview, page
 platform: wpf
 control: SfDiagram
 documentation: ug
-appliesto: UI Component Suite, Diagram SDK
 ---
 # Printing in WPF Diagram
 
@@ -408,7 +407,7 @@ diagram.PrintingService.ShowClassicPrintPreview();
 
 ## See Also
 
-[How to customize the header or footer of the print preview](https://support.syncfusion.com/kb/article/11481/how-to-customize-the-header-or-footer-of-the-print-preview-in-the-wpf-diagramsfdiagram)
+[How to customize the header or footer of the print preview](https://support.syncfusion.com/kb/article/11481/how-to-export-multiple-wpf-charts-using-mvvm-compatible)
 
 [How to ignore empty pages while printing the WPF Diagram](https://support.syncfusion.com/kb/article/8537/how-to-ignore-empty-pages-while-printing-the-wpf-diagram-sfdiagram)
 

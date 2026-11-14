@@ -5,7 +5,6 @@ description: Data markers in the WPF Smith Chart highlight individual data point
 platform: wpf
 control: SfSmithChart
 documentation: ug
-appliesto: UI Component Suite, Chart SDK
 ---
 
 # Data Markers in WPF Smith Chart

@@ -47,7 +47,7 @@ tileViewControl.Items.Add(new TileViewItem() { Header = "Item 4",
 
 ![Showing the close button on TileViewItem](Closing_images/CloseButton.png)
 
-N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-tileview-control-examples/blob/master/Samples/Closing-TileItem)
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-tileview-control-examples/tree/master/Samples/Closing-TileItem)
 
 ## Closing TileViewItem
 
@@ -85,7 +85,7 @@ tileViewControl.Items.Add(new TileViewItem() { Header = "Item 4",
 
 ![TileViewItems closing by close button click](Closing_images/CloseButtonClick.gif)
 
-N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-tileview-control-examples/blob/master/Samples/Closing-TileItem)
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-tileview-control-examples/tree/master/Samples/Closing-TileItem)
 
 ## Closing TileViewItem programmatically
 
@@ -170,7 +170,7 @@ tileViewControl.Items.Add(new TileViewItem() { Header = "Item 4",
 
 ![TileViewItems will delete from items collection](Closing_images/CloseMode.png)
 
-N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-tileview-control-examples/blob/master/Samples/Closing-TileItem)
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-tileview-control-examples/tree/master/Samples/Closing-TileItem)
 
 ## Custom UI of close button
 
@@ -201,7 +201,7 @@ You can customize the appearance of particular `TileViewItem`'s close button by 
 
 ![TileViewItems close button UI changed](Closing_images/CloseButtonStyle.png)
 
-N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-tileview-control-examples/blob/master/Samples/Closing-TileItem)
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-tileview-control-examples/tree/master/Samples/Closing-TileItem)
 
 ## TileViewItem closing notification
 

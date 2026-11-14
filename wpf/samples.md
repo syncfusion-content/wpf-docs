@@ -77,7 +77,7 @@ See the repository's `README` for the required .NET SDK / Visual Studio version.
 1. Clone the repository:
 
 ```
-git clone https://github.com/syncfusion/wpf-demos.git
+git clone https://github.com/syncfusion/wpf-demos
 ```
 
 2. Open the solution in Visual Studio.

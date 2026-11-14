@@ -5,7 +5,6 @@ description: Scales in the WPF Radial Gauge define value ranges, intervals, and 
 platform: wpf
 control: SfCircularGauge
 documentation: ug
-appliesto: UI Component Suite, Chart SDK
 ---
 
 # Scales in WPF Radial Gauge

@@ -5,7 +5,6 @@ description: Learn about straight connector segments in Syncfusion® WPF Diagram
 platform: wpf
 control: SfDiagram
 documentation: ug
-appliesto: UI Component Suite, Diagram SDK
 ---
 
 # Straight Segments in WPF Diagram
@@ -164,4 +163,4 @@ Find the [Straight segment sample](https://github.com/SyncfusionExamples/WPF-Dia
 
 ## See Also
 
-[How to detect or get notification when editing the thumbs of connector?](https://support.syncfusion.com/kb/article/9030/how-to-detect-or-get-notification-when-editing-the-thumbs-of-connector-in-wpf-diagram)
+[How to detect or get notification when editing the thumbs of connector?](https://support.syncfusion.com/kb/article/9030/how-to-detect-or-get-notification-when-editing-the-thumbs-of-connector-in-wpf-diagram-sfdiagram)

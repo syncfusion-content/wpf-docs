@@ -5,7 +5,6 @@ description: Digital characters in the WPF Digital Gauge allow you to display nu
 platform: wpf
 control: SfDigitalGauge
 documentation: ug
-appliesto: UI Component Suite, Chart SDK
 ---
 
 # Digital Characters in WPF Digital Gauge

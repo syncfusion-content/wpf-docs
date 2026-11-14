@@ -5,7 +5,6 @@ description: Ranges in the WPF Radial Gauge highlight specific value intervals o
 platform: wpf
 control: SfCircularGauge
 documentation: ug
-appliesto: UI Component Suite, Chart SDK
 ---
 
 # Ranges in WPF Radial Gauge

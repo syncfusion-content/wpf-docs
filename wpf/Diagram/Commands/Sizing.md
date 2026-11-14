@@ -5,7 +5,6 @@ description: Resize selected diagram elements in Syncfusion® WPF Diagram by mat
 platform: wpf
 control: SfDiagram
 documentation: ug
-appliesto: UI Component Suite, Diagram SDK
 ---
 
 # Sizing Commands in WPF Diagram

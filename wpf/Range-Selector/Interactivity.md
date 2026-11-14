@@ -5,7 +5,6 @@ description: Interactivity in the WPF Range Selector enables user interaction, r
 platform: wpf
 control: SfDateTimeRangeNavigator
 documentation: ug
-appliesto: UI Component Suite, Chart SDK
 ---
 
 # Interactivity in WPF Range Selector

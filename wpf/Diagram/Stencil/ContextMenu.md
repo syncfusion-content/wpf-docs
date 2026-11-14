@@ -5,7 +5,6 @@ description: Customize context menus in Syncfusion® WPF Diagram Stencil with bu
 platform: wpf
 control: SfDiagram
 documentation: ug
-appliesto: UI Component Suite, Diagram SDK
 ---
 
 # Context Menu Support for Stencil in WPF Diagram

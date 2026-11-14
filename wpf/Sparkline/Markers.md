@@ -5,7 +5,6 @@ description: Markers in the WPF Sparkline highlight specific data points, making
 platform: wpf
 control: SfSparkline
 documentation: ug
-appliesto: UI Component Suite, Chart SDK
 ---
 
 # Markers in WPF Sparkline 

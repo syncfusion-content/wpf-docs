@@ -5,7 +5,6 @@ description: Learn how to get started with the Syncfusion® WPF Digital Gauge co
 platform: wpf
 control: SfDigitalGauge
 documentation: ug
-appliesto: UI Component Suite, Chart SDK
 ---
 
 # Getting Started with WPF Digital Gauge
@@ -205,4 +204,4 @@ WPF Digital Gauge supports various built-in themes. Refer to the below links to 
 
 ## See also
 
-[How to apply themes for WPF Digital Gauge](https://support.syncfusion.com/kb/article/2842/how-to-apply-themes-for-sfdigitalgauge)
+[How to apply themes for WPF Digital Gauge](https://support.syncfusion.com/kb/article/2842/how-to-apply-themes-for-sfdigitalgauge-)

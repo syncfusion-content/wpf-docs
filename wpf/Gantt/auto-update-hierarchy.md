@@ -5,7 +5,6 @@ description: Learn about Auto Update Hierarchy support in Syncfusion WPF Gantt t
 platform: wpf
 control: Gantt
 documentation: ug
-appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Auto Update Hierarchy in WPF Gantt

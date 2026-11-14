@@ -5,7 +5,6 @@ description: Annotations in the WPF Radial Gauge allow you to add custom text, s
 platform: wpf
 control: SfCircularGauge
 documentation: ug
-appliesto: UI Component Suite, Chart SDK
 ---
 
 # Annotations in WPF Radial Gauge

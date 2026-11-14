@@ -5,7 +5,6 @@ description: Labels in the WPF Linear Gauge display scale values and support cus
 platform: wpf
 control: SfLinearGauge
 documentation: ug
-appliesto: UI Component Suite, Chart SDK
 ---
 
 # Labels in WPF Linear Gauge

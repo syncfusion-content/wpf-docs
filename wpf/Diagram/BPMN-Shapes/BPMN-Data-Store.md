@@ -5,7 +5,6 @@ description: Learn about BPMN data stores in Syncfusion® WPF Diagram control an
 platform: wpf
 control: SfDiagram
 documentation: ug
-appliesto: UI Component Suite, Diagram SDK
 ---
 
 # Data Store in WPF Diagram

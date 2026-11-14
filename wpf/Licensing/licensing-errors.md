@@ -23,7 +23,7 @@ The following error message will be shown if a Syncfusion license key has not be
 
 **Solution:** 
 
-* Generate a valid license key from here [Licensed users](https://www.syncfusion.com/account/downloads) or [Trial users](https://www.syncfusion.com/account/manage-trials/downloads) for a specific version and platform or License keys can also be generated from the Claim License Key page by clicking the **"Claim License"** button from Syncfusion licensing warning message. Refer to this [help topic](https://help.syncfusion.com/wpf/licensing/how-to-generate#Claim-License-Key) for more details.
+* Generate a valid license key from here [Licensed users](https://www.syncfusion.com/Account/Login?ReturnUrl=%2faccount%2fdownloads) or [Trial users](https://www.syncfusion.com/Account/Login?ReturnUrl=%2faccount%2fmanage-trials%2fdownloads) for a specific version and platform or License keys can also be generated from the Claim License Key page by clicking the **"Claim License"** button from Syncfusion licensing warning message. Refer to this [help topic](https://help.syncfusion.com/wpf/licensing/how-to-generate#Claim-License-Key) for more details.
 
 * In your application, register the generated license key. Please refer to this [help topic](https://help.syncfusion.com/wpf/licensing/how-to-register-in-an-application) for information on registering the license key.
 
@@ -37,7 +37,7 @@ If the application is registered with an invalid key, another version of license
 
 **Solution:**
 
-* Generate a valid license key from here [Licensed users](https://www.syncfusion.com/account/downloads) or [Trial users](https://www.syncfusion.com/account/manage-trials/downloads) for a specific version and platform or License keys can also be generated from the Claim License Key page by clicking the **"Claim License"** button from Syncfusion licensing warning message. Refer to this [help topic](https://help.syncfusion.com/wpf/licensing/how-to-generate#Claim-License-Key) for more details..
+* Generate a valid license key from here [Licensed users](https://www.syncfusion.com/Account/Login?ReturnUrl=%2faccount%2fdownloads) or [Trial users](https://www.syncfusion.com/Account/Login?ReturnUrl=%2faccount%2fmanage-trials%2fdownloads) for a specific version and platform or License keys can also be generated from the Claim License Key page by clicking the **"Claim License"** button from Syncfusion licensing warning message. Refer to this [help topic](https://help.syncfusion.com/wpf/licensing/how-to-generate#Claim-License-Key) for more details..
 
 * In your application, register the generated license key. Please refer to this [help topic](https://help.syncfusion.com/wpf/licensing/how-to-register-in-an-application) for information on registering the license key.
 
@@ -55,7 +55,7 @@ The following error message will be shown if a Syncfusion license key has not be
 
 **Solution:**
 
-* Generate a valid license key from here [Licensed users](https://www.syncfusion.com/account/downloads) or [Trial users](https://www.syncfusion.com/account/manage-trials/downloads) for a specific version and platform.
+* Generate a valid license key from here [Licensed users](https://www.syncfusion.com/Account/Login?ReturnUrl=%2faccount%2fdownloads) or [Trial users](https://www.syncfusion.com/Account/Login?ReturnUrl=%2faccount%2fmanage-trials%2fdownloads) for a specific version and platform.
 
 * In your application, register the generated license key. Please refer to this [help topic](https://help.syncfusion.com/wpf/licensing/how-to-register-in-an-application) for information on registering the license key.
 
@@ -69,7 +69,7 @@ If the application is registered with an invalid key, another version of license
 
 **Solution:**
 
-* Generate a valid license key from here [Licensed users](https://www.syncfusion.com/account/downloads) or [Trial users](https://www.syncfusion.com/account/manage-trials/downloads) for a specific version and platform.
+* Generate a valid license key from here [Licensed users](https://www.syncfusion.com/Account/Login?ReturnUrl=%2faccount%2fdownloads) or [Trial users](https://www.syncfusion.com/Account/Login?ReturnUrl=%2faccount%2fmanage-trials%2fdownloads) for a specific version and platform.
 
 * In your application, register the generated license key. Please refer to this [help topic](https://help.syncfusion.com/wpf/licensing/how-to-register-in-an-application) for information on registering the license key.
 
@@ -81,7 +81,7 @@ The following error message will be shown if the trial key has expired after 30 
 
 ![License key not registered](licensing-images/trial-expired.png)
 
-**Solution:** Purchase from [here](https://www.syncfusion.com/sales/teamlicense) to get a valid Syncfusion license.
+**Solution:** Purchase from [here](https://www.syncfusion.com/sales/pricing) to get a valid Syncfusion license.
 
 ### Platform Mismatch
 
@@ -93,7 +93,7 @@ If the application is registered with another platform's license key, the follow
 
 **Solution:**
 
-* Generate a valid license key from here [Licensed users](https://www.syncfusion.com/account/downloads) or [Trial users](https://www.syncfusion.com/account/manage-trials/downloads) for a specific version and platform.
+* Generate a valid license key from here [Licensed users](https://www.syncfusion.com/Account/Login?ReturnUrl=%2faccount%2fdownloads) or [Trial users](https://www.syncfusion.com/Account/Login?ReturnUrl=%2faccount%2fmanage-trials%2fdownloads) for a specific version and platform.
 
 * In your application, register the generated license key. Please refer to this [help topic](https://help.syncfusion.com/wpf/licensing/how-to-register-in-an-application) for information on registering the license key.
 
@@ -107,7 +107,7 @@ If the application is registered with another version's license key, the followi
 
 **Solution:**
 
-* Generate a valid license key from here [Licensed users](https://www.syncfusion.com/account/downloads) or [Trial users](https://www.syncfusion.com/account/manage-trials/downloads) for a specific version and platform. Kindly follow the [KB](https://support.syncfusion.com/kb/article/7898/how-to-generate-license-key-for-licensed-products) to generate license key.
+* Generate a valid license key from here [Licensed users](https://www.syncfusion.com/Account/Login?ReturnUrl=%2faccount%2fdownloads) or [Trial users](https://www.syncfusion.com/Account/Login?ReturnUrl=%2faccount%2fmanage-trials%2fdownloads) for a specific version and platform. Kindly follow the [KB](https://support.syncfusion.com/kb/article/7898/how-to-generate-license-key-for-licensed-products) to generate license key.
 
 * In your application, register the generated license key. Please refer to this [help topic](https://help.syncfusion.com/wpf/licensing/how-to-register-in-an-application) for information on registering the license key.
 
@@ -123,7 +123,7 @@ Set “CopyLocal” as True for Syncfusion.Licensing.dll along with all other Sy
 
 ![Output folder](licensing-images/OutputFolder.png)
 
-Refer to this knowledge base articles to set [copy local](https://www.syncfusion.com/kb/4808/how-to-resolve-server-error-could-not-load-or-assembly-when-publishing-an-application) as true.
+Refer to this knowledge base articles to set [copy local](https://support.syncfusion.com/kb/article/4618/how-to-resolve-server-error-when-publishing-an-application-in-aspnet-mvc-grid) as true.
 
 
 

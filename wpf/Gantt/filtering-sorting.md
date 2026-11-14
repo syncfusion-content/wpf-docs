@@ -5,7 +5,6 @@ description: Learn about Filtering and sorting support in Syncfusion WPF Gantt u
 platform: wpf
 control: Gantt
 documentation: ug
-appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Filtering and Sorting in WPF Gantt

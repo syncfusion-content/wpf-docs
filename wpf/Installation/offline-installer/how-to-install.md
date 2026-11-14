@@ -12,7 +12,7 @@ documentation: ug
 
 ## Overview
 
-For the Essential Studio WPF product, Syncfusion offers an Offline Installer. This installer bundles all required files into a single downloadable setup, allowing you to install the product on machines without an active internet connection or in restricted network environments. You can simply download the offline installer and run it on your system to install the Essential Studio products of your choice. You can get the most recent version of the Essential Studio Offline Installer [here](https://www.syncfusion.com/downloads/latest-version). 
+For the Essential Studio WPF product, Syncfusion offers an Offline Installer. This installer bundles all required files into a single downloadable setup, allowing you to install the product on machines without an active internet connection or in restricted network environments. You can simply download the offline installer and run it on your system to install the Essential Studio products of your choice. You can get the most recent version of the Essential Studio Offline Installer [here](https://www.syncfusion.com/Account/Login?ReturnUrl=%2faccount%2fdownloads). 
 
 ## Prerequisites
 

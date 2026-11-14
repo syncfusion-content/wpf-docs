@@ -107,7 +107,7 @@ public partial class MainWindow : Window {
 
 ![WPF MaskedTextBox Control](Getting-Started_images/wpf-maskededit-control.png)
 
-N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-maskedtextbox-examples/blob/master/Samples/Getting-Started) in GitHub
+N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-maskedtextbox-examples/tree/master/Samples/Getting-Started) in GitHub
 
 ## Restrict the user to enter valid data
 

@@ -13,7 +13,7 @@ We can order the properties according to our needs. We can change the order of t
 
 ## Ordering using Attribute
 
-The properties in the [WPF PropertyGrid](https://www.syncfusion.com/wpf-ui-controls/propertygrid) will be ordered based on the value specified in the [Order](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.dataannotations.displayattribute.order?view=netframework-4.8) field of the [Display](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.dataannotations.displayattribute?view=netframework-4.8) attribute. If we need to change the order of the properties, we should set the `SortDirection` property to `null`.
+The properties in the [WPF PropertyGrid](https://www.syncfusion.com/wpf-controls/propertygrid) will be ordered based on the value specified in the [Order](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.dataannotations.displayattribute.order?view=netframework-4.8) field of the [Display](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.dataannotations.displayattribute?view=netframework-4.8) attribute. If we need to change the order of the properties, we should set the `SortDirection` property to `null`.
 
 {% tabs %}
 {% highlight C# %}

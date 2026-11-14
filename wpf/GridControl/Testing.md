@@ -149,7 +149,7 @@ Essential<sup>®</sup> Grid WPF now supports automated UI testing with VS 2010 C
 * UITestPropertyProvider
 * UIActionFilter
 
-You can get the Extension Project of Coded UI from [this](https://www.syncfusion.com/downloads/support/directtrac/general/CODEDU~1-2042805459.ZIP) location.
+You can get the Extension Project of Coded UI from [this](https://s3.amazonaws.com/files2.syncfusion.com/dtsupport/directtrac/general/CODEDU~1-2042805459.ZIP) location.
 
 The architectural diagram is as follows:
 

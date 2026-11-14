@@ -5,7 +5,6 @@ description: Print the WPF Chart to create physical copies of chart visuals for 
 platform: wpf
 control: SfChart
 documentation: ug
-appliesto: UI Component Suite, Chart SDK
 ---
 
 # How to print the chart in WPF Chart

@@ -40,5 +40,5 @@ DataManager.DataProvider.ProviderName = Syncfusion.Olap.DataProvider.Providers
 {% endhighlight  %}
 {% endtabs %}
 
-[Refer here](http://quartetfs.com/) for more information about Active Pivot server.
+[Refer here](https://www.activeviam.com/) for more information about Active Pivot server.
 

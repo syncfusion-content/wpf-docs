@@ -5,7 +5,6 @@ description: Select diagram elements in Syncfusion® WPF Diagram using single, m
 platform: wpf
 control: SfDiagram
 documentation: ug
-appliesto: UI Component Suite, Diagram SDK
 ---
 
 # Selection in WPF Diagram
@@ -192,4 +191,4 @@ WPF SfDiagram control provides support to change the selection handle display mo
 
 [How to disable the selection of diagram objects?](https://support.syncfusion.com/kb/article/5495/how-to-disable-the-selection-in-wpf-diagram)
 
-[How to select the node that is outside of the selection region in the WPF Diagram ?](https://support.syncfusion.com/kb/article/18896/how-to-select-the-node-that-is-outside-of-the-selection-region-in-the-wpf-diagram-sfdiagram)
+[How to select the node that is outside of the selection region in the WPF Diagram ?](https://support.syncfusion.com/kb/article/18896/how-to-select-a-node-outside-the-selection-region-in-wpf-diagram)

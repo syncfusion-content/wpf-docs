@@ -5,7 +5,6 @@ description: Shapes color customization in the WPF Maps allows you to apply cust
 platform: wpf
 control: SfMap
 documentation: ug
-appliesto: UI Component Suite, Chart SDK
 ---
 
 # Shapes Color Customization in WPF Maps

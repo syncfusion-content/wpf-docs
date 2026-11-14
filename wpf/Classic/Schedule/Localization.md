@@ -14,7 +14,7 @@ Localization is the process of customizing the user interface based on a culture
 Localization is the key feature that provides solutions to global customers with the help of localized resource files provided by the control. The Scheduler supports localization, and you can create a resource file for any culture to be applied in the schedule.
 
 ## Set Current UI Culture to the Application
-Application culture can be changed by setting [CurrentUICulture](https://docs.microsoft.com/en-us/dotnet/api/system.globalization.cultureinfo.currentuiculture)
+Application culture can be changed by setting [CurrentUICulture](https://learn.microsoft.com/en-us/dotnet/api/system.globalization.cultureinfo.currentuiculture)
 
 {% tabs %}
 {% highlight c# %}

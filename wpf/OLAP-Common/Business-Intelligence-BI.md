@@ -13,7 +13,7 @@ documentation: ug
 
 Business Intelligence (BI) simplifies information to enable all decision makers of an organization to access information easily. This helps the decision makers at all level to understand, analyze, collaborate, and act on information anytime, anywhere.
 
-Here is how Wikipedia defines [BI](http://en.wikipedia.org/wiki/Business_intelligence).
+Here is how Wikipedia defines [BI](https://en.wikipedia.org/wiki/Business_intelligence).
 
 ## Why to use BI?
 

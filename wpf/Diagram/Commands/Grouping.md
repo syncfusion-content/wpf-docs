@@ -5,7 +5,6 @@ description: Group and ungroup diagram elements in Syncfusion® WPF Diagram usin
 platform: wpf
 control: SfDiagram
 documentation: ug
-appliesto: UI Component Suite, Diagram SDK
 ---
 
 # Grouping Commands in WPF Diagram

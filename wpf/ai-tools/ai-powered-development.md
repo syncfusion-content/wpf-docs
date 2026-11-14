@@ -47,7 +47,7 @@ I need a Syncfusion WPF [control name] with the following specifications:
 - Implementation language: C#
 - Dependencies: Identify and use the correct from https://help.syncfusion.com/wpf/control-dependencies
 
-Reference: https://help.syncfusion.com/wpf/[control]/getting-started
+Reference: https://help.syncfusion.com/wpf/welcome-to-syncfusion-essential-wpf]/getting-started
 ```
 
 **What to expect:**
@@ -108,7 +108,7 @@ The MCP Server establishes a direct connection between your IDE-integrated AI an
 
 **Option 2: Install Component Skills**
 
-The [Syncfusion Skills installation](https://help.syncfusion.com/wpf/skills/component-skills) provides reference documents stored directly in your project. These files allow the AI to read specific WPF implementation patterns during code generation, ensuring consistent implementation and best practices across your development team.
+The [Syncfusion Skills installation](https://help.syncfusion.com/wpf/skills) provides reference documents stored directly in your project. These files allow the AI to read specific WPF implementation patterns during code generation, ensuring consistent implementation and best practices across your development team.
 
 **What they include:**
 - Best practices for each component family

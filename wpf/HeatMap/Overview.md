@@ -5,7 +5,6 @@ description: Learn about the introduction of Syncfusion Essential Studio® WPF H
 platform: wpf
 control: SfHeatMap
 documentation: ug
-appliesto: UI Component Suite, Chart SDK
 ---
 
 # About Syncfusion® WPF HeatMap Control

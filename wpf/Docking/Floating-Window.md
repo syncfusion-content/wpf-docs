@@ -396,4 +396,4 @@ dockingManager.FloatWindowContextMenuItems.Add(menu2);
 
 ![WPF Docking Floating Window with Custom Context Menu](FloatingWindow_images\wpf-docking-floating-window-with-custom-context-menu.png)
 
-N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-docking-manager-wpf-examples/blob/master/Samples/Custom-ContextMenu)
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-docking-manager-wpf-examples/tree/master/Samples/Custom-ContextMenu)

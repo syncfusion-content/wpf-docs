@@ -106,9 +106,9 @@ private void TreeView_Loaded(object sender, RoutedEventArgs e)
 
 ## Revert the edited changes while pressing the Escape key
 
-By default, the WPF TreeView does not support rolling back changes when the <kbd>ESC</kbd> key is pressed while editing a node. It does support rolling back changes when the underlying data object implements the [IEditableObject](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.ieditableobject?redirectedfrom=MSDN&view=net-5.0) interface.
+By default, the WPF TreeView does not support rolling back changes when the <kbd>ESC</kbd> key is pressed while editing a node. It does support rolling back changes when the underlying data object implements the [IEditableObject](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.ieditableobject?redirectedfrom=MSDN&view=net-5.0) interface.
 
-The user can take a backup of the existing data of a node in the [BeginEdit](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.ieditableobject.beginedit?redirectedfrom=MSDN&view=net-5.0#System_ComponentModel_IEditableObject_BeginEdit) method and revert to the previous values in the [CancelEdit](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.ieditableobject.canceledit?redirectedfrom=MSDN&view=net-5.0#System_ComponentModel_IEditableObject_CancelEdit) method to roll back the changes.
+The user can take a backup of the existing data of a node in the [BeginEdit](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.ieditableobject.beginedit?redirectedfrom=MSDN&view=net-5.0) method and revert to the previous values in the [CancelEdit](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.ieditableobject.canceledit?redirectedfrom=MSDN&view=net-5.0) method to roll back the changes.
 
 The following code example shows a simple implementation of the `IEditableObject` interface to roll back the changes.
 

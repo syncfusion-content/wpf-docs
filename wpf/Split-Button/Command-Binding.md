@@ -11,8 +11,8 @@ documentation: ug
 
 The command and command parameter properties allow to execute any action on clicking either the button or the dropdown menu items.
 
-* **Command** - The [Command](https://docs.microsoft.com/en-us/dotnet/api/system.windows.input.icommandsource.command?view=netframework-4.8) property accept all commands derived from interface [ICommand](https://docs.microsoft.com/en-us/dotnet/api/system.windows.input.icommand?view=netframework-4.8). 
-* **CommandParameter** - The [CommandParameter](https://docs.microsoft.com/en-us/dotnet/api/system.windows.input.icommandsource.commandparameter?view=netframework-4.8) property allows the user to provide additional data required in the command handler in-order to perform any operation. 
+* **Command** - The [Command](https://learn.microsoft.com/en-us/dotnet/api/system.windows.input.icommandsource.command?view=netframework-4.8) property accept all commands derived from interface [ICommand](https://learn.microsoft.com/en-us/dotnet/api/system.windows.input.icommand?view=netframework-4.8). 
+* **CommandParameter** - The [CommandParameter](https://learn.microsoft.com/en-us/dotnet/api/system.windows.input.icommandsource.commandparameter?view=netframework-4.8) property allows the user to provide additional data required in the command handler in-order to perform any operation. 
 
 {% tabs %}
 {% highlight xaml %}
@@ -192,4 +192,4 @@ class DropDownViewModel: NotificationObject
 {% endhighlight %}
 {% endtabs %}
 
-N> View [sample](https://github.com/SyncfusionExamples/wpf-split-button-examples/blob/master/Samples/Command-Binding) in GitHub. This sample showcases how to provide command binding for `SplitButtonAdv` control.
+N> View [sample](https://github.com/SyncfusionExamples/wpf-split-button-examples/tree/master/Samples/Command-Binding) in GitHub. This sample showcases how to provide command binding for `SplitButtonAdv` control.

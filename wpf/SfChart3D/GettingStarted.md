@@ -5,7 +5,6 @@ description: Learn how to get started with the Syncfusion® WPF 3D Chart control
 platform: wpf
 control: SfChart3D
 documentation: ug
-appliesto: UI Component Suite, Chart SDK
 ---
 
 # Getting Started with WPF 3D Chart
@@ -266,7 +265,7 @@ series.AdornmentsInfo = new ChartAdornmentInfo3D()
 
 {% endtabs %}
 
-Refer to [`Adornments`](https://help.syncfusion.com/wpf/SfChart3D/Adornments) to learn more about the options to customize chart adornments.
+Refer to [`Adornments`](https://help.syncfusion.com/wpf/sfchart3d/adornments/datamarkers) to learn more about the options to customize chart adornments.
 
 ## Enable legend
 

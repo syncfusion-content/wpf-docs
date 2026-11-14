@@ -5,7 +5,6 @@ description: Leaf item settings in the WPF TreeMap allow you to customize the ap
 platform: wpf
 control: TreeMap
 documentation: ug
-appliesto: UI Component Suite, Chart SDK
 ---
 
 # Leaf Item Settings in WPF TreeMap

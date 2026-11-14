@@ -5,7 +5,6 @@ description: Technical indicators in the WPF Chart provide analytical calculatio
 platform: wpf
 control: SfChart
 documentation: ug
-appliesto: UI Component Suite, Chart SDK
 ---
 
 # Technical Indicators in WPF Charts

@@ -29,7 +29,7 @@ cardView.CanSort = true;
 {% endhighlight %}
 {% endtabs %}
 
-N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-card-view-examples/blob/master/Samples/Editing)
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-card-view-examples/tree/master/Samples/Editing)
 
 ## Sort the CardViewItems
 
@@ -141,7 +141,7 @@ cardView.CanSort = true;
 
 Here, `CardViewItems` sorted based on `FirstName` field.
 
-N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-card-view-examples/blob/master/Samples/Editing)
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-card-view-examples/tree/master/Samples/Editing)
 
 ## Sort the grouped CardViewItems
 
@@ -166,7 +166,7 @@ cardView.CanSort = true;
 
 ![wpf card view control sort the grouped items](Grouping-Sorting-Filtering_images/Sorting_groupedheader.gif)
 
-N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-card-view-examples/blob/master/Samples/Editing)
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-card-view-examples/tree/master/Samples/Editing)
 
 ## Hide the sorting header
 
@@ -188,4 +188,4 @@ cardView.ShowHeader = false;
 
 ![wpf card view control hides the sort header](Grouping-Sorting-Filtering_images/hidegroupheader.png)
 
-N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-card-view-examples/blob/master/Samples/Editing)
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-card-view-examples/tree/master/Samples/Editing)

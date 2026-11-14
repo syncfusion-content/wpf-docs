@@ -5,7 +5,6 @@ description: Learn about multiple connector segments in Syncfusion® WPF Diagram
 platform: wpf
 control: SfDiagram
 documentation: ug
-appliesto: UI Component Suite, Diagram SDK
 ---
 
 # Multiple Connector Segments in WPF Diagram
@@ -69,4 +68,4 @@ ConnectorViewModel multipleSegments = new ConnectorViewModel()
 
 ## See Also 
 
-[How to get or set the positions of the segments by programmatically?](https://www.syncfusion.com/kb/11344/how-to-get-or-set-the-positions-of-the-segments-by-programmatically-in-wpf-diagramsfdiagram)
+[How to get or set the positions of the segments by programmatically?](https://support.syncfusion.com/kb/article/10082/how-to-get-or-set-the-positions-of-the-segments-by-programmatically-in-wpf-diagram-sfdiagram)

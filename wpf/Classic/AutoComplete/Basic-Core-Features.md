@@ -15,7 +15,7 @@ AutoComplete supports basic core features which are listed as follows.
 * [SelectedItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.AutoComplete.html#Syncfusion_Windows_Tools_Controls_AutoComplete_SelectedItem)—Used to get which item of the AutoComplete has been selected.
 * [SelectedValue](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.AutoComplete.html#Syncfusion_Windows_Tools_Controls_AutoComplete_SelectedValue)—Used to get the value of the selected item, the value of the SelectedValue property will be set based on the value of the SelectedValuePath property.
 * [SelectedValuePath](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.AutoComplete.html#Syncfusion_Windows_Tools_Controls_AutoComplete_SelectedValuePath)—Used to set the value of the SelectedValue property of the AutoComplete.
-* [DisplayMemberPath](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.itemscontrol.displaymemberpath?view=netframework-4.7.2)—Used to set the value for the items displayed in the drop-down list.
+* [DisplayMemberPath](https://learn.microsoft.com/en-us/dotnet/api/system.windows.controls.itemscontrol.displaymemberpath?view=netframework-4.7.2)—Used to set the value for the items displayed in the drop-down list.
 * [IsDropDownOpen](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.AutoComplete.html#Syncfusion_Windows_Tools_Controls_AutoComplete_IsDropDownOpen)—Used to open or close the Drop-down list by setting its value as True or False.
 * [SelectionChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.AutoComplete.html).
 * [TextChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.AutoComplete.html).

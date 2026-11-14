@@ -5,7 +5,6 @@ description: Resizable scrollbar in the WPF Chart allows users to adjust the vis
 platform: wpf
 control: SfChart
 documentation: ug
-appliesto: UI Component Suite, Chart SDK
 ---
 
 # Resizable Scrollbar in WPF Charts

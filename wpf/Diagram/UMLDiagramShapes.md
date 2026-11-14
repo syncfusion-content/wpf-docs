@@ -5,7 +5,6 @@ description: Learn about UML diagram shapes in Syncfusion® WPF Diagram control,
 platform: wpf
 control: SfDiagram
 documentation: ug
-appliesto: UI Component Suite, Diagram SDK
 ---
 
 # UML Diagrams in WPF Diagram

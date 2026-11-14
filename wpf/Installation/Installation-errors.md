@@ -38,7 +38,7 @@ You are attempting to use a Trial unlock key to unlock the licensed installer.
 
 ### Suggested solution
 
-Only a licensed unlock key can unlock a licensed installer. So, to unlock the licensed installer, use the licensed unlock key. To generate the licensed unlock key, refer to [this](https://syncfusion.com/kb/2326) article.
+Only a licensed unlock key can unlock a licensed installer. So, to unlock the licensed installer, use the licensed unlock key. To generate the licensed unlock key, refer to [this](https://support.syncfusion.com/kb/article/2757/how-to-generate-syncfusion-setup-unlock-key-from-syncfusion-support-account) article.
 
 
 ## License has expired
@@ -61,8 +61,8 @@ This error message will appear if your license has expired.
 
 You can choose from the options listed below. 
 
-1. Renew your subscription [here](https://www.syncfusion.com/account/my-renewals). 
-2. Get a new license [here](https://www.syncfusion.com/sales/products). 
+1. Renew your subscription [here](https://www.syncfusion.com/Account/Login?ReturnUrl=%2faccount%2fmy-renewals). 
+2. Get a new license [here](https://www.syncfusion.com/sales/pricing). 
 3. Reach out to our sales team by emailing <salessupport@syncfusion.com>. 
 4. Extend the 30-day trial period after your license has expired (if eligible).
 
@@ -95,12 +95,12 @@ The following are possible causes of this error:
 
 You can choose from the options listed below. 
 
-1. Get a new license [here](https://www.syncfusion.com/sales/products). 
+1. Get a new license [here](https://www.syncfusion.com/sales/pricing). 
 2. Contact your account administrator to request an assigned license.
 3. Send an email to <clientrelations@syncfusion.com> to request a license. 
 4. Reach out to our sales team by emailing <salessupport@syncfusion.com>.
 
-To view your current license and trial status, sign in to your [Syncfusion account](https://www.syncfusion.com/account).
+To view your current license and trial status, sign in to your [Syncfusion account](https://www.syncfusion.com/Account/Login?ReturnUrl=%2faccount).
 
 ## Unable to install because of another installation
 
@@ -153,7 +153,7 @@ Controlled folder access is enabled on your computer.
 **Solution 1:** Disable controlled folder access, then install to the default Documents folder.
 
 1. Verify that Controlled folder access is enabled in Windows Security. Go to Virus & threat protection and ensure that Controlled folder access is turned on.
-2. Follow the steps in [Allow an app to access controlled folders](https://support.microsoft.com/en-us/windows/allow-an-app-to-access-controlled-folders-b5b6627a-b008-2ca2-7931-7e51e912b034) and disable controlled folder access.
+2. Follow the steps in [Allow an app to access controlled folders](https://support.microsoft.com/en-us/windows/security/threat-malware-protection/virus-and-threat-protection-in-the-windows-security-app) and disable controlled folder access.
 3. Run the Syncfusion installer. Our demos are installed to the public Documents folder by default.
 4. After installation is complete, re-enable controlled folder access from the same Windows Security panel.
 

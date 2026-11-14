@@ -5,7 +5,6 @@ description: Map keyboard and mouse gestures to commands in Syncfusion® WPF Dia
 platform: wpf
 control: SfDiagram
 documentation: ug
-appliesto: UI Component Suite, Diagram SDK
 ---
 
 # Command Manager in WPF Diagram
@@ -113,6 +112,6 @@ diagram.CommandManager.Commands.Add(saveGesture);
 
 ## See Also
 
-[How to map the custom commands to existing gestures (keyboard shortcuts and mouse)?](https://support.syncfusion.com/kb/article/8709/how-to-map-the-custom-commands-to-existing-gestures-keyboard-shortcuts-and-mouse-in-wpf)
+[How to map the custom commands to existing gestures (keyboard shortcuts and mouse)?](https://support.syncfusion.com/kb/article/8709/how-to-map-the-custom-commands-to-existing-gestures-keyboard-shortcuts-and-mouse-in-wpf-diagram-sfdiagram)
 
 [How to add a custom gesture command in the WPF Diagram ?](https://support.syncfusion.com/kb/article/18237/how-to-add-a-custom-gesture-command-in-the-wpf-diagram-sfdiagram-)

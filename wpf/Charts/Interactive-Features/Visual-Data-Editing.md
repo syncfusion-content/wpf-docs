@@ -5,7 +5,6 @@ description: Visual data editing in the WPF Chart allows users to modify data po
 platform: wpf
 control: SfChart
 documentation: ug
-appliesto: UI Component Suite, Chart SDK
 ---
 
 # Visual Data Editing in WPF Charts

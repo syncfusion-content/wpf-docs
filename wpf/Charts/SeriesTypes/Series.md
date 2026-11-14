@@ -5,7 +5,6 @@ description: Series in the WPF Chart define how data is visualized, enabling dif
 platform: wpf
 control: SfChart
 documentation: ug
-appliesto: UI Component Suite, Chart SDK
 ---
 
 # Series in WPF Charts

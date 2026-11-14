@@ -5,7 +5,6 @@ description: Gauge customization in the WPF OLAP Gauge allows you to modify gaug
 platform: wpf
 control: OLAP Gauge
 documentation: ug
-appliesto: UI Component Suite, Chart SDK
 ---
 
 # Gauge Customization in WPF OLAP Gauge

@@ -104,7 +104,7 @@ Similarly, the template for any other button can be changed by using the corresp
 
 Chromeless Window can be customized by editing the default template. The default style can be downloaded from the following link:
 
-[https://www.syncfusion.com/downloads/support/directtrac/general/ze/DefaultStyle-1700710349](https://www.syncfusion.com/downloads/support/directtrac/general/ze/DefaultStyle-1700710349)
+[https://s3.amazonaws.com/files2.syncfusion.com/dtsupport/directtrac/general/ze/DefaultStyle-1700710349.zip](https://s3.amazonaws.com/files2.syncfusion.com/dtsupport/directtrac/general/ze/DefaultStyle-1700710349.zip)
 
 This default style needs to be included in the `App.xaml` file of your application, and you can override this style as you desire.
 

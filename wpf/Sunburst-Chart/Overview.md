@@ -5,7 +5,6 @@ description: Learn about the introduction of Syncfusion Essential Studio® WPF S
 platform: wpf
 control: SfSunburstChart
 documentation: ug
-appliesto: UI Component Suite, Chart SDK
 ---
 
 # About Syncfusion® WPF Sunburst Chart control
