@@ -8,7 +8,7 @@ documentation: ug
 ---
 # Data Binding in WPF GridDataControl
 
-Data binding is the master feature of the GridData control. Grid must be bound to an external data source to display the data. GDC supports the following data sources such as, Data Tables, Data Sets or Custom collections of type List, Binding List, Observable Collection or Collection View Source. These data source can have multiple nested tables that is displayed hierarchically by the grouping grid. 
+Data binding is the master feature of the GridDataControl. Grid must be bound to an external data source to display the data. GDC supports the following data sources such as, Data Tables, Data Sets or Custom collections of type List, Binding List, Observable Collection or Collection View Source. These data source can have multiple nested tables that is displayed hierarchically by the grouping grid. 
 
 ## Data Binding mechanisms
 
@@ -60,7 +60,7 @@ When set to true, this property assigns the cell editor to the column depending 
 
 ## Data Providers
 
-An ObjectDataProvider is a class which creates an object that you can use as a binding source. The GridData control supports this class (offered by WPF platform) that creates an object in the XAML code and can be used for data binding. The ObjectDataProvider allows you to specify binding expressions against an object and its methods. You can also write custom data providers, if required.
+An ObjectDataProvider is a class which creates an object that you can use as a binding source. The GridDataControl supports this class (offered by WPF platform) that creates an object in the XAML code and can be used for data binding. The ObjectDataProvider allows you to specify binding expressions against an object and its methods. You can also write custom data providers, if required.
 
 ### Example 
 
@@ -136,7 +136,7 @@ The GDC is bound with a data source provided by an object.
 
 ADO.NET is an object-oriented set of libraries that allows you to interact with different types of data sources and different types of databases. It is used by data-oriented applications for connecting to the data sources and manipulating data. It owns a set of data providers that retrieves data from the underlying sources and place it in an ADO.NET DataSet object. The DataSet object, which holds a collection of ADO.NET DataTable objects (represents the tables of data source), is created to populate a data-aware control like the grid with database data. These DataSet objects can operate independent of the .NET data providers. 
 
-Here is an example that illustrates the binding of ADO.NET Data Table with the GridData control.
+Here is an example that illustrates the binding of ADO.NET Data Table with the GridDataControl.
 
 Code that Sets Up a DataTable
 {% highlight c# %}
@@ -215,7 +215,7 @@ Some of the collection classes are as follows:
 
 Of the above classes, the ObservableCollection is widely preferred as it is more user-friendly to use in a WPF application, and can be easily created by using XAML.  
 
-Let us see an example usage of this collection class with our GridData control.
+Let us see an example usage of this collection class with our GridDataControl.
 
 ### Example
 
@@ -471,7 +471,7 @@ The GDC is bound with data using XAML code.
 
 ## Complex Property Binding
 
-GridData control provides support to bind to complex properties through the Complex Property Binding feature. A Complex Property is one that contains multiple values, for example, an object of type "size" which contains two values – Width and Height, is represented as one property. Such complex properties are displayed in grid columns in the "Property.Member" format. For Size property, for example, the grid populates two columns namely, "Size.Width" and "Size.Height".
+GridDataControl provides support to bind to complex properties through the Complex Property Binding feature. A Complex Property is one that contains multiple values, for example, an object of type "size" which contains two values – Width and Height, is represented as one property. Such complex properties are displayed in grid columns in the "Property.Member" format. For Size property, for example, the grid populates two columns namely, "Size.Width" and "Size.Height".
 
 Complex Property Binding feature is useful when the user has nested data, i.e., when data of one table is mapped to another table.
 
@@ -589,7 +589,7 @@ Essential Grid now provides support to validate the grid data and display error 
 To validate data errors, follow the steps below:
 
 1. Ensure that your data source implements the IDataErrorInfo interface, in which two of the properties, Error (which we can be left empty optionally) and Indexer (where the validation code is placed) must be defined.
-2. Then display the error information by setting the ShowErrorToolTips property of the GridData control to true.
+2. Then display the error information by setting the ShowErrorToolTips property of the GridDataControl to true.
 
 {% capture codesnippet1 %}
 {% highlight c# %}
@@ -600,7 +600,7 @@ dataGrid.ShowErrorTooltips = true;
 {% endcapture %}
 {{ codesnippet1 | OrderList_Indent_Level_1 }}
 
-The following code example illustrates how the GridData control throws an error message when the Freight value becomes lesser than 10.
+The following code example illustrates how the GridDataControl throws an error message when the Freight value becomes lesser than 10.
 
 {% capture codesnippet2 %}
 
@@ -662,7 +662,7 @@ partial class Orders : IDataErrorInfo
 {% endcapture %}
 {{ codesnippet2 | OrderList_Indent_Level_2 }}
 
-The following screenshot illustrates Data Error Validation in the GridData control.
+The following screenshot illustrates Data Error Validation in the GridDataControl.
 
 ![Data binding in WPF GridData ilustrating error validation](Getting-Started_images/Getting-Started_img37.jpeg)
 
@@ -670,7 +670,7 @@ The following screenshot illustrates Data Error Validation in the GridData contr
 
 ## Custom Data Error Validation
 
-The GridData control supports two types of custom error validation methods. They are:
+The GridDataControl supports two types of custom error validation methods. They are:
 
 * Cell Level  Validation
 * Row Level  Validation
@@ -707,7 +707,7 @@ Adding CurrentCellValidating Event to an Application
 
 To add the CurrentCellValidating event to an application:
 
-1. Add the GridData control to the application. Refer to the following section to add the GridData control to an application <http://help.syncfusion.com/wpf/griddata/data-binding>
+1. Add the GridDataControl to the application. Refer to the following section to add the GridDataControl to an application <http://help.syncfusion.com/wpf/griddata/data-binding>
 
 2. In the following code example, we have set ProductList as ItemsSource. Hooking the CurrentCellValidating event follows. 
 
@@ -865,7 +865,7 @@ Adding RowValidating Event to an Application
 
 To add the RowValidating event to an application:
 
-1. Add the GridData control to the application. Refer to the following section to add the GridData control to an application: <http://help.syncfusion.com/wpf/griddata/data-binding>
+1. Add the GridDataControl to the application. Refer to the following section to add the GridDataControl to an application: <http://help.syncfusion.com/wpf/griddata/data-binding>
 
    In the following code we have set ProductList as ItemsSource. Hooking the RowValidating event follows.
 
@@ -1051,7 +1051,7 @@ To add the RowValidating event to an application:
 
 ## Synchronize Current Selection
 
-The GridData control provides support to keep any Selector-derived control synchronized with its current selection. If you change the current record in the grid, then the current selection of the other control also shifts to this new position and vice versa. It is obvious that the controls should be bound to the same data source.
+The GridDataControl provides support to keep any Selector-derived control synchronized with its current selection. If you change the current record in the grid, then the current selection of the other control also shifts to this new position and vice versa. It is obvious that the controls should be bound to the same data source.
 
 The IsSynchronizedWithCurrentItem property does this work for you. It is a dependency property of Boolean type. You have to associate this property to the control that should be in sync. When this property is set to true, it keeps the controls synchronized and relieve this behavior, when set to false.
 
@@ -1059,7 +1059,7 @@ Technically, this synchronization is achieved through CollectionView, by binding
 
 ### Example
 
-Following is the code example that synchronizes GridData control with a ListView control.
+Following is the code example that synchronizes GridDataControl with a ListView control.
 
 ListView Implementation with IsSynchronizedWithCurrentItem Set to True
 {% highlight xaml %}
@@ -1092,7 +1092,7 @@ ScrollViewer.HorizontalScrollBarVisibility="Disabled" Background="Transparent" N
 
 {% endhighlight %}
 
-### GridData Control Implementation
+### GridDataControl Implementation
 
 {% highlight xaml %}
 
@@ -1249,7 +1249,7 @@ Sorting can be done interactively by clicking the header or can be declared by u
 
 ### Filtering Operation
 
-We have two modes of filtering in the WPF GridData control: Excel-like Filtering and Advanced Filtering. Both these modes are supported by unbound columns.
+We have two modes of filtering in the WPF GridDataControl: Excel-like Filtering and Advanced Filtering. Both these modes are supported by unbound columns.
 
 ### Excel-like Filtering Mode
 
@@ -1444,7 +1444,7 @@ The above method wraps the unbound column's lambda expression into an expression
 
 ### Selected Items Collection
 
-GridData control allows you to select the required records and retrieve selected record values. Once a record is selected, it is added to the GridDataControl.SelectedItems collection and GridDataControl.SelectedItem highlights the current record in selection.
+GridDataControl allows you to select the required records and retrieve selected record values. Once a record is selected, it is added to the GridDataControl.SelectedItems collection and GridDataControl.SelectedItem highlights the current record in selection.
 
 Following is the code example that iterates through the SelectedItems collections and prints the values of those records that are in selection.
 {% highlight c# %}

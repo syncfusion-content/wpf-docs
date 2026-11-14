@@ -8,7 +8,7 @@ documentation: ug
 ---
 # Data Presentation in WPF GridDataControl
 
-GridData control data can be presented in several ways. 
+GridDataControl data can be presented in several ways. 
 
 This section illustrates those data presentation techniques in the following topics:
 
@@ -262,7 +262,7 @@ You can also perform sorting through the code. This requires you to define a num
 
 The following screenshot shows a GDC enabled with sorting feature:
 
-![Sorting feature is now enabled in WPF GridData control](Getting-Started_images/Getting-Started_img57.jpeg)
+![Sorting feature is now enabled](Getting-Started_images/Getting-Started_img57.jpeg)
 
 
 ### Enable/Disable Sorting
@@ -320,7 +320,7 @@ N> When the grid is sorted against multiple columns, the affected column headers
 
 The following screenshot shows a multicolumn sorting enabled GDC:
 
-![Multicolumn sorting feature is enabled in GridData control](Getting-Started_images/Getting-Started_img58.jpeg)
+![Multicolumn sorting feature is enabled](Getting-Started_images/Getting-Started_img58.jpeg)
 
 
 ### Custom Sorting
@@ -497,11 +497,11 @@ Enable Filter for the Whole Grid
 
 {% endhighlight  %}
 
-The following image shows a GridData control with filter feature enabled for "CompanyName" column:
+The following image shows a GridDataControl with filter feature enabled for "CompanyName" column:
 
 ![Filter the CompanyName column in WPF GridDataControl](Getting-Started_images/Getting-Started_img60.jpeg)
 
-CompanyName in GridData control is now enabled with filtering feature.
+CompanyName in GridDataControl is now enabled with filtering feature.
 
 Here is an example code that enables filter on all the columns:
 
@@ -1175,7 +1175,7 @@ Data Type </th></tr>
 <tr>
 <td>
 DetailsViewTemplate</td><td>
-Get the user-defined UI of the details view in the form of DataTemplate. This is the core input to have the details view in the GridData control.</td><td>
+Get the user-defined UI of the details view in the form of DataTemplate. This is the core input to have the details view in the GridDataControl.</td><td>
 Dependency property </td><td>
 DataTemplate </td></tr>
 </table>
@@ -1273,7 +1273,7 @@ To view samples:
 
 ### Adding Details View to an Application 
 
-One can easily add the details view to the GridData control by defining the DetailsViewTemplate and binding it to the corresponding GridData control. In the following procedure we have bound the GridData control with a list of product information and created a details view template and bound it to the GridData control.
+One can easily add the details view to the GridDataControl by defining the DetailsViewTemplate and binding it to the corresponding control. In the following procedure we have bound the GridDataControl with a list of product information and created a details view template and bound it to the control.
 
 1. Bind an items source to the grid. Refer to the following link for more information about binding items source to the grid. [Data Binding](http://help.syncfusion.com/wpf/griddata/data-binding)
 2. Define a data template for the details view. You can bind the data by fetching it through Record.Data (data is the underlying object bound).
@@ -1360,7 +1360,7 @@ One can easily add the details view to the GridData control by defining the Deta
 
    ~~~
 
-3. Bind the defined data template to the GridData control.
+3. Bind the defined data template to the GridDataControl.
 
    ~~~ xaml
 
@@ -1484,9 +1484,9 @@ dataGrid.Model.TableProperties.DragIndicatorOuterBrush = Brushes.Black;
 
 ## Column Options
 
-The GridData control provides support to customize the individual columns in the grid by using the Column Options feature. The customization options are wrapped up into a panel that pops up on clicking the ColumnOptions icon in the column header, so that the users can work with them in an interactive manner. With this feature now available, you can toggle the customization options within seconds, without writing much code.
+The GridDataControl provides support to customize the individual columns in the grid by using the Column Options feature. The customization options are wrapped up into a panel that pops up on clicking the ColumnOptions icon in the column header, so that the users can work with them in an interactive manner. With this feature now available, you can toggle the customization options within seconds, without writing much code.
 
-You can enable or disable this feature by using the ShowColumnOptions property of the GridData control.
+You can enable or disable this feature by using the ShowColumnOptions property of the GridDataControl.
 
 {% tabs %}
 
@@ -1512,7 +1512,7 @@ The following screenshot illustrates how the ColumnOptions icon is displayed for
 
 ### Customization Options
 
-The following are the column customization options provided by the GridData control.
+The following are the column customization options provided by the GridDataControl.
 
 Column Option
 
@@ -2323,7 +2323,7 @@ summaryRow.RowStyle.Background = new SolidColorBrush(Colors.LightGreen);
 
 ## Hierarchy
 
-GridData control can display nested tables in a hierarchy using a master-detail configuration. In a hierarchical view, all the tables in the data source are inter-connected by means of relations. Generally a relation between any two tables can take one of the following forms: 
+GridDataControl can display nested tables in a hierarchy using a master-detail configuration. In a hierarchical view, all the tables in the data source are inter-connected by means of relations. Generally a relation between any two tables can take one of the following forms: 
 
 * 1:1 (One parent record to one child record) 
 * 1:n (One parent record to n child records)
@@ -2332,7 +2332,7 @@ GridData control can display nested tables in a hierarchy using a master-detail 
 
 where n is a number of records in a table
 
-With the nested tables (one table nested inside another table), each record in the parent table has an associated set of records in the child table. Every record in the relation is provided with +/- button called RecordPlusMinus that can be expanded and collapsed to bring the underlying records in the child table for display. The number of tables that can be nested with relations using a GridData control is unlimited.
+With the nested tables (one table nested inside another table), each record in the parent table has an associated set of records in the child table. Every record in the relation is provided with +/- button called RecordPlusMinus that can be expanded and collapsed to bring the underlying records in the child table for display. The number of tables that can be nested with relations using a GridDataControl is unlimited.
 
 ### The Relations Collection
 
@@ -2440,7 +2440,7 @@ Auto Generate Relations
 
 The grid can automatically detect the data relations in a data set for display. By default, a relation is created for each such data relation found in the data set. Hence the data relations defined in a data set are sufficient enough for the grid. 
 
-To auto-generate the relations, set the AutoPopulateRelations property of the GridData control to _true_.
+To auto-generate the relations, set the AutoPopulateRelations property of the GridDataControl to _true_.
 
 {% highlight xaml %}
 
@@ -2518,7 +2518,7 @@ Output of the above given code is the following image:
 
 ![Stacked headers in WPF GridDataControl](Getting-Started_images/Getting-Started_img81.jpeg)
 
-The preceding screenshot shows a GridData control with stacked headers.
+The preceding screenshot shows a GridDataControl with stacked headers.
 
 ### Expression Fields
 
@@ -2954,7 +2954,7 @@ This feature allows the grid columns to resize themselves automatically to fit t
 
 1. GridControlLengthUnitType.Auto
 
-   In Auto type, column widths of the Grid control/GridData control are adjusted with respect to the cell and header content, i.e., each column's header length and cell content length is taken into account.
+   In Auto type, column widths of the Grid control/GridDataControl are adjusted with respect to the cell and header content, i.e., each column's header length and cell content length is taken into account.
 
    ~~~ csharp
 
@@ -2968,11 +2968,11 @@ This feature allows the grid columns to resize themselves automatically to fit t
 
    ~~~
    
-   ![Auto sizing the column in WPF GridDataControl](Getting-Started_images/Getting-Started_img87.jpeg)
+   ![Auto sizing the column](Getting-Started_images/Getting-Started_img87.jpeg)
 
 2. GridControlLengthUnitType.AutoWithLastColumnFill
 
-   In AutoWithLastColumnFill type, column width of Grid Control/GridData Control is adjusted with respect to cell and header content. The last column's width fills the unoccupied space in the parent Framework element. 
+   In AutoWithLastColumnFill type, column width of Grid Control/GridDataControl is adjusted with respect to cell and header content. The last column's width fills the unoccupied space in the parent Framework element. 
 
    ~~~ csharp
 
@@ -2986,11 +2986,11 @@ This feature allows the grid columns to resize themselves automatically to fit t
 
    ~~~
 
-   ![Auto sizing the last column in WPF GridDataControl](Getting-Started_images/Getting-Started_img88.jpeg)
+   ![Auto sizing the last column](Getting-Started_images/Getting-Started_img88.jpeg)
 
 3. GridControlLengthUnitType.SizeToCells
 
-   In SizeToCells type, column width of Grid Control/GridData Control is adjusted with respect to cell content only.
+   In SizeToCells type, column width of Grid Control/GridDataControl is adjusted with respect to cell content only.
 
    ~~~ csharp
 
@@ -3004,12 +3004,12 @@ This feature allows the grid columns to resize themselves automatically to fit t
 
    ~~~
 
-   ![Adjust cell based on content in WPF GridDataControl](Getting-Started_images/Getting-Started_img89.jpeg)
+   ![Adjust cell based on content](Getting-Started_images/Getting-Started_img89.jpeg)
 
 
 4. GridControlLengthUnitType.SizeToHeader
 
-   In SizeToHeader type, column widths of Grid Control/GridData Control are adjusted with respect to header content only.
+   In SizeToHeader type, column widths of Grid Control/GridDataControl are adjusted with respect to header content only.
 
    ~~~ csharp
 
@@ -3130,13 +3130,13 @@ void Model_QueryCellInfo(object sender, GridQueryCellInfoEventArgs e)
 
 The following image corresponds to the output of the above given code:
 
-![Customize the row styles in WPF GridDataControl](Getting-Started_images/Getting-Started_img93.jpeg)
+![Customize the row styles](Getting-Started_images/Getting-Started_img93.jpeg)
 
 The row styles of the GDC are customized by handling the QueryCellInfo event.
 
 ## Conditional Formatting
 
-The GridData control has in-built support for conditional formatting. This feature allows you to format grid cells based on a certain condition. This can be achieved by defining a GridDataConditionalFormat for the grid. Using this class, you can specify the filter criteria for the cells and the style to be applied for the filtered cells. Once these specifications are defined, the given styles are applied to only those cells that satisfy the condition specified.
+The GridDataControl has in-built support for conditional formatting. This feature allows you to format grid cells based on a certain condition. This can be achieved by defining a GridDataConditionalFormat for the grid. Using this class, you can specify the filter criteria for the cells and the style to be applied for the filtered cells. Once these specifications are defined, the given styles are applied to only those cells that satisfy the condition specified.
 
 Conditional formatting can be specified through the GridDataControl.ConditionalFormats property. This is an observable collection, into which you can add required number of formatters of type GridDataConditionalFormat. The filter criteria are specified by the GridDataConditionalFormat.Conditions property that is a collection of GridDataCondition objects. The following table describes the important properties involved:
 
@@ -3249,7 +3249,7 @@ The preceding screenshot shows a GDC applied with conditional formatting.
 
 ### Table Options
 
-There are numerous options to customize the appearance and behavior of the GridData control. These options are exposed in the following Grid.Model.TableProperties.
+There are numerous options to customize the appearance and behavior of the GridDataControl. These options are exposed in the following Grid.Model.TableProperties.
 
 ### Property
 
@@ -3430,7 +3430,7 @@ Specifies the skin for the grid.</td></tr>
 
 ### Font Settings
 
-The GridData control lets you to set the grid font properties from the root grid. By setting the font related properties in the root GridDataControl instance, you can change the font settings for entire grid cells at once.
+The GridDataControl lets you to set the grid font properties from the root grid. By setting the font related properties in the root GridDataControl instance, you can change the font settings for entire grid cells at once.
 
 ### Skins
 
@@ -3523,7 +3523,7 @@ SkinStorage.SetVisualStyle(dataGrid2, "Office2007Blue");
 
 ## Custom Skin
 
-It is possible to define your own visual style for the GridData control. As a first step, you need to define a custom style by deriving from the IGridDataVisualStyle interface, and by defining custom brushes for various grid elements. 
+It is possible to define your own visual style for the GridDataControl. As a first step, you need to define a custom style by deriving from the IGridDataVisualStyle interface, and by defining custom brushes for various grid elements. 
 
 You should direct the grid to use this custom style by specifying Custom option in its VisualStyle property. This can be done by using the following code: 
 
@@ -4897,7 +4897,7 @@ ICommand</td></tr>
 
 ## GridDataControl Column Chooser
 
-The GridData control’s column chooser allows you to add and remove columns dynamically from the current grid view via drag-and-drop operations. Dragging a column's header and dropping it onto the column chooser removes the column. To show the column, drag its header from the column chooser back to the view. 
+The GridDataControl’s column chooser allows you to add and remove columns dynamically from the current grid view via drag-and-drop operations. Dragging a column's header and dropping it onto the column chooser removes the column. To show the column, drag its header from the column chooser back to the view. 
 
 ### Features
 
@@ -4910,7 +4910,7 @@ By default, the column chooser doesn’t display headers of hidden columns. A co
 
 Display a Customized Column Chooser Window
 
-The GridData control’s column chooser enables you to customize the column chooser from the application side. This can be done by passing the Action method as a parameter of the ShowColumnChooser() method.
+The GridDataControl’s column chooser enables you to customize the column chooser from the application side. This can be done by passing the Action method as a parameter of the ShowColumnChooser() method.
 
 ### Use Case Scenarios
 
@@ -4949,7 +4949,7 @@ Return Type </th></tr>
 <tr>
 <td>
 ShowColumnChooser()</td><td>
-By invoking this method, the GridData control’s ColumnChooser window pops up.</td><td>
+By invoking this method, the GridDataControl’s ColumnChooser window pops up.</td><td>
 Null</td><td>
 ------</td><td>
 Void</td></tr>
@@ -5056,7 +5056,7 @@ Choose the Export to PDF sample to launch.
 
 Bind a button command to the ColumnChooserCommand command
 
-The following code shows how to show the Column Chooser window using the built-in command of the GridData control.
+The following code shows how to show the Column Chooser window using the built-in command of the GridDataControl.
 
 {% tabs %}
 

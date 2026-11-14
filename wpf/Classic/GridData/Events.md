@@ -8,9 +8,9 @@ documentation: ug
 ---
 # Events in WPF GridDataControl
 
-The GridData control declares a number of events that it can handle, in response to the activities either by the end user or by the system. An event is a message that is handled, to notify an object or a class of the occurrence of an action. When an event is handled, all the event handlers are notified.
+The GridDataControl declares a number of events that it can handle, in response to the activities either by the end user or by the system. An event is a message that is handled, to notify an object or a class of the occurrence of an action. When an event is handled, all the event handlers are notified.
 
-The GridData control offers technical benefits by declaring all its events as Routed Events. Hence, being the high level visual element in the visual tree, it need not hook the same event on all of its descendants (e.g. rows, columns and cells), such as MouseMove. Instead, it hooks the event on itself and hence, when the mouse moves over one of its descendants, the grid can be notified appropriately, whenever the event is handled without expecting its descendants to notify it.
+The GridDataControl offers technical benefits by declaring all its events as Routed Events. Hence, being the high level visual element in the visual tree, it need not hook the same event on all of its descendants (e.g. rows, columns and cells), such as MouseMove. Instead, it hooks the event on itself and hence, when the mouse moves over one of its descendants, the grid can be notified appropriately, whenever the event is handled without expecting its descendants to notify it.
 
 ## Subscribing to Events
 
@@ -61,7 +61,7 @@ this.dataGrid.MouseMove-=new MouseEventHandler(dataGrid_MouseMove);
 
 {% endhighlight %}
 
-_GridData Control Events_
+_GridDataControl Events_
 
 <table>
 <tr>
