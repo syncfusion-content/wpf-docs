@@ -26,7 +26,7 @@ grid.Model[1, 2].Comment = grid.Model[1, 0].CellValue + ":\nPopulation rate in "
 
 {% endtabs %}
 
-![Comment tip for specific cell in WPF GridControl](Commenttip_images/show-commenttip-specific_cell.png)
+![Comment tip for specific cell](Commenttip_images/show-commenttip-specific_cell.png)
 
 ## Comment Tip for row and column
 
@@ -46,7 +46,7 @@ grid.Model.ColStyles[2].Comment = "Hello";
 
 {% endtabs %}
 
-![Comment tip for specific row and column in WPF GridControl](Commenttip_images/Show-commenttip-rowcolumn.png)
+![Comment tip for specific row and column](Commenttip_images/Show-commenttip-rowcolumn.png)
 
 An another way to set the comment tip for specific row and column,
 
@@ -72,7 +72,7 @@ for (int i = 1; i < 4; i++)
 
 {% endtabs %}
 
-![CommentTip for specific row or column in WPF GridControl](Commenttip_images/show-commenttip-column.png)
+![CommentTip for specific row or column](Commenttip_images/show-commenttip-column.png)
 
 N> [View sample in GitHub](https://github.com/SyncfusionExamples/WPF-GridControl-CommentTip/tree/master/commenttip_simple)
 
@@ -122,7 +122,7 @@ for (int i = 1; i < 4; i++)
 N> [View sample in GitHub](https://github.com/SyncfusionExamples/WPF-GridControl-CommentTip/tree/master/commenttip)
 
 
-![Change the comment indicator position in WPF GridControl](Commenttip_images/show-commenttip-indicatorposition.png)
+![Change the comment indicator position](Commenttip_images/show-commenttip-indicatorposition.png)
 
 N> Similarly, You can also set the comment indicator at bottom position for any cell or row or column by setting the [BottomLeftComment](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Grid.GridCommentStyleInfo.html#Syncfusion_Windows_Controls_Grid_GridCommentStyleInfo_BottomLeftComment) and [BottomRightComment](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Grid.GridCommentStyleInfo.html#Syncfusion_Windows_Controls_Grid_GridCommentStyleInfo_BottomRightComment) properties.
 
@@ -164,7 +164,7 @@ private void Model_QueryCellInfo(object sender, GridQueryCellInfoEventArgs e)
 
 {% endtabs %}
 
-![CommentTip for row and column using QueryCellInfo in WPF GridControl](Commenttip_images/show-commenttip-row_column.png)
+![CommentTip for row and column using QueryCellInfo](Commenttip_images/show-commenttip-row_column.png)
 
 N> [View sample in GitHub](https://github.com/SyncfusionExamples/WPF-GridControl-CommentTip/tree/master/commenttip_using_querycellinfo)
 
@@ -191,7 +191,7 @@ private void Grid_CellCommentOpening(object sender, GridCellCommentOpeningEventA
 
 {% endtabs %}
 
-![Change the comment tip at run time in WPF GridControl](Commenttip_images/show-commenttip-openingevent.png)
+![Change the comment tip at run time](Commenttip_images/show-commenttip-openingevent.png)
 
 ## Customize the CommentTip
 
@@ -234,7 +234,7 @@ grid.Model[1, 2].GridCommentStyleInfo.TopLeftCommentTemplateKey = "TopLeftCommen
 
 {% endtabs %}
 
-![Customize the comment tip window in WPF GridControl](Commenttip_images/show-commenttip-window.png)
+![Customize the comment tip window](Commenttip_images/show-commenttip-window.png)
 
 
 N> [View sample in GitHub](https://github.com/SyncfusionExamples/WPF-GridControl-CommentTip/tree/master/commenttip_customization)

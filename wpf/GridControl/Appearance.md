@@ -72,7 +72,7 @@ The following graphic illustrates the effect of using the GridStyleInfo inherita
 
 
 
-![Change background color of specific cell or row and column in WPF GridControl](Appearance_images/Appearance_img1.jpeg)
+![Change background color of specific cell or row and column](Appearance_images/Appearance_img1.jpeg)
 
 ### Style Properties
 
@@ -130,7 +130,7 @@ Output
 
 The code above displays the following output:
 
-![Change the background color of each columns in WPF GridControl](Appearance_images/Appearance_img2.jpeg)
+![Change the background color of each columns](Appearance_images/Appearance_img2.jpeg)
 
 #### Background
 
@@ -161,7 +161,7 @@ this.grid.Model[3, 6].Background = new LinearGradientBrush(Colors.Gold, Colors.Y
 
 The following output is generated using the code above.
 
-![Applied gradient background color in specific cells in WPF GridControl](Appearance_images/Appearance_img3.jpeg)
+![Applied gradient background color in specific cells](Appearance_images/Appearance_img3.jpeg)
 
 #### Visual properties
 
@@ -238,7 +238,7 @@ this.grid.Model[8, 5].CellValue = "Font style is Normal";
 
 The following output is generated using the code above.
 
-![Change the font style and color in WPF GridControl](Appearance_images/Appearance_img4.jpeg)
+![Change the font style and color](Appearance_images/Appearance_img4.jpeg)
 
 2. Setting cell orientation
 
@@ -280,7 +280,7 @@ this.grid.Model.RowHeights[12] = 50;
 
 The following output is generated using the code above.
 
-![Change the font alignment in WPF GridControl](Appearance_images/Appearance_img5.jpeg)
+![Change the font alignment](Appearance_images/Appearance_img5.jpeg)
 
 
 
@@ -339,7 +339,7 @@ this.grid.Model[15, 6].Borders.Right.DashStyle = DashStyles.DashDotDot;
 
 The following output is generated using the code above.
 
-![Change the border style in WPF GridControl](Appearance_images/Appearance_img6.jpeg)
+![Change the border style](Appearance_images/Appearance_img6.jpeg)
 
 ### Data Formats
 
@@ -478,7 +478,7 @@ foreach (string format in new string[]
 
 The following output is generated using the code above.
 
-![Data formats in WPF GridControl](Appearance_images/Appearance_img7.jpeg)
+![Data formats](Appearance_images/Appearance_img7.jpeg)
 
 
 
@@ -488,7 +488,7 @@ The FormatProvider in GridStyleInfo is used to format the display text in the ce
 
 #### Format using FormatProvider Property
 
-In the Grid control, you can set the FormatProvider property as shown in the following code snippet.
+In the Excel-like Grid, you can set the FormatProvider property as shown in the following code snippet.
 
 {% tabs %}
 {% highlight c# %}
@@ -572,4 +572,4 @@ The CustomNumberFormat class converts the double value to string based on the cu
 
 The output is shown in the following screenshot:
 
-![Applied formatting in specific cells in WPF GridControl](Appearance_images/Appearance_img8.png)
+![Applied formatting in specific cells](Appearance_images/Appearance_img8.png)

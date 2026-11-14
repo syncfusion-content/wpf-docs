@@ -9,7 +9,7 @@ documentation: ug
 
 # Interactive Features in WPF Excel-like Grid
 
-This section explains the Resizing the columns, Drag and drop the columns and cells of WPF GridControl.
+This section explains the Resizing the columns, Drag and drop the columns and cells of WPF Excel-like Grid.
 
 ## Drag-and-Drop columns
 
@@ -24,7 +24,7 @@ this.grid.AllowDragColumns = true;
 
 The following image illustrates this feature:
 
-![Drag and Drop support in WPF GridControl](Interactive_images/Drag_and_drop.jpeg)
+![Drag and Drop support](Interactive_images/Drag_and_drop.jpeg)
 
 In the above image, you can see the column header 1 being dragged to be placed before column 3.
 
@@ -112,7 +112,7 @@ This event allows you to provide customized clipboard formats or add supp
 
 ## Excel like - Resizing
 
-Essential<sup>®</sup> Grid control supports Excel like resizing to hide or unhide columns. It also acts as a visual marker to indicate hidden columns.
+Essential<sup>®</sup> Excel-like Grid supports Excel like resizing to hide or unhide columns. It also acts as a visual marker to indicate hidden columns.
 
 ### Use Case Scenarios
 
@@ -168,7 +168,7 @@ Me.gridControl.RowHeights.SetHidden(3, 4, False)
 
 The following is a sample output of Resizing support implementation.
 
-![Row index and Column index for 3 and 4 are hidden in WPF GridControl](Interactive_images/hide_rows_and_column.png)
+![Row index and Column index for 3 and 4 are hidden](Interactive_images/hide_rows_and_column.png)
 
 ### Hide and unhide a rows or Columns during run-time.
 
@@ -178,23 +178,23 @@ The following screenshot explains how to hide and unhide a Column.
 
 Hover over the header cell’s border line. The cursor will be changed to single bar, as like in the following screenshot.
 
-![Hover on the border line of a header in WPF GridControl](Interactive_images/resize_width_cursor.png)
+![Hover on the border line of a header](Interactive_images/resize_width_cursor.png)
 
 Drag it to Column 2 so that the Border color changes as like in the following screenshot.
 
-![After dragging and joining the border line to the neighbor cell in WPF GridControl](Interactive_images/border_color.png)
+![After dragging and joining the border line to the neighbor cell](Interactive_images/border_color.png)
 
 The following image shows the output after hiding the row by Mouse Dragging.
 
-![Output of the hidden column to the neighbor cell in WPF GridControl](Interactive_images/hide_cell.png)
+![Output of the hidden column to the neighbor cell](Interactive_images/hide_cell.png)
 
 To unhide the hidden row, hover the mouse on the hidden column border line. A double bar cursor will then be displayed as in the following screenshot.
 
-![Hover on the hidden Column the Cursor changes to double bar in WPF GridControl](Interactive_images/hide_column.png)
+![Hover on the hidden Column the Cursor changes to double bar](Interactive_images/hide_column.png)
 
 Double clicking on it will unhide all the hidden columns in that particular hidden column.
 
-![After double clicking the hidden column it unhide all the hidden Columns in WPF GridControl](Interactive_images/hide_specific_column.png)
+![After double clicking the hidden column it unhide all the hidden Columns](Interactive_images/hide_specific_column.png)
 
 ### Tables for Properties, Methods, and Events
 

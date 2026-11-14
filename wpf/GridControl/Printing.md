@@ -25,7 +25,7 @@ this.grid.ShowPrintDialog();
 
 ### Output
 
-![Print dialog in WPF GridControl](Print-and-Print-Preview_images/Print-and-Print-Preview_img1.jpeg)
+![Print dialog](Print-and-Print-Preview_images/Print-and-Print-Preview_img1.jpeg)
 
 ## Print Dialog Options
 
@@ -35,7 +35,7 @@ The Print Dialog provides numerous options to configure the output.
 
 Clicking the Print button allows the user to send the grid content to the printer for printing.
 
-![Click print button in WPF GridControl](Print-and-Print-Preview_images/Print-and-Print-Preview_img2.jpeg)
+![Click print button](Print-and-Print-Preview_images/Print-and-Print-Preview_img2.jpeg)
 
 ### Page Size Drop-down
 
@@ -48,7 +48,7 @@ N> The paper sizes are also marked in the following way:
 
 For more information, check the following link: [https://learn.microsoft.com/en-us/dotnet/api/system.printing.pagemediasizename?view=windowsdesktop-7.0](https://learn.microsoft.com/en-us/dotnet/api/system.printing.pagemediasizename?view=windowsdesktop-7.0)
 
-![Page size drop down in WPF GridControl](Print-and-Print-Preview_images/Print-and-Print-Preview_img3.jpeg)
+![Page size drop down](Print-and-Print-Preview_images/Print-and-Print-Preview_img3.jpeg)
 
 ### Color Drop-down
 
@@ -59,50 +59,50 @@ The options in this drop-down allow you select the color for the data to be prin
 * Gray scale—Selecting this option allows the user to print the grid data in a range of shades of gray without apparent color, the darkest shade being black and the lightest shade being white.
 * Unknown—This option can be selected in cases where you receive any print configuration settings which does not fall within the other 3 options. The application that is using this configuration will internally set the color option as unknown in such cases.
 
-![Color drop-down in WPF GridControl](Print-and-Print-Preview_images/Print-and-Print-Preview_img4.jpeg)
+![Color drop-down](Print-and-Print-Preview_images/Print-and-Print-Preview_img4.jpeg)
 
 
 ### Zoom Drop-down
 
 The options in this drop-down allow you select the required percentage magnification for viewing the grid data to be printed. Selecting the required option allows you to magnify the preview to various preset zoom levels like 50%, 100%, 200% and 400%. 
 
-![Zooming drop-down option in WPF GridControl](Print-and-Print-Preview_images/Print-and-Print-Preview_img5.jpeg)
+![Zooming drop-down option](Print-and-Print-Preview_images/Print-and-Print-Preview_img5.jpeg)
 
 ### Navigation Options
 
 The Print dialog provides four navigational buttons to navigate the grid preview:
 
-![Backward navigation button of printing option in WPF GridControl](Print-and-Print-Preview_images/Print-and-Print-Preview_img6.jpeg)
+![Backward navigation button of printing option](Print-and-Print-Preview_images/Print-and-Print-Preview_img6.jpeg)
 
 -This button allows you to move to the first page 
 
 
-![Forward navigation button of printing option in WPF GridControl](Print-and-Print-Preview_images/Print-and-Print-Preview_img7.jpeg)
+![Forward navigation button of printing option](Print-and-Print-Preview_images/Print-and-Print-Preview_img7.jpeg)
 
 -This button allows you to move to the last page 
 
 
-![Navigation button to move previous page of printing option to WPF GridControl](Print-and-Print-Preview_images/Print-and-Print-Preview_img8.jpeg)
+![Navigation button to move previous page of printing option](Print-and-Print-Preview_images/Print-and-Print-Preview_img8.jpeg)
 
 -This button allows you to move to the previous page 
 
 
-![Navigation button to move next page of printing option to WPF GridControl](Print-and-Print-Preview_images/Print-and-Print-Preview_img9.jpeg)
+![Navigation button to move next page of printing option](Print-and-Print-Preview_images/Print-and-Print-Preview_img9.jpeg)
 
 -This button allows you to move to the next page 
 
 
 The following image shows the next button highlighted for an example.
 
-![Navigation Options in printing to WPF GridControl](Print-and-Print-Preview_images/Print-and-Print-Preview_img10.jpeg)
+![Navigation Options in printing](Print-and-Print-Preview_images/Print-and-Print-Preview_img10.jpeg)
 
 ## Printing Header and Footer
 
 Headers and Footers can be added to the document to be printed. 
 
-* GridControl.PrintHeaderTemplate determines the content for the print header. It is a property of GridControl and any value assigned to this property will be provided as an output in the Header section of the print output. For example: A text block outlined with a border is assigned to this property and hence the header also is printed with a border. 
-* GridControl.PrintFooterTemplate defines the print footer. The content represented by the print header will appear at the top of each printed page and likewise, the content represented by the print footer will appear at the bottom of each printed page. 
-* The height of the header and footer can be adjusted using the GridControl properties- PrintHeaderHeight and PrintFooterHeight.
+* Excel-like Grid.PrintHeaderTemplate determines the content for the print header. It is a property and any value assigned to this property will be provided as an output in the Header section of the print output. For example: A text block outlined with a border is assigned to this property and hence the header also is printed with a border. 
+* Excel-like Grid.PrintFooterTemplate defines the print footer. The content represented by the print header will appear at the top of each printed page and likewise, the content represented by the print footer will appear at the bottom of each printed page. 
+* The height of the header and footer can be adjusted using the Excel-like Grid properties- PrintHeaderHeight and PrintFooterHeight.
 
 {% tabs %}
 {% highlight xaml %}
@@ -129,5 +129,5 @@ Headers and Footers can be added to the document to be printed.
 
 The following image is the output of the code above. 
 
-![Header and Footer in printing page to WPF GridControl](Print-and-Print-Preview_images/Print-and-Print-Preview_img11.jpeg)
+![Header and Footer in printing page](Print-and-Print-Preview_images/Print-and-Print-Preview_img11.jpeg)
 
