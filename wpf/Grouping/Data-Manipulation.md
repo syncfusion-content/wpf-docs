@@ -9,7 +9,7 @@ documentation: ug
 
 # Data Manipulation in WPF Grouping
 
-In addition to grouping data, you may want to filter it for some special criteria. For example, you may want to see the total monthly sales due to orders under some value. Essential<sup>®</sup> Grouping gives you the flexibility to add calculated values to the data, and then use these values to produce other information like total monthly sales due for respective order etc. 
+In addition to Grouping data, you may want to filter it for some special criteria. For example, you may want to see the total monthly sales due to orders under some value. Essential<sup>®</sup> Grouping gives you the flexibility to add calculated values to the data, and then use these values to produce other information like total monthly sales due for respective order etc. 
 
 The following data manipulation techniques are available in Essential<sup>®</sup> Grouping:
 
