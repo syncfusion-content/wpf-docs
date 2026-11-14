@@ -9,7 +9,7 @@ documentation: ug
 
 # Columns in WPF GridTreeControl
 
-The GridTree control’s columns are divided into two types. They are:
+The GridTreeControl’s columns are divided into two types. They are:
 
 * Bound Column
 * Unbound Column
@@ -44,7 +44,7 @@ Data Type</th></tr>
 <tr>
 <td>
 AutoPopulateColumns</td><td>
-By setting this property to {{ '_true_' | markdownify }}, the GridTree control populates the properties that are present in the underlying collection without defining them in the XAML or in C#.</td><td>
+By setting this property to {{ '_true_' | markdownify }}, the GridTreeControl populates the properties that are present in the underlying collection without defining them in the XAML or in C#.</td><td>
 Dependency Property</td><td>
 Boolean</td></tr>
 <tr>
@@ -58,7 +58,7 @@ Boolean</td></tr>
 
 ### AutoPopulateColumns
 
-In the GridTree control, you can populate the columns automatically by setting the AutoPopulateColumns property to True.
+In the GridTreeControl, you can populate the columns automatically by setting the AutoPopulateColumns property to True.
 
 {% tabs %}
 {% highlight xaml %}
@@ -81,11 +81,11 @@ treeGrid.AutoPopulateColumns = true;
 {% endtabs %}
 
 
-When we set this property to true, the properties that are available in underlying collection populates in the GridTree control as GridTreeColumn.
+When we set this property to true, the properties that are available in underlying collection populates in the GridTreeControl as GridTreeColumn.
 
 ### AutoGenerateColumnsInfo
 
-By setting the AutoGenerateColumnsInfo property to _true_, the GridTree control assigns the appropriate cell type for each column automatically. The following common cell types loaded for the corresponding data.
+By setting the AutoGenerateColumnsInfo property to _true_, the GridTreeControl assigns the appropriate cell type for each column automatically. The following common cell types loaded for the corresponding data.
 
 
 <table>
@@ -282,7 +282,7 @@ To know more about the GridStyleInfo and StyleInfo properties please refer the f
 
 ## Cell Types
 
-In GridTree control you can define the cell type for each column by using the property “CellType”. When you leave a column without defining the cell type then that column’s cell type is considered as “Static” cell type. The list of cell types that are available in the GridTree control are as follows.
+In GridTreeControl you can define the cell type for each column by using the property “CellType”. When you leave a column without defining the cell type then that column’s cell type is considered as “Static” cell type. The list of cell types that are available in the GridTreeControl are as follows.
 
 <table>
 <tr>
@@ -290,7 +290,7 @@ In GridTree control you can define the cell type for each column by using the pr
 * Static* TextBlock* TextBox* RichText* ExpanderCell* Data Template* ComboBox* DropDownList* CheckBox* Currency edit* Double edit* DateTime edit* Integer edit* Mask edit* Percent edit* Up Down edit* TimeSpan edit* Image* Hyperlink* Button</td></tr>
 <tr>
 <td>
-> <br>It is not possible to change the cell type for the first column of the GridTree control.</td></tr>
+> <br>It is not possible to change the cell type for the first column of the GridTreeControl.</td></tr>
 </table>
 
 ## Static
@@ -554,9 +554,9 @@ GridTree RichText Cell Type
 
 ### ExpanderCell
 
-In the GridTree control by default, the ExpanderCell type is present at the first column. This column helps you to expand the parent node and navigate into the child nodes. In general, ExpanderCell contains a glyph to expand/collapse the parent nodes.
+In the GridTreeControl by default, the ExpanderCell type is present at the first column. This column helps you to expand the parent node and navigate into the child nodes. In general, ExpanderCell contains a glyph to expand/collapse the parent nodes.
 
-The following are the list of glyphs in the GridTree control.
+The following are the list of glyphs in the GridTreeControl.
 
 Glyph Types
 
@@ -572,7 +572,7 @@ PlusMinus—contains a plus/minus symbol. The plus symbol appears when the node 
 
 PlusMinusLine—contains a plus/minus symbol with lines. When the plus symbol is visible then a line is drawn from the parent node to its child node and each child node has the line with its parent node.
 
-Themed—loads the glyph based on the theme applied for the GridTree control. The patch applied in the theme for the glyph loads as a glyph for the all nodes.
+Themed—loads the glyph based on the theme applied for the GridTreeControl. The patch applied in the theme for the glyph loads as a glyph for the all nodes.
 
 Triangle—loads the triangle symbol for each node that contains the child nodes. The collapsed node’s triangle symbol appears horizontal and the expanded node’s triangle turns vertical.
 
@@ -580,7 +580,7 @@ Custom—a custom type glyph is user based and you can load any kind of path int
 
 Node image support
 
-In the GridTree control, you can display image in each ExpanderCell and it can be achieved by handling the RequestNodeImage event and applying _true_ to the SupportNodeImages property
+In the GridTreeControl, you can display image in each ExpanderCell and it can be achieved by handling the RequestNodeImage event and applying _true_ to the SupportNodeImages property
 
 The following code snippet shows how to load the image in ExpanderCell.
 
@@ -609,7 +609,7 @@ GridTree ExpanderCell with Image
 
 ### DataTemplate
 
-In the GridTree control, DataTemplate cell type allows you to replace the visual appearance of a cell. You can load any controls into a cell and display the CellBoundValue or custom values. This provides an extensible way to display the cells. The DataContext of a DataTemplate is same as that of the GridTree control.
+In the GridTreeControl, DataTemplate cell type allows you to replace the visual appearance of a cell. You can load any controls into a cell and display the CellBoundValue or custom values. This provides an extensible way to display the cells. The DataContext of a DataTemplate is same as that of the GridTreeControl.
 
 The following are the list of properties specific for this cell type.
 
@@ -1020,7 +1020,7 @@ The following screenshot shows a simple demo of the DropDownList cell type.
 
 
 
-GridTree Control DropDownList Cell Type
+GridTreeControl DropDownList Cell Type
 {:.caption}
 
 ### CheckBox
@@ -1094,7 +1094,7 @@ The following screenshot shows a simple demo of CheckBox cell type.
 
 
 
-GridTree Control CheckBox Cell Type
+GridTreeControl CheckBox Cell Type
 {:.caption}
 
 ### CurrencyEdit
@@ -1199,7 +1199,7 @@ treeGrid.Columns.Add(new GridTreeColumn("Salary")
 
 
 
-GridTree Control CurrencyEdit Cell Type
+GridTreeControl CurrencyEdit Cell Type
 {:.caption}
 
 ### IntegerEdit
@@ -1290,7 +1290,7 @@ treeGrid.Columns.Add(new GridTreeColumn("Employee ID")
 
 
 
-GridTree Control IntegerEdit Cell Type
+GridTreeControl IntegerEdit Cell Type
 {:.caption}
 
 ### DoubleEdit
@@ -1513,7 +1513,7 @@ treeGrid.Columns.Add(percentColumn);
 
 
 
-GridTree Control PercentEdit Cell Type
+GridTreeControl PercentEdit Cell Type
 {:.caption}
 
 ### DateTimeEdit
@@ -1933,7 +1933,7 @@ TimeSpanEdit Cell Type
 
 ## ImageCell
 
-The ImageCell type is used to load images inside the graphic cells. To load the graphic image cell in the GridTree control, you have to set the CellType as ImageCell and the CellValue as BitmapImage.
+The ImageCell type is used to load images inside the graphic cells. To load the graphic image cell in the GridTreeControl, you have to set the CellType as ImageCell and the CellValue as BitmapImage.
 
 ### Image CellType properties
 
@@ -2082,12 +2082,12 @@ The following screenshot shows a simple demo of Hyperlink cell.
 
 
 
-GridTree Control Hyperlink Cell Type
+GridTreeControl Hyperlink Cell Type
 {:.caption}
 
 ### Button
 
-The Button cell type allows you to load Button control in each cell of the GridTree control. To load a Button in the GridTree control cell, choose Button cell type. You can perform button click action as in the Button control.
+The Button cell type allows you to load Button control in each cell of the GridTreeControl. To load a Button in the GridTreeControl cell, choose Button cell type. You can perform button click action as in the Button control.
 
 The following table shows the events that are available for this cell type.
 
@@ -2161,9 +2161,9 @@ Button Cell Type
 
 ## Unbound Columns
 
-The GridTree control supports unbound columns in which the data is calculated automatically according to a specified formula, format, or custom data from users.
+The GridTreeControl supports unbound columns in which the data is calculated automatically according to a specified formula, format, or custom data from users.
 
-The GridTree control provides support for adding additional columns which is not in underlying business object. Such additional columns are called as unbound columns, as they do not belong to the data source. These unbound fields can be used when you want to add some additional or custom information to the nodes. 
+The GridTreeControl provides support for adding additional columns which is not in underlying business object. Such additional columns are called as unbound columns, as they do not belong to the data source. These unbound fields can be used when you want to add some additional or custom information to the nodes. 
 
 You can create an unbound column by instantiating the GridTreeUnboundColumn class, which is a derivative of GridTreeColumn.
 
@@ -2326,7 +2326,7 @@ treeGrid.Columns.Add(new GridTreeUnboundColumn() { 
 
 
 
-Using Formats in the GridTree Control
+Using Formats in the GridTreeControl
 {:.caption}
 
 ### Expression
@@ -2471,6 +2471,6 @@ Expression = "Quantity*Cost" });
 ![Columns_img22](Columns_images/Columns_img22.png)
 
 
-Using Expressions in the GridTree Control
+Using Expressions in the GridTreeControl
 {:.caption}
 

@@ -9,7 +9,7 @@ documentation: ug
 
 # GridTreeNode Objects in WPF GridTreeControl 
 
-The GridTreeControl.InternalGrid.Nodes collection holds the GridTreeNodes that represents the visible nodes in the GridTree control. The GridTreeNode object has the following properties:
+The GridTreeControl.InternalGrid.Nodes collection holds the GridTreeNodes that represents the visible nodes in the GridTreeControl. The GridTreeNode object has the following properties:
 
 
 
