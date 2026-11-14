@@ -9,7 +9,7 @@ documentation: ug
 
 # About Syncfusion WPF OLAP Client Control
 
-The OLAP client control for WPF supports browsing multidimensional data that is organized in the form of dimensions, measures, named sets, and KPI (key performance indicators) in a cube format. You can visualize the results in graphical and tabular formats (chart and grid). The OLAP client control is also used to create and edit a report on-the-fly that is stored for later use.
+The OLAP Client control for WPF supports browsing multidimensional data that is organized in the form of dimensions, measures, named sets, and KPI (key performance indicators) in a cube format. You can visualize the results in graphical and tabular formats (chart and grid). The OLAP Client control is also used to create and edit a report on-the-fly that is stored for later use.
 
 ## Key features
 
@@ -20,7 +20,7 @@ The OLAP client control for WPF supports browsing multidimensional data that is 
 * **Grid**: A grid is a tabular representation of data, arranged in the form of rows and columns and categorized accordingly.
 * **Cube selector**: Comprises multiple cubes obtained from the data source.
 * **Cube dimension browser**: Tree view structure that comprises measures, dimensions, hierarchies, named sets, KPI, and so on, belonging to the current cube into independent logical groups.
-* **AxisElementBuilder**: Allows building an OLAP report by placing elements in different axes of the OLAP client. There are three axes that are supported namely column, row, and slicer.
+* **AxisElementBuilder**: Allows building an OLAP report by placing elements in different axes of the OLAP Client. There are three axes that are supported namely column, row, and slicer.
 * **Member editor**: A tree view control that displays the member elements of the selected dimension.
 * **Measure editor**: Comprises a collection of measures.
 * **Toolbar**: Toolbar provides options for filter, sorting, exporting, and manipulating the OLAP report.
