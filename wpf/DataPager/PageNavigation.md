@@ -11,7 +11,7 @@ documentation: ug
 
 SfDataPager allows you to move from the current Page to various Pages.For example, when you want to move the CurrentPage to the last page directly, you can use the method MoveToLastPage() . When this method is called, the current page moves to the last page. 
 
-SfDataPager provides the following methods for page navigations.
+The control provides the following methods for page navigations.
 
 <table>
 <tr>
