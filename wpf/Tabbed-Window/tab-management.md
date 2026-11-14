@@ -95,6 +95,39 @@ private void OnNewTabRequested(object sender, NewTabRequestedEventArgs e)
 
 ![WPF TabbedWindow New Tab Button](tab-management_images/tabbedwindow_newbutton.gif)
 
+## Mouse Wheel Support for Scrolling Tabs
+
+When the tab strip contains more tabs that can be displayed, enable mouse wheel scrolling to help navigate to tab headers that are not currently visible. Set the [IsMouseWheelScrollingEnabled](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.SfTabControl.html#Syncfusion_Windows_Controls_SfTabControl_IsMouseWheelScrollingEnabled) property to `True` on the [SfTabControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.SfTabControl.html).
+
+{% tabs %}
+
+{% highlight XAML %}
+
+<syncfusion:SfTabControl x:Name="tabControl"
+                         IsMouseWheelScrollingEnabled="True"
+                         TabArrangement="Horizontal">
+    <syncfusion:SfTabItem Header="Home" Content="Welcome to Home Tab" />
+    <syncfusion:SfTabItem Header="File" Content="Welcome to File Tab" />
+    <syncfusion:SfTabItem Header="Edit" Content="Welcome to Edit Tab" />
+    <syncfusion:SfTabItem Header="Tools" Content="Welcome to Tools Tab" />
+    <syncfusion:SfTabItem Header="View" Content="Welcome to View Tab" />
+    <syncfusion:SfTabItem Header="Help" Content="Welcome to Help Tab" />
+</syncfusion:SfTabControl>
+
+{% endhighlight %}
+
+{% highlight C# %}
+
+tabControl.IsMouseWheelScrollingEnabled = true;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+Mouse wheel scrolling moves the tab header strip horizontally, allowing users to quickly access tabs that are outside the currently visible area.
+
+![WPF TabbedWindow mouse wheel scrolling](tab-management_images/wpf_tabbedwindow_mousewheel.gif)
+
 ## Customizing the New Tab Button
 
 You can customize the appearance of the new tab button using the [NewTabButtonStyle](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.SfTabControl.html#Syncfusion_Windows_Controls_SfTabControl_NewTabButtonStyle) property. This allows you to modify visual properties such as background, border, width, and height.
