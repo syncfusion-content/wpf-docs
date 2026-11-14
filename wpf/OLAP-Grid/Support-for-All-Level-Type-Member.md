@@ -7,9 +7,9 @@ control: OLAP Grid
 documentation: ug
 ---
 
-#  All-Level Type Member in WPF OLAP Grid control
+# All-Level Type Member in WPF OLAP Grid control
 
-This feature enables you to display the “All” level type member across the rows and columns in the OLAP grid. This member behaves as parent to other members in its hierarchy by controlling their visibility through an expander.
+This feature enables you to display the “All” level type member across the rows and columns in the OLAP Grid. This member behaves as parent to other members in its hierarchy by controlling their visibility through an expander.
 
 To display the “All” level type member, set the _ShowLevelTypeAll_ property to _true_. By default this is set to _false_. Refer to the following code sample.
 

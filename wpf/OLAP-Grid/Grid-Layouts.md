@@ -9,9 +9,9 @@ documentation: ug
 
 # Grid Layouts in WPF OLAP Grid
 
-The position of summary cells in the OLAP grid can be customized with the help of grid layouts. It can be positioned at the top or bottom of each parent member.
+The position of summary cells in the OLAP Grid can be customized with the help of grid layouts. It can be positioned at the top or bottom of each parent member.
 
-The following are the five different types of layouts supported by the OLAP grid:
+The following are the five different types of layouts supported by the control:
 
 * Normal layout.
 * Excel-like layout.
@@ -21,7 +21,7 @@ The following are the five different types of layouts supported by the OLAP grid
 
 **Normal layout**
 
-Normal layout is the default layout of OLAP grid. In normal layout, the summary cells are positioned at the bottom of each parent member and the child members are positioned adjacent to it.
+Normal layout is the default layout of the control. In normal layout, the summary cells are positioned at the bottom of each parent member and the child members are positioned adjacent to it.
 
 {% tabs %}
   
@@ -41,7 +41,7 @@ Me.OlapGrid1.Layout = GridLayout.Normal
 
 {% endtabs %}
 
-![OlapGrid in normal layout](Grid-Layouts_images/Grid-Layouts_img1.png)
+![Normal layout](Grid-Layouts_images/Grid-Layouts_img1.png)
 
 **Excel-like layout**
 
@@ -65,13 +65,13 @@ Me.OlapGrid1.Layout = GridLayout.ExceLikeLayout
 
 {% endtabs %}
 
-![OlapGrid in ExceLikeLayout](Grid-Layouts_images/Grid-Layouts_img2.png)
+![Excel-like layout](Grid-Layouts_images/Grid-Layouts_img2.png)
 
 **Excel-like layout with member properties**
 
 This layout is used to display member properties along with dimension members. These properties appear adjacent to each member.
 
-N> This layout is applicable only for members having properties defined in the OLAP cube and those members are bound to the OLAP grid through the OLAP report.
+N> This layout is applicable only for members having properties defined in the OLAP cube and those members are bound to the control through the OLAP report.
 
 {% tabs %}
   
@@ -91,7 +91,7 @@ Me.OlapGrid1.Layout = GridLayout.ExcelLikeLayoutWithMemberProperties
 
 {% endtabs %}
 
-![OlapGrid in ExceLikeLayout with member properties](Grid-Layouts_images/Grid-Layouts_img3.png)
+![Excel-like layout with member properties](Grid-Layouts_images/Grid-Layouts_img3.png)
 
 **Normal top summary layout**
 
@@ -115,7 +115,7 @@ Me.OlapGrid1.Layout = GridLayout.NormalTopSummary
 
 {% endtabs %}
 
-![OlapGrid in NormalTopSummary layout](Grid-Layouts_images/Grid-Layouts_img4.png)
+![Normal top summary layout](Grid-Layouts_images/Grid-Layouts_img4.png)
 
 **No summaries layout**
 
@@ -139,7 +139,7 @@ Me.OlapGrid1.Layout = GridLayout.NoSummaries
 
 {% endtabs %}
 
-![OlapGrid in NoSummaries layout](Grid-Layouts_images/Grid-Layouts_img5.png)
+![No summaries layout](Grid-Layouts_images/Grid-Layouts_img5.png)
 
 A sample demo is available in the following location.
 
