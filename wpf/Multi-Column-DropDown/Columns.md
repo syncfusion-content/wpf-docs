@@ -9,7 +9,7 @@ documentation: ug
 
 # Columns in WPF MultiColumn Dropdown
 
-SfMultiColumnDropDownControl enables you to define the columns as like in SfDataGrid. You can let the `SfMultiColumnDropDownControl` to create columns or you can manually defined columns to de displayed. Below sections explains both ways,
+WPF MultiColumn Dropdown enables you to define the columns as like in Data Grid. You can let the control to create columns or you can manually defined columns to be displayed. Below sections explains both ways,
  
     1. Automatically generating columns
     2. Manually define columns
@@ -17,11 +17,11 @@ SfMultiColumnDropDownControl enables you to define the columns as like in SfData
 ## Automatically generating columns
 
 The automatic column generation based on properties of data object can be enabled or disabled by setting [SfMultiColumnDropDownControl.AutoGenerateColumns](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfMultiColumnDropDownControl.html#Syncfusion_UI_Xaml_Grid_SfMultiColumnDropDownControl_AutoGenerateColumns). 
-You can [refer here](http://help.syncfusion.com/wpf/sfdatagrid/columns#defining-columns) to know more about the automatic column generation in SfMultiColumnDropDownControl.
+You can [refer here](http://help.syncfusion.com/wpf/sfdatagrid/columns#defining-columns) to know more about the automatic column generation in MultiColumn Dropdown.
 
 ## Manually defining columns
 
-SfMultiColumnDropDownControl control allows you to define the columns manually by adding desired column to the [SfMultiColumnDropDownControl.Columns](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfMultiColumnDropDownControl.html#Syncfusion_UI_Xaml_Grid_SfMultiColumnDropDownControl_Columns) collection.
+MultiColumn Dropdown allows you to define the columns manually by adding desired column to the [SfMultiColumnDropDownControl.Columns](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfMultiColumnDropDownControl.html#Syncfusion_UI_Xaml_Grid_SfMultiColumnDropDownControl_Columns) collection.
 
 {% tabs %}
 {% highlight xaml %}
@@ -49,7 +49,7 @@ sfMultiColumn.Columns.Add(new GridTextColumn() { MappingName = "Country" });
 {% endhighlight %}
 {% endtabs %}
 
-![Manually generated the columns in WPF SfMultiColumnDropDown](Columns_images/Columns_img1.png)
+![Manually generated the columns](Columns_images/Columns_img1.png)
 
 ### Customize auto-generated columns
 
