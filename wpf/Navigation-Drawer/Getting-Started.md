@@ -109,7 +109,7 @@ namespace NavigationDrawerWPF
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 	<syncfusion:SfNavigationDrawer>
             <syncfusion:SfNavigationDrawer.ContentView>

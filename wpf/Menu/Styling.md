@@ -11,7 +11,7 @@ documentation: ug
 
 ## Theme
 
-MenuAdv supports various built-in themes. Refer to the below links to apply themes for the MenuAdv,
+MenuAdv supports various built-in themes. Refer to the following links to apply themes for the MenuAdv:
 
   * [Apply theme using SfSkinManager](https://help.syncfusion.com/wpf/themes/skin-manager)
 	

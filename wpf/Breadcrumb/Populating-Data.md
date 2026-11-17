@@ -27,7 +27,7 @@ The steps to add items to the BreadCrumb (HierarchyNavigator) control in XAML ar
 {% endcapture %}
 {{ codesnippet1 | OrderList_Indent_Level_1 }}
 
-2. Add the [HierarchyNavigatorItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.HierarchyNavigatorItem.html) to the [HierarchyNavigator](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.HierarchyNavigator.html) control.
+2. Add the [HierarchyNavigatorItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.HierarchyNavigatorItem.html) objects to the [HierarchyNavigator](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.HierarchyNavigator.html) control as shown below.
 
 {% capture codesnippet2 %}
 {% tabs %}
@@ -299,7 +299,7 @@ public partial class MainPage : UserControl
 {{ codesnippet8 | OrderList_Indent_Level_1 }}
 
 
-3. The code for the [HierarchyNavigator](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.HierarchyNavigator.html) is shown below. Declare HierarchicalDataTemplate, because the data is in a hierarchical structure. Refer Template Customizing.
+3. The code for the [HierarchyNavigator](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.HierarchyNavigator.html) is shown below. Declare HierarchicalDataTemplate, because the data is in a hierarchical structure. Refer [Template customizing](https://help.syncfusion.com/wpf/breadcrumb/template-customizing).
 
 {% capture codesnippet9 %}
 {% tabs %}
@@ -386,7 +386,7 @@ namespace WCFServicesInHierarchy
     {
         public CustomSource()
         {
-            //This loads WCF Service
+            //This loads the WCF Service
             Service1Client client = new Service1Client();
             client.CreateXMLDataItemsCompleted += new EventHandler<CreateXMLDataItemsCompletedEventArgs>(client_CreateXMLDataItemsCompleted);
             client.CreateXMLDataItemsAsync();
@@ -442,7 +442,7 @@ x:Name="Window" Title="MainWindow" UseLayoutRounding="True" Width="640" Heig
 {% endcapture %}
 {{ codesnippet10 | OrderList_Indent_Level_1 }}
 
-The image displayed below shows the output of the above code—items bound to XML data.
+The image displayed below shows the output of the above code—items bound to XML data through a WCF service.
 
 ![Binding to WCF service](Populating-Data_images/Populating-Data_img5.png)
 

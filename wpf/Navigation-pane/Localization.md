@@ -50,8 +50,8 @@ Sets the string for the context menu item in GroupBar.</td></tr>
 <tr>
 <td>
 Show fewer buttons,
-Show more buttonsButtons</td><td>
-Sets the string for the Dropdown Menu Item in GroupBar.</td></tr>
+Show more buttons</td><td>
+Sets the string for the Dropdown Menu Item in GroupBar.</td></tr>
 <tr>
 <td colspan = "1">
 {{ '![Localization_images3](Localization_images/Localization_img3.png)' | markdownify}}

@@ -9,7 +9,7 @@ documentation: ug
 
 # Customizing Data Templates in WPF Menu (MenuAdv)
 
-Data templates can be customized for items of the MenuAdv control. The next section explains how to customize the MenuItemAdv using data templates.
+Data templates can be customized for items of the MenuAdv control. The following section explains how to customize the MenuItemAdv by using data templates.
 
 ## Item Template 
 
@@ -33,7 +33,7 @@ You can customize how a business object is displayed as MenuItemAdv using ItemTe
 
 {% endhighlight %}
 
-N> [View sample in GitHub](https://github.com/SyncfusionExamples/customizing-data-templates-in-menuadv)
+N> [View sample in GitHub](https://github.com/SyncfusionExamples/customizing-data-templates-in-menuadv).
 
 Implementing the above code will generate the following MenuAdv control.
 

@@ -79,7 +79,7 @@ public class ViewModel {
 </Grid>
 
 {% endhighlight %}
-{% highlight XAML %}
+{% highlight C# %}
 
 carousel.VisualMode = VisualMode.Standard;
 

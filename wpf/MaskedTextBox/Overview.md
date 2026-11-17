@@ -17,13 +17,13 @@ The [WPF MaskedTextBox](https://www.syncfusion.com/wpf-controls/maskedtextbox) i
 
 **Mask types** - Provides different set of mask types. The types are Simple, Regular and RegEx.
 
-**PromptChar** - Provides support for setting the prompt characters manually.
+**PromptChar** - Provides support for setting the prompt character manually.
 
 **Validation** - Provides support to validate the input values can be done either during each key press or when the control lost its focus.
 
-**Value** - Provides support to enter the Values and clipboard operations can be used with or without literal and prompt characters.
+**Value** - Provides support to enter values, and clipboard operations can be used with or without literal and prompt characters.
 
-**Watermark** - Provides support to Watermark text can be used to display an instruction or important information.
+**Watermark** - Provides support to display watermark text as an instruction or important information.
 
 **Customization** - Provides support to customize the UI of masked text box.
 

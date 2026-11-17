@@ -29,7 +29,7 @@ This document provides information about changing the visual appearance of the b
 
     The **Create Style Resource** dialog allows you to enter or change the style name and choose the location for the style. When you select **OK**, Expression Blend generates the button control style in the **Resource** section. You can edit the generated XAML in XAML view or Visual Studio.
 
-    * **Create Empty...** - Creates an empty WPF Button style. Selecting this option opens the **Create ControlTemplate Resource** dialog, which allows you to enter or change the control template name and choose the location for the template.
+    * **Create Empty...** – Creates an empty WPF Button style. Selecting this option opens the **Create ControlTemplate Resource** dialog, which allows you to enter or change the control template name and choose the location for the template.
 
 All resources are displayed in the application XAML file after you perform the above steps. You can edit these resources to create a new style.
 
@@ -56,7 +56,7 @@ WPF Button control edited in Expression Blend
 
     The **Create ControlTemplate Resource** dialog allows you to enter or change the control template name and choose the location for the template. When you select **OK**, Visual Studio generates the WPF Button control template in the **Resource** section. You can edit the generated XAML in XAML view.
 
-    * **Create Empty...** - Creates an empty WPF Button style. Selecting this option opens the **Create ControlTemplate Resource** dialog, which allows you to enter or change the control template name and choose the location for the template.
+    * **Create Empty...** – Creates an empty WPF Button style. Selecting this option opens the **Create ControlTemplate Resource** dialog, which allows you to enter or change the control template name and choose the location for the template.
 
 All resources are displayed in the application XAML file after you perform the above steps. You can edit these resources to create a new style.
 

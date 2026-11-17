@@ -279,7 +279,6 @@ Use the [TickStroke](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Contr
             TickFrequency="10"
             TickPlacement="BottomRight"
             TickStroke="#FF0000" />
-    </Grid>
 
 {% endhighlight %}
 
@@ -327,7 +326,6 @@ Use the [ActiveTickStroke](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows
             TickPlacement="BottomRight"
             TickStroke="#FF0000" 
             ActiveTickStroke="#02C9F3"/>
-    </Grid>
 
 {% endhighlight %}
 
@@ -478,7 +476,6 @@ Use the [MinorTickStroke](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.
             MinorTickFrequency="3"
             TickPlacement="BottomRight"
             MinorTickStroke ="#FF0000" />
-    </Grid>
 
 {% endhighlight %}
 
@@ -527,7 +524,6 @@ Use the [ActiveMinorTickStroke](https://help.syncfusion.com/cr/wpf/Syncfusion.Wi
             MinorTickFrequency="3"
             TickPlacement="BottomRight"
             ActiveMinorTickStroke ="#FF0000" />
-    </Grid>
 
 {% endhighlight %}
 
@@ -656,9 +652,9 @@ Use the [MinorTickStrokeThickness](https://help.syncfusion.com/cr/wpf/Syncfusion
                 MinorTickStrokeThickness = 2,
                 MinorTickLength= 5,
                 TickPlacement = Syncfusion.Windows.Controls.Input.TickPlacement.BottomRight,
-                TickStroke = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#FF0000"))
-                MinorTickStroke = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#FF0000"))
-                ActiveMinorTickStroke = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#02C9F3"))
+                TickStroke = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#FF0000")),
+                MinorTickStroke = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#FF0000")),
+                ActiveMinorTickStroke = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#02C9F3")),
                 ActiveTickStroke = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#02C9F3"))
             };
 
@@ -671,7 +667,7 @@ Use the [MinorTickStrokeThickness](https://help.syncfusion.com/cr/wpf/Syncfusion
 
 ![MinorTickStrokeThickness](Customization_images/MinorTickStrokeThickness.png)
 
-### Value label customization
+## Value label customization
 
 Customize the value label using the [TickBarItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.TickBarItem.html) style.
 

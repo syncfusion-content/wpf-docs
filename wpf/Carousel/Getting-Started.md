@@ -337,6 +337,7 @@ You can select a particular carousel item programmatically by using the [Carouse
         <syncfusion:CarouselItem Content="Item4"/>
         <syncfusion:CarouselItem Content="Item5"/>
     </syncfusion:Carousel>
+</Grid>
 
 {% endhighlight %}
 {% endtabs %}
@@ -404,7 +405,7 @@ To change the size of WPF Carousel items except the selected item, use the [Scal
 {% endhighlight %}
 {% highlight C# %}
 
-carousel. ScaleFraction = 0.50;
+carousel.ScaleFraction = 0.50;
 
 {% endhighlight %}
 {% endtabs %}
@@ -588,7 +589,7 @@ carousel.SelectionChanged += Carousel_SelectionChanged;
 {% endhighlight %}
 {% endtabs %}
 
-You can handle the event as follows,
+You can handle the event as follows:
 
 {% tabs %}
 {% highlight C# %}

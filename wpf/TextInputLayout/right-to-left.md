@@ -9,7 +9,7 @@ documentation: ug
 
 # Right to Left in WPF TextInputLayout (SfTextInputLayout)
 
-The TextInputLayout supports to change the flow of text to the right-to-left direction by setting the `FlowDirection` to `RightToLeft`.
+`SfTextInputLayout` supports changing the text flow to the right-to-left direction by setting the `FlowDirection` property to `RightToLeft`.
 
 {% tabs %}
 {% highlight xaml %}

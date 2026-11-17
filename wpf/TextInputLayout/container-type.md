@@ -15,7 +15,7 @@ N> The default value of the `ContainerType` is `Outlined`.
 
 ## Outlined
 
-The container will be covered with a rounded border.
+The container is surrounded by a rounded border.
 
 {% tabs %} 
 
@@ -45,7 +45,7 @@ inputLayout.InputView = new TextBox() { Text = "John" };
 
 ## Filled
 
-The background of the input view will be filled with container color, and the base line stroke and thickness will be changed based on the state of the input view.
+The background of the input view is filled with the container color, and the base line stroke and thickness change based on the state of the input view.
 
 {% tabs %} 
 
@@ -74,7 +74,7 @@ inputLayout.InputView = new TextBox() { Text = "John" };
 
 ## None
 
-The container will have an empty background and enough space.
+The container has no background or border, and only reserves space around the input view.
 
 {% tabs %} 
 

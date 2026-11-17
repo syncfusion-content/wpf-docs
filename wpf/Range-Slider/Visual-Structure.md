@@ -23,4 +23,4 @@ This section describes the visual elements of the [WPF Range Slider](https://www
 * **Inactive Track** — The horizontal or vertical line is used to move the thumbs along it.
 * **Range Start** — Thumb indicates the start of the selection range.
 * **Range End** — Thumb indicates the end of the selection range.
-* **Value Label** — indicates the value of the WPF Range Slider.
+* **Value Label** — Indicates the value of the WPF Range Slider.

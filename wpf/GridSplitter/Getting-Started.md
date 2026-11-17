@@ -158,7 +158,7 @@ To resize specific grid columns, place the `SfGridSplitter` on the next or previ
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition />
-            <ColumnDefinition Width="auto" />
+            <ColumnDefinition Width="Auto" />
             <ColumnDefinition />
         </Grid.ColumnDefinitions>
         <TextBlock Grid.Column="0" 
@@ -238,7 +238,7 @@ To resize grid rows or columns at a specific pixel interval, set the pixel value
 {% endtabs %}
 
 
-![Resizing the grid rows and colums with specific pixel](Positioning-GridSplitter-images/Move-Interval.gif)
+![Resizing the grid rows and columns with specific pixel](Positioning-GridSplitter-images/Move-Interval.gif)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-gridsplitter-control-examples/tree/master/Samples/GridSplitter) 
 

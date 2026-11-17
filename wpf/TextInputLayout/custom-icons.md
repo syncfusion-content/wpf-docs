@@ -49,7 +49,7 @@ inputLayout.InputView = new TextBox();
 
 ![leadingview](Images/leadingview.png)
 
-## Trailing  view
+## Trailing view
 
 A label can be added as a trailing icon to the input view by setting the `TrailingView` property. It can be placed either inside or outside the input view container by setting the `TrailingViewPosition` property. By default, it is placed `Inside`.
 

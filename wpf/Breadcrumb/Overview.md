@@ -9,7 +9,7 @@ documentation: ug
 
 # About Syncfusion® WPF BreadCrumb Control
 
-The BreadCrumb (HierarchyNavigator) control in WPF provides a bread-crumb interface, similar to the Windows Explorer address bar in Windows 7, which enables hierarchical navigation. 
+The BreadCrumb (HierarchyNavigator) control in WPF provides a breadcrumb interface, similar to the Windows Explorer address bar in Windows 7, which enables hierarchical navigation. 
 
 ## Features
 

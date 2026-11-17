@@ -33,7 +33,7 @@ In this walk through, user will create a WPF application that contains [MenuAdv]
 5. [Creating Data Model for sample application](#Creating-Data-Model-for-sample-application)
 6. [Binding to Data ](#Creating-Data-Model-for-sample-application)
 
-## Creating project 
+## Creating the project
 Below section provides detailed information to create new project using [MenuAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.MenuAdv.html).
 
 ## Adding control via designer
@@ -43,17 +43,17 @@ The [MenuAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.MenuA
 
 The following are the steps to create the [MenuAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.MenuAdv.html) control using Visual Studio.
 
-1. Drag [MenuAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.MenuAdv.html) from the Visual Studio Toolbox and drop it in the designer.
+1. Drag [MenuAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.MenuAdv.html) from the Visual Studio Toolbox and drop it on the designer.
 
    ![WPF Designer ThroughVisualStudio](getting-started_images/wpf-menu-designer.png)
 
 2. Select the [MenuAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.MenuAdv.html) and go to properties.
 
-3. Click the three dotted button given in Items property. Collection Editor window will open.
+3. Click the three dotted button given in Items property. The Collection Editor window will open.
 
    ![WPF MenuAdv Collection Editor ThroughVisualStudio](getting-started_images/wpf-menu-collection-editor.png)
 
-4. Using the Collection Editor, add the GroupBarItems and configure their properties.
+4. Using the Collection Editor, add the MenuItemAdv items and configure their properties.
 
 ### Through Expression Blend
 
@@ -88,7 +88,7 @@ The [MenuAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.MenuA
 N> You can customize the appearance of the [MenuItemAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.MenuItemAdv.html) using the template-editing feature available in the Expression Blend.
 
 ## Adding control manually in XAML
-In order to add [MenuAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.MenuAdv.html) control manually in XAML, do the below steps,
+To add the [MenuAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.MenuAdv.html) control manually in XAML, follow these steps:
 
 1. Add the below required assembly references to the project,
 
@@ -105,7 +105,7 @@ In order to add [MenuAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.
     <syncfusion:MenuItemAdv Header="Products" />
     <syncfusion:MenuItemAdv Header="Business Intelligence" />
     <syncfusion:MenuItemAdv Header="User Interface" >
-        <syncfusion:MenuItemAdv Header="WPF  ">
+        <syncfusion:MenuItemAdv Header="WPF">
             <syncfusion:MenuItemAdv Header="Tools"/>
             <syncfusion:MenuItemAdv Header="Chart"/>
             <syncfusion:MenuItemAdv Header="Grid"/>
@@ -114,7 +114,7 @@ In order to add [MenuAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.
             <syncfusion:MenuItemAdv Header="Schedule"/>
             <syncfusion:MenuItemAdv Header="Edit"/>
         </syncfusion:MenuItemAdv>
-        <syncfusion:MenuItemAdv Header="Silverlight "/>
+        <syncfusion:MenuItemAdv Header="Silverlight"/>
         <syncfusion:MenuItemAdv Header="Reporting" />
     </syncfusion:MenuItemAdv>
 </syncfusion:MenuAdv>
@@ -124,7 +124,7 @@ In order to add [MenuAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.
 {{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 ## Adding control manually in C#
-In order to add [MenuAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.MenuAdv.html) control manually in C#, do the below steps,
+To add the [MenuAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.MenuAdv.html) control manually in C#, follow these steps:
 
 1. Add the below required assembly references to the project,
 
@@ -186,7 +186,7 @@ this.Content = mAdv;
 
 ## Set icon for Menu item
 
-You can display image on left of the [MenuItemAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.MenuItemAdv.html) control by setting the image source as value for [Icon](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.MenuItemAdv.html#Syncfusion_Windows_Shared_MenuItemAdv_Icon) property.
+You can display an image on the left of the [MenuItemAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.MenuItemAdv.html) control by setting the image source as the value for the [Icon](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.MenuItemAdv.html#Syncfusion_Windows_Shared_MenuItemAdv_Icon) property.
 
 {% tabs %}
 
@@ -258,7 +258,7 @@ Open.Icon = image2;
 
 path = Path.GetFullPath(@"../../" + "SaveIcon.png");
 image3.Source = new BitmapImage(new Uri(path));
-            Save.Icon = image3;
+Save.Icon = image3;
 
 path = Path.GetFullPath(@"../../" + "CloseIcon.png");
 image4.Source = new BitmapImage(new Uri(path));
@@ -280,10 +280,10 @@ menuAdv.Items.Add(Project);
 
 ## Theme
 
-MenuAdv supports various built-in themes. Refer to the below links to apply themes for the MenuAdv,
+MenuAdv supports various built-in themes. Refer to the following links to apply themes for the MenuAdv:
 
   * [Apply theme using SfSkinManager](https://help.syncfusion.com/wpf/themes/skin-manager)
 	
   * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
 
-  ![Setting theme to WPF MenuAdv](getting-started_images/wpf-menu-theme.png)
+   ![Setting the theme to WPF MenuAdv](getting-started_images/wpf-menu-theme.png)

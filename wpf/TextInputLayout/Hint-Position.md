@@ -9,14 +9,13 @@ documentation: ug
 
 # Hint Position in WPF TextInputLayout (SfTextInputLayout)
 
-We can decide how the floating label will display by setting the `HintFloatMode` property.
+The display behavior of the floating label can be controlled by setting the `HintFloatMode` property.
 
->**NOTE**
-The default value of the `HintFloatMode` is `Float`.
+N> The default value of `HintFloatMode` is `Float`.
 
 ## Float
 
-The hint label will be float to the top of input view get focused.
+The hint label floats to the top of the input view when the input view is focused.
 
 {% tabs %} 
 
@@ -48,7 +47,7 @@ inputLayout.InputView = new TextBox();
 
 ## AlwaysFloat
 
-The hint label will be positioned always at the top of input view.
+The hint label is always positioned at the top of the input view.
 
 {% tabs %} 
 
@@ -80,7 +79,7 @@ inputLayout.InputView = new TextBox();
 
 ## None
 
-The hint label will be hidden when the input view is focused.
+The hint label is hidden when the input view is focused.
 
 {% tabs %} 
 

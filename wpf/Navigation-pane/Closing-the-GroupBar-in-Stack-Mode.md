@@ -46,7 +46,8 @@ Use the below code snippet to set this property.
 groupBar.VisualMode = VisualMode.StackMode;
 //Enabling the close button
 groupBar.IsCloseButtonEnabled = true;
-//Disabling the toolbargroupBar.IsToolBarEnabled = false;
+//Disabling the toolbar
+groupBar.IsToolBarEnabled = false;
 {% endhighlight %}
 {% endtabs %}
 
@@ -57,7 +58,7 @@ User can customize the maximum number of Visible Items to be displayed in the St
 {% tabs %}
 {% highlight xaml %}
 
-<syncfusion:GroupBar Name="GroupBar" Height="340" VerticalAlignment="Center"HorizontalAlignment="Center" VisualMode="StackMode" IsToolBarEnabled="True" StackVisibleItemsCount="2">
+<syncfusion:GroupBar Name="GroupBar" Height="340" VerticalAlignment="Center" HorizontalAlignment="Center" VisualMode="StackMode" IsToolBarEnabled="True" StackVisibleItemsCount="2">
   <syncfusion:GroupBarItem x:Name="groupitem1" HeaderText="Mail" HeaderImageSource="Images/mail.png">
     <Border >
       <TextBlock Text="GroupBarItem1" />

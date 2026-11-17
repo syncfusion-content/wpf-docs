@@ -19,7 +19,7 @@ This section provides an overview of how to work with the [WPF Button](https://w
 
 Refer to the [WPF Button](https://help.syncfusion.com/wpf/control-dependencies#buttonadv) control dependencies section for the list of assemblies or the [NuGet package](https://help.syncfusion.com/wpf/installation/install-nuget-packages) that needs to be added as a reference to use the ButtonAdv control in an application.
 
-## Creating simple application with WPF Button
+## Creating a simple application with WPF Button
 
 In this walkthrough, you will create a WPF application that contains the WPF Button control. You can add the control in the following ways:
 
@@ -119,8 +119,8 @@ using Syncfusion.Windows.Tools.Controls;
             {
                 InitializeComponent();
                 ButtonAdv button = new ButtonAdv();
-                button.Height=44;
-                button.Width=31;
+                button.Height = 44;
+                button.Width = 31;
                 Root.Children.Add(button);
             }
         }
@@ -138,7 +138,7 @@ The label on the WPF Button is text that explains its action to the end user. Se
 {% tabs %}
 {% highlight xaml %}
 
-<syncfusion:ButtonAdv SmallIcon="image\usersmall.png" Label="Log-in"/>
+<syncfusion:ButtonAdv SmallIcon="image/usersmall.png" Label="Log-in"/>
 
 {% endhighlight %}
 
@@ -157,20 +157,22 @@ button.SmallIcon = new BitmapImage(new Uri("image/usersmall.png" , UriKind.Relat
 
 Size mode renders the WPF Button control in different predefined sizes based on application requirements. Set the size mode by using the [SizeMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ButtonAdv.html#Syncfusion_Windows_Tools_Controls_ButtonAdv_SizeMode) property.
 
- The **SizeMode** is an enumeration which contains the following values:
+The **SizeMode** is an enumeration which contains the following values:
 
 * Small
 * Normal
 * Large
 
+The default value of the **SizeMode** property is **Normal**.
+
 ### Small mode
 
-When the mode is set to small, the control is displayed without the label. Only icon will be present in it.
+When the mode is set to **Small**, the control is displayed without the label. Only icon will be present in it.
 
 {% tabs %}
 {% highlight xaml %}
 
-<syncfusion:ButtonAdv SizeMode="Small" Label="Log-in" SmallIcon ="image\usersmall.png"/>
+<syncfusion:ButtonAdv SizeMode="Small" Label="Log-in" SmallIcon ="image/usersmall.png"/>
 
 {% endhighlight %}
 {% highlight c# %}
@@ -192,7 +194,7 @@ In a normal-size WPF Button, a small image is displayed beside the text.
 {% tabs %}
 {% highlight xaml %}
 
-<syncfusion:ButtonAdv SizeMode="Normal" Label="Log-in" SmallIcon ="image\usersmall.png"/>
+<syncfusion:ButtonAdv SizeMode="Normal" Label="Log-in" SmallIcon ="image/usersmall.png"/>
 
 {% endhighlight %}
 {% highlight c# %}
@@ -214,7 +216,7 @@ In a large-size WPF Button, a large image is displayed above the text.
 {% tabs %}
 {% highlight xaml %}
 
-<syncfusion:ButtonAdv SizeMode="Large" Label="Log-in" LargeIcon ="image\userlarge.png"/>
+<syncfusion:ButtonAdv SizeMode="Large" Label="Log-in" LargeIcon ="image/userlarge.png"/>
 
 {% endhighlight  %}
 {% highlight c# %}
@@ -422,7 +424,7 @@ You can set the **SmallIcon** property as follows:
 {% tabs %}
 {% highlight xaml %}
 
-<syncfusion:ButtonAdv SizeMode="Small" SmallIcon ="image\syncfusion.png"/>
+<syncfusion:ButtonAdv SizeMode="Small" SmallIcon ="image/syncfusion.png"/>
 
 {% endhighlight %}
 {% highlight c# %}
@@ -441,7 +443,7 @@ The **SmallIcon** property can be set even when the SizeMode is **Normal**.
 {% tabs %}
 {% highlight xaml %}
 
-<syncfusion:ButtonAdv SizeMode="Normal" SmallIcon="syncfusion.png" Label="Syncfusion" SmallIcon ="image\syncfusion.png"/>
+<syncfusion:ButtonAdv SizeMode="Normal" SmallIcon="image/syncfusion.png" Label="Syncfusion"/>
 
 {% endhighlight %}
 {% highlight c# %}
@@ -461,7 +463,7 @@ You can set the **LargeIcon** property as follows:
 {% tabs %}
 {% highlight xaml %}
 
-<syncfusion:ButtonAdv SizeMode="Large" LargeIcon="syncfusion.png" Label="Syncfusion" SmallIcon ="image\syncfusion.png"/>
+<syncfusion:ButtonAdv SizeMode="Large" LargeIcon="image/syncfusion.png" Label="Syncfusion"/>
 
 {% endhighlight %}
 {% highlight c# %}
@@ -483,15 +485,15 @@ Icon width and icon height can be set using [IconWidth](https://help.syncfusion.
 {% tabs %}
 {% highlight xaml %}
 
-<syncfusion:ButtonAdv x:Name="button1" SizeMode="Normal" IconHeight="20" IconWidth="20"  Label="Syncfusion"  SmallIcon ="image\syncfusion.png"/>
+<syncfusion:ButtonAdv x:Name="button1" SizeMode="Normal" IconHeight="20" IconWidth="20"  Label="Syncfusion"  SmallIcon ="image/syncfusion.png"/>
 
 {% endhighlight %}
 {% highlight c# %}
 
 ButtonAdv button1 = new ButtonAdv();
 button1.Label = "Syncfusion";
-button1.IconWidth=20;
-button1.IconHeight=20;
+button1.IconWidth = 20;
+button1.IconHeight = 20;
 button1.SmallIcon = new BitmapImage(new Uri("image/syncfusion.png", UriKind.RelativeOrAbsolute));
 
 {% endhighlight %}
@@ -502,15 +504,15 @@ button1.SmallIcon = new BitmapImage(new Uri("image/syncfusion.png", UriKind.Rela
 {% tabs %}
 {% highlight xaml %}
 
-<syncfusion:ButtonAdv x:Name="button2"  SizeMode="Normal" IconHeight="30" IconWidth="30"  Label="Syncfusion" SmallIcon ="image\syncfusion.png" />
+<syncfusion:ButtonAdv x:Name="button2"  SizeMode="Normal" IconHeight="30" IconWidth="30"  Label="Syncfusion" SmallIcon ="image/syncfusion.png" />
 
 {% endhighlight %}
 {% highlight c# %}
 
 ButtonAdv button2 = new ButtonAdv();
 button2.Label = "Syncfusion";
-button2.IconWidth=30;
-button2.IconHeight=30;
+button2.IconWidth = 30;
+button2.IconHeight = 30;
 button2.SmallIcon = new BitmapImage(new Uri("image/syncfusion.png", UriKind.RelativeOrAbsolute));
 
 {% endhighlight %}
@@ -528,7 +530,7 @@ The `CornerRadius` property allows users to customize the appearance of buttons 
 
 {% highlight xaml %}
 
-<syncfusion:ButtonAdv Label="Syncfusion" SmallIcon="Images\syncfusion.png" CornerRadius="15" SizeMode="Normal" IconHeight="25" IconWidth="30"/>
+<syncfusion:ButtonAdv Label="Syncfusion" SmallIcon="image/syncfusion.png" CornerRadius="15" SizeMode="Normal" IconHeight="25" IconWidth="30"/>
 
 {% endhighlight %}
 

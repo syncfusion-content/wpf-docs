@@ -117,8 +117,8 @@ You can also add the Syncfusion<sup>&reg;</sup> WPF (.NET Core) controls assembl
 
 <table>
 <tr>
-<td>.NET 6 or higher</td>
-<td>C:\Program Files (x86)\Syncfusion\Essential Studio\WPF\{{ site.releaseversion }}\precompiledassemblies\net6.0</td>
+<td>.NET 8 or higher</td>
+<td>C:\Program Files (x86)\Syncfusion\Essential Studio\WPF\{{ site.releaseversion }}\precompiledassemblies\net8.0-windows</td>
 </tr>
 </table>
 

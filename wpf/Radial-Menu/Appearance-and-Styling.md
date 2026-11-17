@@ -7,7 +7,7 @@ control: SfRadialMenu
 documentation: ug
 ---
 
-# Appearance and Styling
+# Appearance and Styling in WPF Radial Menu (SfRadialMenu)
 
 ## Radius
 
@@ -79,7 +79,7 @@ The `RimActiveBrush` property is used to fill the expander rim and this expander
 ![Appearance-and-Styling_img3](Appearance-and-Styling_images/Appearance-and-Styling_img3.png)
 
 
-##RimInactiveBrush
+## RimInactiveBrush
 
 The `RimInactiveBrush` property is used to fill the expander rim item background when the corresponding menu item does not have sub items.
 
@@ -123,7 +123,7 @@ The `RimHoverBrush` property can be used to fill the expander rim while the poin
 
 ## IsExpanderVisible
 
-The expander arrow in the OuterRim of `SfRadialMenu` visibility can be changed by the `IsExpanderVisible` property of `SfRadialMenuItem`. By default, the value of `IsExpanderVisible` is `True`.
+The expander arrow in the OuterRim of `SfRadialMenu` visibility can be changed by the `IsExpanderVisible` property of `SfRadialMenuItem`. By default, the value of `IsExpanderVisible` is `true`.
 
 {%highlight xaml%}
 
@@ -151,7 +151,7 @@ The expander arrow in the OuterRim of `SfRadialMenu` visibility can be changed b
 
 ## RimRadiusFactor
 
-The `RimRadiusFactor` property of the WPF Radial Menu can be used to set the radius of the items panel. Lowest values to this factor increase the thickness of the outer rim. Highest values to this factor decrease the thickness of the outer rim. 
+The `RimRadiusFactor` property of the WPF Radial Menu can be used to set the radius of the items panel. Lower values of this factor increase the thickness of the outer rim. Higher values of this factor decrease the thickness of the outer rim. 
 
 {%highlight xaml%}
 

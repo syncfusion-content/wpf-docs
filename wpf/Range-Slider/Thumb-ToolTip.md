@@ -65,7 +65,7 @@ The [ToolTipFormat](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Contro
                 Width = 300,
                 Maximum = 100,
                 Minimum = 0,
-                ToolTipFormat= C0,
+                ToolTipFormat = "C0",
                 Value = 50
             };
 

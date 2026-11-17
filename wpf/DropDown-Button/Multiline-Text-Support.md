@@ -25,7 +25,7 @@ DropDownButtonAdv dropdownbutton = new DropDownButtonAdv();
 dropdownbutton.SizeMode = SizeMode.Large;
 dropdownbutton.Label = "Sign in with your Syncfusion Account";
 dropdownbutton.IsMultiLine =true;
-dropdownbutton.LargeIcon = new BitmapImage(new Uri("image\employee.png"));
+dropdownbutton.LargeIcon = new BitmapImage(new Uri(@"image\employee.png", UriKind.RelativeOrAbsolute));
 
 {% endhighlight %}
 {% endtabs %}

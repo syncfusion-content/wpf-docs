@@ -9,7 +9,7 @@ documentation: ug
 
 # Supported Input Views in WPF TextInputLayout (SfTextInputLayout)
 
-Input views can be added to the text input layout control by setting the [InputView](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TextInputLayout.SfTextInputLayout.html#Syncfusion_UI_Xaml_TextInputLayout_SfTextInputLayout_InputView) property. To reduce the XAML syntax, the [InputView](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TextInputLayout.SfTextInputLayout.html#Syncfusion_UI_Xaml_TextInputLayout_SfTextInputLayout_InputView) property is applied with the ContentPropertyAttribute. The [SfTextInputLayout](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TextInputLayout.html) has the following controls as the supported input views.
+Input views can be added to the text input layout control by setting the [InputView](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TextInputLayout.SfTextInputLayout.html#Syncfusion_UI_Xaml_TextInputLayout_SfTextInputLayout_InputView) property. To reduce the XAML syntax, the `InputView` property is marked with the `ContentPropertyAttribute`, so the input control can be declared directly as the child element. The [SfTextInputLayout](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TextInputLayout.html) has the following controls as the supported input views.
 
 * [TextBox](https://learn.microsoft.com/en-us/dotnet/desktop/wpf/controls/textbox) 
 
@@ -501,6 +501,6 @@ You can use the [CurrencyTextBox](https://help.syncfusion.com/wpf/currency-textb
 
 The following are the limitations when using [DatePicker](https://learn.microsoft.com/en-us/dotnet/desktop/wpf/controls/datepicker), [SfDatePicker](https://help.syncfusion.com/wpf/datepicker/overview) and [SfTimePicker](https://help.syncfusion.com/wpf/timepicker/overview) as the InputView of SfTextInputLayout.
 
-1. The hint is always displayed in the `AlwaysFloat` state and does not move to the inline position based on the control's focus state or the presence of a selected date/time value.
+1. The hint is always displayed in the `AlwaysFloat` state and does not move to the inline position based on the control's focus state or the presence of a selected date or time value.
 
 2. When `CharCountVisibility` is enabled, the character count is always displayed as `0`, regardless of the selected date or time value.

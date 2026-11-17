@@ -9,9 +9,9 @@ documentation: ug
 
 # Edit Mode in WPF BreadCrumb
 
-This feature allows you to easily edit a navigation path by setting the [IsEnableEditMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.HierarchyNavigator.html#Syncfusion_Windows_Tools_Controls_HierarchyNavigator_IsEnableEditMode) property to `true`. The filter support is available in edit mode, which suggests matching nodes based on the path entered in the editor like the Windows Explorer.
+This feature allows you to easily edit a navigation path by setting the [IsEnableEditMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.HierarchyNavigator.html#Syncfusion_Windows_Tools_Controls_HierarchyNavigator_IsEnableEditMode) property to `true`. The default value of this property is `false`. The filter support is available in edit mode, which suggests matching nodes based on the path entered in the editor like the Windows Explorer.
 
-To start the edit mode, click `HierarchyNavigator` and enter a navigation path that will display a drop-down list of filtered navigation paths, and then select the expected navigation path.
+To start the edit mode, click the `HierarchyNavigator` control, type a navigation path in the editor, and select the expected navigation path from the drop-down list of filtered navigation paths that appears.
 
 N> If you enter an incorrect path or text in the editor, the dropdown suggestion list will be closed.
 

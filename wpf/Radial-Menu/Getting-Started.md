@@ -52,17 +52,21 @@ The following code sample shows how to create the WPF Radial Menu from code-behi
 
 SfRadialMenu radialMenu = new SfRadialMenu(); 
 
-SfRadialMenuItem bold = new SfRadialMenuItem() { Header = "Bold" };               SfRadialMenuItem cut = new SfRadialMenuItem() { Header = "Cut" }; 
+SfRadialMenuItem bold = new SfRadialMenuItem() { Header = "Bold" };
 
-SfRadialMenuItem copy = new SfRadialMenuItem() { Header = "Copy" }; 
+SfRadialMenuItem cut = new SfRadialMenuItem() { Header = "Cut" };
 
-SfRadialMenuItem paste = new SfRadialMenuItem() { Header = "Paste" }; radialMenu.Items.Add(bold);
+SfRadialMenuItem copy = new SfRadialMenuItem() { Header = "Copy" };
+
+SfRadialMenuItem paste = new SfRadialMenuItem() { Header = "Paste" };
+
+radialMenu.Items.Add(bold);
 
 radialMenu.Items.Add(cut);
 
 radialMenu.Items.Add(copy);
 
-radialMenu.Items.Add(paste); 
+radialMenu.Items.Add(paste);
 
 
 {%endhighlight%}

@@ -15,7 +15,7 @@ The topics under this section explain the data binding support for the MenuAdv c
 
 The MenuAdv control also supports binding to objects. The following example shows this.
 
-1. Create a class that act as a model for MenuAdv.
+1. Create a class that acts as a model for MenuAdv.
 
 {% tabs %}
 {% highlight C# %}
@@ -131,7 +131,7 @@ public class ViewModel
 
 An XML file can also be used as _ItemsSource_ for the MenuAdv control. The following example illustrates this.
 
-1. Create an XML file with the following details as follows and name it as Data.xml.
+1. Create an XML file with the following content and name it as Data.xml.
 
 {% tabs %}
 {% highlight xaml %}
