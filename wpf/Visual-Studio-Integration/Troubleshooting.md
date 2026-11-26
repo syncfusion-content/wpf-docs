@@ -74,7 +74,7 @@ The Syncfusion Troubleshooter handles the assembly reference issues listed below
 
    <https://help.syncfusion.com/common/essential-studio/assembly-information#supported-framework-version-for-essential-studio-assemblies> 
 
-   **For Instance:** The .NET Framework of the application is v4.5 and the "Syncfusion.Tools.WPF" assembly (v17.1460.0.38 & .NET Framework version 4.6) is referred in the same application. The Syncfusion Troubleshooter will show that the Syncfusion assembly .NET Framework version is incompatible with the project's .NET Framework version.
+   **For Instance:** The .NET Framework of the application is v4.6.2 and the "Syncfusion.Tools.WPF" assembly (v17.1460.0.38 & .NET Framework version 4.6.2) is referred in the same application. The Syncfusion Troubleshooter will show that the Syncfusion assembly .NET Framework version is incompatible with the project's .NET Framework version.
 
    ![Target Framework version of application](SyncfusionTroubleshooter_images/SyncfusionTroubleshooter-img5.jpg)
 
@@ -110,7 +110,7 @@ In Syncfusion® projects, the Syncfusion Troubleshooter addresses the following 
 
 1. If the Syncfusion Toolbox for the project's .NET Framework version is not installed or configured, the Syncfusion Troubleshooter will show that the Syncfusion Toolbox .NET Framework version is mismatched. 
 
-   **For Instance:** If the project targets .NET Framework 4.5 but the Syncfusion Toolbox assemblies for .NET Framework 4.5 are not configured, the Syncfusion Troubleshooter will show a Syncfusion Toolbox .NET Framework version mismatch.
+   **For Instance:** If the project targets .NET Framework 4.6.2 but the Syncfusion Toolbox assemblies for .NET Framework 4.6.2 are not configured, the Syncfusion Troubleshooter will show a Syncfusion Toolbox .NET Framework version mismatch.
  
    ![Syncfusion Toolbox Framework version mismatched issue shown in Troubleshooter wizard](SyncfusionTroubleshooter_images/SyncfusionTroubleshooter-img10.png)
 

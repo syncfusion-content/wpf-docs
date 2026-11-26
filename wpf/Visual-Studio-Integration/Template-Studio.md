@@ -20,7 +20,7 @@ Create the Syncfusion® WPF project using the Visual Studio Project Template by 
 
 > Check whether the **WPF Extensions - Syncfusion** are installed or not in Visual Studio Extension Manager by going to **Extensions -> Manage Extensions -> Installed** for Visual Studio 2019 or later, and for Visual Studio 2017 by going to **Tools -> Extensions and Updates -> Installed**. If this extension is not installed, please install the extension by following the steps from the [download and installation](https://help.syncfusion.com/wpf/visual-studio-integration/download-and-installation) help topic.
 
-1.	Open Visual Studio 2022.
+1.	Open Visual Studio 2026.
 
 2.	Select one of the following options to create the Syncfusion® WPF application.
 
@@ -44,7 +44,7 @@ Create the Syncfusion® WPF project using the Visual Studio Project Template by 
 
 	![Syncfusion WPF project configuration wizard](Template-Studio-Images/WPF-4.png)
 
-	N> The installed location and GAC options will be available only after the Syncfusion® Essential WPF setup has been installed. Use the NuGet option instead of installing the Syncfusion® Essential WPF setup. Also, the GAC option will not be available when you choose .NET 8.0 or .NET 9.0 from the project type option in Visual Studio.
+	N> The installed location and GAC options will be available only after the Syncfusion® Essential WPF setup has been installed. Use the NuGet option instead of installing the Syncfusion® Essential WPF setup. Also, the GAC option will not be available when you choose .NET 8.0 or .NET 9.0 or .NET 10.0or .NET 11.0 from the project type option in Visual Studio.
 
 	I> Visual Basic language support is available in WPF Template Studio starting from version 25.1.35.
 
@@ -141,6 +141,16 @@ In the **Project Details** section, you can modify configurations and project ty
 	>       <td>.NET 9.0</td>
 	>       <td>v27.2.2</td>
 	>       <td>Visual Studio 2022</td>
+	>     </tr>
+	>     <tr>
+	>       <td>.NET 10.0</td>
+	>       <td>v31.2.1</td>
+	>       <td>Visual Studio 2026</td>
+	>     </tr>
+	>     <tr>
+	>       <td>.NET 11.0</td>
+	>       <td>v35.2.2</td>
+	>       <td>Visual Studio 2026</td>
 	>     </tr>
 	>   </tbody>
 	> </table>       

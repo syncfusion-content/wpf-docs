@@ -181,7 +181,7 @@ The following steps direct you to create the Syncfusion<sup>&reg;</sup> WPF proj
 
 2. Name the Project, choose the destination location when required and set the framework of the project, then click OK.  
 
-N> Minimum target Framework is 4.0 for Syncfusion<sup>&reg;</sup> WPF project templates. 
+N> Minimum target Framework is 4.6.2 for Syncfusion<sup>&reg;</sup> WPF project templates. 
 
 3. Choose the options to configure the Syncfusion<sup>&reg;</sup> WPF Application by using the following Project Configuration Wizard.  
   
