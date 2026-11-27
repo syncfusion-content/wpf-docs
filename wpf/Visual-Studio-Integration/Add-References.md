@@ -51,13 +51,13 @@ To add the Syncfusion® assembly references in Visual Studio, follow the steps b
    ![Assembly location option in Syncfusion Reference Manger](Syncfusion-Reference-Manger_images/Syncfusion-Reference-Manger-img4.png)
 
 
-   N> The GAC option will not be available when you select a WPF (.NET Core 3.1, .NET 5.0, .NET 6.0, .NET 7.0, and .NET 8.0) application in Visual Studio 2019 or Visual Studio 2022. 
+   N> The GAC option will not be available when you select a WPF (.NET Core 3.1, .NET 5.0, .NET 6.0, .NET 7.0, .NET 8.0, .NET 9.0, .NET 10.0, .NET 11.0) application in Visual Studio 2019 or Visual Studio 2022 or Visual Studio 2026. 
 
    **Version:** To add the corresponding version assemblies to the project, select the build version.
 
    ![Assembly location option in Syncfusion Reference Manger](Syncfusion-Reference-Manger_images/Syncfusion-Reference-Manger1-img4.png)
 
-   N> WPF (.NET Core 3.1 and .NET 5.0) applications in Visual Studio 2019 are supported from version 18.2.0.44, .NET 6.0 applications in Visual Studio 2022 are supported from 19.4.0.38, .NET 7.0 applications in Visual Studio 2022 are supported from 20.4.0.38, and .NET 8.0 applications in Visual Studio 2022 are supported from 23.2.4. The version combo box is not visible for the NuGet option. 
+   N> WPF (.NET Core 3.1 and .NET 5.0) applications in Visual Studio 2019 are supported from version 18.2.0.44, .NET 6.0 applications in Visual Studio 2022 are supported from 19.4.0.38, .NET 7.0 applications in Visual Studio 2022 are supported from 20.4.0.38, and .NET 8.0 applications in Visual Studio 2022 are supported from 23.2.4, and .NET 9.0 applications in Visual Studio 2022 are supported from 27.2.2, and .NET 10.0 applications in Visual Studio 2026 are supported from 31.2.1, and .NET 11.0 applications in Visual Studio 2026 are supported from 35.2.2. The version combo box is not visible for the NuGet option. 
 
    **Themes Option:** Choose the necessary themes based on your requirements. To learn more about the built-in themes and their available assemblies, click the link below.
 

@@ -25,6 +25,7 @@ Below table represents the supported Syncfusion<sup>&reg;</sup> Essential Studio
 <th>.NET 8.0<br/></th>
 <th>.NET 9.0<br/></th>
 <th>.NET 10.0<br/></th>
+<th>.NET 11.0<br/></th>
 </tr>
 
 <tr>
@@ -96,6 +97,16 @@ From 31.2 (2025 Vol3 SP) <br/></td>
 <td>Yes<br/></td>
 </tr>
 
+<tr>
+<td>
+From 35.2 (2026 Vol3 SP) <br/></td>
+<td>No<br/></td>
+<td>No<br/></td>
+<td>Yes<br/></td>
+<td>Yes<br/></td>
+<td>Yes<br/></td>
+</tr>
+
 </table>
 
 ## Adding Reference
@@ -128,7 +139,7 @@ To create the .NET Core project by using the following ways.
 
 ### Create a .NET Core project
 
-**Step 1**: Open Visual Studio 2019 and click **Create a new project**. Here, select **WPF App (.NET Core)** template and click **Next**.
+**Step 1**: Open Visual Studio 2026 and click **Create a new project**. Here, select **WPF App (.NET Core)** template and click **Next**.
 
 ![Create new project for WPF NET Core](NETcore_WPF_images/wpf-netcore-create-project.png)
 

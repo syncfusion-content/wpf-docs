@@ -14,8 +14,8 @@ documentation: ug
 
 | Project type | Minimum .NET version |
 | --- | --- |
-| .NET Framework WPF | .NET Framework 4.5 or later |
-| .NET (Core) WPF | .NET Core 3.1 / .NET 5 or later |
+| .NET Framework WPF | .NET Framework 4.6.2 or later |
+| .NET (Core) WPF | .NET Core 8 / .NET 9,10,11 or later |
 
 ## Overview
 
@@ -23,9 +23,10 @@ documentation: ug
 
 > From v16.2.0.46 (2018 Volume 2 Service Pack 1) onwards, all Syncfusion WPF components are available as NuGet packages on nuget.org.
 
+
 ## Prerequisites
 
-* Visual Studio 2017 or later with the **NuGet Package Manager** workload installed.
+* Visual Studio 2026 or later with the **NuGet Package Manager** workload installed.
 * A WPF project that targets a Syncfusion-supported .NET version.
 * An active internet connection to reach the [nuget.org](https://www.nuget.org/) feed.
 * If you plan to use the CLI method, install the [.NET SDK](https://learn.microsoft.com/en-us/dotnet/core/sdk) matching your project target framework.
@@ -81,7 +82,7 @@ Follow the instructions below to use the `dotnet` CLI to install the Syncfusion 
 
 4. Run [dotnet restore](https://learn.microsoft.com/en-us/dotnet/core/tools/dotnet-restore?tabs=netcore2x) to restore all packages listed in the application file.
 
-    > Restore is performed automatically by `dotnet build` and `dotnet run` in .NET Core 2.0 and later.
+    > Restore is performed automatically by `dotnet build` and `dotnet run` in .NET Core 8.0 and later.
 
 ## Installation using Package Manager Console
 

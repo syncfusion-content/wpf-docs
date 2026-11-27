@@ -14,7 +14,7 @@ This section contains a list of assembly or NuGet references required to use any
 You can refer to the [Syncfusion controls section](https://help.syncfusion.com/wpf/add-syncfusion-controls) to learn how to add a Syncfusion<sup>&reg;</sup> control.
 
 N> Starting with version 16.2 (2018 Vol 2), the `Syncfusion.Licensing.dll` will be added as a reference for all the Syncfusion WPF controls. Please refer to this [help topic](https://help.syncfusion.com/common/essential-studio/licensing/license-key) for more information.
-
+> Starting with version 34.2 (2026 Volume 2), `Syncfusion.Telemetry.dll` has been included as a reference for most of the Syncfusion WPF controls.
 ## AutoComplete
 
 <table>
@@ -1658,9 +1658,9 @@ Syncfusion.Compression.Base <br/>
 Syncfusion.OfficeChart.Base <br/>
 Syncfusion.Shared.WPF 
 <br/>
-For .NET Framework 3.5 and 4.0: <br/>
+For .NET Framework 4.6.2 : <br/>
 Syncfusion.DocIO.ClientProfile <br/>
-For .NET Framework 4.5 and higher: <br/>
+For .NET Framework 4.6.2 and higher: <br/>
 Syncfusion.DocIO.Base 
 </td>
 <td> 
@@ -1685,9 +1685,9 @@ Syncfusion.SfRichTextBoxAdv.WPF <br/>
 Syncfusion.Shared.WPF <br/>
 Syncfusion.Tools.WPF 
 <br/>
-For .NET Framework 3.5 and 4.0: <br/>
+For .NET Framework 4.6.2: <br/>
 Syncfusion.DocIO.ClientProfile <br/>
-For .NET Framework 4.5 and higher: <br/>
+For .NET Framework 4.6.2 and higher: <br/>
 Syncfusion.DocIO.Base 
 </td>
 <td> 

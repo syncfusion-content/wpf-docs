@@ -30,4 +30,4 @@ This section describes the system requirements to use Syncfusion<sup>&reg;</sup>
 
 * Microsoft Visual Studio 2015/2017/2019/2022
 * .NET Framework 4.6.2
-* .Net 8.0/.Net 9.0/.NET 10.0
+* .Net 8.0/.Net 9.0/.NET 10.0/.NET 11.0
